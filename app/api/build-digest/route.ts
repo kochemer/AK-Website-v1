@@ -7,20 +7,38 @@ const execAsync = promisify(exec);
 
 export async function POST() {
   try {
-    const scriptPath = path.join(process.cwd(), 'scripts', 'buildMonthlyDigest.ts');
-    
-    // Verify script exists
     const fs = await import('fs/promises');
+    
+    // Try JS entrypoint first (for production), fallback to TS
+    const jsPath = path.join(process.cwd(), 'scripts', 'buildMonthlyDigest.js');
+    const tsPath = path.join(process.cwd(), 'scripts', 'buildMonthlyDigest.ts');
+    
+    let scriptPath: string;
+    let useTsx: boolean;
+    
     try {
-      await fs.access(scriptPath);
+      await fs.access(jsPath);
+      scriptPath = jsPath;
+      useTsx = false; // JS file can use tsx internally if needed
+      console.log(`Using JS entrypoint: ${scriptPath}`);
     } catch {
-      throw new Error(`Script not found: ${scriptPath}`);
+      try {
+        await fs.access(tsPath);
+        scriptPath = tsPath;
+        useTsx = true; // TS file needs tsx
+        console.log(`Using TS script: ${scriptPath}`);
+      } catch {
+        throw new Error(`Script not found: neither ${jsPath} nor ${tsPath}`);
+      }
     }
     
     console.log(`Executing build script: ${scriptPath}`);
     
-    // Execute the build script using tsx
-    const { stdout, stderr } = await execAsync(`npx tsx "${scriptPath}"`, {
+    // Execute the build script
+    // Both JS and TS files need tsx to handle TypeScript imports
+    // The JS file imports TS modules, so it also needs tsx
+    const command = `npx tsx "${scriptPath}"`;
+    const { stdout, stderr } = await execAsync(command, {
       cwd: process.cwd(),
       maxBuffer: 10 * 1024 * 1024, // 10MB buffer
       env: { ...process.env },

@@ -82,9 +82,9 @@ export default async function Home() {
       <header style={{ marginBottom: '3rem' }}>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '1rem' }}>
           <div>
-            <h1 style={{ fontSize: '2.5rem', marginBottom: '0.5rem', fontWeight: '600' }}>
-              Monthly Digest: {digest.monthLabel}
-            </h1>
+          <h1 style={{ fontSize: '2.5rem', marginBottom: '0.5rem', fontWeight: '600' }}>
+            Monthly Digest: {digest.monthLabel}
+          </h1>
             {digest.builtAtLocal && (
               <p style={{ color: '#666', fontSize: '0.9rem', marginTop: '0.25rem' }}>
                 Last built: {digest.builtAtLocal} ({digest.tz})
@@ -95,7 +95,7 @@ export default async function Home() {
             <Link href="/archive" style={{ color: '#0066cc', textDecoration: 'none', fontSize: '1rem' }}>
               View archive
             </Link>
-            <BuildDigestButton />
+          <BuildDigestButton />
           </div>
         </div>
         <p style={{ color: '#666', fontSize: '1.1rem' }}>
