@@ -3,8 +3,8 @@
   "tz": "Europe/Copenhagen",
   "startISO": "2025-11-30T23:00:00.000Z",
   "endISO": "2025-12-31T22:59:59.999Z",
-  "builtAtISO": "2026-01-01T21:40:28.889+01:00",
-  "builtAtLocal": "2026-01-01 21:40:28",
+  "builtAtISO": "2026-01-01T22:12:02.569+01:00",
+  "builtAtLocal": "2026-01-01 22:12:02",
   "totals": {
     "total": 175,
     "byTopic": {
@@ -19,6 +19,30 @@
       "total": 41,
       "top": [
         {
+          "id": "ltsstm",
+          "title": "Assay offices call for reform of Hallmarking law",
+          "url": "https://www.professionaljeweller.com/assay-offices-reform-hallmarking-law/",
+          "source": "Professional Jeweller",
+          "published_at": "2025-12-18T14:15:42.000Z",
+          "ingested_at": "2025-12-30T20:03:05.084Z",
+          "snippet": "The four UK Assay Offices have issued a joint open letter to MPs urging action in reforming the Hallmarking Act 1973. This open letter is fully supported by the National Association of Jewellers (NAJ). Hallmarking remains a cornerstone of consumer protection, providing independent assurance of precious metal quality and safeguarding public trust in jewellery and […]\nThe post Assay offices call for reform of Hallmarking law appeared first on Professional Jeweller.",
+          "relevance": {
+            "scoreTotal": 0.9189000898181378,
+            "recencyScore": 0.5689000898181378,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.25,
+            "penalty": 0,
+            "matchedKeywords": [
+              "hallmark",
+              "assay",
+              "jewellery",
+              "precious metal",
+              "jeweller"
+            ]
+          },
+          "aiSummary": "AI-generated summary: The UK Assay Offices and the National Association of Jewellers are calling for reform of the Hallmarking Act 1973 to ensure consumer protection and maintain public trust in the jewellery industry."
+        },
+        {
           "id": "yp0k9a",
           "title": "JAA appoints seventh director to board",
           "url": "https://www.jewellermagazine.com/Article/14685/JAA-appoints-seventh-director-to-board",
@@ -26,7 +50,17 @@
           "published_at": "2025-12-21T13:00:00.000Z",
           "ingested_at": "2025-12-30T20:03:05.084Z",
           "snippet": "The Jewellers Association of Australia (JAA) has announced the appointment of a seventh director, Lindsay Kotzman.",
-          "aiSummary": "AI-Generated Summary:\nThe Jewellers Association of Australia (JAA) has appointed Lindsay Kotzman as its seventh director, as reported by Jeweller - Business News on December 21, 2025."
+          "relevance": {
+            "scoreTotal": 0.8139784948715572,
+            "recencyScore": 0.6639784948715571,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "jeweller"
+            ]
+          },
+          "aiSummary": "AI-Generated Summary:\nThe Jewellers Association of Australia (JAA) has added Lindsay Kotzman as its seventh director to the board, as reported by Jeweller - Business News on December 21, 2025."
         },
         {
           "id": "f8ksil",
@@ -36,57 +70,103 @@
           "published_at": "2025-12-19T13:00:00.000Z",
           "ingested_at": "2025-12-30T20:03:05.084Z",
           "snippet": "The Australian Competition and Consumer Commission (ACCC) is warning consumers and retailers to be vigilant about online retail scammers posing as local businesses during the holiday season.",
-          "aiSummary": "AI-Generated Summary:\nThe ACCC cautions consumers and retailers about online retail scammers pretending to be local businesses during the holiday season, as reported by Jeweller - Business News on December 19, 2025."
+          "relevance": {
+            "scoreTotal": 0.7994623658152115,
+            "recencyScore": 0.5994623658152115,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.1,
+            "penalty": 0,
+            "matchedKeywords": [
+              "watch",
+              "retailer"
+            ]
+          },
+          "aiSummary": "AI-generated summary: The ACCC cautions consumers and retailers to watch out for online retail scammers pretending to be local businesses during the holiday season, as reported by Jeweller - Business News on December 19, 2025."
         },
         {
-          "id": "mbyzt6",
-          "title": "Impractical regulations set to disrupt gift card transactions",
-          "url": "https://www.jewellermagazine.com/Article/14657/Impractical-regulations-set-to-disrupt-gift-card-transactions",
+          "id": "c5fva0",
+          "title": "Richemont UK outperforms rival groups with 5% rise in sales",
+          "url": "https://www.professionaljeweller.com/richemont-uk-jewellery-sales-rise/",
+          "source": "Professional Jeweller",
+          "published_at": "2025-12-17T08:15:00.000Z",
+          "ingested_at": "2025-12-30T20:03:05.084Z",
+          "snippet": "Richemont‘s watch and jewellery business has generated record sales in the UK with turnover rising 5.3% to £277 million in 2024-25. The group’s latest accounts cover the 12 months to March 1 2025. Operating profit surged by 155% to £32 million. The results cover retail and wholesale for jewellery and watchmakers, but do not include […]\nThe post Richemont UK outperforms rival groups with 5% rise in sales appeared first on Professional Jeweller.",
+          "relevance": {
+            "scoreTotal": 0.7785618281543316,
+            "recencyScore": 0.5285618281543316,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.15000000000000002,
+            "penalty": 0,
+            "matchedKeywords": [
+              "jewellery",
+              "jeweller",
+              "watch"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Richemont UK's watch and jewellery business achieved record sales, with a 5.3% increase in turnover to £277 million in 2024-25, along with a significant 155% rise in operating profit to £32 million."
+        },
+        {
+          "id": "ppwd09",
+          "title": "The Goldsmiths’ Centre to spotlights emerging talent in New Year",
+          "url": "https://www.professionaljeweller.com/the-goldsmiths-centre-emerging-talent/",
+          "source": "Professional Jeweller",
+          "published_at": "2025-12-17T08:05:00.000Z",
+          "ingested_at": "2025-12-30T20:03:05.084Z",
+          "snippet": "The Goldsmiths’ Centre is set to hold Spotlighting Getting Started, a free public exhibition championing the work of 15 emerging jewellers and silversmiths. From 12 January to 18 February 2026, the exhibition will showcase over 50 independent designers utilising a range of contemporary practices. Visitors can explore techniques from Japonisme-inspired motifs and ocean forms captured […]\nThe post The Goldsmiths’ Centre to spotlights emerging talent in New Year appeared first on Professional Jewel...",
+          "relevance": {
+            "scoreTotal": 0.7783378138173305,
+            "recencyScore": 0.5283378138173305,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.15000000000000002,
+            "penalty": 0,
+            "matchedKeywords": [
+              "gold",
+              "silver",
+              "jeweller"
+            ]
+          },
+          "aiSummary": "The Goldsmiths’ Centre will host an exhibition called Spotlighting Getting Started featuring 15 emerging jewellers and silversmiths showcasing contemporary practices from January 12 to February 18, 2026. The exhibition will highlight over 50 independent designers using various techniques such as Japonisme-inspired motifs and ocean forms."
+        },
+        {
+          "id": "w8ieb7",
+          "title": "Former Jewellery Industry Network directors issue statement",
+          "url": "https://www.jewellermagazine.com/Article/14684/Former-Jewellery-Industry-Network-directors-issue-statement",
           "source": "Jeweller - Business News",
-          "published_at": "2025-12-19T13:00:00.000Z",
+          "published_at": "2025-12-18T13:00:00.000Z",
           "ingested_at": "2025-12-30T20:03:05.084Z",
-          "snippet": "Retail industry representatives are warning about the unintended consequences of recent changes to Australia’s anti-money laundering and counter terrorism-financing regime, particularly as it concerns gift cards.",
-          "aiSummary": "AI-Generated Summary:\nRetail industry representatives are concerned about the impact of new regulations on gift card transactions due to changes in Australia's anti-money laundering and counter terrorism-financing regime."
+          "snippet": "Jeweller recently reported on the dramatic multi-million dollar collapse of several companies associated with the Jewellery Industry Network and now two former directors have issued a statement ‘clearing the air’ regarding their decision to exit the company.",
+          "relevance": {
+            "scoreTotal": 0.7672043012870386,
+            "recencyScore": 0.5672043012870387,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.1,
+            "penalty": 0,
+            "matchedKeywords": [
+              "jewellery",
+              "jeweller"
+            ]
+          },
+          "aiSummary": "AI-Generated Summary:\nFormer directors of the Jewellery Industry Network have released a statement addressing their departure following the collapse of associated companies, as reported by Jeweller - Business News on December 18, 2025."
         },
         {
-          "id": "a49xui",
-          "title": "Australian retailers encouraged to plan for a productive holiday period",
-          "url": "https://www.jewellermagazine.com/Article/14656/Australian-retailers-encouraged-to-plan-for-a-productive-holiday-period",
-          "source": "Jeweller - Business News",
-          "published_at": "2025-12-19T13:00:00.000Z",
+          "id": "weeui7",
+          "title": "Diamonds from Earth and Lab:  Facts, Opportunities, & Transparency",
+          "url": "https://www.jewellermagazine.com/Article/14665/Diamonds-from-Earth-and-Lab-Facts-Opportunities-Transparency",
+          "source": "Jeweller - Jewellery Trends",
+          "published_at": "2025-12-14T13:00:00.000Z",
           "ingested_at": "2025-12-30T20:03:05.084Z",
-          "snippet": "Industry forecasters are anticipating strong holiday sales for Australian retailers, with shoppers expected to spend heavily during the all-important trading period.",
-          "aiSummary": "AI-Generated Summary:\nIndustry forecasters predict robust holiday sales for Australian retailers in the jewellery industry, as shoppers are projected to spend significantly during the crucial trading period."
-        },
-        {
-          "id": "ltsstm",
-          "title": "Assay offices call for reform of Hallmarking law",
-          "url": "https://www.professionaljeweller.com/assay-offices-reform-hallmarking-law/",
-          "source": "Professional Jeweller",
-          "published_at": "2025-12-18T14:15:42.000Z",
-          "ingested_at": "2025-12-30T20:03:05.084Z",
-          "snippet": "The four UK Assay Offices have issued a joint open letter to MPs urging action in reforming the Hallmarking Act 1973. This open letter is fully supported by the National Association of Jewellers (NAJ). Hallmarking remains a cornerstone of consumer protection, providing independent assurance of precious metal quality and safeguarding public trust in jewellery and […]\nThe post Assay offices call for reform of Hallmarking law appeared first on Professional Jeweller.",
-          "aiSummary": "AI-generated summary: The four UK Assay Offices, supported by the National Association of Jewellers, are calling for reform of the Hallmarking Act 1973 to ensure consumer protection and maintain public trust in the jewellery industry."
-        },
-        {
-          "id": "q7mno1",
-          "title": "Hugh Rice appoints new retail director",
-          "url": "https://www.professionaljeweller.com/hugh-rice-appoint-new-retail-director/",
-          "source": "Professional Jeweller",
-          "published_at": "2025-12-18T14:14:49.000Z",
-          "ingested_at": "2025-12-30T20:03:05.084Z",
-          "snippet": "Hugh Rice the Jewellers has announced the appointment of Hannah Hirst to the board of directors as retail director. Hirst, who has been serving as the company’s procurement manager, brings a wealth of experience, strong brand partnerships, and a deep understanding of the business. In her new role, Hirst will work closely with store managers […]\nThe post Hugh Rice appoints new retail director appeared first on Professional Jeweller.",
-          "aiSummary": "Hugh Rice the Jewellers has appointed Hannah Hirst as the new retail director, bringing her experience as procurement manager to the board of directors. Hirst will collaborate closely with store managers in her new role."
-        },
-        {
-          "id": "ywmowd",
-          "title": "Wongs Jewellers debuts new Manchester store today",
-          "url": "https://www.professionaljeweller.com/wongs-jewellers-new-manchester-store/",
-          "source": "Professional Jeweller",
-          "published_at": "2025-12-18T14:14:27.000Z",
-          "ingested_at": "2025-12-30T20:03:05.084Z",
-          "snippet": "Manchester’s Arndale Centre welcomes Wongs Jewellers today, marking its first expansion outside Liverpool. With a legacy spanning over four decades, Wongs Jewellers brings its signature elegance, heritage, and playful design to Manchester for the first time. Now, after 45 years in the making, Wongs Jewellers is opening a store that celebrates the family legacy while […]\nThe post Wongs Jewellers debuts new Manchester store today appeared first on Professional Jeweller.",
-          "aiSummary": "AI-generated summary: Wongs Jewellers opens its first store outside Liverpool at Manchester's Arndale Centre, showcasing its elegant, heritage-inspired designs after 45 years in the industry."
+          "snippet": "Tehmasp Printer makes the point that natural and lab-created diamonds may differ in origin, but they share the same brilliance, value and a rightful place within today’s market.",
+          "relevance": {
+            "scoreTotal": 0.48817204317434737,
+            "recencyScore": 0.4381720431743474,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "diamond"
+            ]
+          },
+          "aiSummary": "AI-Generated Summary:\nTehmasp Printer highlights the similarities in brilliance and value between natural and lab-created diamonds, emphasizing their place in the current market."
         }
       ]
     },
@@ -94,24 +174,100 @@
       "total": 86,
       "top": [
         {
-          "id": "yg52at",
-          "title": "Phone Searches at U.S. Borders: What Travelers Need to Know",
-          "url": "https://www.nytimes.com/2025/12/31/travel/airport-border-phone-search.html",
+          "id": "bv2j8a",
+          "title": "The Wirecutter Show: Tips for Using A.I. Smartly With Kevin Roose",
+          "url": "https://www.nytimes.com/2025/12/30/podcasts/hardfork-wirecutter-ai.html",
           "source": "NYTimes Technology",
-          "published_at": "2025-12-31T10:00:22.000Z",
-          "ingested_at": "2025-12-31T12:36:16.184Z",
-          "snippet": "Customs agents have broad authority to search the electronic devices of travelers entering and leaving the U.S. Here are tips for keeping your data safe.",
-          "aiSummary": "AI-Generated Summary:\nCustoms agents have the authority to search travelers' electronic devices at U.S. borders, prompting the need for data protection measures while traveling."
+          "published_at": "2025-12-30T12:00:04.000Z",
+          "ingested_at": "2025-12-30T12:26:38.325Z",
+          "snippet": "If you’ve ever wondered what chatbots are good for and how best to use them, this episode is for you.",
+          "relevance": {
+            "scoreTotal": 1.1029584830320185,
+            "recencyScore": 0.9529584830320186,
+            "sourceWeight": 0.15,
+            "keywordBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": []
+          },
+          "aiSummary": "AI-Generated Summary:\n\"The Wirecutter Show: Tips for Using A.I. Smartly With Kevin Roose\" from NYTimes Technology on 2025-12-30 discusses the benefits and best practices for utilizing chatbots effectively in ecommerce technology."
         },
         {
-          "id": "sjl53v",
-          "title": "3 SEO Predictions for 2026",
-          "url": "https://www.practicalecommerce.com/3-seo-predictions-for-2026",
+          "id": "4agilu",
+          "title": "Decoding the A.I.-Driven Tech Lingo From 2025",
+          "url": "https://www.nytimes.com/2025/12/30/technology/personaltech/tech-jargon-ai.html",
+          "source": "NYTimes Technology",
+          "published_at": "2025-12-30T10:02:10.000Z",
+          "ingested_at": "2025-12-30T12:26:38.325Z",
+          "snippet": "Here’s a cheat sheet for decoding this year’s A.I.-driven tech lingo, from RAG to superintelligence.",
+          "relevance": {
+            "scoreTotal": 1.1003173539987743,
+            "recencyScore": 0.9503173539987744,
+            "sourceWeight": 0.15,
+            "keywordBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": []
+          },
+          "aiSummary": "AI-Generated Summary: A cheat sheet for decoding A.I.-driven tech lingo in 2025, including terms like RAG and superintelligence, is provided in this NYTimes Technology article."
+        },
+        {
+          "id": "oy55jp",
+          "title": "Louis V. Gerstner, Who Revived a Faltering IBM in the ’90s, Dies at 83",
+          "url": "https://www.nytimes.com/2025/12/29/business/louis-v-gerstner-dead.html",
+          "source": "NYTimes Technology",
+          "published_at": "2025-12-29T23:20:24.000Z",
+          "ingested_at": "2025-12-30T17:15:32.891Z",
+          "snippet": "Installed as an outsider, he engineered a comeback, shifting the company’s focus from a waning mainframe computer business toward consulting and services.",
+          "relevance": {
+            "scoreTotal": 1.085940860564494,
+            "recencyScore": 0.9359408605644941,
+            "sourceWeight": 0.15,
+            "keywordBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": []
+          },
+          "aiSummary": "AI-Generated Summary:\nLouis V. Gerstner, the former CEO of IBM, passed away at the age of 83. He successfully led the company's transformation from mainframe computers to consulting and services in the 1990s."
+        },
+        {
+          "id": "4j39kk",
+          "title": "New Ecommerce Tools: December 24, 2025",
+          "url": "https://www.practicalecommerce.com/new-ecommerce-tools-december-24-2025",
           "source": "Practical Ecommerce",
-          "published_at": "2025-12-30T20:10:58.000Z",
-          "ingested_at": "2025-12-30T20:58:31.247Z",
-          "snippet": "Generative AI increasingly dominates search results through AI Overviews and AI Mode, rendering traditional optimization ineffective.\nThe post 3 SEO Predictions for 2026 appeared first on Practical Ecommerce.",
-          "aiSummary": "AI is predicted to dominate search results in 2026 with Generative AI and AI Mode, making traditional SEO strategies less effective. This article from Practical Ecommerce discusses three SEO predictions for the upcoming year."
+          "published_at": "2025-12-24T10:00:23.000Z",
+          "ingested_at": "2025-12-30T17:19:14.042Z",
+          "snippet": "This week: AEO, agentic commerce, analytics, cryptocurrencies and alternative payments, AI marketing, fulfillment, fraud prevention, creator-led commerce, and more.\nThe post New Ecommerce Tools: December 24, 2025 appeared first on Practical Ecommerce.",
+          "relevance": {
+            "scoreTotal": 1.0067290176063057,
+            "recencyScore": 0.7567290176063056,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.15000000000000002,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ecommerce",
+              "payment",
+              "fulfillment"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Practical Ecommerce's latest article highlights new ecommerce tools such as AEO, agentic commerce, analytics, cryptocurrencies, AI marketing, fulfillment, fraud prevention, and creator-led commerce."
+        },
+        {
+          "id": "hqr9g4",
+          "title": "New Books: Swiftynomics, UX Skills, More",
+          "url": "https://www.practicalecommerce.com/new-books-swiftynomics-ux-skills-more",
+          "source": "Practical Ecommerce",
+          "published_at": "2025-12-26T10:00:53.000Z",
+          "ingested_at": "2025-12-30T17:19:14.042Z",
+          "snippet": "Our latest rundown of new books for merchants includes titles on supply chain, user experience, transformation, and, yes, Taylor Swift. \nThe post New Books: Swiftynomics, UX Skills, More appeared first on Practical Ecommerce.",
+          "relevance": {
+            "scoreTotal": 0.9712563473795014,
+            "recencyScore": 0.8212563473795014,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ecommerce"
+            ]
+          },
+          "aiSummary": "AI-generated summary:\nPractical Ecommerce's latest article highlights new books for merchants covering supply chain, user experience, transformation, and Taylor Swift."
         },
         {
           "id": "v0vq6o",
@@ -119,7 +275,15 @@
           "url": "https://arstechnica.com/science/2025/12/looking-for-friends-lobsters-may-stumble-into-an-ecological-trap/",
           "source": "Ars Technica",
           "published_at": "2025-12-30T15:00:56.000Z",
-          "ingested_at": "2025-12-30T17:15:32.891Z"
+          "ingested_at": "2025-12-30T17:15:32.891Z",
+          "relevance": {
+            "scoreTotal": 0.9570101556739136,
+            "recencyScore": 0.9570101556739136,
+            "sourceWeight": 0,
+            "keywordBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": []
+          }
         },
         {
           "id": "z8ko5",
@@ -127,37 +291,41 @@
           "url": "https://dfarq.homeip.net/what-happened-to-abit-motherboards/",
           "source": "Hacker News",
           "published_at": "2025-12-30T14:58:18.000Z",
-          "ingested_at": "2025-12-30T17:15:32.891Z"
-        },
-        {
-          "id": "yov8x3",
-          "title": "The Legacy of Undersea Cables",
-          "url": "https://blog.sciencemuseumgroup.org.uk/the-legacy-of-undersea-cables/",
-          "source": "Hacker News",
-          "published_at": "2025-12-30T14:49:38.000Z",
-          "ingested_at": "2025-12-30T17:15:32.891Z"
-        },
-        {
-          "id": "6rp39z",
-          "title": "Hive (YC S14) Is Hiring a Staff Software Engineer (Data Systems)",
-          "url": "https://jobs.ashbyhq.com/hive.co/cb0dc490-0e32-4734-8d91-8b56a31ed497",
-          "source": "Hacker News",
-          "published_at": "2025-12-30T14:31:34.000Z",
-          "ingested_at": "2025-12-30T17:15:32.891Z"
-        },
-        {
-          "id": "oka1ei",
-          "title": "Public Sans – A strong, neutral typeface",
-          "url": "https://public-sans.digital.gov/",
-          "source": "Hacker News",
-          "published_at": "2025-12-30T14:23:11.000Z",
-          "ingested_at": "2025-12-30T17:15:32.891Z"
+          "ingested_at": "2025-12-30T17:15:32.891Z",
+          "relevance": {
+            "scoreTotal": 0.9569511652318367,
+            "recencyScore": 0.9569511652318367,
+            "sourceWeight": 0,
+            "keywordBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": []
+          }
         }
       ]
     },
     "AIEcommerceStrategy": {
       "total": 48,
       "top": [
+        {
+          "id": "337gjj",
+          "title": "The New Billionaires of the A.I. Boom",
+          "url": "https://www.nytimes.com/2025/12/29/technology/new-billionaires-ai-boom.html",
+          "source": "NYTimes Technology",
+          "published_at": "2025-12-29T22:53:31.000Z",
+          "ingested_at": "2025-12-30T12:26:38.325Z",
+          "snippet": "Just like past tech booms, the latest frenzy has produced a group of billionaires — at least on paper — from smaller start-ups.",
+          "relevance": {
+            "scoreTotal": 1.135338635355189,
+            "recencyScore": 0.9353386353551891,
+            "sourceWeight": 0.15,
+            "keywordBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ai"
+            ]
+          },
+          "aiSummary": "AI-generated summary:\nThe AI boom has created a new group of billionaires from smaller start-ups, following the trend of past tech booms."
+        },
         {
           "id": "501hss",
           "title": "The Modern Retail guide to what’s in and what’s out in 2026",
@@ -166,6 +334,16 @@
           "published_at": "2025-12-31T05:00:00.000Z",
           "ingested_at": "2025-12-31T07:41:21.690Z",
           "snippet": "Big workout pants, fiber and thrifting are just some of the trends that will dominate 2026, Modern Retail predicts in its annual In/Out list.",
+          "relevance": {
+            "scoreTotal": 1.1258064519772277,
+            "recencyScore": 0.9758064519772276,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ai"
+            ]
+          },
           "aiSummary": "AI-Generated Summary:\nModern Retail's 2026 In/Out list predicts trends like big workout pants, fiber, and thrifting to dominate the year."
         },
         {
@@ -176,37 +354,75 @@
           "published_at": "2025-12-31T05:00:00.000Z",
           "ingested_at": "2025-12-31T07:41:21.690Z",
           "snippet": "To cut through sports marketing noise, Cheez-It is resurrecting Prince Cheddward and betting on nostalgia.",
-          "aiSummary": "AI-Generated Summary:\nCheez-It is reviving its mascot Prince Cheddward to stand out in the crowded sports marketing landscape, focusing on nostalgia to capture attention."
+          "relevance": {
+            "scoreTotal": 1.0758064519772277,
+            "recencyScore": 0.9758064519772276,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": []
+          },
+          "aiSummary": "AI-Generated Summary:\nCheez-It is reviving its 'Prince Cheddward' mascot to stand out in the crowded sports marketing landscape, focusing on nostalgia to cut through the noise."
         },
         {
-          "id": "fh9fpe",
-          "title": "‘Quitting wasn’t an option’: How tariffs took an emotional and financial toll on founders in 2025",
-          "url": "https://www.modernretail.co/operations/quitting-wasnt-an-option-how-tariffs-took-an-emotional-and-financial-toll-on-founders-in-2025/?utm_campaign=modernretaildis&utm_medium=rss&utm_source=general-rss",
-          "source": "Modern Retail",
-          "published_at": "2025-12-30T05:01:00.000Z",
+          "id": "pd8wix",
+          "title": "The Psychology of AI SERPs and Shopping",
+          "url": "https://www.practicalecommerce.com/the-psychology-of-ai-serps-and-shopping",
+          "source": "Practical Ecommerce",
+          "published_at": "2025-12-29T10:00:37.000Z",
           "ingested_at": "2025-12-30T17:19:14.042Z",
-          "snippet": "Many founders had to completely upend their business models in 2025 due to tariffs, resorting to production delays, raising prices and putting off hiring to save their businesses.",
-          "aiSummary": "AI-Generated Summary:\nIn 2025, founders faced emotional and financial challenges as tariffs forced them to overhaul their business models, leading to production delays, price hikes, and hiring freezes to stay afloat."
+          "snippet": "The rise of \"zero-click\" searches may signal the coming effect of AI shopping on product discovery and decision-making.\nThe post The Psychology of AI SERPs and Shopping appeared first on Practical Ecommerce.",
+          "relevance": {
+            "scoreTotal": 1.0680245672483666,
+            "recencyScore": 0.9180245672483665,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ai"
+            ]
+          },
+          "aiSummary": "AI-driven SERPs and shopping experiences are changing the way consumers discover and make decisions about products, with the rise of \"zero-click\" searches indicating a shift towards more AI-influenced product discovery and decision-making."
         },
         {
-          "id": "6erx5k",
-          "title": "The revenge of the ’90s mall brand",
-          "url": "https://www.modernretail.co/operations/the-revenge-of-the-90s-mall-brand/?utm_campaign=modernretaildis&utm_medium=rss&utm_source=general-rss",
+          "id": "xrh5uj",
+          "title": "The winners and losers of tariffs",
+          "url": "https://www.modernretail.co/operations/the-winners-and-losers-of-tariffs/?utm_campaign=modernretaildis&utm_medium=rss&utm_source=general-rss",
           "source": "Modern Retail",
-          "published_at": "2025-12-30T05:00:00.000Z",
+          "published_at": "2025-12-29T05:00:00.000Z",
           "ingested_at": "2025-12-30T17:19:14.042Z",
-          "snippet": "Brands known for their heyday in the ‘90s, like Gap and Victoria's Secret, have used 2025 to mount turnaround plans. But staging a successful comeback after years of a battered reputation takes more than a few quarters of growth.",
-          "aiSummary": "AI-Generated Summary:\nIn 2025, '90s mall brands like Gap and Victoria's Secret are working on turnaround plans to revive their reputation, but success requires more than just short-term growth."
+          "snippet": "This year, tariffs kicked in at their highest rate since the Great Depression, completely upending the retail industry. In turn, Modern Retail rounded up the biggest winners and losers of all the changes in tariff policy this year.",
+          "relevance": {
+            "scoreTotal": 1.061290322920882,
+            "recencyScore": 0.911290322920882,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ai"
+            ]
+          },
+          "aiSummary": "AI-Generated Summary: In 2025, tariffs had a significant impact on the retail industry, with Modern Retail highlighting the major winners and losers of the changes in tariff policy."
         },
         {
-          "id": "337gjj",
-          "title": "The New Billionaires of the A.I. Boom",
-          "url": "https://www.nytimes.com/2025/12/29/technology/new-billionaires-ai-boom.html",
+          "id": "qc4y7c",
+          "title": "A Wealth Tax Floated in California Has Billionaires Thinking of Leaving",
+          "url": "https://www.nytimes.com/2025/12/26/technology/california-wealth-tax-page-thiel.html",
           "source": "NYTimes Technology",
-          "published_at": "2025-12-29T22:53:31.000Z",
+          "published_at": "2025-12-26T22:23:55.000Z",
           "ingested_at": "2025-12-30T12:26:38.325Z",
-          "snippet": "Just like past tech booms, the latest frenzy has produced a group of billionaires — at least on paper — from smaller start-ups.",
-          "aiSummary": "AI-Generated Summary:\nThe AI boom has created a new group of billionaires from smaller start-ups, following the trend of past tech booms."
+          "snippet": "It’s uncertain whether the proposal will reach the statewide ballot in November, but some billionaires like Peter Thiel and Larry Page may be unwilling to take the risk.",
+          "relevance": {
+            "scoreTotal": 1.0379013593331472,
+            "recencyScore": 0.8379013593331471,
+            "sourceWeight": 0.15,
+            "keywordBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ai"
+            ]
+          },
+          "aiSummary": "AI-Generated Summary: A proposed wealth tax in California has some billionaires, including Peter Thiel and Larry Page, considering leaving the state due to the potential financial risk."
         },
         {
           "id": "61ru0r",
@@ -214,15 +430,17 @@
           "url": "https://manus.im/blog/manus-joins-meta-for-next-era-of-innovation",
           "source": "Hacker News",
           "published_at": "2025-12-29T22:24:22.000Z",
-          "ingested_at": "2025-12-30T12:26:38.325Z"
-        },
-        {
-          "id": "gva55j",
-          "title": "AI is forcing us to write good code",
-          "url": "https://bits.logic.inc/p/ai-is-forcing-us-to-write-good-code",
-          "source": "Hacker News",
-          "published_at": "2025-12-29T19:11:26.000Z",
-          "ingested_at": "2025-12-30T12:26:38.325Z"
+          "ingested_at": "2025-12-30T12:26:38.325Z",
+          "relevance": {
+            "scoreTotal": 0.9846856335628307,
+            "recencyScore": 0.9346856335628306,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ai"
+            ]
+          }
         }
       ]
     },
