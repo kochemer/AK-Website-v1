@@ -1,7 +1,7 @@
 import { promises as fs } from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
-import { getMonthRangeCET } from '../utils/monthCET.js';
+import { getMonthRangeCET } from '../utils/monthCET';
 
 // --- Types ---
 export type Topic =

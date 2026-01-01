@@ -1,6 +1,6 @@
 import { DateTime } from 'luxon';
-import { buildMonthlyDigest } from '../digest/buildMonthlyDigest.js';
-import { getTopicDisplayName, getTopicTotalsDisplayName } from '../utils/topicNames.js';
+import { buildMonthlyDigest } from '../digest/buildMonthlyDigest';
+import { getTopicDisplayName, getTopicTotalsDisplayName } from '../utils/topicNames';
 
 /**
  * Get the current month in Europe/Copenhagen timezone

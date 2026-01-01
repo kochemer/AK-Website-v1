@@ -2,10 +2,10 @@ import { promises as fs } from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { DateTime } from 'luxon';
-import { getMonthRangeCET } from '../utils/monthCET.js';
-import { classifyTopic } from '../classification/classifyTopics.js';
-import type { Article } from '../ingestion/types.js';
-import type { Topic } from '../classification/classifyTopics.js';
+import { getMonthRangeCET } from '../utils/monthCET';
+import { classifyTopic } from '../classification/classifyTopics';
+import type { Article } from '../ingestion/types';
+import type { Topic } from '../classification/classifyTopics';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);

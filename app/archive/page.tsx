@@ -76,7 +76,7 @@ export default async function ArchivePage() {
         </div>
       ) : (
         <p style={{ color: '#666' }}>
-          No digests available yet. Run <code style={{ background: '#f0f0f0', padding: '0.2rem 0.4rem', borderRadius: '3px' }}>scripts/buildMonthlyDigest.ts</code> to create digests.
+          No digests available yet. Run <code style={{ background: '#f0f0f0', padding: '0.2rem 0.4rem', borderRadius: '3px' }}>npx tsx scripts/buildMonthlyDigest.ts</code> to create digests.
         </p>
       )}
     </div>

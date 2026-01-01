@@ -67,7 +67,7 @@ export default async function Home() {
       <div style={{ maxWidth: '800px', margin: '0 auto', padding: '2rem', fontFamily: 'system-ui, sans-serif' }}>
         <h1 style={{ fontSize: '2rem', marginBottom: '1rem' }}>Monthly Digest</h1>
         <p style={{ color: '#666', fontSize: '1.1rem', marginBottom: '1.5rem' }}>
-          Digest not built yet. Run: <code style={{ background: '#f0f0f0', padding: '0.2rem 0.4rem', borderRadius: '3px' }}>node scripts/buildMonthlyDigest.ts</code>
+          Digest not built yet. Run: <code style={{ background: '#f0f0f0', padding: '0.2rem 0.4rem', borderRadius: '3px' }}>npx tsx scripts/buildMonthlyDigest.ts</code>
         </p>
         <BuildDigestButton />
       </div>

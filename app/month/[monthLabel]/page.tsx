@@ -84,7 +84,7 @@ export default async function MonthPage({ params }: { params: { monthLabel: stri
           The digest for {monthLabel} has not been built yet.
         </p>
         <p style={{ color: '#666', fontSize: '1rem', marginTop: '1rem' }}>
-          Run: <code style={{ background: '#f0f0f0', padding: '0.2rem 0.4rem', borderRadius: '3px' }}>node scripts/buildMonthlyDigest.ts --month={monthLabel}</code>
+          Run: <code style={{ background: '#f0f0f0', padding: '0.2rem 0.4rem', borderRadius: '3px' }}>npx tsx scripts/buildMonthlyDigest.ts --month={monthLabel}</code>
         </p>
         <div style={{ marginTop: '2rem' }}>
           <Link href="/archive" style={{ color: '#0066cc', textDecoration: 'none', marginRight: '1rem' }}>

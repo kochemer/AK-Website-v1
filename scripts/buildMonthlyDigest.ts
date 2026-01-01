@@ -2,8 +2,8 @@ import { promises as fs } from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { DateTime } from 'luxon';
-import { buildMonthlyDigest } from '../digest/buildMonthlyDigest.js';
-import { getTopicTotalsDisplayName } from '../utils/topicNames.js';
+import { buildMonthlyDigest } from '../digest/buildMonthlyDigest';
+import { getTopicTotalsDisplayName } from '../utils/topicNames';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
