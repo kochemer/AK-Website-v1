@@ -35,21 +35,21 @@ const SOURCE_WEIGHTS: Record<string, number> = {
  * Case-insensitive matching in title and snippet
  */
 const TOPIC_KEYWORDS: Record<Topic, string[]> = {
-  "Jewellery Industry": [
-    "jewellery", "jewelry", "diamond", "gem", "precious metal", "gold", "silver",
-    "retailer", "jeweller", "hallmark", "assay", "watch", "timepiece"
-  ],
-  "Ecommerce Technology": [
-    "ecommerce", "e-commerce", "online retail", "shopping", "checkout", "payment",
-    "platform", "marketplace", "fulfillment", "logistics", "warehouse", "inventory"
-  ],
-  "AI & Ecommerce Strategy": [
+  "AI_and_Strategy": [
     "artificial intelligence", "ai", "machine learning", "ml", "strategy", "automation",
     "personalization", "recommendation", "chatbot", "analytics", "insights", "data"
   ],
-  "Luxury Consumer Behaviour": [
+  "Ecommerce_Retail_Tech": [
+    "ecommerce", "e-commerce", "online retail", "shopping", "checkout", "payment",
+    "platform", "marketplace", "fulfillment", "logistics", "warehouse", "inventory", "retail tech"
+  ],
+  "Luxury_and_Consumer": [
     "luxury", "premium", "high-end", "consumer", "behavior", "spending", "demand",
     "brand", "heritage", "exclusive", "aspirational", "affluent"
+  ],
+  "Jewellery_Industry": [
+    "jewellery", "jewelry", "diamond", "gem", "precious metal", "gold", "silver",
+    "retailer", "jeweller", "hallmark", "assay", "watch", "timepiece"
   ],
 };
 
@@ -266,17 +266,17 @@ export type WeeklyDigest = {
   totals: {
     total: number;
     byTopic: {
-      Jewellery: number;
-      Ecommerce: number;
       AIStrategy: number;
-      Luxury: number;
+      EcommerceRetail: number;
+      LuxuryConsumer: number;
+      Jewellery: number;
     };
   };
   topics: {
-    JewelleryIndustry: { total: number; top: ArticleWithRelevance[] };
-    EcommerceTechnology: { total: number; top: ArticleWithRelevance[] };
-    AIEcommerceStrategy: { total: number; top: ArticleWithRelevance[] };
-    LuxuryConsumerBehaviour: { total: number; top: ArticleWithRelevance[] };
+    AI_and_Strategy: { total: number; top: ArticleWithRelevance[] };
+    Ecommerce_Retail_Tech: { total: number; top: ArticleWithRelevance[] };
+    Luxury_and_Consumer: { total: number; top: ArticleWithRelevance[] };
+    Jewellery_Industry: { total: number; top: ArticleWithRelevance[] };
   };
 };
 
@@ -336,10 +336,10 @@ export async function buildWeeklyDigest(weekLabel: string): Promise<WeeklyDigest
   
   // Classify articles and group by topic
   const byTopic: Record<Topic, Article[]> = {
-    "Jewellery Industry": [],
-    "Ecommerce Technology": [],
-    "AI & Ecommerce Strategy": [],
-    "Luxury Consumer Behaviour": [],
+    "AI_and_Strategy": [],
+    "Ecommerce_Retail_Tech": [],
+    "Luxury_and_Consumer": [],
+    "Jewellery_Industry": [],
   };
   
   for (const article of eligibleArticles) {
@@ -356,30 +356,30 @@ export async function buildWeeklyDigest(weekLabel: string): Promise<WeeklyDigest
   const totals = {
     total: eligibleArticles.length,
     byTopic: {
-      Jewellery: byTopic["Jewellery Industry"].length,
-      Ecommerce: byTopic["Ecommerce Technology"].length,
-      AIStrategy: byTopic["AI & Ecommerce Strategy"].length,
-      Luxury: byTopic["Luxury Consumer Behaviour"].length,
+      AIStrategy: byTopic["AI_and_Strategy"].length,
+      EcommerceRetail: byTopic["Ecommerce_Retail_Tech"].length,
+      LuxuryConsumer: byTopic["Luxury_and_Consumer"].length,
+      Jewellery: byTopic["Jewellery_Industry"].length,
     },
   };
   
   // Build topics structure with top N articles (with relevance scores)
   const topics = {
-    JewelleryIndustry: {
-      total: byTopic["Jewellery Industry"].length,
-      top: selectTopN(byTopic["Jewellery Industry"], TOP_N, "Jewellery Industry", weekStart, weekEnd),
+    AI_and_Strategy: {
+      total: byTopic["AI_and_Strategy"].length,
+      top: selectTopN(byTopic["AI_and_Strategy"], TOP_N, "AI_and_Strategy", weekStart, weekEnd),
     },
-    EcommerceTechnology: {
-      total: byTopic["Ecommerce Technology"].length,
-      top: selectTopN(byTopic["Ecommerce Technology"], TOP_N, "Ecommerce Technology", weekStart, weekEnd),
+    Ecommerce_Retail_Tech: {
+      total: byTopic["Ecommerce_Retail_Tech"].length,
+      top: selectTopN(byTopic["Ecommerce_Retail_Tech"], TOP_N, "Ecommerce_Retail_Tech", weekStart, weekEnd),
     },
-    AIEcommerceStrategy: {
-      total: byTopic["AI & Ecommerce Strategy"].length,
-      top: selectTopN(byTopic["AI & Ecommerce Strategy"], TOP_N, "AI & Ecommerce Strategy", weekStart, weekEnd),
+    Luxury_and_Consumer: {
+      total: byTopic["Luxury_and_Consumer"].length,
+      top: selectTopN(byTopic["Luxury_and_Consumer"], TOP_N, "Luxury_and_Consumer", weekStart, weekEnd),
     },
-    LuxuryConsumerBehaviour: {
-      total: byTopic["Luxury Consumer Behaviour"].length,
-      top: selectTopN(byTopic["Luxury Consumer Behaviour"], TOP_N, "Luxury Consumer Behaviour", weekStart, weekEnd),
+    Jewellery_Industry: {
+      total: byTopic["Jewellery_Industry"].length,
+      top: selectTopN(byTopic["Jewellery_Industry"], TOP_N, "Jewellery_Industry", weekStart, weekEnd),
     },
   };
   

@@ -4,35 +4,35 @@
  */
 
 export type TopicKey = 
-  | 'JewelleryIndustry'
-  | 'EcommerceTechnology'
-  | 'AIEcommerceStrategy'
-  | 'LuxuryConsumerBehaviour';
+  | 'AI_and_Strategy'
+  | 'Ecommerce_Retail_Tech'
+  | 'Luxury_and_Consumer'
+  | 'Jewellery_Industry';
 
 export type TopicTotalsKey = 
-  | 'Jewellery'
-  | 'Ecommerce'
   | 'AIStrategy'
-  | 'Luxury';
+  | 'EcommerceRetail'
+  | 'LuxuryConsumer'
+  | 'Jewellery';
 
 /**
  * Mapping from topic keys (used in digest.topics) to display names
  */
 export const TOPIC_DISPLAY_NAMES: Record<TopicKey, string> = {
-  JewelleryIndustry: 'Jewellery Industry',
-  EcommerceTechnology: 'Ecommerce Technology',
-  AIEcommerceStrategy: 'AI & Ecommerce Strategy',
-  LuxuryConsumerBehaviour: 'Luxury Consumer Behaviour',
+  AI_and_Strategy: 'AI & Strategy',
+  Ecommerce_Retail_Tech: 'Ecommerce & Retail Tech',
+  Luxury_and_Consumer: 'Luxury & Consumer',
+  Jewellery_Industry: 'Jewellery Industry',
 };
 
 /**
  * Mapping from totals keys (used in digest.totals.byTopic) to display names
  */
 export const TOPIC_TOTALS_DISPLAY_NAMES: Record<TopicTotalsKey, string> = {
+  AIStrategy: 'AI & Strategy',
+  EcommerceRetail: 'Ecommerce & Retail Tech',
+  LuxuryConsumer: 'Luxury & Consumer',
   Jewellery: 'Jewellery Industry',
-  Ecommerce: 'Ecommerce Technology',
-  AIStrategy: 'AI & Ecommerce Strategy',
-  Luxury: 'Luxury Consumer Behaviour',
 };
 
 /**

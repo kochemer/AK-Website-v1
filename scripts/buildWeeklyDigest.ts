@@ -236,10 +236,10 @@ async function main() {
     console.log(`Settings: max_tokens=${MAX_OUTPUT_TOKENS}, temperature=${TEMPERATURE}, max_snippet_length=${MAX_SNIPPET_LENGTH}\n`);
     
     const allTopArticles = [
-      ...digest.topics.JewelleryIndustry.top.map(a => ({ article: a, topic: 'Jewellery Industry' })),
-      ...digest.topics.EcommerceTechnology.top.map(a => ({ article: a, topic: 'Ecommerce Technology' })),
-      ...digest.topics.AIEcommerceStrategy.top.map(a => ({ article: a, topic: 'AI & Ecommerce Strategy' })),
-      ...digest.topics.LuxuryConsumerBehaviour.top.map(a => ({ article: a, topic: 'Luxury Consumer Behaviour' })),
+      ...digest.topics.AI_and_Strategy.top.map(a => ({ article: a, topic: 'AI & Strategy' })),
+      ...digest.topics.Ecommerce_Retail_Tech.top.map(a => ({ article: a, topic: 'Ecommerce & Retail Tech' })),
+      ...digest.topics.Luxury_and_Consumer.top.map(a => ({ article: a, topic: 'Luxury & Consumer' })),
+      ...digest.topics.Jewellery_Industry.top.map(a => ({ article: a, topic: 'Jewellery Industry' })),
     ];
 
     // Statistics tracking
@@ -329,10 +329,10 @@ async function main() {
     console.log(`✓ Digest written to: ${outputPath}`);
     console.log(`\nSummary:`);
     console.log(`  Total articles: ${digest.totals.total}`);
-    console.log(`  ${getTopicTotalsDisplayName('Jewellery')}: ${digest.totals.byTopic.Jewellery}`);
-    console.log(`  ${getTopicTotalsDisplayName('Ecommerce')}: ${digest.totals.byTopic.Ecommerce}`);
     console.log(`  ${getTopicTotalsDisplayName('AIStrategy')}: ${digest.totals.byTopic.AIStrategy}`);
-    console.log(`  ${getTopicTotalsDisplayName('Luxury')}: ${digest.totals.byTopic.Luxury}`);
+    console.log(`  ${getTopicTotalsDisplayName('EcommerceRetail')}: ${digest.totals.byTopic.EcommerceRetail}`);
+    console.log(`  ${getTopicTotalsDisplayName('LuxuryConsumer')}: ${digest.totals.byTopic.LuxuryConsumer}`);
+    console.log(`  ${getTopicTotalsDisplayName('Jewellery')}: ${digest.totals.byTopic.Jewellery}`);
     
   } catch (err) {
     console.error('Error building digest:', err);

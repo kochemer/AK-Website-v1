@@ -3,23 +3,156 @@
   "tz": "Europe/Copenhagen",
   "startISO": "2025-12-28T23:00:00.000Z",
   "endISO": "2026-01-04T22:59:59.999Z",
-  "builtAtISO": "2026-01-01T23:33:28.454+01:00",
-  "builtAtLocal": "2026-01-01 23:33:28",
+  "builtAtISO": "2026-01-02T12:13:27.968+01:00",
+  "builtAtLocal": "2026-01-02 12:13:27",
   "totals": {
     "total": 56,
     "byTopic": {
-      "Jewellery": 0,
-      "Ecommerce": 44,
       "AIStrategy": 12,
-      "Luxury": 0
+      "EcommerceRetail": 44,
+      "LuxuryConsumer": 0,
+      "Jewellery": 0
     }
   },
   "topics": {
-    "JewelleryIndustry": {
-      "total": 0,
-      "top": []
+    "AI_and_Strategy": {
+      "total": 12,
+      "top": [
+        {
+          "id": "501hss",
+          "title": "The Modern Retail guide to what’s in and what’s out in 2026",
+          "url": "https://www.modernretail.co/marketing/the-modern-retail-guide-to-whats-in-and-whats-out-in-2026/?utm_campaign=modernretaildis&utm_medium=rss&utm_source=general-rss",
+          "source": "Modern Retail",
+          "published_at": "2025-12-31T05:00:00.000Z",
+          "ingested_at": "2025-12-31T07:41:21.690Z",
+          "snippet": "Big workout pants, fiber and thrifting are just some of the trends that will dominate 2026, Modern Retail predicts in its annual In/Out list.",
+          "relevance": {
+            "scoreTotal": 0.471428571960034,
+            "recencyScore": 0.321428571960034,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ai"
+            ]
+          },
+          "aiSummary": "AI-Generated Summary:\nModern Retail's 2026 In/Out list predicts trends like big workout pants, fiber, and thrifting to dominate the year ahead."
+        },
+        {
+          "id": "pguvn9",
+          "title": "Cheez-It bets on ‘Prince Cheddward’ mascot in an overcrowded sports marketing arena",
+          "url": "https://www.modernretail.co/marketing/cheez-it-bets-on-prince-cheddward-mascot-in-an-overcrowded-sports-marketing-arena/?utm_campaign=modernretaildis&utm_medium=rss&utm_source=general-rss",
+          "source": "Modern Retail",
+          "published_at": "2025-12-31T05:00:00.000Z",
+          "ingested_at": "2025-12-31T07:41:21.690Z",
+          "snippet": "To cut through sports marketing noise, Cheez-It is resurrecting Prince Cheddward and betting on nostalgia.",
+          "relevance": {
+            "scoreTotal": 0.421428571960034,
+            "recencyScore": 0.321428571960034,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": []
+          },
+          "aiSummary": "AI-Generated Summary:\nCheez-It is reviving its 'Prince Cheddward' mascot to stand out in the crowded sports marketing landscape by leveraging nostalgia."
+        },
+        {
+          "id": "337gjj",
+          "title": "The New Billionaires of the A.I. Boom",
+          "url": "https://www.nytimes.com/2025/12/29/technology/new-billionaires-ai-boom.html",
+          "source": "NYTimes Technology",
+          "published_at": "2025-12-29T22:53:31.000Z",
+          "ingested_at": "2025-12-30T12:26:38.325Z",
+          "snippet": "Just like past tech booms, the latest frenzy has produced a group of billionaires — at least on paper — from smaller start-ups.",
+          "relevance": {
+            "scoreTotal": 0.3422139552615971,
+            "recencyScore": 0.14221395526159714,
+            "sourceWeight": 0.15,
+            "keywordBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ai"
+            ]
+          },
+          "aiSummary": "AI-generated summary:\nThe AI boom has created a new group of billionaires from smaller start-ups, following the pattern of past tech booms, as reported by NYTimes Technology on December 29, 2025."
+        },
+        {
+          "id": "6erx5k",
+          "title": "The revenge of the ’90s mall brand",
+          "url": "https://www.modernretail.co/operations/the-revenge-of-the-90s-mall-brand/?utm_campaign=modernretaildis&utm_medium=rss&utm_source=general-rss",
+          "source": "Modern Retail",
+          "published_at": "2025-12-30T05:00:00.000Z",
+          "ingested_at": "2025-12-30T17:19:14.042Z",
+          "snippet": "Brands known for their heyday in the ‘90s, like Gap and Victoria's Secret, have used 2025 to mount turnaround plans. But staging a successful comeback after years of a battered reputation takes more than a few quarters of growth.",
+          "relevance": {
+            "scoreTotal": 0.27857142886668557,
+            "recencyScore": 0.17857142886668556,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": []
+          },
+          "aiSummary": "AI-Generated Summary:\nIn 2025, '90s mall brands such as Gap and Victoria's Secret are working on turnaround plans to revive their reputation, but success requires more than just short-term growth."
+        },
+        {
+          "id": "pd8wix",
+          "title": "The Psychology of AI SERPs and Shopping",
+          "url": "https://www.practicalecommerce.com/the-psychology-of-ai-serps-and-shopping",
+          "source": "Practical Ecommerce",
+          "published_at": "2025-12-29T10:00:37.000Z",
+          "ingested_at": "2025-12-30T17:19:14.042Z",
+          "snippet": "The rise of \"zero-click\" searches may signal the coming effect of AI shopping on product discovery and decision-making.\nThe post The Psychology of AI SERPs and Shopping appeared first on Practical Ecommerce.",
+          "relevance": {
+            "scoreTotal": 0.2155373678332298,
+            "recencyScore": 0.06553736783322978,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ai"
+            ]
+          },
+          "aiSummary": "AI-driven \"zero-click\" searches are changing the landscape of product discovery and decision-making, hinting at the impact of AI on shopping behavior."
+        },
+        {
+          "id": "61ru0r",
+          "title": "ManusAI Joins Meta",
+          "url": "https://manus.im/blog/manus-joins-meta-for-next-era-of-innovation",
+          "source": "Hacker News",
+          "published_at": "2025-12-29T22:24:22.000Z",
+          "ingested_at": "2025-12-30T12:26:38.325Z",
+          "relevance": {
+            "scoreTotal": 0.18932209017745055,
+            "recencyScore": 0.13932209017745054,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ai"
+            ]
+          }
+        },
+        {
+          "id": "gva55j",
+          "title": "AI is forcing us to write good code",
+          "url": "https://bits.logic.inc/p/ai-is-forcing-us-to-write-good-code",
+          "source": "Hacker News",
+          "published_at": "2025-12-29T19:11:26.000Z",
+          "ingested_at": "2025-12-30T12:26:38.325Z",
+          "relevance": {
+            "scoreTotal": 0.17018187850559174,
+            "recencyScore": 0.12018187850559173,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ai"
+            ]
+          }
+        }
+      ]
     },
-    "EcommerceTechnology": {
+    "Ecommerce_Retail_Tech": {
       "total": 44,
       "top": [
         {
@@ -38,7 +171,7 @@
             "penalty": 0,
             "matchedKeywords": []
           },
-          "aiSummary": "AI-Generated Summary:\n\"The Wirecutter Show: Tips for Using A.I. Smartly With Kevin Roose\" from NYTimes Technology discusses the benefits of chatbots and offers advice on how to utilize them effectively in ecommerce technology."
+          "aiSummary": "AI-Generated Summary:\n\"The Wirecutter Show: Tips for Using A.I. Smartly With Kevin Roose\" from NYTimes Technology on 2025-12-30 discusses the benefits of chatbots and offers advice on how to effectively utilize them."
         },
         {
           "id": "4agilu",
@@ -56,7 +189,7 @@
             "penalty": 0,
             "matchedKeywords": []
           },
-          "aiSummary": "AI-Generated Summary:\nA cheat sheet for understanding A.I.-driven tech lingo in 2025, including terms like RAG and superintelligence, is provided in this NYTimes Technology article."
+          "aiSummary": "AI-Generated Summary:\nA cheat sheet for understanding A.I.-driven tech terms in 2025, from RAG to superintelligence, is provided in this NYTimes Technology article."
         },
         {
           "id": "yg52at",
@@ -74,7 +207,7 @@
             "penalty": 0.2,
             "matchedKeywords": []
           },
-          "aiSummary": "AI-Generated Summary:\nCustoms agents can search electronic devices of travelers at U.S. borders, prompting the need for data protection measures while traveling."
+          "aiSummary": "AI-Generated Summary:\nCustoms agents have extensive power to search travelers' electronic devices at U.S. borders, prompting the need for safeguarding data during travel."
         },
         {
           "id": "v0vq6o",
@@ -142,144 +275,11 @@
         }
       ]
     },
-    "AIEcommerceStrategy": {
-      "total": 12,
-      "top": [
-        {
-          "id": "501hss",
-          "title": "The Modern Retail guide to what’s in and what’s out in 2026",
-          "url": "https://www.modernretail.co/marketing/the-modern-retail-guide-to-whats-in-and-whats-out-in-2026/?utm_campaign=modernretaildis&utm_medium=rss&utm_source=general-rss",
-          "source": "Modern Retail",
-          "published_at": "2025-12-31T05:00:00.000Z",
-          "ingested_at": "2025-12-31T07:41:21.690Z",
-          "snippet": "Big workout pants, fiber and thrifting are just some of the trends that will dominate 2026, Modern Retail predicts in its annual In/Out list.",
-          "relevance": {
-            "scoreTotal": 0.471428571960034,
-            "recencyScore": 0.321428571960034,
-            "sourceWeight": 0.1,
-            "keywordBoost": 0.05,
-            "penalty": 0,
-            "matchedKeywords": [
-              "ai"
-            ]
-          },
-          "aiSummary": "AI-Generated Summary:\nModern Retail's 2026 In/Out list predicts trends like big workout pants, fiber, and thrifting to dominate the year."
-        },
-        {
-          "id": "pguvn9",
-          "title": "Cheez-It bets on ‘Prince Cheddward’ mascot in an overcrowded sports marketing arena",
-          "url": "https://www.modernretail.co/marketing/cheez-it-bets-on-prince-cheddward-mascot-in-an-overcrowded-sports-marketing-arena/?utm_campaign=modernretaildis&utm_medium=rss&utm_source=general-rss",
-          "source": "Modern Retail",
-          "published_at": "2025-12-31T05:00:00.000Z",
-          "ingested_at": "2025-12-31T07:41:21.690Z",
-          "snippet": "To cut through sports marketing noise, Cheez-It is resurrecting Prince Cheddward and betting on nostalgia.",
-          "relevance": {
-            "scoreTotal": 0.421428571960034,
-            "recencyScore": 0.321428571960034,
-            "sourceWeight": 0.1,
-            "keywordBoost": 0,
-            "penalty": 0,
-            "matchedKeywords": []
-          },
-          "aiSummary": "AI-Generated Summary:\nCheez-It is reviving its 'Prince Cheddward' mascot to stand out in the crowded sports marketing landscape, focusing on nostalgia to cut through the noise."
-        },
-        {
-          "id": "337gjj",
-          "title": "The New Billionaires of the A.I. Boom",
-          "url": "https://www.nytimes.com/2025/12/29/technology/new-billionaires-ai-boom.html",
-          "source": "NYTimes Technology",
-          "published_at": "2025-12-29T22:53:31.000Z",
-          "ingested_at": "2025-12-30T12:26:38.325Z",
-          "snippet": "Just like past tech booms, the latest frenzy has produced a group of billionaires — at least on paper — from smaller start-ups.",
-          "relevance": {
-            "scoreTotal": 0.3422139552615971,
-            "recencyScore": 0.14221395526159714,
-            "sourceWeight": 0.15,
-            "keywordBoost": 0.05,
-            "penalty": 0,
-            "matchedKeywords": [
-              "ai"
-            ]
-          },
-          "aiSummary": "AI-generated summary:\nThe AI boom has created a new group of billionaires from smaller start-ups, following the trend of past tech booms."
-        },
-        {
-          "id": "6erx5k",
-          "title": "The revenge of the ’90s mall brand",
-          "url": "https://www.modernretail.co/operations/the-revenge-of-the-90s-mall-brand/?utm_campaign=modernretaildis&utm_medium=rss&utm_source=general-rss",
-          "source": "Modern Retail",
-          "published_at": "2025-12-30T05:00:00.000Z",
-          "ingested_at": "2025-12-30T17:19:14.042Z",
-          "snippet": "Brands known for their heyday in the ‘90s, like Gap and Victoria's Secret, have used 2025 to mount turnaround plans. But staging a successful comeback after years of a battered reputation takes more than a few quarters of growth.",
-          "relevance": {
-            "scoreTotal": 0.27857142886668557,
-            "recencyScore": 0.17857142886668556,
-            "sourceWeight": 0.1,
-            "keywordBoost": 0,
-            "penalty": 0,
-            "matchedKeywords": []
-          },
-          "aiSummary": "AI-Generated Summary:\nIn 2025, '90s mall brands like Gap and Victoria's Secret are attempting comebacks with turnaround plans, but success requires more than short-term growth."
-        },
-        {
-          "id": "pd8wix",
-          "title": "The Psychology of AI SERPs and Shopping",
-          "url": "https://www.practicalecommerce.com/the-psychology-of-ai-serps-and-shopping",
-          "source": "Practical Ecommerce",
-          "published_at": "2025-12-29T10:00:37.000Z",
-          "ingested_at": "2025-12-30T17:19:14.042Z",
-          "snippet": "The rise of \"zero-click\" searches may signal the coming effect of AI shopping on product discovery and decision-making.\nThe post The Psychology of AI SERPs and Shopping appeared first on Practical Ecommerce.",
-          "relevance": {
-            "scoreTotal": 0.2155373678332298,
-            "recencyScore": 0.06553736783322978,
-            "sourceWeight": 0.1,
-            "keywordBoost": 0.05,
-            "penalty": 0,
-            "matchedKeywords": [
-              "ai"
-            ]
-          },
-          "aiSummary": "AI-driven SERPs are changing the landscape of shopping by influencing product discovery and decision-making, particularly through \"zero-click\" searches."
-        },
-        {
-          "id": "61ru0r",
-          "title": "ManusAI Joins Meta",
-          "url": "https://manus.im/blog/manus-joins-meta-for-next-era-of-innovation",
-          "source": "Hacker News",
-          "published_at": "2025-12-29T22:24:22.000Z",
-          "ingested_at": "2025-12-30T12:26:38.325Z",
-          "relevance": {
-            "scoreTotal": 0.18932209017745055,
-            "recencyScore": 0.13932209017745054,
-            "sourceWeight": 0,
-            "keywordBoost": 0.05,
-            "penalty": 0,
-            "matchedKeywords": [
-              "ai"
-            ]
-          }
-        },
-        {
-          "id": "gva55j",
-          "title": "AI is forcing us to write good code",
-          "url": "https://bits.logic.inc/p/ai-is-forcing-us-to-write-good-code",
-          "source": "Hacker News",
-          "published_at": "2025-12-29T19:11:26.000Z",
-          "ingested_at": "2025-12-30T12:26:38.325Z",
-          "relevance": {
-            "scoreTotal": 0.17018187850559174,
-            "recencyScore": 0.12018187850559173,
-            "sourceWeight": 0,
-            "keywordBoost": 0.05,
-            "penalty": 0,
-            "matchedKeywords": [
-              "ai"
-            ]
-          }
-        }
-      ]
+    "Luxury_and_Consumer": {
+      "total": 0,
+      "top": []
     },
-    "LuxuryConsumerBehaviour": {
+    "Jewellery_Industry": {
       "total": 0,
       "top": []
     }

@@ -79,16 +79,16 @@ export default async function HealthPage() {
             <strong>Total Articles:</strong> {digest.totals.total}
           </div>
           <div>
-            <strong>{getTopicTotalsDisplayName('Jewellery')}:</strong> {digest.totals.byTopic.Jewellery}
-          </div>
-          <div>
-            <strong>{getTopicTotalsDisplayName('Ecommerce')}:</strong> {digest.totals.byTopic.Ecommerce}
-          </div>
-          <div>
             <strong>{getTopicTotalsDisplayName('AIStrategy')}:</strong> {digest.totals.byTopic.AIStrategy}
           </div>
           <div>
-            <strong>{getTopicTotalsDisplayName('Luxury')}:</strong> {digest.totals.byTopic.Luxury}
+            <strong>{getTopicTotalsDisplayName('EcommerceRetail')}:</strong> {digest.totals.byTopic.EcommerceRetail}
+          </div>
+          <div>
+            <strong>{getTopicTotalsDisplayName('LuxuryConsumer')}:</strong> {digest.totals.byTopic.LuxuryConsumer}
+          </div>
+          <div>
+            <strong>{getTopicTotalsDisplayName('Jewellery')}:</strong> {digest.totals.byTopic.Jewellery}
           </div>
         </div>
       </div>

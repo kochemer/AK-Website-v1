@@ -5,10 +5,10 @@ import { getWeekRangeCET } from '../utils/weekCET';
 
 // --- Types ---
 export type Topic =
-  | "Jewellery Industry"
-  | "Ecommerce Technology"
-  | "AI & Ecommerce Strategy"
-  | "Luxury Consumer Behaviour";
+  | "AI_and_Strategy"
+  | "Ecommerce_Retail_Tech"
+  | "Luxury_and_Consumer"
+  | "Jewellery_Industry";
 
 export type Article = {
   id: string;
@@ -22,11 +22,12 @@ export type Article = {
 // --- Topic heuristics ---
 
 // Priority order for assignment if multiple match
+// AI_and_Strategy > Ecommerce_Retail_Tech > Luxury_and_Consumer > Jewellery_Industry
 const TOPIC_PRIORITY: Topic[] = [
-  "Jewellery Industry",
-  "AI & Ecommerce Strategy",
-  "Luxury Consumer Behaviour",
-  "Ecommerce Technology"
+  "AI_and_Strategy",
+  "Ecommerce_Retail_Tech",
+  "Luxury_and_Consumer",
+  "Jewellery_Industry"
 ];
 
 // Heuristic keyword lists (lowercase all for case-insensitive match)
@@ -73,40 +74,51 @@ function matchesAnyKeyword(text: string, keywords: string[]): boolean {
 }
 
 export function classifyTopic(article: { title: string; url: string; source: string }): Topic {
-  // Rule: Source-based override for pure jewellery media
+  const titleAndSource = `${article.title} ${article.source}`.toLowerCase();
+  
+  // Collect all matching topics (in priority order)
+  const matches: Topic[] = [];
+  
+  // Check AI & Strategy first (highest priority)
+  if (matchesAnyKeyword(titleAndSource, AI_ECOMMERCE_KEYWORDS)) {
+    matches.push("AI_and_Strategy");
+  }
+  
+  // Check Ecommerce & Retail Tech
+  if (matchesAnyKeyword(titleAndSource, ECOMMERCE_KEYWORDS)) {
+    matches.push("Ecommerce_Retail_Tech");
+  }
+  
+  // Check Luxury & Consumer
+  if (matchesAnyKeyword(titleAndSource, LUXURY_BEHAVIOUR_KEYWORDS)) {
+    matches.push("Luxury_and_Consumer");
+  }
+  
+  // Check Jewellery Industry (lowest priority, but source override takes precedence)
   if (JEWELLERY_SOURCES.some(s => 
     article.source && article.source.toLowerCase().includes(s.toLowerCase())
   )) {
-    return "Jewellery Industry";
+    return "Jewellery_Industry";
   }
-
-  // Heuristic matching by keywords in title first (then fallback to source)
-  const titleAndSource = `${article.title} ${article.source}`.toLowerCase();
-
   if (matchesAnyKeyword(titleAndSource, JEWELLERY_KEYWORDS)) {
-    return "Jewellery Industry";
+    matches.push("Jewellery_Industry");
   }
-
-  if (matchesAnyKeyword(titleAndSource, AI_ECOMMERCE_KEYWORDS)) {
-    return "AI & Ecommerce Strategy";
+  
+  // Return first match in priority order (AI_and_Strategy > Ecommerce_Retail_Tech > Luxury_and_Consumer > Jewellery_Industry)
+  for (const priorityTopic of TOPIC_PRIORITY) {
+    if (matches.includes(priorityTopic)) {
+      return priorityTopic;
+    }
   }
-
-  if (matchesAnyKeyword(titleAndSource, LUXURY_BEHAVIOUR_KEYWORDS)) {
-    return "Luxury Consumer Behaviour";
-  }
-
-  if (matchesAnyKeyword(titleAndSource, ECOMMERCE_KEYWORDS)) {
-    return "Ecommerce Technology";
-  }
-
-  // Broad fallback: if looks consumer-ish use "Luxury Consumer Behaviour"
+  
+  // Broad fallback: if looks consumer-ish use "Luxury_and_Consumer"
   const fallbackConsumerish = ["consumer", "shopper", "customer", "retail", "buy", "seller", "trend"];
   if (matchesAnyKeyword(titleAndSource, fallbackConsumerish)) {
-    return "Luxury Consumer Behaviour";
+    return "Luxury_and_Consumer";
   }
-
-  // Default fallback: "Ecommerce Technology"
-  return "Ecommerce Technology";
+  
+  // Default fallback: "Ecommerce_Retail_Tech"
+  return "Ecommerce_Retail_Tech";
 }
 
 // --- CET week filtering and classification ---
@@ -133,10 +145,10 @@ export async function classifyCurrentWeekArticles(
   } catch (err) {
     console.error('Failed to read articles.json:', (err as Error).message);
     return { weekLabel: weekLabel, byTopic: {
-      "Jewellery Industry": [],
-      "Ecommerce Technology": [],
-      "AI & Ecommerce Strategy": [],
-      "Luxury Consumer Behaviour": [],
+      "AI_and_Strategy": [],
+      "Ecommerce_Retail_Tech": [],
+      "Luxury_and_Consumer": [],
+      "Jewellery_Industry": [],
     }};
   }
 
@@ -154,10 +166,10 @@ export async function classifyCurrentWeekArticles(
 
   // Group articles by topic
   const byTopic: Record<Topic, Article[]> = {
-    "Jewellery Industry": [],
-    "Ecommerce Technology": [],
-    "AI & Ecommerce Strategy": [],
-    "Luxury Consumer Behaviour": [],
+    "AI_and_Strategy": [],
+    "Ecommerce_Retail_Tech": [],
+    "Luxury_and_Consumer": [],
+    "Jewellery_Industry": [],
   };
 
   for (const article of eligibleArticles) {

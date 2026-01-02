@@ -25,17 +25,17 @@ type WeeklyDigest = {
   totals: {
     total: number;
     byTopic: {
-      Jewellery: number;
-      Ecommerce: number;
       AIStrategy: number;
-      Luxury: number;
+      EcommerceRetail: number;
+      LuxuryConsumer: number;
+      Jewellery: number;
     };
   };
   topics: {
-    JewelleryIndustry: { total: number; top: Article[] };
-    EcommerceTechnology: { total: number; top: Article[] };
-    AIEcommerceStrategy: { total: number; top: Article[] };
-    LuxuryConsumerBehaviour: { total: number; top: Article[] };
+    AI_and_Strategy: { total: number; top: Article[] };
+    Ecommerce_Retail_Tech: { total: number; top: Article[] };
+    Luxury_and_Consumer: { total: number; top: Article[] };
+    Jewellery_Industry: { total: number; top: Article[] };
   };
 };
 
@@ -111,37 +111,37 @@ export default async function Home() {
 
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '2rem', marginBottom: '3rem' }}>
         <div style={{ background: '#f9f9f9', padding: '1rem', borderRadius: '6px' }}>
-          <strong>{getTopicTotalsDisplayName('Jewellery')}:</strong> {digest.totals.byTopic.Jewellery}
-        </div>
-        <div style={{ background: '#f9f9f9', padding: '1rem', borderRadius: '6px' }}>
-          <strong>{getTopicTotalsDisplayName('Ecommerce')}:</strong> {digest.totals.byTopic.Ecommerce}
-        </div>
-        <div style={{ background: '#f9f9f9', padding: '1rem', borderRadius: '6px' }}>
           <strong>{getTopicTotalsDisplayName('AIStrategy')}:</strong> {digest.totals.byTopic.AIStrategy}
         </div>
         <div style={{ background: '#f9f9f9', padding: '1rem', borderRadius: '6px' }}>
-          <strong>{getTopicTotalsDisplayName('Luxury')}:</strong> {digest.totals.byTopic.Luxury}
+          <strong>{getTopicTotalsDisplayName('EcommerceRetail')}:</strong> {digest.totals.byTopic.EcommerceRetail}
+        </div>
+        <div style={{ background: '#f9f9f9', padding: '1rem', borderRadius: '6px' }}>
+          <strong>{getTopicTotalsDisplayName('LuxuryConsumer')}:</strong> {digest.totals.byTopic.LuxuryConsumer}
+        </div>
+        <div style={{ background: '#f9f9f9', padding: '1rem', borderRadius: '6px' }}>
+          <strong>{getTopicTotalsDisplayName('Jewellery')}:</strong> {digest.totals.byTopic.Jewellery}
         </div>
       </div>
 
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '3rem' }}>
-        {/* Jewellery Industry */}
+        {/* AI & Strategy */}
         <section>
           <h2 style={{ fontSize: '1.5rem', marginBottom: '1rem', borderBottom: '2px solid #333', paddingBottom: '0.5rem' }}>
-            {getTopicDisplayName('JewelleryIndustry')} ({digest.topics.JewelleryIndustry.total})
+            {getTopicDisplayName('AI_and_Strategy')} ({digest.topics.AI_and_Strategy.total})
           </h2>
-          {digest.topics.JewelleryIndustry.total > 0 ? (
+          {digest.topics.AI_and_Strategy.total > 0 ? (
             <p style={{ fontSize: '0.9rem', color: '#666', marginBottom: '1rem' }}>
-              Total {digest.topics.JewelleryIndustry.total} articles this week. Showing top 7 by relevance.
+              Total {digest.topics.AI_and_Strategy.total} articles this week. Showing top 7 by relevance.
             </p>
           ) : (
             <p style={{ fontSize: '0.9rem', color: '#999', marginBottom: '1rem' }}>
               No articles for this topic in this week.
             </p>
           )}
-          {digest.topics.JewelleryIndustry.top.length > 0 ? (
+          {digest.topics.AI_and_Strategy.top.length > 0 ? (
             <ul style={{ listStyle: 'none', padding: 0 }}>
-              {digest.topics.JewelleryIndustry.top.map((article) => (
+              {digest.topics.AI_and_Strategy.top.map((article) => (
                 <li key={article.id} style={{ marginBottom: '1.5rem' }}>
                   <a
                     href={article.url}
@@ -167,23 +167,23 @@ export default async function Home() {
           )}
         </section>
 
-        {/* Ecommerce Technology */}
+        {/* Ecommerce & Retail Tech */}
         <section>
           <h2 style={{ fontSize: '1.5rem', marginBottom: '1rem', borderBottom: '2px solid #333', paddingBottom: '0.5rem' }}>
-            {getTopicDisplayName('EcommerceTechnology')} ({digest.topics.EcommerceTechnology.total})
+            {getTopicDisplayName('Ecommerce_Retail_Tech')} ({digest.topics.Ecommerce_Retail_Tech.total})
           </h2>
-          {digest.topics.EcommerceTechnology.total > 0 ? (
+          {digest.topics.Ecommerce_Retail_Tech.total > 0 ? (
             <p style={{ fontSize: '0.9rem', color: '#666', marginBottom: '1rem' }}>
-              Total {digest.topics.EcommerceTechnology.total} articles this week. Showing top 7 by recency.
+              Total {digest.topics.Ecommerce_Retail_Tech.total} articles this week. Showing top 7 by recency.
             </p>
           ) : (
             <p style={{ fontSize: '0.9rem', color: '#999', marginBottom: '1rem' }}>
               No articles for this topic in this week.
             </p>
           )}
-          {digest.topics.EcommerceTechnology.top.length > 0 ? (
+          {digest.topics.Ecommerce_Retail_Tech.top.length > 0 ? (
             <ul style={{ listStyle: 'none', padding: 0 }}>
-              {digest.topics.EcommerceTechnology.top.map((article) => (
+              {digest.topics.Ecommerce_Retail_Tech.top.map((article) => (
                 <li key={article.id} style={{ marginBottom: '1.5rem' }}>
                   <a
                     href={article.url}
@@ -209,23 +209,23 @@ export default async function Home() {
           )}
         </section>
 
-        {/* AI & Ecommerce Strategy */}
+        {/* Luxury & Consumer */}
         <section>
           <h2 style={{ fontSize: '1.5rem', marginBottom: '1rem', borderBottom: '2px solid #333', paddingBottom: '0.5rem' }}>
-            {getTopicDisplayName('AIEcommerceStrategy')} ({digest.topics.AIEcommerceStrategy.total})
+            {getTopicDisplayName('Luxury_and_Consumer')} ({digest.topics.Luxury_and_Consumer.total})
           </h2>
-          {digest.topics.AIEcommerceStrategy.total > 0 ? (
+          {digest.topics.Luxury_and_Consumer.total > 0 ? (
             <p style={{ fontSize: '0.9rem', color: '#666', marginBottom: '1rem' }}>
-              Total {digest.topics.AIEcommerceStrategy.total} articles this week. Showing top 7 by recency.
+              Total {digest.topics.Luxury_and_Consumer.total} articles this week. Showing top 7 by recency.
             </p>
           ) : (
             <p style={{ fontSize: '0.9rem', color: '#999', marginBottom: '1rem' }}>
               No articles for this topic in this week.
             </p>
           )}
-          {digest.topics.AIEcommerceStrategy.top.length > 0 ? (
+          {digest.topics.Luxury_and_Consumer.top.length > 0 ? (
             <ul style={{ listStyle: 'none', padding: 0 }}>
-              {digest.topics.AIEcommerceStrategy.top.map((article) => (
+              {digest.topics.Luxury_and_Consumer.top.map((article) => (
                 <li key={article.id} style={{ marginBottom: '1.5rem' }}>
                   <a
                     href={article.url}
@@ -251,23 +251,23 @@ export default async function Home() {
           )}
         </section>
 
-        {/* Luxury Consumer Behaviour */}
+        {/* Jewellery Industry */}
         <section>
           <h2 style={{ fontSize: '1.5rem', marginBottom: '1rem', borderBottom: '2px solid #333', paddingBottom: '0.5rem' }}>
-            {getTopicDisplayName('LuxuryConsumerBehaviour')} ({digest.topics.LuxuryConsumerBehaviour.total})
+            {getTopicDisplayName('Jewellery_Industry')} ({digest.topics.Jewellery_Industry.total})
           </h2>
-          {digest.topics.LuxuryConsumerBehaviour.total > 0 ? (
+          {digest.topics.Jewellery_Industry.total > 0 ? (
             <p style={{ fontSize: '0.9rem', color: '#666', marginBottom: '1rem' }}>
-              Total {digest.topics.LuxuryConsumerBehaviour.total} articles this week. Showing top 7 by recency.
+              Total {digest.topics.Jewellery_Industry.total} articles this week. Showing top 7 by recency.
             </p>
           ) : (
             <p style={{ fontSize: '0.9rem', color: '#999', marginBottom: '1rem' }}>
               No articles for this topic in this week.
             </p>
           )}
-          {digest.topics.LuxuryConsumerBehaviour.top.length > 0 ? (
+          {digest.topics.Jewellery_Industry.top.length > 0 ? (
             <ul style={{ listStyle: 'none', padding: 0 }}>
-              {digest.topics.LuxuryConsumerBehaviour.top.map((article) => (
+              {digest.topics.Jewellery_Industry.top.map((article) => (
                 <li key={article.id} style={{ marginBottom: '1.5rem' }}>
                   <a
                     href={article.url}
