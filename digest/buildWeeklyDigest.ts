@@ -5,6 +5,7 @@ import { DateTime } from 'luxon';
 import { getWeekRangeCET } from '../utils/weekCET';
 import { classifyTopic } from '../classification/classifyTopics';
 import type { Article as BaseArticle, Topic } from '../classification/classifyTopics';
+import { classifyArticleLLM, getClassificationStats, resetClassificationStats } from '../classification/classifyWithLLM';
 
 // Extended Article type that includes snippet (used in actual data)
 type Article = BaseArticle & {
@@ -346,10 +347,26 @@ export async function buildWeeklyDigest(weekLabel: string): Promise<WeeklyDigest
     "Jewellery_Industry": [],
   };
   
-  for (const article of eligibleArticles) {
-    const topic = classifyTopic(article);
-    byTopic[topic].push(article);
+  // Reset classification stats
+  resetClassificationStats();
+  
+  // Classify articles using LLM with fallback
+  // Process in batches to avoid overwhelming the API, but await all results
+  const classificationPromises = eligibleArticles.map(async (article) => {
+    const result = await classifyArticleLLM(article);
+    return { article, result };
+  });
+  
+  const classificationResults = await Promise.all(classificationPromises);
+  
+  // Group articles by topic
+  for (const { article, result } of classificationResults) {
+    byTopic[result.category].push(article);
   }
+  
+  // Log classification statistics
+  const stats = getClassificationStats();
+  console.log(`[Classification Stats] Total: ${stats.total}, Cache hits: ${stats.cache_hits}, Cache misses: ${stats.cache_misses}, LLM calls: ${stats.llm_calls}, LLM successes: ${stats.llm_successes}, LLM failures: ${stats.llm_failures}, Fallbacks: ${stats.fallbacks}`);
   
   // Deduplicate articles within each topic
   for (const topicKey of Object.keys(byTopic) as Topic[]) {

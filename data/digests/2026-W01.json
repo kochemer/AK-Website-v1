@@ -3,81 +3,149 @@
   "tz": "Europe/Copenhagen",
   "startISO": "2025-12-28T23:00:00.000Z",
   "endISO": "2026-01-04T22:59:59.999Z",
-  "builtAtISO": "2026-01-03T17:19:08.914+01:00",
-  "builtAtLocal": "2026-01-03 17:19:08",
+  "builtAtISO": "2026-01-03T20:51:07.689+01:00",
+  "builtAtLocal": "2026-01-03 20:51:07",
   "totals": {
     "total": 57,
     "byTopic": {
-      "AIStrategy": 3,
-      "EcommerceRetail": 53,
-      "LuxuryConsumer": 1,
-      "Jewellery": 0
+      "AIStrategy": 29,
+      "EcommerceRetail": 22,
+      "LuxuryConsumer": 4,
+      "Jewellery": 2
     }
   },
   "topics": {
     "AI_and_Strategy": {
-      "total": 3,
+      "total": 29,
       "top": [
         {
-          "id": "pd8wix",
-          "title": "The Psychology of AI SERPs and Shopping",
-          "url": "https://www.practicalecommerce.com/the-psychology-of-ai-serps-and-shopping",
-          "source": "Practical Ecommerce",
-          "published_at": "2025-12-29T10:00:37.000Z",
-          "ingested_at": "2025-12-30T17:19:14.042Z",
-          "snippet": "The rise of \"zero-click\" searches may signal the coming effect of AI shopping on product discovery and decision-making.\nThe post The Psychology of AI SERPs and Shopping appeared first on Practical Ecommerce.",
+          "id": "bv2j8a",
+          "title": "The Wirecutter Show: Tips for Using A.I. Smartly With Kevin Roose",
+          "url": "https://www.nytimes.com/2025/12/30/podcasts/hardfork-wirecutter-ai.html",
+          "source": "NYTimes Technology",
+          "published_at": "2025-12-30T12:00:04.000Z",
+          "ingested_at": "2025-12-30T12:26:38.325Z",
+          "snippet": "If you’ve ever wondered what chatbots are good for and how best to use them, this episode is for you.",
           "relevance": {
-            "scoreTotal": 0.2155373678332298,
-            "recencyScore": 0.06553736783322978,
-            "sourceWeight": 0.1,
+            "scoreTotal": 0.4202447093588702,
+            "recencyScore": 0.22024470935887022,
+            "sourceWeight": 0.15,
             "keywordBoost": 0.05,
             "penalty": 0,
             "matchedKeywords": [
-              "ai"
+              "chatbot"
             ]
           },
-          "aiSummary": "AI-driven \"zero-click\" searches are changing the landscape of product discovery and decision-making, hinting at the impact of AI on shopping behavior."
+          "aiSummary": "AI-Generated Summary:\n\"The Wirecutter Show: Tips for Using A.I. Smartly With Kevin Roose\" from NYTimes Technology on 2025-12-30 discusses the benefits of chatbots and offers advice on how to use them effectively."
         },
         {
-          "id": "gva55j",
-          "title": "AI is forcing us to write good code",
-          "url": "https://bits.logic.inc/p/ai-is-forcing-us-to-write-good-code",
-          "source": "Hacker News",
-          "published_at": "2025-12-29T19:11:26.000Z",
+          "id": "4agilu",
+          "title": "Decoding the A.I.-Driven Tech Lingo From 2025",
+          "url": "https://www.nytimes.com/2025/12/30/technology/personaltech/tech-jargon-ai.html",
+          "source": "NYTimes Technology",
+          "published_at": "2025-12-30T10:02:10.000Z",
           "ingested_at": "2025-12-30T12:26:38.325Z",
+          "snippet": "Here’s a cheat sheet for decoding this year’s A.I.-driven tech lingo, from RAG to superintelligence.",
           "relevance": {
-            "scoreTotal": 0.17018187850559174,
-            "recencyScore": 0.12018187850559173,
+            "scoreTotal": 0.3585482807681023,
+            "recencyScore": 0.2085482807681023,
+            "sourceWeight": 0.15,
+            "keywordBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": []
+          },
+          "aiSummary": "AI-generated summary: A cheat sheet for understanding A.I.-driven tech lingo in 2025, including terms like RAG and superintelligence, is provided in this NYTimes Technology article."
+        },
+        {
+          "id": "yg52at",
+          "title": "Phone Searches at U.S. Borders: What Travelers Need to Know",
+          "url": "https://www.nytimes.com/2025/12/31/travel/airport-border-phone-search.html",
+          "source": "NYTimes Technology",
+          "published_at": "2025-12-31T10:00:22.000Z",
+          "ingested_at": "2025-12-31T12:36:16.184Z",
+          "snippet": "Customs agents have broad authority to search the electronic devices of travelers entering and leaving the U.S. Here are tips for keeping your data safe.",
+          "relevance": {
+            "scoreTotal": 0.35122685243258406,
+            "recencyScore": 0.35122685243258406,
+            "sourceWeight": 0.15,
+            "keywordBoost": 0.05,
+            "penalty": 0.2,
+            "matchedKeywords": [
+              "data"
+            ]
+          },
+          "aiSummary": "AI-Generated Summary:\nCustoms agents at U.S. borders have the authority to search travelers' electronic devices, prompting the need for data protection measures while traveling."
+        },
+        {
+          "id": "6rp39z",
+          "title": "Hive (YC S14) Is Hiring a Staff Software Engineer (Data Systems)",
+          "url": "https://jobs.ashbyhq.com/hive.co/cb0dc490-0e32-4734-8d91-8b56a31ed497",
+          "source": "Hacker News",
+          "published_at": "2025-12-30T14:31:34.000Z",
+          "ingested_at": "2025-12-30T17:15:32.891Z",
+          "relevance": {
+            "scoreTotal": 0.28527447128848293,
+            "recencyScore": 0.23527447128848292,
             "sourceWeight": 0,
             "keywordBoost": 0.05,
             "penalty": 0,
             "matchedKeywords": [
-              "ai"
+              "data"
             ]
           }
         },
         {
-          "id": "4zjnai",
-          "title": "China drafts world’s strictest rules to end AI-encouraged suicide, violence",
-          "url": "https://arstechnica.com/tech-policy/2025/12/china-drafts-worlds-strictest-rules-to-end-ai-encouraged-suicide-violence/",
-          "source": "Ars Technica",
-          "published_at": "2025-12-29T16:30:45.000Z",
-          "ingested_at": "2025-12-30T12:26:38.325Z",
+          "id": "oka1ei",
+          "title": "Public Sans – A strong, neutral typeface",
+          "url": "https://public-sans.digital.gov/",
+          "source": "Hacker News",
+          "published_at": "2025-12-30T14:23:11.000Z",
+          "ingested_at": "2025-12-30T17:15:32.891Z",
           "relevance": {
-            "scoreTotal": 0.1542410716009277,
-            "recencyScore": 0.1042410716009277,
+            "scoreTotal": 0.2344427913929279,
+            "recencyScore": 0.2344427913929279,
             "sourceWeight": 0,
-            "keywordBoost": 0.05,
+            "keywordBoost": 0,
             "penalty": 0,
-            "matchedKeywords": [
-              "ai"
-            ]
+            "matchedKeywords": []
+          }
+        },
+        {
+          "id": "lomqhg",
+          "title": "The top 5 most horrifying and fascinating medical cases of 2025",
+          "url": "https://arstechnica.com/health/2025/12/the-top-5-most-horrifying-and-fascinating-medical-cases-of-2025/",
+          "source": "Ars Technica",
+          "published_at": "2025-12-30T14:00:27.000Z",
+          "ingested_at": "2025-12-30T17:15:32.891Z",
+          "relevance": {
+            "scoreTotal": 0.2321875003839079,
+            "recencyScore": 0.2321875003839079,
+            "sourceWeight": 0,
+            "keywordBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": []
+          }
+        },
+        {
+          "id": "3hv1vo",
+          "title": "No strcpy either",
+          "url": "https://daniel.haxx.se/blog/2025/12/29/no-strcpy-either/",
+          "source": "Hacker News",
+          "published_at": "2025-12-30T13:14:40.000Z",
+          "ingested_at": "2025-12-30T17:15:32.891Z",
+          "relevance": {
+            "scoreTotal": 0.22764550302190065,
+            "recencyScore": 0.22764550302190065,
+            "sourceWeight": 0,
+            "keywordBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": []
           }
         }
       ]
     },
     "Ecommerce_Retail_Tech": {
-      "total": 53,
+      "total": 22,
       "top": [
         {
           "id": "tttlfdz",
@@ -111,7 +179,7 @@
             "penalty": 0,
             "matchedKeywords": []
           },
-          "aiSummary": "AI-Generated Summary:\nCheez-It is reviving its 'Prince Cheddward' mascot to stand out in the crowded sports marketing landscape, focusing on nostalgia to break through the noise."
+          "aiSummary": "AI-Generated Summary:\nCheez-It is reviving its 'Prince Cheddward' mascot to stand out in the crowded sports marketing landscape by leveraging nostalgia."
         },
         {
           "id": "501hss",
@@ -132,60 +200,6 @@
           "aiSummary": "AI-generated summary:\nModern Retail's 2026 In/Out list predicts trends like big workout pants, fiber, and thrifting to dominate the year in ecommerce and retail tech."
         },
         {
-          "id": "bv2j8a",
-          "title": "The Wirecutter Show: Tips for Using A.I. Smartly With Kevin Roose",
-          "url": "https://www.nytimes.com/2025/12/30/podcasts/hardfork-wirecutter-ai.html",
-          "source": "NYTimes Technology",
-          "published_at": "2025-12-30T12:00:04.000Z",
-          "ingested_at": "2025-12-30T12:26:38.325Z",
-          "snippet": "If you’ve ever wondered what chatbots are good for and how best to use them, this episode is for you.",
-          "relevance": {
-            "scoreTotal": 0.3702447093588702,
-            "recencyScore": 0.22024470935887022,
-            "sourceWeight": 0.15,
-            "keywordBoost": 0,
-            "penalty": 0,
-            "matchedKeywords": []
-          },
-          "aiSummary": "AI-Generated Summary:\n\"The Wirecutter Show: Tips for Using A.I. Smartly With Kevin Roose\" from NYTimes Technology on 2025-12-30 discusses the benefits of chatbots and how to effectively utilize them in ecommerce and retail tech."
-        },
-        {
-          "id": "4agilu",
-          "title": "Decoding the A.I.-Driven Tech Lingo From 2025",
-          "url": "https://www.nytimes.com/2025/12/30/technology/personaltech/tech-jargon-ai.html",
-          "source": "NYTimes Technology",
-          "published_at": "2025-12-30T10:02:10.000Z",
-          "ingested_at": "2025-12-30T12:26:38.325Z",
-          "snippet": "Here’s a cheat sheet for decoding this year’s A.I.-driven tech lingo, from RAG to superintelligence.",
-          "relevance": {
-            "scoreTotal": 0.3585482807681023,
-            "recencyScore": 0.2085482807681023,
-            "sourceWeight": 0.15,
-            "keywordBoost": 0,
-            "penalty": 0,
-            "matchedKeywords": []
-          },
-          "aiSummary": "AI-Generated Summary:\nA cheat sheet for understanding A.I.-driven tech lingo in 2025, including terms like RAG and superintelligence, is provided in this NYTimes Technology article."
-        },
-        {
-          "id": "yg52at",
-          "title": "Phone Searches at U.S. Borders: What Travelers Need to Know",
-          "url": "https://www.nytimes.com/2025/12/31/travel/airport-border-phone-search.html",
-          "source": "NYTimes Technology",
-          "published_at": "2025-12-31T10:00:22.000Z",
-          "ingested_at": "2025-12-31T12:36:16.184Z",
-          "snippet": "Customs agents have broad authority to search the electronic devices of travelers entering and leaving the U.S. Here are tips for keeping your data safe.",
-          "relevance": {
-            "scoreTotal": 0.301226852432584,
-            "recencyScore": 0.35122685243258406,
-            "sourceWeight": 0.15,
-            "keywordBoost": 0,
-            "penalty": 0.2,
-            "matchedKeywords": []
-          },
-          "aiSummary": "AI-Generated Summary:\nCustoms agents at U.S. borders have the authority to search travelers' electronic devices, prompting the need for data protection measures while traveling."
-        },
-        {
           "id": "6erx5k",
           "title": "The revenge of the ’90s mall brand",
           "url": "https://www.modernretail.co/operations/the-revenge-of-the-90s-mall-brand/?utm_campaign=modernretaildis&utm_medium=rss&utm_source=general-rss",
@@ -201,13 +215,109 @@
             "penalty": 0,
             "matchedKeywords": []
           },
-          "aiSummary": "AI-generated summary:\nIn 2025, '90s mall brands such as Gap and Victoria's Secret are working on turnaround plans to revive their reputation, but success requires more than just short-term growth."
+          "aiSummary": "AI-Generated Summary:\nIn 2025, '90s mall brands such as Gap and Victoria's Secret are working on turnaround plans to revive their reputation, but success requires more than just short-term growth."
+        },
+        {
+          "id": "z8ko5",
+          "title": "What Happened to Abit Motherboards",
+          "url": "https://dfarq.homeip.net/what-happened-to-abit-motherboards/",
+          "source": "Hacker News",
+          "published_at": "2025-12-30T14:58:18.000Z",
+          "ingested_at": "2025-12-30T17:15:32.891Z",
+          "relevance": {
+            "scoreTotal": 0.23792658769498443,
+            "recencyScore": 0.23792658769498443,
+            "sourceWeight": 0,
+            "keywordBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": []
+          }
+        },
+        {
+          "id": "yov8x3",
+          "title": "The Legacy of Undersea Cables",
+          "url": "https://blog.sciencemuseumgroup.org.uk/the-legacy-of-undersea-cables/",
+          "source": "Hacker News",
+          "published_at": "2025-12-30T14:49:38.000Z",
+          "ingested_at": "2025-12-30T17:15:32.891Z",
+          "relevance": {
+            "scoreTotal": 0.23706679933377448,
+            "recencyScore": 0.23706679933377448,
+            "sourceWeight": 0,
+            "keywordBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": []
+          }
+        },
+        {
+          "id": "z2zsaa",
+          "title": "The 10 best vehicles Ars Technica drove in 2025",
+          "url": "https://arstechnica.com/cars/2025/12/the-10-best-vehicles-ars-technica-drove-in-2025/",
+          "source": "Ars Technica",
+          "published_at": "2025-12-30T13:30:40.000Z",
+          "ingested_at": "2025-12-30T17:15:32.891Z",
+          "relevance": {
+            "scoreTotal": 0.22923280461182674,
+            "recencyScore": 0.22923280461182674,
+            "sourceWeight": 0,
+            "keywordBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": []
+          }
         }
       ]
     },
     "Luxury_and_Consumer": {
-      "total": 1,
+      "total": 4,
       "top": [
+        {
+          "id": "v0vq6o",
+          "title": "Looking for friends, lobsters may stumble into an ecological trap",
+          "url": "https://arstechnica.com/science/2025/12/looking-for-friends-lobsters-may-stumble-into-an-ecological-trap/",
+          "source": "Ars Technica",
+          "published_at": "2025-12-30T15:00:56.000Z",
+          "ingested_at": "2025-12-30T17:15:32.891Z",
+          "relevance": {
+            "scoreTotal": 0.23818783108165978,
+            "recencyScore": 0.23818783108165978,
+            "sourceWeight": 0,
+            "keywordBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": []
+          }
+        },
+        {
+          "id": "ikl06u",
+          "title": "Singapore Study Links Heavy Infant Screen Time to Teen Anxiety",
+          "url": "https://www.bloomberg.com/news/articles/2025-12-30/singapore-study-links-heavy-infant-screen-time-to-teen-anxiety",
+          "source": "Hacker News",
+          "published_at": "2025-12-30T12:46:52.000Z",
+          "ingested_at": "2025-12-30T17:15:32.891Z",
+          "relevance": {
+            "scoreTotal": 0.22488756650940406,
+            "recencyScore": 0.22488756650940406,
+            "sourceWeight": 0,
+            "keywordBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": []
+          }
+        },
+        {
+          "id": "swcqzq",
+          "title": "Nicolas Guillou, French ICC judge sanctioned by the US and \"debanked\"",
+          "url": "https://www.lemonde.fr/en/international/article/2025/11/19/nicolas-guillou-french-icc-judge-sanctioned-by-the-us-you-are-effectively-blacklisted-by-much-of-the-world-s-banking-system_6747628_4.html",
+          "source": "Hacker News",
+          "published_at": "2025-12-30T11:13:30.000Z",
+          "ingested_at": "2025-12-30T12:26:38.325Z",
+          "relevance": {
+            "scoreTotal": 0.21562500035652282,
+            "recencyScore": 0.21562500035652282,
+            "sourceWeight": 0,
+            "keywordBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": []
+          }
+        },
         {
           "id": "bvf7if",
           "title": "Crowd avoidance, off-peak trips to drive next 12 months of luxury travel: Virtuoso",
@@ -227,13 +337,46 @@
               "high-end"
             ]
           },
-          "aiSummary": "AI-Generated Summary:\nLuxury travelers are opting for off-peak trips to avoid crowds and uncomfortable temperatures, with Virtuoso predicting this trend to drive luxury travel in the next 12 months."
+          "aiSummary": "AI-Generated Summary:\nLuxury travelers are opting for off-peak trips to avoid crowds and uncomfortable temperatures, according to Virtuoso. The high-end hospitality network predicts this trend will drive luxury travel in the next 12 months."
         }
       ]
     },
     "Jewellery_Industry": {
-      "total": 0,
-      "top": []
+      "total": 2,
+      "top": [
+        {
+          "id": "9kspfq",
+          "title": "Charm Ruby – Glamorous Terminal Libraries for Ruby",
+          "url": "https://charm-ruby.dev/",
+          "source": "Hacker News",
+          "published_at": "2025-12-30T07:36:38.000Z",
+          "ingested_at": "2025-12-30T12:26:38.325Z",
+          "relevance": {
+            "scoreTotal": 0.19411045005639954,
+            "recencyScore": 0.19411045005639954,
+            "sourceWeight": 0,
+            "keywordBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": []
+          }
+        },
+        {
+          "id": "slsn2b",
+          "title": "Leonardo’s wood charring method predates Japanese practice",
+          "url": "https://arstechnica.com/science/2025/12/did-one-line-in-a-leonardo-codex-anticipate-yakisugi/",
+          "source": "Ars Technica",
+          "published_at": "2025-12-29T19:30:47.000Z",
+          "ingested_at": "2025-12-30T12:26:38.325Z",
+          "relevance": {
+            "scoreTotal": 0.1221015213659086,
+            "recencyScore": 0.1221015213659086,
+            "sourceWeight": 0,
+            "keywordBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": []
+          }
+        }
+      ]
     }
   }
 }
