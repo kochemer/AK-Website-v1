@@ -1,3 +1,7 @@
+'use client';
+
+import { formatDisplayDate } from '../../utils/formatDisplayDate';
+
 type ArticleCardProps = {
   title: string;
   url: string;
@@ -21,65 +25,70 @@ export default function ArticleCard({
     .replace(/^AI-generated summary:\s*/i, '')
     .trim() || null;
 
+  // Format date for display
+  const displayDate = date ? formatDisplayDate(date) : null;
+
   return (
-    <a
-      href={url}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="block rounded-lg border border-gray-200 bg-white p-4 shadow-sm transition-shadow hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 mb-6 no-underline text-inherit"
-    >
-      {/* Title */}
-      <div className="mb-2 font-semibold text-base leading-snug text-blue-900">
-        {title}
-      </div>
+    <div className="block w-full rounded-lg border border-gray-200 bg-white p-4 md:p-5 shadow-sm transition-shadow hover:shadow-md">
+      <a
+        href={url}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="block no-underline text-inherit focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 rounded"
+      >
+        {/* Title */}
+        <div className="mb-1.5 md:mb-2 font-semibold text-base md:text-lg leading-snug text-blue-900">
+          {title}
+        </div>
 
-      {/* Meta row: Source • Date (only render if source or date exists) */}
-      {(source || date) && (
-        <div className="flex items-center gap-2 text-sm text-gray-600 mb-1">
-          {source && <span>{source}</span>}
-          {source && date && (
-            <span className="text-gray-400 font-light">•</span>
-          )}
-          {date && <span>{date}</span>}
-          {badges && badges.length > 0 && (
-            <>
+        {/* Meta row: Source • Date (only render if source or date exists) */}
+        {(source || displayDate) && (
+          <div className="flex items-center gap-2 text-sm md:text-base text-gray-600 mb-2 md:mb-3">
+            {source && <span>{source}</span>}
+            {source && displayDate && (
               <span className="text-gray-400 font-light">•</span>
-              <div className="flex gap-1.5 flex-wrap">
-                {badges.map((badge, idx) => (
-                  <span
-                    key={idx}
-                    className="px-1.5 py-0.5 text-xs bg-gray-100 text-gray-700 rounded"
-                  >
-                    {badge}
-                  </span>
-                ))}
-              </div>
-            </>
-          )}
-        </div>
-      )}
+            )}
+            {displayDate && <span>{displayDate}</span>}
+            {badges && badges.length > 0 && (
+              <>
+                <span className="text-gray-400 font-light">•</span>
+                <div className="flex gap-1.5 flex-wrap">
+                  {badges.map((badge, idx) => (
+                    <span
+                      key={idx}
+                      className="px-1.5 py-0.5 text-xs bg-gray-100 text-gray-700 rounded"
+                    >
+                      {badge}
+                    </span>
+                  ))}
+                </div>
+              </>
+            )}
+          </div>
+        )}
 
-      {/* Badges row (only render if meta row is hidden and badges exist) */}
-      {!(source || date) && badges && badges.length > 0 && (
-        <div className="flex gap-1.5 flex-wrap mb-1">
-          {badges.map((badge, idx) => (
-            <span
-              key={idx}
-              className="px-1.5 py-0.5 text-xs bg-gray-100 text-gray-700 rounded"
-            >
-              {badge}
-            </span>
-          ))}
-        </div>
-      )}
+        {/* Badges row (only render if meta row is hidden and badges exist) */}
+        {!(source || displayDate) && badges && badges.length > 0 && (
+          <div className="flex gap-1.5 flex-wrap mb-1">
+            {badges.map((badge, idx) => (
+              <span
+                key={idx}
+                className="px-1.5 py-0.5 text-xs bg-gray-100 text-gray-700 rounded"
+              >
+                {badge}
+              </span>
+            ))}
+          </div>
+        )}
+      </a>
 
-      {/* Optional summary - clamped to 2 lines */}
+      {/* Optional summary - responsive clamp */}
       {cleanSummary && (
         <div
-          className="text-sm text-gray-800 bg-gray-50 border-l-4 border-blue-600 rounded px-3 py-2.5 mt-2 italic line-clamp-2"
+          className="text-sm md:text-base text-gray-800 bg-gray-50 border-l-4 border-blue-600 rounded px-3 md:px-4 py-2.5 md:py-3 mt-3 md:mt-4 italic line-clamp-2 md:line-clamp-3"
           style={{
             display: '-webkit-box',
-            WebkitLineClamp: 2,
+            WebkitLineClamp: 3,
             WebkitBoxOrient: 'vertical',
             overflow: 'hidden',
           }}
@@ -87,7 +96,7 @@ export default function ArticleCard({
           {cleanSummary}
         </div>
       )}
-    </a>
+    </div>
   );
 }
 

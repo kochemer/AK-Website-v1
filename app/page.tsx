@@ -63,6 +63,7 @@ async function loadDigest(weekLabel: string): Promise<WeeklyDigest | null> {
 }
 
 // Category UI meta data (title, short desc, topicKey, N)
+// Ordered for display: Ecommerce, AI, Jewellery, Luxury
 const CATEGORY_CARDS: Array<{
   key: TopicKey;
   color: string;
@@ -70,15 +71,8 @@ const CATEGORY_CARDS: Array<{
   desc: string;
   countBy: string;
   topInfo: string;
+  anchorId: string;
 }> = [
-  {
-    key: 'AI_and_Strategy',
-    color: '#25505f',
-    title: 'AI & Strategy',
-    desc: 'The latest advances and strategies in artificial intelligence and business transformation.',
-    countBy: 'AIStrategy',
-    topInfo: 'Top 7 articles by relevance',
-  },
   {
     key: 'Ecommerce_Retail_Tech',
     color: '#264653',
@@ -86,14 +80,16 @@ const CATEGORY_CARDS: Array<{
     desc: 'Breakthroughs and trends shaping online commerce, retail, and emerging tech.',
     countBy: 'EcommerceRetail',
     topInfo: 'Top 7 articles by recency',
+    anchorId: 'ecommerce-retail-tech',
   },
   {
-    key: 'Luxury_and_Consumer',
-    color: '#6b2d5c',
-    title: 'Luxury & Consumer',
-    desc: 'Innovations and changes in luxury and wider consumer products, experiences, and brands.',
-    countBy: 'LuxuryConsumer',
-    topInfo: 'Top 7 articles by recency',
+    key: 'AI_and_Strategy',
+    color: '#25505f',
+    title: 'AI & Strategy',
+    desc: 'The latest advances and strategies in artificial intelligence and business transformation.',
+    countBy: 'AIStrategy',
+    topInfo: 'Top 7 articles by relevance',
+    anchorId: 'ai-strategy',
   },
   {
     key: 'Jewellery_Industry',
@@ -102,6 +98,16 @@ const CATEGORY_CARDS: Array<{
     desc: 'Key updates and stories across jewellery brands, trade, and supply chain.',
     countBy: 'Jewellery',
     topInfo: 'Top 7 articles by recency',
+    anchorId: 'jewellery-industry',
+  },
+  {
+    key: 'Luxury_and_Consumer',
+    color: '#6b2d5c',
+    title: 'Luxury & Consumer',
+    desc: 'Innovations and changes in luxury and wider consumer products, experiences, and brands.',
+    countBy: 'LuxuryConsumer',
+    topInfo: 'Top 7 articles by recency',
+    anchorId: 'luxury-consumer',
   },
 ];
 
@@ -112,13 +118,10 @@ export default async function Home() {
 
   // HERO section (always present)
   return (
-    <main style={{
-      maxWidth: '100vw',
+    <main className="w-full" style={{
       minHeight: '100vh',
       fontFamily: 'system-ui, Arial, sans-serif',
       background: '#f7f9fb',
-      margin: 0,
-      padding: 0,
     }}>
       {/* HERO */}
       <section style={{
@@ -146,32 +149,19 @@ export default async function Home() {
               style={{ objectFit: 'cover', objectPosition: 'center center', filter: 'brightness(0.62) blur(0.2px)' }}
             />
         </div>
-        <div style={{
+        <div className="w-full max-w-[1200px] lg:max-w-[1400px] 2xl:max-w-[1560px] mx-auto px-4 md:px-8" style={{
           position: 'relative',
           zIndex: 2,
           color: '#fff',
-          width: '100%',
-          maxWidth: 900,
-          margin: '0 auto',
-          padding: '3.8rem 1.5rem 3.5rem 1.5rem',
+          padding: '3rem 1.5rem 2.5rem 1.5rem',
           textAlign: 'center',
         }}>
-          <h1 style={{
-            fontSize: '2.7rem',
-            fontWeight: 700,
-            marginBottom: '1.15rem',
+          <h1 className="text-4xl md:text-5xl font-bold mb-4" style={{
             textShadow: '0 2px 8px rgba(18,30,49,0.20)'
           }}>
             Luxury Intelligence
           </h1>
-          <div style={{
-            fontSize: '1.23rem',
-            fontWeight: 400,
-            color: '#e2ecfa',
-            lineHeight: 1.7,
-            maxWidth: 600,
-            margin: '0 auto'
-          }}>
+          <div className="text-lg md:text-xl text-gray-200 leading-relaxed max-w-2xl mx-auto">
             <span style={{ fontWeight: 600, color: '#fff' }}>Luxury Ecommerce, Retail Technology & AI</span><br/>
             Essential intelligence handpicked across strategy, ecommerce, luxury, and jewellery.<br/>
             Save hours weekly – get expert-curated coverage, <span style={{ color: '#fed236' }}>AI summaries</span>, and direct source links.
@@ -247,92 +237,83 @@ export default async function Home() {
       ) : (
       <>
         {/* Weekly Digest Summary / Meta */}
-        <section style={{
+        <section className="w-full max-w-[1200px] lg:max-w-[1400px] 2xl:max-w-[1560px] mx-auto px-4 md:px-8 mb-12 md:mb-16" style={{
           background: '#fff',
           borderRadius: 12,
           boxShadow: '0 2px 24px 0 rgba(28,68,90,.06)',
           margin: '-64px auto 0 auto',
-          maxWidth: 1050,
-          padding: '2.6rem 2rem 1.0rem 2rem',
+          padding: '2.5rem 2rem',
           position: 'relative'
         }}>
-          <div style={{
-            display: 'flex',
-            alignItems: 'flex-end',
-            justifyContent: 'space-between',
-            marginBottom: 18,
-            flexWrap: 'wrap'
-          }}>
+          <div className="flex items-end justify-between mb-4 flex-wrap gap-4">
             <div>
-              <div style={{ fontWeight: 600, fontSize: '2.0rem', color: '#143c42', marginBottom: 6 }}>
+              <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 mb-2">
                 Week {digest.weekLabel}
-              </div>
-              <div style={{color:'#788189', fontSize:'1.05rem'}}>
-                <span>
-                  {formatDate(digest.startISO)} to {formatDate(digest.endISO)} ({digest.tz})
-                </span>
-              </div>
+              </h2>
+              <p className="text-base md:text-lg text-gray-600 mb-1">
+                {formatDate(digest.startISO)} to {formatDate(digest.endISO)} ({digest.tz})
+              </p>
               {digest.builtAtLocal && (
-                <div style={{
-                  fontSize: '0.93rem',
-                  color: '#b4b9be',
-                  marginTop: 2
-                }}>
+                <p className="text-sm text-gray-500">
                   Built: {digest.builtAtLocal}
-                </div>
+                </p>
               )}
             </div>
-            <div style={{
-              textAlign: 'right',
-              minWidth: 180,
-              fontSize: '1.08rem'
-            }}>
-              <div style={{
-                color: '#636a7b',
-                marginBottom: 6,
-                fontWeight: 400,
-              }}>
+            <div className="text-right">
+              <p className="text-sm md:text-base text-gray-600 mb-1">
                 Digest total
-              </div>
-              <div style={{
-                fontWeight: 700,
-                fontSize: '2.1rem',
-                color: '#20678c',
-                letterSpacing: '.02em'
-              }}>{digest.totals.total}</div>
+              </p>
+              <p className="text-3xl md:text-4xl font-bold text-blue-700">
+                {digest.totals.total}
+              </p>
             </div>
           </div>
         </section>
 
-        {/* CATEGORY SECTIONS UI */}
-        <section style={{
-          maxWidth: 1060,
-          margin: '3.2rem auto 0 auto',
-          padding: '0 1.5rem'
-        }}>
-          {CATEGORY_CARDS.map(cat => {
-            // @ts-ignore
-            const topic = digest.topics[cat.key];
-            // @ts-ignore
-            const totalCat = digest.totals.byTopic[cat.countBy] ?? 0;
-            
-            // Format articles with dates at page level
-            const formattedArticles = (topic?.top || []).slice(0, 7).map(article => ({
-              ...article,
-              date: formatDate(article.published_at),
-            }));
-            
-            return (
-              <CategorySection
-                key={cat.key}
-                title={getTopicDisplayName(cat.key)}
-                description={cat.desc}
-                count={totalCat}
-                articles={formattedArticles}
-                rankingLabel={cat.topInfo}
-              />
-            );
-          })}
+        {/* Category Jump Navigation */}
+        <section className="w-full max-w-[1200px] lg:max-w-[1400px] 2xl:max-w-[1560px] mx-auto px-4 md:px-8 mb-12 md:mb-16">
+          <nav className="flex flex-wrap gap-2 justify-center" aria-label="Category navigation">
+            {CATEGORY_CARDS.map(cat => (
+              <a
+                key={cat.anchorId}
+                href={`#${cat.anchorId}`}
+                className="px-4 py-2 text-sm font-medium border border-gray-200 bg-gray-50 text-gray-700 rounded-full hover:bg-gray-100 hover:border-gray-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 transition-colors"
+              >
+                {cat.title}
+              </a>
+            ))}
+          </nav>
+        </section>
+
+        {/* CATEGORY SECTIONS UI - 12 Column Grid */}
+        <section className="w-full max-w-[1200px] lg:max-w-[1400px] 2xl:max-w-[1560px] mx-auto px-4 md:px-8 mb-16 md:mb-20">
+          <div className="w-full grid grid-cols-12 gap-8 lg:gap-10">
+            {CATEGORY_CARDS.map(cat => {
+              // @ts-ignore
+              const topic = digest.topics[cat.key];
+              // @ts-ignore
+              const totalCat = digest.totals.byTopic[cat.countBy] ?? 0;
+              
+              // Format articles with dates at page level
+              const formattedArticles = (topic?.top || []).slice(0, 7).map(article => ({
+                ...article,
+                date: formatDate(article.published_at),
+              }));
+              
+              return (
+                <div key={cat.key} className="col-span-12 lg:col-span-6 w-full">
+                  <CategorySection
+                    id={cat.anchorId}
+                    variant="grid"
+                    title={getTopicDisplayName(cat.key)}
+                    description={cat.desc}
+                    count={totalCat}
+                    articles={formattedArticles}
+                  />
+                </div>
+              );
+            })}
+          </div>
         </section>
       </>
       )}

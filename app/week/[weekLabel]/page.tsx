@@ -57,16 +57,16 @@ export default async function WeekPage({ params }: { params: { weekLabel: string
   // Validate format
   if (!/^\d{4}-W\d{1,2}$/.test(weekLabel)) {
     return (
-      <div style={{ maxWidth: '800px', margin: '0 auto', padding: '2rem', fontFamily: 'system-ui, sans-serif' }}>
-        <h1 style={{ fontSize: '2rem', marginBottom: '1rem' }}>Invalid Week Format</h1>
-        <p style={{ color: '#666', fontSize: '1.1rem' }}>
+      <div className="max-w-5xl mx-auto px-4 md:px-6 py-12 md:py-16">
+        <h1 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">Invalid Week Format</h1>
+        <p className="text-base md:text-lg text-gray-600 mb-8 leading-relaxed">
           The week label "{weekLabel}" is not valid. Expected format: YYYY-W## (e.g., 2025-W52).
         </p>
-        <div style={{ marginTop: '2rem' }}>
-          <Link href="/archive" style={{ color: '#0066cc', textDecoration: 'none', marginRight: '1rem' }}>
+        <div className="flex gap-4">
+          <Link href="/archive" className="text-blue-600 hover:text-blue-800 underline">
             ← Archive
           </Link>
-          <Link href="/" style={{ color: '#0066cc', textDecoration: 'none' }}>
+          <Link href="/" className="text-blue-600 hover:text-blue-800 underline">
             Home
           </Link>
         </div>
@@ -78,19 +78,19 @@ export default async function WeekPage({ params }: { params: { weekLabel: string
 
   if (!digest) {
     return (
-      <div style={{ maxWidth: '800px', margin: '0 auto', padding: '2rem', fontFamily: 'system-ui, sans-serif' }}>
-        <h1 style={{ fontSize: '2rem', marginBottom: '1rem' }}>Digest Not Found</h1>
-        <p style={{ color: '#666', fontSize: '1.1rem' }}>
+      <div className="max-w-5xl mx-auto px-4 md:px-6 py-12 md:py-16">
+        <h1 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">Digest Not Found</h1>
+        <p className="text-base md:text-lg text-gray-600 mb-4 leading-relaxed">
           The digest for {weekLabel} has not been built yet.
         </p>
-        <p style={{ color: '#666', fontSize: '1rem', marginTop: '1rem' }}>
-          Run: <code style={{ background: '#f0f0f0', padding: '0.2rem 0.4rem', borderRadius: '3px' }}>npx tsx scripts/buildWeeklyDigest.ts --week={weekLabel}</code>
+        <p className="text-sm md:text-base text-gray-600 mb-8 leading-relaxed">
+          Run: <code className="bg-gray-100 px-2 py-1 rounded text-sm font-mono">npx tsx scripts/buildWeeklyDigest.ts --week={weekLabel}</code>
         </p>
-        <div style={{ marginTop: '2rem' }}>
-          <Link href="/archive" style={{ color: '#0066cc', textDecoration: 'none', marginRight: '1rem' }}>
+        <div className="flex gap-4">
+          <Link href="/archive" className="text-blue-600 hover:text-blue-800 underline">
             ← Archive
           </Link>
-          <Link href="/" style={{ color: '#0066cc', textDecoration: 'none' }}>
+          <Link href="/" className="text-blue-600 hover:text-blue-800 underline">
             Home
           </Link>
         </div>
@@ -102,50 +102,54 @@ export default async function WeekPage({ params }: { params: { weekLabel: string
   const endDate = formatDate(digest.endISO);
 
   return (
-    <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '2rem', fontFamily: 'system-ui, sans-serif', lineHeight: '1.6' }}>
-      <header style={{ marginBottom: '3rem' }}>
-        <div style={{ marginBottom: '1rem' }}>
-          <Link href="/" style={{ color: '#0066cc', textDecoration: 'none', marginRight: '1rem' }}>
-            ← Home
-          </Link>
-          <Link href="/archive" style={{ color: '#0066cc', textDecoration: 'none' }}>
-            Archive
-          </Link>
-        </div>
-        <div>
-          <h1 style={{ fontSize: '2.5rem', marginBottom: '0.5rem', fontWeight: '600' }}>
+    <div className="max-w-5xl mx-auto px-4 md:px-6 py-12 md:py-16">
+      <header className="mb-12 md:mb-16">
+        <div className="mb-6">
+          <div className="flex gap-4 mb-6">
+            <Link href="/" className="text-blue-600 hover:text-blue-800 underline text-sm md:text-base">
+              ← Home
+            </Link>
+            <Link href="/archive" className="text-blue-600 hover:text-blue-800 underline text-sm md:text-base">
+              Archive
+            </Link>
+          </div>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">
             Weekly Digest: {digest.weekLabel}
           </h1>
+          <p className="text-base md:text-lg text-gray-600 mb-2">
+            Period: {startDate} to {endDate} ({digest.tz})
+          </p>
           {digest.builtAtLocal && (
-            <p style={{ color: '#666', fontSize: '0.9rem', marginTop: '0.25rem' }}>
+            <p className="text-sm text-gray-500 mb-2">
               Last built: {digest.builtAtLocal} ({digest.tz})
             </p>
           )}
+          <p className="text-base md:text-lg text-gray-600">
+            Total articles: <strong className="text-gray-900">{digest.totals.total}</strong>
+          </p>
         </div>
-        <p style={{ color: '#666', fontSize: '1.1rem' }}>
-          Period: {startDate} to {endDate} ({digest.tz})
-        </p>
-        <p style={{ color: '#666', fontSize: '1rem', marginTop: '0.5rem' }}>
-          Total articles: <strong>{digest.totals.total}</strong>
-        </p>
       </header>
 
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '2rem', marginBottom: '3rem' }}>
-        <div style={{ background: '#f9f9f9', padding: '1rem', borderRadius: '6px' }}>
-          <strong>{getTopicTotalsDisplayName('AIStrategy')}:</strong> {digest.totals.byTopic.AIStrategy}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-12 md:mb-16">
+        <div className="bg-gray-50 border border-gray-200 rounded-lg p-4">
+          <p className="text-sm text-gray-600 mb-1">{getTopicTotalsDisplayName('AIStrategy')}</p>
+          <p className="text-2xl font-semibold text-gray-900">{digest.totals.byTopic.AIStrategy}</p>
         </div>
-        <div style={{ background: '#f9f9f9', padding: '1rem', borderRadius: '6px' }}>
-          <strong>{getTopicTotalsDisplayName('EcommerceRetail')}:</strong> {digest.totals.byTopic.EcommerceRetail}
+        <div className="bg-gray-50 border border-gray-200 rounded-lg p-4">
+          <p className="text-sm text-gray-600 mb-1">{getTopicTotalsDisplayName('EcommerceRetail')}</p>
+          <p className="text-2xl font-semibold text-gray-900">{digest.totals.byTopic.EcommerceRetail}</p>
         </div>
-        <div style={{ background: '#f9f9f9', padding: '1rem', borderRadius: '6px' }}>
-          <strong>{getTopicTotalsDisplayName('LuxuryConsumer')}:</strong> {digest.totals.byTopic.LuxuryConsumer}
+        <div className="bg-gray-50 border border-gray-200 rounded-lg p-4">
+          <p className="text-sm text-gray-600 mb-1">{getTopicTotalsDisplayName('LuxuryConsumer')}</p>
+          <p className="text-2xl font-semibold text-gray-900">{digest.totals.byTopic.LuxuryConsumer}</p>
         </div>
-        <div style={{ background: '#f9f9f9', padding: '1rem', borderRadius: '6px' }}>
-          <strong>{getTopicTotalsDisplayName('Jewellery')}:</strong> {digest.totals.byTopic.Jewellery}
+        <div className="bg-gray-50 border border-gray-200 rounded-lg p-4">
+          <p className="text-sm text-gray-600 mb-1">{getTopicTotalsDisplayName('Jewellery')}</p>
+          <p className="text-2xl font-semibold text-gray-900">{digest.totals.byTopic.Jewellery}</p>
         </div>
       </div>
 
-      <div style={{ maxWidth: '1200px' }}>
+      <div className="space-y-12 md:space-y-16">
         {/* AI & Strategy */}
         <CategorySection
           title={getTopicDisplayName('AI_and_Strategy')}
@@ -154,7 +158,6 @@ export default async function WeekPage({ params }: { params: { weekLabel: string
             ...article,
             date: formatDate(article.published_at),
           }))}
-          rankingLabel="Top 7 articles by relevance"
         />
 
         {/* Ecommerce & Retail Tech */}
@@ -165,7 +168,6 @@ export default async function WeekPage({ params }: { params: { weekLabel: string
             ...article,
             date: formatDate(article.published_at),
           }))}
-          rankingLabel="Top 7 articles by relevance"
         />
 
         {/* Luxury & Consumer */}
@@ -176,7 +178,6 @@ export default async function WeekPage({ params }: { params: { weekLabel: string
             ...article,
             date: formatDate(article.published_at),
           }))}
-          rankingLabel="Top 7 articles by relevance"
         />
 
         {/* Jewellery Industry */}
@@ -187,7 +188,6 @@ export default async function WeekPage({ params }: { params: { weekLabel: string
             ...article,
             date: formatDate(article.published_at),
           }))}
-          rankingLabel="Top 7 articles by relevance"
         />
       </div>
     </div>

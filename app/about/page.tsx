@@ -23,95 +23,47 @@ export default function AboutPage() {
         padding: 0,
         borderBottom: '8px solid #eaeaea'
       }}>
-        <div style={{
+        <div className="w-full max-w-5xl mx-auto px-4 md:px-6" style={{
           position: 'relative',
           zIndex: 2,
           color: '#fff',
-          width: '100%',
-          maxWidth: 900,
-          margin: '0 auto',
           padding: '3rem 1.5rem 2.5rem 1.5rem',
           textAlign: 'center',
         }}>
-          <h1 style={{
-            fontSize: '2.5rem',
-            fontWeight: 700,
-            marginBottom: '1rem',
+          <h1 className="text-4xl md:text-5xl font-bold mb-4" style={{
             textShadow: '0 2px 8px rgba(18,30,49,0.20)'
           }}>
             About This Digest
           </h1>
-          <div style={{
-            fontSize: '1.15rem',
-            fontWeight: 400,
-            color: '#e2ecfa',
-            lineHeight: 1.7,
-            maxWidth: 600,
-            margin: '0 auto'
-          }}>
+          <div className="text-lg md:text-xl text-gray-200 leading-relaxed max-w-2xl mx-auto">
             Understanding how we curate, score, and summarize the week's most important news
           </div>
         </div>
       </section>
 
       {/* Content Section */}
-      <section style={{
-        maxWidth: 900,
-        margin: '3rem auto 4rem auto',
-        padding: '0 1.5rem',
-      }}>
+      <section className="max-w-5xl mx-auto px-4 md:px-6 py-12 md:py-16">
         {/* Purpose Card */}
-        <div style={{
-          background: '#fff',
-          borderRadius: 12,
-          boxShadow: '0 2px 24px 0 rgba(28,68,90,.06)',
-          padding: '2.5rem 2rem',
-          marginBottom: '2rem',
-        }}>
-          <h2 style={{
-            fontSize: '1.8rem',
-            fontWeight: 600,
-            color: '#143c42',
-            marginBottom: '1rem',
-          }}>
+        <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6 md:p-8 mb-12 md:mb-16">
+          <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 mb-4">
             Purpose
           </h2>
-          <p style={{
-            fontSize: '1.05rem',
-            color: '#5c6880',
-            lineHeight: 1.7,
-            marginBottom: '1rem',
-          }}>
+          <p className="text-base md:text-lg text-gray-600 leading-relaxed mb-4">
             Luxury Intelligence saves you hours of reading by curating the most relevant articles across four key sectors: 
-            <strong style={{ color: '#233442' }}> AI & Strategy</strong>, 
-            <strong style={{ color: '#233442' }}> Ecommerce & Retail Tech</strong>, 
-            <strong style={{ color: '#233442' }}> Luxury & Consumer</strong>, and 
-            <strong style={{ color: '#233442' }}> Jewellery Industry</strong>.
+            <strong className="text-gray-900"> AI & Strategy</strong>, 
+            <strong className="text-gray-900"> Ecommerce & Retail Tech</strong>, 
+            <strong className="text-gray-900"> Luxury & Consumer</strong>, and 
+            <strong className="text-gray-900"> Jewellery Industry</strong>.
           </p>
-          <p style={{
-            fontSize: '1.05rem',
-            color: '#5c6880',
-            lineHeight: 1.7,
-          }}>
+          <p className="text-base md:text-lg text-gray-600 leading-relaxed">
             Each week, we automatically ingest articles from trusted sources, score them for relevance and recency, 
             generate AI-powered summaries, and present the top articles in an easy-to-scan format.
           </p>
         </div>
 
         {/* How It Works Card */}
-        <div style={{
-          background: '#fff',
-          borderRadius: 12,
-          boxShadow: '0 2px 24px 0 rgba(28,68,90,.06)',
-          padding: '2.5rem 2rem',
-          marginBottom: '2rem',
-        }}>
-          <h2 style={{
-            fontSize: '1.8rem',
-            fontWeight: 600,
-            color: '#143c42',
-            marginBottom: '1.5rem',
-          }}>
+        <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6 md:p-8 mb-12 md:mb-16">
+          <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 mb-8">
             How It Works
           </h2>
           
@@ -138,19 +90,10 @@ export default function AboutPage() {
                 1
               </div>
               <div>
-                <h3 style={{
-                  fontSize: '1.3rem',
-                  fontWeight: 600,
-                  color: '#233442',
-                  marginBottom: '0.5rem',
-                }}>
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">
                   Sources
                 </h3>
-                <p style={{
-                  fontSize: '1.05rem',
-                  color: '#5c6880',
-                  lineHeight: 1.7,
-                }}>
+                <p className="text-base md:text-lg text-gray-600 leading-relaxed">
                   We monitor RSS feeds and web pages from trusted industry publications, news sites, and expert blogs. 
                   Articles are automatically ingested on a regular schedule.
                 </p>
@@ -181,21 +124,17 @@ export default function AboutPage() {
                 2
               </div>
               <div>
-                <h3 style={{
-                  fontSize: '1.3rem',
-                  fontWeight: 600,
-                  color: '#233442',
-                  marginBottom: '0.5rem',
-                }}>
-                  Scoring
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                  Scoring & Ranking
                 </h3>
-                <p style={{
-                  fontSize: '1.05rem',
-                  color: '#5c6880',
-                  lineHeight: 1.7,
-                }}>
-                  Each article is classified into one of four topic categories and scored based on relevance, recency, 
-                  and source quality. The highest-scoring articles are selected for each weekly digest.
+                <p className="text-base md:text-lg text-gray-600 leading-relaxed mb-3">
+                  Each article is classified into one of four topic categories and scored based on <strong className="text-gray-900">relevance</strong>, <strong className="text-gray-900">recency</strong>, 
+                  and <strong className="text-gray-900">source quality</strong>. The highest-scoring articles are selected for each weekly digest.
+                </p>
+                <p className="text-base md:text-lg text-gray-600 leading-relaxed">
+                  Articles are ranked within each category by combining these factors: <strong className="text-gray-900">relevance</strong> measures how closely the content matches the category's focus, 
+                  <strong className="text-gray-900"> recency</strong> prioritizes recent publications, and <strong className="text-gray-900">source quality</strong> reflects the publication's reputation and reliability. 
+                  The top articles in each category are displayed in order of their combined score.
                 </p>
               </div>
             </div>
@@ -246,55 +185,22 @@ export default function AboutPage() {
         </div>
 
         {/* Transparency & Disclaimer Card */}
-        <div style={{
-          background: '#fff',
-          borderRadius: 12,
-          boxShadow: '0 2px 24px 0 rgba(28,68,90,.06)',
-          padding: '2.5rem 2rem',
-          marginBottom: '2rem',
-        }}>
-          <h2 style={{
-            fontSize: '1.8rem',
-            fontWeight: 600,
-            color: '#143c42',
-            marginBottom: '1rem',
-          }}>
+        <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6 md:p-8 mb-12 md:mb-16">
+          <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 mb-6">
             Transparency & Disclaimer
           </h2>
-          <div style={{
-            background: '#f4f7fa',
-            borderLeft: '4px solid #3a7b9c',
-            borderRadius: 4,
-            padding: '1rem 1.25rem',
-            marginBottom: '1.5rem',
-          }}>
-            <p style={{
-              fontSize: '1.05rem',
-              color: '#31353c',
-              lineHeight: 1.7,
-              margin: 0,
-              fontStyle: 'italic',
-            }}>
+          <div className="bg-blue-50 border-l-4 border-blue-600 rounded p-4 mb-6">
+            <p className="text-base md:text-lg text-gray-800 leading-relaxed italic m-0">
               <strong>AI-Generated Content:</strong> Summaries are generated using AI and may contain inaccuracies or 
               miss important nuances. Always refer to the original article for complete information.
             </p>
           </div>
-          <p style={{
-            fontSize: '1.05rem',
-            color: '#5c6880',
-            lineHeight: 1.7,
-            marginBottom: '1rem',
-          }}>
-            <strong style={{ color: '#233442' }}>Not Investment or Business Advice:</strong> This digest is for 
+          <p className="text-base md:text-lg text-gray-600 leading-relaxed mb-4">
+            <strong className="text-gray-900">Not Investment or Business Advice:</strong> This digest is for 
             informational purposes only. Articles and summaries are not intended as investment, legal, or business advice.
           </p>
-          <p style={{
-            fontSize: '1.05rem',
-            color: '#5c6880',
-            lineHeight: 1.7,
-            marginBottom: '1rem',
-          }}>
-            <strong style={{ color: '#233442' }}>Source Selection:</strong> Sources are selected based on relevance, 
+          <p className="text-base md:text-lg text-gray-600 leading-relaxed mb-4">
+            <strong className="text-gray-900">Source Selection:</strong> Sources are selected based on relevance, 
             quality, and regular publication schedules. We aim to include diverse perspectives but cannot guarantee 
             comprehensive coverage of all relevant publications.
           </p>

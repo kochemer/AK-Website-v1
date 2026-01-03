@@ -71,10 +71,8 @@ export default function RootLayout({
         </header>
 
         {/* Main Layout Container */}
-        <main className="flex-grow w-full flex justify-center">
-          <div className="w-full max-w-3xl px-4 sm:px-6 py-8">
-            {children}
-          </div>
+        <main className="flex-grow w-full">
+          {children}
         </main>
 
         {/* Footer */}

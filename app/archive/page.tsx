@@ -46,38 +46,32 @@ export default async function ArchivePage() {
   const digests = await getAvailableDigests();
 
   return (
-    <div style={{ maxWidth: '800px', margin: '0 auto', padding: '2rem', fontFamily: 'system-ui, sans-serif' }}>
-      <header style={{ marginBottom: '2rem' }}>
-        <h1 style={{ fontSize: '2.5rem', marginBottom: '0.5rem', fontWeight: '600' }}>
+    <div className="max-w-5xl mx-auto px-4 md:px-6 py-12 md:py-16">
+      <header className="mb-12 md:mb-16">
+        <h1 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
           Digest Archive
         </h1>
-        <Link href="/" style={{ color: '#0066cc', textDecoration: 'none' }}>
+        <Link href="/" className="text-blue-600 hover:text-blue-800 underline text-sm md:text-base">
           ← Back to Home
         </Link>
       </header>
 
       {digests.length > 0 ? (
         <div>
-          <p style={{ color: '#666', marginBottom: '1.5rem' }}>
+          <p className="text-base md:text-lg text-gray-600 mb-8 leading-relaxed">
             Available weekly digests ({digests.length}):
           </p>
-          <ul style={{ listStyle: 'none', padding: 0 }}>
+          <ul className="space-y-3">
             {digests.map((weekLabel) => {
               const formatted = formatWeekLabel(weekLabel);
               return (
-                <li key={weekLabel} style={{ marginBottom: '0.75rem' }}>
+                <li key={weekLabel}>
                   <Link
                     href={`/week/${weekLabel}`}
-                    style={{
-                      display: 'block',
-                      padding: '1rem',
-                      background: '#f9f9f9',
-                      borderRadius: '6px',
-                      color: '#0066cc',
-                      textDecoration: 'none',
-                    }}
+                    className="block p-4 bg-white border border-gray-200 rounded-lg hover:border-gray-300 hover:shadow-sm transition-colors"
                   >
-                    <strong>{formatted}</strong> ({weekLabel})
+                    <span className="font-semibold text-gray-900">{formatted}</span>
+                    <span className="text-sm text-gray-500 ml-2">({weekLabel})</span>
                   </Link>
                 </li>
               );
@@ -85,8 +79,8 @@ export default async function ArchivePage() {
           </ul>
         </div>
       ) : (
-        <p style={{ color: '#666' }}>
-          No digests available yet. Run <code style={{ background: '#f0f0f0', padding: '0.2rem 0.4rem', borderRadius: '3px' }}>npx tsx scripts/buildWeeklyDigest.ts</code> to create digests.
+        <p className="text-base md:text-lg text-gray-600 leading-relaxed">
+          No digests available yet. Run <code className="bg-gray-100 px-2 py-1 rounded text-sm font-mono">npx tsx scripts/buildWeeklyDigest.ts</code> to create digests.
         </p>
       )}
     </div>
