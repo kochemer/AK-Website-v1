@@ -238,9 +238,29 @@ function extractText(html: string, url: string): { text: string; title: string; 
     .replace(/\n+/g, '\n')
     .trim();
   
-  // Extract title
-  let title = $('title').text() || $('h1').first().text() || '';
-  title = title.trim();
+  // Extract title - prefer article-specific meta tags over generic page title
+  let title = '';
+  const titleSelectors = [
+    'meta[property="og:title"]',
+    'meta[name="article:title"]',
+    'meta[property="article:title"]',
+    'h1',
+    'title'
+  ];
+  for (const selector of titleSelectors) {
+    const el = $(selector).first();
+    if (el.length > 0) {
+      title = el.attr('content') || el.text() || '';
+      title = title.trim();
+      if (title.length > 10) break; // Found a substantial title
+    }
+  }
+  
+  // Fallback to title tag if nothing found
+  if (!title || title.length < 10) {
+    title = $('title').text() || $('h1').first().text() || '';
+    title = title.trim();
+  }
   
   // Try to extract author
   let author: string | undefined;
@@ -340,7 +360,19 @@ const NON_ARTICLE_PATTERNS = [
     /access denied/i,
     /cookie policy/i,
     /privacy policy/i,
-    /terms of service/i
+    /terms of service/i,
+    // Cookie/privacy consent pages (English)
+    /your privacy choices/i,
+    /accept.*cookies/i,
+    /cookie consent/i,
+    /privacy settings/i,
+    // Cookie/privacy consent pages (Danish)
+    /dine privatlivsvalg/i,
+    /acceptér alle/i,
+    /afvis alle/i,
+    /cookiepolitik/i,
+    /privatlivspolitik/i,
+    /samtykke/i
 ];
 
 function detectPaywallInText(text: string): { isPaywalled: boolean; reason?: string } {
@@ -510,8 +542,54 @@ async function extractArticle(
           }
         }
         
-        // Use search result title if extracted title is too short
-        const finalTitle = extractedTitle.length > 10 ? extractedTitle : searchResult.title;
+        // Validate extracted title - prefer search result title if extracted title looks suspicious
+        let finalTitle = extractedTitle;
+        
+        // Check if extracted title is suspicious (non-English, cookie/privacy related)
+        const isSuspiciousTitle = (title: string): boolean => {
+          if (title.length < 10) return true;
+          
+          // Check for cookie/privacy consent keywords (English and Danish)
+          const suspiciousKeywords = [
+            'privacy choices', 'privatlivsvalg', 'cookie', 'cookies', 'samtykke',
+            'accept', 'acceptér', 'reject', 'afvis', 'privacy policy', 'cookie policy',
+            'privatlivspolitik', 'cookiepolitik'
+          ];
+          const lowerTitle = title.toLowerCase();
+          if (suspiciousKeywords.some(keyword => lowerTitle.includes(keyword))) {
+            return true;
+          }
+          
+          // Check if title is non-English (simple heuristic: check for non-ASCII characters)
+          // Danish uses mostly ASCII but has special chars (æ, ø, å) - if title has these, it's likely Danish
+          const danishChars = /[æøåÆØÅ]/;
+          if (danishChars.test(title)) {
+            return true;
+          }
+          
+          // Check if title doesn't match search result snippet (title should be related to snippet)
+          // If extracted title is very different from search result title, it's suspicious
+          if (searchResult.title && searchResult.title.length > 10) {
+            const extractedLower = title.toLowerCase();
+            const searchLower = searchResult.title.toLowerCase();
+            // If they share less than 30% of words, it's suspicious
+            const extractedWords = extractedLower.split(/\s+/).filter(w => w.length > 2);
+            const searchWords = searchLower.split(/\s+/).filter(w => w.length > 2);
+            const commonWords = extractedWords.filter(w => searchWords.includes(w));
+            if (extractedWords.length > 0 && commonWords.length / extractedWords.length < 0.3) {
+              return true;
+            }
+          }
+          
+          return false;
+        };
+        
+        if (isSuspiciousTitle(extractedTitle) && searchResult.title && searchResult.title.length > 10) {
+          console.warn(`[Extract] Suspicious title "${extractedTitle}", using search result title: ${searchResult.url}`);
+          finalTitle = searchResult.title;
+        } else if (extractedTitle.length < 10) {
+          finalTitle = searchResult.title;
+        }
         
         // Count words
         const wordCount = text.split(/\s+/).filter(w => w.length > 0).length;
