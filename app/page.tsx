@@ -193,9 +193,9 @@ export default async function Home() {
     }}>
 
       {/* STICKY FULL-SCREEN HERO */}
-      <section className="relative h-[100svh]" style={{ zIndex: 0 }}>
+      <section className="relative h-[70vh] md:h-[100svh]" style={{ zIndex: 0 }}>
         {/* Sticky layer */}
-        <div className="sticky top-0 h-[100svh] overflow-hidden">
+        <div className="sticky top-0 h-[70vh] md:h-[100svh] overflow-hidden">
           {/* Cover image or gradient background */}
           {digest?.coverImageUrl ? (
             <img
@@ -218,8 +218,8 @@ export default async function Home() {
           
           {/* "This week's cover" label - top left */}
           {digest?.coverImageUrl && (
-            <div className="absolute top-6 left-6 z-20">
-              <p className="text-sm md:text-base text-white font-medium" style={{
+            <div className="absolute top-3 left-3 sm:top-6 sm:left-6 z-20">
+              <p className="text-xs sm:text-sm md:text-base text-white font-medium" style={{
                 textShadow: '0 1px 3px rgba(0,0,0,0.5)'
               }}>
                 This week&apos;s cover
@@ -228,27 +228,27 @@ export default async function Home() {
           )}
           
           {/* Hero content */}
-          <div className="relative z-10 h-full flex items-center justify-center">
-            <div className="w-full max-w-[1400px] lg:max-w-[1600px] 2xl:max-w-[1800px] mx-auto px-4 md:px-8 text-center">
-              <div className="bg-black/20 backdrop-blur-sm rounded-2xl px-6 md:px-10 py-8 md:py-12 inline-block">
-                <h1 className="font-bold mb-4 text-[4rem] md:text-[5.5rem] lg:text-[6.5rem] text-white" style={{
+          <div className="relative z-10 h-full flex items-center justify-center px-4">
+            <div className="w-full max-w-[1400px] lg:max-w-[1600px] 2xl:max-w-[1800px] mx-auto text-center">
+              <div className="bg-black/20 backdrop-blur-sm rounded-xl md:rounded-2xl px-4 py-6 md:px-10 md:py-12 inline-block max-w-full">
+                <h1 className="font-bold mb-3 md:mb-4 text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white leading-tight" style={{
                   textShadow: '0 2px 8px rgba(0,0,0,0.5)'
                 }}>
                   Luxury Intelligence
                 </h1>
-                <div className="text-gray-100 leading-relaxed max-w-5xl mx-auto mb-4 text-[1.6rem] md:text-[2rem] lg:text-[2.2rem] whitespace-nowrap" style={{
+                <div className="text-gray-100 leading-relaxed max-w-5xl mx-auto mb-3 md:mb-4 text-base sm:text-lg md:text-xl lg:text-2xl" style={{
                   textShadow: '0 1px 4px rgba(0,0,0,0.3)'
                 }}>
                   Weekly intelligence across AI, ecommerce, luxury, and jewellery.
                 </div>
-                <p className="text-gray-200 mb-6 text-[1.2rem] md:text-[1.5rem] lg:text-[1.6rem] italic" style={{
+                <p className="text-gray-200 mb-4 md:mb-6 text-sm sm:text-base md:text-lg lg:text-xl italic" style={{
                   textShadow: '0 1px 3px rgba(0,0,0,0.3)'
                 }}>
                   Curated articles, signals, and context — handpicked and summarised by AI agents each week.
                 </p>
                 {digest?.weekLabel && (
-                  <div className="mt-8">
-                    <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white drop-shadow-lg" style={{ textShadow: '0 2px 8px rgba(0,0,0,0.5)' }}>
+                  <div className="mt-4 md:mt-8">
+                    <h2 className="text-xl sm:text-2xl md:text-5xl lg:text-6xl font-bold text-white drop-shadow-lg" style={{ textShadow: '0 2px 8px rgba(0,0,0,0.5)' }}>
                       Week {digest.weekLabel}
                     </h2>
                   </div>
@@ -258,16 +258,16 @@ export default async function Home() {
             
             {/* Scroll indicator - inside hero content area */}
             <div 
-              className="absolute bottom-32 left-1/2 pointer-events-none"
+              className="absolute bottom-16 sm:bottom-32 left-1/2 pointer-events-none hidden sm:block"
               style={{
                 transform: 'translateX(-50%)',
                 zIndex: 50,
                 animation: 'scrollIndicator 2s ease-in-out infinite'
               }}
             >
-              <div className="rounded-full px-6 py-5 bg-black/30 backdrop-blur-md shadow-lg border border-white/10">
+              <div className="rounded-full px-4 py-3 sm:px-6 sm:py-5 bg-black/30 backdrop-blur-md shadow-lg border border-white/10">
                 <svg 
-                  className="w-10 h-10 text-white opacity-80" 
+                  className="w-8 h-8 sm:w-10 sm:h-10 text-white opacity-80" 
                   fill="none" 
                   stroke="currentColor" 
                   viewBox="0 0 24 24"
@@ -294,17 +294,19 @@ export default async function Home() {
           
           {/* Date range and build info - bottom right */}
           {digest && (
-            <div className="absolute bottom-4 right-4 z-20">
-              <div className="bg-black/50 backdrop-blur-sm rounded-lg px-4 py-2">
-                <div className="text-xs md:text-sm text-white" style={{
+            <div className="absolute bottom-2 right-2 sm:bottom-4 sm:right-4 z-20">
+              <div className="bg-black/50 backdrop-blur-sm rounded-lg px-2 py-1 sm:px-4 sm:py-2">
+                <div className="text-[10px] sm:text-xs md:text-sm text-white leading-tight" style={{
                   textShadow: '0 1px 2px rgba(0,0,0,0.5)'
                 }}>
-                  <span>
+                  <span className="block sm:inline">
                     {formatDateRange(digest.startISO, digest.endISO)}
-                    {digest.builtAtISO && (
-                      <span className="ml-2">• Built {formatDateTime(digest.builtAtISO)}</span>
-                    )}
                   </span>
+                  {digest.builtAtISO && (
+                    <span className="block sm:inline sm:ml-2">
+                      <span className="hidden sm:inline">•</span> Built {formatDateTime(digest.builtAtISO)}
+                    </span>
+                  )}
                 </div>
               </div>
             </div>
@@ -313,10 +315,10 @@ export default async function Home() {
       </section>
 
       {/* PANELS SECTION - Overtaking Content */}
-      <section className="relative z-20 -mt-16 md:-mt-24">
+      <section className="relative z-20 -mt-8 sm:-mt-12 md:-mt-24">
         {/* Panel Container */}
-        <div className="w-full max-w-[1400px] lg:max-w-[1600px] 2xl:max-w-[1800px] mx-auto px-4 md:px-8">
-          <div className="bg-white/95 dark:bg-zinc-950/90 backdrop-blur rounded-2xl shadow-lg border border-black/5 dark:border-white/10 p-6 md:p-10">
+        <div className="w-full max-w-[1400px] lg:max-w-[1600px] 2xl:max-w-[1800px] mx-auto px-4 sm:px-5 md:px-8">
+          <div className="bg-white/95 dark:bg-zinc-950/90 backdrop-blur rounded-xl md:rounded-2xl shadow-lg border border-black/5 dark:border-white/10 p-4 sm:p-5 md:p-6 lg:p-10">
           {/* If digest missing, show clear notice */}
           {!digest ? (
             <div style={{
@@ -349,12 +351,12 @@ export default async function Home() {
             <>
               {/* Podcast Player - At top of panel */}
               {podcast && (
-                <div className="mb-6 md:mb-8 pb-6 md:pb-8 border-b border-gray-200 dark:border-gray-700">
-                  <div className="mb-3">
-                    <h3 className="text-base md:text-lg font-semibold text-gray-900 dark:text-gray-100">
+                <div className="mb-4 sm:mb-6 md:mb-8 pb-4 sm:pb-6 md:pb-8 border-b border-gray-200 dark:border-gray-700">
+                  <div className="mb-2 sm:mb-3">
+                    <h3 className="text-sm sm:text-base md:text-lg font-semibold text-gray-900 dark:text-gray-100">
                       🎧 Weekly Luxury Intelligence Podcast · ~12 minutes
                     </h3>
-                    <p className="text-sm text-gray-600 dark:text-gray-400 italic mt-2">
+                    <p className="text-xs sm:text-sm text-gray-600 dark:text-gray-400 italic mt-1 sm:mt-2">
                       Listen to this week&apos;s key ecommerce, jewellery & luxury stories
                     </p>
                   </div>
@@ -363,7 +365,8 @@ export default async function Home() {
                     preload="none"
                     className="w-full"
                     style={{
-                      height: '48px',
+                      height: '44px',
+                      minHeight: '44px',
                       borderRadius: '6px',
                     }}
                   >
@@ -374,20 +377,20 @@ export default async function Home() {
               )}
 
               {/* Category Control Bar - Editorial style */}
-              <div className="mb-6 md:mb-8 pb-6 md:pb-8 border-b border-gray-200 dark:border-gray-700">
-                <div className="rounded-2xl border border-black/5 bg-white/70 backdrop-blur-sm px-6 py-4">
-                  <div className="flex items-center justify-between gap-6 flex-wrap">
+              <div className="mb-4 sm:mb-6 md:mb-8 pb-4 sm:pb-6 md:pb-8 border-b border-gray-200 dark:border-gray-700">
+                <div className="rounded-xl md:rounded-2xl border border-black/5 bg-white/70 backdrop-blur-sm px-3 sm:px-4 md:px-6 py-3 sm:py-4">
+                  <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 sm:gap-4 md:gap-6">
                     {/* Left: Category Pills (Primary) */}
-                    <div className="flex items-center gap-4 flex-1 min-w-0">
-                      <span className="text-[11px] uppercase tracking-wider text-black/40 whitespace-nowrap">
+                    <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 flex-1 min-w-0">
+                      <span className="text-[10px] sm:text-[11px] uppercase tracking-wider text-black/40 whitespace-nowrap">
                         Browse by category
                       </span>
-                      <nav className="flex flex-wrap gap-2" aria-label="Category navigation">
+                      <nav className="flex flex-wrap gap-1.5 sm:gap-2" aria-label="Category navigation">
                         {CATEGORY_CARDS.map(cat => (
                           <a
                             key={cat.anchorId}
                             href={`#${cat.anchorId}`}
-                            className="rounded-full border border-black/10 bg-white px-4 py-2 text-sm font-medium text-black/70 hover:bg-black/[0.02] hover:border-black/15 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-black/20 focus-visible:ring-offset-1 transition-colors"
+                            className="rounded-full border border-black/10 bg-white px-3 py-1.5 sm:px-4 sm:py-2 text-xs sm:text-sm font-medium text-black/70 hover:bg-black/[0.02] hover:border-black/15 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-black/20 focus-visible:ring-offset-1 transition-colors"
                           >
                             {cat.title}
                           </a>
@@ -396,16 +399,16 @@ export default async function Home() {
                     </div>
                     
                     {/* Right: System Controls (Secondary) */}
-                    <div className="flex items-center gap-4 flex-shrink-0">
+                    <div className="flex items-center gap-2 sm:gap-4 flex-shrink-0">
                       <Suspense fallback={<div className="h-4 w-20" />}>
                         <TopNSelector />
                       </Suspense>
-                      <div className="w-px h-4 bg-black/10" />
+                      <div className="w-px h-4 bg-black/10 hidden sm:block" />
                       <div className="flex flex-col items-end">
-                        <span className="text-sm font-medium text-black/60">
+                        <span className="text-xs sm:text-sm font-medium text-black/60">
                           {digest.totals.total}
                         </span>
-                        <span className="text-[11px] text-black/40">
+                        <span className="text-[10px] sm:text-[11px] text-black/40">
                           articles analysed this week
                         </span>
                       </div>
@@ -429,19 +432,19 @@ export default async function Home() {
 
               {/* Key Themes Summary (Home Page) */}
               {(digest.keyThemes && digest.keyThemes.length > 0) || digest.oneSentenceSummary ? (
-                <div className="mt-8 md:mt-10 pt-6 md:pt-8 border-t border-gray-200 dark:border-gray-700">
+                <div className="mt-6 sm:mt-8 md:mt-10 pt-4 sm:pt-6 md:pt-8 border-t border-gray-200 dark:border-gray-700">
                   <div className="text-center">
                     {digest.oneSentenceSummary && (
-                      <p className="text-base md:text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+                      <p className="text-sm sm:text-base md:text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-3 sm:mb-4 px-2">
                         {digest.oneSentenceSummary}
                       </p>
                     )}
                     {digest.keyThemes && digest.keyThemes.length > 0 && (
-                      <div className="flex flex-wrap gap-2 justify-center">
+                      <div className="flex flex-wrap gap-1.5 sm:gap-2 justify-center">
                         {digest.keyThemes.map((theme, idx) => (
                           <span
                             key={idx}
-                            className="inline-flex items-center px-3 py-1.5 rounded-full text-sm font-medium bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 border border-blue-200 dark:border-blue-700"
+                            className="inline-flex items-center px-2 py-1 sm:px-3 sm:py-1.5 rounded-full text-xs sm:text-sm font-medium bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 border border-blue-200 dark:border-blue-700"
                           >
                             {theme}
                           </span>
