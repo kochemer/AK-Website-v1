@@ -36,32 +36,32 @@ export default function CategorySection({
     <section 
       id={id}
       className={isGrid 
-        ? "bg-white rounded-lg border border-gray-100 p-3 sm:p-4 md:p-7 scroll-mt-20 sm:scroll-mt-24 relative" 
+        ? "bg-white rounded-lg border border-gray-100 p-4 sm:p-5 md:p-7 scroll-mt-20 sm:scroll-mt-24 relative" 
         : "mb-8 sm:mb-10 md:mb-12 pb-8 sm:pb-10 md:pb-12 border-b border-gray-200 last:border-b-0 last:pb-0 last:mb-0 scroll-mt-20 sm:scroll-mt-24 relative"
       }
     >
       {/* Count Badge - Absolute top right */}
       {count > 0 && (
         <div className="absolute top-0 right-0 flex flex-col items-end" style={{ 
-          paddingTop: isGrid ? '0.75rem' : '0',
-          paddingRight: isGrid ? '0.75rem sm:1rem md:1.75rem' : '0',
+          paddingTop: isGrid ? '1rem' : '0',
+          paddingRight: isGrid ? '1rem sm:1.25rem md:1.75rem' : '0',
           top: '0',
           right: '0',
         }}>
-          <span className="text-[10px] sm:text-xs font-medium text-gray-700">
+          <span className="text-xs sm:text-xs font-medium text-gray-700">
             {count}
           </span>
-          <span className="text-[9px] sm:text-[10px] text-gray-400 leading-tight mt-0.5 hidden sm:block">
+          <span className="text-[10px] sm:text-[10px] text-gray-400 leading-tight mt-0.5 hidden sm:block">
             # of articles processed
           </span>
         </div>
       )}
       {/* Section Header: Title (left) */}
-      <div className="mb-2 sm:mb-3 md:mb-4" style={{ paddingRight: count > 0 ? '3rem sm:4rem md:5rem' : '0' }}>
-        <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 leading-tight">{title}</h2>
+      <div className="mb-3 sm:mb-4 md:mb-5" style={{ paddingRight: count > 0 ? '3.5rem sm:4.5rem md:5rem' : '0' }}>
+        <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 leading-tight pr-2">{title}</h2>
         {/* Optional Description */}
         {description && (
-          <p className="text-xs sm:text-sm md:text-base text-gray-600 mt-1 sm:mt-1.5 leading-relaxed italic">{description}</p>
+          <p className="text-sm sm:text-sm md:text-base text-gray-600 mt-1.5 sm:mt-2 leading-relaxed italic pr-2">{description}</p>
         )}
       </div>
 

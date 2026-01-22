@@ -45,6 +45,27 @@ img {
   height: auto;
 }
 
+/* Improve touch targets on mobile */
+a, button {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.1);
+  touch-action: manipulation;
+}
+
+/* Better text rendering on mobile */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* Prevent text size adjustment on iOS */
+@media screen and (max-width: 768px) {
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+}
+
 /* Scroll indicator animation */
 @keyframes scrollIndicator {
   0%, 100% {

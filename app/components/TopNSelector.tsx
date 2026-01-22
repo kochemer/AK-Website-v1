@@ -101,24 +101,25 @@ export default function TopNSelector() {
   };
 
   return (
-    <div className="flex items-center gap-0.5 sm:gap-1">
-      <span className="text-[10px] sm:text-xs text-black/45">Show:</span>
+    <div className="flex items-center gap-1 sm:gap-1.5">
+      <span className="text-xs sm:text-xs text-black/45">Show:</span>
       {VALID_N_VALUES.map((n) => (
         <button
           key={n}
           onClick={() => handleChange(n)}
-          className={`px-1 sm:px-1.5 py-0.5 text-[10px] sm:text-xs text-black/45 rounded transition-colors cursor-pointer min-w-[24px] sm:min-w-0 ${
+          className={`px-2 sm:px-2 py-1.5 sm:py-1 text-xs sm:text-xs text-black/45 rounded transition-colors cursor-pointer min-w-[36px] sm:min-w-[28px] min-h-[36px] sm:min-h-0 flex items-center justify-center ${
             currentN === n
               ? 'bg-black/[0.04] font-medium text-black/60'
               : 'bg-transparent hover:bg-black/[0.02] hover:text-black/50'
           }`}
+          style={{ minHeight: '36px', minWidth: '36px' }}
           aria-label={`Show ${n} articles per category`}
           aria-pressed={currentN === n}
         >
           {n}
         </button>
       ))}
-      <span className="text-[10px] sm:text-xs text-black/45 hidden sm:inline">per category</span>
+      <span className="text-xs sm:text-xs text-black/45 hidden sm:inline">per category</span>
     </div>
   );
 }

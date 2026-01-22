@@ -228,27 +228,27 @@ export default async function Home() {
           )}
           
           {/* Hero content */}
-          <div className="relative z-10 h-full flex items-center justify-center px-4">
+          <div className="relative z-10 h-full flex items-center justify-center px-4 sm:px-6 md:px-8">
             <div className="w-full max-w-[1400px] lg:max-w-[1600px] 2xl:max-w-[1800px] mx-auto text-center">
-              <div className="bg-black/20 backdrop-blur-sm rounded-xl md:rounded-2xl px-4 py-6 md:px-10 md:py-12 inline-block max-w-full">
-                <h1 className="font-bold mb-3 md:mb-4 text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white leading-tight" style={{
+              <div className="bg-black/20 backdrop-blur-sm rounded-xl md:rounded-2xl px-5 py-7 sm:px-6 sm:py-8 md:px-10 md:py-12 inline-block max-w-full mx-2 sm:mx-4">
+                <h1 className="font-bold mb-3 sm:mb-4 md:mb-5 text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-white leading-tight px-1" style={{
                   textShadow: '0 2px 8px rgba(0,0,0,0.5)'
                 }}>
                   Luxury Intelligence
                 </h1>
-                <div className="text-gray-100 leading-relaxed max-w-5xl mx-auto mb-3 md:mb-4 text-base sm:text-lg md:text-xl lg:text-2xl" style={{
+                <div className="text-gray-100 leading-relaxed max-w-5xl mx-auto mb-3 sm:mb-4 md:mb-5 text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl px-2" style={{
                   textShadow: '0 1px 4px rgba(0,0,0,0.3)'
                 }}>
                   Weekly intelligence across AI, ecommerce, luxury, and jewellery.
                 </div>
-                <p className="text-gray-200 mb-4 md:mb-6 text-sm sm:text-base md:text-lg lg:text-xl italic" style={{
+                <p className="text-gray-200 mb-4 sm:mb-5 md:mb-6 text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl italic px-2 sm:px-3" style={{
                   textShadow: '0 1px 3px rgba(0,0,0,0.3)'
                 }}>
                   Curated articles, signals, and context — handpicked and summarised by AI agents each week.
                 </p>
                 {digest?.weekLabel && (
-                  <div className="mt-4 md:mt-8">
-                    <h2 className="text-xl sm:text-2xl md:text-5xl lg:text-6xl font-bold text-white drop-shadow-lg" style={{ textShadow: '0 2px 8px rgba(0,0,0,0.5)' }}>
+                  <div className="mt-4 sm:mt-6 md:mt-8">
+                    <h2 className="text-lg sm:text-xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white drop-shadow-lg px-2" style={{ textShadow: '0 2px 8px rgba(0,0,0,0.5)' }}>
                       Week {digest.weekLabel}
                     </h2>
                   </div>
@@ -294,9 +294,9 @@ export default async function Home() {
           
           {/* Date range and build info - bottom right */}
           {digest && (
-            <div className="absolute bottom-2 right-2 sm:bottom-4 sm:right-4 z-20">
-              <div className="bg-black/50 backdrop-blur-sm rounded-lg px-2 py-1 sm:px-4 sm:py-2">
-                <div className="text-[10px] sm:text-xs md:text-sm text-white leading-tight" style={{
+            <div className="absolute bottom-3 right-3 sm:bottom-4 sm:right-4 z-20">
+              <div className="bg-black/50 backdrop-blur-sm rounded-lg px-3 py-1.5 sm:px-4 sm:py-2">
+                <div className="text-xs sm:text-xs md:text-sm text-white leading-tight" style={{
                   textShadow: '0 1px 2px rgba(0,0,0,0.5)'
                 }}>
                   <span className="block sm:inline">
@@ -351,12 +351,12 @@ export default async function Home() {
             <>
               {/* Podcast Player - At top of panel */}
               {podcast && (
-                <div className="mb-4 sm:mb-6 md:mb-8 pb-4 sm:pb-6 md:pb-8 border-b border-gray-200 dark:border-gray-700">
-                  <div className="mb-2 sm:mb-3">
-                    <h3 className="text-sm sm:text-base md:text-lg font-semibold text-gray-900 dark:text-gray-100">
+                <div className="mb-5 sm:mb-6 md:mb-8 pb-5 sm:pb-6 md:pb-8 border-b border-gray-200 dark:border-gray-700">
+                  <div className="mb-3 sm:mb-3">
+                    <h3 className="text-base sm:text-base md:text-lg font-semibold text-gray-900 dark:text-gray-100">
                       🎧 Weekly Luxury Intelligence Podcast · ~12 minutes
                     </h3>
-                    <p className="text-xs sm:text-sm text-gray-600 dark:text-gray-400 italic mt-1 sm:mt-2">
+                    <p className="text-sm sm:text-sm text-gray-600 dark:text-gray-400 italic mt-1.5 sm:mt-2">
                       Listen to this week&apos;s key ecommerce, jewellery & luxury stories
                     </p>
                   </div>
@@ -365,9 +365,9 @@ export default async function Home() {
                     preload="none"
                     className="w-full"
                     style={{
-                      height: '44px',
-                      minHeight: '44px',
-                      borderRadius: '6px',
+                      height: '48px',
+                      minHeight: '48px',
+                      borderRadius: '8px',
                     }}
                   >
                     <source src={podcast.audioPath} type="audio/mpeg" />
@@ -378,19 +378,20 @@ export default async function Home() {
 
               {/* Category Control Bar - Editorial style */}
               <div className="mb-4 sm:mb-6 md:mb-8 pb-4 sm:pb-6 md:pb-8 border-b border-gray-200 dark:border-gray-700">
-                <div className="rounded-xl md:rounded-2xl border border-black/5 bg-white/70 backdrop-blur-sm px-3 sm:px-4 md:px-6 py-3 sm:py-4">
-                  <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 sm:gap-4 md:gap-6">
+                <div className="rounded-xl md:rounded-2xl border border-black/5 bg-white/70 backdrop-blur-sm px-4 sm:px-5 md:px-6 py-4 sm:py-4">
+                  <div className="flex flex-col gap-4 sm:gap-4 md:gap-6">
                     {/* Left: Category Pills (Primary) */}
-                    <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 flex-1 min-w-0">
-                      <span className="text-[10px] sm:text-[11px] uppercase tracking-wider text-black/40 whitespace-nowrap">
+                    <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:gap-4 flex-1 min-w-0">
+                      <span className="text-[11px] sm:text-[11px] uppercase tracking-wider text-black/40 whitespace-nowrap">
                         Browse by category
                       </span>
-                      <nav className="flex flex-wrap gap-1.5 sm:gap-2" aria-label="Category navigation">
+                      <nav className="flex flex-wrap gap-2 sm:gap-2.5" aria-label="Category navigation">
                         {CATEGORY_CARDS.map(cat => (
                           <a
                             key={cat.anchorId}
                             href={`#${cat.anchorId}`}
-                            className="rounded-full border border-black/10 bg-white px-3 py-1.5 sm:px-4 sm:py-2 text-xs sm:text-sm font-medium text-black/70 hover:bg-black/[0.02] hover:border-black/15 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-black/20 focus-visible:ring-offset-1 transition-colors"
+                            className="rounded-full border border-black/10 bg-white px-3.5 py-2 sm:px-4 sm:py-2 text-xs sm:text-sm font-medium text-black/70 hover:bg-black/[0.02] hover:border-black/15 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black/20 focus-visible:ring-offset-1 transition-colors min-h-[40px] sm:min-h-0 flex items-center justify-center"
+                            style={{ minHeight: '40px' }}
                           >
                             {cat.title}
                           </a>
@@ -399,13 +400,13 @@ export default async function Home() {
                     </div>
                     
                     {/* Right: System Controls (Secondary) */}
-                    <div className="flex items-center gap-2 sm:gap-4 flex-shrink-0">
+                    <div className="flex items-center justify-between sm:justify-end gap-3 sm:gap-4 flex-shrink-0 border-t border-black/5 sm:border-t-0 pt-3 sm:pt-0">
                       <Suspense fallback={<div className="h-4 w-20" />}>
                         <TopNSelector />
                       </Suspense>
-                      <div className="w-px h-4 bg-black/10 hidden sm:block" />
-                      <div className="flex flex-col items-end">
-                        <span className="text-xs sm:text-sm font-medium text-black/60">
+                      <div className="w-px h-6 bg-black/10 hidden sm:block" />
+                      <div className="flex flex-col items-end sm:items-end">
+                        <span className="text-sm sm:text-sm font-medium text-black/60">
                           {digest.totals.total}
                         </span>
                         <span className="text-[10px] sm:text-[11px] text-black/40">
