@@ -14,7 +14,7 @@ const __dirname = path.dirname(__filename);
 
 // --- Configuration ---
 
-const SCENE_DIRECTOR_VERSION = 'v2'; // Updated to include Boringness Breaker system
+const SCENE_DIRECTOR_VERSION = 'v3'; // Updated to playful, absurd visual metaphor approach
 const SCENE_DIRECTOR_MODEL = process.env.SCENE_DIRECTOR_MODEL || 'gpt-4o';
 const TEMPERATURE = 0.7; // Some creativity for scene generation
 const MAX_TOKENS = 2000;
@@ -33,20 +33,11 @@ export type ArticleInput = {
 };
 
 export type SceneDirectorOutput = {
-  conceptTitle: string;
-  oneSentenceConcept: string;
-  visualAnchors: {
-    location: string;
-    subjects: string[];
-    props: string[];
-    action: string;
-  };
-  humorNote: string;
-  boringnessBreaker: {
-    selected: string[]; // IDs of techniques chosen (e.g., ["A", "E"])
-    executionNote: string; // 1 sentence describing how it shows up visually
-  };
-  finalImagePrompt: string;
+  concept: string; // Short concept title
+  primaryHumorDriver: string; // One of: "role reversal", "scale absurdity", "literal metaphor", "fish-out-of-water", "visual punchline"
+  secondaryEnhancer?: string; // Optional flavor enhancer
+  sceneDescription: string; // Vivid, concrete description of the scene
+  finalImagePrompt: string; // Complete prompt ready for image generation
   negativePrompt: string[];
   confidence: number;
 };
@@ -101,33 +92,23 @@ function generateFallbackPrompt(articles: ArticleInput[]): SceneDirectorOutput {
   const titles = articles.map(a => a.title).join(', ');
   
   return {
-    conceptTitle: 'editorial-retail-scene',
-    oneSentenceConcept: `A professional editorial photograph of a modern retail environment inspired by: ${titles}`,
-    visualAnchors: {
-      location: 'modern retail environment',
-      subjects: ['professional'],
-      props: ['retail elements'],
-      action: 'engaged in retail activity'
-    },
-    humorNote: 'none',
-    boringnessBreaker: {
-      selected: ['A'], // Human micro-moment as default
-      executionNote: 'subtle human hesitation or micro-expression'
-    },
-    finalImagePrompt: `Create a hyper-realistic editorial photograph for a premium business and retail intelligence publication.
+    concept: 'editorial-retail-scene',
+    primaryHumorDriver: 'visual punchline',
+    secondaryEnhancer: 'unexpected texture/material combination',
+    sceneDescription: `A hyper-realistic editorial photograph of a modern retail environment inspired by the week's articles. The scene captures a playful visual metaphor where retail objects are arranged in an unexpected but believable way, creating a subtle visual joke that makes the viewer pause and smile. Natural lighting, realistic textures, and candid composition.`,
+    finalImagePrompt: `Create a hyper-realistic editorial photograph for a weekly intelligence digest.
 
 CRITICAL: This image must visually represent ONLY the following articles: ${titles}
 
 Scene:
-A believable, real-world retail situation inspired by these articles, captured mid-moment.
-The scene should feel candid, slightly imperfect, and human — not staged for marketing.
+A playful, slightly absurd visual metaphor inspired by these articles. The scene should be believable but create a visual joke that makes the viewer pause and smile. Prefer object-driven scenes over people-driven scenes.
 
 Photography style:
 - Shot on a high-end DSLR or medium-format camera
 - Natural or practical lighting (window light, store lighting)
-- Realistic skin texture, fabric texture, reflections, imperfections
+- Realistic textures, materials, reflections, imperfections
 - Shallow depth of field where appropriate
-- Editorial realism (Financial Times / WSJ Magazine / Vogue Business)
+- Editorial realism with a playful, humorous tone
 
 Composition:
 - Wide, horizontally expansive banner format (target 3:1 or wider aspect ratio)
@@ -144,12 +125,12 @@ ABSOLUTE PROHIBITIONS:
 - NO screens, dashboards, UI, holograms, floating icons, symbols, charts, or interface elements
 - NO text of any kind (including signs, labels, price tags, screens, books, posters)
 - NO futuristic or sci-fi visual language
-- NO glossy CGI look
+- NO glossy CGI look, no cartoon, no illustration
 - NO logos, no brand marks, no watermarks
 
 If an element could reasonably contain text in real life (screen, sign, paper), it MUST be out of frame, fully blurred, or turned away from the camera.
 
-Prioritize realism over visual cleverness.`,
+The scene should be playful and absurd but look like a real photograph.`,
     negativePrompt: [
       'text, letters, numbers, signage, labels',
       'screens, UI, dashboards, holograms, floating icons',
@@ -177,65 +158,56 @@ function buildSceneDirectorPrompt(articles: ArticleInput[], variant: Variant): s
     return articleText;
   }).join('\n\n');
 
-  const variantGuidance = variant === 'safe' 
-    ? 'Use a conservative, straightforward interpretation. Prioritize guaranteed realism over creative risk.'
-    : 'Allow for subtle irony, contrast, or unexpected moments that feel natural and unforced. Balance realism with visual interest.';
+  return `You are a Scene Director for a weekly intelligence digest.
 
-  return `You are a Scene Director for a premium business and retail intelligence publication. Your job is to design a single, coherent, hyper-realistic editorial photograph that visually represents the week's top articles.
+Your job is to create a SINGLE photorealistic scene that acts as a playful, slightly absurd visual metaphor for the week's most important articles.
 
-CRITICAL CONSTRAINTS:
-1. You MUST create ONE coherent real-world scene (no collage, no split-screen, no multiple scenes)
-2. The scene MUST be photorealistic editorial photography, NOT illustration, cartoon, or CGI
-3. You can ONLY use the provided articles as inspiration - do not introduce themes, scenes, or ideas not directly grounded in them
-4. The scene must encode novelty via situation/action/contrast, NOT via sci-fi elements, overlays, or abstract graphics
-5. NO text-bearing surfaces (signs/screens/newspapers/labels). If unavoidable, specify "fully blurred / out of focus / turned away"
-6. Humor must be subtle (irony/contrast), never slapstick or cartoon
-7. Recency is irrelevant - focus on the conceptual essence
-8. You MUST select at least ONE Boringness Breaker technique and encode it visually via action/framing/environment
-9. Do NOT explain the humor in words; it must be visually inferred
-10. No text, letters, numbers, signage, labels; no screens/UI/holograms; no logos/watermarks; avoid CGI/cartoon
+STYLE & TONE
+- Hyper-realistic photography
+- Lively, humorous, slightly silly
+- Smart visual joke, not cartoonish
+- Absurd situations are allowed if they look real
+- The goal is to make the viewer pause and smile
 
-BORINGNESS BREAKER CATALOGUE (select at least ONE):
-A) Human micro-moment:
-   - hesitation, raised eyebrow, half-smile, checking something twice, "caught thinking"
-B) Mild situational irony:
-   - luxury context meets operational reality, high-tech implied but manual workaround visible
-C) Visual tension:
-   - "about to happen" moment, hand hovering, object mid-air, near-miss alignment
-D) Role reversal:
-   - senior-looking person doing junior task, back-office role in front-of-house setting
-E) Framing tricks (photography craft):
-   - foreground obstruction, reflection reveal, over-the-shoulder perspective, off-center crop
-F) Environmental storytelling:
-   - props suggest recent use (fingerprints, open drawer, slightly moved item), contrast prepared vs in-use
-G) Time-pressure cues (non-stressful):
-   - calm multitasking, end-of-day/just-opened vibe, implied urgency without chaos
-H) Soft contradiction:
-   - calm scene with one detail "not quite right" that becomes interesting after 2 seconds
-I) Tasteful Easter egg:
-   - small recurring/out-of-place object that rewards a second look (no text)
+MANDATORY RULES
+- NO text, logos, signs, UI, screens, or readable symbols
+- NO illustration, CGI, or cartoon style
+- Photorealistic lighting, textures, and materials
+- Wide banner composition (elements in central horizontal band)
+- ONE coherent scene (no collage, no split-screen)
+
+CREATIVE GUIDANCE
+- Prefer object-driven scenes over people-driven scenes
+- Humans may appear, but objects should carry the joke
+- The scene does not need to be realistic — it must be believable
+- Avoid "people standing around discussing things"
+- Recency is irrelevant - focus on the conceptual essence
+
+BORINGNESS BREAKER (REQUIRED)
+You MUST select at least ONE Primary Humor Driver:
+1. "role reversal" - Unexpected person/object in wrong context (e.g., CEO doing janitor work, luxury item in mundane setting)
+2. "scale absurdity" - Size mismatch that creates visual humor (e.g., tiny luxury car, giant smartphone)
+3. "literal metaphor" - Taking a phrase or concept literally in a visual way (e.g., "breaking the glass ceiling" = actual broken glass)
+4. "fish-out-of-water" - Object/person in completely wrong environment (e.g., luxury watch in a tool shed)
+5. "visual punchline" - Setup and payoff in one frame, delayed understanding
+
+Optionally add one Flavor Enhancer:
+- Unexpected texture/material combination
+- Anachronistic element (old tech with new, vice versa)
+- Mirror/reflection reveal
+- Partial obstruction creating mystery
+- Implied motion or "just happened" moment
 
 ARTICLES TO REPRESENT:
 ${articleList}
 
-VARIANT GUIDANCE: ${variantGuidance}
-
 OUTPUT FORMAT (JSON only, no markdown, no code blocks):
 {
-  "conceptTitle": "short internal label (e.g., 'luxury-retail-contrast')",
-  "oneSentenceConcept": "one sentence describing the scene",
-  "visualAnchors": {
-    "location": "specific real-world location (e.g., 'luxury jewelry boutique in London')",
-    "subjects": ["person/people in scene (e.g., 'luxury retail manager', 'affluent customer')"],
-    "props": ["key objects in scene (e.g., 'jewelry display case', 'smartphone')"],
-    "action": "what's happening in the scene (e.g., 'examining jewelry while checking phone')"
-  },
-  "humorNote": "subtle humor mechanism if any, or 'none'",
-  "boringnessBreaker": {
-    "selected": ["A","E"],        // IDs of techniques chosen (at least one required)
-    "executionNote": "1 sentence describing how it shows up visually"
-  },
-  "finalImagePrompt": "A SINGLE STRING to send to DALL-E. Must include: photography framing cues (lens/lighting/DOF), explicit 'no text/no signage/no screens' constraints, editorial realism cues (real materials, real reflections, imperfections), explicit 'avoid stock photo' guidance (candid, mid-action, human), wide horizontal banner composition (all important visual elements in central horizontal band, safe margins at top and bottom, vertically minimal height, horizontally expansive), visual encoding of the selected Boringness Breaker technique(s). The prompt should be complete and ready to send to DALL-E.",
+  "concept": "short concept title (e.g., 'luxury-diamond-scale-absurdity')",
+  "primaryHumorDriver": "one of: role reversal, scale absurdity, literal metaphor, fish-out-of-water, visual punchline",
+  "secondaryEnhancer": "optional flavor enhancer or null",
+  "sceneDescription": "vivid, concrete description of the scene. Be specific about objects, lighting, composition, and the visual joke. Describe what makes it absurd but believable.",
+  "finalImagePrompt": "A SINGLE STRING ready for DALL-E. Must include: hyper-realistic photography style, specific lighting (natural/practical), camera framing (lens/DOF), wide horizontal banner composition (3:1 aspect ratio, elements in central horizontal band, safe margins), explicit 'no text/no signage/no screens' constraints, the absurd/playful visual metaphor clearly described, photorealistic materials and textures. The prompt should make the visual joke clear while ensuring photorealism.",
   "negativePrompt": [
     "text, letters, numbers, signage, labels",
     "screens, UI, dashboards, holograms, floating icons",
@@ -245,16 +217,9 @@ OUTPUT FORMAT (JSON only, no markdown, no code blocks):
   "confidence": 0.0
 }
 
-The finalImagePrompt must be a complete, standalone prompt that DALL-E can use directly. Include all necessary constraints and style guidance within that single string.
+The finalImagePrompt must be complete and ready to send to DALL-E. The scene should be playful and absurd but look like a real photograph.
 
-COMPOSITION REQUIREMENTS (CRITICAL for website hero banner):
-- Wide, horizontally expansive banner format (3:1 or wider aspect ratio)
-- Vertically minimal height - all important visual elements must be placed in the central horizontal band
-- Safe margins at top and bottom - no critical content near vertical edges
-- Composition should work when cropped to a wide, shallow container
-- Avoid vertical stacking or tall elements that would be cropped
-
-Set confidence to a value between 0.0 and 1.0 based on how well the articles can be combined into a single coherent scene. Lower confidence if articles are thematically incompatible or if the scene feels forced.`;
+Set confidence between 0.0 and 1.0 based on how well the articles can be combined into a single coherent, humorous scene.`;
 }
 
 async function callSceneDirectorLLM(
@@ -270,7 +235,7 @@ async function callSceneDirectorLLM(
     
     // Add retry message if this is a retry
     if (isRetry) {
-      prompt = `IMPORTANT: You must select at least one Boringness Breaker technique and encode it visually. Your previous response was missing or had an empty boringnessBreaker.selected field.
+      prompt = `IMPORTANT: You must select a primaryHumorDriver (one of: role reversal, scale absurdity, literal metaphor, fish-out-of-water, visual punchline). Your previous response was missing or invalid.
 
 ${prompt}`;
     }
@@ -280,7 +245,7 @@ ${prompt}`;
       messages: [
         {
           role: 'system',
-          content: 'You are a Scene Director for editorial photography. You output ONLY valid JSON, no markdown, no code blocks, no explanations.'
+          content: 'You are a Scene Director for a weekly intelligence digest. You create playful, absurd visual metaphors using photorealistic scenes. You output ONLY valid JSON, no markdown, no code blocks, no explanations.'
         },
         {
           role: 'user',
@@ -311,13 +276,18 @@ ${prompt}`;
       throw new Error('Invalid response: missing finalImagePrompt');
     }
     
-    if (!parsed.visualAnchors || typeof parsed.visualAnchors !== 'object') {
-      throw new Error('Invalid response: missing visualAnchors');
+    if (!parsed.concept || typeof parsed.concept !== 'string') {
+      throw new Error('Invalid response: missing concept');
     }
     
-    // Validate Boringness Breaker (MANDATORY)
-    if (!parsed.boringnessBreaker || !parsed.boringnessBreaker.selected || !Array.isArray(parsed.boringnessBreaker.selected) || parsed.boringnessBreaker.selected.length === 0) {
-      throw new Error('Invalid response: missing or empty boringnessBreaker.selected (at least one technique required)');
+    if (!parsed.sceneDescription || typeof parsed.sceneDescription !== 'string') {
+      throw new Error('Invalid response: missing sceneDescription');
+    }
+    
+    // Validate Primary Humor Driver (MANDATORY)
+    const validHumorDrivers = ['role reversal', 'scale absurdity', 'literal metaphor', 'fish-out-of-water', 'visual punchline'];
+    if (!parsed.primaryHumorDriver || typeof parsed.primaryHumorDriver !== 'string' || !validHumorDrivers.includes(parsed.primaryHumorDriver.toLowerCase())) {
+      throw new Error(`Invalid response: primaryHumorDriver must be one of: ${validHumorDrivers.join(', ')}`);
     }
     
     // Ensure confidence is a number
@@ -325,19 +295,17 @@ ${prompt}`;
       parsed.confidence = 0.5;
     }
     
-    // Check if breaker is weakly applied (confidence penalty)
-    const hasExecutionNote = parsed.boringnessBreaker?.executionNote && parsed.boringnessBreaker.executionNote.trim().length > 0;
-    const executionNoteIsGeneric = hasExecutionNote && (
-      parsed.boringnessBreaker.executionNote.toLowerCase().includes('funny') ||
-      parsed.boringnessBreaker.executionNote.toLowerCase().includes('humor') ||
-      parsed.boringnessBreaker.executionNote.toLowerCase().includes('interesting') ||
-      parsed.boringnessBreaker.executionNote.length < 20 // Too short to be specific
-    );
+    // Check if scene description is too generic (confidence penalty)
+    const sceneDesc = parsed.sceneDescription?.toLowerCase() || '';
+    const isGeneric = sceneDesc.length < 50 || 
+      sceneDesc.includes('interesting') || 
+      sceneDesc.includes('humorous') ||
+      sceneDesc.includes('funny') ||
+      !sceneDesc.includes('photograph') && !sceneDesc.includes('scene') && !sceneDesc.includes('image');
     
-    if (executionNoteIsGeneric || !hasExecutionNote) {
-      // Reduce confidence if breaker is weakly applied
+    if (isGeneric) {
       parsed.confidence = Math.max(0.0, parsed.confidence - 0.15);
-      console.warn(`[SceneDirector] Boringness Breaker weakly applied, reducing confidence by 0.15`);
+      console.warn(`[SceneDirector] Scene description too generic, reducing confidence by 0.15`);
     }
     
     // Ensure negativePrompt is an array
@@ -354,9 +322,9 @@ ${prompt}`;
   } catch (error) {
     const errorMessage = (error as Error).message;
     
-    // If missing boringnessBreaker and not already a retry, retry once
-    if (errorMessage.includes('boringnessBreaker') && !isRetry) {
-      console.warn(`[SceneDirector] Missing Boringness Breaker, retrying once...`);
+    // If missing primaryHumorDriver and not already a retry, retry once
+    if ((errorMessage.includes('primaryHumorDriver') || errorMessage.includes('humor')) && !isRetry) {
+      console.warn(`[SceneDirector] Missing Primary Humor Driver, retrying once...`);
       return callSceneDirectorLLM(articles, variant, apiKey, true);
     }
     
@@ -428,7 +396,7 @@ export async function generateCoverScenePrompt(
   };
   await saveCache(cache);
   
-  console.log(`[SceneDirector] Generated scene: ${result.conceptTitle} (confidence: ${result.confidence.toFixed(2)})`);
+  console.log(`[SceneDirector] Generated scene: ${result.concept} (${result.primaryHumorDriver}, confidence: ${result.confidence.toFixed(2)})`);
   
   return result;
 }

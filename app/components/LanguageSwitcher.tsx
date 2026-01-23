@@ -53,10 +53,10 @@ export default function LanguageSwitcher() {
   };
 
   return (
-    <div className="flex items-center gap-1.5 text-xs font-medium">
+    <div className="flex items-center gap-1 text-xs font-medium">
       <Link
         href={getEnglishPath()}
-        className={`px-2 py-1 rounded transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-1 ${
+        className={`px-2.5 py-1.5 md:px-2 md:py-1 rounded transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-1 min-h-[36px] md:min-h-0 flex items-center ${
           !isSpanish && !isDanish
             ? 'text-gray-900 font-semibold bg-gray-100'
             : 'text-gray-600 hover:text-gray-900 hover:bg-gray-50'
@@ -68,7 +68,7 @@ export default function LanguageSwitcher() {
       <span className="text-gray-300">|</span>
       <Link
         href={getSpanishPath()}
-        className={`px-2 py-1 rounded transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-1 ${
+        className={`px-2.5 py-1.5 md:px-2 md:py-1 rounded transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-1 min-h-[36px] md:min-h-0 flex items-center ${
           isSpanish
             ? 'text-gray-900 font-semibold bg-gray-100'
             : 'text-gray-600 hover:text-gray-900 hover:bg-gray-50'
@@ -80,7 +80,7 @@ export default function LanguageSwitcher() {
       <span className="text-gray-300">|</span>
       <Link
         href={getDanishPath()}
-        className={`px-2 py-1 rounded transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-1 ${
+        className={`px-2.5 py-1.5 md:px-2 md:py-1 rounded transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-1 min-h-[36px] md:min-h-0 flex items-center ${
           isDanish
             ? 'text-gray-900 font-semibold bg-gray-100'
             : 'text-gray-600 hover:text-gray-900 hover:bg-gray-50'

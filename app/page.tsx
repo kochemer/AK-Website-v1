@@ -377,20 +377,23 @@ export default async function Home() {
               )}
 
               {/* Category Control Bar - Editorial style */}
-              <div className="mb-4 sm:mb-6 md:mb-8 pb-4 sm:pb-6 md:pb-8 border-b border-gray-200 dark:border-gray-700">
-                <div className="rounded-xl md:rounded-2xl border border-black/5 bg-white/70 backdrop-blur-sm px-4 sm:px-5 md:px-6 py-4 sm:py-4">
-                  <div className="flex flex-col gap-4 sm:gap-4 md:gap-6">
-                    {/* Left: Category Pills (Primary) */}
-                    <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:gap-4 flex-1 min-w-0">
-                      <span className="text-[11px] sm:text-[11px] uppercase tracking-wider text-black/40 whitespace-nowrap">
+              <div className="mb-4 sm:mb-5 md:mb-6 pb-4 sm:pb-5 md:pb-6 border-b border-gray-200 dark:border-gray-700">
+                <div className="rounded-xl md:rounded-2xl border border-black/5 bg-white/70 backdrop-blur-sm px-4 sm:px-4 md:px-5 py-3 sm:py-3 md:py-3.5">
+                  <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2.5 sm:gap-3 md:gap-3">
+                    {/* Left: Category Label + Pills */}
+                    <div className="flex flex-col sm:flex-row sm:items-center gap-2.5 sm:gap-3 md:gap-3 flex-wrap">
+                      {/* Category Label */}
+                      <span className="text-[11px] uppercase tracking-wider text-black/40 whitespace-nowrap">
                         Browse by category
                       </span>
-                      <nav className="flex flex-wrap gap-2 sm:gap-2.5" aria-label="Category navigation">
+                      
+                      {/* Category Pills */}
+                      <nav className="flex flex-wrap gap-1.5 sm:gap-2 md:gap-2 items-center" aria-label="Category navigation">
                         {CATEGORY_CARDS.map(cat => (
                           <a
                             key={cat.anchorId}
                             href={`#${cat.anchorId}`}
-                            className="rounded-full border border-black/10 bg-white px-3.5 py-2 sm:px-4 sm:py-2 text-xs sm:text-sm font-medium text-black/70 hover:bg-black/[0.02] hover:border-black/15 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black/20 focus-visible:ring-offset-1 transition-colors min-h-[40px] sm:min-h-0 flex items-center justify-center"
+                            className="rounded-full border border-black/10 bg-white px-3 py-1.5 sm:px-3.5 sm:py-2 md:px-3.5 md:py-1.5 text-xs sm:text-xs md:text-sm font-medium text-black/70 hover:bg-black/[0.02] hover:border-black/15 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black/20 focus-visible:ring-offset-1 transition-colors min-h-[40px] sm:min-h-0 flex items-center justify-center"
                             style={{ minHeight: '40px' }}
                           >
                             {cat.title}
@@ -399,17 +402,27 @@ export default async function Home() {
                       </nav>
                     </div>
                     
-                    {/* Right: System Controls (Secondary) */}
-                    <div className="flex items-center justify-between sm:justify-end gap-3 sm:gap-4 flex-shrink-0 border-t border-black/5 sm:border-t-0 pt-3 sm:pt-0">
-                      <Suspense fallback={<div className="h-4 w-20" />}>
-                        <TopNSelector />
-                      </Suspense>
-                      <div className="w-px h-6 bg-black/10 hidden sm:block" />
-                      <div className="flex flex-col items-end sm:items-end">
-                        <span className="text-sm sm:text-sm font-medium text-black/60">
+                    {/* Right: Top N + Article Count */}
+                    <div className="flex items-center gap-2 sm:gap-2.5 md:gap-3 flex-shrink-0">
+                      {/* Divider */}
+                      <div className="w-px h-5 bg-black/10 hidden sm:block" />
+                      
+                      {/* Top N Selector */}
+                      <div className="flex items-center">
+                        <Suspense fallback={<div className="h-4 w-20" />}>
+                          <TopNSelector />
+                        </Suspense>
+                      </div>
+                      
+                      {/* Divider */}
+                      <div className="w-px h-5 bg-black/10 hidden sm:block" />
+                      
+                      {/* Article Count */}
+                      <div className="flex flex-col items-end">
+                        <span className="text-xs sm:text-xs md:text-sm font-medium text-black/60">
                           {digest.totals.total}
                         </span>
-                        <span className="text-[10px] sm:text-[11px] text-black/40">
+                        <span className="text-[10px] sm:text-[10px] md:text-[11px] text-black/40">
                           articles analysed this week
                         </span>
                       </div>

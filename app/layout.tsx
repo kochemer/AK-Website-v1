@@ -90,64 +90,62 @@ export default function RootLayout({
           }}
         />
         <AmplitudeInit />
-        {/* Sticky Header */}
+        {/* Sticky Header - Mobile First */}
         <header
           className="sticky top-0 z-30 bg-white/85 backdrop-blur border-b border-gray-200"
           style={{
             boxShadow: "0 1px 10px 0 rgba(0,0,0,0.03)",
-            position: 'relative',
           }}
         >
-          {/* Language Switcher - Absolute top right */}
-          <div className="absolute top-0 right-0 z-40 px-3 sm:px-4 md:px-6 py-2 sm:py-2">
-            <LanguageSwitcher />
-          </div>
-          {/* Luxury Intelligence - Absolute top left */}
-          <div className="absolute top-0 left-0 z-40 px-3 sm:px-4 md:px-6 py-2 sm:py-2">
+          {/* Top Row: Title + Language Switcher (Mobile) */}
+          <div className="flex items-center justify-between px-4 py-2.5 md:hidden">
             <span
-              className="font-bold text-base sm:text-lg md:text-xl tracking-tight"
+              className="font-bold text-sm tracking-tight"
               style={{ letterSpacing: "-0.01em" }}
             >
               Luxury Intelligence
             </span>
+            <LanguageSwitcher />
           </div>
-          <nav className="max-w-3xl mx-auto flex items-center justify-center py-3 sm:py-3.5 md:py-4 pl-[calc(3rem+0.5rem)] sm:pl-[calc(4rem+1rem)] md:pl-[calc(6rem+1.5rem)] pr-[calc(3rem+0.5rem)] sm:pr-[calc(4rem+1rem)] md:pr-[calc(6rem+1.5rem)]">
-            <ul className="flex items-center gap-2 sm:gap-3 md:gap-5 text-xs sm:text-sm md:text-base font-medium flex-wrap justify-center">
-              {navLinks.map((link) => (
-                <li key={link.href} className="whitespace-nowrap">
+
+          {/* Top Row: Title + Language Switcher (Desktop) */}
+          <div className="hidden md:flex items-center justify-between px-4 py-2">
+            <span
+              className="font-bold text-base lg:text-lg tracking-tight"
+              style={{ letterSpacing: "-0.01em" }}
+            >
+              Luxury Intelligence
+            </span>
+            <LanguageSwitcher />
+          </div>
+
+          {/* Navigation - Mobile First */}
+          <nav className="border-t border-gray-100 md:border-t-0">
+            <div className="max-w-3xl mx-auto px-3 py-2 md:px-4 md:py-2">
+              <ul className="flex items-center gap-1 md:gap-1.5 lg:gap-2 text-[11px] md:text-xs lg:text-sm font-medium flex-wrap justify-center md:justify-start">
+                {navLinks.map((link) => (
+                  <li key={link.href} className="whitespace-nowrap">
+                    <Link
+                      href={link.href}
+                      className="hover:underline focus-visible:underline transition-colors px-2 py-2 md:px-1.5 md:py-0.5 rounded flex items-center min-h-[44px] md:min-h-0"
+                    >
+                      {link.label}
+                    </Link>
+                  </li>
+                ))}
+                <li className="whitespace-nowrap">
                   <Link
-                    href={link.href}
-                    className="hover:underline focus-visible:underline transition-colors px-1 sm:px-1.5 py-1 sm:py-0.5 rounded min-h-[44px] sm:min-h-0 flex items-center"
-                    style={{ minHeight: '44px' }}
+                    href="/subscribe"
+                    className="inline-flex items-center justify-center font-semibold text-[#06244c] bg-[#fed236] rounded-md px-2.5 py-2 md:px-3 md:py-1 text-[11px] md:text-xs transition-colors hover:bg-[#fdd01a] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#06244c] focus-visible:ring-offset-1 min-h-[44px] md:min-h-0 shadow-sm"
+                    style={{
+                      boxShadow: '0 2px 8px rgba(0,0,0,0.18)',
+                    }}
                   >
-                    {link.label}
+                    Subscribe
                   </Link>
                 </li>
-              ))}
-              <li className="whitespace-nowrap">
-                <Link
-                  href="/subscribe"
-                  style={{
-                    fontWeight: 600,
-                    color: '#06244c',
-                    background: '#fed236',
-                    borderRadius: 6,
-                    padding: '0.5rem 0.875rem',
-                    textDecoration: 'none',
-                    transition: 'background 0.2s',
-                    fontSize: '0.8125rem',
-                    boxShadow: '0 2px 8px rgba(0,0,0,0.18)',
-                    whiteSpace: 'nowrap',
-                    minHeight: '44px',
-                    display: 'inline-flex',
-                    alignItems: 'center',
-                  }}
-                  className="sm:!text-[0.9rem] sm:!px-[1.2rem] sm:!py-[0.5rem] sm:!min-h-0"
-                >
-                  Subscribe
-                </Link>
-              </li>
-            </ul>
+              </ul>
+            </div>
           </nav>
         </header>
 

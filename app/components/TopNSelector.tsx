@@ -101,13 +101,13 @@ export default function TopNSelector() {
   };
 
   return (
-    <div className="flex items-center gap-1 sm:gap-1.5">
-      <span className="text-xs sm:text-xs text-black/45">Show:</span>
+    <div className="flex items-center gap-1 md:gap-1">
+      <span className="text-xs text-black/45">Show:</span>
       {VALID_N_VALUES.map((n) => (
         <button
           key={n}
           onClick={() => handleChange(n)}
-          className={`px-2 sm:px-2 py-1.5 sm:py-1 text-xs sm:text-xs text-black/45 rounded transition-colors cursor-pointer min-w-[36px] sm:min-w-[28px] min-h-[36px] sm:min-h-0 flex items-center justify-center ${
+          className={`px-1.5 sm:px-1.5 md:px-1.5 py-1.5 sm:py-1 md:py-1 text-xs text-black/45 rounded transition-colors cursor-pointer min-w-[36px] sm:min-w-[28px] md:min-w-[24px] min-h-[36px] sm:min-h-0 flex items-center justify-center ${
             currentN === n
               ? 'bg-black/[0.04] font-medium text-black/60'
               : 'bg-transparent hover:bg-black/[0.02] hover:text-black/50'
@@ -119,7 +119,7 @@ export default function TopNSelector() {
           {n}
         </button>
       ))}
-      <span className="text-xs sm:text-xs text-black/45 hidden sm:inline">per category</span>
+      <span className="text-xs text-black/45 hidden sm:inline">per category</span>
     </div>
   );
 }
