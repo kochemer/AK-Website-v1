@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import { isStandalone, isIosSafari, canPromptInstall } from '@/lib/pwa';
 
 interface BeforeInstallPromptEvent extends Event {
   prompt: () => Promise<void>;
@@ -11,70 +12,86 @@ export default function InstallPwaButton() {
   const [deferredPrompt, setDeferredPrompt] = useState<BeforeInstallPromptEvent | null>(null);
   const [showIOSPrompt, setShowIOSPrompt] = useState(false);
   const [isInstalled, setIsInstalled] = useState(false);
+  const [isDetected, setIsDetected] = useState(false); // Track when detection is complete
 
   useEffect(() => {
-    // Check if already installed (standalone mode)
-    if (typeof window !== 'undefined') {
-      const isStandalone = window.matchMedia('(display-mode: standalone)').matches;
-      const isInStandaloneMode = (window.navigator as any).standalone === true;
-      
-      if (isStandalone || isInStandaloneMode) {
-        setIsInstalled(true);
-        return;
-      }
-
-      // Listen for beforeinstallprompt event (Chrome/Edge)
-      const handleBeforeInstallPrompt = (e: Event) => {
-        e.preventDefault();
-        setDeferredPrompt(e as BeforeInstallPromptEvent);
-      };
-
-      window.addEventListener('beforeinstallprompt', handleBeforeInstallPrompt);
-
-      // Detect iOS Safari (not standalone)
-      const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
-      const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
-      const isIOSStandalone = (window.navigator as any).standalone === true;
-      
-      if (isIOS && isSafari && !isIOSStandalone) {
-        setShowIOSPrompt(true);
-      }
-
-      // Listen for appinstalled event
-      const handleAppInstalled = () => {
-        setIsInstalled(true);
-        setDeferredPrompt(null);
-        setShowIOSPrompt(false);
-      };
-
-      window.addEventListener('appinstalled', handleAppInstalled);
-
-      return () => {
-        window.removeEventListener('beforeinstallprompt', handleBeforeInstallPrompt);
-        window.removeEventListener('appinstalled', handleAppInstalled);
-      };
+    if (typeof window === 'undefined') {
+      return;
     }
+
+    // Check if already installed (standalone mode) - early return
+    if (isStandalone()) {
+      setIsInstalled(true);
+      setIsDetected(true);
+      return;
+    }
+
+    // Listen for beforeinstallprompt event (Chrome/Edge)
+    const handleBeforeInstallPrompt = (e: Event) => {
+      e.preventDefault();
+      setDeferredPrompt(e as BeforeInstallPromptEvent);
+      setIsDetected(true);
+    };
+
+    window.addEventListener('beforeinstallprompt', handleBeforeInstallPrompt);
+
+    // Detect iOS Safari (not standalone) - only show if not already installed
+    if (isIosSafari() && !isStandalone()) {
+      setShowIOSPrompt(true);
+      setIsDetected(true);
+    } else {
+      // If not iOS Safari, mark as detected (we're waiting for beforeinstallprompt or nothing to show)
+      setIsDetected(true);
+    }
+
+    // Listen for appinstalled event
+    const handleAppInstalled = () => {
+      setIsInstalled(true);
+      setDeferredPrompt(null);
+      setShowIOSPrompt(false);
+      setIsDetected(true);
+    };
+
+    window.addEventListener('appinstalled', handleAppInstalled);
+
+    return () => {
+      window.removeEventListener('beforeinstallprompt', handleBeforeInstallPrompt);
+      window.removeEventListener('appinstalled', handleAppInstalled);
+    };
   }, []);
 
   const handleInstallClick = async () => {
-    if (!deferredPrompt) return;
+    if (!canPromptInstall(deferredPrompt) || !deferredPrompt) {
+      return;
+    }
 
-    deferredPrompt.prompt();
-    const { outcome } = await deferredPrompt.userChoice;
+    try {
+      deferredPrompt.prompt();
+      const { outcome } = await deferredPrompt.userChoice;
 
-    if (outcome === 'accepted') {
-      setDeferredPrompt(null);
-      setIsInstalled(true);
+      if (outcome === 'accepted') {
+        setDeferredPrompt(null);
+        setIsInstalled(true);
+        setShowIOSPrompt(false);
+      }
+    } catch (error) {
+      // Handle any errors silently
+      console.error('Install prompt error:', error);
     }
   };
 
-  // Don't render if already installed
-  if (isInstalled) {
+  // Avoid flicker: render null until detection is complete
+  if (!isDetected) {
     return null;
   }
 
-  // Show iOS prompt
-  if (showIOSPrompt) {
+  // Don't render if already installed
+  if (isInstalled || isStandalone()) {
+    return null;
+  }
+
+  // Show iOS prompt (only if not standalone)
+  if (showIOSPrompt && isIosSafari() && !isStandalone()) {
     return (
       <div className="flex items-center">
         <span className="text-[10px] md:text-xs text-gray-600 whitespace-nowrap">
@@ -84,8 +101,8 @@ export default function InstallPwaButton() {
     );
   }
 
-  // Show install button for Chrome/Edge
-  if (deferredPrompt) {
+  // Show install button for Chrome/Edge (only if prompt is available)
+  if (canPromptInstall(deferredPrompt) && deferredPrompt) {
     return (
       <button
         onClick={handleInstallClick}

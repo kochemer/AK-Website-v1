@@ -6,6 +6,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import AmplitudeInit from "./components/AmplitudeInit";
 import LanguageSwitcher from "./components/LanguageSwitcher";
 import InstallPwaButton from "./components/InstallPwaButton";
+import DisplayModeAttribute from "./components/DisplayModeAttribute";
 import JsonLd from "./components/JsonLd";
 import "./globals.css";
 
@@ -95,6 +96,7 @@ export default function RootLayout({
           }}
         />
         <AmplitudeInit />
+        <DisplayModeAttribute />
         {/* Sticky Header - Mobile First */}
         <header
           className="sticky top-0 z-30 bg-white/85 backdrop-blur border-b border-gray-200"
