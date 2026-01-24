@@ -130,5 +130,23 @@
     "cached_at": "2026-01-18T16:10:32.036Z",
     "model": "gpt-4o-mini",
     "version": "1.0"
+  },
+  "2026-W03:d3139d969e58": {
+    "introParagraph": "Richemont reports record sales, reflecting strong demand in the luxury sector. In contrast, Pandora experiences a boost in holiday sales through technology enhancements. Meanwhile, the retail landscape sees developments with Saks filing for Chapter 11 and advancements in AI with Zhipu AI's collaboration with Huawei on chip technology.",
+    "cached_at": "2026-01-23T21:36:42.640Z",
+    "model": "gpt-4o-mini",
+    "version": "1.0"
+  },
+  "2026-W03:d39e49d53071": {
+    "introParagraph": "In the latest developments in artificial intelligence, OpenAI announces updates to its ChatGPT model, enhancing its capabilities for various applications. Meanwhile, Amazon introduces new features in its ecommerce platform aimed at improving user experience. In the fashion sector, luxury brands like Gucci explore sustainable materials in their collections, while the jewellery industry sees a rise in demand for lab-grown diamonds.",
+    "cached_at": "2026-01-23T21:56:35.822Z",
+    "model": "gpt-4o-mini",
+    "version": "1.0"
+  },
+  "2026-W03:04c57e496283": {
+    "introParagraph": "Richemont reports record sales, reflecting strong performance in the luxury sector. In contrast, Saks Global files for bankruptcy, illustrating the challenges faced by some retailers. The adoption of AI in retail continues to grow, with conversational AI being integrated into ecommerce strategies.",
+    "cached_at": "2026-01-24T07:21:04.156Z",
+    "model": "gpt-4o-mini",
+    "version": "1.0"
   }
 }

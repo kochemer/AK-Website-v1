@@ -4624,5 +4624,629 @@
     ],
     "cached_at": "2026-01-18T20:37:35.683Z",
     "model": "gpt-4o-mini"
+  },
+  "2026-W03:Luxury_and_Consumer:7de19b6635fc": {
+    "selected": [
+      {
+        "id": "1",
+        "rank": 1,
+        "why": "Record sales indicate strong luxury market resilience",
+        "confidence": 0.9
+      },
+      {
+        "id": "39",
+        "rank": 2,
+        "why": "Shift back to office impacts retail operations significantly",
+        "confidence": 0.85
+      },
+      {
+        "id": "38",
+        "rank": 3,
+        "why": "New CEO's experience crucial for Saks' recovery",
+        "confidence": 0.8
+      },
+      {
+        "id": "37",
+        "rank": 4,
+        "why": "Creditor list reveals luxury brand vulnerabilities",
+        "confidence": 0.75
+      },
+      {
+        "id": "63",
+        "rank": 5,
+        "why": "Fendi's pop-up reflects strategic retail expansion",
+        "confidence": 0.7
+      },
+      {
+        "id": "54",
+        "rank": 6,
+        "why": "AI's role in luxury brand strategy is critical",
+        "confidence": 0.65
+      },
+      {
+        "id": "48",
+        "rank": 7,
+        "why": "Richemont's sales performance offers industry benchmarks",
+        "confidence": 0.6
+      }
+    ],
+    "cached_at": "2026-01-23T21:36:32.430Z",
+    "model": "gpt-4o-mini"
+  },
+  "2026-W03:Jewellery_Industry:1586961b9127": {
+    "selected": [
+      {
+        "id": "11",
+        "rank": 1,
+        "why": "Insights on tech impact during holiday sales",
+        "confidence": 0.9
+      },
+      {
+        "id": "16",
+        "rank": 2,
+        "why": "Positive sales trends for independent jewellers",
+        "confidence": 0.85
+      },
+      {
+        "id": "18",
+        "rank": 3,
+        "why": "Strong holiday sales report from Richemont",
+        "confidence": 0.8
+      },
+      {
+        "id": "37",
+        "rank": 4,
+        "why": "Leadership changes amid sales pressures in watch brands",
+        "confidence": 0.75
+      },
+      {
+        "id": "38",
+        "rank": 5,
+        "why": "Significant sales from Rolex's pre-owned program",
+        "confidence": 0.7
+      },
+      {
+        "id": "21",
+        "rank": 6,
+        "why": "Behavioral trends impacting luxury watch purchases",
+        "confidence": 0.65
+      },
+      {
+        "id": "27",
+        "rank": 7,
+        "why": "FOMO strategies reshaping consumer behavior in watches",
+        "confidence": 0.6
+      }
+    ],
+    "cached_at": "2026-01-23T21:36:38.181Z",
+    "model": "gpt-4o-mini"
+  },
+  "2026-W03:AI_and_Strategy:5ac62528272f": {
+    "selected": [
+      {
+        "id": "14",
+        "rank": 1,
+        "why": "Nvidia's chip supply issues impact retail tech capabilities",
+        "confidence": 0.9
+      },
+      {
+        "id": "24",
+        "rank": 2,
+        "why": "Tariffs on Nvidia affect retail pricing and supply chains",
+        "confidence": 0.85
+      },
+      {
+        "id": "33",
+        "rank": 3,
+        "why": "TSMC's investment in AI chips signals retail tech growth",
+        "confidence": 0.8
+      },
+      {
+        "id": "20",
+        "rank": 4,
+        "why": "Chinese AI model training impacts global retail tech competition",
+        "confidence": 0.75
+      },
+      {
+        "id": "21",
+        "rank": 5,
+        "why": "Nvidia's chip export regulations affect retail tech access",
+        "confidence": 0.7
+      },
+      {
+        "id": "27",
+        "rank": 6,
+        "why": "Sequoia's investment in Anthropic signals retail AI advancements",
+        "confidence": 0.65
+      },
+      {
+        "id": "38",
+        "rank": 7,
+        "why": "Potential IPOs of AI firms could reshape retail tech landscape",
+        "confidence": 0.6
+      }
+    ],
+    "cached_at": "2026-01-23T21:56:11.327Z",
+    "model": "gpt-4o-mini"
+  },
+  "2026-W04:AI_and_Strategy:33f695cbe624": {
+    "selected": [
+      {
+        "id": "12",
+        "rank": 1,
+        "why": "Survey on efficient multimodal LLMs with retail AI applications",
+        "confidence": 0.9
+      },
+      {
+        "id": "11",
+        "rank": 2,
+        "why": "Planning with language models for efficiency in commerce tasks",
+        "confidence": 0.85
+      },
+      {
+        "id": "14",
+        "rank": 3,
+        "why": "Vision-language models aligned with human concept processing for CX",
+        "confidence": 0.8
+      },
+      {
+        "id": "9",
+        "rank": 4,
+        "why": "Multi-event video-text retrieval relevant for ecommerce content analysis",
+        "confidence": 0.75
+      },
+      {
+        "id": "8",
+        "rank": 5,
+        "why": "Representation-driven reinforcement learning with potential retail use",
+        "confidence": 0.7
+      },
+      {
+        "id": "1",
+        "rank": 6,
+        "why": "Rapid attention distillation for scalable AI models in retail tech",
+        "confidence": 0.65
+      },
+      {
+        "id": "2",
+        "rank": 7,
+        "why": "Open evaluation platform for scientific tasks, potential retail insights",
+        "confidence": 0.6
+      }
+    ],
+    "cached_at": "2026-01-24T09:32:05.184Z",
+    "model": "gpt-4.1-mini"
+  },
+  "2026-W04:Ecommerce_Retail_Tech:8c793f5510fe": {
+    "selected": [
+      {
+        "id": "0",
+        "rank": 1,
+        "why": "Logistics expansion via acquisition impacts fulfillment capabilities",
+        "confidence": 0.95
+      },
+      {
+        "id": "1",
+        "rank": 2,
+        "why": "Shopify merchants face new OpenAI sales fee affecting margins",
+        "confidence": 0.9
+      },
+      {
+        "id": "2",
+        "rank": 3,
+        "why": "AI-driven ecommerce personalization with real-time data insights",
+        "confidence": 0.9
+      },
+      {
+        "id": "6",
+        "rank": 4,
+        "why": "Customer activation using Lakehouse-native data platform partnership",
+        "confidence": 0.85
+      },
+      {
+        "id": "7",
+        "rank": 5,
+        "why": "NRF 2026 retail shifts with actionable insights for retailers",
+        "confidence": 0.85
+      },
+      {
+        "id": "10",
+        "rank": 6,
+        "why": "Updated commerce media standards improve measurement consistency",
+        "confidence": 0.8
+      },
+      {
+        "id": "8",
+        "rank": 7,
+        "why": "Appointment management tool improves customer booking experience",
+        "confidence": 0.75
+      }
+    ],
+    "cached_at": "2026-01-24T09:34:55.529Z",
+    "model": "gpt-4.1-mini"
+  },
+  "2026-W04:Luxury_and_Consumer:688c56bbc74a": {
+    "selected": [
+      {
+        "id": "7",
+        "rank": 1,
+        "why": "Ecommerce inventory liquidation during Saks Off 5th bankruptcy",
+        "confidence": 0.95
+      },
+      {
+        "id": "4",
+        "rank": 2,
+        "why": "Saks Global liquidity injection to restock luxury inventory",
+        "confidence": 0.9
+      },
+      {
+        "id": "3",
+        "rank": 3,
+        "why": "Tariffs impacting ecommerce product pricing, Amazon CEO insight",
+        "confidence": 0.9
+      },
+      {
+        "id": "11",
+        "rank": 4,
+        "why": "Sephora partnership expanding online and in-store skincare assortment",
+        "confidence": 0.85
+      },
+      {
+        "id": "5",
+        "rank": 5,
+        "why": "Brands shifting marketing focus from Instagram to Pinterest platform",
+        "confidence": 0.8
+      },
+      {
+        "id": "2",
+        "rank": 6,
+        "why": "COS bridging mass market and luxury, relevant retail strategy",
+        "confidence": 0.8
+      },
+      {
+        "id": "12",
+        "rank": 7,
+        "why": "South Africa’s booming beauty market as retail battleground",
+        "confidence": 0.75
+      }
+    ],
+    "cached_at": "2026-01-24T09:35:30.464Z",
+    "model": "gpt-4.1-mini"
+  },
+  "2026-W04:Jewellery_Industry:164be6b5350d": {
+    "selected": [
+      {
+        "id": "0",
+        "rank": 1,
+        "why": "Digital campaigns drove £82M ecommerce revenue for jewellery clients",
+        "confidence": 0.95
+      },
+      {
+        "id": "11",
+        "rank": 2,
+        "why": "Data on lab-grown vs natural diamond sales with retail impact",
+        "confidence": 0.9
+      },
+      {
+        "id": "13",
+        "rank": 3,
+        "why": "De Beers diamond price cuts affect retail pricing and demand",
+        "confidence": 0.9
+      },
+      {
+        "id": "15",
+        "rank": 4,
+        "why": "Fope’s 27% net revenue growth shows strong retail performance",
+        "confidence": 0.85
+      },
+      {
+        "id": "8",
+        "rank": 5,
+        "why": "Watches of Switzerland acquisition expands retail jewellery footprint",
+        "confidence": 0.85
+      },
+      {
+        "id": "14",
+        "rank": 6,
+        "why": "Retail crime trends in Australia and New Zealand impact operations",
+        "confidence": 0.8
+      },
+      {
+        "id": "6",
+        "rank": 7,
+        "why": "Pandora named world’s most sustainable consumer brand, relevant for brand strategy",
+        "confidence": 0.8
+      }
+    ],
+    "cached_at": "2026-01-24T09:36:05.531Z",
+    "model": "gpt-4.1-mini"
+  },
+  "2026-W03:AI_and_Strategy:a8f884809746": {
+    "selected": [
+      {
+        "id": "0",
+        "rank": 1,
+        "why": "Conversational AI boosting ecommerce conversions and average order value",
+        "confidence": 0.95
+      },
+      {
+        "id": "6",
+        "rank": 2,
+        "why": "Walmart's AI transformation impacting shopping experience and operations",
+        "confidence": 0.9
+      },
+      {
+        "id": "4",
+        "rank": 3,
+        "why": "Etsy selling directly through Google's AI mode, enhancing ecommerce integration",
+        "confidence": 0.88
+      },
+      {
+        "id": "9",
+        "rank": 4,
+        "why": "Gartner research on agentic AI for personalized one-to-one brand engagement",
+        "confidence": 0.87
+      },
+      {
+        "id": "14",
+        "rank": 5,
+        "why": "Study showing AI's largest impact in retail operations over virtual assistants",
+        "confidence": 0.85
+      },
+      {
+        "id": "2",
+        "rank": 6,
+        "why": "REI CEO discusses ecommerce and AI strategy with retail operational focus",
+        "confidence": 0.83
+      },
+      {
+        "id": "7",
+        "rank": 7,
+        "why": "Deloitte blueprint for embedding digital AI workers in retail operations",
+        "confidence": 0.82
+      }
+    ],
+    "cached_at": "2026-01-24T10:32:50.671Z",
+    "model": "gpt-4.1-mini"
+  },
+  "2026-W03:Ecommerce_Retail_Tech:a1ac64b56e06": {
+    "selected": [
+      {
+        "id": "4",
+        "rank": 1,
+        "why": "JioMart's scale and quick commerce growth impact Indian retail",
+        "confidence": 0.95
+      },
+      {
+        "id": "1",
+        "rank": 2,
+        "why": "Blinkit's delivery fee cuts affect quick commerce competition",
+        "confidence": 0.9
+      },
+      {
+        "id": "5",
+        "rank": 3,
+        "why": "Shadowfax IPO highlights logistics sector changes in ecommerce",
+        "confidence": 0.88
+      },
+      {
+        "id": "7",
+        "rank": 4,
+        "why": "Dunelm's omnichannel strategy shows digital commerce integration",
+        "confidence": 0.87
+      },
+      {
+        "id": "0",
+        "rank": 5,
+        "why": "Costco Kirkland vs brand pricing offers merchandising insights",
+        "confidence": 0.85
+      },
+      {
+        "id": "2",
+        "rank": 6,
+        "why": "ASOS revives Topshop brand with new European ecommerce site",
+        "confidence": 0.83
+      },
+      {
+        "id": "3",
+        "rank": 7,
+        "why": "Richemont's record quarter reveals luxury ecommerce trends",
+        "confidence": 0.8
+      }
+    ],
+    "cached_at": "2026-01-24T10:33:25.443Z",
+    "model": "gpt-4.1-mini"
+  },
+  "2026-W03:Luxury_and_Consumer:ba7741b66e92": {
+    "selected": [
+      {
+        "id": "0",
+        "rank": 1,
+        "why": "Frasers Group links agentic commerce with Commercetools, impacting retail tech",
+        "confidence": 0.95
+      },
+      {
+        "id": "6",
+        "rank": 2,
+        "why": "Google powers AI-native purchases with Shopify, key for ecommerce innovation",
+        "confidence": 0.9
+      },
+      {
+        "id": "1",
+        "rank": 3,
+        "why": "Alibaba links shopping to AI app, showing AI integration in ecommerce",
+        "confidence": 0.88
+      },
+      {
+        "id": "12",
+        "rank": 4,
+        "why": "Saks’ new CEO with bankruptcy expertise affects luxury retail operations",
+        "confidence": 0.85
+      },
+      {
+        "id": "5",
+        "rank": 5,
+        "why": "Richemont beats holiday sales forecasts, relevant for luxury retail trends",
+        "confidence": 0.83
+      },
+      {
+        "id": "15",
+        "rank": 6,
+        "why": "Fendi’s Lunar New Year pop-up in Shanghai highlights experiential retail",
+        "confidence": 0.8
+      },
+      {
+        "id": "10",
+        "rank": 7,
+        "why": "Kiton and Corneliani use cinematic presentations, innovative merchandising tactic",
+        "confidence": 0.78
+      }
+    ],
+    "cached_at": "2026-01-24T10:34:00.811Z",
+    "model": "gpt-4.1-mini"
+  },
+  "2026-W03:Jewellery_Industry:18967537ff33": {
+    "selected": [
+      {
+        "id": "17",
+        "rank": 1,
+        "why": "Direct relevance to Pandora's sales and tech-driven retail insights",
+        "confidence": 0.95
+      },
+      {
+        "id": "0",
+        "rank": 2,
+        "why": "AI application in jewelry retail with practical ecommerce implications",
+        "confidence": 0.9
+      },
+      {
+        "id": "4",
+        "rank": 3,
+        "why": "Data on sales rise for independent jewelers, relevant retail trends",
+        "confidence": 0.85
+      },
+      {
+        "id": "5",
+        "rank": 4,
+        "why": "Analysis of Black Friday sales impact on jewelry retail seasonality",
+        "confidence": 0.85
+      },
+      {
+        "id": "10",
+        "rank": 5,
+        "why": "Retailers share practical strategies for selling colored gemstones",
+        "confidence": 0.8
+      },
+      {
+        "id": "12",
+        "rank": 6,
+        "why": "Government mandate affecting natural diamond protection and supply chain",
+        "confidence": 0.75
+      },
+      {
+        "id": "6",
+        "rank": 7,
+        "why": "Insights on product assortment blending watchmaking and jewelry",
+        "confidence": 0.7
+      }
+    ],
+    "cached_at": "2026-01-24T10:34:37.589Z",
+    "model": "gpt-4.1-mini"
+  },
+  "2026-W03:AI_and_Strategy:fb6eb9f31eb4": {
+    "selected": [
+      {
+        "id": "0",
+        "rank": 1,
+        "why": "Conversational AI boosting ecommerce conversions and average order value",
+        "confidence": 0.95
+      },
+      {
+        "id": "6",
+        "rank": 2,
+        "why": "Walmart's AI transformation impacting shopping experience and operations",
+        "confidence": 0.9
+      },
+      {
+        "id": "12",
+        "rank": 3,
+        "why": "Study shows AI's largest impact in retail operations, not just virtual assistants",
+        "confidence": 0.9
+      },
+      {
+        "id": "4",
+        "rank": 4,
+        "why": "Etsy selling directly through Google's AI mode, enhancing ecommerce integration",
+        "confidence": 0.85
+      },
+      {
+        "id": "7",
+        "rank": 5,
+        "why": "Deloitte blueprint for embedding AI digital workers in retail operations",
+        "confidence": 0.85
+      },
+      {
+        "id": "2",
+        "rank": 6,
+        "why": "REI CEO discusses ecommerce and AI strategy for sustainable retail future",
+        "confidence": 0.8
+      },
+      {
+        "id": "3",
+        "rank": 7,
+        "why": "Tech giants pushing AI adoption across retail operations broadly",
+        "confidence": 0.8
+      }
+    ],
+    "cached_at": "2026-01-24T10:50:53.792Z",
+    "model": "gpt-4.1-mini"
+  },
+  "2026-W03:Luxury_and_Consumer:195c01f0dcbb": {
+    "selected": [
+      {
+        "id": "0",
+        "rank": 1,
+        "why": "Agentic commerce link-up with Commercetools impacts retail tech",
+        "confidence": 0.95
+      },
+      {
+        "id": "6",
+        "rank": 2,
+        "why": "Google powering AI-native purchases with Shopify integration",
+        "confidence": 0.9
+      },
+      {
+        "id": "1",
+        "rank": 3,
+        "why": "Alibaba linking shopping to AI app with ecommerce implications",
+        "confidence": 0.88
+      },
+      {
+        "id": "13",
+        "rank": 4,
+        "why": "Saks new CEO with bankruptcy and luxury retail turnaround expertise",
+        "confidence": 0.85
+      },
+      {
+        "id": "5",
+        "rank": 5,
+        "why": "Richemont’s holiday sales beat forecasts, relevant for luxury retail",
+        "confidence": 0.83
+      },
+      {
+        "id": "16",
+        "rank": 6,
+        "why": "Fendi’s Lunar New Year pop-up highlights retail merchandising strategy",
+        "confidence": 0.8
+      },
+      {
+        "id": "10",
+        "rank": 7,
+        "why": "Apparel brands’ Winter Olympics strategies show merchandising innovation",
+        "confidence": 0.78
+      }
+    ],
+    "cached_at": "2026-01-24T10:51:29.761Z",
+    "model": "gpt-4.1-mini"
   }
 }

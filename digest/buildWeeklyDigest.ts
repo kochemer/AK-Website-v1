@@ -38,10 +38,20 @@ const LOW_SIGNAL_MARKERS = [
  * Controversy markers - exclude articles primarily about these topics
  */
 const CONTROVERSY_MARKERS = {
-  war: ["war", "armed conflict", "violence", "military action", "combat", "battle", "invasion", "attack", "bombing", "drone strike"],
+  war: ["war", "armed conflict", "violence", "military action", "combat", "battle", "invasion", "attack", "bombing", "drone strike", "israel", "palestine", "gaza"],
   cultureWar: ["culture war", "identity politics", "woke", "cancel culture", "political correctness", "gender ideology", "critical race theory"],
   election: ["election", "campaign", "polling", "voter", "candidate", "primary", "debate", "ballot", "electoral"],
+  alarm: ["alarm", "alarmed", "distorting history", "trivializing history", "holocaust imagery", "fake images"],
 };
+
+/**
+ * Cookie consent/privacy policy page markers - exclude these non-article pages
+ */
+const COOKIE_CONSENT_MARKERS = [
+  "privacy choices", "privatlivsvalg", "cookie consent", "cookie policy", "privacy policy",
+  "privatlivspolitik", "cookiepolitik", "samtykke", "accept", "acceptér", "reject", "afvis",
+  "manage cookies", "cookie settings", "privacy settings", "your privacy", "dit privatliv"
+];
 
 /**
  * Policy/regulation allowlist terms - these are allowed even if they mention controversy markers
@@ -144,14 +154,15 @@ function detectControversy(article: Article): { isControversial: boolean; isSusp
   const hasWar = containsMarkers(text, CONTROVERSY_MARKERS.war);
   const hasCultureWar = containsMarkers(text, CONTROVERSY_MARKERS.cultureWar);
   const hasElection = containsMarkers(text, CONTROVERSY_MARKERS.election);
+  const hasAlarm = containsMarkers(text, CONTROVERSY_MARKERS.alarm);
   
   // If policy context exists, don't exclude even if controversy markers found
-  if (hasPolicyContext && (hasWar || hasCultureWar || hasElection)) {
+  if (hasPolicyContext && (hasWar || hasCultureWar || hasElection || hasAlarm)) {
     return { isControversial: false, isSuspected: false };
   }
   
   // If clear controversy markers without policy context, exclude
-  if (hasWar || hasCultureWar || hasElection) {
+  if (hasWar || hasCultureWar || hasElection || hasAlarm) {
     // Check if it's ambiguous (e.g., mentions both controversy and retail/commerce)
     const hasRetailContext = containsMarkers(text, ["retail", "commerce", "ecommerce", "shopping", "customer", "merchant", "store", "brand"]);
     if (hasRetailContext) {
@@ -162,6 +173,14 @@ function detectControversy(article: Article): { isControversial: boolean; isSusp
   }
   
   return { isControversial: false, isSuspected: false };
+}
+
+/**
+ * Check if title indicates a cookie consent/privacy policy page (non-article)
+ */
+function isCookieConsentPage(title: string): boolean {
+  const lowerTitle = title.toLowerCase();
+  return COOKIE_CONSENT_MARKERS.some(marker => lowerTitle.includes(marker.toLowerCase()));
 }
 
 /**
@@ -178,6 +197,15 @@ function gateArticle(
   const reasons: string[] = [];
   const flags: ArticleGate['flags'] = {};
   const isDiscovery = article.sourceType === 'discovery';
+  
+  // Check for cookie consent/privacy policy pages (non-articles) - exclude immediately
+  if (isCookieConsentPage(article.title)) {
+    return {
+      eligible: false,
+      reasons: ["Cookie consent/privacy policy page (not an article)"],
+      flags: {},
+    };
+  }
   
   // Week window check with soft logic for discovery articles
   let withinWindow = false;
@@ -326,18 +354,46 @@ function selectTopNDeterministic(
   // Filter to eligible only
   const eligible = gatedArticles.filter(item => item.gate.eligible);
   
+  // Filter out articles with no retail/ecommerce relevance (for deterministic fallback)
+  // This helps when LLM reranker fails
+  const retailRelevanceKeywords = [
+    "retail", "ecommerce", "e-commerce", "shopping", "checkout", "cart", "payment", "merchant",
+    "store", "brand", "customer", "commerce", "marketplace", "fulfillment", "logistics",
+    "luxury", "fashion", "jewelry", "jewellery", "watch", "pricing", "conversion", "revenue",
+    "platform", "shopify", "amazon", "walmart", "omnichannel", "supply chain"
+  ];
+  
+  const hasRetailRelevance = (article: Article): boolean => {
+    const text = `${article.title} ${article.snippet || ''}`.toLowerCase();
+    return retailRelevanceKeywords.some(keyword => text.includes(keyword));
+  };
+  
+  // For deterministic fallback, prefer articles with retail relevance
+  // But don't exclude all non-retail articles (some AI/Strategy articles are still relevant)
+  const eligibleWithRelevance = eligible.filter(item => {
+    // For AI_and_Strategy, allow articles without retail keywords (they might be about AI infrastructure)
+    if (topic === 'AI_and_Strategy') {
+      return true; // Let all eligible AI articles through
+    }
+    // For other categories, require retail relevance
+    return hasRetailRelevance(item.article);
+  });
+  
+  // If we filtered out too many, use original eligible list
+  const finalEligible = eligibleWithRelevance.length >= n ? eligibleWithRelevance : eligible;
+  
   // Sort by URL for determinism (no scoring)
-  eligible.sort((a, b) => a.article.url.localeCompare(b.article.url));
+  finalEligible.sort((a, b) => a.article.url.localeCompare(b.article.url));
   
   // Apply diversity guard: limit max per source, but relax if needed to fill to N
   const selected: ArticleWithGate[] = [];
   const sourceCounts = new Map<string, number>();
   
-  for (let i = 0; i < eligible.length && selected.length < n; i++) {
-    const { article, gate } = eligible[i];
+  for (let i = 0; i < finalEligible.length && selected.length < n; i++) {
+    const { article, gate } = finalEligible[i];
     const currentCount = sourceCounts.get(article.source) || 0;
     const remainingSlots = n - selected.length;
-    const remainingArticles = eligible.length - i;
+    const remainingArticles = finalEligible.length - i;
     
     // Check if we can add this article:
     // 1. Haven't hit the cap for this source, OR
@@ -599,13 +655,17 @@ export async function buildWeeklyDigest(weekLabel: string): Promise<WeeklyDigest
   // Classify articles using LLM with fallback
   // Process in batches to avoid overwhelming the API, but await all results
   const classificationPromises = eligibleArticles.map(async (article) => {
-    // Pass categoryHint if available
+    // Pass categoryHint if available, plus body/extractedText for truncation
     const result = await classifyArticleLLM({
       title: article.title,
       url: article.url,
       source: article.source,
       snippet: article.snippet,
-      categoryHint: (article as any).categoryHint
+      categoryHint: (article as any).categoryHint,
+      published_at: article.published_at,
+      body: (article as any).extractedText || (article as any).body,
+      extractedText: (article as any).extractedText,
+      aiSummary: (article as any).aiSummary
     });
     return { article, result };
   });

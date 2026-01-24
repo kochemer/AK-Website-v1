@@ -297,5 +297,31 @@
     "cached_at": "2026-01-18T20:37:41.672Z",
     "model": "gpt-4o-mini",
     "version": "2.1"
+  },
+  "2026-W03:d3139d969e58": {
+    "keyThemes": [
+      "Richemont record sales",
+      "Pandora holiday sales",
+      "AI in Retail Market",
+      "Saks Chapter 11",
+      "Zhipu AI Huawei chips"
+    ],
+    "oneSentenceSummary": "Richemont's record sales and Pandora's tech boost highlight contrasting fortunes in the luxury and jewellery sectors amid evolving consumer demand.",
+    "cached_at": "2026-01-23T21:36:41.122Z",
+    "model": "gpt-4o-mini",
+    "version": "2.1"
+  },
+  "2026-W03:04c57e496283": {
+    "keyThemes": [
+      "Richemont record sales",
+      "Saks Global bankruptcy",
+      "AI adoption in retail",
+      "conversational AI for ecommerce",
+      "Pink Panthers heist"
+    ],
+    "oneSentenceSummary": "Richemont's record sales and Saks Global's bankruptcy highlight contrasting fortunes in the luxury sector amid rising AI adoption in retail.",
+    "cached_at": "2026-01-24T07:21:02.128Z",
+    "model": "gpt-4o-mini",
+    "version": "2.1"
   }
 }

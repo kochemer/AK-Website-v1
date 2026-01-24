@@ -5,6 +5,7 @@ import OpenAI from 'openai';
 import type { ExtractedArticle } from './fetchExtract';
 import type { Topic } from '../classification/classifyTopics';
 import { getAllCompanyNames, getCompanyTier } from '../config/jewelleryCompanies';
+import { computeCommerceMateriality } from '../scoring/commerceMateriality';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -45,6 +46,8 @@ export type SelectedArticle = {
   paywallReason?: string;
   matchedCompanies?: string[]; // Company names found in article
   companyBoostScore?: number; // Total company boost applied
+  commerceMaterialityScore?: number; // Commerce materiality score (0-10)
+  commerceMaterialitySignals?: string[]; // Matched signals
 };
 
 type RankedItem = {
@@ -277,6 +280,26 @@ async function rankArticlesForTopic(
     }
   }
   
+  // Compute commerce materiality for Ecommerce category
+  const isEcommerceTopic = topic === 'Ecommerce_Retail_Tech';
+  const materialityMap = new Map<string, { score: number; signals: string[] }>();
+  
+  if (isEcommerceTopic) {
+    for (const article of candidates) {
+      const materiality = computeCommerceMateriality({
+        title: article.title,
+        source: article.domain,
+        snippet: article.snippet,
+        aiSummary: undefined, // Not available at this stage
+        fullText: article.extractedText
+      });
+      materialityMap.set(article.url, {
+        score: materiality.score,
+        signals: materiality.signals
+      });
+    }
+  }
+  
   // Build candidate list for LLM with 400-600 char excerpts
   const candidateList = candidates.map((article, idx) => {
     const excerpt = article.extractedText.substring(0, 600);
@@ -286,6 +309,7 @@ async function rankArticlesForTopic(
       : excerpt;
     
     const companyData = companyDataMap.get(article.url);
+    const materiality = materialityMap.get(article.url);
     
     return {
       index: idx + 1,
@@ -300,6 +324,10 @@ async function rankArticlesForTopic(
       ...(isJewelleryTopic && companyData ? {
         matchedCompanies: companyData.matchedCompanies,
         companyBoostScore: companyData.companyBoostScore
+      } : {}),
+      ...(isEcommerceTopic && materiality ? {
+        commerceMaterialityScore: materiality.score,
+        commerceMaterialitySignals: materiality.signals
       } : {})
     };
   });
@@ -325,6 +353,11 @@ Return valid JSON only.`;
   // Add company boost guidance for Jewellery Industry
   if (isJewelleryTopic) {
     rankingCriteria += `\n- Company coverage: Articles mentioning major jewellery companies (shown in "matchedCompanies" field) may be more material for industry readers. If two articles are similarly relevant and newsworthy, prefer the one that mentions major jewellery companies. However, do NOT prioritize product launch fluff or store opening announcements with no strategic signal.`;
+  }
+  
+  // Add commerce materiality guidance for Ecommerce category
+  if (isEcommerceTopic) {
+    rankingCriteria += `\n- Commerce materiality: Prefer articles with high commerce materiality (real execution impact: platform capabilities, checkout/cart changes, retailer adoption, monetization changes). Articles with high "commerceMaterialityScore" indicate real-world commerce execution impact rather than commentary/discourse. When relevance is similar, prioritize high materiality articles.`;
   }
 
   const userPrompt = `Rank the top ${targetK} most relevant articles for a weekly digest about ${topic}.
@@ -387,7 +420,50 @@ Return exactly ${targetK} items in the ranked array, ordered by rank (1 = best).
     // Sort by rank to ensure proper order
     output.ranked.sort((a, b) => a.rank - b.rank);
     
-    return { ranked: output.ranked, companyDataMap: isJewelleryTopic ? companyDataMap : undefined };
+    // Apply commerce materiality boost for Ecommerce category
+    if (isEcommerceTopic) {
+      // Create a map of URL to materiality score
+      const materialityScores = new Map<string, number>();
+      for (const article of candidates) {
+        const materiality = materialityMap.get(article.url);
+        if (materiality) {
+          materialityScores.set(article.url, materiality.score);
+        }
+      }
+      
+      // Adjust ranks based on materiality (higher materiality = better rank)
+      // We'll adjust the rank by subtracting materiality boost (so lower rank number = better)
+      for (const item of output.ranked) {
+        const materialityScore = materialityScores.get(item.url) || 0;
+        const boost = materialityScore * COMMERCE_MATERIALITY_WEIGHT_ECOM;
+        // Adjust rank: subtract boost (lower rank = better, so we subtract)
+        // But we need to be careful not to go below 1
+        item.rank = Math.max(1, item.rank - boost);
+      }
+      
+      // Re-sort after adjustment
+      output.ranked.sort((a, b) => a.rank - b.rank);
+      
+      // Re-assign sequential ranks
+      output.ranked.forEach((item, idx) => {
+        item.rank = idx + 1;
+      });
+    }
+    
+    return { 
+      ranked: output.ranked, 
+      companyDataMap: isJewelleryTopic ? companyDataMap : undefined,
+      materialityMap: isEcommerceTopic ? materialityMap : undefined
+    };
+  } catch (error: any) {
+    console.error(`[Rank] Error ranking articles for ${topic}:`, error.message);
+    // Return empty result with undefined maps on error
+    return { 
+      ranked: [], 
+      companyDataMap: undefined,
+      materialityMap: undefined
+    };
+  }
   } catch (error: any) {
     console.error(`[Rank] Error ranking articles for ${topic}:`, error.message);
     throw error;
@@ -403,7 +479,8 @@ function selectFromRanked(
   candidates: ExtractedArticle[],
   topic: Topic,
   selectTop: number,
-  companyDataMap?: Map<string, { matchedCompanies: string[]; companyBoostScore: number }>
+  companyDataMap?: Map<string, { matchedCompanies: string[]; companyBoostScore: number }>,
+  materialityMap?: Map<string, { score: number; signals: string[] }>
 ): { selected: SelectedArticle[]; report: SelectionReport } {
   const report: SelectionReport = {
     candidate_count: candidates.length,
@@ -463,6 +540,7 @@ function selectFromRanked(
 
     // Get company data if available
     const companyData = companyDataMap?.get(candidate.url);
+    const materiality = materialityMap?.get(candidate.url);
     
     // Add to selected
     selected.push({
@@ -483,6 +561,10 @@ function selectFromRanked(
       ...(companyData ? {
         matchedCompanies: companyData.matchedCompanies,
         companyBoostScore: companyData.companyBoostScore
+      } : {}),
+      ...(materiality ? {
+        commerceMaterialityScore: materiality.score,
+        commerceMaterialitySignals: materiality.signals
       } : {})
     } as SelectedArticle & { sourceType?: string });
 
@@ -600,6 +682,7 @@ function selectFromRanked(
           if (!isDuplicate) {
             // Get company data if available
             const replacementCompanyData = companyDataMap?.get(replacement.url);
+            const replacementMateriality = materialityMap?.get(replacement.url);
             
             selected.push({
               url: replacement.url,
@@ -619,6 +702,10 @@ function selectFromRanked(
               ...(replacementCompanyData ? {
                 matchedCompanies: replacementCompanyData.matchedCompanies,
                 companyBoostScore: replacementCompanyData.companyBoostScore
+              } : {}),
+              ...(replacementMateriality ? {
+                commerceMaterialityScore: replacementMateriality.score,
+                commerceMaterialitySignals: replacementMateriality.signals
               } : {})
             } as SelectedArticle & { sourceType?: string });
             domainCounts.set(domain, currentCount + 1);
@@ -677,7 +764,7 @@ async function selectArticlesForTopic(
 
     // PHASE B: Deterministic Selection
     console.log(`[Select] Applying constraints to select top ${topN} from ${ranked.length} ranked items...`);
-    const { selected, report } = selectFromRanked(ranked, articles, topic, topN, companyDataMap);
+    const { selected, report } = selectFromRanked(ranked, articles, topic, topN, companyDataMap, materialityMap);
     
     console.log(`[Select] Selected ${selected.length} articles for ${topic}`);
     console.log(`[Select] Exclusions: domainCap=${report.exclusion_counts.domainCap}, duplicate=${report.exclusion_counts.duplicate}, hardControversy=${report.exclusion_counts.hardControversy}, sponsored=${report.exclusion_counts.sponsored}`);
@@ -699,6 +786,35 @@ async function selectArticlesForTopic(
           console.log(`  - "${article.title}" (${article.matchedCompanies?.join(', ') || 'unknown'}, boost: ${article.companyBoostScore || 0})`);
         });
       }
+    }
+    
+    // Report commerce materiality for Ecommerce category
+    if (topic === 'Ecommerce_Retail_Tech' && selected.length > 0) {
+      // Re-compute materiality for selected articles (for reporting)
+      const materialityScores = selected.map(article => {
+        const candidate = articles.find(a => a.url === article.url);
+        if (candidate) {
+          const materiality = computeCommerceMateriality({
+            title: candidate.title,
+            source: candidate.domain,
+            snippet: candidate.snippet,
+            fullText: candidate.extractedText
+          });
+          return { article, materiality };
+        }
+        return null;
+      }).filter(Boolean) as Array<{ article: SelectedArticle; materiality: { score: number; signals: string[] } }>;
+      
+      const avgMateriality = materialityScores.length > 0
+        ? materialityScores.reduce((sum, item) => sum + item.materiality.score, 0) / materialityScores.length
+        : 0;
+      
+      console.log(`[Select] Ecommerce Top ${topN}: Average commerce materiality: ${avgMateriality.toFixed(1)}/10`);
+      console.log(`[Select] Commerce materiality details:`);
+      materialityScores.forEach(({ article, materiality }) => {
+        console.log(`  - [${materiality.score}/10] "${article.title}"`);
+        console.log(`    Signals: ${materiality.signals.join(', ')}`);
+      });
     }
 
     return { selected, report };

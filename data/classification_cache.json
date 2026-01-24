@@ -145,5 +145,72 @@
     "rationale": "The article discusses a fashion choice by Teyana Taylor, highlighting luxury footwear and high-end fashion, which aligns with the Luxury and Consumer category.",
     "classifier_version": "llm-v2",
     "cached_at": "2026-01-18T20:37:09.498Z"
+  },
+  "https://www.computerworld.com/article/4116481/memory-shortage-threat-helps-trigger-pc-buying-spree.html": {
+    "category": "Ecommerce_Retail_Tech",
+    "confidence": 0.9,
+    "rationale": "The article discusses global PC shipments and market trends, which are related to ecommerce and retail technology.",
+    "classifier_version": "llm-v2",
+    "cached_at": "2026-01-23T21:07:05.499Z"
+  },
+  "https://www.businessoffashion.com/podcasts/beauty/inside-beautys-2026-ma-pipeline-the-debrief": {
+    "category": "Luxury_and_Consumer",
+    "confidence": 0.9,
+    "rationale": "The article discusses M&A activities in the beauty sector, which falls under luxury consumer goods and market trends.",
+    "classifier_version": "llm-v2",
+    "cached_at": "2026-01-23T21:08:04.560Z"
+  },
+  "https://www.practicalecommerce.com/amazon-rules-product-discovery-for-now": {
+    "category": "Ecommerce_Retail_Tech",
+    "confidence": 0.9,
+    "rationale": "The article discusses Amazon's dominance in product discovery within the ecommerce space, highlighting challenges from AI and social commerce.",
+    "classifier_version": "llm-v2",
+    "cached_at": "2026-01-23T21:35:38.151Z"
+  },
+  "https://www.watchpro.com/omega-seamaster-moonwatch-steel-gold-2026": {
+    "category": "Jewellery_Industry",
+    "confidence": 0.9,
+    "rationale": "The article focuses on the launch of new Omega watches, which are specifically related to the luxury watch segment of the jewellery industry.",
+    "classifier_version": "llm-v2",
+    "cached_at": "2026-01-23T21:56:00.362Z"
+  },
+  "https://www.businessinsider.com/gavin-newsom-davos-return-donald-trump-world-economic-forum-2026-1": {
+    "category": "Ecommerce_Retail_Tech",
+    "confidence": 0.75,
+    "rationale": "The article discusses a political event at Davos, which indirectly relates to economic agendas that can impact retail and ecommerce sectors.",
+    "classifier_version": "llm-v2",
+    "cached_at": "2026-01-24T07:14:12.029Z"
+  },
+  "https://www.ft.com/content/14dc1527-e2ba-49d1-b223-76ddcbd26699": {
+    "category": "AI_and_Strategy",
+    "confidence": 0.9,
+    "rationale": "The article discusses tariffs related to AI processors, which aligns with AI infrastructure and company news.",
+    "classifier_version": "llm-v2",
+    "cached_at": "2026-01-24T07:19:54.849Z"
+  },
+  "https://www.businessinsider.com/immigration-crackdown-housing-construction-worker-shortages-cities-most-affected-2026-1": {
+    "category": "Ecommerce_Retail_Tech",
+    "confidence": 0.9,
+    "rationale": "The article discusses the reliance of the homebuilding industry on immigrant labor, which relates to construction and housing markets, aligning it with retail and ecommerce themes.",
+    "classifier_version": "llm-v2",
+    "cached_at": "2026-01-24T07:25:17.898Z"
+  },
+  "https://www.businessoffashion.com/news/luxury/de-beers-cuts-diamond-prices-for-the-first-time-in-over-a-year": {
+    "category": "Jewellery_Industry",
+    "confidence": 0.9,
+    "rationale": "The article discusses diamond prices and market trends specifically related to the jewelry industry.",
+    "classifier_version": "llm-v2",
+    "cached_at": "2026-01-24T09:31:19.823Z"
+  },
+  "https://www.practicalecommerce.com/lawmakers-eye-dynamic-ecommerce-pricing": {
+    "category": "Ecommerce_Retail_Tech",
+    "confidence": 0.9,
+    "rationale": "The article discusses dynamic pricing in ecommerce, which directly relates to retail technology and pricing strategies.",
+    "classifier_version": "llm-v2",
+    "cached_at": "2026-01-24T10:49:32.613Z"
+  }
+}is related to retail operations and efficiency.",
+    "classifier_version": "llm-v2",
+    "cached_at": "2026-01-24T10:49:32.612Z"
   }
 }

@@ -1,0 +1,99 @@
+{
+  "week": "2026-W03",
+  "generatedAt": "2026-01-23T21:58:16.917Z",
+  "intro": "In this week's intelligence digest, we explore significant developments impacting the retail, luxury, and AI sectors. Key highlights include Nvidia's supply chain disruptions due to geopolitical tensions, OpenAI's strategic shift towards advertising for ChatGPT, and Richemont's impressive financial performance amid market challenges. Additionally, we examine emerging behavioral trends in the watch industry and TSMC's increased investment in AI chip production to meet surging demand.",
+  "readOneThing": {
+    "title": "Nvidia H200 chip parts suppliers halt output after China blocks shipments: Report ",
+    "url": "https://economictimes.indiatimes.com/tech/technology/nvidia-h200-chip-parts-suppliers-halt-output-after-china-blocks-shipments-ft-reports/articleshow/126600392.cms"
+  },
+  "items": [
+    {
+      "rank": 1,
+      "title": "Nvidia H200 chip parts suppliers halt output after China blocks shipments: Report ",
+      "url": "https://economictimes.indiatimes.com/tech/technology/nvidia-h200-chip-parts-suppliers-halt-output-after-china-blocks-shipments-ft-reports/articleshow/126600392.cms",
+      "source": "Economic Times - Technology",
+      "bullets": [
+        "Nvidia's H200 chip suppliers ceased production following China's shipment restrictions.",
+        "Over 1 million orders from Chinese clients are now impacted by this disruption.",
+        "AI operators may face delays in product launches and increased costs due to supply chain issues."
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "ChatGPT's free ride is ending: Here's what OpenAI plans for advertising on the chatbot ",
+      "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/chatgpts-free-ride-is-ending-heres-what-openai-plans-for-advertising-on-the-chatbot/articleshow/126615812.cms",
+      "source": "Economic Times - Technology",
+      "bullets": [
+        "OpenAI will start testing advertisements for ChatGPT users without premium subscriptions in upcoming weeks.",
+        "This move marks a significant shift in OpenAI's monetization strategy for its AI chatbot services.",
+        "Retail and AI strategists should prepare for new advertising opportunities within popular AI platforms."
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "Richemont Defies Market Headwinds with Record-Breaking $7.4 Billion USD Quarter",
+      "url": "https://hypebeast.com/2026/1/richemont-record-q3-205-7-billion-usd-sales-cartier-hong-kong-market-drivers-news",
+      "source": "Hypebeast - Business",
+      "bullets": [
+        "Richemont achieved $7.43 billion USD in Q3 sales, driven by U.S., Middle East, and Hong Kong markets.",
+        "Jewelry division experienced a 14% growth despite high gold prices and Swiss trade tariffs.",
+        "Strong sales indicate resilience in luxury sector, suggesting opportunities for targeted marketing strategies."
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "Richemont continues rotation of in-country leaders",
+      "url": "https://www.watchpro.com/richemont-rotates-usa-watchmaker-brand-presidents/",
+      "source": "WatchPro",
+      "bullets": [
+        "Richemont is replacing in-country leaders due to declining watch sales.",
+        "This strategy mirrors sports teams changing managers amid poor performance.",
+        "Retailers must adapt leadership strategies to address shifting market dynamics."
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "Behavioural trends shaping the watch industry in 2026",
+      "url": "https://www.watchpro.com/behavioural-trends-shaping-the-watch-industry/",
+      "source": "WatchPro",
+      "bullets": [
+        "Younger consumers prioritize thoughtful purchases, favoring brands with strong heritage and quality service.",
+        "Eugene Tutunikov notes a significant influence from customers in their 20s and 30s on industry trends.",
+        "Retailers should adapt strategies to emphasize brand history and enhance customer service to attract younger buyers."
+      ]
+    },
+    {
+      "rank": 6,
+      "title": "White House sets tariffs to take 25% cut of Nvidia and AMD sales in China",
+      "url": "https://www.ft.com/content/14dc1527-e2ba-49d1-b223-76ddcbd26699",
+      "source": "Financial Times - Technology",
+      "bullets": [
+        "The White House has implemented a 25% tariff on Nvidia and AMD sales in China.",
+        "This move follows a prior agreement between Trump and chipmakers regarding AI processor shipments.",
+        "AI operators must reassess pricing strategies and supply chain impacts due to increased costs."
+      ]
+    },
+    {
+      "rank": 7,
+      "title": "TSMC to boost capital spending as demand for AI chips surges",
+      "url": "https://www.ft.com/content/a3b4c1ac-f26a-44bd-a605-25603b2a0669",
+      "source": "Financial Times - Technology",
+      "bullets": [
+        "TSMC will increase capital spending to meet surging demand for AI chips.",
+        "The company's revenue and gross profit margins are expected to exceed forecasts.",
+        "AI operators should prepare for intensified competition and potential supply chain shifts."
+      ]
+    },
+    {
+      "rank": 8,
+      "title": "Conversational AI for E‑Commerce: Boosting Conversions and AOV",
+      "url": "https://insiderone.com/conversational-ai-ecommerce-conversions-aov/",
+      "source": "UseInsider",
+      "bullets": [
+        "Conversational AI enhances customer engagement, leading to higher conversion rates in e-commerce.",
+        "Personalized interactions through AI drive increased average order values during the shopping journey.",
+        "Retailers must integrate AI solutions to meet customer expectations and optimize sales performance."
+      ]
+    }
+  ]
+}

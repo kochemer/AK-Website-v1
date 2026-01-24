@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Link from "next/link";
+import Image from "next/image";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import AmplitudeInit from "./components/AmplitudeInit";
 import LanguageSwitcher from "./components/LanguageSwitcher";
@@ -57,6 +58,7 @@ export const metadata: Metadata = {
 const navLinks = [
   { href: "/", label: "Home" },
   { href: "/archive", label: "Archive" },
+  { href: "/email-digest", label: "Email Digest" },
   { href: "/subscribe", label: "Subscribe" },
   { href: "/methodology", label: "Methodology" },
   { href: "/about", label: "About" },
@@ -99,23 +101,41 @@ export default function RootLayout({
         >
           {/* Top Row: Title + Language Switcher (Mobile) */}
           <div className="flex items-center justify-between px-4 py-2.5 md:hidden">
-            <span
-              className="font-bold text-sm tracking-tight"
-              style={{ letterSpacing: "-0.01em" }}
-            >
-              Luxury Intelligence
-            </span>
+            <Link href="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
+              <Image
+                src="/favicon.png"
+                alt="Luxury Intelligence"
+                width={24}
+                height={24}
+                className="flex-shrink-0"
+              />
+              <span
+                className="font-bold text-sm tracking-tight"
+                style={{ letterSpacing: "-0.01em" }}
+              >
+                Luxury Intelligence
+              </span>
+            </Link>
             <LanguageSwitcher />
           </div>
 
           {/* Top Row: Title + Language Switcher (Desktop) */}
           <div className="hidden md:flex items-center justify-between px-4 py-2">
-            <span
-              className="font-bold text-base lg:text-lg tracking-tight"
-              style={{ letterSpacing: "-0.01em" }}
-            >
-              Luxury Intelligence
-            </span>
+            <Link href="/" className="flex items-center gap-2.5 hover:opacity-80 transition-opacity">
+              <Image
+                src="/favicon.png"
+                alt="Luxury Intelligence"
+                width={50}
+                height={50}
+                className="flex-shrink-0"
+              />
+              <span
+                className="font-bold text-base lg:text-lg tracking-tight"
+                style={{ letterSpacing: "-0.01em" }}
+              >
+                Luxury Intelligence
+              </span>
+            </Link>
             <LanguageSwitcher />
           </div>
 

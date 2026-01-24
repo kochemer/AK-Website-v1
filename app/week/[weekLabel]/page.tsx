@@ -184,6 +184,25 @@ export default async function WeekPage({
   const digest = await loadDigest(weekLabel);
   const { previousWeek, nextWeek } = await getWeekNavigation(weekLabel);
 
+  // Load podcast for this week
+  type PodcastMetadata = {
+    week: string;
+    audioPath: string;
+    model: string;
+    voice: string;
+    generatedAt: string;
+    duration?: number;
+  };
+
+  let podcast: PodcastMetadata | null = null;
+  try {
+    const podcastPath = path.join(process.cwd(), 'data', 'weeks', weekLabel, 'podcast.json');
+    const raw = await fs.readFile(podcastPath, 'utf-8');
+    podcast = JSON.parse(raw) as PodcastMetadata;
+  } catch {
+    // Podcast doesn't exist, that's fine
+  }
+
   if (!digest) {
     return (
       <div className="max-w-5xl mx-auto px-4 md:px-6 py-12 md:py-16">
@@ -312,157 +331,297 @@ export default async function WeekPage({
         fontFamily: 'system-ui, Arial, sans-serif',
         background: '#f7f9fb',
       }}>
-        <div className="max-w-5xl mx-auto px-4 md:px-6 py-12 md:py-16">
-          <header className="mb-6">
-            <Breadcrumbs
-              items={[
-                { label: 'Home', href: '/' },
-                { label: 'Archive', href: '/archive' },
-                { label: `Week ${digest.weekLabel}` },
-              ]}
-            />
-          </header>
-        </div>
-
-        {/* This Week's Cover */}
-        {digest.coverImageUrl && (
-          <section className="w-full max-w-[1404px] lg:max-w-[1638px] 2xl:max-w-[1825px] mx-auto px-4 md:px-8 mb-4 md:mb-5">
-            <div className="bg-white rounded-lg border border-gray-200 p-4 md:p-6">
-              <div className="flex items-center justify-between flex-wrap gap-3 mb-3 md:mb-4">
-                <h3 className="text-base md:text-lg font-semibold text-gray-900">
+        {/* STICKY FULL-SCREEN HERO */}
+        <section className="relative h-[70vh] md:h-[100svh]" style={{ zIndex: 0 }}>
+          {/* Sticky layer */}
+          <div className="sticky top-0 h-[70vh] md:h-[100svh] overflow-hidden">
+            {/* Cover image or gradient background */}
+            {digest.coverImageUrl ? (
+              <img
+                src={digest.coverImageUrl}
+                alt={digest.coverImageAlt || `Weekly digest cover for ${digest.weekLabel}`}
+                className="absolute inset-0 w-full h-full object-cover"
+                style={{ objectFit: 'cover' }}
+              />
+            ) : (
+              <div 
+                className="absolute inset-0 w-full h-full"
+                style={{
+                  background: 'linear-gradient(120deg,#6b2d5c 50%, #8b4a7a 100%)',
+                }}
+              />
+            )}
+            
+            {/* Gradient overlay for text legibility */}
+            <div className="absolute inset-0 bg-gradient-to-b from-black/45 via-black/15 to-black/0" />
+            
+            {/* "This week's cover" label - top left */}
+            {digest.coverImageUrl && (
+              <div className="absolute top-3 left-3 sm:top-6 sm:left-6 z-20">
+                <p className="text-xs sm:text-sm md:text-base text-white font-medium" style={{
+                  textShadow: '0 1px 3px rgba(0,0,0,0.5)'
+                }}>
                   This week&apos;s cover
-                </h3>
-                <div className="flex items-center gap-3 flex-wrap text-xs md:text-sm text-gray-600">
-                  <span>
-                    {dateRange}
-                    {digest.builtAtISO && (
-                      <span className="ml-4">• Built {formatDateTime(digest.builtAtISO)}</span>
-                    )}
-                  </span>
-                </div>
-              </div>
-              <div className="relative w-full rounded-lg overflow-hidden" style={{ height: '432px' }}>
-                <img
-                  src={digest.coverImageUrl}
-                  alt={digest.coverImageAlt || `Weekly digest cover for ${digest.weekLabel}`}
-                  className="w-full h-full object-cover"
-                />
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="bg-black bg-opacity-50 px-6 md:px-8 py-3 md:py-4 rounded-lg">
-                    <h2 className="text-3xl md:text-5xl font-bold text-white drop-shadow-lg" style={{ textShadow: '0 2px 8px rgba(0,0,0,0.5)' }}>
-                      Week {digest.weekLabel}
-                    </h2>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-        )}
-
-        {/* Intro & Key Themes */}
-        {(digest.introParagraph || digest.keyThemes?.length || digest.oneSentenceSummary) && (
-          <section className="w-full max-w-[1200px] lg:max-w-[1400px] 2xl:max-w-[1560px] mx-auto px-4 md:px-8 mb-4 md:mb-6">
-            <div className="bg-white rounded-lg border border-gray-200 p-6 md:p-8">
-              {(digest.introParagraph || digest.oneSentenceSummary) && (
-                <p className="text-base md:text-lg text-gray-700 leading-relaxed mb-6">
-                  {digest.introParagraph || digest.oneSentenceSummary}
                 </p>
-              )}
-              {digest.keyThemes && digest.keyThemes.length > 0 && (
-                <div>
-                  <h2 className="text-lg md:text-xl font-semibold text-gray-900 mb-4">
-                    Key themes this week
-                  </h2>
-                  <div className="flex flex-wrap gap-2.5">
-                    {digest.keyThemes.map((theme, idx) => (
-                      <span
-                        key={idx}
-                        className="inline-flex items-center px-3.5 py-1.5 rounded-full text-sm font-medium bg-blue-50 text-blue-700 border border-blue-200"
-                      >
-                        {theme}
-                      </span>
-                    ))}
+              </div>
+            )}
+            
+            {/* Hero content */}
+            <div className="relative z-10 h-full flex items-center justify-center px-4 sm:px-6 md:px-8">
+              <div className="w-full max-w-[1400px] lg:max-w-[1600px] 2xl:max-w-[1800px] mx-auto text-center">
+                <div className="bg-black/20 backdrop-blur-sm rounded-xl md:rounded-2xl px-5 py-7 sm:px-6 sm:py-8 md:px-10 md:py-12 inline-block max-w-full mx-2 sm:mx-4">
+                  <h1 className="font-bold mb-3 sm:mb-4 md:mb-5 text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-white leading-tight px-1" style={{
+                    textShadow: '0 2px 8px rgba(0,0,0,0.5)'
+                  }}>
+                    Luxury Intelligence
+                  </h1>
+                  <div className="text-gray-100 leading-relaxed max-w-5xl mx-auto mb-3 sm:mb-4 md:mb-5 text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl px-2" style={{
+                    textShadow: '0 1px 4px rgba(0,0,0,0.3)'
+                  }}>
+                    Weekly intelligence across AI, ecommerce, luxury, and jewellery.
                   </div>
+                  <p className="text-gray-200 mb-4 sm:mb-5 md:mb-6 text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl italic px-2 sm:px-3" style={{
+                    textShadow: '0 1px 3px rgba(0,0,0,0.3)'
+                  }}>
+                    Curated articles, signals, and context — handpicked and summarised by AI agents each week.
+                  </p>
+                  {digest.weekLabel && (
+                    <div className="mt-4 sm:mt-6 md:mt-8">
+                      <h2 className="text-lg sm:text-xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white drop-shadow-lg px-2" style={{ textShadow: '0 2px 8px rgba(0,0,0,0.5)' }}>
+                        Week {digest.weekLabel}
+                      </h2>
+                    </div>
+                  )}
                 </div>
-              )}
-            </div>
-          </section>
-        )}
-
-        {/* Category Jump Navigation */}
-        <section className="w-full max-w-[1200px] lg:max-w-[1400px] 2xl:max-w-[1560px] mx-auto px-4 md:px-8 mb-4 md:mb-6">
-          <div className="flex flex-col items-center gap-4">
-            <div className="flex items-center justify-between w-full flex-wrap gap-4">
-              <nav className="flex flex-wrap gap-2 justify-center flex-1" aria-label="Category navigation">
-                {CATEGORY_CARDS.map(cat => (
-                  <a
-                    key={cat.anchorId}
-                    href={`#${cat.anchorId}`}
-                    className="px-4 py-2 text-sm font-medium border border-gray-200 bg-gray-50 text-gray-700 rounded-full hover:bg-gray-100 hover:border-gray-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 transition-colors"
+              </div>
+              
+              {/* Scroll indicator - inside hero content area */}
+              <div 
+                className="absolute bottom-16 sm:bottom-32 left-1/2 pointer-events-none hidden sm:block"
+                style={{
+                  transform: 'translateX(-50%)',
+                  zIndex: 50,
+                  animation: 'scrollIndicator 2s ease-in-out infinite'
+                }}
+              >
+                <div className="rounded-full px-4 py-3 sm:px-6 sm:py-5 bg-black/30 backdrop-blur-md shadow-lg border border-white/10">
+                  <svg 
+                    className="w-8 h-8 sm:w-10 sm:h-10 text-white opacity-80" 
+                    fill="none" 
+                    stroke="currentColor" 
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
                   >
-                    {cat.title}
-                  </a>
-                ))}
-              </nav>
-              <div className="text-right">
-                <p className="text-sm md:text-base text-gray-500 whitespace-nowrap">
-                  {digest.totals.total} articles processed this week
-                </p>
+                    {/* First chevron */}
+                    <path 
+                      strokeLinecap="round" 
+                      strokeLinejoin="round" 
+                      strokeWidth={2.5} 
+                      d="M19 9l-7 7-7-7" 
+                    />
+                    {/* Second chevron (shifted down) */}
+                    <path 
+                      strokeLinecap="round" 
+                      strokeLinejoin="round" 
+                      strokeWidth={2.5} 
+                      d="M19 15l-7 7-7-7" 
+                    />
+                  </svg>
+                </div>
               </div>
             </div>
-            <div className="flex justify-center">
-              <Suspense fallback={<div className="h-6 w-20" />}>
-                <TopNSelector />
-              </Suspense>
-            </div>
+            
+            {/* Date range and build info - bottom right */}
+            {digest && (
+              <div className="absolute bottom-3 right-3 sm:bottom-4 sm:right-4 z-20">
+                <div className="bg-black/50 backdrop-blur-sm rounded-lg px-3 py-1.5 sm:px-4 sm:py-2">
+                  <div className="text-xs sm:text-xs md:text-sm text-white leading-tight" style={{
+                    textShadow: '0 1px 2px rgba(0,0,0,0.5)'
+                  }}>
+                    <span className="block sm:inline">
+                      {dateRange}
+                    </span>
+                    {digest.builtAtISO && (
+                      <span className="block sm:inline sm:ml-2">
+                        <span className="hidden sm:inline">•</span> Built {formatDateTime(digest.builtAtISO)}
+                      </span>
+                    )}
+                  </div>
+                </div>
+              </div>
+            )}
           </div>
         </section>
 
-        {/* CATEGORY SECTIONS UI - Client-side rendering with reactive TopN */}
-        <Suspense fallback={
-          <section className="w-full max-w-[1200px] lg:max-w-[1400px] 2xl:max-w-[1560px] mx-auto px-4 md:px-8 mb-16 md:mb-20">
-            <div className="w-full grid grid-cols-12 gap-8 lg:gap-10">
-              {CATEGORY_CARDS.map(cat => (
-                <div key={cat.key} className="col-span-12 lg:col-span-6 w-full">
-                  <div className="bg-white rounded-lg border border-gray-100 p-4 md:p-7 h-64 animate-pulse" />
-                </div>
-              ))}
-            </div>
-          </section>
-        }>
-          <DigestClientView digest={digest} categoryCards={CATEGORY_CARDS} variant="home" />
-        </Suspense>
+        {/* PANELS SECTION - Overtaking Content */}
+        <section className="relative z-20 -mt-8 sm:-mt-12 md:-mt-24">
+          {/* Panel Container */}
+          <div className="w-full max-w-[1400px] lg:max-w-[1600px] 2xl:max-w-[1800px] mx-auto px-4 sm:px-5 md:px-8">
+            <div className="bg-white/95 dark:bg-zinc-950/90 backdrop-blur rounded-xl md:rounded-2xl shadow-lg border border-black/5 dark:border-white/10 p-4 sm:p-5 md:p-6 lg:p-10">
+              {/* Breadcrumbs */}
+              <div className="mb-4 sm:mb-5 md:mb-6">
+                <Breadcrumbs
+                  items={[
+                    { label: 'Home', href: '/' },
+                    { label: 'Archive', href: '/archive' },
+                    { label: `Week ${digest.weekLabel}` },
+                  ]}
+                />
+              </div>
 
-        {/* Week Navigation */}
-        <nav className="w-full max-w-[1200px] lg:max-w-[1400px] 2xl:max-w-[1560px] mx-auto px-4 md:px-8 mt-12 md:mt-16 pt-8 border-t border-gray-200">
-          <p className="text-sm text-gray-500 mb-4 text-center">Browse other weeks</p>
-          <div className="flex items-center justify-between gap-4">
-            {previousWeek ? (
-              <Link
-                href={`/week/${previousWeek}`}
-                className="flex items-center gap-2 text-base text-gray-700 hover:text-gray-900 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 rounded px-3 py-2"
-              >
-                <span className="text-gray-400">←</span>
-                <span>Previous week</span>
-                <span className="text-sm text-gray-500">({previousWeek})</span>
-              </Link>
-            ) : (
-              <div className="flex-1" />
-            )}
-            {nextWeek ? (
-              <Link
-                href={`/week/${nextWeek}`}
-                className="flex items-center gap-2 text-base text-gray-700 hover:text-gray-900 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 rounded px-3 py-2 ml-auto"
-              >
-                <span className="text-sm text-gray-500">({nextWeek})</span>
-                <span>Next week</span>
-                <span className="text-gray-400">→</span>
-              </Link>
-            ) : (
-              <div className="flex-1" />
-            )}
+              {/* Podcast Player - At top of panel */}
+              {podcast && (
+                <div className="mb-5 sm:mb-6 md:mb-8 pb-5 sm:pb-6 md:pb-8 border-b border-gray-200 dark:border-gray-700">
+                  <div className="mb-3 sm:mb-3">
+                    <h3 className="text-base sm:text-base md:text-lg font-semibold text-gray-900 dark:text-gray-100">
+                      🎧 Weekly Luxury Intelligence Podcast · ~12 minutes
+                    </h3>
+                    <p className="text-sm sm:text-sm text-gray-600 dark:text-gray-400 italic mt-1.5 sm:mt-2">
+                      Listen to this week&apos;s key ecommerce, jewellery & luxury stories
+                    </p>
+                  </div>
+                  <audio
+                    controls
+                    preload="none"
+                    className="w-full"
+                    style={{
+                      height: '48px',
+                      minHeight: '48px',
+                      borderRadius: '8px',
+                    }}
+                  >
+                    <source src={podcast.audioPath} type="audio/mpeg" />
+                    Your browser does not support the audio element.
+                  </audio>
+                </div>
+              )}
+
+              {/* Category Control Bar - Editorial style */}
+              <div className="mb-4 sm:mb-5 md:mb-6 pb-4 sm:pb-5 md:pb-6 border-b border-gray-200 dark:border-gray-700">
+                <div className="rounded-xl md:rounded-2xl border border-black/5 bg-white/70 backdrop-blur-sm px-4 sm:px-4 md:px-5 py-3 sm:py-3 md:py-3.5">
+                  <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2.5 sm:gap-3 md:gap-3">
+                    {/* Left: Category Label + Pills */}
+                    <div className="flex flex-col sm:flex-row sm:items-center gap-2.5 sm:gap-3 md:gap-3 flex-wrap">
+                      {/* Category Label */}
+                      <span className="text-[11px] uppercase tracking-wider text-black/40 whitespace-nowrap">
+                        Browse by category
+                      </span>
+                      
+                      {/* Category Pills */}
+                      <nav className="flex flex-wrap gap-1.5 sm:gap-2 md:gap-2 items-center" aria-label="Category navigation">
+                        {CATEGORY_CARDS.map(cat => (
+                          <a
+                            key={cat.anchorId}
+                            href={`#${cat.anchorId}`}
+                            className="rounded-full border border-black/10 bg-white px-3 py-1.5 sm:px-3.5 sm:py-2 md:px-3.5 md:py-1.5 text-xs sm:text-xs md:text-sm font-medium text-black/70 hover:bg-black/[0.02] hover:border-black/15 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black/20 focus-visible:ring-offset-1 transition-colors min-h-[40px] sm:min-h-0 flex items-center justify-center"
+                            style={{ minHeight: '40px' }}
+                          >
+                            {cat.title}
+                          </a>
+                        ))}
+                      </nav>
+                    </div>
+                    
+                    {/* Right: Top N + Article Count */}
+                    <div className="flex items-center gap-2 sm:gap-2.5 md:gap-3 flex-shrink-0">
+                      {/* Divider */}
+                      <div className="w-px h-5 bg-black/10 hidden sm:block" />
+                      
+                      {/* Top N Selector */}
+                      <div className="flex items-center">
+                        <Suspense fallback={<div className="h-4 w-20" />}>
+                          <TopNSelector />
+                        </Suspense>
+                      </div>
+                      
+                      {/* Divider */}
+                      <div className="w-px h-5 bg-black/10 hidden sm:block" />
+                      
+                      {/* Article Count */}
+                      <div className="flex flex-col items-end">
+                        <span className="text-xs sm:text-xs md:text-sm font-medium text-black/60">
+                          {digest.totals.total}
+                        </span>
+                        <span className="text-[10px] sm:text-[10px] md:text-[11px] text-black/40">
+                          articles analysed this week
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* CATEGORY SECTIONS UI - Client-side rendering with reactive TopN */}
+              <Suspense fallback={
+                <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-6">
+                  {CATEGORY_CARDS.map(cat => (
+                    <div key={cat.key} className="w-full">
+                      <div className="bg-white dark:bg-gray-800 rounded-lg border border-gray-100 dark:border-gray-700 p-4 md:p-7 h-64 animate-pulse" />
+                    </div>
+                  ))}
+                </div>
+              }>
+                <DigestClientView digest={digest} categoryCards={CATEGORY_CARDS} variant="home" />
+              </Suspense>
+
+              {/* Key Themes Summary */}
+              {(digest.keyThemes && digest.keyThemes.length > 0) || digest.oneSentenceSummary ? (
+                <div className="mt-6 sm:mt-8 md:mt-10 pt-4 sm:pt-6 md:pt-8 border-t border-gray-200 dark:border-gray-700">
+                  <div className="text-center">
+                    {digest.oneSentenceSummary && (
+                      <p className="text-sm sm:text-base md:text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-3 sm:mb-4 px-2">
+                        {digest.oneSentenceSummary}
+                      </p>
+                    )}
+                    {digest.keyThemes && digest.keyThemes.length > 0 && (
+                      <div className="flex flex-wrap gap-1.5 sm:gap-2 justify-center">
+                        {digest.keyThemes.map((theme, idx) => (
+                          <span
+                            key={idx}
+                            className="inline-flex items-center px-2 py-1 sm:px-3 sm:py-1.5 rounded-full text-xs sm:text-sm font-medium bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 border border-blue-200 dark:border-blue-700"
+                          >
+                            {theme}
+                          </span>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                </div>
+              ) : null}
+
+              {/* Week Navigation */}
+              <nav className="mt-6 sm:mt-8 md:mt-10 pt-4 sm:pt-6 md:pt-8 border-t border-gray-200 dark:border-gray-700">
+                <p className="text-sm text-gray-500 dark:text-gray-400 mb-4 text-center">Browse other weeks</p>
+                <div className="flex items-center justify-between gap-4">
+                  {previousWeek ? (
+                    <Link
+                      href={`/week/${previousWeek}`}
+                      className="flex items-center gap-2 text-base text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 rounded px-3 py-2"
+                    >
+                      <span className="text-gray-400 dark:text-gray-500">←</span>
+                      <span>Previous week</span>
+                      <span className="text-sm text-gray-500 dark:text-gray-400">({previousWeek})</span>
+                    </Link>
+                  ) : (
+                    <div className="flex-1" />
+                  )}
+                  {nextWeek ? (
+                    <Link
+                      href={`/week/${nextWeek}`}
+                      className="flex items-center gap-2 text-base text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 rounded px-3 py-2 ml-auto"
+                    >
+                      <span className="text-sm text-gray-500 dark:text-gray-400">({nextWeek})</span>
+                      <span>Next week</span>
+                      <span className="text-gray-400 dark:text-gray-500">→</span>
+                    </Link>
+                  ) : (
+                    <div className="flex-1" />
+                  )}
+                </div>
+              </nav>
+            </div>
           </div>
-        </nav>
+        </section>
       </main>
     </>
   );

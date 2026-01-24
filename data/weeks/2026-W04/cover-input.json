@@ -1,0 +1,38 @@
+{
+  "weekLabel": "2026-W04",
+  "homepageTopArticles": [
+    {
+      "title": "Shopify merchants face 4% OpenAI fee on ChatGPT sales, reports The Information",
+      "source": "Internet Retailing",
+      "snippet": "Shopify merchants will reportedly pay a 4% fee on sales made via OpenAI-powered checkouts, on top of standard transaction charges.\nThe post Shopify merchants face 4% OpenAI fee on ChatGPT sales, reports The Information appeared first on InternetRetailing.",
+      "aiSummary": "AI-Generated Summary:\nShopify merchants using OpenAI-powered checkouts will incur a 4% fee on sales, in addition to standard transaction charges, as reported by The Information on Internet Retailing.",
+      "rerankWhy": "Logistics expansion via acquisition impacts fulfillment capabilities"
+    },
+    {
+      "title": "D&H expands logistics unit with acquisition of Fulfillment.com",
+      "source": "Digital Commerce 360",
+      "snippet": "D&H Distributing has completed an acquisition of Fulfillment.com, expanding the capabilities of its SCALE division and adding global ecommerce fulfillment services to its logistics portfolio. The deal brings Fulfillment.com into SCALE, D&H’s third-party logistics and supply chain services arm. D&H did not disclose financial terms. Founded in 2011, Fulfillment.com provides multi-site ecommerce fulfillment and cross-border […]\nThe post D&H expands logistics unit with acquisition of Fulfillment.com...",
+      "aiSummary": "AI-generated summary: D&H Distributing has acquired Fulfillment.com to enhance its SCALE division and offer global ecommerce fulfillment services. The deal brings Fulfillment.com into D&H's third-party logistics arm, expanding its capabilities in the ecommerce and retail tech sector.",
+      "rerankWhy": "Shopify merchants face new OpenAI sales fee affecting margins"
+    },
+    {
+      "title": "GN Diamond Says 2025 Lab-Grown and Natural Diamond Sales Were Virtually Tied",
+      "source": "Instore Magazine",
+      "snippet": "Many retailers have reported a strong finish to 2025 with natural diamond sales showing a major increase over last year’s holiday season.",
+      "aiSummary": "AI-Generated Summary:\nIn 2025, GN Diamond reported that lab-grown and natural diamond sales were nearly equal, with natural diamond sales seeing a significant rise during the holiday season compared to the previous year.",
+      "rerankWhy": "Digital campaigns drove £82M ecommerce revenue for jewellery clients"
+    },
+    {
+      "title": "Squash delivers record-breaking growth for jewellery, watch and luxury goods clients",
+      "source": "Professional Jeweller",
+      "snippet": "In 2025, Squash’s digital campaigns contributed over £82 million in eCommerce revenue for its jewellery, watch and luxury goods clients – its most successful performance year to date. This revenue represents a 32% increase on 2024, equating to just over an additional £20m in client revenue across the UK jewellery, watch & luxury goods sector. […]\nThe post Squash delivers record-breaking growth for jewellery, watch and luxury goods clients appeared first on Professional Jeweller.",
+      "aiSummary": "AI-generated summary: Squash's digital campaigns in 2025 generated over £82 million in eCommerce revenue for jewellery, watch, and luxury goods clients, marking a 32% increase from the previous year and contributing significantly to the sector's growth.",
+      "rerankWhy": "Data on lab-grown vs natural diamond sales with retail impact"
+    }
+  ],
+  "model": "gpt-image-1.5",
+  "finalPrompt": "Create a hyper-realistic editorial photograph for a weekly intelligence digest.\n\nCRITICAL: This image must visually represent ONLY the following articles: Shopify merchants face 4% OpenAI fee on ChatGPT sales, reports The Information, D&H expands logistics unit with acquisition of Fulfillment.com, GN Diamond Says 2025 Lab-Grown and Natural Diamond Sales Were Virtually Tied, Squash delivers record-breaking growth for jewellery, watch and luxury goods clients\n\nScene:\nA playful, slightly absurd visual metaphor inspired by these articles. The scene should be believable but create a visual joke that makes the viewer pause and smile. Prefer object-driven scenes over people-driven scenes.\n\nPhotography style:\n- Shot on a high-end DSLR or medium-format camera\n- Natural or practical lighting (window light, store lighting)\n- Realistic textures, materials, reflections, imperfections\n- Shallow depth of field where appropriate\n- Editorial realism with a playful, humorous tone\n\nComposition:\n- Wide, horizontally expansive banner format (target 3:1 or wider aspect ratio)\n- Vertically minimal height - all important visual elements must be placed in the central horizontal band\n- Safe margins at top and bottom - no critical content near vertical edges\n- One clear focal subject in the central horizontal band\n- Secondary elements add context but do not compete\n- Clean background, no clutter\n- Looks like a real photo taken in a real location\n- Composition must work when displayed in a wide, shallow container\n- Avoid vertical stacking, tall elements, or content that extends to top/bottom edges\n\nABSOLUTE PROHIBITIONS:\n- NO screens, dashboards, UI, holograms, floating icons, symbols, charts, or interface elements\n- NO text of any kind (including signs, labels, price tags, screens, books, posters)\n- NO futuristic or sci-fi visual language\n- NO glossy CGI look, no cartoon, no illustration\n- NO logos, no brand marks, no watermarks\n\nIf an element could reasonably contain text in real life (screen, sign, paper), it MUST be out of frame, fully blurred, or turned away from the camera.\n\nThe scene should be playful and absurd but look like a real photograph.\n\nCRITICAL CONSTRAINTS (must be strictly avoided):\n- text, letters, numbers, signage, labels, screens, UI, dashboards, holograms, floating icons, logos, brands, watermarks, cartoon, illustration, CGI, 3D render, anime\n\nPHOTOREALISM ENFORCEMENT:\n- Ultra photorealistic editorial photograph, shot on a real DSLR or medium-format camera.\n- Natural lighting, realistic skin texture, realistic reflections, realistic materials, real physics.\n- Candid editorial realism; avoid stock-photo staging.\n\nANTI-CARTOON / ANTI-CGI:\n- No illustration, no cartoon, no anime, no 3D render, no CGI, no synthetic look.\n\nNO-TEXT GUARANTEE:\n- Absolutely no text, letters, numbers, typography, signage, labels, price tags.\n- No screens, dashboards, UI, holograms, floating icons, charts.\n- Avoid any objects that commonly contain text (posters, newspapers, packaging, storefront signs). If unavoidable, they must be fully out of focus and unreadable.\n\nCOMPOSITION FOR WIDE HERO BANNER (CRITICAL):\n- Wide, horizontally expansive banner format (target 3:1 or wider aspect ratio)\n- Vertically minimal height - all important visual elements must be placed in the central horizontal band\n- Safe margins at top and bottom - no critical content near vertical edges\n- Composition must work when displayed in a wide, shallow container\n- Avoid vertical stacking, tall elements, or content that extends to top/bottom edges",
+  "imageSize": "1536x1024",
+  "outputPath": "/weekly-images/2026-W04.png",
+  "generatedAt": "2026-01-24T09:37:38.384Z"
+}

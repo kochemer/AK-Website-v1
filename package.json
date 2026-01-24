@@ -13,7 +13,8 @@
     "print-yield": "tsx scripts/printSourceYield.ts",
     "validate:feeds": "tsx scripts/validateFeeds.ts",
     "cover": "tsx scripts/regenerateCover.ts",
-    "podcast": "tsx scripts/buildWeeklyPodcast.ts"
+    "podcast": "tsx scripts/buildWeeklyPodcast.ts",
+    "email-digest": "tsx scripts/buildWeeklyEmailDigest.ts"
   },
   "dependencies": {
     "@amplitude/unified": "^1.0.0-beta.9",
