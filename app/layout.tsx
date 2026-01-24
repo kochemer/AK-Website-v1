@@ -26,12 +26,14 @@ export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
   maximumScale: 5,
+  themeColor: "#6b2d5c",
 };
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: "Luxury Intelligence",
   description: "Luxury Ecommerce, Retail Technology & AI - Curated intelligence and AI-assisted summaries for luxury, ecommerce, and retail tech.",
+  manifest: "/manifest.webmanifest",
   icons: {
     icon: [
       { url: "/favicon.png", type: "image/png" },

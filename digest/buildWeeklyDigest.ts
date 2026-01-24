@@ -5,16 +5,10 @@ import { DateTime } from 'luxon';
 import { getWeekRangeCET } from '../utils/weekCET';
 import { classifyTopic } from '../classification/classifyTopics';
 import type { Article as BaseArticle, Topic } from '../classification/classifyTopics';
-import { classifyArticleLLM, getClassificationStats, resetClassificationStats } from '../classification/classifyWithLLM';
-import { rerankArticles, getRerankStats, resetRerankStats } from './rerankArticles';
 
-// Extended Article type that includes snippet and discovery fields (used in actual data)
+// Extended Article type that includes snippet (used in actual data)
 type Article = BaseArticle & {
   snippet?: string;
-  discoveredAt?: string;
-  publishedDateInvalid?: boolean;
-  usedDiscoveredAtFallback?: boolean;
-  sourceType?: 'rss' | 'page' | 'discovery';
 };
 
 const __filename = fileURLToPath(import.meta.url);
@@ -23,10 +17,48 @@ const __dirname = path.dirname(__filename);
 const TOP_N = 7;
 const MAX_PER_SOURCE = 3; // Diversity guard: max articles per source in top N
 
-// --- Article Gating Configuration ---
+// --- Relevance Ranking Configuration ---
 
 /**
- * Low-signal markers that indicate sponsored/press release content
+ * Source weights: positive values boost articles from these sources
+ * Default weight is 0 for sources not listed
+ */
+const SOURCE_WEIGHTS: Record<string, number> = {
+  "Jeweller - Business News": 0.1,
+  "Professional Jeweller": 0.1,
+  "NYTimes Technology": 0.15,
+  "Modern Retail": 0.1,
+  "Practical Ecommerce": 0.1,
+  "Retail Dive": 0.1,
+  "Harvard Business Review (Technology & AI)": 0.15,
+  "McKinsey & Company: Artificial Intelligence": 0.15,
+};
+
+/**
+ * Topic-specific keywords for boosting relevance
+ * Case-insensitive matching in title and snippet
+ */
+const TOPIC_KEYWORDS: Record<Topic, string[]> = {
+  "AI_and_Strategy": [
+    "artificial intelligence", "ai", "machine learning", "ml", "strategy", "automation",
+    "personalization", "recommendation", "chatbot", "analytics", "insights", "data"
+  ],
+  "Ecommerce_Retail_Tech": [
+    "ecommerce", "e-commerce", "online retail", "shopping", "checkout", "payment",
+    "platform", "marketplace", "fulfillment", "logistics", "warehouse", "inventory", "retail tech"
+  ],
+  "Luxury_and_Consumer": [
+    "luxury", "premium", "high-end", "consumer", "behavior", "spending", "demand",
+    "brand", "heritage", "exclusive", "aspirational", "affluent"
+  ],
+  "Jewellery_Industry": [
+    "jewellery", "jewelry", "diamond", "gem", "precious metal", "gold", "silver",
+    "retailer", "jeweller", "hallmark", "assay", "watch", "timepiece"
+  ],
+};
+
+/**
+ * Low-signal markers that trigger penalties
  * Case-insensitive matching in title and snippet
  */
 const LOW_SIGNAL_MARKERS = [
@@ -34,35 +66,10 @@ const LOW_SIGNAL_MARKERS = [
   "paid content", "sponsored content", "ad", "promo"
 ];
 
-/**
- * Controversy markers - exclude articles primarily about these topics
- */
-const CONTROVERSY_MARKERS = {
-  war: ["war", "armed conflict", "violence", "military action", "combat", "battle", "invasion", "attack", "bombing", "drone strike", "israel", "palestine", "gaza"],
-  cultureWar: ["culture war", "identity politics", "woke", "cancel culture", "political correctness", "gender ideology", "critical race theory"],
-  election: ["election", "campaign", "polling", "voter", "candidate", "primary", "debate", "ballot", "electoral"],
-  alarm: ["alarm", "alarmed", "distorting history", "trivializing history", "holocaust imagery", "fake images"],
-};
-
-/**
- * Cookie consent/privacy policy page markers - exclude these non-article pages
- */
-const COOKIE_CONSENT_MARKERS = [
-  "privacy choices", "privatlivsvalg", "cookie consent", "cookie policy", "privacy policy",
-  "privatlivspolitik", "cookiepolitik", "samtykke", "accept", "acceptér", "reject", "afvis",
-  "manage cookies", "cookie settings", "privacy settings", "your privacy", "dit privatliv"
-];
-
-/**
- * Policy/regulation allowlist terms - these are allowed even if they mention controversy markers
- * Must be directly related to retail/ecommerce/AI impact
- */
-const POLICY_ALLOWLIST = [
-  "tariff", "tariffs", "trade policy", "trade war", "trade agreement",
-  "regulation", "regulatory", "compliance", "AI Act", "GDPR", "privacy law",
-  "data protection", "platform regulation", "antitrust", "competition law",
-  "consumer protection", "retail regulation", "ecommerce regulation"
-];
+// Keyword boost per match (small boost)
+const KEYWORD_BOOST_PER_MATCH = 0.05;
+// Penalty per low-signal marker found
+const LOW_SIGNAL_PENALTY = 0.2;
 
 /**
  * Normalize a title for deduplication:
@@ -100,390 +107,157 @@ function dedupeArticles(articles: Article[]): Article[] {
 }
 
 /**
- * Article gating result - determines eligibility, not ranking
+ * Relevance score breakdown for explainability
  */
-type ArticleGate = {
-  eligible: boolean;
-  reasons: string[];
-  flags: {
-    sponsored?: boolean;
-    pressRelease?: boolean;
-    duplicateOf?: string;
-    offCategory?: boolean;
-    controversial?: boolean;
-    controversialSuspected?: boolean;
-  };
-  tier?: "high" | "med" | "low"; // Optional category-match tier (not for ranking)
+type RelevanceScore = {
+  scoreTotal: number;
+  recencyScore: number;
+  sourceWeight: number;
+  keywordBoost: number;
+  penalty: number;
+  matchedKeywords: string[];
 };
 
 /**
- * Article with gating information (only added to selected top items)
+ * Article with relevance scoring (only added to selected top items)
  */
-type ArticleWithGate = Article & {
-  gate?: ArticleGate;
+type ArticleWithRelevance = Article & {
+  relevance?: RelevanceScore;
 };
 
 /**
- * Check if text contains any of the given markers (case-insensitive)
+ * Calculate recency score: map publishedAt within week to 0..1 (newest=1)
  */
-function containsMarkers(text: string, markers: string[]): boolean {
+function calculateRecencyScore(publishedAt: string, weekStart: number, weekEnd: number): number {
+  if (!publishedAt) return 0;
+  const articleTime = new Date(publishedAt).getTime();
+  if (isNaN(articleTime) || articleTime < weekStart || articleTime > weekEnd) return 0;
+  
+  // Normalize to 0..1 where newest (weekEnd) = 1, oldest (weekStart) = 0
+  const weekDuration = weekEnd - weekStart;
+  if (weekDuration === 0) return 1;
+  return (articleTime - weekStart) / weekDuration;
+}
+
+/**
+ * Find matched keywords in text (case-insensitive)
+ */
+function findMatchedKeywords(text: string, keywords: string[]): string[] {
   const lowerText = text.toLowerCase();
-  return markers.some(marker => lowerText.includes(marker.toLowerCase()));
+  return keywords.filter(keyword => lowerText.includes(keyword.toLowerCase()));
 }
 
 /**
- * Check if text contains any allowlist terms (case-insensitive)
+ * Calculate keyword boost based on topic-specific keywords
  */
-function containsAllowlist(text: string, allowlist: string[]): boolean {
-  const lowerText = text.toLowerCase();
-  return allowlist.some(term => lowerText.includes(term.toLowerCase()));
+function calculateKeywordBoost(article: Article, topic: Topic): { boost: number; matched: string[] } {
+  const keywords = TOPIC_KEYWORDS[topic] || [];
+  const titleMatches = findMatchedKeywords(article.title, keywords);
+  const snippetMatches = article.snippet ? findMatchedKeywords(article.snippet, keywords) : [];
+  
+  // Combine and deduplicate
+  const allMatches = Array.from(new Set([...titleMatches, ...snippetMatches]));
+  const boost = allMatches.length * KEYWORD_BOOST_PER_MATCH;
+  
+  return { boost, matched: allMatches };
 }
 
 /**
- * Detect controversy in article content
- * Returns: { isControversial: boolean, isSuspected: boolean }
+ * Calculate penalty for low-signal markers
  */
-function detectControversy(article: Article): { isControversial: boolean; isSuspected: boolean } {
-  const text = `${article.title} ${article.snippet || ''}`;
-  const lowerText = text.toLowerCase();
-  
-  // Check for policy allowlist first - if found, allow even if controversy markers present
-  const hasPolicyContext = containsAllowlist(text, POLICY_ALLOWLIST);
-  
-  // Check each controversy category
-  const hasWar = containsMarkers(text, CONTROVERSY_MARKERS.war);
-  const hasCultureWar = containsMarkers(text, CONTROVERSY_MARKERS.cultureWar);
-  const hasElection = containsMarkers(text, CONTROVERSY_MARKERS.election);
-  const hasAlarm = containsMarkers(text, CONTROVERSY_MARKERS.alarm);
-  
-  // If policy context exists, don't exclude even if controversy markers found
-  if (hasPolicyContext && (hasWar || hasCultureWar || hasElection || hasAlarm)) {
-    return { isControversial: false, isSuspected: false };
-  }
-  
-  // If clear controversy markers without policy context, exclude
-  if (hasWar || hasCultureWar || hasElection || hasAlarm) {
-    // Check if it's ambiguous (e.g., mentions both controversy and retail/commerce)
-    const hasRetailContext = containsMarkers(text, ["retail", "commerce", "ecommerce", "shopping", "customer", "merchant", "store", "brand"]);
-    if (hasRetailContext) {
-      // Ambiguous - mark as suspected but don't exclude deterministically
-      return { isControversial: false, isSuspected: true };
-    }
-    return { isControversial: true, isSuspected: false };
-  }
-  
-  return { isControversial: false, isSuspected: false };
+function calculatePenalty(article: Article): number {
+  const text = `${article.title} ${article.snippet || ''}`.toLowerCase();
+  const matches = LOW_SIGNAL_MARKERS.filter(marker => text.includes(marker.toLowerCase()));
+  return matches.length * LOW_SIGNAL_PENALTY;
 }
 
 /**
- * Check if title indicates a cookie consent/privacy policy page (non-article)
+ * Calculate composite relevance score for an article
  */
-function isCookieConsentPage(title: string): boolean {
-  const lowerTitle = title.toLowerCase();
-  return COOKIE_CONSENT_MARKERS.some(marker => lowerTitle.includes(marker.toLowerCase()));
-}
-
-/**
- * Gate an article - determine eligibility and flags (no ranking)
- * Implements soft week-window logic for discovery articles
- */
-function gateArticle(
+function calculateRelevanceScore(
   article: Article,
   topic: Topic,
-  duplicateMap: Map<string, string>, // normalized title -> URL of duplicate
   weekStart: number,
   weekEnd: number
-): ArticleGate {
-  const reasons: string[] = [];
-  const flags: ArticleGate['flags'] = {};
-  const isDiscovery = article.sourceType === 'discovery';
+): RelevanceScore {
+  // Recency score (0..1)
+  const recencyScore = calculateRecencyScore(article.published_at, weekStart, weekEnd);
   
-  // Check for cookie consent/privacy policy pages (non-articles) - exclude immediately
-  if (isCookieConsentPage(article.title)) {
-    return {
-      eligible: false,
-      reasons: ["Cookie consent/privacy policy page (not an article)"],
-      flags: {},
-    };
-  }
+  // Source weight (default 0)
+  const sourceWeight = SOURCE_WEIGHTS[article.source] || 0;
   
-  // Week window check with soft logic for discovery articles
-  let withinWindow = false;
-  let usedFallback = false;
+  // Keyword boost
+  const { boost: keywordBoost, matched: matchedKeywords } = calculateKeywordBoost(article, topic);
   
-  if (isDiscovery) {
-    // Soft week-window logic for discovery articles
-    const oneDayMs = 24 * 60 * 60 * 1000;
-    const softWeekStart = weekStart - oneDayMs;
-    const softWeekEnd = weekEnd + oneDayMs;
-    const maxAgeMs = 30 * 24 * 60 * 60 * 1000; // 30 days
-    const maxAgeCutoff = weekStart - maxAgeMs;
-    
-    // Try publishedAt first (if valid)
-    if (article.published_at && !article.publishedDateInvalid) {
-      const publishedTime = new Date(article.published_at).getTime();
-      if (!isNaN(publishedTime)) {
-        // Check guardrail: never include articles older than 30 days before week start
-        if (publishedTime < maxAgeCutoff) {
-          return { eligible: false, reasons: ["Too old (publishedAt < weekStart - 30 days)"], flags };
-        }
-        // Check soft window
-        if (publishedTime >= softWeekStart && publishedTime <= softWeekEnd) {
-          withinWindow = true;
-        }
-      }
-    }
-    
-    // Fallback to discoveredAt if publishedAt is invalid/missing or outside soft window
-    if (!withinWindow && article.discoveredAt) {
-      const discoveredTime = new Date(article.discoveredAt).getTime();
-      if (!isNaN(discoveredTime)) {
-        // Check guardrail: never include articles discovered too long ago
-        if (discoveredTime < maxAgeCutoff) {
-          return { eligible: false, reasons: ["Too old (discoveredAt < weekStart - 30 days)"], flags };
-        }
-        // Check if discovered within week window (strict, not soft)
-        if (discoveredTime >= weekStart && discoveredTime <= weekEnd) {
-          withinWindow = true;
-          usedFallback = true;
-          // Set published_at to discoveredAt for consistency (but flag it)
-          (article as any).published_at = article.discoveredAt;
-        }
-      }
-    }
-    
-    if (!withinWindow) {
-      return { eligible: false, reasons: ["Outside week window (discovery)"], flags };
-    }
-  } else {
-    // Strict week-window logic for RSS/page articles (unchanged)
-    if (!article.published_at) {
-      return { eligible: false, reasons: ["Missing published_at"], flags };
-    }
-    
-    const articleTime = new Date(article.published_at).getTime();
-    if (isNaN(articleTime) || articleTime < weekStart || articleTime > weekEnd) {
-      return { eligible: false, reasons: ["Outside week window"], flags };
-    }
-    withinWindow = true;
-  }
+  // Penalty
+  const penalty = calculatePenalty(article);
   
-  // Check for sponsored/press release content
-  const text = `${article.title} ${article.snippet || ''}`;
-  const lowerText = text.toLowerCase();
-  
-  const isSponsored = LOW_SIGNAL_MARKERS.some(marker => lowerText.includes(marker.toLowerCase()));
-  if (isSponsored) {
-    flags.sponsored = true;
-    flags.pressRelease = true;
-    reasons.push("Sponsored/press release content");
-    // Don't exclude - let LLM decide, but flag it
-  }
-  
-  // Check for duplicates
-  const normTitle = normalizeTitle(article.title);
-  const duplicateOf = duplicateMap.get(normTitle);
-  if (duplicateOf && duplicateOf !== article.url) {
-    flags.duplicateOf = duplicateOf;
-    reasons.push("Duplicate article");
-    return { eligible: false, reasons, flags };
-  }
-  
-  // Check for controversy
-  const { isControversial, isSuspected } = detectControversy(article);
-  if (isControversial) {
-    flags.controversial = true;
-    reasons.push("Controversial topic (war/culture-war/election)");
-    return { eligible: false, reasons, flags };
-  }
-  if (isSuspected) {
-    flags.controversialSuspected = true;
-    reasons.push("Potentially controversial (flagged for LLM review)");
-  }
-  
-  // Determine tier based on category match (optional, not for ranking)
-  // This is a simple heuristic - can be refined
-  let tier: "high" | "med" | "low" = "med";
-  // For now, all eligible articles are "med" tier - LLM will do the ranking
-  
-  // Set fallback flag if used
-  if (usedFallback && isDiscovery) {
-    (article as any).usedDiscoveredAtFallback = true;
-  }
+  // Total score
+  const scoreTotal = recencyScore + sourceWeight + keywordBoost - penalty;
   
   return {
-    eligible: true,
-    reasons: reasons.length > 0 ? reasons : ["Eligible"],
-    flags,
-    tier,
+    scoreTotal,
+    recencyScore,
+    sourceWeight,
+    keywordBoost,
+    penalty,
+    matchedKeywords,
   };
 }
 
 /**
- * Select top N articles deterministically (fallback for reranking)
- * Uses simple source diversity - no scoring, just gating + diversity
+ * Select top N articles with composite scoring and diversity guard
+ * Returns articles with relevance scores attached
  */
-function selectTopNDeterministic(
+function selectTopN(
   articles: Article[],
   n: number,
   topic: Topic,
   weekStart: number,
   weekEnd: number
-): ArticleWithGate[] {
+): ArticleWithRelevance[] {
   if (articles.length === 0) return [];
   
-  // Build duplicate map
-  const duplicateMap = new Map<string, string>();
-  const seenTitles = new Map<string, string>(); // normalized title -> URL
-  for (const article of articles) {
-    const normTitle = normalizeTitle(article.title);
-    const existing = seenTitles.get(normTitle);
-    if (existing) {
-      duplicateMap.set(normTitle, existing);
-    } else {
-      seenTitles.set(normTitle, article.url);
-    }
-  }
-  
-  // Gate all articles
-  const gatedArticles = articles.map(article => ({
+  // Calculate scores for all articles
+  const articlesWithScores = articles.map(article => ({
     article,
-    gate: gateArticle(article, topic, duplicateMap, weekStart, weekEnd),
+    relevance: calculateRelevanceScore(article, topic, weekStart, weekEnd),
   }));
   
-  // Filter to eligible only
-  const eligible = gatedArticles.filter(item => item.gate.eligible);
-  
-  // Filter out articles with no retail/ecommerce relevance (for deterministic fallback)
-  // This helps when LLM reranker fails
-  const retailRelevanceKeywords = [
-    "retail", "ecommerce", "e-commerce", "shopping", "checkout", "cart", "payment", "merchant",
-    "store", "brand", "customer", "commerce", "marketplace", "fulfillment", "logistics",
-    "luxury", "fashion", "jewelry", "jewellery", "watch", "pricing", "conversion", "revenue",
-    "platform", "shopify", "amazon", "walmart", "omnichannel", "supply chain"
-  ];
-  
-  const hasRetailRelevance = (article: Article): boolean => {
-    const text = `${article.title} ${article.snippet || ''}`.toLowerCase();
-    return retailRelevanceKeywords.some(keyword => text.includes(keyword));
-  };
-  
-  // For deterministic fallback, prefer articles with retail relevance
-  // But don't exclude all non-retail articles (some AI/Strategy articles are still relevant)
-  const eligibleWithRelevance = eligible.filter(item => {
-    // For AI_and_Strategy, allow articles without retail keywords (they might be about AI infrastructure)
-    if (topic === 'AI_and_Strategy') {
-      return true; // Let all eligible AI articles through
+  // Sort by total score (descending), then by URL for determinism
+  articlesWithScores.sort((a, b) => {
+    if (Math.abs(a.relevance.scoreTotal - b.relevance.scoreTotal) > 0.0001) {
+      return b.relevance.scoreTotal - a.relevance.scoreTotal;
     }
-    // For other categories, require retail relevance
-    return hasRetailRelevance(item.article);
+    return a.article.url.localeCompare(b.article.url);
   });
   
-  // If we filtered out too many, use original eligible list
-  const finalEligible = eligibleWithRelevance.length >= n ? eligibleWithRelevance : eligible;
-  
-  // Sort by URL for determinism (no scoring)
-  finalEligible.sort((a, b) => a.article.url.localeCompare(b.article.url));
-  
   // Apply diversity guard: limit max per source, but relax if needed to fill to N
-  const selected: ArticleWithGate[] = [];
+  const selected: ArticleWithRelevance[] = [];
   const sourceCounts = new Map<string, number>();
   
-  for (let i = 0; i < finalEligible.length && selected.length < n; i++) {
-    const { article, gate } = finalEligible[i];
+  for (let i = 0; i < articlesWithScores.length && selected.length < n; i++) {
+    const { article, relevance } = articlesWithScores[i];
     const currentCount = sourceCounts.get(article.source) || 0;
     const remainingSlots = n - selected.length;
-    const remainingArticles = finalEligible.length - i;
+    const remainingArticles = articlesWithScores.length - i;
     
     // Check if we can add this article:
     // 1. Haven't hit the cap for this source, OR
     // 2. We need to fill remaining slots (relax cap if not enough articles from other sources)
     const canAdd = currentCount < MAX_PER_SOURCE;
-    const mustFill = remainingSlots >= remainingArticles;
+    const mustFill = remainingSlots >= remainingArticles; // If remaining slots >= remaining articles, we must take this
     
     if (canAdd || mustFill) {
       selected.push({
         ...article,
-        gate,
+        relevance,
       });
       sourceCounts.set(article.source, currentCount + 1);
     }
   }
   
   return selected;
-}
-
-/**
- * Select top N articles using LLM reranking with fallback
- * Returns articles with gating info and optional explainability attached
- */
-async function selectTopN(
-  articles: Article[],
-  n: number,
-  topic: Topic,
-  weekStart: number,
-  weekEnd: number,
-  weekLabel: string
-): Promise<ArticleWithGate[]> {
-  if (articles.length === 0) return [];
-  
-  // Build duplicate map
-  const duplicateMap = new Map<string, string>();
-  const seenTitles = new Map<string, string>(); // normalized title -> URL
-  for (const article of articles) {
-    const normTitle = normalizeTitle(article.title);
-    const existing = seenTitles.get(normTitle);
-    if (existing) {
-      duplicateMap.set(normTitle, existing);
-    } else {
-      seenTitles.set(normTitle, article.url);
-    }
-  }
-  
-  // Gate all articles
-  const gatedArticles = articles.map(article => ({
-    article,
-    gate: gateArticle(article, topic, duplicateMap, weekStart, weekEnd),
-  }));
-  
-  // Filter to eligible only
-  const eligible = gatedArticles.filter(item => item.gate.eligible);
-  
-  // Sort by URL for determinism (no scoring - LLM will do ranking)
-  eligible.sort((a, b) => a.article.url.localeCompare(b.article.url));
-  
-  // Get candidates: all eligible articles (up to 100 max for cost control)
-  const candidateCount = Math.min(100, eligible.length);
-  const candidates = eligible.slice(0, candidateCount).map(item => ({
-    ...item.article,
-    gate: item.gate,
-  }));
-  
-  // Fallback function: deterministic top N (simple diversity-based)
-  const fallbackSelect = (arts: ArticleWithGate[]) => {
-    return selectTopNDeterministic(arts, n, topic, weekStart, weekEnd);
-  };
-  
-  // Rerank using LLM (pass total available count for logging)
-  const result = await rerankArticles(
-    weekLabel,
-    topic,
-    articles.length, // total available in category
-    candidates,
-    fallbackSelect
-  );
-  
-  // Attach explainability if available
-  if (result.explainability) {
-    result.selected.forEach((article, idx) => {
-      if (result.explainability && result.explainability[idx]) {
-        (article as any).rerankWhy = result.explainability[idx].rerankWhy;
-        (article as any).rerankConfidence = result.explainability[idx].rerankConfidence;
-      }
-    });
-  }
-  
-  return result.selected;
 }
 
 export type WeeklyDigest = {
@@ -509,15 +283,15 @@ export type WeeklyDigest = {
     };
   };
   topics: {
-    AI_and_Strategy: { total: number; top: ArticleWithGate[] };
-    Ecommerce_Retail_Tech: { total: number; top: ArticleWithGate[] };
-    Luxury_and_Consumer: { total: number; top: ArticleWithGate[] };
-    Jewellery_Industry: { total: number; top: ArticleWithGate[] };
+    AI_and_Strategy: { total: number; top: ArticleWithRelevance[] };
+    Ecommerce_Retail_Tech: { total: number; top: ArticleWithRelevance[] };
+    Luxury_and_Consumer: { total: number; top: ArticleWithRelevance[] };
+    Jewellery_Industry: { total: number; top: ArticleWithRelevance[] };
   };
 };
 
 /**
- * Builds a weekly digest from articles in data/articles.json and discovery articles for the week
+ * Builds a weekly digest from articles in data/articles.json
  * @param weekLabel - Week in format "YYYY-W##" (e.g. "2025-W52")
  * @returns Weekly digest object with totals and topic breakdowns
  */
@@ -548,7 +322,7 @@ export async function buildWeeklyDigest(weekLabel: string): Promise<WeeklyDigest
   const startISO = weekStartCET.toISOString();
   const endISO = weekEndCET.toISOString();
   
-  // Load articles from global articles.json
+  // Load articles
   const dataPath = path.join(__dirname, '../data/articles.json');
   let articles: Article[] = [];
   try {
@@ -558,84 +332,16 @@ export async function buildWeeklyDigest(weekLabel: string): Promise<WeeklyDigest
     throw new Error(`Failed to read articles.json: ${(err as Error).message}`);
   }
   
-  // Load discovery articles for this week (if they exist)
-  const weekDir = path.join(__dirname, '../data/weeks', weekLabel);
-  const discoveryArticlesPath = path.join(weekDir, 'discoveryArticles.json');
-  let discoveryArticles: Article[] = [];
-  try {
-    const raw = await fs.readFile(discoveryArticlesPath, 'utf-8');
-    discoveryArticles = JSON.parse(raw);
-    console.log(`[Build] Loaded ${discoveryArticles.length} discovery articles for ${weekLabel}`);
-  } catch (err) {
-    // Discovery articles don't exist for this week, that's okay
-    console.log(`[Build] No discovery articles found for ${weekLabel}`);
-  }
-  
-  // Merge discovery articles with regular articles (discovery articles take precedence for duplicates)
-  const articlesByUrl = new Map<string, Article>();
-  for (const article of articles) {
-    articlesByUrl.set(article.url, article);
-  }
-  // Add discovery articles, overwriting any duplicates
-  for (const article of discoveryArticles) {
-    articlesByUrl.set(article.url, article);
-  }
-  // Convert back to array
-  const allArticles = Array.from(articlesByUrl.values());
-  
-  // Filter articles to the week window with soft logic for discovery articles
+  // Filter articles to the week window (exclude those without published_at)
   const weekStart = weekStartCET.getTime();
   const weekEnd = weekEndCET.getTime();
-  const oneDayMs = 24 * 60 * 60 * 1000;
-  const maxAgeMs = 30 * 24 * 60 * 60 * 1000; // 30 days
-  const maxAgeCutoff = weekStart - maxAgeMs;
   
-  const eligibleArticles = allArticles.filter(article => {
-    const isDiscovery = article.sourceType === 'discovery';
-    
-    if (isDiscovery) {
-      // Soft week-window logic for discovery articles
-      const softWeekStart = weekStart - oneDayMs;
-      const softWeekEnd = weekEnd + oneDayMs;
-      
-      // Try publishedAt first (if valid)
-      if (article.published_at && !article.publishedDateInvalid) {
-        const publishedTime = new Date(article.published_at).getTime();
-        if (!isNaN(publishedTime)) {
-          // Guardrail: never include articles older than 30 days before week start
-          if (publishedTime < maxAgeCutoff) return false;
-          // Check soft window
-          if (publishedTime >= softWeekStart && publishedTime <= softWeekEnd) {
-            return true;
-          }
-        }
-      }
-      
-      // Fallback to discoveredAt if publishedAt is invalid/missing or outside soft window
-      if (article.discoveredAt) {
-        const discoveredTime = new Date(article.discoveredAt).getTime();
-        if (!isNaN(discoveredTime)) {
-          // Guardrail: never include articles discovered too long ago
-          if (discoveredTime < maxAgeCutoff) return false;
-          // Check if discovered within week window (strict, not soft)
-          if (discoveredTime >= weekStart && discoveredTime <= weekEnd) {
-            // Set published_at to discoveredAt for consistency
-            article.published_at = article.discoveredAt;
-            article.usedDiscoveredAtFallback = true;
-            return true;
-          }
-        }
-      }
-      
-      return false;
-    } else {
-      // Strict week-window logic for RSS/page articles (unchanged)
-      if (!article.published_at) return false;
-      const dt = new Date(article.published_at);
-      if (isNaN(dt.getTime())) return false;
-      const t = dt.getTime();
-      return t >= weekStart && t <= weekEnd;
-    }
+  const eligibleArticles = articles.filter(article => {
+    if (!article.published_at) return false;
+    const dt = new Date(article.published_at);
+    if (isNaN(dt.getTime())) return false;
+    const t = dt.getTime();
+    return t >= weekStart && t <= weekEnd;
   });
   
   // Classify articles and group by topic
@@ -646,40 +352,10 @@ export async function buildWeeklyDigest(weekLabel: string): Promise<WeeklyDigest
     "Jewellery_Industry": [],
   };
   
-  // Reset classification stats
-  resetClassificationStats();
-  
-  // Reset rerank stats
-  resetRerankStats();
-  
-  // Classify articles using LLM with fallback
-  // Process in batches to avoid overwhelming the API, but await all results
-  const classificationPromises = eligibleArticles.map(async (article) => {
-    // Pass categoryHint if available, plus body/extractedText for truncation
-    const result = await classifyArticleLLM({
-      title: article.title,
-      url: article.url,
-      source: article.source,
-      snippet: article.snippet,
-      categoryHint: (article as any).categoryHint,
-      published_at: article.published_at,
-      body: (article as any).extractedText || (article as any).body,
-      extractedText: (article as any).extractedText,
-      aiSummary: (article as any).aiSummary
-    });
-    return { article, result };
-  });
-  
-  const classificationResults = await Promise.all(classificationPromises);
-  
-  // Group articles by topic
-  for (const { article, result } of classificationResults) {
-    byTopic[result.category].push(article);
+  for (const article of eligibleArticles) {
+    const topic = classifyTopic(article);
+    byTopic[topic].push(article);
   }
-  
-  // Log classification statistics
-  const classificationStats = getClassificationStats();
-  console.log(`[Classification Stats] Total: ${classificationStats.total}, Cache hits: ${classificationStats.cache_hits}, Cache misses: ${classificationStats.cache_misses}, LLM calls: ${classificationStats.llm_calls}, LLM successes: ${classificationStats.llm_successes}, LLM failures: ${classificationStats.llm_failures}, Fallbacks: ${classificationStats.fallbacks}`);
   
   // Deduplicate articles within each topic
   for (const topicKey of Object.keys(byTopic) as Topic[]) {
@@ -697,57 +373,30 @@ export async function buildWeeklyDigest(weekLabel: string): Promise<WeeklyDigest
     },
   };
   
-  // Build topics structure with top N articles (with relevance scores and LLM reranking)
+  // Build topics structure with top N articles (with relevance scores)
   const topics = {
     AI_and_Strategy: {
       total: byTopic["AI_and_Strategy"].length,
-      top: await selectTopN(byTopic["AI_and_Strategy"], TOP_N, "AI_and_Strategy", weekStart, weekEnd, weekLabel),
+      top: selectTopN(byTopic["AI_and_Strategy"], TOP_N, "AI_and_Strategy", weekStart, weekEnd),
     },
     Ecommerce_Retail_Tech: {
       total: byTopic["Ecommerce_Retail_Tech"].length,
-      top: await selectTopN(byTopic["Ecommerce_Retail_Tech"], TOP_N, "Ecommerce_Retail_Tech", weekStart, weekEnd, weekLabel),
+      top: selectTopN(byTopic["Ecommerce_Retail_Tech"], TOP_N, "Ecommerce_Retail_Tech", weekStart, weekEnd),
     },
     Luxury_and_Consumer: {
       total: byTopic["Luxury_and_Consumer"].length,
-      top: await selectTopN(byTopic["Luxury_and_Consumer"], TOP_N, "Luxury_and_Consumer", weekStart, weekEnd, weekLabel),
+      top: selectTopN(byTopic["Luxury_and_Consumer"], TOP_N, "Luxury_and_Consumer", weekStart, weekEnd),
     },
     Jewellery_Industry: {
       total: byTopic["Jewellery_Industry"].length,
-      top: await selectTopN(byTopic["Jewellery_Industry"], TOP_N, "Jewellery_Industry", weekStart, weekEnd, weekLabel),
+      top: selectTopN(byTopic["Jewellery_Industry"], TOP_N, "Jewellery_Industry", weekStart, weekEnd),
     },
   };
-  
-  // Log rerank statistics (per-category + summary)
-  const rerankStats = getRerankStats();
-  console.log(`[Rerank Stats] Per-category:`);
-  for (const catStat of rerankStats.category_stats) {
-    let status: string;
-    if (catStat.skipped) {
-      status = `SKIPPED: ${catStat.skip_reason}`;
-    } else if (catStat.cache_hit) {
-      status = 'CACHE_HIT';
-    } else {
-      // Check if it was a fallback
-      const wasFallback = catStat.skip_reason && catStat.skip_reason.includes('fallback');
-      status = wasFallback ? 'FALLBACK' : 'LLM_CALL';
-    }
-    console.log(`  ${catStat.category}: ${catStat.total_available} available, ${catStat.candidates_count} candidates, ${catStat.selected_count} selected [${status}]`);
-  }
-  const avgCandidates = rerankStats.category_stats.length > 0
-    ? (rerankStats.total_candidates / rerankStats.category_stats.length).toFixed(1)
-    : '0';
-  console.log(`[Rerank Stats] Summary: Calls: ${rerankStats.calls}, Cache hits: ${rerankStats.cache_hits}, Cache misses: ${rerankStats.cache_misses}, Fallbacks: ${rerankStats.fallbacks}, Avg candidates: ${avgCandidates}`);
   
   // Get current timestamp in Europe/Copenhagen
   const now = DateTime.now().setZone('Europe/Copenhagen');
   const builtAtISO = now.toISO();
   const builtAtLocal = now.toFormat('yyyy-MM-dd HH:mm:ss');
-
-  // Cover image fields will be set by the main build script after image generation
-  // Default to placeholder if generation fails
-  const coverImageUrl = `/weekly-images/placeholder.svg`;
-  const coverImageAlt = `Weekly digest cover for ${weekLabel}`;
-  const coverKeywords: string[] = [];
 
   return {
     weekLabel,
@@ -756,9 +405,6 @@ export async function buildWeeklyDigest(weekLabel: string): Promise<WeeklyDigest
     endISO,
     builtAtISO: builtAtISO || undefined,
     builtAtLocal,
-    coverImageUrl,
-    coverImageAlt,
-    coverKeywords,
     totals,
     topics,
   };

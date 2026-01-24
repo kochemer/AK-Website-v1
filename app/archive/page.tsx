@@ -120,27 +120,27 @@ export default async function ArchivePage() {
             <div className="absolute inset-0 bg-gradient-to-b from-black/45 via-black/15 to-black/0" />
             
             {/* Hero content */}
-            <div className="relative z-10 h-full flex items-center justify-center px-4 sm:px-6 md:px-8">
+            <div className="relative z-10 h-full flex items-start justify-center px-4 sm:px-6 md:px-8 pt-16 sm:pt-20 md:pt-24 lg:pt-28">
               <div className="w-full max-w-[1400px] lg:max-w-[1600px] 2xl:max-w-[1800px] mx-auto text-center">
                 <div className="bg-black/20 backdrop-blur-sm rounded-xl md:rounded-2xl px-5 py-7 sm:px-6 sm:py-8 md:px-10 md:py-12 inline-block max-w-full mx-2 sm:mx-4">
-                  <h1 className="font-bold mb-3 sm:mb-4 md:mb-5 text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-white leading-tight px-1" style={{
+                  <h1 className="font-bold mb-3 sm:mb-4 md:mb-5 text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-white leading-tight px-1" style={{
                     textShadow: '0 2px 8px rgba(0,0,0,0.5)'
                   }}>
                     Digest Archive
                   </h1>
-                  <div className="text-gray-100 leading-relaxed max-w-5xl mx-auto mb-3 sm:mb-4 md:mb-5 text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl px-2" style={{
+                  <div className="text-gray-100 leading-relaxed max-w-5xl mx-auto mb-2 sm:mb-2.5 md:mb-3 text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl px-2" style={{
                     textShadow: '0 1px 4px rgba(0,0,0,0.3)'
                   }}>
                     Browse all weekly intelligence digests
                   </div>
-                  <p className="text-gray-200 mb-4 sm:mb-5 md:mb-6 text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl italic px-2 sm:px-3" style={{
+                  <p className="text-gray-200 mb-4 sm:mb-5 md:mb-6 text-[10px] sm:text-xs md:text-sm lg:text-base xl:text-lg px-2 sm:px-3" style={{
                     textShadow: '0 1px 3px rgba(0,0,0,0.3)'
                   }}>
                     Access past curated articles, signals, and context from previous weeks.
                   </p>
                   {digests.length > 0 && (
                     <div className="mt-4 sm:mt-6 md:mt-8">
-                      <h2 className="text-lg sm:text-xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-white drop-shadow-lg px-2" style={{ textShadow: '0 2px 8px rgba(0,0,0,0.5)' }}>
+                      <h2 className="text-base sm:text-lg md:text-3xl lg:text-4xl xl:text-5xl font-bold text-white drop-shadow-lg px-2" style={{ textShadow: '0 2px 8px rgba(0,0,0,0.5)' }}>
                         {digests.length} Week{digests.length !== 1 ? 's' : ''} Available
                       </h2>
                     </div>
