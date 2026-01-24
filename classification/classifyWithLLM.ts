@@ -217,7 +217,7 @@ async function callOpenAIWithRetry(
   request: Parameters<typeof openai.chat.completions.create>[0],
   articleTitle: string,
   maxRetries: number = 6
-): Promise<ReturnType<typeof openai.chat.completions.create>> {
+): Promise<Awaited<ReturnType<typeof openai.chat.completions.create>>> {
   let lastError: Error | null = null;
   
   for (let attempt = 0; attempt <= maxRetries; attempt++) {
@@ -308,7 +308,7 @@ async function callLLMClassifier(
 
   try {
     const openai = new OpenAI({ apiKey: OPENAI_API_KEY });
-    const request = {
+    const request: Parameters<typeof openai.chat.completions.create>[0] = {
       model: CLASSIFIER_MODEL,
       temperature: TEMPERATURE,
       max_tokens: MAX_TOKENS,
@@ -325,12 +325,18 @@ async function callLLMClassifier(
       // Note: response_format works with gpt-4o-mini, gpt-4-turbo, gpt-3.5-turbo-1106+
       // For older models, we'll parse the response manually
       ...(CLASSIFIER_MODEL.includes('gpt-4') || CLASSIFIER_MODEL.includes('1106') || CLASSIFIER_MODEL.includes('gpt-4o')
-        ? { response_format: { type: 'json_object' } }
+        ? { response_format: { type: 'json_object' } as const }
         : {}),
     };
     
     // Call with retry logic
     const response = await callOpenAIWithRetry(openai, request, articleTitle, 6);
+
+    // Type guard: ensure response is not a stream (it shouldn't be with our request config)
+    if (!('choices' in response)) {
+      console.warn(`[Classifier] Unexpected response type for article: ${article.title.substring(0, 50)}`);
+      return null;
+    }
 
     const content = response.choices[0]?.message?.content?.trim();
     if (!content) {

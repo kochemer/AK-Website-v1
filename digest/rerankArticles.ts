@@ -431,7 +431,7 @@ async function callOpenAIWithRetry(
   weekLabel: string,
   model: string,
   maxRetries: number = 8
-): Promise<{ response: ReturnType<typeof openai.chat.completions.create>; shouldSwitchModel: boolean }> {
+): Promise<{ response: Awaited<ReturnType<typeof openai.chat.completions.create>>; shouldSwitchModel: boolean }> {
   let lastError: Error | null = null;
   let shouldSwitchModel = false;
 
@@ -444,7 +444,8 @@ async function callOpenAIWithRetry(
       if (attempt > 0) {
         console.log(`[Reranker] ${weekLabel}/${category} [${model}]: Succeeded after ${attempt} retries`);
       }
-      return { response, shouldSwitchModel: false };
+      // Type assertion: we're not using streams, so this will always be ChatCompletion
+      return { response: response as any, shouldSwitchModel: false };
     } catch (err: any) {
       lastError = err;
 
@@ -507,7 +508,7 @@ async function callRerankLLM(
       // Apply cooldown before each call
       await sleep(RERANK_COOLDOWN_MS);
       
-      const request = {
+      const request: Parameters<typeof openai.chat.completions.create>[0] = {
         model: currentModel,
         temperature: TEMPERATURE,
         max_tokens: MAX_TOKENS,
@@ -522,13 +523,39 @@ async function callRerankLLM(
           },
         ],
         ...(currentModel.includes('gpt-4') || currentModel.includes('1106') || currentModel.includes('o-mini') || currentModel.includes('4.1')
-          ? { response_format: { type: 'json_object' } }
+          ? { response_format: { type: 'json_object' } as const }
           : {}),
       };
       
       const result = await callOpenAIWithRetry(openai, request, category, weekLabel, currentModel, 8);
       modelUsed = currentModel;
+
+      if (result.shouldSwitchModel && modelAttempt === 0 && currentModel === RERANK_MODEL_PRIMARY) {
+        console.warn(`[Reranker] ${weekLabel}/${category}: PRIMARY model [${currentModel}] hit RPD/TPM limit, switching to FALLBACK [${RERANK_MODEL_FALLBACK}]`);
+        currentModel = RERANK_MODEL_FALLBACK;
+        continue; // Retry with fallback model
+      }
+
       const response = result.response;
+
+      if (!response) {
+        console.warn(`[Reranker] Empty response from LLM [${currentModel}]`);
+        if (modelAttempt === 0 && currentModel === RERANK_MODEL_PRIMARY) {
+          currentModel = RERANK_MODEL_FALLBACK;
+          continue;
+        }
+        return { response: null, modelUsed: '' };
+      }
+
+      // Type guard: ensure response is not a stream
+      if (!('choices' in response)) {
+        console.warn(`[Reranker] Unexpected response type from LLM [${currentModel}]`);
+        if (modelAttempt === 0 && currentModel === RERANK_MODEL_PRIMARY) {
+          currentModel = RERANK_MODEL_FALLBACK;
+          continue;
+        }
+        return { response: null, modelUsed: '' };
+      }
 
       const content = response.choices[0]?.message?.content?.trim();
       if (!content) {

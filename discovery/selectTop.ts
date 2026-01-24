@@ -7,6 +7,9 @@ import type { Topic } from '../classification/classifyTopics';
 import { getAllCompanyNames, getCompanyTier } from '../config/jewelleryCompanies';
 import { computeCommerceMateriality } from '../scoring/commerceMateriality';
 
+// Commerce Materiality weights
+const COMMERCE_MATERIALITY_WEIGHT_ECOM = parseFloat(process.env.COMMERCE_MATERIALITY_WEIGHT_ECOM || '1.5');
+
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
@@ -252,7 +255,7 @@ async function rankArticlesForTopic(
   articles: ExtractedArticle[],
   topic: Topic,
   weekLabel: string
-): Promise<{ ranked: RankedItem[]; companyDataMap?: Map<string, { matchedCompanies: string[]; companyBoostScore: number }> }> {
+): Promise<{ ranked: RankedItem[]; companyDataMap?: Map<string, { matchedCompanies: string[]; companyBoostScore: number }>; materialityMap?: Map<string, { score: number; signals: string[] }> }> {
   if (articles.length === 0) return { ranked: [] };
 
   // Filter out only obvious sponsored/press-release content deterministically
@@ -463,10 +466,6 @@ Return exactly ${targetK} items in the ranked array, ordered by rank (1 = best).
       companyDataMap: undefined,
       materialityMap: undefined
     };
-  }
-  } catch (error: any) {
-    console.error(`[Rank] Error ranking articles for ${topic}:`, error.message);
-    throw error;
   }
 }
 
@@ -759,7 +758,7 @@ async function selectArticlesForTopic(
   try {
     // PHASE A: LLM Ranking
     console.log(`[Rank] Ranking up to ${TOP_K} articles for ${topic} from ${articles.length} candidates...`);
-    const { ranked, companyDataMap } = await rankArticlesForTopic(articles, topic, weekLabel);
+    const { ranked, companyDataMap, materialityMap } = await rankArticlesForTopic(articles, topic, weekLabel);
     console.log(`[Rank] LLM returned ${ranked.length} ranked items`);
 
     // PHASE B: Deterministic Selection
