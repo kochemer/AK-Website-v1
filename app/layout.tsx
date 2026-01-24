@@ -158,7 +158,7 @@ export default function RootLayout({
                   <li key={link.href} className="whitespace-nowrap">
                     <Link
                       href={link.href}
-                      className="hover:underline focus-visible:underline transition-colors px-2 py-2 md:px-1.5 md:py-0.5 rounded flex items-center min-h-[44px] md:min-h-0"
+                      className="text-gray-900 hover:text-gray-700 hover:underline focus-visible:underline transition-colors px-2 py-2 md:px-1.5 md:py-0.5 rounded flex items-center min-h-[44px] md:min-h-0"
                     >
                       {link.label}
                     </Link>
