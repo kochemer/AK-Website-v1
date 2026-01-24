@@ -16,14 +16,42 @@ const pwaConfig = withPWA({
   skipWaiting: true,
   disable: process.env.NODE_ENV === "development", // Disable in development
   buildExcludes: [/app-manifest\.json$/],
+  fallbacks: {
+    document: "/offline.html",
+  },
   runtimeCaching: [
+    // Network-first for HTML/navigation requests (fallback to cache, then offline.html)
     {
-      urlPattern: /^https?.*/,
+      urlPattern: /^https?:\/\/.*\/.*$/,
       handler: "NetworkFirst",
       options: {
-        cacheName: "offlineCache",
+        cacheName: "html-cache",
+        expiration: {
+          maxEntries: 50,
+          maxAgeSeconds: 24 * 60 * 60, // 24 hours
+        },
+        networkTimeoutSeconds: 10,
+        cacheableResponse: {
+          statuses: [0, 200],
+        },
+      },
+    },
+    // Cache-first for static assets (JS, CSS, fonts, images, icons)
+    {
+      urlPattern: /\.(?:js|css|woff2?|png|jpg|jpeg|svg|gif|webp|ico)$/,
+      handler: "CacheFirst",
+      options: {
+        cacheName: "static-assets",
         expiration: {
           maxEntries: 200,
+          maxAgeSeconds: 30 * 24 * 60 * 60, // 30 days
+        },
+        cacheableResponse: {
+          statuses: [0, 200],
+        },
+        matchOptions: {
+          ignoreSearch: false,
+          ignoreVary: true,
         },
       },
     },

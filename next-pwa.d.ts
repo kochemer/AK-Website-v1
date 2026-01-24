@@ -7,6 +7,9 @@ declare module "next-pwa" {
     skipWaiting?: boolean;
     disable?: boolean;
     buildExcludes?: RegExp[];
+    fallbacks?: {
+      document?: string;
+    };
     runtimeCaching?: Array<{
       urlPattern: RegExp;
       handler: string;
@@ -14,6 +17,15 @@ declare module "next-pwa" {
         cacheName?: string;
         expiration?: {
           maxEntries?: number;
+          maxAgeSeconds?: number;
+        };
+        networkTimeoutSeconds?: number;
+        cacheableResponse?: {
+          statuses?: number[];
+        };
+        matchOptions?: {
+          ignoreSearch?: boolean;
+          ignoreVary?: boolean;
         };
       };
     }>;

@@ -5,6 +5,7 @@ import Image from "next/image";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import AmplitudeInit from "./components/AmplitudeInit";
 import LanguageSwitcher from "./components/LanguageSwitcher";
+import InstallPwaButton from "./components/InstallPwaButton";
 import JsonLd from "./components/JsonLd";
 import "./globals.css";
 
@@ -118,7 +119,10 @@ export default function RootLayout({
                 Luxury Intelligence
               </span>
             </Link>
-            <LanguageSwitcher />
+            <div className="flex items-center gap-2">
+              <InstallPwaButton />
+              <LanguageSwitcher />
+            </div>
           </div>
 
           {/* Top Row: Title + Language Switcher (Desktop) */}
@@ -138,7 +142,10 @@ export default function RootLayout({
                 Luxury Intelligence
               </span>
             </Link>
-            <LanguageSwitcher />
+            <div className="flex items-center gap-2">
+              <InstallPwaButton />
+              <LanguageSwitcher />
+            </div>
           </div>
 
           {/* Navigation - Mobile First */}
