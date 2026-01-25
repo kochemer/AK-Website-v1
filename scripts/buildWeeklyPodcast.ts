@@ -1111,7 +1111,7 @@ async function main() {
   const voiceOnlyPath = path.join(weekDir, `${week}-voice-only.mp3`);
   const voiceOnlyExists = await fs.access(voiceOnlyPath).then(() => true).catch(() => false);
   
-  let audioPath: string;
+  let audioPath: string = '';
   let duration: number | undefined;
   let usedFallback = false;
 
@@ -1130,6 +1130,37 @@ async function main() {
         duration = undefined;
       }
     }
+    
+    // Step 2: Mix music if enabled
+    if (music) {
+      console.log(`[Audio] Step 2: Mixing music with speech...`);
+      const mixedResult = await mixMusicWithSpeech(voiceOnlyPath, week);
+      audioPath = mixedResult.path;
+      duration = mixedResult.duration;
+    } else {
+      // If music disabled, use voice-only file (copy to public/podcast)
+      const publicDir = path.join(__dirname, '../public/podcast');
+      await fs.mkdir(publicDir, { recursive: true });
+      const publicPath = path.join(publicDir, `${week}.mp3`);
+      await fs.copyFile(voiceOnlyPath, publicPath);
+      audioPath = `/podcast/${week}.mp3`;
+    }
+    
+    // Save metadata
+    const metadata: PodcastMetadata = {
+      week,
+      audioPath,
+      model: 'eleven_multilingual_v2', // Assume ElevenLabs if voice-only exists
+      voice: process.env.ELEVENLABS_VOICE_ID || 'unknown',
+      generatedAt: new Date().toISOString(),
+      duration: duration,
+      music: music ? {
+        enabled: true,
+        track: 'podcast-theme.mp3'
+      } : undefined
+    };
+    await fs.writeFile(metadataPath, JSON.stringify(metadata, null, 2));
+    console.log(`✓ Metadata saved to: ${metadataPath}`);
   } else if (metadataExists && !forceAudio) {
     console.log(`[Audio] Using cached audio metadata from ${metadataPath}`);
     const metadataContent = await fs.readFile(metadataPath, 'utf-8');
@@ -1141,10 +1172,8 @@ async function main() {
     const speechResult = await generateSpeechAudio(script, voice, week);
     duration = speechResult.duration;
     usedFallback = speechResult.usedFallback;
-  }
-  
-  // Step 2: Mix music if enabled (only if we have voice-only file or just generated it)
-  if (voiceOnlyExists || !metadataExists || forceAudio) {
+    
+    // Step 2: Mix music if enabled
     if (music) {
       console.log(`[Audio] Step 2: Mixing music with speech...`);
       const mixedResult = await mixMusicWithSpeech(voiceOnlyPath, week);
