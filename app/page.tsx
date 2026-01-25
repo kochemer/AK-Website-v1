@@ -179,8 +179,8 @@ const CATEGORY_CARDS: Array<{
 
 
 export default async function Home() {
-  // Show week 3 (2026-W03) - update this to getPreviousWeek() or getLatestAvailableDigest() for production
-  const weekLabel = '2026-W03';
+  // Show week 4 (2026-W04) - update this to getPreviousWeek() or getLatestAvailableDigest() for production
+  const weekLabel = '2026-W04';
   const digest = await loadDigest(weekLabel);
   const podcast = await loadPodcastForWeek(weekLabel);
 
@@ -315,7 +315,7 @@ export default async function Home() {
       </section>
 
       {/* PANELS SECTION - Overtaking Content */}
-      <section className="relative z-20 -mt-12 sm:-mt-16 md:-mt-24">
+      <section className="relative z-20 -mt-[40vh] sm:-mt-[50vh] md:-mt-24">
         {/* Panel Container */}
         <div className="w-full max-w-[1400px] lg:max-w-[1600px] 2xl:max-w-[1800px] mx-auto px-4 sm:px-5 md:px-8">
           <div className="bg-white/95 dark:bg-zinc-950/90 backdrop-blur rounded-xl md:rounded-2xl shadow-lg border border-black/5 dark:border-white/10 p-3 sm:p-5 md:p-6 lg:p-10">

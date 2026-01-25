@@ -92,6 +92,12 @@ export default function DigestClientView({
   categoryCards,
   variant = 'home'
 }: DigestClientViewProps) {
+  // Safety check
+  if (!digest || !digest.topics || !digest.totals) {
+    console.error('[DigestClientView] Invalid digest data:', digest);
+    return null;
+  }
+  
   const searchParams = useSearchParams();
   
   // Get current N from URL param or default (server-safe)
@@ -134,7 +140,7 @@ export default function DigestClientView({
 
   if (variant === 'home') {
     // Home page: 2-column grid layout (within panel container)
-    if (!categoryCards) {
+    if (!categoryCards || !digest?.topics || !digest?.totals) {
       return null;
     }
     return (

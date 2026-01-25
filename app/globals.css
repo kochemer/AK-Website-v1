@@ -86,3 +86,32 @@ body {
     }
   }
 }
+
+/* PWA Standalone Mode Enhancements */
+/* Apply iOS safe areas and improved touch targets only in standalone mode */
+
+/* Apply iOS safe area inset at the top of header to respect notch/status bar */
+html[data-display-mode="standalone"] header {
+  padding-top: env(safe-area-inset-top, 0);
+}
+
+/* Increase touch comfort in header top row for standalone mode */
+/* Targets: Mobile top row (first child div) and Desktop top row (second child div) */
+html[data-display-mode="standalone"] header > div:first-of-type {
+  /* Mobile: increase from py-2.5 (0.625rem) to py-3 (0.75rem) */
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+html[data-display-mode="standalone"] header > div:nth-of-type(2) {
+  /* Desktop: increase from py-2 (0.5rem) to py-2.5 (0.625rem) */
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+}
+
+/* Ensure navigation area also has comfortable spacing in standalone mode */
+html[data-display-mode="standalone"] header nav > div {
+  /* Increase from py-2 (0.5rem) to py-2.5 (0.625rem) for better touch comfort */
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+}

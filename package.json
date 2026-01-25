@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev -p 3000",
-    "dev:alt": "next dev -p 3001",
+    "dev": "next dev -p 3000 --webpack",
+    "dev:alt": "next dev -p 3001 --webpack",
     "build": "next build --webpack",
     "start": "next start",
     "lint": "eslint",
@@ -14,6 +14,8 @@
     "validate:feeds": "tsx scripts/validateFeeds.ts",
     "cover": "tsx scripts/regenerateCover.ts",
     "podcast": "tsx scripts/buildWeeklyPodcast.ts",
+    "podcast:voice-test": "tsx scripts/testPodcastVoice.ts",
+    "podcast:mix-test": "tsx scripts/testPodcastMix.ts",
     "email-digest": "tsx scripts/buildWeeklyEmailDigest.ts",
     "generate-icons": "tsx scripts/generateIcons.ts"
   },

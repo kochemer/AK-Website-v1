@@ -50,10 +50,10 @@ const TTS_MODEL = 'tts-1-hd'; // OpenAI TTS model (or 'tts-1' for faster/cheaper
 const TTS_VOICE_OPTIONS = ['alloy', 'echo', 'fable', 'onyx', 'nova', 'shimmer'] as const;
 type TTSVoice = typeof TTS_VOICE_OPTIONS[number];
 
-// Target word count for ~20 minute podcast (average speaking rate ~150 words/min)
-const TARGET_WORD_COUNT = 3000; // ~20 minutes at 150 words/min
-const MIN_WORD_COUNT = 2100; // Minimum ~14 minutes at 150 words/min (acceptable range)
-const STRICT_MIN_WORD_COUNT = 2250; // Strict minimum ~15 minutes
+// Target word count for ~10 minute podcast (average speaking rate ~150 words/min)
+const TARGET_WORD_COUNT = 1500; // ~10 minutes at 150 words/min
+const MIN_WORD_COUNT = 1000; // Minimum ~7 minutes at 150 words/min (acceptable range)
+const STRICT_MIN_WORD_COUNT = 1200; // Strict minimum ~8 minutes
 const WORDS_PER_MINUTE = 150;
 
 interface DigestArticle {
@@ -110,7 +110,7 @@ interface PodcastMetadata {
   week: string;
   audioPath: string;
   model: string;
-  voice: TTSVoice;
+  voice: string; // Voice ID (ElevenLabs) or voice name (OpenAI)
   generatedAt: string;
   duration?: number; // in seconds
   music?: {
@@ -310,23 +310,23 @@ Clearly cite article titles and sources verbally (never mention URLs).
 Avoid controversial topics (war/culture-war/election horse-race) - same rules as the digest.
 Include subtle humor occasionally but no jokes that date badly.
 ${isRetry ? `⚠️ RETRY: Your previous script was too short. You MUST write at least ${MIN_WORD_COUNT} words. Expand every segment significantly.` : ''}
-CRITICAL: The script MUST be at least ${STRICT_MIN_WORD_COUNT} words (minimum ~15 minutes). Target ${TARGET_WORD_COUNT} words for a full ~20 minute episode.
+CRITICAL: The script MUST be at least ${STRICT_MIN_WORD_COUNT} words (minimum ~8 minutes). Target ${TARGET_WORD_COUNT} words for a full ~10 minute episode.
 You MUST expand on each article with context, implications, and connections between stories.
 DO NOT write a short script. This is a full-length podcast episode, not a brief summary.
 Return valid JSON only.`;
 
-  // Fixed higher segment targets for consistent length
+  // Fixed segment targets for ~10 minute podcast
   const segmentWordTargets = {
-    coldOpen: 75,      // Increased from 50
-    intro: 200,        // Increased from 150
-    segment1: 750,     // Fixed target (was dynamic ~600)
-    segment2: 750,     // Fixed target
-    segment3: 750,     // Fixed target
-    segment4: 750,     // Fixed target
-    lightning: 600,     // Increased from 500
-    closing: 150        // Increased from 100
+    coldOpen: 50,      // ~20 seconds
+    intro: 150,        // ~1 minute
+    segment1: 300,     // ~2 minutes per segment
+    segment2: 300,     // ~2 minutes per segment
+    segment3: 300,     // ~2 minutes per segment
+    segment4: 300,     // ~2 minutes per segment
+    lightning: 200,    // ~1.5 minutes
+    closing: 100        // ~40 seconds
   };
-  // Total target: 3,125 words (~20-21 minutes)
+  // Total target: 1,700 words (~10-11 minutes)
   const totalMinWords = segmentWordTargets.coldOpen + segmentWordTargets.intro + 
     segmentWordTargets.segment1 + segmentWordTargets.segment2 + 
     segmentWordTargets.segment3 + segmentWordTargets.segment4 + 
@@ -339,7 +339,7 @@ Key Themes: ${digest.keyThemes?.join(', ') || 'Retail and e-commerce intelligenc
 
 🚨 CRITICAL WORD COUNT REQUIREMENT - YOU MUST FOLLOW THESE EXACTLY:
 - TOTAL MINIMUM: ${STRICT_MIN_WORD_COUNT} words (${Math.round(STRICT_MIN_WORD_COUNT / WORDS_PER_MINUTE)} minutes) - THIS IS MANDATORY
-- TARGET: ${TARGET_WORD_COUNT} words (${Math.round(TARGET_WORD_COUNT / WORDS_PER_MINUTE)} minutes)
+- TARGET: ${TARGET_WORD_COUNT} words (${Math.round(TARGET_WORD_COUNT / WORDS_PER_MINUTE)} minutes) for a ~10 minute episode
 
 EXACT WORD COUNT TARGETS FOR EACH SECTION (you must hit these minimums):
 1. Cold open: ${segmentWordTargets.coldOpen} words minimum
@@ -354,12 +354,11 @@ EXACT WORD COUNT TARGETS FOR EACH SECTION (you must hit these minimums):
 TOTAL: At least ${totalMinWords} words across all sections.
 
 EXPANSION REQUIREMENTS FOR EACH ARTICLE:
-- Provide 3-5 sentences of context and background
+- Provide 2-3 sentences of context and background
 - Explain why this story matters to retail/ecommerce/luxury professionals
-- Connect it to other articles or broader trends
-- Add analysis: what are the implications?
-- Include real-world examples or applications when relevant
-- For each article, write 150-200 words minimum (we have fewer articles, so each needs more depth)
+- Connect it to other articles or broader trends when relevant
+- Add brief analysis: what are the key implications?
+- For each article, write 60-75 words (concise but informative)
 
 DO NOT:
 - Rush through articles with one sentence each
@@ -382,16 +381,16 @@ ${isRetry ? `⚠️ RETRY NOTICE: Your previous attempt was too short. You MUST 
 
 EXAMPLE OF PROPER LENGTH:
 For a segment with 4 articles, you should write:
-- Article 1: 150-200 words (context, why it matters, implications, deeper analysis)
-- Article 2: 150-200 words (context, why it matters, implications, deeper analysis)  
-- Article 3: 150-200 words (context, why it matters, implications, deeper analysis)
-- Article 4: 150-200 words (context, why it matters, implications, deeper analysis)
-- Transitions and connections: 100-150 words
-Total per segment: 700-950 words minimum. For ${segmentWordTargets.segment1} words, expand even more with additional context, examples, and connections.
+- Article 1: 60-75 words (context, why it matters, key implications)
+- Article 2: 60-75 words (context, why it matters, key implications)  
+- Article 3: 60-75 words (context, why it matters, key implications)
+- Article 4: 60-75 words (context, why it matters, key implications)
+- Transitions and connections: 30-50 words
+Total per segment: ~300 words. Keep it concise but informative - focus on the most important points.
 
 Note: With 4 articles per segment (instead of 3), you have more content to work with. Ensure each article gets adequate coverage while maintaining flow and connections between stories.
 
-Remember: This is a FULL podcast episode, not a summary. Write as if you're speaking to colleagues who want depth and context.
+Remember: This is a concise ~10 minute podcast episode. Be thorough but focused - provide depth and context while keeping it engaging and digestible.
 
 Articles to cover:
 ${JSON.stringify(articles.map(a => {
@@ -411,12 +410,10 @@ ${JSON.stringify(articles.map(a => {
 }), null, 2)}
 
 IMPORTANT: For articles with "hasFullText: true", you have access to the FULL article content. Use this to:
-- Extract specific details, quotes, and data points
-- Provide deeper analysis and context
-- Connect multiple details from the article
-- Write 180-250 words per article with full text (we have fewer articles, so go deeper)
+- Extract key details, quotes, and data points
+- Provide focused analysis and context
 - Reference specific facts, numbers, and examples from the full text
-- Expand on implications and real-world applications
+- Write 60-75 words per article (concise but informative - focus on the most important points)
 
 For articles without full text, use the provided summary but still expand with context and implications.
 
@@ -432,8 +429,8 @@ Return JSON:
       "articles": ["url1", "url2"]
     }
   ],
-  "wordCount": 3000,
-  "estimatedDuration": 20
+  "wordCount": 1500,
+  "estimatedDuration": 10
 }`;
 
   try {
@@ -717,9 +714,10 @@ async function mixMusicWithVoice(
   // - Fade in: 1.2s, Fade out: 1.8s
   // - Voice remains at full volume
   // - Music loops if needed but stops at voice duration
-  // -map flags select only audio streams (ignore video/cover art in music file)
+  // - Use filter_complex to mix, then map only the mixed output (MP3 format only supports one stream)
+  // - Apply volume to music track before mixing, then apply fade to the final mix
   // Use proper Windows path quoting (no escaping needed, just quote the paths)
-  const command = `"${ffmpegPath}" -i "${voicePath}" -stream_loop -1 -i "${musicPath}" -map 0:a -map 1:a -filter_complex "[1:a]volume=${musicVolume},afade=t=in:ss=0:d=${fadeIn},afade=t=out:st=${fadeOutStart}:d=${fadeOut}[m];[0:a][m]amix=inputs=2:duration=first:dropout_transition=2" -c:a libmp3lame -b:a 192k -shortest "${outputPath}"`;
+  const command = `"${ffmpegPath}" -i "${voicePath}" -stream_loop -1 -i "${musicPath}" -filter_complex "[1:a]volume=${musicVolume}[music];[0:a][music]amix=inputs=2:duration=first:dropout_transition=2[amix];[amix]afade=t=in:ss=0:d=${fadeIn},afade=t=out:st=${fadeOutStart}:d=${fadeOut}[out]" -map "[out]" -c:a libmp3lame -b:a 192k -shortest "${outputPath}"`;
   
   try {
     await execAsync(command);
@@ -728,11 +726,17 @@ async function mixMusicWithVoice(
   }
 }
 
-async function generateAudio(script: PodcastScript, voice: TTSVoice, weekLabel: string, musicEnabled: boolean): Promise<{ path: string; duration: number }> {
-  const openai = new OpenAI({ apiKey: OPENAI_API_KEY });
+/**
+ * Step 1: Generate speech audio only (no music)
+ * Returns path to voice-only audio file
+ */
+async function generateSpeechAudio(script: PodcastScript, voice: TTSVoice, weekLabel: string): Promise<{ path: string; duration: number; usedFallback: boolean }> {
+  // Check for ElevenLabs credentials
+  const ELEVENLABS_API_KEY = process.env.ELEVENLABS_API_KEY;
+  const ELEVENLABS_VOICE_ID = process.env.ELEVENLABS_VOICE_ID;
   
-  // OpenAI TTS has a limit per request, so we'll chunk if needed
-  const MAX_CHUNK_LENGTH = 4000; // characters, safe limit
+  // Chunk the script
+  const MAX_CHUNK_LENGTH = 5000; // characters, safe limit
   const chunks: string[] = [];
   
   // Split script into sentences and group into chunks
@@ -757,107 +761,86 @@ async function generateAudio(script: PodcastScript, voice: TTSVoice, weekLabel: 
   await fs.mkdir(tempDir, { recursive: true });
   
   const chunkFiles: string[] = [];
+  let usedFallback = false;
 
-  // Generate TTS for each chunk and save to temp files
-  for (let i = 0; i < chunks.length; i++) {
-    console.log(`[TTS] Processing chunk ${i + 1}/${chunks.length}...`);
+  // Try ElevenLabs first
+  if (ELEVENLABS_API_KEY && ELEVENLABS_VOICE_ID) {
+    console.log(`[Podcast] Using ElevenLabs voice: ${ELEVENLABS_VOICE_ID}`);
     
     try {
-      const response = await openai.audio.speech.create({
-        model: TTS_MODEL,
-        voice: voice,
-        input: chunks[i],
-        response_format: 'mp3'
-      });
+      const { generateSpeech } = await import('../podcast/tts/elevenlabs');
 
-      // Convert response to buffer and save to temp file
-      const arrayBuffer = await response.arrayBuffer();
-      const buffer = Buffer.from(arrayBuffer);
-      const chunkPath = path.join(tempDir, `chunk-${i}.mp3`);
-      await fs.writeFile(chunkPath, buffer);
-      chunkFiles.push(chunkPath);
-    } catch (error: any) {
-      throw new Error(`Failed to generate audio chunk ${i + 1}: ${error.message}`);
-    }
-  }
-
-  // Identify intro/outro chunks
-  const { introChunks, outroChunks } = identifyIntroOutroChunks(chunks, script);
-  
-  // If music is enabled, mix it with intro/outro chunks
-  if (musicEnabled) {
-    const musicPath = path.join(__dirname, '../assets/audio/podcast-theme.mp3.mp3');
-    
-    // Check if music file exists
-    try {
-      await fs.access(musicPath);
-    } catch {
-      console.warn(`[Music] Music file not found at ${musicPath}, skipping music mixing`);
-      musicEnabled = false;
-    }
-    
-    // Check if FFmpeg is available
-    if (musicEnabled) {
-      const { available, path: ffmpegPath } = await checkFFmpegAvailable();
-      if (!available) {
-        console.warn('[Music] FFmpeg not found, skipping music mixing.');
-        console.warn('  To enable music mixing, place FFmpeg in one of these locations:');
-        console.warn('  1. Set FFMPEG_PATH environment variable');
-        console.warn(`  2. Place ffmpeg${platform() === 'win32' ? '.exe' : ''} in tools/ffmpeg/`);
-        console.warn('  3. Install FFmpeg globally and add to PATH');
-        console.warn('  See tools/ffmpeg/README.md for details.');
-        musicEnabled = false;
-      } else if (ffmpegPath) {
-        console.log(`[Music] Using FFmpeg at: ${ffmpegPath}`);
-      }
-    }
-    
-    // Mix music with intro chunks
-    if (musicEnabled && introChunks.length > 0) {
-      for (const chunkIdx of introChunks) {
-        try {
-          console.log(`[Music] Mixing music with intro chunk ${chunkIdx + 1}...`);
-          const originalPath = chunkFiles[chunkIdx];
-          const mixedPath = path.join(tempDir, `chunk-${chunkIdx}-mixed.mp3`);
-          await mixMusicWithVoice(originalPath, musicPath, mixedPath);
-          chunkFiles[chunkIdx] = mixedPath;
-          // Clean up original
-          await fs.unlink(originalPath).catch(() => {});
-        } catch (error: any) {
-          console.warn(`[Music] Failed to mix music with intro chunk ${chunkIdx + 1}: ${error.message}. Using voice-only.`);
-        }
-      }
-    }
-    
-    // Mix music with outro chunks
-    if (musicEnabled && outroChunks.length > 0) {
-      for (const chunkIdx of outroChunks) {
-        // Skip if already mixed (shouldn't happen, but safety check)
-        if (introChunks.includes(chunkIdx)) continue;
+      // Generate TTS for each chunk and save to temp files
+      for (let i = 0; i < chunks.length; i++) {
+        console.log(`[TTS] Processing chunk ${i + 1}/${chunks.length}...`);
         
         try {
-          console.log(`[Music] Mixing music with outro chunk ${chunkIdx + 1}...`);
-          const originalPath = chunkFiles[chunkIdx];
-          const mixedPath = path.join(tempDir, `chunk-${chunkIdx}-mixed.mp3`);
-          await mixMusicWithVoice(originalPath, musicPath, mixedPath);
-          chunkFiles[chunkIdx] = mixedPath;
-          // Clean up original
-          await fs.unlink(originalPath).catch(() => {});
+          const chunkPath = path.join(tempDir, `chunk-${i}.mp3`);
+          
+          await generateSpeech({
+            text: chunks[i],
+            voiceId: ELEVENLABS_VOICE_ID,
+            outputPath: chunkPath,
+            model: 'eleven_multilingual_v2',
+            stability: 0.4,
+            similarityBoost: 0.8,
+            style: 0.4,
+            useSpeakerBoost: true,
+          });
+          
+          chunkFiles.push(chunkPath);
         } catch (error: any) {
-          console.warn(`[Music] Failed to mix music with outro chunk ${chunkIdx + 1}: ${error.message}. Using voice-only.`);
+          console.warn(`[ElevenLabs] Failed to generate chunk ${i + 1}: ${error.message}`);
+          console.log(`[ElevenLabs] Falling back to OpenAI TTS for remaining chunks...`);
+          usedFallback = true;
+          break; // Exit loop to use fallback
         }
+      }
+    } catch (error: any) {
+      console.warn(`[ElevenLabs] Failed to initialize: ${error.message}`);
+      console.log(`[ElevenLabs] Falling back to OpenAI TTS...`);
+      usedFallback = true;
+    }
+  } else {
+    console.warn(`[ElevenLabs] API key or voice ID not set, using OpenAI TTS fallback`);
+    usedFallback = true;
+  }
+
+  // Fallback to OpenAI TTS if ElevenLabs failed or not configured
+  if (usedFallback || chunkFiles.length < chunks.length) {
+    console.log(`[TTS] Using OpenAI TTS (fallback)`);
+    const openai = new OpenAI({ apiKey: OPENAI_API_KEY });
+    
+    // Generate remaining chunks with OpenAI
+    for (let i = chunkFiles.length; i < chunks.length; i++) {
+      console.log(`[TTS] Processing chunk ${i + 1}/${chunks.length} with OpenAI...`);
+      
+      try {
+        const response = await openai.audio.speech.create({
+          model: TTS_MODEL,
+          voice: voice,
+          input: chunks[i],
+          response_format: 'mp3'
+        });
+
+        const arrayBuffer = await response.arrayBuffer();
+        const buffer = Buffer.from(arrayBuffer);
+        const chunkPath = path.join(tempDir, `chunk-${i}.mp3`);
+        await fs.writeFile(chunkPath, buffer);
+        chunkFiles.push(chunkPath);
+      } catch (error: any) {
+        throw new Error(`Failed to generate audio chunk ${i + 1} with OpenAI: ${error.message}`);
       }
     }
   }
 
-  // Concatenate all chunks using FFmpeg
-  const publicDir = path.join(__dirname, '../public/podcast');
-  await fs.mkdir(publicDir, { recursive: true });
-  const audioPath = path.join(publicDir, `${weekLabel}.mp3`);
+  // Concatenate all chunks to create voice-only audio file
+  const weekDir = path.join(__dirname, '../data/weeks', weekLabel);
+  await fs.mkdir(weekDir, { recursive: true });
+  const voiceOnlyPath = path.join(weekDir, `${weekLabel}-voice-only.mp3`);
   
   // Create file list for FFmpeg concat
   const fileListPath = path.join(tempDir, 'filelist.txt');
-  // Use forward slashes for FFmpeg (works on both Windows and Unix)
   const fileListContent = chunkFiles.map(f => `file '${f.replace(/\\/g, '/')}'`).join('\n');
   await fs.writeFile(fileListPath, fileListContent, 'utf-8');
   
@@ -867,8 +850,7 @@ async function generateAudio(script: PodcastScript, voice: TTSVoice, weekLabel: 
     if (!ffmpegPath) {
       throw new Error('FFmpeg not found');
     }
-    // Use proper Windows path quoting (no escaping needed, just quote the paths)
-    await execAsync(`"${ffmpegPath}" -f concat -safe 0 -i "${fileListPath}" -c copy "${audioPath}"`);
+    await execAsync(`"${ffmpegPath}" -f concat -safe 0 -i "${fileListPath}" -c copy "${voiceOnlyPath}"`);
   } catch (error: any) {
     // Fallback: read all chunks and concatenate manually
     console.warn('[Audio] FFmpeg concat failed, using manual concatenation...');
@@ -878,10 +860,10 @@ async function generateAudio(script: PodcastScript, voice: TTSVoice, weekLabel: 
       buffers.push(buffer);
     }
     const finalAudio = Buffer.concat(buffers);
-    await fs.writeFile(audioPath, finalAudio);
+    await fs.writeFile(voiceOnlyPath, finalAudio);
   }
   
-  // Clean up temp files
+  // Clean up temp chunk files (keep voice-only file)
   try {
     await fs.rm(tempDir, { recursive: true, force: true });
   } catch {
@@ -893,20 +875,174 @@ async function generateAudio(script: PodcastScript, voice: TTSVoice, weekLabel: 
   try {
     const ffprobePath = resolveFfprobePath();
     if (ffprobePath) {
-      // Use proper Windows path quoting (no escaping needed, just quote the path)
-      const { stdout: durationStr } = await execAsync(`"${ffprobePath}" -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 "${audioPath}"`);
+      const { stdout: durationStr } = await execAsync(`"${ffprobePath}" -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 "${voiceOnlyPath}"`);
       estimatedDuration = Math.round(parseFloat(durationStr.trim()));
     } else {
-      // Fallback estimation
       estimatedDuration = Math.round(script.script.length / 25);
     }
   } catch {
-    // Fallback estimation
     estimatedDuration = Math.round(script.script.length / 25);
   }
 
-  const fileStats = await fs.stat(audioPath);
-  console.log(`✓ Audio saved to: ${audioPath} (${(fileStats.size / 1024 / 1024).toFixed(2)}MB, ~${Math.round(estimatedDuration / 60)}min)`);
+  const fileStats = await fs.stat(voiceOnlyPath);
+  console.log(`✓ Voice-only audio saved to: ${voiceOnlyPath} (${(fileStats.size / 1024 / 1024).toFixed(2)}MB, ~${Math.round(estimatedDuration / 60)}min)`);
+
+  return { path: voiceOnlyPath, duration: estimatedDuration, usedFallback };
+}
+
+/**
+ * Step 2: Mix music with voice-only audio file (intro/outro only for efficiency)
+ * Creates a new mixed file, keeping the original voice-only file intact
+ * Only adds music to intro (~30s) and outro (~30s) sections for faster processing
+ */
+async function mixMusicWithSpeech(voiceOnlyPath: string, weekLabel: string): Promise<{ path: string; duration: number }> {
+  const musicPath = path.join(__dirname, '../assets/audio/podcast-theme.mp3.mp3');
+  
+  // Check if music file exists
+  try {
+    await fs.access(musicPath);
+  } catch {
+    console.warn(`[Music] Music file not found at ${musicPath}, skipping music mixing`);
+    // Return voice-only path if music not available
+    const ffprobePath = resolveFfprobePath();
+    let duration: number;
+    try {
+      if (ffprobePath) {
+        const { stdout: durationStr } = await execAsync(`"${ffprobePath}" -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 "${voiceOnlyPath}"`);
+        duration = Math.round(parseFloat(durationStr.trim()));
+      } else {
+        duration = 0;
+      }
+    } catch {
+      duration = 0;
+    }
+    return { path: voiceOnlyPath, duration };
+  }
+  
+  // Check if FFmpeg is available
+  const { available, path: ffmpegPath } = await checkFFmpegAvailable();
+  if (!available) {
+    console.warn('[Music] FFmpeg not found, skipping music mixing.');
+    console.warn('  To enable music mixing, place FFmpeg in one of these locations:');
+    console.warn('  1. Set FFMPEG_PATH environment variable');
+    console.warn(`  2. Place ffmpeg${platform() === 'win32' ? '.exe' : ''} in tools/ffmpeg/`);
+    console.warn('  3. Install FFmpeg globally and add to PATH');
+    // Return voice-only path if FFmpeg not available
+    const ffprobePath = resolveFfprobePath();
+    let duration: number;
+    try {
+      if (ffprobePath) {
+        const { stdout: durationStr } = await execAsync(`"${ffprobePath}" -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 "${voiceOnlyPath}"`);
+        duration = Math.round(parseFloat(durationStr.trim()));
+      } else {
+        duration = 0;
+      }
+    } catch {
+      duration = 0;
+    }
+    return { path: voiceOnlyPath, duration };
+  }
+  
+  const ffprobePath = resolveFfprobePath();
+  if (!ffprobePath) {
+    throw new Error('FFprobe not found');
+  }
+  
+  // Get total duration
+  let totalDuration: number;
+  try {
+    const { stdout: durationStr } = await execAsync(`"${ffprobePath}" -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 "${voiceOnlyPath}"`);
+    totalDuration = parseFloat(durationStr.trim());
+  } catch (error: any) {
+    throw new Error(`Failed to get audio duration: ${error.message}`);
+  }
+  
+  // Define intro/outro durations (30 seconds each, or shorter if audio is very short)
+  const introDuration = Math.min(30, totalDuration * 0.1); // 30s or 10% of total, whichever is smaller
+  const outroDuration = Math.min(30, totalDuration * 0.1);
+  const outroStart = Math.max(0, totalDuration - outroDuration);
+  
+  console.log(`[Music] Using FFmpeg at: ${ffmpegPath}`);
+  console.log(`[Music] Adding music to intro (${introDuration.toFixed(1)}s) and outro (${outroDuration.toFixed(1)}s) sections only...`);
+  
+  // Create mixed output path (in public/podcast for web access)
+  const publicDir = path.join(__dirname, '../public/podcast');
+  await fs.mkdir(publicDir, { recursive: true });
+  const mixedPath = path.join(publicDir, `${weekLabel}.mp3`);
+  
+  // Use FFmpeg to add music only to intro and outro sections
+  // Strategy: Split into intro, middle, outro, mix music with intro/outro, then concat
+  const tempDir = path.join(__dirname, '../data/weeks', weekLabel, 'podcast-temp');
+  await fs.mkdir(tempDir, { recursive: true });
+  
+  const introPath = path.join(tempDir, 'intro.mp3');
+  const middlePath = path.join(tempDir, 'middle.mp3');
+  const outroPath = path.join(tempDir, 'outro.mp3');
+  const introMixedPath = path.join(tempDir, 'intro-mixed.mp3');
+  const outroMixedPath = path.join(tempDir, 'outro-mixed.mp3');
+  
+  try {
+    // Extract intro, middle, and outro sections
+    console.log(`[Music] Extracting sections...`);
+    await execAsync(`"${ffmpegPath}" -i "${voiceOnlyPath}" -t ${introDuration} -c copy "${introPath}" -y`);
+    await execAsync(`"${ffmpegPath}" -i "${voiceOnlyPath}" -ss ${introDuration} -t ${outroStart - introDuration} -c copy "${middlePath}" -y`);
+    await execAsync(`"${ffmpegPath}" -i "${voiceOnlyPath}" -ss ${outroStart} -c copy "${outroPath}" -y`);
+    
+    // Mix music with intro
+    console.log(`[Music] Mixing music with intro...`);
+    await mixMusicWithVoice(introPath, musicPath, introMixedPath, 1.2, 0, 0.12);
+    
+    // Mix music with outro
+    console.log(`[Music] Mixing music with outro...`);
+    await mixMusicWithVoice(outroPath, musicPath, outroMixedPath, 0, 1.8, 0.12);
+    
+    // Concatenate: intro-with-music + middle-voice-only + outro-with-music
+    console.log(`[Music] Concatenating sections...`);
+    const concatListPath = path.join(tempDir, 'concat-list.txt');
+    const concatList = [
+      `file '${introMixedPath.replace(/\\/g, '/')}'`,
+      `file '${middlePath.replace(/\\/g, '/')}'`,
+      `file '${outroMixedPath.replace(/\\/g, '/')}'`
+    ].join('\n');
+    await fs.writeFile(concatListPath, concatList, 'utf-8');
+    
+    await execAsync(`"${ffmpegPath}" -f concat -safe 0 -i "${concatListPath}" -c copy "${mixedPath}" -y`);
+    
+    // Clean up temp files
+    await fs.unlink(introPath).catch(() => {});
+    await fs.unlink(middlePath).catch(() => {});
+    await fs.unlink(outroPath).catch(() => {});
+    await fs.unlink(introMixedPath).catch(() => {});
+    await fs.unlink(outroMixedPath).catch(() => {});
+    await fs.unlink(concatListPath).catch(() => {});
+    await fs.rmdir(tempDir).catch(() => {});
+    
+  } catch (error: any) {
+    // Clean up on error
+    await fs.unlink(introPath).catch(() => {});
+    await fs.unlink(middlePath).catch(() => {});
+    await fs.unlink(outroPath).catch(() => {});
+    await fs.unlink(introMixedPath).catch(() => {});
+    await fs.unlink(outroMixedPath).catch(() => {});
+    throw new Error(`FFmpeg mixing failed: ${error.message}`);
+  }
+  
+  // Get actual duration
+  let estimatedDuration: number;
+  try {
+    if (ffprobePath) {
+      const { stdout: durationStr } = await execAsync(`"${ffprobePath}" -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 "${mixedPath}"`);
+      estimatedDuration = Math.round(parseFloat(durationStr.trim()));
+    } else {
+      estimatedDuration = Math.round(totalDuration);
+    }
+  } catch {
+    estimatedDuration = Math.round(totalDuration);
+  }
+
+  const fileStats = await fs.stat(mixedPath);
+  console.log(`✓ Mixed audio saved to: ${mixedPath} (${(fileStats.size / 1024 / 1024).toFixed(2)}MB, ~${Math.round(estimatedDuration / 60)}min)`);
+  console.log(`  Original voice-only file preserved at: ${voiceOnlyPath}`);
 
   return { path: `/podcast/${weekLabel}.mp3`, duration: estimatedDuration };
 }
@@ -972,27 +1108,63 @@ async function main() {
 
   // Step B: Generate audio
   const metadataExists = !forceAudio && await fs.access(metadataPath).then(() => true).catch(() => false);
+  const voiceOnlyPath = path.join(weekDir, `${week}-voice-only.mp3`);
+  const voiceOnlyExists = await fs.access(voiceOnlyPath).then(() => true).catch(() => false);
+  
   let audioPath: string;
   let duration: number | undefined;
+  let usedFallback = false;
 
-  if (metadataExists && !forceAudio) {
+  // Check if voice-only file exists - if so, skip speech generation and only do mixing
+  if (voiceOnlyExists) {
+    console.log(`[Audio] Voice-only file found at ${voiceOnlyPath}`);
+    console.log(`[Audio] Skipping speech generation, using existing voice-only file`);
+    
+    // Get duration from existing file
+    const ffprobePath = resolveFfprobePath();
+    if (ffprobePath) {
+      try {
+        const { stdout: durationStr } = await execAsync(`"${ffprobePath}" -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 "${voiceOnlyPath}"`);
+        duration = Math.round(parseFloat(durationStr.trim()));
+      } catch {
+        duration = undefined;
+      }
+    }
+  } else if (metadataExists && !forceAudio) {
     console.log(`[Audio] Using cached audio metadata from ${metadataPath}`);
     const metadataContent = await fs.readFile(metadataPath, 'utf-8');
     const metadata = JSON.parse(metadataContent) as PodcastMetadata;
     audioPath = metadata.audioPath;
     duration = metadata.duration;
   } else {
-    console.log('[Audio] Generating audio from script...');
-    const audioResult = await generateAudio(script, voice, week, music);
-    audioPath = audioResult.path;
-    duration = audioResult.duration;
+    console.log('[Audio] Step 1: Generating speech audio...');
+    const speechResult = await generateSpeechAudio(script, voice, week);
+    duration = speechResult.duration;
+    usedFallback = speechResult.usedFallback;
+  }
+  
+  // Step 2: Mix music if enabled (only if we have voice-only file or just generated it)
+  if (voiceOnlyExists || !metadataExists || forceAudio) {
+    if (music) {
+      console.log(`[Audio] Step 2: Mixing music with speech...`);
+      const mixedResult = await mixMusicWithSpeech(voiceOnlyPath, week);
+      audioPath = mixedResult.path;
+      duration = mixedResult.duration;
+    } else {
+      // If music disabled, use voice-only file (copy to public/podcast)
+      const publicDir = path.join(__dirname, '../public/podcast');
+      await fs.mkdir(publicDir, { recursive: true });
+      const publicPath = path.join(publicDir, `${week}.mp3`);
+      await fs.copyFile(voiceOnlyPath, publicPath);
+      audioPath = `/podcast/${week}.mp3`;
+    }
     
     // Save metadata
     const metadata: PodcastMetadata = {
       week,
       audioPath,
-      model: TTS_MODEL,
-      voice,
+      model: usedFallback ? TTS_MODEL : 'eleven_multilingual_v2',
+      voice: usedFallback ? voice : (process.env.ELEVENLABS_VOICE_ID || 'unknown'),
       generatedAt: new Date().toISOString(),
       duration: duration,
       music: music ? {

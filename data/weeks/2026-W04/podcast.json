@@ -1,0 +1,12 @@
+{
+  "week": "2026-W04",
+  "audioPath": "/podcast/2026-W04.mp3",
+  "model": "eleven_multilingual_v2",
+  "voice": "XFsVUrYetuzY4ZR8T3nN",
+  "generatedAt": "2026-01-25T10:39:13.389Z",
+  "duration": 800,
+  "music": {
+    "enabled": true,
+    "track": "podcast-theme.mp3"
+  }
+}

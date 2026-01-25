@@ -323,5 +323,18 @@
     "cached_at": "2026-01-24T07:21:02.128Z",
     "model": "gpt-4o-mini",
     "version": "2.1"
+  },
+  "2026-W04:057b0686d8a1": {
+    "keyThemes": [
+      "Supervity AI GCC hub",
+      "Burberry experiential activations",
+      "Claude Code programming",
+      "Francesca's store closures",
+      "Silver price surge"
+    ],
+    "oneSentenceSummary": "Supervity AI's new GCC hub in Mumbai and Burberry's experiential activations highlight strategic moves in AI and luxury retail.",
+    "cached_at": "2026-01-24T22:07:00.039Z",
+    "model": "gpt-4o-mini",
+    "version": "2.1"
   }
 }

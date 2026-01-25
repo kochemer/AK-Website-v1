@@ -3,537 +3,518 @@
   "tz": "Europe/Copenhagen",
   "startISO": "2026-01-18T23:00:00.000Z",
   "endISO": "2026-01-25T22:59:59.999Z",
-  "builtAtISO": "2026-01-24T10:36:05.533+01:00",
-  "builtAtLocal": "2026-01-24 10:36:05",
-  "coverImageUrl": "/weekly-images/2026-W04.png",
-  "coverImageAlt": "Weekly cover illustration for 2026-W04",
-  "coverKeywords": [
-    "shopify",
-    "merchants",
-    "face",
-    "openai",
-    "chatgpt",
-    "sales",
-    "reports",
-    "information",
-    "expands",
-    "logistics",
-    "unit",
-    "acquisition"
-  ],
+  "builtAtISO": "2026-01-24T23:06:56.499+01:00",
+  "builtAtLocal": "2026-01-24 23:06:56",
   "totals": {
-    "total": 879,
+    "total": 850,
     "byTopic": {
-      "AIStrategy": 485,
-      "EcommerceRetail": 254,
-      "LuxuryConsumer": 108,
-      "Jewellery": 32
+      "AIStrategy": 454,
+      "EcommerceRetail": 278,
+      "LuxuryConsumer": 90,
+      "Jewellery": 28
     }
   },
   "topics": {
     "AI_and_Strategy": {
-      "total": 485,
+      "total": 454,
       "top": [
         {
-          "id": "vap0tg",
-          "title": "Thought of Search: Planning with Language Models Through The Lens of Efficiency",
-          "url": "https://arxiv.org/abs/2404.11833",
-          "source": "arXiv - AI (cs.AI)",
-          "published_at": "2026-01-23T05:00:00.000Z",
-          "ingested_at": "2026-01-23T21:16:35.898Z",
-          "snippet": "arXiv:2404.11833v3 Announce Type: replace \nAbstract: Among the most important properties of algorithms investigated in computer science are soundness, completeness, and complexity. These properties, however, are rarely analyzed for the vast collection of recently proposed methods for planning with large language models. In this work, we alleviate this gap. We analyse these properties of using LLMs for planning and highlight that recent trends abandon both soundness and completeness for the sake ...",
-          "sourceType": "rss",
-          "gate": {
-            "eligible": true,
-            "reasons": [
-              "Eligible"
-            ],
-            "flags": {},
-            "tier": "med"
-          },
-          "rerankWhy": "Survey on efficient multimodal LLMs with retail AI applications",
-          "rerankConfidence": 0.9,
-          "aiSummary": "AI-generated summary:\nThe article from arXiv discusses the importance of analyzing properties like soundness, completeness, and complexity in algorithms for planning with large language models. It highlights that recent trends in this area may sacrifice soundness and completeness for efficiency."
-        },
-        {
-          "id": "md38za",
-          "title": "RADLADS: Rapid Attention Distillation to Linear Attention Decoders at Scale",
-          "url": "https://arxiv.org/abs/2505.03005",
-          "source": "arXiv - AI (cs.AI)",
-          "published_at": "2026-01-23T05:00:00.000Z",
-          "ingested_at": "2026-01-23T21:16:35.898Z",
-          "snippet": "arXiv:2505.03005v4 Announce Type: replace-cross \nAbstract: We present Rapid Attention Distillation to Linear Attention Decoders at Scale (RADLADS), a protocol for rapidly converting softmax attention transformers into linear attention decoder models, along with two new RWKV-variant architectures, and models converted from popular Qwen2.5 open source models in 7B, 32B, and 72B sizes. Our conversion process requires only 350-700M tokens, less than 0.005% of the token count used to train the origin...",
-          "sourceType": "rss",
-          "gate": {
-            "eligible": true,
-            "reasons": [
-              "Sponsored/press release content"
-            ],
-            "flags": {
-              "sponsored": true,
-              "pressRelease": true
-            },
-            "tier": "med"
-          },
-          "rerankWhy": "Planning with language models for efficiency in commerce tasks",
-          "rerankConfidence": 0.85,
-          "aiSummary": "AI-generated summary:\nThe article introduces RADLADS, a method for converting softmax attention transformers into linear attention decoder models, including new architectures and models converted from Qwen2.5 open source models in various sizes. The conversion process is efficient, requiring only a small fraction of the token count used in training the original models."
-        },
-        {
-          "id": "9xt6bj",
-          "title": "Efficient Multimodal Large Language Models: A Survey",
-          "url": "https://arxiv.org/abs/2405.10739",
-          "source": "arXiv - AI (cs.AI)",
-          "published_at": "2026-01-23T05:00:00.000Z",
-          "ingested_at": "2026-01-23T21:16:35.898Z",
-          "snippet": "arXiv:2405.10739v3 Announce Type: replace-cross \nAbstract: In the past year, Multimodal Large Language Models (MLLMs) have demonstrated remarkable performance in tasks such as visual question answering, visual understanding and reasoning. However, the extensive model size and high training and inference costs have hindered the widespread application of MLLMs in academia and industry. Thus, studying efficient and lightweight MLLMs has enormous potential, especially in edge computing scenarios. In...",
-          "sourceType": "rss",
-          "gate": {
-            "eligible": true,
-            "reasons": [
-              "Sponsored/press release content"
-            ],
-            "flags": {
-              "sponsored": true,
-              "pressRelease": true
-            },
-            "tier": "med"
-          },
-          "rerankWhy": "Vision-language models aligned with human concept processing for CX",
-          "rerankConfidence": 0.8,
-          "aiSummary": "AI-Generated Summary:\nThe article discusses the challenges of implementing Multimodal Large Language Models (MLLMs) due to their large size and high costs, emphasizing the need for efficient and lightweight models for broader application in academia and industry, particularly in edge computing scenarios."
-        },
-        {
-          "id": "ws5jj9",
-          "title": "Vision-Language Models Align with Human Neural Representations in Concept Processing",
-          "url": "https://arxiv.org/abs/2407.17914",
-          "source": "arXiv - Computation and Language (cs.CL)",
-          "published_at": "2026-01-23T05:00:00.000Z",
-          "ingested_at": "2026-01-23T21:16:35.898Z",
-          "snippet": "arXiv:2407.17914v3 Announce Type: replace \nAbstract: Recent studies suggest that transformer-based vision-language models (VLMs) capture the multimodality of concept processing in the human brain. However, a systematic evaluation exploring different types of VLM architectures and the role played by visual and textual context is still lacking. Here, we analyse multiple VLMs employing different strategies to integrate visual and textual modalities, along with language-only counterparts. We measure...",
-          "sourceType": "rss",
-          "gate": {
-            "eligible": true,
-            "reasons": [
-              "Eligible"
-            ],
-            "flags": {},
-            "tier": "med"
-          },
-          "rerankWhy": "Multi-event video-text retrieval relevant for ecommerce content analysis",
-          "rerankConfidence": 0.75,
-          "aiSummary": "AI-Generated Summary: A study on vision-language models (VLMs) suggests they align with human neural representations in concept processing. The analysis explores various VLM architectures and the impact of visual and textual context on multimodality."
-        },
-        {
-          "id": "sry5qb",
-          "title": "Representation-Driven Reinforcement Learning",
-          "url": "https://arxiv.org/abs/2305.19922",
-          "source": "arXiv - AI (cs.AI)",
-          "published_at": "2026-01-23T05:00:00.000Z",
-          "ingested_at": "2026-01-23T21:16:35.898Z",
-          "snippet": "arXiv:2305.19922v3 Announce Type: replace-cross \nAbstract: We present a representation-driven framework for reinforcement learning. By representing policies as estimates of their expected values, we leverage techniques from contextual bandits to guide exploration and exploitation. Particularly, embedding a policy network into a linear feature space allows us to reframe the exploration-exploitation problem as a representation-exploitation problem, where good policy representations enable optimal ...",
-          "sourceType": "rss",
-          "gate": {
-            "eligible": true,
-            "reasons": [
-              "Eligible"
-            ],
-            "flags": {},
-            "tier": "med"
-          },
-          "rerankWhy": "Representation-driven reinforcement learning with potential retail use",
-          "rerankConfidence": 0.7,
-          "aiSummary": "AI-generated summary: The article introduces a representation-driven framework for reinforcement learning, utilizing policy estimates of expected values to guide exploration and exploitation. By embedding a policy network into a linear feature space, the exploration-exploitation problem is reframed as a representation-exploitation issue."
-        },
-        {
-          "id": "ltdrto",
-          "title": "Multi-event Video-Text Retrieval",
-          "url": "https://arxiv.org/abs/2308.11551",
+          "id": "uq8gv7",
+          "title": "Beyond Off-the-Shelf Models: A Lightweight and Accessible Machine Learning Pipeline for Ecologists Working with Image Data",
+          "url": "https://arxiv.org/abs/2601.15813",
           "source": "arXiv - Machine Learning (cs.LG)",
           "published_at": "2026-01-23T05:00:00.000Z",
           "ingested_at": "2026-01-23T21:16:35.898Z",
-          "snippet": "arXiv:2308.11551v3 Announce Type: replace-cross \nAbstract: Video-Text Retrieval (VTR) is a crucial multi-modal task in an era of massive video-text data on the Internet. A plethora of work characterized by using a two-stream Vision-Language model architecture that learns a joint representation of video-text pairs has become a prominent approach for the VTR task. However, these models operate under the assumption of bijective video-text correspondences and neglect a more practical scenario where ...",
+          "snippet": "arXiv:2601.15813v1 Announce Type: cross \nAbstract: We introduce a lightweight experimentation pipeline designed to lower the barrier for applying machine learning (ML) methods for classifying images in ecological research. We enable ecologists to experiment with ML models independently, thus they can move beyond off-the-shelf models and generate insights tailored to local datasets and specific classification tasks and target variables. Our tool combines a simple command-line interface for prepro...",
           "sourceType": "rss",
-          "gate": {
-            "eligible": true,
-            "reasons": [
-              "Eligible"
-            ],
-            "flags": {},
-            "tier": "med"
+          "relevance": {
+            "scoreTotal": 0.857142858146731,
+            "recencyScore": 0.607142858146731,
+            "sourceWeight": 0,
+            "keywordBoost": 0.25,
+            "penalty": 0,
+            "matchedKeywords": [
+              "machine learning",
+              "data",
+              "ai",
+              "ml",
+              "insights"
+            ]
           },
-          "rerankWhy": "Rapid attention distillation for scalable AI models in retail tech",
-          "rerankConfidence": 0.65,
-          "aiSummary": "AI-Generated Summary: The article discusses the importance of Video-Text Retrieval (VTR) in handling large amounts of video-text data online. It highlights the use of a two-stream Vision-Language model architecture for learning joint representations of video-text pairs in the VTR task."
+          "aiSummary": "AI-Generated Summary: The article presents a lightweight machine learning pipeline for ecologists to classify images in ecological research, allowing them to customize models for local datasets and specific tasks. This tool aims to empower ecologists to move beyond off-the-shelf models and generate tailored insights."
         },
         {
-          "id": "5y92by",
-          "title": "SciArena: An Open Evaluation Platform for Non-Verifiable Scientific Literature-Grounded Tasks",
-          "url": "https://arxiv.org/abs/2507.01001",
-          "source": "arXiv - AI (cs.AI)",
-          "published_at": "2026-01-23T05:00:00.000Z",
+          "id": "cpohkq",
+          "title": "China's AI push raises concerns for democracies over data security, rights ",
+          "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/chinas-ai-push-raises-concerns-for-democracies-over-data-security-rights/articleshow/127307780.cms",
+          "source": "Economic Times - Technology",
+          "published_at": "2026-01-23T16:40:53.000Z",
           "ingested_at": "2026-01-23T21:16:35.898Z",
-          "snippet": "arXiv:2507.01001v2 Announce Type: replace-cross \nAbstract: We present SciArena, an open and collaborative platform for evaluating foundation models on scientific literature-grounded tasks. Unlike traditional benchmarks for scientific literature understanding and synthesis, SciArena engages the research community directly, following the Chatbot Arena evaluation approach of community voting on model comparisons. By leveraging collective intelligence, SciArena offers a community-driven evaluation o...",
+          "snippet": "Democratic nations should move swiftly to prohibit Chinese-linked artificial intelligence platforms and collectively develop binding global norms to regulate AI, warning that Beijing-backed technologies pose serious threats to data security, democratic governance and human rights.",
           "sourceType": "rss",
-          "gate": {
-            "eligible": true,
-            "reasons": [
-              "Sponsored/press release content"
-            ],
-            "flags": {
-              "sponsored": true,
-              "pressRelease": true
-            },
-            "tier": "med"
+          "relevance": {
+            "scoreTotal": 0.8266749349812748,
+            "recencyScore": 0.6766749349812747,
+            "sourceWeight": 0,
+            "keywordBoost": 0.15000000000000002,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ai",
+              "data",
+              "artificial intelligence"
+            ]
           },
-          "rerankWhy": "Open evaluation platform for scientific tasks, potential retail insights",
-          "rerankConfidence": 0.6,
-          "aiSummary": "AI-Generated Summary:\nSciArena is an open platform for evaluating foundation models on scientific literature-grounded tasks through community voting, offering a community-driven evaluation approach for scientific literature understanding and synthesis."
+          "aiSummary": "AI-generated summary: Democratic nations are urged to ban Chinese AI platforms and establish global regulations to address data security, governance, and human rights concerns posed by Beijing-backed technologies."
+        },
+        {
+          "id": "i7ct9z",
+          "title": "Five Ways People Are Using Claude Code",
+          "url": "https://www.nytimes.com/2026/01/23/technology/claude-code.html",
+          "source": "NYTimes Technology",
+          "published_at": "2026-01-23T14:12:04.000Z",
+          "ingested_at": "2026-01-23T21:16:35.898Z",
+          "snippet": "Claude Code generates computer code when people type prompts, so those with no coding experience can create their own programs and apps.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.8119113767558058,
+            "recencyScore": 0.6619113767558058,
+            "sourceWeight": 0.15,
+            "keywordBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": []
+          },
+          "aiSummary": "AI-Generated Summary:\nClaude Code allows non-coders to create programs and apps by generating code from typed prompts, as reported by NYTimes Technology on January 23, 2026."
+        },
+        {
+          "id": "lu9a46",
+          "title": "Malaysia lifts suspension on Musk's Grok chatbot ",
+          "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/malaysia-lifts-suspension-on-musks-grok-chatbot/articleshow/127270090.cms",
+          "source": "Economic Times - Technology",
+          "published_at": "2026-01-23T10:49:53.000Z",
+          "ingested_at": "2026-01-23T21:16:35.898Z",
+          "snippet": "The Malaysian Communications and Multimedia Commission (MCMC) suspended the service on X and xAI on January 11 and appointed solicitors to commence \"legal proceedings\", without specifying what that would entail. Malaysian officials and X representatives met Wednesday for clarification and commitments on X's preventive measures and its compliance with Malaysian law, the MCMC said.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.741853506352271,
+            "recencyScore": 0.641853506352271,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "penalty": 0,
+            "matchedKeywords": [
+              "chatbot",
+              "ai"
+            ]
+          },
+          "aiSummary": "AI-Generated Summary:\nMalaysia has lifted the suspension on Musk's Grok chatbot after meeting with officials to discuss compliance with Malaysian law and preventive measures. The Malaysian Communications and Multimedia Commission had initially suspended the service on X and xAI on January 11."
+        },
+        {
+          "id": "iwtsyz",
+          "title": "US-based Supervity AI signs pact with Maharashtra govt to set up GCC hub in Mumbai ",
+          "url": "https://economictimes.indiatimes.com/tech/technology/us-based-supervity-ai-signs-pact-with-maharashtra-govt-to-set-up-gcc-hub-in-mumbai/articleshow/127313496.cms",
+          "source": "Economic Times - Technology",
+          "published_at": "2026-01-23T17:34:16.000Z",
+          "ingested_at": "2026-01-23T21:16:35.898Z",
+          "snippet": "US-based enterprise AI software firm Supervity AI on Friday announced signing an agreement with the Maharashtra government to establish the world's first AI GCC hub in Mumbai.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.7319709005984969,
+            "recencyScore": 0.6819709005984969,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ai"
+            ]
+          },
+          "aiSummary": "AI-Generated Summary:\nSupervity AI, a US-based enterprise AI software firm, has partnered with the Maharashtra government to create the world's first AI GCC hub in Mumbai, as reported by the Economic Times on January 23, 2026."
+        },
+        {
+          "id": "yhld7p",
+          "title": "CEOs know AI is important. But what should they do with it?",
+          "url": "https://www.retaildive.com/news/artificial-intelligence-use-case-ceo-virtuous-ai/810246/",
+          "source": "Retail Dive",
+          "published_at": "2026-01-22T17:12:00.000Z",
+          "ingested_at": "2026-01-23T21:16:35.898Z",
+          "snippet": "Mid-market chief executives are experimenting with the tech, but few are integrating it across their enterprises, a new survey found.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.6869047627925012,
+            "recencyScore": 0.5369047627925012,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ai"
+            ]
+          },
+          "aiSummary": "AI-generated summary:\nA new survey reveals that mid-market CEOs are experimenting with AI technology, but few are fully integrating it across their enterprises."
+        },
+        {
+          "id": "e05789",
+          "title": "Barclays Sees Muni Market Upside ‘Capped’ by Rich Valuations",
+          "url": "https://www.bloomberg.com/news/articles/2026-01-23/barclays-sees-muni-market-upside-capped-by-rich-valuations",
+          "source": "Bloomberg - Technology",
+          "published_at": "2026-01-23T18:07:29.000Z",
+          "ingested_at": "2026-01-23T21:16:35.898Z",
+          "snippet": "The muni market’s outperformance streak likely has little room left to run, according to Barclays Plc strategists.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.6852662048367497,
+            "recencyScore": 0.6852662048367497,
+            "sourceWeight": 0,
+            "keywordBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": []
+          },
+          "aiSummary": "AI-Generated Summary:\nBarclays Plc strategists believe that the muni market's strong performance may be reaching its limit due to rich valuations."
         }
       ]
     },
     "Ecommerce_Retail_Tech": {
-      "total": 254,
+      "total": 278,
       "top": [
         {
-          "id": "m5whtm",
-          "title": "Shopify merchants face 4% OpenAI fee on ChatGPT sales, reports The Information",
-          "url": "https://internetretailing.net/shopify-merchants-face-4-openai-fee-on-chatgpt-sales-reports-the-information/",
-          "source": "Internet Retailing",
-          "published_at": "2026-01-23T07:00:00.000Z",
+          "id": "vle7td",
+          "title": "Authentic Brands Group acquires majority stake in Guess IP",
+          "url": "https://www.retaildive.com/news/authentic-brands-group-acquires-majority-stake-guess/810348/",
+          "source": "Retail Dive",
+          "published_at": "2026-01-23T17:37:00.000Z",
           "ingested_at": "2026-01-23T21:16:35.898Z",
-          "snippet": "Shopify merchants will reportedly pay a 4% fee on sales made via OpenAI-powered checkouts, on top of standard transaction charges.\nThe post Shopify merchants face 4% OpenAI fee on ChatGPT sales, reports The Information appeared first on InternetRetailing.",
+          "snippet": "The brand’s management, including co-founders Maurice and Paul Marciano, retain ownership in and responsibilities for its operations.",
           "sourceType": "rss",
-          "gate": {
-            "eligible": true,
-            "reasons": [
-              "Sponsored/press release content"
-            ],
-            "flags": {
-              "sponsored": true,
-              "pressRelease": true
-            },
-            "tier": "med"
+          "relevance": {
+            "scoreTotal": 0.7822420646201093,
+            "recencyScore": 0.6822420646201093,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": []
           },
-          "rerankWhy": "Logistics expansion via acquisition impacts fulfillment capabilities",
-          "rerankConfidence": 0.95,
-          "aiSummary": "AI-Generated Summary:\nShopify merchants using OpenAI-powered checkouts will incur a 4% fee on sales, in addition to standard transaction charges, as reported by The Information on Internet Retailing."
+          "aiSummary": "AI-Generated Summary:\nAuthentic Brands Group has acquired a majority stake in Guess IP, while the brand's co-founders Maurice and Paul Marciano will continue to own and manage its operations."
         },
         {
-          "id": "gefmyr",
-          "title": "D&H expands logistics unit with acquisition of Fulfillment.com",
-          "url": "https://www.digitalcommerce360.com/2026/01/20/dh-expands-logistics-unit-with-acquisition-of-fulfillment-com/",
-          "source": "Digital Commerce 360",
-          "published_at": "2026-01-20T20:12:12.000Z",
+          "id": "dwj50i",
+          "title": "Francesca’s to permanently close",
+          "url": "https://www.retaildive.com/news/francescas-permanently-close/810371/",
+          "source": "Retail Dive",
+          "published_at": "2026-01-23T17:36:00.000Z",
           "ingested_at": "2026-01-23T21:16:35.898Z",
-          "snippet": "D&H Distributing has completed an acquisition of Fulfillment.com, expanding the capabilities of its SCALE division and adding global ecommerce fulfillment services to its logistics portfolio. The deal brings Fulfillment.com into SCALE, D&H’s third-party logistics and supply chain services arm. D&H did not disclose financial terms. Founded in 2011, Fulfillment.com provides multi-site ecommerce fulfillment and cross-border […]\nThe post D&H expands logistics unit with acquisition of Fulfillment.com...",
+          "snippet": "The fashion retailer is liquidating stores after alternative funding from an investor fell through and two major suppliers lost their own capital from lenders.",
           "sourceType": "rss",
-          "gate": {
-            "eligible": true,
-            "reasons": [
-              "Sponsored/press release content"
-            ],
-            "flags": {
-              "sponsored": true,
-              "pressRelease": true
-            },
-            "tier": "med"
+          "relevance": {
+            "scoreTotal": 0.7821428582707388,
+            "recencyScore": 0.6821428582707388,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": []
           },
-          "rerankWhy": "Shopify merchants face new OpenAI sales fee affecting margins",
-          "rerankConfidence": 0.9,
-          "aiSummary": "AI-generated summary: D&H Distributing has acquired Fulfillment.com to enhance its SCALE division and offer global ecommerce fulfillment services. The deal brings Fulfillment.com into D&H's third-party logistics arm, expanding its capabilities in the ecommerce and retail tech sector."
+          "aiSummary": "AI-Generated Summary:\nFrancesca’s, a fashion retailer, is permanently closing its stores due to the failure of alternative funding and capital loss by major suppliers, as reported by Retail Dive on January 23, 2026."
         },
         {
-          "id": "7e0f0a",
-          "title": "Insider One and Databricks Partner to Bring a Lakehouse-Native Customer Activation to Life",
-          "url": "https://insiderone.com/insider-one-databricks-lakehouse-activation/",
-          "source": "UseInsider",
-          "published_at": "2026-01-21T19:18:50.000Z",
+          "id": "aq57g7",
+          "title": "The Weekly Closeout: Reebok teams with Karol G and will January storms ice out retail sales?",
+          "url": "https://www.retaildive.com/news/reebok-karol-g-brand-ambassador-january-snow-storms-ice-retail-sales/810317/",
+          "source": "Retail Dive",
+          "published_at": "2026-01-23T16:43:00.000Z",
           "ingested_at": "2026-01-23T21:16:35.898Z",
-          "snippet": "Insider One and Databricks Partner to Bring a Lakehouse-Native Customer Activation to Life Enterprise teams are consolidating customer data, analytics, and AI into the Databricks Data Intelligence Platform. Customer profiles, behavioral signals, transactions, and predictions increasingly live in one governed environment that supports analytics, machine learning, and enterprise controls at scale. Marketing teams, however, still […]",
+          "snippet": "The activewear brand signed a multiyear deal with the Colombian artist, while analysts speculate upcoming weather could slow spending.",
           "sourceType": "rss",
-          "gate": {
-            "eligible": true,
-            "reasons": [
-              "Eligible"
-            ],
-            "flags": {},
-            "tier": "med"
+          "relevance": {
+            "scoreTotal": 0.7768849217541086,
+            "recencyScore": 0.6768849217541086,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": []
           },
-          "rerankWhy": "AI-driven ecommerce personalization with real-time data insights",
-          "rerankConfidence": 0.9,
-          "aiSummary": "AI-Generated Summary:\nInsider One and Databricks collaborate to integrate customer data, analytics, and AI within the Databricks Data Intelligence Platform, creating a unified environment for marketing teams to leverage analytics, machine learning, and enterprise controls at scale."
+          "aiSummary": "AI-Generated Summary:\nReebok partners with Karol G in a multiyear deal, and analysts predict potential impact on retail sales due to January storms."
         },
         {
-          "id": "goyrq7",
-          "title": "NRF Big Show 2026: 5 retail shifts you can’t ignore (and what you can do about them)",
-          "url": "https://insiderone.com/nrf-big-show-2026-retail-shifts/",
-          "source": "UseInsider",
-          "published_at": "2026-01-22T16:22:38.000Z",
+          "id": "x495vf",
+          "title": "Here’s Who Just Bought TikTok",
+          "url": "https://www.nytimes.com/2026/01/22/business/media/tiktok-investors-oracle-mgx-silver-lake-bytedance.html",
+          "source": "NYTimes Technology",
+          "published_at": "2026-01-23T03:32:40.000Z",
           "ingested_at": "2026-01-23T21:16:35.898Z",
-          "snippet": "Over 40,000 retail leaders gathered in New York last week for the NRF Big Show, and the brands on stage revealed that if AI isn’t in your 2026 roadmap, you’re behind.  The gap is widening fast. The most innovative retailers are already rebuilding every workflow and operation to put AI at the center, from search […]",
+          "snippet": "Several big companies and investment firms are part of the new American TikTok. Many have ties to one another and President Trump.",
           "sourceType": "rss",
-          "gate": {
-            "eligible": true,
-            "reasons": [
-              "Sponsored/press release content"
-            ],
-            "flags": {
-              "sponsored": true,
-              "pressRelease": true
-            },
-            "tier": "med"
+          "relevance": {
+            "scoreTotal": 0.7484788369683844,
+            "recencyScore": 0.5984788369683843,
+            "sourceWeight": 0.15,
+            "keywordBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": []
           },
-          "rerankWhy": "Customer activation using Lakehouse-native data platform partnership",
-          "rerankConfidence": 0.85,
-          "aiSummary": "AI-generated summary: The NRF Big Show 2026 highlighted the importance of AI in retail, with innovative retailers already integrating AI into their workflows and operations to stay ahead of the curve. Retail leaders emphasized the need to include AI in business strategies to remain competitive in the evolving retail landscape."
+          "aiSummary": "AI-Generated Summary:\nMultiple major companies and investment firms are involved in the acquisition of TikTok in the United States, with connections to each other and President Trump."
         },
         {
-          "id": "ihtuqe",
-          "title": "AI in Ecommerce: Personalization That Converts - Americaneagle.com",
-          "url": "https://www.americaneagle.com/insights/blog/post/ai-in-ecommerce-personalization-that-converts",
-          "source": "americaneagle.com",
-          "published_at": "2026-01-23T21:20:28.305Z",
-          "ingested_at": "2026-01-23T21:25:07.362Z",
-          "snippet": "AI in ecommerce is accelerating personalization by using real-time data to make the shopping experience better. AI personalization in ecommerce leverages real-time data to create tailored shopping experiences. AI-powered personalization in ecommerce uses AI to analyze large amounts of customer data ",
-          "discoveredAt": "2026-01-23T21:20:28.305Z",
-          "publishedDateInvalid": true,
-          "sourceType": "discovery",
-          "usedDiscoveredAtFallback": true,
-          "gate": {
-            "eligible": true,
-            "reasons": [
-              "Eligible"
-            ],
-            "flags": {},
-            "tier": "med"
+          "id": "pvx641",
+          "title": "TikTok Strikes Deal to Create New U.S. Entity and Loosen App’s Ties to China",
+          "url": "https://www.nytimes.com/2026/01/22/technology/tiktok-deal-oracle-bytedance-china-us.html",
+          "source": "NYTimes Technology",
+          "published_at": "2026-01-23T03:20:26.000Z",
+          "ingested_at": "2026-01-23T21:16:35.898Z",
+          "snippet": "The Chinese parent company of the popular video app said a group of non-Chinese investors would create an American TikTok to avoid a federal ban.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.7472652126277534,
+            "recencyScore": 0.5972652126277533,
+            "sourceWeight": 0.15,
+            "keywordBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": []
           },
-          "rerankWhy": "NRF 2026 retail shifts with actionable insights for retailers",
-          "rerankConfidence": 0.85,
-          "aiSummary": "AI-powered personalization in ecommerce is revolutionizing the shopping experience by utilizing real-time data to tailor customer interactions. By analyzing large amounts of customer data, AI in ecommerce is enhancing personalization to drive conversions and improve user satisfaction."
+          "aiSummary": "AI-Generated Summary:\nTikTok's Chinese parent company has struck a deal with non-Chinese investors to create a new American entity for the app, aiming to loosen ties to China and prevent a federal ban."
         },
         {
-          "id": "5m4sif",
-          "title": "IAB Europe updates Commerce and Retail Media Standards and Flexi Ad Sizes Guidelines to bring even more consistent measurement",
-          "url": "https://internetretailing.net/iab-europe-updates-commerce-and-retail-media-standards-and-flexi-ad-sizes-guidelines-to-bring-even-more-consistent-measurement/",
-          "source": "Internet Retailing",
-          "published_at": "2026-01-22T07:00:00.000Z",
+          "id": "isblgz",
+          "title": "EDC 2026: Vegas and Orlando festival dates, lineup, and where to buy tickets",
+          "url": "https://www.businessinsider.com/guides/tickets/where-to-buy-edc-tickets-music-festival",
+          "source": "Business Insider - Tech",
+          "published_at": "2026-01-23T19:34:42.000Z",
           "ingested_at": "2026-01-23T21:16:35.898Z",
-          "snippet": "IAB Europe, an association for the digital advertising and marketing industry, has released two significant new resources designed to accelerate the maturity, scalability and effectiveness of Retail and Commerce Media across Europe: Commerce (Incl. Retail) Media Measurement Standards V2 and Flexi Ad Sizes Guidelines for Retail Media Networks. As Retail and Commerce Media investment continues […]\nThe post IAB Europe updates Commerce and Retail Media Standards and Flexi Ad Sizes Guidelines to brin...",
+          "snippet": "When you buy through our links, Business Insider may earn an affiliate commission. Learn more\n\nChase Stevens/Las Vegas Review-Journal\n\nElectric Daisy Carnival (EDC) is one of the most iconic electronic dance music festivals in the world, known for its immersive production, neon‑lit stages, carnival attractions, and nonstop performances by top DJs across genres such as house, techno, trance, and dubstep. Organized by Insomniac Events, EDC began in the late 1990s as a warehouse party in Los Angele...",
           "sourceType": "rss",
-          "gate": {
-            "eligible": true,
-            "reasons": [
-              "Sponsored/press release content"
-            ],
-            "flags": {
-              "sponsored": true,
-              "pressRelease": true
-            },
-            "tier": "med"
+          "relevance": {
+            "scoreTotal": 0.7439186519410032,
+            "recencyScore": 0.6939186519410031,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "warehouse"
+            ]
           },
-          "rerankWhy": "Updated commerce media standards improve measurement consistency",
-          "rerankConfidence": 0.8,
-          "aiSummary": "AI-Generated Summary:\nIAB Europe has introduced updated standards and guidelines to enhance the measurement and effectiveness of Retail and Commerce Media in Europe, aiming to boost maturity and scalability in the industry."
+          "aiSummary": "AI-generated summary:\nThe article discusses the Electric Daisy Carnival (EDC) festival, known for its immersive production and top DJ performances. It provides information on festival dates, lineup, and where to buy tickets in Vegas and Orlando."
         },
         {
-          "id": "jr4yyr",
-          "title": "Stop Losing Appointment Requests in Your Inbox: Meet Clientbook Appointments",
-          "url": "https://instoremag.com/stop-losing-appointment-requests-in-your-inbox-meet-clientbook-appointments/",
-          "source": "Instore Magazine",
-          "published_at": "2026-01-22T23:50:09.000Z",
+          "id": "c8zo4c",
+          "title": "What TikTok’s new owners mean for your feed",
+          "url": "https://www.theverge.com/tech/866868/tiktok-usds-new-owners-algorithm-explained",
+          "source": "The Verge",
+          "published_at": "2026-01-23T19:10:51.000Z",
           "ingested_at": "2026-01-23T21:16:35.898Z",
-          "snippet": "Stop Losing Appointment Requests in Your Inbox: Meet Clientbook Appointments Making appointments has never been easier thanks to Clientbook Appointments.   Walk-in traffic isn’t what it used to be, and the stores that succeed today aren’t waiting for customers to show up. They’re bringing customers back on purpose. The single most effective way to do […]",
+          "snippet": "TikTok is officially under new ownership in the US, and that could spell big changes for the video-sharing app. On January 22nd, ByteDance - TikTok's Chinese parent company - and a group of investors closed a $14 billion deal to spin off the platform's US operations, introducing a new slate of American executives.\nThe Silver Lake investment firm, Abu Dhabi's MGX, and the cloud giant Oracle will each have 15 percent stakes in the new TikTok US Data Security (USDS) Joint Venture LLC. ByteDance wil...",
           "sourceType": "rss",
-          "categoryHint": "Jewellery Industry",
-          "gate": {
-            "eligible": true,
-            "reasons": [
-              "Eligible"
-            ],
-            "flags": {},
-            "tier": "med"
+          "relevance": {
+            "scoreTotal": 0.7415525805085196,
+            "recencyScore": 0.6915525805085195,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "platform"
+            ]
           },
-          "rerankWhy": "Appointment management tool improves customer booking experience",
-          "rerankConfidence": 0.75,
-          "aiSummary": "AI-generated summary: Clientbook Appointments is a solution to help businesses manage appointment requests efficiently and bring customers back intentionally in the changing retail landscape."
+          "aiSummary": "AI-Generated Summary: TikTok's US operations have been spun off to new American executives following a $14 billion deal with ByteDance and investors like Silver Lake, MGX, and Oracle. The ownership change could bring significant changes to the popular video-sharing app."
         }
       ]
     },
     "Luxury_and_Consumer": {
-      "total": 108,
+      "total": 90,
       "top": [
         {
-          "id": "ymujxy",
-          "title": "Saks Global Secures $500 Million USD Liquidity Injection to Restock Luxury Shelves",
-          "url": "https://hypebeast.com/2026/1/saks-global-secures-500-million-usd-liquidity-injections-restock-luxury-shelves-news",
-          "source": "Hypebeast - Business",
-          "published_at": "2026-01-19T12:47:10.000Z",
+          "id": "odu9s0",
+          "title": "Indie Fragrance Sales Grew 46 Percent in 2025",
+          "url": "https://wwd.com/beauty-industry-news/beauty-features/indie-fragrance-sales-growth-beauty-skin-makeup-1238498797/",
+          "source": "WWD - Women's Wear Daily",
+          "published_at": "2026-01-23T20:56:51.000Z",
           "ingested_at": "2026-01-23T21:16:35.898Z",
-          "snippet": "SummarySaks Global has unlocked an initial $500 million USD tranche of a $1.75 billion bankruptcy financing package, providing the necessary liquidity to maintain operations across its iconic banners, including Saks Fifth Avenue, Neiman Marcus, and Bergdorf GoodmanThe cash infusion is primarily earmarked for \"go-forward\" payments to brand partners, a strategic move aimed at rebuilding vendor trust and accelerating the flow of new seasonal inventory to shelves that have been depleted by recent su...",
+          "snippet": "Sales grew more than four times faster than those of conglomerate-owned fragrance brands.",
           "sourceType": "rss",
           "categoryHint": "Fashion & Luxury",
-          "gate": {
-            "eligible": true,
-            "reasons": [
-              "Potentially controversial (flagged for LLM review)"
-            ],
-            "flags": {
-              "controversialSuspected": true
-            },
-            "tier": "med"
+          "relevance": {
+            "scoreTotal": 0.7520684535417799,
+            "recencyScore": 0.7020684535417798,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "brand"
+            ]
           },
-          "rerankWhy": "Ecommerce inventory liquidation during Saks Off 5th bankruptcy",
-          "rerankConfidence": 0.95,
-          "aiSummary": "AI-Generated Summary:\nSaks Global has secured a $500 million USD liquidity injection to restock luxury shelves at its iconic banners like Saks Fifth Avenue, Neiman Marcus, and Bergdorf Goodman. The funding will be used for \"go-forward\" payments to brand partners to rebuild trust and accelerate the flow of new seasonal inventory."
+          "aiSummary": "AI-Generated Summary:\nIndie fragrance sales experienced a significant 46 percent growth in 2025, outpacing the sales growth of conglomerate-owned fragrance brands by more than four times."
         },
         {
-          "id": "263ss6",
-          "title": "Saks Off 5th Digital to Liquidate Inventory While in Bankruptcy",
-          "url": "https://www.businessoffashion.com/news/retail/saks-off-5th-digital-to-liquidate-inventory-while-in-bankruptcy/",
-          "source": "Business of Fashion - News",
-          "published_at": "2026-01-23T18:06:31.000Z",
+          "id": "mi5qq0",
+          "title": "Boss tests new textile innovation at Australian Open",
+          "url": "https://www.luxurydaily.com/boss-tests-new-textile-innovation-at-australian-open/",
+          "source": "Luxury Daily - Main",
+          "published_at": "2026-01-23T20:36:55.000Z",
           "ingested_at": "2026-01-23T21:16:35.898Z",
-          "snippet": "The e-commerce unit is being run by independent managers and the sale of its assets does not include any merchandise of Saks Global’s brick and mortar stores.",
+          "snippet": "The German fashion house’s core brand is debuting NovaPoly yarn, a recycled alternative to virgin polyester.",
           "sourceType": "rss",
           "categoryHint": "Fashion & Luxury",
-          "gate": {
-            "eligible": true,
-            "reasons": [
-              "Eligible"
-            ],
-            "flags": {},
-            "tier": "med"
+          "relevance": {
+            "scoreTotal": 0.750090940310997,
+            "recencyScore": 0.700090940310997,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "brand"
+            ]
           },
-          "rerankWhy": "Saks Global liquidity injection to restock luxury inventory",
-          "rerankConfidence": 0.9,
-          "aiSummary": "AI-Generated Summary:\nSaks Off 5th Digital is liquidating inventory during bankruptcy proceedings, with independent managers overseeing the e-commerce unit. The sale of assets does not involve merchandise from Saks Global's physical stores."
+          "aiSummary": "AI-Generated Summary:\nThe German fashion house is introducing NovaPoly yarn, a recycled alternative to virgin polyester, at the Australian Open."
         },
         {
-          "id": "argdr1",
-          "title": "Tariffs Starting to Bump Up Product Prices, Amazon CEO Says",
-          "url": "https://www.businessoffashion.com/news/retail/tariffs-starting-to-bump-up-product-prices-amazon-ceo-says/",
-          "source": "Business of Fashion - News",
-          "published_at": "2026-01-21T10:02:24.000Z",
+          "id": "j41qjd",
+          "title": "Team Play: Who’s Doing What at Saks Global?",
+          "url": "https://wwd.com/business-news/retail/team-play-who-is-doing-what-at-saks-global-1238484536/",
+          "source": "WWD - Women's Wear Daily",
+          "published_at": "2026-01-23T19:25:20.000Z",
           "ingested_at": "2026-01-23T21:16:35.898Z",
-          "snippet": "Amazon CEO Andy Jassy told CNBC product prices on the e-commerce platform are starting to rise as third-party sellers pass on higher costs caused by US tariffs.",
+          "snippet": "Upon filing for Chapter 11 reorganization, the luxury retailer established a new management team, which will be facing challenges integrating operations and stabilizing the business.",
           "sourceType": "rss",
           "categoryHint": "Fashion & Luxury",
-          "gate": {
-            "eligible": true,
-            "reasons": [
-              "Eligible"
-            ],
-            "flags": {},
-            "tier": "med"
+          "relevance": {
+            "scoreTotal": 0.7429894191352339,
+            "recencyScore": 0.6929894191352338,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "luxury"
+            ]
           },
-          "rerankWhy": "Tariffs impacting ecommerce product pricing, Amazon CEO insight",
-          "rerankConfidence": 0.9,
-          "aiSummary": "AI-Generated Summary:\nAmazon CEO Andy Jassy stated that product prices on the e-commerce platform are increasing due to third-party sellers passing on higher costs from US tariffs, as reported by Business of Fashion on January 21, 2026."
+          "aiSummary": "AI-Generated Summary:\nSaks Global, a luxury retailer, has formed a new management team following Chapter 11 reorganization. The team's focus will be on integrating operations and stabilizing the business amidst challenges."
         },
         {
-          "id": "k0yac9",
-          "title": "Exclusive: Sephora Partners with Olive Young",
-          "url": "https://www.businessoffashion.com/articles/beauty/sephora-olive-young-partnership-2026/",
-          "source": "Business of Fashion - News",
-          "published_at": "2026-01-20T13:00:00.000Z",
+          "id": "x143w4",
+          "title": "66°North to Sponsor Team Iceland at 2026 Milano Cortina Olympic, Paralympic Winter Games",
+          "url": "https://wwd.com/fashion-news/fashion-features/66north-iceland-milano-cortina-2026-olympic-paralympic-winter-games-1238497697/",
+          "source": "WWD - Women's Wear Daily",
+          "published_at": "2026-01-23T18:27:24.000Z",
           "ingested_at": "2026-01-23T21:16:35.898Z",
-          "snippet": "The LVMH-owned retailer will stock a selection of skincare online and in stores worldwide curated by the Korean beauty giant from autumn 2026.",
+          "snippet": "The project kicks off the 100th-anniversary celebrations of the brand.",
           "sourceType": "rss",
           "categoryHint": "Fashion & Luxury",
-          "gate": {
-            "eligible": true,
-            "reasons": [
-              "Potentially controversial (flagged for LLM review)"
-            ],
-            "flags": {
-              "controversialSuspected": true
-            },
-            "tier": "med"
+          "relevance": {
+            "scoreTotal": 0.7372420646283765,
+            "recencyScore": 0.6872420646283764,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "brand"
+            ]
           },
-          "rerankWhy": "Sephora partnership expanding online and in-store skincare assortment",
-          "rerankConfidence": 0.85,
-          "aiSummary": "AI-Generated Summary:\nSephora has partnered with Olive Young to offer a curated selection of skincare products online and in stores globally starting in autumn 2026."
+          "aiSummary": "AI-Generated Summary:\n66°North will sponsor Team Iceland at the 2026 Milano Cortina Olympic and Paralympic Winter Games, marking the start of the brand's 100th-anniversary celebrations."
         },
         {
-          "id": "rv45ea",
-          "title": "South Africa’s Booming $4 Billion Beauty Market a Key Battleground for Retailers",
-          "url": "https://www.businessoffashion.com/articles/beauty/south-africas-booming-4-billion-beauty-market-a-key-battleground-for-retailers/",
-          "source": "Business of Fashion - News",
-          "published_at": "2026-01-21T16:20:24.000Z",
+          "id": "rx2va3",
+          "title": "Stronger Asia-Pacific demand lifts sales at Burberry",
+          "url": "https://www.luxurydaily.com/stronger-asia-pacific-demand-lifts-sales-at-burberry/",
+          "source": "Luxury Daily - Main",
+          "published_at": "2026-01-23T16:09:57.000Z",
           "ingested_at": "2026-01-23T21:16:35.898Z",
-          "snippet": "Once relegated to drugstores and niche outlets, beauty and personal care products are now front and centre, with retailers like Woolworths Holdings Ltd. leading the charge.",
+          "snippet": "Leaning into strategic experiential activations, the British fashion house launched its Scarf Bar in stores worldwide, including locations in Shanghai, Seoul and Tokyo, this winter.",
           "sourceType": "rss",
           "categoryHint": "Fashion & Luxury",
-          "gate": {
-            "eligible": true,
-            "reasons": [
-              "Sponsored/press release content",
-              "Potentially controversial (flagged for LLM review)"
-            ],
-            "flags": {
-              "sponsored": true,
-              "pressRelease": true,
-              "controversialSuspected": true
-            },
-            "tier": "med"
+          "relevance": {
+            "scoreTotal": 0.7236061519074176,
+            "recencyScore": 0.6736061519074176,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "demand"
+            ]
           },
-          "rerankWhy": "Brands shifting marketing focus from Instagram to Pinterest platform",
-          "rerankConfidence": 0.8,
-          "aiSummary": "AI-Generated Summary:\nSouth Africa's beauty market, valued at $4 billion, is becoming a key battleground for retailers like Woolworths Holdings Ltd., as beauty and personal care products gain prominence in the retail sector."
+          "aiSummary": "AI-Generated Summary:\nBurberry's sales have been boosted by increased demand in the Asia-Pacific region, with the launch of its Scarf Bar in key cities like Shanghai, Seoul, and Tokyo contributing to this growth."
         },
         {
-          "id": "t40mc5",
-          "title": "Why Some Brands Prefer Pinterest Over Instagram",
-          "url": "https://www.businessoffashion.com/articles/marketing-pr/why-some-brands-prefer-pinterest-over-instagram/",
+          "id": "ex4t5c",
+          "title": "Exclusive: Véronique Nichanian’s Hermès Exit Interview",
+          "url": "https://www.businessoffashion.com/articles/creative-class/exclusive-veronique-nichanians-hermes-exit-interview/",
           "source": "Business of Fashion - News",
-          "published_at": "2026-01-21T05:30:00.000Z",
+          "published_at": "2026-01-23T05:30:00.000Z",
           "ingested_at": "2026-01-23T21:16:35.898Z",
-          "snippet": "A platform historically known as a destination for visual inspiration, Pinterest has been building out its shopping and advertising features to make it easier for brands to tap the power of its ready-to-shop user base.",
+          "snippet": "On the eve of her final runway show after 38 years at Hermès, Nichanian sits down with Tim Blanks to discuss her life at the French luxury powerhouse, designing for men as a woman, the ‘magic’ the fashion industry has lost, her successor Grace Wales Bonner and what comes next.",
           "sourceType": "rss",
           "categoryHint": "Fashion & Luxury",
-          "gate": {
-            "eligible": true,
-            "reasons": [
-              "Sponsored/press release content"
-            ],
-            "flags": {
-              "sponsored": true,
-              "pressRelease": true
-            },
-            "tier": "med"
+          "relevance": {
+            "scoreTotal": 0.7101190486278424,
+            "recencyScore": 0.6101190486278424,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "penalty": 0,
+            "matchedKeywords": [
+              "exclusive",
+              "luxury"
+            ]
           },
-          "rerankWhy": "COS bridging mass market and luxury, relevant retail strategy",
-          "rerankConfidence": 0.8,
-          "aiSummary": "AI-Generated Summary:\nPinterest is becoming a preferred platform for brands over Instagram due to its focus on visual inspiration and enhanced shopping and advertising features, catering to a ready-to-shop user base."
+          "aiSummary": "AI-Generated Summary:\nVéronique Nichanian reflects on her 38-year tenure at Hermès in an exit interview with Business of Fashion, discussing her unique perspective as a female designer for men, the changing dynamics of the fashion industry, her successor Grace Wales Bonner, and her future plans."
         },
         {
-          "id": "eo8ga9",
-          "title": "COS Is Building a Bridge Between Mass Market and Luxury",
-          "url": "https://www.businessoffashion.com/articles/retail/the-state-of-fashion-2026-report-cos-interview-daniel-herrmann/",
+          "id": "c17ltz",
+          "title": "Trump’s Greenland U-Turn Is a Reminder That Fashion’s Only Constant Is Chaos",
+          "url": "https://www.businessoffashion.com/briefings/retail/trumps-greenland-u-turn-is-a-reminder-that-fashions-only-constant-is-chaos/",
           "source": "Business of Fashion - News",
-          "published_at": "2026-01-21T05:30:00.000Z",
+          "published_at": "2026-01-23T19:00:00.000Z",
           "ingested_at": "2026-01-23T21:16:35.898Z",
-          "snippet": "The H&M-owned brand is drawing customers in search of sophisticated design and those looking for value. Managing director Daniel Herrmann discusses in the BoF-McKinsey State of Fashion 2026 how it strikes its high-low balance.",
+          "snippet": "The US president briefly threatened new, punitive tariffs on eight European countries that opposed his designs on the Danish territory. The episode served as a warning that the industry needs to stop planning for a ‘new normal.’",
           "sourceType": "rss",
           "categoryHint": "Fashion & Luxury",
-          "gate": {
-            "eligible": true,
-            "reasons": [
-              "Eligible"
-            ],
-            "flags": {},
-            "tier": "med"
+          "relevance": {
+            "scoreTotal": 0.6904761916178509,
+            "recencyScore": 0.6904761916178509,
+            "sourceWeight": 0,
+            "keywordBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": []
           },
-          "rerankWhy": "South Africa’s booming beauty market as retail battleground",
-          "rerankConfidence": 0.75,
-          "aiSummary": "AI-Generated Summary:\nCOS, owned by H&M, is bridging the gap between mass market and luxury by offering sophisticated design and value to customers. Managing director Daniel Herrmann explains how the brand maintains its high-low balance in the BoF-McKinsey State of Fashion 2026."
+          "aiSummary": "AI-generated summary:\nTrump's threat of tariffs on European countries over Greenland highlights the unpredictability in the fashion industry, urging a shift away from planning for a 'new normal.'"
         }
       ]
     },
     "Jewellery_Industry": {
-      "total": 32,
+      "total": 28,
       "top": [
+        {
+          "id": "qepako",
+          "title": "Goldman Sachs hands David Solomon a $47 million pay package for 2025, surpassing JPMorgan's Jamie Dimon",
+          "url": "https://www.businessinsider.com/goldman-sachs-ceo-david-solomon-pay-2025-performance-2026-1",
+          "source": "Business Insider - Tech",
+          "published_at": "2026-01-23T20:38:14.000Z",
+          "ingested_at": "2026-01-23T21:16:35.898Z",
+          "snippet": "David Solomon is the CEO of Goldman Sachs.\nStefano Guidi/Getty Images\n\nGoldman Sachs announced 2025 compensation for CEO David Solomon on Friday.\nThe bank will award him $47 million for 2025, up from $39 million the year prior.\nGoldman just wrapped the second-best year on record by revenue, and its stock has been up.\n\nGoldman Sachs' David Solomon has restored the bank's swagger — and it just rewarded him with a $47 million pay package for 2025.\nIt's his highest annual pay yet, and it puts him ah...",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.7502215620043347,
+            "recencyScore": 0.7002215620043346,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "gold"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Goldman Sachs CEO David Solomon received a $47 million pay package for 2025, marking his highest annual pay yet, following the bank's strong financial performance."
+        },
+        {
+          "id": "5wp269",
+          "title": "Silver Tops $100 as Global Turmoil Fuels Run for Safe Havens",
+          "url": "https://www.bloomberg.com/news/articles/2026-01-23/silver-tops-100-as-global-turmoil-fuels-run-for-safe-havens",
+          "source": "Bloomberg - Technology",
+          "published_at": "2026-01-23T15:52:10.000Z",
+          "ingested_at": "2026-01-23T21:16:35.898Z",
+          "snippet": "Silver topped $100 an ounce for the first time, extending a scorching rally built on surging demand for haven assets and frenzied buying in retail markets from Shanghai to New York.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.721841932327781,
+            "recencyScore": 0.671841932327781,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "silver"
+            ]
+          },
+          "aiSummary": "AI-generated summary:\nSilver prices have surpassed $100 per ounce due to increased demand for safe-haven assets and strong retail market activity in various global locations."
+        },
         {
           "id": "5k902x",
           "title": "GN Diamond Says 2025 Lab-Grown and Natural Diamond Sales Were Virtually Tied",
@@ -544,166 +525,136 @@
           "snippet": "Many retailers have reported a strong finish to 2025 with natural diamond sales showing a major increase over last year’s holiday season.",
           "sourceType": "rss",
           "categoryHint": "Jewellery Industry",
-          "gate": {
-            "eligible": true,
-            "reasons": [
-              "Eligible"
-            ],
-            "flags": {},
-            "tier": "med"
+          "relevance": {
+            "scoreTotal": 0.6554084003892334,
+            "recencyScore": 0.5554084003892334,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "penalty": 0,
+            "matchedKeywords": [
+              "diamond",
+              "retailer"
+            ]
           },
-          "rerankWhy": "Digital campaigns drove £82M ecommerce revenue for jewellery clients",
-          "rerankConfidence": 0.95,
-          "aiSummary": "AI-Generated Summary:\nIn 2025, GN Diamond reported that lab-grown and natural diamond sales were nearly equal, with natural diamond sales seeing a significant rise during the holiday season compared to the previous year."
+          "aiSummary": "AI-Generated Summary:\nGN Diamond reports that in 2025, lab-grown and natural diamond sales were nearly equal, with retailers experiencing a significant rise in natural diamond sales during the holiday season compared to the previous year."
         },
         {
-          "id": "ysxq36",
-          "title": "Squash delivers record-breaking growth for jewellery, watch and luxury goods clients",
-          "url": "https://www.professionaljeweller.com/squash-record-growth-jewellery-client/",
+          "id": "yd3eew",
+          "title": "GEMORO ASSAY LAB XRF Desktop Gold & Precious Metal Analyzer",
+          "url": "https://instoremag.com/gemoro-assay-lab-xrf-desktop-gold-precious-metal-analyzer/",
+          "source": "Instore Magazine",
+          "published_at": "2026-01-22T19:42:20.000Z",
+          "ingested_at": "2026-01-23T21:16:35.898Z",
+          "snippet": "The ASSAY LAB provides precise percentage readings of different elements including gold, platinum, silver, rhodium, and other precious metals.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.6018187839811819,
+            "recencyScore": 0.5518187839811819,
+            "sourceWeight": 0,
+            "keywordBoost": 0.25,
+            "penalty": 0.2,
+            "matchedKeywords": [
+              "gem",
+              "precious metal",
+              "gold",
+              "assay",
+              "silver"
+            ]
+          },
+          "aiSummary": "AI-Generated Summary:\nThe GEMORO ASSAY LAB XRF Desktop Gold & Precious Metal Analyzer from Instore Magazine, published on 2026-01-22, offers accurate percentage readings for various elements like gold, platinum, silver, rhodium, and other precious metals in the jewellery industry."
+        },
+        {
+          "id": "a7drrm",
+          "title": "How to prepare for a Valentine’s Day proposal",
+          "url": "https://www.professionaljeweller.com/prepare-for-valentines-day-proposal/",
           "source": "Professional Jeweller",
-          "published_at": "2026-01-20T11:51:48.000Z",
+          "published_at": "2026-01-21T09:37:14.000Z",
           "ingested_at": "2026-01-23T21:16:35.898Z",
-          "snippet": "In 2025, Squash’s digital campaigns contributed over £82 million in eCommerce revenue for its jewellery, watch and luxury goods clients – its most successful performance year to date. This revenue represents a 32% increase on 2024, equating to just over an additional £20m in client revenue across the UK jewellery, watch & luxury goods sector. […]\nThe post Squash delivers record-breaking growth for jewellery, watch and luxury goods clients appeared first on Professional Jeweller.",
+          "snippet": "As the most romantic date on the calendar, Valentine’s Day holds undeniable magic, making it a favourite for a proposal. In the UK, February follows December as the most popular month for engagements, with Valentine’s Day proposals accounting for about 10–11% of engagements.  With lab grown diamonds soaring in popularity, what should you know before choosing between a mined […]\nThe post How to prepare for a Valentine’s Day proposal appeared first on Professional Jeweller.",
           "sourceType": "rss",
           "categoryHint": "Jewellery Industry",
-          "gate": {
-            "eligible": true,
-            "reasons": [
-              "Sponsored/press release content",
-              "Potentially controversial (flagged for LLM review)"
-            ],
-            "flags": {
-              "sponsored": true,
-              "pressRelease": true,
-              "controversialSuspected": true
-            },
-            "tier": "med"
+          "relevance": {
+            "scoreTotal": 0.5989318788838159,
+            "recencyScore": 0.34893187888381594,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.15000000000000002,
+            "penalty": 0,
+            "matchedKeywords": [
+              "diamond",
+              "gem",
+              "jeweller"
+            ]
           },
-          "rerankWhy": "Data on lab-grown vs natural diamond sales with retail impact",
-          "rerankConfidence": 0.9,
-          "aiSummary": "AI-generated summary: Squash's digital campaigns in 2025 generated over £82 million in eCommerce revenue for jewellery, watch, and luxury goods clients, marking a 32% increase from the previous year and contributing significantly to the sector's growth."
+          "aiSummary": "AI-Generated Summary: Valentine's Day is a popular time for proposals, with about 10-11% of engagements happening on this romantic date. Lab-grown diamonds are becoming increasingly popular, prompting couples to consider their options before choosing between mined and lab-grown diamonds."
         },
         {
-          "id": "pq4a2b",
-          "title": "Fope closes 2025 with net revenue up 27%",
-          "url": "https://www.professionaljeweller.com/fope-close-2025-net-revenue-up/",
-          "source": "Professional Jeweller",
-          "published_at": "2026-01-21T09:35:28.000Z",
+          "id": "pnndwp",
+          "title": "The Jeweler Faces Off With the ‘Thing Behind the Bench’",
+          "url": "https://instoremag.com/the-jeweler-faces-off-with-the-thing-behind-the-bench/",
+          "source": "Instore Magazine",
+          "published_at": "2026-01-23T00:00:54.000Z",
           "ingested_at": "2026-01-23T21:16:35.898Z",
-          "snippet": "Fope has recorded a net revenue of €93.6 million (£81.7m) as of 31 December 2025, representing an increase of 27% compared to the same time in 2024. Diego Nardin, CEO of Fope: “We express a very positive assessment of the 2025 final sales revenues, with significant growth compared to the previous year and confirmation of […]\nThe post Fope closes 2025 with net revenue up 27% appeared first on Professional Jeweller.",
+          "snippet": "You know how you always tell yourself that you'll clean behind the bench \"eventually\"? Well, now it's too late.",
           "sourceType": "rss",
           "categoryHint": "Jewellery Industry",
-          "gate": {
-            "eligible": true,
-            "reasons": [
-              "Eligible"
-            ],
-            "flags": {},
-            "tier": "med"
+          "relevance": {
+            "scoreTotal": 0.57747023905005,
+            "recencyScore": 0.57747023905005,
+            "sourceWeight": 0,
+            "keywordBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": []
           },
-          "rerankWhy": "De Beers diamond price cuts affect retail pricing and demand",
-          "rerankConfidence": 0.9,
-          "aiSummary": "In 2025, Fope's net revenue increased by 27% to €93.6 million, as reported by Professional Jeweller on January 21, 2026. CEO Diego Nardin expressed satisfaction with the significant growth in sales compared to the previous year."
+          "aiSummary": "AI-Generated Summary:\nJewelers are urged to clean behind their benches as neglecting this area can lead to consequences."
         },
         {
-          "id": "2g564m",
-          "title": "De Beers Cuts Diamond Prices for the First Time in Over a Year",
-          "url": "https://www.businessoffashion.com/news/luxury/de-beers-cuts-diamond-prices-for-the-first-time-in-over-a-year/",
-          "source": "Business of Fashion - News",
-          "published_at": "2026-01-19T17:37:57.000Z",
+          "id": "ub1n1v",
+          "title": "As a travel planner, I rarely recommend Paris or Rome. Instead, I swear by these 5 European gems.",
+          "url": "https://www.businessinsider.com/best-places-to-go-europe-travel-planner-favorite-destinations-recommendations-2026-1",
+          "source": "Business Insider - Tech",
+          "published_at": "2026-01-23T19:37:42.000Z",
           "ingested_at": "2026-01-23T21:16:35.898Z",
-          "snippet": "The diamond company has cut diamond prices to address slumping demand caused by a downturn in Chinese luxury spending, the rising popularity of synthetic stones and US tariffs on India.",
+          "snippet": "Cinque Terre is one of my favorite places to visit in all of Europe. \nSina Ettmer Photography/Shutterstock\n\nI'm a travel planner, and there are five European destinations I think everyone should visit.\nIf you like the Beatles and are planning a trip to the United Kingdom, be sure to stop in Liverpool.\nItaly's Cinque Terre is one of my favorite places in the world, and I also love Porto, Portugal.\n\nAs a travel planner at Marvelous Mouse Travels, I've explored Europe extensively to find the best r...",
           "sourceType": "rss",
-          "categoryHint": "Fashion & Luxury",
-          "gate": {
-            "eligible": true,
-            "reasons": [
-              "Sponsored/press release content"
-            ],
-            "flags": {
-              "sponsored": true,
-              "pressRelease": true
-            },
-            "tier": "med"
+          "relevance": {
+            "scoreTotal": 0.5442162709891143,
+            "recencyScore": 0.6942162709891142,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "penalty": 0.2,
+            "matchedKeywords": [
+              "gem"
+            ]
           },
-          "rerankWhy": "Fope’s 27% net revenue growth shows strong retail performance",
-          "rerankConfidence": 0.85,
-          "aiSummary": "AI-Generated Summary:\nDe Beers has reduced diamond prices due to decreased demand from China, the growing preference for synthetic stones, and US tariffs on India, marking the first price cut in over a year."
-        },
-        {
-          "id": "eg48nf",
-          "title": "Watches of Switzerland snaps up Deutsch & Deutsch",
-          "url": "https://www.retailgazette.co.uk/blog/2026/01/watches-of-switzerland-acquisition/",
-          "source": "Retail Gazette",
-          "published_at": "2026-01-23T12:21:49.000Z",
-          "ingested_at": "2026-01-23T21:16:35.898Z",
-          "snippet": "Watches of Switzerland Group (WOSG) has acquired Texas-based watch and jewellery business Deutsch & Deutsch.",
-          "sourceType": "rss",
-          "categoryHint": "Fashion & Luxury",
-          "gate": {
-            "eligible": true,
-            "reasons": [
-              "Eligible"
-            ],
-            "flags": {},
-            "tier": "med"
-          },
-          "rerankWhy": "Watches of Switzerland acquisition expands retail jewellery footprint",
-          "rerankConfidence": 0.85,
-          "aiSummary": "AI-Generated Summary:\nWatches of Switzerland Group (WOSG) has acquired Texas-based watch and jewellery business Deutsch & Deutsch, as reported by Retail Gazette on January 23, 2026."
-        },
-        {
-          "id": "q86eqd",
-          "title": "Retail crime spikes in Australia, declines in New Zealand",
-          "url": "https://www.jewellermagazine.com/Article/14706/Retail-crime-spikes-in-Australia-declines-in-New-Zealand",
-          "source": "Jeweller - Business News",
-          "published_at": "2026-01-19T13:00:00.000Z",
-          "ingested_at": "2026-01-23T21:16:35.898Z",
-          "snippet": "According to a report published by Auror, a retail crime and loss prevention company, retailers in New Zealand experienced declining rates of violent crime over the past year, while figures in Australia have increased.",
-          "sourceType": "rss",
-          "categoryHint": "Jewellery Industry",
-          "gate": {
-            "eligible": true,
-            "reasons": [
-              "Eligible"
-            ],
-            "flags": {},
-            "tier": "med"
-          },
-          "rerankWhy": "Retail crime trends in Australia and New Zealand impact operations",
-          "rerankConfidence": 0.8,
-          "aiSummary": "AI-Generated Summary:\nAuror's report shows a rise in retail crime in Australia and a decrease in New Zealand, with retailers in New Zealand experiencing lower rates of violent crime compared to their Australian counterparts."
-        },
-        {
-          "id": "v0sudp",
-          "title": "Pandora ranked world’s most sustainable consumer brand",
-          "url": "https://www.professionaljeweller.com/pandora-world-sustainable-brand/",
-          "source": "Professional Jeweller",
-          "published_at": "2026-01-21T10:42:04.000Z",
-          "ingested_at": "2026-01-23T21:16:35.898Z",
-          "snippet": "In its 2026 Global 100 ranking, research company Corporate Knights has named Pandora the world’s most sustainable consumer brand. The Danish jewellery giant has placed second overall amongst over 8,000 other assessed companies, underlining its position as a global sustainability leader.   The recognition reflects its transformation towards recycled materials and renewable energy. In its analysis, Corporate Knights highlights Pandora’s use of 100% […]\nThe post Pandora ranked world’s most sustaina...",
-          "sourceType": "rss",
-          "categoryHint": "Jewellery Industry",
-          "gate": {
-            "eligible": true,
-            "reasons": [
-              "Sponsored/press release content",
-              "Potentially controversial (flagged for LLM review)"
-            ],
-            "flags": {
-              "sponsored": true,
-              "pressRelease": true,
-              "controversialSuspected": true
-            },
-            "tier": "med"
-          },
-          "rerankWhy": "Pandora named world’s most sustainable consumer brand, relevant for brand strategy",
-          "rerankConfidence": 0.8,
-          "aiSummary": "AI-generated summary: Pandora has been ranked as the world's most sustainable consumer brand by Corporate Knights in its 2026 Global 100 ranking, showcasing the company's commitment to using recycled materials and renewable energy in its operations."
+          "aiSummary": "AI-generated summary: A travel planner recommends five European destinations, including Cinque Terre in Italy and Porto in Portugal, as must-visit places instead of Paris or Rome."
         }
       ]
     }
   },
-  "keyThemes": [],
-  "introParagraph": ""
+  "keyThemes": [
+    "Supervity AI GCC hub",
+    "Burberry experiential activations",
+    "Claude Code programming",
+    "Francesca's store closures",
+    "Silver price surge"
+  ],
+  "oneSentenceSummary": "Supervity AI's new GCC hub in Mumbai and Burberry's experiential activations highlight strategic moves in AI and luxury retail.",
+  "introParagraph": "Supervity AI establishes a new hub in Mumbai, focusing on the GCC region's artificial intelligence landscape. Burberry launches experiential activations to enhance customer engagement in luxury retail. Additionally, Francesca's announces store closures amid changing market conditions, while silver prices experience a notable surge.",
+  "coverImageUrl": "/weekly-images/2026-W04.png",
+  "coverImageAlt": "Weekly cover illustration for 2026-W04",
+  "coverKeywords": [
+    "authentic",
+    "brands",
+    "group",
+    "acquires",
+    "majority",
+    "stake",
+    "guess",
+    "francesca",
+    "permanently",
+    "close",
+    "goldman",
+    "sachs"
+  ]
 }

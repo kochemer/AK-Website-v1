@@ -233,27 +233,41 @@ function selectTopN(
   });
   
   // Apply diversity guard: limit max per source, but relax if needed to fill to N
+  // Special rule for AI category: max 1 Arxiv article total
+  const MAX_ARXIV_AI = topic === 'AI_and_Strategy' ? 1 : Infinity; // Max 1 Arxiv article for AI category
   const selected: ArticleWithRelevance[] = [];
   const sourceCounts = new Map<string, number>();
+  let arxivCount = 0; // Track total Arxiv articles for AI category
+  
+  // Helper to check if source is Arxiv
+  const isArxiv = (source: string): boolean => {
+    return source.toLowerCase().includes('arxiv');
+  };
   
   for (let i = 0; i < articlesWithScores.length && selected.length < n; i++) {
     const { article, relevance } = articlesWithScores[i];
     const currentCount = sourceCounts.get(article.source) || 0;
     const remainingSlots = n - selected.length;
     const remainingArticles = articlesWithScores.length - i;
+    const isArxivArticle = isArxiv(article.source);
     
     // Check if we can add this article:
-    // 1. Haven't hit the cap for this source, OR
-    // 2. We need to fill remaining slots (relax cap if not enough articles from other sources)
-    const canAdd = currentCount < MAX_PER_SOURCE;
+    // 1. Haven't hit the cap for this source, AND
+    // 2. Haven't hit the Arxiv cap (for AI category), OR
+    // 3. We need to fill remaining slots (relax cap if not enough articles from other sources)
+    const canAddSource = currentCount < MAX_PER_SOURCE;
+    const canAddArxiv = !isArxivArticle || arxivCount < MAX_ARXIV_AI;
     const mustFill = remainingSlots >= remainingArticles; // If remaining slots >= remaining articles, we must take this
     
-    if (canAdd || mustFill) {
+    if ((canAddSource && canAddArxiv) || mustFill) {
       selected.push({
         ...article,
         relevance,
       });
       sourceCounts.set(article.source, currentCount + 1);
+      if (isArxivArticle) {
+        arxivCount++;
+      }
     }
   }
   

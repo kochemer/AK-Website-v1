@@ -7,6 +7,8 @@ const nextConfig: NextConfig = {
   ...(process.env.NODE_ENV === 'development' && {
     // Development-specific config
   }),
+  // Add empty turbopack config to silence warning when using --webpack flag
+  turbopack: {},
 };
 
 // Apply PWA wrapper - it will be disabled in development via the disable flag

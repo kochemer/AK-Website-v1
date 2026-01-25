@@ -382,7 +382,8 @@ E) RECENCY
 
 CONSTRAINTS:
 - Select exactly ${targetCount} article${targetCount > 1 ? 's' : ''} (or fewer if fewer eligible candidates)
-- Max 2 articles per source (enforce source diversity)
+- Max 3 articles per source (enforce source diversity - no more than 3 articles from any single source in the top 7)
+${category === 'AI_and_Strategy' ? '- SPECIAL RULE FOR AI CATEGORY: Maximum 1 article from Arxiv (any Arxiv source: "arXiv - AI", "arXiv - Machine Learning", "arXiv - Computation and Language", etc.) in the top 7. Arxiv articles are academic papers and should be limited to maintain diversity.' : ''}
 - Avoid duplicates/near-duplicates of the same story/topic
 - Never select duplicates (check URLs if provided)
 
@@ -937,6 +938,64 @@ export async function rerankArticles<T extends Article & { snippet?: string }>(
   
   // Extract re-ranked articles
   selected = articlesWithScores.map(item => item.article);
+
+  // Enforce source diversity: max 3 articles per source in top 7
+  // Special rule for AI category: max 1 Arxiv article total
+  const MAX_PER_SOURCE = 3;
+  const MAX_ARXIV_AI = category === 'AI_and_Strategy' ? 1 : Infinity; // Max 1 Arxiv article for AI category
+  const sourceCounts = new Map<string, number>();
+  let arxivCount = 0; // Track total Arxiv articles for AI category
+  const finalSelected: T[] = [];
+  const skipped: T[] = [];
+  
+  // Helper to check if source is Arxiv
+  const isArxiv = (source: string): boolean => {
+    return source.toLowerCase().includes('arxiv');
+  };
+  
+  for (const article of selected) {
+    const currentCount = sourceCounts.get(article.source) || 0;
+    const isArxivArticle = isArxiv(article.source);
+    
+    // Check if we can add this article
+    const canAddSource = currentCount < MAX_PER_SOURCE;
+    const canAddArxiv = !isArxivArticle || arxivCount < MAX_ARXIV_AI;
+    
+    if (canAddSource && canAddArxiv) {
+      finalSelected.push(article);
+      sourceCounts.set(article.source, currentCount + 1);
+      if (isArxivArticle) {
+        arxivCount++;
+      }
+    } else {
+      skipped.push(article);
+    }
+  }
+  
+  // If we have fewer than 7 after enforcing diversity, try to fill from skipped articles
+  // but only if we can maintain diversity (don't add more from sources that already have 3)
+  // and respect Arxiv limit for AI category
+  const targetCount = Math.min(7, candidates.length);
+  if (finalSelected.length < targetCount && skipped.length > 0) {
+    // Try to add articles from sources that haven't hit the limit yet
+    for (const article of skipped) {
+      if (finalSelected.length >= targetCount) break;
+      const currentCount = sourceCounts.get(article.source) || 0;
+      const isArxivArticle = isArxiv(article.source);
+      const canAddSource = currentCount < MAX_PER_SOURCE;
+      const canAddArxiv = !isArxivArticle || arxivCount < MAX_ARXIV_AI;
+      
+      if (canAddSource && canAddArxiv) {
+        finalSelected.push(article);
+        sourceCounts.set(article.source, currentCount + 1);
+        if (isArxivArticle) {
+          arxivCount++;
+        }
+      }
+    }
+  }
+  
+  selected = finalSelected;
 
   const explainability = llmResponse.selected
     .sort((a, b) => a.rank - b.rank)
