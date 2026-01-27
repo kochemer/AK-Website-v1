@@ -483,15 +483,49 @@ export async function selectTopArticles(
   topN: number,
   weekLabel: string,
   discoveryDir: string
-): Promise<SelectedArticle[]> {
+): Promise<{ selected: SelectedArticle[]; reportsByTopic: Record<Topic, SelectionReport> }> {
   const selectedPath = path.join(discoveryDir, 'selected-top20.json');
   const reportPath = path.join(discoveryDir, 'report.json');
   
   // Check if already selected
   try {
-    const existing = JSON.parse(await fs.readFile(selectedPath, 'utf-8'));
+    const existingSelected = JSON.parse(await fs.readFile(selectedPath, 'utf-8'));
     console.log(`[Select] Using cached selection from ${selectedPath}`);
-    return existing;
+    
+    // For cached results, return empty reportsByTopic structure
+    // The reports are saved separately and can be loaded if needed
+    const reportsByTopic: Record<Topic, SelectionReport> = {
+      "AI_and_Strategy": {
+        candidate_count: 0,
+        ranked_top_k_count: 0,
+        selected_count: 0,
+        exclusion_counts: { domainCap: 0, duplicate: 0, hardControversy: 0, sponsored: 0 },
+        fallback_used: { domainCapRelaxed: false }
+      },
+      "Ecommerce_Retail_Tech": {
+        candidate_count: 0,
+        ranked_top_k_count: 0,
+        selected_count: 0,
+        exclusion_counts: { domainCap: 0, duplicate: 0, hardControversy: 0, sponsored: 0 },
+        fallback_used: { domainCapRelaxed: false }
+      },
+      "Luxury_and_Consumer": {
+        candidate_count: 0,
+        ranked_top_k_count: 0,
+        selected_count: 0,
+        exclusion_counts: { domainCap: 0, duplicate: 0, hardControversy: 0, sponsored: 0 },
+        fallback_used: { domainCapRelaxed: false }
+      },
+      "Jewellery_Industry": {
+        candidate_count: 0,
+        ranked_top_k_count: 0,
+        selected_count: 0,
+        exclusion_counts: { domainCap: 0, duplicate: 0, hardControversy: 0, sponsored: 0 },
+        fallback_used: { domainCapRelaxed: false }
+      }
+    };
+    
+    return { selected: existingSelected, reportsByTopic };
   } catch {
     // Continue to select
   }
@@ -521,14 +555,43 @@ export async function selectTopArticles(
 
   // Select top N per topic
   const allSelected: SelectedArticle[] = [];
-  const allReports: SelectionReport[] = [];
+  const reportsByTopic: Record<Topic, SelectionReport> = {
+    "AI_and_Strategy": {
+      candidate_count: 0,
+      ranked_top_k_count: 0,
+      selected_count: 0,
+      exclusion_counts: { domainCap: 0, duplicate: 0, hardControversy: 0, sponsored: 0 },
+      fallback_used: { domainCapRelaxed: false }
+    },
+    "Ecommerce_Retail_Tech": {
+      candidate_count: 0,
+      ranked_top_k_count: 0,
+      selected_count: 0,
+      exclusion_counts: { domainCap: 0, duplicate: 0, hardControversy: 0, sponsored: 0 },
+      fallback_used: { domainCapRelaxed: false }
+    },
+    "Luxury_and_Consumer": {
+      candidate_count: 0,
+      ranked_top_k_count: 0,
+      selected_count: 0,
+      exclusion_counts: { domainCap: 0, duplicate: 0, hardControversy: 0, sponsored: 0 },
+      fallback_used: { domainCapRelaxed: false }
+    },
+    "Jewellery_Industry": {
+      candidate_count: 0,
+      ranked_top_k_count: 0,
+      selected_count: 0,
+      exclusion_counts: { domainCap: 0, duplicate: 0, hardControversy: 0, sponsored: 0 },
+      fallback_used: { domainCapRelaxed: false }
+    }
+  };
   
   for (const [topic, topicArticles] of Object.entries(byTopic)) {
     if (topicArticles.length === 0) continue;
     
     const { selected, report } = await selectArticlesForTopic(topicArticles, topic as Topic, topN, weekLabel);
     allSelected.push(...selected);
-    allReports.push(report);
+    reportsByTopic[topic as Topic] = report;
   }
 
   // Sort by rank and category
@@ -540,6 +603,7 @@ export async function selectTopArticles(
   });
 
   // Aggregate report
+  const allReports = Object.values(reportsByTopic);
   const aggregatedReport: SelectionReport = {
     candidate_count: allReports.reduce((sum, r) => sum + r.candidate_count, 0),
     ranked_top_k_count: allReports.reduce((sum, r) => sum + r.ranked_top_k_count, 0),
@@ -575,5 +639,5 @@ export async function selectTopArticles(
   }
   console.log(`\nReport saved to: ${reportPath}`);
 
-  return allSelected;
+  return { selected: allSelected, reportsByTopic };
 }
