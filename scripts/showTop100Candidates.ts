@@ -5,7 +5,6 @@ import { DateTime } from 'luxon';
 import { getWeekRangeCET } from '../utils/weekCET';
 import { classifyTopic } from '../classification/classifyTopics';
 import type { Article as BaseArticle, Topic } from '../classification/classifyTopics';
-import { calculateRelevanceScore } from '../digest/buildWeeklyDigest';
 
 // Extended Article type
 type Article = BaseArticle & {
