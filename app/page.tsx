@@ -8,7 +8,7 @@ import DigestClientView from './components/DigestClientView';
 import TopNSelector from './components/TopNSelector';
 import { TopicKey } from '../utils/topicNames';
 import { formatDate, formatDateRange, formatDateTime } from '../utils/formatDate';
-import { getCurrentDigestWeek } from '../utils/getCurrentDigestWeek';
+import { getCurrentDigestWeek, getPreviousWeek } from '../utils/getCurrentDigestWeek';
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://luxury-intelligence.vercel.app";
 
