@@ -108,6 +108,48 @@ function parseArgs(): { weekLabel: string; variant: Variant } {
 }
 
 /**
+ * Extract homepage top articles from current digest
+ * Homepage shows: top 1-2 from Ecommerce_Retail_Tech and top 1-2 from Jewellery_Industry
+ */
+function extractHomepageTopArticles(digest: any): Array<{
+  title: string;
+  source?: string;
+  snippet?: string;
+  aiSummary?: string;
+  rerankWhy?: string;
+}> {
+  const homepageArticles: Array<{
+    title: string;
+    source?: string;
+    snippet?: string;
+    aiSummary?: string;
+    rerankWhy?: string;
+  }> = [];
+  
+  // Top 1-2 from Ecommerce_Retail_Tech
+  const ecommerceTop = digest.topics?.Ecommerce_Retail_Tech?.top || [];
+  homepageArticles.push(...ecommerceTop.slice(0, 2).map((article: any) => ({
+    title: article.title,
+    source: article.source,
+    snippet: article.snippet,
+    aiSummary: article.aiSummary,
+    rerankWhy: article.rerankWhy,
+  })));
+  
+  // Top 1-2 from Jewellery_Industry
+  const jewelleryTop = digest.topics?.Jewellery_Industry?.top || [];
+  homepageArticles.push(...jewelleryTop.slice(0, 2).map((article: any) => ({
+    title: article.title,
+    source: article.source,
+    snippet: article.snippet,
+    aiSummary: article.aiSummary,
+    rerankWhy: article.rerankWhy,
+  })));
+  
+  return homepageArticles;
+}
+
+/**
  * Main function
  */
 async function main() {
@@ -117,29 +159,37 @@ async function main() {
   console.log(`  Variant: ${variant}`);
   console.log('');
   
-  // Load cover input artifact
-  const coverInputPath = path.join(__dirname, '../data/weeks', weekLabel, 'cover-input.json');
-  
-  let coverInput: CoverInput;
+  // Load CURRENT digest to get up-to-date homepage articles
+  const digestPath = path.join(__dirname, '../data/digests', `${weekLabel}.json`);
+  let digest: any;
   try {
-    const content = await fs.readFile(coverInputPath, 'utf-8');
-    coverInput = JSON.parse(content);
+    const digestContent = await fs.readFile(digestPath, 'utf-8');
+    digest = JSON.parse(digestContent);
   } catch (error) {
-    console.error(`Error: Could not load cover input from ${coverInputPath}`);
+    console.error(`Error: Could not load digest from ${digestPath}`);
     console.error(`Make sure you've run buildWeeklyDigest for week ${weekLabel} first.`);
     process.exit(1);
   }
   
-  console.log(`Loaded cover input for ${coverInput.weekLabel}`);
-  console.log(`  Articles: ${coverInput.homepageTopArticles.map(a => a.title).join(', ')}`);
+  // Extract homepage top articles from CURRENT digest
+  const homepageTopArticles = extractHomepageTopArticles(digest);
+  
+  if (homepageTopArticles.length === 0) {
+    console.error(`Error: No homepage articles found in digest for week ${weekLabel}`);
+    console.error(`Make sure the digest has top articles in Ecommerce_Retail_Tech and Jewellery_Industry.`);
+    process.exit(1);
+  }
+  
+  console.log(`Loaded CURRENT digest for ${weekLabel}`);
+  console.log(`  Homepage articles: ${homepageTopArticles.map(a => a.title).join(', ')}`);
   console.log('');
 
-  // Use the new 2-step pipeline
+  // Use the new 2-step pipeline with CURRENT homepage articles
   const coverResult = await generateWeeklyCoverImage(
     weekLabel,
-    coverInput.homepageTopArticles,
+    homepageTopArticles,
     true, // regenCover = true
-    coverInput.coverStyle || 'realistic',
+    'realistic', // Always use realistic style
     variant
   );
   

@@ -8,6 +8,7 @@ import DigestClientView from './components/DigestClientView';
 import TopNSelector from './components/TopNSelector';
 import { TopicKey } from '../utils/topicNames';
 import { formatDate, formatDateRange, formatDateTime } from '../utils/formatDate';
+import { getCurrentDigestWeek } from '../utils/getCurrentDigestWeek';
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://luxury-intelligence.vercel.app";
 
@@ -75,15 +76,6 @@ function getCurrentWeek(): string {
   const weekNumber = now.weekNumber;
   return `${year}-W${weekNumber.toString().padStart(2, '0')}`;
 }
-
-function getPreviousWeek(): string {
-  const now = DateTime.now().setZone('Europe/Copenhagen');
-  const previousWeek = now.minus({ weeks: 1 });
-  const year = previousWeek.year;
-  const weekNumber = previousWeek.weekNumber;
-  return `${year}-W${weekNumber.toString().padStart(2, '0')}`;
-}
-
 
 async function loadDigest(weekLabel: string): Promise<WeeklyDigest | null> {
   try {
@@ -179,8 +171,8 @@ const CATEGORY_CARDS: Array<{
 
 
 export default async function Home() {
-  // Show week 4 (2026-W04) - update this to getPreviousWeek() or getLatestAvailableDigest() for production
-  const weekLabel = '2026-W04';
+  // Use shared utility to get current digest week (synchronized with email digest page)
+  const weekLabel = getCurrentDigestWeek();
   const digest = await loadDigest(weekLabel);
   const podcast = await loadPodcastForWeek(weekLabel);
 
@@ -201,8 +193,7 @@ export default async function Home() {
             <img
               src={digest.coverImageUrl}
               alt={digest.coverImageAlt || `Weekly digest cover for ${digest?.weekLabel || 'current week'}`}
-              className="absolute inset-0 w-full h-full object-cover"
-              style={{ objectFit: 'cover' }}
+              className="absolute inset-0 w-full h-full object-cover md:object-contain"
             />
           ) : (
             <div 

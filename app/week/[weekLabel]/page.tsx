@@ -340,8 +340,7 @@ export default async function WeekPage({
               <img
                 src={digest.coverImageUrl}
                 alt={digest.coverImageAlt || `Weekly digest cover for ${digest.weekLabel}`}
-                className="absolute inset-0 w-full h-full object-cover"
-                style={{ objectFit: 'cover' }}
+                className="absolute inset-0 w-full h-full object-cover md:object-contain"
               />
             ) : (
               <div 

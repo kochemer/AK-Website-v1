@@ -1,0 +1,99 @@
+{
+  "week": "2026-W04",
+  "generatedAt": "2026-01-26T21:17:13.173Z",
+  "intro": "In this week's intelligence digest, we explore key developments shaping the retail and luxury sectors, with a focus on digital commerce and AI integration. Highlights include Fastenal's commitment to enhancing its online presence, Burberry's impressive holiday sales in China, and insights from Shopify's president on the future of AI in shopping. Additionally, we examine the implications of China's AI advancements on data security and democratic values, alongside emerging trends in e-commerce that impact consumer behavior and returns.",
+  "readOneThing": {
+    "title": "Why Fastenal is maintaining focus on digital commerce",
+    "url": "https://www.digitalcommerce360.com/2026/01/21/fastenal-digital-commerce-q4-2025/"
+  },
+  "items": [
+    {
+      "rank": 1,
+      "title": "Why Fastenal is maintaining focus on digital commerce",
+      "url": "https://www.digitalcommerce360.com/2026/01/21/fastenal-digital-commerce-q4-2025/",
+      "source": "Digital Commerce 360",
+      "bullets": [
+        "Fastenal's digital sales accounted for two-thirds of its fourth-quarter revenue, indicating strong online growth.",
+        "The company is utilizing ecommerce and inventory systems to enhance operational efficiency and customer service.",
+        "Retailers should consider investing in digital infrastructure to capture similar growth opportunities in their sectors."
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "GN Diamond Says 2025 Lab-Grown and Natural Diamond Sales Were Virtually Tied",
+      "url": "https://instoremag.com/gn-diamond-says-2025-lab-grown-and-natural-diamond-sales-were-virtually-tied/",
+      "source": "Instore Magazine",
+      "bullets": [
+        "GN Diamond's 2025 sales figures show lab-grown and natural diamonds reached parity.",
+        "Natural diamond sales surged during the holiday season, outperforming previous years.",
+        "Retailers must adapt strategies to accommodate shifting consumer preferences between diamond types."
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "Five Ways People Are Using Claude Code",
+      "url": "https://www.nytimes.com/2026/01/23/technology/claude-code.html",
+      "source": "NYTimes Technology",
+      "bullets": [
+        "Claude Code allows users to generate software without coding expertise, democratizing app development.",
+        "Businesses can leverage AI-generated code to accelerate project timelines and reduce development costs.",
+        "Retailers can enhance customer experiences by quickly deploying tailored applications using AI-driven coding tools."
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "Burberry Beats Holiday Sales Expectations, Attracts More Shoppers in China",
+      "url": "https://www.businessoffashion.com/news/luxury/burberry-beats-holiday-sales-expectations-attracts-more-shoppers-in-china/",
+      "source": "Business of Fashion - News",
+      "bullets": [
+        "Burberry exceeded holiday sales forecasts by targeting Gen-Z shoppers in China.",
+        "The brand's effective marketing strategy attracted a younger demographic during the holiday season.",
+        "Retailers should leverage targeted marketing to engage emerging consumer segments effectively."
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "Marketplace Briefing: Shopify President Harley Finkelstein on why AI shopping ‘can’t just scrape information’ ",
+      "url": "https://www.modernretail.co/technology/marketplace-briefing-shopify-president-harley-finkelstein-on-why-ai-shopping-cant-just-scrape-information/?utm_campaign=modernretaildis&utm_medium=rss&utm_source=general-rss",
+      "source": "Modern Retail",
+      "bullets": [
+        "Shopify reports a 14x increase in orders from AI agents over the past year.",
+        "Harley Finkelstein emphasizes the need for AI shopping to provide more than just scraped information.",
+        "Retailers must innovate AI strategies to enhance customer experience and drive sales growth."
+      ]
+    },
+    {
+      "rank": 6,
+      "title": "China's AI push raises concerns for democracies over data security, rights ",
+      "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/chinas-ai-push-raises-concerns-for-democracies-over-data-security-rights/articleshow/127307780.cms",
+      "source": "Economic Times - Technology",
+      "bullets": [
+        "Democratic nations consider banning Chinese AI platforms to protect data security and human rights.",
+        "Global regulations are proposed to mitigate risks from Beijing-backed technologies affecting governance.",
+        "Retail and AI strategists must adapt to evolving regulations impacting technology partnerships and data usage."
+      ]
+    },
+    {
+      "rank": 7,
+      "title": "Asian jewellery retail giant announces plans for Australian expansion",
+      "url": "https://www.jewellermagazine.com/Article/14703/Asian-jewellery-retail-giant-announces-plans-for-Australian-expansion",
+      "source": "Jeweller - Business News",
+      "bullets": [
+        "Chow Tai Fook Jewellery Group plans to launch its first Australian store this year.",
+        "The expansion marks a significant entry into the competitive Australian jewellery market.",
+        "Retailers should assess local consumer preferences to effectively compete with established brands."
+      ]
+    },
+    {
+      "rank": 8,
+      "title": "Ecommerce Trends: Why AI choices, charges and friction all matter for returns",
+      "url": "https://www.digitalcommerce360.com/2026/01/22/ecommerce-trends-returns-charges-ai/",
+      "source": "Digital Commerce 360",
+      "bullets": [
+        "FedEx and Morning Consult's survey reveals changing consumer and merchant attitudes towards ecommerce returns.",
+        "AI technology and associated costs are increasingly influencing return processes in the ecommerce landscape.",
+        "Retailers must adapt strategies to minimize friction and optimize AI use for improved return experiences."
+      ]
+    }
+  ]
+}

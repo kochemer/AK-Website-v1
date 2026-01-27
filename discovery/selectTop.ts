@@ -4,11 +4,6 @@ import { fileURLToPath } from 'url';
 import OpenAI from 'openai';
 import type { ExtractedArticle } from './fetchExtract';
 import type { Topic } from '../classification/classifyTopics';
-import { getAllCompanyNames, getCompanyTier } from '../config/jewelleryCompanies';
-import { computeCommerceMateriality } from '../scoring/commerceMateriality';
-
-// Commerce Materiality weights
-const COMMERCE_MATERIALITY_WEIGHT_ECOM = parseFloat(process.env.COMMERCE_MATERIALITY_WEIGHT_ECOM || '1.5');
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -17,13 +12,6 @@ const SELECTION_MODEL = process.env.SELECTION_MODEL || 'gpt-4o';
 const TEMPERATURE = 0.3;
 const TOP_K = 40; // Number of items to rank in LLM phase
 const MAX_CANDIDATES = 100; // Max candidates to send to LLM
-const MAX_PAYWALLED_PER_CATEGORY = parseInt(process.env.MAX_PAYWALLED_PER_CATEGORY || '1', 10); // Max paywalled articles per category
-
-// Company boost configuration (Jewellery Industry only)
-const COMPANY_TITLE_BOOST = parseInt(process.env.COMPANY_TITLE_BOOST || '6', 10);
-const COMPANY_TEXT_BOOST = parseInt(process.env.COMPANY_TEXT_BOOST || '4', 10);
-const COMPANY_SNIPPET_BOOST = parseInt(process.env.COMPANY_SNIPPET_BOOST || '2', 10);
-const MAX_COMPANY_BOOST = parseInt(process.env.MAX_COMPANY_BOOST || '10', 10);
 
 function getOpenAIApiKey(): string {
   const key = process.env.OPENAI_API_KEY;
@@ -39,18 +27,10 @@ export type SelectedArticle = {
   snippet: string;
   domain: string;
   publishedDate?: string;
-  publishedDateInvalid?: boolean;
-  discoveredAt?: string;
   rank: number;
   why: string;
   confidence: number;
   category: Topic;
-  paywallStatus?: 'not_paywalled' | 'likely_paywalled' | 'unknown';
-  paywallReason?: string;
-  matchedCompanies?: string[]; // Company names found in article
-  companyBoostScore?: number; // Total company boost applied
-  commerceMaterialityScore?: number; // Commerce materiality score (0-10)
-  commerceMaterialitySignals?: string[]; // Matched signals
 };
 
 type RankedItem = {
@@ -79,12 +59,6 @@ type SelectionReport = {
   };
   fallback_used: {
     domainCapRelaxed: boolean;
-  };
-  paywall_stats?: {
-    selected_paywalled: number;
-    selected_not_paywalled: number;
-    selected_unknown: number;
-    paywalled_percentage: number;
   };
 };
 
@@ -177,76 +151,6 @@ function getTopicDefinition(topic: Topic): string {
 }
 
 /**
- * Detect jewellery company mentions in an article
- * Returns matched companies and boost score
- */
-function detectJewelleryCompanies(article: ExtractedArticle): {
-  matchedCompanies: string[];
-  matchedCompanyTiers: string[];
-  companyBoostScore: number;
-} {
-  const matchedCompanies: string[] = [];
-  const matchedCompanyTiers: string[] = [];
-  let boostScore = 0;
-  
-  const companyNames = getAllCompanyNames();
-  const lowerTitle = article.title.toLowerCase();
-  const lowerText = article.extractedText.toLowerCase();
-  const lowerSnippet = (article.snippet || '').toLowerCase();
-  
-  // Check each company name
-  for (const companyName of companyNames) {
-    const lowerCompany = companyName.toLowerCase();
-    let found = false;
-    let foundInTitle = false;
-    let foundInText = false;
-    let foundInSnippet = false;
-    
-    // Check title (highest weight)
-    if (lowerTitle.includes(lowerCompany)) {
-      found = true;
-      foundInTitle = true;
-      boostScore += COMPANY_TITLE_BOOST;
-    }
-    
-    // Check full text
-    if (lowerText.includes(lowerCompany)) {
-      found = true;
-      foundInText = true;
-      if (!foundInTitle) {
-        boostScore += COMPANY_TEXT_BOOST;
-      }
-    }
-    
-    // Check snippet/summary
-    if (lowerSnippet.includes(lowerCompany)) {
-      found = true;
-      foundInSnippet = true;
-      if (!foundInTitle && !foundInText) {
-        boostScore += COMPANY_SNIPPET_BOOST;
-      }
-    }
-    
-    if (found) {
-      matchedCompanies.push(companyName);
-      const tier = getCompanyTier(companyName);
-      if (tier && !matchedCompanyTiers.includes(tier)) {
-        matchedCompanyTiers.push(tier);
-      }
-    }
-  }
-  
-  // Cap total boost
-  boostScore = Math.min(boostScore, MAX_COMPANY_BOOST);
-  
-  return {
-    matchedCompanies,
-    matchedCompanyTiers,
-    companyBoostScore: boostScore
-  };
-}
-
-/**
  * PHASE A: LLM RANKING PHASE
  * Ranks candidates without hard exclusions (except obvious sponsored content)
  * Returns TOP_K ranked items with controversy risk labels
@@ -255,53 +159,19 @@ async function rankArticlesForTopic(
   articles: ExtractedArticle[],
   topic: Topic,
   weekLabel: string
-): Promise<{ ranked: RankedItem[]; companyDataMap?: Map<string, { matchedCompanies: string[]; companyBoostScore: number }>; materialityMap?: Map<string, { score: number; signals: string[] }> }> {
-  if (articles.length === 0) return { ranked: [] };
+): Promise<RankedItem[]> {
+  if (articles.length === 0) return [];
 
   // Filter out only obvious sponsored/press-release content deterministically
   const filtered = articles.filter(article => !isSponsored(article));
   
   if (filtered.length === 0) {
     console.warn(`[Rank] No non-sponsored articles for ${topic}`);
-    return { ranked: [] };
+    return [];
   }
 
   // Limit to reasonable batch size for LLM
   const candidates = filtered.slice(0, MAX_CANDIDATES);
-  
-  // Detect company mentions for Jewellery Industry
-  const isJewelleryTopic = topic === 'Jewellery_Industry';
-  const companyDataMap = new Map<string, { matchedCompanies: string[]; companyBoostScore: number }>();
-  
-  if (isJewelleryTopic) {
-    for (const article of candidates) {
-      const companyData = detectJewelleryCompanies(article);
-      companyDataMap.set(article.url, {
-        matchedCompanies: companyData.matchedCompanies,
-        companyBoostScore: companyData.companyBoostScore
-      });
-    }
-  }
-  
-  // Compute commerce materiality for Ecommerce category
-  const isEcommerceTopic = topic === 'Ecommerce_Retail_Tech';
-  const materialityMap = new Map<string, { score: number; signals: string[] }>();
-  
-  if (isEcommerceTopic) {
-    for (const article of candidates) {
-      const materiality = computeCommerceMateriality({
-        title: article.title,
-        source: article.domain,
-        snippet: article.snippet,
-        aiSummary: undefined, // Not available at this stage
-        fullText: article.extractedText
-      });
-      materialityMap.set(article.url, {
-        score: materiality.score,
-        signals: materiality.signals
-      });
-    }
-  }
   
   // Build candidate list for LLM with 400-600 char excerpts
   const candidateList = candidates.map((article, idx) => {
@@ -311,9 +181,6 @@ async function rankArticlesForTopic(
       ? article.extractedText.substring(0, 400)
       : excerpt;
     
-    const companyData = companyDataMap.get(article.url);
-    const materiality = materialityMap.get(article.url);
-    
     return {
       index: idx + 1,
       url: article.url,
@@ -321,17 +188,7 @@ async function rankArticlesForTopic(
       domain: article.domain,
       date: article.publishedDate || 'unknown',
       snippet: article.snippet,
-      excerpt: finalExcerpt,
-      paywallStatus: article.paywallStatus || 'unknown',
-      paywallReason: article.paywallReason,
-      ...(isJewelleryTopic && companyData ? {
-        matchedCompanies: companyData.matchedCompanies,
-        companyBoostScore: companyData.companyBoostScore
-      } : {}),
-      ...(isEcommerceTopic && materiality ? {
-        commerceMaterialityScore: materiality.score,
-        commerceMaterialitySignals: materiality.signals
-      } : {})
+      excerpt: finalExcerpt
     };
   });
 
@@ -344,31 +201,16 @@ Always return exactly the requested number of ranked items unless fewer candidat
 Do not be overly conservative; prefer ranking lower rather than excluding articles.
 Return valid JSON only.`;
 
-  // Build base ranking criteria
-  let rankingCriteria = `- Relevance to ${topic}
-- Recency (prefer articles from the last 7 days)
-- Quality and depth of content
-- Business/industry significance
-- Insight value (new information, trends, strategic implications)
-- Source quality: If relevance is similar, prefer articles from high-quality consultancy sources (McKinsey, Bain, BCG) as they typically provide strategic insights
-- Paywall status: Prefer articles that are NOT paywalled. If two articles are similarly relevant, choose the non-paywalled one. Articles marked as "likely_paywalled" may have limited full-text access, which reduces their value for podcast generation and detailed analysis.`;
-
-  // Add company boost guidance for Jewellery Industry
-  if (isJewelleryTopic) {
-    rankingCriteria += `\n- Company coverage: Articles mentioning major jewellery companies (shown in "matchedCompanies" field) may be more material for industry readers. If two articles are similarly relevant and newsworthy, prefer the one that mentions major jewellery companies. However, do NOT prioritize product launch fluff or store opening announcements with no strategic signal.`;
-  }
-  
-  // Add commerce materiality guidance for Ecommerce category
-  if (isEcommerceTopic) {
-    rankingCriteria += `\n- Commerce materiality: Prefer articles with high commerce materiality (real execution impact: platform capabilities, checkout/cart changes, retailer adoption, monetization changes). Articles with high "commerceMaterialityScore" indicate real-world commerce execution impact rather than commentary/discourse. When relevance is similar, prioritize high materiality articles.`;
-  }
-
   const userPrompt = `Rank the top ${targetK} most relevant articles for a weekly digest about ${topic}.
 
 Topic focus: ${topicDef}
 
 This is a RANKING task, not a strict filtering task. Rank articles by:
-${rankingCriteria}
+- Relevance to ${topic}
+- Recency (prefer articles from the last 7 days)
+- Quality and depth of content
+- Business/industry significance
+- Insight value (new information, trends, strategic implications)
 
 IMPORTANT: Return exactly ${targetK} ranked items unless fewer than ${targetK} candidates exist.
 
@@ -423,49 +265,10 @@ Return exactly ${targetK} items in the ranked array, ordered by rank (1 = best).
     // Sort by rank to ensure proper order
     output.ranked.sort((a, b) => a.rank - b.rank);
     
-    // Apply commerce materiality boost for Ecommerce category
-    if (isEcommerceTopic) {
-      // Create a map of URL to materiality score
-      const materialityScores = new Map<string, number>();
-      for (const article of candidates) {
-        const materiality = materialityMap.get(article.url);
-        if (materiality) {
-          materialityScores.set(article.url, materiality.score);
-        }
-      }
-      
-      // Adjust ranks based on materiality (higher materiality = better rank)
-      // We'll adjust the rank by subtracting materiality boost (so lower rank number = better)
-      for (const item of output.ranked) {
-        const materialityScore = materialityScores.get(item.url) || 0;
-        const boost = materialityScore * COMMERCE_MATERIALITY_WEIGHT_ECOM;
-        // Adjust rank: subtract boost (lower rank = better, so we subtract)
-        // But we need to be careful not to go below 1
-        item.rank = Math.max(1, item.rank - boost);
-      }
-      
-      // Re-sort after adjustment
-      output.ranked.sort((a, b) => a.rank - b.rank);
-      
-      // Re-assign sequential ranks
-      output.ranked.forEach((item, idx) => {
-        item.rank = idx + 1;
-      });
-    }
-    
-    return { 
-      ranked: output.ranked, 
-      companyDataMap: isJewelleryTopic ? companyDataMap : undefined,
-      materialityMap: isEcommerceTopic ? materialityMap : undefined
-    };
+    return output.ranked;
   } catch (error: any) {
     console.error(`[Rank] Error ranking articles for ${topic}:`, error.message);
-    // Return empty result with undefined maps on error
-    return { 
-      ranked: [], 
-      companyDataMap: undefined,
-      materialityMap: undefined
-    };
+    throw error;
   }
 }
 
@@ -477,9 +280,7 @@ function selectFromRanked(
   ranked: RankedItem[],
   candidates: ExtractedArticle[],
   topic: Topic,
-  selectTop: number,
-  companyDataMap?: Map<string, { matchedCompanies: string[]; companyBoostScore: number }>,
-  materialityMap?: Map<string, { score: number; signals: string[] }>
+  selectTop: number
 ): { selected: SelectedArticle[]; report: SelectionReport } {
   const report: SelectionReport = {
     candidate_count: candidates.length,
@@ -537,10 +338,6 @@ function selectFromRanked(
       continue;
     }
 
-    // Get company data if available
-    const companyData = companyDataMap?.get(candidate.url);
-    const materiality = materialityMap?.get(candidate.url);
-    
     // Add to selected
     selected.push({
       url: candidate.url,
@@ -548,24 +345,11 @@ function selectFromRanked(
       snippet: candidate.snippet,
       domain: candidate.domain,
       publishedDate: candidate.publishedDate,
-      publishedDateInvalid: candidate.publishedDateInvalid,
-      discoveredAt: candidate.discoveredAt,
       rank: item.rank,
       why: item.why,
       confidence: item.confidence,
-      category: topic,
-      sourceType: candidate.sourceType, // Preserve sourceType
-      paywallStatus: candidate.paywallStatus,
-      paywallReason: candidate.paywallReason,
-      ...(companyData ? {
-        matchedCompanies: companyData.matchedCompanies,
-        companyBoostScore: companyData.companyBoostScore
-      } : {}),
-      ...(materiality ? {
-        commerceMaterialityScore: materiality.score,
-        commerceMaterialitySignals: materiality.signals
-      } : {})
-    } as SelectedArticle & { sourceType?: string });
+      category: topic
+    });
 
     domainCounts.set(domain, currentCount + 1);
     selectedTitles.push(candidate.title);
@@ -604,9 +388,6 @@ function selectFromRanked(
       const currentCount = domainCounts.get(domain) || 0;
       if (currentCount >= domainCap) continue;
 
-      // Get company data if available
-      const companyData = companyDataMap?.get(candidate.url);
-      
       // Add to selected
       selected.push({
         url: candidate.url,
@@ -614,125 +395,18 @@ function selectFromRanked(
         snippet: candidate.snippet,
         domain: candidate.domain,
         publishedDate: candidate.publishedDate,
-        publishedDateInvalid: candidate.publishedDateInvalid,
-        discoveredAt: candidate.discoveredAt,
         rank: item.rank,
         why: item.why,
         confidence: item.confidence,
-        category: topic,
-        sourceType: candidate.sourceType, // Preserve sourceType
-        paywallStatus: candidate.paywallStatus,
-        paywallReason: candidate.paywallReason,
-        ...(companyData ? {
-          matchedCompanies: companyData.matchedCompanies,
-          companyBoostScore: companyData.companyBoostScore
-        } : {})
-      } as SelectedArticle & { sourceType?: string });
+        category: topic
+      });
 
       domainCounts.set(domain, currentCount + 1);
       selectedTitles.push(candidate.title);
     }
   }
 
-  // Apply paywall cap: if we exceed max paywalled per category, replace lowest-ranked paywalled items
-  const paywalledSelected = selected.filter(s => s.paywallStatus === 'likely_paywalled');
-  if (paywalledSelected.length > MAX_PAYWALLED_PER_CATEGORY) {
-    // Sort paywalled by rank (highest rank = lowest priority)
-    paywalledSelected.sort((a, b) => b.rank - a.rank);
-    const excess = paywalledSelected.slice(MAX_PAYWALLED_PER_CATEGORY);
-    
-    // Remove excess paywalled items
-    for (const excessItem of excess) {
-      const idx = selected.findIndex(s => s.url === excessItem.url);
-      if (idx >= 0) {
-        selected.splice(idx, 1);
-      }
-    }
-    
-    // Try to replace with non-paywalled candidates from ranked list
-    const nonPaywalledCandidates = candidates.filter(c => 
-      c.paywallStatus !== 'likely_paywalled' &&
-      !selected.some(s => s.url === c.url) &&
-      !detectHardControversy(c) &&
-      !isSponsored(c)
-    );
-    
-    // Sort non-paywalled by their rank in the ranked list
-    const rankedMap = new Map(ranked.map(r => [r.url, r.rank]));
-    nonPaywalledCandidates.sort((a, b) => {
-      const rankA = rankedMap.get(a.url) || 999;
-      const rankB = rankedMap.get(b.url) || 999;
-      return rankA - rankB;
-    });
-    
-    // Add replacements up to selectTop
-    for (let i = 0; i < excess.length && selected.length < selectTop && i < nonPaywalledCandidates.length; i++) {
-      const replacement = nonPaywalledCandidates[i];
-      const rankedItem = ranked.find(r => r.url === replacement.url);
-      if (rankedItem) {
-        // Check domain cap
-        const domain = replacement.domain;
-        const currentCount = domainCounts.get(domain) || 0;
-        if (currentCount < domainCap) {
-          // Check duplicates
-          const isDuplicate = selectedTitles.some(selectedTitle => 
-            isNearDuplicate(replacement.title, selectedTitle)
-          );
-          if (!isDuplicate) {
-            // Get company data if available
-            const replacementCompanyData = companyDataMap?.get(replacement.url);
-            const replacementMateriality = materialityMap?.get(replacement.url);
-            
-            selected.push({
-              url: replacement.url,
-              title: replacement.title,
-              snippet: replacement.snippet,
-              domain: replacement.domain,
-              publishedDate: replacement.publishedDate,
-              publishedDateInvalid: replacement.publishedDateInvalid,
-              discoveredAt: replacement.discoveredAt,
-              rank: rankedItem.rank,
-              why: rankedItem.why,
-              confidence: rankedItem.confidence,
-              category: topic,
-              sourceType: replacement.sourceType,
-              paywallStatus: replacement.paywallStatus,
-              paywallReason: replacement.paywallReason,
-              ...(replacementCompanyData ? {
-                matchedCompanies: replacementCompanyData.matchedCompanies,
-                companyBoostScore: replacementCompanyData.companyBoostScore
-              } : {}),
-              ...(replacementMateriality ? {
-                commerceMaterialityScore: replacementMateriality.score,
-                commerceMaterialitySignals: replacementMateriality.signals
-              } : {})
-            } as SelectedArticle & { sourceType?: string });
-            domainCounts.set(domain, currentCount + 1);
-            selectedTitles.push(replacement.title);
-          }
-        }
-      }
-    }
-    
-    if (excess.length > 0) {
-      console.log(`[Select] Applied paywall cap: removed ${excess.length} paywalled articles, added ${selected.length - (selectTop - excess.length)} replacements`);
-    }
-  }
-
-  // Calculate paywall stats
-  const paywalledCount = selected.filter(s => s.paywallStatus === 'likely_paywalled').length;
-  const notPaywalledCount = selected.filter(s => s.paywallStatus === 'not_paywalled').length;
-  const unknownCount = selected.filter(s => !s.paywallStatus || s.paywallStatus === 'unknown').length;
-  const paywalledPercentage = selected.length > 0 ? Math.round((paywalledCount / selected.length) * 100) : 0;
-  
   report.selected_count = selected.length;
-  report.paywall_stats = {
-    selected_paywalled: paywalledCount,
-    selected_not_paywalled: notPaywalledCount,
-    selected_unknown: unknownCount,
-    paywalled_percentage: paywalledPercentage
-  };
-  
   return { selected, report };
 }
 
@@ -758,62 +432,17 @@ async function selectArticlesForTopic(
   try {
     // PHASE A: LLM Ranking
     console.log(`[Rank] Ranking up to ${TOP_K} articles for ${topic} from ${articles.length} candidates...`);
-    const { ranked, companyDataMap, materialityMap } = await rankArticlesForTopic(articles, topic, weekLabel);
+    const ranked = await rankArticlesForTopic(articles, topic, weekLabel);
     console.log(`[Rank] LLM returned ${ranked.length} ranked items`);
 
     // PHASE B: Deterministic Selection
     console.log(`[Select] Applying constraints to select top ${topN} from ${ranked.length} ranked items...`);
-    const { selected, report } = selectFromRanked(ranked, articles, topic, topN, companyDataMap, materialityMap);
+    const { selected, report } = selectFromRanked(ranked, articles, topic, topN);
     
     console.log(`[Select] Selected ${selected.length} articles for ${topic}`);
     console.log(`[Select] Exclusions: domainCap=${report.exclusion_counts.domainCap}, duplicate=${report.exclusion_counts.duplicate}, hardControversy=${report.exclusion_counts.hardControversy}, sponsored=${report.exclusion_counts.sponsored}`);
-    if (report.paywall_stats) {
-      console.log(`[Select] Paywall stats: ${report.paywall_stats.selected_paywalled} paywalled, ${report.paywall_stats.selected_not_paywalled} not paywalled, ${report.paywall_stats.selected_unknown} unknown (${report.paywall_stats.paywalled_percentage}% paywalled)`);
-    }
     if (report.fallback_used.domainCapRelaxed) {
       console.log(`[Select] ⚠️  Domain cap relaxed to 3`);
-    }
-    
-    // Report company coverage for Jewellery Industry
-    if (topic === 'Jewellery_Industry' && selected.length > 0) {
-      const companyArticles = selected.filter(s => s.matchedCompanies && s.matchedCompanies.length > 0);
-      const companyCount = companyArticles.length;
-      console.log(`[Select] Jewellery Top ${topN}: ${companyCount}/${selected.length} articles include Tier-1 company coverage`);
-      if (companyCount > 0) {
-        console.log(`[Select] Company coverage details:`);
-        companyArticles.forEach(article => {
-          console.log(`  - "${article.title}" (${article.matchedCompanies?.join(', ') || 'unknown'}, boost: ${article.companyBoostScore || 0})`);
-        });
-      }
-    }
-    
-    // Report commerce materiality for Ecommerce category
-    if (topic === 'Ecommerce_Retail_Tech' && selected.length > 0) {
-      // Re-compute materiality for selected articles (for reporting)
-      const materialityScores = selected.map(article => {
-        const candidate = articles.find(a => a.url === article.url);
-        if (candidate) {
-          const materiality = computeCommerceMateriality({
-            title: candidate.title,
-            source: candidate.domain,
-            snippet: candidate.snippet,
-            fullText: candidate.extractedText
-          });
-          return { article, materiality };
-        }
-        return null;
-      }).filter(Boolean) as Array<{ article: SelectedArticle; materiality: { score: number; signals: string[] } }>;
-      
-      const avgMateriality = materialityScores.length > 0
-        ? materialityScores.reduce((sum, item) => sum + item.materiality.score, 0) / materialityScores.length
-        : 0;
-      
-      console.log(`[Select] Ecommerce Top ${topN}: Average commerce materiality: ${avgMateriality.toFixed(1)}/10`);
-      console.log(`[Select] Commerce materiality details:`);
-      materialityScores.forEach(({ article, materiality }) => {
-        console.log(`  - [${materiality.score}/10] "${article.title}"`);
-        console.log(`    Signals: ${materiality.signals.join(', ')}`);
-      });
     }
 
     return { selected, report };
@@ -830,16 +459,11 @@ async function selectArticlesForTopic(
         snippet: article.snippet,
         domain: article.domain,
         publishedDate: article.publishedDate,
-        publishedDateInvalid: article.publishedDateInvalid,
-        discoveredAt: article.discoveredAt,
         rank: idx + 1,
         why: 'Selected by fallback (word count)',
         confidence: 0.5,
-        category: topic,
-        sourceType: article.sourceType, // Preserve sourceType
-        paywallStatus: article.paywallStatus,
-        paywallReason: article.paywallReason
-      } as SelectedArticle & { sourceType?: string }));
+        category: topic
+      }));
 
     return {
       selected: fallback,
@@ -854,14 +478,12 @@ async function selectArticlesForTopic(
   }
 }
 
-export type SelectionReportsByTopic = Record<Topic, SelectionReport>;
-
 export async function selectTopArticles(
   articles: ExtractedArticle[],
   topN: number,
   weekLabel: string,
   discoveryDir: string
-): Promise<{ selected: SelectedArticle[]; reportsByTopic: SelectionReportsByTopic; aggregatedReport: SelectionReport }> {
+): Promise<SelectedArticle[]> {
   const selectedPath = path.join(discoveryDir, 'selected-top20.json');
   const reportPath = path.join(discoveryDir, 'report.json');
   
@@ -869,64 +491,7 @@ export async function selectTopArticles(
   try {
     const existing = JSON.parse(await fs.readFile(selectedPath, 'utf-8'));
     console.log(`[Select] Using cached selection from ${selectedPath}`);
-    try {
-      const report = JSON.parse(await fs.readFile(reportPath, 'utf-8'));
-      if (report && report.by_topic && report.aggregated) {
-        return {
-          selected: existing,
-          reportsByTopic: report.by_topic,
-          aggregatedReport: report.aggregated
-        };
-      }
-    } catch {
-      // Ignore and fall through
-    }
-    const emptyReports: SelectionReportsByTopic = {
-      "AI_and_Strategy": {
-        candidate_count: 0,
-        ranked_top_k_count: 0,
-        selected_count: 0,
-        exclusion_counts: { domainCap: 0, duplicate: 0, hardControversy: 0, sponsored: 0 },
-        fallback_used: { domainCapRelaxed: false }
-      },
-      "Ecommerce_Retail_Tech": {
-        candidate_count: 0,
-        ranked_top_k_count: 0,
-        selected_count: 0,
-        exclusion_counts: { domainCap: 0, duplicate: 0, hardControversy: 0, sponsored: 0 },
-        fallback_used: { domainCapRelaxed: false }
-      },
-      "Luxury_and_Consumer": {
-        candidate_count: 0,
-        ranked_top_k_count: 0,
-        selected_count: 0,
-        exclusion_counts: { domainCap: 0, duplicate: 0, hardControversy: 0, sponsored: 0 },
-        fallback_used: { domainCapRelaxed: false }
-      },
-      "Jewellery_Industry": {
-        candidate_count: 0,
-        ranked_top_k_count: 0,
-        selected_count: 0,
-        exclusion_counts: { domainCap: 0, duplicate: 0, hardControversy: 0, sponsored: 0 },
-        fallback_used: { domainCapRelaxed: false }
-      }
-    };
-    if (Array.isArray(existing)) {
-      for (const item of existing) {
-        const topic = item.category as Topic | undefined;
-        if (topic && emptyReports[topic]) {
-          emptyReports[topic].selected_count += 1;
-        }
-      }
-    }
-    const aggregatedReport: SelectionReport = {
-      candidate_count: 0,
-      ranked_top_k_count: 0,
-      selected_count: existing.length,
-      exclusion_counts: { domainCap: 0, duplicate: 0, hardControversy: 0, sponsored: 0 },
-      fallback_used: { domainCapRelaxed: false }
-    };
-    return { selected: existing, reportsByTopic: emptyReports, aggregatedReport };
+    return existing;
   } catch {
     // Continue to select
   }
@@ -957,36 +522,6 @@ export async function selectTopArticles(
   // Select top N per topic
   const allSelected: SelectedArticle[] = [];
   const allReports: SelectionReport[] = [];
-  const reportsByTopic: SelectionReportsByTopic = {
-    "AI_and_Strategy": {
-      candidate_count: 0,
-      ranked_top_k_count: 0,
-      selected_count: 0,
-      exclusion_counts: { domainCap: 0, duplicate: 0, hardControversy: 0, sponsored: 0 },
-      fallback_used: { domainCapRelaxed: false }
-    },
-    "Ecommerce_Retail_Tech": {
-      candidate_count: 0,
-      ranked_top_k_count: 0,
-      selected_count: 0,
-      exclusion_counts: { domainCap: 0, duplicate: 0, hardControversy: 0, sponsored: 0 },
-      fallback_used: { domainCapRelaxed: false }
-    },
-    "Luxury_and_Consumer": {
-      candidate_count: 0,
-      ranked_top_k_count: 0,
-      selected_count: 0,
-      exclusion_counts: { domainCap: 0, duplicate: 0, hardControversy: 0, sponsored: 0 },
-      fallback_used: { domainCapRelaxed: false }
-    },
-    "Jewellery_Industry": {
-      candidate_count: 0,
-      ranked_top_k_count: 0,
-      selected_count: 0,
-      exclusion_counts: { domainCap: 0, duplicate: 0, hardControversy: 0, sponsored: 0 },
-      fallback_used: { domainCapRelaxed: false }
-    }
-  };
   
   for (const [topic, topicArticles] of Object.entries(byTopic)) {
     if (topicArticles.length === 0) continue;
@@ -994,7 +529,6 @@ export async function selectTopArticles(
     const { selected, report } = await selectArticlesForTopic(topicArticles, topic as Topic, topN, weekLabel);
     allSelected.push(...selected);
     allReports.push(report);
-    reportsByTopic[topic as Topic] = report;
   }
 
   // Sort by rank and category
@@ -1024,20 +558,7 @@ export async function selectTopArticles(
   // Save selection and report
   await fs.mkdir(discoveryDir, { recursive: true });
   await fs.writeFile(selectedPath, JSON.stringify(allSelected, null, 2), 'utf-8');
-  await fs.writeFile(reportPath, JSON.stringify({ aggregated: aggregatedReport, by_topic: reportsByTopic }, null, 2), 'utf-8');
-
-  // Calculate aggregated paywall stats
-  const aggregatedPaywalled = allSelected.filter(s => s.paywallStatus === 'likely_paywalled').length;
-  const aggregatedNotPaywalled = allSelected.filter(s => s.paywallStatus === 'not_paywalled').length;
-  const aggregatedUnknown = allSelected.filter(s => !s.paywallStatus || s.paywallStatus === 'unknown').length;
-  const aggregatedPaywalledPercentage = allSelected.length > 0 ? Math.round((aggregatedPaywalled / allSelected.length) * 100) : 0;
-  
-  aggregatedReport.paywall_stats = {
-    selected_paywalled: aggregatedPaywalled,
-    selected_not_paywalled: aggregatedNotPaywalled,
-    selected_unknown: aggregatedUnknown,
-    paywalled_percentage: aggregatedPaywalledPercentage
-  };
+  await fs.writeFile(reportPath, JSON.stringify(aggregatedReport, null, 2), 'utf-8');
 
   // Print summary
   console.log('\n=== SELECTION SUMMARY ===');
@@ -1049,16 +570,10 @@ export async function selectTopArticles(
   console.log(`  - Duplicates: ${aggregatedReport.exclusion_counts.duplicate}`);
   console.log(`  - Hard controversy: ${aggregatedReport.exclusion_counts.hardControversy}`);
   console.log(`  - Sponsored: ${aggregatedReport.exclusion_counts.sponsored}`);
-  if (aggregatedReport.paywall_stats) {
-    console.log(`Paywall stats:`);
-    console.log(`  - Paywalled: ${aggregatedReport.paywall_stats.selected_paywalled} (${aggregatedReport.paywall_stats.paywalled_percentage}%)`);
-    console.log(`  - Not paywalled: ${aggregatedReport.paywall_stats.selected_not_paywalled}`);
-    console.log(`  - Unknown: ${aggregatedReport.paywall_stats.selected_unknown}`);
-  }
   if (aggregatedReport.fallback_used.domainCapRelaxed) {
     console.log(`⚠️  Fallback: Domain cap relaxed to 3`);
   }
   console.log(`\nReport saved to: ${reportPath}`);
 
-  return { selected: allSelected, reportsByTopic, aggregatedReport };
+  return allSelected;
 }

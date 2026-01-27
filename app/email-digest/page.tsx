@@ -4,6 +4,7 @@ import { DateTime } from 'luxon';
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import { formatDate } from '../../utils/formatDate';
+import { getCurrentDigestWeek } from '../../utils/getCurrentDigestWeek';
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://luxury-intelligence.vercel.app";
 
@@ -58,15 +59,15 @@ async function loadEmailDigest(weekLabel: string): Promise<EmailDigest | null> {
 }
 
 export default async function EmailDigestPage() {
-  // Show previous week (or current week if available)
-  const weekLabel = getPreviousWeek();
+  // Use shared utility to get current digest week (synchronized with home page)
+  const weekLabel = getCurrentDigestWeek();
   const digest = await loadEmailDigest(weekLabel);
   
-  // Try current week if previous week not found
-  const currentWeekLabel = getCurrentWeek();
-  const currentDigest = !digest ? await loadEmailDigest(currentWeekLabel) : null;
-  const finalDigest = digest || currentDigest;
-  const finalWeekLabel = digest ? weekLabel : currentWeekLabel;
+  // Fallback: try previous week if current week not found
+  const previousWeekLabel = getPreviousWeek();
+  const previousDigest = !digest ? await loadEmailDigest(previousWeekLabel) : null;
+  const finalDigest = digest || previousDigest;
+  const finalWeekLabel = digest ? weekLabel : previousWeekLabel;
 
   return (
     <main className="w-full max-w-3xl mx-auto px-4 sm:px-6 py-6 sm:py-8">

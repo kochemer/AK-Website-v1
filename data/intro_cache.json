@@ -154,5 +154,17 @@
     "cached_at": "2026-01-24T22:07:01.692Z",
     "model": "gpt-4o-mini",
     "version": "1.0"
+  },
+  "2026-W04:d6442b6ef3e1": {
+    "introParagraph": "Fope reports a 27% revenue growth, reflecting positive performance in the jewellery sector. Meanwhile, Burberry experiences increased demand in the Asia-Pacific region, indicating resilience in the luxury market despite ongoing economic challenges.",
+    "cached_at": "2026-01-25T15:26:23.993Z",
+    "model": "gpt-4o-mini",
+    "version": "1.0"
+  },
+  "2026-W04:fc9a0c689ae6": {
+    "introParagraph": "Supervity AI establishes a hub in Mumbai to enhance its operations in the GCC region. Pandora receives recognition for its sustainability efforts, while Burberry reports on its sales performance in the Asia-Pacific market. Additionally, Chow Tai Fook announces plans for expansion, and Saks faces bankruptcy on a global scale.",
+    "cached_at": "2026-01-25T17:13:22.593Z",
+    "model": "gpt-4o-mini",
+    "version": "1.0"
   }
 }

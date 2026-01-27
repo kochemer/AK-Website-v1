@@ -124,24 +124,25 @@ const TIER_2_FEEDS: SourceFeed[] = [
 
 // --- Tier 5: Academic & Technical ---
 const TIER_5_FEEDS: SourceFeed[] = [
-  {
-    name: "arXiv - AI (cs.AI)",
-    url: "http://arxiv.org/rss/cs.AI",
-    tier: 5,
-    sourceType: "academic"
-  },
-  {
-    name: "arXiv - Machine Learning (cs.LG)",
-    url: "http://arxiv.org/rss/cs.LG",
-    tier: 5,
-    sourceType: "academic"
-  },
-  {
-    name: "arXiv - Computation and Language (cs.CL)",
-    url: "http://arxiv.org/rss/cs.CL",
-    tier: 5,
-    sourceType: "academic"
-  },
+  // TEMPORARILY DISABLED: Arxiv sources (to test ranking without Arxiv dominance)
+  // {
+  //   name: "arXiv - AI (cs.AI)",
+  //   url: "http://arxiv.org/rss/cs.AI",
+  //   tier: 5,
+  //   sourceType: "academic"
+  // },
+  // {
+  //   name: "arXiv - Machine Learning (cs.LG)",
+  //   url: "http://arxiv.org/rss/cs.LG",
+  //   tier: 5,
+  //   sourceType: "academic"
+  // },
+  // {
+  //   name: "arXiv - Computation and Language (cs.CL)",
+  //   url: "http://arxiv.org/rss/cs.CL",
+  //   tier: 5,
+  //   sourceType: "academic"
+  // },
   {
     name: "Microsoft Research - AI",
     url: "https://www.microsoft.com/en-us/research/feed/tag/artificial-intelligence/",

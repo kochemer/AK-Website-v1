@@ -336,5 +336,31 @@
     "cached_at": "2026-01-24T22:07:00.039Z",
     "model": "gpt-4o-mini",
     "version": "2.1"
+  },
+  "2026-W04:d6442b6ef3e1": {
+    "keyThemes": [
+      "Fope revenue growth",
+      "Burberry Asia-Pacific demand",
+      "Supervity AI GCC hub",
+      "Claude Code programming",
+      "Silver price surge"
+    ],
+    "oneSentenceSummary": "Fope's 27% revenue growth and Burberry's Asia-Pacific demand highlight resilience in luxury and jewellery sectors amid economic challenges.",
+    "cached_at": "2026-01-25T15:26:22.611Z",
+    "model": "gpt-4o-mini",
+    "version": "2.1"
+  },
+  "2026-W04:fc9a0c689ae6": {
+    "keyThemes": [
+      "Supervity AI GCC hub",
+      "Pandora sustainable brand",
+      "Burberry Asia-Pacific sales",
+      "Chow Tai Fook expansion",
+      "Saks Global bankruptcy"
+    ],
+    "oneSentenceSummary": "Supervity AI's GCC hub in Mumbai and Pandora's sustainability ranking highlight significant advancements in AI and jewellery sectors this week.",
+    "cached_at": "2026-01-25T17:13:21.053Z",
+    "model": "gpt-4o-mini",
+    "version": "2.1"
   }
 }

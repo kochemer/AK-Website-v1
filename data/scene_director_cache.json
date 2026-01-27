@@ -163,5 +163,43 @@
     "version": "v2",
     "cached_at": "2026-01-18T19:39:03.242Z",
     "variant": "safe"
+  },
+  "db3152bbcd79295556c51cfd8ff0f5a05a3268212d64e4c4e644a9d6930b2b1c": {
+    "output": {
+      "concept": "giant-diamond-trolley",
+      "primaryHumorDriver": "scale absurdity",
+      "secondaryEnhancer": "unexpected texture/material combination",
+      "sceneDescription": "In a luxurious jewelry store, a giant, flawless diamond the size of a shopping cart is being wheeled around by a tiny, elegant mannequin hand on a miniature trolley. The diamond reflects the store's opulent lighting, casting intricate patterns on the walls. The scene is lit by soft, warm ambient lights, enhancing the contrast between the enormous, sparkling diamond and the absurdly small trolley and hand. Several shelves are filled with both lab-grown and natural diamonds, but none compare to the oversized one being transported. The absurdity lies in the scale mismatch and the unexpected combination of luxury and practicality.",
+      "finalImagePrompt": "A hyper-realistic photograph of a giant diamond being wheeled by a tiny mannequin hand on a small trolley in a high-end jewelry store. The store is lit with warm, ambient lighting, casting reflections from the diamond on the walls. The camera is positioned to capture a wide horizontal banner composition (3:1 aspect ratio) with elements in the central horizontal band and safe margins. The scene should look like a believable yet absurd visual metaphor with photorealistic materials and textures, highlighting the scale absurdity and unexpected material combination. No text, no signage, no screens.",
+      "negativePrompt": [
+        "text, letters, numbers, signage, labels",
+        "screens, UI, dashboards, holograms, floating icons",
+        "logos, brands, watermarks",
+        "cartoon, illustration, CGI, 3D render, anime"
+      ],
+      "confidence": 0.7
+    },
+    "version": "v3",
+    "cached_at": "2026-01-25T21:35:40.019Z",
+    "variant": "safe"
+  },
+  "8719753fea523ac5bb98342d0fe29e33f4ef6a63e7c93bb9114714b31980898f": {
+    "output": {
+      "concept": "diamond-shopping-cart-scale-absurdity",
+      "primaryHumorDriver": "scale absurdity",
+      "secondaryEnhancer": "implied motion or 'just happened' moment",
+      "sceneDescription": "A gigantic diamond, approximately the size of a small car, is precariously balanced inside a standard-sized shopping cart. The cart is parked in the middle of a bustling city street, surrounded by a mix of curious pedestrians and shoppers. The diamond's facets catch the sunlight, casting dazzling reflections on the pavement. The shopping cart's wheels are slightly off-kilter, suggesting it has just come to a stop after a bumpy journey. In the background, a jewelry store with an elegant facade hints at the diamond's origins. The absurdity lies in the scale mismatch, as the diamond seems far too large and valuable for the modest cart, creating a playful visual metaphor for digital commerce and AI-influenced shopping trends.",
+      "finalImagePrompt": "A hyper-realistic photograph capturing a gigantic diamond, the size of a small car, inside a standard-sized shopping cart on a bustling city street. The diamond's facets reflect sunlight dazzlingly, as the cart's wheels appear slightly off-kilter, suggesting recent motion. The scene is shot in natural daylight with a shallow depth of field to focus on the diamond and cart, set in a wide horizontal banner composition (3:1 aspect ratio). The background features a classy jewelry store facade. Ensure photorealistic materials and textures with no text, signage, or screens visible. The composition should highlight the absurdity of the scale mismatch, making it clear as a playful and believable visual metaphor.",
+      "negativePrompt": [
+        "text, letters, numbers, signage, labels",
+        "screens, UI, dashboards, holograms, floating icons",
+        "logos, brands, watermarks",
+        "cartoon, illustration, CGI, 3D render, anime"
+      ],
+      "confidence": 0.65
+    },
+    "version": "v3",
+    "cached_at": "2026-01-26T21:27:57.627Z",
+    "variant": "safe"
   }
 }

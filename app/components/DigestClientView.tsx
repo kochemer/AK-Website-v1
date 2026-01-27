@@ -92,12 +92,6 @@ export default function DigestClientView({
   categoryCards,
   variant = 'home'
 }: DigestClientViewProps) {
-  // Safety check
-  if (!digest || !digest.topics || !digest.totals) {
-    console.error('[DigestClientView] Invalid digest data:', digest);
-    return null;
-  }
-  
   const searchParams = useSearchParams();
   
   // Get current N from URL param or default (server-safe)
@@ -139,38 +133,40 @@ export default function DigestClientView({
   }, [searchParams]);
 
   if (variant === 'home') {
-    // Home page: 2-column grid layout (within panel container)
-    if (!categoryCards || !digest?.topics || !digest?.totals) {
+    // Home page: 12-column grid layout
+    if (!categoryCards) {
       return null;
     }
     return (
-      <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-6">
-        {categoryCards.map(cat => {
-          // @ts-ignore
-          const topic = digest.topics[cat.key];
-          // @ts-ignore
-          const totalCat = digest.totals.byTopic[cat.countBy] ?? 0;
-          
-          // Slice articles client-side based on effectiveTopN
-          const formattedArticles = (topic?.top || []).slice(0, effectiveTopN).map(article => ({
-            ...article,
-            date: formatDate(article.published_at),
-          }));
-          
-          return (
-            <div key={cat.key} className="w-full">
-              <CategorySection
-                id={cat.anchorId}
-                variant="grid"
-                title={getTopicDisplayName(cat.key)}
-                description={cat.desc}
-                count={totalCat}
-                articles={formattedArticles}
-              />
-            </div>
-          );
-        })}
-      </div>
+      <section className="w-full max-w-[1400px] lg:max-w-[1600px] 2xl:max-w-[1800px] mx-auto px-4 md:px-8 mb-16 md:mb-20">
+        <div className="w-full grid grid-cols-12 gap-8 lg:gap-10">
+          {categoryCards.map(cat => {
+            // @ts-ignore
+            const topic = digest.topics[cat.key];
+            // @ts-ignore
+            const totalCat = digest.totals.byTopic[cat.countBy] ?? 0;
+            
+            // Slice articles client-side based on effectiveTopN
+            const formattedArticles = (topic?.top || []).slice(0, effectiveTopN).map(article => ({
+              ...article,
+              date: formatDate(article.published_at),
+            }));
+            
+            return (
+              <div key={cat.key} className="col-span-12 lg:col-span-6 w-full">
+                <CategorySection
+                  id={cat.anchorId}
+                  variant="grid"
+                  title={getTopicDisplayName(cat.key)}
+                  description={cat.desc}
+                  count={totalCat}
+                  articles={formattedArticles}
+                />
+              </div>
+            );
+          })}
+        </div>
+      </section>
     );
   } else {
     // Week page: vertical list layout

@@ -5,6 +5,7 @@ import { DateTime } from 'luxon';
 import { getWeekRangeCET } from '../utils/weekCET';
 import { classifyTopic } from '../classification/classifyTopics';
 import type { Article as BaseArticle, Topic } from '../classification/classifyTopics';
+import { rerankArticles } from './rerankArticles';
 
 // Extended Article type that includes snippet (used in actual data)
 type Article = BaseArticle & {
@@ -22,6 +23,8 @@ const MAX_PER_SOURCE = 3; // Diversity guard: max articles per source in top N
 /**
  * Source weights: positive values boost articles from these sources
  * Default weight is 0 for sources not listed
+ * 
+ * Note: For AI category, retail sources should NOT be boosted
  */
 const SOURCE_WEIGHTS: Record<string, number> = {
   "Jeweller - Business News": 0.1,
@@ -35,13 +38,30 @@ const SOURCE_WEIGHTS: Record<string, number> = {
 };
 
 /**
+ * AI-focused sources that should be boosted for AI category only
+ * These sources typically cover AI field developments, not retail applications
+ */
+const AI_FOCUSED_SOURCES: string[] = [
+  "arXiv - AI", "arXiv - Machine Learning", "arXiv - Computation and Language",
+  "arXiv - Computer Vision", "arXiv - Neural and Evolutionary Computing",
+  "MIT Technology Review", "The Verge - AI", "TechCrunch - AI",
+  "Wired - AI", "IEEE Spectrum", "Nature Machine Intelligence"
+];
+
+/**
  * Topic-specific keywords for boosting relevance
  * Case-insensitive matching in title and snippet
  */
 const TOPIC_KEYWORDS: Record<Topic, string[]> = {
   "AI_and_Strategy": [
-    "artificial intelligence", "ai", "machine learning", "ml", "strategy", "automation",
-    "personalization", "recommendation", "chatbot", "analytics", "insights", "data"
+    // AI field importance keywords (not retail-focused)
+    "artificial intelligence", "ai", "machine learning", "ml", "llm", "large language model",
+    "model release", "benchmark", "research", "arxiv", "openai", "anthropic", "claude", "gemini",
+    "deepmind", "foundation model", "transformer", "neural network", "deep learning",
+    "computer vision", "nlp", "natural language processing", "multimodal", "agent", "reasoning",
+    "inference", "training", "fine-tuning", "weights", "open source", "ai lab", "ai company",
+    "ai startup", "funding", "investment", "acquisition", "partnership", "regulation", "policy",
+    "ai safety", "alignment", "agi", "compute", "gpu", "tpu", "sota", "state of the art"
   ],
   "Ecommerce_Retail_Tech": [
     "ecommerce", "e-commerce", "online retail", "shopping", "checkout", "payment",
@@ -111,9 +131,10 @@ function dedupeArticles(articles: Article[]): Article[] {
  */
 type RelevanceScore = {
   scoreTotal: number;
-  recencyScore: number;
+  recencyScore: number; // Kept for backward compatibility, but always 0 now
   sourceWeight: number;
   keywordBoost: number;
+  insightSignalBoost: number;
   penalty: number;
   matchedKeywords: string[];
 };
@@ -125,30 +146,53 @@ type ArticleWithRelevance = Article & {
   relevance?: RelevanceScore;
 };
 
-/**
- * Calculate recency score: map publishedAt within week to 0..1 (newest=1)
- */
-function calculateRecencyScore(publishedAt: string, weekStart: number, weekEnd: number): number {
-  if (!publishedAt) return 0;
-  const articleTime = new Date(publishedAt).getTime();
-  if (isNaN(articleTime) || articleTime < weekStart || articleTime > weekEnd) return 0;
-  
-  // Normalize to 0..1 where newest (weekEnd) = 1, oldest (weekStart) = 0
-  const weekDuration = weekEnd - weekStart;
-  if (weekDuration === 0) return 1;
-  return (articleTime - weekStart) / weekDuration;
-}
+// Insight markers for insightSignalBoost (case-insensitive substring matching)
+const INSIGHT_MARKERS = [
+  "benchmark",
+  "survey",
+  "report",
+  "data",
+  "metrics",
+  "case study",
+  "A/B",
+  "experiment",
+  "uplift",
+  "increase",
+  "decrease",
+  "conversion rate",
+  "cart abandonment",
+  "NPS",
+  "latency",
+  "fraud rate",
+  "ROI",
+  "CAGR",
+  "%",
+  "percent"
+];
 
 /**
  * Find matched keywords in text (case-insensitive)
+ * Uses word boundaries for short keywords (<= 3 chars) to avoid false matches (e.g., "ai" in "gain", "sustain")
  */
 function findMatchedKeywords(text: string, keywords: string[]): string[] {
   const lowerText = text.toLowerCase();
-  return keywords.filter(keyword => lowerText.includes(keyword.toLowerCase()));
+  return keywords.filter(keyword => {
+    const lowerKw = keyword.toLowerCase();
+    // For short keywords (<= 3 chars) or single-letter acronyms, use word boundaries
+    // Also handle "AI-" prefix pattern
+    if (lowerKw.length <= 3 || lowerKw === "ai" || lowerKw === "ml" || lowerKw === "nlp" || lowerKw === "agi") {
+      // Use word boundary regex: \b for word boundaries, also allow "-" after (for "AI-powered", "AI-driven", etc.)
+      const pattern = new RegExp(`\\b${lowerKw.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}(-|\\b)`, 'i');
+      return pattern.test(lowerText);
+    }
+    // For longer keywords, use simple substring matching
+    return lowerText.includes(lowerKw);
+  });
 }
 
 /**
  * Calculate keyword boost based on topic-specific keywords
+ * Capped at 0.20 to prevent keyword count from dominating scoring
  */
 function calculateKeywordBoost(article: Article, topic: Topic): { boost: number; matched: string[] } {
   const keywords = TOPIC_KEYWORDS[topic] || [];
@@ -157,9 +201,24 @@ function calculateKeywordBoost(article: Article, topic: Topic): { boost: number;
   
   // Combine and deduplicate
   const allMatches = Array.from(new Set([...titleMatches, ...snippetMatches]));
-  const boost = allMatches.length * KEYWORD_BOOST_PER_MATCH;
+  const uncappedBoost = allMatches.length * KEYWORD_BOOST_PER_MATCH;
+  const boost = Math.min(0.20, uncappedBoost); // Cap at 0.20
   
   return { boost, matched: allMatches };
+}
+
+/**
+ * Calculate insight signal boost based on insight markers
+ * Rewards articles with data, benchmarks, case studies, metrics, etc.
+ */
+function calculateInsightSignalBoost(article: Article): number {
+  const text = `${article.title} ${article.oneSentenceSummary || article.summary || article.snippet || ''}`.toLowerCase();
+  
+  const matchedMarkers = INSIGHT_MARKERS.filter(marker => text.includes(marker.toLowerCase()));
+  const uncappedBoost = matchedMarkers.length * 0.05;
+  const boost = Math.min(0.15, uncappedBoost); // Cap at 0.15
+  
+  return boost;
 }
 
 /**
@@ -180,42 +239,74 @@ function calculateRelevanceScore(
   weekStart: number,
   weekEnd: number
 ): RelevanceScore {
-  // Recency score (0..1)
-  const recencyScore = calculateRecencyScore(article.published_at, weekStart, weekEnd);
+  // Recency score removed - no longer used in scoring
+  const recencyScore = 0;
   
   // Source weight (default 0)
-  const sourceWeight = SOURCE_WEIGHTS[article.source] || 0;
+  // For AI category: boost AI-focused sources, but penalize retail sources
+  // SOLUTION 3: Reduce Arxiv boost to prevent dominance in candidate pool
+  let sourceWeight = 0;
+  if (topic === 'AI_and_Strategy') {
+    const isArxivSource = article.source.toLowerCase().includes('arxiv');
+    const isAIFocusedSource = AI_FOCUSED_SOURCES.some(aiSource => article.source.includes(aiSource));
+    
+    // Retail sources that should be penalized in AI category (commerce/ecommerce focus, not AI focus)
+    const retailSources = ["Modern Retail", "Digital Commerce 360", "Practical Ecommerce", "Retail Dive"];
+    const isRetailSource = retailSources.some(rs => article.source.includes(rs));
+    
+    if (isRetailSource) {
+      // Penalize retail sources in AI category - they typically cover commerce/retail with incidental AI mentions
+      sourceWeight = -0.10; // Negative weight to push them down in ranking
+    } else if (isArxivSource) {
+      // Reduce Arxiv boost to prevent dominance (was 0.15, now 0.05)
+      // This ensures more diverse candidate pool for LLM/fallback
+      sourceWeight = 0.05;
+    } else if (isAIFocusedSource) {
+      sourceWeight = 0.15; // Boost other AI-focused sources normally
+    } else if (SOURCE_WEIGHTS[article.source]) {
+      sourceWeight = SOURCE_WEIGHTS[article.source] * 0.5; // Reduce boost for other sources
+    }
+  } else {
+    // For non-AI categories, use normal source weights
+    sourceWeight = SOURCE_WEIGHTS[article.source] || 0;
+  }
   
-  // Keyword boost
+  // Keyword boost (capped at 0.20)
   const { boost: keywordBoost, matched: matchedKeywords } = calculateKeywordBoost(article, topic);
+  
+  // Insight signal boost (capped at 0.15)
+  const insightSignalBoost = calculateInsightSignalBoost(article);
   
   // Penalty
   const penalty = calculatePenalty(article);
   
-  // Total score
-  const scoreTotal = recencyScore + sourceWeight + keywordBoost - penalty;
+  // Total score: sourceWeight + keywordBoost + insightSignalBoost - penalty
+  // (recencyScore removed)
+  const scoreTotal = sourceWeight + keywordBoost + insightSignalBoost - penalty;
   
   return {
     scoreTotal,
     recencyScore,
     sourceWeight,
     keywordBoost,
+    insightSignalBoost,
     penalty,
     matchedKeywords,
   };
 }
 
 /**
- * Select top N articles with composite scoring and diversity guard
+ * Select top N articles using LLM reranking with fallback to deterministic selection
  * Returns articles with relevance scores attached
  */
-function selectTopN(
+async function selectTopN(
   articles: Article[],
   n: number,
   topic: Topic,
   weekStart: number,
-  weekEnd: number
-): ArticleWithRelevance[] {
+  weekEnd: number,
+  weekLabel: string
+): Promise<ArticleWithRelevance[]> {
   if (articles.length === 0) return [];
   
   // Calculate scores for all articles
@@ -232,44 +323,107 @@ function selectTopN(
     return a.article.url.localeCompare(b.article.url);
   });
   
-  // Apply diversity guard: limit max per source, but relax if needed to fill to N
-  // Special rule for AI category: max 1 Arxiv article total
-  const MAX_ARXIV_AI = topic === 'AI_and_Strategy' ? 1 : Infinity; // Max 1 Arxiv article for AI category
-  const selected: ArticleWithRelevance[] = [];
-  const sourceCounts = new Map<string, number>();
-  let arxivCount = 0; // Track total Arxiv articles for AI category
+  // Select candidates for reranking (up to 100 articles, or all if fewer)
+  const CANDIDATE_MAX_LLM = 100; // Allow up to 100 articles for LLM reranking
+  const candidateCount = Math.min(
+    CANDIDATE_MAX_LLM,
+    articlesWithScores.length
+  );
   
-  // Helper to check if source is Arxiv
-  const isArxiv = (source: string): boolean => {
-    return source.toLowerCase().includes('arxiv');
+  const candidates = articlesWithScores.slice(0, candidateCount).map(item => item.article);
+  
+  // Fallback function: deterministic selection with diversity guard
+  // SOLUTION 1: Enforce diversity constraints DURING selection, not after
+  const fallbackSelect = (candidateList: Article[]): ArticleWithRelevance[] => {
+    const selected: ArticleWithRelevance[] = [];
+    const sourceCounts = new Map<string, number>();
+    let arxivCount = 0; // Track Arxiv articles for AI category
+    
+    // Helper to check if source is Arxiv
+    const isArxiv = (source: string): boolean => {
+      return source.toLowerCase().includes('arxiv');
+    };
+    
+    // Helper to get normalized source for counting (all Arxiv sources count as one for AI category)
+    const getNormalizedSource = (source: string): string => {
+      if (topic === 'AI_and_Strategy' && isArxiv(source)) {
+        return 'Arxiv'; // All Arxiv sources count as one for AI category
+      }
+      return source;
+    };
+    
+    // Iterate through candidates (already sorted by score)
+    // Only add articles that pass diversity constraints
+    for (const article of candidateList) {
+      if (selected.length >= n) break;
+      
+      const normalizedSource = getNormalizedSource(article.source);
+      const currentCount = sourceCounts.get(normalizedSource) || 0;
+      const isArxivArticle = isArxiv(article.source);
+      
+      // Check diversity constraints
+      const canAddSource = currentCount < MAX_PER_SOURCE;
+      const canAddArxiv = !isArxivArticle || (topic === 'AI_and_Strategy' ? arxivCount < 1 : true);
+      
+      // Only add if constraints allow (no mustFill logic - we want diverse selection)
+      if (canAddSource && canAddArxiv) {
+        // Find the relevance score for this article
+        const scoreItem = articlesWithScores.find(item => item.article.url === article.url);
+        const relevance = scoreItem?.relevance || {
+          scoreTotal: 0,
+          recencyScore: 0,
+          sourceWeight: 0,
+          keywordBoost: 0,
+          insightSignalBoost: 0,
+          penalty: 0,
+          matchedKeywords: [],
+        };
+        
+        selected.push({
+          ...article,
+          relevance,
+        });
+        sourceCounts.set(normalizedSource, currentCount + 1);
+        if (isArxivArticle && topic === 'AI_and_Strategy') {
+          arxivCount++;
+        }
+      }
+      // Skip if constraints violated - continue to next candidate
+    }
+    
+    // If we still don't have enough, we've exhausted diverse candidates
+    // This is better than having all Arxiv articles
+    return selected;
   };
   
-  for (let i = 0; i < articlesWithScores.length && selected.length < n; i++) {
-    const { article, relevance } = articlesWithScores[i];
-    const currentCount = sourceCounts.get(article.source) || 0;
-    const remainingSlots = n - selected.length;
-    const remainingArticles = articlesWithScores.length - i;
-    const isArxivArticle = isArxiv(article.source);
+  // Call LLM reranking
+  const rerankResult = await rerankArticles(
+    weekLabel,
+    topic,
+    articles.length,
+    candidates,
+    fallbackSelect
+  );
+  
+  // Map reranked articles back to ArticleWithRelevance format
+  const selected: ArticleWithRelevance[] = rerankResult.selected.map(article => {
+    // Find the relevance score for this article
+    const scoreItem = articlesWithScores.find(item => item.article.url === article.url);
+    const relevance = scoreItem?.relevance || {
+      scoreTotal: 0,
+      recencyScore: 0,
+      sourceWeight: 0,
+      keywordBoost: 0,
+      insightSignalBoost: 0,
+      penalty: 0,
+      matchedKeywords: [],
+    };
     
-    // Check if we can add this article:
-    // 1. Haven't hit the cap for this source, AND
-    // 2. Haven't hit the Arxiv cap (for AI category), OR
-    // 3. We need to fill remaining slots (relax cap if not enough articles from other sources)
-    const canAddSource = currentCount < MAX_PER_SOURCE;
-    const canAddArxiv = !isArxivArticle || arxivCount < MAX_ARXIV_AI;
-    const mustFill = remainingSlots >= remainingArticles; // If remaining slots >= remaining articles, we must take this
-    
-    if ((canAddSource && canAddArxiv) || mustFill) {
-      selected.push({
-        ...article,
-        relevance,
-      });
-      sourceCounts.set(article.source, currentCount + 1);
-      if (isArxivArticle) {
-        arxivCount++;
-      }
-    }
-  }
+    return {
+      ...article,
+      relevance,
+    };
+  });
   
   return selected;
 }
@@ -391,19 +545,19 @@ export async function buildWeeklyDigest(weekLabel: string): Promise<WeeklyDigest
   const topics = {
     AI_and_Strategy: {
       total: byTopic["AI_and_Strategy"].length,
-      top: selectTopN(byTopic["AI_and_Strategy"], TOP_N, "AI_and_Strategy", weekStart, weekEnd),
+      top: await selectTopN(byTopic["AI_and_Strategy"], TOP_N, "AI_and_Strategy", weekStart, weekEnd, weekLabel),
     },
     Ecommerce_Retail_Tech: {
       total: byTopic["Ecommerce_Retail_Tech"].length,
-      top: selectTopN(byTopic["Ecommerce_Retail_Tech"], TOP_N, "Ecommerce_Retail_Tech", weekStart, weekEnd),
+      top: await selectTopN(byTopic["Ecommerce_Retail_Tech"], TOP_N, "Ecommerce_Retail_Tech", weekStart, weekEnd, weekLabel),
     },
     Luxury_and_Consumer: {
       total: byTopic["Luxury_and_Consumer"].length,
-      top: selectTopN(byTopic["Luxury_and_Consumer"], TOP_N, "Luxury_and_Consumer", weekStart, weekEnd),
+      top: await selectTopN(byTopic["Luxury_and_Consumer"], TOP_N, "Luxury_and_Consumer", weekStart, weekEnd, weekLabel),
     },
     Jewellery_Industry: {
       total: byTopic["Jewellery_Industry"].length,
-      top: selectTopN(byTopic["Jewellery_Industry"], TOP_N, "Jewellery_Industry", weekStart, weekEnd),
+      top: await selectTopN(byTopic["Jewellery_Industry"], TOP_N, "Jewellery_Industry", weekStart, weekEnd, weekLabel),
     },
   };
   
