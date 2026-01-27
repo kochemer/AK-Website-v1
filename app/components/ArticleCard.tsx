@@ -85,15 +85,7 @@ export default function ArticleCard({
       {/* Optional summary - responsive clamp */}
       {cleanSummary && (
         <div className="mt-2.5 sm:mt-3">
-          <div
-            className="text-sm sm:text-sm md:text-base text-gray-600 bg-gray-50 border-l-2 border-gray-300 rounded px-3 sm:px-3 md:px-4 py-2 sm:py-2 md:py-2.5 line-clamp-2 sm:line-clamp-3"
-            style={{
-              display: '-webkit-box',
-              WebkitLineClamp: 2,
-              WebkitBoxOrient: 'vertical',
-              overflow: 'hidden',
-            }}
-          >
+          <div className="text-sm sm:text-sm md:text-base text-gray-600 bg-gray-50 border-l-2 border-gray-300 rounded px-3 sm:px-3 md:px-4 py-2 sm:py-2 md:py-2.5 line-clamp-4 sm:line-clamp-5 md:line-clamp-6">
             <span className="text-sm sm:text-sm md:text-base text-gray-600 font-medium">AI summary: </span>{cleanSummary}
           </div>
         </div>
