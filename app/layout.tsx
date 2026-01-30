@@ -22,7 +22,10 @@ const geistMono = Geist_Mono({
   display: "swap",
 });
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://luxury-intelligence.vercel.app";
+import { getSiteUrl } from '../utils/siteUrl';
+
+// Lazy evaluation to avoid issues in dev mode
+const getSiteUrlLazy = () => getSiteUrl();
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -32,7 +35,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL(siteUrl),
+  metadataBase: new URL(getSiteUrlLazy()),
   title: "Luxury Intelligence",
   description: "Luxury Ecommerce, Retail Technology & AI - Curated intelligence and AI-assisted summaries for luxury, ecommerce, and retail tech.",
   manifest: "/manifest.webmanifest",
@@ -55,7 +58,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
   },
   alternates: {
-    canonical: "/",
+    canonical: `${getSiteUrlLazy()}/`,
   },
 };
 
@@ -86,7 +89,7 @@ export default function RootLayout({
             "@context": "https://schema.org",
             "@type": "WebSite",
             name: "Luxury Intelligence",
-            url: siteUrl,
+            url: getSiteUrlLazy(),
             description: "Luxury Ecommerce, Retail Technology & AI - Curated intelligence and AI-assisted summaries for luxury, ecommerce, and retail tech.",
             inLanguage: "en",
             publisher: {

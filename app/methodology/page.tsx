@@ -1,23 +1,25 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
+import { getSiteUrl } from '../../utils/siteUrl';
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://luxury-intelligence.vercel.app";
+// Lazy evaluation for dev mode compatibility
+const getSiteUrlLazy = () => getSiteUrl();
 
 export const metadata: Metadata = {
   title: 'Methodology – How Luxury Intelligence is curated',
   description: 'How the weekly AI, ecommerce, luxury and jewellery digest is collected, ranked and summarized.',
   alternates: {
-    canonical: '/methodology',
+    canonical: `${getSiteUrlLazy()}/methodology`,
   },
   openGraph: {
     title: 'Methodology – How Luxury Intelligence is curated',
     description: 'How the weekly AI, ecommerce, luxury and jewellery digest is collected, ranked and summarized.',
-    images: [`${siteUrl}/og-default.svg`],
+    images: [`${getSiteUrlLazy()}/og-default.svg`],
   },
   twitter: {
     title: 'Methodology – How Luxury Intelligence is curated',
     description: 'How the weekly AI, ecommerce, luxury and jewellery digest is collected, ranked and summarized.',
-    images: [`${siteUrl}/og-default.svg`],
+    images: [`${getSiteUrlLazy()}/og-default.svg`],
   },
 };
 

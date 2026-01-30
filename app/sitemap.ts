@@ -1,6 +1,7 @@
 import { MetadataRoute } from 'next';
 import { promises as fs } from 'fs';
 import path from 'path';
+import { getSiteUrl } from '../utils/siteUrl';
 
 async function getAvailableWeekLabels(): Promise<string[]> {
   try {
@@ -26,10 +27,7 @@ async function getFileModifiedTime(filePath: string): Promise<Date> {
 }
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 
-    (process.env.NODE_ENV === 'production' 
-      ? 'https://luxury-intelligence.vercel.app'
-      : 'http://localhost:3000');
+  const baseUrl = getSiteUrl();
 
   const weekLabels = await getAvailableWeekLabels();
   const digestsDir = path.join(process.cwd(), 'data', 'digests');
@@ -50,6 +48,14 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.6,
   };
 
+  // Email digest page
+  const emailDigestEntry: MetadataRoute.Sitemap[0] = {
+    url: `${baseUrl}/email-digest`,
+    lastModified: new Date(),
+    changeFrequency: 'weekly',
+    priority: 0.7,
+  };
+
   // Week pages
   const weekEntries = await Promise.all(
     weekLabels.map(async (weekLabel) => {
@@ -65,7 +71,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     })
   );
 
-  return [homeEntry, archiveEntry, ...weekEntries];
+  return [homeEntry, archiveEntry, emailDigestEntry, ...weekEntries];
 }
 
 

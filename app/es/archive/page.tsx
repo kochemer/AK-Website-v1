@@ -3,14 +3,15 @@ import path from 'path';
 import Link from 'next/link';
 import { DateTime } from 'luxon';
 import type { Metadata } from 'next';
+import { getSiteUrl } from '../../../utils/siteUrl';
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://luxury-intelligence.vercel.app";
+const siteUrl = getSiteUrl();
 
 export const metadata: Metadata = {
   title: 'Archivo – Resúmenes Semanales de IA y Lujo',
   description: 'Explora el archivo completo de resúmenes semanales de IA, ecommerce, lujo y joyería. Accede a todos los informes de inteligencia curados y resúmenes semanales.',
   alternates: {
-    canonical: '/es/archive',
+    canonical: `${siteUrl}/es/archive`,
   },
   openGraph: {
     title: 'Archivo – Resúmenes Semanales de IA y Lujo',

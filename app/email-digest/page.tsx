@@ -5,14 +5,16 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 import { formatDate } from '../../utils/formatDate';
 import { getCurrentDigestWeek } from '../../utils/getCurrentDigestWeek';
+import { getSiteUrl } from '../../utils/siteUrl';
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://luxury-intelligence.vercel.app";
+// Lazy evaluation for dev mode compatibility
+const getSiteUrlLazy = () => getSiteUrl();
 
 export const metadata: Metadata = {
   title: 'Email Digest – Weekly Intelligence',
   description: 'A single ranked list of the week\'s top articles with sharp insights for retail, luxury, and AI intelligence.',
   alternates: {
-    canonical: '/email-digest',
+    canonical: `${getSiteUrlLazy()}/email-digest`,
   },
 };
 

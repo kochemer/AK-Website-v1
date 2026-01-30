@@ -1,13 +1,14 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
+import { getSiteUrl } from '../../../utils/siteUrl';
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://luxury-intelligence.vercel.app";
+const siteUrl = getSiteUrl();
 
 export const metadata: Metadata = {
   title: 'Metodologi – Sådan kureres Luxury Intelligence',
   description: 'Sådan indsamles, rangeres og opsummeres den ugentlige AI, ecommerce, luksus og smykkebrancheoversigt.',
   alternates: {
-    canonical: '/da/methodology',
+    canonical: `${siteUrl}/da/methodology`,
   },
   openGraph: {
     title: 'Metodologi – Sådan kureres Luxury Intelligence',

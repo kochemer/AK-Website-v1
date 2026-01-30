@@ -46,6 +46,13 @@ export default function AmplitudeInit() {
 
     // Initialize Amplitude Analytics and Session Replay with EU server zone
     try {
+      // In development, skip initialization to avoid network errors interfering with navigation
+      if (process.env.NODE_ENV === 'development') {
+        console.info('[Amplitude] Skipped initialization in development mode');
+        initializedRef.current = true;
+        return;
+      }
+
       amplitude.initAll(apiKey, {
         serverZone: 'EU',
         analytics: {

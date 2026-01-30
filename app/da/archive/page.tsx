@@ -3,14 +3,15 @@ import path from 'path';
 import Link from 'next/link';
 import { DateTime } from 'luxon';
 import type { Metadata } from 'next';
+import { getSiteUrl } from '../../../utils/siteUrl';
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://luxury-intelligence.vercel.app";
+const siteUrl = getSiteUrl();
 
 export const metadata: Metadata = {
   title: 'Arkiv – Ugentlige AI og Luksus Brancheoversigter',
   description: 'Gennemse det komplette arkiv af ugentlige AI, ecommerce, luksus og smykkebrancheoversigter. Få adgang til alle tidligere kurerede intelligensoversigter og ugentlige resuméer.',
   alternates: {
-    canonical: '/da/archive',
+    canonical: `${siteUrl}/da/archive`,
   },
   openGraph: {
     title: 'Arkiv – Ugentlige AI og Luksus Brancheoversigter',

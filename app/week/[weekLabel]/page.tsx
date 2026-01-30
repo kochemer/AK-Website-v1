@@ -10,11 +10,11 @@ import JsonLd from '../../components/JsonLd';
 import Breadcrumbs from '../../components/Breadcrumbs';
 import { getTopicTotalsDisplayName, TopicKey } from '../../../utils/topicNames';
 import { formatDate, formatDateRange, formatDateTime } from '../../../utils/formatDate';
-
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://luxury-intelligence.vercel.app";
+import { getSiteUrl } from '../../../utils/siteUrl';
 
 export async function generateMetadata({ params }: { params: Promise<{ weekLabel: string }> }): Promise<Metadata> {
   const { weekLabel } = await params;
+  const siteUrl = getSiteUrl(); // Call inside function for dev mode compatibility
   
   // Load digest to get cover image if available
   const digest = await loadDigest(weekLabel);
@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: { params: Promise<{ weekLabel
     title: `Week ${weekLabel} – AI, Ecommerce & Luxury Industry Digest`,
     description: `Curated overview of the most relevant AI, ecommerce, luxury and jewellery industry news for week ${weekLabel}. Handpicked articles with AI summaries.`,
     alternates: {
-      canonical: `/week/${weekLabel}`,
+      canonical: `${siteUrl}/week/${weekLabel}`,
     },
     openGraph: {
       title: `Week ${weekLabel} – AI, Ecommerce & Luxury Industry Digest`,
@@ -226,6 +226,7 @@ export default async function WeekPage({
   }
 
   const dateRange = formatDateRange(digest.startISO, digest.endISO);
+  const siteUrl = getSiteUrl(); // Get site URL for JSON-LD schemas
 
   // Build CollectionPage JSON-LD schema
   const collectionPageSchema = {

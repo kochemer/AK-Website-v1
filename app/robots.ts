@@ -1,7 +1,8 @@
 import { MetadataRoute } from 'next';
+import { getSiteUrl } from '../utils/siteUrl';
 
 export default function robots(): MetadataRoute.Robots {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://luxury-intelligence.vercel.app';
+  const baseUrl = getSiteUrl();
 
   return {
     rules: {

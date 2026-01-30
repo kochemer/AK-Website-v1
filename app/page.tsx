@@ -9,24 +9,26 @@ import TopNSelector from './components/TopNSelector';
 import { TopicKey } from '../utils/topicNames';
 import { formatDate, formatDateRange, formatDateTime } from '../utils/formatDate';
 import { getCurrentDigestWeek, getPreviousWeek } from '../utils/getCurrentDigestWeek';
+import { getSiteUrl } from '../utils/siteUrl';
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://luxury-intelligence.vercel.app";
+// Lazy evaluation for dev mode compatibility
+const getSiteUrlLazy = () => getSiteUrl();
 
 export const metadata: Metadata = {
   title: 'Weekly AI, Ecommerce & Luxury Industry Digest',
   description: 'A weekly curated digest covering AI & strategy, ecommerce and retail technology, luxury and jewellery industry news. Updated every week.',
   alternates: {
-    canonical: '/',
+    canonical: `${getSiteUrlLazy()}/`,
   },
   openGraph: {
     title: 'Weekly AI, Ecommerce & Luxury Industry Digest',
     description: 'A weekly curated digest covering AI & strategy, ecommerce and retail technology, luxury and jewellery industry news. Updated every week.',
-    images: [`${siteUrl}/og-default.svg`],
+    images: [`${getSiteUrlLazy()}/og-default.svg`],
   },
   twitter: {
     title: 'Weekly AI, Ecommerce & Luxury Industry Digest',
     description: 'A weekly curated digest covering AI & strategy, ecommerce and retail technology, luxury and jewellery industry news. Updated every week.',
-    images: [`${siteUrl}/og-default.svg`],
+    images: [`${getSiteUrlLazy()}/og-default.svg`],
   },
 };
 
