@@ -6,6 +6,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import AmplitudeInit from "./components/AmplitudeInit";
 import LanguageSwitcher from "./components/LanguageSwitcher";
 import InstallPwaButton from "./components/InstallPwaButton";
+import EnableNotificationsButton from "./components/EnableNotificationsButton";
 import DisplayModeAttribute from "./components/DisplayModeAttribute";
 import JsonLd from "./components/JsonLd";
 import "./globals.css";
@@ -126,6 +127,7 @@ export default function RootLayout({
             </Link>
             <div className="flex items-center gap-2">
               <InstallPwaButton />
+              <EnableNotificationsButton />
               <LanguageSwitcher />
             </div>
           </div>
@@ -149,6 +151,7 @@ export default function RootLayout({
             </Link>
             <div className="flex items-center gap-2">
               <InstallPwaButton />
+              <EnableNotificationsButton />
               <LanguageSwitcher />
             </div>
           </div>
