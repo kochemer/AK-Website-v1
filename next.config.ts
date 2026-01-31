@@ -38,4 +38,16 @@ console.log('[PWA DEBUG] next-pwa status:', {
   manifestPath: '/manifest.webmanifest',
 });
 
+// DEBUG — Verify VAPID key is present at build time
+if (process.env.NODE_ENV === 'production') {
+  const vapidKey = process.env.NEXT_PUBLIC_VAPID_PUBLIC_KEY;
+  if (vapidKey) {
+    console.log('[BUILD DEBUG] NEXT_PUBLIC_VAPID_PUBLIC_KEY is set (length:', vapidKey.length, ')');
+    console.log('[BUILD DEBUG] VAPID key prefix:', vapidKey.substring(0, 30) + '...');
+  } else {
+    console.warn('[BUILD DEBUG] ⚠️ NEXT_PUBLIC_VAPID_PUBLIC_KEY is NOT set in production build!');
+    console.warn('[BUILD DEBUG] This will cause push notifications to fail.');
+  }
+}
+
 export default pwaConfig(nextConfig);
