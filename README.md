@@ -113,3 +113,5 @@ The service worker handles push events and notification clicks:
 - Push payload fields: `title`, `body`, `url`, `icon`, `badge`, `tag`
 - Notification click opens the URL specified in payload
 - Handlers are defined in `public/push-sw.js`
+
+<!-- trigger build -->
