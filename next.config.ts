@@ -25,4 +25,17 @@ const pwaConfig = withPWA({
   // (next-pwa will use defaults if not specified)
 });
 
+// DEBUG — can be removed later
+// Log PWA configuration status at build time
+const isPwaEnabled = process.env.NODE_ENV !== "development";
+console.log('[PWA DEBUG] next-pwa status:', {
+  enabled: isPwaEnabled,
+  NODE_ENV: process.env.NODE_ENV,
+  VERCEL_ENV: process.env.VERCEL_ENV || 'not-set',
+  dest: 'public',
+  swFilename: 'sw.js',
+  swScope: '/',
+  manifestPath: '/manifest.webmanifest',
+});
+
 export default pwaConfig(nextConfig);

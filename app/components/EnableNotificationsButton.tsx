@@ -140,15 +140,23 @@ export default function EnableNotificationsButton() {
       return;
     }
 
+    // DEBUG: Log SW controller state
+    console.log('[PUSH DEBUG] Button clicked');
+    console.log('[PUSH DEBUG] SW controller:', navigator.serviceWorker.controller ? 'exists' : 'null');
+    console.log('[PUSH DEBUG] SW ready check starting...');
+
     setIsSubscribing(true);
     setStatus('idle');
     setErrorMessage('');
 
     try {
       // Request notification permission
+      console.log('[PUSH DEBUG] Requesting notification permission...');
       const permission = await Notification.requestPermission();
+      console.log('[PUSH DEBUG] Permission result:', permission);
       
       if (permission !== 'granted') {
+        console.log('[PUSH DEBUG] Permission denied, aborting');
         setStatus('error');
         setErrorMessage('Notification permission denied');
         setIsSubscribing(false);
@@ -156,29 +164,50 @@ export default function EnableNotificationsButton() {
       }
 
       // Get service worker registration
+      console.log('[PUSH DEBUG] Waiting for service worker ready...');
+      const startTime = Date.now();
       const registration = await navigator.serviceWorker.ready;
+      const readyTime = Date.now() - startTime;
+      console.log('[PUSH DEBUG] SW ready after', readyTime, 'ms');
+      console.log('[PUSH DEBUG] Registration state:', {
+        active: registration.active?.state,
+        waiting: registration.waiting?.state,
+        installing: registration.installing?.state,
+      });
 
       // Check if already subscribed
+      console.log('[PUSH DEBUG] Checking existing subscription...');
       let subscription = await registration.pushManager.getSubscription();
+      console.log('[PUSH DEBUG] Existing subscription:', subscription ? 'found' : 'none');
       
       if (!subscription) {
         // Get VAPID public key
         const vapidPublicKey = process.env.NEXT_PUBLIC_VAPID_PUBLIC_KEY;
+        console.log('[PUSH DEBUG] VAPID key present:', !!vapidPublicKey);
+        console.log('[PUSH DEBUG] VAPID key length:', vapidPublicKey?.length || 0);
         if (!vapidPublicKey) {
           throw new Error('VAPID public key not configured');
         }
 
         // Convert base64url to Uint8Array
+        console.log('[PUSH DEBUG] Converting VAPID key...');
         const applicationServerKey = base64UrlToUint8Array(vapidPublicKey);
+        console.log('[PUSH DEBUG] Key converted, length:', applicationServerKey.byteLength);
 
         // Subscribe to push
+        console.log('[PUSH DEBUG] Calling pushManager.subscribe...');
+        const subscribeStart = Date.now();
         subscription = await registration.pushManager.subscribe({
           userVisibleOnly: true,
           applicationServerKey,
         });
+        const subscribeTime = Date.now() - subscribeStart;
+        console.log('[PUSH DEBUG] Subscribe completed after', subscribeTime, 'ms');
+        console.log('[PUSH DEBUG] Subscription endpoint:', subscription.endpoint.substring(0, 50) + '...');
       }
 
       // Prepare subscription data
+      console.log('[PUSH DEBUG] Preparing subscription data...');
       const subscriptionData: PushSubscription = {
         endpoint: subscription.endpoint,
         keys: {
@@ -190,8 +219,11 @@ export default function EnableNotificationsButton() {
           ),
         },
       };
+      console.log('[PUSH DEBUG] Subscription data prepared');
 
       // Send subscription to server
+      console.log('[PUSH DEBUG] POST /api/push/subscribe starting...');
+      const fetchStart = Date.now();
       const response = await fetch('/api/push/subscribe', {
         method: 'POST',
         headers: {
@@ -203,22 +235,31 @@ export default function EnableNotificationsButton() {
           timestamp: new Date().toISOString(),
         }),
       });
+      const fetchTime = Date.now() - fetchStart;
+      console.log('[PUSH DEBUG] POST completed after', fetchTime, 'ms');
+      console.log('[PUSH DEBUG] Response status:', response.status, response.statusText);
 
       if (!response.ok) {
+        const errorText = await response.text();
+        console.log('[PUSH DEBUG] Response error:', errorText);
         throw new Error('Failed to save subscription');
       }
 
       const result = await response.json();
+      console.log('[PUSH DEBUG] Response JSON:', result);
       if (result.ok) {
+        console.log('[PUSH DEBUG] Subscription successful, updating UI');
         setStatus('success');
         setIsSupported(false); // Hide button after successful subscription
       } else {
         throw new Error('Subscription failed');
       }
     } catch (error) {
+      console.error('[PUSH DEBUG] Error caught:', error);
       setStatus('error');
       setErrorMessage(error instanceof Error ? error.message : 'Subscription failed');
     } finally {
+      console.log('[PUSH DEBUG] Finally block, setting isSubscribing=false');
       setIsSubscribing(false);
     }
   };

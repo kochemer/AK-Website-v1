@@ -44,19 +44,23 @@ function isKvAvailable(): boolean {
  */
 export async function storeSubscription(subscription: StoredSubscription): Promise<void> {
   if (isKvAvailable()) {
+    console.log('[PUSH STORAGE DEBUG] Using KV backend');
     try {
       // Use endpoint as the key (deduplication)
       await kv.set(`push:subscription:${subscription.endpoint}`, subscription);
+      console.log('[PUSH STORAGE DEBUG] KV set completed');
     } catch (error) {
       console.error('[Push Storage] KV error:', error);
       throw error;
     }
   } else {
     // Fallback to in-memory storage (dev only)
+    console.log('[PUSH STORAGE DEBUG] Using memory backend (KV not available)');
     console.warn(
       '[Push Storage] WARNING: Vercel KV not configured. Using in-memory storage (data lost on restart).'
     );
     inMemoryStorage.set(subscription.endpoint, subscription);
+    console.log('[PUSH STORAGE DEBUG] Memory storage set completed');
   }
 }
 
