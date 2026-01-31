@@ -115,3 +115,4 @@ The service worker handles push events and notification clicks:
 - Handlers are defined in `public/push-sw.js`
 
 <!-- trigger build -->
+trigger rebuild
