@@ -8,6 +8,7 @@ import LanguageSwitcher from "./components/LanguageSwitcher";
 import InstallPwaButton from "./components/InstallPwaButton";
 import EnableNotificationsButton from "./components/EnableNotificationsButton";
 import DisplayModeAttribute from "./components/DisplayModeAttribute";
+import ServiceWorkerRegistration from "./components/ServiceWorkerRegistration";
 import JsonLd from "./components/JsonLd";
 import "./globals.css";
 
@@ -101,6 +102,7 @@ export default function RootLayout({
         />
         <AmplitudeInit />
         <DisplayModeAttribute />
+        <ServiceWorkerRegistration />
         {/* Sticky Header - Mobile First */}
         <header
           className="sticky top-0 z-30 bg-white/85 backdrop-blur border-b border-gray-200"
