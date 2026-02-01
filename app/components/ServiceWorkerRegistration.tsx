@@ -31,78 +31,90 @@ export default function ServiceWorkerRegistration() {
       return;
     }
 
-    // Check for existing registrations that might be stuck
-    navigator.serviceWorker.getRegistrations().then(async (registrations) => {
-      for (const registration of registrations) {
-        // Check if there's a waiting or installing worker that's stuck
-        if (registration.waiting || registration.installing) {
-          const worker = registration.waiting || registration.installing;
-          if (worker) {
-            // Wait a bit to see if it transitions to redundant
-            setTimeout(() => {
-              if (worker.state === 'redundant') {
-                console.warn('[SW Registration] Detected stuck service worker in redundant state, unregistering...');
-                registration.unregister().then(() => {
-                  // Clear caches to ensure fresh start
-                  if ('caches' in window) {
-                    caches.keys().then((cacheNames) => {
-                      cacheNames.forEach((cacheName) => {
-                        if (cacheName.includes('workbox') || cacheName.includes('precache')) {
-                          caches.delete(cacheName);
-                        }
-                      });
-                    });
-                  }
-                });
-              }
-            }, 2000);
-          }
-        }
+    // Unregister all existing service workers and clear caches for a fresh start
+    const cleanupAndRegister = async () => {
+      try {
+        // Get all existing registrations
+        const registrations = await navigator.serviceWorker.getRegistrations();
         
-        // Force update check
-        try {
-          await registration.update();
-        } catch (error) {
-          // If update fails, unregister to force fresh registration
-          console.warn('[SW Registration] Update check failed, unregistering stuck worker...');
+        // Unregister all existing service workers
+        for (const registration of registrations) {
+          console.log('[SW Registration] Unregistering existing service worker...');
           await registration.unregister();
         }
-      }
-    });
-
-    // Register the service worker with updateViaCache: 'none' to bypass HTTP cache
-    navigator.serviceWorker
-      .register('/sw.js', { scope: '/', updateViaCache: 'none' })
-      .then((registration) => {
-        console.log('[SW Registration] Service worker registered:', registration.scope);
         
-        // Monitor installation state
-        if (registration.installing) {
-          registration.installing.addEventListener('statechange', () => {
-            if (registration.installing?.state === 'redundant') {
-              console.warn('[SW Registration] Service worker installation failed (likely due to precaching errors)');
-              console.warn('[SW Registration] This usually resolves after the next deployment');
-            }
-          });
+        // Clear all caches
+        if ('caches' in window) {
+          const cacheNames = await caches.keys();
+          console.log('[SW Registration] Clearing', cacheNames.length, 'caches...');
+          await Promise.all(cacheNames.map(cacheName => caches.delete(cacheName)));
         }
         
-        // Check for updates
-        registration.addEventListener('updatefound', () => {
-          const newWorker = registration.installing;
-          if (newWorker) {
-            newWorker.addEventListener('statechange', () => {
-              if (newWorker.state === 'activated') {
-                console.log('[SW Registration] New service worker activated');
-              } else if (newWorker.state === 'redundant') {
-                console.warn('[SW Registration] New service worker failed to install');
-              }
-            });
-          }
+        // Small delay to ensure cleanup completes
+        await new Promise(resolve => setTimeout(resolve, 100));
+        
+        // Now register fresh
+        registerServiceWorker();
+      } catch (error) {
+        console.error('[SW Registration] Cleanup failed:', error);
+        // Still try to register even if cleanup fails
+        registerServiceWorker();
+      }
+    };
+    
+    const registerServiceWorker = () => {
+
+      // Register the service worker with updateViaCache: 'none' to bypass HTTP cache
+      navigator.serviceWorker
+        .register('/sw.js', { scope: '/', updateViaCache: 'none' })
+        .then((registration) => {
+          console.log('[SW Registration] Service worker registered:', registration.scope);
+          
+          // Monitor installation state immediately
+          const checkInstallation = () => {
+            if (registration.installing) {
+              registration.installing.addEventListener('statechange', () => {
+                if (registration.installing?.state === 'redundant') {
+                  console.warn('[SW Registration] Service worker installation failed - unregistering and retrying...');
+                  // Unregister and retry after a delay
+                  registration.unregister().then(() => {
+                    setTimeout(() => {
+                      cleanupAndRegister();
+                    }, 2000);
+                  });
+                } else if (registration.installing?.state === 'activated') {
+                  console.log('[SW Registration] Service worker activated successfully');
+                }
+              });
+            } else if (registration.waiting) {
+              // If there's a waiting worker, skip waiting
+              registration.waiting.postMessage({ type: 'SKIP_WAITING' });
+            }
+          };
+          
+          checkInstallation();
+          
+          // Check for updates
+          registration.addEventListener('updatefound', () => {
+            const newWorker = registration.installing;
+            if (newWorker) {
+              newWorker.addEventListener('statechange', () => {
+                if (newWorker.state === 'activated') {
+                  console.log('[SW Registration] New service worker activated');
+                } else if (newWorker.state === 'redundant') {
+                  console.warn('[SW Registration] New service worker failed to install - will retry on next page load');
+                }
+              });
+            }
+          });
+        })
+        .catch((error) => {
+          console.error('[SW Registration] Service worker registration failed:', error);
         });
-      })
-      .catch((error) => {
-        console.error('[SW Registration] Service worker registration failed:', error);
-      });
+    };
+    
+    // Start the cleanup and registration process
+    cleanupAndRegister();
   }, []);
 
   return null; // This component doesn't render anything
