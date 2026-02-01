@@ -3,6 +3,10 @@
 import { useEffect, useState } from 'react';
 import { isIosSafari } from '@/lib/pwa';
 
+// Extract VAPID key at module level to ensure Next.js can statically replace it
+// This pattern ensures build-time replacement works correctly
+const VAPID_PUBLIC_KEY = process.env.NEXT_PUBLIC_VAPID_PUBLIC_KEY || '';
+
 interface PushSubscription {
   endpoint: string;
   keys: {
@@ -116,9 +120,8 @@ export default function EnableNotificationsButton() {
           }
         }
 
-        // Check if VAPID key is configured
-        const vapidPublicKey = process.env.NEXT_PUBLIC_VAPID_PUBLIC_KEY;
-        if (!vapidPublicKey) {
+        // Check if VAPID key is configured (use module-level constant)
+        if (!VAPID_PUBLIC_KEY) {
           setIsSupported(false);
           setIsChecking(false);
           return;
@@ -181,17 +184,16 @@ export default function EnableNotificationsButton() {
       console.log('[PUSH DEBUG] Existing subscription:', subscription ? 'found' : 'none');
       
       if (!subscription) {
-        // Get VAPID public key
-        const vapidPublicKey = process.env.NEXT_PUBLIC_VAPID_PUBLIC_KEY;
-        console.log('[PUSH DEBUG] VAPID key present:', !!vapidPublicKey);
-        console.log('[PUSH DEBUG] VAPID key length:', vapidPublicKey?.length || 0);
-        if (!vapidPublicKey) {
+        // Get VAPID public key (use module-level constant)
+        console.log('[PUSH DEBUG] VAPID key present:', !!VAPID_PUBLIC_KEY);
+        console.log('[PUSH DEBUG] VAPID key length:', VAPID_PUBLIC_KEY?.length || 0);
+        if (!VAPID_PUBLIC_KEY) {
           throw new Error('VAPID public key not configured');
         }
 
         // Convert base64url to Uint8Array
         console.log('[PUSH DEBUG] Converting VAPID key...');
-        const applicationServerKey = base64UrlToUint8Array(vapidPublicKey);
+        const applicationServerKey = base64UrlToUint8Array(VAPID_PUBLIC_KEY);
         console.log('[PUSH DEBUG] Key converted, length:', applicationServerKey.byteLength);
 
         // Subscribe to push
