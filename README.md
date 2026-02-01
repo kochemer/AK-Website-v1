@@ -2,6 +2,8 @@
 
 First repository for the AK website
 
+<!-- Force fresh build: 2026-01-02 -->
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
