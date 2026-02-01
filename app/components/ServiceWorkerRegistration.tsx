@@ -32,23 +32,47 @@ export default function ServiceWorkerRegistration() {
     }
 
     // Check for existing registrations that might be stuck
-    navigator.serviceWorker.getRegistrations().then((registrations) => {
-      // Unregister any stuck service workers (e.g., ones failing to install due to 404s)
-      registrations.forEach((registration) => {
-        if (registration.active) {
-          // Check if the active worker is in a bad state
-          registration.update().catch(() => {
-            // If update fails, the worker might be stuck - unregister it
-            console.warn('[SW Registration] Detected stuck service worker, unregistering...');
-            registration.unregister();
-          });
+    navigator.serviceWorker.getRegistrations().then(async (registrations) => {
+      for (const registration of registrations) {
+        // Check if there's a waiting or installing worker that's stuck
+        if (registration.waiting || registration.installing) {
+          const worker = registration.waiting || registration.installing;
+          if (worker) {
+            // Wait a bit to see if it transitions to redundant
+            setTimeout(() => {
+              if (worker.state === 'redundant') {
+                console.warn('[SW Registration] Detected stuck service worker in redundant state, unregistering...');
+                registration.unregister().then(() => {
+                  // Clear caches to ensure fresh start
+                  if ('caches' in window) {
+                    caches.keys().then((cacheNames) => {
+                      cacheNames.forEach((cacheName) => {
+                        if (cacheName.includes('workbox') || cacheName.includes('precache')) {
+                          caches.delete(cacheName);
+                        }
+                      });
+                    });
+                  }
+                });
+              }
+            }, 2000);
+          }
         }
-      });
+        
+        // Force update check
+        try {
+          await registration.update();
+        } catch (error) {
+          // If update fails, unregister to force fresh registration
+          console.warn('[SW Registration] Update check failed, unregistering stuck worker...');
+          await registration.unregister();
+        }
+      }
     });
 
-    // Register the service worker
+    // Register the service worker with updateViaCache: 'none' to bypass HTTP cache
     navigator.serviceWorker
-      .register('/sw.js', { scope: '/' })
+      .register('/sw.js', { scope: '/', updateViaCache: 'none' })
       .then((registration) => {
         console.log('[SW Registration] Service worker registered:', registration.scope);
         
