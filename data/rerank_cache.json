@@ -382,5 +382,101 @@
     ],
     "cached_at": "2026-01-26T21:07:18.638Z",
     "model": "gpt-4o-mini"
+  },
+  "2026-W05:Ecommerce_Retail_Tech:e2c39f2a6548": {
+    "selected": [
+      {
+        "id": "15",
+        "rank": 1,
+        "why": "Amazon's layoffs and restructuring impact ecommerce strategy significantly",
+        "confidence": 0.9
+      },
+      {
+        "id": "3",
+        "rank": 2,
+        "why": "Insights on marketplace dynamics and revenue growth strategies",
+        "confidence": 0.85
+      },
+      {
+        "id": "10",
+        "rank": 3,
+        "why": "Saks' closure of ecommerce highlights retail strategy shifts",
+        "confidence": 0.8
+      },
+      {
+        "id": "17",
+        "rank": 4,
+        "why": "TikTok Shop's policy changes affect seller dynamics and logistics",
+        "confidence": 0.75
+      },
+      {
+        "id": "1",
+        "rank": 5,
+        "why": "Resale growth trends reveal shifts in consumer behavior",
+        "confidence": 0.7
+      },
+      {
+        "id": "2",
+        "rank": 6,
+        "why": "Levi Strauss' AI tool enhances ecommerce sales performance",
+        "confidence": 0.65
+      },
+      {
+        "id": "5",
+        "rank": 7,
+        "why": "AI shopping agents' impact on marketplace roles is significant",
+        "confidence": 0.6
+      }
+    ],
+    "cached_at": "2026-02-01T18:49:15.203Z",
+    "model": "gpt-4o-mini"
+  },
+  "2026-W05:Jewellery_Industry:d3315bbb9f77": {
+    "selected": [
+      {
+        "id": "2",
+        "rank": 1,
+        "why": "Strong sales recovery insights for retail strategies",
+        "confidence": 0.9
+      },
+      {
+        "id": "8",
+        "rank": 2,
+        "why": "Positive sales performance data for benchmarking",
+        "confidence": 0.85
+      },
+      {
+        "id": "11",
+        "rank": 3,
+        "why": "Important warning about industry scams affecting retailers",
+        "confidence": 0.8
+      },
+      {
+        "id": "5",
+        "rank": 4,
+        "why": "Training on effective jewelry marketing strategies",
+        "confidence": 0.75
+      },
+      {
+        "id": "7",
+        "rank": 5,
+        "why": "Emerging market for wearable tech in jewelry",
+        "confidence": 0.7
+      },
+      {
+        "id": "1",
+        "rank": 6,
+        "why": "Astrological insights for retail decision-making",
+        "confidence": 0.65
+      },
+      {
+        "id": "4",
+        "rank": 7,
+        "why": "Unique trends in jewelry stores for merchandising",
+        "confidence": 0.6
+      }
+    ],
+    "cached_at": "2026-02-01T18:49:38.056Z",
+    "model": "gpt-4o-mini"
   }
 }

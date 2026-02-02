@@ -1,0 +1,34 @@
+{
+  "weekLabel": "2026-W05",
+  "homepageTopArticles": [
+    {
+      "title": "Amazon cuts 16,000 jobs, scales back Fresh stores and launches Amazon Now in major strategic realignment",
+      "source": "Internet Retailing",
+      "snippet": "Amazon is undertaking another sweeping restructuring as it cuts 16,000 jobs and pushes forward with the launch of a new rapid‑delivery service, Amazon Now.\nThe post Amazon cuts 16,000 jobs, scales back Fresh stores and launches Amazon Now in major strategic realignment appeared first on InternetRetailing.",
+      "aiSummary": "In a major strategic realignment, Amazon has cut 16,000 jobs, scaled back Fresh stores, and introduced a new rapid-delivery service called Amazon Now. This restructuring aims to streamline operations and enhance the delivery experience for customers."
+    },
+    {
+      "title": "Marketplaces and retail media: the flywheel for revenue and margin growth",
+      "source": "Internet Retailing",
+      "snippet": "Many brands still don’t understand marketplaces, but retailers have recognised they can supercharge their retail media business, says Colin Lewis.\nThe post Marketplaces and retail media: the flywheel for revenue and margin growth appeared first on InternetRetailing.",
+      "aiSummary": "AI-generated summary: Retailers are leveraging marketplaces to boost their retail media business for increased revenue and margin growth, according to Colin Lewis in Internet Retailing."
+    },
+    {
+      "title": "Chow Tai Fook reports strong sales recovery",
+      "source": "Jeweller - Business News",
+      "snippet": "Hong Kong-based jewellery retailer Chow Tai Fook reported higher retail sales in its latest report, indicating a recovery in consumer demand.",
+      "aiSummary": "AI-generated summary:\nChow Tai Fook, a Hong Kong-based jewellery retailer, has reported a strong sales recovery with higher retail sales, signaling an improvement in consumer demand within the jewellery industry."
+    },
+    {
+      "title": "Positive jewellery sales for Michael Hill",
+      "source": "Jeweller - Business News",
+      "snippet": "Michael Hill International has reported a strong jewellery sales performance over the past six months.",
+      "aiSummary": "AI-Generated Summary:\nMichael Hill International has experienced positive jewellery sales in the past six months, as reported by Jeweller - Business News on January 26, 2026."
+    }
+  ],
+  "model": "gpt-image-1.5",
+  "finalPrompt": "A hyper-realistic photograph of a giant diamond, roughly the size of a small car, being transported by a tiny Amazon delivery drone. The scene is set in a suburban backyard with natural daylight, casting vibrant reflections from the diamond. The drone's propellers are spinning at high speed, indicating a struggle to maintain altitude, while dust and small debris are kicked up in the air. In the foreground, a garden gnome, with a shocked expression, watches the spectacle unfold. The composition is wide horizontal banner style, with elements centralized in the horizontal band and safe margins. No text, signs, or screens are present. Materials and textures are photorealistic, capturing the absurdity of the scale mismatch in a believable way.\n\nCRITICAL CONSTRAINTS (must be strictly avoided):\n- text, letters, numbers, signage, labels, screens, UI, dashboards, holograms, floating icons, logos, brands, watermarks, cartoon, illustration, CGI, 3D render, anime\n\nPHOTOREALISM ENFORCEMENT:\n- Ultra photorealistic editorial photograph, shot on a real DSLR or medium-format camera.\n- Natural lighting, realistic skin texture, realistic reflections, realistic materials, real physics.\n- Candid editorial realism; avoid stock-photo staging.\n\nANTI-CARTOON / ANTI-CGI:\n- No illustration, no cartoon, no anime, no 3D render, no CGI, no synthetic look.\n\nNO-TEXT GUARANTEE:\n- Absolutely no text, letters, numbers, typography, signage, labels, price tags.\n- No screens, dashboards, UI, holograms, floating icons, charts.\n- Avoid any objects that commonly contain text (posters, newspapers, packaging, storefront signs). If unavoidable, they must be fully out of focus and unreadable.\n\nCOMPOSITION FOR WIDE HERO BANNER (CRITICAL):\n- Wide, horizontally expansive banner format (target 3:1 or wider aspect ratio)\n- Vertically minimal height - all important visual elements must be placed in the central horizontal band\n- Safe margins at top and bottom - no critical content near vertical edges\n- Composition must work when displayed in a wide, shallow container\n- Avoid vertical stacking, tall elements, or content that extends to top/bottom edges",
+  "imageSize": "1536x1024",
+  "outputPath": "/weekly-images/2026-W05.png",
+  "generatedAt": "2026-02-01T19:02:40.314Z"
+}

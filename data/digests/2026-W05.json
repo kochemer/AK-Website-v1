@@ -1,0 +1,697 @@
+{
+  "weekLabel": "2026-W05",
+  "tz": "Europe/Copenhagen",
+  "startISO": "2026-01-25T23:00:00.000Z",
+  "endISO": "2026-02-01T22:59:59.999Z",
+  "builtAtISO": "2026-02-01T19:49:38.057+01:00",
+  "builtAtLocal": "2026-02-01 19:49:38",
+  "totals": {
+    "total": 459,
+    "byTopic": {
+      "AIStrategy": 43,
+      "EcommerceRetail": 279,
+      "LuxuryConsumer": 117,
+      "Jewellery": 19
+    }
+  },
+  "topics": {
+    "AI_and_Strategy": {
+      "total": 43,
+      "top": [
+        {
+          "id": "xuswxt",
+          "title": "OpenAI plans Q4 FY26 IPO amid growing rivalry with Anthropic: Wall Street Journal ",
+          "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/openai-plans-q4-fy26-ipo-amid-growing-rivalry-with-anthropic-wall-street-journal/articleshow/127820743.cms",
+          "source": "Economic Times - Technology",
+          "published_at": "2026-01-31T13:11:11.000Z",
+          "ingested_at": "2026-02-01T18:38:41.033Z",
+          "snippet": "Towards this end, the AI major has been bolstering its finance team by hiring a chief accounting officer and a corporate business finance officer to handle investor relations. Meanwhile, OpenAI executives are privately worried that competitor Anthropic could list first. Anthropic has reportedly hired law firm Wilson Sonsini to prepare for a potential IPO as early as 2026.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "openai",
+              "anthropic",
+              "ai"
+            ]
+          },
+          "aiSummary": "AI-Generated Summary:\nOpenAI is planning an IPO in Q4 FY26 to compete with rival Anthropic, who may list first. OpenAI has strengthened its finance team with new hires to handle investor relations."
+        },
+        {
+          "id": "n87edc",
+          "title": "Microsoft sheds $360bn in market value as AI spending spooks investors",
+          "url": "https://www.ft.com/content/c7e23f07-70b3-43a7-8e1d-040ca93d6d90",
+          "source": "Financial Times - Technology",
+          "published_at": "2026-01-29T21:15:12.000Z",
+          "ingested_at": "2026-02-01T18:38:41.033Z",
+          "snippet": "Software group pulls Nasdaq lower after reporting 66% year-on-year surge in data centre costs",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0.15,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ai"
+            ]
+          },
+          "aiSummary": "AI-generated summary:\nMicrosoft's market value dropped by $360bn due to increased AI spending, leading to a 66% surge in data centre costs and impacting the Nasdaq."
+        },
+        {
+          "id": "smjjnz",
+          "title": "OpenAI Warns Malicious Links Could Undermine Agentic AI",
+          "url": "https://www.pymnts.com/news/artificial-intelligence/2026/openai-warns-malicious-links-could-undermine-agentic-ai/",
+          "source": "PYMNTS",
+          "published_at": "2026-01-30T19:31:06.000Z",
+          "ingested_at": "2026-02-01T18:38:41.033Z",
+          "snippet": "OpenAI is elevating a risk that has quietly grown alongside autonomous AI systems: links.  In new guidance on artificial intelligence (AI) agent link safety, the company said on Wednesday (Jan. 29) that malicious links are emerging as one of the most exploitable surfaces as agents move beyond conversation into action. The concern is not […]\nThe post OpenAI Warns Malicious Links Could Undermine Agentic AI appeared first on PYMNTS.com.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.2,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ai",
+              "openai",
+              "agent",
+              "artificial intelligence"
+            ]
+          },
+          "aiSummary": "AI research organization OpenAI has highlighted the threat of malicious links to autonomous AI systems, warning that they could undermine the safety of AI agents as they transition from conversation to action. This concern was raised in new guidance on AI agent link safety, emphasizing the vulnerability of agents to exploitation through malicious links."
+        },
+        {
+          "id": "guaa84",
+          "title": "A chatbot entirely powered by humans, not artificial intelligence? This Chilean community shows why ",
+          "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/a-chatbot-entirely-powered-by-humans-not-artificial-intelligence-this-chilean-community-shows-why/articleshow/127833157.cms",
+          "source": "Economic Times - Technology",
+          "published_at": "2026-02-01T05:05:22.000Z",
+          "ingested_at": "2026-02-01T18:38:41.033Z",
+          "snippet": "Residents near Santiago, Chile, powered a human chatbot to show AI's environmental impact.  The 12-hour project handled over 25,000 requests globally.  This initiative aims to highlight the hidden water footprint of AI prompting.  It encourages responsible AI use in water-stressed regions.  Major tech companies are building data centres in the area, sparking debate over resource consumption.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "artificial intelligence",
+              "ai"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Residents near Santiago, Chile, created a human-powered chatbot to demonstrate AI's environmental impact, handling over 25,000 requests globally in a 12-hour project. The initiative aims to raise awareness of AI's hidden water footprint and promote responsible AI use in water-stressed regions, amidst debate over resource consumption due to major tech companies building data centers in the area."
+        },
+        {
+          "id": "m8vlzd",
+          "title": "Budget 2026: Industry welcomes measures to nurture local AI, IT, data centre ecosystem ",
+          "url": "https://economictimes.indiatimes.com/tech/technology/budget-2026-industry-welcomes-measures-to-nurture-local-ai-it-data-centre-ecosystem/articleshow/127838837.cms",
+          "source": "Economic Times - Technology",
+          "published_at": "2026-02-01T10:00:43.000Z",
+          "ingested_at": "2026-02-01T18:38:41.033Z",
+          "snippet": "Finance Minister Nirmala Sitharaman's ninth union budget introduced significant tech sector incentives, including enhanced safe harbour thresholds for IT services and tax holidays for local data centres. These measures aim to boost global investment, strengthen digital sovereignty, and position India as a hub for cloud, data services, and AI infrastructure.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ai",
+              "investment"
+            ]
+          },
+          "aiSummary": "AI-Generated Summary:\nThe 2026 budget introduced tech incentives like safe harbour thresholds for IT services and tax holidays for local data centers to boost global investment and position India as a hub for AI infrastructure and data services."
+        },
+        {
+          "id": "9pyhl4",
+          "title": "Inside Moltbook: the social network where AI agents talk to each other",
+          "url": "https://www.ft.com/content/078fe849-cc4f-43be-ab40-8bdd30c1187d",
+          "source": "Financial Times - Technology",
+          "published_at": "2026-02-01T17:56:11.000Z",
+          "ingested_at": "2026-02-01T18:38:41.033Z",
+          "snippet": "An online experiment has Elon Musk believing that we are reaching the ‘singularity’. Is that really true?",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ai",
+              "agent"
+            ]
+          },
+          "aiSummary": "AI-generated summary:\nElon Musk is intrigued by an online experiment on Moltbook where AI agents interact, sparking discussions about the possibility of reaching the 'singularity'."
+        },
+        {
+          "id": "eor59i",
+          "title": "Artificial intelligence researchers hit by flood of ‘slop’",
+          "url": "https://www.ft.com/content/54e274c5-de86-4b3e-96a9-95a46b5e48a0",
+          "source": "Financial Times - Technology",
+          "published_at": "2026-02-01T05:00:03.000Z",
+          "ingested_at": "2026-02-01T18:38:41.033Z",
+          "snippet": "Conferences restrict use of LLMs after surge of low-quality AI-generated papers and reviews",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "artificial intelligence",
+              "research",
+              "ai"
+            ]
+          },
+          "aiSummary": "AI-generated summary:\nAI researchers face challenges as conferences limit the use of LLMs due to an influx of subpar AI-generated papers and reviews."
+        }
+      ]
+    },
+    "Ecommerce_Retail_Tech": {
+      "total": 279,
+      "top": [
+        {
+          "id": "9k81c8",
+          "title": "Amazon cuts 16,000 jobs, scales back Fresh stores and launches Amazon Now in major strategic realignment",
+          "url": "https://internetretailing.net/amazon-cuts-16000-jobs-scales-back-fresh-stores-and-launches-amazon-now-in-major-strategic-realignment/",
+          "source": "Internet Retailing",
+          "published_at": "2026-01-29T16:57:22.000Z",
+          "ingested_at": "2026-02-01T18:38:41.033Z",
+          "snippet": "Amazon is undertaking another sweeping restructuring as it cuts 16,000 jobs and pushes forward with the launch of a new rapid‑delivery service, Amazon Now.\nThe post Amazon cuts 16,000 jobs, scales back Fresh stores and launches Amazon Now in major strategic realignment appeared first on InternetRetailing.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": []
+          },
+          "aiSummary": "In a major strategic realignment, Amazon has cut 16,000 jobs, scaled back Fresh stores, and introduced a new rapid-delivery service called Amazon Now. This restructuring aims to streamline operations and enhance the delivery experience for customers."
+        },
+        {
+          "id": "u0naxh",
+          "title": "Marketplaces and retail media: the flywheel for revenue and margin growth",
+          "url": "https://internetretailing.net/marketplaces-and-retail-media-the-flywheel-for-revenue-and-margin-growth/",
+          "source": "Internet Retailing",
+          "published_at": "2026-01-30T11:29:15.000Z",
+          "ingested_at": "2026-02-01T18:38:41.033Z",
+          "snippet": "Many brands still don’t understand marketplaces, but retailers have recognised they can supercharge their retail media business, says Colin Lewis.\nThe post Marketplaces and retail media: the flywheel for revenue and margin growth appeared first on InternetRetailing.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "marketplace"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Retailers are leveraging marketplaces to boost their retail media business for increased revenue and margin growth, according to Colin Lewis in Internet Retailing."
+        },
+        {
+          "id": "to68hj",
+          "title": "Saks Global retreats from off price, closing most stores and all e-commerce",
+          "url": "https://www.retaildive.com/news/saks-global-off-price-closing-most-stores-e-commerce/810919/",
+          "source": "Retail Dive",
+          "published_at": "2026-01-30T17:13:00.000Z",
+          "ingested_at": "2026-02-01T18:38:41.033Z",
+          "snippet": "Just a dozen Saks Off 5th locations will stay open, and they’ll sell only residual inventory from Saks Fifth Avenue, Neiman Marcus and Bergdorf Goodman.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "e-commerce",
+              "inventory"
+            ]
+          },
+          "aiSummary": "AI-Generated Summary:\nSaks Global is retreating from off-price retail, closing most stores and all e-commerce operations. Only a few Saks Off 5th locations will remain open, selling residual inventory from other luxury retailers."
+        },
+        {
+          "id": "ynwfub",
+          "title": "Exclusive: Some TikTok Shop sellers are pulling back as the platform moves to end independent shipping in the U.S.",
+          "url": "https://www.modernretail.co/operations/exclusive-some-tiktok-shop-sellers-are-pulling-back-as-the-platform-moves-to-end-independent-shipping-in-the-u-s/?utm_campaign=modernretaildis&utm_medium=rss&utm_source=general-rss",
+          "source": "Modern Retail",
+          "published_at": "2026-01-28T15:42:06.000Z",
+          "ingested_at": "2026-02-01T18:38:41.033Z",
+          "snippet": "TikTok Shop’s move to end independent shipping is pushing some U.S. brands to scale back or exit the platform.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "platform"
+            ]
+          },
+          "aiSummary": "AI-Generated Summary:\nTikTok Shop's decision to eliminate independent shipping in the U.S. is causing some sellers to reduce their presence or leave the platform, as reported by Modern Retail on January 28, 2026."
+        },
+        {
+          "id": "yvqbh",
+          "title": "Ecommerce Trends: Who’s benefiting from a wave of online resale growth",
+          "url": "https://www.digitalcommerce360.com/2026/01/29/ecommerce-trends-online-resale-growth/",
+          "source": "Digital Commerce 360",
+          "published_at": "2026-01-29T17:21:34.000Z",
+          "ingested_at": "2026-02-01T18:38:41.033Z",
+          "snippet": "Against the backdrop of inflation and economic uncertainty, online resale growth spotlighted emerging opportunities for marketplaces and retailers alike in 2026. At the end of 2025, survey data from the resale platform ThredUp suggested as much as 40% of the season’s gift purchases might include secondhand items. Heading into the new year, sales results, expansion […]\nThe post Ecommerce Trends: Who’s benefiting from a wave of online resale growth appeared first on Digital Commerce 360.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.10000000000000003,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0.15,
+            "penalty": 0.2,
+            "matchedKeywords": [
+              "ecommerce",
+              "platform",
+              "marketplace"
+            ]
+          },
+          "aiSummary": "AI-Generated Summary:\nOnline resale growth presents emerging opportunities for marketplaces and retailers amidst inflation and economic uncertainty in 2026, with up to 40% of gift purchases potentially including secondhand items."
+        },
+        {
+          "id": "4d9wvf",
+          "title": "Levi Strauss ecommerce sales fuel Q4 growth as new AI tool arrives on mobile app",
+          "url": "https://www.digitalcommerce360.com/2026/01/30/levi-strauss-ecommerce-sales-earnings-q4-2025/",
+          "source": "Digital Commerce 360",
+          "published_at": "2026-01-30T21:03:37.000Z",
+          "ingested_at": "2026-02-01T18:38:41.033Z",
+          "snippet": "Levi Strauss & Co. cited double-digit ecommerce growth in its latest earnings results as overall net revenue increased 0.9% year over year to $1.77 billion in its fiscal Q4 ended Nov. 30, 2025. The jeans and apparel brand recorded a 19% increase in net revenue from ecommerce, compared to the same period a year earlier. […]\nThe post Levi Strauss ecommerce sales fuel Q4 growth as new AI tool arrives on mobile app appeared first on Digital Commerce 360.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0.1,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ecommerce"
+            ]
+          },
+          "aiSummary": "In Q4 of 2025, Levi Strauss & Co. saw double-digit ecommerce growth, with a 19% increase in net revenue from online sales compared to the previous year. The company's overall net revenue rose by 0.9% to $1.77 billion, fueled by strong ecommerce performance and the introduction of a new AI tool on its mobile app."
+        },
+        {
+          "id": "f8ijau",
+          "title": "Why Marketplaces Block AI Shopping Agents",
+          "url": "https://www.practicalecommerce.com/why-marketplaces-block-ai-shopping-agents",
+          "source": "Practical Ecommerce",
+          "published_at": "2026-01-29T13:56:32.000Z",
+          "ingested_at": "2026-02-01T18:38:41.033Z",
+          "snippet": "Autonomous AI shopping agents threaten the role of marketplaces in product discovery, advertising, and transactions.\nThe post Why Marketplaces Block AI Shopping Agents appeared first on Practical Ecommerce.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.04999999999999999,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0,
+            "penalty": 0.2,
+            "matchedKeywords": [
+              "shopping",
+              "marketplace",
+              "ecommerce"
+            ]
+          },
+          "aiSummary": "AI shopping agents are being blocked by marketplaces due to the threat they pose to product discovery, advertising, and transactions in the ecommerce industry."
+        }
+      ]
+    },
+    "Luxury_and_Consumer": {
+      "total": 117,
+      "top": [
+        {
+          "id": "qpu6xr",
+          "title": "How The Knightsbridge Estate Is Evolving Its Retail Mix For the Modern Consumer",
+          "url": "https://www.businessoffashion.com/articles/retail/how-the-knightsbridge-estate-is-evolving-its-retail-mix-for-the-modern-consumer/",
+          "source": "Business of Fashion - News",
+          "published_at": "2026-01-27T05:00:00.000Z",
+          "ingested_at": "2026-02-01T18:38:41.033Z",
+          "snippet": "The 3.5-acre mixed-use estate in the affluent West London district is enhancing its retail and public-realm experience. BoF sits down with The Knightsbridge Estate’s Tom Woolven to discuss how changing consumer behaviour is informing the estate’s development and its curated mix of luxury, premium, lifestyle and wellness brands.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.2,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "consumer",
+              "luxury",
+              "premium",
+              "brand",
+              "affluent"
+            ]
+          },
+          "aiSummary": "AI-Generated Summary:\nThe Knightsbridge Estate in West London is adapting its retail offerings to cater to modern consumers, focusing on luxury, premium, lifestyle, and wellness brands. Tom Woolven discusses how changing consumer behavior is shaping the estate's development."
+        },
+        {
+          "id": "svj65u",
+          "title": "In the Fight for Early Payouts From Bankrupt Saks, Big Luxury Brands Have the Edge",
+          "url": "https://www.businessoffashion.com/articles/retail/in-the-fight-for-early-payouts-from-bankrupt-saks-big-luxury-brands-have-the-edge/",
+          "source": "Business of Fashion - News",
+          "published_at": "2026-01-30T20:36:14.000Z",
+          "ingested_at": "2026-02-01T18:38:41.033Z",
+          "snippet": "The embattled luxury department store is ‘absolutely dependent’ on companies like Chanel, LVMH and Kering, who could ‘suffocate’ the retailer if they stopped shipping, Reuters reported.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "luxury",
+              "brand"
+            ]
+          },
+          "aiSummary": "AI-Generated Summary:\nLuxury brands like Chanel, LVMH, and Kering hold significant power over bankrupt Saks Fifth Avenue, as the retailer heavily relies on them for shipments, potentially impacting its ability to secure early payouts."
+        },
+        {
+          "id": "wdxt08",
+          "title": "Second-Tier Cities Are Critical to Reviving Luxury Growth in China",
+          "url": "https://www.businessoffashion.com/news/global-markets/second-tier-cities-are-critical-to-reviving-luxury-growth-in-china/",
+          "source": "Business of Fashion - News",
+          "published_at": "2026-01-28T15:39:32.000Z",
+          "ingested_at": "2026-02-01T18:38:41.033Z",
+          "snippet": "Hubs like Nanjing and Changsha are drawing increased attention from brands such as Louis Vuitton and Burberry as middle-class consumers relocating from Beijing and Shanghai in search of higher quality of life take their appetite for luxury goods with them.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "luxury",
+              "consumer",
+              "brand"
+            ]
+          },
+          "aiSummary": "AI-Generated Summary:\nLuxury brands are turning their focus to second-tier cities like Nanjing and Changsha in China, as middle-class consumers from major cities seek a higher quality of life and continue to drive demand for luxury goods."
+        },
+        {
+          "id": "mmf8zq",
+          "title": "KKR-led group set to buy Singapore data-centre firm valued at over $10 billion, WSJ reports ",
+          "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/kkr-led-group-set-to-buy-singapore-data-centre-firm-valued-at-over-10-billion-wsj-reports/articleshow/127832093.cms",
+          "source": "Economic Times - Technology",
+          "published_at": "2026-02-01T04:01:58.000Z",
+          "ingested_at": "2026-02-01T18:38:41.033Z",
+          "snippet": "A KKR-led group is close to acquiring ST Telemedia Global Data Centres. The deal values the company at over 13 billion Singapore dollars. KKR is partnering with Singtel for this acquisition. This transaction is set to be one of Asia's largest data centre deals. Demand for digital infrastructure is surging due to artificial intelligence growth.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0.1,
+            "penalty": 0,
+            "matchedKeywords": [
+              "demand"
+            ]
+          },
+          "aiSummary": "AI-Generated Summary:\nKKR-led group, in partnership with Singtel, is on the verge of acquiring ST Telemedia Global Data Centres for over $10 billion, marking one of Asia's largest data centre deals amid rising demand for digital infrastructure driven by artificial intelligence growth."
+        },
+        {
+          "id": "56q1",
+          "title": "7 Customer Engagement Metrics to Track in 2026",
+          "url": "https://insiderone.com/customer-engagement-metrics/",
+          "source": "UseInsider",
+          "published_at": "2026-01-28T07:27:43.000Z",
+          "ingested_at": "2026-02-01T18:38:41.033Z",
+          "snippet": "In 2026, customer engagement is what separates marketing that works from marketing that wastes budget. Privacy changes have reshaped digital tracking. AI has raised expectations for personalization. Clicks and impressions? They barely scratch the surface anymore.​ What matters now is whether people are connecting with your brand: opening emails, spending time on your site, responding […]",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "spending",
+              "brand"
+            ]
+          },
+          "aiSummary": "AI-Generated Summary:\nIn 2026, tracking customer engagement metrics is crucial for effective marketing as privacy changes and AI raise expectations for personalization. Clicks and impressions are no longer sufficient; what matters now is genuine connection with the brand through actions like email opens and site engagement."
+        },
+        {
+          "id": "arb6xt",
+          "title": "Meta Forecasts Spending of at Least $115 Billion This Year",
+          "url": "https://www.nytimes.com/2026/01/28/technology/meta-earnings-ai-spending.html",
+          "source": "NYTimes Technology",
+          "published_at": "2026-01-30T02:51:20.000Z",
+          "ingested_at": "2026-02-01T18:38:41.033Z",
+          "snippet": "That would be a major jump from $72 billion last year, as the tech giant aims to compete in the artificial intelligence race.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0.15,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "spending"
+            ]
+          },
+          "aiSummary": "AI-Generated Summary:\nMeta plans to spend over $115 billion this year, a significant increase from $72 billion in the previous year, as it strives to compete in the artificial intelligence sector."
+        },
+        {
+          "id": "2b5f4g",
+          "title": "‘Trust is the new currency of luxury’: Positive Luxury",
+          "url": "https://www.luxurydaily.com/trust-is-the-new-currency-of-luxury-positive-luxury/",
+          "source": "Luxury Daily - Research",
+          "published_at": "2026-01-28T10:00:47.000Z",
+          "ingested_at": "2026-02-01T18:38:41.033Z",
+          "snippet": "Following a year marked by compromised supply chains and regulatory compliance challenges, consumers are demanding greater transparency from high-end brands.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.2,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "luxury",
+              "high-end",
+              "consumer",
+              "demand",
+              "brand"
+            ]
+          },
+          "aiSummary": "AI-Generated Summary:\nConsumers in the luxury sector are prioritizing trust as a key factor in their purchasing decisions, seeking transparency from high-end brands due to supply chain issues and regulatory challenges in the industry."
+        }
+      ]
+    },
+    "Jewellery_Industry": {
+      "total": 19,
+      "top": [
+        {
+          "id": "ug4juh",
+          "title": "Chow Tai Fook reports strong sales recovery",
+          "url": "https://www.jewellermagazine.com/Article/14714/Chow-Tai-Fook-reports-strong-sales-recovery",
+          "source": "Jeweller - Business News",
+          "published_at": "2026-01-26T13:00:00.000Z",
+          "ingested_at": "2026-02-01T18:38:41.033Z",
+          "snippet": "Hong Kong-based jewellery retailer Chow Tai Fook reported higher retail sales in its latest report, indicating a recovery in consumer demand.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.3,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "jewellery",
+              "retailer",
+              "jeweller"
+            ]
+          },
+          "aiSummary": "AI-generated summary:\nChow Tai Fook, a Hong Kong-based jewellery retailer, has reported a strong sales recovery with higher retail sales, signaling an improvement in consumer demand within the jewellery industry."
+        },
+        {
+          "id": "husufs",
+          "title": "Positive jewellery sales for Michael Hill",
+          "url": "https://www.jewellermagazine.com/Article/14712/Positive-jewellery-sales-for-Michael-Hill",
+          "source": "Jeweller - Business News",
+          "published_at": "2026-01-26T13:00:00.000Z",
+          "ingested_at": "2026-02-01T18:38:41.033Z",
+          "snippet": "Michael Hill International has reported a strong jewellery sales performance over the past six months.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.25,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "jewellery",
+              "jeweller"
+            ]
+          },
+          "aiSummary": "AI-Generated Summary:\nMichael Hill International has experienced positive jewellery sales in the past six months, as reported by Jeweller - Business News on January 26, 2026."
+        },
+        {
+          "id": "djqbyi",
+          "title": "CIBJO issues warning about scammers",
+          "url": "https://www.jewellermagazine.com/Article/14713/CIBJO-issues-warning-about-scammers",
+          "source": "Jeweller - Business News",
+          "published_at": "2026-01-26T13:00:00.000Z",
+          "ingested_at": "2026-02-01T18:38:41.033Z",
+          "snippet": "The World Jewellery Confederation (CIBJO) has issued an urgent warning to the broader industry about individuals fraudulently claiming to represent the organisation.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0.2,
+            "matchedKeywords": [
+              "jewellery",
+              "jeweller"
+            ]
+          },
+          "aiSummary": "AI-Generated Summary:\nThe World Jewellery Confederation (CIBJO) has warned the jewellery industry about scammers falsely claiming to be affiliated with the organization."
+        },
+        {
+          "id": "2iaxjt",
+          "title": "Train Retail Announces Free Live Web Training: “How to Tell If Your Jewelry Marketing Is Actually Working”",
+          "url": "https://instoremag.com/train-retail-announces-free-live-web-training-how-to-tell-if-your-jewelry-marketing-is-actually-working/",
+          "source": "Instore Magazine",
+          "published_at": "2026-01-30T16:40:16.000Z",
+          "ingested_at": "2026-02-01T18:38:41.033Z",
+          "snippet": "Live online training for independent jewelers scheduled for February 18th at 10 am Central.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "jewelry"
+            ]
+          },
+          "aiSummary": "AI-Generated Summary:\nTrain Retail is offering a free live web training session on February 18th at 10 am Central for independent jewelers to learn how to assess the effectiveness of their jewelry marketing efforts."
+        },
+        {
+          "id": "aj8az9",
+          "title": "‘Menopause gold rush’? Boom in hi-tech products as stigma starts to recede",
+          "url": "https://www.theguardian.com/society/2026/feb/01/menopause-gold-rush-experts-warn-of-brands-cashing-in-on-womens-symptoms",
+          "source": "The Guardian - Technology",
+          "published_at": "2026-02-01T10:00:24.000Z",
+          "ingested_at": "2026-02-01T18:38:41.033Z",
+          "snippet": "The march of wearable tech is coming to the aid of women in what some say is a long underserved market\nFor any bodily function you want to measure these days there is a gadget – a wristband for step-counting, a watch to track your heart rate or a ring for measuring sleep.\nNow the march of wearable tech is coming to the aid of what some say is a long underserved market: menopausal women.\n Continue reading...",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": -0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0.2,
+            "matchedKeywords": [
+              "gold",
+              "watch"
+            ]
+          },
+          "aiSummary": "AI-generated summary:\nThe jewellery industry is experiencing a \"menopause gold rush\" with a boom in hi-tech products aimed at menopausal women as wearable tech becomes more prevalent in tracking various bodily functions."
+        },
+        {
+          "id": "pbe06c",
+          "title": "Jewelers’ Horoscope: February 2-8, 2026",
+          "url": "https://instoremag.com/jewelers-horoscope-feb2-8-2026/",
+          "source": "Instore Magazine",
+          "published_at": "2026-02-01T01:05:42.000Z",
+          "ingested_at": "2026-02-01T18:38:41.033Z",
+          "snippet": "Astrological forecasts for the week ahead for jewelry store-owners, salespeople and custom jewelers.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": -0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0.2,
+            "matchedKeywords": [
+              "jewelry"
+            ]
+          },
+          "aiSummary": "AI-Generated Summary:\nInstore Magazine's \"Jewelers’ Horoscope: February 2-8, 2026\" provides astrological forecasts tailored for jewelry store-owners, salespeople, and custom jewelers for the upcoming week."
+        },
+        {
+          "id": "60johb",
+          "title": "The Weirdest Things in Jewelry Stores Right Now",
+          "url": "https://instoremag.com/the-weirdest-things-in-jewelry-stores-right-now/",
+          "source": "Instore Magazine",
+          "published_at": "2026-01-30T02:00:23.000Z",
+          "ingested_at": "2026-02-01T18:38:41.033Z",
+          "snippet": "Jewelers delivered dinosaur poop, glass eye rings, and an elf named \"Bling Crosby.\"",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "jewelry"
+            ]
+          },
+          "aiSummary": "AI-generated summary:\nJewelry stores are showcasing unusual items like dinosaur poop, glass eye rings, and an elf named \"Bling Crosby,\" as reported by Instore Magazine on January 30, 2026."
+        }
+      ]
+    }
+  },
+  "coverImageUrl": "/weekly-images/2026-W05.png",
+  "coverImageAlt": "Weekly cover illustration for 2026-W05"
+}

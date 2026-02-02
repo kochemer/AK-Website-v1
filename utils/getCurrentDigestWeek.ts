@@ -13,11 +13,11 @@ import { DateTime } from 'luxon';
 
 /**
  * Get the current digest week label.
- * Currently hardcoded to 2026-W04 for consistency.
+ * Currently hardcoded to 2026-W05 for consistency.
  */
 export function getCurrentDigestWeek(): string {
   // Hardcoded for now - update this when moving to a new week
-  return '2026-W04';
+  return '2026-W05';
   
   // Future options:
   // Option 1: Always show previous week
