@@ -1,6 +1,7 @@
 'use client';
 
 import { formatDisplayDate } from '@/lib/utils/formatDisplayDate';
+import type { Locale } from '@/lib/i18n/types';
 
 type ArticleCardProps = {
   title: string;
@@ -9,6 +10,12 @@ type ArticleCardProps = {
   date?: string;
   summary?: string | null;
   badges?: string[];
+  locale?: Locale;
+  translations?: {
+    da?: { title?: string; summary?: string };
+    es?: { title?: string; summary?: string };
+  };
+  aiSummaryLabel?: string;
 };
 
 export default function ArticleCard({
@@ -18,9 +25,16 @@ export default function ArticleCard({
   date,
   summary,
   badges,
+  locale = 'en',
+  translations,
+  aiSummaryLabel = 'AI summary',
 }: ArticleCardProps) {
+  // Resolve localized title and summary (fallback to English)
+  const localizedTitle = (locale !== 'en' && translations?.[locale]?.title) || title;
+  const localizedSummary = (locale !== 'en' && translations?.[locale]?.summary) || summary;
+
   // Clean summary text (remove AI-Generated Summary prefix if present)
-  const cleanSummary = summary
+  const cleanSummary = localizedSummary
     ?.replace(/^AI-Generated Summary:\s*/i, '')
     .replace(/^AI-generated summary:\s*/i, '')
     .trim() || null;
@@ -38,7 +52,7 @@ export default function ArticleCard({
       >
         {/* Title */}
         <div className="mb-2 sm:mb-2 md:mb-2.5 font-semibold text-base sm:text-base md:text-lg leading-snug sm:leading-tight text-blue-800 line-clamp-3 pr-1">
-          {title}
+          {localizedTitle}
         </div>
 
         {/* Meta row: Source • Date (only render if source or date exists) */}
@@ -86,11 +100,10 @@ export default function ArticleCard({
       {cleanSummary && (
         <div className="mt-2.5 sm:mt-3">
           <div className="text-sm sm:text-sm md:text-base text-gray-600 bg-gray-50 border-l-2 border-gray-300 rounded px-3 sm:px-3 md:px-4 py-2 sm:py-2 md:py-2.5 line-clamp-4 sm:line-clamp-5 md:line-clamp-6">
-            <span className="text-sm sm:text-sm md:text-base text-gray-600 font-medium">AI summary: </span>{cleanSummary}
+            <span className="text-sm sm:text-sm md:text-base text-gray-600 font-medium">{aiSummaryLabel}: </span>{cleanSummary}
           </div>
         </div>
       )}
     </div>
   );
 }
-

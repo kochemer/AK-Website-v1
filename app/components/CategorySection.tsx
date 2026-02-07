@@ -1,5 +1,6 @@
 import ArticleCard from './ArticleCard';
 import Link from 'next/link';
+import type { Locale } from '@/lib/i18n/types';
 
 type Article = {
   id: string;
@@ -9,6 +10,10 @@ type Article = {
   published_at?: string;
   date?: string;
   aiSummary?: string | null;
+  translations?: {
+    da?: { title?: string; summary?: string };
+    es?: { title?: string; summary?: string };
+  };
 };
 
 type CategorySectionProps = {
@@ -19,6 +24,12 @@ type CategorySectionProps = {
   rankingLabel?: string;
   variant?: 'default' | 'grid';
   id?: string;
+  locale?: Locale;
+  emptyTitle?: string;
+  emptyDesc?: string;
+  emptyCta?: string;
+  countLabel?: string;
+  aiSummaryLabel?: string;
 };
 
 export default function CategorySection({
@@ -29,6 +40,12 @@ export default function CategorySection({
   rankingLabel,
   variant = 'default',
   id,
+  locale = 'en',
+  emptyTitle = 'Coverage light this week',
+  emptyDesc = 'This is a curated weekly selection. Not every category will have articles every week.',
+  emptyCta = 'Suggest a source',
+  countLabel = '# of articles processed',
+  aiSummaryLabel = 'AI summary',
 }: CategorySectionProps) {
   const isGrid = variant === 'grid';
   
@@ -52,7 +69,7 @@ export default function CategorySection({
             {count}
           </span>
           <span className="text-[10px] sm:text-[10px] text-gray-400 leading-tight mt-0.5 hidden sm:block">
-            # of articles processed
+            {countLabel}
           </span>
         </div>
       )}
@@ -76,22 +93,25 @@ export default function CategorySection({
               source={article.source}
               date={article.date || article.published_at || ''}
               summary={article.aiSummary}
+              locale={locale}
+              translations={article.translations}
+              aiSummaryLabel={aiSummaryLabel}
             />
           ))
         ) : (
           <div className="bg-gray-50 rounded-lg border border-dashed border-gray-200 text-center py-6 sm:py-8 md:py-10 lg:py-12 px-3 sm:px-4 md:px-6">
             <div className="font-medium text-sm sm:text-base md:text-lg text-gray-600 mb-1.5 sm:mb-2">
-              Coverage light this week
+              {emptyTitle}
             </div>
             <div className="text-xs sm:text-sm md:text-base text-gray-500 mb-3 sm:mb-4">
-              This is a curated weekly selection. Not every category will have articles every week.
+              {emptyDesc}
             </div>
             {isGrid && (
               <Link 
                 href="/feedback" 
                 className="text-xs sm:text-sm md:text-base text-gray-600 hover:text-gray-800 underline"
               >
-                Suggest a source
+                {emptyCta}
               </Link>
             )}
           </div>
@@ -100,4 +120,3 @@ export default function CategorySection({
     </section>
   );
 }
-

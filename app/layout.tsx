@@ -5,6 +5,7 @@ import Image from "next/image";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import AmplitudeInit from "./components/AmplitudeInit";
 import LanguageSwitcher from "./components/LanguageSwitcher";
+import NavLinks, { FooterNavLinks } from "./components/NavLinks";
 import InstallPwaButton from "./components/InstallPwaButton";
 import EnableNotificationsButton from "./components/EnableNotificationsButton";
 import DisplayModeAttribute from "./components/DisplayModeAttribute";
@@ -64,6 +65,7 @@ export const metadata: Metadata = {
   },
 };
 
+// navLinks kept for reference but NavLinks component now handles locale-aware labels
 const navLinks = [
   { href: "/", label: "Home" },
   { href: "/archive", label: "Archive" },
@@ -158,31 +160,11 @@ export default function RootLayout({
             </div>
           </div>
 
-          {/* Navigation - Mobile First */}
+          {/* Navigation - Mobile First (locale-aware) */}
           <nav className="border-t border-gray-100 md:border-t-0">
             <div className="max-w-3xl mx-auto px-3 py-2 md:px-4 md:py-2">
               <ul className="flex items-center gap-1 md:gap-1.5 lg:gap-2 text-[11px] md:text-xs lg:text-sm font-medium flex-wrap justify-center md:justify-start">
-                {navLinks.map((link) => (
-                  <li key={link.href} className="whitespace-nowrap">
-                    <Link
-                      href={link.href}
-                      className="text-gray-900 hover:text-gray-700 hover:underline focus-visible:underline transition-colors px-2 py-2 md:px-1.5 md:py-0.5 rounded flex items-center min-h-[44px] md:min-h-0"
-                    >
-                      {link.label}
-                    </Link>
-                  </li>
-                ))}
-                <li className="whitespace-nowrap">
-                  <Link
-                    href="/subscribe"
-                    className="inline-flex items-center justify-center font-semibold text-[#06244c] bg-[#fed236] rounded-md px-2.5 py-2 md:px-3 md:py-1 text-[11px] md:text-xs transition-colors hover:bg-[#fdd01a] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#06244c] focus-visible:ring-offset-1 min-h-[44px] md:min-h-0 shadow-sm"
-                    style={{
-                      boxShadow: '0 2px 8px rgba(0,0,0,0.18)',
-                    }}
-                  >
-                    Subscribe
-                  </Link>
-                </li>
+                <NavLinks />
               </ul>
             </div>
           </nav>
@@ -193,20 +175,11 @@ export default function RootLayout({
           {children}
         </main>
 
-        {/* Footer */}
+        {/* Footer (locale-aware) */}
         <footer className="mt-4 sm:mt-6 border-t border-gray-200 py-5 sm:py-6 text-xs sm:text-xs text-gray-500 bg-white/80 w-full">
           <div className="max-w-3xl mx-auto px-4 sm:px-6">
             <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-3 mb-3">
-              {navLinks.map((link) => (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  className="hover:underline whitespace-nowrap py-1 min-h-[44px] sm:min-h-0 flex items-center"
-                  style={{ minHeight: '44px' }}
-                >
-                  {link.label}
-                </Link>
-              ))}
+              <FooterNavLinks />
             </div>
             <div className="text-center px-3 leading-relaxed">
               <span className="font-medium">AI-assisted summaries</span> &mdash; Not investment or business advice. Website built and maintained by AK.

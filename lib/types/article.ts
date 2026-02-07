@@ -79,6 +79,12 @@ export interface Article {
   // === Filtering/quality fields ===
   paywalled?: boolean; // True if article is behind paywall
   hasFullText?: boolean; // True if full text was extracted
+  
+  // === i18n translations (populated at digest build time) ===
+  translations?: {
+    da?: { title?: string; summary?: string };
+    es?: { title?: string; summary?: string };
+  };
 }
 
 /**

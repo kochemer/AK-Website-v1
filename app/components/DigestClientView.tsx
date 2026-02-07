@@ -5,7 +5,9 @@ import { useMemo, useState, useEffect } from 'react';
 import CategorySection from './CategorySection';
 import { getTopicDisplayName, TopicKey } from '@/lib/utils/topicNames';
 import { formatDate } from '@/lib/utils/formatDate';
+import { getMessages } from '@/lib/i18n/messages';
 import type { WeeklyDigest } from '@/lib/types';
+import type { Locale } from '@/lib/i18n/types';
 
 const VALID_N_VALUES = [3, 4, 5, 6, 7] as const;
 const DEFAULT_N = 7;
@@ -46,14 +48,17 @@ type DigestClientViewProps = {
   digest: WeeklyDigest;
   categoryCards?: CategoryCard[];
   variant?: 'home' | 'week';
+  locale?: Locale;
 };
 
 export default function DigestClientView({ 
   digest, 
   categoryCards,
-  variant = 'home'
+  variant = 'home',
+  locale = 'en',
 }: DigestClientViewProps) {
   const searchParams = useSearchParams();
+  const t = getMessages(locale);
   
   // Get current N from URL param or default (server-safe)
   // Don't access localStorage during initial render to avoid hydration mismatch
@@ -108,7 +113,7 @@ export default function DigestClientView({
             const totalCat = digest.totals.byTopic[cat.countBy] ?? 0;
             
             // Slice articles client-side based on effectiveTopN
-            const formattedArticles = (topic?.top || []).slice(0, effectiveTopN).map(article => ({
+            const formattedArticles = (topic?.top || []).slice(0, effectiveTopN).map((article: any) => ({
               ...article,
               date: formatDate(article.published_at),
             }));
@@ -118,10 +123,16 @@ export default function DigestClientView({
                 <CategorySection
                   id={cat.anchorId}
                   variant="grid"
-                  title={getTopicDisplayName(cat.key)}
+                  title={cat.title}
                   description={cat.desc}
                   count={totalCat}
                   articles={formattedArticles}
+                  locale={locale}
+                  emptyTitle={t.digest.coverageLightTitle}
+                  emptyDesc={t.digest.coverageLightDesc}
+                  emptyCta={t.digest.suggestSource}
+                  countLabel={t.digest.articlesCount}
+                  aiSummaryLabel={t.digest.aiSummary}
                 />
               </div>
             );
@@ -141,6 +152,12 @@ export default function DigestClientView({
             ...article,
             date: formatDate(article.published_at),
           }))}
+          locale={locale}
+          emptyTitle={t.digest.coverageLightTitle}
+          emptyDesc={t.digest.coverageLightDesc}
+          emptyCta={t.digest.suggestSource}
+          countLabel={t.digest.articlesCount}
+          aiSummaryLabel={t.digest.aiSummary}
         />
 
         {/* Ecommerce & Retail Tech */}
@@ -151,6 +168,12 @@ export default function DigestClientView({
             ...article,
             date: formatDate(article.published_at),
           }))}
+          locale={locale}
+          emptyTitle={t.digest.coverageLightTitle}
+          emptyDesc={t.digest.coverageLightDesc}
+          emptyCta={t.digest.suggestSource}
+          countLabel={t.digest.articlesCount}
+          aiSummaryLabel={t.digest.aiSummary}
         />
 
         {/* Luxury & Consumer */}
@@ -161,6 +184,12 @@ export default function DigestClientView({
             ...article,
             date: formatDate(article.published_at),
           }))}
+          locale={locale}
+          emptyTitle={t.digest.coverageLightTitle}
+          emptyDesc={t.digest.coverageLightDesc}
+          emptyCta={t.digest.suggestSource}
+          countLabel={t.digest.articlesCount}
+          aiSummaryLabel={t.digest.aiSummary}
         />
 
         {/* Jewellery Industry */}
@@ -171,9 +200,14 @@ export default function DigestClientView({
             ...article,
             date: formatDate(article.published_at),
           }))}
+          locale={locale}
+          emptyTitle={t.digest.coverageLightTitle}
+          emptyDesc={t.digest.coverageLightDesc}
+          emptyCta={t.digest.suggestSource}
+          countLabel={t.digest.articlesCount}
+          aiSummaryLabel={t.digest.aiSummary}
         />
       </div>
     );
   }
 }
-

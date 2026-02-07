@@ -2,6 +2,7 @@ import { promises as fs } from 'fs';
 import path from 'path';
 import { buildWeeklyDigest } from '../digest/buildWeeklyDigest';
 import { generateSummariesForDigest } from '../digest/generateSummaries';
+import { translateDigestArticles } from '../lib/i18n/translate';
 import { loadEnv } from '../lib/env';
 import { getCurrentDigestWeek, validateWeekLabel } from '../lib/utils/getCurrentDigestWeek';
 
@@ -38,6 +39,43 @@ async function main() {
     console.log(`[Build Weekly Digest] Generating AI summaries for articles...`);
     const summaryStats = await generateSummariesForDigest(digest);
     console.log(`[Build Weekly Digest] Summary generation complete - Succeeded: ${summaryStats.succeeded}, Skipped: ${summaryStats.skipped}, Failed: ${summaryStats.failed}`);
+    
+    // Translate article titles + summaries into DA/ES
+    console.log(`[Build Weekly Digest] Translating articles into DA/ES...`);
+    const allTopArticles = [
+      ...digest.topics.AI_and_Strategy.top,
+      ...digest.topics.Ecommerce_Retail_Tech.top,
+      ...digest.topics.Luxury_and_Consumer.top,
+      ...digest.topics.Jewellery_Industry.top,
+    ];
+    const { translations, stats: translateStats } = await translateDigestArticles(allTopArticles);
+    
+    // Attach translations to each article in the digest
+    for (const article of allTopArticles) {
+      const t = translations.get(article.title);
+      if (t) {
+        article.translations = t;
+      }
+    }
+    console.log(`[Build Weekly Digest] Translation complete - Total: ${translateStats.total}, Cached: ${translateStats.cached}, Translated: ${translateStats.translated}, Failed: ${translateStats.failed}`);
+    
+    // Validate translations: check DA/ES titles differ from English
+    let translationMisses = 0;
+    for (const article of allTopArticles) {
+      if (!article.translations?.da?.title || article.translations.da.title === article.title) {
+        console.warn(`[Build Weekly Digest] ⚠ DA translation missing or identical for: "${article.title.substring(0, 60)}..."`);
+        translationMisses++;
+      }
+      if (!article.translations?.es?.title || article.translations.es.title === article.title) {
+        console.warn(`[Build Weekly Digest] ⚠ ES translation missing or identical for: "${article.title.substring(0, 60)}..."`);
+        translationMisses++;
+      }
+    }
+    if (translationMisses > 0) {
+      console.warn(`[Build Weekly Digest] ⚠ ${translationMisses} translation misses detected (see warnings above)`);
+    } else {
+      console.log(`[Build Weekly Digest] ✓ All translations validated successfully`);
+    }
     
     // Save to data/digests/{weekLabel}.json
     const outputDir = path.join(process.cwd(), 'data', 'digests');

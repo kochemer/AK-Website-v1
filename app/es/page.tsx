@@ -1,13 +1,13 @@
 import { promises as fs } from 'fs';
 import path from 'path';
 import Link from 'next/link';
-import Image from 'next/image';
 import { Suspense } from 'react';
 import DigestClientView from '../components/DigestClientView';
 import TopNSelector from '../components/TopNSelector';
 import { TopicKey } from '@/lib/utils/topicNames';
 import { formatDate } from '@/lib/utils/formatDate';
 import { getCurrentDigestWeek } from '@/lib/utils/getCurrentDigestWeek';
+import { getMessages } from '@/lib/i18n/messages';
 import type { WeeklyDigest } from '@/lib/types';
 
 
@@ -22,59 +22,59 @@ async function loadDigest(weekLabel: string): Promise<WeeklyDigest | null> {
   }
 }
 
-// Category UI meta data (title, short desc, topicKey, N)
-// Ordered for display: Ecommerce, Jewellery, AI, Luxury
-const CATEGORY_CARDS: Array<{
-  key: TopicKey;
-  color: string;
-  title: string;
-  desc: string;
-  countBy: string;
-  topInfo: string;
-  anchorId: string;
-}> = [
-  {
-    key: 'Ecommerce_Retail_Tech',
-    color: '#264653',
-    title: 'Ecommerce y Tecnología Retail',
-    desc: 'Avances y tendencias que dan forma al comercio en línea, retail y tecnología emergente.',
-    countBy: 'EcommerceRetail',
-    topInfo: 'Top 7 artículos por recencia',
-    anchorId: 'ecommerce-retail-tech',
-  },
-  {
-    key: 'Jewellery_Industry',
-    color: '#be8b36',
-    title: 'Industria de la Joyería',
-    desc: 'Actualizaciones clave y artículos sobre marcas de joyería, comercio y cadena de suministro.',
-    countBy: 'Jewellery',
-    topInfo: 'Top 7 artículos por recencia',
-    anchorId: 'jewellery-industry',
-  },
-  {
-    key: 'AI_and_Strategy',
-    color: '#25505f',
-    title: 'Noticias de Inteligencia Artificial',
-    desc: 'Los últimos avances y estrategias en inteligencia artificial y transformación empresarial.',
-    countBy: 'AIStrategy',
-    topInfo: 'Top 7 artículos por relevancia',
-    anchorId: 'ai-strategy',
-  },
-  {
-    key: 'Luxury_and_Consumer',
-    color: '#6b2d5c',
-    title: 'Moda y Lujo',
-    desc: 'Innovaciones y cambios en lujo y productos de consumo más amplios, experiencias y marcas.',
-    countBy: 'LuxuryConsumer',
-    topInfo: 'Top 7 artículos por recencia',
-    anchorId: 'luxury-consumer',
-  },
-];
-
-
 export default async function HomeES() {
   const weekLabel = getCurrentDigestWeek();
   const digest = await loadDigest(weekLabel);
+  const t = getMessages('es');
+
+  // Category UI meta data — Spanish translations from message dictionary
+  const CATEGORY_CARDS: Array<{
+    key: TopicKey;
+    color: string;
+    title: string;
+    desc: string;
+    countBy: string;
+    topInfo: string;
+    anchorId: string;
+  }> = [
+    {
+      key: 'Ecommerce_Retail_Tech',
+      color: '#264653',
+      title: t.categories.ecommerceRetailTech,
+      desc: t.categories.ecommerceRetailTechDesc,
+      countBy: 'EcommerceRetail',
+      topInfo: 'Top 7 artículos por recencia',
+      anchorId: 'ecommerce-retail-tech',
+    },
+    {
+      key: 'Jewellery_Industry',
+      color: '#be8b36',
+      title: t.categories.jewelleryIndustry,
+      desc: t.categories.jewelleryIndustryDesc,
+      countBy: 'Jewellery',
+      topInfo: 'Top 7 artículos por recencia',
+      anchorId: 'jewellery-industry',
+    },
+    {
+      key: 'AI_and_Strategy',
+      color: '#25505f',
+      title: t.categories.aiStrategy,
+      desc: t.categories.aiStrategyDesc,
+      countBy: 'AIStrategy',
+      topInfo: 'Top 7 artículos por relevancia',
+      anchorId: 'ai-strategy',
+    },
+    {
+      key: 'Luxury_and_Consumer',
+      color: '#6b2d5c',
+      title: t.categories.fashionLuxury,
+      desc: t.categories.fashionLuxuryDesc,
+      countBy: 'LuxuryConsumer',
+      topInfo: 'Top 7 artículos por recencia',
+      anchorId: 'luxury-consumer',
+    },
+  ];
+
 
   // HERO section (always present)
   return (
@@ -109,10 +109,10 @@ export default async function HomeES() {
             Luxury Intelligence
           </h1>
           <div className="text-base md:text-lg text-gray-100 leading-relaxed max-w-xl mx-auto mb-3">
-            Inteligencia semanal sobre IA, ecommerce, lujo y joyería.
+            {t.hero.tagline}
           </div>
           <p className="text-sm md:text-base text-gray-300 mb-5">
-            Artículos, señales y contexto curados — seleccionados y resumidos por agentes de IA cada semana.
+            {t.hero.subtitle}
           </p>
           <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 12, flexWrap: 'wrap'}}>
             <Link
@@ -129,19 +129,19 @@ export default async function HomeES() {
                 boxShadow: '0 2px 8px rgba(0,0,0,0.18)',
               }}
             >
-              Suscribirse (resumen por email)
+              {t.nav.subscribeCta} (resumen por email)
             </Link>
             <span className="text-gray-300 text-sm">•</span>
-            <Link href="/archive" className="text-sm md:text-base text-gray-200 hover:text-white underline">
-              Explorar archivo
+            <Link href="/es/archive" className="text-sm md:text-base text-gray-200 hover:text-white underline">
+              {t.nav.archive}
             </Link>
             <span className="text-gray-300 text-sm">•</span>
-            <Link href="/about" className="text-sm md:text-base text-gray-200 hover:text-white underline">
-              Acerca de
+            <Link href="/es/about" className="text-sm md:text-base text-gray-200 hover:text-white underline">
+              {t.nav.about}
             </Link>
             <span className="text-gray-300 text-sm">•</span>
-            <Link href="/support" className="text-sm md:text-base text-gray-200 hover:text-white underline">
-              Soporte
+            <Link href="/es/support" className="text-sm md:text-base text-gray-200 hover:text-white underline">
+              {t.nav.support}
             </Link>
           </div>
         </div>
@@ -161,8 +161,8 @@ export default async function HomeES() {
           textAlign: 'center',
           boxShadow: '0 2px 12px 0 rgba(200,170,100,0.04)'
         }}>
-          <h2 style={{margin: '0 0 1rem 0', fontSize: '1.6rem', fontWeight: 600}}>Resumen aún no construido</h2>
-          <p style={{marginBottom:'1.1rem'}}>No se encontró resumen para esta semana.</p>
+          <h2 style={{margin: '0 0 1rem 0', fontSize: '1.6rem', fontWeight: 600}}>{t.digest.digestNotBuilt}</h2>
+          <p style={{marginBottom:'1.1rem'}}>{t.digest.noDigestFound}</p>
           <div style={{marginBottom:'1.5rem'}}>
             <span style={{
               background: '#fff4ca',
@@ -172,7 +172,7 @@ export default async function HomeES() {
               borderRadius: '4px',
               fontSize: '1.04rem',
               display:'inline-block'
-            }}>npx tsx scripts/buildWeeklyDigest.ts</span>
+            }}>{t.digest.buildCommand}</span>
           </div>
         </section>
       ) : (
@@ -182,7 +182,7 @@ export default async function HomeES() {
           <div className="flex items-baseline justify-between flex-wrap gap-4">
             <div>
               <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 mb-1">
-                Semana {digest.weekLabel}
+                {t.digest.week} {digest.weekLabel}
               </h2>
               <p className="text-sm md:text-base text-gray-500">
                 {formatDate(digest.startISO)} a {formatDate(digest.endISO)}
@@ -193,7 +193,7 @@ export default async function HomeES() {
             </div>
             <div className="text-right">
               <p className="text-sm md:text-base text-gray-500">
-                {digest.totals.total} artículos procesados esta semana
+                {digest.totals.total} {t.digest.articlesProcessed}
               </p>
             </div>
           </div>
@@ -233,11 +233,10 @@ export default async function HomeES() {
             </div>
           </section>
         }>
-          <DigestClientView digest={digest} categoryCards={CATEGORY_CARDS} variant="home" />
+          <DigestClientView digest={digest} categoryCards={CATEGORY_CARDS} variant="home" locale="es" />
         </Suspense>
       </>
       )}
     </main>
   );
 }
-
