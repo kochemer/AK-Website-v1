@@ -207,7 +207,7 @@ async function fetchHtml(url: string, fetchDir: string): Promise<FetchResult> {
   }
 }
 
-function extractDateFromJsonLd($: cheerio.CheerioAPI): string | undefined {
+function extractDateFromJsonLd($: cheerio.Root): string | undefined {
   const scripts = $('script[type="application/ld+json"]');
   if (scripts.length === 0) return undefined;
 
