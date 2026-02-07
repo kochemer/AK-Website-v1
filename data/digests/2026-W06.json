@@ -41,7 +41,17 @@
               "investment"
             ]
           },
-          "aiSummary": "AI-Generated Summary:\nOracle is issuing $25 billion in high-grade bonds to fund AI infrastructure, marking a significant investment in artificial intelligence projects. This move follows Meta Platforms Inc.'s $30 billion offering late last year."
+          "aiSummary": "AI-Generated Summary:\nOracle is issuing $25 billion in high-grade bonds to fund AI infrastructure, marking a significant investment in artificial intelligence projects. This move follows Meta Platforms Inc.'s $30 billion offering late last year.",
+          "translations": {
+            "da": {
+              "title": "Oracle sælger obligationer af høj kvalitet for 25 milliarder dollar til AI-finansiering",
+              "summary": "Oracle udsteder obligationer af høj kvalitet for 25 milliarder dollar til at finansiere AI-infrastruktur, hvilket markerer en betydelig investering i kunstig intelligensprojekter. Dette skridt følger efter Meta Platforms Inc.s tilbud på 30 milliarder dollar sent sidste år."
+            },
+            "es": {
+              "title": "Oracle está vendiendo bonos de alta calidad por 25 mil millones de dólares para financiar IA",
+              "summary": "Oracle está emitiendo bonos de alta calidad por 25 mil millones de dólares para financiar infraestructura de IA, marcando una inversión significativa en proyectos de inteligencia artificial. Este movimiento sigue a la oferta de 30 mil millones de dólares de Meta Platforms Inc. a finales del año pasado."
+            }
+          }
         },
         {
           "id": "o3oubc",
@@ -65,7 +75,17 @@
               "claude"
             ]
           },
-          "aiSummary": "AI-generated summary:\nAnthropic, a start-up focused on AI for business, is experiencing success as its coding tools drive revenue growth and attract investor interest."
+          "aiSummary": "AI-generated summary:\nAnthropic, a start-up focused on AI for business, is experiencing success as its coding tools drive revenue growth and attract investor interest.",
+          "translations": {
+            "da": {
+              "title": "Anthropics gennembrud: hvordan Claude knækkede AI for erhvervslivet",
+              "summary": "Anthropic, en opstartsvirksomhed med fokus på AI til erhvervslivet, oplever succes, da deres kodningsværktøjer driver indtægtsvækst og tiltrækker investorinteresse."
+            },
+            "es": {
+              "title": "El momento decisivo de Anthropic: cómo Claude resolvió la IA para los negocios",
+              "summary": "Anthropic, una start-up centrada en la IA para negocios, está experimentando éxito a medida que sus herramientas de codificación impulsan el crecimiento de ingresos y atraen el interés de los inversores."
+            }
+          }
         },
         {
           "id": "6e8e19",
@@ -89,7 +109,17 @@
               "investment"
             ]
           },
-          "aiSummary": "Investors are heavily investing in AI startups, with Ricursive Intelligence raising $300 million in a Series A funding round at a $4 billion valuation, reflecting the growing importance of AI as core infrastructure across various industries."
+          "aiSummary": "Investors are heavily investing in AI startups, with Ricursive Intelligence raising $300 million in a Series A funding round at a $4 billion valuation, reflecting the growing importance of AI as core infrastructure across various industries.",
+          "translations": {
+            "da": {
+              "title": "Investorer Satser Stort på AI som Kernehardware Infrastruktur",
+              "summary": "Investorer investerer kraftigt i AI-startups, hvor Ricursive Intelligence har rejst 300 millioner dollars i en Series A finansieringsrunde med en værdiansættelse på 4 milliarder dollars, hvilket afspejler den voksende betydning af AI som kerneinfrastruktur på tværs af forskellige industrier."
+            },
+            "es": {
+              "title": "Los Inversores Apostan Fuerte por la IA como Infraestructura de Hardware Central",
+              "summary": "Los inversores están invirtiendo fuertemente en startups de IA, con Ricursive Intelligence recaudando 300 millones de dólares en una ronda de financiación Serie A con una valoración de 4 mil millones de dólares, lo que refleja la creciente importancia de la IA como infraestructura central en diversas industrias."
+            }
+          }
         },
         {
           "id": "w3w4t9",
@@ -114,7 +144,17 @@
               "artificial intelligence"
             ]
           },
-          "aiSummary": "AI-generated summary: Snowflake and OpenAI have expanded their partnership to integrate AI capabilities into Snowflake's data platform, aiming to transition AI from experimentation to production in enterprises. OpenAI's models will be accessible within Snowflake's AI Data platform under this multi-year strategic agreement."
+          "aiSummary": "AI-generated summary: Snowflake and OpenAI have expanded their partnership to integrate AI capabilities into Snowflake's data platform, aiming to transition AI from experimentation to production in enterprises. OpenAI's models will be accessible within Snowflake's AI Data platform under this multi-year strategic agreement.",
+          "translations": {
+            "da": {
+              "title": "Snowflake og OpenAI Udvider Partnerskab for at Bring AI Ind i Virksomhedsdata",
+              "summary": "AI-genereret resumé: Snowflake og OpenAI har udvidet deres partnerskab for at integrere AI-funktioner i Snowflakes dataplatform med det mål at overføre AI fra eksperimentering til produktion i virksomheder. OpenAIs modeller vil være tilgængelige inden for Snowflakes AI Data platform under denne flerårige strategiske aftale."
+            },
+            "es": {
+              "title": "Snowflake y OpenAI Amplían Asociación para Llevar IA a los Datos Empresariales",
+              "summary": "Resumen generado por IA: Snowflake y OpenAI han ampliado su asociación para integrar capacidades de IA en la plataforma de datos de Snowflake, con el objetivo de llevar la IA de la experimentación a la producción en las empresas. Los modelos de OpenAI estarán accesibles dentro de la plataforma de datos de IA de Snowflake bajo este acuerdo estratégico de varios años."
+            }
+          }
         },
         {
           "id": "mcgl03",
@@ -139,7 +179,17 @@
               "open source"
             ]
           },
-          "aiSummary": "AI-generated summary:\nKlarna partners with Google's Universal Commerce Protocol to enhance agentic AI, positioning itself as a key player in the autonomous AI assistant-driven commerce sector."
+          "aiSummary": "AI-generated summary:\nKlarna partners with Google's Universal Commerce Protocol to enhance agentic AI, positioning itself as a key player in the autonomous AI assistant-driven commerce sector.",
+          "translations": {
+            "da": {
+              "title": "Klarna slutter sig til Googles Universal Commerce Protocol for at fremme agentisk AI",
+              "summary": "Klarna samarbejder med Googles Universal Commerce Protocol for at forbedre agentisk AI og positionerer sig som en nøglespiller i den autonome AI-assistentdrevne handelssektor."
+            },
+            "es": {
+              "title": "Klarna se une al Protocolo de Comercio Universal de Google para Avanzar en la IA Agente",
+              "summary": "Klarna se asocia con el Protocolo de Comercio Universal de Google para mejorar la IA agente, posicionándose como un actor clave en el sector del comercio impulsado por asistentes de IA autónomos."
+            }
+          }
         },
         {
           "id": "qqbr7b",
@@ -163,7 +213,17 @@
               "agent"
             ]
           },
-          "aiSummary": "AI-generated summary:\nMoltbook, a new AI-exclusive social media platform, has sparked excitement for its potential towards the singularity, but security concerns over data exposure and manipulation have raised alarms among researchers."
+          "aiSummary": "AI-generated summary:\nMoltbook, a new AI-exclusive social media platform, has sparked excitement for its potential towards the singularity, but security concerns over data exposure and manipulation have raised alarms among researchers.",
+          "translations": {
+            "da": {
+              "title": "Sikkerhedsbekymringer og skepsis sprænger boblen for Moltbook, det virale AI sociale forum",
+              "summary": "Moltbook, en ny AI-eksklusiv sociale medieplatform, har skabt begejstring for sit potentiale mod singulariteten, men sikkerhedsbekymringer om datalæk og manipulation har vækket alarm blandt forskere."
+            },
+            "es": {
+              "title": "Las preocupaciones de seguridad y el escepticismo están reventando la burbuja de Moltbook, el foro social viral de IA",
+              "summary": "Moltbook, una nueva plataforma de redes sociales exclusiva de IA, ha generado entusiasmo por su potencial hacia la singularidad, pero las preocupaciones de seguridad sobre la exposición y manipulación de datos han alarmado a los investigadores."
+            }
+          }
         },
         {
           "id": "lvwd03",
@@ -186,7 +246,17 @@
               "investment"
             ]
           },
-          "aiSummary": "AI data centres are predicted to generate a job boom in various sectors, including construction, supply chains, operations, and innovation, according to Nvidia's CEO. The Union Budget 2026's extension of tax holidays for data centre investments is expected to attract significant investment into India."
+          "aiSummary": "AI data centres are predicted to generate a job boom in various sectors, including construction, supply chains, operations, and innovation, according to Nvidia's CEO. The Union Budget 2026's extension of tax holidays for data centre investments is expected to attract significant investment into India.",
+          "translations": {
+            "da": {
+              "title": "AI datacentre kan skabe jobboom som i internettets æra, siger Nvidias Jensen Huang",
+              "summary": "AI datacentre forventes at generere et jobboom i forskellige sektorer, herunder byggeri, forsyningskæder, drift og innovation, ifølge Nvidias CEO. Union Budget 2026's forlængelse af skatteferier for investeringer i datacentre forventes at tiltrække betydelige investeringer til Indien."
+            },
+            "es": {
+              "title": "Los centros de datos de IA podrían impulsar un auge laboral tipo era de Internet, dice Jensen Huang de Nvidia",
+              "summary": "Se prevé que los centros de datos de IA generen un auge laboral en varios sectores, incluidos la construcción, las cadenas de suministro, las operaciones y la innovación, según el CEO de Nvidia. La extensión de las vacaciones fiscales para inversiones en centros de datos en el Presupuesto de la Unión 2026 se espera que atraiga inversiones significativas a India."
+            }
+          }
         }
       ]
     },
@@ -214,7 +284,17 @@
               "shopping"
             ]
           },
-          "aiSummary": "AI is set to reshape the shopping and delivery experience for UK retailers, leading to a forecasted growth in ecommerce sales in 2026. This trend is highlighted in a recent article from Internet Retailing."
+          "aiSummary": "AI is set to reshape the shopping and delivery experience for UK retailers, leading to a forecasted growth in ecommerce sales in 2026. This trend is highlighted in a recent article from Internet Retailing.",
+          "translations": {
+            "da": {
+              "title": "UK detailhandlere forudser vækst i e-handel, da AI omformer shopping og levering",
+              "summary": "AI forventes at omforme shopping- og leveringsoplevelsen for britiske detailhandlere, hvilket fører til en forudset vækst i e-handels salg i 2026. Denne tendens fremhæves i en nylig artikel fra Internet Retailing."
+            },
+            "es": {
+              "title": "Los minoristas del Reino Unido pronostican crecimiento del comercio electrónico a medida que la IA transforma las compras y la entrega",
+              "summary": "Se espera que la IA transforme la experiencia de compra y entrega para los minoristas del Reino Unido, lo que conducirá a un crecimiento pronosticado en las ventas de comercio electrónico en 2026. Esta tendencia se destaca en un artículo reciente de Internet Retailing."
+            }
+          }
         },
         {
           "id": "y7794c",
@@ -236,7 +316,17 @@
               "ecommerce"
             ]
           },
-          "aiSummary": "AI-generated summary: FedEx has introduced AI-powered tools, FedEx Tracking+ and FedEx Returns+, to assist retailers and brands in managing tracking, returns, and customer communication on their websites and apps, expanding its role in ecommerce beyond transportation."
+          "aiSummary": "AI-generated summary: FedEx has introduced AI-powered tools, FedEx Tracking+ and FedEx Returns+, to assist retailers and brands in managing tracking, returns, and customer communication on their websites and apps, expanding its role in ecommerce beyond transportation.",
+          "translations": {
+            "da": {
+              "title": "FedEx lancerer AI-drevne sporings- og returværktøjer",
+              "summary": "FedEx har introduceret AI-drevne værktøjer, FedEx Tracking+ og FedEx Returns+, for at hjælpe detailhandlere og mærker med at håndtere sporing, returneringer og kundekommunikation på deres hjemmesider og apps, hvilket udvider deres rolle i e-handel ud over transport."
+            },
+            "es": {
+              "title": "FedEx lanza herramientas de seguimiento y devoluciones impulsadas por IA",
+              "summary": "FedEx ha introducido herramientas impulsadas por IA, FedEx Tracking+ y FedEx Returns+, para ayudar a minoristas y marcas a gestionar el seguimiento, las devoluciones y la comunicación con los clientes en sus sitios web y aplicaciones, ampliando su papel en el comercio electrónico más allá del transporte."
+            }
+          }
         },
         {
           "id": "w0fily",
@@ -258,7 +348,17 @@
               "shopping"
             ]
           },
-          "aiSummary": "AI-Generated Summary:\nAmazon Go stores, known for their advanced technology, closed due to lack of profitability despite their innovative approach to convenience store shopping. The stores featured high-resolution cameras to track customers and products, highlighting Amazon's technological prowess in retail."
+          "aiSummary": "AI-Generated Summary:\nAmazon Go stores, known for their advanced technology, closed due to lack of profitability despite their innovative approach to convenience store shopping. The stores featured high-resolution cameras to track customers and products, highlighting Amazon's technological prowess in retail.",
+          "translations": {
+            "da": {
+              "title": "Amazon Go? Det er væk. Og dette er grunden til, at det gik.",
+              "summary": "Amazon Go-butikker, kendt for deres avancerede teknologi, lukkede på grund af manglende rentabilitet trods deres innovative tilgang til indkøb i nærbutikker. Butikkerne havde højopløselige kameraer til at spore kunder og produkter, hvilket fremhævede Amazons teknologiske dygtighed inden for detailhandel."
+            },
+            "es": {
+              "title": "¿Amazon Go? Se ha ido. Y esta es la razón por la que se fue.",
+              "summary": "Las tiendas Amazon Go, conocidas por su tecnología avanzada, cerraron debido a la falta de rentabilidad a pesar de su enfoque innovador en las compras en tiendas de conveniencia. Las tiendas contaban con cámaras de alta resolución para rastrear a los clientes y productos, destacando la destreza tecnológica de Amazon en el comercio minorista."
+            }
+          }
         },
         {
           "id": "los4qe",
@@ -278,7 +378,17 @@
             "penalty": 0,
             "matchedKeywords": []
           },
-          "aiSummary": "AI-Generated Summary:\nAmazon is on track to surpass Walmart in annual revenue for the first time, reaching $700 billion in sales."
+          "aiSummary": "AI-Generated Summary:\nAmazon is on track to surpass Walmart in annual revenue for the first time, reaching $700 billion in sales.",
+          "translations": {
+            "da": {
+              "title": "Amazon klar til at overhale Walmart i årlig indtægt for første gang efter at have nået 700 milliarder dollar i salg",
+              "summary": "Amazon er på vej til at overhale Walmart i årlig indtægt for første gang, idet de når 700 milliarder dollar i salg."
+            },
+            "es": {
+              "title": "Amazon está a punto de superar a Walmart en ingresos anuales por primera vez tras alcanzar los 700 mil millones de dólares en ventas",
+              "summary": "Amazon está en camino de superar a Walmart en ingresos anuales por primera vez, alcanzando los 700 mil millones de dólares en ventas."
+            }
+          }
         },
         {
           "id": "c2g8f",
@@ -301,7 +411,17 @@
               "logistics"
             ]
           },
-          "aiSummary": "AI-generated summary: Cardinal Health is expanding its ecommerce efforts and utilizing AI to enhance efficiency, with investments in patient-support digitization, distribution center automation, and data tools. The company reported Q2 revenue of $65.6 billion during its earnings call."
+          "aiSummary": "AI-generated summary: Cardinal Health is expanding its ecommerce efforts and utilizing AI to enhance efficiency, with investments in patient-support digitization, distribution center automation, and data tools. The company reported Q2 revenue of $65.6 billion during its earnings call.",
+          "translations": {
+            "da": {
+              "title": "Cardinal Health udvider e-handel og bruger AI til at øge effektiviteten",
+              "summary": "AI-genereret resumé: Cardinal Health udvider sine e-handelsindsatser og anvender AI til at forbedre effektiviteten med investeringer i digitalisering af patientstøtte, automatisering af distributionscentre og dataværktøjer. Virksomheden rapporterede en omsætning på 65,6 milliarder dollars i Q2 under sin indtjeningsopringning."
+            },
+            "es": {
+              "title": "Cardinal Health expande su comercio electrónico y se apoya en la IA para aumentar la eficiencia",
+              "summary": "Resumen generado por IA: Cardinal Health está expandiendo sus esfuerzos de comercio electrónico y utilizando IA para mejorar la eficiencia, con inversiones en digitalización de soporte al paciente, automatización de centros de distribución y herramientas de datos. La compañía reportó ingresos del segundo trimestre de 65.6 mil millones de dólares durante su llamada de ganancias."
+            }
+          }
         },
         {
           "id": "chsrkn",
@@ -323,7 +443,17 @@
               "ecommerce"
             ]
           },
-          "aiSummary": "AI-Generated Summary:\nInsider One has announced a native integration with Shopify Markets, offering global ecommerce teams the ability to manage multiple regions, currencies, languages, and domains from a single Shopify store. This simplifies storefront operations for brands but may introduce complexity for marketing teams in activating and managing customer engagement."
+          "aiSummary": "AI-Generated Summary:\nInsider One has announced a native integration with Shopify Markets, offering global ecommerce teams the ability to manage multiple regions, currencies, languages, and domains from a single Shopify store. This simplifies storefront operations for brands but may introduce complexity for marketing teams in activating and managing customer engagement.",
+          "translations": {
+            "da": {
+              "title": "Insider One Native Integration med Shopify Markets",
+              "summary": "Insider One har annonceret en native integration med Shopify Markets, som giver globale e-handels teams mulighed for at administrere flere regioner, valutaer, sprog og domæner fra en enkelt Shopify butik. Dette forenkler driften af butikker for brands, men kan introducere kompleksitet for marketing teams i aktivering og håndtering af kundedeltagelse."
+            },
+            "es": {
+              "title": "Integración Nativa de Insider One con Shopify Markets",
+              "summary": "Insider One ha anunciado una integración nativa con Shopify Markets, ofreciendo a los equipos de comercio electrónico global la capacidad de gestionar múltiples regiones, monedas, idiomas y dominios desde una única tienda Shopify. Esto simplifica las operaciones de la tienda para las marcas, pero puede introducir complejidad para los equipos de marketing al activar y gestionar el compromiso del cliente."
+            }
+          }
         },
         {
           "id": "wicos4",
@@ -347,7 +477,17 @@
               "platform"
             ]
           },
-          "aiSummary": "AI-generated summary: Practical Ecommerce's latest article highlights new ecommerce tools released on February 4, 2026, including website builders, B2B and B2C platforms, shipping solutions, buy-now pay-later options, checkout integrations, and agentic commerce features."
+          "aiSummary": "AI-generated summary: Practical Ecommerce's latest article highlights new ecommerce tools released on February 4, 2026, including website builders, B2B and B2C platforms, shipping solutions, buy-now pay-later options, checkout integrations, and agentic commerce features.",
+          "translations": {
+            "da": {
+              "title": "Nye Ecommerce Værktøjer: 4. februar 2026",
+              "summary": "Practical Ecommerce's seneste artikel fremhæver nye ecommerce værktøjer, der blev udgivet den 4. februar 2026, herunder websitebyggere, B2B- og B2C-platforme, forsendelsesløsninger, buy-now pay-later muligheder, checkout-integrationer og agentisk handelsfunktioner."
+            },
+            "es": {
+              "title": "N nuevas herramientas de comercio electrónico: 4 de febrero de 2026",
+              "summary": "El último artículo de Practical Ecommerce destaca nuevas herramientas de comercio electrónico lanzadas el 4 de febrero de 2026, incluyendo creadores de sitios web, plataformas B2B y B2C, soluciones de envío, opciones de compra ahora y pagar después, integraciones de pago y características de comercio agente."
+            }
+          }
         }
       ]
     },
@@ -374,7 +514,17 @@
               "spending"
             ]
           },
-          "aiSummary": "AI-Generated Summary:\nAmazon's $200 billion spending plan, despite a strong holiday quarter, is causing investor concern as the company ramps up investments in artificial intelligence, raising the stakes in the tech industry."
+          "aiSummary": "AI-Generated Summary:\nAmazon's $200 billion spending plan, despite a strong holiday quarter, is causing investor concern as the company ramps up investments in artificial intelligence, raising the stakes in the tech industry.",
+          "translations": {
+            "da": {
+              "title": "Amazons $200 milliarder investeringsplan hæver indsatsen i A.I. kapløbet",
+              "summary": "Amazons $200 milliarder investeringsplan, på trods af et stærkt feriekvartal, skaber bekymring blandt investorerne, da virksomheden øger investeringerne i kunstig intelligens, hvilket hæver indsatsen i tech-industrien."
+            },
+            "es": {
+              "title": "El plan de gasto de $200 mil millones de Amazon aumenta las apuestas en la carrera de A.I.",
+              "summary": "El plan de gasto de $200 mil millones de Amazon, a pesar de un fuerte cuarto trimestre de vacaciones, está generando preocupación entre los inversores a medida que la compañía aumenta las inversiones en inteligencia artificial, elevando las apuestas en la industria tecnológica."
+            }
+          }
         },
         {
           "id": "eslito",
@@ -398,7 +548,17 @@
               "brand"
             ]
           },
-          "aiSummary": "AI-Generated Summary:\nIn today's creator economy, brands must navigate a wealth of data to effectively invest in influencer marketing as creators seek higher compensation."
+          "aiSummary": "AI-Generated Summary:\nIn today's creator economy, brands must navigate a wealth of data to effectively invest in influencer marketing as creators seek higher compensation.",
+          "translations": {
+            "da": {
+              "title": "De målinger, der betyder noget i dagens skaberøkonomi",
+              "summary": "I dagens skaberøkonomi må brands navigere i en overflod af data for effektivt at investere i influencer marketing, da skaberne søger højere kompensation."
+            },
+            "es": {
+              "title": "Las métricas que importan en la economía de creadores actual",
+              "summary": "En la economía de creadores de hoy, las marcas deben navegar por una gran cantidad de datos para invertir de manera efectiva en marketing de influencers, ya que los creadores buscan una mayor compensación."
+            }
+          }
         },
         {
           "id": "cx9qkg",
@@ -424,7 +584,17 @@
               "brand"
             ]
           },
-          "aiSummary": "AI-Generated Summary:\nThe Lanvin Group, owned by Chinese investors, has sold the high-end Italian menswear manufacturer Caruso as part of its focus on consumer-facing brands in the luxury industry."
+          "aiSummary": "AI-Generated Summary:\nThe Lanvin Group, owned by Chinese investors, has sold the high-end Italian menswear manufacturer Caruso as part of its focus on consumer-facing brands in the luxury industry.",
+          "translations": {
+            "da": {
+              "title": "Lanvin Group sælger luksuriøs italiensk herretøjsproducent Caruso",
+              "summary": "Lanvin Group, ejet af kinesiske investorer, har solgt den luksuriøse italienske herretøjsproducent Caruso som en del af sin fokus på forbrugerrettede mærker i luksusindustrien."
+            },
+            "es": {
+              "title": "Lanvin Group vende fabricante italiano de ropa masculina de alta gama Caruso",
+              "summary": "El Grupo Lanvin, propiedad de inversores chinos, ha vendido al fabricante italiano de ropa masculina de alta gama Caruso como parte de su enfoque en marcas orientadas al consumidor en la industria del lujo."
+            }
+          }
         },
         {
           "id": "kqjhm1",
@@ -448,7 +618,17 @@
               "brand"
             ]
           },
-          "aiSummary": "AI-Generated Summary:\nGildo Zegna, the new executive chairman of Ermenegildo Zegna Group, is focusing on boosting direct-to-consumer sales and expanding retail presence for luxury brands like Zegna, Thom Browne, and Tom Ford."
+          "aiSummary": "AI-Generated Summary:\nGildo Zegna, the new executive chairman of Ermenegildo Zegna Group, is focusing on boosting direct-to-consumer sales and expanding retail presence for luxury brands like Zegna, Thom Browne, and Tom Ford.",
+          "translations": {
+            "da": {
+              "title": "Gildo Zegna om fleksibilitet, vision for at tackle den nye normal",
+              "summary": "Gildo Zegna, den nye administrerende formand for Ermenegildo Zegna Group, fokuserer på at øge direkte salg til forbrugerne og udvide detailtilstedeværelsen for luksusmærker som Zegna, Thom Browne og Tom Ford."
+            },
+            "es": {
+              "title": "Gildo Zegna sobre flexibilidad, visión para abordar la nueva normalidad",
+              "summary": "Gildo Zegna, el nuevo presidente ejecutivo del Ermenegildo Zegna Group, se centra en aumentar las ventas directas al consumidor y expandir la presencia minorista de marcas de lujo como Zegna, Thom Browne y Tom Ford."
+            }
+          }
         },
         {
           "id": "y2q76g",
@@ -472,7 +652,17 @@
               "exclusive"
             ]
           },
-          "aiSummary": "AI-Generated Summary:\nMoonglaze, the first Saudi beauty brand, launched at Sephora Middle East with a full collection and two exclusive products. Founded by makeup artist Yara Alnamlah, the brand focuses on skincare."
+          "aiSummary": "AI-Generated Summary:\nMoonglaze, the first Saudi beauty brand, launched at Sephora Middle East with a full collection and two exclusive products. Founded by makeup artist Yara Alnamlah, the brand focuses on skincare.",
+          "translations": {
+            "da": {
+              "title": "Moonglaze Bliver Det Første Saudiske Skønhedsbrand, Der Lancere i Sephora Mellemøsten",
+              "summary": "Moonglaze, det første saudiske skønhedsbrand, blev lanceret i Sephora Mellemøsten med en fuld kollektion og to eksklusive produkter. Brandet, grundlagt af makeupartist Yara Alnamlah, fokuserer på hudpleje."
+            },
+            "es": {
+              "title": "Moonglaze Se Convierte en la Primera Marca de Belleza Saudita en Lanzarse en Sephora Medio Oriente",
+              "summary": "Moonglaze, la primera marca de belleza saudita, se lanzó en Sephora Medio Oriente con una colección completa y dos productos exclusivos. Fundada por la maquilladora Yara Alnamlah, la marca se centra en el cuidado de la piel."
+            }
+          }
         },
         {
           "id": "b59f6",
@@ -496,7 +686,17 @@
               "brand"
             ]
           },
-          "aiSummary": "AI-Generated Summary:\nBoF's report explores ways for fashion and beauty brands to establish meaningful connections and culturally relevant initiatives with Gulf consumers in the GCC region."
+          "aiSummary": "AI-Generated Summary:\nBoF's report explores ways for fashion and beauty brands to establish meaningful connections and culturally relevant initiatives with Gulf consumers in the GCC region.",
+          "translations": {
+            "da": {
+              "title": "Skabe meningsfulde forbindelser med Gulf-forbrugeren",
+              "summary": "BoFs rapport udforsker måder for mode- og skønhedsbrands at etablere meningsfulde forbindelser og kulturelt relevante initiativer med Gulf-forbrugere i GCC-regionen."
+            },
+            "es": {
+              "title": "Creando conexiones significativas con el consumidor del Golfo",
+              "summary": "El informe de BoF explora formas en que las marcas de moda y belleza pueden establecer conexiones significativas e iniciativas culturalmente relevantes con los consumidores del Golfo en la región del GCC."
+            }
+          }
         },
         {
           "id": "ig1x8v",
@@ -518,7 +718,17 @@
               "demand"
             ]
           },
-          "aiSummary": "AI-generated summary:\nSiemens Energy is investing $1 billion to expand factories in the U.S. and build a new plant in Mississippi, betting on the lasting power demand driven by artificial intelligence."
+          "aiSummary": "AI-generated summary:\nSiemens Energy is investing $1 billion to expand factories in the U.S. and build a new plant in Mississippi, betting on the lasting power demand driven by artificial intelligence.",
+          "translations": {
+            "da": {
+              "title": "Siemens Energy satser 1 milliard dollars på, at A.I. efterspørgslen vil vare ved",
+              "summary": "Siemens Energy investerer 1 milliard dollars for at udvide fabrikker i USA og bygge et nyt anlæg i Mississippi, idet de satser på den vedvarende efterspørgsel efter energi drevet af kunstig intelligens."
+            },
+            "es": {
+              "title": "Siemens Energy apuesta 1.000 millones de dólares a que la demanda de energía de A.I. durará",
+              "summary": "Siemens Energy está invirtiendo 1.000 millones de dólares para expandir fábricas en EE. UU. y construir una nueva planta en Mississippi, apostando por la demanda de energía duradera impulsada por la inteligencia artificial."
+            }
+          }
         }
       ]
     },
@@ -546,7 +756,17 @@
               "watch"
             ]
           },
-          "aiSummary": "AI-Generated Summary:\nDespite a sales decline due to weak demand in Asian markets, Swatch Group remains optimistic about its future prospects in the jewellery industry."
+          "aiSummary": "AI-Generated Summary:\nDespite a sales decline due to weak demand in Asian markets, Swatch Group remains optimistic about its future prospects in the jewellery industry.",
+          "translations": {
+            "da": {
+              "title": "Optimistisk udsigt for Swatch trods fald i salget",
+              "summary": "På trods af et fald i salget på grund af svag efterspørgsel på de asiatiske markeder, forbliver Swatch Group optimistisk med hensyn til sine fremtidige udsigter i smykkeindustrien."
+            },
+            "es": {
+              "title": "Perspectiva optimista para Swatch a pesar de la caída en ventas",
+              "summary": "A pesar de una disminución en las ventas debido a la débil demanda en los mercados asiáticos, Swatch Group se mantiene optimista sobre sus perspectivas futuras en la industria de la joyería."
+            }
+          }
         },
         {
           "id": "doie8k",
@@ -567,7 +787,17 @@
             "penalty": 0,
             "matchedKeywords": []
           },
-          "aiSummary": "AI-Generated Summary:\nAccording to a survey by Instore Magazine, 58% of jewelers experienced growth in December, with only 18% reporting losses compared to the previous year."
+          "aiSummary": "AI-Generated Summary:\nAccording to a survey by Instore Magazine, 58% of jewelers experienced growth in December, with only 18% reporting losses compared to the previous year.",
+          "translations": {
+            "da": {
+              "title": "58 Procent af Spurgte Smykkeforhandlere Rapporterer Vækst i December",
+              "summary": "Ifølge en undersøgelse fra Instore Magazine oplevede 58% af smykkeforhandlerne vækst i december, mens kun 18% rapporterede tab sammenlignet med året før."
+            },
+            "es": {
+              "title": "El 58 Por Ciento de los Joyeros Encuestados Reporta Crecimiento en Diciembre",
+              "summary": "Según una encuesta de Instore Magazine, el 58% de los joyeros experimentaron crecimiento en diciembre, con solo el 18% reportando pérdidas en comparación con el año anterior."
+            }
+          }
         },
         {
           "id": "s0kad7",
@@ -591,7 +821,17 @@
               "jeweller"
             ]
           },
-          "aiSummary": "AI-generated summary: A suspect involved in a massive jewellery heist, considered the largest in US history, has been deported before facing trial, raising doubts about the possibility of legal consequences."
+          "aiSummary": "AI-generated summary: A suspect involved in a massive jewellery heist, considered the largest in US history, has been deported before facing trial, raising doubts about the possibility of legal consequences.",
+          "translations": {
+            "da": {
+              "title": "Mistænkt i chokerende smykketyveri deporteret før retssag",
+              "summary": "En mistænkt involveret i et massivt smykketyveri, betragtet som det største i USAs historie, er blevet deporteret før retssagen, hvilket rejser tvivl om muligheden for juridiske konsekvenser."
+            },
+            "es": {
+              "title": "Sospechoso en asombroso robo de joyas deportado antes del juicio",
+              "summary": "Un sospechoso involucrado en un masivo robo de joyas, considerado el más grande en la historia de EE. UU., ha sido deportado antes de enfrentar juicio, lo que genera dudas sobre la posibilidad de consecuencias legales."
+            }
+          }
         },
         {
           "id": "uceuly",
@@ -615,7 +855,17 @@
               "jewelry"
             ]
           },
-          "aiSummary": "AI-Generated Summary:\nCelebrities showcased stunning diamond jewelry at the Grammys, including Hailey Bieber's 30-carat choker. The event highlighted the glamour and luxury of the jewellery industry."
+          "aiSummary": "AI-Generated Summary:\nCelebrities showcased stunning diamond jewelry at the Grammys, including Hailey Bieber's 30-carat choker. The event highlighted the glamour and luxury of the jewellery industry.",
+          "translations": {
+            "da": {
+              "title": "Hailey Biebers 30-karats choker og 9 flere diamantlooks fra Grammy Awards",
+              "summary": "Berømtheder viste fantastisk diamant smykker ved Grammy Awards, herunder Hailey Biebers 30-karats choker. Begivenheden fremhævede glamouren og luksusen i smykkeindustrien."
+            },
+            "es": {
+              "title": "El choker de 30 quilates de Hailey Bieber y 9 looks de diamantes más de los Grammys",
+              "summary": "Las celebridades mostraron impresionantes joyas de diamantes en los Grammys, incluido el choker de 30 quilates de Hailey Bieber. El evento destacó el glamour y el lujo de la industria de la joyería."
+            }
+          }
         },
         {
           "id": "isx1rx",
@@ -637,7 +887,17 @@
               "gold"
             ]
           },
-          "aiSummary": "AI-Generated Summary:\nA golden statue of President Trump, funded by cryptocurrency investors, is set to be placed at one of his Florida golf courses."
+          "aiSummary": "AI-Generated Summary:\nA golden statue of President Trump, funded by cryptocurrency investors, is set to be placed at one of his Florida golf courses.",
+          "translations": {
+            "da": {
+              "title": "‘Don Colossus,’ en gylden statue af præsident Trump, venter på sit hjem",
+              "summary": "En gylden statue af præsident Trump, finansieret af kryptovaluta-investorer, skal placeres på en af hans golfbaner i Florida."
+            },
+            "es": {
+              "title": "‘Don Colossus,’ una estatua dorada del presidente Trump, espera su hogar",
+              "summary": "Una estatua dorada del presidente Trump, financiada por inversores en criptomonedas, se colocará en uno de sus campos de golf en Florida."
+            }
+          }
         },
         {
           "id": "k6jhxf",
@@ -659,6 +919,16 @@
               "jewelry",
               "retailer"
             ]
+          },
+          "translations": {
+            "da": {
+              "title": "Smykkeforhandlere Tilbyder Gæstfrihed På Kreative Måder [Foto Galleri]",
+              "summary": ""
+            },
+            "es": {
+              "title": "Los Minoristas de Joyería Ofrecen Hospitalidad de Maneras Creativas [Galería de Fotos]",
+              "summary": ""
+            }
           }
         },
         {
@@ -682,7 +952,17 @@
               "diamond"
             ]
           },
-          "aiSummary": "AI-Generated Summary:\nNewly revealed documents shed light on Jeffrey Epstein's fondness for luxury items, particularly diamonds, as part of ongoing investigations into his criminal activities."
+          "aiSummary": "AI-Generated Summary:\nNewly revealed documents shed light on Jeffrey Epstein's fondness for luxury items, particularly diamonds, as part of ongoing investigations into his criminal activities.",
+          "translations": {
+            "da": {
+              "title": "Nye detaljer om Jeffrey Epsteins diamanter",
+              "summary": "Nyligt afslørede dokumenter kaster lys over Jeffrey Epsteins forkærlighed for luksusvarer, især diamanter, som en del af de igangværende undersøgelser af hans kriminelle aktiviteter."
+            },
+            "es": {
+              "title": "Nuevos detalles sobre los diamantes de Jeffrey Epstein",
+              "summary": "Documentos recién revelados arrojan luz sobre la afición de Jeffrey Epstein por los artículos de lujo, particularmente los diamantes, como parte de las investigaciones en curso sobre sus actividades delictivas."
+            }
+          }
         }
       ]
     }

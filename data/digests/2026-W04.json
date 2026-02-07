@@ -39,7 +39,17 @@
               "compute"
             ]
           },
-          "aiSummary": "AI-Generated Summary:\nClaude Code enables non-coders to create programs and apps by generating code based on typed prompts."
+          "aiSummary": "AI-Generated Summary:\nClaude Code enables non-coders to create programs and apps by generating code based on typed prompts.",
+          "translations": {
+            "da": {
+              "title": "Fem måder folk bruger Claude Code",
+              "summary": "Claude Code gør det muligt for ikke-kodere at skabe programmer og apps ved at generere kode baseret på indtastede prompts."
+            },
+            "es": {
+              "title": "Cinco maneras en que las personas están utilizando Claude Code",
+              "summary": "Claude Code permite a los no programadores crear programas y aplicaciones generando código basado en indicaciones escritas."
+            }
+          }
         },
         {
           "id": "cpohkq",
@@ -62,7 +72,17 @@
               "artificial intelligence"
             ]
           },
-          "aiSummary": "AI-generated summary:\nDemocratic nations are urged to ban Chinese AI platforms and establish global regulations to address threats to data security, democratic governance, and human rights posed by Beijing-backed technologies."
+          "aiSummary": "AI-generated summary:\nDemocratic nations are urged to ban Chinese AI platforms and establish global regulations to address threats to data security, democratic governance, and human rights posed by Beijing-backed technologies.",
+          "translations": {
+            "da": {
+              "title": "Kinas AI-indsats vækker bekymring for demokratier over datasikkerhed, rettigheder",
+              "summary": "Demokratiske nationer opfordres til at forbyde kinesiske AI-platforme og etablere globale regler for at tackle trusler mod datasikkerhed, demokratisk styre og menneskerettigheder, som Beijing-støttede teknologier udgør."
+            },
+            "es": {
+              "title": "El impulso de la IA en China genera preocupaciones para las democracias sobre la seguridad de datos y derechos",
+              "summary": "Se insta a las naciones democráticas a prohibir las plataformas de IA chinas y establecer regulaciones globales para abordar las amenazas a la seguridad de datos, la gobernanza democrática y los derechos humanos que plantean las tecnologías respaldadas por Pekín."
+            }
+          }
         },
         {
           "id": "50zyzj",
@@ -85,7 +105,17 @@
               "artificial intelligence"
             ]
           },
-          "aiSummary": "AI-generated summary:\nInterest in US law schools is increasing due to students seeking career security, but they are met with rising costs and federal loan limits. The impact of artificial intelligence on future legal jobs and salaries adds uncertainty for aspiring legal professionals."
+          "aiSummary": "AI-generated summary:\nInterest in US law schools is increasing due to students seeking career security, but they are met with rising costs and federal loan limits. The impact of artificial intelligence on future legal jobs and salaries adds uncertainty for aspiring legal professionals.",
+          "translations": {
+            "da": {
+              "title": "Interessen for amerikanske jurastudier stiger, da AI gør afkastet mindre sikkert",
+              "summary": "Interessen for amerikanske jurastudier stiger, da studerende søger karrieresikkerhed, men de møder stigende omkostninger og føderale lånegrænser. Indflydelsen fra kunstig intelligens på fremtidige juridiske job og lønninger tilføjer usikkerhed for kommende jurister."
+            },
+            "es": {
+              "title": "El interés en las facultades de derecho de EE. UU. está en aumento a medida que la IA hace que el retorno sea menos seguro",
+              "summary": "El interés en las facultades de derecho de EE. UU. está aumentando debido a que los estudiantes buscan seguridad laboral, pero se enfrentan a costos crecientes y límites de préstamos federales. El impacto de la inteligencia artificial en los futuros empleos y salarios legales añade incertidumbre para los aspirantes a profesionales del derecho."
+            }
+          }
         },
         {
           "id": "htb9yu",
@@ -108,7 +138,17 @@
               "artificial intelligence"
             ]
           },
-          "aiSummary": "AI-generated summary: Pope Leo XIV warns about the dangers of generative artificial intelligence, highlighting its potential to impact human identities, relationships, public opinion, and social polarization by reflecting biases embedded in the data it processes."
+          "aiSummary": "AI-generated summary: Pope Leo XIV warns about the dangers of generative artificial intelligence, highlighting its potential to impact human identities, relationships, public opinion, and social polarization by reflecting biases embedded in the data it processes.",
+          "translations": {
+            "da": {
+              "title": "Pave advarer mod risici ved AI-algoritmer",
+              "summary": "AI-genereret resumé: Pave Leo XIV advarer om farerne ved generativ kunstig intelligens og fremhæver dens potentiale til at påvirke menneskelige identiteter, relationer, offentlig mening og social polarisering ved at afspejle de bias, der er indlejret i de data, den behandler."
+            },
+            "es": {
+              "title": "El Papa advierte sobre los riesgos de los algoritmos de IA",
+              "summary": "Resumen generado por IA: El Papa León XIV advierte sobre los peligros de la inteligencia artificial generativa, destacando su potencial para impactar las identidades humanas, las relaciones, la opinión pública y la polarización social al reflejar los sesgos incrustados en los datos que procesa."
+            }
+          }
         },
         {
           "id": "8o6kou",
@@ -132,7 +172,17 @@
               "research"
             ]
           },
-          "aiSummary": "AI-Generated Summary:\nPrinceton University professor Tom Griffiths discusses his new book \"The Laws of Thought\" on the Me, Myself, and AI podcast, exploring the use of math to understand human and artificial intelligence. The episode delves into how minds, both human and machine, operate."
+          "aiSummary": "AI-Generated Summary:\nPrinceton University professor Tom Griffiths discusses his new book \"The Laws of Thought\" on the Me, Myself, and AI podcast, exploring the use of math to understand human and artificial intelligence. The episode delves into how minds, both human and machine, operate.",
+          "translations": {
+            "da": {
+              "title": "Forbindelse mellem sprog og (kunstig) intelligens: Princetons Tom Griffiths",
+              "summary": "Princeton Universitet professor Tom Griffiths diskuterer sin nye bog \"The Laws of Thought\" i podcasten Me, Myself, and AI, hvor han udforsker brugen af matematik til at forstå menneskelig og kunstig intelligens. Episoden dykker ned i, hvordan sind, både menneskelige og maskinelle, fungerer."
+            },
+            "es": {
+              "title": "Conectando el lenguaje y la (inteligencia artificial): Tom Griffiths de Princeton",
+              "summary": "El profesor de la Universidad de Princeton, Tom Griffiths, habla sobre su nuevo libro \"The Laws of Thought\" en el podcast Me, Myself, and AI, explorando el uso de las matemáticas para entender la inteligencia humana y artificial. El episodio profundiza en cómo operan las mentes, tanto humanas como de máquina."
+            }
+          }
         },
         {
           "id": "4kleb2",
@@ -156,7 +206,17 @@
               "acquisition"
             ]
           },
-          "aiSummary": "AI-Generated Summary:\nWilliam Tunstall-Pedoe, co-creator of Alexa, left Amazon to start his own AI startup, UnlikelyAI, after using a six-page memo to make the decision."
+          "aiSummary": "AI-Generated Summary:\nWilliam Tunstall-Pedoe, co-creator of Alexa, left Amazon to start his own AI startup, UnlikelyAI, after using a six-page memo to make the decision.",
+          "translations": {
+            "da": {
+              "title": "Jeg er medskaber af Alexa. At skrive et 6-siders notat hjalp mig med at beslutte at forlade Amazon og starte min egen AI-startup.",
+              "summary": "William Tunstall-Pedoe, medskaber af Alexa, forlod Amazon for at starte sin egen AI-startup, UnlikelyAI, efter at have brugt et seks-siders notat til at træffe beslutningen."
+            },
+            "es": {
+              "title": "Soy co-creador de Alexa. Escribir un memorando de 6 páginas me ayudó a decidir dejar Amazon y lanzar mi propia startup de IA.",
+              "summary": "William Tunstall-Pedoe, co-creador de Alexa, dejó Amazon para iniciar su propia startup de IA, UnlikelyAI, después de usar un memorando de seis páginas para tomar la decisión."
+            }
+          }
         },
         {
           "id": "45x4lk",
@@ -180,7 +240,17 @@
               "investment"
             ]
           },
-          "aiSummary": "AI-generated summary:\nDeepMind's Demis Hassabis cautions about the bubble-like nature of AI investment in the tech sector, stating that the company will be prepared if the bubble bursts."
+          "aiSummary": "AI-generated summary:\nDeepMind's Demis Hassabis cautions about the bubble-like nature of AI investment in the tech sector, stating that the company will be prepared if the bubble bursts.",
+          "translations": {
+            "da": {
+              "title": "DeepMind-chef Demis Hassabis advarer om, at AI-investering ser 'boble-lignende' ud",
+              "summary": "DeepMinds Demis Hassabis advarer om den boble-lignende karakter af AI-investering i tech-sektoren og siger, at virksomheden vil være forberedt, hvis boblen brister."
+            },
+            "es": {
+              "title": "El jefe de DeepMind, Demis Hassabis, advierte que la inversión en IA parece 'similar a una burbuja'",
+              "summary": "Demis Hassabis de DeepMind advierte sobre la naturaleza similar a una burbuja de la inversión en IA en el sector tecnológico, afirmando que la empresa estará preparada si la burbuja estalla."
+            }
+          }
         }
       ]
     },
@@ -208,7 +278,17 @@
               "inventory"
             ]
           },
-          "aiSummary": "AI-generated summary: Fastenal is prioritizing digital commerce, with technology-enabled sales making up two-thirds of its fourth-quarter revenue. The industrial distributor is leveraging ecommerce, electronic data interchange, and on-site inventory systems to drive growth."
+          "aiSummary": "AI-generated summary: Fastenal is prioritizing digital commerce, with technology-enabled sales making up two-thirds of its fourth-quarter revenue. The industrial distributor is leveraging ecommerce, electronic data interchange, and on-site inventory systems to drive growth.",
+          "translations": {
+            "da": {
+              "title": "Hvorfor Fastenal holder fokus på digital handel",
+              "summary": "Fastenal prioriterer digital handel, hvor teknologi-drevne salg udgør to tredjedele af virksomhedens indtægter i fjerde kvartal. Den industrielle distributør udnytter e-handel, elektronisk dataudveksling og lagerstyringssystemer på stedet for at drive væksten."
+            },
+            "es": {
+              "title": "Por qué Fastenal mantiene el enfoque en el comercio digital",
+              "summary": "Fastenal está priorizando el comercio digital, con ventas habilitadas por tecnología que representan dos tercios de sus ingresos del cuarto trimestre. El distribuidor industrial está aprovechando el comercio electrónico, el intercambio electrónico de datos y los sistemas de inventario en el sitio para impulsar el crecimiento."
+            }
+          }
         },
         {
           "id": "874pc6",
@@ -231,7 +311,17 @@
               "marketplace"
             ]
           },
-          "aiSummary": "AI-generated summary:\nShopify President Harley Finkelstein discusses the rise of AI shopping, noting a 14x increase in orders from AI agents among Shopify merchants in the past year."
+          "aiSummary": "AI-generated summary:\nShopify President Harley Finkelstein discusses the rise of AI shopping, noting a 14x increase in orders from AI agents among Shopify merchants in the past year.",
+          "translations": {
+            "da": {
+              "title": "Marked briefing: Shopify-præsident Harley Finkelstein om, hvorfor AI-shopping 'ikke bare kan skrabe information'",
+              "summary": "Shopify-præsident Harley Finkelstein diskuterer stigningen i AI-shopping og bemærker en 14x stigning i ordrer fra AI-agenter blandt Shopify-handlere det seneste år."
+            },
+            "es": {
+              "title": "Informe del mercado: El presidente de Shopify, Harley Finkelstein, sobre por qué las compras con IA 'no pueden simplemente raspar información'",
+              "summary": "El presidente de Shopify, Harley Finkelstein, discute el auge de las compras con IA, señalando un aumento de 14 veces en los pedidos de agentes de IA entre los comerciantes de Shopify en el último año."
+            }
+          }
         },
         {
           "id": "5aqppi",
@@ -254,7 +344,17 @@
               "online retail"
             ]
           },
-          "aiSummary": "AI choices, charges, and friction are crucial factors for returns in ecommerce, as highlighted in a recent survey by FedEx Corp. and Morning Consult. Both merchants and consumers are recognizing significant shifts in the industry, post-holiday season."
+          "aiSummary": "AI choices, charges, and friction are crucial factors for returns in ecommerce, as highlighted in a recent survey by FedEx Corp. and Morning Consult. Both merchants and consumers are recognizing significant shifts in the industry, post-holiday season.",
+          "translations": {
+            "da": {
+              "title": "Ecommerce Tendenser: Hvorfor AI-valg, omkostninger og friktion alle betyder noget for returneringer",
+              "summary": "AI-valg, omkostninger og friktion er afgørende faktorer for returneringer i ecommerce, som fremhævet i en nylig undersøgelse af FedEx Corp. og Morning Consult. Både handlende og forbrugere genkender betydelige ændringer i branchen efter feriesæsonen."
+            },
+            "es": {
+              "title": "Tendencias en Ecommerce: Por qué las elecciones de IA, los cargos y la fricción son importantes para las devoluciones",
+              "summary": "Las elecciones de IA, los cargos y la fricción son factores cruciales para las devoluciones en ecommerce, como se destaca en una reciente encuesta de FedEx Corp. y Morning Consult. Tanto los comerciantes como los consumidores están reconociendo cambios significativos en la industria, después de la temporada navideña."
+            }
+          }
         },
         {
           "id": "bsxdor",
@@ -279,7 +379,17 @@
               "inventory"
             ]
           },
-          "aiSummary": "AI-generated summary: Practical Ecommerce's article on \"New Ecommerce Tools: January 21, 2026\" covers updates on post-purchase intelligence, inventory optimization, payments, agentic commerce, product recommendations, and chatbots and shopping assistants."
+          "aiSummary": "AI-generated summary: Practical Ecommerce's article on \"New Ecommerce Tools: January 21, 2026\" covers updates on post-purchase intelligence, inventory optimization, payments, agentic commerce, product recommendations, and chatbots and shopping assistants.",
+          "translations": {
+            "da": {
+              "title": "Nye E-commerce Værktøjer: 21. januar 2026",
+              "summary": "AI-genereret resumé: Practical Ecommerce's artikel om \"Nye E-commerce Værktøjer: 21. januar 2026\" dækker opdateringer om post-køb intelligens, lageroptimering, betalinger, agentisk handel, produktanbefalinger og chatbots og shoppingassistenter."
+            },
+            "es": {
+              "title": "N nuevas Herramientas de Ecommerce: 21 de enero de 2026",
+              "summary": "Resumen generado por IA: El artículo de Practical Ecommerce sobre \"Nuevas Herramientas de Ecommerce: 21 de enero de 2026\" cubre actualizaciones sobre inteligencia post-compra, optimización de inventarios, pagos, comercio agente, recomendaciones de productos y chatbots y asistentes de compras."
+            }
+          }
         },
         {
           "id": "b3jxzc",
@@ -304,7 +414,17 @@
               "checkout"
             ]
           },
-          "aiSummary": "AI-Generated Summary:\nCommercetools has launched AgenticLift, a standalone agentic commerce product that enables enterprises to integrate AI-driven shopping experiences without replatforming. This offering allows companies to connect existing commerce systems to agent-based discovery, carting, and checkout workflows."
+          "aiSummary": "AI-Generated Summary:\nCommercetools has launched AgenticLift, a standalone agentic commerce product that enables enterprises to integrate AI-driven shopping experiences without replatforming. This offering allows companies to connect existing commerce systems to agent-based discovery, carting, and checkout workflows.",
+          "translations": {
+            "da": {
+              "title": "Platformudbyder commercetools introducerer standalone agentic commerce",
+              "summary": "Commercetools har lanceret AgenticLift, et standalone agentic commerce produkt, der gør det muligt for virksomheder at integrere AI-drevne shoppingoplevelser uden at skulle ændre platform. Dette tilbud giver virksomheder mulighed for at forbinde eksisterende handelssystemer til agentbaseret opdagelse, indkøbskurv og checkout-workflows."
+            },
+            "es": {
+              "title": "El proveedor de plataformas commercetools presenta comercio agentic independiente",
+              "summary": "Commercetools ha lanzado AgenticLift, un producto de comercio agentic independiente que permite a las empresas integrar experiencias de compra impulsadas por IA sin necesidad de cambiar de plataforma. Esta oferta permite a las empresas conectar sistemas de comercio existentes con descubrimiento basado en agentes, carritos y flujos de pago."
+            }
+          }
         },
         {
           "id": "78migg",
@@ -327,7 +447,17 @@
               "marketplace"
             ]
           },
-          "aiSummary": "AI-Generated Summary:\nGoodwill's e-commerce platform, ShopGoodwill.com, has achieved record sales, benefiting the nonprofit's workforce programs by converting donated goods into hundreds of millions of dollars."
+          "aiSummary": "AI-Generated Summary:\nGoodwill's e-commerce platform, ShopGoodwill.com, has achieved record sales, benefiting the nonprofit's workforce programs by converting donated goods into hundreds of millions of dollars.",
+          "translations": {
+            "da": {
+              "title": "Goodwills e-handelsvirksomhed rammer rekordomsætning, da online genbrug stiger",
+              "summary": "Goodwills e-handelsplatform, ShopGoodwill.com, har opnået rekordomsætning, hvilket gavner nonprofitens arbejdsprogrammer ved at omdanne donerede varer til hundreder af millioner dollars."
+            },
+            "es": {
+              "title": "Las ventas del negocio de comercio electrónico de Goodwill alcanzan cifras récord a medida que el reciclaje en línea se dispara",
+              "summary": "La plataforma de comercio electrónico de Goodwill, ShopGoodwill.com, ha alcanzado ventas récord, beneficiando los programas laborales de la organización sin fines de lucro al convertir bienes donados en cientos de millones de dólares."
+            }
+          }
         },
         {
           "id": "o3mudf",
@@ -347,7 +477,17 @@
             "penalty": 0,
             "matchedKeywords": []
           },
-          "aiSummary": "AI-Generated Summary:\nPacsun is leveraging data from focus groups and surveys to customize its product launches, marketing, and technology to cater to the preferences of Gen Z consumers."
+          "aiSummary": "AI-Generated Summary:\nPacsun is leveraging data from focus groups and surveys to customize its product launches, marketing, and technology to cater to the preferences of Gen Z consumers.",
+          "translations": {
+            "da": {
+              "title": "Bag Pacsuns strategi for at holde sig ajour med Gen Z's skiftende smag",
+              "summary": "Pacsun udnytter data fra fokusgrupper og undersøgelser til at tilpasse sine produktlanceringer, marketing og teknologi til at imødekomme præferencerne hos Gen Z-forbrugere."
+            },
+            "es": {
+              "title": "Detrás de la estrategia de Pacsun para mantenerse al tanto de los gustos cambiantes de la Gen Z",
+              "summary": "Pacsun está aprovechando datos de grupos focales y encuestas para personalizar sus lanzamientos de productos, marketing y tecnología para satisfacer las preferencias de los consumidores de la Gen Z."
+            }
+          }
         }
       ]
     },
@@ -377,7 +517,17 @@
               "brand"
             ]
           },
-          "aiSummary": "AI-generated summary:\nBurberry surpassed holiday sales expectations by appealing to more Gen-Z consumers in China through a successful marketing strategy."
+          "aiSummary": "AI-generated summary:\nBurberry surpassed holiday sales expectations by appealing to more Gen-Z consumers in China through a successful marketing strategy.",
+          "translations": {
+            "da": {
+              "title": "Burberry overgår forventningerne til julesalg og tiltrækker flere kunder i Kina",
+              "summary": "Burberry overgik forventningerne til julesalg ved at appellere til flere Gen-Z-forbrugere i Kina gennem en succesfuld markedsføringsstrategi."
+            },
+            "es": {
+              "title": "Burberry supera las expectativas de ventas navideñas y atrae a más compradores en China",
+              "summary": "Burberry superó las expectativas de ventas navideñas al atraer a más consumidores de la Generación Z en China a través de una exitosa estrategia de marketing."
+            }
+          }
         },
         {
           "id": "odu9s0",
@@ -400,7 +550,17 @@
               "brand"
             ]
           },
-          "aiSummary": "AI-Generated Summary:\nIn 2025, indie fragrance sales experienced a significant 46 percent growth rate, outpacing conglomerate-owned fragrance brands by more than four times, as reported by WWD - Women's Wear Daily."
+          "aiSummary": "AI-Generated Summary:\nIn 2025, indie fragrance sales experienced a significant 46 percent growth rate, outpacing conglomerate-owned fragrance brands by more than four times, as reported by WWD - Women's Wear Daily.",
+          "translations": {
+            "da": {
+              "title": "Indie Duftsalget voksede med 46 procent i 2025",
+              "summary": "I 2025 oplevede indie duftsalget en betydelig vækst på 46 procent, hvilket overgik konglomeratejede duftmærker med mere end fire gange, som rapporteret af WWD - Women's Wear Daily."
+            },
+            "es": {
+              "title": "Las ventas de fragancias indie crecieron un 46 por ciento en 2025",
+              "summary": "En 2025, las ventas de fragancias indie experimentaron un crecimiento significativo del 46 por ciento, superando a las marcas de fragancias de propiedad de conglomerados por más de cuatro veces, según informó WWD - Women's Wear Daily."
+            }
+          }
         },
         {
           "id": "2b0cwm",
@@ -424,7 +584,17 @@
               "brand"
             ]
           },
-          "aiSummary": "AI-Generated Summary:\nPETA's investigation questions the effectiveness of 'Responsible Mohair' certification in preventing cruelty at farms, implicating a supplier to brands like Paul Smith."
+          "aiSummary": "AI-Generated Summary:\nPETA's investigation questions the effectiveness of 'Responsible Mohair' certification in preventing cruelty at farms, implicating a supplier to brands like Paul Smith.",
+          "translations": {
+            "da": {
+              "title": "Eksklusiv: PETA-undersøgelse udfordrer 'Ansvarlig Mohair'-certificering",
+              "summary": "PETA's undersøgelse sætter spørgsmålstegn ved effektiviteten af 'Ansvarlig Mohair'-certificeringen i at forhindre grusomhed på gårde og implicerer en leverandør til mærker som Paul Smith."
+            },
+            "es": {
+              "title": "Exclusivo: La investigación de PETA desafía la certificación de 'Mohair Responsable'",
+              "summary": "La investigación de PETA cuestiona la efectividad de la certificación de 'Mohair Responsable' para prevenir la crueldad en las granjas, implicando a un proveedor de marcas como Paul Smith."
+            }
+          }
         },
         {
           "id": "933czu",
@@ -449,7 +619,17 @@
               "high-end"
             ]
           },
-          "aiSummary": "AI-Generated Summary:\nBrands are shifting towards the high-end market to differentiate themselves from low-cost competitors like Shein and attract luxury consumers affected by rising prices, according to the BoF-McKinsey State of Fashion 2026 report."
+          "aiSummary": "AI-Generated Summary:\nBrands are shifting towards the high-end market to differentiate themselves from low-cost competitors like Shein and attract luxury consumers affected by rising prices, according to the BoF-McKinsey State of Fashion 2026 report.",
+          "translations": {
+            "da": {
+              "title": "Hvorfor næsten hver brand bevæger sig opad i markedet",
+              "summary": "Brands bevæger sig mod high-end markedet for at differentiere sig fra lavpris konkurrenter som Shein og tiltrække luksusforbrugere, der er påvirket af stigende priser, ifølge BoF-McKinsey State of Fashion 2026 rapporten."
+            },
+            "es": {
+              "title": "Por qué casi todas las marcas se están moviendo hacia el mercado de lujo",
+              "summary": "Las marcas están cambiando hacia el mercado de alta gama para diferenciarse de competidores de bajo costo como Shein y atraer a consumidores de lujo afectados por el aumento de precios, según el informe BoF-McKinsey State of Fashion 2026."
+            }
+          }
         },
         {
           "id": "vqf5un",
@@ -472,7 +652,17 @@
               "demand"
             ]
           },
-          "aiSummary": "AI-generated summary:\nAlaska Air Group Inc. saw a rise in its stock after exceeding profit expectations and experiencing strong demand for premium and business flights. However, the company, along with larger competitors, provided a cautious outlook for 2026."
+          "aiSummary": "AI-generated summary:\nAlaska Air Group Inc. saw a rise in its stock after exceeding profit expectations and experiencing strong demand for premium and business flights. However, the company, along with larger competitors, provided a cautious outlook for 2026.",
+          "translations": {
+            "da": {
+              "title": "Alaska Air stiger på stærk efterspørgsel efter premium",
+              "summary": "Alaska Air Group Inc. så en stigning i sin aktie efter at have overgået profitforventningerne og oplevet stærk efterspørgsel efter premium- og erhvervsflyvninger. Dog gav virksomheden, sammen med større konkurrenter, et forsigtigt udsyn for 2026."
+            },
+            "es": {
+              "title": "Alaska Air sube por fuerte demanda de premium tras superar expectativas de ganancias",
+              "summary": "Alaska Air Group Inc. vio un aumento en sus acciones después de superar las expectativas de ganancias y experimentar una fuerte demanda de vuelos premium y de negocios. Sin embargo, la empresa, junto con competidores más grandes, proporcionó una perspectiva cautelosa para 2026."
+            }
+          }
         },
         {
           "id": "jhl3fb",
@@ -496,7 +686,17 @@
               "brand"
             ]
           },
-          "aiSummary": "AI-generated summary:\nDrapers explores the shift of brands like Levi's, Dr Martens, and Fabletics towards direct-to-consumer models as the new buying season commences for autumn/winter 26. The article discusses the pros and cons of the wholesale channel for these brands and agencies like Oldstrom and Just."
+          "aiSummary": "AI-generated summary:\nDrapers explores the shift of brands like Levi's, Dr Martens, and Fabletics towards direct-to-consumer models as the new buying season commences for autumn/winter 26. The article discusses the pros and cons of the wholesale channel for these brands and agencies like Oldstrom and Just.",
+          "translations": {
+            "da": {
+              "title": "Den engros sandhed: hvorfor flere mærker går direkte til forbrugeren",
+              "summary": "Drapers undersøger skiftet af mærker som Levi's, Dr Martens og Fabletics mod direkte til forbruger-modeller, da den nye køsesæson for efterår/vinter 26 begynder. Artiklen diskuterer fordele og ulemper ved engroskanalen for disse mærker og bureauer som Oldstrom og Just."
+            },
+            "es": {
+              "title": "La verdad al por mayor: por qué más marcas están yendo directamente al consumidor",
+              "summary": "Drapers explora el cambio de marcas como Levi's, Dr Martens y Fabletics hacia modelos directos al consumidor a medida que comienza la nueva temporada de compras para otoño/invierno 26. El artículo discute los pros y los contras del canal mayorista para estas marcas y agencias como Oldstrom y Just."
+            }
+          }
         },
         {
           "id": "h33x36",
@@ -518,7 +718,17 @@
               "demand"
             ]
           },
-          "aiSummary": "AI-generated summary:\nTyler Rosenlicht from Cohen & Steers discusses infrastructure investing and the potential for data centers to reduce electric bills amidst the booming demand for energy on the Odd Lots podcast by Bloomberg."
+          "aiSummary": "AI-generated summary:\nTyler Rosenlicht from Cohen & Steers discusses infrastructure investing and the potential for data centers to reduce electric bills amidst the booming demand for energy on the Odd Lots podcast by Bloomberg.",
+          "translations": {
+            "da": {
+              "title": "Sådan tjener du penge på den stigende efterspørgsel efter energi",
+              "summary": "Tyler Rosenlicht fra Cohen & Steers diskuterer infrastrukturinvesteringer og potentialet for datacentre til at reducere elregninger midt i den stigende efterspørgsel efter energi i Odd Lots-podcasten fra Bloomberg."
+            },
+            "es": {
+              "title": "Cómo ganar dinero con la creciente demanda de energía",
+              "summary": "Tyler Rosenlicht de Cohen & Steers discute la inversión en infraestructura y el potencial de los centros de datos para reducir las facturas de electricidad en medio de la creciente demanda de energía en el podcast Odd Lots de Bloomberg."
+            }
+          }
         }
       ]
     },
@@ -547,7 +757,17 @@
               "retailer"
             ]
           },
-          "aiSummary": "AI-Generated Summary:\nGN Diamond reported that in 2025, lab-grown and natural diamond sales were nearly equal, with natural diamond sales seeing a significant rise during the holiday season compared to the previous year."
+          "aiSummary": "AI-Generated Summary:\nGN Diamond reported that in 2025, lab-grown and natural diamond sales were nearly equal, with natural diamond sales seeing a significant rise during the holiday season compared to the previous year.",
+          "translations": {
+            "da": {
+              "title": "GN Diamond Siger, at Salget af Laboratoriefremstillede og Naturlige Diamanter i 2025 Var Næsten Lige",
+              "summary": "GN Diamond rapporterede, at salget af laboratorie-fremstillede og naturlige diamanter i 2025 var næsten ens, med en betydelig stigning i salget af naturlige diamanter i juletiden sammenlignet med året før."
+            },
+            "es": {
+              "title": "GN Diamond Dice que las Ventas de Diamantes Cultivados en Laboratorio y Naturales en 2025 Estuvieron Prácticamente Iguales",
+              "summary": "GN Diamond informó que en 2025, las ventas de diamantes cultivados en laboratorio y naturales fueron casi iguales, con un aumento significativo en las ventas de diamantes naturales durante la temporada navideña en comparación con el año anterior."
+            }
+          }
         },
         {
           "id": "iu05ax",
@@ -572,7 +792,17 @@
               "retailer"
             ]
           },
-          "aiSummary": "AI-Generated Summary:\nChow Tai Fook Jewellery Group, a major Asian jewellery retailer, is set to expand into the Australian market with the opening of its first store in the country later this year."
+          "aiSummary": "AI-Generated Summary:\nChow Tai Fook Jewellery Group, a major Asian jewellery retailer, is set to expand into the Australian market with the opening of its first store in the country later this year.",
+          "translations": {
+            "da": {
+              "title": "Asiatisk smykke detailgigant annoncerer planer om australsk ekspansion",
+              "summary": "Chow Tai Fook Jewellery Group, en stor asiatisk smykkeforhandler, er klar til at ekspandere ind på det australske marked med åbningen af sin første butik i landet senere på året."
+            },
+            "es": {
+              "title": "Gigante minorista de joyería asiática anuncia planes de expansión en Australia",
+              "summary": "Chow Tai Fook Jewellery Group, un importante minorista de joyería asiática, está listo para expandirse al mercado australiano con la apertura de su primera tienda en el país a finales de este año."
+            }
+          }
         },
         {
           "id": "pq4a2b",
@@ -595,7 +825,17 @@
               "jeweller"
             ]
           },
-          "aiSummary": "AI-Generated Summary: Fope's net revenue increased by 27% in 2025, reaching €93.6 million. CEO Diego Nardin expressed satisfaction with the significant growth in sales compared to the previous year."
+          "aiSummary": "AI-Generated Summary: Fope's net revenue increased by 27% in 2025, reaching €93.6 million. CEO Diego Nardin expressed satisfaction with the significant growth in sales compared to the previous year.",
+          "translations": {
+            "da": {
+              "title": "Fope afslutter 2025 med nettoindtægter op med 27%",
+              "summary": "Fopes nettoindtægter steg med 27% i 2025 og nåede 93,6 millioner euro. CEO Diego Nardin udtrykte tilfredshed med den betydelige vækst i salget sammenlignet med året før."
+            },
+            "es": {
+              "title": "Fope cierra 2025 con ingresos netos aumentados en un 27%",
+              "summary": "Los ingresos netos de Fope aumentaron un 27% en 2025, alcanzando 93,6 millones de euros. El CEO Diego Nardin expresó su satisfacción con el crecimiento significativo en las ventas en comparación con el año anterior."
+            }
+          }
         },
         {
           "id": "q86eqd",
@@ -618,7 +858,17 @@
               "retailer"
             ]
           },
-          "aiSummary": "AI-Generated Summary:\nAuror's report reveals a rise in retail crime in Australia and a decrease in New Zealand, particularly in the jewellery industry, as violent crime rates have declined in New Zealand but increased in Australia."
+          "aiSummary": "AI-Generated Summary:\nAuror's report reveals a rise in retail crime in Australia and a decrease in New Zealand, particularly in the jewellery industry, as violent crime rates have declined in New Zealand but increased in Australia.",
+          "translations": {
+            "da": {
+              "title": "Detailkriminalitet stiger i Australien, falder i New Zealand",
+              "summary": "Aurors rapport afslører en stigning i detailkriminalitet i Australien og et fald i New Zealand, især i smykkeindustrien, da voldskriminaliteten er faldet i New Zealand, men steget i Australien."
+            },
+            "es": {
+              "title": "El crimen minorista aumenta en Australia, disminuye en Nueva Zelanda",
+              "summary": "El informe de Auror revela un aumento del crimen minorista en Australia y una disminución en Nueva Zelanda, particularmente en la industria de la joyería, ya que las tasas de crimen violento han disminuido en Nueva Zelanda pero han aumentado en Australia."
+            }
+          }
         },
         {
           "id": "a4osqv",
@@ -643,7 +893,17 @@
               "retailer"
             ]
           },
-          "aiSummary": "AI-generated summary:\nSecrets Shhh, a fashion jewellery chain with 23 stores that recently collapsed, has been acquired by international investors, as reported by Jeweller - Business News on January 19, 2026."
+          "aiSummary": "AI-generated summary:\nSecrets Shhh, a fashion jewellery chain with 23 stores that recently collapsed, has been acquired by international investors, as reported by Jeweller - Business News on January 19, 2026.",
+          "translations": {
+            "da": {
+              "title": "Mode smykke kæde Secrets Shhh solgt til internationalt selskab",
+              "summary": "Secrets Shhh, en mode smykke kæde med 23 butikker, der for nylig kollapsede, er blevet erhvervet af internationale investorer, rapporterer Jeweller - Business News den 19. januar 2026."
+            },
+            "es": {
+              "title": "Cadena de joyería de moda Secrets Shhh vendida a empresa internacional",
+              "summary": "Secrets Shhh, una cadena de joyería de moda con 23 tiendas que colapsó recientemente, ha sido adquirida por inversores internacionales, según informó Jeweller - Business News el 19 de enero de 2026."
+            }
+          }
         },
         {
           "id": "a7drrm",
@@ -667,7 +927,17 @@
               "jeweller"
             ]
           },
-          "aiSummary": "AI-Generated Summary:\nValentine's Day is a popular time for proposals, with about 10-11% of engagements happening on this romantic date. Lab-grown diamonds are becoming increasingly popular, so it's important to know the differences before choosing between mined and lab-grown diamonds."
+          "aiSummary": "AI-Generated Summary:\nValentine's Day is a popular time for proposals, with about 10-11% of engagements happening on this romantic date. Lab-grown diamonds are becoming increasingly popular, so it's important to know the differences before choosing between mined and lab-grown diamonds.",
+          "translations": {
+            "da": {
+              "title": "Sådan forbereder du dig til et frieri på Valentinsdag",
+              "summary": "Valentinsdag er en populær tid for frieri, med omkring 10-11% af forlovelserne, der finder sted på denne romantiske dato. Laboratoriefremstillede diamanter bliver stadig mere populære, så det er vigtigt at kende forskellene, før du vælger mellem mined og laboratoriefremstillede diamanter."
+            },
+            "es": {
+              "title": "Cómo prepararse para una propuesta en el Día de San Valentín",
+              "summary": "El Día de San Valentín es un momento popular para propuestas, con aproximadamente el 10-11% de los compromisos ocurriendo en esta fecha romántica. Los diamantes cultivados en laboratorio están ganando popularidad, por lo que es importante conocer las diferencias antes de elegir entre diamantes extraídos y cultivados en laboratorio."
+            }
+          }
         },
         {
           "id": "3guulp",
@@ -691,7 +961,17 @@
               "jeweller"
             ]
           },
-          "aiSummary": "In its third year, the Goldsmiths' Centre awarded Business Catalyst Grants to five early-stage businesses in the jewellery industry to invest in tools and equipment for production expansion and craft refinement. (AI-generated)"
+          "aiSummary": "In its third year, the Goldsmiths' Centre awarded Business Catalyst Grants to five early-stage businesses in the jewellery industry to invest in tools and equipment for production expansion and craft refinement. (AI-generated)",
+          "translations": {
+            "da": {
+              "title": "Mere fordel fra Goldsmiths’ Centres erhvervstilskud",
+              "summary": "I sit tredje år tildelte Goldsmiths' Centre Business Catalyst Grants til fem tidlige virksomheder i smykkeindustrien for at investere i værktøjer og udstyr til produktionsudvidelse og håndværksforfining."
+            },
+            "es": {
+              "title": "Más beneficios de las subvenciones empresariales del Goldsmiths’ Centre",
+              "summary": "En su tercer año, el Goldsmiths' Centre otorgó Business Catalyst Grants a cinco empresas en etapa temprana en la industria de la joyería para invertir en herramientas y equipos para la expansión de la producción y el perfeccionamiento artesanal."
+            }
+          }
         }
       ]
     }

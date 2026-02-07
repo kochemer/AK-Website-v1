@@ -56,7 +56,17 @@
           },
           "rerankWhy": "Conversational AI boosting ecommerce conversions and average order value",
           "rerankConfidence": 0.95,
-          "aiSummary": "AI-generated summary: Conversational AI in e-commerce is crucial for boosting conversions and average order value as customers now expect instant answers and personalized interactions throughout their browsing journey, leading to the conversion moment occurring before checkout."
+          "aiSummary": "AI-generated summary: Conversational AI in e-commerce is crucial for boosting conversions and average order value as customers now expect instant answers and personalized interactions throughout their browsing journey, leading to the conversion moment occurring before checkout.",
+          "translations": {
+            "da": {
+              "title": "Samtale-AI til E-handel: Øgning af konverteringer og gennemsnitlig ordreværdi",
+              "summary": "AI-genereret resumé: Samtale-AI i e-handel er afgørende for at øge konverteringer og gennemsnitlig ordreværdi, da kunder nu forventer øjeblikkelige svar og personlige interaktioner gennem deres browsingrejse, hvilket fører til konverteringsøjeblikket, der sker før kassen."
+            },
+            "es": {
+              "title": "IA Conversacional para E‑Commerce: Aumentando Conversiones y AOV",
+              "summary": "Resumen generado por IA: La IA conversacional en el comercio electrónico es crucial para aumentar las conversiones y el valor promedio de pedido, ya que los clientes ahora esperan respuestas instantáneas e interacciones personalizadas a lo largo de su viaje de navegación, lo que lleva a que el momento de conversión ocurra antes del pago."
+            }
+          }
         },
         {
           "id": "ucgu5k",
@@ -77,7 +87,17 @@
           },
           "rerankWhy": "Walmart's AI transformation impacting shopping experience and operations",
           "rerankConfidence": 0.9,
-          "aiSummary": "AI-driven transformation at Walmart is expected to significantly change the shopping experience, according to Daniel Danker."
+          "aiSummary": "AI-driven transformation at Walmart is expected to significantly change the shopping experience, according to Daniel Danker.",
+          "translations": {
+            "da": {
+              "title": "Walmart: I år bliver AI-eksperimenter til transformation",
+              "summary": "AI-drevet transformation hos Walmart forventes at ændre shoppingoplevelsen betydeligt, ifølge Daniel Danker."
+            },
+            "es": {
+              "title": "Walmart: Este año, la experimentación con IA 'se convierte en transformación'",
+              "summary": "Se espera que la transformación impulsada por IA en Walmart cambie significativamente la experiencia de compra, según Daniel Danker."
+            }
+          }
         },
         {
           "id": "u3wdp5",
@@ -101,7 +121,17 @@
           },
           "rerankWhy": "Study shows AI's largest impact in retail operations, not just virtual assistants",
           "rerankConfidence": 0.9,
-          "aiSummary": "AI is highly valued by retail executives for strategic business priorities, with a focus on operations rather than virtual assistants. A significant percentage of respondents are already using AI for autonomous decision-making, but there is still room for further deployments in the industry."
+          "aiSummary": "AI is highly valued by retail executives for strategic business priorities, with a focus on operations rather than virtual assistants. A significant percentage of respondents are already using AI for autonomous decision-making, but there is still room for further deployments in the industry.",
+          "translations": {
+            "da": {
+              "title": "Undersøgelse: Den Største Indflydelse af AI Ligger i Drift, ikke Virtuelle Assistenter",
+              "summary": "AI værdsættes højt af detailledere for strategiske forretningsprioriteter, med fokus på drift frem for virtuelle assistenter. En betydelig procentdel af respondenterne bruger allerede AI til autonom beslutningstagning, men der er stadig plads til yderligere implementeringer i branchen."
+            },
+            "es": {
+              "title": "Estudio: El Mayor Impacto de la IA Radica en las Operaciones, no en los Asistentes Virtuales",
+              "summary": "La IA es altamente valorada por los ejecutivos del comercio minorista para prioridades estratégicas de negocio, con un enfoque en las operaciones en lugar de los asistentes virtuales. Un porcentaje significativo de los encuestados ya está utilizando IA para la toma de decisiones autónomas, pero aún hay margen para más implementaciones en la industria."
+            }
+          }
         },
         {
           "id": "f7v3bp",
@@ -124,7 +154,17 @@
           },
           "rerankWhy": "Etsy selling directly through Google's AI mode, enhancing ecommerce integration",
           "rerankConfidence": 0.85,
-          "aiSummary": "Etsy will enable logged-in Google users in the U.S. to buy items from its marketplace through AI Mode in Google search and the Gemini app, following other retailers utilizing Google's AI technology."
+          "aiSummary": "Etsy will enable logged-in Google users in the U.S. to buy items from its marketplace through AI Mode in Google search and the Gemini app, following other retailers utilizing Google's AI technology.",
+          "translations": {
+            "da": {
+              "title": "Hvordan Etsy vil sælge direkte gennem Googles AI-tilstand",
+              "summary": "Etsy vil gøre det muligt for indloggede Google-brugere i USA at købe varer fra deres marked gennem AI-tilstand i Google-søgning og Gemini-appen, efter andre detailhandlere der bruger Googles AI-teknologi."
+            },
+            "es": {
+              "title": "Cómo Etsy venderá directamente a través del Modo AI de Google",
+              "summary": "Etsy permitirá a los usuarios de Google que inicien sesión en EE. UU. comprar artículos de su mercado a través del Modo AI en la búsqueda de Google y la aplicación Gemini, siguiendo a otros minoristas que utilizan la tecnología de IA de Google."
+            }
+          }
         },
         {
           "id": "7y3u5s",
@@ -147,7 +187,17 @@
           },
           "rerankWhy": "Deloitte blueprint for embedding AI digital workers in retail operations",
           "rerankConfidence": 0.85,
-          "aiSummary": "AI in Retail: Deloitte US presents a blueprint for retailers to implement digital workers at scale, enhancing agility and intelligence in operations. Digital workers offer a transformative solution for managing supply chains and merchandising in the retail sector."
+          "aiSummary": "AI in Retail: Deloitte US presents a blueprint for retailers to implement digital workers at scale, enhancing agility and intelligence in operations. Digital workers offer a transformative solution for managing supply chains and merchandising in the retail sector.",
+          "translations": {
+            "da": {
+              "title": "AI i detailhandlen: Digitale arbejdere transformerer operationer | Deloitte US",
+              "summary": "AI i detailhandlen: Deloitte US præsenterer en plan for detailhandlere til at implementere digitale arbejdere i stor skala, hvilket forbedrer smidighed og intelligens i operationer. Digitale arbejdere tilbyder en transformerende løsning til at håndtere forsyningskæder og merchandising i detailsektoren."
+            },
+            "es": {
+              "title": "IA en el comercio minorista: Trabajadores digitales transforman las operaciones | Deloitte US",
+              "summary": "IA en el comercio minorista: Deloitte US presenta un plan para que los minoristas implementen trabajadores digitales a gran escala, mejorando la agilidad y la inteligencia en las operaciones. Los trabajadores digitales ofrecen una solución transformadora para gestionar las cadenas de suministro y la comercialización en el sector minorista."
+            }
+          }
         },
         {
           "id": "nmexej",
@@ -168,7 +218,17 @@
           },
           "rerankWhy": "REI CEO discusses ecommerce and AI strategy for sustainable retail future",
           "rerankConfidence": 0.8,
-          "aiSummary": "AI-Generated Summary:\nREI CEO Mary Beth Laughton discussed the Peak 28 strategy, focusing on sustainability and values, and incorporating a human touch into technology at NRF 2026."
+          "aiSummary": "AI-Generated Summary:\nREI CEO Mary Beth Laughton discussed the Peak 28 strategy, focusing on sustainability and values, and incorporating a human touch into technology at NRF 2026.",
+          "translations": {
+            "da": {
+              "title": "REI CEO Mary Beth Laughton om, hvordan co-op'en ændrer sig, e-handel og AI",
+              "summary": "REI CEO Mary Beth Laughton diskuterede Peak 28-strategien med fokus på bæredygtighed og værdier samt at inkorporere et menneskeligt præg i teknologien på NRF 2026."
+            },
+            "es": {
+              "title": "La CEO de REI, Mary Beth Laughton, sobre cómo está cambiando la cooperativa, el comercio electrónico y la IA",
+              "summary": "La CEO de REI, Mary Beth Laughton, discutió la estrategia Peak 28, centrándose en la sostenibilidad y los valores, e incorporando un toque humano a la tecnología en NRF 2026."
+            }
+          }
         },
         {
           "id": "y2f3hs",
@@ -192,7 +252,17 @@
           },
           "rerankWhy": "Tech giants pushing AI adoption across retail operations broadly",
           "rerankConfidence": 0.8,
-          "aiSummary": "AI-generated summary:\nTech giants like Google and Amazon are pushing for widespread AI adoption in retail operations to improve efficiency and customer experience, with businesses across various sectors embracing AI solutions."
+          "aiSummary": "AI-generated summary:\nTech giants like Google and Amazon are pushing for widespread AI adoption in retail operations to improve efficiency and customer experience, with businesses across various sectors embracing AI solutions.",
+          "translations": {
+            "da": {
+              "title": "Teknologigiganter som Google og Amazon ønsker, at detailhandlere bruger AI overalt",
+              "summary": "Teknologigiganter som Google og Amazon presser på for udbredt brug af AI i detailoperationer for at forbedre effektiviteten og kundeoplevelsen, mens virksomheder på tværs af forskellige sektorer tager AI-løsninger til sig."
+            },
+            "es": {
+              "title": "Gigantes tecnológicos como Google y Amazon quieren que los minoristas usen IA en todas partes",
+              "summary": "Gigantes tecnológicos como Google y Amazon están impulsando la adopción generalizada de IA en las operaciones minoristas para mejorar la eficiencia y la experiencia del cliente, con empresas de diversos sectores adoptando soluciones de IA."
+            }
+          }
         }
       ]
     },
@@ -221,7 +291,17 @@
           },
           "rerankWhy": "JioMart's scale and quick commerce growth impact Indian retail",
           "rerankConfidence": 0.95,
-          "aiSummary": "AI-Generated Summary:\nTech Mahindra achieved its strongest December quarter in three years, with a 14% increase in net profit and 8% rise in revenue. Margins improved for the ninth consecutive quarter, driven by operational efficiencies and AI-led initiatives, while headcount decreased due to slowed hiring."
+          "aiSummary": "AI-Generated Summary:\nTech Mahindra achieved its strongest December quarter in three years, with a 14% increase in net profit and 8% rise in revenue. Margins improved for the ninth consecutive quarter, driven by operational efficiencies and AI-led initiatives, while headcount decreased due to slowed hiring.",
+          "translations": {
+            "da": {
+              "title": "Tech Mahindra opnår stærkeste decemberkvartal i tre år",
+              "summary": "Tech Mahindra opnåede sit stærkeste decemberkvartal i tre år med en stigning på 14% i nettooverskud og en stigning på 8% i omsætning. Marginalerne forbedredes for niende kvartal i træk, drevet af operationelle effektiviseringer og AI-ledede initiativer, mens antallet af ansatte faldt på grund af langsommere ansættelser."
+            },
+            "es": {
+              "title": "Tech Mahindra publica el trimestre de diciembre más fuerte en tres años",
+              "summary": "Tech Mahindra logró su trimestre de diciembre más fuerte en tres años, con un aumento del 14% en las ganancias netas y un incremento del 8% en los ingresos. Los márgenes mejoraron por noveno trimestre consecutivo, impulsados por eficiencias operativas e iniciativas lideradas por IA, mientras que el número de empleados disminuyó debido a una desaceleración en las contrataciones."
+            }
+          }
         },
         {
           "id": "46l9vi",
@@ -245,7 +325,17 @@
           },
           "rerankWhy": "Blinkit's delivery fee cuts affect quick commerce competition",
           "rerankConfidence": 0.9,
-          "aiSummary": "AI-Generated Summary:\nCommerce Minister Piyush Goyal is finalizing guidelines for the second phase of the Fund of Funds scheme for startups in advanced stages, with a focus on deep tech and high-tech sectors. The initiative, with a Rs 10,000 crore allocation, aims to boost India's startup ecosystem and promote youth entrepreneurship."
+          "aiSummary": "AI-Generated Summary:\nCommerce Minister Piyush Goyal is finalizing guidelines for the second phase of the Fund of Funds scheme for startups in advanced stages, with a focus on deep tech and high-tech sectors. The initiative, with a Rs 10,000 crore allocation, aims to boost India's startup ecosystem and promote youth entrepreneurship.",
+          "translations": {
+            "da": {
+              "title": "Retningslinjer for fase II af Fund of Funds-ordningen for startups i avanceret fase: Handelsminister Piyush Goyal",
+              "summary": "Handelsminister Piyush Goyal færdiggør retningslinjerne for den anden fase af Fund of Funds-ordningen for startups i avancerede faser, med fokus på dyb teknologi og højteknologiske sektorer. Initiativet, med en tildeling på 10.000 crore Rs, sigter mod at styrke Indiens startup-økosystem og fremme unges iværksætteri."
+            },
+            "es": {
+              "title": "Directrices para la fase II del esquema de Fondo de Fondos para startups en etapa avanzada: Ministro de Comercio Piyush Goyal",
+              "summary": "El Ministro de Comercio Piyush Goyal está finalizando las directrices para la segunda fase del esquema de Fondo de Fondos para startups en etapas avanzadas, con un enfoque en sectores de tecnología profunda y alta tecnología. La iniciativa, con una asignación de 10,000 crore Rs, tiene como objetivo impulsar el ecosistema de startups de India y promover el emprendimiento juvenil."
+            }
+          }
         },
         {
           "id": "v82p4n",
@@ -266,7 +356,17 @@
           },
           "rerankWhy": "Shadowfax IPO highlights logistics sector changes in ecommerce",
           "rerankConfidence": 0.88,
-          "aiSummary": "AI-Generated Summary:\nUnion minister Piyush Goyal admits his previous comments on deeptech were off the mark, urging founders to focus on consumer apps. This update is featured in today's ETtech Top 5."
+          "aiSummary": "AI-Generated Summary:\nUnion minister Piyush Goyal admits his previous comments on deeptech were off the mark, urging founders to focus on consumer apps. This update is featured in today's ETtech Top 5.",
+          "translations": {
+            "da": {
+              "title": "Goyals hårde kærlighedsøjeblik; Wipro, Tech Mahindra indtjening",
+              "summary": "Unionminister Piyush Goyal indrømmer, at hans tidligere kommentarer om deeptech var misvisende, og opfordrer grundlæggere til at fokusere på forbrugerapps. Denne opdatering er med i dagens ETtech Top 5."
+            },
+            "es": {
+              "title": "El momento de amor duro de Goyal; ganancias de Wipro, Tech Mahindra",
+              "summary": "El ministro de la unión Piyush Goyal admite que sus comentarios anteriores sobre deeptech estaban equivocados, instando a los fundadores a centrarse en aplicaciones para consumidores. Esta actualización se presenta en el Top 5 de ETtech de hoy."
+            }
+          }
         },
         {
           "id": "15mged",
@@ -287,7 +387,17 @@
           },
           "rerankWhy": "Dunelm's omnichannel strategy shows digital commerce integration",
           "rerankConfidence": 0.87,
-          "aiSummary": "AI-Generated Summary:\nShaun Johnson, cofounder of AIX Ventures, a venture capital firm specializing in AI startups, departed from the company last month. AIX Ventures has backed startups like Perplexity, Windsurf, and Ideogram."
+          "aiSummary": "AI-Generated Summary:\nShaun Johnson, cofounder of AIX Ventures, a venture capital firm specializing in AI startups, departed from the company last month. AIX Ventures has backed startups like Perplexity, Windsurf, and Ideogram.",
+          "translations": {
+            "da": {
+              "title": "AIX Ventures medstifter Shaun Johnson forlader",
+              "summary": "Shaun Johnson, medstifter af AIX Ventures, et venturekapitalfirma der specialiserer sig i AI-startups, forlod virksomheden i sidste måned. AIX Ventures har støttet startups som Perplexity, Windsurf og Ideogram."
+            },
+            "es": {
+              "title": "El cofundador de AIX Ventures, Shaun Johnson, se marcha",
+              "summary": "Shaun Johnson, cofundador de AIX Ventures, una firma de capital de riesgo especializada en startups de IA, dejó la empresa el mes pasado. AIX Ventures ha respaldado startups como Perplexity, Windsurf e Ideogram."
+            }
+          }
         },
         {
           "id": "3bdc9x",
@@ -308,7 +418,17 @@
           },
           "rerankWhy": "Costco Kirkland vs brand pricing offers merchandising insights",
           "rerankConfidence": 0.85,
-          "aiSummary": "AI-Generated Summary:\nIndian startups raised $190.7 million in mid-January, a 51% decrease from the previous year, with fewer deals completed. Healthcare, education, and consumer brands were the top sectors for funding."
+          "aiSummary": "AI-Generated Summary:\nIndian startups raised $190.7 million in mid-January, a 51% decrease from the previous year, with fewer deals completed. Healthcare, education, and consumer brands were the top sectors for funding.",
+          "translations": {
+            "da": {
+              "title": "ETtech Deals Digest: Startups rejser 191 millioner dollars denne uge, ned 51% i forhold til året før",
+              "summary": "Indiske startups rejste 190,7 millioner dollars i midten af januar, hvilket er et fald på 51% i forhold til året før, med færre afsluttede aftaler. Sundhedssektoren, uddannelse og forbrugsbrands var de bedste sektorer for finansiering."
+            },
+            "es": {
+              "title": "ETtech Deals Digest: Las startups recaudan 191 millones de dólares esta semana, una disminución del 51% interanual",
+              "summary": "Las startups indias recaudaron 190,7 millones de dólares a mediados de enero, una disminución del 51% en comparación con el año anterior, con menos acuerdos completados. Los sectores de salud, educación y marcas de consumo fueron los principales sectores de financiamiento."
+            }
+          }
         },
         {
           "id": "2jdupu",
@@ -329,7 +449,17 @@
           },
           "rerankWhy": "ASOS revives Topshop brand with new European ecommerce site",
           "rerankConfidence": 0.83,
-          "aiSummary": "AI-generated summary:\nSpacetech startup EtherealX secured $20 million in funding from TDK Ventures, BIG Capital, and other investors. The company aims to launch its technology demonstrator vehicle in 2027 and its commercial launcher, Razor Crest Mk-1, by the end of 2028."
+          "aiSummary": "AI-generated summary:\nSpacetech startup EtherealX secured $20 million in funding from TDK Ventures, BIG Capital, and other investors. The company aims to launch its technology demonstrator vehicle in 2027 and its commercial launcher, Razor Crest Mk-1, by the end of 2028.",
+          "translations": {
+            "da": {
+              "title": "Spacetech startup EtherealX rejser 20 millioner dollars i runde co-ledet af TDK Ventures, BIG Capital",
+              "summary": "Spacetech startup EtherealX har sikret 20 millioner dollars i finansiering fra TDK Ventures, BIG Capital og andre investorer. Virksomheden sigter mod at lancere sit teknologidemonstrator-køretøj i 2027 og sin kommercielle affyringsrampe, Razor Crest Mk-1, inden udgangen af 2028."
+            },
+            "es": {
+              "title": "La startup de Spacetech EtherealX recauda 20 millones de dólares en una ronda co-liderada por TDK Ventures, BIG Capital",
+              "summary": "La startup de Spacetech EtherealX aseguró 20 millones de dólares en financiamiento de TDK Ventures, BIG Capital y otros inversores. La compañía tiene como objetivo lanzar su vehículo demostrador de tecnología en 2027 y su lanzador comercial, Razor Crest Mk-1, a finales de 2028."
+            }
+          }
         },
         {
           "id": "cjnoa",
@@ -353,7 +483,17 @@
           },
           "rerankWhy": "Richemont's record quarter reveals luxury ecommerce trends",
           "rerankConfidence": 0.8,
-          "aiSummary": "AI-generated summary:\nIndia's top IT companies have ended their recruitment freeze by adding 2,505 employees in 2025, focusing on niche skills for selective and skill-based hiring."
+          "aiSummary": "AI-generated summary:\nIndia's top IT companies have ended their recruitment freeze by adding 2,505 employees in 2025, focusing on niche skills for selective and skill-based hiring.",
+          "translations": {
+            "da": {
+              "title": "Indiens store IT ophæver rekrutteringsstop, men kun for nichefærdigheder",
+              "summary": "Indiens største IT-virksomheder har ophævet deres rekrutteringsstop ved at ansætte 2.505 medarbejdere i 2025 med fokus på nichefærdigheder til selektiv og færdighedsbaseret ansættelse."
+            },
+            "es": {
+              "title": "Las grandes empresas de TI de India levantan la congelación de contrataciones, pero solo para habilidades específicas",
+              "summary": "Las principales empresas de TI de India han levantado su congelación de contrataciones al agregar 2,505 empleados en 2025, centrándose en habilidades específicas para contrataciones selectivas y basadas en habilidades."
+            }
+          }
         }
       ]
     },
@@ -383,7 +523,17 @@
           },
           "rerankWhy": "Agentic commerce link-up with Commercetools impacts retail tech",
           "rerankConfidence": 0.95,
-          "aiSummary": "AI-Generated Summary:\nGoogle partners with retail platforms like Shopify to introduce an open-source tool set for agentic commerce, aiming to enhance AI-native purchases, as announced at the National Retail Federation's 2026 Expo."
+          "aiSummary": "AI-Generated Summary:\nGoogle partners with retail platforms like Shopify to introduce an open-source tool set for agentic commerce, aiming to enhance AI-native purchases, as announced at the National Retail Federation's 2026 Expo.",
+          "translations": {
+            "da": {
+              "title": "Google vil drive AI-native køb",
+              "summary": "Google samarbejder med detailplatforme som Shopify for at introducere et open-source værktøjssæt til agentisk handel, med det mål at forbedre AI-native køb, som annonceret på National Retail Federations 2026 Expo."
+            },
+            "es": {
+              "title": "Google impulsará compras nativas de IA",
+              "summary": "Google se asocia con plataformas de venta como Shopify para introducir un conjunto de herramientas de código abierto para el comercio agentivo, con el objetivo de mejorar las compras nativas de IA, como se anunció en la Expo 2026 de la Federación Nacional de Retail."
+            }
+          }
         },
         {
           "id": "s70ky4",
@@ -406,7 +556,17 @@
           },
           "rerankWhy": "Google powering AI-native purchases with Shopify integration",
           "rerankConfidence": 0.9,
-          "aiSummary": "AI-Generated Summary:\nFrasers Group partners with Commercetools to enable shoppers to access its retail ecosystem through AI shopping channels like ChatGPT, diving into agentic commerce."
+          "aiSummary": "AI-Generated Summary:\nFrasers Group partners with Commercetools to enable shoppers to access its retail ecosystem through AI shopping channels like ChatGPT, diving into agentic commerce.",
+          "translations": {
+            "da": {
+              "title": "Frasers Group dykker hovedkulds ind i agentisk handel med Commercetools samarbejde - FashionNetwork",
+              "summary": "Frasers Group indgår partnerskab med Commercetools for at give kunder adgang til sit detailøkosystem gennem AI shoppingkanaler som ChatGPT, og dykker ind i agentisk handel."
+            },
+            "es": {
+              "title": "Frasers Group se sumerge de lleno en el comercio agente con la asociación con Commercetools - FashionNetwork",
+              "summary": "Frasers Group se asocia con Commercetools para permitir a los compradores acceder a su ecosistema minorista a través de canales de compra de IA como ChatGPT, sumergiéndose en el comercio agente."
+            }
+          }
         },
         {
           "id": "t1za63",
@@ -428,7 +588,17 @@
           },
           "rerankWhy": "Alibaba linking shopping to AI app with ecommerce implications",
           "rerankConfidence": 0.88,
-          "aiSummary": "AI-Generated Summary:\nAlibaba aims to connect its main online shopping and travel services to its AI app, creating a comprehensive AI platform for consumers."
+          "aiSummary": "AI-Generated Summary:\nAlibaba aims to connect its main online shopping and travel services to its AI app, creating a comprehensive AI platform for consumers.",
+          "translations": {
+            "da": {
+              "title": "Alibaba tager stort skridt for at forbinde shopping med hoved-AI-app",
+              "summary": "Alibaba sigter mod at forbinde sine hoved online shopping- og rejsetjenester til sin AI-app, hvilket skaber en omfattende AI-platform for forbrugere."
+            },
+            "es": {
+              "title": "Alibaba da un gran paso para vincular las compras a la aplicación principal de IA",
+              "summary": "Alibaba tiene como objetivo conectar sus principales servicios de compras en línea y viajes a su aplicación de IA, creando una plataforma de IA integral para los consumidores."
+            }
+          }
         },
         {
           "id": "rt5zi",
@@ -450,7 +620,17 @@
           },
           "rerankWhy": "Saks new CEO with bankruptcy and luxury retail turnaround expertise",
           "rerankConfidence": 0.85,
-          "aiSummary": "AI-Generated Summary:\nRichemont exceeded analyst expectations in the holiday quarter with strong sales from Cartier and Van Cleef & Arpels, along with improved performance from its watch brands."
+          "aiSummary": "AI-Generated Summary:\nRichemont exceeded analyst expectations in the holiday quarter with strong sales from Cartier and Van Cleef & Arpels, along with improved performance from its watch brands.",
+          "translations": {
+            "da": {
+              "title": "Richemont Overgik Forventningerne i Feriekvartalet",
+              "summary": "Richemont overgik analytikernes forventninger i feriekvartalet med stærkt salg fra Cartier og Van Cleef & Arpels samt forbedret præstation fra deres urmærker."
+            },
+            "es": {
+              "title": "Richemont Superó las Expectativas en el Trimestre de Vacaciones",
+              "summary": "Richemont superó las expectativas de los analistas en el trimestre de vacaciones con fuertes ventas de Cartier y Van Cleef & Arpels, junto con un mejor rendimiento de sus marcas de relojes."
+            }
+          }
         },
         {
           "id": "xe7hju",
@@ -472,7 +652,17 @@
           },
           "rerankWhy": "Richemont’s holiday sales beat forecasts, relevant for luxury retail",
           "rerankConfidence": 0.83,
-          "aiSummary": "AI-Generated Summary:\nFendi has opened a Lunar New Year pop-up in Shanghai showcasing its spring/summer 2026 collection."
+          "aiSummary": "AI-Generated Summary:\nFendi has opened a Lunar New Year pop-up in Shanghai showcasing its spring/summer 2026 collection.",
+          "translations": {
+            "da": {
+              "title": "Fendi lancerer Lunar New Year pop-up i Shanghai",
+              "summary": "Fendi har åbnet en Lunar New Year pop-up i Shanghai, der viser sin forår/sommer 2026 kollektion."
+            },
+            "es": {
+              "title": "Fendi lanza un pop-up del Año Nuevo Lunar en Shanghái",
+              "summary": "Fendi ha abierto un pop-up del Año Nuevo Lunar en Shanghái que muestra su colección primavera/verano 2026."
+            }
+          }
         },
         {
           "id": "fk3t03",
@@ -494,7 +684,17 @@
           },
           "rerankWhy": "Fendi’s Lunar New Year pop-up highlights retail merchandising strategy",
           "rerankConfidence": 0.8,
-          "aiSummary": "AI-Generated Summary:\nGeoffroy van Raemdonck, known for leading Neiman Marcus Group out of bankruptcy, has been named the new CEO of Saks following the retailer's Chapter 11 filing. His expertise in luxury retail and bankruptcy restructurings will likely shape Saks' future direction."
+          "aiSummary": "AI-Generated Summary:\nGeoffroy van Raemdonck, known for leading Neiman Marcus Group out of bankruptcy, has been named the new CEO of Saks following the retailer's Chapter 11 filing. His expertise in luxury retail and bankruptcy restructurings will likely shape Saks' future direction.",
+          "translations": {
+            "da": {
+              "title": "Saks’ nye CEO bringer konkursviden, luksusforbindelser",
+              "summary": "Geoffroy van Raemdonck, kendt for at føre Neiman Marcus Group ud af konkurs, er blevet udnævnt til den nye CEO for Saks efter detailhandlerens Chapter 11-ansøgning. Hans ekspertise inden for luksusdetailhandel og konkursomstruktureringer vil sandsynligvis forme Saks' fremtidige retning."
+            },
+            "es": {
+              "title": "El nuevo CEO de Saks aporta conocimientos sobre quiebras y vínculos de lujo",
+              "summary": "Geoffroy van Raemdonck, conocido por liderar a Neiman Marcus Group fuera de la quiebra, ha sido nombrado nuevo CEO de Saks tras la presentación de la solicitud de Chapter 11 del minorista. Su experiencia en el comercio minorista de lujo y en reestructuraciones de quiebras probablemente dará forma a la dirección futura de Saks."
+            }
+          }
         },
         {
           "id": "m47z39",
@@ -514,7 +714,17 @@
           },
           "rerankWhy": "Apparel brands’ Winter Olympics strategies show merchandising innovation",
           "rerankConfidence": 0.78,
-          "aiSummary": "AI-Generated Summary:\nApparel brands like J.Crew, Nike, and Ralph Lauren are focusing on fashionable designs and technical fabrics to stand out at the Winter Olympics, as reported by Modern Retail on January 12, 2026."
+          "aiSummary": "AI-Generated Summary:\nApparel brands like J.Crew, Nike, and Ralph Lauren are focusing on fashionable designs and technical fabrics to stand out at the Winter Olympics, as reported by Modern Retail on January 12, 2026.",
+          "translations": {
+            "da": {
+              "title": "Hvordan tøjbrands sigter mod at vinde rampelyset ved Vinter-OL",
+              "summary": "Tøjbrands som J.Crew, Nike og Ralph Lauren fokuserer på fashionable designs og tekniske stoffer for at skille sig ud ved Vinter-OL, som rapporteret af Modern Retail den 12. januar 2026."
+            },
+            "es": {
+              "title": "Cómo las marcas de ropa buscan ganar el protagonismo en los Juegos Olímpicos de Invierno",
+              "summary": "Las marcas de ropa como J.Crew, Nike y Ralph Lauren se centran en diseños de moda y tejidos técnicos para destacarse en los Juegos Olímpicos de Invierno, según informó Modern Retail el 12 de enero de 2026."
+            }
+          }
         }
       ]
     },
@@ -544,7 +754,17 @@
           },
           "rerankWhy": "Direct relevance to Pandora's sales and tech-driven retail insights",
           "rerankConfidence": 0.95,
-          "aiSummary": "AI-Generated Summary:\nSales at independent jewellery stores in Australia saw a rise during the festive season in December, reflecting positive trends in the industry for the year."
+          "aiSummary": "AI-Generated Summary:\nSales at independent jewellery stores in Australia saw a rise during the festive season in December, reflecting positive trends in the industry for the year.",
+          "translations": {
+            "da": {
+              "title": "Festlig sæson: Salget stiger for uafhængige juvelerer i december",
+              "summary": "Salget i uafhængige smykkebutikker i Australien steg i den festlige sæson i december, hvilket afspejler positive tendenser i branchen for året."
+            },
+            "es": {
+              "title": "Temporada festiva: Aumentan las ventas de joyeros independientes en diciembre",
+              "summary": "Las ventas en las joyerías independientes de Australia aumentaron durante la temporada festiva en diciembre, reflejando tendencias positivas en la industria para el año."
+            }
+          }
         },
         {
           "id": "bf7mrb",
@@ -569,7 +789,17 @@
           },
           "rerankWhy": "AI application in jewelry retail with practical ecommerce implications",
           "rerankConfidence": 0.9,
-          "aiSummary": "AI-Generated Summary:\nFolium, founded by Master Goldsmith Myles Ryan, has launched a new website showcasing four signature collections inspired by natural architecture and hand-engraved craft."
+          "aiSummary": "AI-Generated Summary:\nFolium, founded by Master Goldsmith Myles Ryan, has launched a new website showcasing four signature collections inspired by natural architecture and hand-engraved craft.",
+          "translations": {
+            "da": {
+              "title": "Folium Præsenterer Ny Hjemmeside, Der Markerer Et Nyt Kapitel For Studiet Grundlagt Af Mester Guldsmed Myles Ryan",
+              "summary": "Folium, grundlagt af Mester Guldsmed Myles Ryan, har lanceret en ny hjemmeside, der præsenterer fire signaturkollektioner inspireret af naturlig arkitektur og håndgraveret håndværk."
+            },
+            "es": {
+              "title": "Folium Presenta Nueva Página Web, Marcando Un Nuevo Capítulo Para El Estudio Fundado Por El Maestro Orfebre Myles Ryan",
+              "summary": "Folium, fundado por el Maestro Orfebre Myles Ryan, ha lanzado una nueva página web que muestra cuatro colecciones emblemáticas inspiradas en la arquitectura natural y el arte de la grabación a mano."
+            }
+          }
         },
         {
           "id": "3x076i",
@@ -589,7 +819,17 @@
             "tier": "med"
           },
           "rerankWhy": "Data on sales rise for independent jewelers, relevant retail trends",
-          "rerankConfidence": 0.85
+          "rerankConfidence": 0.85,
+          "translations": {
+            "da": {
+              "title": "Atlanta Jewelry Show: 13.–15. marts 2026",
+              "summary": ""
+            },
+            "es": {
+              "title": "Atlanta Jewelry Show: 13–15 de marzo de 2026",
+              "summary": ""
+            }
+          }
         },
         {
           "id": "2y8oxk",
@@ -609,7 +849,17 @@
           },
           "rerankWhy": "Analysis of Black Friday sales impact on jewelry retail seasonality",
           "rerankConfidence": 0.85,
-          "aiSummary": "AI-generated summary:\nThe article discusses the application of artificial intelligence in the jewelry retail industry, focusing on inventory demand forecasting, AI-assisted marketing content, automated customer communication, and product photo enhancement."
+          "aiSummary": "AI-generated summary:\nThe article discusses the application of artificial intelligence in the jewelry retail industry, focusing on inventory demand forecasting, AI-assisted marketing content, automated customer communication, and product photo enhancement.",
+          "translations": {
+            "da": {
+              "title": "Kunstig Intelligens i Smykke Detailhandel: Hype vs. Virkelighed",
+              "summary": "Artiklen diskuterer anvendelsen af kunstig intelligens i smykke detailhandelen med fokus på lagerbehovsprognoser, AI-assisteret markedsføringsindhold, automatiseret kundekommunikation og forbedring af produktbilleder."
+            },
+            "es": {
+              "title": "Inteligencia Artificial en el Comercio de Joyería: Hype vs. Realidad",
+              "summary": "El artículo discute la aplicación de la inteligencia artificial en la industria del comercio de joyería, centrándose en la previsión de la demanda de inventario, contenido de marketing asistido por IA, comunicación automatizada con clientes y mejora de fotos de productos."
+            }
+          }
         },
         {
           "id": "q45wlm",
@@ -629,7 +879,17 @@
           },
           "rerankWhy": "Retailers share practical strategies for selling colored gemstones",
           "rerankConfidence": 0.8,
-          "aiSummary": "AI-Generated Summary:\nTwo members of the 'Pink Panthers' gang were arrested for a luxury goods heist in Greece, as reported by Jeweller - Business News on January 12, 2026."
+          "aiSummary": "AI-Generated Summary:\nTwo members of the 'Pink Panthers' gang were arrested for a luxury goods heist in Greece, as reported by Jeweller - Business News on January 12, 2026.",
+          "translations": {
+            "da": {
+              "title": "Medlemmer af Pink Panthers angiveligt ansvarlige for græsk røveri",
+              "summary": "To medlemmer af 'Pink Panthers' banden blev anholdt for et røveri af luksusvarer i Grækenland, rapporteret af Jeweller - Business News den 12. januar 2026."
+            },
+            "es": {
+              "title": "Miembros de los Pink Panthers supuestamente responsables del robo en Grecia",
+              "summary": "Dos miembros de la pandilla 'Pink Panthers' fueron arrestados por un robo de bienes de lujo en Grecia, según informó Jeweller - Business News el 12 de enero de 2026."
+            }
+          }
         },
         {
           "id": "o8bb5v",
@@ -649,7 +909,17 @@
           },
           "rerankWhy": "Government mandate affecting natural diamond protection and supply chain",
           "rerankConfidence": 0.75,
-          "aiSummary": "AI-Generated Summary:\nPandora experienced lower holiday sales due to weakened consumer demand, impacting its financial performance for the year."
+          "aiSummary": "AI-Generated Summary:\nPandora experienced lower holiday sales due to weakened consumer demand, impacting its financial performance for the year.",
+          "translations": {
+            "da": {
+              "title": "Teknologisk boost for Pandora under julesalget",
+              "summary": "Pandora oplevede lavere julesalg på grund af svækket forbruger efterspørgsel, hvilket påvirkede virksomhedens finansielle præstation for året."
+            },
+            "es": {
+              "title": "Impulso tecnológico para Pandora durante las ventas navideñas",
+              "summary": "Pandora experimentó menores ventas navideñas debido a la debilitada demanda del consumidor, lo que afectó su rendimiento financiero del año."
+            }
+          }
         },
         {
           "id": "hogzm3",
@@ -670,7 +940,17 @@
           },
           "rerankWhy": "Insights on product assortment blending watchmaking and jewelry",
           "rerankConfidence": 0.7,
-          "aiSummary": "AI-Generated Summary:\nHong Kong's Financial Secretary Paul Chan announced that Hong Kong will sign an MOU with the Shanghai Gold Exchange at the Asian Financial Forum, enhancing cooperation in the jewellery industry."
+          "aiSummary": "AI-Generated Summary:\nHong Kong's Financial Secretary Paul Chan announced that Hong Kong will sign an MOU with the Shanghai Gold Exchange at the Asian Financial Forum, enhancing cooperation in the jewellery industry.",
+          "translations": {
+            "da": {
+              "title": "Hongkong vil underskrive MOU med Shanghai Gold Exchange, siger Chan",
+              "summary": "Hongkongs finansminister Paul Chan annoncerede, at Hongkong vil underskrive en MOU med Shanghai Gold Exchange på det asiatiske finansforum, hvilket styrker samarbejdet i smykkeindustrien."
+            },
+            "es": {
+              "title": "Hong Kong firmará un MOU con la Bolsa de Oro de Shanghái, dice Chan",
+              "summary": "El Secretario de Finanzas de Hong Kong, Paul Chan, anunció que Hong Kong firmará un MOU con la Bolsa de Oro de Shanghái en el Foro Financiero Asiático, mejorando la cooperación en la industria de la joyería."
+            }
+          }
         }
       ]
     }
