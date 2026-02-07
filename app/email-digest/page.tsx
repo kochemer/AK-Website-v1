@@ -3,9 +3,10 @@ import path from 'path';
 import { DateTime } from 'luxon';
 import Link from 'next/link';
 import type { Metadata } from 'next';
-import { formatDate } from '../../utils/formatDate';
-import { getCurrentDigestWeek } from '../../utils/getCurrentDigestWeek';
-import { getSiteUrl } from '../../utils/siteUrl';
+import { formatDate } from '@/lib/utils/formatDate';
+import { getCurrentDigestWeek } from '@/lib/utils/getCurrentDigestWeek';
+import { getSiteUrl } from '@/lib/utils/siteUrl';
+import type { EmailDigest } from '@/lib/types';
 
 // Lazy evaluation for dev mode compatibility
 const getSiteUrlLazy = () => getSiteUrl();
@@ -16,22 +17,6 @@ export const metadata: Metadata = {
   alternates: {
     canonical: `${getSiteUrlLazy()}/email-digest`,
   },
-};
-
-type EmailDigestItem = {
-  rank: number;
-  title: string;
-  url: string;
-  source: string;
-  bullets: string[];
-};
-
-type EmailDigest = {
-  week: string;
-  generatedAt: string;
-  intro?: string;
-  readOneThing?: { title: string; url: string };
-  items: EmailDigestItem[];
 };
 
 function getCurrentWeek(): string {

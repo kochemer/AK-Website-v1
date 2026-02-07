@@ -27,6 +27,14 @@ export type SelectedArticle = {
   snippet: string;
   domain: string;
   publishedDate?: string;
+  publishedAt?: string | null;
+  publishedDateRaw?: string;
+  publishedDateInvalid?: boolean;
+  dateSource?: 'html' | 'tavily' | 'none' | 'time_text';
+  dateSourceDetail?: 'jsonld' | 'meta' | 'time' | 'time_text' | 'tavily' | 'none';
+  dateConfidence?: 'high' | 'medium' | 'low';
+  discoveredAt?: string;
+  sourceType?: 'discovery' | 'consultancy' | 'platform';
   rank: number;
   why: string;
   confidence: number;
@@ -345,6 +353,14 @@ function selectFromRanked(
       snippet: candidate.snippet,
       domain: candidate.domain,
       publishedDate: candidate.publishedDate,
+      publishedAt: candidate.publishedAt || null,
+      publishedDateRaw: candidate.publishedDateRaw,
+      publishedDateInvalid: candidate.publishedDateInvalid,
+      dateSource: candidate.dateSource,
+      dateSourceDetail: candidate.dateSourceDetail,
+      dateConfidence: candidate.dateConfidence,
+      discoveredAt: candidate.discoveredAt,
+      sourceType: candidate.sourceType,
       rank: item.rank,
       why: item.why,
       confidence: item.confidence,
@@ -395,6 +411,14 @@ function selectFromRanked(
         snippet: candidate.snippet,
         domain: candidate.domain,
         publishedDate: candidate.publishedDate,
+        publishedAt: candidate.publishedAt || null,
+        publishedDateRaw: candidate.publishedDateRaw,
+        publishedDateInvalid: candidate.publishedDateInvalid,
+        dateSource: candidate.dateSource,
+        dateSourceDetail: candidate.dateSourceDetail,
+        dateConfidence: candidate.dateConfidence,
+        discoveredAt: candidate.discoveredAt,
+        sourceType: candidate.sourceType,
         rank: item.rank,
         why: item.why,
         confidence: item.confidence,

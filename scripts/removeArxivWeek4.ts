@@ -2,7 +2,7 @@ import { promises as fs } from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { DateTime } from 'luxon';
-import { getWeekRangeCET } from '../utils/weekCET';
+import { getWeekRangeCET } from '../lib/utils/weekCET';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);

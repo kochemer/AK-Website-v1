@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next';
 import { promises as fs } from 'fs';
 import path from 'path';
-import { getSiteUrl } from '../utils/siteUrl';
+import { getSiteUrl } from '@/lib/utils/siteUrl';
 
 async function getAvailableWeekLabels(): Promise<string[]> {
   try {

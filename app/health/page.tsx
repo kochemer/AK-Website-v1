@@ -1,6 +1,6 @@
 import { promises as fs } from 'fs';
 import path from 'path';
-import { getTopicTotalsDisplayName } from '../../utils/topicNames';
+import { getTopicTotalsDisplayName } from '@/lib/utils/topicNames';
 
 async function getLatestDigest() {
   try {

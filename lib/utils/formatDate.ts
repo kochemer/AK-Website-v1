@@ -49,6 +49,3 @@ export function formatTime(isoString: string): string {
 export function formatDateTime(isoString: string): string {
   return DateTime.fromISO(isoString).toFormat('MMM d, yyyy HH:mm');
 }
-
-
-

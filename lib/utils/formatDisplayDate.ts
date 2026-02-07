@@ -26,7 +26,3 @@ export function formatDisplayDate(dateString: string): string {
     return dateString;
   }
 }
-
-
-
-

@@ -1,26 +1,11 @@
 import { promises as fs } from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
-import { getWeekRangeCET } from '../utils/weekCET';
+import { getWeekRangeCET } from '../lib/utils/weekCET';
+import type { Article, Topic } from '../lib/types';
 
-// --- Types ---
-export type Topic =
-  | "AI_and_Strategy"
-  | "Ecommerce_Retail_Tech"
-  | "Luxury_and_Consumer"
-  | "Jewellery_Industry";
-
-export type Article = {
-  id: string;
-  title: string;
-  url: string;
-  source: string;
-  published_at: string;
-  ingested_at: string;
-  snippet?: string;
-  summary?: string;
-  oneSentenceSummary?: string;
-};
+// Re-export Topic for backward compatibility
+export type { Topic } from '../lib/types';
 
 // --- Topic heuristics ---
 

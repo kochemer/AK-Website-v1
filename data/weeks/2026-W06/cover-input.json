@@ -1,0 +1,34 @@
+{
+  "weekLabel": "2026-W06",
+  "homepageTopArticles": [
+    {
+      "title": "FedEx launches AI-powered tracking and returns tools",
+      "source": "Digital Commerce 360",
+      "snippet": "FedEx Corp. is expanding its role in ecommerce beyond transportation with the launch of two AI-powered digital tools designed to help retailers and brands manage tracking, returns and customer communication within their own websites and apps. The company introduced FedEx Tracking+ and FedEx Returns+, developed in collaboration with parcelLab, as white-labeled AI capabilities that can […]\nThe post FedEx launches AI-powered tracking and returns tools appeared first on Digital Commerce 360.",
+      "aiSummary": "AI-generated summary: FedEx has introduced AI-powered tools, FedEx Tracking+ and FedEx Returns+, to assist retailers and brands in managing tracking, returns, and customer communication on their websites and apps, expanding its role in ecommerce beyond transportation."
+    },
+    {
+      "title": "B2B sellers rewire operations as ecommerce and EDI converge",
+      "source": "Digital Commerce 360",
+      "snippet": "What used to live in different corners of the enterprise is now being stitched together into a single operating fabric. Across industrial manufacturing, HVAC, MRO, building materials and technology distribution, companies are bringing B2B ecommerce platforms and electronic data interchange (EDI) networks into tight alignment with ERP systems, warehouse operations and supplier connectivity. The goal […]\nThe post B2B sellers rewire operations as ecommerce and EDI converge appeared first on Digital...",
+      "aiSummary": "AI-generated summary:\nB2B sellers are integrating ecommerce platforms and EDI networks with ERP systems, warehouse operations, and supplier connectivity to streamline operations across various industries."
+    },
+    {
+      "title": "Hailey Bieber’s 30-Carat Choker and 9 More Diamond Looks From the Grammys",
+      "source": "Instore Magazine",
+      "snippet": "The best celebrity diamond jewelry from music's biggest night.",
+      "aiSummary": "AI-Generated Summary:\nCelebrities showcased stunning diamond jewelry at the Grammys, including Hailey Bieber's 30-carat choker. The event highlighted glamorous diamond looks from music's biggest night."
+    },
+    {
+      "title": "Why billionaire investor Thomas Kaplan isn't stressing about gold and silver's historic sell-off",
+      "source": "Business Insider - Tech",
+      "snippet": "Metals guru Thomas Kaplan says there's \"every reason in the world to buy gold.\"\nLUDOVIC MARIN/POOL/AFP via Getty Images\n\nBillionaire Thomas Kaplan shrugged off the slump in gold and silver prices as short-term volatility.\nKaplan said his long-term price target for gold is in the \"tens of thousands of dollars.\"\nKaplan said that gold will keep rising because it's a \"currency that can't be debased at will.\"\n\nBillionaire investor Thomas Kaplan says he's unfazed by the historic plunge in gold and sil...",
+      "aiSummary": "AI-generated summary:\nMetals guru Thomas Kaplan remains confident in gold despite recent price drops, citing its long-term potential and resistance to debasement as reasons to continue investing."
+    }
+  ],
+  "model": "gpt-image-1.5",
+  "finalPrompt": "A hyper-realistic photograph of a luxury Swiss watch on a conveyor belt in a modern shipping warehouse, treated like a package with a barcode sticker. Robotic arms sort parcels around it, while a vintage delivery truck and futuristic drones are visible in the background. Natural lighting streams through large windows, casting sharp shadows. Camera framing is a wide horizontal banner with a 3:1 aspect ratio, central horizontal band composition, and safe margins. No text, signage, or screens. The scene is a playful role reversal with anachronistic elements, blending old and new in a believable yet absurd setting, with photorealistic materials and textures.\n\nCRITICAL CONSTRAINTS (must be strictly avoided):\n- text, letters, numbers, signage, labels, screens, UI, dashboards, holograms, floating icons, logos, brands, watermarks, cartoon, illustration, CGI, 3D render, anime\n\nPHOTOREALISM ENFORCEMENT:\n- Ultra photorealistic editorial photograph, shot on a real DSLR or medium-format camera.\n- Natural lighting, realistic skin texture, realistic reflections, realistic materials, real physics.\n- Candid editorial realism; avoid stock-photo staging.\n\nANTI-CARTOON / ANTI-CGI:\n- No illustration, no cartoon, no anime, no 3D render, no CGI, no synthetic look.\n\nNO-TEXT GUARANTEE:\n- Absolutely no text, letters, numbers, typography, signage, labels, price tags.\n- No screens, dashboards, UI, holograms, floating icons, charts.\n- Avoid any objects that commonly contain text (posters, newspapers, packaging, storefront signs). If unavoidable, they must be fully out of focus and unreadable.\n\nCOMPOSITION FOR WIDE HERO BANNER (CRITICAL):\n- Wide, horizontally expansive banner format (target 3:1 or wider aspect ratio)\n- Vertically minimal height - all important visual elements must be placed in the central horizontal band\n- Safe margins at top and bottom - no critical content near vertical edges\n- Composition must work when displayed in a wide, shallow container\n- Avoid vertical stacking, tall elements, or content that extends to top/bottom edges",
+  "imageSize": "1536x1024",
+  "outputPath": "/weekly-images/2026-W06.png",
+  "generatedAt": "2026-02-07T12:47:55.281Z"
+}

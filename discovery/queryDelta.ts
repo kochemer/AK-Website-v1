@@ -3,7 +3,7 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import OpenAI from 'openai';
 import type { Topic } from '../classification/classifyTopics';
-import { getTopicDisplayName } from '../utils/topicNames';
+import { getTopicDisplayName } from '../lib/utils/topicNames';
 import crypto from 'crypto';
 
 const __filename = fileURLToPath(import.meta.url);

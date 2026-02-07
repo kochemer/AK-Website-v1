@@ -9,6 +9,8 @@ import { fileURLToPath } from 'url';
 import crypto from 'crypto';
 import OpenAI from 'openai';
 
+import { readJsonCache, writeJsonCache } from '../lib/utils/cachePaths';
+
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
@@ -18,7 +20,7 @@ const SCENE_DIRECTOR_VERSION = 'v3'; // Updated to playful, absurd visual metaph
 const SCENE_DIRECTOR_MODEL = process.env.SCENE_DIRECTOR_MODEL || 'gpt-4o';
 const TEMPERATURE = 0.7; // Some creativity for scene generation
 const MAX_TOKENS = 2000;
-const CACHE_FILE = path.join(__dirname, '../data/scene_director_cache.json');
+const CACHE_KIND = 'scene_director';
 const CONFIDENCE_THRESHOLD = 0.55; // Fallback if confidence below this
 
 // --- Types ---
@@ -55,25 +57,16 @@ type SceneDirectorCache = {
 
 export type Variant = 'safe' | 'fun';
 
-// --- Cache Management ---
+// --- Cache Management (uses unified cache paths) ---
 
 async function loadCache(): Promise<SceneDirectorCache> {
-  try {
-    const content = await fs.readFile(CACHE_FILE, 'utf-8');
-    return JSON.parse(content);
-  } catch (err: any) {
-    if (err.code === 'ENOENT') {
-      return {};
-    }
-    console.warn(`[SceneDirector] Failed to load cache: ${err.message}`);
-    return {};
-  }
+  const cache = await readJsonCache<SceneDirectorCache>(CACHE_KIND);
+  return cache || {};
 }
 
 async function saveCache(cache: SceneDirectorCache): Promise<void> {
   try {
-    await fs.mkdir(path.dirname(CACHE_FILE), { recursive: true });
-    await fs.writeFile(CACHE_FILE, JSON.stringify(cache, null, 2), 'utf-8');
+    await writeJsonCache(CACHE_KIND, cache);
   } catch (err: any) {
     console.warn(`[SceneDirector] Failed to save cache: ${err.message}`);
   }

@@ -1,6 +1,7 @@
 import { promises as fs } from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import { getCurrentDigestWeek } from '../lib/utils/getCurrentDigestWeek';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -109,5 +110,5 @@ async function analyzeDigest(weekLabel: string) {
   }
 }
 
-const weekLabel = process.argv[2] || '2026-W02';
+const weekLabel = process.argv[2] || getCurrentDigestWeek();
 analyzeDigest(weekLabel).catch(console.error);

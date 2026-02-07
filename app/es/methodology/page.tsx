@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
-import { getSiteUrl } from '../../../utils/siteUrl';
+import { getSiteUrl } from '@/lib/utils/siteUrl';
 
 const siteUrl = getSiteUrl();
 

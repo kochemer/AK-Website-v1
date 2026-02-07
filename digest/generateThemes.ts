@@ -9,7 +9,9 @@ import { fileURLToPath } from 'url';
 import crypto from 'crypto';
 import OpenAI from 'openai';
 import type { WeeklyDigest } from './buildWeeklyDigest';
-import { getTopicDisplayName } from '../utils/topicNames';
+import { getTopicDisplayName } from '../lib/utils/topicNames';
+
+import { readJsonCache, writeJsonCache } from '../lib/utils/cachePaths';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -18,7 +20,7 @@ const __dirname = path.dirname(__filename);
 const THEME_MODEL = process.env.THEME_MODEL || 'gpt-4o-mini';
 const TEMPERATURE = 0; // Deterministic
 const MAX_TOKENS = 500;
-const CACHE_FILE = path.join(__dirname, '../data/themes_cache.json');
+const CACHE_KIND = 'themes';
 const THEME_VERSION = '2.1'; // Increment to invalidate cache
 
 // Banned phrases that indicate generic/vague themes
@@ -60,24 +62,15 @@ type ThemesCache = {
   [key: string]: CacheEntry;
 };
 
-// Cache management
+// Cache management (uses unified cache paths)
 async function loadCache(): Promise<ThemesCache> {
-  try {
-    const content = await fs.readFile(CACHE_FILE, 'utf-8');
-    return JSON.parse(content);
-  } catch (err: any) {
-    if (err.code === 'ENOENT') {
-      return {};
-    }
-    console.warn(`[Themes] Failed to load cache: ${err.message}`);
-    return {};
-  }
+  const cache = await readJsonCache<ThemesCache>(CACHE_KIND);
+  return cache || {};
 }
 
 async function saveCache(cache: ThemesCache): Promise<void> {
   try {
-    await fs.mkdir(path.dirname(CACHE_FILE), { recursive: true });
-    await fs.writeFile(CACHE_FILE, JSON.stringify(cache, null, 2), 'utf-8');
+    await writeJsonCache(CACHE_KIND, cache);
   } catch (err: any) {
     console.warn(`[Themes] Failed to save cache: ${err.message}`);
   }

@@ -3,7 +3,7 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import type { Topic } from '../classification/classifyTopics';
 import { generateDeltaQueries, type QueryDeltaConfig } from './queryDelta';
-import { getTopicDisplayName } from '../utils/topicNames';
+import { getTopicDisplayName } from '../lib/utils/topicNames';
 import { generateConsultancyQueries } from './consultancyDomains';
 import { generatePlatformQueries } from './platformDomains';
 import crypto from 'crypto';

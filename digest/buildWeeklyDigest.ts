@@ -2,15 +2,13 @@ import { promises as fs } from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { DateTime } from 'luxon';
-import { getWeekRangeCET } from '../utils/weekCET';
+import { getWeekRangeCET } from '../lib/utils/weekCET';
 import { classifyTopic } from '../classification/classifyTopics';
-import type { Article as BaseArticle, Topic } from '../classification/classifyTopics';
 import { rerankArticles } from './rerankArticles';
+import type { Article, ArticleWithRelevance, RelevanceScore, Topic, WeeklyDigest } from '../lib/types';
 
-// Extended Article type that includes snippet (used in actual data)
-type Article = BaseArticle & {
-  snippet?: string;
-};
+// Re-export WeeklyDigest for backward compatibility
+export type { WeeklyDigest } from '../lib/types';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -126,25 +124,7 @@ function dedupeArticles(articles: Article[]): Article[] {
   return Array.from(map.values());
 }
 
-/**
- * Relevance score breakdown for explainability
- */
-type RelevanceScore = {
-  scoreTotal: number;
-  recencyScore: number; // Kept for backward compatibility, but always 0 now
-  sourceWeight: number;
-  keywordBoost: number;
-  insightSignalBoost: number;
-  penalty: number;
-  matchedKeywords: string[];
-};
-
-/**
- * Article with relevance scoring (only added to selected top items)
- */
-type ArticleWithRelevance = Article & {
-  relevance?: RelevanceScore;
-};
+// RelevanceScore and ArticleWithRelevance are now imported from @/lib/types
 
 // Insight markers for insightSignalBoost (case-insensitive substring matching)
 const INSIGHT_MARKERS = [
@@ -428,35 +408,7 @@ async function selectTopN(
   return selected;
 }
 
-export type WeeklyDigest = {
-  weekLabel: string;
-  tz: string;
-  startISO: string;
-  endISO: string;
-  builtAtISO?: string;
-  builtAtLocal?: string;
-  coverImageUrl?: string;
-  coverImageAlt?: string;
-  coverKeywords?: string[];
-  keyThemes?: string[];
-  oneSentenceSummary?: string;
-  introParagraph?: string;
-  totals: {
-    total: number;
-    byTopic: {
-      AIStrategy: number;
-      EcommerceRetail: number;
-      LuxuryConsumer: number;
-      Jewellery: number;
-    };
-  };
-  topics: {
-    AI_and_Strategy: { total: number; top: ArticleWithRelevance[] };
-    Ecommerce_Retail_Tech: { total: number; top: ArticleWithRelevance[] };
-    Luxury_and_Consumer: { total: number; top: ArticleWithRelevance[] };
-    Jewellery_Industry: { total: number; top: ArticleWithRelevance[] };
-  };
-};
+// WeeklyDigest type is now imported and re-exported from @/lib/types
 
 /**
  * Builds a weekly digest from articles in data/articles.json

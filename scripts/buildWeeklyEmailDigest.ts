@@ -3,84 +3,20 @@
  * Phase 1: Generate JSON artifact only (no email sending)
  */
 
-import { promises as fs, readFileSync } from 'fs';
+import { promises as fs } from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
-import { parse } from 'dotenv';
 import OpenAI from 'openai';
-import { DateTime } from 'luxon';
 import { computeCommerceMateriality, getTopByMateriality } from '../scoring/commerceMateriality';
+import { loadEnv } from '../lib/env';
+import { getCurrentDigestWeek, validateWeekLabel } from '../lib/utils/getCurrentDigestWeek';
+import type { Article, WeeklyDigest, EmailDigest, EmailDigestItem } from '../lib/types';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// Load environment variables
-function loadEnv() {
-  const envPath = path.join(__dirname, '../.env.local');
-  try {
-    const buffer = readFileSync(envPath);
-    let contentToParse: string;
-    if (buffer.length >= 2 && buffer[0] === 0xFF && buffer[1] === 0xFE) {
-      contentToParse = buffer.toString('utf16le', 2);
-    } else if (buffer.length >= 2 && buffer[0] === 0xFE && buffer[1] === 0xFF) {
-      const leBuffer = Buffer.alloc(buffer.length - 2);
-      for (let i = 2; i < buffer.length; i += 2) {
-        leBuffer[i - 2] = buffer[i + 1];
-        leBuffer[i - 1] = buffer[i];
-      }
-      contentToParse = leBuffer.toString('utf16le');
-    } else if (buffer.length > 0 && buffer[1] === 0 && buffer[0] !== 0) {
-      contentToParse = buffer.toString('utf16le');
-    } else {
-      contentToParse = buffer.toString('utf-8');
-    }
-    const parsed = parse(contentToParse);
-    Object.assign(process.env, parsed);
-  } catch (err) {
-    // .env.local not found, continue
-  }
-}
-
+// Load environment variables (must be before any env var access)
 loadEnv();
-
-// Types
-type Article = {
-  id: string;
-  title: string;
-  url: string;
-  source: string;
-  published_at: string;
-  snippet?: string;
-  aiSummary?: string;
-  rerankWhy?: string;
-  hasFullText?: boolean;
-};
-
-type WeeklyDigest = {
-  weekLabel: string;
-  topics: {
-    AI_and_Strategy: { top: Article[] };
-    Ecommerce_Retail_Tech: { top: Article[] };
-    Luxury_and_Consumer: { top: Article[] };
-    Jewellery_Industry: { top: Article[] };
-  };
-};
-
-type EmailDigestItem = {
-  rank: number;
-  title: string;
-  url: string;
-  source: string;
-  bullets: string[];
-};
-
-type EmailDigest = {
-  week: string;
-  generatedAt: string;
-  intro?: string;
-  readOneThing?: { title: string; url: string };
-  items: EmailDigestItem[];
-};
 
 // Configuration
 const EMAIL_DIGEST_MODEL = process.env.EMAIL_DIGEST_MODEL || 'gpt-4o-mini';
@@ -178,6 +114,7 @@ function selectAndRankArticles(digest: WeeklyDigest, topN: number): Array<Articl
               url: nextArticle.url,
               source: nextArticle.source,
               published_at: nextArticle.published_at,
+              ingested_at: nextArticle.ingested_at,
               snippet: nextArticle.snippet,
               aiSummary: nextArticle.aiSummary,
               commerceMaterialityScore: materiality.score,
@@ -204,6 +141,7 @@ function selectAndRankArticles(digest: WeeklyDigest, topN: number): Array<Articl
           url: article.url,
           source: article.source,
           published_at: article.published_at,
+          ingested_at: article.ingested_at,
           snippet: article.snippet,
           aiSummary: article.aiSummary,
           commerceMaterialityScore: materiality.score,
@@ -394,10 +332,10 @@ async function main() {
   }
   
   if (!weekLabel) {
-    console.error('Error: --week=YYYY-W## is required');
-    console.error('Usage: npm run email-digest -- --week=2026-W03 [--topN=8] [--force]');
-    process.exit(1);
+    weekLabel = getCurrentDigestWeek();
+    console.log(`[EmailDigest] No --week provided, using computed digest week: ${weekLabel}`);
   }
+  validateWeekLabel(weekLabel);
   
   // Check if already exists
   const outputPath = path.join(__dirname, '../data/weeks', weekLabel, 'email-digest.json');

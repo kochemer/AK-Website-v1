@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-02-01T18:48:06.171Z",
+  "timestamp": "2026-02-07T12:42:50.937Z",
   "sources": [
     {
       "sourceName": "Financial Times - Technology",
@@ -105,27 +105,27 @@
       "type": "rss",
       "itemsFetched": 200,
       "itemsParsed": 200,
-      "newArticlesAdded": 24,
-      "duplicates": 176,
-      "yieldPct": 12
+      "newArticlesAdded": 22,
+      "duplicates": 178,
+      "yieldPct": 11
     },
     {
       "sourceName": "Internet Retailing",
       "type": "rss",
       "itemsFetched": 10,
       "itemsParsed": 10,
-      "newArticlesAdded": 7,
-      "duplicates": 3,
-      "yieldPct": 70
+      "newArticlesAdded": 8,
+      "duplicates": 2,
+      "yieldPct": 80
     },
     {
       "sourceName": "Practical Ecommerce",
       "type": "rss",
       "itemsFetched": 30,
       "itemsParsed": 30,
-      "newArticlesAdded": 6,
-      "duplicates": 24,
-      "yieldPct": 20
+      "newArticlesAdded": 4,
+      "duplicates": 26,
+      "yieldPct": 13.333333333333334
     },
     {
       "sourceName": "PYMNTS",
@@ -159,9 +159,9 @@
       "type": "rss",
       "itemsFetched": 10,
       "itemsParsed": 10,
-      "newArticlesAdded": 5,
-      "duplicates": 5,
-      "yieldPct": 50
+      "newArticlesAdded": 1,
+      "duplicates": 9,
+      "yieldPct": 10
     },
     {
       "sourceName": "ToneTag",
@@ -177,9 +177,9 @@
       "type": "rss",
       "itemsFetched": 100,
       "itemsParsed": 100,
-      "newArticlesAdded": 83,
-      "duplicates": 17,
-      "yieldPct": 83
+      "newArticlesAdded": 64,
+      "duplicates": 36,
+      "yieldPct": 64
     },
     {
       "sourceName": "WWD - Women's Wear Daily",
@@ -231,9 +231,9 @@
       "type": "rss",
       "itemsFetched": 30,
       "itemsParsed": 30,
-      "newArticlesAdded": 10,
-      "duplicates": 20,
-      "yieldPct": 33.33333333333333
+      "newArticlesAdded": 9,
+      "duplicates": 21,
+      "yieldPct": 30
     },
     {
       "sourceName": "Jeweller - Jewellery Trends",
@@ -267,9 +267,9 @@
       "type": "rss",
       "itemsFetched": 10,
       "itemsParsed": 10,
-      "newArticlesAdded": 0,
-      "duplicates": 10,
-      "yieldPct": 0
+      "newArticlesAdded": 7,
+      "duplicates": 3,
+      "yieldPct": 70
     },
     {
       "sourceName": "Instore Magazine",
@@ -285,9 +285,9 @@
       "type": "rss",
       "itemsFetched": 200,
       "itemsParsed": 200,
-      "newArticlesAdded": 35,
-      "duplicates": 165,
-      "yieldPct": 17.5
+      "newArticlesAdded": 0,
+      "duplicates": 200,
+      "yieldPct": 0
     },
     {
       "sourceName": "Luxury Daily - Retail",
@@ -337,20 +337,20 @@
     {
       "sourceName": "NYTimes Technology",
       "type": "rss",
-      "itemsFetched": 26,
-      "itemsParsed": 26,
-      "newArticlesAdded": 26,
-      "duplicates": 0,
-      "yieldPct": 100
+      "itemsFetched": 21,
+      "itemsParsed": 21,
+      "newArticlesAdded": 20,
+      "duplicates": 1,
+      "yieldPct": 95.23809523809523
     },
     {
       "sourceName": "MIT Sloan Management Review – AI",
       "type": "rss",
       "itemsFetched": 20,
       "itemsParsed": 20,
-      "newArticlesAdded": 2,
-      "duplicates": 18,
-      "yieldPct": 10
+      "newArticlesAdded": 1,
+      "duplicates": 19,
+      "yieldPct": 5
     },
     {
       "sourceName": "Benedict Evans",
@@ -366,9 +366,9 @@
       "type": "rss",
       "itemsFetched": 10,
       "itemsParsed": 10,
-      "newArticlesAdded": 5,
-      "duplicates": 5,
-      "yieldPct": 50
+      "newArticlesAdded": 4,
+      "duplicates": 6,
+      "yieldPct": 40
     },
     {
       "sourceName": "BoF - News (The News in Brief)",
@@ -382,9 +382,9 @@
   ],
   "summary": {
     "totalSources": 42,
-    "totalItemsFetched": 1093,
-    "totalNewArticles": 475,
-    "totalDuplicates": 618,
-    "overallYieldPct": 43.4583714547118
+    "totalItemsFetched": 1088,
+    "totalNewArticles": 412,
+    "totalDuplicates": 676,
+    "overallYieldPct": 37.86764705882353
   }
 }

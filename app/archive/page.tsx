@@ -10,7 +10,7 @@ import { promises as fs } from 'fs';
 import path from 'path';
 import Link from 'next/link';
 import { DateTime } from 'luxon';
-import { formatDateRange } from '../../utils/formatDate';
+import { formatDateRange } from '@/lib/utils/formatDate';
 
 async function getAvailableDigests(): Promise<string[]> {
   try {

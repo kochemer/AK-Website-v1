@@ -1,17 +1,19 @@
 {
   "weekLabel": "2026-W05",
+  "coverImageUrl": "/weekly-images/2026-W05.png",
+  "coverImageAlt": "Weekly cover illustration for 2026-W05",
   "tz": "Europe/Copenhagen",
   "startISO": "2026-01-25T23:00:00.000Z",
   "endISO": "2026-02-01T22:59:59.999Z",
-  "builtAtISO": "2026-02-01T19:49:38.057+01:00",
-  "builtAtLocal": "2026-02-01 19:49:38",
+  "builtAtISO": "2026-02-07T10:22:00.688+01:00",
+  "builtAtLocal": "2026-02-07 10:22:00",
   "totals": {
-    "total": 459,
+    "total": 480,
     "byTopic": {
       "AIStrategy": 43,
-      "EcommerceRetail": 279,
-      "LuxuryConsumer": 117,
-      "Jewellery": 19
+      "EcommerceRetail": 288,
+      "LuxuryConsumer": 119,
+      "Jewellery": 29
     }
   },
   "topics": {
@@ -40,7 +42,7 @@
               "ai"
             ]
           },
-          "aiSummary": "AI-Generated Summary:\nOpenAI is planning an IPO in Q4 FY26 to compete with rival Anthropic, who may list first. OpenAI has strengthened its finance team with new hires to handle investor relations."
+          "aiSummary": "AI-Generated Summary:\nOpenAI is planning an IPO in Q4 FY26 to compete with rival Anthropic, who may list first. OpenAI has strengthened its finance team in preparation for the IPO."
         },
         {
           "id": "n87edc",
@@ -62,7 +64,7 @@
               "ai"
             ]
           },
-          "aiSummary": "AI-generated summary:\nMicrosoft's market value dropped by $360bn due to increased AI spending, leading to a 66% surge in data centre costs and impacting the Nasdaq."
+          "aiSummary": "AI-generated summary:\nMicrosoft's market value dropped by $360 billion after revealing a 66% increase in data center costs, causing concern among investors and impacting the Nasdaq."
         },
         {
           "id": "smjjnz",
@@ -87,7 +89,7 @@
               "artificial intelligence"
             ]
           },
-          "aiSummary": "AI research organization OpenAI has highlighted the threat of malicious links to autonomous AI systems, warning that they could undermine the safety of AI agents as they transition from conversation to action. This concern was raised in new guidance on AI agent link safety, emphasizing the vulnerability of agents to exploitation through malicious links."
+          "aiSummary": "AI research organization OpenAI has highlighted the threat of malicious links to autonomous AI systems, warning that they could undermine the safety of AI agents as they transition from conversation to action. This concern was raised in new guidance on AI agent link safety, emphasizing the vulnerability of agents to exploitation through harmful links."
         },
         {
           "id": "guaa84",
@@ -110,7 +112,7 @@
               "ai"
             ]
           },
-          "aiSummary": "AI-generated summary: Residents near Santiago, Chile, created a human-powered chatbot to demonstrate AI's environmental impact, handling over 25,000 requests globally in a 12-hour project. The initiative aims to raise awareness of AI's hidden water footprint and promote responsible AI use in water-stressed regions, amidst debate over resource consumption due to major tech companies building data centers in the area."
+          "aiSummary": "AI-generated summary: Residents near Santiago, Chile, created a human-powered chatbot to raise awareness of AI's environmental impact, handling over 25,000 requests globally in a 12-hour project. The initiative aims to highlight the hidden water footprint of AI and promote responsible AI use in water-stressed regions, amid debate over resource consumption from tech companies building data centers in the area."
         },
         {
           "id": "m8vlzd",
@@ -133,7 +135,7 @@
               "investment"
             ]
           },
-          "aiSummary": "AI-Generated Summary:\nThe 2026 budget introduced tech incentives like safe harbour thresholds for IT services and tax holidays for local data centers to boost global investment and position India as a hub for AI infrastructure and data services."
+          "aiSummary": "AI-Generated Summary:\nThe 2026 budget introduced tech sector incentives like safe harbour thresholds for IT services and tax holidays for local data centres to boost global investment and position India as a hub for cloud, data services, and AI infrastructure, welcomed by the industry."
         },
         {
           "id": "9pyhl4",
@@ -156,7 +158,7 @@
               "agent"
             ]
           },
-          "aiSummary": "AI-generated summary:\nElon Musk is intrigued by an online experiment on Moltbook where AI agents interact, sparking discussions about the possibility of reaching the 'singularity'."
+          "aiSummary": "AI-generated summary:\nElon Musk is intrigued by an online experiment on Moltbook where AI agents communicate, sparking discussions about the possibility of reaching the 'singularity'."
         },
         {
           "id": "eor59i",
@@ -180,12 +182,12 @@
               "ai"
             ]
           },
-          "aiSummary": "AI-generated summary:\nAI researchers face challenges as conferences limit the use of LLMs due to an influx of subpar AI-generated papers and reviews."
+          "aiSummary": "AI-generated summary:\nAI researchers facing challenges as conferences limit LLMs due to an influx of subpar AI-generated content."
         }
       ]
     },
     "Ecommerce_Retail_Tech": {
-      "total": 279,
+      "total": 288,
       "top": [
         {
           "id": "9k81c8",
@@ -205,7 +207,7 @@
             "penalty": 0,
             "matchedKeywords": []
           },
-          "aiSummary": "In a major strategic realignment, Amazon has cut 16,000 jobs, scaled back Fresh stores, and introduced a new rapid-delivery service called Amazon Now. This restructuring aims to streamline operations and enhance the delivery experience for customers."
+          "aiSummary": "In a major strategic realignment, Amazon is cutting 16,000 jobs and launching Amazon Now, a new rapid-delivery service, while scaling back Fresh stores."
         },
         {
           "id": "u0naxh",
@@ -227,7 +229,7 @@
               "marketplace"
             ]
           },
-          "aiSummary": "AI-generated summary: Retailers are leveraging marketplaces to boost their retail media business for increased revenue and margin growth, according to Colin Lewis in Internet Retailing."
+          "aiSummary": "AI-generated summary: Retailers are leveraging marketplaces to enhance their retail media business for revenue and margin growth, according to Colin Lewis in Internet Retailing's article."
         },
         {
           "id": "to68hj",
@@ -250,7 +252,7 @@
               "inventory"
             ]
           },
-          "aiSummary": "AI-Generated Summary:\nSaks Global is retreating from off-price retail, closing most stores and all e-commerce operations. Only a few Saks Off 5th locations will remain open, selling residual inventory from other luxury retailers."
+          "aiSummary": "AI-Generated Summary:\nSaks Global is closing most of its off-price stores and e-commerce operations, with only a few Saks Off 5th locations remaining open to sell residual inventory from other luxury retailers."
         },
         {
           "id": "ynwfub",
@@ -272,7 +274,7 @@
               "platform"
             ]
           },
-          "aiSummary": "AI-Generated Summary:\nTikTok Shop's decision to eliminate independent shipping in the U.S. is causing some sellers to reduce their presence or leave the platform, as reported by Modern Retail on January 28, 2026."
+          "aiSummary": "AI-Generated Summary:\nSome U.S. brands on TikTok Shop are reducing their presence due to the platform's decision to eliminate independent shipping, causing them to scale back or leave."
         },
         {
           "id": "yvqbh",
@@ -318,7 +320,7 @@
               "ecommerce"
             ]
           },
-          "aiSummary": "In Q4 of 2025, Levi Strauss & Co. saw double-digit ecommerce growth, with a 19% increase in net revenue from online sales compared to the previous year. The company's overall net revenue rose by 0.9% to $1.77 billion, fueled by strong ecommerce performance and the introduction of a new AI tool on its mobile app."
+          "aiSummary": "Levi Strauss & Co. experienced double-digit ecommerce growth in Q4, with a 19% increase in net revenue from online sales compared to the previous year. The company's overall net revenue rose by 0.9% to $1.77 billion, fueled by strong ecommerce performance."
         },
         {
           "id": "f8ijau",
@@ -347,7 +349,7 @@
       ]
     },
     "Luxury_and_Consumer": {
-      "total": 117,
+      "total": 119,
       "top": [
         {
           "id": "qpu6xr",
@@ -374,7 +376,7 @@
               "affluent"
             ]
           },
-          "aiSummary": "AI-Generated Summary:\nThe Knightsbridge Estate in West London is adapting its retail offerings to cater to modern consumers, focusing on luxury, premium, lifestyle, and wellness brands. Tom Woolven discusses how changing consumer behavior is shaping the estate's development."
+          "aiSummary": "AI-Generated Summary:\nThe Knightsbridge Estate in West London is adapting its retail mix to cater to modern consumer preferences, focusing on luxury, premium, lifestyle, and wellness brands. Tom Woolven discusses how changing consumer behavior is shaping the estate's development."
         },
         {
           "id": "svj65u",
@@ -398,7 +400,7 @@
               "brand"
             ]
           },
-          "aiSummary": "AI-Generated Summary:\nLuxury brands like Chanel, LVMH, and Kering hold significant power over bankrupt Saks Fifth Avenue, as the retailer heavily relies on them for shipments, potentially impacting its ability to secure early payouts."
+          "aiSummary": "AI-Generated Summary:\nLuxury brands like Chanel, LVMH, and Kering hold significant power over bankrupt Saks by controlling shipments, potentially impacting the retailer's ability to secure early payouts."
         },
         {
           "id": "wdxt08",
@@ -423,7 +425,7 @@
               "brand"
             ]
           },
-          "aiSummary": "AI-Generated Summary:\nLuxury brands are turning their focus to second-tier cities like Nanjing and Changsha in China, as middle-class consumers from major cities seek a higher quality of life and continue to drive demand for luxury goods."
+          "aiSummary": "AI-Generated Summary:\nLuxury brands are turning their focus to second-tier cities like Nanjing and Changsha in China, as middle-class consumers moving from major cities seek higher quality of life and continue to drive demand for luxury goods."
         },
         {
           "id": "mmf8zq",
@@ -445,7 +447,7 @@
               "demand"
             ]
           },
-          "aiSummary": "AI-Generated Summary:\nKKR-led group, in partnership with Singtel, is on the verge of acquiring ST Telemedia Global Data Centres for over $10 billion, marking one of Asia's largest data centre deals amid rising demand for digital infrastructure driven by artificial intelligence growth."
+          "aiSummary": "AI-Generated Summary:\nKKR-led group, in partnership with Singtel, is on the verge of acquiring ST Telemedia Global Data Centres for over $10 billion, making it one of Asia's largest data centre deals amid rising demand for digital infrastructure driven by artificial intelligence growth."
         },
         {
           "id": "56q1",
@@ -468,7 +470,7 @@
               "brand"
             ]
           },
-          "aiSummary": "AI-Generated Summary:\nIn 2026, tracking customer engagement metrics is crucial for effective marketing as privacy changes and AI raise expectations for personalization. Clicks and impressions are no longer sufficient; what matters now is genuine connection with the brand through actions like email opens and site engagement."
+          "aiSummary": "AI-generated summary: In 2026, tracking customer engagement metrics is crucial for effective marketing, with a shift towards measuring meaningful interactions like email opens and website engagement rather than traditional metrics like clicks and impressions."
         },
         {
           "id": "arb6xt",
@@ -490,7 +492,7 @@
               "spending"
             ]
           },
-          "aiSummary": "AI-Generated Summary:\nMeta plans to spend over $115 billion this year, a significant increase from $72 billion in the previous year, as it strives to compete in the artificial intelligence sector."
+          "aiSummary": "AI-Generated Summary:\nMeta plans to spend over $115 billion this year, a significant increase from $72 billion in the previous year, as the company aims to enhance its competitiveness in the artificial intelligence sector."
         },
         {
           "id": "2b5f4g",
@@ -517,12 +519,12 @@
               "brand"
             ]
           },
-          "aiSummary": "AI-Generated Summary:\nConsumers in the luxury sector are prioritizing trust as a key factor in their purchasing decisions, seeking transparency from high-end brands due to supply chain issues and regulatory challenges in the industry."
+          "aiSummary": "AI-Generated Summary:\nConsumers in the luxury sector are prioritizing trust as a key factor in their purchasing decisions, seeking greater transparency from high-end brands due to supply chain and compliance issues in recent years."
         }
       ]
     },
     "Jewellery_Industry": {
-      "total": 19,
+      "total": 29,
       "top": [
         {
           "id": "ug4juh",
@@ -547,7 +549,7 @@
               "jeweller"
             ]
           },
-          "aiSummary": "AI-generated summary:\nChow Tai Fook, a Hong Kong-based jewellery retailer, has reported a strong sales recovery with higher retail sales, signaling an improvement in consumer demand within the jewellery industry."
+          "aiSummary": "AI-generated summary:\nChow Tai Fook, a Hong Kong-based jewellery retailer, has reported a strong sales recovery with higher retail sales, signaling an improvement in consumer demand in the jewellery industry."
         },
         {
           "id": "husufs",
@@ -571,31 +573,30 @@
               "jeweller"
             ]
           },
-          "aiSummary": "AI-Generated Summary:\nMichael Hill International has experienced positive jewellery sales in the past six months, as reported by Jeweller - Business News on January 26, 2026."
+          "aiSummary": "AI-Generated Summary:\nMichael Hill International has seen positive jewellery sales performance in the past six months, as reported by Jeweller - Business News on January 26, 2026."
         },
         {
-          "id": "djqbyi",
-          "title": "CIBJO issues warning about scammers",
-          "url": "https://www.jewellermagazine.com/Article/14713/CIBJO-issues-warning-about-scammers",
-          "source": "Jeweller - Business News",
-          "published_at": "2026-01-26T13:00:00.000Z",
-          "ingested_at": "2026-02-01T18:38:41.033Z",
-          "snippet": "The World Jewellery Confederation (CIBJO) has issued an urgent warning to the broader industry about individuals fraudulently claiming to represent the organisation.",
+          "id": "d70bek",
+          "title": "LVMH shares plunge as results trigger doubts over luxury market’s recovery",
+          "url": "https://www.professionaljeweller.com/lvmh-shares-plunge-results-doubts/",
+          "source": "Professional Jeweller",
+          "published_at": "2026-01-29T11:36:51.000Z",
+          "ingested_at": "2026-02-02T20:51:37.885Z",
+          "snippet": "Strong growth in the final quarter of 2025 helped luxury giant LVMH limit organic revenue decline to just 1% last year, although unfavourable currency variations, particularly the weaker US dollar meant turnover dropped by 5%, from €84.7 billion to €80.8 billion. The group’s highest recorded turnover was in 2023, with sales of €86.1 billion. LVMH‘s […]\nThe post LVMH shares plunge as results trigger doubts over luxury market’s recovery appeared first on Professional Jeweller.",
           "sourceType": "rss",
           "categoryHint": "Jewellery Industry",
           "relevance": {
-            "scoreTotal": 0,
+            "scoreTotal": 0.2,
             "recencyScore": 0,
             "sourceWeight": 0.1,
-            "keywordBoost": 0.1,
-            "insightSignalBoost": 0,
-            "penalty": 0.2,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
             "matchedKeywords": [
-              "jewellery",
               "jeweller"
             ]
           },
-          "aiSummary": "AI-Generated Summary:\nThe World Jewellery Confederation (CIBJO) has warned the jewellery industry about scammers falsely claiming to be affiliated with the organization."
+          "aiSummary": "AI-generated summary: LVMH experienced a 1% organic revenue decline in 2025, with turnover dropping by 5% due to currency variations. The results have raised concerns about the luxury market's recovery, leading to a plunge in LVMH shares."
         },
         {
           "id": "2iaxjt",
@@ -621,27 +622,54 @@
           "aiSummary": "AI-Generated Summary:\nTrain Retail is offering a free live web training session on February 18th at 10 am Central for independent jewelers to learn how to assess the effectiveness of their jewelry marketing efforts."
         },
         {
-          "id": "aj8az9",
-          "title": "‘Menopause gold rush’? Boom in hi-tech products as stigma starts to recede",
-          "url": "https://www.theguardian.com/society/2026/feb/01/menopause-gold-rush-experts-warn-of-brands-cashing-in-on-womens-symptoms",
-          "source": "The Guardian - Technology",
-          "published_at": "2026-02-01T10:00:24.000Z",
-          "ingested_at": "2026-02-01T18:38:41.033Z",
-          "snippet": "The march of wearable tech is coming to the aid of women in what some say is a long underserved market\nFor any bodily function you want to measure these days there is a gadget – a wristband for step-counting, a watch to track your heart rate or a ring for measuring sleep.\nNow the march of wearable tech is coming to the aid of what some say is a long underserved market: menopausal women.\n Continue reading...",
+          "id": "jendhd",
+          "title": "De Beers London debuts flagship in the heart of Paris",
+          "url": "https://www.professionaljeweller.com/de-beers-debuts-flagship-paris/",
+          "source": "Professional Jeweller",
+          "published_at": "2026-01-29T12:37:52.000Z",
+          "ingested_at": "2026-02-02T20:51:37.885Z",
+          "snippet": "De Beers London has opened a new Paris flagship store at 12 Rue de La Paix, a significant new chapter for the jewellery house. Located at the historic heart of high jewellery in a city synonymous with elegance, artistry and style, the flagship is the first physical manifestation of the De Beers London DNA, following […]\nThe post De Beers London debuts flagship in the heart of Paris appeared first on Professional Jeweller.",
           "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
           "relevance": {
-            "scoreTotal": -0.1,
+            "scoreTotal": 0.2,
             "recencyScore": 0,
-            "sourceWeight": 0,
+            "sourceWeight": 0.1,
             "keywordBoost": 0.1,
             "insightSignalBoost": 0,
-            "penalty": 0.2,
+            "penalty": 0,
             "matchedKeywords": [
-              "gold",
-              "watch"
+              "jewellery",
+              "jeweller"
             ]
           },
-          "aiSummary": "AI-generated summary:\nThe jewellery industry is experiencing a \"menopause gold rush\" with a boom in hi-tech products aimed at menopausal women as wearable tech becomes more prevalent in tracking various bodily functions."
+          "aiSummary": "AI-generated summary: De Beers London has opened a new flagship store in Paris at 12 Rue de La Paix, marking a significant milestone for the jewellery house. This flagship represents the first physical embodiment of the De Beers London DNA in a city known for elegance, artistry, and style."
+        },
+        {
+          "id": "2ijzaj",
+          "title": "A splash of colour: Repossi is bang on-trend with new collection",
+          "url": "https://www.professionaljeweller.com/repossi-bang-on-trend-new-collection/",
+          "source": "Professional Jeweller",
+          "published_at": "2026-01-28T12:11:48.000Z",
+          "ingested_at": "2026-02-02T20:51:37.885Z",
+          "snippet": "Repossi has unveiled the second chapter of Blast, a high jewellery collection that revisits the spirit of the 1980s. The first chapter, unveiled in July 2025, presented 21 creations that unite the Maison’s craftsmanship with its design. Bold volumes are created through sculptural curves in white, rose, and black gold and illuminated by diamonds. The […]\nThe post A splash of colour: Repossi is bang on-trend with new collection appeared first on Professional Jeweller.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.30000000000000004,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.2,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "jewellery",
+              "diamond",
+              "gold",
+              "jeweller"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Repossi's new Blast collection draws inspiration from the 1980s, featuring bold volumes in white, rose, and black gold adorned with diamonds. The collection combines craftsmanship with innovative design, staying on-trend in the jewellery industry."
         },
         {
           "id": "pbe06c",
@@ -664,34 +692,9 @@
               "jewelry"
             ]
           },
-          "aiSummary": "AI-Generated Summary:\nInstore Magazine's \"Jewelers’ Horoscope: February 2-8, 2026\" provides astrological forecasts tailored for jewelry store-owners, salespeople, and custom jewelers for the upcoming week."
-        },
-        {
-          "id": "60johb",
-          "title": "The Weirdest Things in Jewelry Stores Right Now",
-          "url": "https://instoremag.com/the-weirdest-things-in-jewelry-stores-right-now/",
-          "source": "Instore Magazine",
-          "published_at": "2026-01-30T02:00:23.000Z",
-          "ingested_at": "2026-02-01T18:38:41.033Z",
-          "snippet": "Jewelers delivered dinosaur poop, glass eye rings, and an elf named \"Bling Crosby.\"",
-          "sourceType": "rss",
-          "categoryHint": "Jewellery Industry",
-          "relevance": {
-            "scoreTotal": 0.05,
-            "recencyScore": 0,
-            "sourceWeight": 0,
-            "keywordBoost": 0.05,
-            "insightSignalBoost": 0,
-            "penalty": 0,
-            "matchedKeywords": [
-              "jewelry"
-            ]
-          },
-          "aiSummary": "AI-generated summary:\nJewelry stores are showcasing unusual items like dinosaur poop, glass eye rings, and an elf named \"Bling Crosby,\" as reported by Instore Magazine on January 30, 2026."
+          "aiSummary": "AI-Generated Summary:\nInstore Magazine's \"Jewelers’ Horoscope: February 2-8, 2026\" provides astrological forecasts for jewelry store-owners, salespeople, and custom jewelers for the upcoming week."
         }
       ]
     }
-  },
-  "coverImageUrl": "/weekly-images/2026-W05.png",
-  "coverImageAlt": "Weekly cover illustration for 2026-W05"
+  }
 }

@@ -1,39 +1,16 @@
 import { promises as fs } from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
-import { readFileSync } from 'fs';
+import { loadEnv } from '../lib/env';
+import { getCurrentIngestionWeek, validateWeekLabel } from '../lib/utils/getCurrentDigestWeek';
+import { getWeekRangeCET } from '../lib/utils/weekCET';
 import { DateTime } from 'luxon';
-import { parse } from 'dotenv';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// --- Environment Variable Loading (MUST BE FIRST) ---
-const envPath = path.join(__dirname, '../.env.local');
-let envResult: { error?: Error; parsed?: Record<string, string> } = { parsed: {} };
-try {
-  const buffer = readFileSync(envPath);
-  let contentToParse: string;
-  if (buffer.length >= 2 && buffer[0] === 0xFF && buffer[1] === 0xFE) {
-    contentToParse = buffer.toString('utf16le', 2);
-  } else if (buffer.length >= 2 && buffer[0] === 0xFE && buffer[1] === 0xFF) {
-    const leBuffer = Buffer.alloc(buffer.length - 2);
-    for (let i = 2; i < buffer.length; i += 2) {
-      leBuffer[i - 2] = buffer[i + 1];
-      leBuffer[i - 1] = buffer[i];
-    }
-    contentToParse = leBuffer.toString('utf16le');
-  } else if (buffer.length > 0 && buffer[1] === 0 && buffer[0] !== 0) {
-    contentToParse = buffer.toString('utf16le');
-  } else {
-    contentToParse = buffer.toString('utf-8');
-  }
-  const parsed = parse(contentToParse);
-  Object.assign(process.env, parsed);
-  envResult.parsed = parsed;
-} catch (err) {
-  envResult.error = err as Error;
-}
+// Load environment variables (must be before any env var access)
+loadEnv();
 
 // Import discovery modules AFTER env is loaded
 import { generateSearchQueries } from '../discovery/queryDirector';
@@ -42,6 +19,26 @@ import { fetchAndExtractArticles } from '../discovery/fetchExtract';
 import { selectTopArticles } from '../discovery/selectTop';
 import { mergeDiscoveryArticles } from '../discovery/mergeArticles';
 import type { Article } from '../ingestion/types';
+
+/**
+ * Parse weekLabel to get week start/end dates in CET
+ */
+function getWeekDates(weekLabel: string): { weekStart: Date; weekEnd: Date } {
+  const weekMatch = weekLabel.match(/^(\d{4})-W(\d{1,2})$/);
+  if (!weekMatch) {
+    throw new Error(`Invalid weekLabel: ${weekLabel}`);
+  }
+  const year = parseInt(weekMatch[1], 10);
+  const weekNumber = parseInt(weekMatch[2], 10);
+  
+  const dt = DateTime.fromObject({ weekYear: year, weekNumber }, { zone: 'Europe/Copenhagen' });
+  if (!dt.isValid) {
+    throw new Error(`Invalid week: ${weekLabel}`);
+  }
+  
+  const { weekStartCET, weekEndCET } = getWeekRangeCET(dt.toJSDate());
+  return { weekStart: weekStartCET, weekEnd: weekEndCET };
+}
 
 // --- Configuration ---
 type DiscoveryConfig = {
@@ -86,12 +83,9 @@ function parseArgs(): DiscoveryConfig {
   }
 
   if (!weekLabel) {
-    // Default to current week
-    const now = DateTime.now().setZone('Europe/Copenhagen');
-    const year = now.year;
-    const weekNumber = now.weekNumber;
-    weekLabel = `${year}-W${weekNumber.toString().padStart(2, '0')}`;
+    weekLabel = getCurrentIngestionWeek();
   }
+  validateWeekLabel(weekLabel);
 
   return { weekLabel, maxCandidates, selectTop, searchProvider, regenDelta, noDelta };
 }
@@ -122,15 +116,25 @@ async function main() {
   });
   console.log(`✓ Generated ${Object.values(queries).flat().length} queries across ${Object.keys(queries).length} categories\n`);
 
-  // Step 2: Search
+  // Step 2: Search (with time-bound)
   console.log('[Step 2] Searching the web...');
-  const { results: searchResults, domainBreakdown } = await searchWithTavily(queries, config.maxCandidates, discoveryDir);
+  const { weekStart, weekEnd } = getWeekDates(config.weekLabel);
+  const { results: searchResults, domainBreakdown } = await searchWithTavily(
+    queries,
+    config.maxCandidates,
+    discoveryDir,
+    { weekStart, weekEnd, weekLabel: config.weekLabel }
+  );
   console.log(`✓ Found ${searchResults.length} candidate URLs`);
   console.log(`✓ Consultancy domains: ${domainBreakdown.consultancy} candidates\n`);
 
   // Step 3: Fetch and extract
   console.log('[Step 3] Fetching and extracting articles...');
-  const { articles: extracted } = await fetchAndExtractArticles(searchResults, discoveryDir);
+  const { articles: extracted } = await fetchAndExtractArticles(
+    searchResults,
+    discoveryDir,
+    { weekStart, weekEnd }
+  );
   console.log(`✓ Extracted ${extracted.length} articles\n`);
 
   // Step 4: Select top articles

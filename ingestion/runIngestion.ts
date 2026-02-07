@@ -1,11 +1,9 @@
-import { readFileSync } from 'fs';
 import { fileURLToPath } from 'url';
 import path from 'path';
-import { parse } from 'dotenv';
 import { runRssIngestion } from "./fetchRss.js";
 import { runPageIngestion, type PageIngestionStats } from "./fetchPages.js";
 import { resetYieldStats, saveYieldReport } from "./sourceYield.js";
-import { DateTime } from "luxon";
+import { getCurrentIngestionWeek, validateWeekLabel } from "../lib/utils/getCurrentDigestWeek";
 import {
   createEmptyReport,
   RSS_SOURCE_CATEGORY,
@@ -14,35 +12,14 @@ import {
   writeIngestionReport,
   type IngestionReport
 } from "./ingestionReport.js";
+import { loadEnv } from "../lib/env.js";
 
 // --- Environment Variable Loading (MUST BE FIRST) ---
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-const envPath = path.join(__dirname, '../.env.local');
-let envResult: { error?: Error; parsed?: Record<string, string> } = { parsed: {} };
-try {
-  const buffer = readFileSync(envPath);
-  let contentToParse: string;
-  if (buffer.length >= 2 && buffer[0] === 0xFF && buffer[1] === 0xFE) {
-    contentToParse = buffer.toString('utf16le', 2);
-  } else if (buffer.length >= 2 && buffer[0] === 0xFE && buffer[1] === 0xFF) {
-    const leBuffer = Buffer.alloc(buffer.length - 2);
-    for (let i = 2; i < buffer.length; i += 2) {
-      leBuffer[i - 2] = buffer[i + 1];
-      leBuffer[i - 1] = buffer[i];
-    }
-    contentToParse = leBuffer.toString('utf16le');
-  } else if (buffer.length > 0 && buffer[1] === 0 && buffer[0] !== 0) {
-    contentToParse = buffer.toString('utf16le');
-  } else {
-    contentToParse = buffer.toString('utf-8');
-  }
-  const parsed = parse(contentToParse);
-  Object.assign(process.env, parsed);
-  envResult.parsed = parsed;
-} catch (err) {
-  envResult.error = err as Error;
-}
+
+// Load environment variables
+loadEnv();
 
 type IngestionMode = 'rss' | 'webDiscovery' | 'both';
 
@@ -87,10 +64,7 @@ type DiscoveryIngestionStats = {
 };
 
 function getDefaultWeekLabel(): string {
-  const now = DateTime.now().setZone('Europe/Copenhagen');
-  const year = now.year;
-  const weekNumber = now.weekNumber;
-  return `${year}-W${weekNumber.toString().padStart(2, '0')}`;
+  return getCurrentIngestionWeek();
 }
 
 function initDiscoveryStats(): DiscoveryIngestionStats {
@@ -139,6 +113,8 @@ async function runWebDiscovery(weekLabel?: string): Promise<{ added: number; upd
   const { fetchAndExtractArticles } = await import('../discovery/fetchExtract.js');
   const { selectTopArticles } = await import('../discovery/selectTop.js');
   const { mergeDiscoveryArticles } = await import('../discovery/mergeArticles.js');
+  const { getWeekRangeCET } = await import('../lib/utils/weekCET.js');
+  const { DateTime } = await import('luxon');
   const pathModule = await import('path');
   const { fileURLToPath } = await import('url');
   const __filename = fileURLToPath(import.meta.url);
@@ -147,11 +123,30 @@ async function runWebDiscovery(weekLabel?: string): Promise<{ added: number; upd
   const weekDir = pathModule.join(__dirname, '../data/weeks', weekLabel);
   const discoveryDir = pathModule.join(weekDir, 'discovery');
 
+  // Parse weekLabel to get week start/end dates
+  const weekMatch = weekLabel.match(/^(\d{4})-W(\d{1,2})$/);
+  if (!weekMatch) {
+    throw new Error(`Invalid weekLabel: ${weekLabel}`);
+  }
+  const year = parseInt(weekMatch[1], 10);
+  const weekNumber = parseInt(weekMatch[2], 10);
+  const dt = DateTime.fromObject({ weekYear: year, weekNumber }, { zone: 'Europe/Copenhagen' });
+  const { weekStartCET, weekEndCET } = getWeekRangeCET(dt.toJSDate());
+
   console.log('[Discovery] Starting web discovery...');
   const stats = initDiscoveryStats();
   const queries = await generateSearchQueries(weekLabel, discoveryDir, { regenDelta: false, noDelta: false });
-  const { results: searchResults, stats: searchStats } = await searchWithTavily(queries, 120, discoveryDir);
-  const { articles: extracted, stats: extractionStats } = await fetchAndExtractArticles(searchResults, discoveryDir);
+  const { results: searchResults, stats: searchStats } = await searchWithTavily(
+    queries,
+    120,
+    discoveryDir,
+    { weekStart: weekStartCET, weekEnd: weekEndCET, weekLabel }
+  );
+  const { articles: extracted, stats: extractionStats } = await fetchAndExtractArticles(
+    searchResults,
+    discoveryDir,
+    { weekStart: weekStartCET, weekEnd: weekEndCET }
+  );
   const { selected, reportsByTopic } = await selectTopArticles(extracted, 20, weekLabel, discoveryDir);
   const merged = await mergeDiscoveryArticles(selected, weekLabel);
   

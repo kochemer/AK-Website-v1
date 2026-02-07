@@ -1,19 +1,12 @@
-export type Article = {
-  id: string;
-  title: string;
-  url: string;
-  source: string;
-  published_at: string;
-  ingested_at: string;
-  snippet?: string;
-  aiSummary?: string;
-  // Discovery-specific fields
-  discoveredAt?: string; // ISO timestamp when article was discovered/extracted
-  publishedDateInvalid?: boolean; // True if published_at is invalid/missing
-  usedDiscoveredAtFallback?: boolean; // True if included via discoveredAt fallback
-  sourceType?: 'rss' | 'page' | 'discovery' | 'consultancy' | 'platform'; // How article was ingested
-  categoryHint?: 'Fashion & Luxury' | 'Jewellery Industry'; // Optional hint from RSS source (non-binding)
-};
+/**
+ * Ingestion-specific types.
+ * 
+ * Note: Article type is now in @/lib/types/article.ts
+ * This file only contains source configuration types.
+ */
+
+// Re-export Article from canonical location for backward compatibility
+export type { Article } from '../lib/types';
 
 export type SourceFeed = {
   name: string;

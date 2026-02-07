@@ -6,10 +6,11 @@ import { Suspense } from 'react';
 import type { Metadata } from 'next';
 import DigestClientView from './components/DigestClientView';
 import TopNSelector from './components/TopNSelector';
-import { TopicKey } from '../utils/topicNames';
-import { formatDate, formatDateRange, formatDateTime } from '../utils/formatDate';
-import { getCurrentDigestWeek, getPreviousWeek } from '../utils/getCurrentDigestWeek';
-import { getSiteUrl } from '../utils/siteUrl';
+import { TopicKey } from '@/lib/utils/topicNames';
+import { formatDate, formatDateRange, formatDateTime } from '@/lib/utils/formatDate';
+import { getCurrentDigestWeek } from '@/lib/utils/getCurrentDigestWeek';
+import { getSiteUrl } from '@/lib/utils/siteUrl';
+import type { WeeklyDigest } from '@/lib/types';
 
 // Lazy evaluation for dev mode compatibility
 const getSiteUrlLazy = () => getSiteUrl();
@@ -30,46 +31,6 @@ export const metadata: Metadata = {
     description: 'A weekly curated digest covering AI & strategy, ecommerce and retail technology, luxury and jewellery industry news. Updated every week.',
     images: [`${getSiteUrlLazy()}/og-default.svg`],
   },
-};
-
-type Article = {
-  id: string;
-  title: string;
-  url: string;
-  source: string;
-  published_at: string;
-  ingested_at: string;
-  aiSummary?: string | null;
-};
-
-type WeeklyDigest = {
-  weekLabel: string;
-  tz: string;
-  startISO: string;
-  endISO: string;
-  builtAtISO?: string;
-  builtAtLocal?: string;
-  coverImageUrl?: string;
-  coverImageAlt?: string;
-  coverKeywords?: string[];
-  keyThemes?: string[];
-  oneSentenceSummary?: string;
-  introParagraph?: string;
-  totals: {
-    total: number;
-    byTopic: {
-      AIStrategy: number;
-      EcommerceRetail: number;
-      LuxuryConsumer: number;
-      Jewellery: number;
-    };
-  };
-  topics: {
-    AI_and_Strategy: { total: number; top: Article[] };
-    Ecommerce_Retail_Tech: { total: number; top: Article[] };
-    Luxury_and_Consumer: { total: number; top: Article[] };
-    Jewellery_Industry: { total: number; top: Article[] };
-  };
 };
 
 function getCurrentWeek(): string {
@@ -101,7 +62,7 @@ type PodcastMetadata = {
 
 async function loadLatestPodcast(): Promise<PodcastMetadata | null> {
   try {
-    const weekLabel = getPreviousWeek();
+    const weekLabel = getCurrentDigestWeek();
     const podcastPath = path.join(process.cwd(), 'data', 'weeks', weekLabel, 'podcast.json');
     const raw = await fs.readFile(podcastPath, 'utf-8');
     return JSON.parse(raw) as PodcastMetadata;

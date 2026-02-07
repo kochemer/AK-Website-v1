@@ -1,6 +1,6 @@
 'use client';
 
-import { formatDisplayDate } from '../../utils/formatDisplayDate';
+import { formatDisplayDate } from '@/lib/utils/formatDisplayDate';
 
 type ArticleCardProps = {
   title: string;

@@ -3,7 +3,7 @@ import path from 'path';
 import Link from 'next/link';
 import { DateTime } from 'luxon';
 import type { Metadata } from 'next';
-import { getSiteUrl } from '../../../utils/siteUrl';
+import { getSiteUrl } from '@/lib/utils/siteUrl';
 
 const siteUrl = getSiteUrl();
 

@@ -8,17 +8,11 @@
  * Backward compatibility: Old display names are mapped to new ones via aliases.
  */
 
-export type TopicKey = 
-  | 'AI_and_Strategy'
-  | 'Ecommerce_Retail_Tech'
-  | 'Luxury_and_Consumer'
-  | 'Jewellery_Industry';
+import type { Topic, TopicTotalsKey as LibTopicTotalsKey } from '../types';
 
-export type TopicTotalsKey = 
-  | 'AIStrategy'
-  | 'EcommerceRetail'
-  | 'LuxuryConsumer'
-  | 'Jewellery';
+// Re-export Topic as TopicKey for backward compatibility with existing UI code
+export type TopicKey = Topic;
+export type TopicTotalsKey = LibTopicTotalsKey;
 
 /**
  * Current display names (updated 2026-01)
@@ -86,5 +80,3 @@ export function normalizeCategoryName(name: string): TopicKey | null {
   }
   return null;
 }
-
-

@@ -1,0 +1,818 @@
+{
+  "2026-W04:Ecommerce_Retail_Tech:818c25678e11": {
+    "selected": [
+      {
+        "id": "1",
+        "rank": 1,
+        "why": "Direct impact of tariffs on product pricing",
+        "confidence": 0.9
+      },
+      {
+        "id": "4",
+        "rank": 2,
+        "why": "Insights on liquidation during bankruptcy affecting inventory",
+        "confidence": 0.85
+      },
+      {
+        "id": "6",
+        "rank": 3,
+        "why": "Temu's market share challenge to Amazon is significant",
+        "confidence": 0.8
+      },
+      {
+        "id": "2",
+        "rank": 4,
+        "why": "COS's strategy bridges mass and luxury markets",
+        "confidence": 0.75
+      },
+      {
+        "id": "3",
+        "rank": 5,
+        "why": "Saks Global's liquidity injection impacts luxury inventory",
+        "confidence": 0.7
+      },
+      {
+        "id": "5",
+        "rank": 6,
+        "why": "Juspay's funding highlights growth in payment systems",
+        "confidence": 0.65
+      },
+      {
+        "id": "8",
+        "rank": 7,
+        "why": "Marketing strategies for organic traffic are crucial",
+        "confidence": 0.6
+      }
+    ],
+    "cached_at": "2026-01-25T21:06:54.105Z",
+    "model": "gpt-4o-mini"
+  },
+  "2026-W04:Luxury_and_Consumer:151794265d25": {
+    "selected": [
+      {
+        "id": "0",
+        "rank": 1,
+        "why": "Highlights successful marketing strategies in luxury retail",
+        "confidence": 0.9
+      },
+      {
+        "id": "1",
+        "rank": 2,
+        "why": "Explores direct-to-consumer trends impacting retail strategies",
+        "confidence": 0.85
+      },
+      {
+        "id": "11",
+        "rank": 3,
+        "why": "Discusses buyout implications for retail brand management",
+        "confidence": 0.8
+      },
+      {
+        "id": "7",
+        "rank": 4,
+        "why": "Addresses customer experience issues with product transparency",
+        "confidence": 0.75
+      },
+      {
+        "id": "10",
+        "rank": 5,
+        "why": "Examines consumer behavior amidst economic uncertainty",
+        "confidence": 0.7
+      },
+      {
+        "id": "4",
+        "rank": 6,
+        "why": "Covers regulatory changes affecting retail financing options",
+        "confidence": 0.65
+      },
+      {
+        "id": "12",
+        "rank": 7,
+        "why": "Discusses digital banking impacts on retail transactions",
+        "confidence": 0.6
+      }
+    ],
+    "cached_at": "2026-01-25T21:07:07.444Z",
+    "model": "gpt-4o-mini"
+  },
+  "2026-W04:Jewellery_Industry:4a6caeab2a59": {
+    "selected": [
+      {
+        "id": "0",
+        "rank": 1,
+        "why": "Highlights significant eCommerce revenue growth for jewellery",
+        "confidence": 0.9
+      },
+      {
+        "id": "1",
+        "rank": 2,
+        "why": "Shows positive sales trends in luxury jewellery sector",
+        "confidence": 0.85
+      },
+      {
+        "id": "9",
+        "rank": 3,
+        "why": "Discusses sales parity between lab-grown and natural diamonds",
+        "confidence": 0.8
+      },
+      {
+        "id": "12",
+        "rank": 4,
+        "why": "Addresses diamond pricing adjustments due to market demand",
+        "confidence": 0.75
+      },
+      {
+        "id": "5",
+        "rank": 5,
+        "why": "Recognizes Pandora's sustainability leadership in consumer brands",
+        "confidence": 0.7
+      },
+      {
+        "id": "7",
+        "rank": 6,
+        "why": "Focuses on financial support for jewellery apprentices",
+        "confidence": 0.65
+      },
+      {
+        "id": "4",
+        "rank": 7,
+        "why": "Covers awards recognizing excellence in jewellery brands",
+        "confidence": 0.6
+      }
+    ],
+    "cached_at": "2026-01-25T21:07:21.378Z",
+    "model": "gpt-4o-mini"
+  },
+  "2026-W04:Luxury_and_Consumer:9b4d9535bd63": {
+    "selected": [
+      {
+        "id": "1",
+        "rank": 1,
+        "why": "Insights on Burberry's successful sales strategy in China",
+        "confidence": 0.9
+      },
+      {
+        "id": "4",
+        "rank": 2,
+        "why": "Case study on Next's acquisition and retail strategy",
+        "confidence": 0.85
+      },
+      {
+        "id": "5",
+        "rank": 3,
+        "why": "Analysis of brands shifting to direct-to-consumer models",
+        "confidence": 0.8
+      },
+      {
+        "id": "0",
+        "rank": 4,
+        "why": "Understanding male customer behavior in jewelry shopping",
+        "confidence": 0.75
+      },
+      {
+        "id": "16",
+        "rank": 5,
+        "why": "Lululemon's unique marketing approach to product issues",
+        "confidence": 0.7
+      },
+      {
+        "id": "2",
+        "rank": 6,
+        "why": "Partnership insights for customer activation in retail",
+        "confidence": 0.65
+      },
+      {
+        "id": "3",
+        "rank": 7,
+        "why": "Implications of data privacy on retail customer trust",
+        "confidence": 0.6
+      }
+    ],
+    "cached_at": "2026-01-25T21:18:34.145Z",
+    "model": "gpt-4o-mini"
+  },
+  "2026-W04:Jewellery_Industry:03497a413583": {
+    "selected": [
+      {
+        "id": "0",
+        "rank": 1,
+        "why": "Highlights significant eCommerce revenue growth for jewellery",
+        "confidence": 0.9
+      },
+      {
+        "id": "1",
+        "rank": 2,
+        "why": "Shows positive sales trends in luxury jewellery sector",
+        "confidence": 0.85
+      },
+      {
+        "id": "5",
+        "rank": 3,
+        "why": "Pandora recognized for sustainability, enhancing brand image",
+        "confidence": 0.8
+      },
+      {
+        "id": "10",
+        "rank": 4,
+        "why": "Insights on diamond sales trends impacting retail strategies",
+        "confidence": 0.75
+      },
+      {
+        "id": "13",
+        "rank": 5,
+        "why": "De Beers' price cuts signal market demand shifts",
+        "confidence": 0.7
+      },
+      {
+        "id": "8",
+        "rank": 6,
+        "why": "Financial support for apprentices aids workforce development",
+        "confidence": 0.65
+      },
+      {
+        "id": "4",
+        "rank": 7,
+        "why": "Recognition of brands at Vicenzaoro boosts industry visibility",
+        "confidence": 0.6
+      }
+    ],
+    "cached_at": "2026-01-25T21:18:45.255Z",
+    "model": "gpt-4o-mini"
+  },
+  "2026-W04:Luxury_and_Consumer:87075886f44c": {
+    "selected": [
+      {
+        "id": "0",
+        "rank": 1,
+        "why": "Burberry's success highlights effective marketing strategies.",
+        "confidence": 0.9
+      },
+      {
+        "id": "1",
+        "rank": 2,
+        "why": "Direct-to-consumer trends impact retail strategies significantly.",
+        "confidence": 0.85
+      },
+      {
+        "id": "10",
+        "rank": 3,
+        "why": "Lululemon's product strategy addresses customer feedback directly.",
+        "confidence": 0.8
+      },
+      {
+        "id": "7",
+        "rank": 4,
+        "why": "Insights into male consumer behavior can enhance sales.",
+        "confidence": 0.75
+      },
+      {
+        "id": "15",
+        "rank": 5,
+        "why": "Buyout case study provides insights into retail recovery.",
+        "confidence": 0.7
+      },
+      {
+        "id": "14",
+        "rank": 6,
+        "why": "Consumer sentiment analysis is crucial for retail planning.",
+        "confidence": 0.65
+      },
+      {
+        "id": "11",
+        "rank": 7,
+        "why": "Leadership changes can affect customer operations strategies.",
+        "confidence": 0.6
+      }
+    ],
+    "cached_at": "2026-01-26T19:21:34.606Z",
+    "model": "gpt-4o-mini"
+  },
+  "2026-W04:Ecommerce_Retail_Tech:722982f2ab1e": {
+    "selected": [
+      {
+        "id": "5",
+        "rank": 1,
+        "why": "Temu's market share growth impacts Amazon's dominance",
+        "confidence": 0.9
+      },
+      {
+        "id": "1",
+        "rank": 2,
+        "why": "Tariffs affecting Amazon's pricing strategy is significant",
+        "confidence": 0.85
+      },
+      {
+        "id": "2",
+        "rank": 3,
+        "why": "Saks' bankruptcy highlights challenges in ecommerce sustainability",
+        "confidence": 0.8
+      },
+      {
+        "id": "6",
+        "rank": 4,
+        "why": "Juspay's funding indicates growth in payment tech sector",
+        "confidence": 0.75
+      },
+      {
+        "id": "11",
+        "rank": 5,
+        "why": "Record private label sales reflect changing consumer preferences",
+        "confidence": 0.7
+      },
+      {
+        "id": "10",
+        "rank": 6,
+        "why": "Amazon's job cuts signal shifts in corporate strategy",
+        "confidence": 0.65
+      },
+      {
+        "id": "4",
+        "rank": 7,
+        "why": "Saks Off 5th's liquidation impacts retail inventory dynamics",
+        "confidence": 0.6
+      }
+    ],
+    "cached_at": "2026-01-26T19:50:43.157Z",
+    "model": "gpt-4o-mini"
+  },
+  "2026-W04:AI_and_Strategy:87eb2fa20292": {
+    "selected": [
+      {
+        "id": "9",
+        "rank": 1,
+        "why": "Highlights concerns over China's AI impact on democracies",
+        "confidence": 0.9
+      },
+      {
+        "id": "10",
+        "rank": 2,
+        "why": "Insights from an AI startup founder on industry shifts",
+        "confidence": 0.85
+      },
+      {
+        "id": "14",
+        "rank": 3,
+        "why": "Reveals issues with ChatGPT's sourcing and reliability",
+        "confidence": 0.8
+      },
+      {
+        "id": "1",
+        "rank": 4,
+        "why": "Discusses sustainability pressures impacting AI in fashion",
+        "confidence": 0.75
+      },
+      {
+        "id": "15",
+        "rank": 5,
+        "why": "Explains economic performance of AI-related ventures",
+        "confidence": 0.7
+      },
+      {
+        "id": "12",
+        "rank": 6,
+        "why": "Challenges in AI ethics related to animal welfare",
+        "confidence": 0.65
+      },
+      {
+        "id": "11",
+        "rank": 7,
+        "why": "Workforce issues linked to AI and diversity initiatives",
+        "confidence": 0.6
+      }
+    ],
+    "cached_at": "2026-01-26T21:07:18.638Z",
+    "model": "gpt-4o-mini"
+  },
+  "2026-W05:Ecommerce_Retail_Tech:e2c39f2a6548": {
+    "selected": [
+      {
+        "id": "15",
+        "rank": 1,
+        "why": "Amazon's layoffs and restructuring impact ecommerce strategy significantly",
+        "confidence": 0.9
+      },
+      {
+        "id": "3",
+        "rank": 2,
+        "why": "Insights on marketplace dynamics and revenue growth strategies",
+        "confidence": 0.85
+      },
+      {
+        "id": "10",
+        "rank": 3,
+        "why": "Saks' closure of ecommerce highlights retail strategy shifts",
+        "confidence": 0.8
+      },
+      {
+        "id": "17",
+        "rank": 4,
+        "why": "TikTok Shop's policy changes affect seller dynamics and logistics",
+        "confidence": 0.75
+      },
+      {
+        "id": "1",
+        "rank": 5,
+        "why": "Resale growth trends reveal shifts in consumer behavior",
+        "confidence": 0.7
+      },
+      {
+        "id": "2",
+        "rank": 6,
+        "why": "Levi Strauss' AI tool enhances ecommerce sales performance",
+        "confidence": 0.65
+      },
+      {
+        "id": "5",
+        "rank": 7,
+        "why": "AI shopping agents' impact on marketplace roles is significant",
+        "confidence": 0.6
+      }
+    ],
+    "cached_at": "2026-02-01T18:49:15.203Z",
+    "model": "gpt-4o-mini"
+  },
+  "2026-W05:Jewellery_Industry:d3315bbb9f77": {
+    "selected": [
+      {
+        "id": "2",
+        "rank": 1,
+        "why": "Strong sales recovery insights for retail strategies",
+        "confidence": 0.9
+      },
+      {
+        "id": "8",
+        "rank": 2,
+        "why": "Positive sales performance data for benchmarking",
+        "confidence": 0.85
+      },
+      {
+        "id": "11",
+        "rank": 3,
+        "why": "Important warning about industry scams affecting retailers",
+        "confidence": 0.8
+      },
+      {
+        "id": "5",
+        "rank": 4,
+        "why": "Training on effective jewelry marketing strategies",
+        "confidence": 0.75
+      },
+      {
+        "id": "7",
+        "rank": 5,
+        "why": "Emerging market for wearable tech in jewelry",
+        "confidence": 0.7
+      },
+      {
+        "id": "1",
+        "rank": 6,
+        "why": "Astrological insights for retail decision-making",
+        "confidence": 0.65
+      },
+      {
+        "id": "4",
+        "rank": 7,
+        "why": "Unique trends in jewelry stores for merchandising",
+        "confidence": 0.6
+      }
+    ],
+    "cached_at": "2026-02-01T18:49:38.056Z",
+    "model": "gpt-4o-mini"
+  },
+  "2026-W05:Ecommerce_Retail_Tech:d163093cc262": {
+    "selected": [
+      {
+        "id": "15",
+        "rank": 1,
+        "why": "Amazon's layoffs and strategic realignment impact the industry significantly",
+        "confidence": 0.9
+      },
+      {
+        "id": "3",
+        "rank": 2,
+        "why": "Insights on marketplace dynamics and revenue growth strategies",
+        "confidence": 0.85
+      },
+      {
+        "id": "10",
+        "rank": 3,
+        "why": "Saks' closure of e-commerce reflects broader retail challenges",
+        "confidence": 0.8
+      },
+      {
+        "id": "17",
+        "rank": 4,
+        "why": "TikTok Shop's shipping policy changes affect seller dynamics",
+        "confidence": 0.75
+      },
+      {
+        "id": "1",
+        "rank": 5,
+        "why": "Resale growth trends highlight shifts in consumer behavior",
+        "confidence": 0.7
+      },
+      {
+        "id": "2",
+        "rank": 6,
+        "why": "Levi Strauss' AI tool enhances ecommerce sales performance",
+        "confidence": 0.65
+      },
+      {
+        "id": "5",
+        "rank": 7,
+        "why": "AI shopping agents' impact on marketplaces is crucial to understand",
+        "confidence": 0.6
+      }
+    ],
+    "cached_at": "2026-02-02T20:55:34.045Z",
+    "model": "gpt-4o-mini"
+  },
+  "2026-W05:Jewellery_Industry:a46bf6e717a2": {
+    "selected": [
+      {
+        "id": "2",
+        "rank": 1,
+        "why": "Strong sales recovery insights for retail strategies",
+        "confidence": 0.9
+      },
+      {
+        "id": "11",
+        "rank": 2,
+        "why": "Positive sales performance data for benchmarking",
+        "confidence": 0.85
+      },
+      {
+        "id": "4",
+        "rank": 3,
+        "why": "Market analysis on luxury sector recovery concerns",
+        "confidence": 0.8
+      },
+      {
+        "id": "7",
+        "rank": 4,
+        "why": "Training on effective jewelry marketing strategies",
+        "confidence": 0.75
+      },
+      {
+        "id": "3",
+        "rank": 5,
+        "why": "New flagship store insights for retail expansion",
+        "confidence": 0.7
+      },
+      {
+        "id": "10",
+        "rank": 6,
+        "why": "Trendy collection launch relevant for merchandising",
+        "confidence": 0.65
+      },
+      {
+        "id": "1",
+        "rank": 7,
+        "why": "Astrological insights for customer engagement strategies",
+        "confidence": 0.6
+      }
+    ],
+    "cached_at": "2026-02-02T20:55:59.038Z",
+    "model": "gpt-4o-mini"
+  },
+  "2026-W06:AI_and_Strategy:f0382602ec42": {
+    "selected": [
+      {
+        "id": "4",
+        "rank": 1,
+        "why": "Oracle's bond sale for AI funding indicates strong market confidence",
+        "confidence": 0.9
+      },
+      {
+        "id": "6",
+        "rank": 2,
+        "why": "Investors' significant bets on AI hardware infrastructure highlight industry growth",
+        "confidence": 0.85
+      },
+      {
+        "id": "5",
+        "rank": 3,
+        "why": "Snowflake and OpenAI's partnership enhances enterprise AI capabilities",
+        "confidence": 0.8
+      },
+      {
+        "id": "11",
+        "rank": 4,
+        "why": "OpenClaw's capabilities represent a significant advancement in AI personal assistants",
+        "confidence": 0.75
+      },
+      {
+        "id": "1",
+        "rank": 5,
+        "why": "Klarna's support for Google's UCP advances agentic AI integration",
+        "confidence": 0.7
+      },
+      {
+        "id": "17",
+        "rank": 6,
+        "why": "China's AI strategy reflects global competitive dynamics in AI development",
+        "confidence": 0.65
+      },
+      {
+        "id": "10",
+        "rank": 7,
+        "why": "Snowflake's $200 million deal with OpenAI signifies major investment in AI",
+        "confidence": 0.6
+      }
+    ],
+    "cached_at": "2026-02-07T12:08:58.746Z",
+    "model": "gpt-4o-mini"
+  },
+  "2026-W06:Ecommerce_Retail_Tech:1750e226ea43": {
+    "selected": [
+      {
+        "id": "1",
+        "rank": 1,
+        "why": "AI tools enhance tracking and returns in logistics",
+        "confidence": 0.9
+      },
+      {
+        "id": "5",
+        "rank": 2,
+        "why": "B2B ecommerce integration reshapes operational dynamics",
+        "confidence": 0.85
+      },
+      {
+        "id": "3",
+        "rank": 3,
+        "why": "Data competition among ecommerce giants impacts strategy",
+        "confidence": 0.8
+      },
+      {
+        "id": "12",
+        "rank": 4,
+        "why": "Focus on fulfillment agility drives operational efficiency",
+        "confidence": 0.8
+      },
+      {
+        "id": "4",
+        "rank": 5,
+        "why": "Leadership changes at Flipkart signal strategic shifts",
+        "confidence": 0.75
+      },
+      {
+        "id": "7",
+        "rank": 6,
+        "why": "Saks ending Amazon partnership affects ecommerce landscape",
+        "confidence": 0.7
+      },
+      {
+        "id": "10",
+        "rank": 7,
+        "why": "AI search visibility metrics are crucial for merchants",
+        "confidence": 0.65
+      }
+    ],
+    "cached_at": "2026-02-07T12:09:11.914Z",
+    "model": "gpt-4o-mini"
+  },
+  "2026-W06:Luxury_and_Consumer:9979cd629876": {
+    "selected": [
+      {
+        "id": "2",
+        "rank": 1,
+        "why": "Insights on evolving influencer marketing strategies",
+        "confidence": 0.9
+      },
+      {
+        "id": "11",
+        "rank": 2,
+        "why": "Case study on brand reinvention and market strategy",
+        "confidence": 0.85
+      },
+      {
+        "id": "6",
+        "rank": 3,
+        "why": "Analysis of inventory management post-holiday season",
+        "confidence": 0.8
+      },
+      {
+        "id": "10",
+        "rank": 4,
+        "why": "Explores growth in influencer marketing sector",
+        "confidence": 0.75
+      },
+      {
+        "id": "4",
+        "rank": 5,
+        "why": "Examines fashion brand strategies for major events",
+        "confidence": 0.7
+      },
+      {
+        "id": "1",
+        "rank": 6,
+        "why": "Leadership insights on adapting to market changes",
+        "confidence": 0.65
+      },
+      {
+        "id": "3",
+        "rank": 7,
+        "why": "New leadership role impacting brand strategy",
+        "confidence": 0.6
+      }
+    ],
+    "cached_at": "2026-02-07T12:09:21.723Z",
+    "model": "gpt-4o-mini"
+  },
+  "2026-W06:AI_and_Strategy:0de0c74c146b": {
+    "selected": [
+      {
+        "id": "4",
+        "rank": 1,
+        "why": "Oracle's bond sale for AI funding indicates strong market confidence",
+        "confidence": 0.9
+      },
+      {
+        "id": "10",
+        "rank": 2,
+        "why": "Anthropic's success highlights AI's growing enterprise relevance",
+        "confidence": 0.85
+      },
+      {
+        "id": "11",
+        "rank": 3,
+        "why": "Investments in AI hardware infrastructure signal industry growth",
+        "confidence": 0.8
+      },
+      {
+        "id": "5",
+        "rank": 4,
+        "why": "Snowflake and OpenAI's partnership enhances enterprise AI capabilities",
+        "confidence": 0.8
+      },
+      {
+        "id": "1",
+        "rank": 5,
+        "why": "Klarna's support for Google's protocol advances agentic AI",
+        "confidence": 0.75
+      },
+      {
+        "id": "6",
+        "rank": 6,
+        "why": "Moltbook's emergence reflects AI's evolving social applications",
+        "confidence": 0.7
+      },
+      {
+        "id": "8",
+        "rank": 7,
+        "why": "Nvidia's comments on AI infrastructure job creation are significant",
+        "confidence": 0.65
+      }
+    ],
+    "cached_at": "2026-02-07T12:45:38.099Z",
+    "model": "gpt-4o-mini"
+  },
+  "2026-W06:Ecommerce_Retail_Tech:7419e65058e7": {
+    "selected": [
+      {
+        "id": "5",
+        "rank": 1,
+        "why": "UK retailers predict significant ecommerce growth driven by AI",
+        "confidence": 0.9
+      },
+      {
+        "id": "3",
+        "rank": 2,
+        "why": "FedEx's AI tools enhance tracking and returns processes",
+        "confidence": 0.85
+      },
+      {
+        "id": "2",
+        "rank": 3,
+        "why": "Analysis of Amazon Go's closure impacts retail technology",
+        "confidence": 0.8
+      },
+      {
+        "id": "14",
+        "rank": 4,
+        "why": "Amazon's revenue growth surpassing Walmart marks industry shift",
+        "confidence": 0.8
+      },
+      {
+        "id": "6",
+        "rank": 5,
+        "why": "Cardinal Health's AI investments improve ecommerce efficiency",
+        "confidence": 0.75
+      },
+      {
+        "id": "1",
+        "rank": 6,
+        "why": "Integration with Shopify Markets enhances global ecommerce",
+        "confidence": 0.7
+      },
+      {
+        "id": "4",
+        "rank": 7,
+        "why": "Overview of new ecommerce tools impacting various sectors",
+        "confidence": 0.65
+      }
+    ],
+    "cached_at": "2026-02-07T12:45:47.368Z",
+    "model": "gpt-4o-mini"
+  }
+}

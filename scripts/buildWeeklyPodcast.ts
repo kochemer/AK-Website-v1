@@ -1,52 +1,17 @@
-import { promises as fs, readFileSync } from 'fs';
+import { promises as fs } from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
-import { parse } from 'dotenv';
 import OpenAI from 'openai';
 import fetch from 'node-fetch';
-import { DateTime } from 'luxon';
+import { loadEnv } from '../lib/env';
+import { getCurrentDigestWeek, validateWeekLabel } from '../lib/utils/getCurrentDigestWeek';
+import type { WeeklyDigest } from '../lib/types';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// Load environment variables
-function loadEnv() {
-  const envPath = path.join(__dirname, '../.env.local');
-  try {
-    const buffer = readFileSync(envPath);
-    let contentToParse: string;
-    if (buffer.length >= 2 && buffer[0] === 0xFF && buffer[1] === 0xFE) {
-      contentToParse = buffer.toString('utf16le', 2);
-    } else if (buffer.length >= 2 && buffer[0] === 0xFE && buffer[1] === 0xFF) {
-      const leBuffer = Buffer.alloc(buffer.length - 2);
-      for (let i = 2; i < buffer.length; i += 2) {
-        leBuffer[i - 2] = buffer[i + 1];
-        leBuffer[i - 1] = buffer[i];
-      }
-      contentToParse = leBuffer.toString('utf16le');
-    } else if (buffer.length > 0 && buffer[1] === 0 && buffer[0] !== 0) {
-      contentToParse = buffer.toString('utf16le');
-    } else {
-      contentToParse = buffer.toString('utf-8');
-    }
-    const parsed = parse(contentToParse);
-    Object.assign(process.env, parsed);
-  } catch (err) {
-    // .env.local not found, continue
-  }
-}
-
+// Load environment variables (must be before any env var access)
 loadEnv();
-
-type WeeklyDigest = {
-  weekLabel: string;
-  topics: {
-    AI_and_Strategy: { top: any[] };
-    Ecommerce_Retail_Tech: { top: any[] };
-    Luxury_and_Consumer: { top: any[] };
-    Jewellery_Industry: { top: any[] };
-  };
-};
 
 /**
  * Generate podcast script from digest
@@ -252,11 +217,9 @@ async function main() {
   }
 
   if (!weekLabel) {
-    const now = DateTime.now().setZone('Europe/Copenhagen');
-    const prevWeek = now.minus({ weeks: 1 });
-    const weekNum = prevWeek.weekNumber.toString().padStart(2, '0');
-    weekLabel = `${prevWeek.year}-W${weekNum}`;
+    weekLabel = getCurrentDigestWeek();
   }
+  validateWeekLabel(weekLabel);
 
   console.log(`[Podcast] Generating podcast for ${weekLabel}...`);
 

@@ -19,15 +19,9 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import crypto from 'crypto';
 import OpenAI from 'openai';
-import type { Topic } from '../classification/classifyTopics';
-import { getTopicDisplayName } from '../utils/topicNames';
-import type { Article as BaseArticle } from '../classification/classifyTopics';
+import { getTopicDisplayName } from '../lib/utils/topicNames';
 import { computeCommerceMateriality } from '../scoring/commerceMateriality';
-
-// Extended Article type that includes snippet (used in actual data)
-type Article = BaseArticle & {
-  snippet?: string;
-};
+import type { Article, Topic } from '../lib/types';
 
 type CandidateArticle = {
   id: string; // index in candidate array (0-based)
@@ -46,6 +40,8 @@ type CandidateArticle = {
   commerceMaterialitySignals?: string[]; // For scoring/trimming, not sent to LLM
 };
 
+import { readJsonCache, writeJsonCache } from '../lib/utils/cachePaths';
+
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
@@ -54,7 +50,7 @@ const RERANK_MODEL_PRIMARY = process.env.RERANKER_MODEL_PRIMARY || process.env.R
 const RERANK_MODEL_FALLBACK = process.env.RERANKER_MODEL_FALLBACK || 'gpt-4.1-mini';
 const TEMPERATURE = 0; // Deterministic
 const MAX_TOKENS = 2000;
-const CACHE_FILE = path.join(__dirname, '../data/rerank_cache.json');
+const CACHE_KIND = 'rerank';
 const CANDIDATE_DEFAULT = 100; // Default candidate pool size
 const CANDIDATE_MIN = 25;
 const CANDIDATE_MAX = 100;
@@ -140,24 +136,15 @@ export function resetRerankStats(): void {
   };
 }
 
-// Cache management
+// Cache management (uses unified cache paths)
 async function loadCache(): Promise<RerankCache> {
-  try {
-    const content = await fs.readFile(CACHE_FILE, 'utf-8');
-    return JSON.parse(content);
-  } catch (err: any) {
-    if (err.code === 'ENOENT') {
-      return {};
-    }
-    console.warn(`[Reranker] Failed to load cache: ${err.message}`);
-    return {};
-  }
+  const cache = await readJsonCache<RerankCache>(CACHE_KIND);
+  return cache || {};
 }
 
 async function saveCache(cache: RerankCache): Promise<void> {
   try {
-    await fs.mkdir(path.dirname(CACHE_FILE), { recursive: true });
-    await fs.writeFile(CACHE_FILE, JSON.stringify(cache, null, 2), 'utf-8');
+    await writeJsonCache(CACHE_KIND, cache);
   } catch (err: any) {
     console.warn(`[Reranker] Failed to save cache: ${err.message}`);
   }

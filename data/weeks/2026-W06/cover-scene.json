@@ -1,0 +1,14 @@
+{
+  "concept": "AI-luxury-shipping-metaphor",
+  "primaryHumorDriver": "role reversal",
+  "secondaryEnhancer": "anachronistic element",
+  "sceneDescription": "A hyper-realistic scene depicts a luxury Swiss watch strapped to a conveyor belt in a busy shipping warehouse. The watch is acting like a package, complete with a barcode sticker on its glass face, while robotic arms sort parcels around it with meticulous precision. In the background, a vintage delivery truck, out of place in this modern setting, is parked beside sleek, futuristic drones hovering nearby. The lighting is natural, streaming through large windows, casting sharp shadows and highlighting the metallic textures of the robots and the polished surface of the watch. The absurdity stems from the watch's juxtaposition as a mundane package amidst high-tech logistics, blending historical and futuristic elements.",
+  "finalImagePrompt": "A hyper-realistic photograph of a luxury Swiss watch on a conveyor belt in a modern shipping warehouse, treated like a package with a barcode sticker. Robotic arms sort parcels around it, while a vintage delivery truck and futuristic drones are visible in the background. Natural lighting streams through large windows, casting sharp shadows. Camera framing is a wide horizontal banner with a 3:1 aspect ratio, central horizontal band composition, and safe margins. No text, signage, or screens. The scene is a playful role reversal with anachronistic elements, blending old and new in a believable yet absurd setting, with photorealistic materials and textures.",
+  "negativePrompt": [
+    "text, letters, numbers, signage, labels",
+    "screens, UI, dashboards, holograms, floating icons",
+    "logos, brands, watermarks",
+    "cartoon, illustration, CGI, 3D render, anime"
+  ],
+  "confidence": 0.7
+}

@@ -1,40 +1,15 @@
-import { promises as fs, readFileSync } from 'fs';
+import { promises as fs } from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
-import { parse } from 'dotenv';
 import { type Variant } from '../digest/sceneDirector';
 import { generateWeeklyCoverImage } from '../digest/generateCoverImage';
+import { loadEnv } from '../lib/env';
+import { getCurrentDigestWeek, validateWeekLabel } from '../lib/utils/getCurrentDigestWeek';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// Load environment variables from .env.local (synchronous for top-level)
-function loadEnv() {
-  const envPath = path.join(__dirname, '../.env.local');
-  try {
-    const buffer = readFileSync(envPath);
-    let contentToParse: string;
-    if (buffer.length >= 2 && buffer[0] === 0xFF && buffer[1] === 0xFE) {
-      contentToParse = buffer.toString('utf16le', 2);
-    } else if (buffer.length >= 2 && buffer[0] === 0xFE && buffer[1] === 0xFF) {
-      const leBuffer = Buffer.alloc(buffer.length - 2);
-      for (let i = 2; i < buffer.length; i += 2) {
-        leBuffer[i - 2] = buffer[i + 1];
-        leBuffer[i - 1] = buffer[i];
-      }
-      contentToParse = leBuffer.toString('utf16le');
-    } else if (buffer.length > 0 && buffer[1] === 0 && buffer[0] !== 0) {
-      contentToParse = buffer.toString('utf16le');
-    } else {
-      contentToParse = buffer.toString('utf-8');
-    }
-    const parsed = parse(contentToParse);
-    Object.assign(process.env, parsed);
-  } catch (err) {
-    // .env.local not found, continue
-  }
-}
-
+// Load environment variables (must be before any env var access)
 loadEnv();
 
 type CoverInput = {
@@ -99,10 +74,10 @@ function parseArgs(): { weekLabel: string; variant: Variant } {
   }
   
   if (!weekLabel) {
-    console.error('Error: --week=YYYY-W## is required');
-    console.error('Usage: npm run cover -- --week=2026-W01 [--variant=safe|fun]');
-    process.exit(1);
+    weekLabel = getCurrentDigestWeek();
+    console.log(`[Cover] No --week provided, using computed digest week: ${weekLabel}`);
   }
+  validateWeekLabel(weekLabel);
   
   return { weekLabel, variant };
 }

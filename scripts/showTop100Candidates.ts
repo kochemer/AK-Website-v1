@@ -2,14 +2,11 @@ import { promises as fs } from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { DateTime } from 'luxon';
-import { getWeekRangeCET } from '../utils/weekCET';
+import { getWeekRangeCET } from '../lib/utils/weekCET';
 import { classifyTopic } from '../classification/classifyTopics';
-import type { Article as BaseArticle, Topic } from '../classification/classifyTopics';
-
-// Extended Article type
-type Article = BaseArticle & {
-  snippet?: string;
-};
+import { readJsonCache } from '../lib/utils/cachePaths';
+import { getCurrentDigestWeek } from '../lib/utils/getCurrentDigestWeek';
+import type { Article, Topic } from '../lib/types';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -32,7 +29,7 @@ async function main() {
   }
   
   if (!weekLabel) {
-    weekLabel = '2026-W04'; // Default
+    weekLabel = getCurrentDigestWeek();
   }
   
   console.log(`Getting top 100 candidates for ${category} in week ${weekLabel}...\n`);
@@ -86,11 +83,10 @@ async function main() {
   // Or we can try to import it dynamically
   
   // Actually, let's check if there's a cache or log file
-  const cachePath = path.join(__dirname, '../data/rerank_cache.json');
   let cache: any = {};
   try {
-    const cacheRaw = await fs.readFile(cachePath, 'utf-8');
-    cache = JSON.parse(cacheRaw);
+    const loaded = await readJsonCache<any>('rerank');
+    cache = loaded || {};
   } catch (err) {
     console.log('No rerank cache found, will calculate from articles...\n');
   }

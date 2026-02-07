@@ -8,9 +8,10 @@ import DigestClientView from '../../components/DigestClientView';
 import TopNSelector from '../../components/TopNSelector';
 import JsonLd from '../../components/JsonLd';
 import Breadcrumbs from '../../components/Breadcrumbs';
-import { getTopicTotalsDisplayName, TopicKey } from '../../../utils/topicNames';
-import { formatDate, formatDateRange, formatDateTime } from '../../../utils/formatDate';
-import { getSiteUrl } from '../../../utils/siteUrl';
+import { getTopicTotalsDisplayName, TopicKey } from '@/lib/utils/topicNames';
+import { formatDate, formatDateRange, formatDateTime } from '@/lib/utils/formatDate';
+import { getSiteUrl } from '@/lib/utils/siteUrl';
+import type { WeeklyDigest } from '@/lib/types';
 
 export async function generateMetadata({ params }: { params: Promise<{ weekLabel: string }> }): Promise<Metadata> {
   const { weekLabel } = await params;
@@ -40,46 +41,6 @@ export async function generateMetadata({ params }: { params: Promise<{ weekLabel
     },
   };
 }
-
-type Article = {
-  id: string;
-  title: string;
-  url: string;
-  source: string;
-  published_at: string;
-  ingested_at: string;
-  aiSummary?: string | null;
-};
-
-type WeeklyDigest = {
-  weekLabel: string;
-  tz: string;
-  startISO: string;
-  endISO: string;
-  builtAtISO?: string;
-  builtAtLocal?: string;
-  coverImageUrl?: string;
-  coverImageAlt?: string;
-  coverKeywords?: string[];
-  keyThemes?: string[];
-  oneSentenceSummary?: string;
-  introParagraph?: string;
-  totals: {
-    total: number;
-    byTopic: {
-      AIStrategy: number;
-      EcommerceRetail: number;
-      LuxuryConsumer: number;
-      Jewellery: number;
-    };
-  };
-  topics: {
-    AI_and_Strategy: { total: number; top: Article[] };
-    Ecommerce_Retail_Tech: { total: number; top: Article[] };
-    Luxury_and_Consumer: { total: number; top: Article[] };
-    Jewellery_Industry: { total: number; top: Article[] };
-  };
-};
 
 
 async function loadDigest(weekLabel: string): Promise<WeeklyDigest | null> {

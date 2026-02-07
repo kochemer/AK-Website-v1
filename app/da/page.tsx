@@ -1,68 +1,14 @@
 import { promises as fs } from 'fs';
 import path from 'path';
-import { DateTime } from 'luxon';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Suspense } from 'react';
 import DigestClientView from '../components/DigestClientView';
 import TopNSelector from '../components/TopNSelector';
-import { TopicKey } from '../../utils/topicNames';
-import { formatDate } from '../../utils/formatDate';
-
-type Article = {
-  id: string;
-  title: string;
-  url: string;
-  source: string;
-  published_at: string;
-  ingested_at: string;
-  aiSummary?: string | null;
-};
-
-type WeeklyDigest = {
-  weekLabel: string;
-  tz: string;
-  startISO: string;
-  endISO: string;
-  builtAtISO?: string;
-  builtAtLocal?: string;
-  coverImageUrl?: string;
-  coverImageAlt?: string;
-  coverKeywords?: string[];
-  keyThemes?: string[];
-  oneSentenceSummary?: string;
-  introParagraph?: string;
-  totals: {
-    total: number;
-    byTopic: {
-      AIStrategy: number;
-      EcommerceRetail: number;
-      LuxuryConsumer: number;
-      Jewellery: number;
-    };
-  };
-  topics: {
-    AI_and_Strategy: { total: number; top: Article[] };
-    Ecommerce_Retail_Tech: { total: number; top: Article[] };
-    Luxury_and_Consumer: { total: number; top: Article[] };
-    Jewellery_Industry: { total: number; top: Article[] };
-  };
-};
-
-function getCurrentWeek(): string {
-  const now = DateTime.now().setZone('Europe/Copenhagen');
-  const year = now.year;
-  const weekNumber = now.weekNumber;
-  return `${year}-W${weekNumber.toString().padStart(2, '0')}`;
-}
-
-function getPreviousWeek(): string {
-  const now = DateTime.now().setZone('Europe/Copenhagen');
-  const previousWeek = now.minus({ weeks: 1 });
-  const year = previousWeek.year;
-  const weekNumber = previousWeek.weekNumber;
-  return `${year}-W${weekNumber.toString().padStart(2, '0')}`;
-}
+import { TopicKey } from '@/lib/utils/topicNames';
+import { formatDate } from '@/lib/utils/formatDate';
+import { getCurrentDigestWeek } from '@/lib/utils/getCurrentDigestWeek';
+import type { WeeklyDigest } from '@/lib/types';
 
 
 async function loadDigest(weekLabel: string): Promise<WeeklyDigest | null> {
@@ -127,7 +73,7 @@ const CATEGORY_CARDS: Array<{
 
 
 export default async function HomeDA() {
-  const weekLabel = getPreviousWeek();
+  const weekLabel = getCurrentDigestWeek();
   const digest = await loadDigest(weekLabel);
 
   // HERO section (always present)

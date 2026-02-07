@@ -7,6 +7,8 @@ import crypto from 'crypto';
 import type { SearchResult } from './searchProvider';
 import { isConsultancyDomain } from './consultancyDomains';
 import { isPlatformDomain } from './platformDomains';
+import { extractPublishedAtFromHtml, normalizePublishedAt, type ExtractPublishedAtOptions } from '../lib/utils/extractPublishedAt';
+import { getDomainRule } from './domainRules';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -19,7 +21,12 @@ export type ExtractedArticle = {
   snippet: string;
   domain: string;
   publishedDate?: string;
+  publishedAt?: string | null;
+  publishedDateRaw?: string; // Raw date string before normalization
   publishedDateInvalid?: boolean; // True if publishedDate is invalid/missing
+  dateSource?: 'html' | 'tavily' | 'none' | 'time_text';
+  dateSourceDetail?: 'jsonld' | 'meta' | 'time' | 'time_text' | 'tavily' | 'none';
+  dateConfidence?: 'high' | 'medium' | 'low';
   extractedText: string;
   wordCount: number;
   author?: string;
@@ -200,6 +207,60 @@ async function fetchHtml(url: string, fetchDir: string): Promise<FetchResult> {
   }
 }
 
+function extractDateFromJsonLd($: cheerio.CheerioAPI): string | undefined {
+  const scripts = $('script[type="application/ld+json"]');
+  if (scripts.length === 0) return undefined;
+
+  const extractFromObject = (obj: unknown): string | undefined => {
+    if (!obj || typeof obj !== 'object') return undefined;
+
+    const asRecord = obj as Record<string, unknown>;
+    const candidateKeys = ['datePublished', 'dateCreated', 'dateModified', 'uploadDate'];
+    for (const key of candidateKeys) {
+      const value = asRecord[key];
+      if (typeof value === 'string' && value.trim().length > 0) {
+        return value.trim();
+      }
+    }
+
+    // Handle @graph arrays or nested objects
+    for (const value of Object.values(asRecord)) {
+      if (Array.isArray(value)) {
+        for (const item of value) {
+          const found = extractFromObject(item);
+          if (found) return found;
+        }
+      } else if (value && typeof value === 'object') {
+        const found = extractFromObject(value);
+        if (found) return found;
+      }
+    }
+
+    return undefined;
+  };
+
+  for (const el of scripts.toArray()) {
+    const raw = $(el).text();
+    if (!raw || raw.trim().length === 0) continue;
+    try {
+      const parsed = JSON.parse(raw);
+      if (Array.isArray(parsed)) {
+        for (const item of parsed) {
+          const found = extractFromObject(item);
+          if (found) return found;
+        }
+      } else {
+        const found = extractFromObject(parsed);
+        if (found) return found;
+      }
+    } catch {
+      // Ignore malformed JSON-LD blocks
+    }
+  }
+
+  return undefined;
+}
+
 function extractText(html: string, url: string): { text: string; title: string; author?: string; date?: string } {
   const $ = cheerio.load(html);
   
@@ -283,8 +344,18 @@ function extractText(html: string, url: string): { text: string; title: string; 
   const dateSelectors = [
     'time[datetime]',
     '[itemprop="datePublished"]',
+    'meta[itemprop="datePublished"]',
     'meta[property="article:published_time"]',
-    'meta[name="publish-date"]'
+    'meta[property="og:published_time"]',
+    'meta[name="article:published_time"]',
+    'meta[name="publish-date"]',
+    'meta[name="date"]',
+    'meta[name="dc.date"]',
+    'meta[name="dc.date.issued"]',
+    'meta[name="dcterms.date"]',
+    'meta[name="dcterms.created"]',
+    'meta[name="sailthru.date"]',
+    'meta[name="parsely-pub-date"]'
   ];
   for (const selector of dateSelectors) {
     const dateEl = $(selector).first();
@@ -292,6 +363,10 @@ function extractText(html: string, url: string): { text: string; title: string; 
       date = dateEl.attr('datetime') || dateEl.attr('content') || dateEl.text();
       if (date) break;
     }
+  }
+
+  if (!date) {
+    date = extractDateFromJsonLd($);
   }
   
   return { text: content, title, author, date };
@@ -301,35 +376,6 @@ function isEnglish(text: string): boolean {
   // Simple heuristic: check if >80% of characters are ASCII
   const asciiChars = text.split('').filter(c => c.charCodeAt(0) < 128).length;
   return asciiChars / text.length > 0.8;
-}
-
-/**
- * Validate and normalize published date
- * Returns: { valid: boolean, date: string | null, invalid: boolean }
- */
-function validatePublishedDate(dateStr: string | undefined | null): { valid: boolean; date: string | null; invalid: boolean } {
-  if (!dateStr || dateStr.trim() === '') {
-    return { valid: false, date: null, invalid: true };
-  }
-
-  try {
-    const parsed = new Date(dateStr);
-    if (isNaN(parsed.getTime())) {
-      return { valid: false, date: null, invalid: true };
-    }
-
-    const year = parsed.getFullYear();
-    const currentYear = new Date().getFullYear();
-    
-    // Invalid if year is before 2015 (too old) or more than 1 year in future
-    if (year < 2015 || year > currentYear + 1) {
-      return { valid: false, date: null, invalid: true };
-    }
-
-    return { valid: true, date: parsed.toISOString(), invalid: false };
-  } catch {
-    return { valid: false, date: null, invalid: true };
-  }
 }
 
 const PAYWALL_PATTERNS = [
@@ -395,6 +441,53 @@ function isArticle(text: string): boolean {
   return detectNonArticleReason(text) === null;
 }
 
+function urlLooksLikeArticle(url: string): boolean {
+  return /\/(news|blog|insights|article|stories|press)\//i.test(url);
+}
+
+function hasJsonLdArticleType(html: string): boolean {
+  try {
+    const $ = cheerio.load(html);
+    const scripts = $('script[type="application/ld+json"]');
+    if (scripts.length === 0) return false;
+    const validTypes = new Set(['Article', 'NewsArticle', 'BlogPosting']);
+
+    const containsType = (obj: unknown): boolean => {
+      if (!obj || typeof obj !== 'object') return false;
+      const asRecord = obj as Record<string, unknown>;
+      const type = asRecord['@type'];
+      if (typeof type === 'string' && validTypes.has(type)) return true;
+      if (Array.isArray(type) && type.some(t => typeof t === 'string' && validTypes.has(t))) return true;
+
+      const graph = asRecord['@graph'];
+      if (Array.isArray(graph)) {
+        return graph.some(item => containsType(item));
+      }
+
+      return false;
+    };
+
+    for (const el of scripts.toArray()) {
+      const raw = $(el).text();
+      if (!raw || raw.trim().length === 0) continue;
+      try {
+        const parsed = JSON.parse(raw);
+        if (Array.isArray(parsed)) {
+          if (parsed.some(item => containsType(item))) return true;
+        } else if (containsType(parsed)) {
+          return true;
+        }
+      } catch {
+        // Ignore malformed JSON-LD blocks
+      }
+    }
+  } catch {
+    return false;
+  }
+
+  return false;
+}
+
 type ExtractionStats = {
   byTopic: Record<SearchResult['topic'], {
     fetched_ok: number;
@@ -404,6 +497,7 @@ type ExtractionStats = {
       tooShort: number;
       notArticle: number;
       paywalled: number;
+      notLikelyArticle: number;
     };
   }>;
 };
@@ -414,22 +508,22 @@ function initExtractionStats(): ExtractionStats {
       "AI_and_Strategy": {
         fetched_ok: 0,
         extracted_ok: 0,
-        excluded: { nonEnglish: 0, tooShort: 0, notArticle: 0, paywalled: 0 }
+        excluded: { nonEnglish: 0, tooShort: 0, notArticle: 0, paywalled: 0, notLikelyArticle: 0 }
       },
       "Ecommerce_Retail_Tech": {
         fetched_ok: 0,
         extracted_ok: 0,
-        excluded: { nonEnglish: 0, tooShort: 0, notArticle: 0, paywalled: 0 }
+        excluded: { nonEnglish: 0, tooShort: 0, notArticle: 0, paywalled: 0, notLikelyArticle: 0 }
       },
       "Luxury_and_Consumer": {
         fetched_ok: 0,
         extracted_ok: 0,
-        excluded: { nonEnglish: 0, tooShort: 0, notArticle: 0, paywalled: 0 }
+        excluded: { nonEnglish: 0, tooShort: 0, notArticle: 0, paywalled: 0, notLikelyArticle: 0 }
       },
       "Jewellery_Industry": {
         fetched_ok: 0,
         extracted_ok: 0,
-        excluded: { nonEnglish: 0, tooShort: 0, notArticle: 0, paywalled: 0 }
+        excluded: { nonEnglish: 0, tooShort: 0, notArticle: 0, paywalled: 0, notLikelyArticle: 0 }
       }
     }
   };
@@ -439,7 +533,8 @@ async function extractArticle(
   searchResult: SearchResult,
   fetchDir: string,
   extractedDir: string,
-  stats: ExtractionStats
+  stats: ExtractionStats,
+  options?: ExtractPublishedAtOptions
 ): Promise<ExtractedArticle | null> {
   const hash = hashUrl(searchResult.url);
   const extractedPath = path.join(extractedDir, `${hash}.json`);
@@ -461,7 +556,9 @@ async function extractArticle(
         let text: string;
         let extractedTitle: string;
         let author: string | undefined;
-        let date: string | undefined;
+        let htmlForDate: string | null = null;
+        let htmlDateResult: ReturnType<typeof extractPublishedAtFromHtml> | null = null;
+        let tavilyDateResult: ReturnType<typeof normalizePublishedAt> | null = null;
 
         let paywallStatus: 'not_paywalled' | 'likely_paywalled' | 'unknown' = 'unknown';
         let paywallReason: string | undefined;
@@ -474,7 +571,9 @@ async function extractArticle(
           if (tavilyResult && tavilyResult.content) {
             text = tavilyResult.content;
             extractedTitle = tavilyResult.title || searchResult.title;
-            date = tavilyResult.publishedDate;
+            if (tavilyResult.publishedDate) {
+              tavilyDateResult = normalizePublishedAt(tavilyResult.publishedDate, options);
+            }
             author = undefined;
             paywallStatus = 'not_paywalled'; // Tavily extraction usually bypasses paywalls
             stats.byTopic[searchResult.topic].fetched_ok += 1;
@@ -494,6 +593,10 @@ async function extractArticle(
                 return null;
               }
             } else {
+              if (!urlLooksLikeArticle(searchResult.url) && !hasJsonLdArticleType(fetchResult.html)) {
+                stats.byTopic[searchResult.topic].excluded.notLikelyArticle += 1;
+                return null;
+              }
               stats.byTopic[searchResult.topic].fetched_ok += 1;
               paywallStatus = fetchResult.paywallStatus;
               paywallReason = fetchResult.paywallReason;
@@ -507,7 +610,7 @@ async function extractArticle(
               text = extracted.text;
               extractedTitle = extracted.title;
               author = extracted.author;
-              date = extracted.date;
+              htmlForDate = fetchResult.html;
             }
           }
         } else {
@@ -525,6 +628,10 @@ async function extractArticle(
               return null;
             }
           } else {
+            if (!urlLooksLikeArticle(searchResult.url) && !hasJsonLdArticleType(fetchResult.html)) {
+              stats.byTopic[searchResult.topic].excluded.notLikelyArticle += 1;
+              return null;
+            }
             stats.byTopic[searchResult.topic].fetched_ok += 1;
             paywallStatus = fetchResult.paywallStatus;
             paywallReason = fetchResult.paywallReason;
@@ -538,7 +645,7 @@ async function extractArticle(
             text = extracted.text;
             extractedTitle = extracted.title;
             author = extracted.author;
-            date = extracted.date;
+            htmlForDate = fetchResult.html;
           }
         }
         
@@ -641,18 +748,40 @@ async function extractArticle(
           return null;
         }
 
-        // Validate published date
-        const rawDate = date || searchResult.publishedDate;
-        const dateValidation = validatePublishedDate(rawDate);
+        if (htmlForDate) {
+          const domainRule = getDomainRule(searchResult.domain);
+          htmlDateResult = extractPublishedAtFromHtml(htmlForDate, {
+            ...options,
+            domainRule
+          });
+        }
+        const searchResultDate = searchResult.publishedDate
+          ? normalizePublishedAt(searchResult.publishedDate, options)
+          : null;
+
+        const dateResult = (htmlDateResult && htmlDateResult.publishedAt)
+          ? htmlDateResult
+          : (tavilyDateResult && tavilyDateResult.publishedAt)
+            ? tavilyDateResult
+            : (searchResultDate && searchResultDate.publishedAt)
+              ? searchResultDate
+              : { publishedAt: null, source: 'none', sourceDetail: 'none', confidence: 'low' as const };
+
         const discoveredAt = new Date().toISOString();
+        const publishedAt = dateResult.publishedAt;
 
         const extracted: ExtractedArticle = {
           url: searchResult.url,
           title: finalTitle,
           snippet: searchResult.snippet,
           domain: searchResult.domain,
-          publishedDate: dateValidation.date || undefined,
-          publishedDateInvalid: dateValidation.invalid,
+          publishedDate: publishedAt || undefined,
+          publishedAt: publishedAt || null,
+          publishedDateRaw: dateResult.rawValue,
+          publishedDateInvalid: !publishedAt,
+          dateSource: dateResult.source,
+          dateSourceDetail: dateResult.sourceDetail,
+          dateConfidence: dateResult.confidence,
           extractedText: text.substring(0, 5000), // Limit extracted text length
           wordCount,
           author,
@@ -682,7 +811,8 @@ async function extractArticle(
 
 export async function fetchAndExtractArticles(
   searchResults: SearchResult[],
-  discoveryDir: string
+  discoveryDir: string,
+  options?: ExtractPublishedAtOptions
 ): Promise<{ articles: ExtractedArticle[]; stats: ExtractionStats }> {
   const candidatesPath = path.join(discoveryDir, 'candidates.json');
   const statsPath = path.join(discoveryDir, 'extraction-report.json');
@@ -750,7 +880,7 @@ export async function fetchAndExtractArticles(
     console.log(`[Extract] Processing ${i + 1}/${searchResults.length}: ${result.title.substring(0, 50)}...`);
     
     try {
-      const article = await extractArticle(result, fetchDir, extractedDir, stats);
+      const article = await extractArticle(result, fetchDir, extractedDir, stats, options);
       if (article) {
         extracted.push(article);
       }

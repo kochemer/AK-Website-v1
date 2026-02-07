@@ -1,5 +1,6 @@
 import { classifyCurrentWeekArticles } from '../classification/classifyTopics';
 import { DateTime } from 'luxon';
+import { getCurrentDigestWeek, validateWeekLabel } from '../lib/utils/getCurrentDigestWeek';
 
 async function main() {
   const args = process.argv.slice(2);
@@ -13,10 +14,10 @@ async function main() {
   }
   
   if (!weekLabel) {
-    console.error('Error: --week=YYYY-W## is required');
-    console.error('Usage: npx tsx scripts/classifyWeek.ts --week=2026-W04');
-    process.exit(1);
+    weekLabel = getCurrentDigestWeek();
+    console.log(`[ClassifyWeek] No --week provided, using computed digest week: ${weekLabel}`);
   }
+  validateWeekLabel(weekLabel);
   
   // Parse week label
   const weekMatch = weekLabel.match(/^(\d{4})-W(\d{1,2})$/);

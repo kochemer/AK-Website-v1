@@ -24,7 +24,7 @@ const geistMono = Geist_Mono({
   display: "swap",
 });
 
-import { getSiteUrl } from '../utils/siteUrl';
+import { getSiteUrl } from '@/lib/utils/siteUrl';
 
 // Lazy evaluation to avoid issues in dev mode
 const getSiteUrlLazy = () => getSiteUrl();

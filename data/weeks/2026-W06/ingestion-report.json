@@ -1,0 +1,66 @@
+{
+  "week": "2026-W06",
+  "generatedAt": "2026-02-07T12:42:50.938Z",
+  "categories": {
+    "Jewellery Industry": {
+      "rss_found": 16,
+      "discovery_found": 0,
+      "fetched_ok": 0,
+      "extracted_ok": 0,
+      "excluded": {
+        "nonEnglish": 0,
+        "tooShort": 0,
+        "notArticle": 0,
+        "paywalled": 0,
+        "controversial": 0,
+        "duplicate": 0
+      },
+      "final_candidates": 0
+    },
+    "Artificial Intelligence News": {
+      "rss_found": 176,
+      "discovery_found": 0,
+      "fetched_ok": 0,
+      "extracted_ok": 0,
+      "excluded": {
+        "nonEnglish": 0,
+        "tooShort": 0,
+        "notArticle": 0,
+        "paywalled": 0,
+        "controversial": 0,
+        "duplicate": 0
+      },
+      "final_candidates": 0
+    },
+    "Ecommerce & Retail Tech": {
+      "rss_found": 103,
+      "discovery_found": 0,
+      "fetched_ok": 0,
+      "extracted_ok": 0,
+      "excluded": {
+        "nonEnglish": 0,
+        "tooShort": 0,
+        "notArticle": 0,
+        "paywalled": 0,
+        "controversial": 0,
+        "duplicate": 0
+      },
+      "final_candidates": 0
+    },
+    "Fashion & Luxury": {
+      "rss_found": 1,
+      "discovery_found": 0,
+      "fetched_ok": 0,
+      "extracted_ok": 0,
+      "excluded": {
+        "nonEnglish": 0,
+        "tooShort": 0,
+        "notArticle": 0,
+        "paywalled": 0,
+        "controversial": 0,
+        "duplicate": 0
+      },
+      "final_candidates": 0
+    }
+  }
+}

@@ -2,7 +2,8 @@ import { promises as fs } from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { DateTime } from 'luxon';
-import { getWeekRangeCET } from '../utils/weekCET';
+import { getWeekRangeCET } from '../lib/utils/weekCET';
+import { getCurrentDigestWeek } from '../lib/utils/getCurrentDigestWeek';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -235,5 +236,5 @@ async function analyzeDiscoveryFiltering(weekLabel: string) {
   }
 }
 
-const weekLabel = process.argv[2] || '2026-W02';
+const weekLabel = process.argv[2] || getCurrentDigestWeek();
 analyzeDiscoveryFiltering(weekLabel).catch(console.error);

@@ -1,0 +1,692 @@
+{
+  "weekLabel": "2026-W06",
+  "tz": "Europe/Copenhagen",
+  "startISO": "2026-02-01T23:00:00.000Z",
+  "endISO": "2026-02-08T22:59:59.999Z",
+  "builtAtISO": "2026-02-07T13:46:06.698+01:00",
+  "builtAtLocal": "2026-02-07 13:46:06",
+  "totals": {
+    "total": 615,
+    "byTopic": {
+      "AIStrategy": 75,
+      "EcommerceRetail": 388,
+      "LuxuryConsumer": 118,
+      "Jewellery": 32
+    }
+  },
+  "topics": {
+    "AI_and_Strategy": {
+      "total": 75,
+      "top": [
+        {
+          "id": "2fra7r",
+          "title": "Oracle Is Selling $25 Billion of High-Grade Bonds for AI Funding",
+          "url": "https://www.bloomberg.com/news/articles/2026-02-02/oracle-kicks-off-8-part-dollar-bond-sale-amid-ai-borrowing-push",
+          "source": "Bloomberg - Technology",
+          "published_at": "2026-02-02T13:02:19.000Z",
+          "ingested_at": "2026-02-02T20:51:37.885Z",
+          "snippet": "Oracle Corp. is selling $25 billion of investment-grade bonds on Monday to help finance infrastructure that powers artificial intelligence projects, in what is set to the biggest high-grade US offering since Meta Platforms Inc. raised $30 billion late last year.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.2,
+            "insightSignalBoost": 0,
+            "penalty": 0.2,
+            "matchedKeywords": [
+              "ai",
+              "funding",
+              "artificial intelligence",
+              "investment"
+            ]
+          },
+          "aiSummary": "AI-Generated Summary:\nOracle is issuing $25 billion in high-grade bonds to fund AI infrastructure, marking a significant investment in artificial intelligence projects. This move follows Meta Platforms Inc.'s $30 billion offering late last year."
+        },
+        {
+          "id": "o3oubc",
+          "title": "Anthropic’s breakout moment: how Claude cracked AI for business",
+          "url": "https://www.ft.com/content/a75555a6-24c3-4468-aba9-7fe12b5def31",
+          "source": "Financial Times - Technology",
+          "published_at": "2026-02-06T21:00:06.000Z",
+          "ingested_at": "2026-02-07T12:42:23.752Z",
+          "snippet": "Start-up’s bet on enterprise users is paying off as coding tools fuel revenue and investor frenzy",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ai",
+              "anthropic",
+              "claude"
+            ]
+          },
+          "aiSummary": "AI-generated summary:\nAnthropic, a start-up focused on AI for business, is experiencing success as its coding tools drive revenue growth and attract investor interest."
+        },
+        {
+          "id": "6e8e19",
+          "title": "Investors Bet Big on AI as Core Hardware Infrastructure",
+          "url": "https://www.pymnts.com/artificial-intelligence-2/2026/investors-bet-big-on-ai-as-core-hardware-infrastructure/",
+          "source": "PYMNTS",
+          "published_at": "2026-02-02T19:41:18.000Z",
+          "ingested_at": "2026-02-02T20:51:37.885Z",
+          "snippet": "From artificial intelligence (AI)-driven chip design and autonomous vehicles to enterprise customer service, real estate transactions and investment banking, startups this week raised billions in capital as investors doubled down on AI as core operating infrastructure.  Ricursive Intelligence raised $300 million in a Series A at a $4 billion valuation, a rare level of […]\nThe post Investors Bet Big on AI as Core Hardware Infrastructure appeared first on PYMNTS.com.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ai",
+              "artificial intelligence",
+              "investment"
+            ]
+          },
+          "aiSummary": "Investors are heavily investing in AI startups, with Ricursive Intelligence raising $300 million in a Series A funding round at a $4 billion valuation, reflecting the growing importance of AI as core infrastructure across various industries."
+        },
+        {
+          "id": "w3w4t9",
+          "title": "Snowflake and OpenAI Expand Partnership to Bring AI Into Enterprise Data",
+          "url": "https://www.pymnts.com/partnerships/2026/snowflake-and-openai-expand-partnership-to-bring-ai-into-enterprise-data/",
+          "source": "PYMNTS",
+          "published_at": "2026-02-02T17:12:09.000Z",
+          "ingested_at": "2026-02-02T20:51:37.885Z",
+          "snippet": "Snowflake and OpenAI have entered into a multi-year strategic partnership aimed at embedding artificial intelligence (AI) capabilities into Snowflake’s data platform, as enterprises push to move AI from experimentation into production.  Under the agreement, which was announced in a Monday (Feb. 2) news release, OpenAI’s models will be available natively within Snowflake’s AI Data […]\nThe post Snowflake and OpenAI Expand Partnership to Bring AI Into Enterprise Data appeared first on PYMNTS.com.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.30000000000000004,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.2,
+            "insightSignalBoost": 0.1,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ai",
+              "openai",
+              "partnership",
+              "artificial intelligence"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Snowflake and OpenAI have expanded their partnership to integrate AI capabilities into Snowflake's data platform, aiming to transition AI from experimentation to production in enterprises. OpenAI's models will be accessible within Snowflake's AI Data platform under this multi-year strategic agreement."
+        },
+        {
+          "id": "mcgl03",
+          "title": "Klarna Joins Google’s Universal Commerce Protocol to Advance Agentic AI",
+          "url": "https://www.pymnts.com/news/artificial-intelligence/2026/klarna-joins-google-universal-commerce-protocol-advance-agentic-ai/",
+          "source": "PYMNTS",
+          "published_at": "2026-02-02T17:58:52.000Z",
+          "ingested_at": "2026-02-02T20:51:37.885Z",
+          "snippet": "Klarna announced its support for Google’s Universal Commerce Protocol (UCP), an open source standard designed to synchronize artificial intelligence agents and retail systems across the digital shopping journey.  The move positions the Swedish FinTech as a primary infrastructure partner in the emerging agentic commerce sector, where autonomous AI assistants handle everything from product discovery […]\nThe post Klarna Joins Google’s Universal Commerce Protocol to Advance Agentic AI appeared first...",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.2,
+            "insightSignalBoost": 0,
+            "penalty": 0.2,
+            "matchedKeywords": [
+              "ai",
+              "agent",
+              "artificial intelligence",
+              "open source"
+            ]
+          },
+          "aiSummary": "AI-generated summary:\nKlarna partners with Google's Universal Commerce Protocol to enhance agentic AI, positioning itself as a key player in the autonomous AI assistant-driven commerce sector."
+        },
+        {
+          "id": "qqbr7b",
+          "title": "Security concerns and scepticism are bursting the bubble of Moltbook, the viral AI social forum ",
+          "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/security-concerns-and-scepticism-are-bursting-the-bubble-of-moltbook-the-viral-ai-social-forum/articleshow/127994825.cms",
+          "source": "Economic Times - Technology",
+          "published_at": "2026-02-06T14:28:20.000Z",
+          "ingested_at": "2026-02-07T12:42:23.752Z",
+          "snippet": "A new social media platform called Moltbook has emerged, exclusively for AI agents. Humans can observe but not directly participate. This development has generated significant buzz, with some hailing it as a step towards the singularity. However, security researchers have uncovered critical vulnerabilities, raising alarms about data exposure and potential manipulation.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ai",
+              "research",
+              "agent"
+            ]
+          },
+          "aiSummary": "AI-generated summary:\nMoltbook, a new AI-exclusive social media platform, has sparked excitement for its potential towards the singularity, but security concerns over data exposure and manipulation have raised alarms among researchers."
+        },
+        {
+          "id": "lvwd03",
+          "title": "AI data centres could spur Internet era-type job boom, says Nvidia’s Jensen Huang ",
+          "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/ai-data-centres-could-spur-internet-era-type-job-boom-says-nvidias-jensen-huang/articleshow/127997917.cms",
+          "source": "Economic Times - Technology",
+          "published_at": "2026-02-06T15:46:37.000Z",
+          "ingested_at": "2026-02-07T12:42:23.752Z",
+          "snippet": "The CEO of the AI major said AI infrastructure would create jobs across construction, supply chains, operations, and innovation, alongside direct employment. His comments follow the Union Budget 2026, which has extended tax holidays for data centre investments, a move expected to attract up to $200 billion into India",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ai",
+              "investment"
+            ]
+          },
+          "aiSummary": "AI data centres are predicted to generate a job boom in various sectors, including construction, supply chains, operations, and innovation, according to Nvidia's CEO. The Union Budget 2026's extension of tax holidays for data centre investments is expected to attract significant investment into India."
+        }
+      ]
+    },
+    "Ecommerce_Retail_Tech": {
+      "total": 388,
+      "top": [
+        {
+          "id": "zezeq6",
+          "title": "UK retailers forecast ecommerce growth as AI reshapes shopping and delivery",
+          "url": "https://internetretailing.net/uk-retailers-forecast-ecommerce-growth-as-ai-reshapes-shopping-and-delivery/",
+          "source": "Internet Retailing",
+          "published_at": "2026-02-04T17:15:17.000Z",
+          "ingested_at": "2026-02-07T12:42:23.752Z",
+          "snippet": "British retailers expect a significant increase in online sales in 2026 as artificial intelligence becomes integrated throughout the shopping process.\nThe post UK retailers forecast ecommerce growth as AI reshapes shopping and delivery appeared first on InternetRetailing.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ecommerce",
+              "shopping"
+            ]
+          },
+          "aiSummary": "AI is set to reshape the shopping and delivery experience for UK retailers, leading to a forecasted growth in ecommerce sales in 2026. This trend is highlighted in a recent article from Internet Retailing."
+        },
+        {
+          "id": "y7794c",
+          "title": "FedEx launches AI-powered tracking and returns tools",
+          "url": "https://www.digitalcommerce360.com/2026/02/02/fedex-launches-ai-tracking-returns-tools/",
+          "source": "Digital Commerce 360",
+          "published_at": "2026-02-02T17:57:01.000Z",
+          "ingested_at": "2026-02-02T20:51:37.885Z",
+          "snippet": "FedEx Corp. is expanding its role in ecommerce beyond transportation with the launch of two AI-powered digital tools designed to help retailers and brands manage tracking, returns and customer communication within their own websites and apps. The company introduced FedEx Tracking+ and FedEx Returns+, developed in collaboration with parcelLab, as white-labeled AI capabilities that can […]\nThe post FedEx launches AI-powered tracking and returns tools appeared first on Digital Commerce 360.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ecommerce"
+            ]
+          },
+          "aiSummary": "AI-generated summary: FedEx has introduced AI-powered tools, FedEx Tracking+ and FedEx Returns+, to assist retailers and brands in managing tracking, returns, and customer communication on their websites and apps, expanding its role in ecommerce beyond transportation."
+        },
+        {
+          "id": "w0fily",
+          "title": "Amazon Go? It’s gone. And this is why it went.",
+          "url": "https://www.computerworld.com/article/4125267/amazon-go-its-gone-and-this-is-why-it-went.html",
+          "source": "Computerworld - Ecommerce",
+          "published_at": "2026-02-02T07:00:00.000Z",
+          "ingested_at": "2026-02-02T20:51:37.885Z",
+          "snippet": "For years, Amazon Go stores stood at the pinnacle of retail store technology, showcasing a massive number of high-resolution digital cameras in each store that could visually track every customer and how that shopper interacted with every product. \nThe stores showcased Amazon’s technological superiority and brought an eerily human- and friction-free element to convenience store shopping. Unfortunately, the whole setup was also a poster child for technology that isn’t profitable and has no realis...",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "shopping"
+            ]
+          },
+          "aiSummary": "AI-Generated Summary:\nAmazon Go stores, known for their advanced technology, closed due to lack of profitability despite their innovative approach to convenience store shopping. The stores featured high-resolution cameras to track customers and products, highlighting Amazon's technological prowess in retail."
+        },
+        {
+          "id": "los4qe",
+          "title": "Amazon set to pass Walmart in annual revenue for the first time after hitting $700 billion in sales",
+          "url": "https://www.modernretail.co/operations/amazon-set-to-pass-walmart-in-annual-revenue-for-the-first-time-after-hitting-700-billion-in-sales/?utm_campaign=modernretaildis&utm_medium=rss&utm_source=general-rss",
+          "source": "Modern Retail",
+          "published_at": "2026-02-05T22:23:58.000Z",
+          "ingested_at": "2026-02-07T12:42:23.752Z",
+          "snippet": "Amazon may soon outpace Walmart when it comes to total revenue.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": []
+          },
+          "aiSummary": "AI-Generated Summary:\nAmazon is on track to surpass Walmart in annual revenue for the first time, reaching $700 billion in sales."
+        },
+        {
+          "id": "c2g8f",
+          "title": "Cardinal Health expands ecommerce and leans on AI to boost efficiency",
+          "url": "https://www.digitalcommerce360.com/2026/02/06/cardinal-health-ecommerce-ai-revenue-q2-fy26/",
+          "source": "Digital Commerce 360",
+          "published_at": "2026-02-06T21:42:27.000Z",
+          "ingested_at": "2026-02-07T12:42:23.752Z",
+          "snippet": "Cardinal Health executives used the company’s fiscal Q2 earnings call to detail how investments are affecting revenue, reshaping operations across its pharmaceutical, specialty and logistics businesses. The Dublin, Ohio-based health care distributor focuses on its investments in ecommerce, patient-support digitization, distribution center automation and data tools. Cardinal Health posted Q2 revenue of $65.6 billion. That […]\nThe post Cardinal Health expands ecommerce and leans on AI to boost eff...",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ecommerce",
+              "logistics"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Cardinal Health is expanding its ecommerce efforts and utilizing AI to enhance efficiency, with investments in patient-support digitization, distribution center automation, and data tools. The company reported Q2 revenue of $65.6 billion during its earnings call."
+        },
+        {
+          "id": "chsrkn",
+          "title": "Insider One Native Integration with Shopify Markets",
+          "url": "https://insiderone.com/insider-one-native-integration-with-shopify-markets/",
+          "source": "UseInsider",
+          "published_at": "2026-02-03T19:27:13.000Z",
+          "ingested_at": "2026-02-07T12:42:23.752Z",
+          "snippet": "Insider One Announces Native Integration with Shopify Markets Why Shopify Markets matters for global ecommerce teams Shopify Markets allows brands to manage multiple regions, currencies, languages, and domains from a single Shopify store. For global ecommerce teams, this simplifies storefront operations, but for marketing teams, could introduce complexity across how to activate and manage customer […]",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ecommerce"
+            ]
+          },
+          "aiSummary": "AI-Generated Summary:\nInsider One has announced a native integration with Shopify Markets, offering global ecommerce teams the ability to manage multiple regions, currencies, languages, and domains from a single Shopify store. This simplifies storefront operations for brands but may introduce complexity for marketing teams in activating and managing customer engagement."
+        },
+        {
+          "id": "wicos4",
+          "title": "New Ecommerce Tools: February 4, 2026",
+          "url": "https://www.practicalecommerce.com/new-ecommerce-tools-february-4-2026",
+          "source": "Practical Ecommerce",
+          "published_at": "2026-02-04T13:28:36.000Z",
+          "ingested_at": "2026-02-07T12:42:23.752Z",
+          "snippet": "This week: rollouts for website builders, B2B and B2C ecommerce platforms, shipping, buy-now pay-later, checkout integrations, agentic commerce, and more.\nThe post New Ecommerce Tools: February 4, 2026 appeared first on Practical Ecommerce.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.25,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ecommerce",
+              "checkout",
+              "platform"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Practical Ecommerce's latest article highlights new ecommerce tools released on February 4, 2026, including website builders, B2B and B2C platforms, shipping solutions, buy-now pay-later options, checkout integrations, and agentic commerce features."
+        }
+      ]
+    },
+    "Luxury_and_Consumer": {
+      "total": 118,
+      "top": [
+        {
+          "id": "cf0qi",
+          "title": "Amazon’s $200 Billion Spending Plan Raises Stakes in A.I. Race",
+          "url": "https://www.nytimes.com/2026/02/05/technology/amazon-200-billion-ai.html",
+          "source": "NYTimes Technology",
+          "published_at": "2026-02-05T23:51:01.000Z",
+          "ingested_at": "2026-02-07T12:42:23.752Z",
+          "snippet": "The company reported a strong holiday quarter on Thursday. But its spending, like that at other big technology companies, is starting to make investors nervous.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.25,
+            "recencyScore": 0,
+            "sourceWeight": 0.15,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "spending"
+            ]
+          },
+          "aiSummary": "AI-Generated Summary:\nAmazon's $200 billion spending plan, despite a strong holiday quarter, is causing investor concern as the company ramps up investments in artificial intelligence, raising the stakes in the tech industry."
+        },
+        {
+          "id": "eslito",
+          "title": "The Metrics That Matter in Today’s Creator Economy",
+          "url": "https://www.businessoffashion.com/articles/marketing-pr/how-fashion-measures-the-value-of-the-creator-economy-today/",
+          "source": "Business of Fashion - News",
+          "published_at": "2026-02-04T05:30:00.000Z",
+          "ingested_at": "2026-02-07T12:42:23.752Z",
+          "snippet": "As influencer marketing becomes more essential, and creators demand more money, brands have to parse through an increasing amount of data to confidently invest in their influencer strategies.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0.1,
+            "penalty": 0,
+            "matchedKeywords": [
+              "demand",
+              "brand"
+            ]
+          },
+          "aiSummary": "AI-Generated Summary:\nIn today's creator economy, brands must navigate a wealth of data to effectively invest in influencer marketing as creators seek higher compensation."
+        },
+        {
+          "id": "cx9qkg",
+          "title": "Lanvin Group Sells High-End Italian Menswear Manufacturer Caruso",
+          "url": "https://www.businessoffashion.com/news/luxury/lanvin-group-sells-high-end-italian-menswear-manufacturer-caruso/",
+          "source": "Business of Fashion - News",
+          "published_at": "2026-02-06T16:46:06.000Z",
+          "ingested_at": "2026-02-07T12:42:23.752Z",
+          "snippet": "The Chinese-owned luxury group is focusing on its consumer-facing brands.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.2,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "high-end",
+              "luxury",
+              "consumer",
+              "brand"
+            ]
+          },
+          "aiSummary": "AI-Generated Summary:\nThe Lanvin Group, owned by Chinese investors, has sold the high-end Italian menswear manufacturer Caruso as part of its focus on consumer-facing brands in the luxury industry."
+        },
+        {
+          "id": "kqjhm1",
+          "title": "Gildo Zegna on Flexibility, Vision to Tackle New Normal",
+          "url": "https://wwd.com/business-news/financial/gildo-zegna-flexibility-vision-tackle-new-normal-1238535883/",
+          "source": "WWD - Women's Wear Daily",
+          "published_at": "2026-02-02T18:56:47.000Z",
+          "ingested_at": "2026-02-02T20:51:37.885Z",
+          "snippet": "Appointed executive chairman on Jan. 1, Zegna commented on the Ermenegildo Zegna Group's preliminary revenues, as he bolsters direct-to-consumer sales, and plans strategic retail expansions for the Zegna, Thom Browne and Tom Ford Fashion brands.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "consumer",
+              "brand"
+            ]
+          },
+          "aiSummary": "AI-Generated Summary:\nGildo Zegna, the new executive chairman of Ermenegildo Zegna Group, is focusing on boosting direct-to-consumer sales and expanding retail presence for luxury brands like Zegna, Thom Browne, and Tom Ford."
+        },
+        {
+          "id": "y2q76g",
+          "title": "Moonglaze Becomes First Saudi Beauty Brand to Launch at Sephora Middle East",
+          "url": "https://wwd.com/beauty-industry-news/color-cosmetics/moonglaze-sephora-launch-1238552541/",
+          "source": "WWD - Women's Wear Daily",
+          "published_at": "2026-02-06T21:04:07.000Z",
+          "ingested_at": "2026-02-07T12:42:23.752Z",
+          "snippet": "Founded by makeup artist Yara Alnamlah, the skin-first brand debuted its full collection alongside two Sephora exclusive launches.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "brand",
+              "exclusive"
+            ]
+          },
+          "aiSummary": "AI-Generated Summary:\nMoonglaze, the first Saudi beauty brand, launched at Sephora Middle East with a full collection and two exclusive products. Founded by makeup artist Yara Alnamlah, the brand focuses on skincare."
+        },
+        {
+          "id": "b59f6",
+          "title": "Creating Meaningful Connections With the Gulf Consumer",
+          "url": "https://www.businessoffashion.com/reports/global-markets/creating-meaningful-connections-with-gulf-consumer-with-snapchat/",
+          "source": "Business of Fashion - News",
+          "published_at": "2026-02-04T05:00:00.000Z",
+          "ingested_at": "2026-02-07T12:42:23.752Z",
+          "snippet": "BoF’s latest knowledge report examines strategies for how fashion and beauty brands can create lasting impact and culturally resonant activations with the GCC consumer base.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "consumer",
+              "brand"
+            ]
+          },
+          "aiSummary": "AI-Generated Summary:\nBoF's report explores ways for fashion and beauty brands to establish meaningful connections and culturally relevant initiatives with Gulf consumers in the GCC region."
+        },
+        {
+          "id": "ig1x8v",
+          "title": "Siemens Energy Bets $1 Billion That A.I. Power Demand Will Last",
+          "url": "https://www.nytimes.com/2026/02/03/business/energy-environment/siemens-energy-ai-power-demand.html",
+          "source": "NYTimes Technology",
+          "published_at": "2026-02-03T11:00:16.000Z",
+          "ingested_at": "2026-02-07T12:42:23.752Z",
+          "snippet": "The German manufacturer announced plans to expand factories in several U.S. states and build a new plant in Mississippi.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0.15,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "demand"
+            ]
+          },
+          "aiSummary": "AI-generated summary:\nSiemens Energy is investing $1 billion to expand factories in the U.S. and build a new plant in Mississippi, betting on the lasting power demand driven by artificial intelligence."
+        }
+      ]
+    },
+    "Jewellery_Industry": {
+      "total": 32,
+      "top": [
+        {
+          "id": "697xbn",
+          "title": "Optimistic outlook for Swatch despite sales slide",
+          "url": "https://www.jewellermagazine.com/Article/14720/Optimistic-outlook-for-Swatch-despite-sales-slide",
+          "source": "Jeweller - Business News",
+          "published_at": "2026-02-02T13:00:00.000Z",
+          "ingested_at": "2026-02-07T12:42:23.752Z",
+          "snippet": "The Swatch Group has reported a decline in revenue over the past financial year, attributed to poor demand in Asian markets.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "watch"
+            ]
+          },
+          "aiSummary": "AI-Generated Summary:\nDespite a sales decline due to weak demand in Asian markets, Swatch Group remains optimistic about its future prospects in the jewellery industry."
+        },
+        {
+          "id": "doie8k",
+          "title": "58 Percent of Surveyed Jewelers Report Growth in December",
+          "url": "https://instoremag.com/58-percent-of-surveyed-jewelers-report-growth-in-december/",
+          "source": "Instore Magazine",
+          "published_at": "2026-02-06T01:38:23.000Z",
+          "ingested_at": "2026-02-07T12:42:23.752Z",
+          "snippet": "Of 101 jewelers surveyed, only 18% reported losses year over year.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.15,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0,
+            "insightSignalBoost": 0.15,
+            "penalty": 0,
+            "matchedKeywords": []
+          },
+          "aiSummary": "AI-Generated Summary:\nAccording to a survey by Instore Magazine, 58% of jewelers experienced growth in December, with only 18% reporting losses compared to the previous year."
+        },
+        {
+          "id": "s0kad7",
+          "title": "Suspect in staggering jewellery heist deported before trial",
+          "url": "https://www.jewellermagazine.com/Article/14726/Suspect-in-staggering-jewellery-heist-deported-before-trial",
+          "source": "Jeweller - Business News",
+          "published_at": "2026-02-02T13:00:00.000Z",
+          "ingested_at": "2026-02-07T12:42:23.752Z",
+          "snippet": "An individual accused of participating in a jewellery heist, described by investigators as the largest in US history, may never face trial because he was deported.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "jewellery",
+              "jeweller"
+            ]
+          },
+          "aiSummary": "AI-generated summary: A suspect involved in a massive jewellery heist, considered the largest in US history, has been deported before facing trial, raising doubts about the possibility of legal consequences."
+        },
+        {
+          "id": "uceuly",
+          "title": "Hailey Bieber’s 30-Carat Choker and 9 More Diamond Looks From the Grammys",
+          "url": "https://instoremag.com/hailey-biebers-30-carat-choker-and-9-more-diamond-looks-from-the-grammys/",
+          "source": "Instore Magazine",
+          "published_at": "2026-02-02T03:30:34.000Z",
+          "ingested_at": "2026-02-02T20:51:37.885Z",
+          "snippet": "The best celebrity diamond jewelry from music's biggest night.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "diamond",
+              "jewelry"
+            ]
+          },
+          "aiSummary": "AI-Generated Summary:\nCelebrities showcased stunning diamond jewelry at the Grammys, including Hailey Bieber's 30-carat choker. The event highlighted the glamour and luxury of the jewellery industry."
+        },
+        {
+          "id": "isx1rx",
+          "title": "‘Don Colossus,’ a Golden Statue of President Trump, Waits for Its Home",
+          "url": "https://www.nytimes.com/2026/02/03/technology/trump-statue-don-colossus.html",
+          "source": "NYTimes Technology",
+          "published_at": "2026-02-03T20:53:42.000Z",
+          "ingested_at": "2026-02-07T12:42:23.752Z",
+          "snippet": "A group of cryptocurrency investors backing a memecoin hopes the statue will soon be installed at one of Mr. Trump’s golf courses in Florida.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0.15,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "gold"
+            ]
+          },
+          "aiSummary": "AI-Generated Summary:\nA golden statue of President Trump, funded by cryptocurrency investors, is set to be placed at one of his Florida golf courses."
+        },
+        {
+          "id": "k6jhxf",
+          "title": "Jewelry Retailers Offer Hospitality In Creative Ways [Photo Gallery]",
+          "url": "https://instoremag.com/jewelry-retailers-offer-hospitality-in-creative-ways-photo-gallery/",
+          "source": "Instore Magazine",
+          "published_at": "2026-02-06T01:00:55.000Z",
+          "ingested_at": "2026-02-07T12:42:23.752Z",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "jewelry",
+              "retailer"
+            ]
+          }
+        },
+        {
+          "id": "52h5f8",
+          "title": "New details emerge of Jeffrey Epstein’s diamonds",
+          "url": "https://www.jewellermagazine.com/Article/14722/New-details-emerge-of-Jeffrey-Epsteins-diamonds",
+          "source": "Jeweller - Business News",
+          "published_at": "2026-02-02T13:00:00.000Z",
+          "ingested_at": "2026-02-07T12:42:23.752Z",
+          "snippet": "Recently released documents related to the investigation of Jeffrey Epstein, a notorious financier, sex offender, and human trafficker, have provided new insights into his affinity for luxury goods, including diamonds.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "diamond"
+            ]
+          },
+          "aiSummary": "AI-Generated Summary:\nNewly revealed documents shed light on Jeffrey Epstein's fondness for luxury items, particularly diamonds, as part of ongoing investigations into his criminal activities."
+        }
+      ]
+    }
+  },
+  "coverImageUrl": "/weekly-images/2026-W06.png",
+  "coverImageAlt": "Weekly cover illustration for 2026-W06"
+}

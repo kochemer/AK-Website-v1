@@ -2,8 +2,10 @@ import { promises as fs } from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import crypto from 'crypto';
+import { DateTime } from 'luxon';
+import { getWeekRangeCET } from '../lib/utils/weekCET';
 import type { SelectedArticle } from './selectTop';
-import type { Article } from '../ingestion/types';
+import type { Article } from '../lib/types';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -37,6 +39,20 @@ function titleSimilarity(title1: string, title2: string): number {
   const union = new Set([...words1, ...words2]);
   
   return intersection.size / union.size;
+}
+
+function getWeekDateRange(weekLabel: string): { weekStart: Date; weekEnd: Date } {
+  const weekMatch = weekLabel.match(/^(\d{4})-W(\d{1,2})$/);
+  if (!weekMatch) {
+    throw new Error(`Invalid weekLabel: ${weekLabel}`);
+  }
+  const year = parseInt(weekMatch[1], 10);
+  const weekNumber = parseInt(weekMatch[2], 10);
+  const dt = DateTime.fromObject({ weekYear: year, weekNumber }, { zone: 'Europe/Copenhagen' });
+  if (!dt.isValid) {
+    throw new Error(`Invalid week: ${weekLabel}. ${dt.invalidReason}`);
+  }
+  return getWeekRangeCET(dt.toJSDate());
 }
 
 async function loadArticles(): Promise<Article[]> {
@@ -85,6 +101,9 @@ export async function mergeDiscoveryArticles(
   let added = 0;
   let updated = 0;
   const now = new Date().toISOString();
+  const { weekStartCET, weekEndCET } = getWeekDateRange(weekLabel);
+  const guardStart = DateTime.fromJSDate(weekStartCET).minus({ days: 7 });
+  const guardEnd = DateTime.fromJSDate(weekEndCET).plus({ days: 7 });
   const newDiscoveryArticles: Article[] = [...existingDiscoveryArticles];
 
   for (const selectedArticle of selected) {
@@ -121,21 +140,47 @@ export async function mergeDiscoveryArticles(
     // Create new discovery article
     // Use discoveredAt from extraction if available, otherwise use current time
     const discoveredAt = (selectedArticle as any).discoveredAt || now;
-    
+
     // Preserve sourceType from extraction (consultancy vs discovery)
     const sourceType = (selectedArticle as any).sourceType || 'discovery';
-    
+
+    // Published date handling with guardrails
+    const publishedAt = (selectedArticle as any).publishedAt ?? selectedArticle.publishedDate ?? null;
+    const dateSource = (selectedArticle as any).dateSource || (publishedAt ? 'tavily' : 'none');
+    const dateSourceDetail = (selectedArticle as any).dateSourceDetail || (dateSource === 'tavily' ? 'tavily' : 'none');
+    let dateConfidence = (selectedArticle as any).dateConfidence || (publishedAt ? 'medium' : 'low');
+    let assignedPublishedAt = publishedAt;
+    let usedDiscoveredAtFallback = false;
+
+    if (!publishedAt) {
+      assignedPublishedAt = discoveredAt;
+      usedDiscoveredAtFallback = true;
+      dateConfidence = 'low';
+    } else {
+      const publishedDt = DateTime.fromISO(publishedAt, { zone: 'utc' });
+      if (!publishedDt.isValid || publishedDt < guardStart || publishedDt > guardEnd) {
+        assignedPublishedAt = discoveredAt;
+        usedDiscoveredAtFallback = true;
+        dateConfidence = 'low';
+      }
+    }
+
     const newArticle: Article = {
       id: hashString(selectedArticle.url),
       title: selectedArticle.title,
       url: selectedArticle.url,
       source: selectedArticle.domain,
-      published_at: selectedArticle.publishedDate || now, // Fallback to now if missing
+      published_at: assignedPublishedAt || now, // Fallback to now if missing
       ingested_at: now,
       snippet: selectedArticle.snippet,
       discoveredAt: discoveredAt,
-      publishedDateInvalid: (selectedArticle as any).publishedDateInvalid || false,
-      sourceType: sourceType as 'discovery' | 'consultancy' | 'platform'
+      publishedDateInvalid: !publishedAt,
+      usedDiscoveredAtFallback,
+      sourceType: sourceType as 'discovery' | 'consultancy' | 'platform',
+      publishedAt,
+      dateSource,
+      dateSourceDetail,
+      dateConfidence
     };
 
     newDiscoveryArticles.push(newArticle);

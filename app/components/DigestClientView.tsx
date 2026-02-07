@@ -3,8 +3,9 @@
 import { useSearchParams } from 'next/navigation';
 import { useMemo, useState, useEffect } from 'react';
 import CategorySection from './CategorySection';
-import { getTopicDisplayName, TopicKey } from '../../utils/topicNames';
-import { formatDate } from '../../utils/formatDate';
+import { getTopicDisplayName, TopicKey } from '@/lib/utils/topicNames';
+import { formatDate } from '@/lib/utils/formatDate';
+import type { WeeklyDigest } from '@/lib/types';
 
 const VALID_N_VALUES = [3, 4, 5, 6, 7] as const;
 const DEFAULT_N = 7;
@@ -30,46 +31,6 @@ function getNFromStorage(): TopNValue | null {
   }
   return null;
 }
-
-type Article = {
-  id: string;
-  title: string;
-  url: string;
-  source: string;
-  published_at: string;
-  ingested_at: string;
-  aiSummary?: string | null;
-};
-
-type WeeklyDigest = {
-  weekLabel: string;
-  tz: string;
-  startISO: string;
-  endISO: string;
-  builtAtISO?: string;
-  builtAtLocal?: string;
-  coverImageUrl?: string;
-  coverImageAlt?: string;
-  coverKeywords?: string[];
-  keyThemes?: string[];
-  oneSentenceSummary?: string;
-  introParagraph?: string;
-  totals: {
-    total: number;
-    byTopic: {
-      AIStrategy: number;
-      EcommerceRetail: number;
-      LuxuryConsumer: number;
-      Jewellery: number;
-    };
-  };
-  topics: {
-    AI_and_Strategy: { total: number; top: Article[] };
-    Ecommerce_Retail_Tech: { total: number; top: Article[] };
-    Luxury_and_Consumer: { total: number; top: Article[] };
-    Jewellery_Industry: { total: number; top: Article[] };
-  };
-};
 
 type CategoryCard = {
   key: TopicKey;
