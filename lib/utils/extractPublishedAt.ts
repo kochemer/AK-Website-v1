@@ -69,7 +69,7 @@ function getAllowedRange(options?: ExtractPublishedAtOptions): { min: DateTime; 
       ? DateTime.fromISO(options.weekEnd, { zone: 'utc' })
       : DateTime.fromJSDate(options.weekEnd).toUTC();
 
-    if (weekStart < min) {
+    if (weekStart.isValid && weekEnd.isValid && weekStart < min) {
       min = weekStart.startOf('day');
       max = weekEnd.endOf('day');
     }
@@ -170,7 +170,7 @@ function normalizeRawDate(
   return { iso: null, confidence: 'low', raw: trimmed };
 }
 
-function extractJsonLdDates($: cheerio.CheerioAPI): string[] {
+function extractJsonLdDates($: cheerio.Root): string[] {
   const dates: string[] = [];
   const scripts = $('script[type="application/ld+json"]');
   if (scripts.length === 0) return dates;
@@ -213,7 +213,7 @@ function extractJsonLdDates($: cheerio.CheerioAPI): string[] {
   return dates;
 }
 
-function extractMetaDates($: cheerio.CheerioAPI, metaKeys?: string[]): string[] {
+function extractMetaDates($: cheerio.Root, metaKeys?: string[]): string[] {
   const selectors = [
     'meta[property="article:published_time"]',
     'meta[property="og:published_time"]',
@@ -248,7 +248,7 @@ function extractMetaDates($: cheerio.CheerioAPI, metaKeys?: string[]): string[] 
   return dates;
 }
 
-function extractTimeDates($: cheerio.CheerioAPI, cssSelectors?: string[]): string[] {
+function extractTimeDates($: cheerio.Root, cssSelectors?: string[]): string[] {
   const dates: string[] = [];
   const timeEl = $('time[datetime]').first();
   if (timeEl.length > 0) {

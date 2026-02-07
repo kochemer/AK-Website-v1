@@ -52,7 +52,8 @@ function getWeekDateRange(weekLabel: string): { weekStart: Date; weekEnd: Date }
   if (!dt.isValid) {
     throw new Error(`Invalid week: ${weekLabel}. ${dt.invalidReason}`);
   }
-  return getWeekRangeCET(dt.toJSDate());
+  const { weekStartCET, weekEndCET } = getWeekRangeCET(dt.toJSDate());
+  return { weekStart: weekStartCET, weekEnd: weekEndCET };
 }
 
 async function loadArticles(): Promise<Article[]> {
@@ -101,9 +102,9 @@ export async function mergeDiscoveryArticles(
   let added = 0;
   let updated = 0;
   const now = new Date().toISOString();
-  const { weekStartCET, weekEndCET } = getWeekDateRange(weekLabel);
-  const guardStart = DateTime.fromJSDate(weekStartCET).minus({ days: 7 });
-  const guardEnd = DateTime.fromJSDate(weekEndCET).plus({ days: 7 });
+  const { weekStart, weekEnd } = getWeekDateRange(weekLabel);
+  const guardStart = DateTime.fromJSDate(weekStart).minus({ days: 7 });
+  const guardEnd = DateTime.fromJSDate(weekEnd).plus({ days: 7 });
   const newDiscoveryArticles: Article[] = [...existingDiscoveryArticles];
 
   for (const selectedArticle of selected) {
