@@ -765,7 +765,7 @@ async function extractArticle(
             ? tavilyDateResult
             : (searchResultDate && searchResultDate.publishedAt)
               ? searchResultDate
-              : { publishedAt: null, source: 'none', sourceDetail: 'none', confidence: 'low' as const };
+              : { publishedAt: null, rawValue: undefined, source: 'none' as const, sourceDetail: 'none' as const, confidence: 'low' as const };
 
         const discoveredAt = new Date().toISOString();
         const publishedAt = dateResult.publishedAt;
