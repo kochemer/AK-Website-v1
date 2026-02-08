@@ -78,20 +78,25 @@ jobs:
             exit 0
           fi
           
-          # Check if changes are only in data/digests/
+          # Check if changes are only in allowed directories:
+          # - data/digests/ (digest JSON files)
+          # - data/weeks/*/health.json (health reports)
           CHANGED_FILES=$(git status --porcelain | awk '{print $2}')
-          NON_DIGEST_CHANGES=$(echo "$CHANGED_FILES" | grep -v "^data/digests/" || true)
+          ALLOWED_PATTERN="^data/digests/|^data/weeks/[^/]+/health.json$"
+          NON_ALLOWED_CHANGES=$(echo "$CHANGED_FILES" | grep -vE "$ALLOWED_PATTERN" || true)
           
-          if [ -n "$NON_DIGEST_CHANGES" ]; then
-            echo "❌ Error: Changes detected outside data/digests/ directory:"
-            echo "$NON_DIGEST_CHANGES"
+          if [ -n "$NON_ALLOWED_CHANGES" ]; then
+            echo "❌ Error: Changes detected outside allowed directories:"
+            echo "$NON_ALLOWED_CHANGES"
             echo ""
-            echo "This workflow only commits changes to data/digests/ for safety."
+            echo "This workflow only commits changes to:"
+            echo "  - data/digests/ (digest JSON files)"
+            echo "  - data/weeks/*/health.json (health reports)"
             exit 1
           fi
           
           echo "has_changes=true" >> $GITHUB_OUTPUT
-          echo "Changes detected in data/digests/"
+          echo "Changes detected in allowed directories"
 
       - name: Configure Git
         if: steps.check-changes.outputs.has_changes == 'true'
@@ -102,7 +107,7 @@ jobs:
       - name: Commit and push changes
         if: steps.check-changes.outputs.has_changes == 'true'
         run: |
-          git add data/digests/
+          git add data/digests/ data/weeks/*/health.json
           if git diff --staged --quiet; then
             echo "No staged changes to commit"
             exit 0
