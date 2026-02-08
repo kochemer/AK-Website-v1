@@ -51,3 +51,7 @@ tools/ffmpeg/ffmpeg
 tools/ffmpeg/ffmpeg.exe
 tools/ffmpeg/ffprobe
 tools/ffmpeg/ffprobe.exe
+
+# Email sending data (contains recipient lists and sent logs)
+data/email/recipients.json
+data/email/sent/

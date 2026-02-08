@@ -16,7 +16,8 @@
     "cover": "tsx scripts/regenerateCover.ts",
     "podcast": "tsx scripts/buildWeeklyPodcast.ts",
     "digest:weekly": "tsx scripts/runWeeklyPipeline.ts",
-    "digest:preflight": "tsx scripts/preflightDigestEnv.ts"
+    "digest:preflight": "tsx scripts/preflightDigestEnv.ts",
+    "email:weekly": "tsx scripts/sendWeeklyEmailDigest.ts"
   },
   "dependencies": {
     "@amplitude/unified": "^1.0.0-beta.9",
@@ -31,6 +32,7 @@
     "openai": "^6.15.0",
     "react": "19.2.3",
     "react-dom": "19.2.3",
+    "resend": "^4.8.0",
     "rss-parser": "^3.13.0",
     "tsx": "^4.21.0",
     "web-push": "^3.6.7"

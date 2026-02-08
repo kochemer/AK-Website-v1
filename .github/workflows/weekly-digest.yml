@@ -68,6 +68,18 @@ jobs:
           NODE_ENV: production
         run: npm run digest:weekly
 
+      - name: Prepare email recipients file
+        run: |
+          mkdir -p data/email
+          echo '${{ secrets.EMAIL_RECIPIENTS_JSON }}' > data/email/recipients.json
+
+      - name: Send weekly email digest (dry-run unless enabled)
+        env:
+          EMAIL_SEND_ENABLED: ${{ vars.EMAIL_SEND_ENABLED }}
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          EMAIL_FROM: ${{ secrets.EMAIL_FROM }}
+        run: npm run email:weekly
+
       - name: Check for changes
         id: check-changes
         run: |

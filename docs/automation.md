@@ -127,6 +127,12 @@ Configure these in your repository settings: **Settings → Secrets and variable
 - `QUERY_DELTA_MODEL` - OpenAI model for query generation (defaults to `gpt-4o`)
 - `EMAIL_DIGEST_MODEL` - OpenAI model for email digest generation (defaults to `gpt-4o-mini`)
 
+**For email sending (optional):**
+- `EMAIL_SEND_ENABLED` - Repository variable (not secret). Set to `"true"` to enable email sending (default: dry-run). Configure in **Settings → Secrets and variables → Actions → Variables** tab.
+- `RESEND_API_KEY` - Resend API key (required if EMAIL_SEND_ENABLED=true). Configure in **Settings → Secrets and variables → Actions → Secrets** tab.
+- `EMAIL_FROM` - Sender email address (required if EMAIL_SEND_ENABLED=true). Format: `"Luxury Intelligence <noreply@luxury-intel.com>"`. Configure in **Settings → Secrets and variables → Actions → Secrets** tab.
+- `EMAIL_RECIPIENTS_JSON` - Secret containing JSON array of recipients. Format: `[{"email": "user@example.com", "name": "Optional Name"}]`. Configure in **Settings → Secrets and variables → Actions → Secrets** tab. Example: `[{"email": "kochemir@gmail.com"}]`
+
 ### Manual Run
 
 To trigger the workflow manually:
@@ -176,8 +182,11 @@ Edit the cron expression in `.github/workflows/weekly-digest.yml`:
 1. **Checks out repository** (full history for git operations)
 2. **Sets up Node.js** (checks `.nvmrc`, `package.json` engines, or defaults to Node 20)
 3. **Installs dependencies** (`npm ci`)
-4. **Builds weekly digest** (`npm run digest:weekly`)
-5. **Checks for changes**:
+4. **Runs preflight check** (validates required environment variables)
+5. **Builds weekly digest** (`npm run digest:weekly`)
+6. **Prepares email recipients file** (from `EMAIL_RECIPIENTS_JSON` secret)
+7. **Sends weekly email digest** (dry-run unless `EMAIL_SEND_ENABLED=true`)
+8. **Checks for changes**:
    - If no changes: exits successfully with message
    - If changes only in `data/digests/`: commits and pushes
    - If changes outside `data/digests/`: fails with error (safety check)
