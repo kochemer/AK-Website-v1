@@ -215,16 +215,31 @@ async function sendEmails(
 
     const promises = batch.map(async (recipient) => {
       try {
-        await resend.emails.send({
+        const response = await resend.emails.send({
           from: fromEmail,
           to: recipient.email,
           subject,
           html,
           text,
         });
-        return { success: true, email: recipient.email };
+        
+        // Log response for debugging
+        if (response.data) {
+          console.log(`[Email] Sent to ${recipient.email}, ID: ${response.data.id || 'unknown'}`);
+        } else if (response.error) {
+          const errorMsg = response.error.message || JSON.stringify(response.error);
+          console.error(`[Email] Resend API error for ${recipient.email}: ${errorMsg}`);
+          return { success: false, email: recipient.email, error: errorMsg };
+        }
+        
+        return { success: true, email: recipient.email, emailId: response.data?.id };
       } catch (error: any) {
-        return { success: false, email: recipient.email, error: error.message || String(error) };
+        const errorMsg = error.message || error.toString();
+        console.error(`[Email] Exception sending to ${recipient.email}: ${errorMsg}`);
+        if (error.response?.data) {
+          console.error(`[Email] Resend API response: ${JSON.stringify(error.response.data)}`);
+        }
+        return { success: false, email: recipient.email, error: errorMsg };
       }
     });
 
@@ -337,8 +352,18 @@ async function main() {
     process.exit(1);
   }
 
+  // Extract domain from EMAIL_FROM for verification warning
+  const emailMatch = fromEmail.match(/<([^>]+)>/) || fromEmail.match(/([^\s<]+@[^\s>]+)/);
+  const fromDomain = emailMatch ? emailMatch[1].split('@')[1] : null;
+  if (fromDomain) {
+    console.log(`[Email] Sender domain: ${fromDomain}`);
+    console.log(`[Email] ⚠️  Ensure this domain is verified in your Resend dashboard`);
+  }
+
   // Send emails
   console.log(`[Email] Sending to ${recipients.length} recipients...`);
+  console.log(`[Email] From: ${fromEmail}`);
+  console.log(`[Email] Subject: ${subject}`);
   const resend = new Resend(resendApiKey);
   const timestamp = new Date().toISOString();
 
