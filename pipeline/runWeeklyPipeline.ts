@@ -239,13 +239,13 @@ export async function runWeeklyPipeline(options: RunWeeklyPipelineOptions = {}):
       // Load existing digest for validation and health checks
       const existingDigest = await loadDigest(digestWeek);
       if (existingDigest) {
-        // Validate existing digest
+        // Validate existing digest (warn-only, don't fail workflow)
         const validation = validateDigest(existingDigest, { minArticlesPerCategory });
         if (!validation.valid) {
-          console.error(`[Pipeline] ✗ Existing digest is invalid:`);
-          validation.errors.forEach(err => console.error(`  - ${err}`));
-          console.error(`[Pipeline] Use FORCE_REBUILD=1 to rebuild`);
-          throw new Error(`Existing digest is invalid: ${validation.errors.join('; ')}`);
+          console.warn(`[Pipeline] ⚠ Existing digest has validation issues:`);
+          validation.errors.forEach(err => console.warn(`  - ${err}`));
+          console.warn(`[Pipeline] Consider using FORCE_REBUILD=1 to rebuild if issues need fixing`);
+          // Don't throw - just warn, since we're skipping the build anyway
         }
         if (validation.warnings.length > 0) {
           console.warn(`[Pipeline] ⚠ Validation warnings:`);
