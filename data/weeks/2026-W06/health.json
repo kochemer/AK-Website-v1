@@ -1,0 +1,30 @@
+{
+  "digestWeek": "2026-W06",
+  "ingestionWeek": "2026-W06",
+  "startedAt": "2026-02-08T19:23:20.336Z",
+  "finishedAt": "2026-02-08T19:23:20.358Z",
+  "steps": [
+    {
+      "name": "skip",
+      "ok": true,
+      "startedAt": "2026-02-08T19:23:20.336Z",
+      "finishedAt": "2026-02-08T19:23:20.358Z"
+    }
+  ],
+  "health": {
+    "warnings": [
+      "AI & Strategy: www.pymnts.com represents 42.9% (3/7) - exceeds 40% threshold",
+      "Luxury & Consumer: www.businessoffashion.com represents 42.9% (3/7) - exceeds 40% threshold",
+      "Jewellery Industry: www.jewellermagazine.com represents 42.9% (3/7) - exceeds 40% threshold",
+      "Jewellery Industry: instoremag.com represents 42.9% (3/7) - exceeds 40% threshold"
+    ],
+    "metrics": {
+      "paywallPercent": 0,
+      "podcastWordCount": 1576
+    }
+  },
+  "versions": {
+    "node": "v20.20.0",
+    "gitCommit": "f7d7d96787568d7385adb14ee49d957028e59fee"
+  }
+}
