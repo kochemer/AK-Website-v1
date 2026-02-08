@@ -1,14 +1,14 @@
 {
   "digestWeek": "2026-W06",
   "ingestionWeek": "2026-W06",
-  "startedAt": "2026-02-08T19:23:20.336Z",
-  "finishedAt": "2026-02-08T19:23:20.358Z",
+  "startedAt": "2026-02-08T20:33:49.072Z",
+  "finishedAt": "2026-02-08T20:33:49.094Z",
   "steps": [
     {
       "name": "skip",
       "ok": true,
-      "startedAt": "2026-02-08T19:23:20.336Z",
-      "finishedAt": "2026-02-08T19:23:20.358Z"
+      "startedAt": "2026-02-08T20:33:49.072Z",
+      "finishedAt": "2026-02-08T20:33:49.094Z"
     }
   ],
   "health": {
@@ -25,6 +25,6 @@
   },
   "versions": {
     "node": "v20.20.0",
-    "gitCommit": "f7d7d96787568d7385adb14ee49d957028e59fee"
+    "gitCommit": "8e6644dcd7015819d8293f2835a77971f9b9ec76"
   }
 }
