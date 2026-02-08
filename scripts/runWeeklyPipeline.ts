@@ -34,6 +34,14 @@ function parseArgs(): RunWeeklyPipelineOptions {
       options.skipEmail = true;
     } else if (arg === '--skipDigest' || arg === '--skipDigest=true') {
       options.skipDigest = true;
+    } else if (arg === '--forceRebuild' || arg === '--forceRebuild=true') {
+      options.forceRebuild = true;
+    } else if (arg.startsWith('--maxTotalArticles=')) {
+      options.maxTotalArticles = parseInt(arg.split('=')[1], 10);
+    } else if (arg.startsWith('--maxArticlesPerCategory=')) {
+      options.maxArticlesPerCategory = parseInt(arg.split('=')[1], 10);
+    } else if (arg.startsWith('--minArticlesPerCategory=')) {
+      options.minArticlesPerCategory = parseInt(arg.split('=')[1], 10);
     }
   }
 

@@ -27,6 +27,10 @@ export type RunWeeklyPipelineOptions = {
   skipClassification?: boolean;
   skipEmail?: boolean;
   skipDigest?: boolean;
+  forceRebuild?: boolean;      // Force rebuild even if digest exists
+  maxTotalArticles?: number;   // Max total articles across all categories (default: 40)
+  maxArticlesPerCategory?: number; // Max articles per category (default: 10)
+  minArticlesPerCategory?: number; // Min articles per category (default: 3)
 };
 
 export type PipelineStep = {
@@ -94,6 +98,99 @@ async function loadDigest(weekLabel: string): Promise<WeeklyDigest | null> {
 }
 
 /**
+ * Check if digest already exists
+ */
+async function digestExists(weekLabel: string): Promise<boolean> {
+  try {
+    const digestPath = path.join(process.cwd(), 'data', 'digests', `${weekLabel}.json`);
+    await fs.access(digestPath);
+    return true;
+  } catch {
+    return false;
+  }
+}
+
+/**
+ * Validate digest structure and required fields
+ */
+function validateDigest(digest: WeeklyDigest, options: { minArticlesPerCategory: number }): { valid: boolean; errors: string[]; warnings: string[] } {
+  const errors: string[] = [];
+  const warnings: string[] = [];
+
+  // Validate top-level structure
+  if (!digest.weekLabel) errors.push('Missing weekLabel');
+  if (!digest.topics) errors.push('Missing topics');
+  if (!digest.totals) errors.push('Missing totals');
+
+  if (errors.length > 0) {
+    return { valid: false, errors, warnings };
+  }
+
+  // Validate each topic
+  const topicKeys: Array<keyof typeof digest.topics> = [
+    'AI_and_Strategy',
+    'Ecommerce_Retail_Tech',
+    'Luxury_and_Consumer',
+    'Jewellery_Industry',
+  ];
+
+  for (const topicKey of topicKeys) {
+    const topic = digest.topics[topicKey];
+    if (!topic) {
+      errors.push(`Missing topic: ${topicKey}`);
+      continue;
+    }
+
+    if (!Array.isArray(topic.top)) {
+      errors.push(`Topic ${topicKey}: top must be an array`);
+      continue;
+    }
+
+    // Check minimum articles per category
+    if (topic.top.length < options.minArticlesPerCategory) {
+      errors.push(`Topic ${topicKey}: has ${topic.top.length} articles, minimum required is ${options.minArticlesPerCategory}`);
+    }
+
+    // Validate each article in the topic
+    for (let i = 0; i < topic.top.length; i++) {
+      const article = topic.top[i];
+      const articleErrors: string[] = [];
+
+      if (!article.title || typeof article.title !== 'string' || article.title.trim().length === 0) {
+        articleErrors.push('title');
+      }
+      if (!article.url || typeof article.url !== 'string' || article.url.trim().length === 0) {
+        articleErrors.push('url');
+      }
+      if (!article.source || typeof article.source !== 'string' || article.source.trim().length === 0) {
+        articleErrors.push('source');
+      }
+      if (!article.published_at || typeof article.published_at !== 'string' || article.published_at.trim().length === 0) {
+        articleErrors.push('published_at');
+      }
+      // Summary can be snippet, aiSummary, or summary
+      const hasSummary = (article.snippet && article.snippet.trim().length > 0) ||
+                        (article.aiSummary && article.aiSummary.trim().length > 0) ||
+                        (article.summary && article.summary.trim().length > 0);
+      if (!hasSummary) {
+        articleErrors.push('summary (snippet/aiSummary/summary)');
+      }
+
+      if (articleErrors.length > 0) {
+        errors.push(`Topic ${topicKey}, article ${i + 1}: missing required fields: ${articleErrors.join(', ')}`);
+      }
+    }
+
+    // Warn if category is empty (but don't fail)
+    if (topic.top.length === 0) {
+      warnings.push(`Topic ${topicKey}: has no articles`);
+    }
+  }
+
+  return { valid: errors.length === 0, errors, warnings };
+}
+
+/**
  * Load podcast script text if available
  */
 async function loadPodcastScript(weekLabel: string): Promise<string | undefined> {
@@ -119,10 +216,79 @@ export async function runWeeklyPipeline(options: RunWeeklyPipelineOptions = {}):
   validateWeekLabel(digestWeek);
   validateWeekLabel(ingestionWeek);
 
+  // Get configuration from environment or defaults
+  const forceRebuild = options.forceRebuild || process.env.FORCE_REBUILD === '1';
+  const maxTotalArticles = options.maxTotalArticles || parseInt(process.env.MAX_TOTAL_ARTICLES || '40', 10);
+  const maxArticlesPerCategory = options.maxArticlesPerCategory || parseInt(process.env.MAX_ARTICLES_PER_CATEGORY || '10', 10);
+  const minArticlesPerCategory = options.minArticlesPerCategory || parseInt(process.env.MIN_ARTICLES_PER_CATEGORY || '3', 10);
+
   console.log(`[Pipeline] Starting weekly pipeline`);
   console.log(`  Digest week: ${digestWeek}`);
   console.log(`  Ingestion week: ${ingestionWeek}`);
+  console.log(`  Caps: MAX_TOTAL=${maxTotalArticles}, MAX_PER_CATEGORY=${maxArticlesPerCategory}, MIN_PER_CATEGORY=${minArticlesPerCategory}`);
   console.log('');
+
+  // Check if digest already exists (skip-if-exists)
+  if (!forceRebuild && !options.skipDigest) {
+    const exists = await digestExists(digestWeek);
+    if (exists) {
+      console.log(`[Pipeline] ⚠ Digest already exists for ${digestWeek} (data/digests/${digestWeek}.json)`);
+      console.log(`[Pipeline] Skipping build (use FORCE_REBUILD=1 or --forceRebuild to rebuild)`);
+      console.log('');
+
+      // Load existing digest for validation and health checks
+      const existingDigest = await loadDigest(digestWeek);
+      if (existingDigest) {
+        // Validate existing digest
+        const validation = validateDigest(existingDigest, { minArticlesPerCategory });
+        if (!validation.valid) {
+          console.error(`[Pipeline] ✗ Existing digest is invalid:`);
+          validation.errors.forEach(err => console.error(`  - ${err}`));
+          console.error(`[Pipeline] Use FORCE_REBUILD=1 to rebuild`);
+          throw new Error(`Existing digest is invalid: ${validation.errors.join('; ')}`);
+        }
+        if (validation.warnings.length > 0) {
+          console.warn(`[Pipeline] ⚠ Validation warnings:`);
+          validation.warnings.forEach(warn => console.warn(`  - ${warn}`));
+        }
+
+        // Run health checks on existing digest
+        const allTopArticles = [
+          ...existingDigest.topics.AI_and_Strategy.top,
+          ...existingDigest.topics.Ecommerce_Retail_Tech.top,
+          ...existingDigest.topics.Luxury_and_Consumer.top,
+          ...existingDigest.topics.Jewellery_Industry.top,
+        ];
+        const podcastScriptText = await loadPodcastScript(digestWeek);
+        const health = runWeeklyChecks({
+          digest: existingDigest,
+          selectedArticles: allTopArticles,
+          podcastScriptText,
+        });
+
+        const result: PipelineResult = {
+          digestWeek,
+          ingestionWeek,
+          startedAt,
+          finishedAt: new Date().toISOString(),
+          steps: [{ name: 'skip', ok: true, startedAt, finishedAt: new Date().toISOString() }],
+          health,
+          versions: {
+            node: process.version,
+            gitCommit: getGitCommit(),
+          },
+        };
+
+        // Save health report
+        const healthReportPath = path.join(process.cwd(), 'data', 'weeks', digestWeek, 'health.json');
+        await fs.mkdir(path.dirname(healthReportPath), { recursive: true });
+        await fs.writeFile(healthReportPath, JSON.stringify(result, null, 2), 'utf-8');
+        console.log(`[Pipeline] ✓ Health report saved to: ${healthReportPath}`);
+        console.log(`[Pipeline] ✓ Pipeline skipped (digest already exists)`);
+        return result;
+      }
+    }
+  }
 
   // Step 1: Discovery (ingestion week)
   if (!options.skipDiscovery) {
@@ -202,12 +368,66 @@ export async function runWeeklyPipeline(options: RunWeeklyPipelineOptions = {}):
     } else {
       digest = step.result || null;
       console.log(`[Pipeline] ✓ Digest build complete`);
+
+      // Validate digest after build
+      if (digest) {
+        console.log(`[Pipeline] Validating digest...`);
+        const validation = validateDigest(digest, { minArticlesPerCategory });
+        
+        if (validation.warnings.length > 0) {
+          console.warn(`[Pipeline] ⚠ Validation warnings:`);
+          validation.warnings.forEach(warn => console.warn(`  - ${warn}`));
+        }
+
+        if (!validation.valid) {
+          console.error(`[Pipeline] ✗ Digest validation failed:`);
+          validation.errors.forEach(err => console.error(`  - ${err}`));
+          throw new Error(`Digest validation failed: ${validation.errors.join('; ')}`);
+        }
+
+        // Check caps
+        const totalArticles = [
+          ...digest.topics.AI_and_Strategy.top,
+          ...digest.topics.Ecommerce_Retail_Tech.top,
+          ...digest.topics.Luxury_and_Consumer.top,
+          ...digest.topics.Jewellery_Industry.top,
+        ].length;
+
+        if (totalArticles > maxTotalArticles) {
+          console.warn(`[Pipeline] ⚠ Total articles (${totalArticles}) exceeds MAX_TOTAL_ARTICLES (${maxTotalArticles})`);
+        }
+
+        const topicKeys: Array<keyof typeof digest.topics> = [
+          'AI_and_Strategy',
+          'Ecommerce_Retail_Tech',
+          'Luxury_and_Consumer',
+          'Jewellery_Industry',
+        ];
+
+        for (const topicKey of topicKeys) {
+          const topic = digest.topics[topicKey];
+          if (topic.top.length > maxArticlesPerCategory) {
+            console.warn(`[Pipeline] ⚠ Topic ${topicKey}: ${topic.top.length} articles exceeds MAX_ARTICLES_PER_CATEGORY (${maxArticlesPerCategory})`);
+          }
+        }
+
+        console.log(`[Pipeline] ✓ Digest validation passed`);
+      }
     }
     console.log('');
   } else {
     console.log(`[Pipeline] Skipping digest build`);
     // Try to load existing digest for health checks
     digest = await loadDigest(digestWeek);
+    if (digest) {
+      // Validate loaded digest
+      const validation = validateDigest(digest, { minArticlesPerCategory });
+      if (!validation.valid) {
+        console.error(`[Pipeline] ✗ Loaded digest is invalid:`);
+        validation.errors.forEach(err => console.error(`  - ${err}`));
+        throw new Error(`Loaded digest is invalid: ${validation.errors.join('; ')}`);
+      }
+    }
   }
 
   // Step 4: Email digest (digest week)

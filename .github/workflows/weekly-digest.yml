@@ -1,0 +1,148 @@
+name: Weekly Digest Build
+
+on:
+  schedule:
+    # Run every Sunday at 06:00 UTC
+    - cron: '0 6 * * 0'
+  workflow_dispatch:
+    # Allow manual trigger
+
+concurrency:
+  group: weekly-digest
+  cancel-in-progress: false
+
+jobs:
+  build-digest:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Determine Node.js version
+        id: node-version
+        run: |
+          if [ -f .nvmrc ]; then
+            NODE_VERSION=$(cat .nvmrc | tr -d 'v')
+            echo "version=$NODE_VERSION" >> $GITHUB_OUTPUT
+            echo "Using Node version from .nvmrc: $NODE_VERSION"
+          elif [ -f package.json ] && grep -q '"engines"' package.json; then
+            # Extract node version from package.json engines using sed/grep
+            NODE_VERSION=$(grep -o '"engines"[^}]*"node"[^"]*"[^"]*"' package.json | grep -o '[0-9]\+\.[0-9]\+' | head -1 || echo "20")
+            echo "version=$NODE_VERSION" >> $GITHUB_OUTPUT
+            echo "Using Node version from package.json engines: $NODE_VERSION"
+          else
+            echo "version=20" >> $GITHUB_OUTPUT
+            echo "Using default Node version: 20"
+          fi
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ steps.node-version.outputs.version }}
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Preflight env
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
+        run: npm run digest:preflight
+
+      - name: Build weekly digest
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
+          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+          ELEVENLABS_VOICE_ID: ${{ secrets.ELEVENLABS_VOICE_ID }}
+          SELECTION_MODEL: ${{ secrets.SELECTION_MODEL }}
+          QUERY_DELTA_MODEL: ${{ secrets.QUERY_DELTA_MODEL }}
+          EMAIL_DIGEST_MODEL: ${{ secrets.EMAIL_DIGEST_MODEL }}
+          NODE_ENV: production
+        run: npm run digest:weekly
+
+      - name: Check for changes
+        id: check-changes
+        run: |
+          git status --porcelain > /tmp/changes.txt
+          if [ ! -s /tmp/changes.txt ]; then
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+            echo "No digest changes; nothing to commit"
+            exit 0
+          fi
+          
+          # Check if changes are only in data/digests/
+          CHANGED_FILES=$(git status --porcelain | awk '{print $2}')
+          NON_DIGEST_CHANGES=$(echo "$CHANGED_FILES" | grep -v "^data/digests/" || true)
+          
+          if [ -n "$NON_DIGEST_CHANGES" ]; then
+            echo "❌ Error: Changes detected outside data/digests/ directory:"
+            echo "$NON_DIGEST_CHANGES"
+            echo ""
+            echo "This workflow only commits changes to data/digests/ for safety."
+            exit 1
+          fi
+          
+          echo "has_changes=true" >> $GITHUB_OUTPUT
+          echo "Changes detected in data/digests/"
+
+      - name: Configure Git
+        if: steps.check-changes.outputs.has_changes == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Commit and push changes
+        if: steps.check-changes.outputs.has_changes == 'true'
+        run: |
+          git add data/digests/
+          if git diff --staged --quiet; then
+            echo "No staged changes to commit"
+            exit 0
+          fi
+          COMMIT_DATE=$(date -u +%Y-%m-%d)
+          git commit -m "Weekly digest: $COMMIT_DATE"
+          git push
+
+      - name: Generate run summary
+        if: always()
+        run: |
+          SUMMARY_FILE="/tmp/run-summary.txt"
+          echo "Weekly Digest Build Summary" > "$SUMMARY_FILE"
+          echo "===========================" >> "$SUMMARY_FILE"
+          echo "" >> "$SUMMARY_FILE"
+          echo "Run Date: $(date -u +%Y-%m-%d\ %H:%M:%S\ UTC)" >> "$SUMMARY_FILE"
+          echo "" >> "$SUMMARY_FILE"
+          
+          # Detect week labels from digest files
+          if [ -d data/digests ]; then
+            echo "Detected Digest Files:" >> "$SUMMARY_FILE"
+            ls -1 data/digests/*.json 2>/dev/null | xargs -I {} basename {} .json | sort -r | head -5 >> "$SUMMARY_FILE" || echo "No digest files found" >> "$SUMMARY_FILE"
+          fi
+          
+          echo "" >> "$SUMMARY_FILE"
+          echo "Git Status:" >> "$SUMMARY_FILE"
+          git status --short >> "$SUMMARY_FILE" || echo "No changes" >> "$SUMMARY_FILE"
+          
+          echo "" >> "$SUMMARY_FILE"
+          echo "Git Diff Stats:" >> "$SUMMARY_FILE"
+          git diff --stat HEAD >> "$SUMMARY_FILE" || echo "No diff" >> "$SUMMARY_FILE"
+          
+          cat "$SUMMARY_FILE"
+
+      - name: Upload artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: weekly-digest-${{ github.run_number }}
+          path: |
+            data/digests/*.json
+            /tmp/run-summary.txt
+          retention-days: 30
