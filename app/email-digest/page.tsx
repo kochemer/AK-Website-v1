@@ -1,6 +1,5 @@
 import { promises as fs } from 'fs';
 import path from 'path';
-import { DateTime } from 'luxon';
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import { formatDate } from '@/lib/utils/formatDate';
@@ -19,27 +18,18 @@ export const metadata: Metadata = {
   },
 };
 
-function getCurrentWeek(): string {
-  const now = DateTime.now().setZone('Europe/Copenhagen');
-  const year = now.year;
-  const weekNumber = now.weekNumber;
-  return `${year}-W${weekNumber.toString().padStart(2, '0')}`;
-}
-
-function getPreviousWeek(): string {
-  const now = DateTime.now().setZone('Europe/Copenhagen');
-  const previousWeek = now.minus({ weeks: 1 });
-  const year = previousWeek.year;
-  const weekNumber = previousWeek.weekNumber;
-  return `${year}-W${weekNumber.toString().padStart(2, '0')}`;
-}
-
 async function loadEmailDigest(weekLabel: string): Promise<EmailDigest | null> {
   try {
     const digestPath = path.join(process.cwd(), 'data', 'weeks', weekLabel, 'email-digest.json');
     const raw = await fs.readFile(digestPath, 'utf-8');
     return JSON.parse(raw) as EmailDigest;
-  } catch (err) {
+  } catch (err: any) {
+    // File not found is expected if digest hasn't been generated yet
+    if (err?.code === 'ENOENT') {
+      // Silently return null - this is expected behavior
+      return null;
+    }
+    // Log other errors (permissions, parse errors, etc.)
     console.error(`Failed to load email digest for ${weekLabel}:`, err);
     return null;
   }
@@ -49,12 +39,6 @@ export default async function EmailDigestPage() {
   // Use shared utility to get current digest week (synchronized with home page)
   const weekLabel = getCurrentDigestWeek();
   const digest = await loadEmailDigest(weekLabel);
-  
-  // Fallback: try previous week if current week not found
-  const previousWeekLabel = getPreviousWeek();
-  const previousDigest = !digest ? await loadEmailDigest(previousWeekLabel) : null;
-  const finalDigest = digest || previousDigest;
-  const finalWeekLabel = digest ? weekLabel : previousWeekLabel;
 
   return (
     <main className="w-full max-w-3xl mx-auto px-4 sm:px-6 py-6 sm:py-8">
@@ -67,16 +51,16 @@ export default async function EmailDigestPage() {
         </p>
       </div>
 
-      {!finalDigest ? (
+      {!digest ? (
         <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-6">
           <h2 className="text-lg font-semibold text-yellow-900 mb-2">
             Email digest not generated yet
           </h2>
           <p className="text-sm text-yellow-800 mb-4">
-            No email digest found for week {finalWeekLabel}.
+            No email digest found for week {weekLabel}.
           </p>
           <div className="bg-yellow-100 rounded p-3 font-mono text-sm text-yellow-900">
-            npm run email-digest -- --week={finalWeekLabel}
+            npm run email-digest -- --week={weekLabel}
           </div>
         </div>
       ) : (
@@ -84,44 +68,44 @@ export default async function EmailDigestPage() {
           {/* Week Header */}
           <div className="mb-6 pb-4 border-b border-gray-200">
             <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2">
-              Week {finalDigest.week}
+              Week {digest.week}
             </h2>
-            {finalDigest.generatedAt && (
+            {digest.generatedAt && (
               <p className="text-xs sm:text-sm text-gray-500">
-                Generated {formatDate(finalDigest.generatedAt)}
+                Generated {formatDate(digest.generatedAt)}
               </p>
             )}
           </div>
 
           {/* Intro */}
-          {finalDigest.intro && (
+          {digest.intro && (
             <div className="mb-6 p-4 bg-gray-50 rounded-lg border border-gray-200">
               <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
-                {finalDigest.intro}
+                {digest.intro}
               </p>
             </div>
           )}
 
           {/* Read One Thing */}
-          {finalDigest.readOneThing && (
+          {digest.readOneThing && (
             <div className="mb-6 p-4 bg-blue-50 rounded-lg border border-blue-200">
               <h3 className="text-sm font-semibold text-blue-900 mb-2">
                 Read One Thing
               </h3>
               <a
-                href={finalDigest.readOneThing.url}
+                href={digest.readOneThing.url}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-base sm:text-lg font-medium text-blue-800 hover:text-blue-900 hover:underline"
               >
-                {finalDigest.readOneThing.title}
+                {digest.readOneThing.title}
               </a>
             </div>
           )}
 
           {/* Ranked List */}
           <div className="space-y-6 sm:space-y-8">
-            {finalDigest.items.map((item) => (
+            {digest.items.map((item) => (
               <article
                 key={item.rank}
                 className="border-b border-gray-200 pb-6 last:border-b-0 last:pb-0"

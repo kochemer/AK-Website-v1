@@ -5,6 +5,8 @@ import { DateTime } from 'luxon';
 import { getWeekRangeCET } from '../lib/utils/weekCET';
 import { classifyTopic } from '../classification/classifyTopics';
 import { rerankArticles } from './rerankArticles';
+import { generateSummariesForDigest } from './generateSummaries';
+import { translateDigestArticles } from '../lib/i18n/translate';
 import type { Article, ArticleWithRelevance, RelevanceScore, Topic, WeeklyDigest } from '../lib/types';
 
 // Re-export WeeklyDigest for backward compatibility
@@ -530,3 +532,62 @@ export async function buildWeeklyDigest(weekLabel: string): Promise<WeeklyDigest
   };
 }
 
+
+/**
+ * Build and save weekly digest with summaries and translations
+ * This is the full pipeline: build + summaries + translations + save
+ */
+export async function buildAndSaveWeeklyDigest(
+  weekLabel: string,
+  options?: {
+    outputDir?: string;
+    preserveCoverImage?: boolean;
+  }
+): Promise<WeeklyDigest> {
+  // Build the digest structure
+  const digest = await buildWeeklyDigest(weekLabel);
+
+  // Generate AI summaries for all top articles
+  await generateSummariesForDigest(digest);
+
+  // Translate article titles + summaries into DA/ES
+  const allTopArticles = [
+    ...digest.topics.AI_and_Strategy.top,
+    ...digest.topics.Ecommerce_Retail_Tech.top,
+    ...digest.topics.Luxury_and_Consumer.top,
+    ...digest.topics.Jewellery_Industry.top,
+  ];
+  const { translations } = await translateDigestArticles(allTopArticles);
+
+  // Attach translations to each article in the digest
+  for (const article of allTopArticles) {
+    const t = translations.get(article.title);
+    if (t) {
+      article.translations = t;
+    }
+  }
+
+  // Save to data/digests/{weekLabel}.json
+  const outputDir = options?.outputDir || path.join(process.cwd(), 'data', 'digests');
+  await fs.mkdir(outputDir, { recursive: true });
+  const outputPath = path.join(outputDir, `${weekLabel}.json`);
+
+  // Preserve cover image fields from existing digest (if any)
+  if (options?.preserveCoverImage !== false) {
+    try {
+      const existing = JSON.parse(await fs.readFile(outputPath, 'utf-8'));
+      if (existing.coverImageUrl && !(digest as any).coverImageUrl) {
+        (digest as any).coverImageUrl = existing.coverImageUrl;
+      }
+      if (existing.coverImageAlt && !(digest as any).coverImageAlt) {
+        (digest as any).coverImageAlt = existing.coverImageAlt;
+      }
+    } catch {
+      // No existing digest — that's fine
+    }
+  }
+
+  await fs.writeFile(outputPath, JSON.stringify(digest, null, 2), 'utf-8');
+
+  return digest;
+}

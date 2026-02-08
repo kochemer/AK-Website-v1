@@ -1,12 +1,10 @@
 {
   "weekLabel": "2026-W05",
-  "coverImageUrl": "/weekly-images/2026-W05.png",
-  "coverImageAlt": "Weekly cover illustration for 2026-W05",
   "tz": "Europe/Copenhagen",
   "startISO": "2026-01-25T23:00:00.000Z",
   "endISO": "2026-02-01T22:59:59.999Z",
-  "builtAtISO": "2026-02-07T10:22:00.688+01:00",
-  "builtAtLocal": "2026-02-07 10:22:00",
+  "builtAtISO": "2026-02-08T16:00:44.879+01:00",
+  "builtAtLocal": "2026-02-08 16:00:44",
   "totals": {
     "total": 480,
     "byTopic": {
@@ -42,15 +40,15 @@
               "ai"
             ]
           },
-          "aiSummary": "AI-Generated Summary:\nOpenAI is planning an IPO in Q4 FY26 to compete with rival Anthropic, who may list first. OpenAI has strengthened its finance team in preparation for the IPO.",
+          "aiSummary": "AI-Generated Summary:\nOpenAI is planning to go public in the fourth quarter of fiscal year 2026, amid concerns about rival company Anthropic potentially listing first. To prepare for the IPO, OpenAI has been strengthening its finance team by hiring key positions.",
           "translations": {
             "da": {
-              "title": "OpenAI planlægger Q4 FY26 IPO amid voksende rivalisering med Anthropic: Wall Street Journal",
-              "summary": "OpenAI planlægger en IPO i Q4 FY26 for at konkurrere med rivalen Anthropic, som muligvis vil notere først. OpenAI har styrket sit finanshold i forberedelse til IPO'en."
+              "title": "OpenAI planlægger IPO i Q4 FY26 amid voksende rivalisering med Anthropic: Wall Street Journal",
+              "summary": "OpenAI planlægger at gå offentligt i fjerde kvartal af regnskabsåret 2026, amid bekymringer om rivalfirmaet Anthropic, der potentielt kan blive børsnoteret først. For at forberede sig til IPO'en har OpenAI styrket sit finanshold ved at ansætte nøglepositioner."
             },
             "es": {
-              "title": "OpenAI planea IPO en Q4 FY26 en medio de la creciente rivalidad con Anthropic: Wall Street Journal",
-              "summary": "OpenAI está planeando una IPO en Q4 FY26 para competir con su rival Anthropic, que podría listar primero. OpenAI ha fortalecido su equipo financiero en preparación para la IPO."
+              "title": "OpenAI planea IPO en el cuarto trimestre del FY26 en medio de la creciente rivalidad con Anthropic: Wall Street Journal",
+              "summary": "OpenAI planea hacerse pública en el cuarto trimestre del año fiscal 2026, en medio de preocupaciones sobre la posible salida a bolsa de la empresa rival Anthropic. Para prepararse para la IPO, OpenAI ha estado fortaleciendo su equipo financiero al contratar posiciones clave."
             }
           }
         },
@@ -74,15 +72,15 @@
               "ai"
             ]
           },
-          "aiSummary": "AI-generated summary:\nMicrosoft's market value dropped by $360 billion after revealing a 66% increase in data center costs, causing concern among investors and impacting the Nasdaq.",
+          "aiSummary": "AI-generated summary:\nMicrosoft's market value dropped by $360bn due to increased AI spending, leading to a 66% surge in data center costs and impacting Nasdaq.",
           "translations": {
             "da": {
               "title": "Microsoft mister $360 mia. i markedsværdi, da AI-udgifter skræmmer investorer",
-              "summary": "Microsofts markedsværdi faldt med $360 milliarder efter at have afsløret en stigning på 66% i omkostningerne til datacentre, hvilket skabte bekymring blandt investorerne og påvirkede Nasdaq."
+              "summary": "Microsofts markedsværdi faldt med $360 mia. på grund af øgede AI-udgifter, hvilket førte til en stigning på 66% i omkostningerne til datacentre og påvirkede Nasdaq."
             },
             "es": {
               "title": "Microsoft pierde $360 mil millones en valor de mercado mientras el gasto en IA asusta a los inversores",
-              "summary": "El valor de mercado de Microsoft cayó en $360 mil millones tras revelar un aumento del 66% en los costos de los centros de datos, lo que generó preocupación entre los inversores y afectó al Nasdaq."
+              "summary": "El valor de mercado de Microsoft cayó en $360 mil millones debido al aumento del gasto en IA, lo que provocó un aumento del 66% en los costos de los centros de datos y afectó al Nasdaq."
             }
           }
         },
@@ -142,15 +140,15 @@
               "ai"
             ]
           },
-          "aiSummary": "AI-generated summary: Residents near Santiago, Chile, created a human-powered chatbot to raise awareness of AI's environmental impact, handling over 25,000 requests globally in a 12-hour project. The initiative aims to highlight the hidden water footprint of AI and promote responsible AI use in water-stressed regions, amid debate over resource consumption from tech companies building data centers in the area.",
+          "aiSummary": "AI-generated summary: Residents near Santiago, Chile, created a human-powered chatbot to demonstrate AI's environmental impact, handling over 25,000 requests globally in a 12-hour project. The initiative aims to raise awareness of AI's hidden water footprint and promote responsible AI use in water-stressed regions, amidst debates over resource consumption due to tech companies building data centers in the area.",
           "translations": {
             "da": {
-              "title": "En chatbot helt drevet af mennesker, ikke kunstig intelligens? Dette chilenske samfund viser hvorfor",
-              "summary": "Beboere nær Santiago, Chile, har skabt en menneskedrevet chatbot for at øge bevidstheden om AI's miljøpåvirkning, og har håndteret over 25.000 forespørgsler globalt i et 12-timers projekt. Initiativet sigter mod at fremhæve det skjulte vandaftryk fra AI og fremme ansvarlig brug af AI i vandstressede områder, midt i debatten om ressourceforbrug fra teknologivirksomheder, der bygger datacentre i området."
+              "title": "En chatbot udelukkende drevet af mennesker, ikke kunstig intelligens? Dette chilenske samfund viser hvorfor",
+              "summary": "Beboere nær Santiago, Chile, har skabt en menneskedrevet chatbot for at demonstrere AI's miljøpåvirkning, der håndterer over 25.000 forespørgsler globalt i et 12-timers projekt. Initiativet har til formål at øge bevidstheden om AI's skjulte vandaftryk og fremme ansvarlig brug af AI i vandstressede områder, midt i debatter om ressourceforbrug på grund af tech-virksomheder, der bygger datacentre i området."
             },
             "es": {
               "title": "¿Un chatbot completamente impulsado por humanos, no por inteligencia artificial? Esta comunidad chilena muestra por qué",
-              "summary": "Los residentes cerca de Santiago, Chile, crearon un chatbot impulsado por humanos para concienciar sobre el impacto ambiental de la IA, manejando más de 25,000 solicitudes a nivel global en un proyecto de 12 horas. La iniciativa busca resaltar la huella hídrica oculta de la IA y promover el uso responsable de la IA en regiones con estrés hídrico, en medio del debate sobre el consumo de recursos por parte de las empresas tecnológicas que construyen centros de datos en la zona."
+              "summary": "Los residentes cerca de Santiago, Chile, crearon un chatbot impulsado por humanos para demostrar el impacto ambiental de la IA, manejando más de 25,000 solicitudes a nivel global en un proyecto de 12 horas. La iniciativa busca crear conciencia sobre la huella hídrica oculta de la IA y promover el uso responsable de la IA en regiones con estrés hídrico, en medio de debates sobre el consumo de recursos debido a las empresas tecnológicas que construyen centros de datos en la zona."
             }
           }
         },
@@ -175,15 +173,15 @@
               "investment"
             ]
           },
-          "aiSummary": "AI-Generated Summary:\nThe 2026 budget introduced tech sector incentives like safe harbour thresholds for IT services and tax holidays for local data centres to boost global investment and position India as a hub for cloud, data services, and AI infrastructure, welcomed by the industry.",
+          "aiSummary": "AI-Generated Summary:\nThe 2026 budget introduced tech incentives like safe harbour thresholds for IT services and tax holidays for local data centres to attract global investment and position India as a hub for AI infrastructure, cloud, and data services, welcomed by the industry.",
           "translations": {
             "da": {
-              "title": "Budget 2026: Branchen byder velkommen til foranstaltninger for at pleje lokalt AI-, IT- og datacenter-økosystem",
-              "summary": "Budgettet for 2026 introducerede incitamenter til tech-sektoren som sikre havnegrænser for IT-tjenester og skatteferier for lokale datacentre for at øge global investering og positionere Indien som et knudepunkt for cloud-, datatjenester og AI-infrastruktur, hvilket blev velkommet af branchen."
+              "title": "Budget 2026: Branchen byder velkommen til foranstaltninger, der fremmer lokalt AI-, IT- og datacenter-økosystem",
+              "summary": "Budgettet for 2026 introducerede teknologiske incitamenter som sikre havnegrænser for IT-tjenester og skatteferier for lokale datacentre for at tiltrække global investering og positionere Indien som et knudepunkt for AI-infrastruktur, cloud og datatjenester, hvilket blev velkommet af branchen."
             },
             "es": {
               "title": "Presupuesto 2026: La industria da la bienvenida a las medidas para fomentar el ecosistema local de IA, TI y centros de datos",
-              "summary": "El presupuesto de 2026 introdujo incentivos para el sector tecnológico, como umbrales de puerto seguro para servicios de TI y vacaciones fiscales para centros de datos locales, con el fin de impulsar la inversión global y posicionar a India como un centro para servicios en la nube, datos e infraestructura de IA, lo cual fue bien recibido por la industria."
+              "summary": "El presupuesto de 2026 introdujo incentivos tecnológicos como umbrales de puerto seguro para servicios de TI y vacaciones fiscales para centros de datos locales para atraer inversión global y posicionar a India como un centro para infraestructura de IA, servicios en la nube y de datos, lo cual fue bien recibido por la industria."
             }
           }
         },
@@ -208,7 +206,7 @@
               "agent"
             ]
           },
-          "aiSummary": "AI-generated summary:\nElon Musk is intrigued by an online experiment on Moltbook where AI agents communicate, sparking discussions about the possibility of reaching the 'singularity'.",
+          "aiSummary": "AI-Generated Summary:\nElon Musk is intrigued by an online experiment on Moltbook where AI agents communicate, sparking discussions about the possibility of reaching the 'singularity'.",
           "translations": {
             "da": {
               "title": "Inde i Moltbook: det sociale netværk hvor AI-agenter taler med hinanden",
@@ -277,15 +275,15 @@
             "penalty": 0,
             "matchedKeywords": []
           },
-          "aiSummary": "In a major strategic realignment, Amazon is cutting 16,000 jobs and launching Amazon Now, a new rapid-delivery service, while scaling back Fresh stores.",
+          "aiSummary": "In a major strategic realignment, Amazon is cutting 16,000 jobs, scaling back Fresh stores, and introducing a new rapid-delivery service called Amazon Now. This restructuring aims to streamline operations and enhance the company's delivery capabilities.",
           "translations": {
             "da": {
-              "title": "Amazon skærer 16.000 job, nedskalerer Fresh-butikker og lancerer Amazon Now i stor strategisk omstrukturering",
-              "summary": "I en stor strategisk omstrukturering skærer Amazon 16.000 job og lancerer Amazon Now, en ny hurtigleveringstjeneste, samtidig med at Fresh-butikkerne nedskaleres."
+              "title": "Amazon skærer 16.000 job, reducerer Fresh-butikker og lancerer Amazon Now i stor strategisk omstilling",
+              "summary": "I en stor strategisk omstilling skærer Amazon 16.000 job, reducerer Fresh-butikker og introducerer en ny hurtigleveringstjeneste kaldet Amazon Now. Denne omstrukturering har til formål at strømline driften og forbedre virksomhedens leveringskapaciteter."
             },
             "es": {
-              "title": "Amazon recorta 16,000 empleos, reduce Fresh y lanza Amazon Now en una importante reestructuración estratégica",
-              "summary": "En una importante reestructuración estratégica, Amazon está recortando 16,000 empleos y lanzando Amazon Now, un nuevo servicio de entrega rápida, mientras reduce las tiendas Fresh."
+              "title": "Amazon recorta 16,000 empleos, reduce tiendas Fresh y lanza Amazon Now en una importante reestructuración estratégica",
+              "summary": "En una importante reestructuración estratégica, Amazon está recortando 16,000 empleos, reduciendo tiendas Fresh e introduciendo un nuevo servicio de entrega rápida llamado Amazon Now. Esta reestructuración tiene como objetivo optimizar las operaciones y mejorar las capacidades de entrega de la empresa."
             }
           }
         },
@@ -309,15 +307,15 @@
               "marketplace"
             ]
           },
-          "aiSummary": "AI-generated summary: Retailers are leveraging marketplaces to enhance their retail media business for revenue and margin growth, according to Colin Lewis in Internet Retailing's article.",
+          "aiSummary": "AI-generated summary: Retailers are leveraging marketplaces and retail media to drive revenue and margin growth, while some brands are still catching up on understanding the potential of marketplaces.",
           "translations": {
             "da": {
               "title": "Markedspladser og detailmedier: svinghjulet for indtægts- og marginvækst",
-              "summary": "Detailhandlere udnytter markedspladser til at forbedre deres detailmedieforretning for indtægts- og marginvækst, ifølge Colin Lewis i Internet Retailings artikel."
+              "summary": "Detailhandlere udnytter markedspladser og detailmedier til at drive indtægts- og marginvækst, mens nogle mærker stadig er ved at indhente forståelsen af markedspladsernes potentiale."
             },
             "es": {
               "title": "Mercados y medios minoristas: el volante para el crecimiento de ingresos y márgenes",
-              "summary": "Los minoristas están aprovechando los mercados para mejorar su negocio de medios minoristas para el crecimiento de ingresos y márgenes, según Colin Lewis en el artículo de Internet Retailing."
+              "summary": "Los minoristas están aprovechando los mercados y los medios minoristas para impulsar el crecimiento de ingresos y márgenes, mientras que algunas marcas aún están poniéndose al día en la comprensión del potencial de los mercados."
             }
           }
         },
@@ -342,15 +340,15 @@
               "inventory"
             ]
           },
-          "aiSummary": "AI-Generated Summary:\nSaks Global is closing most of its off-price stores and e-commerce operations, with only a few Saks Off 5th locations remaining open to sell residual inventory from other luxury retailers.",
+          "aiSummary": "AI-Generated Summary:\nSaks Global is retreating from off-price retail, closing most stores and all e-commerce operations. Only a few Saks Off 5th locations will remain open, selling residual inventory from high-end retailers.",
           "translations": {
             "da": {
               "title": "Saks Global trækker sig fra lavpris, lukker de fleste butikker og al e-handel",
-              "summary": "Saks Global lukker de fleste af sine lavprisbutikker og e-handelsoperationer, med kun få Saks Off 5th-lokationer tilbage for at sælge resterende lager fra andre luksusforhandlere."
+              "summary": "Saks Global trækker sig fra lavprisdetailhandel, lukker de fleste butikker og alle e-handelsoperationer. Kun få Saks Off 5th-lokationer vil forblive åbne og sælge resterende lager fra high-end detailhandlere."
             },
             "es": {
-              "title": "Saks Global se retira del precio reducido, cerrando la mayoría de las tiendas y todo el comercio electrónico",
-              "summary": "Saks Global está cerrando la mayoría de sus tiendas de precios reducidos y operaciones de comercio electrónico, con solo algunas ubicaciones de Saks Off 5th abiertas para vender inventario residual de otros minoristas de lujo."
+              "title": "Saks Global se retira del precio reducido, cerrando la mayoría de las tiendas y toda la e-commerce",
+              "summary": "Saks Global se está retirando del comercio minorista de precios reducidos, cerrando la mayoría de las tiendas y todas las operaciones de comercio electrónico. Solo quedarán abiertas algunas ubicaciones de Saks Off 5th, vendiendo inventario residual de minoristas de alta gama."
             }
           }
         },
@@ -374,15 +372,15 @@
               "platform"
             ]
           },
-          "aiSummary": "AI-Generated Summary:\nSome U.S. brands on TikTok Shop are reducing their presence due to the platform's decision to eliminate independent shipping, causing them to scale back or leave.",
+          "aiSummary": "AI-Generated Summary:\nSome U.S. brands on TikTok Shop are scaling back or leaving the platform due to its decision to end independent shipping, as reported by Modern Retail on January 28, 2026.",
           "translations": {
             "da": {
-              "title": "Eksklusivt: Nogle TikTok Shop sælgere trækker sig tilbage, da platformen bevæger sig mod at afslutte uafhængig forsendelse i USA.",
-              "summary": "Nogle amerikanske brands på TikTok Shop reducerer deres tilstedeværelse på grund af platformens beslutning om at fjerne uafhængig forsendelse, hvilket får dem til at trække sig tilbage eller forlade."
+              "title": "Eksklusiv: Nogle TikTok Shop sælgere trækker sig tilbage, da platformen bevæger sig mod at afslutte uafhængig forsendelse i USA.",
+              "summary": "Nogle amerikanske brands på TikTok Shop skalerer tilbage eller forlader platformen på grund af dens beslutning om at afslutte uafhængig forsendelse, som rapporteret af Modern Retail den 28. januar 2026."
             },
             "es": {
               "title": "Exclusivo: Algunos vendedores de TikTok Shop se están retirando a medida que la plataforma avanza para terminar con el envío independiente en EE. UU.",
-              "summary": "Algunas marcas estadounidenses en TikTok Shop están reduciendo su presencia debido a la decisión de la plataforma de eliminar el envío independiente, lo que les lleva a reducir su actividad o abandonar."
+              "summary": "Algunas marcas estadounidenses en TikTok Shop están reduciendo su presencia o abandonando la plataforma debido a su decisión de poner fin al envío independiente, según informó Modern Retail el 28 de enero de 2026."
             }
           }
         },
@@ -408,15 +406,15 @@
               "marketplace"
             ]
           },
-          "aiSummary": "AI-Generated Summary:\nOnline resale growth presents emerging opportunities for marketplaces and retailers amidst inflation and economic uncertainty in 2026, with up to 40% of gift purchases potentially including secondhand items.",
+          "aiSummary": "AI-generated summary:\nOnline resale growth presents emerging opportunities for marketplaces and retailers amidst inflation and economic uncertainty, with up to 40% of gift purchases in 2025 potentially including secondhand items.",
           "translations": {
             "da": {
-              "title": "Ehandels Tendenser: Hvem drager fordel af en bølge af online videresalgsvækst",
-              "summary": "Væksten i online videresalg præsenterer nye muligheder for markedspladser og detailhandlere midt i inflation og økonomisk usikkerhed i 2026, hvor op til 40% af gavekøb potentielt kan inkludere brugte varer."
+              "title": "Ehandels Tendenser: Hvem drager fordel af en bølge af online videresalg vækst",
+              "summary": "Væksten i online videresalg præsenterer nye muligheder for markedspladser og detailhandlere midt i inflation og økonomisk usikkerhed, hvor op til 40% af gavekøb i 2025 potentielt kan inkludere brugte varer."
             },
             "es": {
               "title": "Tendencias del Ecommerce: ¿Quién se beneficia de una ola de crecimiento en la reventa online?",
-              "summary": "El crecimiento de la reventa online presenta oportunidades emergentes para los mercados y minoristas en medio de la inflación y la incertidumbre económica en 2026, con hasta un 40% de las compras de regalos que podrían incluir artículos de segunda mano."
+              "summary": "El crecimiento de la reventa online presenta oportunidades emergentes para los mercados y minoristas en medio de la inflación y la incertidumbre económica, con hasta el 40% de las compras de regalos en 2025 que podrían incluir artículos de segunda mano."
             }
           }
         },
@@ -440,15 +438,15 @@
               "ecommerce"
             ]
           },
-          "aiSummary": "Levi Strauss & Co. experienced double-digit ecommerce growth in Q4, with a 19% increase in net revenue from online sales compared to the previous year. The company's overall net revenue rose by 0.9% to $1.77 billion, fueled by strong ecommerce performance.",
+          "aiSummary": "Levi Strauss & Co. reported double-digit ecommerce growth in Q4, with a 19% increase in net revenue from online sales compared to the previous year. The company's overall net revenue rose by 0.9% to $1.77 billion, fueled by ecommerce sales.",
           "translations": {
             "da": {
               "title": "Levi Strauss e-handelssalg driver Q4 vækst, da nyt AI-værktøj ankommer til mobilappen",
-              "summary": "Levi Strauss & Co. oplevede tocifret vækst i e-handel i Q4, med en stigning på 19% i nettoindtægter fra online salg sammenlignet med året før. Virksomhedens samlede nettoindtægter steg med 0,9% til 1,77 milliarder dollars, drevet af stærk e-handelspræstation."
+              "summary": "Levi Strauss & Co. rapporterede tocifret vækst i e-handel i Q4, med en stigning på 19% i nettoindtægter fra online salg sammenlignet med året før. Virksomhedens samlede nettoindtægter steg med 0,9% til 1,77 milliarder dollars, drevet af e-handelssalg."
             },
             "es": {
-              "title": "Las ventas de comercio electrónico de Levi Strauss impulsan el crecimiento del Q4 con la llegada de una nueva herramienta de IA en la aplicación móvil",
-              "summary": "Levi Strauss & Co. experimentó un crecimiento de dos dígitos en comercio electrónico en el Q4, con un aumento del 19% en los ingresos netos por ventas en línea en comparación con el año anterior. Los ingresos netos totales de la compañía aumentaron un 0,9% a 1.77 mil millones de dólares, impulsados por un fuerte desempeño en comercio electrónico."
+              "title": "Las ventas de comercio electrónico de Levi Strauss impulsan el crecimiento del Q4 con la llegada de una nueva herramienta de IA a la aplicación móvil",
+              "summary": "Levi Strauss & Co. reportó un crecimiento de dos dígitos en comercio electrónico en el Q4, con un aumento del 19% en los ingresos netos por ventas en línea en comparación con el año anterior. Los ingresos netos totales de la compañía aumentaron un 0,9% a 1,77 mil millones de dólares, impulsados por las ventas de comercio electrónico."
             }
           }
         },
@@ -474,15 +472,15 @@
               "ecommerce"
             ]
           },
-          "aiSummary": "AI shopping agents are being blocked by marketplaces due to the threat they pose to product discovery, advertising, and transactions in the ecommerce industry.",
+          "aiSummary": "AI shopping agents are being blocked by marketplaces due to the threat they pose to product discovery, advertising, and transactions.",
           "translations": {
             "da": {
               "title": "Hvorfor markedspladser blokerer AI shoppingagenter",
-              "summary": "AI shoppingagenter bliver blokeret af markedspladser på grund af den trussel, de udgør for produktopdagelse, reklame og transaktioner i e-handelsindustrien."
+              "summary": "AI shoppingagenter bliver blokeret af markedspladser på grund af den trussel, de udgør mod produktopdagelse, reklame og transaktioner."
             },
             "es": {
               "title": "Por qué los mercados bloquean a los agentes de compras de IA",
-              "summary": "Los agentes de compras de IA están siendo bloqueados por los mercados debido a la amenaza que representan para el descubrimiento de productos, la publicidad y las transacciones en la industria del comercio electrónico."
+              "summary": "Los agentes de compras de IA están siendo bloqueados por los mercados debido a la amenaza que representan para el descubrimiento de productos, la publicidad y las transacciones."
             }
           }
         }
@@ -550,15 +548,15 @@
               "brand"
             ]
           },
-          "aiSummary": "AI-Generated Summary:\nLuxury brands like Chanel, LVMH, and Kering hold significant power over bankrupt Saks by controlling shipments, potentially impacting the retailer's ability to secure early payouts.",
+          "aiSummary": "AI-Generated Summary:\nLuxury brands like Chanel, LVMH, and Kering hold significant power over bankrupt Saks Fifth Avenue, as the retailer heavily relies on them for survival, risking suffocation if they halt shipments.",
           "translations": {
             "da": {
               "title": "I kampen for tidlige udbetalinger fra det konkursramte Saks har store luksusmærker en fordel",
-              "summary": "Luksusmærker som Chanel, LVMH og Kering har betydelig magt over det konkursramte Saks ved at kontrollere forsendelser, hvilket potentielt kan påvirke detailhandlerens evne til at sikre tidlige udbetalinger."
+              "summary": "Luksusmærker som Chanel, LVMH og Kering har betydelig magt over det konkursramte Saks Fifth Avenue, da detailhandleren i høj grad er afhængig af dem for at overleve, hvilket risikerer at kvæle dem, hvis de stopper leverancer."
             },
             "es": {
-              "title": "En la lucha por los pagos anticipados de Saks en quiebra, las grandes marcas de lujo tienen la ventaja",
-              "summary": "Las marcas de lujo como Chanel, LVMH y Kering tienen un poder significativo sobre Saks en quiebra al controlar los envíos, lo que podría afectar la capacidad del minorista para asegurar pagos anticipados."
+              "title": "En la lucha por pagos anticipados de Saks en quiebra, las grandes marcas de lujo tienen la ventaja",
+              "summary": "Las marcas de lujo como Chanel, LVMH y Kering tienen un poder significativo sobre Saks Fifth Avenue en quiebra, ya que el minorista depende en gran medida de ellas para sobrevivir, arriesgándose a asfixiarse si detienen los envíos."
             }
           }
         },
@@ -585,15 +583,15 @@
               "brand"
             ]
           },
-          "aiSummary": "AI-Generated Summary:\nLuxury brands are turning their focus to second-tier cities like Nanjing and Changsha in China, as middle-class consumers moving from major cities seek higher quality of life and continue to drive demand for luxury goods.",
+          "aiSummary": "AI-Generated Summary:\nLuxury brands are focusing on second-tier cities like Nanjing and Changsha in China, as middle-class consumers moving from major cities seek higher quality of life and continue to demand luxury goods.",
           "translations": {
             "da": {
               "title": "Andenrangsbyer er afgørende for at genoplive luksusvækst i Kina",
-              "summary": "Luksusmærker retter deres fokus mod andenrangsbyer som Nanjing og Changsha i Kina, da middelklasseforbrugere, der flytter fra storbyer, søger en højere livskvalitet og fortsætter med at drive efterspørgslen efter luksusvarer."
+              "summary": "Luksusmærker fokuserer på andenrangsbyer som Nanjing og Changsha i Kina, da middelklasseforbrugere, der flytter fra storbyer, søger en højere livskvalitet og fortsætter med at efterspørge luksusvarer."
             },
             "es": {
               "title": "Las ciudades de segundo nivel son críticas para revivir el crecimiento del lujo en China",
-              "summary": "Las marcas de lujo están enfocando su atención en ciudades de segundo nivel como Nanjing y Changsha en China, ya que los consumidores de clase media que se mudan desde las grandes ciudades buscan una mayor calidad de vida y continúan impulsando la demanda de bienes de lujo."
+              "summary": "Las marcas de lujo se están enfocando en ciudades de segundo nivel como Nanjing y Changsha en China, ya que los consumidores de clase media que se trasladan desde las grandes ciudades buscan una mayor calidad de vida y continúan demandando productos de lujo."
             }
           }
         },
@@ -617,14 +615,14 @@
               "demand"
             ]
           },
-          "aiSummary": "AI-Generated Summary:\nKKR-led group, in partnership with Singtel, is on the verge of acquiring ST Telemedia Global Data Centres for over $10 billion, making it one of Asia's largest data centre deals amid rising demand for digital infrastructure driven by artificial intelligence growth.",
+          "aiSummary": "AI-Generated Summary:\nKKR-led group, in partnership with Singtel, is on the verge of acquiring ST Telemedia Global Data Centres for over $10 billion, making it one of Asia's largest data centre deals amid increasing demand for digital infrastructure driven by artificial intelligence growth.",
           "translations": {
             "da": {
               "title": "KKR-led gruppe klar til at købe Singapore datacenterfirma værdiansat til over 10 milliarder dollars, rapporterer WSJ",
               "summary": "KKR-led gruppen, i partnerskab med Singtel, er ved at erhverve ST Telemedia Global Data Centres for over 10 milliarder dollars, hvilket gør det til en af Asiens største datacenteraftaler i takt med den stigende efterspørgsel efter digital infrastruktur drevet af væksten inden for kunstig intelligens."
             },
             "es": {
-              "title": "Grupo liderado por KKR está a punto de comprar empresa de centros de datos de Singapur valorada en más de 10 mil millones de dólares, informa WSJ",
+              "title": "Grupo liderado por KKR a punto de comprar empresa de centros de datos de Singapur valorada en más de 10 mil millones de dólares, informa WSJ",
               "summary": "El grupo liderado por KKR, en asociación con Singtel, está a punto de adquirir ST Telemedia Global Data Centres por más de 10 mil millones de dólares, convirtiéndose en uno de los mayores acuerdos de centros de datos en Asia en medio de la creciente demanda de infraestructura digital impulsada por el crecimiento de la inteligencia artificial."
             }
           }
@@ -650,15 +648,15 @@
               "brand"
             ]
           },
-          "aiSummary": "AI-generated summary: In 2026, tracking customer engagement metrics is crucial for effective marketing, with a shift towards measuring meaningful interactions like email opens and website engagement rather than traditional metrics like clicks and impressions.",
+          "aiSummary": "AI-Generated Summary:\nIn 2026, tracking customer engagement metrics has become crucial in marketing due to privacy changes and AI-driven personalization expectations. Clicks and impressions are no longer sufficient; what matters now is the level of connection people have with a brand through actions like opening emails and spending time on the website.",
           "translations": {
             "da": {
-              "title": "7 målinger af kundedeltagelse at følge i 2026",
-              "summary": "I 2026 er det afgørende at følge målinger af kundedeltagelse for effektiv markedsføring, med et skift mod at måle meningsfulde interaktioner som e-mail åbninger og websted engagement i stedet for traditionelle målinger som klik og visninger."
+              "title": "7 Kundeforholdsmålinger at følge i 2026",
+              "summary": "I 2026 er det blevet afgørende at følge kundeforholdsmålinger i markedsføring på grund af ændringer i privatlivets fred og forventninger til AI-drevet personalisering. Klik og visninger er ikke længere tilstrækkelige; det, der nu betyder noget, er det niveau af forbindelse, folk har med et brand gennem handlinger som at åbne e-mails og bruge tid på hjemmesiden."
             },
             "es": {
-              "title": "7 métricas de compromiso del cliente a seguir en 2026",
-              "summary": "En 2026, rastrear métricas de compromiso del cliente es crucial para un marketing efectivo, con un cambio hacia medir interacciones significativas como aperturas de correos electrónicos y compromiso en sitios web en lugar de métricas tradicionales como clics e impresiones."
+              "title": "7 Métricas de Compromiso del Cliente para Rastrear en 2026",
+              "summary": "En 2026, rastrear métricas de compromiso del cliente se ha vuelto crucial en marketing debido a cambios en la privacidad y expectativas de personalización impulsadas por IA. Los clics y las impresiones ya no son suficientes; lo que importa ahora es el nivel de conexión que las personas tienen con una marca a través de acciones como abrir correos electrónicos y pasar tiempo en el sitio web."
             }
           }
         },
@@ -682,15 +680,15 @@
               "spending"
             ]
           },
-          "aiSummary": "AI-Generated Summary:\nMeta plans to spend over $115 billion this year, a significant increase from $72 billion in the previous year, as the company aims to enhance its competitiveness in the artificial intelligence sector.",
+          "aiSummary": "AI-Generated Summary:\nMeta plans to spend over $115 billion this year, a significant increase from $72 billion in the previous year, as the company strives to stay competitive in the artificial intelligence sector.",
           "translations": {
             "da": {
-              "title": "Meta forudser udgifter på mindst 115 milliarder dollars i år",
-              "summary": "Meta planlægger at bruge over 115 milliarder dollars i år, en betydelig stigning fra 72 milliarder dollars året før, da virksomheden sigter mod at styrke sin konkurrenceevne inden for kunstig intelligens."
+              "title": "Meta Forudser Udgifter på Mindst $115 Milliarder i År",
+              "summary": "Meta planlægger at bruge over $115 milliarder i år, en betydelig stigning fra $72 milliarder året før, da virksomheden stræber efter at forblive konkurrencedygtig inden for kunstig intelligens."
             },
             "es": {
-              "title": "Meta pronostica un gasto de al menos 115 mil millones este año",
-              "summary": "Meta planea gastar más de 115 mil millones este año, un aumento significativo desde los 72 mil millones del año anterior, ya que la empresa busca mejorar su competitividad en el sector de la inteligencia artificial."
+              "title": "Meta Prevé Gastar al Menos $115 Mil Millones Este Año",
+              "summary": "Meta planea gastar más de $115 mil millones este año, un aumento significativo de $72 mil millones en el año anterior, mientras la empresa se esfuerza por mantenerse competitiva en el sector de la inteligencia artificial."
             }
           }
         },
@@ -719,15 +717,15 @@
               "brand"
             ]
           },
-          "aiSummary": "AI-Generated Summary:\nConsumers in the luxury sector are prioritizing trust as a key factor in their purchasing decisions, seeking greater transparency from high-end brands due to supply chain and compliance issues in recent years.",
+          "aiSummary": "AI-Generated Summary:\nConsumers in the luxury sector are prioritizing trust as a key factor in their purchasing decisions, seeking transparency from high-end brands due to supply chain issues and regulatory challenges in the industry.",
           "translations": {
             "da": {
               "title": "‘Tillid er den nye valuta inden for luksus’: Positive Luxury",
-              "summary": "Forbrugere i luksussektoren prioriterer tillid som en nøglefaktor i deres købsbeslutninger og søger større gennemsigtighed fra high-end mærker på grund af problemer med forsyningskæden og overholdelse i de seneste år."
+              "summary": "Forbrugere i luksussektoren prioriterer tillid som en nøglefaktor i deres købsbeslutninger og søger gennemsigtighed fra high-end mærker på grund af problemer i forsyningskæden og reguleringsudfordringer i branchen."
             },
             "es": {
               "title": "‘La confianza es la nueva moneda de lujo’: Positive Luxury",
-              "summary": "Los consumidores en el sector del lujo están priorizando la confianza como un factor clave en sus decisiones de compra, buscando mayor transparencia de las marcas de alta gama debido a problemas de cadena de suministro y cumplimiento en los últimos años."
+              "summary": "Los consumidores en el sector del lujo están priorizando la confianza como un factor clave en sus decisiones de compra, buscando transparencia de las marcas de alta gama debido a problemas en la cadena de suministro y desafíos regulatorios en la industria."
             }
           }
         }
@@ -759,15 +757,15 @@
               "jeweller"
             ]
           },
-          "aiSummary": "AI-generated summary:\nChow Tai Fook, a Hong Kong-based jewellery retailer, has reported a strong sales recovery with higher retail sales, signaling an improvement in consumer demand in the jewellery industry.",
+          "aiSummary": "AI-Generated Summary:\nChow Tai Fook, a Hong Kong-based jewellery retailer, has reported a strong sales recovery with higher retail sales, signaling an improvement in consumer demand within the jewellery industry.",
           "translations": {
             "da": {
               "title": "Chow Tai Fook rapporterer om stærk salgsgenopretning",
-              "summary": "Chow Tai Fook, en Hongkong-baseret smykkeforhandler, har rapporteret om en stærk salgsgenopretning med højere detailhandelssalg, hvilket signalerer en forbedring i forbrugernes efterspørgsel i smykkeindustrien."
+              "summary": "Chow Tai Fook, en juvelerforhandler baseret i Hongkong, har rapporteret om en stærk salgsgenopretning med højere detailhandel, hvilket signalerer en forbedring i forbrugernes efterspørgsel inden for smykkeindustrien."
             },
             "es": {
               "title": "Chow Tai Fook informa sobre una fuerte recuperación en ventas",
-              "summary": "Chow Tai Fook, un minorista de joyería con sede en Hong Kong, ha informado sobre una fuerte recuperación en ventas con un aumento en las ventas minoristas, lo que indica una mejora en la demanda del consumidor en la industria de la joyería."
+              "summary": "Chow Tai Fook, un minorista de joyería con sede en Hong Kong, ha informado sobre una fuerte recuperación en ventas con un aumento en las ventas minoristas, lo que indica una mejora en la demanda del consumidor dentro de la industria de la joyería."
             }
           }
         },
@@ -793,15 +791,15 @@
               "jeweller"
             ]
           },
-          "aiSummary": "AI-Generated Summary:\nMichael Hill International has seen positive jewellery sales performance in the past six months, as reported by Jeweller - Business News on January 26, 2026.",
+          "aiSummary": "AI-Generated Summary:\nMichael Hill International has seen positive jewellery sales in the past six months, as reported by Jeweller - Business News on January 26, 2026.",
           "translations": {
             "da": {
               "title": "Positive smykkesalg for Michael Hill",
-              "summary": "Michael Hill International har set positive smykkesalg de seneste seks måneder, som rapporteret af Jeweller - Business News den 26. januar 2026."
+              "summary": "Michael Hill International har set positive smykkesalg i de sidste seks måneder, som rapporteret af Jeweller - Business News den 26. januar 2026."
             },
             "es": {
               "title": "Ventas de joyería positivas para Michael Hill",
-              "summary": "Michael Hill International ha visto un rendimiento positivo en las ventas de joyería en los últimos seis meses, según informó Jeweller - Business News el 26 de enero de 2026."
+              "summary": "Michael Hill International ha visto ventas de joyería positivas en los últimos seis meses, según informó Jeweller - Business News el 26 de enero de 2026."
             }
           }
         },
@@ -826,15 +824,15 @@
               "jeweller"
             ]
           },
-          "aiSummary": "AI-generated summary: LVMH experienced a 1% organic revenue decline in 2025, with turnover dropping by 5% due to currency variations. The results have raised concerns about the luxury market's recovery, leading to a plunge in LVMH shares.",
+          "aiSummary": "AI-Generated Summary:\nLVMH's shares dropped as doubts arose about the luxury market's recovery, despite a 1% organic revenue decline in 2025. Unfavourable currency variations led to a 5% turnover decrease, with the group's highest recorded turnover in 2023 at €86.1 billion.",
           "translations": {
             "da": {
               "title": "LVMH-aktier falder, da resultater vækker tvivl om luksusmarkedets genopretning",
-              "summary": "LVMH oplevede et fald i den organiske omsætning på 1% i 2025, med en omsætning der faldt med 5% på grund af valutavariationer. Resultaterne har rejst bekymringer om luksusmarkedets genopretning, hvilket har ført til et fald i LVMH-aktier."
+              "summary": "LVMH's aktier faldt, da der opstod tvivl om luksusmarkedets genopretning, på trods af et fald i den organiske omsætning på 1 % i 2025. Ugunstige valutavariationer førte til et fald i omsætningen på 5 %, med gruppens højeste registrerede omsætning i 2023 på 86,1 milliarder euro."
             },
             "es": {
-              "title": "Las acciones de LVMH caen a medida que los resultados generan dudas sobre la recuperación del mercado de lujo",
-              "summary": "LVMH experimentó una caída del 1% en los ingresos orgánicos en 2025, con una disminución del 5% en la facturación debido a variaciones en las divisas. Los resultados han generado preocupaciones sobre la recuperación del mercado de lujo, lo que ha llevado a una caída en las acciones de LVMH."
+              "title": "Las acciones de LVMH caen mientras los resultados generan dudas sobre la recuperación del mercado de lujo",
+              "summary": "Las acciones de LVMH cayeron a medida que surgieron dudas sobre la recuperación del mercado de lujo, a pesar de una disminución del 1% en los ingresos orgánicos en 2025. Variaciones desfavorables en las divisas llevaron a una disminución del 5% en la facturación, con la facturación más alta registrada del grupo en 2023 de 86,1 mil millones de euros."
             }
           }
         },
@@ -859,10 +857,10 @@
               "jewelry"
             ]
           },
-          "aiSummary": "AI-Generated Summary:\nTrain Retail is offering a free live web training session on February 18th at 10 am Central for independent jewelers to learn how to assess the effectiveness of their jewelry marketing efforts.",
+          "aiSummary": "AI-generated summary:\nTrain Retail is offering a free live web training session on February 18th at 10 am Central for independent jewelers to learn how to assess the effectiveness of their jewelry marketing efforts.",
           "translations": {
             "da": {
-              "title": "Train Retail annoncerer gratis live webtræning: “Hvordan man kan se, om din smykkemarkedsføring faktisk virker”",
+              "title": "Train Retail annoncerer gratis live webtræning: “Hvordan man vurderer, om din smykkemarkedsføring faktisk virker”",
               "summary": "Train Retail tilbyder en gratis live webtræning den 18. februar kl. 10.00 Central for uafhængige juvelerer, hvor de kan lære at vurdere effektiviteten af deres smykkemarkedsføring."
             },
             "es": {
@@ -929,15 +927,15 @@
               "jeweller"
             ]
           },
-          "aiSummary": "AI-generated summary: Repossi's new Blast collection draws inspiration from the 1980s, featuring bold volumes in white, rose, and black gold adorned with diamonds. The collection combines craftsmanship with innovative design, staying on-trend in the jewellery industry.",
+          "aiSummary": "AI-generated summary: Repossi's new Blast collection, inspired by the 1980s, features bold volumes in white, rose, and black gold adorned with diamonds. The collection merges craftsmanship and design, staying on-trend with colorful and sculptural pieces.",
           "translations": {
             "da": {
-              "title": "Et splash af farve: Repossi er lige i trenden med ny kollektion",
-              "summary": "Repossi's nye Blast-kollektion er inspireret af 1980'erne og præsenterer dristige former i hvidt, rosaguld og sort guld prydet med diamanter. Kollektionen kombinerer håndværk med innovativt design og forbliver på trenden i smykkeindustrien."
+              "title": "Et splash af farve: Repossi er lige på trend med ny kollektion",
+              "summary": "Repossi's nye Blast kollektion, inspireret af 1980'erne, byder på dristige former i hvidt, roseguld og sort guld prydet med diamanter. Kollektionen forener håndværk og design og følger trenden med farverige og skulpturelle stykker."
             },
             "es": {
               "title": "Un toque de color: Repossi está a la moda con su nueva colección",
-              "summary": "La nueva colección Blast de Repossi se inspira en los años 80, presentando volúmenes audaces en oro blanco, rosa y negro adornados con diamantes. La colección combina la artesanía con un diseño innovador, manteniéndose a la moda en la industria de la joyería."
+              "summary": "La nueva colección Blast de Repossi, inspirada en los años 80, presenta volúmenes audaces en oro blanco, rosa y negro adornados con diamantes. La colección fusiona artesanía y diseño, manteniéndose a la moda con piezas coloridas y escultóricas."
             }
           }
         },
@@ -962,19 +960,21 @@
               "jewelry"
             ]
           },
-          "aiSummary": "AI-Generated Summary:\nInstore Magazine's \"Jewelers’ Horoscope: February 2-8, 2026\" provides astrological forecasts for jewelry store-owners, salespeople, and custom jewelers for the upcoming week.",
+          "aiSummary": "AI-Generated Summary:\nInstore Magazine's \"Jewelers’ Horoscope: February 2-8, 2026\" provides astrological forecasts tailored for jewelry store-owners, salespeople, and custom jewelers for the upcoming week.",
           "translations": {
             "da": {
-              "title": "Jewelers’ Horoscope: 2.-8. februar 2026",
-              "summary": "Instore Magasins \"Jewelers’ Horoscope: 2.-8. februar 2026\" giver astrologiske forudsigelser for smykkebutiksejere, sælgere og skræddersyede juvelerer for den kommende uge."
+              "title": "Smykkebutikkers Horoskop: 2.-8. februar 2026",
+              "summary": "Instore Magazines \"Smykkebutikkers Horoskop: 2.-8. februar 2026\" giver astrologiske forudsigelser skræddersyet til ejere af smykkebutikker, sælgere og specialfremstillere af smykker for den kommende uge."
             },
             "es": {
               "title": "Horóscopo de Joyeros: 2-8 de febrero de 2026",
-              "summary": "La \"Horóscopo de Joyeros: 2-8 de febrero de 2026\" de Instore Magazine proporciona pronósticos astrológicos para propietarios de tiendas de joyería, vendedores y joyeros personalizados para la próxima semana."
+              "summary": "La \"Horóscopo de Joyeros: 2-8 de febrero de 2026\" de Instore Magazine proporciona pronósticos astrológicos adaptados para propietarios de tiendas de joyería, vendedores y joyeros personalizados para la semana que viene."
             }
           }
         }
       ]
     }
-  }
+  },
+  "coverImageUrl": "/weekly-images/2026-W05.png",
+  "coverImageAlt": "Weekly cover illustration for 2026-W05"
 }

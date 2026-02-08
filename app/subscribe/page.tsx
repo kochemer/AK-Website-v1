@@ -14,18 +14,10 @@ export default function SubscribePage() {
       <section className="w-full border-b border-gray-200 bg-gradient-to-r from-[#2e3741] via-[#394855] to-[#4a5a6b]">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 py-10 sm:py-12">
           <h1 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-            Weekly email digest
+            Support Luxury Intelligence
           </h1>
           <p className="text-sm sm:text-base text-gray-100 leading-relaxed mb-3 max-w-xl">
-            A concise weekly briefing across{' '}
-            <span className="font-semibold">AI & strategy</span>,{' '}
-            <span className="font-semibold">ecommerce & retail tech</span>,{' '}
-            <span className="font-semibold">luxury & consumer</span>, and{' '}
-            <span className="font-semibold">jewellery</span>.
-          </p>
-          <p className="text-xs sm:text-sm text-gray-200 mb-6">
-            Delivered once a week (covering Monday–Sunday, CET). No noise, just
-            curated signals.
+            If you enjoy the weekly digest, consider supporting the project. This is a donation to help cover running costs (hosting, tooling, AI summarisation).
           </p>
           <div className="flex flex-wrap items-center gap-3 text-sm">
             <Link
@@ -49,7 +41,40 @@ export default function SubscribePage() {
         {/* Pricing + email capture */}
         <SubscribePricing formAction={formAction} />
 
-        {/* What’s included */}
+        {/* What your support does */}
+        <section aria-labelledby="support-heading">
+          <h2
+            id="support-heading"
+            className="text-lg sm:text-xl font-semibold text-gray-900 mb-3"
+          >
+            What your support does
+          </h2>
+          <div className="rounded-xl bg-white border border-gray-200 p-4 sm:p-5 shadow-sm">
+            <ul className="space-y-2 text-sm text-gray-700 mb-4">
+              <li className="flex gap-2">
+                <span className="mt-[3px] text-green-500">●</span>
+                <span>Helps cover hosting and infrastructure costs</span>
+              </li>
+              <li className="flex gap-2">
+                <span className="mt-[3px] text-green-500">●</span>
+                <span>Funds data collection and web discovery tools</span>
+              </li>
+              <li className="flex gap-2">
+                <span className="mt-[3px] text-green-500">●</span>
+                <span>Supports LLM costs for AI summarisation</span>
+              </li>
+              <li className="flex gap-2">
+                <span className="mt-[3px] text-green-500">●</span>
+                <span>Helps maintain and improve the project</span>
+              </li>
+            </ul>
+            <p className="text-sm font-medium text-gray-900 border-t border-gray-200 pt-3 mt-3">
+              Support does not unlock premium content today.
+            </p>
+          </div>
+        </section>
+
+        {/* What's included */}
         <section aria-labelledby="whats-included-heading">
           <h2
             id="whats-included-heading"
@@ -58,6 +83,9 @@ export default function SubscribePage() {
             What&apos;s included
           </h2>
           <div className="rounded-xl bg-white border border-gray-200 p-4 sm:p-5 shadow-sm">
+            <p className="text-sm text-gray-600 mb-3">
+              The site remains openly accessible. The digest and archive are available regardless of donation. If that changes in the future, supporters will be informed in advance.
+            </p>
             <ul className="space-y-2 text-sm text-gray-700">
               <li className="flex gap-2">
                 <span className="mt-[3px] text-green-500">●</span>
@@ -90,20 +118,32 @@ export default function SubscribePage() {
           <div className="space-y-4 text-sm text-gray-800">
             <div>
               <h3 className="font-medium text-gray-900">
-                When do emails go out?
+                Is this a paid product?
               </h3>
               <p className="mt-1 text-gray-700">
-                The digest covers Monday–Sunday in Central European Time (CET).
-                Emails are typically sent early in the following week once the
-                weekly digest is built.
+                Not currently. Payments are treated as support/donations to help cover running costs. The digest and archive remain freely accessible.
+              </p>
+            </div>
+            <div>
+              <h3 className="font-medium text-gray-900">
+                Will I get extra features?
+              </h3>
+              <p className="mt-1 text-gray-700">
+                No guaranteed extras today. If supporter perks are introduced later, they&apos;ll be communicated clearly and separately.
               </p>
             </div>
             <div>
               <h3 className="font-medium text-gray-900">Can I cancel?</h3>
               <p className="mt-1 text-gray-700">
-                Yes. Subscriptions will be cancellable at any time. For now,
-                payments are not enabled—this page is a preview of the future
-                subscription flow.
+                Yes, you&apos;ll be able to cancel anytime via Stripe&apos;s customer portal once payments are live.
+              </p>
+            </div>
+            <div>
+              <h3 className="font-medium text-gray-900">When do emails go out?</h3>
+              <p className="mt-1 text-gray-700">
+                The digest covers Monday–Sunday in Central European Time (CET).
+                Emails are typically sent early in the following week once the
+                weekly digest is built.
               </p>
             </div>
             <div>
@@ -118,13 +158,6 @@ export default function SubscribePage() {
           </div>
         </section>
 
-        {/* Trust footer note */}
-        <section className="border-t border-dashed border-gray-300 pt-4 text-xs text-gray-500">
-          <p>
-            Payments are <span className="font-semibold">not</span> enabled yet
-            — this is a placeholder page while subscription options are tested.
-          </p>
-        </section>
       </section>
     </main>
   );

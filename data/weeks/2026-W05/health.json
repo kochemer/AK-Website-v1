@@ -1,0 +1,55 @@
+{
+  "digestWeek": "2026-W05",
+  "ingestionWeek": "2026-W06",
+  "startedAt": "2026-02-08T15:00:23.738Z",
+  "finishedAt": "2026-02-08T15:03:12.213Z",
+  "steps": [
+    {
+      "name": "discovery",
+      "ok": true,
+      "startedAt": "2026-02-08T15:00:23.738Z",
+      "finishedAt": "2026-02-08T15:00:23.773Z"
+    },
+    {
+      "name": "classification",
+      "ok": true,
+      "startedAt": "2026-02-08T15:00:23.773Z",
+      "finishedAt": "2026-02-08T15:00:23.800Z"
+    },
+    {
+      "name": "digest",
+      "ok": true,
+      "startedAt": "2026-02-08T15:00:23.800Z",
+      "finishedAt": "2026-02-08T15:00:59.036Z"
+    },
+    {
+      "name": "email",
+      "ok": true,
+      "startedAt": "2026-02-08T15:00:59.036Z",
+      "finishedAt": "2026-02-08T15:01:11.514Z"
+    },
+    {
+      "name": "podcast",
+      "ok": true,
+      "startedAt": "2026-02-08T15:01:11.515Z",
+      "finishedAt": "2026-02-08T15:03:12.211Z"
+    }
+  ],
+  "health": {
+    "warnings": [
+      "Podcast script word count: 1325 words (minimum: 1500)",
+      "AI & Strategy: economictimes.indiatimes.com represents 42.9% (3/7) - exceeds 40% threshold",
+      "AI & Strategy: www.ft.com represents 42.9% (3/7) - exceeds 40% threshold",
+      "Luxury & Consumer: www.businessoffashion.com represents 42.9% (3/7) - exceeds 40% threshold",
+      "Jewellery Industry: www.professionaljeweller.com represents 42.9% (3/7) - exceeds 40% threshold"
+    ],
+    "metrics": {
+      "paywallPercent": 0,
+      "podcastWordCount": 1325
+    }
+  },
+  "versions": {
+    "node": "v24.12.0",
+    "gitCommit": "d7674cf26963eefc3afe0b72f29ce316935f3adb"
+  }
+}

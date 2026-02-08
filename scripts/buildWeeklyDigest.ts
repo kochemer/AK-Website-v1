@@ -5,6 +5,7 @@ import { generateSummariesForDigest } from '../digest/generateSummaries';
 import { translateDigestArticles } from '../lib/i18n/translate';
 import { loadEnv } from '../lib/env';
 import { getCurrentDigestWeek, validateWeekLabel } from '../lib/utils/getCurrentDigestWeek';
+import { runWeeklyChecks, printHealthCheckResults } from '../pipeline/checks/runChecks';
 
 // Load environment variables (must be before any env var access)
 loadEnv();
@@ -95,6 +96,23 @@ async function main() {
       // No existing digest — that's fine
     }
     
+    // Run health checks before saving
+    // Try to load podcast script if available (optional)
+    let podcastScriptText: string | undefined;
+    try {
+      const podcastScriptPath = path.join(process.cwd(), 'data', 'weeks', weekLabel, 'podcast-script.txt');
+      podcastScriptText = await fs.readFile(podcastScriptPath, 'utf-8');
+    } catch {
+      // Podcast script not available - that's fine, check will be skipped
+    }
+
+    const checkResult = runWeeklyChecks({
+      digest,
+      selectedArticles: allTopArticles,
+      podcastScriptText,
+    });
+    printHealthCheckResults(checkResult);
+
     await fs.writeFile(outputPath, JSON.stringify(digest, null, 2), 'utf-8');
     
     console.log(`[Build Weekly Digest] ✓ Saved digest to ${outputPath}`);
