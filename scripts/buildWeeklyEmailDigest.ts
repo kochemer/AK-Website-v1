@@ -329,8 +329,8 @@ Output as JSON object with a "bullets" array containing your 3 summary sentences
         const wordOverlap = existingWords.filter(w => bulletWords.includes(w)).length;
         const wordSimilarity = wordOverlap / Math.max(existingWords.length, bulletWords.length);
         
-        const existingConcepts = existing.toLowerCase().match(/\b(\d+|[a-z]{5,})\b/g) || [];
-        const bulletConcepts = bullet.toLowerCase().match(/\b(\d+|[a-z]{5,})\b/g) || [];
+        const existingConcepts: string[] = existing.toLowerCase().match(/\b(\d+|[a-z]{5,})\b/g) || [];
+        const bulletConcepts: string[] = bullet.toLowerCase().match(/\b(\d+|[a-z]{5,})\b/g) || [];
         const conceptOverlap = existingConcepts.filter(c => bulletConcepts.includes(c)).length;
         const conceptSimilarity = conceptOverlap / Math.max(existingConcepts.length, bulletConcepts.length);
         

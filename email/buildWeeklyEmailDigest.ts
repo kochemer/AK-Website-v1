@@ -299,8 +299,8 @@ Output as JSON object with a "bullets" array containing your 3 summary sentences
         
         // Method 2: Key concept overlap (for semantic similarity)
         // Extract key nouns/concepts (longer words, numbers, important terms)
-        const existingConcepts = existing.toLowerCase().match(/\b(\d+|[a-z]{5,})\b/g) || [];
-        const bulletConcepts = bullet.toLowerCase().match(/\b(\d+|[a-z]{5,})\b/g) || [];
+        const existingConcepts: string[] = existing.toLowerCase().match(/\b(\d+|[a-z]{5,})\b/g) || [];
+        const bulletConcepts: string[] = bullet.toLowerCase().match(/\b(\d+|[a-z]{5,})\b/g) || [];
         const conceptOverlap = existingConcepts.filter(c => bulletConcepts.includes(c)).length;
         const conceptSimilarity = conceptOverlap / Math.max(existingConcepts.length, bulletConcepts.length);
         
