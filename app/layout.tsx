@@ -11,6 +11,7 @@ import EnableNotificationsButton from "./components/EnableNotificationsButton";
 import DisplayModeAttribute from "./components/DisplayModeAttribute";
 import ServiceWorkerRegistration from "./components/ServiceWorkerRegistration";
 import JsonLd from "./components/JsonLd";
+import CanonicalUrlValidator from "./components/CanonicalUrlValidator";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -27,8 +28,22 @@ const geistMono = Geist_Mono({
 
 import { getSiteUrl } from '@/lib/utils/siteUrl';
 
-// Lazy evaluation to avoid issues in dev mode
-const getSiteUrlLazy = () => getSiteUrl();
+// Get site URL once at module load
+const siteUrl = getSiteUrl();
+
+// Runtime assertion in production: ensure canonical URLs are absolute and use correct domain
+if (process.env.NODE_ENV === 'production') {
+  const canonical = `${siteUrl}/`;
+  if (!canonical.startsWith(siteUrl)) {
+    console.error(`[Metadata Error] Canonical URL does not start with siteUrl: ${canonical} (siteUrl: ${siteUrl})`);
+  }
+  if (!canonical.startsWith('https://')) {
+    console.error(`[Metadata Error] Canonical URL is not absolute HTTPS: ${canonical}`);
+  }
+  if (canonical.includes('vercel.app')) {
+    console.error(`[Metadata Error] Canonical URL contains vercel.app domain: ${canonical}`);
+  }
+}
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -38,7 +53,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL(getSiteUrlLazy()),
+  metadataBase: new URL(siteUrl),
   title: "Luxury Intelligence",
   description: "Luxury Ecommerce, Retail Technology & AI - Curated intelligence and AI-assisted summaries for luxury, ecommerce, and retail tech.",
   manifest: "/manifest.webmanifest",
@@ -61,7 +76,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
   },
   alternates: {
-    canonical: `${getSiteUrlLazy()}/`,
+    canonical: `${siteUrl}/`,
   },
 };
 
@@ -93,7 +108,7 @@ export default function RootLayout({
             "@context": "https://schema.org",
             "@type": "WebSite",
             name: "Luxury Intelligence",
-            url: getSiteUrlLazy(),
+            url: siteUrl,
             description: "Luxury Ecommerce, Retail Technology & AI - Curated intelligence and AI-assisted summaries for luxury, ecommerce, and retail tech.",
             inLanguage: "en",
             publisher: {
@@ -102,6 +117,7 @@ export default function RootLayout({
             },
           }}
         />
+        <CanonicalUrlValidator />
         <AmplitudeInit />
         <DisplayModeAttribute />
         <ServiceWorkerRegistration />

@@ -12,24 +12,38 @@ import { getCurrentDigestWeek } from '@/lib/utils/getCurrentDigestWeek';
 import { getSiteUrl } from '@/lib/utils/siteUrl';
 import type { WeeklyDigest } from '@/lib/types';
 
-// Lazy evaluation for dev mode compatibility
-const getSiteUrlLazy = () => getSiteUrl();
+// Get site URL once at module load
+const siteUrl = getSiteUrl();
+
+// Runtime assertion in production: ensure canonical URL is correct
+if (process.env.NODE_ENV === 'production') {
+  const canonical = `${siteUrl}/`;
+  if (!canonical.startsWith(siteUrl)) {
+    console.error(`[Metadata Error] Homepage canonical URL does not start with siteUrl: ${canonical} (siteUrl: ${siteUrl})`);
+  }
+  if (!canonical.startsWith('https://')) {
+    console.error(`[Metadata Error] Homepage canonical URL is not absolute HTTPS: ${canonical}`);
+  }
+  if (canonical.includes('vercel.app')) {
+    console.error(`[Metadata Error] Homepage canonical URL contains vercel.app domain: ${canonical}`);
+  }
+}
 
 export const metadata: Metadata = {
   title: 'Weekly AI, Ecommerce & Luxury Industry Digest',
   description: 'A weekly curated digest covering AI & strategy, ecommerce and retail technology, luxury and jewellery industry news. Updated every week.',
   alternates: {
-    canonical: `${getSiteUrlLazy()}/`,
+    canonical: `${siteUrl}/`,
   },
   openGraph: {
     title: 'Weekly AI, Ecommerce & Luxury Industry Digest',
     description: 'A weekly curated digest covering AI & strategy, ecommerce and retail technology, luxury and jewellery industry news. Updated every week.',
-    images: [`${getSiteUrlLazy()}/og-default.svg`],
+    images: [`${siteUrl}/og-default.svg`],
   },
   twitter: {
     title: 'Weekly AI, Ecommerce & Luxury Industry Digest',
     description: 'A weekly curated digest covering AI & strategy, ecommerce and retail technology, luxury and jewellery industry news. Updated every week.',
-    images: [`${getSiteUrlLazy()}/og-default.svg`],
+    images: [`${siteUrl}/og-default.svg`],
   },
 };
 

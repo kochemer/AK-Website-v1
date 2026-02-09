@@ -17,7 +17,9 @@
     "podcast": "tsx scripts/buildWeeklyPodcast.ts",
     "digest:weekly": "tsx scripts/runWeeklyPipeline.ts",
     "digest:preflight": "tsx scripts/preflightDigestEnv.ts",
-    "email:weekly": "tsx scripts/sendWeeklyEmailDigest.ts"
+    "email:weekly": "tsx scripts/sendWeeklyEmailDigest.ts",
+    "seo:check-robots": "tsx scripts/checkRobots.ts",
+    "test:redirects": "tsx scripts/testRedirects.ts"
   },
   "dependencies": {
     "@amplitude/unified": "^1.0.0-beta.9",
