@@ -12,6 +12,9 @@ import { classifyCurrentWeekArticles } from '../classification/classifyTopics';
 import { buildAndSaveWeeklyDigest } from '../digest/buildWeeklyDigest';
 import { runWeeklyChecks, type CheckResult } from './checks/runChecks';
 import type { WeeklyDigest } from '../lib/types';
+import { runRssIngestion } from '../ingestion/fetchRss';
+import { runPageIngestion } from '../ingestion/fetchPages';
+import { resetYieldStats, saveYieldReport } from '../ingestion/sourceYield';
 
 // Import email, podcast, cover functions (will create these)
 import { buildWeeklyEmailDigest } from '../email/buildWeeklyEmailDigest';
@@ -21,6 +24,8 @@ import { regenerateCover } from '../digest/regenerateCover';
 export type RunWeeklyPipelineOptions = {
   week?: string;               // digest week override
   ingestionWeek?: string;      // ingestion week override
+  skipRss?: boolean;           // Skip RSS ingestion
+  skipPages?: boolean;         // Skip page ingestion
   skipPodcast?: boolean;
   skipCover?: boolean;
   skipDiscovery?: boolean;
@@ -290,10 +295,64 @@ export async function runWeeklyPipeline(options: RunWeeklyPipelineOptions = {}):
     }
   }
 
-  // Step 1: Discovery (ingestion week)
+  // Reset yield stats at start of ingestion
+  resetYieldStats();
+
+  // Step 1: RSS Ingestion
+  if (!options.skipRss) {
+    const step = await runStep('rss', async () => {
+      console.log(`[Pipeline] Step 1/8: RSS Ingestion...`);
+      return await runRssIngestion();
+    });
+    steps.push({
+      name: 'rss',
+      ok: step.ok,
+      startedAt: step.startedAt,
+      finishedAt: step.finishedAt,
+      error: step.error,
+    });
+    if (!step.ok) {
+      console.error(`[Pipeline] ✗ RSS ingestion failed: ${step.error}`);
+    } else {
+      console.log(`[Pipeline] ✓ RSS ingestion complete (added: ${step.result?.added || 0}, updated: ${step.result?.updated || 0})`);
+    }
+    console.log('');
+  } else {
+    console.log(`[Pipeline] Skipping RSS ingestion`);
+  }
+
+  // Step 2: Page Ingestion
+  if (!options.skipPages) {
+    const step = await runStep('pages', async () => {
+      console.log(`[Pipeline] Step 2/8: Page Ingestion...`);
+      return await runPageIngestion();
+    });
+    steps.push({
+      name: 'pages',
+      ok: step.ok,
+      startedAt: step.startedAt,
+      finishedAt: step.finishedAt,
+      error: step.error,
+    });
+    if (!step.ok) {
+      console.error(`[Pipeline] ✗ Page ingestion failed: ${step.error}`);
+    } else {
+      console.log(`[Pipeline] ✓ Page ingestion complete (added: ${step.result?.added || 0})`);
+    }
+    console.log('');
+  } else {
+    console.log(`[Pipeline] Skipping page ingestion`);
+  }
+
+  // Save yield report after RSS and page ingestion
+  await saveYieldReport();
+  console.log(`[Pipeline] ✓ Source yield report saved to data/source_yield.json`);
+  console.log('');
+
+  // Step 3: Discovery (ingestion week)
   if (!options.skipDiscovery) {
     const step = await runStep('discovery', async () => {
-      console.log(`[Pipeline] Step 1/6: Discovery (${ingestionWeek})...`);
+      console.log(`[Pipeline] Step 3/8: Discovery (${ingestionWeek})...`);
       return await discoverWeekly({ weekLabel: ingestionWeek });
     });
     steps.push({
@@ -313,10 +372,10 @@ export async function runWeeklyPipeline(options: RunWeeklyPipelineOptions = {}):
     console.log(`[Pipeline] Skipping discovery`);
   }
 
-  // Step 2: Classification (digest week)
+  // Step 4: Classification (digest week)
   if (!options.skipClassification) {
     const step = await runStep('classification', async () => {
-      console.log(`[Pipeline] Step 2/6: Classification (${digestWeek})...`);
+      console.log(`[Pipeline] Step 4/8: Classification (${digestWeek})...`);
       const { DateTime } = await import('luxon');
       const weekMatch = digestWeek.match(/^(\d{4})-W(\d{1,2})$/);
       if (!weekMatch) {
@@ -349,11 +408,11 @@ export async function runWeeklyPipeline(options: RunWeeklyPipelineOptions = {}):
     console.log(`[Pipeline] Skipping classification`);
   }
 
-  // Step 3: Digest build (digest week)
+  // Step 5: Digest build (digest week)
   let digest: WeeklyDigest | null = null;
   if (!options.skipDigest) {
     const step = await runStep('digest', async () => {
-      console.log(`[Pipeline] Step 3/6: Digest build (${digestWeek})...`);
+      console.log(`[Pipeline] Step 5/8: Digest build (${digestWeek})...`);
       return await buildAndSaveWeeklyDigest(digestWeek);
     });
     steps.push({
@@ -437,7 +496,7 @@ export async function runWeeklyPipeline(options: RunWeeklyPipelineOptions = {}):
   // Step 4: Email digest (digest week)
   if (!options.skipEmail) {
     const step = await runStep('email', async () => {
-      console.log(`[Pipeline] Step 4/6: Email digest (${digestWeek})...`);
+      console.log(`[Pipeline] Step 6/8: Email digest (${digestWeek})...`);
       return await buildWeeklyEmailDigest(digestWeek);
     });
     steps.push({
@@ -460,7 +519,7 @@ export async function runWeeklyPipeline(options: RunWeeklyPipelineOptions = {}):
   // Step 5: Podcast (digest week)
   if (!options.skipPodcast) {
     const step = await runStep('podcast', async () => {
-      console.log(`[Pipeline] Step 5/6: Podcast (${digestWeek})...`);
+      console.log(`[Pipeline] Step 7/8: Podcast (${digestWeek})...`);
       return await buildWeeklyPodcast(digestWeek);
     });
     steps.push({
@@ -483,7 +542,7 @@ export async function runWeeklyPipeline(options: RunWeeklyPipelineOptions = {}):
   // Step 6: Cover (digest week)
   if (!options.skipCover) {
     const step = await runStep('cover', async () => {
-      console.log(`[Pipeline] Step 6/6: Cover (${digestWeek})...`);
+      console.log(`[Pipeline] Step 8/8: Cover (${digestWeek})...`);
       return await regenerateCover(digestWeek);
     });
     steps.push({

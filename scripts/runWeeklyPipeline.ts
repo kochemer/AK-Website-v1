@@ -22,6 +22,10 @@ function parseArgs(): RunWeeklyPipelineOptions {
       const ingestionWeek = arg.split('=')[1];
       validateWeekLabel(ingestionWeek);
       options.ingestionWeek = ingestionWeek;
+    } else if (arg === '--skipRss' || arg === '--skipRss=true') {
+      options.skipRss = true;
+    } else if (arg === '--skipPages' || arg === '--skipPages=true') {
+      options.skipPages = true;
     } else if (arg === '--skipPodcast' || arg === '--skipPodcast=true') {
       options.skipPodcast = true;
     } else if (arg === '--skipCover' || arg === '--skipCover=true') {
