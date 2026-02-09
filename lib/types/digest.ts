@@ -123,6 +123,7 @@ export interface EmailDigestItem {
   url: string;
   source: string;
   bullets: string[];
+  summary?: string; // Article summary (aiSummary or snippet) for bullet extraction fallback
 }
 
 /**

@@ -5,10 +5,100 @@ import type { Metadata } from 'next';
 import { formatDate } from '@/lib/utils/formatDate';
 import { getCurrentDigestWeek } from '@/lib/utils/getCurrentDigestWeek';
 import { getSiteUrl } from '@/lib/utils/siteUrl';
-import type { EmailDigest } from '@/lib/types';
+import type { EmailDigest, EmailDigestItem } from '@/lib/types';
 
 // Lazy evaluation for dev mode compatibility
 const getSiteUrlLazy = () => getSiteUrl();
+
+/**
+ * Extract summary bullets from an email digest item.
+ * Filters out "implications" bullets and fills with summary sentences if needed.
+ * 
+ * Rules:
+ * - Start from existing bullets
+ * - Filter out implication/actionable bullets
+ * - If < 3 bullets remain, fill from article summary
+ * - Always return up to 3 bullets
+ */
+function extractSummaryBullets(item: EmailDigestItem): string[] {
+  // Implication patterns to filter out (case-insensitive)
+  const implicationPatterns = [
+    /implication/i,
+    /for retailers/i,
+    /for brands/i,
+    /what this means/i,
+    /why it matters/i,
+    /takeaway/i,
+    /so what/i,
+    /bottom line/i,
+    /how to respond/i,
+    /should consider/i,
+    /must adapt/i,
+    /should leverage/i,
+    /can leverage/i,
+    /must reassess/i,
+    /strategists should/i,
+    /retailers should/i,
+    /retailers must/i,
+    /retailers can/i,
+  ];
+
+  // Normalize and filter existing bullets
+  let filteredBullets = item.bullets
+    .map(b => {
+      // Normalize: trim, strip leading "-", "•", numbering
+      let normalized = b.trim();
+      normalized = normalized.replace(/^[-•]\s*/, ''); // Remove leading bullet markers
+      normalized = normalized.replace(/^\d+[.)]\s*/, ''); // Remove leading numbering
+      return normalized;
+    })
+    .filter(b => {
+      // Filter out empty or very short bullets
+      if (b.length < 10) return false;
+      // Filter out implication bullets
+      return !implicationPatterns.some(pattern => pattern.test(b));
+    });
+
+  // If we have 3+ good bullets, return first 3
+  if (filteredBullets.length >= 3) {
+    return filteredBullets.slice(0, 3);
+  }
+
+  // If we need more bullets, extract from summary
+  if (item.summary && item.summary.trim().length > 0) {
+    // Split summary into sentences
+    const sentences = item.summary
+      .split(/[.!?]+\s+/)
+      .map(s => s.trim())
+      .filter(s => {
+        // Filter out very short sentences
+        if (s.length < 20) return false;
+        // Filter out implication sentences
+        return !implicationPatterns.some(pattern => pattern.test(s));
+      });
+
+    // Add sentences that aren't already in bullets
+    for (const sentence of sentences) {
+      if (filteredBullets.length >= 3) break;
+      
+      // Check if this sentence is already represented in existing bullets
+      const isDuplicate = filteredBullets.some(bullet => {
+        const bulletWords = bullet.toLowerCase().split(/\s+/);
+        const sentenceWords = sentence.toLowerCase().split(/\s+/);
+        // Check if >50% of words overlap (simple duplicate detection)
+        const overlap = bulletWords.filter(w => sentenceWords.includes(w)).length;
+        return overlap > Math.min(bulletWords.length, sentenceWords.length) * 0.5;
+      });
+
+      if (!isDuplicate) {
+        filteredBullets.push(sentence);
+      }
+    }
+  }
+
+  // Return up to 3 bullets (may be fewer if summary is short)
+  return filteredBullets.slice(0, 3);
+}
 
 export const metadata: Metadata = {
   title: 'Email Digest – Weekly Intelligence',
@@ -138,7 +228,7 @@ export default async function EmailDigestPage() {
 
                     {/* Bullets */}
                     <ul className="space-y-1.5 sm:space-y-2">
-                      {item.bullets.map((bullet, idx) => (
+                      {extractSummaryBullets(item).map((bullet, idx) => (
                         <li
                           key={idx}
                           className="text-sm sm:text-base text-gray-700 leading-relaxed flex items-start"

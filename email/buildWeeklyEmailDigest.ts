@@ -238,12 +238,15 @@ export async function buildWeeklyEmailDigest(weekLabel: string, topN: number = 8
   for (let i = 0; i < selectedArticles.length; i++) {
     const article = selectedArticles[i];
     const bullets = await generateBullets(article, weekLabel, apiKey);
+    // Get article summary for bullet extraction fallback
+    const summary = article.aiSummary || article.snippet || '';
     items.push({
       rank: i + 1,
       title: article.title,
       url: article.url,
       source: article.source,
       bullets,
+      summary: summary.trim() || undefined,
     });
     
     // Small delay to avoid rate limits
