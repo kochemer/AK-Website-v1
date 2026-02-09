@@ -42,14 +42,27 @@ function formatWeekLabel(dt: DateTime): string {
 }
 
 /**
- * Get the current DIGEST week label — the current ISO week in CET.
+ * Get the current DIGEST week label — shows week 6 by default, switches to new week only on Sunday.
  *
- * Semantics: the digest is built and published during the same week
- * (typically Saturday). The site displays this week's digest.
+ * Semantics: 
+ *   - Week 6 is shown by default
+ *   - Only switches to the new week (week 7) on Sunday of that week
+ *   - Before Sunday, the previous week's digest is displayed
  */
 export function getCurrentDigestWeek(): string {
   const now = DateTime.now().setZone(TZ);
-  return formatWeekLabel(now);
+  const currentWeek = formatWeekLabel(now);
+  
+  // If today is Sunday (day 7), show the current week
+  // Otherwise (Monday-Saturday), show the previous week
+  if (now.weekday === 7) {
+    // Sunday: show current week
+    return currentWeek;
+  } else {
+    // Monday-Saturday: show previous week
+    const previousWeek = now.minus({ days: 1 }).startOf('week');
+    return formatWeekLabel(previousWeek);
+  }
 }
 
 /**
