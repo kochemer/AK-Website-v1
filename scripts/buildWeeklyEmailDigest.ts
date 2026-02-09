@@ -6,11 +6,13 @@
 import { promises as fs } from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import crypto from 'crypto';
 import OpenAI from 'openai';
 import { computeCommerceMateriality, getTopByMateriality } from '../scoring/commerceMateriality';
 import { loadEnv } from '../lib/env';
 import { getCurrentDigestWeek, validateWeekLabel } from '../lib/utils/getCurrentDigestWeek';
 import type { Article, WeeklyDigest, EmailDigest, EmailDigestItem } from '../lib/types';
+import { enrichFullText } from '../podcast/enrichFullText';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -29,28 +31,50 @@ const COMMERCE_MATERIALITY_WEIGHT_EMAIL = parseFloat(process.env.COMMERCE_MATERI
 const COMMERCE_MATERIALITY_WEIGHT_OTHER = parseFloat(process.env.COMMERCE_MATERIALITY_WEIGHT_OTHER || '0.3');
 
 
-/**
- * Load full text if available (from podcast fulltext)
- */
-async function loadFullText(articleId: string, weekLabel: string): Promise<string | null> {
+function hashUrl(url: string): string {
+  return crypto.createHash('sha256').update(url).digest('hex').substring(0, 16);
+}
+
+async function loadFullTextFromCache(url: string, weekLabel: string): Promise<string | null> {
   try {
-    const fulltextPath = path.join(__dirname, '../data/weeks', weekLabel, 'podcast', 'fulltext', `${articleId}.html`);
-    const content = await fs.readFile(fulltextPath, 'utf-8');
-    // Extract text content (simple extraction, remove HTML tags)
-    const text = content
-      .replace(/<script[^>]*>[\s\S]*?<\/script>/gi, '')
-      .replace(/<style[^>]*>[\s\S]*?<\/style>/gi, '')
-      .replace(/<[^>]+>/g, ' ')
-      .replace(/\s+/g, ' ')
-      .trim();
-    return text.length > 100 ? text : null;
+    const cachePath = path.join(__dirname, '../data/weeks', weekLabel, 'podcast', 'fulltext', `${hashUrl(url)}.json`);
+    const raw = await fs.readFile(cachePath, 'utf-8');
+    const parsed = JSON.parse(raw) as { status?: string; text?: string; wordCount?: number };
+    if (parsed.status === 'success' && typeof parsed.text === 'string' && parsed.text.trim().length > 500) {
+      return parsed.text.trim();
+    }
+    return null;
   } catch {
     return null;
   }
 }
 
+async function getFullTextForArticle(article: Pick<Article, 'url' | 'title' | 'source'>, weekLabel: string): Promise<string | null> {
+  const cached = await loadFullTextFromCache(article.url, weekLabel);
+  if (cached) return cached;
+
+  try {
+    const enriched = await enrichFullText(
+      [{ url: article.url, title: article.title, source: article.source }],
+      weekLabel,
+      { force: false, topKPerCategory: 1 }
+    );
+    const result = enriched.get(article.url);
+    if (result && result.status === 'success' && typeof result.text === 'string' && result.text.trim().length > 500) {
+      return result.text.trim();
+    }
+  } catch (err) {
+    console.warn(`[EmailDigest] Full text enrichment failed for ${article.url}: ${(err as Error).message}`);
+  }
+
+  return null;
+}
+
 /**
  * Select and rank articles for email digest
+ * Only includes articles that have full text available
+ * If full text is not available, tries the next article (N+1) from the same category
+ * 
  * Deterministic selection pattern:
  * 1. top 1 from cat 1 (Ecommerce_Retail_Tech)
  * 2. top 1 from cat 2 (Jewellery_Industry)
@@ -61,7 +85,7 @@ async function loadFullText(articleId: string, weekLabel: string): Promise<strin
  * 7. top 2 from cat 2 (Jewellery_Industry)
  * 8. top 3 from cat 1 (Ecommerce_Retail_Tech)
  */
-function selectAndRankArticles(digest: WeeklyDigest, topN: number): Array<Article & { commerceMaterialityScore: number; commerceMaterialitySignals: string[] }> {
+async function selectAndRankArticles(digest: WeeklyDigest, topN: number, weekLabel: string): Promise<Array<Article & { commerceMaterialityScore: number; commerceMaterialitySignals: string[] }>> {
   const categoryOrder: Array<keyof WeeklyDigest['topics']> = [
     'Ecommerce_Retail_Tech',     // cat 1
     'Jewellery_Industry',       // cat 2
@@ -85,70 +109,62 @@ function selectAndRankArticles(digest: WeeklyDigest, topN: number): Array<Articl
   const seen = new Set<string>();
   
   // Process selection pattern
-  for (const [categoryIdx, rankIdx] of selectionPattern) {
+  for (const [categoryIdx, startRankIdx] of selectionPattern) {
     if (selected.length >= topN) break;
     
     const categoryKey = categoryOrder[categoryIdx];
     const topic = digest.topics[categoryKey];
     
-    if (topic && topic.top && topic.top.length > rankIdx) {
+    if (!topic || !topic.top || topic.top.length === 0) {
+      continue;
+    }
+    
+    // Try articles starting from startRankIdx, incrementing until we find one with full text
+    let foundArticle = false;
+    for (let rankIdx = startRankIdx; rankIdx < topic.top.length; rankIdx++) {
+      if (selected.length >= topN) break;
+      
       const article = topic.top[rankIdx];
       
-      // Skip if already selected (duplicate check)
+      // Skip if already seen (duplicate URL)
       if (seen.has(article.url)) {
-        // Try next article from same category
-        let found = false;
-        for (let i = rankIdx + 1; i < topic.top.length; i++) {
-          const nextArticle = topic.top[i];
-          if (!seen.has(nextArticle.url)) {
-            const materiality = computeCommerceMateriality({
-              title: nextArticle.title,
-              source: nextArticle.source,
-              snippet: nextArticle.snippet,
-              aiSummary: nextArticle.aiSummary
-            });
-            
-            selected.push({
-              id: nextArticle.id,
-              title: nextArticle.title,
-              url: nextArticle.url,
-              source: nextArticle.source,
-              published_at: nextArticle.published_at,
-              ingested_at: nextArticle.ingested_at,
-              snippet: nextArticle.snippet,
-              aiSummary: nextArticle.aiSummary,
-              commerceMaterialityScore: materiality.score,
-              commerceMaterialitySignals: materiality.signals
-            });
-            seen.add(nextArticle.url);
-            found = true;
-            break;
-          }
-        }
-        if (!found) continue; // Skip if no available article from this category
-      } else {
-        // Compute materiality score for the article
-        const materiality = computeCommerceMateriality({
-          title: article.title,
-          source: article.source,
-          snippet: article.snippet,
-          aiSummary: article.aiSummary
-        });
-        
-        selected.push({
-          id: article.id,
-          title: article.title,
-          url: article.url,
-          source: article.source,
-          published_at: article.published_at,
-          ingested_at: article.ingested_at,
-          snippet: article.snippet,
-          aiSummary: article.aiSummary,
-          commerceMaterialityScore: materiality.score,
-          commerceMaterialitySignals: materiality.signals
-        });
-        seen.add(article.url);
+        continue;
       }
+      
+      // Check if full text is available (cache or on-demand extraction)
+      const fullText = await getFullTextForArticle({ url: article.url, title: article.title, source: article.source }, weekLabel);
+      if (!fullText) {
+        console.log(`[EmailDigest] Skipping "${article.title}" - full text not available, trying next article in ${categoryKey}`);
+        continue; // Try next article in same category
+      }
+      
+      // Full text available - include this article
+      const materiality = computeCommerceMateriality({
+        title: article.title,
+        source: article.source,
+        snippet: article.snippet,
+        aiSummary: article.aiSummary
+      });
+      
+      selected.push({
+        id: article.id,
+        title: article.title,
+        url: article.url,
+        source: article.source,
+        published_at: article.published_at,
+        ingested_at: article.ingested_at,
+        snippet: article.snippet,
+        aiSummary: article.aiSummary,
+        commerceMaterialityScore: materiality.score,
+        commerceMaterialitySignals: materiality.signals
+      });
+      seen.add(article.url);
+      foundArticle = true;
+      break; // Found one with full text, move to next pattern item
+    }
+    
+    if (!foundArticle) {
+      console.warn(`[EmailDigest] No articles with full text found in ${categoryKey} starting from rank ${startRankIdx}`);
     }
   }
   
@@ -164,42 +180,51 @@ async function generateBullets(
   weekLabel: string,
   apiKey: string
 ): Promise<string[]> {
-  // Try to load full text
-  let articleText = article.aiSummary || article.snippet || '';
-  const fullText = await loadFullText(article.id, weekLabel);
-  if (fullText) {
-    // Use first 2000 chars of full text
-    articleText = fullText.substring(0, 2000);
+  // Get full text - this is required for email digest articles
+  const fullText = await getFullTextForArticle({ url: article.url, title: article.title, source: article.source }, weekLabel);
+  
+  if (!fullText || fullText.length < 200) {
+    // Should not happen since we filter for full text in selection, but handle gracefully
+    const fallback = article.aiSummary || article.snippet || '';
+    if (fallback.length < 50) {
+      return ['Read the full article for details.', 'Read the full article for complete details.', 'Read the full article for more information.'];
+    }
   }
   
-  if (!articleText || articleText.length < 50) {
-    // Fallback: create simple bullets from title
-    return [
-      article.title,
-      'Read the full article for details.'
-    ];
-  }
+  // Use full text (up to 8000 chars to give LLM enough context)
+  const articleText = fullText ? fullText.substring(0, 8000) : (article.aiSummary || article.snippet || '');
   
   const openai = new OpenAI({ apiKey });
   
-  const prompt = `You are writing bullets for a weekly intelligence digest (THE FORMAT style).
+  const prompt = `You are summarizing an article for a weekly intelligence digest. Your task is to write 3 distinct sentences that summarize the article.
 
-Article:
-Title: ${article.title}
+Article Title: ${article.title}
 Source: ${article.source}
-Content: ${articleText.substring(0, 2000)}
 
-Generate 2-3 bullets following these rules:
-- Max 18 words per bullet
-- Bullets #1-2: Summary of what happened (not rephrasing headline)
-- Bullet #3 (if needed): "So what" implications for retail/luxury/AI operators and strategists
-- Avoid generic verbs: "explores", "highlights", "discusses", "examines"
-- Use specific, concrete language
-- No controversy, war, or culture-war content
-- Focus on actionable insights for business readers
+Full Article Text:
+${articleText}
 
-Output as JSON object with a "bullets" array:
-{"bullets": ["bullet 1", "bullet 2", "bullet 3"]}`;
+Your task: Write exactly 3 distinct sentences that summarize this article. Each sentence must:
+1. Be a complete, factual sentence (15-25 words)
+2. Cover a DIFFERENT aspect of the article:
+   - Sentence 1: The main event, announcement, or development
+   - Sentence 2: A specific detail, data point, number, or consequence
+   - Sentence 3: Context, scale, timeline, or a related development
+3. Be written as a summary sentence (not a bullet point format)
+4. NOT repeat or rephrase the article title
+5. NOT include implications, recommendations, or "what this means"
+6. NOT use phrases like "retailers should", "brands must", "strategists should consider"
+7. Use specific, concrete language with actual details from the article
+8. Avoid generic verbs like "explores", "highlights", "discusses", "examines"
+
+CRITICAL RULES:
+- Each sentence must cover DIFFERENT information - no repetition
+- Do NOT rephrase the article title
+- Do NOT use the article title as one of the sentences
+- Focus on WHAT HAPPENED, not what should happen
+
+Output as JSON object with a "bullets" array containing your 3 summary sentences:
+{"bullets": ["sentence 1", "sentence 2", "sentence 3"]}`;
 
   try {
     const response = await openai.chat.completions.create({
@@ -245,18 +270,94 @@ Output as JSON object with a "bullets" array:
     bullets = bullets
       .filter(b => typeof b === 'string' && b.trim().length > 0)
       .map(b => b.trim())
-      .slice(0, 3); // Max 3 bullets
+      .slice(0, 3);
     
-    if (bullets.length === 0) {
-      // Fallback
-      bullets = [article.title];
+    // Normalize title for comparison (remove punctuation, lowercase)
+    const normalizeForComparison = (text: string): string => {
+      return text.toLowerCase()
+        .replace(/[^\w\s]/g, '')
+        .replace(/\s+/g, ' ')
+        .trim();
+    };
+    const normalizedTitle = normalizeForComparison(article.title);
+    
+    // Filter out bullets that are just the title or very similar to it
+    let filteredBullets = bullets.filter(b => {
+      const normalizedBullet = normalizeForComparison(b);
+      
+      // Check if bullet is essentially the title
+      if (normalizedBullet === normalizedTitle) {
+        return false; // Exact match
+      }
+      
+      // Check if bullet is >80% similar to title (likely a rephrasing)
+      const titleWords = normalizedTitle.split(/\s+/).filter(w => w.length > 2);
+      const bulletWords = normalizedBullet.split(/\s+/).filter(w => w.length > 2);
+      if (titleWords.length > 0) {
+        const overlap = titleWords.filter(w => bulletWords.includes(w)).length;
+        const similarity = overlap / Math.max(titleWords.length, bulletWords.length);
+        if (similarity > 0.8) {
+          return false; // Too similar to title
+        }
+      }
+      
+      return true;
+    });
+    
+    // Filter out implication bullets
+    const implicationPatterns = [
+      /should consider/i, /must adapt/i, /should adapt/i, /should leverage/i, /can leverage/i,
+      /must reassess/i, /must balance/i, /should balance/i, /can improve/i, /should improve/i,
+      /strategists should/i, /retailers should/i, /retailers must/i, /retailers can/i,
+      /implication/i, /for retailers/i, /for brands/i, /competitive advantage/i,
+      /to enhance/i, /to boost/i, /to improve/i, /to address/i, /to leverage/i,
+      /must balance/i, /should balance/i, /to sustain/i, /to maintain/i,
+    ];
+    
+    filteredBullets = filteredBullets.filter(b => {
+      const hasImplication = implicationPatterns.some(pattern => pattern.test(b));
+      const startsWithAction = /^(retailers|brands|strategists|companies|businesses)\s+(should|must|can|need to|will)/i.test(b);
+      return !hasImplication && !startsWithAction;
+    });
+    
+    // Check for duplicates between bullets
+    const deduplicatedBullets: string[] = [];
+    for (const bullet of filteredBullets) {
+      const isDuplicate = deduplicatedBullets.some(existing => {
+        const existingWords = existing.toLowerCase().split(/\s+/).filter(w => w.length > 3);
+        const bulletWords = bullet.toLowerCase().split(/\s+/).filter(w => w.length > 3);
+        const wordOverlap = existingWords.filter(w => bulletWords.includes(w)).length;
+        const wordSimilarity = wordOverlap / Math.max(existingWords.length, bulletWords.length);
+        
+        const existingConcepts = existing.toLowerCase().match(/\b(\d+|[a-z]{5,})\b/g) || [];
+        const bulletConcepts = bullet.toLowerCase().match(/\b(\d+|[a-z]{5,})\b/g) || [];
+        const conceptOverlap = existingConcepts.filter(c => bulletConcepts.includes(c)).length;
+        const conceptSimilarity = conceptOverlap / Math.max(existingConcepts.length, bulletConcepts.length);
+        
+        return wordSimilarity > 0.4 || conceptSimilarity > 0.5;
+      });
+      
+      if (!isDuplicate) {
+        deduplicatedBullets.push(bullet);
+      }
     }
     
-    return bullets;
+    bullets = deduplicatedBullets;
+    
+    // Ensure we always return 3 bullets
+    if (bullets.length === 0) {
+      bullets = ['Read the full article for details.', 'Read the full article for complete details.', 'Read the full article for more information.'];
+    }
+    
+    // Final fallback: ensure at least 3 bullets
+    while (bullets.length < 3) {
+      bullets.push('Read the full article for details.');
+    }
+    
+    return bullets.slice(0, 3);
   } catch (error) {
     console.warn(`[EmailDigest] Failed to generate bullets for "${article.title}": ${(error as Error).message}`);
-    // Fallback
-    return [article.title];
+    return ['Read the full article for details.', 'Read the full article for complete details.', 'Read the full article for more information.'];
   }
 }
 
@@ -366,7 +467,7 @@ async function main() {
   console.log('');
   
   // Select and rank articles
-  const selectedArticles = selectAndRankArticles(digest, topN);
+  const selectedArticles = await selectAndRankArticles(digest, topN, weekLabel);
   console.log(`Selected ${selectedArticles.length} articles:`);
   selectedArticles.forEach((a, i) => {
     console.log(`  ${i + 1}. ${a.title} (${a.source})`);

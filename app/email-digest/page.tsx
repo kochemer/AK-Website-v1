@@ -96,7 +96,54 @@ function extractSummaryBullets(item: EmailDigestItem): string[] {
     }
   }
 
-  // Return up to 3 bullets (may be fewer if summary is short)
+  // If still < 3 bullets and we have existing bullets, try to split long bullets
+  if (filteredBullets.length < 3 && item.bullets.length > 0) {
+    // Try to extract additional content from original bullets that were filtered out
+    for (const originalBullet of item.bullets) {
+      if (filteredBullets.length >= 3) break;
+      
+      const normalized = originalBullet.trim()
+        .replace(/^[-•]\s*/, '')
+        .replace(/^\d+[.)]\s*/, '');
+      
+      // Skip if it's an implication bullet or already included
+      if (implicationPatterns.some(pattern => pattern.test(normalized))) continue;
+      if (filteredBullets.some(b => {
+        const bWords = b.toLowerCase().split(/\s+/);
+        const nWords = normalized.toLowerCase().split(/\s+/);
+        const overlap = bWords.filter(w => nWords.includes(w)).length;
+        return overlap > Math.min(bWords.length, nWords.length) * 0.5;
+      })) continue;
+      
+      // If the bullet is long enough and not already included, add it
+      if (normalized.length >= 20) {
+        filteredBullets.push(normalized);
+      }
+    }
+  }
+
+  // Final fallback: if we still don't have 3 bullets, use the title as context
+  if (filteredBullets.length < 3 && item.title) {
+    // Try to create a simple bullet from the title (if it's descriptive enough)
+    const titleWords = item.title.split(/\s+/).length;
+    if (titleWords >= 5 && titleWords <= 15) {
+      // Only use title if it's not already represented in bullets
+      const titleLower = item.title.toLowerCase();
+      const isTitleDuplicate = filteredBullets.some(bullet => {
+        const bulletLower = bullet.toLowerCase();
+        return bulletLower.includes(titleLower) || titleLower.includes(bulletLower);
+      });
+      if (!isTitleDuplicate) {
+        filteredBullets.push(item.title);
+      }
+    }
+  }
+
+  // Ensure we always return exactly 3 bullets (pad with generic if needed)
+  while (filteredBullets.length < 3) {
+    filteredBullets.push('Read the full article for complete details.');
+  }
+
   return filteredBullets.slice(0, 3);
 }
 

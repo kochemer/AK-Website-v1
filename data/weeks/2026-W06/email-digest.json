@@ -1,43 +1,43 @@
 {
   "week": "2026-W06",
-  "generatedAt": "2026-02-08T16:39:22.457Z",
-  "intro": "In this week's intelligence digest, we explore the evolving landscape of retail and technology, highlighting significant trends such as the anticipated growth of e-commerce driven by AI innovations and the strategic financial maneuvers of major players like Oracle and Amazon. As retailers navigate challenges, including Swatch's sales decline and the closure of Amazon Go, insights into AI applications in logistics and customer engagement reveal a transformative shift in the industry. Additionally, we examine the positive outlook for jewelers and the implications of emerging AI tools for business efficiency.",
+  "generatedAt": "2026-02-09T19:57:01.137Z",
+  "intro": "In this week's intelligence digest, we explore significant advancements in AI and their implications for the retail and luxury sectors, highlighted by FedEx's launch of AI-driven tracking tools and Amazon's ambitious $200 billion spending plan. Additionally, we examine the evolving landscape of consumer sentiment, as evidenced by a notable growth report from jewelers and the challenges facing the viral AI social forum, Moltbook. This week's insights underscore the intersection of technology and consumer behavior, shaping the future of commerce.",
   "readOneThing": {
-    "title": "UK retailers forecast ecommerce growth as AI reshapes shopping and delivery",
-    "url": "https://internetretailing.net/uk-retailers-forecast-ecommerce-growth-as-ai-reshapes-shopping-and-delivery/"
+    "title": "FedEx launches AI-powered tracking and returns tools",
+    "url": "https://www.digitalcommerce360.com/2026/02/02/fedex-launches-ai-tracking-returns-tools/"
   },
   "items": [
     {
       "rank": 1,
-      "title": "UK retailers forecast ecommerce growth as AI reshapes shopping and delivery",
-      "url": "https://internetretailing.net/uk-retailers-forecast-ecommerce-growth-as-ai-reshapes-shopping-and-delivery/",
-      "source": "Internet Retailing",
+      "title": "FedEx launches AI-powered tracking and returns tools",
+      "url": "https://www.digitalcommerce360.com/2026/02/02/fedex-launches-ai-tracking-returns-tools/",
+      "source": "Digital Commerce 360",
       "bullets": [
-        "UK retailers anticipate significant ecommerce sales growth driven by AI advancements by 2026.",
-        "AI innovations are transforming shopping and delivery experiences for consumers and businesses alike.",
-        "Retailers must adapt strategies to leverage AI for enhanced customer engagement and operational efficiency."
+        "Brands using similar post-purchase engagement tools have seen 42% fewer inquiries about order status and 42% more repeat purchases.",
+        "The AI tools are now available to U.S. customers, reflecting a shift in parcel logistics towards improving the post-purchase experience.",
+        "Read the full article for details."
       ]
     },
     {
       "rank": 2,
-      "title": "Optimistic outlook for Swatch despite sales slide",
-      "url": "https://www.jewellermagazine.com/Article/14720/Optimistic-outlook-for-Swatch-despite-sales-slide",
-      "source": "Jeweller - Business News",
+      "title": "58 Percent of Surveyed Jewelers Report Growth in December",
+      "url": "https://instoremag.com/58-percent-of-surveyed-jewelers-report-growth-in-december/",
+      "source": "Instore Magazine",
       "bullets": [
-        "Swatch Group faces declining sales due to reduced demand in Asian markets.",
-        "Despite challenges, the company maintains a positive outlook for future growth in jewellery.",
-        "Retailers should consider strategies to adapt to shifting consumer preferences in Asia."
+        "58 percent of jewelers surveyed reported sales growth in December, indicating a positive trend for the jewelry industry during the holiday season.",
+        "Only 18 percent of the 101 jewelers surveyed reported losses year over year, showcasing a relatively strong market performance.",
+        "The survey was conducted in early February 2026, reflecting sales data from December 2025 compared to the previous year."
       ]
     },
     {
       "rank": 3,
-      "title": "Oracle Is Selling $25 Billion of High-Grade Bonds for AI Funding",
-      "url": "https://www.bloomberg.com/news/articles/2026-02-02/oracle-kicks-off-8-part-dollar-bond-sale-amid-ai-borrowing-push",
-      "source": "Bloomberg - Technology",
+      "title": "Security concerns and scepticism are bursting the bubble of Moltbook, the viral AI social forum ",
+      "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/security-concerns-and-scepticism-are-bursting-the-bubble-of-moltbook-the-viral-ai-social-forum/articleshow/127994825.cms",
+      "source": "Economic Times - Technology",
       "bullets": [
-        "Oracle is raising $25 billion through high-grade bonds to enhance AI infrastructure.",
-        "This funding strategy follows Meta's $30 billion bond issuance for similar AI initiatives.",
-        "Retail and AI strategists should consider the competitive landscape as tech giants invest heavily in AI capabilities."
+        "Moltbook, a new social media platform for AI agents, has gained significant attention since its launch in late January 2026.",
+        "Security researchers found critical vulnerabilities on Moltbook, allowing unauthorized access to user credentials and sensitive data.",
+        "Despite concerns, over 1.6 million AI agents have registered on Moltbook, with only about 17,000 human owners identified."
       ]
     },
     {
@@ -46,53 +46,53 @@
       "url": "https://www.nytimes.com/2026/02/05/technology/amazon-200-billion-ai.html",
       "source": "NYTimes Technology",
       "bullets": [
-        "Amazon plans to invest $200 billion in artificial intelligence initiatives, signaling a major industry shift.",
-        "Investor concerns arise as Amazon accelerates its AI spending despite a strong holiday performance.",
-        "Retail and AI strategists must adapt to heightened competition and innovation driven by Amazon's investments."
+        "The spending plan exceeded Wall Street predictions by $50 billion, raising concerns among investors about the long-term profitability of such investments.",
+        "Amazon's announcement follows similar commitments from Google and Meta, with combined A.I. spending from major tech companies surpassing half a trillion dollars annually.",
+        "Read the full article for details."
       ]
     },
     {
       "rank": 5,
-      "title": "FedEx launches AI-powered tracking and returns tools",
-      "url": "https://www.digitalcommerce360.com/2026/02/02/fedex-launches-ai-tracking-returns-tools/",
-      "source": "Digital Commerce 360",
+      "title": "Amazon set to pass Walmart in annual revenue for the first time after hitting $700 billion in sales",
+      "url": "https://www.modernretail.co/operations/amazon-set-to-pass-walmart-in-annual-revenue-for-the-first-time-after-hitting-700-billion-in-sales/?utm_campaign=modernretaildis&utm_medium=rss&utm_source=general-rss",
+      "source": "Modern Retail",
       "bullets": [
-        "FedEx launched AI-driven tools to enhance tracking and returns for ecommerce retailers.",
-        "The new services aim to improve customer communication on websites and apps.",
-        "Retailers can leverage these tools to streamline operations and boost customer satisfaction."
+        "Amazon reported $716.9 billion in revenue for 2025, surpassing Walmart's expected revenue of $712 billion.",
+        "The company's cloud division, AWS, generated $35.6 billion in fourth-quarter sales, marking a 24% increase year-over-year.",
+        "Amazon's annual revenue growth follows a significant boost during the pandemic, where sales jumped 38% to $386 billion in 2020."
       ]
     },
     {
       "rank": 6,
-      "title": "Anthropic’s breakout moment: how Claude cracked AI for business",
-      "url": "https://www.ft.com/content/a75555a6-24c3-4468-aba9-7fe12b5def31",
-      "source": "Financial Times - Technology",
+      "title": "AI data centres could spur Internet era-type job boom, says Nvidia’s Jensen Huang ",
+      "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/ai-data-centres-could-spur-internet-era-type-job-boom-says-nvidias-jensen-huang/articleshow/127997917.cms",
+      "source": "Economic Times - Technology",
       "bullets": [
-        "Anthropic's AI coding tools are driving significant revenue growth for the company.",
-        "Investor interest in Anthropic is increasing due to its successful business applications of AI.",
-        "Retail and AI strategists should consider integrating advanced AI tools to enhance operational efficiency."
+        "Nvidia CEO Jensen Huang stated that AI infrastructure, particularly data centres, will create jobs across various sectors in India.",
+        "The Union Budget 2026 has extended tax holidays for data centre investments until 2047, potentially attracting up to $200 billion in foreign investment.",
+        "Nvidia announced a partnership with Dassault Systèmes to develop AI factories powered by its infrastructure across three continents."
       ]
     },
     {
       "rank": 7,
-      "title": "58 Percent of Surveyed Jewelers Report Growth in December",
-      "url": "https://instoremag.com/58-percent-of-surveyed-jewelers-report-growth-in-december/",
+      "title": "Hailey Bieber’s 30-Carat Choker and 9 More Diamond Looks From the Grammys",
+      "url": "https://instoremag.com/hailey-biebers-30-carat-choker-and-9-more-diamond-looks-from-the-grammys/",
       "source": "Instore Magazine",
       "bullets": [
-        "58% of jewelers reported sales growth in December, indicating a positive trend in the jewelry market.",
-        "Only 18% of jewelers faced losses, suggesting resilience amidst economic challenges.",
-        "Retailers should leverage this growth to enhance inventory strategies and customer engagement."
+        "The 2026 Grammys featured a more subdued display of celebrity diamond jewelry compared to previous years.",
+        "Hailey Bieber's standout look included a 30-carat choker and matching earrings from Lorraine Schwartz.",
+        "The event showcased various diamond pieces from renowned designers like Chopard and Cartier, appealing to a wide audience."
       ]
     },
     {
       "rank": 8,
-      "title": "Amazon Go? It’s gone. And this is why it went.",
-      "url": "https://www.computerworld.com/article/4125267/amazon-go-its-gone-and-this-is-why-it-went.html",
-      "source": "Computerworld - Ecommerce",
+      "title": "Cardinal Health expands ecommerce and leans on AI to boost efficiency",
+      "url": "https://www.digitalcommerce360.com/2026/02/06/cardinal-health-ecommerce-ai-revenue-q2-fy26/",
+      "source": "Digital Commerce 360",
       "bullets": [
-        "Amazon Go stores closed due to unprofitability despite their cutting-edge technology and convenience.",
-        "High-resolution cameras tracked customers and products, showcasing Amazon's retail innovation.",
-        "Retailers must reassess technology investments to ensure profitability alongside innovation."
+        "The company reported a 19% increase in Q2 revenue, reaching $65.6 billion, with net income rising to $467 million.",
+        "Cardinal Health aims for its biopharma services to generate $1 billion in revenue by 2028, reflecting a 30% growth within the year.",
+        "Read the full article for details."
       ]
     }
   ]

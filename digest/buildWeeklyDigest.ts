@@ -5,8 +5,6 @@ import { DateTime } from 'luxon';
 import { getWeekRangeCET } from '../lib/utils/weekCET';
 import { classifyTopic } from '../classification/classifyTopics';
 import { rerankArticles } from './rerankArticles';
-import { generateSummariesForDigest } from './generateSummaries';
-import { translateDigestArticles } from '../lib/i18n/translate';
 import type { Article, ArticleWithRelevance, RelevanceScore, Topic, WeeklyDigest } from '../lib/types';
 
 // Re-export WeeklyDigest for backward compatibility
@@ -532,10 +530,12 @@ export async function buildWeeklyDigest(weekLabel: string): Promise<WeeklyDigest
   };
 }
 
-
 /**
- * Build and save weekly digest with summaries and translations
- * This is the full pipeline: build + summaries + translations + save
+ * Build weekly digest with full pipeline: build, generate summaries, translate, and save.
+ * This is the main entry point for building a complete weekly digest.
+ * @param weekLabel - Week in format "YYYY-W##" (e.g. "2025-W52")
+ * @param options - Optional configuration
+ * @returns The built and saved digest
  */
 export async function buildAndSaveWeeklyDigest(
   weekLabel: string,
@@ -544,20 +544,30 @@ export async function buildAndSaveWeeklyDigest(
     preserveCoverImage?: boolean;
   }
 ): Promise<WeeklyDigest> {
+  const { promises: fs } = await import('fs');
+  const path = await import('path');
+  const { generateSummariesForDigest } = await import('./generateSummaries');
+  const { translateDigestArticles } = await import('../lib/i18n/translate');
+
+  console.log(`[Build Weekly Digest] Building digest for ${weekLabel}...`);
+
   // Build the digest structure
   const digest = await buildWeeklyDigest(weekLabel);
 
   // Generate AI summaries for all top articles
-  await generateSummariesForDigest(digest);
+  console.log(`[Build Weekly Digest] Generating AI summaries for articles...`);
+  const summaryStats = await generateSummariesForDigest(digest);
+  console.log(`[Build Weekly Digest] Summary generation complete - Succeeded: ${summaryStats.succeeded}, Skipped: ${summaryStats.skipped}, Failed: ${summaryStats.failed}`);
 
   // Translate article titles + summaries into DA/ES
+  console.log(`[Build Weekly Digest] Translating articles into DA/ES...`);
   const allTopArticles = [
     ...digest.topics.AI_and_Strategy.top,
     ...digest.topics.Ecommerce_Retail_Tech.top,
     ...digest.topics.Luxury_and_Consumer.top,
     ...digest.topics.Jewellery_Industry.top,
   ];
-  const { translations } = await translateDigestArticles(allTopArticles);
+  const { translations, stats: translateStats } = await translateDigestArticles(allTopArticles);
 
   // Attach translations to each article in the digest
   for (const article of allTopArticles) {
@@ -565,6 +575,25 @@ export async function buildAndSaveWeeklyDigest(
     if (t) {
       article.translations = t;
     }
+  }
+  console.log(`[Build Weekly Digest] Translation complete - Total: ${translateStats.total}, Cached: ${translateStats.cached}, Translated: ${translateStats.translated}, Failed: ${translateStats.failed}`);
+
+  // Validate translations: check DA/ES titles differ from English
+  let translationMisses = 0;
+  for (const article of allTopArticles) {
+    if (!article.translations?.da?.title || article.translations.da.title === article.title) {
+      console.warn(`[Build Weekly Digest] ⚠ DA translation missing or identical for: "${article.title.substring(0, 60)}..."`);
+      translationMisses++;
+    }
+    if (!article.translations?.es?.title || article.translations.es.title === article.title) {
+      console.warn(`[Build Weekly Digest] ⚠ ES translation missing or identical for: "${article.title.substring(0, 60)}..."`);
+      translationMisses++;
+    }
+  }
+  if (translationMisses > 0) {
+    console.warn(`[Build Weekly Digest] ⚠ ${translationMisses} translation misses detected (see warnings above)`);
+  } else {
+    console.log(`[Build Weekly Digest] ✓ All translations validated successfully`);
   }
 
   // Save to data/digests/{weekLabel}.json
@@ -588,6 +617,14 @@ export async function buildAndSaveWeeklyDigest(
   }
 
   await fs.writeFile(outputPath, JSON.stringify(digest, null, 2), 'utf-8');
+
+  console.log(`[Build Weekly Digest] ✓ Saved digest to ${outputPath}`);
+  console.log(`[Build Weekly Digest] Total articles: ${digest.totals.total}`);
+  console.log(`[Build Weekly Digest] By topic:`);
+  console.log(`  - AI & Strategy: ${digest.totals.byTopic.AIStrategy} (top ${digest.topics.AI_and_Strategy.top.length})`);
+  console.log(`  - Ecommerce & Retail Tech: ${digest.totals.byTopic.EcommerceRetail} (top ${digest.topics.Ecommerce_Retail_Tech.top.length})`);
+  console.log(`  - Luxury & Consumer: ${digest.totals.byTopic.LuxuryConsumer} (top ${digest.topics.Luxury_and_Consumer.top.length})`);
+  console.log(`  - Jewellery Industry: ${digest.totals.byTopic.Jewellery} (top ${digest.topics.Jewellery_Industry.top.length})`);
 
   return digest;
 }
