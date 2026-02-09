@@ -146,9 +146,9 @@ function validateDigest(digest: WeeklyDigest, options: { minArticlesPerCategory:
       continue;
     }
 
-    // Check minimum articles per category
+    // Check minimum articles per category (warning only, not fatal)
     if (topic.top.length < options.minArticlesPerCategory) {
-      errors.push(`Topic ${topicKey}: has ${topic.top.length} articles, minimum required is ${options.minArticlesPerCategory}`);
+      warnings.push(`Topic ${topicKey}: has ${topic.top.length} articles, minimum recommended is ${options.minArticlesPerCategory}`);
     }
 
     // Validate each article in the topic
@@ -382,7 +382,11 @@ export async function runWeeklyPipeline(options: RunWeeklyPipelineOptions = {}):
         if (!validation.valid) {
           console.error(`[Pipeline] ✗ Digest validation failed:`);
           validation.errors.forEach(err => console.error(`  - ${err}`));
-          throw new Error(`Digest validation failed: ${validation.errors.join('; ')}`);
+          // Only fail on structural errors (missing fields, malformed data)
+          // Warnings (like minimum articles) are logged but don't fail the pipeline
+          if (validation.errors.length > 0) {
+            throw new Error(`Digest validation failed: ${validation.errors.join('; ')}`);
+          }
         }
 
         // Check caps
