@@ -339,7 +339,7 @@ async function main() {
 
   // Sending enabled - check required env vars
   const resendApiKey = process.env.RESEND_API_KEY;
-  const fromEmail = process.env.EMAIL_FROM;
+  let fromEmail = process.env.EMAIL_FROM;
 
   if (!resendApiKey) {
     console.error('[Email] ❌ RESEND_API_KEY is required when EMAIL_SEND_ENABLED=true');
@@ -352,9 +352,26 @@ async function main() {
     process.exit(1);
   }
 
+  // Strip quotes if present (common when copied from .env files)
+  fromEmail = fromEmail.trim().replace(/^["']|["']$/g, '');
+
+  // Validate format: should be either "email@domain.com" or "Name <email@domain.com>"
+  const emailPattern = /^(.+?)\s*<([^>]+@[^>]+)>$|^([^\s<]+@[^\s>]+)$/;
+  if (!emailPattern.test(fromEmail)) {
+    console.error('[Email] ❌ Invalid EMAIL_FROM format');
+    console.error('[Email] Expected: "email@domain.com" or "Name <email@domain.com>"');
+    console.error('[Email] Got:', JSON.stringify(fromEmail));
+    process.exit(1);
+  }
+
   // Extract domain from EMAIL_FROM for verification warning
-  const emailMatch = fromEmail.match(/<([^>]+)>/) || fromEmail.match(/([^\s<]+@[^\s>]+)/);
-  const fromDomain = emailMatch ? emailMatch[1].split('@')[1] : null;
+  let fromDomain: string | null = null;
+  const angleBracketMatch = fromEmail.match(/<([^>]+@[^>]+)>/);
+  const directEmailMatch = fromEmail.match(/([^\s<]+@[^\s>]+)/);
+  const emailAddress = angleBracketMatch ? angleBracketMatch[1] : (directEmailMatch ? directEmailMatch[1] : null);
+  if (emailAddress) {
+    fromDomain = emailAddress.split('@')[1];
+  }
   if (fromDomain) {
     console.log(`[Email] Sender domain: ${fromDomain}`);
     console.log(`[Email] ⚠️  Ensure this domain is verified in your Resend dashboard`);

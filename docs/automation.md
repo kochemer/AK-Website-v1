@@ -28,7 +28,7 @@ Before running the workflow for the first time, complete these steps:
    - `EMAIL_SEND_ENABLED` with value `true` (exact string, case-sensitive)
 8. Go back to **Secrets** tab and add:
    - `RESEND_API_KEY` - Your Resend API key
-   - `EMAIL_FROM` - Sender email, format: `"Luxury Intelligence <noreply@yourdomain.com>"`
+   - `EMAIL_FROM` - Sender email, format: `Luxury Intelligence <noreply@yourdomain.com>` (do NOT include quotes in the secret value)
    - `EMAIL_RECIPIENTS_JSON` - JSON array: `[{"email": "user@example.com", "name": "Optional"}]`
 
 ### 2. Run Preflight Check
@@ -140,7 +140,7 @@ Configure these in your repository settings: **Settings → Secrets and variable
 **For email sending (optional):**
 - `EMAIL_SEND_ENABLED` - **Repository variable** (not secret). Set to exact value `true` (string) to enable email sending. Default: dry-run mode. Configure in **Settings → Secrets and variables → Actions → Variables** tab (not Secrets tab).
 - `RESEND_API_KEY` - Resend API key (required if EMAIL_SEND_ENABLED=true). Configure in **Settings → Secrets and variables → Actions → Secrets** tab.
-- `EMAIL_FROM` - Sender email address (required if EMAIL_SEND_ENABLED=true). Format: `"Luxury Intelligence <noreply@luxury-intel.com>"`. Configure in **Settings → Secrets and variables → Actions → Secrets** tab.
+- `EMAIL_FROM` - Sender email address (required if EMAIL_SEND_ENABLED=true). Format: `Luxury Intelligence <noreply@luxury-intel.com>` (no quotes in the secret value). Configure in **Settings → Secrets and variables → Actions → Secrets** tab.
 - `EMAIL_RECIPIENTS_JSON` - Secret containing JSON array of recipients. Format: `[{"email": "user@example.com", "name": "Optional Name"}]`. Configure in **Settings → Secrets and variables → Actions → Secrets** tab. Example: `[{"email": "kochemir@gmail.com"}]`
 
 **Important:** `EMAIL_SEND_ENABLED` must be set as a **repository variable** (not a secret) with the exact value `true` (case-sensitive). If not set or set to any other value, emails will run in dry-run mode.
