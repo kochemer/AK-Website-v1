@@ -59,7 +59,13 @@ async function loadDigest(weekLabel: string): Promise<WeeklyDigest | null> {
     const digestPath = path.join(process.cwd(), 'data', 'digests', `${weekLabel}.json`);
     const raw = await fs.readFile(digestPath, 'utf-8');
     return JSON.parse(raw) as WeeklyDigest;
-  } catch (err) {
+  } catch (err: any) {
+    // File not found is expected if digest hasn't been generated yet
+    if (err?.code === 'ENOENT') {
+      // Silently return null - this is expected behavior
+      return null;
+    }
+    // Log other errors (permissions, parse errors, etc.)
     console.error(`Failed to load digest for ${weekLabel}:`, err);
     return null;
   }

@@ -42,12 +42,18 @@ function formatWeekLabel(dt: DateTime): string {
 }
 
 /**
- * Get the current DIGEST week label — shows week 6 by default, switches to new week only on Sunday.
+ * Get the current DIGEST week label — shows previous week by default, switches to new week only on Sunday.
  *
  * Semantics: 
- *   - Week 6 is shown by default
- *   - Only switches to the new week (week 7) on Sunday of that week
- *   - Before Sunday, the previous week's digest is displayed
+ *   - Shows the previous week by default (e.g., Week 6)
+ *   - Only switches to the new week (e.g., Week 7) on Sunday of that week
+ *   - Before Sunday of the new week, the previous week's digest is displayed
+ * 
+ * Example:
+ *   - Monday-Saturday of Week 7 → returns Week 6
+ *   - Sunday of Week 7 → returns Week 7
+ *   - Monday-Saturday of Week 8 → returns Week 7
+ *   - Sunday of Week 8 → returns Week 8
  */
 export function getCurrentDigestWeek(): string {
   const now = DateTime.now().setZone(TZ);
@@ -56,12 +62,13 @@ export function getCurrentDigestWeek(): string {
   // If today is Sunday (day 7), show the current week
   // Otherwise (Monday-Saturday), show the previous week
   if (now.weekday === 7) {
-    // Sunday: show current week
+    // Sunday: show current week (e.g., Week 7 on Sunday of Week 7)
     return currentWeek;
   } else {
     // Monday-Saturday: show previous week
-    const previousWeek = now.minus({ days: 1 }).startOf('week');
-    return formatWeekLabel(previousWeek);
+    // Go back 7 days to get the previous week
+    const previousWeekDate = now.minus({ days: 7 });
+    return formatWeekLabel(previousWeekDate);
   }
 }
 
