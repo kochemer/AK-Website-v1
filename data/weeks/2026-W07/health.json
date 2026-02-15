@@ -1,0 +1,72 @@
+{
+  "digestWeek": "2026-W07",
+  "ingestionWeek": "2026-W07",
+  "startedAt": "2026-02-15T06:59:15.981Z",
+  "finishedAt": "2026-02-15T07:12:50.345Z",
+  "steps": [
+    {
+      "name": "rss",
+      "ok": true,
+      "startedAt": "2026-02-15T06:59:16.007Z",
+      "finishedAt": "2026-02-15T06:59:35.008Z"
+    },
+    {
+      "name": "pages",
+      "ok": true,
+      "startedAt": "2026-02-15T06:59:35.008Z",
+      "finishedAt": "2026-02-15T06:59:35.374Z"
+    },
+    {
+      "name": "discovery",
+      "ok": true,
+      "startedAt": "2026-02-15T06:59:35.375Z",
+      "finishedAt": "2026-02-15T07:07:40.507Z"
+    },
+    {
+      "name": "classification",
+      "ok": true,
+      "startedAt": "2026-02-15T07:07:40.507Z",
+      "finishedAt": "2026-02-15T07:07:40.547Z"
+    },
+    {
+      "name": "digest",
+      "ok": true,
+      "startedAt": "2026-02-15T07:07:40.547Z",
+      "finishedAt": "2026-02-15T07:08:54.148Z"
+    },
+    {
+      "name": "email",
+      "ok": true,
+      "startedAt": "2026-02-15T07:08:54.148Z",
+      "finishedAt": "2026-02-15T07:09:19.288Z"
+    },
+    {
+      "name": "podcast",
+      "ok": true,
+      "startedAt": "2026-02-15T07:09:19.288Z",
+      "finishedAt": "2026-02-15T07:11:54.767Z"
+    },
+    {
+      "name": "cover",
+      "ok": true,
+      "startedAt": "2026-02-15T07:11:54.768Z",
+      "finishedAt": "2026-02-15T07:12:50.344Z"
+    }
+  ],
+  "health": {
+    "warnings": [
+      "Podcast script word count: 1317 words (minimum: 1500)",
+      "Luxury & Consumer: www.luxurydaily.com represents 42.9% (3/7) - exceeds 40% threshold",
+      "Luxury & Consumer: www.businessoffashion.com represents 42.9% (3/7) - exceeds 40% threshold",
+      "Jewellery Industry: www.jewellermagazine.com represents 85.7% (6/7) - exceeds 40% threshold"
+    ],
+    "metrics": {
+      "paywallPercent": 0,
+      "podcastWordCount": 1317
+    }
+  },
+  "versions": {
+    "node": "v20.20.0",
+    "gitCommit": "47121122dcd9411c51a29a3ed9fb7fa75d3cfe5a"
+  }
+}

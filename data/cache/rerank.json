@@ -814,5 +814,101 @@
     ],
     "cached_at": "2026-02-07T12:45:47.368Z",
     "model": "gpt-4o-mini"
+  },
+  "2026-W07:AI_and_Strategy:fdf8967e9927": {
+    "selected": [
+      {
+        "id": "5",
+        "rank": 1,
+        "why": "Major AI spending drive by Amazon impacts industry dynamics",
+        "confidence": 0.9
+      },
+      {
+        "id": "17",
+        "rank": 2,
+        "why": "Anthropic's valuation reflects significant market confidence",
+        "confidence": 0.85
+      },
+      {
+        "id": "2",
+        "rank": 3,
+        "why": "OpenAI's revenue challenges highlight economic pressures in AI",
+        "confidence": 0.8
+      },
+      {
+        "id": "12",
+        "rank": 4,
+        "why": "Concerns over AI bubble affecting investment strategies",
+        "confidence": 0.75
+      },
+      {
+        "id": "8",
+        "rank": 5,
+        "why": "NITI Ayog's insights on AI's structural impact on industry",
+        "confidence": 0.7
+      },
+      {
+        "id": "4",
+        "rank": 6,
+        "why": "Amazon's CapEx concerns signal shifts in AI investment",
+        "confidence": 0.65
+      },
+      {
+        "id": "3",
+        "rank": 7,
+        "why": "Anthropic's market performance indicates competitive landscape",
+        "confidence": 0.6
+      }
+    ],
+    "cached_at": "2026-02-15T07:07:51.946Z",
+    "model": "gpt-4o-mini"
+  },
+  "2026-W07:Luxury_and_Consumer:059f1942a727": {
+    "selected": [
+      {
+        "id": "1",
+        "rank": 1,
+        "why": "Highlights sustainability trends among luxury shoppers",
+        "confidence": 0.9
+      },
+      {
+        "id": "2",
+        "rank": 2,
+        "why": "Focuses on loyalty strategies for luxury brands",
+        "confidence": 0.85
+      },
+      {
+        "id": "10",
+        "rank": 3,
+        "why": "Reports significant revenue growth for Hermès",
+        "confidence": 0.8
+      },
+      {
+        "id": "6",
+        "rank": 4,
+        "why": "Discusses year-end sales performance in luxury",
+        "confidence": 0.75
+      },
+      {
+        "id": "4",
+        "rank": 5,
+        "why": "Analyzes market share shifts in luxury fashion",
+        "confidence": 0.7
+      },
+      {
+        "id": "11",
+        "rank": 6,
+        "why": "Examines demand trends for specific fashion items",
+        "confidence": 0.65
+      },
+      {
+        "id": "3",
+        "rank": 7,
+        "why": "Addresses customer journey orchestration in retail",
+        "confidence": 0.6
+      }
+    ],
+    "cached_at": "2026-02-15T07:08:15.106Z",
+    "model": "gpt-4o-mini"
   }
 }

@@ -1,0 +1,83 @@
+{
+  "week": "2026-W07",
+  "generatedAt": "2026-02-15T07:09:19.287Z",
+  "intro": "In this week's intelligence digest, we explore significant developments in the retail and AI sectors, highlighting innovative eCommerce tools and the impact of AI on business structures. Key articles include Hermès' impressive revenue growth, Shopify's surge in B2B sales, and Anthropic's strategic marketing move during the Super Bowl. As the landscape evolves, understanding these trends will be crucial for stakeholders in luxury and technology.",
+  "readOneThing": {
+    "title": "New Ecommerce Tools: February 11, 2026",
+    "url": "https://www.practicalecommerce.com/new-ecommerce-tools-feb-11-2026"
+  },
+  "items": [
+    {
+      "rank": 1,
+      "title": "New Ecommerce Tools: February 11, 2026",
+      "url": "https://www.practicalecommerce.com/new-ecommerce-tools-feb-11-2026",
+      "source": "Practical Ecommerce",
+      "bullets": [
+        "ReturnPro has partnered with Clarity to introduce AI-powered fraud detection technology for managing returns in ecommerce.",
+        "The integration of Socure's RiskOS platform with Bolt enables real-time verification of customers during the purchase process.",
+        "ShipTime's acquisition of Warehowz enhances its logistics capabilities across North America by integrating a network of 2,500 warehouses."
+      ],
+      "summary": "AI-generated summary: Practical Ecommerce's latest article highlights new ecommerce tools for reverse logistics, fulfillment, AI assistants, AI store builders, chargebacks, checkout integrations, agentic commerce, and automated marketing, published on February 11, 2026."
+    },
+    {
+      "rank": 2,
+      "title": "AI a structural rewrite, not a disruption: NITI Ayog fellow Debjani Ghosh ",
+      "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/ai-a-structural-rewrite-not-a-disruption-niti-ayog-fellow-debjani-ghosh/articleshow/128334094.cms",
+      "source": "Economic Times - Technology",
+      "bullets": [
+        "Debjani Ghosh stated that AI represents a structural rewrite for businesses, necessitating shifts from effort-based billing to outcome-based value.",
+        "The NITI Aayog report indicates a projected shortfall of USD 250-300 billion in the technology services sector by 2035.",
+        "SynopsisA Niti Aayog report noted that industry must lead the shift into the AI era by reimagining its delivery model, deepening innovation, and investing in the next wave of growth"
+      ],
+      "summary": "AI is seen as a structural rewrite rather than a disruption, according to NITI Ayog fellow Debjani Ghosh. The report emphasizes the need for industries to invest in AI-enabled solutions and shift towards outcome-driven models."
+    },
+    {
+      "rank": 3,
+      "title": "Hermès Reports 9.8% Revenue Growth in Fourth Quarter, Beating Expectations",
+      "url": "https://www.businessoffashion.com/news/luxury/hermes-reports-98-revenue-growth-in-fourth-quarter-beating-expectations/",
+      "source": "Business of Fashion - News",
+      "bullets": [
+        "Hermès reported a 9.8% revenue growth in the fourth quarter, surpassing analyst expectations of 8.4%.",
+        "Sales in the Americas, primarily driven by the United States, increased by 12.1%, exceeding the anticipated 9% growth.",
+        "The company plans to implement a slower price increase of 5-6% in 2026, down from 6-7% in 2025, due to currency shifts."
+      ],
+      "summary": "AI-Generated Summary:\nHermès exceeded expectations with a 9.8% revenue growth in the fourth quarter, driven by a 12.1% increase in sales in the Americas region, particularly the United States."
+    },
+    {
+      "rank": 4,
+      "title": "Shopify’s revenue rises 30% in 2025 as B2B sales surge and AI commerce expands",
+      "url": "https://www.digitalcommerce360.com/2026/02/12/shopify-revenue-b2b-sales-ai-2025/",
+      "source": "Digital Commerce 360",
+      "bullets": [
+        "Shopify's revenue for fiscal 2025 increased by 30% to $11.56 billion, driven by a surge in B2B sales and AI commerce tools.",
+        "B2B gross merchandise volume (GMV) rose 96% in 2025, with fourth-quarter GMV increasing by 31% to $123.8 billion.",
+        "The company anticipates revenue growth in fiscal Q1 2026 to mirror the low 30% range seen in Q4 2025."
+      ],
+      "summary": "AI-Generated Summary:\nShopify's revenue increased by 30% in 2025, attributed to a surge in B2B sales and the expansion of AI commerce tools, leading to strong growth in Q4 and overall fiscal performance."
+    },
+    {
+      "rank": 5,
+      "title": "Anthropic’s Super Bowl swipe at OpenAI pays off big ",
+      "url": "https://economictimes.indiatimes.com/tech/technology/anthropics-super-bowl-swipe-at-openai-pays-off-big/articleshow/128341114.cms",
+      "source": "Economic Times - Technology",
+      "bullets": [
+        "Anthropic's Super Bowl campaign successfully promoted its Claude chatbot, which climbed to No. 10 on the US App Store.",
+        "Claude's downloads surged by 32% to approximately 148,000 in the US from Sunday to Tuesday, compared to the previous period.",
+        "The campaign coincided with ChatGPT's rollout of ads for free users, marking a significant shift in the competitive landscape of AI chatbots."
+      ],
+      "summary": "AI-Generated Summary:\nAnthropic's Claude chatbot saw a significant increase in downloads and climbed into the top 10 on the US App Store after promoting its \"no ads\" feature, indicating a successful strategy against OpenAI."
+    },
+    {
+      "rank": 6,
+      "title": "AI Content Licensing for Merchants",
+      "url": "https://www.practicalecommerce.com/ai-content-licensing-for-merchants",
+      "source": "Practical Ecommerce",
+      "bullets": [
+        "Many publishers are concerned that AI systems summarize their articles without directing traffic back to their original sources, impacting their revenue models.",
+        "Emerging AI content marketplaces could reshape the relationship between content producers and AI developers, offering more predictable compensation for publishers.",
+        "Recent efforts by Microsoft and Amazon to develop content-licensing marketplaces for artificial intelligence models could represent an opportunity for ecommerce marketers"
+      ],
+      "summary": "AI Content Licensing for Merchants discusses the potential for ecommerce marketers to benefit from content-licensing marketplaces developed by Microsoft and Amazon."
+    }
+  ]
+}

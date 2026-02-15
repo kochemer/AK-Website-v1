@@ -1,0 +1,975 @@
+{
+  "weekLabel": "2026-W07",
+  "tz": "Europe/Copenhagen",
+  "startISO": "2026-02-08T23:00:00.000Z",
+  "endISO": "2026-02-15T22:59:59.999Z",
+  "builtAtISO": "2026-02-15T08:08:25.684+01:00",
+  "builtAtLocal": "2026-02-15 08:08:25",
+  "totals": {
+    "total": 422,
+    "byTopic": {
+      "AIStrategy": 66,
+      "EcommerceRetail": 250,
+      "LuxuryConsumer": 67,
+      "Jewellery": 38
+    }
+  },
+  "topics": {
+    "AI_and_Strategy": {
+      "total": 66,
+      "top": [
+        {
+          "id": "heghsu",
+          "title": "Amazon’s Andy Jassy bets on $200bn AI spending drive to revive AWS",
+          "url": "https://www.ft.com/content/905df663-8c47-4e88-b6ff-24dd4bd46290",
+          "source": "Financial Times - Technology",
+          "published_at": "2026-02-14T07:29:12.000Z",
+          "ingested_at": "2026-02-15T06:59:16.007Z",
+          "snippet": "Shake-up follows fears tech giant missed early AI boom as Microsoft and Google challenge cloud business",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ai"
+            ]
+          },
+          "aiSummary": "AI-Generated Summary:\nAmazon's Andy Jassy plans a $200bn AI spending drive to boost AWS amid competition from Microsoft and Google in the cloud business, following concerns of missing out on the early AI boom.",
+          "translations": {
+            "da": {
+              "title": "Amazons Andy Jassy satser på $200 mia. AI-udgiftsdrive for at genoplive AWS",
+              "summary": "Amazons Andy Jassy planlægger en $200 mia. AI-udgiftsdrive for at styrke AWS midt i konkurrence fra Microsoft og Google i cloud-virksomheden, efter bekymringer om at misse den tidlige AI-bølge."
+            },
+            "es": {
+              "title": "Andy Jassy de Amazon apuesta por un impulso de gasto en IA de $200 mil millones para revivir AWS",
+              "summary": "Andy Jassy de Amazon planea un impulso de gasto en IA de $200 mil millones para impulsar AWS en medio de la competencia de Microsoft y Google en el negocio de la nube, tras preocupaciones por perderse el auge temprano de la IA."
+            }
+          }
+        },
+        {
+          "id": "6njo5s",
+          "title": "Anthropic Is Valued at $380 Billion in New Funding Round",
+          "url": "https://www.nytimes.com/2026/02/12/technology/anthropic-valuation-380-billion-funding.html",
+          "source": "NYTimes Technology",
+          "published_at": "2026-02-12T22:38:03.000Z",
+          "ingested_at": "2026-02-15T06:59:16.007Z",
+          "snippet": "The artificial intelligence start-up raised another $30 billion, and its valuation more than doubled since its last funding round in September.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.22500000000000003,
+            "recencyScore": 0,
+            "sourceWeight": 0.075,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "anthropic",
+              "funding",
+              "artificial intelligence"
+            ]
+          },
+          "aiSummary": "AI-Generated Summary:\nAnthropic, an AI start-up, raised $30 billion in its latest funding round, increasing its valuation to $380 billion, more than double its previous valuation.",
+          "translations": {
+            "da": {
+              "title": "Anthropic Vurderes til 380 Milliarder Dollar i Ny Finansieringsrunde",
+              "summary": "Anthropic, en AI-startup, rejste 30 milliarder dollar i sin seneste finansieringsrunde, hvilket øgede sin vurdering til 380 milliarder dollar, mere end det dobbelte af sin tidligere vurdering."
+            },
+            "es": {
+              "title": "Anthropic Se Valora en 380 Mil Millones de Dólares en Nueva Ronda de Financiamiento",
+              "summary": "Anthropic, una startup de IA, recaudó 30 mil millones de dólares en su última ronda de financiamiento, aumentando su valoración a 380 mil millones de dólares, más del doble de su valoración anterior."
+            }
+          }
+        },
+        {
+          "id": "vmtsuc",
+          "title": "OpenAI’s Biggest Challenge Is Turning Its A.I. Into a Cash Machine",
+          "url": "https://www.nytimes.com/2026/02/11/technology/openai-revenue-challenge.html",
+          "source": "NYTimes Technology",
+          "published_at": "2026-02-11T16:01:22.000Z",
+          "ingested_at": "2026-02-15T06:59:16.007Z",
+          "snippet": "The maker of ChatGPT hopes to triple its revenue in the coming year because it is planning to spend tens of billions of dollars. The clock is ticking.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.125,
+            "recencyScore": 0,
+            "sourceWeight": 0.075,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "openai"
+            ]
+          },
+          "aiSummary": "AI-Generated Summary:\nOpenAI aims to triple revenue by investing billions, with the goal of monetizing its AI technology like ChatGPT. The pressure is on to turn AI into a profitable venture.",
+          "translations": {
+            "da": {
+              "title": "OpenAI's Største Udfordring Er At Gøre Sin A.I. Til En Pengemaskine",
+              "summary": "OpenAI sigter mod at tredoble indtægterne ved at investere milliarder, med målet om at tjene penge på sin AI-teknologi som ChatGPT. Presset er på for at gøre AI til en rentabel virksomhed."
+            },
+            "es": {
+              "title": "El Mayor Desafío de OpenAI es Convertir Su A.I. en una Máquina de Dinero",
+              "summary": "OpenAI busca triplicar sus ingresos invirtiendo miles de millones, con el objetivo de monetizar su tecnología de IA como ChatGPT. La presión está sobre convertir la IA en un negocio rentable."
+            }
+          }
+        },
+        {
+          "id": "t3tz7w",
+          "title": "AI Bubble Fears Are Creating New Derivatives",
+          "url": "https://www.bloomberg.com/news/articles/2026-02-14/ai-bubble-fears-are-creating-new-derivatives-credit-weekly",
+          "source": "Bloomberg - Technology",
+          "published_at": "2026-02-14T20:00:00.000Z",
+          "ingested_at": "2026-02-15T06:59:16.007Z",
+          "snippet": "Debt investors are worried that the biggest tech companies will keep borrowing until it hurts in the battle to develop the most powerful artificial intelligence.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ai",
+              "artificial intelligence"
+            ]
+          },
+          "aiSummary": "AI Bubble Fears are leading to the creation of new derivatives as debt investors express concerns over tech companies borrowing excessively in the pursuit of advanced artificial intelligence.",
+          "translations": {
+            "da": {
+              "title": "Frygt for AI-boblen skaber nye derivater",
+              "summary": "Frygt for AI-boblen fører til oprettelsen af nye derivater, da gældsinvestorer udtrykker bekymring over, at teknologivirksomheder låner for meget i jagten på avanceret kunstig intelligens."
+            },
+            "es": {
+              "title": "Los temores de la burbuja de IA están creando nuevos derivados",
+              "summary": "Los temores de la burbuja de IA están llevando a la creación de nuevos derivados, ya que los inversores en deuda expresan preocupaciones sobre el endeudamiento excesivo de las empresas tecnológicas en busca de inteligencia artificial avanzada."
+            }
+          }
+        },
+        {
+          "id": "tmt",
+          "title": "AI a structural rewrite, not a disruption: NITI Ayog fellow Debjani Ghosh ",
+          "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/ai-a-structural-rewrite-not-a-disruption-niti-ayog-fellow-debjani-ghosh/articleshow/128334094.cms",
+          "source": "Economic Times - Technology",
+          "published_at": "2026-02-14T04:31:32.000Z",
+          "ingested_at": "2026-02-15T06:59:16.007Z",
+          "snippet": "A Niti Aayog report noted that industry must lead the shift into the AI era by reimagining its delivery model, deepening innovation, and investing in the next wave of growth. Firms need to pivot from cost-based services to outcome-driven, AI-enabled solutions, embedding 'human + agent + platform' models across operations.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": -0.04999999999999999,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0.05,
+            "penalty": 0.2,
+            "matchedKeywords": [
+              "ai",
+              "agent"
+            ]
+          },
+          "aiSummary": "AI is seen as a structural rewrite rather than a disruption, according to NITI Ayog fellow Debjani Ghosh. The report emphasizes the need for industries to invest in AI-enabled solutions and shift towards outcome-driven models.",
+          "translations": {
+            "da": {
+              "title": "AI en strukturel omskrivning, ikke en forstyrrelse: NITI Ayog-fellow Debjani Ghosh",
+              "summary": "AI ses som en strukturel omskrivning snarere end en forstyrrelse, ifølge NITI Ayog-fellow Debjani Ghosh. Rapporten understreger behovet for, at industrier investerer i AI-drevne løsninger og skifter mod resultatdrevede modeller."
+            },
+            "es": {
+              "title": "AI una reescritura estructural, no una disrupción: la becaria de NITI Ayog Debjani Ghosh",
+              "summary": "La IA se considera una reescritura estructural en lugar de una disrupción, según la becaria de NITI Ayog Debjani Ghosh. El informe enfatiza la necesidad de que las industrias inviertan en soluciones habilitadas por IA y cambien hacia modelos impulsados por resultados."
+            }
+          }
+        },
+        {
+          "id": "pp1ah7",
+          "title": "Amazon Earnings, CapEx Concerns, Commodity AI",
+          "url": "https://stratechery.com/2026/amazon-earnings-capex-concerns-commodity-ai/",
+          "source": "Stratechery",
+          "published_at": "2026-02-10T11:00:00.000Z",
+          "ingested_at": "2026-02-15T06:59:16.007Z",
+          "snippet": "Amazon's massive CapEx increase makes me much more nervous than Google's, but it is understandable.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ai"
+            ]
+          },
+          "aiSummary": "AI-generated summary:\nAmazon's significant increase in CapEx is causing concern, particularly in comparison to Google's, but the reasons behind it are comprehensible.",
+          "translations": {
+            "da": {
+              "title": "Amazon Indtjening, CapEx Bekymringer, Råvare AI",
+              "summary": "Amazon's betydelige stigning i CapEx vækker bekymring, især i forhold til Google's, men årsagerne bag det er forståelige."
+            },
+            "es": {
+              "title": "Ganancias de Amazon, preocupaciones sobre CapEx, IA de materias primas",
+              "summary": "El aumento significativo de CapEx de Amazon está causando preocupación, especialmente en comparación con el de Google, pero las razones detrás de ello son comprensibles."
+            }
+          }
+        },
+        {
+          "id": "b8p66s",
+          "title": "Anthropic’s Super Bowl swipe at OpenAI pays off big ",
+          "url": "https://economictimes.indiatimes.com/tech/technology/anthropics-super-bowl-swipe-at-openai-pays-off-big/articleshow/128341114.cms",
+          "source": "Economic Times - Technology",
+          "published_at": "2026-02-14T08:59:46.000Z",
+          "ingested_at": "2026-02-15T06:59:16.007Z",
+          "snippet": "Per market intelligence firm Appfigures, as of Saturday, Anthropic’s Claude chatbot climbed into the top 10 on the US App Store, indicating that users gave a thumbs up to its “no ads” pitch. Claude’s US downloads across iOS and Android shot up 32% to about 148,000 between Sunday and Tuesday, compared to the previous Thursday to Saturday, TechCrunch reported, citing Appfigures.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.10000000000000003,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0.15,
+            "penalty": 0.2,
+            "matchedKeywords": [
+              "openai",
+              "anthropic",
+              "claude"
+            ]
+          },
+          "aiSummary": "AI-Generated Summary:\nAnthropic's Claude chatbot saw a significant increase in downloads and climbed into the top 10 on the US App Store after promoting its \"no ads\" feature, indicating a successful strategy against OpenAI.",
+          "translations": {
+            "da": {
+              "title": "Anthropics Super Bowl stik til OpenAI betaler sig stort",
+              "summary": "Anthropics Claude chatbot så en betydelig stigning i downloads og klatrede ind i top 10 på den amerikanske App Store efter at have promoveret sin \"ingen annoncer\" funktion, hvilket indikerer en succesfuld strategi mod OpenAI."
+            },
+            "es": {
+              "title": "El golpe de Anthropic en el Super Bowl a OpenAI da grandes resultados",
+              "summary": "El chatbot Claude de Anthropic vio un aumento significativo en descargas y subió al top 10 en la App Store de EE. UU. tras promover su función de \"sin anuncios\", lo que indica una estrategia exitosa contra OpenAI."
+            }
+          }
+        }
+      ]
+    },
+    "Ecommerce_Retail_Tech": {
+      "total": 250,
+      "top": [
+        {
+          "id": "x9ye0p",
+          "title": "New Ecommerce Tools: February 11, 2026",
+          "url": "https://www.practicalecommerce.com/new-ecommerce-tools-feb-11-2026",
+          "source": "Practical Ecommerce",
+          "published_at": "2026-02-11T12:39:03.000Z",
+          "ingested_at": "2026-02-15T06:59:16.007Z",
+          "snippet": "This week: updates for reverse logistics, fulfillment, AI assistants, AI store builders, chargebacks, checkout integrations, agentic commerce, and automated marketing.\nThe post New Ecommerce Tools: February 11, 2026 appeared first on Practical Ecommerce.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.30000000000000004,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.2,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ecommerce",
+              "checkout",
+              "fulfillment",
+              "logistics"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Practical Ecommerce's latest article highlights new ecommerce tools for reverse logistics, fulfillment, AI assistants, AI store builders, chargebacks, checkout integrations, agentic commerce, and automated marketing, published on February 11, 2026.",
+          "translations": {
+            "da": {
+              "title": "Nye E-handel Værktøjer: 11. februar 2026",
+              "summary": "AI-genereret resumé: Practical Ecommerce's seneste artikel fremhæver nye e-handel værktøjer til omvendt logistik, opfyldelse, AI-assistenter, AI-butikbyggere, chargebacks, checkout-integrationer, agentisk handel og automatiseret marketing, offentliggjort den 11. februar 2026."
+            },
+            "es": {
+              "title": "N nuevas herramientas de comercio electrónico: 11 de febrero de 2026",
+              "summary": "Resumen generado por IA: El último artículo de Practical Ecommerce destaca nuevas herramientas de comercio electrónico para logística inversa, cumplimiento, asistentes de IA, creadores de tiendas de IA, contracargos, integraciones de pago, comercio agente y marketing automatizado, publicado el 11 de febrero de 2026."
+            }
+          }
+        },
+        {
+          "id": "2v19m",
+          "title": "Shopify’s revenue rises 30% in 2025 as B2B sales surge and AI commerce expands",
+          "url": "https://www.digitalcommerce360.com/2026/02/12/shopify-revenue-b2b-sales-ai-2025/",
+          "source": "Digital Commerce 360",
+          "published_at": "2026-02-12T20:33:40.000Z",
+          "ingested_at": "2026-02-15T06:59:16.007Z",
+          "snippet": "Shopify reported strong revenue growth in Q4 and its overall fiscal 2025, driven in part by a sharp rise in business-to-business (B2B) sales and new tools that allow merchants to sell through artificial intelligence (AI) shopping channels. The Ottawa-based ecommerce company said revenue for its fiscal Q4 ended Dec. 31 rose 31% to $3.67 billion, […]\nThe post Shopify’s revenue rises 30% in 2025 as B2B sales surge and AI commerce expands appeared first on Digital Commerce 360.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0.1,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ecommerce",
+              "shopping"
+            ]
+          },
+          "aiSummary": "AI-Generated Summary:\nShopify's revenue increased by 30% in 2025, attributed to a surge in B2B sales and the expansion of AI commerce tools, leading to strong growth in Q4 and overall fiscal performance.",
+          "translations": {
+            "da": {
+              "title": "Shopifys indtægter stiger med 30% i 2025, da B2B-salg eksploderer og AI-handel udvides",
+              "summary": "Shopifys indtægter steg med 30% i 2025, hvilket skyldes en stigning i B2B-salg og udvidelsen af AI-handel værktøjer, hvilket førte til stærk vækst i Q4 og generel finansiel præstation."
+            },
+            "es": {
+              "title": "Los ingresos de Shopify aumentan un 30% en 2025 a medida que las ventas B2B se disparan y el comercio de IA se expande",
+              "summary": "Los ingresos de Shopify aumentaron un 30% en 2025, atribuido a un aumento en las ventas B2B y la expansión de las herramientas de comercio de IA, lo que llevó a un fuerte crecimiento en el cuarto trimestre y un rendimiento fiscal general."
+            }
+          }
+        },
+        {
+          "id": "tfhipv",
+          "title": "AI Content Licensing for Merchants",
+          "url": "https://www.practicalecommerce.com/ai-content-licensing-for-merchants",
+          "source": "Practical Ecommerce",
+          "published_at": "2026-02-12T14:25:46.000Z",
+          "ingested_at": "2026-02-15T06:59:16.007Z",
+          "snippet": "Efforts by Microsoft and Amazon to develop content-licensing marketplaces offer an opportunity for ecommerce marketers.\nThe post AI Content Licensing for Merchants appeared first on Practical Ecommerce.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ecommerce",
+              "marketplace"
+            ]
+          },
+          "aiSummary": "AI Content Licensing for Merchants discusses the potential for ecommerce marketers to benefit from content-licensing marketplaces developed by Microsoft and Amazon.",
+          "translations": {
+            "da": {
+              "title": "AI Indhold Licensering for Handlende",
+              "summary": "AI Indhold Licensering for Handlende diskuterer potentialet for e-handelsmarkedsførere til at drage fordel af indhold-licenseringsmarkeder udviklet af Microsoft og Amazon."
+            },
+            "es": {
+              "title": "Licenciamiento de Contenido AI para Comerciantes",
+              "summary": "Licenciamiento de Contenido AI para Comerciantes discute el potencial para que los comercializadores de comercio electrónico se beneficien de los mercados de licencias de contenido desarrollados por Microsoft y Amazon."
+            }
+          }
+        },
+        {
+          "id": "i9o2p6",
+          "title": "Fewer consumers are shopping online on a daily basis",
+          "url": "https://www.retaildive.com/news/fewer-people-online-shopping-daily-basis/810523/",
+          "source": "Retail Dive",
+          "published_at": "2026-02-11T17:16:00.000Z",
+          "ingested_at": "2026-02-15T06:59:16.007Z",
+          "snippet": "The number of consumers who turn to e-commerce daily has declined 12 percentage points from last year, with in-store shoppers on the rise.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.25,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "shopping",
+              "e-commerce"
+            ]
+          },
+          "aiSummary": "AI-generated summary:\nThe article from Retail Dive published on 2026-02-11 reports a 12% decrease in the number of consumers shopping online daily compared to the previous year, with a growing trend of in-store shopping.",
+          "translations": {
+            "da": {
+              "title": "Færre forbrugere handler online dagligt",
+              "summary": "Artiklen fra Retail Dive offentliggjort den 11. februar 2026 rapporterer en 12% reduktion i antallet af forbrugere, der handler online dagligt sammenlignet med året før, med en voksende tendens til at handle i butikker."
+            },
+            "es": {
+              "title": "Menos consumidores compran en línea a diario",
+              "summary": "El artículo de Retail Dive publicado el 11 de febrero de 2026 informa una disminución del 12% en el número de consumidores que compran en línea a diario en comparación con el año anterior, con una tendencia creciente hacia las compras en tienda."
+            }
+          }
+        },
+        {
+          "id": "ucokl5",
+          "title": "Ford Says Electric Vehicle Losses Will Continue for 3 More Years",
+          "url": "https://www.nytimes.com/2026/02/10/business/ford-earnings-electric-vehicles.html",
+          "source": "NYTimes Technology",
+          "published_at": "2026-02-11T02:34:59.000Z",
+          "ingested_at": "2026-02-15T06:59:16.007Z",
+          "snippet": "Ford Motor reported a big loss for 2025 because of its troubled electric vehicle division, which it has significantly scaled back.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0.15,
+            "keywordBoost": 0,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": []
+          },
+          "aiSummary": "AI-generated summary:\nFord Motor reported significant losses in 2025 due to its troubled electric vehicle division, which has been scaled back, with projections indicating continued losses for the next three years.",
+          "translations": {
+            "da": {
+              "title": "Ford siger, at tab på elektriske køretøjer vil fortsætte i 3 år mere",
+              "summary": "Ford Motor rapporterede betydelige tab i 2025 på grund af sin problematiske afdeling for elektriske køretøjer, som er blevet nedskaleret, med prognoser der indikerer fortsatte tab i de næste tre år."
+            },
+            "es": {
+              "title": "Ford dice que las pérdidas de vehículos eléctricos continuarán durante 3 años más",
+              "summary": "Ford Motor informó pérdidas significativas en 2025 debido a su problemática división de vehículos eléctricos, que ha sido reducida, con proyecciones que indican pérdidas continuas durante los próximos tres años."
+            }
+          }
+        },
+        {
+          "id": "t5q8we",
+          "title": "Ford Will Make a Play for a Different Battery Market",
+          "url": "https://www.nytimes.com/2026/02/12/business/energy-environment/ford-battery-storage-factory-kentucky.html",
+          "source": "NYTimes Technology",
+          "published_at": "2026-02-12T10:03:23.000Z",
+          "ingested_at": "2026-02-15T06:59:16.007Z",
+          "snippet": "The company, long focused on cars and trucks, plans to begin manufacturing large batteries used by utilities, data centers, other businesses and homeowners.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0.15,
+            "keywordBoost": 0,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": []
+          },
+          "aiSummary": "AI-Generated Summary:\nFord, traditionally known for vehicles, will shift focus to producing large batteries for various industries and homeowners, expanding beyond the automotive sector.",
+          "translations": {
+            "da": {
+              "title": "Ford vil satse på et andet batterimarked",
+              "summary": "Ford, der traditionelt er kendt for køretøjer, vil skifte fokus til at producere store batterier til forskellige industrier og boligejere, og dermed udvide ud over bilsektoren."
+            },
+            "es": {
+              "title": "Ford hará una jugada por un mercado de baterías diferente",
+              "summary": "Ford, tradicionalmente conocida por sus vehículos, cambiará su enfoque hacia la producción de grandes baterías para diversas industrias y propietarios de viviendas, expandiéndose más allá del sector automotriz."
+            }
+          }
+        },
+        {
+          "id": "7v89s9",
+          "title": "‘Cautious optimism’ as footfall decline slows, says BRC",
+          "url": "https://www.retailgazette.co.uk/blog/2026/02/cautious-optimism-as-footfall-decline-slows-says-brc/",
+          "source": "Retail Gazette",
+          "published_at": "2026-02-13T09:12:45.000Z",
+          "ingested_at": "2026-02-15T06:59:16.007Z",
+          "snippet": "Total UK footfall decreased by 0.6% year-on-year (YoY) in January, up from -2.9% in December. The latest British Retail Consortium (BRC)-Sensormatic data, which covers the four weeks 04 – 31 Jan, also showed high Street footfall fell by 1.9% in January (YoY), down from -0.9% in December. Shopping Centre footfall decreased by 0.8% in January (YoY),...",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0.15,
+            "penalty": 0,
+            "matchedKeywords": [
+              "shopping"
+            ]
+          },
+          "aiSummary": "AI-generated summary: The British Retail Consortium reported a slower decline in footfall in the UK for January, with a decrease of 0.6% year-on-year, indicating \"cautious optimism\" in the retail sector. High Street footfall fell by 1.9% and Shopping Centre footfall decreased by 0.8% during the same period.",
+          "translations": {
+            "da": {
+              "title": "‘Forsigtig optimisme’ som fald i besøgende aftager, siger BRC",
+              "summary": "British Retail Consortium rapporterede et langsommere fald i besøgende i Storbritannien for januar, med et fald på 0,6% år-til-år, hvilket indikerer 'forsigtig optimisme' i detailsektoren. Besøgende på High Street faldt med 1,9% og besøgende i shoppingcentre faldt med 0,8% i samme periode."
+            },
+            "es": {
+              "title": "‘Optimismo cauteloso’ a medida que disminuye la afluencia, dice BRC",
+              "summary": "El British Retail Consortium informó de una disminución más lenta en la afluencia en el Reino Unido para enero, con una caída del 0,6% interanual, lo que indica 'optimismo cauteloso' en el sector minorista. La afluencia en High Street cayó un 1,9% y la afluencia en centros comerciales disminuyó un 0,8% durante el mismo período."
+            }
+          }
+        }
+      ]
+    },
+    "Luxury_and_Consumer": {
+      "total": 67,
+      "top": [
+        {
+          "id": "ebndtx",
+          "title": "71pc of UK luxury shoppers prioritize sustainability when purchasing: Farfetch",
+          "url": "https://www.luxurydaily.com/71pc-of-uk-luxury-shoppers-prioritize-sustainability-when-purchasing-farfetch/",
+          "source": "Luxury Daily - Main",
+          "published_at": "2026-02-13T09:45:40.000Z",
+          "ingested_at": "2026-02-15T06:59:16.007Z",
+          "snippet": "New data from the online retailer shows a strong preference for repeat wear and long-term value, with nearly half of consumers surveyed viewing their fashion buys as financial investments.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0.1,
+            "penalty": 0,
+            "matchedKeywords": [
+              "luxury",
+              "consumer"
+            ]
+          },
+          "aiSummary": "AI-Generated Summary:\nFarfetch's data reveals that 71% of UK luxury shoppers prioritize sustainability in their purchases, emphasizing repeat wear and long-term value, with many viewing fashion buys as financial investments.",
+          "translations": {
+            "da": {
+              "title": "71% af britiske luksuskunder prioriterer bæredygtighed ved køb: Farfetch",
+              "summary": "Farfetch's data viser, at 71% af britiske luksuskunder prioriterer bæredygtighed i deres køb, med fokus på gentagen brug og langsigtet værdi, hvor mange ser modekøb som finansielle investeringer."
+            },
+            "es": {
+              "title": "El 71% de los compradores de lujo en el Reino Unido priorizan la sostenibilidad al comprar: Farfetch",
+              "summary": "Los datos de Farfetch revelan que el 71% de los compradores de lujo en el Reino Unido priorizan la sostenibilidad en sus compras, enfatizando el uso repetido y el valor a largo plazo, con muchos viendo las compras de moda como inversiones financieras."
+            }
+          }
+        },
+        {
+          "id": "t1d4vh",
+          "title": "Turning 125, Nordstrom doubles down on luxury brands, loyalty",
+          "url": "https://www.luxurydaily.com/turning-125-nordstrom-doubles-down-on-luxury-brands-loyalty/",
+          "source": "Luxury Daily - Main",
+          "published_at": "2026-02-13T10:00:09.000Z",
+          "ingested_at": "2026-02-15T06:59:16.007Z",
+          "snippet": "The U.S. department store chain is introducing exclusive products and hosting events with a rotating set of partners, including Brunello Cucinelli, Chanel, Christian Louboutin and Manolo Blahnik, throughout the anniversary year.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "luxury",
+              "brand",
+              "exclusive"
+            ]
+          },
+          "aiSummary": "AI-Generated Summary:\nNordstrom celebrates its 125th anniversary by focusing on luxury brands and loyalty, offering exclusive products and events with partners like Brunello Cucinelli, Chanel, Christian Louboutin, and Manolo Blahnik throughout the year.",
+          "translations": {
+            "da": {
+              "title": "125 år, Nordstrom satser på luksusmærker og loyalitet",
+              "summary": "Nordstrom fejrer sit 125-års jubilæum ved at fokusere på luksusmærker og loyalitet, og tilbyder eksklusive produkter og events med partnere som Brunello Cucinelli, Chanel, Christian Louboutin og Manolo Blahnik i løbet af året."
+            },
+            "es": {
+              "title": "Cumpliendo 125 años, Nordstrom se enfoca en marcas de lujo y lealtad",
+              "summary": "Nordstrom celebra su 125 aniversario al centrarse en marcas de lujo y lealtad, ofreciendo productos y eventos exclusivos con socios como Brunello Cucinelli, Chanel, Christian Louboutin y Manolo Blahnik a lo largo del año."
+            }
+          }
+        },
+        {
+          "id": "wl161p",
+          "title": "Hermès Reports 9.8% Revenue Growth in Fourth Quarter, Beating Expectations",
+          "url": "https://www.businessoffashion.com/news/luxury/hermes-reports-98-revenue-growth-in-fourth-quarter-beating-expectations/",
+          "source": "Business of Fashion - News",
+          "published_at": "2026-02-12T07:45:07.000Z",
+          "ingested_at": "2026-02-15T06:59:16.007Z",
+          "snippet": "Sales in the Americas region, mainly the United States, rose by 12.1 percent, beating expectations of around 9 percent.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.15,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0,
+            "insightSignalBoost": 0.15,
+            "penalty": 0,
+            "matchedKeywords": []
+          },
+          "aiSummary": "AI-Generated Summary:\nHermès exceeded expectations with a 9.8% revenue growth in the fourth quarter, driven by a 12.1% increase in sales in the Americas region, particularly the United States.",
+          "translations": {
+            "da": {
+              "title": "Hermès rapporterer 9,8% omsætningsvækst i fjerde kvartal, som overgår forventningerne",
+              "summary": "Hermès overgik forventningerne med en omsætningsvækst på 9,8% i fjerde kvartal, drevet af en stigning på 12,1% i salget i Amerika, især i USA."
+            },
+            "es": {
+              "title": "Hermès informa un crecimiento de ingresos del 9.8% en el cuarto trimestre, superando las expectativas",
+              "summary": "Hermès superó las expectativas con un crecimiento de ingresos del 9.8% en el cuarto trimestre, impulsado por un aumento del 12.1% en las ventas en la región de América, especialmente en Estados Unidos."
+            }
+          }
+        },
+        {
+          "id": "cncszt",
+          "title": "Year-end sales jump 9pc at Hermès",
+          "url": "https://www.luxurydaily.com/year-end-sales-jump-9pc-at-hermes/",
+          "source": "Luxury Daily - Main",
+          "published_at": "2026-02-13T20:24:54.000Z",
+          "ingested_at": "2026-02-15T06:59:16.007Z",
+          "snippet": "The French fashion and leather goods brand is continuing its growth streak.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "brand"
+            ]
+          },
+          "aiSummary": "AI-generated summary:\nHermès experienced a 9% increase in year-end sales, showcasing continued growth in the luxury fashion and leather goods market.",
+          "translations": {
+            "da": {
+              "title": "Julehandels salg stiger med 9 pct. hos Hermès",
+              "summary": "Hermès oplevede en stigning på 9% i julehandels salg, hvilket viser fortsat vækst på markedet for luksusmode og lædervarer."
+            },
+            "es": {
+              "title": "Las ventas de fin de año aumentan un 9% en Hermès",
+              "summary": "Hermès experimentó un aumento del 9% en las ventas de fin de año, mostrando un crecimiento continuo en el mercado de moda de lujo y artículos de cuero."
+            }
+          }
+        },
+        {
+          "id": "1nab9w",
+          "title": "What European Luxury Can Learn From American Fashion",
+          "url": "https://www.businessoffashion.com/articles/luxury/what-european-luxury-can-learn-from-american-fashion/",
+          "source": "Business of Fashion - News",
+          "published_at": "2026-02-13T05:28:00.000Z",
+          "ingested_at": "2026-02-15T06:59:16.007Z",
+          "snippet": "American brands have recaptured the zeitgeist — and market share — as Europe’s luxury slump persists. As the sector’s biggest names plot a comeback, there may be lessons to take from across the pond.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "luxury",
+              "brand"
+            ]
+          },
+          "aiSummary": "AI-Generated Summary:\nEuropean luxury brands are facing a slump as American fashion brands gain market share and capture the current trends. There are potential lessons for European luxury brands to learn from the success of American fashion.",
+          "translations": {
+            "da": {
+              "title": "Hvad europæisk luksus kan lære af amerikansk mode",
+              "summary": "Europæiske luksusmærker står over for en nedgang, mens amerikanske modemærker vinder markedsandele og fanger de nuværende trends. Der er potentielle lektioner for europæiske luksusmærker at lære af den amerikanske modes succes."
+            },
+            "es": {
+              "title": "Lo que la lujo europeo puede aprender de la moda americana",
+              "summary": "Las marcas de lujo europeas están enfrentando una caída mientras las marcas de moda americanas ganan cuota de mercado y capturan las tendencias actuales. Hay lecciones potenciales que las marcas de lujo europeas pueden aprender del éxito de la moda americana."
+            }
+          }
+        },
+        {
+          "id": "4ro0w3",
+          "title": "Birkenstock Benefits From Growing Demand for Clogs and Boots",
+          "url": "https://www.businessoffashion.com/news/retail/birkenstock-benefits-from-growing-demand-for-clogs-and-boots/",
+          "source": "Business of Fashion - News",
+          "published_at": "2026-02-12T12:16:08.000Z",
+          "ingested_at": "2026-02-15T06:59:16.007Z",
+          "snippet": "The German sandal maker saw robust holiday demand for its clogs, boots and high-end shearling-lined footwear as it continues a push to become a footwear brand for all seasons.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "demand",
+              "high-end",
+              "brand"
+            ]
+          },
+          "aiSummary": "AI-generated summary:\nBirkenstock experienced strong holiday demand for clogs, boots, and shearling-lined footwear, aiming to establish itself as a year-round footwear brand.",
+          "translations": {
+            "da": {
+              "title": "Birkenstock nyder godt af stigende efterspørgsel efter træsko og støvler",
+              "summary": "Birkenstock oplevede stærk efterspørgsel i ferien efter træsko, støvler og fodtøj med lammeskind, med det mål at etablere sig som et året rundt fodtøjsmærke."
+            },
+            "es": {
+              "title": "Birkenstock se beneficia de la creciente demanda de zuecos y botas",
+              "summary": "Birkenstock experimentó una fuerte demanda durante las vacaciones de zuecos, botas y calzado forrado de piel de oveja, con el objetivo de establecerse como una marca de calzado durante todo el año."
+            }
+          }
+        },
+        {
+          "id": "rrfglx",
+          "title": "5 Features to Demand from Your Next Journey Orchestration Solution",
+          "url": "https://insiderone.com/journey-orchestration-features/",
+          "source": "UseInsider",
+          "published_at": "2026-02-11T06:41:18.000Z",
+          "ingested_at": "2026-02-15T06:59:16.007Z",
+          "snippet": "For most enterprise teams, the customer journey has become a series of disconnected events.  You send an email, a user clicks a link, they land on your site, but the experience feels like they’re interacting with three different companies. This fragmentation is the primary driver of revenue leakage.  High-performing brands have moved past “set-and-forget” automation. […]",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "demand",
+              "brand"
+            ]
+          },
+          "aiSummary": "AI-generated summary:\nEnterprise teams are seeking journey orchestration solutions to address fragmented customer experiences and revenue leakage. High-performing brands are moving away from traditional automation towards more personalized and connected customer journeys.",
+          "translations": {
+            "da": {
+              "title": "5 funktioner du skal kræve fra din næste rejseorkestreringsløsning",
+              "summary": "Virksomhedsteams søger rejseorkestreringsløsninger for at tackle fragmenterede kundeoplevelser og indtægtstab. Højtydende mærker bevæger sig væk fra traditionel automatisering mod mere personlige og sammenkoblede kundeoplevelser."
+            },
+            "es": {
+              "title": "5 características que exigir de tu próxima solución de orquestación de viajes",
+              "summary": "Los equipos empresariales buscan soluciones de orquestación de viajes para abordar experiencias de cliente fragmentadas y la fuga de ingresos. Las marcas de alto rendimiento se están alejando de la automatización tradicional hacia viajes de cliente más personalizados y conectados."
+            }
+          }
+        }
+      ]
+    },
+    "Jewellery_Industry": {
+      "total": 38,
+      "top": [
+        {
+          "id": "gis9ux",
+          "title": "Pandora introducing new line of platinum products",
+          "url": "https://www.jewellermagazine.com/Article/14744/Pandora-introducing-new-line-of-platinum-products",
+          "source": "Jeweller - Business News",
+          "published_at": "2026-02-09T13:00:00.000Z",
+          "ingested_at": "2026-02-15T06:59:16.007Z",
+          "snippet": "The world’s largest jewellery brand, Pandora, has confirmed plans to launch a new collection of platinum-plated products among surging gold and silver prices.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.30000000000000004,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.2,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "jewellery",
+              "gold",
+              "silver",
+              "jeweller"
+            ]
+          },
+          "aiSummary": "AI-Generated Summary:\nPandora, the leading jewellery brand, is set to release a new line of platinum-plated products in response to rising gold and silver prices.",
+          "translations": {
+            "da": {
+              "title": "Pandora introducerer ny serie af platinprodukter",
+              "summary": "Pandora, det førende smykkemærke, er klar til at lancere en ny serie af platinbelagte produkter som svar på stigende guld- og sølvpriser."
+            },
+            "es": {
+              "title": "Pandora presenta nueva línea de productos de platino",
+              "summary": "Pandora, la marca de joyería líder, está lista para lanzar una nueva línea de productos chapados en platino en respuesta al aumento de los precios del oro y la plata."
+            }
+          }
+        },
+        {
+          "id": "8rx79r",
+          "title": "Strong sales to start the year for jewellers",
+          "url": "https://www.jewellermagazine.com/Article/14734/Strong-sales-to-start-the-year-for-jewellers",
+          "source": "Jeweller - Business News",
+          "published_at": "2026-02-09T13:00:00.000Z",
+          "ingested_at": "2026-02-15T06:59:16.007Z",
+          "snippet": "The latest analysis of sales at independent jewellery stores in Australia has revealed a solid start to the year.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "jeweller",
+              "jewellery"
+            ]
+          },
+          "aiSummary": "AI-Generated Summary:\nIndependent jewellery stores in Australia have reported strong sales at the beginning of the year, according to the latest analysis.",
+          "translations": {
+            "da": {
+              "title": "Stærkt salg for at starte året for juvelerer",
+              "summary": "Uafhængige smykkebutikker i Australien har rapporteret om stærkt salg i begyndelsen af året, ifølge den seneste analyse."
+            },
+            "es": {
+              "title": "Fuertes ventas para comenzar el año para joyeros",
+              "summary": "Las tiendas de joyería independientes en Australia han reportado fuertes ventas al comienzo del año, según el último análisis."
+            }
+          }
+        },
+        {
+          "id": "szg9ue",
+          "title": "Jewellers survey highlights consumer confusion around diamonds",
+          "url": "https://www.jewellermagazine.com/Article/14761/Jewellers-survey-highlights-consumer-confusion-around-diamonds",
+          "source": "Jeweller - Business News",
+          "published_at": "2026-02-09T13:00:00.000Z",
+          "ingested_at": "2026-02-15T06:59:16.007Z",
+          "snippet": "A new jewellery industry survey has revealed the ongoing division among business owners concerning lab-created and natural diamonds.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.3,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "diamond",
+              "jeweller",
+              "jewellery"
+            ]
+          },
+          "aiSummary": "AI-Generated Summary:\nA recent survey in the jewellery industry shows a split among business owners regarding lab-created and natural diamonds, indicating consumer confusion in the market.",
+          "translations": {
+            "da": {
+              "title": "Jewelers undersøgelse fremhæver forbrugerforvirring omkring diamanter",
+              "summary": "En nylig undersøgelse i smykkeindustrien viser en opdeling blandt virksomhedsejere vedrørende laboratorieproducerede og naturlige diamanter, hvilket indikerer forbrugerforvirring på markedet."
+            },
+            "es": {
+              "title": "La encuesta de joyeros destaca la confusión del consumidor en torno a los diamantes",
+              "summary": "Una reciente encuesta en la industria de la joyería muestra una división entre los propietarios de negocios respecto a los diamantes creados en laboratorio y los naturales, lo que indica confusión entre los consumidores en el mercado."
+            }
+          }
+        },
+        {
+          "id": "mpc0n0",
+          "title": "2.21-carat pear-cut C5 SI2 Australian Chocolate Diamond Ring",
+          "url": "https://www.jewellermagazine.com/Article/14729/2-21-carat-pear-cut-C5-SI2-Australian-Chocolate-Diamond-Ring",
+          "source": "Jeweller - Jewellery Trends",
+          "published_at": "2026-02-10T13:00:00.000Z",
+          "ingested_at": "2026-02-15T06:59:16.007Z",
+          "snippet": "Crafted in 18-carat yellow gold, this elegant ring showcases a striking 2.21-carat pear-cut C5 SI2 Australian Chocolate Diamond.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "diamond",
+              "gold"
+            ]
+          },
+          "aiSummary": "AI-Generated Summary:\nA 2.21-carat pear-cut C5 SI2 Australian Chocolate Diamond ring crafted in 18-carat yellow gold is highlighted in this elegant piece from the Jewellery Trends article published on February 10, 2026.",
+          "translations": {
+            "da": {
+              "title": "2,21-karat pæreformet C5 SI2 australsk chokolade diamant ring",
+              "summary": "En 2,21-karat pæreformet C5 SI2 australsk chokolade diamant ring fremstillet i 18-karat guld fremhæves i dette elegante stykke fra artiklen om smykketrends offentliggjort den 10. februar 2026."
+            },
+            "es": {
+              "title": "Anillo de diamante chocolate australiano C5 SI2 de corte pera de 2.21 quilates",
+              "summary": "Un anillo de diamante chocolate australiano de corte pera C5 SI2 de 2.21 quilates, elaborado en oro amarillo de 18 quilates, se destaca en esta elegante pieza del artículo de Tendencias de Joyería publicado el 10 de febrero de 2026."
+            }
+          }
+        },
+        {
+          "id": "6xfygw",
+          "title": "1.10-carat round brilliant-cut C7 SI1 Australian Chocolate Diamond Ring",
+          "url": "https://www.jewellermagazine.com/Article/14730/1-10-carat-round-brilliant-cut-C7-SI1-Australian-Chocolate-Diamond-Ring",
+          "source": "Jeweller - Jewellery Trends",
+          "published_at": "2026-02-10T13:00:00.000Z",
+          "ingested_at": "2026-02-15T06:59:16.007Z",
+          "snippet": "Crafted in 18-carat yellow gold, this striking ring showcases a 1.10-carat round brilliant-cut C7 SI1 Australian Chocolate Diamond, elegantly secured in a half-bezel setting.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "diamond",
+              "gold"
+            ]
+          },
+          "aiSummary": "AI-Generated Summary:\nA 1.10-carat round brilliant-cut C7 SI1 Australian Chocolate Diamond ring crafted in 18-carat yellow gold is elegantly showcased in a half-bezel setting, as reported by Jeweller - Jewellery Trends on February 10, 2026.",
+          "translations": {
+            "da": {
+              "title": "1,10-karat rund brilliant-cut C7 SI1 australsk chokolade diamant ring",
+              "summary": "AI-genereret resumé: En 1,10-karat rund brilliant-cut C7 SI1 australsk chokolade diamant ring fremstillet i 18-karat gult guld præsenteres elegant i en halv-bezel indstilling, som rapporteret af Jeweller - Jewellery Trends den 10. februar 2026."
+            },
+            "es": {
+              "title": "Anillo de diamante chocolate australiano C7 SI1 de corte brillante redondo de 1.10 quilates",
+              "summary": "Resumen generado por IA: Un anillo de diamante chocolate australiano de 1.10 quilates, corte brillante redondo C7 SI1, elaborado en oro amarillo de 18 quilates, se presenta elegantemente en un ajuste de media bisel, según lo informado por Jeweller - Jewellery Trends el 10 de febrero de 2026."
+            }
+          }
+        },
+        {
+          "id": "c0poye",
+          "title": "2.42-carat round Inverell Sapphire & Diamond Ring",
+          "url": "https://www.jewellermagazine.com/Article/14731/2-42-carat-round-Inverell-Sapphire-Diamond-Ring",
+          "source": "Jeweller - Jewellery Trends",
+          "published_at": "2026-02-10T13:00:00.000Z",
+          "ingested_at": "2026-02-15T06:59:16.007Z",
+          "snippet": "Crafted in 18-carat yellow and white gold, this elegant trilogy ring showcases a breathtaking 2.42-carat round Inverell Sapphire, claw set in white gold.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "diamond",
+              "gold"
+            ]
+          },
+          "aiSummary": "AI-Generated Summary:\nA 2.42-carat round Inverell Sapphire is featured in an elegant trilogy ring crafted in 18-carat yellow and white gold, as reported by Jeweller - Jewellery Trends on February 10, 2026.",
+          "translations": {
+            "da": {
+              "title": "2,42-karat rund Inverell Safir & Diamantring",
+              "summary": "En 2,42-karat rund Inverell Safir pryder en elegant trilogi ring lavet i 18-karat guld i guld og hvidguld, som rapporteret af Jeweller - Jewellery Trends den 10. februar 2026."
+            },
+            "es": {
+              "title": "Anillo de Zafiro Inverell y Diamante de 2.42 quilates",
+              "summary": "Un zafiro Inverell de 2.42 quilates se presenta en un elegante anillo de trilogía elaborado en oro amarillo y blanco de 18 quilates, según informó Jeweller - Jewellery Trends el 10 de febrero de 2026."
+            }
+          }
+        },
+        {
+          "id": "h2rrac",
+          "title": "Hands-on jewellery workshop empowers blind participant",
+          "url": "https://www.professionaljeweller.com/jewellery-workshop-blind-participant/",
+          "source": "Professional Jeweller",
+          "published_at": "2026-02-09T08:55:00.000Z",
+          "ingested_at": "2026-02-15T06:59:16.007Z",
+          "snippet": "Jewellery designer Richard Allen, owner of Yorkshire based-Pepper Tree Studio, has demonstrated that jewellery is all about inclusivity. Recently welcoming a blind participant to a one-to-one silver jewellery-making workshop, Allen helped her to create a silver pendant. As reported on by the NAJ, Bex is totally blind and has wanted to learn traditional silversmithing techniques […]\nThe post Hands-on jewellery workshop empowers blind participant appeared first on Professional Jeweller.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.09999999999999998,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0.05,
+            "penalty": 0.2,
+            "matchedKeywords": [
+              "jewellery",
+              "jeweller",
+              "silver"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Jewellery designer Richard Allen of Pepper Tree Studio hosted a one-to-one silver jewellery-making workshop for a blind participant, demonstrating inclusivity in the industry. The participant, Bex, who is totally blind, was able to learn traditional silversmithing techniques and create a silver pendant.",
+          "translations": {
+            "da": {
+              "title": "Håndværksværksted i smykker giver blinde deltagere mulighed",
+              "summary": "Smykkedesigner Richard Allen fra Pepper Tree Studio afholdt et en-til-en sølvsmykkeværksted for en blind deltager, hvilket viser inklusivitet i branchen. Deltageren, Bex, som er helt blind, kunne lære traditionelle sølvsmedeteknikker og lave et sølvvedhæng."
+            },
+            "es": {
+              "title": "Taller práctico de joyería empodera a participante ciego",
+              "summary": "El diseñador de joyas Richard Allen de Pepper Tree Studio organizó un taller de fabricación de joyas de plata uno a uno para un participante ciego, demostrando inclusividad en la industria. El participante, Bex, que es completamente ciego, pudo aprender técnicas tradicionales de platería y crear un colgante de plata."
+            }
+          }
+        }
+      ]
+    }
+  },
+  "coverImageUrl": "/weekly-images/2026-W07.png",
+  "coverImageAlt": "Weekly cover illustration for 2026-W07"
+}

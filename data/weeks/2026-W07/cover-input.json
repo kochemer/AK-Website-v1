@@ -1,0 +1,34 @@
+{
+  "weekLabel": "2026-W07",
+  "homepageTopArticles": [
+    {
+      "title": "New Ecommerce Tools: February 11, 2026",
+      "source": "Practical Ecommerce",
+      "snippet": "This week: updates for reverse logistics, fulfillment, AI assistants, AI store builders, chargebacks, checkout integrations, agentic commerce, and automated marketing.\nThe post New Ecommerce Tools: February 11, 2026 appeared first on Practical Ecommerce.",
+      "aiSummary": "AI-generated summary: Practical Ecommerce's latest article highlights new ecommerce tools for reverse logistics, fulfillment, AI assistants, AI store builders, chargebacks, checkout integrations, agentic commerce, and automated marketing, published on February 11, 2026."
+    },
+    {
+      "title": "Shopify’s revenue rises 30% in 2025 as B2B sales surge and AI commerce expands",
+      "source": "Digital Commerce 360",
+      "snippet": "Shopify reported strong revenue growth in Q4 and its overall fiscal 2025, driven in part by a sharp rise in business-to-business (B2B) sales and new tools that allow merchants to sell through artificial intelligence (AI) shopping channels. The Ottawa-based ecommerce company said revenue for its fiscal Q4 ended Dec. 31 rose 31% to $3.67 billion, […]\nThe post Shopify’s revenue rises 30% in 2025 as B2B sales surge and AI commerce expands appeared first on Digital Commerce 360.",
+      "aiSummary": "AI-Generated Summary:\nShopify's revenue increased by 30% in 2025, attributed to a surge in B2B sales and the expansion of AI commerce tools, leading to strong growth in Q4 and overall fiscal performance."
+    },
+    {
+      "title": "Pandora introducing new line of platinum products",
+      "source": "Jeweller - Business News",
+      "snippet": "The world’s largest jewellery brand, Pandora, has confirmed plans to launch a new collection of platinum-plated products among surging gold and silver prices.",
+      "aiSummary": "AI-Generated Summary:\nPandora, the leading jewellery brand, is set to release a new line of platinum-plated products in response to rising gold and silver prices."
+    },
+    {
+      "title": "Strong sales to start the year for jewellers",
+      "source": "Jeweller - Business News",
+      "snippet": "The latest analysis of sales at independent jewellery stores in Australia has revealed a solid start to the year.",
+      "aiSummary": "AI-Generated Summary:\nIndependent jewellery stores in Australia have reported strong sales at the beginning of the year, according to the latest analysis."
+    }
+  ],
+  "model": "gpt-image-1.5",
+  "finalPrompt": "A hyper-realistic photograph of a bustling ecommerce checkout counter inside a luxurious jewellery store, featuring an enormous diamond the size of a small car on the conveyor belt. Natural light streams through large windows, casting rainbow patterns from the diamond. Smaller items like AI gadgets and platinum jewelry are scattered around, emphasizing the scale absurdity. Camera uses a wide-angle lens with slight depth of field to focus on the diamond and surrounding items. The scene is in a wide horizontal banner composition (3:1 aspect ratio), with all elements in the central horizontal band and safe margins. No text, signage, or screens visible. Photorealistic materials and textures, including intricate diamond details and polished surfaces, make the absurdity believable.\n\nCRITICAL CONSTRAINTS (must be strictly avoided):\n- text, letters, numbers, signage, labels, screens, UI, dashboards, holograms, floating icons, logos, brands, watermarks, cartoon, illustration, CGI, 3D render, anime\n\nPHOTOREALISM ENFORCEMENT:\n- Ultra photorealistic editorial photograph, shot on a real DSLR or medium-format camera.\n- Natural lighting, realistic skin texture, realistic reflections, realistic materials, real physics.\n- Candid editorial realism; avoid stock-photo staging.\n\nANTI-CARTOON / ANTI-CGI:\n- No illustration, no cartoon, no anime, no 3D render, no CGI, no synthetic look.\n\nNO-TEXT GUARANTEE:\n- Absolutely no text, letters, numbers, typography, signage, labels, price tags.\n- No screens, dashboards, UI, holograms, floating icons, charts.\n- Avoid any objects that commonly contain text (posters, newspapers, packaging, storefront signs). If unavoidable, they must be fully out of focus and unreadable.\n\nCOMPOSITION FOR WIDE HERO BANNER (CRITICAL):\n- Wide, horizontally expansive banner format (target 3:1 or wider aspect ratio)\n- Vertically minimal height - all important visual elements must be placed in the central horizontal band\n- Safe margins at top and bottom - no critical content near vertical edges\n- Composition must work when displayed in a wide, shallow container\n- Avoid vertical stacking, tall elements, or content that extends to top/bottom edges",
+  "imageSize": "1536x1024",
+  "outputPath": "/weekly-images/2026-W07.png",
+  "generatedAt": "2026-02-15T07:12:50.342Z"
+}

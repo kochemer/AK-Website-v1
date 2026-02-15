@@ -1,0 +1,14 @@
+{
+  "concept": "giant-diamond-checkout-counter",
+  "primaryHumorDriver": "scale absurdity",
+  "secondaryEnhancer": "unexpected texture/material combination",
+  "sceneDescription": "The scene depicts a bustling ecommerce checkout counter in the middle of a lavish jewellery store. Dominating the center of the scene is an enormous, hyper-realistic diamond, roughly the size of a small car, sitting on the checkout conveyor belt. The diamond is intricately detailed, with light refracting through its facets, casting rainbow patterns across the room. Around it, various small AI gadgets and platinum jewelry pieces are tucked into the conveyor's grooves, as if waiting their turn. The store is filled with customers, but their expressions are a mix of awe and confusion as they watch the diamond slowly approach the checkout. The contrast between the over-sized diamond and the regular-sized checkout counter creates a humorous visual, while the unexpected combination of high-tech AI gadgets and luxury jewelry adds an absurd twist. Natural lighting streams in through large windows, enhancing the sparkle of the diamond and creating photorealistic reflections on polished surfaces.",
+  "finalImagePrompt": "A hyper-realistic photograph of a bustling ecommerce checkout counter inside a luxurious jewellery store, featuring an enormous diamond the size of a small car on the conveyor belt. Natural light streams through large windows, casting rainbow patterns from the diamond. Smaller items like AI gadgets and platinum jewelry are scattered around, emphasizing the scale absurdity. Camera uses a wide-angle lens with slight depth of field to focus on the diamond and surrounding items. The scene is in a wide horizontal banner composition (3:1 aspect ratio), with all elements in the central horizontal band and safe margins. No text, signage, or screens visible. Photorealistic materials and textures, including intricate diamond details and polished surfaces, make the absurdity believable.",
+  "negativePrompt": [
+    "text, letters, numbers, signage, labels",
+    "screens, UI, dashboards, holograms, floating icons",
+    "logos, brands, watermarks",
+    "cartoon, illustration, CGI, 3D render, anime"
+  ],
+  "confidence": 0.7
+}
