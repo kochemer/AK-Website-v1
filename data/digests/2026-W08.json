@@ -1,0 +1,968 @@
+{
+  "weekLabel": "2026-W08",
+  "tz": "Europe/Copenhagen",
+  "startISO": "2026-02-15T23:00:00.000Z",
+  "endISO": "2026-02-22T22:59:59.999Z",
+  "builtAtISO": "2026-02-22T08:06:39.101+01:00",
+  "builtAtLocal": "2026-02-22 08:06:39",
+  "totals": {
+    "total": 397,
+    "byTopic": {
+      "AIStrategy": 72,
+      "EcommerceRetail": 238,
+      "LuxuryConsumer": 60,
+      "Jewellery": 26
+    }
+  },
+  "topics": {
+    "AI_and_Strategy": {
+      "total": 72,
+      "top": [
+        {
+          "id": "49a6fc",
+          "title": "Defense Department and Anthropic Square Off in Dispute Over A.I. Safety",
+          "url": "https://www.nytimes.com/2026/02/18/technology/defense-department-anthropic-ai-safety.html",
+          "source": "NYTimes Technology",
+          "published_at": "2026-02-19T00:35:17.000Z",
+          "ingested_at": "2026-02-22T06:58:34.353Z",
+          "snippet": "How artificial intelligence will be used in future battlefields is an issue that has turned increasingly political and may put Anthropic in a bind.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.175,
+            "recencyScore": 0,
+            "sourceWeight": 0.075,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "anthropic",
+              "artificial intelligence"
+            ]
+          },
+          "aiSummary": "AI-generated summary:\nThe Defense Department and Anthropic are in a dispute over the use of artificial intelligence in future battlefields, raising political concerns and potential challenges for Anthropic.",
+          "translations": {
+            "da": {
+              "title": "Forsvarsministeriet og Anthropic i strid om A.I. sikkerhed",
+              "summary": "Forsvarsministeriet og Anthropic er i en strid om brugen af kunstig intelligens på fremtidige slagmarker, hvilket rejser politiske bekymringer og potentielle udfordringer for Anthropic."
+            },
+            "es": {
+              "title": "El Departamento de Defensa y Anthropic se enfrentan en disputa sobre la seguridad de la A.I.",
+              "summary": "El Departamento de Defensa y Anthropic están en una disputa sobre el uso de inteligencia artificial en futuros campos de batalla, lo que plantea preocupaciones políticas y posibles desafíos para Anthropic."
+            }
+          }
+        },
+        {
+          "id": "93nfgr",
+          "title": "AI’s ‘memorisation’ problem: the novels it can’t forget",
+          "url": "https://www.ft.com/content/e4b7a54c-90ec-490a-b0b1-f5991294f52a",
+          "source": "Financial Times - Technology",
+          "published_at": "2026-02-22T05:00:05.000Z",
+          "ingested_at": "2026-02-22T06:58:34.353Z",
+          "snippet": "Research that shows LLMs memorise more training data than previously thought raises questions about copyright infringement",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ai",
+              "research",
+              "training"
+            ]
+          },
+          "aiSummary": "AI's 'memorisation' problem is highlighted in a study showing that large language models (LLMs) retain more training data than expected, leading to concerns about potential copyright infringement.",
+          "translations": {
+            "da": {
+              "title": "AIs 'hukommelses' problem: de romaner, den ikke kan glemme",
+              "summary": "AIs 'hukommelses' problem fremhæves i en undersøgelse, der viser, at store sprogmodeller (LLMs) bevarer mere træningsdata end forventet, hvilket rejser bekymringer om potentiel krænkelse af ophavsret."
+            },
+            "es": {
+              "title": "El problema de 'memorización' de la IA: las novelas que no puede olvidar",
+              "summary": "El problema de 'memorización' de la IA se destaca en un estudio que muestra que los modelos de lenguaje grandes (LLMs) retienen más datos de entrenamiento de lo esperado, lo que genera preocupaciones sobre posibles infracciones de derechos de autor."
+            }
+          }
+        },
+        {
+          "id": "35t1bs",
+          "title": "Govt plans to create 'complete AI stack' to power innovation: Jayant Chaudhary ",
+          "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/govt-plans-to-create-complete-ai-stack-to-power-innovation-jayant-chaudhary/articleshow/128597996.cms",
+          "source": "Economic Times - Technology",
+          "published_at": "2026-02-20T07:38:16.000Z",
+          "ingested_at": "2026-02-22T06:58:34.353Z",
+          "snippet": "A complete or full AI stack refers to an end-to-end collection of hardware, software, data, and services required to design, train, deploy, and manage artificial intelligence (AI) applications. Speaking at the AI Impact Summit in the national capital, Chaudhary, minister for skill development and entrepreneurship and the minister of state for education, emphasised the need for data sets to be segmented.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ai",
+              "artificial intelligence"
+            ]
+          },
+          "aiSummary": "AI-Generated Summary:\nJayant Chaudhary, a government official, plans to create a complete AI stack to drive innovation, encompassing hardware, software, data, and services for AI applications. He highlighted the importance of segmented data sets at the AI Impact Summit in the national capital.",
+          "translations": {
+            "da": {
+              "title": "Regeringen planlægger at skabe 'komplet AI-stak' til at drive innovation: Jayant Chaudhary",
+              "summary": "Jayant Chaudhary, en embedsmand fra regeringen, planlægger at skabe en komplet AI-stak for at fremme innovation, der omfatter hardware, software, data og tjenester til AI-applikationer. Han fremhævede vigtigheden af segmenterede datasæt på AI Impact Summit i hovedstaden."
+            },
+            "es": {
+              "title": "El gobierno planea crear una 'pil stack de IA completa' para impulsar la innovación: Jayant Chaudhary",
+              "summary": "Jayant Chaudhary, un funcionario del gobierno, planea crear una pila de IA completa para impulsar la innovación, que abarca hardware, software, datos y servicios para aplicaciones de IA. Destacó la importancia de los conjuntos de datos segmentados en la Cumbre de Impacto de IA en la capital nacional."
+            }
+          }
+        },
+        {
+          "id": "9bzv80",
+          "title": "What is Sarvam AI’s Indus: India’s answer to ChatGPT, Gemini-like chatbots? ",
+          "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/what-is-sarvam-ais-indus-indias-answer-to-chatgpt-gemini-like-chatbots/articleshow/128648970.cms",
+          "source": "Economic Times - Technology",
+          "published_at": "2026-02-21T15:30:29.000Z",
+          "ingested_at": "2026-02-22T06:58:34.353Z",
+          "snippet": "Indian AI startup Sarvam.AI has launched Indus, a new chat interface. This chatbot is built on Sarvam's own 105 billion sovereign model. Indus is positioned as a competitor to global AI giants like OpenAI's ChatGPT and Google's Gemini. The company is currently focused on accuracy and usefulness for the Indian context.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.2,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ai",
+              "gemini",
+              "openai",
+              "ai startup"
+            ]
+          },
+          "aiSummary": "AI-Generated Summary:\nSarvam.AI has introduced Indus, a chatbot based on its 105 billion sovereign model, to compete with global AI giants like ChatGPT and Gemini. The focus is on accuracy and relevance for the Indian market.",
+          "translations": {
+            "da": {
+              "title": "Hvad er Sarvam AI's Indus: Indiens svar på ChatGPT, Gemini-lignende chatbots?",
+              "summary": "Sarvam.AI har introduceret Indus, en chatbot baseret på sin 105 milliarder suveræne model, for at konkurrere med globale AI-giganter som ChatGPT og Gemini. Fokus er på nøjagtighed og relevans for det indiske marked."
+            },
+            "es": {
+              "title": "¿Qué es Indus de Sarvam AI: la respuesta de India a ChatGPT y chatbots similares a Gemini?",
+              "summary": "Sarvam.AI ha presentado Indus, un chatbot basado en su modelo soberano de 105 mil millones, para competir con gigantes globales de IA como ChatGPT y Gemini. El enfoque está en la precisión y relevancia para el mercado indio."
+            }
+          }
+        },
+        {
+          "id": "y8y4if",
+          "title": "Telcos Double Down on AI as 90% Report Positive Returns",
+          "url": "https://www.pymnts.com/artificial-intelligence-2/2026/telcos-double-down-on-ai-90percent-report-positive-roi/",
+          "source": "PYMNTS",
+          "published_at": "2026-02-20T20:47:00.000Z",
+          "ingested_at": "2026-02-22T06:58:34.353Z",
+          "snippet": "Telecom operators’ relationship with artificial intelligence (AI) is now defined by results, not rhetoric. Nvidia’s 2026 State of AI in Telecommunications survey, which polled more than 1,000 industry professionals globally, found that 90% of operators say AI is driving positive return on investment (ROI) and boosting both revenue and cost efficiency, while 89% plan to […]\nThe post Telcos Double Down on AI as 90% Report Positive Returns appeared first on PYMNTS.com.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.30000000000000004,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0.15,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ai",
+              "artificial intelligence",
+              "investment"
+            ]
+          },
+          "aiSummary": "AI is proving to be a valuable investment for telecom operators, with 90% reporting positive returns on their AI initiatives. This is based on Nvidia's 2026 State of AI in Telecommunications survey of over 1,000 industry professionals.",
+          "translations": {
+            "da": {
+              "title": "Telekommunikationsselskaber satser på AI, da 90% rapporterer positive resultater",
+              "summary": "AI viser sig at være en værdifuld investering for teleoperatører, hvor 90% rapporterer positive resultater fra deres AI-initiativer. Dette er baseret på Nvidias 2026 State of AI in Telecommunications undersøgelse af over 1.000 branchefolk."
+            },
+            "es": {
+              "title": "Las telecomunicaciones apuestan por la IA, ya que el 90% informa de retornos positivos",
+              "summary": "La IA está demostrando ser una inversión valiosa para los operadores de telecomunicaciones, con un 90% informando de retornos positivos en sus iniciativas de IA. Esto se basa en la encuesta de Nvidia sobre el Estado de la IA en las Telecomunicaciones 2026, realizada a más de 1,000 profesionales de la industria."
+            }
+          }
+        },
+        {
+          "id": "gomx5b",
+          "title": "China Defies Global ‘AI Scare Trade’ as Investors Chase Winners",
+          "url": "https://www.bloomberg.com/news/articles/2026-02-22/china-defies-global-ai-scare-trade-as-investors-chase-winners",
+          "source": "Bloomberg - Technology",
+          "published_at": "2026-02-22T00:00:00.000Z",
+          "ingested_at": "2026-02-22T06:58:34.353Z",
+          "snippet": "US markets are gripped by the “AI scare trade,” with investors selling software firms and wealth managers on concern that rapid advances in artificial intelligence will erode established business models.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": -0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0.2,
+            "matchedKeywords": [
+              "ai",
+              "artificial intelligence"
+            ]
+          },
+          "aiSummary": "AI-generated summary:\nInvestors in the US are selling software firms and wealth managers due to concerns about the impact of rapid advances in artificial intelligence on established business models, creating an \"AI scare trade.\" China, however, is defying this trend as investors there continue to chase winners in the AI sector.",
+          "translations": {
+            "da": {
+              "title": "Kina trodser global 'AI-skræmmeshop' mens investorer jagter vindere",
+              "summary": "Investorer i USA sælger softwarefirmaer og formueforvaltere på grund af bekymringer om de hurtige fremskridt inden for kunstig intelligens og deres indvirkning på etablerede forretningsmodeller, hvilket skaber en 'AI-skræmmeshop.' Kina trodser dog denne tendens, da investorer der fortsætter med at jagte vindere i AI-sektoren."
+            },
+            "es": {
+              "title": "China desafía el 'comercio del miedo' de la IA global mientras los inversores persiguen ganadores",
+              "summary": "Los inversores en EE. UU. están vendiendo empresas de software y gestores de patrimonio debido a preocupaciones sobre el impacto de los rápidos avances en inteligencia artificial en los modelos de negocio establecidos, creando un 'comercio del miedo' de la IA. Sin embargo, China está desafiando esta tendencia, ya que los inversores allí continúan persiguiendo ganadores en el sector de la IA."
+            }
+          }
+        },
+        {
+          "id": "f1wqx8",
+          "title": "AI Financial Reporting Platform Inscope Raises $14.5 Million",
+          "url": "https://www.pymnts.com/artificial-intelligence-2/2026/ai-financial-reporting-platform-inscope-raises-14-5-million/",
+          "source": "PYMNTS",
+          "published_at": "2026-02-21T00:21:50.000Z",
+          "ingested_at": "2026-02-22T06:58:34.353Z",
+          "snippet": "Inscope raised $14.5 million in a Series A funding round to increase the adoption and the capabilities of its artificial intelligence (AI)-powered financial reporting platform designed for use by both enterprises and their accounting firms.  The round brings the company’s total funding to $18.8 million, including the $4.3 million it raised in a seed round announced in […]\nThe post AI Financial Reporting Platform Inscope Raises $14.5 Million appeared first on PYMNTS.com.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.04999999999999999,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0.1,
+            "penalty": 0.2,
+            "matchedKeywords": [
+              "ai",
+              "artificial intelligence",
+              "funding"
+            ]
+          },
+          "aiSummary": "AI financial reporting platform Inscope has secured $14.5 million in a Series A funding round to enhance its AI-powered platform for enterprises and accounting firms. This brings the company's total funding to $18.8 million, including previous seed funding.",
+          "translations": {
+            "da": {
+              "title": "AI Finansrapporteringsplatformen Inscope rejser 14,5 millioner dollars",
+              "summary": "AI finansrapporteringsplatformen Inscope har sikret 14,5 millioner dollars i en Series A finansieringsrunde for at forbedre sin AI-drevne platform til virksomheder og revisionsfirmaer. Dette bringer virksomhedens samlede finansiering op på 18,8 millioner dollars, inklusive tidligere frøfinansiering."
+            },
+            "es": {
+              "title": "La plataforma de informes financieros AI Inscope recauda 14,5 millones de dólares",
+              "summary": "La plataforma de informes financieros AI Inscope ha asegurado 14,5 millones de dólares en una ronda de financiación Serie A para mejorar su plataforma impulsada por IA para empresas y firmas contables. Esto eleva la financiación total de la empresa a 18,8 millones de dólares, incluyendo la financiación inicial previa."
+            }
+          }
+        }
+      ]
+    },
+    "Ecommerce_Retail_Tech": {
+      "total": 238,
+      "top": [
+        {
+          "id": "w5gynw",
+          "title": "Walmart says AI users build 35% bigger baskets than others",
+          "url": "https://www.modernretail.co/technology/walmart-says-ai-users-build-35-bigger-baskets-than-others/?utm_campaign=modernretaildis&utm_medium=rss&utm_source=general-rss",
+          "source": "Modern Retail",
+          "published_at": "2026-02-19T15:30:05.000Z",
+          "ingested_at": "2026-02-22T06:58:34.353Z",
+          "snippet": "Walmart customers who use the company's Sparky AI-powered shopping assistant have an order value that's about 35% higher than those who don't, newly appointed Walmart CEO John Furner said in the company's fourth-quarter earnings call Thursday morning.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "shopping"
+            ]
+          },
+          "aiSummary": "AI-Generated Summary:\nWalmart CEO John Furner revealed that customers using the Sparky AI shopping assistant have 35% larger order values compared to non-users during the fourth-quarter earnings call.",
+          "translations": {
+            "da": {
+              "title": "Walmart siger, at AI-brugere bygger 35% større indkøbskurve end andre",
+              "summary": "Walmart CEO John Furner afslørede, at kunder, der bruger Sparky AI indkøbsassistenten, har 35% større ordreværdier sammenlignet med ikke-brugere under kvartalsregnskabet for fjerde kvartal."
+            },
+            "es": {
+              "title": "Walmart dice que los usuarios de IA construyen cestas un 35% más grandes que otros",
+              "summary": "El CEO de Walmart, John Furner, reveló que los clientes que utilizan el asistente de compras Sparky AI tienen valores de pedido un 35% más grandes en comparación con los no usuarios durante la llamada de ganancias del cuarto trimestre."
+            }
+          }
+        },
+        {
+          "id": "b7lk6f",
+          "title": "Amazon surpasses Walmart in annual revenue for the first time",
+          "url": "https://www.modernretail.co/operations/amazon-surpasses-walmart-in-annual-revenue-for-the-first-time/?utm_campaign=modernretaildis&utm_medium=rss&utm_source=general-rss",
+          "source": "Modern Retail",
+          "published_at": "2026-02-19T12:46:55.000Z",
+          "ingested_at": "2026-02-22T06:58:34.353Z",
+          "snippet": "Amazon has eclipsed Walmart in annual revenue for the first time ever.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": []
+          },
+          "aiSummary": "AI-Generated Summary:\nAmazon has surpassed Walmart in annual revenue for the first time, marking a significant milestone in the ecommerce and retail tech industry.",
+          "translations": {
+            "da": {
+              "title": "Amazon overgår Walmart i årlige indtægter for første gang",
+              "summary": "Amazon har for første gang overgået Walmart i årlige indtægter, hvilket markerer en betydningsfuld milepæl i e-handel og detailteknologi."
+            },
+            "es": {
+              "title": "Amazon supera a Walmart en ingresos anuales por primera vez",
+              "summary": "Amazon ha superado a Walmart en ingresos anuales por primera vez, marcando un hito significativo en la industria del comercio electrónico y la tecnología minorista."
+            }
+          }
+        },
+        {
+          "id": "4oeq4d",
+          "title": "eBay’s Depop power play: why the recommerce battle will be won on culture, not just market share",
+          "url": "https://internetretailing.net/ebays-depop-power-play-why-the-recommerce-battle-will-be-won-on-culture-not-just-market-share/",
+          "source": "Internet Retailing",
+          "published_at": "2026-02-19T13:17:16.000Z",
+          "ingested_at": "2026-02-22T06:58:34.353Z",
+          "snippet": "eBay has purchased British second-hand fashion resale app Depop from Etsy for around $1.2bn (£890m). \nThe post eBay’s Depop power play: why the recommerce battle will be won on culture, not just market share appeared first on InternetRetailing.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ecommerce"
+            ]
+          },
+          "aiSummary": "AI-generated summary:\neBay acquires Depop from Etsy for $1.2bn, emphasizing the importance of culture in the recommerce battle.",
+          "translations": {
+            "da": {
+              "title": "eBays Depop magtspil: hvorfor recommerce-kampen vil blive vundet på kultur, ikke kun markedsandel",
+              "summary": "eBay køber Depop fra Etsy for 1,2 mia. dollars og understreger vigtigheden af kultur i recommerce-kampen."
+            },
+            "es": {
+              "title": "El movimiento estratégico de eBay con Depop: por qué la batalla del recomercio se ganará en la cultura, no solo en la cuota de mercado",
+              "summary": "eBay adquiere Depop de Etsy por 1.2 mil millones de dólares, enfatizando la importancia de la cultura en la batalla del recomercio."
+            }
+          }
+        },
+        {
+          "id": "65ivgg",
+          "title": "Designing a Smarter Logistics Network: The Hidden Growth Lever Most New Brands Overlook",
+          "url": "https://www.retailtouchpoints.com/features/executive-viewpoints/designing-a-smarter-logistics-network-the-hidden-growth-lever-most-new-brands-overlook",
+          "source": "Retail TouchPoints",
+          "published_at": "2026-02-20T14:20:18.000Z",
+          "ingested_at": "2026-02-22T06:58:34.353Z",
+          "snippet": "For emerging retail brands, logistics is often seen merely as a cost center, a function to be negotiated down, outsourced quickly or lightly automated just to keep orders moving. But as margins tighten, customer expectations rise and omnichannel complexity accelerates, the brands that succeed treat logistics not as a back-office expense but as a strategic […]",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "logistics"
+            ]
+          },
+          "aiSummary": "AI-Generated Summary:\nSuccessful retail brands are shifting their perspective on logistics from a cost center to a strategic growth lever, as margins tighten, customer expectations rise, and omnichannel complexity increases.",
+          "translations": {
+            "da": {
+              "title": "Design af et smartere logistiknetværk: Den skjulte vækstfaktor, som de fleste nye mærker overser",
+              "summary": "Succesfulde detailmærker ændrer deres perspektiv på logistik fra en omkostningscenter til en strategisk vækstfaktor, da marginerne strammes, kundernes forventninger stiger, og kompleksiteten i omnichannel øges."
+            },
+            "es": {
+              "title": "Diseñando una red logística más inteligente: La palanca de crecimiento oculta que la mayoría de las nuevas marcas pasan por alto",
+              "summary": "Las marcas minoristas exitosas están cambiando su perspectiva sobre la logística de un centro de costos a una palanca estratégica de crecimiento, a medida que se ajustan los márgenes, aumentan las expectativas de los clientes y crece la complejidad omnicanal."
+            }
+          }
+        },
+        {
+          "id": "5cxgs3",
+          "title": "Low-Value Imports Upend E.U. Ecommerce",
+          "url": "https://www.practicalecommerce.com/low-value-imports-upend-e-u-ecommerce",
+          "source": "Practical Ecommerce",
+          "published_at": "2026-02-17T14:41:21.000Z",
+          "ingested_at": "2026-02-22T06:58:34.353Z",
+          "snippet": "The surge in imports valued at €150 or less is reshaping the region's online retailing.\nThe post Low-Value Imports Upend E.U. Ecommerce appeared first on Practical Ecommerce.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ecommerce",
+              "online retail"
+            ]
+          },
+          "aiSummary": "AI-Generated Summary:\nThe rise of low-value imports worth €150 or less is causing significant changes in the European Union's ecommerce landscape, as reported by Practical Ecommerce on February 17, 2026.",
+          "translations": {
+            "da": {
+              "title": "Lavværdi-import ændrer E.U.s e-handel",
+              "summary": "Stigningen af lavværdi-importer til en værdi af €150 eller mindre forårsager betydelige ændringer i Den Europæiske Unions e-handelslandskab, som rapporteret af Practical Ecommerce den 17. februar 2026."
+            },
+            "es": {
+              "title": "Las importaciones de bajo valor alteran el comercio electrónico de la UE",
+              "summary": "El aumento de las importaciones de bajo valor de €150 o menos está causando cambios significativos en el panorama del comercio electrónico de la Unión Europea, según informó Practical Ecommerce el 17 de febrero de 2026."
+            }
+          }
+        },
+        {
+          "id": "pm2b18",
+          "title": "Unilever inks five-year AI and cloud partnership with Google Cloud",
+          "url": "https://www.digitalcommerce360.com/2026/02/18/unilever-google-cloud-ai-deal/",
+          "source": "Digital Commerce 360",
+          "published_at": "2026-02-18T22:44:51.000Z",
+          "ingested_at": "2026-02-22T06:58:34.353Z",
+          "snippet": "Unilever has signed a five-year agreement with Google Cloud to expand its use of artificial intelligence (AI) and move more of its data and business systems onto Google’s cloud platform. The consumer goods maker said the partnership will support marketing, product discovery and internal operations across its global brand portfolio. The companies did not disclose […]\nThe post Unilever inks five-year AI and cloud partnership with Google Cloud appeared first on Digital Commerce 360.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "platform"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Unilever has entered a five-year partnership with Google Cloud to enhance its use of AI and transition more data and business systems to Google's cloud platform. The collaboration aims to bolster marketing, product discovery, and internal operations for Unilever's global brand portfolio.",
+          "translations": {
+            "da": {
+              "title": "Unilever indgår femårigt AI- og cloud-partnerskab med Google Cloud",
+              "summary": "Unilever har indgået et femårigt partnerskab med Google Cloud for at forbedre sin brug af AI og overføre flere data og forretningssystemer til Googles cloud-platform. Samarbejdet sigter mod at styrke markedsføring, produktopdagelse og interne operationer for Unilevers globale brandportefølje."
+            },
+            "es": {
+              "title": "Unilever firma un acuerdo de cinco años de IA y nube con Google Cloud",
+              "summary": "Unilever ha entrado en un acuerdo de cinco años con Google Cloud para mejorar su uso de IA y trasladar más datos y sistemas empresariales a la plataforma de nube de Google. La colaboración tiene como objetivo fortalecer el marketing, el descubrimiento de productos y las operaciones internas del portafolio de marcas globales de Unilever."
+            }
+          }
+        },
+        {
+          "id": "6rh2r7",
+          "title": "Marketplace Briefing: Inside Marc Lore and Melissa Bridgeford’s AI shopping agent Wizard",
+          "url": "https://www.modernretail.co/technology/marketplace-briefing-inside-marc-lore-and-melissa-bridgefords-ai-shopping-agent-wizard/?utm_campaign=modernretaildis&utm_medium=rss&utm_source=general-rss",
+          "source": "Modern Retail",
+          "published_at": "2026-02-19T15:00:00.000Z",
+          "ingested_at": "2026-02-22T06:58:34.353Z",
+          "snippet": "Wizard has become the latest AI shopping agent to launch amid a surge of new tools promising to search, compare and check out on shoppers’ behalf.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "shopping",
+              "marketplace"
+            ]
+          },
+          "aiSummary": "AI-generated summary:\nWizard, an AI shopping agent created by Marc Lore and Melissa Bridgeford, has recently launched in the midst of a growing trend of tools designed to assist shoppers with searching, comparing, and checking out products.",
+          "translations": {
+            "da": {
+              "title": "Markedsplads Briefing: Indenfor Marc Lore og Melissa Bridgefords AI shopping agent Wizard",
+              "summary": "Wizard, en AI shopping agent skabt af Marc Lore og Melissa Bridgeford, er for nylig blevet lanceret midt i en voksende tendens af værktøjer designet til at hjælpe shoppere med at søge, sammenligne og tjekke produkter."
+            },
+            "es": {
+              "title": "Informe del Mercado: Dentro del agente de compras AI Wizard de Marc Lore y Melissa Bridgeford",
+              "summary": "Wizard, un agente de compras AI creado por Marc Lore y Melissa Bridgeford, se ha lanzado recientemente en medio de una creciente tendencia de herramientas diseñadas para ayudar a los compradores a buscar, comparar y finalizar compras de productos."
+            }
+          }
+        }
+      ]
+    },
+    "Luxury_and_Consumer": {
+      "total": 60,
+      "top": [
+        {
+          "id": "evzepf",
+          "title": "Exclusive: Amouage Revenue Surged 66% in 2025",
+          "url": "https://www.businessoffashion.com/articles/beauty/amouage-2025-sales-revenue-growth-ceo-interview/",
+          "source": "Business of Fashion - News",
+          "published_at": "2026-02-19T13:52:07.000Z",
+          "ingested_at": "2026-02-22T06:58:34.353Z",
+          "snippet": "The Omani fragrance house charted record sales growth in 2025, driven by its high-concentration ‘Exceptional Extraits’ collection and its global fleet of stores.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "exclusive"
+            ]
+          },
+          "aiSummary": "AI-Generated Summary:\nAmouage experienced a 66% revenue increase in 2025, attributed to the success of its 'Exceptional Extraits' collection and global retail presence.",
+          "translations": {
+            "da": {
+              "title": "Eksklusiv: Amouage Indtægter Steg med 66% i 2025",
+              "summary": "Amouage oplevede en indtægtsstigning på 66% i 2025, hvilket skyldes succesen med sin 'Exceptional Extraits' kollektion og globale detailtilstedeværelse."
+            },
+            "es": {
+              "title": "Exclusivo: Los Ingresos de Amouage Aumentaron un 66% en 2025",
+              "summary": "Amouage experimentó un aumento del 66% en sus ingresos en 2025, atribuido al éxito de su colección 'Exceptional Extraits' y su presencia minorista global."
+            }
+          }
+        },
+        {
+          "id": "jn3c15",
+          "title": "Consumer Spending Persists Despite Slower Income Gains",
+          "url": "https://www.pymnts.com/consumer-insights/2026/consumer-spending-persists-despite-slower-income-gains/",
+          "source": "PYMNTS",
+          "published_at": "2026-02-20T21:41:00.000Z",
+          "ingested_at": "2026-02-22T06:58:34.353Z",
+          "snippet": "Consumers continue to shoulder the expansion of the U.S. economy, even as late-year data reveal a more deliberate spending posture and a softer pace of overall growth.  Income Growth Moderates as Spending Holds The Bureau of Economic Analysis data for December, released Friday (Feb. 20), showd personal income rising 0.3% month over month, while […]\nThe post Consumer Spending Persists Despite Slower Income Gains appeared first on PYMNTS.com.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0.1,
+            "penalty": 0,
+            "matchedKeywords": [
+              "consumer",
+              "spending"
+            ]
+          },
+          "aiSummary": "Despite slower income gains, consumers are still driving the U.S. economy with persistent spending. Data from the Bureau of Economic Analysis for December shows a 0.3% increase in personal income month over month.",
+          "translations": {
+            "da": {
+              "title": "Forbrugerudgifterne fortsætter trods langsommere indkomstvækst",
+              "summary": "Trods langsommere indkomstvækst driver forbrugerne stadig den amerikanske økonomi med vedholdende forbrug. Data fra Bureau of Economic Analysis for december viser en stigning på 0,3% i personlig indkomst måned over måned."
+            },
+            "es": {
+              "title": "El gasto del consumidor persiste a pesar de las ganancias de ingresos más lentas",
+              "summary": "A pesar de las ganancias de ingresos más lentas, los consumidores siguen impulsando la economía de EE. UU. con un gasto persistente. Los datos de la Oficina de Análisis Económico para diciembre muestran un aumento del 0.3% en los ingresos personales mes a mes."
+            }
+          }
+        },
+        {
+          "id": "k8726l",
+          "title": "Cautious optimism for retail as footfall decline slows",
+          "url": "https://www.watchpro.com/optimism-retail-footfall-decline-slow/",
+          "source": "WatchPro",
+          "published_at": "2026-02-16T10:33:32.000Z",
+          "ingested_at": "2026-02-22T06:58:34.353Z",
+          "snippet": "UK footfall saw another decrease in January, but an uptick in consumer confidence offers some cautious optimism for the retail sector. According to the British Retail Consortium’s Sensormatic data, total UK footfall decreased by 0.6% in January year-on-year, up from -2.9% in December. It also found that high street footfall decreased by 1.9%, down from […]\nThe post Cautious optimism for retail as footfall decline slows appeared first on WATCHPRO.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0.15,
+            "penalty": 0,
+            "matchedKeywords": [
+              "consumer"
+            ]
+          },
+          "aiSummary": "AI-generated summary: UK footfall declined by 0.6% in January, showing improvement from the previous month. Despite the decrease, an increase in consumer confidence offers cautious optimism for the retail sector.",
+          "translations": {
+            "da": {
+              "title": "Forsigtig optimisme for detailhandel som fald i besøgstal bremser",
+              "summary": "AI-genereret resumé: Besøgstallet i Storbritannien faldt med 0,6 % i januar, hvilket viser forbedring fra den foregående måned. På trods af faldet giver en stigning i forbrugertilliden forsigtig optimisme for detailsektoren."
+            },
+            "es": {
+              "title": "Optimismo cauteloso para el comercio minorista a medida que disminuye la afluencia",
+              "summary": "Resumen generado por IA: La afluencia en el Reino Unido disminuyó un 0,6 % en enero, mostrando una mejora respecto al mes anterior. A pesar de la disminución, un aumento en la confianza del consumidor ofrece un optimismo cauteloso para el sector minorista."
+            }
+          }
+        },
+        {
+          "id": "53d7y3",
+          "title": "Retail sales surge in January",
+          "url": "https://www.drapersonline.com/news/retail-sales-surge-in-january",
+          "source": "Drapers",
+          "published_at": "2026-02-20T07:30:07.000Z",
+          "ingested_at": "2026-02-22T06:58:34.353Z",
+          "snippet": "Drapers\nRetail sales surge in January\nRetail sales volumes in January climbed 1.8%, following a rise of 0.4% in December, the Office for National Statistics (ONS) has reported.\nThe post Retail sales surge in January appeared first on Drapers.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0,
+            "insightSignalBoost": 0.1,
+            "penalty": 0,
+            "matchedKeywords": []
+          },
+          "aiSummary": "AI-Generated Summary:\nRetail sales volumes surged by 1.8% in January, following a 0.4% increase in December, according to the Office for National Statistics (ONS) reported by Drapers.",
+          "translations": {
+            "da": {
+              "title": "Detailhandelsalg stiger i januar",
+              "summary": "Detailhandelsvolumen steg med 1,8% i januar efter en stigning på 0,4% i december, ifølge Office for National Statistics (ONS) rapporteret af Drapers."
+            },
+            "es": {
+              "title": "Aumento en las ventas minoristas en enero",
+              "summary": "Los volúmenes de ventas minoristas aumentaron un 1,8% en enero, tras un incremento del 0,4% en diciembre, según la Oficina de Estadísticas Nacionales (ONS) reportado por Drapers."
+            }
+          }
+        },
+        {
+          "id": "89nj2x",
+          "title": "Want to Know What Consumers Think? Ask an AI-Generated Focus Group.",
+          "url": "https://www.businessoffashion.com/articles/technology/fashion-retail-synthetic-consumer-research/",
+          "source": "Business of Fashion - News",
+          "published_at": "2026-02-19T05:30:00.000Z",
+          "ingested_at": "2026-02-22T06:58:34.353Z",
+          "snippet": "Synthetic consumer research, where AI is used to simulate shoppers, is emerging as a cutting-edge way for brands and retailers to better understand their customers and test everything from products to marketing campaigns before they launch.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "consumer",
+              "brand"
+            ]
+          },
+          "aiSummary": "AI-generated focus groups are becoming a new tool for brands to understand consumer preferences and test products and marketing strategies before launch. This synthetic consumer research is helping brands gain insights into their customers in the luxury and consumer industry.",
+          "translations": {
+            "da": {
+              "title": "Vil du vide, hvad forbrugerne mener? Spørg en AI-genereret fokusgruppe.",
+              "summary": "AI-genererede fokusgrupper bliver et nyt værktøj for brands til at forstå forbrugerpræferencer og teste produkter og marketingstrategier før lancering. Denne syntetiske forbrugerforskning hjælper brands med at få indsigt i deres kunder i luksus- og forbrugerindustrien."
+            },
+            "es": {
+              "title": "¿Quieres saber qué piensan los consumidores? Pregunta a un grupo focal generado por IA.",
+              "summary": "Los grupos focales generados por IA se están convirtiendo en una nueva herramienta para que las marcas comprendan las preferencias de los consumidores y prueben productos y estrategias de marketing antes del lanzamiento. Esta investigación sintética del consumidor está ayudando a las marcas a obtener información sobre sus clientes en la industria de lujo y de consumo."
+            }
+          }
+        },
+        {
+          "id": "3iixzc",
+          "title": "Wealthier shoppers are driving grocery spending, data shows",
+          "url": "https://www.grocerydive.com/news/grocery-spending-income-groups-fmi-nielseniq/812572/",
+          "source": "Grocery Dive",
+          "published_at": "2026-02-19T16:57:00.000Z",
+          "ingested_at": "2026-02-22T06:58:34.353Z",
+          "snippet": "Higher-income shoppers tend to purchase more fresh foods while people with less money often direct their dollars toward shelf-stable products, according to NielsenIQ findings shared by FMI.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "spending"
+            ]
+          },
+          "aiSummary": "AI-generated summary:\nWealthier shoppers are more likely to buy fresh foods, while lower-income shoppers tend to purchase shelf-stable products, as per NielsenIQ data shared by FMI.",
+          "translations": {
+            "da": {
+              "title": "Rigere kunder driver dagligvareforbruget, viser data",
+              "summary": "Rigere kunder er mere tilbøjelige til at købe friske fødevarer, mens lavindkomstkunder har en tendens til at købe holdbare produkter, ifølge NielsenIQ-data delt af FMI."
+            },
+            "es": {
+              "title": "Los compradores más ricos están impulsando el gasto en comestibles, muestran los datos",
+              "summary": "Los compradores más ricos son más propensos a comprar alimentos frescos, mientras que los compradores de bajos ingresos tienden a adquirir productos de larga duración, según los datos de NielsenIQ compartidos por FMI."
+            }
+          }
+        },
+        {
+          "id": "v61pvg",
+          "title": "Can Sporty & Rich’s Emily Oberg Break the Founder-CEO Curse? ",
+          "url": "https://www.businessoffashion.com/articles/workplace-talent/can-sporty-rich-emily-oberg-break-the-founder-curse/",
+          "source": "Business of Fashion - News",
+          "published_at": "2026-02-19T05:30:00.000Z",
+          "ingested_at": "2026-02-22T06:58:34.353Z",
+          "snippet": "Oberg stepped into the top job at her startup last August. In an exclusive interview with The Business of Fashion, she explained how she plans to scale her business while sidestepping the ‘founder’s ego’ problem that has doomed many emerging brands.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "brand",
+              "exclusive"
+            ]
+          },
+          "aiSummary": "AI-generated summary:\nEmily Oberg of Sporty & Rich took over as CEO last August and aims to grow her business without falling victim to the 'founder's ego' issue that has hindered other brands, as discussed in an interview with Business of Fashion.",
+          "translations": {
+            "da": {
+              "title": "Kan Sporty & Richs Emily Oberg bryde grundlægger-CEO-forbandelsen?",
+              "summary": "Emily Oberg fra Sporty & Rich overtog som CEO sidste august og har til hensigt at vækste sin virksomhed uden at falde offer for 'grundlæggerens ego'-problemet, som har hæmmet andre brands, som diskuteret i et interview med Business of Fashion."
+            },
+            "es": {
+              "title": "¿Puede Emily Oberg de Sporty & Rich romper la maldición del fundador-CEO?",
+              "summary": "Emily Oberg de Sporty & Rich asumió como CEO el pasado agosto y tiene como objetivo hacer crecer su negocio sin caer víctima del problema del 'ego del fundador' que ha obstaculizado a otras marcas, como se discutió en una entrevista con Business of Fashion."
+            }
+          }
+        }
+      ]
+    },
+    "Jewellery_Industry": {
+      "total": 26,
+      "top": [
+        {
+          "id": "66305s",
+          "title": "Supreme Court Kills IEEPA Tariffs — Here’s What It Means for Your Jewelry Business",
+          "url": "https://instoremag.com/supreme-court-kills-ieepa-tariffs-heres-what-it-means-for-your-jewelry-business/",
+          "source": "Instore Magazine",
+          "published_at": "2026-02-21T02:05:47.000Z",
+          "ingested_at": "2026-02-22T06:58:34.353Z",
+          "snippet": "A landmark 6-3 ruling changes the tariff landscape overnight, but don't cancel your supplier orders just yet.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "jewelry"
+            ]
+          },
+          "aiSummary": "AI-Generated Summary:\nThe Supreme Court's 6-3 ruling on IEEPA tariffs has significant implications for the jewelry business, prompting changes in the tariff landscape overnight. However, businesses are advised not to cancel supplier orders immediately.",
+          "translations": {
+            "da": {
+              "title": "Højesteret afskaffer IEEPA-tariffer - Her er hvad det betyder for din smykkevirksomhed",
+              "summary": "Højesterets 6-3 afgørelse om IEEPA-tariffer har betydelige konsekvenser for smykkevirksomheden, hvilket medfører ændringer i tarifferne fra den ene dag til den anden. Virksomheder anbefales dog ikke at annullere leverandørordrer straks."
+            },
+            "es": {
+              "title": "La Corte Suprema elimina los aranceles de IEEPA - Esto es lo que significa para tu negocio de joyería",
+              "summary": "La decisión de 6-3 de la Corte Suprema sobre los aranceles de IEEPA tiene implicaciones significativas para el negocio de la joyería, provocando cambios en el panorama arancelario de la noche a la mañana. Sin embargo, se aconseja a las empresas que no cancelen los pedidos a los proveedores de inmediato."
+            }
+          }
+        },
+        {
+          "id": "bs7lv5",
+          "title": "Retail jobs at risk from rising employment costs ",
+          "url": "https://www.professionaljeweller.com/retail-jobs-risk-employment-costs/",
+          "source": "Professional Jeweller",
+          "published_at": "2026-02-19T13:25:20.000Z",
+          "ingested_at": "2026-02-22T06:58:34.353Z",
+          "snippet": "The BRC’s latest survey of retail CFOs and finance directors reveals a sharp rise in anxiety about labour costs over the next year. These concerns have shot up the agenda since the start of implementation of the Employment Rights Act, which became law in January. 69% describe themselves as ‘pessimistic’ or ‘very pessimistic’ (up from […]\nThe post Retail jobs at risk from rising employment costs  appeared first on Professional Jeweller.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.25,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0.1,
+            "penalty": 0,
+            "matchedKeywords": [
+              "jeweller"
+            ]
+          },
+          "aiSummary": "AI-Generated Summary: A survey by the BRC shows a significant increase in concerns among retail CFOs and finance directors about rising labor costs due to the Employment Rights Act. 69% of respondents are pessimistic about the impact on retail jobs in the upcoming year.",
+          "translations": {
+            "da": {
+              "title": "Detailjobs i fare på grund af stigende ansættelsesomkostninger",
+              "summary": "En undersøgelse fra BRC viser en betydelig stigning i bekymringer blandt detailhandlens CFO'er og finansdirektører over stigende arbejdsomkostninger som følge af Arbejdsretloven. 69% af respondenterne er pessimistiske med hensyn til virkningen på detailjobs i det kommende år."
+            },
+            "es": {
+              "title": "Empleos minoristas en riesgo por el aumento de los costos laborales",
+              "summary": "Una encuesta de BRC muestra un aumento significativo en las preocupaciones entre los CFO y directores financieros del comercio minorista sobre el aumento de los costos laborales debido a la Ley de Derechos Laborales. El 69% de los encuestados son pesimistas sobre el impacto en los empleos minoristas en el próximo año."
+            }
+          }
+        },
+        {
+          "id": "30j8zy",
+          "title": "This DNA technology is fighting luxury watch counterfeiting",
+          "url": "https://www.watchpro.com/haelixa-dna-technology-fights-luxury-watch-fakes/",
+          "source": "WatchPro",
+          "published_at": "2026-02-17T16:12:08.000Z",
+          "ingested_at": "2026-02-22T06:58:34.353Z",
+          "snippet": "Swiss deeptech company Haelixa has launched a new DNA-based Authenticity Service designed to protect luxury watches, jewellery and leather goods from counterfeiting. Counterfeit goods are estimated to cost the global luxury sector around $250 billion each year, with the Swiss watch industry alone losing approximately $1.88 billion annually. As high-quality replicas become more sophisticated, traditional […]\nThe post This DNA technology is fighting luxury watch counterfeiting appeared first on WA...",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": -0.04999999999999999,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0,
+            "penalty": 0.2,
+            "matchedKeywords": [
+              "watch",
+              "jewellery",
+              "jeweller"
+            ]
+          },
+          "aiSummary": "AI-Generated Summary:\nHaelixa has introduced a DNA-based Authenticity Service to combat luxury watch counterfeiting, aiming to protect high-end products from being replicated. Counterfeiting costs the luxury industry billions annually, with the Swiss watch sector alone losing $1.88 billion per year.",
+          "translations": {
+            "da": {
+              "title": "Denne DNA-teknologi bekæmper forfalskning af luksusure",
+              "summary": "Haelixa har introduceret en DNA-baseret ægthedstjeneste for at bekæmpe forfalskning af luksusure og beskytte high-end produkter mod at blive kopieret. Forfalskning koster luksusindustrien milliarder årligt, hvor den schweiziske ursektor alene mister 1,88 milliarder dollars om året."
+            },
+            "es": {
+              "title": "Esta tecnología de ADN está combatiendo la falsificación de relojes de lujo",
+              "summary": "Haelixa ha introducido un servicio de autenticidad basado en ADN para combatir la falsificación de relojes de lujo, con el objetivo de proteger productos de alta gama de ser replicados. La falsificación cuesta a la industria de lujo miles de millones anualmente, con el sector relojero suizo perdiendo solo 1.88 mil millones de dólares al año."
+            }
+          }
+        },
+        {
+          "id": "dev7ej",
+          "title": "Hot Diamonds to launch new stainless steel brand",
+          "url": "https://www.professionaljeweller.com/hot-diamonds-stainless-steel-brand/",
+          "source": "Professional Jeweller",
+          "published_at": "2026-02-19T13:38:02.000Z",
+          "ingested_at": "2026-02-22T06:58:34.353Z",
+          "snippet": "Hot Diamonds has announced the launch of its new 316L stainless steel jewellery brand, Ava & Sky, with the official launch planned for June 2026. Crafted in premium 316L stainless steel with advanced PVD plating, Ava & Sky jewellery is waterproof, sweat-resistant and hypoallergenic. The collection combines durability with a high-luxury aesthetic and a long-lasting […]\nThe post Hot Diamonds to launch new stainless steel brand appeared first on Professional Jeweller.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.04999999999999999,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0,
+            "penalty": 0.2,
+            "matchedKeywords": [
+              "diamond",
+              "jewellery",
+              "jeweller"
+            ]
+          },
+          "aiSummary": "AI-Generated Summary: Hot Diamonds will introduce its new stainless steel jewellery brand, Ava & Sky, in June 2026. The collection features waterproof, sweat-resistant, and hypoallergenic pieces crafted from premium 316L stainless steel with advanced PVD plating, offering durability and a luxurious aesthetic.",
+          "translations": {
+            "da": {
+              "title": "Hot Diamonds lancerer nyt rustfrit stål mærke",
+              "summary": "Hot Diamonds vil introducere sit nye mærke af smykker i rustfrit stål, Ava & Sky, i juni 2026. Kollektionen indeholder vandtætte, svedresistente og hypoallergeniske stykker lavet af premium 316L rustfrit stål med avanceret PVD-belægning, der tilbyder holdbarhed og en luksuriøs æstetik."
+            },
+            "es": {
+              "title": "Hot Diamonds lanzará nueva marca de acero inoxidable",
+              "summary": "Hot Diamonds presentará su nueva marca de joyería de acero inoxidable, Ava & Sky, en junio de 2026. La colección cuenta con piezas a prueba de agua, resistentes al sudor y hipoalergénicas, elaboradas con acero inoxidable 316L de primera calidad y un avanzado recubrimiento PVD, que ofrecen durabilidad y una estética lujosa."
+            }
+          }
+        },
+        {
+          "id": "67xdqc",
+          "title": "IJC takes custom-made jewellery to the next level",
+          "url": "https://www.jewellermagazine.com/Article/14783/IJC-takes-custom-made-jewellery-to-the-next-level",
+          "source": "Jeweller - Business News",
+          "published_at": "2026-02-16T13:00:00.000Z",
+          "ingested_at": "2026-02-22T06:58:34.353Z",
+          "snippet": "The Independent Jewellers Collective (IJC) has announced the launch of an app, exclusive to members, which will allow stores to access all digital assets associated with the group's support of custom jewellery design.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0.2,
+            "matchedKeywords": [
+              "jewellery",
+              "jeweller"
+            ]
+          },
+          "aiSummary": "AI-Generated Summary:\nThe Independent Jewellers Collective (IJC) has introduced an exclusive app for members to access digital assets related to custom jewellery design, enhancing the level of personalized service in the industry.",
+          "translations": {
+            "da": {
+              "title": "IJC tager skræddersyet smykke til næste niveau",
+              "summary": "Independent Jewellers Collective (IJC) har introduceret en eksklusiv app for medlemmer til at få adgang til digitale aktiver relateret til skræddersyet smykkedesign, hvilket forbedrer niveauet af personlig service i branchen."
+            },
+            "es": {
+              "title": "IJC lleva la joyería personalizada al siguiente nivel",
+              "summary": "Independent Jewellers Collective (IJC) ha introducido una aplicación exclusiva para que los miembros accedan a activos digitales relacionados con el diseño de joyería personalizada, mejorando el nivel de servicio personalizado en la industria."
+            }
+          }
+        },
+        {
+          "id": "6emf5o",
+          "title": "A Colorado Jeweler Built Her Store With Reclaimed Wood, Liquid-Metal Floors, and a 10,500-Piece Chandelier",
+          "url": "https://instoremag.com/a-colorado-jeweler-built-her-store-with-reclaimed-wood-liquid-metal-floors-and-a-10500-piece-chandelier/",
+          "source": "Instore Magazine",
+          "published_at": "2026-02-21T23:00:03.000Z",
+          "ingested_at": "2026-02-22T06:58:34.353Z",
+          "snippet": "Jennifer Farnes channeled a lifetime of hands-on building experience into creating Revolution Jewelry Works from scratch.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": -0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0.2,
+            "matchedKeywords": [
+              "jewelry"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Jennifer Farnes utilized her building expertise to establish Revolution Jewelry Works, incorporating reclaimed wood, liquid-metal floors, and a 10,500-piece chandelier into the store's design.",
+          "translations": {
+            "da": {
+              "title": "En juveler i Colorado byggede sin butik med genvundet træ, flydende metalgulve og en krone med 10.500 stykker",
+              "summary": "Jennifer Farnes udnyttede sin byggetekniske ekspertise til at etablere Revolution Jewelry Works, hvor hun integrerede genvundet træ, flydende metalgulve og en krone med 10.500 stykker i butikkens design."
+            },
+            "es": {
+              "title": "Una joyera de Colorado construyó su tienda con madera recuperada, pisos de metal líquido y un candelabro de 10,500 piezas",
+              "summary": "Jennifer Farnes utilizó su experiencia en construcción para establecer Revolution Jewelry Works, incorporando madera recuperada, pisos de metal líquido y un candelabro de 10,500 piezas en el diseño de la tienda."
+            }
+          }
+        },
+        {
+          "id": "42qj",
+          "title": "Deakin & Francis marks 240 years",
+          "url": "https://www.professionaljeweller.com/deakin-francis-marks-240-years/",
+          "source": "Professional Jeweller",
+          "published_at": "2026-02-20T06:21:33.000Z",
+          "ingested_at": "2026-02-22T06:58:34.353Z",
+          "snippet": "In 2026, Deakin & Francis, England’s oldest family jewellers, marks 240 years of craftsmanship from its original Birmingham workshop. The jeweller still utilises centuries-old techniques to create pieces that are designed to last generations. Founded in 1786, Deakin & Francis has spent seven generations creating jewellery that transcends trends for collectors who value authenticity, longevity, […]\nThe post Deakin & Francis marks 240 years appeared first on Professional Jeweller.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "jewellery",
+              "jeweller"
+            ]
+          },
+          "aiSummary": "Deakin & Francis, England's oldest family jewellers, celebrates 240 years of craftsmanship using centuries-old techniques to create timeless pieces. Founded in 1786, the jeweller focuses on authenticity and longevity for collectors who appreciate traditional craftsmanship.",
+          "translations": {
+            "da": {
+              "title": "Deakin & Francis fejrer 240 år",
+              "summary": "Deakin & Francis, Englands ældste familiejuvelerer, fejrer 240 år med håndværk ved at bruge århundreder gamle teknikker til at skabe tidløse stykker. Grundlagt i 1786 fokuserer juveleren på autenticitet og holdbarhed for samlere, der værdsætter traditionelt håndværk."
+            },
+            "es": {
+              "title": "Deakin & Francis celebra 240 años",
+              "summary": "Deakin & Francis, los joyeros familiares más antiguos de Inglaterra, celebra 240 años de artesanía utilizando técnicas centenarias para crear piezas atemporales. Fundada en 1786, la joyería se centra en la autenticidad y la longevidad para los coleccionistas que aprecian la artesanía tradicional."
+            }
+          }
+        }
+      ]
+    }
+  },
+  "coverImageUrl": "/weekly-images/2026-W08.png",
+  "coverImageAlt": "Weekly cover illustration for 2026-W08"
+}

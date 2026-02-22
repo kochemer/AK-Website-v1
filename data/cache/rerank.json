@@ -910,5 +910,149 @@
     ],
     "cached_at": "2026-02-15T07:08:15.106Z",
     "model": "gpt-4o-mini"
+  },
+  "2026-W08:AI_and_Strategy:a6ccc4e1240e": {
+    "selected": [
+      {
+        "id": "14",
+        "rank": 1,
+        "why": "Significant policy implications for AI safety in defense",
+        "confidence": 0.9
+      },
+      {
+        "id": "12",
+        "rank": 2,
+        "why": "Research on LLMs' memorization raises critical concerns",
+        "confidence": 0.85
+      },
+      {
+        "id": "17",
+        "rank": 3,
+        "why": "Government initiative to create a comprehensive AI stack",
+        "confidence": 0.8
+      },
+      {
+        "id": "10",
+        "rank": 4,
+        "why": "Emerging AI model from India with competitive potential",
+        "confidence": 0.75
+      },
+      {
+        "id": "1",
+        "rank": 5,
+        "why": "Positive ROI reported by telecoms highlights AI's economic impact",
+        "confidence": 0.7
+      },
+      {
+        "id": "9",
+        "rank": 6,
+        "why": "Investor behavior influenced by AI market dynamics",
+        "confidence": 0.65
+      },
+      {
+        "id": "6",
+        "rank": 7,
+        "why": "Funding for AI financial reporting platform indicates growth",
+        "confidence": 0.6
+      }
+    ],
+    "cached_at": "2026-02-22T07:06:02.974Z",
+    "model": "gpt-4o-mini"
+  },
+  "2026-W08:Ecommerce_Retail_Tech:d9f6d813e817": {
+    "selected": [
+      {
+        "id": "4",
+        "rank": 1,
+        "why": "AI users at Walmart significantly increase basket size",
+        "confidence": 0.9
+      },
+      {
+        "id": "9",
+        "rank": 2,
+        "why": "Amazon surpassing Walmart marks a major industry shift",
+        "confidence": 0.85
+      },
+      {
+        "id": "3",
+        "rank": 3,
+        "why": "eBay's acquisition of Depop reshapes resale market dynamics",
+        "confidence": 0.8
+      },
+      {
+        "id": "1",
+        "rank": 4,
+        "why": "Logistics optimization is crucial for emerging brands",
+        "confidence": 0.75
+      },
+      {
+        "id": "6",
+        "rank": 5,
+        "why": "Low-value imports are disrupting EU ecommerce landscape",
+        "confidence": 0.7
+      },
+      {
+        "id": "8",
+        "rank": 6,
+        "why": "Unilever's AI partnership with Google Cloud enhances digital strategy",
+        "confidence": 0.65
+      },
+      {
+        "id": "14",
+        "rank": 7,
+        "why": "New AI shopping agents are transforming consumer experience",
+        "confidence": 0.6
+      }
+    ],
+    "cached_at": "2026-02-22T07:06:16.012Z",
+    "model": "gpt-4o-mini"
+  },
+  "2026-W08:Jewellery_Industry:f76f3ef91078": {
+    "selected": [
+      {
+        "id": "16",
+        "rank": 1,
+        "why": "Significant tariff changes impact jewelry pricing strategies",
+        "confidence": 0.9
+      },
+      {
+        "id": "10",
+        "rank": 2,
+        "why": "Rising employment costs affect retail job security",
+        "confidence": 0.85
+      },
+      {
+        "id": "2",
+        "rank": 3,
+        "why": "Innovative technology combats luxury watch counterfeiting",
+        "confidence": 0.8
+      },
+      {
+        "id": "1",
+        "rank": 4,
+        "why": "New brand launch highlights market expansion opportunities",
+        "confidence": 0.75
+      },
+      {
+        "id": "4",
+        "rank": 5,
+        "why": "Custom jewelry app enhances customer engagement and sales",
+        "confidence": 0.7
+      },
+      {
+        "id": "5",
+        "rank": 6,
+        "why": "Unique store design can improve customer experience",
+        "confidence": 0.65
+      },
+      {
+        "id": "12",
+        "rank": 7,
+        "why": "Long-standing brand's anniversary showcases industry resilience",
+        "confidence": 0.6
+      }
+    ],
+    "cached_at": "2026-02-22T07:06:39.100Z",
+    "model": "gpt-4o-mini"
   }
 }

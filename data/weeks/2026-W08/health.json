@@ -1,0 +1,72 @@
+{
+  "digestWeek": "2026-W08",
+  "ingestionWeek": "2026-W08",
+  "startedAt": "2026-02-22T06:58:34.333Z",
+  "finishedAt": "2026-02-22T07:10:40.216Z",
+  "steps": [
+    {
+      "name": "rss",
+      "ok": true,
+      "startedAt": "2026-02-22T06:58:34.352Z",
+      "finishedAt": "2026-02-22T06:58:52.085Z"
+    },
+    {
+      "name": "pages",
+      "ok": true,
+      "startedAt": "2026-02-22T06:58:52.085Z",
+      "finishedAt": "2026-02-22T06:58:52.595Z"
+    },
+    {
+      "name": "discovery",
+      "ok": true,
+      "startedAt": "2026-02-22T06:58:52.595Z",
+      "finishedAt": "2026-02-22T07:05:50.292Z"
+    },
+    {
+      "name": "classification",
+      "ok": true,
+      "startedAt": "2026-02-22T07:05:50.292Z",
+      "finishedAt": "2026-02-22T07:05:50.333Z"
+    },
+    {
+      "name": "digest",
+      "ok": true,
+      "startedAt": "2026-02-22T07:05:50.334Z",
+      "finishedAt": "2026-02-22T07:07:04.098Z"
+    },
+    {
+      "name": "email",
+      "ok": true,
+      "startedAt": "2026-02-22T07:07:04.099Z",
+      "finishedAt": "2026-02-22T07:07:34.097Z"
+    },
+    {
+      "name": "podcast",
+      "ok": true,
+      "startedAt": "2026-02-22T07:07:34.097Z",
+      "finishedAt": "2026-02-22T07:09:45.108Z"
+    },
+    {
+      "name": "cover",
+      "ok": true,
+      "startedAt": "2026-02-22T07:09:45.108Z",
+      "finishedAt": "2026-02-22T07:10:40.215Z"
+    }
+  ],
+  "health": {
+    "warnings": [
+      "Podcast script word count: 1256 words (minimum: 1500)",
+      "Ecommerce & Retail Tech: www.modernretail.co represents 42.9% (3/7) - exceeds 40% threshold",
+      "Luxury & Consumer: www.businessoffashion.com represents 42.9% (3/7) - exceeds 40% threshold",
+      "Jewellery Industry: www.professionaljeweller.com represents 42.9% (3/7) - exceeds 40% threshold"
+    ],
+    "metrics": {
+      "paywallPercent": 0,
+      "podcastWordCount": 1256
+    }
+  },
+  "versions": {
+    "node": "v20.20.0",
+    "gitCommit": "769562f52c97569ed26ab25d1fcd0bdd465086e1"
+  }
+}

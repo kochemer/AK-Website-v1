@@ -1,0 +1,14 @@
+{
+  "concept": "retail-giants-scale-absurdity",
+  "primaryHumorDriver": "scale absurdity",
+  "secondaryEnhancer": "anachronistic element",
+  "sceneDescription": "A bustling, photorealistic grocery store aisle featuring an absurdly oversized shopping cart filled with tiny, luxury jewelry items like diamond necklaces and gold rings. The cart's immense size dominates the aisle, towering over shoppers who appear surprised and amused. Among the cart's contents, a small vintage cash register sits on top of a pile of goods, hinting at the anachronistic financial dynamics in retail. Natural lighting streams in from overhead skylights, casting realistic shadows. The scene captures the humor of scale absurdity, juxtaposing the giant cart and minuscule luxury items in a typical grocery setting, with the vintage register adding a playful historical twist.",
+  "finalImagePrompt": "A hyper-realistic photograph of a giant shopping cart filled with tiny luxury jewelry items like diamond necklaces and gold rings, in a grocery store aisle. Among the items sits a small vintage cash register. Natural overhead lighting creates realistic shadows. The composition uses a wide horizontal banner format (3:1 aspect ratio, elements in central horizontal band, with safe margins). The scene is absurd yet believable, showcasing scale absurdity with photorealistic materials and textures. No text, signage, or screens should be visible, and the focus is on the playful juxtaposition of scale and anachronism.",
+  "negativePrompt": [
+    "text, letters, numbers, signage, labels",
+    "screens, UI, dashboards, holograms, floating icons",
+    "logos, brands, watermarks",
+    "cartoon, illustration, CGI, 3D render, anime"
+  ],
+  "confidence": 0.7
+}
