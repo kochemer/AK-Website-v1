@@ -1,0 +1,75 @@
+{
+  "digestWeek": "2026-W09",
+  "ingestionWeek": "2026-W09",
+  "startedAt": "2026-03-01T06:55:45.826Z",
+  "finishedAt": "2026-03-01T07:08:42.367Z",
+  "steps": [
+    {
+      "name": "rss",
+      "ok": true,
+      "startedAt": "2026-03-01T06:55:45.846Z",
+      "finishedAt": "2026-03-01T06:56:05.935Z"
+    },
+    {
+      "name": "pages",
+      "ok": true,
+      "startedAt": "2026-03-01T06:56:05.936Z",
+      "finishedAt": "2026-03-01T06:56:06.298Z"
+    },
+    {
+      "name": "discovery",
+      "ok": true,
+      "startedAt": "2026-03-01T06:56:06.299Z",
+      "finishedAt": "2026-03-01T07:04:34.143Z"
+    },
+    {
+      "name": "classification",
+      "ok": true,
+      "startedAt": "2026-03-01T07:04:34.143Z",
+      "finishedAt": "2026-03-01T07:04:34.190Z"
+    },
+    {
+      "name": "digest",
+      "ok": true,
+      "startedAt": "2026-03-01T07:04:34.190Z",
+      "finishedAt": "2026-03-01T07:05:48.013Z"
+    },
+    {
+      "name": "email",
+      "ok": true,
+      "startedAt": "2026-03-01T07:05:48.013Z",
+      "finishedAt": "2026-03-01T07:06:11.971Z"
+    },
+    {
+      "name": "podcast",
+      "ok": true,
+      "startedAt": "2026-03-01T07:06:11.971Z",
+      "finishedAt": "2026-03-01T07:07:55.399Z"
+    },
+    {
+      "name": "cover",
+      "ok": true,
+      "startedAt": "2026-03-01T07:07:55.399Z",
+      "finishedAt": "2026-03-01T07:08:42.365Z"
+    }
+  ],
+  "health": {
+    "warnings": [
+      "Podcast script word count: 1305 words (minimum: 1500)",
+      "AI & Strategy: economictimes.indiatimes.com represents 42.9% (3/7) - exceeds 40% threshold",
+      "AI & Strategy: www.nytimes.com represents 42.9% (3/7) - exceeds 40% threshold",
+      "Ecommerce & Retail Tech: www.digitalcommerce360.com represents 42.9% (3/7) - exceeds 40% threshold",
+      "Luxury & Consumer: www.businessoffashion.com represents 42.9% (3/7) - exceeds 40% threshold",
+      "Jewellery Industry: www.jewellermagazine.com represents 42.9% (3/7) - exceeds 40% threshold",
+      "Jewellery Industry: www.professionaljeweller.com represents 42.9% (3/7) - exceeds 40% threshold"
+    ],
+    "metrics": {
+      "paywallPercent": 0,
+      "podcastWordCount": 1305
+    }
+  },
+  "versions": {
+    "node": "v20.20.0",
+    "gitCommit": "2a511db69cdcacb00b9b8f64c374389a77fc774c"
+  }
+}

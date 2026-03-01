@@ -1054,5 +1054,53 @@
     ],
     "cached_at": "2026-02-22T07:06:39.100Z",
     "model": "gpt-4o-mini"
+  },
+  "2026-W09:Ecommerce_Retail_Tech:2472f4f5a542": {
+    "selected": [
+      {
+        "id": "3",
+        "rank": 1,
+        "why": "Mirakl's profitability indicates strong marketplace growth trends",
+        "confidence": 0.9
+      },
+      {
+        "id": "4",
+        "rank": 2,
+        "why": "Supreme Court ruling impacts pricing strategies for online merchants",
+        "confidence": 0.85
+      },
+      {
+        "id": "15",
+        "rank": 3,
+        "why": "Walmart's app enhances supplier data connectivity and efficiency",
+        "confidence": 0.8
+      },
+      {
+        "id": "2",
+        "rank": 4,
+        "why": "AI's role in ecommerce purchasing decisions is crucial for retailers",
+        "confidence": 0.75
+      },
+      {
+        "id": "1",
+        "rank": 5,
+        "why": "AI-powered discovery platform could reshape furniture ecommerce",
+        "confidence": 0.7
+      },
+      {
+        "id": "8",
+        "rank": 6,
+        "why": "Roblox's growth as a shopping channel highlights Gen Z trends",
+        "confidence": 0.65
+      },
+      {
+        "id": "7",
+        "rank": 7,
+        "why": "Dunelm's app reflects strategic omnichannel engagement shift",
+        "confidence": 0.6
+      }
+    ],
+    "cached_at": "2026-03-01T07:04:59.805Z",
+    "model": "gpt-4o-mini"
   }
 }

@@ -1,0 +1,95 @@
+{
+  "week": "2026-W09",
+  "generatedAt": "2026-03-01T07:06:11.970Z",
+  "intro": "In this week's intelligence digest, we explore significant developments across the retail, luxury, and AI sectors. Highlights include Mirakl's profitable growth driven by increased marketplace activity, OpenAI's substantial funding round led by major players like Amazon and Nvidia, and insights into how retailers are navigating economic challenges without lowering prices. Additionally, we examine innovative strategies from small businesses and the evolving dynamics of supplier relationships with major retailers.",
+  "readOneThing": {
+    "title": "Mirakl turns profitable as recurring revenue and marketplace activity grows",
+    "url": "https://www.digitalcommerce360.com/2026/02/27/mirakl-profitable-recurring-revenue-marketplace-2025/"
+  },
+  "items": [
+    {
+      "rank": 1,
+      "title": "Mirakl turns profitable as recurring revenue and marketplace activity grows",
+      "url": "https://www.digitalcommerce360.com/2026/02/27/mirakl-profitable-recurring-revenue-marketplace-2025/",
+      "source": "Digital Commerce 360",
+      "bullets": [
+        "Mirakl achieved full-year profitability in 2025, driven by increased recurring revenue and marketplace activity on its platform.",
+        "The company reported annual recurring revenue of $218 million for 2025, a 23% increase from the previous year.",
+        "Founded in 2012, Mirakl supports over 450 marketplaces worldwide and launched several new products, including Mirakl Connect and Mirakl Ads, in recent years."
+      ],
+      "summary": "AI-generated summary:\nMirakl achieved full-year profitability in 2025 as recurring revenue and marketplace activity grew, with annual recurring revenue reaching $218 million, a 23% increase from the previous year."
+    },
+    {
+      "rank": 2,
+      "title": "How an Austin Jewelry Store Owner DIYed Her Displays for a Fraction of the Cost",
+      "url": "https://instoremag.com/amanda-deer-jewelry-austin-tx/",
+      "source": "Instore Magazine",
+      "bullets": [
+        "Amanda Eddy of Amanda Deer Jewelry in Austin created custom pink pedestals and displays for her store with the help of her husband.",
+        "The DIY displays have proven to be durable, surviving a fire that caused extensive damage to other store elements three years ago.",
+        "Eddy's store, located in a late 19th-century building, required creative solutions for displays due to its historical status."
+      ],
+      "summary": "AI-Generated Summary:\nAmanda Eddy, an Austin jewelry store owner, created custom displays using pink pedestals and budget-friendly items from Amazon, resulting in a uniquely styled store at a fraction of the cost."
+    },
+    {
+      "rank": 3,
+      "title": "OpenAI raises $110 billion from Amazon, Nvidia, Softbank at post-money valuation of $840 billion ",
+      "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/openai-raises-110-billion-at-post-money-valuation-of-840-billion/articleshow/128859197.cms",
+      "source": "Economic Times - Technology",
+      "bullets": [
+        "OpenAI has secured $110 billion in funding, led by Amazon, with contributions from Nvidia and SoftBank, marking a record for AI startups.",
+        "Amazon's investment includes an upfront $15 billion and a conditional second tranche of $35 billion, while SoftBank and Nvidia each contributed $30 billion.",
+        "This funding round raises OpenAI's post-money valuation to $840 billion, reflecting the growing commercial demand and costs associated with AI development."
+      ],
+      "summary": "AI-Generated Summary:\nOpenAI secures $110 billion in funding from Amazon, Nvidia, and SoftBank, marking the largest funding round for an AI startup. This investment highlights the significant financial support for frontier AI as it transitions from research to widespread commercial use."
+    },
+    {
+      "rank": 4,
+      "title": "Saks Global CEO Says Top Brands Are Shipping Despite Bankruptcy",
+      "url": "https://www.businessoffashion.com/articles/retail/saks-global-ceo-says-top-brands-are-shipping-despite-bankruptcy/",
+      "source": "Business of Fashion - News",
+      "bullets": [
+        "Saks Global Enterprises reported that over 380 brands, including Burberry and those from LVMH and Kering, have resumed shipping despite the company's bankruptcy.",
+        "The retailer is expected to receive approximately $1.2 billion in merchandise over the next few months, which is three times the number of brands shipping in January.",
+        "Saks Global's CEO noted that many brands paused shipments during bankruptcy discussions, but some, like Chanel, continued to supply products without interruption."
+      ],
+      "summary": "AI-Generated Summary:\nSaks Global CEO confirms top luxury brands like Burberry, LVMH, and Kering continue to ship goods despite bankruptcy, with over 380 brands involved."
+    },
+    {
+      "rank": 5,
+      "title": "Marketplace Briefing: Online merchants aren’t lowering prices despite Supreme Court ruling",
+      "url": "https://www.modernretail.co/operations/marketplace-briefing-online-merchants-arent-lowering-prices-despite-supreme-court-ruling/?utm_campaign=modernretaildis&utm_medium=rss&utm_source=general-rss",
+      "source": "Modern Retail",
+      "bullets": [
+        "The Supreme Court ruled that Trump's tariffs on imports were unconstitutional, yet online merchants are not reducing prices in response.",
+        "Haus of Brilliance raised prices by 15-60% last year due to tariffs, and many sellers are hesitant to lower prices despite recent tariff changes.",
+        "The uncertainty surrounding tariffs and potential refunds has led many brands to adopt a cautious approach regarding pricing adjustments for 2026."
+      ],
+      "summary": "AI-Generated Summary:\nOnline merchants, including Amazon sellers, are not reducing prices despite the Supreme Court's decision to overturn Trump's tariffs, as reported by Modern Retail on February 26, 2026."
+    },
+    {
+      "rank": 6,
+      "title": "Amazon commits $50 billion to OpenAI; announces multi-year partnership with AWS ",
+      "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/amazon-to-invest-50-billion-in-openai/articleshow/128853339.cms",
+      "source": "Economic Times - Technology",
+      "bullets": [
+        "Amazon will invest $50 billion in OpenAI, starting with an initial $15 billion followed by $35 billion under certain conditions.",
+        "This funding round values OpenAI at $730 billion, with Amazon's investment being the largest compared to Nvidia and SoftBank's $30 billion each.",
+        "The partnership includes a $100 billion expansion of their cloud agreement over eight years, focusing on advanced AI workloads and customized models for Amazon's applications."
+      ],
+      "summary": "AI-Generated Summary:\nAmazon has committed $50 billion to OpenAI, the largest amount in this funding round, surpassing Nvidia and SoftBank. This investment gives OpenAI a pre-money valuation of $730 billion."
+    },
+    {
+      "rank": 7,
+      "title": "Walmart app connects suppliers with store-level data",
+      "url": "https://www.retaildive.com/news/walmart-app-scintilla-in-store-connects-suppliers-store-level-data/813211/",
+      "source": "Retail Dive",
+      "bullets": [
+        "Walmart Data Ventures launched Scintilla In-Store, a tool designed to provide real-time store-level data to supplier field representatives.",
+        "The app aims to reduce out-of-stocks and enhance efficiency, building on the previously acquired Volt Systems.",
+        "Walmart's supply chain investments are expected to peak in the coming years, with a focus on automation and technology-enabled productivity."
+      ],
+      "summary": "AI-generated summary:\nWalmart Data Ventures launched Scintilla In-Store to provide real-time data to field representatives, aiming to decrease out-of-stocks in stores."
+    }
+  ]
+}

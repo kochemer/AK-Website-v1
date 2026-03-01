@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-02-22T06:58:52.595Z",
+  "timestamp": "2026-03-01T06:56:06.298Z",
   "sources": [
     {
       "sourceName": "Financial Times - Technology",
@@ -60,9 +60,9 @@
       "type": "rss",
       "itemsFetched": 32,
       "itemsParsed": 32,
-      "newArticlesAdded": 24,
-      "duplicates": 8,
-      "yieldPct": 75
+      "newArticlesAdded": 21,
+      "duplicates": 11,
+      "yieldPct": 65.625
     },
     {
       "sourceName": "Economic Times - Technology",
@@ -105,9 +105,9 @@
       "type": "rss",
       "itemsFetched": 200,
       "itemsParsed": 200,
-      "newArticlesAdded": 17,
-      "duplicates": 183,
-      "yieldPct": 8.5
+      "newArticlesAdded": 21,
+      "duplicates": 179,
+      "yieldPct": 10.5
     },
     {
       "sourceName": "Internet Retailing",
@@ -150,18 +150,18 @@
       "type": "rss",
       "itemsFetched": 20,
       "itemsParsed": 20,
-      "newArticlesAdded": 17,
-      "duplicates": 3,
-      "yieldPct": 85
+      "newArticlesAdded": 20,
+      "duplicates": 0,
+      "yieldPct": 100
     },
     {
       "sourceName": "UseInsider",
       "type": "rss",
       "itemsFetched": 10,
       "itemsParsed": 10,
-      "newArticlesAdded": 1,
-      "duplicates": 9,
-      "yieldPct": 10
+      "newArticlesAdded": 0,
+      "duplicates": 10,
+      "yieldPct": 0
     },
     {
       "sourceName": "ToneTag",
@@ -177,9 +177,9 @@
       "type": "rss",
       "itemsFetched": 100,
       "itemsParsed": 100,
-      "newArticlesAdded": 97,
-      "duplicates": 3,
-      "yieldPct": 97
+      "newArticlesAdded": 56,
+      "duplicates": 44,
+      "yieldPct": 56.00000000000001
     },
     {
       "sourceName": "WWD - Women's Wear Daily",
@@ -231,18 +231,18 @@
       "type": "rss",
       "itemsFetched": 30,
       "itemsParsed": 30,
-      "newArticlesAdded": 12,
-      "duplicates": 18,
-      "yieldPct": 40
+      "newArticlesAdded": 8,
+      "duplicates": 22,
+      "yieldPct": 26.666666666666668
     },
     {
       "sourceName": "Jeweller - Jewellery Trends",
       "type": "rss",
       "itemsFetched": 30,
       "itemsParsed": 30,
-      "newArticlesAdded": 2,
-      "duplicates": 28,
-      "yieldPct": 6.666666666666667
+      "newArticlesAdded": 0,
+      "duplicates": 30,
+      "yieldPct": 0
     },
     {
       "sourceName": "Jeweller - Main",
@@ -267,9 +267,9 @@
       "type": "rss",
       "itemsFetched": 10,
       "itemsParsed": 10,
-      "newArticlesAdded": 10,
-      "duplicates": 0,
-      "yieldPct": 100
+      "newArticlesAdded": 3,
+      "duplicates": 7,
+      "yieldPct": 30
     },
     {
       "sourceName": "Instore Magazine",
@@ -285,9 +285,9 @@
       "type": "rss",
       "itemsFetched": 200,
       "itemsParsed": 200,
-      "newArticlesAdded": 43,
-      "duplicates": 157,
-      "yieldPct": 21.5
+      "newArticlesAdded": 14,
+      "duplicates": 186,
+      "yieldPct": 7.000000000000001
     },
     {
       "sourceName": "Luxury Daily - Retail",
@@ -330,36 +330,36 @@
       "type": "rss",
       "itemsFetched": 20,
       "itemsParsed": 20,
-      "newArticlesAdded": 0,
-      "duplicates": 20,
-      "yieldPct": 0
+      "newArticlesAdded": 1,
+      "duplicates": 19,
+      "yieldPct": 5
     },
     {
       "sourceName": "NYTimes Technology",
       "type": "rss",
-      "itemsFetched": 20,
-      "itemsParsed": 20,
-      "newArticlesAdded": 17,
-      "duplicates": 3,
-      "yieldPct": 85
+      "itemsFetched": 40,
+      "itemsParsed": 40,
+      "newArticlesAdded": 40,
+      "duplicates": 0,
+      "yieldPct": 100
     },
     {
       "sourceName": "MIT Sloan Management Review – AI",
       "type": "rss",
       "itemsFetched": 20,
       "itemsParsed": 20,
-      "newArticlesAdded": 0,
-      "duplicates": 20,
-      "yieldPct": 0
+      "newArticlesAdded": 2,
+      "duplicates": 18,
+      "yieldPct": 10
     },
     {
       "sourceName": "Benedict Evans",
       "type": "rss",
       "itemsFetched": 20,
       "itemsParsed": 20,
-      "newArticlesAdded": 1,
-      "duplicates": 19,
-      "yieldPct": 5
+      "newArticlesAdded": 0,
+      "duplicates": 20,
+      "yieldPct": 0
     },
     {
       "sourceName": "Stratechery",
@@ -382,9 +382,9 @@
   ],
   "summary": {
     "totalSources": 42,
-    "totalItemsFetched": 1095,
-    "totalNewArticles": 497,
-    "totalDuplicates": 598,
-    "overallYieldPct": 45.38812785388128
+    "totalItemsFetched": 1115,
+    "totalNewArticles": 442,
+    "totalDuplicates": 673,
+    "overallYieldPct": 39.64125560538116
   }
 }

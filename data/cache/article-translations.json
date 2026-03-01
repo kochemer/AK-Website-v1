@@ -2352,5 +2352,313 @@
       "summary": "Deakin & Francis, los joyeros familiares más antiguos de Inglaterra, celebra 240 años de artesanía utilizando técnicas centenarias para crear piezas atemporales. Fundada en 1786, la joyería se centra en la autenticidad y la longevidad para los coleccionistas que aprecian la artesanía tradicional."
     },
     "translatedAt": "2026-02-22T07:07:04.095Z"
+  },
+  "557c3a38c8276348": {
+    "da": {
+      "title": "AT&T Skærer AI-omkostninger med 90% ved at Skifte Store Modeller ud med Små",
+      "summary": "AI-genereret resumé: AT&T reducerede omkostningerne med 90% ved at skifte fra store sprogmodeller til små til sin Ask AT&T personlige assistent, hvilket forbedrede effektiviteten, latenstiden og svartiderne."
+    },
+    "es": {
+      "title": "AT&T Reduce Costos de IA en un 90% al Cambiar Modelos Grandes por Pequeños",
+      "summary": "Resumen generado por IA: AT&T redujo costos en un 90% al pasar de modelos de lenguaje grandes a pequeños para su asistente personal Ask AT&T, mejorando la eficiencia, la latencia y los tiempos de respuesta."
+    },
+    "translatedAt": "2026-03-01T07:05:28.856Z"
+  },
+  "4ccda22c60699a44": {
+    "da": {
+      "title": "OpenAI rejser 110 milliarder dollars fra Amazon, Nvidia, Softbank ved en post-money værdiansættelse på 840 milliarder dollars",
+      "summary": "OpenAI sikrer 110 milliarder dollars i finansiering fra Amazon, Nvidia og SoftBank, hvilket markerer den største finansieringsrunde for en AI-startup. Denne investering fremhæver den betydelige finansielle støtte til frontier AI, når den overgår fra forskning til udbredt kommerciel brug."
+    },
+    "es": {
+      "title": "OpenAI recauda $110 mil millones de Amazon, Nvidia, Softbank con una valoración post-money de $840 mil millones",
+      "summary": "OpenAI asegura $110 mil millones en financiamiento de Amazon, Nvidia y SoftBank, marcando la mayor ronda de financiamiento para una startup de IA. Esta inversión destaca el significativo apoyo financiero para la IA de frontera a medida que pasa de la investigación al uso comercial generalizado."
+    },
+    "translatedAt": "2026-03-01T07:05:28.856Z"
+  },
+  "b689973d76ea8a49": {
+    "da": {
+      "title": "Anthropic anklager 3 kinesiske virksomheder for at høste deres data",
+      "summary": "Anthropic har anklaget tre kinesiske virksomheder for at bruge falske konti til at træne deres chatbots og hævder, at DeepSeek, Moonshot og MiniMax har høstet deres data til dette formål."
+    },
+    "es": {
+      "title": "Anthropic acusa a 3 empresas chinas de cosechar sus datos",
+      "summary": "Anthropic ha acusado a tres empresas chinas de usar cuentas fraudulentas para entrenar sus chatbots, afirmando que DeepSeek, Moonshot y MiniMax cosecharon sus datos para este propósito."
+    },
+    "translatedAt": "2026-03-01T07:05:28.856Z"
+  },
+  "361173d02babf486": {
+    "da": {
+      "title": "Pentagon indkalder Anthropic-chef i strid om A.I.-grænser",
+      "summary": "Anthropic-chefen indkaldes af Pentagon midt i forhandlinger med forsvarsministeriet, hvor den kunstige intelligensvirksomhed presser på for at få etableret grænser."
+    },
+    "es": {
+      "title": "El Pentágono convoca al jefe de Anthropic en disputa sobre límites de A.I.",
+      "summary": "El jefe de Anthropic es convocado por el Pentágono en medio de negociaciones con el Departamento de Defensa, mientras la empresa de inteligencia artificial presiona para establecer límites."
+    },
+    "translatedAt": "2026-03-01T07:05:28.856Z"
+  },
+  "60d1bde99d3b46ca": {
+    "da": {
+      "title": "Google-arbejdere søger 'røde linjer' for militær A.I., som svarer til Anthropic",
+      "summary": "Over 100 Google A.I. medarbejdere har rejst bekymringer om brugen af Gemini-teknologi til amerikansk overvågning og autonome våben, og opfordrer til klare grænser for militære anvendelser."
+    },
+    "es": {
+      "title": "Los trabajadores de Google buscan 'líneas rojas' sobre la A.I. militar, eco de Anthropic",
+      "summary": "Más de 100 empleados de A.I. de Google han expresado su preocupación por el uso de la tecnología Gemini para la vigilancia estadounidense y las armas autónomas, instando a establecer límites claros en las aplicaciones militares."
+    },
+    "translatedAt": "2026-03-01T07:05:28.856Z"
+  },
+  "26598382b04207c1": {
+    "da": {
+      "title": "Amazon forpligter $50 milliarder til OpenAI; annoncerer flerårigt partnerskab med AWS",
+      "summary": "Amazon har forpligtet $50 milliarder til OpenAI, det største beløb i denne finansieringsrunde, som overgår Nvidia og SoftBank. Denne investering giver OpenAI en før-pengevurdering på $730 milliarder."
+    },
+    "es": {
+      "title": "Amazon se compromete a $50 mil millones con OpenAI; anuncia asociación a varios años con AWS",
+      "summary": "Amazon se ha comprometido a $50 mil millones con OpenAI, la mayor cantidad en esta ronda de financiación, superando a Nvidia y SoftBank. Esta inversión otorga a OpenAI una valoración previa al dinero de $730 mil millones."
+    },
+    "translatedAt": "2026-03-01T07:05:33.753Z"
+  },
+  "c9eb1fcec0267328": {
+    "da": {
+      "title": "'Enhver kontraktbrud kan udløse en opsigelse': OpenAIs lagdelte beskyttelser i forsvarsministeriets aftale",
+      "summary": "OpenAI har sikret sig en kontrakt med Pentagon for sin teknologi på klassificerede netværk og implementeret robuste sikkerhedsforanstaltninger for at forhindre brud. Aftalen inkluderer flere beskyttende foranstaltninger sammenlignet med tidligere klassificerede AI-udrulninger, der adresserer bekymringer rejst af Pentagon om forsyningskæderisici."
+    },
+    "es": {
+      "title": "'Cualquier incumplimiento del contrato podría desencadenar una rescisión': Las protecciones en capas de OpenAI en el pacto del departamento de defensa de EE. UU.",
+      "summary": "OpenAI ha asegurado un contrato con el Pentágono para su tecnología en redes clasificadas, implementando salvaguardias robustas para prevenir incumplimientos. El acuerdo incluye más medidas de protección en comparación con implementaciones anteriores de IA clasificadas, abordando las preocupaciones planteadas por el Pentágono sobre los riesgos de la cadena de suministro."
+    },
+    "translatedAt": "2026-03-01T07:05:33.753Z"
+  },
+  "49a01506d97955ff": {
+    "da": {
+      "title": "Mirakl bliver rentabel, da tilbagevendende indtægter og markedspladsaktivitet vokser",
+      "summary": "Mirakl opnåede fuldårs rentabilitet i 2025, da tilbagevendende indtægter og markedspladsaktivitet voksede, med årlige tilbagevendende indtægter på 218 millioner dollars, en stigning på 23% fra året før."
+    },
+    "es": {
+      "title": "Mirakl se vuelve rentable a medida que crecen los ingresos recurrentes y la actividad del mercado",
+      "summary": "Mirakl logró rentabilidad anual en 2025 a medida que crecieron los ingresos recurrentes y la actividad del mercado, con ingresos recurrentes anuales alcanzando los 218 millones de dólares, un aumento del 23% en comparación con el año anterior."
+    },
+    "translatedAt": "2026-03-01T07:05:33.753Z"
+  },
+  "4f24b3dd4cd2dbf3": {
+    "da": {
+      "title": "Markedsplads Briefing: Online forhandlere sænker ikke priserne trods Højesteretsafgørelse",
+      "summary": "Online forhandlere, herunder Amazon-sælgere, sænker ikke priserne trods Højesterets beslutning om at omstøde Trumps told, som rapporteret af Modern Retail den 26. februar 2026."
+    },
+    "es": {
+      "title": "Informe del Mercado: Los comerciantes en línea no están bajando precios a pesar de la decisión de la Corte Suprema",
+      "summary": "Los comerciantes en línea, incluidos los vendedores de Amazon, no están reduciendo precios a pesar de la decisión de la Corte Suprema de anular los aranceles de Trump, según informó Modern Retail el 26 de febrero de 2026."
+    },
+    "translatedAt": "2026-03-01T07:05:33.753Z"
+  },
+  "aa7ec20d44382520": {
+    "da": {
+      "title": "Walmart-appen forbinder leverandører med data på butiksniveau",
+      "summary": "Walmart Data Ventures lancerede Scintilla In-Store for at give realtidsdata til feltrepræsentanter med det mål at mindske udsolgte varer i butikkerne."
+    },
+    "es": {
+      "title": "La app de Walmart conecta a los proveedores con datos a nivel de tienda",
+      "summary": "Walmart Data Ventures lanzó Scintilla In-Store para proporcionar datos en tiempo real a los representantes de campo, con el objetivo de reducir la falta de stock en las tiendas."
+    },
+    "translatedAt": "2026-03-01T07:05:33.753Z"
+  },
+  "72f774dbe3af1046": {
+    "da": {
+      "title": "Ecommerce Trends: Hvad shoppere bruger AI til at købe",
+      "summary": "AI-genereret resumé: Online detailhandlere i 2026 udforsker brugen af AI-platforme som ChatGPT, Gemini og Perplexity, da shoppere bruger disse værktøjer til beslutningstagning og foretager køb gennem nye betalingsoplevelser."
+    },
+    "es": {
+      "title": "Tendencias de Ecommerce: Lo que los compradores están usando IA para comprar",
+      "summary": "Resumen generado por IA: Los minoristas en línea en 2026 están explorando el uso de plataformas de IA como ChatGPT, Gemini y Perplexity, ya que los compradores están utilizando estas herramientas para la toma de decisiones y realizando compras a través de nuevas experiencias de pago."
+    },
+    "translatedAt": "2026-03-01T07:05:37.709Z"
+  },
+  "d6d797039a6ca05a": {
+    "da": {
+      "title": "Furniture.com lancerer AI-drevet opdagelsesplatform",
+      "summary": "Furniture.com har transformeret sin e-handelswebsite til en AI-drevet beslutningsinfrastruktur, der gør det muligt for forbrugerne at opdage, sammenligne og købe møbler fra forskellige mærker. Denne meddelelse blev givet på eTail Palm Springs-konferencen den 23. februar, som rapporteret af Digital Commerce 360 den 24. februar 2026."
+    },
+    "es": {
+      "title": "Furniture.com lanza plataforma de descubrimiento impulsada por IA",
+      "summary": "Furniture.com ha transformado su sitio web de comercio electrónico en una infraestructura de decisión impulsada por IA, permitiendo a los consumidores descubrir, comparar y comprar muebles de varias marcas. Este anuncio se hizo en la conferencia eTail Palm Springs el 23 de febrero, según informó Digital Commerce 360 el 24 de febrero de 2026."
+    },
+    "translatedAt": "2026-03-01T07:05:37.709Z"
+  },
+  "9f0bfe1e00600acf": {
+    "da": {
+      "title": "Roblox overhaler TikTok som den hurtigst voksende shoppingkanal for Gen Z",
+      "summary": "AI-genereret resumé: Roblox har overhalet TikTok som den hurtigst voksende shoppingplatform for Gen Z, baseret på forskning fra Retail Technology Show (RTS) som rapporteret af Internet Retailing den 25. februar 2026."
+    },
+    "es": {
+      "title": "Roblox supera a TikTok como el canal de compras de Gen Z de más rápido crecimiento",
+      "summary": "Resumen generado por IA: Roblox ha superado a TikTok como la plataforma de compras de más rápido crecimiento para Gen Z, según una investigación del Retail Technology Show (RTS) reportada por Internet Retailing el 25 de febrero de 2026."
+    },
+    "translatedAt": "2026-03-01T07:05:37.709Z"
+  },
+  "30d051e43c32639e": {
+    "da": {
+      "title": "ANALYSE: Dunelms nye app markerer et strategisk skift mod dybere omnichannel engagement",
+      "summary": "AI-genereret resumé: Dunelms nye app, lanceret til iOS og Android, betyder et strategisk skridt mod at forbedre omnichannel engagement ved at integrere fysiske butikker, digitale oplevelser og kundedata."
+    },
+    "es": {
+      "title": "ANÁLISIS: La nueva app de Dunelm marca un cambio estratégico hacia un compromiso omnicanal más profundo",
+      "summary": "Resumen generado por IA: La nueva app de Dunelm, lanzada para iOS y Android, significa un movimiento estratégico hacia la mejora del compromiso omnicanal al integrar tiendas físicas, experiencias digitales y datos de clientes."
+    },
+    "translatedAt": "2026-03-01T07:05:37.709Z"
+  },
+  "8042966b8b4c14ca": {
+    "da": {
+      "title": "Saks Global CEO siger, at topmærker sender varer trods konkurs",
+      "summary": "Saks Global CEO bekræfter, at top luksusmærker som Burberry, LVMH og Kering fortsætter med at sende varer trods konkurs, med over 380 involverede mærker."
+    },
+    "es": {
+      "title": "El CEO de Saks Global dice que las principales marcas siguen enviando a pesar de la bancarrota",
+      "summary": "El CEO de Saks Global confirma que las principales marcas de lujo como Burberry, LVMH y Kering continúan enviando productos a pesar de la bancarrota, con más de 380 marcas involucradas."
+    },
+    "translatedAt": "2026-03-01T07:05:37.709Z"
+  },
+  "21ae4d984ec05ece": {
+    "da": {
+      "title": "Kan marketingstunts give nyt liv til skønhedens ældste mærker?",
+      "summary": "Gamle skønhedsmærker som Gold Bond, Vaseline og Sunsilk udforsker marketingstunts og partnerskaber for at tiltrække yngre forbrugere, hvilket rejser spørgsmål om nødvendigheden af disse tiltag."
+    },
+    "es": {
+      "title": "¿Pueden los trucos de marketing dar nueva vida a las marcas de belleza más antiguas?",
+      "summary": "Marcas de belleza antiguas como Gold Bond, Vaseline y Sunsilk están explorando trucos de marketing y asociaciones para atraer a los consumidores más jóvenes, lo que plantea preguntas sobre la necesidad de estos esfuerzos."
+    },
+    "translatedAt": "2026-03-01T07:05:41.094Z"
+  },
+  "84b6da06c86f1259": {
+    "da": {
+      "title": "Den globale efterspørgsel efter luksushoteller overgår udbuddet: JLL",
+      "summary": "Eksperter antyder, at den globale efterspørgsel efter luksushoteller overstiger udbuddet på grund af stigende velstand og stærk forbrug af luksusvarer, hvilket øger investeringsappellen i high-end hospitality."
+    },
+    "es": {
+      "title": "La demanda global de hoteles de lujo supera la oferta: JLL",
+      "summary": "Los expertos sugieren que la demanda global de hoteles de lujo está superando la oferta debido al aumento de la riqueza y al fuerte gasto de los consumidores de lujo, lo que refuerza el atractivo de inversión en la hospitalidad de alta gama."
+    },
+    "translatedAt": "2026-03-01T07:05:41.094Z"
+  },
+  "6f7a474f94fc2cf7": {
+    "da": {
+      "title": "Har du brug for et outfit? Pickle Clothing Rental App hjælper brugere med at følge trenden.",
+      "summary": "Pickle Clothing Rental App tilbyder en bæredygtig løsning til at følge trenden ved at lade brugere leje tøj fra andre, hvilket undgår gæld og fast fashion."
+    },
+    "es": {
+      "title": "¿Necesitas un atuendo? La aplicación de alquiler de ropa Pickle ayuda a los usuarios a mantenerse a la moda.",
+      "summary": "La aplicación de alquiler de ropa Pickle ofrece una solución sostenible para mantenerse a la moda al permitir a los usuarios alquilar prendas de otros, evitando deudas y la moda rápida."
+    },
+    "translatedAt": "2026-03-01T07:05:41.094Z"
+  },
+  "62fc3725676594d7": {
+    "da": {
+      "title": "Hvor Store Kan et ‘Indie’ Mærke Blive?",
+      "summary": "Priya Raos artikel i Business of Fashion undersøger vækstpotentialet for indie-mærkerne Starface og Fara Homidi i luksus- og forbrugermarkedet."
+    },
+    "es": {
+      "title": "¿Qué Tan Grande Puede Llegar a Ser una Marca ‘Indie’?",
+      "summary": "El artículo de Priya Rao en Business of Fashion explora el potencial de crecimiento de las marcas indie Starface y Fara Homidi en el mercado de lujo y consumo."
+    },
+    "translatedAt": "2026-03-01T07:05:41.094Z"
+  },
+  "90048c073cc646c5": {
+    "da": {
+      "title": "Detailjobs i fare på grund af stigende beskæftigelsesomkostninger",
+      "summary": "En undersøgelse fra BRC viser voksende bekymringer blandt detail CFO'er og finansdirektører om stigende arbejdsomkostninger på grund af Arbejdsretter, hvilket fører til øget pessimisme omkring fremtiden for detailjobs."
+    },
+    "es": {
+      "title": "Empleos en el comercio minorista en riesgo por el aumento de los costos laborales",
+      "summary": "Una encuesta de BRC muestra crecientes preocupaciones entre los CFO y directores financieros del comercio minorista sobre el aumento de los costos laborales debido a la Ley de Derechos Laborales, lo que lleva a un aumento del pesimismo sobre el futuro de los empleos en el comercio minorista."
+    },
+    "translatedAt": "2026-03-01T07:05:41.094Z"
+  },
+  "b025664e582d1012": {
+    "da": {
+      "title": "Forbrugertillid falder i februar",
+      "summary": "Forbrugertilliden er faldet med tre point i februar, ifølge den seneste GFK Forbrugertillidsindeks rapporteret af Drapers."
+    },
+    "es": {
+      "title": "La confianza del consumidor cae en febrero",
+      "summary": "La confianza del consumidor ha disminuido en tres puntos en febrero, según el último Índice de Confianza del Consumidor GFK reportado por Drapers."
+    },
+    "translatedAt": "2026-03-01T07:05:44.512Z"
+  },
+  "8b82d8e8afdef82c": {
+    "da": {
+      "title": "Interesserende trends inden for diamantjuveler skitseret i ny rapport",
+      "summary": "En ny rapport fra Natural Diamond Council afslører en stigning i forbrugerudgifterne til forlovelsesjuveler, hvilket indikerer interessante tendenser i diamantjuvelindustrien."
+    },
+    "es": {
+      "title": "Interesantes tendencias en joyería de diamantes delineadas en nuevo informe",
+      "summary": "Un nuevo informe del Natural Diamond Council revela un aumento en el gasto de los consumidores en joyería de compromiso, lo que indica tendencias interesantes en la industria de la joyería de diamantes."
+    },
+    "translatedAt": "2026-03-01T07:05:44.512Z"
+  },
+  "5707dc1cf7e3e63d": {
+    "da": {
+      "title": "Hvordan en ejer af en smykkebutik i Austin lavede sine udstillinger selv for en brøkdel af prisen",
+      "summary": "Amanda Eddy, ejer af en smykkebutik i Austin, skabte skræddersyede udstillinger med lyserøde pedestaler og budgetvenlige varer fra Amazon, hvilket resulterede i en unikt stylet butik til en brøkdel af prisen."
+    },
+    "es": {
+      "title": "Cómo una dueña de una joyería en Austin hizo sus exhibiciones por una fracción del costo",
+      "summary": "Amanda Eddy, dueña de una joyería en Austin, creó exhibiciones personalizadas utilizando pedestales rosas y artículos económicos de Amazon, resultando en una tienda de estilo único por una fracción del costo."
+    },
+    "translatedAt": "2026-03-01T07:05:44.512Z"
+  },
+  "38759882c04b8be7": {
+    "da": {
+      "title": "Populariteten af laboratoriefremstillede diamant smykker fremhævet i ny undersøgelse",
+      "summary": "En ny undersøgelse i smykkeindustrien afslører den stigende popularitet af laboratoriefremstillede diamant smykker blandt nyligt gifte par."
+    },
+    "es": {
+      "title": "La popularidad de la joyería de diamantes creados en laboratorio destacada en un nuevo estudio",
+      "summary": "Un nuevo estudio en la industria de la joyería revela la creciente popularidad de la joyería de diamantes creados en laboratorio entre parejas recién casadas."
+    },
+    "translatedAt": "2026-03-01T07:05:44.512Z"
+  },
+  "a09ae633fa1794be": {
+    "da": {
+      "title": "Inhorgenta Award 2026 vindere annonceret",
+      "summary": "Vindere af Inhorgenta Award 2026 blev annonceret under en gala i Bavaria Filmstudios, med over 500 gæster fra branchen, detailhandlen og medierne til stede. Arrangementet blev præsenteret af TV-værten Nazan Eckes og bød på en liveoptræden af sangerinden LOI."
+    },
+    "es": {
+      "title": "Ganadores del Inhorgenta Award 2026 anunciados",
+      "summary": "Los ganadores del Inhorgenta Award 2026 fueron anunciados durante una gala en los Bavaria Filmstudios, con más de 500 invitados de la industria, comercio y medios presentes. El evento fue presentado por la presentadora de televisión Nazan Eckes y contó con una actuación en vivo de la cantante LOI."
+    },
+    "translatedAt": "2026-03-01T07:05:44.512Z"
+  },
+  "6faf1af26ddc8e0d": {
+    "da": {
+      "title": "Spektakulære smykker vil tage centrum i den kommende Bonhams auktion",
+      "summary": "Bonhams vil afholde Fine Jewelry California salg med signerede smykker, fancy-farvede diamanter, ædelsten og David Webb designs den 5. marts. Et højdepunkt inkluderer en samling af 12 ikoniske David Webb stykker, der viser designerens indflydelse på amerikansk smykke i det 20. århundrede."
+    },
+    "es": {
+      "title": "Espectaculares joyas ocuparán el centro del escenario en la próxima subasta de Bonhams",
+      "summary": "Bonhams llevará a cabo la venta de Fine Jewelry California que contará con joyas firmadas, diamantes de colores fancy, piedras preciosas y diseños de David Webb el 5 de marzo. Un punto destacado incluye una colección de 12 piezas icónicas de David Webb, que muestran la influencia del diseñador en la joyería estadounidense del siglo XX."
+    },
+    "translatedAt": "2026-03-01T07:05:48.008Z"
+  },
+  "2d7b753563962297": {
+    "da": {
+      "title": "SÆT DATOEN: Professionel Smykkedesigner Awards 2026",
+      "summary": "De Professionel Smykkedesigner Awards 2026 finder sted den 2. september i forbindelse med Jewellery Show. Nomineringer er åbne for branchemedlemmer, med nye pris-kategorier der snart vil blive annonceret."
+    },
+    "es": {
+      "title": "RESERVA LA FECHA: Premios Professional Jeweller 2026",
+      "summary": "Los Premios Professional Jeweller 2026 se llevarán a cabo el 2 de septiembre, coincidiendo con el Jewellery Show. Las nominaciones están abiertas para los miembros de la industria, con nuevas categorías de premios que se anunciarán pronto."
+    },
+    "translatedAt": "2026-03-01T07:05:48.008Z"
+  },
+  "47215986a5af1326": {
+    "da": {
+      "title": "Australske forbrugere støtter futuristisk teknologi til at beskytte detailvirksomheder",
+      "summary": "En undersøgelse viser, at australske forbrugere foretrækker implementeringen af ansigtsgenkendelsesteknologi i detailhandlen for at øge sikkerheden og afskrække kriminalitet."
+    },
+    "es": {
+      "title": "Los consumidores australianos apoyan la tecnología futurista para proteger los negocios minoristas",
+      "summary": "Una encuesta revela que los consumidores australianos favorecen la implementación de tecnología de reconocimiento facial en el comercio minorista para aumentar la seguridad y disuadir el crimen."
+    },
+    "translatedAt": "2026-03-01T07:05:48.008Z"
   }
 }

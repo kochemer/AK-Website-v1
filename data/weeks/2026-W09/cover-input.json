@@ -1,0 +1,34 @@
+{
+  "weekLabel": "2026-W09",
+  "homepageTopArticles": [
+    {
+      "title": "Mirakl turns profitable as recurring revenue and marketplace activity grows",
+      "source": "Digital Commerce 360",
+      "snippet": "Mirakl said it achieved full-year profitability in 2025, marking a financial milestone as recurring revenue and marketplace activity increased across its platform. The Boston- and Paris-based commerce software provider reported annual recurring revenue of $218 million for the year, a 23% increase from 2024. Mirakl said marketplace and dropship activity processed through its platform totaled […]\nThe post Mirakl turns profitable as recurring revenue and marketplace activity grows appeared first on...",
+      "aiSummary": "AI-generated summary:\nMirakl achieved full-year profitability in 2025 as recurring revenue and marketplace activity grew, with annual recurring revenue reaching $218 million, a 23% increase from the previous year."
+    },
+    {
+      "title": "Marketplace Briefing: Online merchants aren’t lowering prices despite Supreme Court ruling",
+      "source": "Modern Retail",
+      "snippet": "Many Amazon sellers and online brands say they won’t cut prices despite the Supreme Court ruling that struck down Trump’s tariffs.",
+      "aiSummary": "AI-Generated Summary:\nOnline merchants, including Amazon sellers, are not reducing prices despite the Supreme Court's decision to overturn Trump's tariffs, as reported by Modern Retail on February 26, 2026."
+    },
+    {
+      "title": "Interesting diamond jewellery trends outlined in new report",
+      "source": "Jeweller - Business News",
+      "snippet": "A new report published by the Natural Diamond Council was highlighted by an increase in engagement jewellery spending among consumers.",
+      "aiSummary": "AI-Generated Summary:\nA new report from the Natural Diamond Council reveals a rise in consumer spending on engagement jewellery, indicating interesting trends in the diamond jewellery industry."
+    },
+    {
+      "title": "How an Austin Jewelry Store Owner DIYed Her Displays for a Fraction of the Cost",
+      "source": "Instore Magazine",
+      "snippet": "With custom-built pink pedestals and affordable Amazon finds, Amanda Eddy styled a store that's uniquely hers.",
+      "aiSummary": "AI-Generated Summary:\nAmanda Eddy, an Austin jewelry store owner, created custom displays using pink pedestals and budget-friendly items from Amazon, resulting in a uniquely styled store at a fraction of the cost."
+    }
+  ],
+  "model": "gpt-image-1.5",
+  "finalPrompt": "Create a hyper-realistic editorial photograph for a weekly intelligence digest.\n\nCRITICAL: This image must visually represent ONLY the following articles: Mirakl turns profitable as recurring revenue and marketplace activity grows, Marketplace Briefing: Online merchants aren’t lowering prices despite Supreme Court ruling, Interesting diamond jewellery trends outlined in new report, How an Austin Jewelry Store Owner DIYed Her Displays for a Fraction of the Cost\n\nScene:\nA playful, slightly absurd visual metaphor inspired by these articles. The scene should be believable but create a visual joke that makes the viewer pause and smile. Prefer object-driven scenes over people-driven scenes.\n\nPhotography style:\n- Shot on a high-end DSLR or medium-format camera\n- Natural or practical lighting (window light, store lighting)\n- Realistic textures, materials, reflections, imperfections\n- Shallow depth of field where appropriate\n- Editorial realism with a playful, humorous tone\n\nComposition:\n- Wide, horizontally expansive banner format (target 3:1 or wider aspect ratio)\n- Vertically minimal height - all important visual elements must be placed in the central horizontal band\n- Safe margins at top and bottom - no critical content near vertical edges\n- One clear focal subject in the central horizontal band\n- Secondary elements add context but do not compete\n- Clean background, no clutter\n- Looks like a real photo taken in a real location\n- Composition must work when displayed in a wide, shallow container\n- Avoid vertical stacking, tall elements, or content that extends to top/bottom edges\n\nABSOLUTE PROHIBITIONS:\n- NO screens, dashboards, UI, holograms, floating icons, symbols, charts, or interface elements\n- NO text of any kind (including signs, labels, price tags, screens, books, posters)\n- NO futuristic or sci-fi visual language\n- NO glossy CGI look, no cartoon, no illustration\n- NO logos, no brand marks, no watermarks\n\nIf an element could reasonably contain text in real life (screen, sign, paper), it MUST be out of frame, fully blurred, or turned away from the camera.\n\nThe scene should be playful and absurd but look like a real photograph.\n\nCRITICAL CONSTRAINTS (must be strictly avoided):\n- text, letters, numbers, signage, labels, screens, UI, dashboards, holograms, floating icons, logos, brands, watermarks, cartoon, illustration, CGI, 3D render, anime\n\nPHOTOREALISM ENFORCEMENT:\n- Ultra photorealistic editorial photograph, shot on a real DSLR or medium-format camera.\n- Natural lighting, realistic skin texture, realistic reflections, realistic materials, real physics.\n- Candid editorial realism; avoid stock-photo staging.\n\nANTI-CARTOON / ANTI-CGI:\n- No illustration, no cartoon, no anime, no 3D render, no CGI, no synthetic look.\n\nNO-TEXT GUARANTEE:\n- Absolutely no text, letters, numbers, typography, signage, labels, price tags.\n- No screens, dashboards, UI, holograms, floating icons, charts.\n- Avoid any objects that commonly contain text (posters, newspapers, packaging, storefront signs). If unavoidable, they must be fully out of focus and unreadable.\n\nCOMPOSITION FOR WIDE HERO BANNER (CRITICAL):\n- Wide, horizontally expansive banner format (target 3:1 or wider aspect ratio)\n- Vertically minimal height - all important visual elements must be placed in the central horizontal band\n- Safe margins at top and bottom - no critical content near vertical edges\n- Composition must work when displayed in a wide, shallow container\n- Avoid vertical stacking, tall elements, or content that extends to top/bottom edges",
+  "imageSize": "1536x1024",
+  "outputPath": "/weekly-images/2026-W09.png",
+  "generatedAt": "2026-03-01T07:08:42.363Z"
+}
