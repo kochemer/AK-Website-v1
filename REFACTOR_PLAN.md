@@ -641,3 +641,88 @@ curl -s -o /dev/null -w "%{http_code}" https://luxury-intel.com/week/2026-W05
 5. Steps 9-10 improve maintainability
 
 Each step is independently deployable and reversible.
+
+---
+
+## H. LLM Model Routing
+
+All OpenAI text-generation calls are routed through `lib/llm/models.ts`.
+The function `getModelFor(workflow)` returns the model for a given pipeline step.
+
+### Default Model Assignment
+
+| Workflow   | Default Model   | Used for                                        |
+|------------|-----------------|--------------------------------------------------|
+| `triage`   | `gpt-5-nano`    | Discovery delta-query generation                 |
+| `classify` | `gpt-5-mini`    | Theme generation, article translation            |
+| `summarize`| `gpt-4.1-mini`  | Article summaries, digest intro, email bullets   |
+| `rank`     | `o4-mini`       | Article selection (selectTop), reranking         |
+| `script`   | `gpt-4.1-mini`  | Podcast script generation                        |
+| `polish`   | `gpt-4.1`       | Scene director (cover image prompt) — final pass |
+
+### Environment Variable Overrides
+
+Each workflow can be overridden at runtime without touching code:
+
+| Env Variable          | Example                          |
+|-----------------------|----------------------------------|
+| `LLM_MODEL_TRIAGE`   | `LLM_MODEL_TRIAGE=gpt-4o-mini`  |
+| `LLM_MODEL_CLASSIFY` | `LLM_MODEL_CLASSIFY=gpt-4o`     |
+| `LLM_MODEL_SUMMARIZE`| `LLM_MODEL_SUMMARIZE=gpt-4.1`   |
+| `LLM_MODEL_RANK`     | `LLM_MODEL_RANK=o4-mini`        |
+| `LLM_MODEL_SCRIPT`   | `LLM_MODEL_SCRIPT=gpt-4.1`      |
+| `LLM_MODEL_POLISH`   | `LLM_MODEL_POLISH=gpt-4.1`      |
+
+Legacy per-module env vars (e.g. `RERANKER_MODEL_PRIMARY`, `SCENE_DIRECTOR_MODEL`, `THEME_MODEL`) still work and take priority when set.
+
+---
+
+## I. Video Rendering Pipeline
+
+Weekly video digest generation using Sora API.
+
+### Workflow
+
+1. **Plan** (`video:plan`): Generate `videoPlan.json` from weekly digest
+2. **Render** (`video:render`): Render Sora clips for each segment with caching
+3. **Captions** (`video:captions`): Generate SRT captions from plan
+4. **Final** (`video:final`): Compose final video with ffmpeg
+
+### Features
+
+#### Moderation-Safe Fallback
+- Automatically sanitizes prompts when moderation blocks content
+- Sanitization rules:
+  - Removes sentences containing risky words (steal, hack, violence, etc.)
+  - Replaces specific brand names with generic terms (Pandora → "luxury jewelry brand")
+  - Removes age/minor mentions, political content
+  - Adds "Safe, brand-friendly, professional tone." suffix
+- Both `originalPrompt` and `sanitizedPrompt` saved to `videoRender.json` for traceability
+
+#### Resume Mode (`--resumeFailed`)
+- Loads previous `videoRender.json` and retries only failed segments
+- Automatically skips cached segments
+- Usage: `npm run video:render -- --week=2026-W06 --resumeFailed`
+
+#### Billing Limit Detection
+- Detects billing hard limit errors and fails fast
+- Marks remaining segments as `skipped_due_to_billing`
+- Clear error message: "Billing hard limit reached — aborting remaining segments"
+
+#### Voiceover (ElevenLabs)
+- `buildWeeklyVideoVoiceover` writes `voiceover.txt` from the plan’s voText and, when `ELEVENLABS_API_KEY` is set, generates `vo.wav` via ElevenLabs TTS (mp3 then converted to wav with ffmpeg).
+- `video:final` runs voiceover then compose; if `vo.wav` exists it is passed to compose as the audio track (replacing Sora clip audio).
+- Without the API key, only `voiceover.txt` is created and the final video keeps the original clip audio (or silent if Sora had none).
+
+### Environment Variables
+
+- `VIDEO_RENDER_ENABLED=true`: Required to enable rendering (safety flag)
+- `OPENAI_API_KEY`: Required for Sora API calls
+- `ELEVENLABS_API_KEY`: Optional. When set, `video:final` and voiceover step generate narrated audio (vo.wav) via ElevenLabs TTS from the plan’s voText; compose then uses it as the video audio track.
+- `ELEVENLABS_VOICE_ID`: Optional. Voice ID for TTS (default: Rachel). Get IDs from ElevenLabs profile / API.
+
+### Cache
+
+- Location: `data/cache/video-clips.json`
+- Key: SHA256 of `{model, size, seconds, prompt}`
+- Cache entries include: `cacheKey`, `model`, `size`, `seconds`, `promptHash`, `outputPath`, `createdAt`

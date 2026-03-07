@@ -12,8 +12,10 @@ import { promises as fs } from 'fs';
 import path from 'path';
 import OpenAI from 'openai';
 import type { ArticleTranslations } from './types';
+import { getModelFor, maxTokensParam, temperatureParam } from '../llm/models';
 
-const AI_MODEL = 'gpt-4o-mini';
+const TRANSLATE_MODEL_PRIMARY = getModelFor('classify');
+const TRANSLATE_MODEL_FALLBACK = process.env.TRANSLATE_MODEL_FALLBACK || 'gpt-4.1-mini';
 const MAX_OUTPUT_TOKENS = 400;
 const TEMPERATURE = 0.3;
 
@@ -64,6 +66,7 @@ type TranslationResult = {
 
 /**
  * Translate a single article's title + summary into DA and ES using OpenAI.
+ * Tries primary model first, falls back to fallback model if primary fails or returns empty.
  */
 async function translateSingle(
   title: string,
@@ -91,33 +94,75 @@ Rules:
 - If summary is "(no summary available)", set summary to an empty string "".
 - Do NOT add any explanation, just the JSON.`;
 
-  try {
-    const openai = new OpenAI({ apiKey: OPENAI_API_KEY });
-    const res = await openai.chat.completions.create({
-      model: AI_MODEL,
-      temperature: TEMPERATURE,
-      max_tokens: MAX_OUTPUT_TOKENS,
-      messages: [{ role: 'user', content: prompt }],
-    });
+  const openai = new OpenAI({ apiKey: OPENAI_API_KEY });
+  let currentModel = TRANSLATE_MODEL_PRIMARY;
+  let modelUsed = '';
 
-    const raw = res.choices[0]?.message?.content?.trim();
-    if (!raw) return null;
+  // Try primary model, then fallback
+  for (let attempt = 0; attempt < 2; attempt++) {
+    try {
+      const res = await openai.chat.completions.create({
+        model: currentModel,
+        ...temperatureParam(currentModel, TEMPERATURE),
+        ...maxTokensParam(currentModel, MAX_OUTPUT_TOKENS),
+        messages: [{ role: 'user', content: prompt }],
+        response_format: { type: 'json_object' },
+      });
 
-    // Strip markdown fences if present
-    const jsonStr = raw.replace(/^```json?\s*/i, '').replace(/\s*```$/i, '').trim();
-    const parsed = JSON.parse(jsonStr) as TranslationResult;
+      const raw = res.choices[0]?.message?.content?.trim();
+      if (!raw) {
+        if (attempt === 0) {
+          // Empty response from primary — try fallback
+          currentModel = TRANSLATE_MODEL_FALLBACK;
+          if (currentModel !== TRANSLATE_MODEL_PRIMARY) {
+            console.log(`[Translate] Empty response from [${TRANSLATE_MODEL_PRIMARY}], trying fallback [${TRANSLATE_MODEL_FALLBACK}]`);
+          }
+          continue;
+        }
+        return null;
+      }
 
-    // Basic validation
-    if (!parsed.da?.title || !parsed.es?.title) {
-      console.warn('[Translate] Invalid translation structure — missing title fields');
+      // Strip markdown fences if present
+      const jsonStr = raw.replace(/^```json?\s*/i, '').replace(/\s*```$/i, '').trim();
+      const parsed = JSON.parse(jsonStr) as TranslationResult;
+
+      // Basic validation
+      if (!parsed.da?.title || !parsed.es?.title) {
+        if (attempt === 0) {
+          // Invalid structure from primary — try fallback
+          currentModel = TRANSLATE_MODEL_FALLBACK;
+          if (currentModel !== TRANSLATE_MODEL_PRIMARY) {
+            console.log(`[Translate] Invalid structure from [${TRANSLATE_MODEL_PRIMARY}], trying fallback [${TRANSLATE_MODEL_FALLBACK}]`);
+          }
+          continue;
+        }
+        console.warn('[Translate] Invalid translation structure — missing title fields');
+        return null;
+      }
+
+      modelUsed = currentModel;
+      if (attempt > 0 && currentModel !== TRANSLATE_MODEL_PRIMARY) {
+        console.log(`[Translate] Successfully used fallback model [${TRANSLATE_MODEL_FALLBACK}]`);
+      }
+
+      return parsed;
+    } catch (e: any) {
+      if (attempt === 0) {
+        // Error from primary — try fallback
+        console.log(`[Translate] LLM call failed [${TRANSLATE_MODEL_PRIMARY}]: ${e?.message || 'Unknown error'}`);
+        currentModel = TRANSLATE_MODEL_FALLBACK;
+        if (currentModel !== TRANSLATE_MODEL_PRIMARY) {
+          console.log(`[Translate] Trying fallback model [${TRANSLATE_MODEL_FALLBACK}]`);
+        }
+        continue;
+      }
+      // Both attempts failed
+      console.error(`[Translate] Error translating "${title.substring(0, 50)}...":`, e?.message);
       return null;
     }
-
-    return parsed;
-  } catch (e: any) {
-    console.error(`[Translate] Error translating "${title.substring(0, 50)}...":`, e?.message);
-    return null;
   }
+
+  return null;
 }
 
 type ArticleToTranslate = {

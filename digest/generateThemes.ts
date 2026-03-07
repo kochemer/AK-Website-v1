@@ -12,12 +12,13 @@ import type { WeeklyDigest } from './buildWeeklyDigest';
 import { getTopicDisplayName } from '../lib/utils/topicNames';
 
 import { readJsonCache, writeJsonCache } from '../lib/utils/cachePaths';
+import { getModelFor, maxTokensParam, temperatureParam } from '../lib/llm/models';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 // Configuration
-const THEME_MODEL = process.env.THEME_MODEL || 'gpt-4o-mini';
+const THEME_MODEL = process.env.THEME_MODEL || getModelFor('classify');
 const TEMPERATURE = 0; // Deterministic
 const MAX_TOKENS = 500;
 const CACHE_KIND = 'themes';
@@ -352,8 +353,8 @@ async function callLLMForThemes(digest: WeeklyDigest, isRetry: boolean = false):
     
     const response = await openai.chat.completions.create({
       model: THEME_MODEL,
-      temperature: TEMPERATURE,
-      max_tokens: MAX_TOKENS,
+      ...temperatureParam(THEME_MODEL, TEMPERATURE),
+      ...maxTokensParam(THEME_MODEL, MAX_TOKENS),
       messages: [{ role: 'user', content: prompt }],
       response_format: { type: 'json_object' },
     });

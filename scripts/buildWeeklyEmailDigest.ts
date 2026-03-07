@@ -21,7 +21,8 @@ const __dirname = path.dirname(__filename);
 loadEnv();
 
 // Configuration
-const EMAIL_DIGEST_MODEL = process.env.EMAIL_DIGEST_MODEL || 'gpt-4o-mini';
+import { getModelFor, maxTokensParam, temperatureParam } from '../lib/llm/models';
+const EMAIL_DIGEST_MODEL = process.env.EMAIL_DIGEST_MODEL || getModelFor('summarize');
 const TEMPERATURE = 0.3;
 const MAX_TOKENS = 500;
 
@@ -239,8 +240,8 @@ Output as JSON object with a "bullets" array containing your 3 summary sentences
           content: prompt
         }
       ],
-      temperature: TEMPERATURE,
-      max_tokens: MAX_TOKENS,
+      ...temperatureParam(EMAIL_DIGEST_MODEL, TEMPERATURE),
+      ...maxTokensParam(EMAIL_DIGEST_MODEL, MAX_TOKENS),
       response_format: { type: 'json_object' }
     });
     
@@ -393,8 +394,8 @@ Keep it brief, professional, and set context for a retail/luxury/AI intelligence
           content: prompt
         }
       ],
-      temperature: TEMPERATURE,
-      max_tokens: 150
+      ...temperatureParam(EMAIL_DIGEST_MODEL, TEMPERATURE),
+      ...maxTokensParam(EMAIL_DIGEST_MODEL, 150),
     });
     
     const content = response.choices[0]?.message?.content?.trim();

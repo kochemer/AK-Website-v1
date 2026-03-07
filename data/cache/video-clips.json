@@ -1,0 +1,101 @@
+{
+  "3d3ac7bf3d63fc69f8de84aa94fe73d1a92d8ac0467490a1402cf807e37d833a": {
+    "cacheKey": "3d3ac7bf3d63fc69f8de84aa94fe73d1a92d8ac0467490a1402cf807e37d833a",
+    "model": "sora-2",
+    "size": "720x1280",
+    "seconds": 4,
+    "promptHash": "0477314c644fd9de",
+    "outputPath": "C:\\Users\\koche\\OneDrive\\Desktop\\Google Drive Physical\\studying\\AK Website Project Dec 2025\\data\\weeks\\2026-W06\\video\\raw\\seg-01.mp4",
+    "createdAt": "2026-03-01T19:23:54.439Z"
+  },
+  "a090a7c626bdfc889795876e902bd25f2cc5b32e5ec90e934409e30aba917882": {
+    "cacheKey": "a090a7c626bdfc889795876e902bd25f2cc5b32e5ec90e934409e30aba917882",
+    "model": "sora-2",
+    "size": "720x1280",
+    "seconds": 12,
+    "promptHash": "aa878aa48df64d99",
+    "outputPath": "C:\\Users\\koche\\OneDrive\\Desktop\\Google Drive Physical\\studying\\AK Website Project Dec 2025\\data\\weeks\\2026-W06\\video\\raw\\seg-03.mp4",
+    "createdAt": "2026-03-01T19:46:39.469Z"
+  },
+  "8887618b2e858db66e4af2ea57ae9248a43a89758a900b39cecc999ccdc1b3e4": {
+    "cacheKey": "8887618b2e858db66e4af2ea57ae9248a43a89758a900b39cecc999ccdc1b3e4",
+    "model": "sora-2",
+    "size": "720x1280",
+    "seconds": 12,
+    "promptHash": "120950b232f0e662",
+    "outputPath": "C:\\Users\\koche\\OneDrive\\Desktop\\Google Drive Physical\\studying\\AK Website Project Dec 2025\\data\\weeks\\2026-W06\\video\\raw\\seg-02.mp4",
+    "createdAt": "2026-03-01T20:15:35.661Z"
+  },
+  "66e5056248710ab006ba6a36156de1aba5919c171ab13b0a43dd0a8de0e44e5a": {
+    "cacheKey": "66e5056248710ab006ba6a36156de1aba5919c171ab13b0a43dd0a8de0e44e5a",
+    "model": "sora-2",
+    "size": "720x1280",
+    "seconds": 12,
+    "promptHash": "b927029299d67ac9",
+    "outputPath": "C:\\Users\\koche\\OneDrive\\Desktop\\Google Drive Physical\\studying\\AK Website Project Dec 2025\\data\\weeks\\2026-W06\\video\\raw\\seg-04.mp4",
+    "createdAt": "2026-03-01T20:21:20.008Z"
+  },
+  "51546cd510bb3262271fe9e26e64bbe1832b23fa07ecd8db8829c753351e62d7": {
+    "cacheKey": "51546cd510bb3262271fe9e26e64bbe1832b23fa07ecd8db8829c753351e62d7",
+    "model": "sora-2",
+    "size": "720x1280",
+    "seconds": 8,
+    "promptHash": "145f75da5b0dc6e5",
+    "outputPath": "C:\\Users\\koche\\OneDrive\\Desktop\\Google Drive Physical\\studying\\AK Website Project Dec 2025\\data\\weeks\\2026-W06\\video\\raw\\seg-outro.mp4",
+    "createdAt": "2026-03-01T20:23:31.725Z"
+  },
+  "6c048a44b8257825d1e738c6f5e9df8f37d6cf4c1f9bfff04320c346a6c883e6": {
+    "cacheKey": "6c048a44b8257825d1e738c6f5e9df8f37d6cf4c1f9bfff04320c346a6c883e6",
+    "model": "sora-2",
+    "size": "720x1280",
+    "seconds": 12,
+    "promptHash": "2091528add72fa27",
+    "outputPath": "C:\\Users\\koche\\OneDrive\\Desktop\\Google Drive Physical\\studying\\AK Website Project Dec 2025\\data\\weeks\\2026-W09\\video\\raw\\seg-02.mp4",
+    "createdAt": "2026-03-05T20:59:10.474Z"
+  },
+  "6022b4042c0a1fd0c5ea7cc3dbc119ffb3cf48312ef2b8c96ad73fbb5bc7cad8": {
+    "cacheKey": "6022b4042c0a1fd0c5ea7cc3dbc119ffb3cf48312ef2b8c96ad73fbb5bc7cad8",
+    "model": "sora-2",
+    "size": "720x1280",
+    "seconds": 4,
+    "promptHash": "5605b317e39f3ea4",
+    "outputPath": "C:\\Users\\koche\\OneDrive\\Desktop\\Google Drive Physical\\studying\\AK Website Project Dec 2025\\data\\weeks\\2026-W09\\video\\raw\\seg-01.mp4",
+    "createdAt": "2026-03-05T20:59:27.027Z"
+  },
+  "f7459d1fb1c3f5f870e26c463ed3e1a45e1612b959626dd9bc831f53f678c93e": {
+    "cacheKey": "f7459d1fb1c3f5f870e26c463ed3e1a45e1612b959626dd9bc831f53f678c93e",
+    "model": "sora-2",
+    "size": "720x1280",
+    "seconds": 12,
+    "promptHash": "0281cd81db9c31f1",
+    "outputPath": "C:\\Users\\koche\\OneDrive\\Desktop\\Google Drive Physical\\studying\\AK Website Project Dec 2025\\data\\weeks\\2026-W09\\video\\raw\\seg-01.mp4",
+    "createdAt": "2026-03-07T14:28:34.585Z"
+  },
+  "d46c0890fd75556d0c842f18c3cd555afebab56f3a9ce1b55ebd62fff638d9e0": {
+    "cacheKey": "d46c0890fd75556d0c842f18c3cd555afebab56f3a9ce1b55ebd62fff638d9e0",
+    "model": "sora-2",
+    "size": "720x1280",
+    "seconds": 12,
+    "promptHash": "e48bee4c50b80757",
+    "outputPath": "C:\\Users\\koche\\OneDrive\\Desktop\\Google Drive Physical\\studying\\AK Website Project Dec 2025\\data\\weeks\\2026-W09\\video\\raw\\seg-02.mp4",
+    "createdAt": "2026-03-07T14:28:49.741Z"
+  },
+  "2ab75a40e62de047310d460f6331e454da5266fb0140eda0c04c1818f72acbcc": {
+    "cacheKey": "2ab75a40e62de047310d460f6331e454da5266fb0140eda0c04c1818f72acbcc",
+    "model": "sora-2",
+    "size": "720x1280",
+    "seconds": 12,
+    "promptHash": "1c1e095e9207b426",
+    "outputPath": "C:\\Users\\koche\\OneDrive\\Desktop\\Google Drive Physical\\studying\\AK Website Project Dec 2025\\data\\weeks\\2026-W09\\video\\raw\\seg-04.mp4",
+    "createdAt": "2026-03-07T14:37:24.305Z"
+  },
+  "0a68e972d45ec79ade1dd236a2b4cf6d459b865ee90a10cace029da54b714327": {
+    "cacheKey": "0a68e972d45ec79ade1dd236a2b4cf6d459b865ee90a10cace029da54b714327",
+    "model": "sora-2",
+    "size": "720x1280",
+    "seconds": 12,
+    "promptHash": "ffb5549192c2bb08",
+    "outputPath": "C:\\Users\\koche\\OneDrive\\Desktop\\Google Drive Physical\\studying\\AK Website Project Dec 2025\\data\\weeks\\2026-W09\\video\\raw\\seg-outro.mp4",
+    "createdAt": "2026-03-07T14:50:23.679Z"
+  }
+}

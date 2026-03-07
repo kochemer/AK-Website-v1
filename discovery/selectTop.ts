@@ -4,11 +4,12 @@ import { fileURLToPath } from 'url';
 import OpenAI from 'openai';
 import type { ExtractedArticle } from './fetchExtract';
 import type { Topic } from '../classification/classifyTopics';
+import { getModelFor, temperatureParam } from '../lib/llm/models';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const SELECTION_MODEL = process.env.SELECTION_MODEL || 'gpt-4o';
+const SELECTION_MODEL = process.env.SELECTION_MODEL || getModelFor('rank');
 const TEMPERATURE = 0.3;
 const TOP_K = 40; // Number of items to rank in LLM phase
 const MAX_CANDIDATES = 100; // Max candidates to send to LLM
@@ -254,7 +255,7 @@ Return exactly ${targetK} items in the ranked array, ordered by rank (1 = best).
         { role: 'system', content: systemPrompt },
         { role: 'user', content: `${userPrompt}\n\nCandidates:\n${JSON.stringify(candidateList, null, 2)}` }
       ],
-      temperature: TEMPERATURE,
+      ...temperatureParam(SELECTION_MODEL, TEMPERATURE),
       response_format: { type: 'json_object' }
     });
 

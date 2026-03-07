@@ -4,12 +4,13 @@ import { fileURLToPath } from 'url';
 import OpenAI from 'openai';
 import type { Topic } from '../classification/classifyTopics';
 import { getTopicDisplayName } from '../lib/utils/topicNames';
+import { getModelFor, temperatureParam } from '../lib/llm/models';
 import crypto from 'crypto';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const QUERY_DELTA_MODEL = process.env.QUERY_DELTA_MODEL || 'gpt-4o';
+const QUERY_DELTA_MODEL = process.env.QUERY_DELTA_MODEL || getModelFor('triage');
 const TEMPERATURE = 0.7;
 
 function getOpenAIApiKey(): string {
@@ -152,7 +153,7 @@ Return a JSON object:
         { role: 'system', content: 'You are a precise web search query generator. Always return valid JSON with exactly 3 queries.' },
         { role: 'user', content: prompt }
       ],
-      temperature: TEMPERATURE,
+      ...temperatureParam(QUERY_DELTA_MODEL, TEMPERATURE),
       response_format: { type: 'json_object' }
     });
 

@@ -20,6 +20,7 @@ import { resetYieldStats, saveYieldReport } from '../ingestion/sourceYield';
 import { buildWeeklyEmailDigest } from '../email/buildWeeklyEmailDigest';
 import { buildWeeklyPodcast } from '../podcast/buildWeeklyPodcast';
 import { regenerateCover } from '../digest/regenerateCover';
+import { printModelRouting } from '../lib/llm/models';
 
 export type RunWeeklyPipelineOptions = {
   week?: string;               // digest week override
@@ -231,6 +232,7 @@ export async function runWeeklyPipeline(options: RunWeeklyPipelineOptions = {}):
   console.log(`  Digest week: ${digestWeek}`);
   console.log(`  Ingestion week: ${ingestionWeek}`);
   console.log(`  Caps: MAX_TOTAL=${maxTotalArticles}, MAX_PER_CATEGORY=${maxArticlesPerCategory}, MIN_PER_CATEGORY=${minArticlesPerCategory}`);
+  printModelRouting();
   console.log('');
 
   // Check if digest already exists (skip-if-exists)

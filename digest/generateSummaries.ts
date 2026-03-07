@@ -4,8 +4,9 @@
  */
 
 import OpenAI from 'openai';
+import { getModelFor, maxTokensParam, temperatureParam } from '../lib/llm/models';
 
-const AI_MODEL = "gpt-3.5-turbo";
+const AI_MODEL = getModelFor('summarize');
 const MAX_SNIPPET_LENGTH = 800;
 const MAX_OUTPUT_TOKENS = 100;
 const TEMPERATURE = 0.2;
@@ -71,8 +72,8 @@ Generate a concise summary (1-2 sentences) that captures the key points from the
     const openai = new OpenAI({ apiKey: OPENAI_API_KEY });
     const res = await openai.chat.completions.create({
       model: AI_MODEL,
-      temperature: TEMPERATURE,
-      max_tokens: MAX_OUTPUT_TOKENS,
+      ...temperatureParam(AI_MODEL, TEMPERATURE),
+      ...maxTokensParam(AI_MODEL, MAX_OUTPUT_TOKENS),
       messages: [{ role: "user", content: prompt }],
     });
     

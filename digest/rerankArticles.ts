@@ -41,12 +41,13 @@ type CandidateArticle = {
 };
 
 import { readJsonCache, writeJsonCache } from '../lib/utils/cachePaths';
+import { getModelFor, maxTokensParam, temperatureParam } from '../lib/llm/models';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 // Configuration
-const RERANK_MODEL_PRIMARY = process.env.RERANKER_MODEL_PRIMARY || process.env.RERANK_MODEL || 'gpt-4o-mini';
+const RERANK_MODEL_PRIMARY = process.env.RERANKER_MODEL_PRIMARY || process.env.RERANK_MODEL || getModelFor('rank');
 const RERANK_MODEL_FALLBACK = process.env.RERANKER_MODEL_FALLBACK || 'gpt-4.1-mini';
 const TEMPERATURE = 0; // Deterministic
 const MAX_TOKENS = 2000;
@@ -716,8 +717,8 @@ async function callRerankLLM(
       
       const request: Parameters<typeof openai.chat.completions.create>[0] = {
         model: currentModel,
-        temperature: TEMPERATURE,
-        max_tokens: MAX_TOKENS,
+        ...temperatureParam(currentModel, TEMPERATURE),
+        ...maxTokensParam(currentModel, MAX_TOKENS),
         messages: [
           {
             role: 'system',

@@ -116,5 +116,37 @@ The service worker handles push events and notification clicks:
 - Notification click opens the URL specified in payload
 - Handlers are defined in `public/push-sw.js`
 
+## FFmpeg Installation
+
+FFmpeg is required for video composition (concatenating segments, adding voiceover, burning subtitles).
+
+### Installation Instructions
+
+**macOS:**
+```bash
+brew install ffmpeg
+```
+
+**Ubuntu/Debian (CI):**
+```bash
+sudo apt-get update && sudo apt-get install -y ffmpeg
+```
+
+**Windows:**
+```bash
+winget install Gyan.FFmpeg
+```
+
+Or visit [https://ffmpeg.org/download.html](https://ffmpeg.org/download.html) for other platforms.
+
+### Verification
+
+After installation, verify FFmpeg is available:
+```bash
+ffmpeg -version
+```
+
+If you see version information, FFmpeg is installed correctly.
+
 <!-- trigger build -->
 trigger rebuild

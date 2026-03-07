@@ -1102,5 +1102,149 @@
     ],
     "cached_at": "2026-03-01T07:04:59.805Z",
     "model": "gpt-4o-mini"
+  },
+  "2026-W09:Ecommerce_Retail_Tech:349c05478655": {
+    "selected": [
+      {
+        "id": "3",
+        "rank": 1,
+        "why": "Mirakl's profitability signals marketplace platform maturity and growth",
+        "confidence": 0.95
+      },
+      {
+        "id": "9",
+        "rank": 2,
+        "why": "AI agents reaching checkout impacts ecommerce automation and fraud risk",
+        "confidence": 0.9
+      },
+      {
+        "id": "15",
+        "rank": 3,
+        "why": "Walmart app connects suppliers with real-time store-level data improving operations",
+        "confidence": 0.9
+      },
+      {
+        "id": "4",
+        "rank": 4,
+        "why": "Marketplace sellers' pricing behavior post-Supreme Court ruling affects platform dynamics",
+        "confidence": 0.85
+      },
+      {
+        "id": "7",
+        "rank": 5,
+        "why": "Dunelm’s app marks strategic omnichannel shift with operational impact",
+        "confidence": 0.85
+      },
+      {
+        "id": "2",
+        "rank": 6,
+        "why": "AI usage trends by shoppers influence ecommerce platform strategies",
+        "confidence": 0.8
+      },
+      {
+        "id": "0",
+        "rank": 7,
+        "why": "New ecommerce tools including AI assistants and fulfillment innovations",
+        "confidence": 0.8
+      }
+    ],
+    "cached_at": "2026-03-01T16:37:43.212Z",
+    "model": "gpt-4.1-mini"
+  },
+  "2026-W09:Luxury_and_Consumer:10c06e0b3054": {
+    "selected": [
+      {
+        "id": "3",
+        "rank": 1,
+        "why": "Shein's $1B supply chain investment impacts retail logistics",
+        "confidence": 0.95
+      },
+      {
+        "id": "5",
+        "rank": 2,
+        "why": "Saks CEO on brand shipping despite bankruptcy highlights supply chain resilience",
+        "confidence": 0.9
+      },
+      {
+        "id": "10",
+        "rank": 3,
+        "why": "Analysis of AI use in fashion offers retail tech insights",
+        "confidence": 0.9
+      },
+      {
+        "id": "13",
+        "rank": 4,
+        "why": "TJX's brick-and-mortar expansion shows retail store strategy",
+        "confidence": 0.85
+      },
+      {
+        "id": "1",
+        "rank": 5,
+        "why": "The RealReal's 15% revenue rise offers resale market benchmarks",
+        "confidence": 0.85
+      },
+      {
+        "id": "7",
+        "rank": 6,
+        "why": "Rising employment costs threaten retail jobs, affecting operations",
+        "confidence": 0.8
+      },
+      {
+        "id": "16",
+        "rank": 7,
+        "why": "Pickle rental app shows new ecommerce model for apparel",
+        "confidence": 0.8
+      }
+    ],
+    "cached_at": "2026-03-01T16:55:59.227Z",
+    "model": "gpt-4.1-mini"
+  },
+  "2026-W09:Jewellery_Industry:d1521baa6efa": {
+    "selected": [
+      {
+        "id": "8",
+        "rank": 1,
+        "why": "Direct retail pricing and supply chain impact",
+        "confidence": 0.9
+      },
+      {
+        "id": "12",
+        "rank": 2,
+        "why": "Actionable logistics fix for shipping errors",
+        "confidence": 0.85
+      },
+      {
+        "id": "9",
+        "rank": 3,
+        "why": "Low-cost merchandising case study improves CX",
+        "confidence": 0.8
+      },
+      {
+        "id": "0",
+        "rank": 4,
+        "why": "Data-driven diamond trends for merchandising strategy",
+        "confidence": 0.75
+      },
+      {
+        "id": "1",
+        "rank": 5,
+        "why": "Rising lab-grown diamond demand guides assortment decisions",
+        "confidence": 0.75
+      },
+      {
+        "id": "14",
+        "rank": 6,
+        "why": "Real-world exclusivity pitfalls inform vendor contracts",
+        "confidence": 0.7
+      },
+      {
+        "id": "16",
+        "rank": 7,
+        "why": "New gold-trading rules affecting supply chain compliance",
+        "confidence": 0.7
+      }
+    ],
+    "cached_at": "2026-03-01T17:07:03.554Z",
+    "model": "o4-mini"
   }
 }

@@ -10,6 +10,7 @@ import crypto from 'crypto';
 import OpenAI from 'openai';
 
 import { readJsonCache, writeJsonCache } from '../lib/utils/cachePaths';
+import { getModelFor, maxTokensParam, temperatureParam } from '../lib/llm/models';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -17,7 +18,7 @@ const __dirname = path.dirname(__filename);
 // --- Configuration ---
 
 const SCENE_DIRECTOR_VERSION = 'v3'; // Updated to playful, absurd visual metaphor approach
-const SCENE_DIRECTOR_MODEL = process.env.SCENE_DIRECTOR_MODEL || 'gpt-4o';
+const SCENE_DIRECTOR_MODEL = process.env.SCENE_DIRECTOR_MODEL || getModelFor('polish');
 const TEMPERATURE = 0.7; // Some creativity for scene generation
 const MAX_TOKENS = 2000;
 const CACHE_KIND = 'scene_director';
@@ -245,8 +246,8 @@ ${prompt}`;
           content: prompt
         }
       ],
-      temperature: TEMPERATURE,
-      max_tokens: MAX_TOKENS,
+      ...temperatureParam(SCENE_DIRECTOR_MODEL, TEMPERATURE),
+      ...maxTokensParam(SCENE_DIRECTOR_MODEL, MAX_TOKENS),
       response_format: { type: 'json_object' }
     });
     

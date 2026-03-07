@@ -3,8 +3,8 @@
   "tz": "Europe/Copenhagen",
   "startISO": "2026-02-22T23:00:00.000Z",
   "endISO": "2026-03-01T22:59:59.999Z",
-  "builtAtISO": "2026-03-01T08:05:23.191+01:00",
-  "builtAtLocal": "2026-03-01 08:05:23",
+  "builtAtISO": "2026-03-01T18:07:03.555+01:00",
+  "builtAtLocal": "2026-03-01 18:07:03",
   "totals": {
     "total": 431,
     "byTopic": {
@@ -39,15 +39,15 @@
               "large language model"
             ]
           },
-          "aiSummary": "AI-generated summary: AT&T reduced costs by 90% by transitioning from large language models to small ones for its Ask AT&T personal assistant, improving efficiency, latency, and response times.",
+          "aiSummary": "AI-generated summary: AT&T reduced costs by 90% and improved the efficiency of its Ask AT&T personal assistant by redesigning the orchestration layer and shifting tasks from large language models to smaller ones, enhancing latency, speed, and response times.",
           "translations": {
             "da": {
-              "title": "AT&T Skærer AI-omkostninger med 90% ved at Skifte Store Modeller ud med Små",
-              "summary": "AI-genereret resumé: AT&T reducerede omkostningerne med 90% ved at skifte fra store sprogmodeller til små til sin Ask AT&T personlige assistent, hvilket forbedrede effektiviteten, latenstiden og svartiderne."
+              "title": "AT&T Skærer AI-omkostninger med 90% ved at Udskifte Store Modeller med Små",
+              "summary": "AI-genereret resumé: AT&T reducerede omkostningerne med 90% og forbedrede effektiviteten af sin Ask AT&T personlige assistent ved at redesigne orkestreringslaget og flytte opgaver fra store sprogmodeller til mindre, hvilket forbedrede latenstid, hastighed og svartider."
             },
             "es": {
-              "title": "AT&T Reduce Costos de IA en un 90% al Cambiar Modelos Grandes por Pequeños",
-              "summary": "Resumen generado por IA: AT&T redujo costos en un 90% al pasar de modelos de lenguaje grandes a pequeños para su asistente personal Ask AT&T, mejorando la eficiencia, la latencia y los tiempos de respuesta."
+              "title": "AT&T Reduce los Costos de IA en un 90% al Cambiar Modelos Grandes por Pequeños",
+              "summary": "Resumen generado por IA: AT&T redujo los costos en un 90% y mejoró la eficiencia de su asistente personal Ask AT&T al rediseñar la capa de orquestación y trasladar tareas de modelos de lenguaje grandes a más pequeños, mejorando la latencia, velocidad y tiempos de respuesta."
             }
           }
         },
@@ -75,15 +75,15 @@
               "funding"
             ]
           },
-          "aiSummary": "AI-Generated Summary:\nOpenAI secures $110 billion in funding from Amazon, Nvidia, and SoftBank, marking the largest funding round for an AI startup. This investment highlights the significant financial support for frontier AI as it transitions from research to widespread commercial use.",
+          "aiSummary": "AI-generated summary: OpenAI has secured $110 billion in its largest funding round to date, led by Amazon with participation from Nvidia and SoftBank, highlighting significant capital investment as AI advances toward large-scale commercial deployment.",
           "translations": {
             "da": {
-              "title": "OpenAI rejser 110 milliarder dollars fra Amazon, Nvidia, Softbank ved en post-money værdiansættelse på 840 milliarder dollars",
-              "summary": "OpenAI sikrer 110 milliarder dollars i finansiering fra Amazon, Nvidia og SoftBank, hvilket markerer den største finansieringsrunde for en AI-startup. Denne investering fremhæver den betydelige finansielle støtte til frontier AI, når den overgår fra forskning til udbredt kommerciel brug."
+              "title": "OpenAI rejser 110 milliarder dollars fra Amazon, Nvidia, Softbank med en post-money værdiansættelse på 840 milliarder dollars",
+              "summary": "AI-genereret resumé: OpenAI har sikret 110 milliarder dollars i sin største finansieringsrunde til dato, ledet af Amazon med deltagelse fra Nvidia og SoftBank, hvilket understreger betydelige kapitalinvesteringer, mens AI bevæger sig mod storskala kommerciel udrulning."
             },
             "es": {
-              "title": "OpenAI recauda $110 mil millones de Amazon, Nvidia, Softbank con una valoración post-money de $840 mil millones",
-              "summary": "OpenAI asegura $110 mil millones en financiamiento de Amazon, Nvidia y SoftBank, marcando la mayor ronda de financiamiento para una startup de IA. Esta inversión destaca el significativo apoyo financiero para la IA de frontera a medida que pasa de la investigación al uso comercial generalizado."
+              "title": "OpenAI recauda 110 mil millones de dólares de Amazon, Nvidia, Softbank con una valoración post-money de 840 mil millones",
+              "summary": "Resumen generado por IA: OpenAI ha asegurado 110 mil millones de dólares en su ronda de financiación más grande hasta la fecha, liderada por Amazon con la participación de Nvidia y SoftBank, destacando una inversión de capital significativa a medida que la IA avanza hacia un despliegue comercial a gran escala."
             }
           }
         },
@@ -107,15 +107,15 @@
               "anthropic"
             ]
           },
-          "aiSummary": "AI-Generated Summary:\nAnthropic has accused three Chinese companies of using fraudulent accounts to train their chatbots, claiming that DeepSeek, Moonshot, and MiniMax harvested its data for this purpose.",
+          "aiSummary": "AI-generated summary: In a February 2026 report by NYTimes Technology, the San Francisco start-up Anthropic accused three Chinese companies—DeepSeek, Moonshot, and MiniMax—of using around 24,000 fraudulent accounts to harvest its data for training their chatbots.",
           "translations": {
             "da": {
-              "title": "Anthropic anklager 3 kinesiske virksomheder for at høste deres data",
-              "summary": "Anthropic har anklaget tre kinesiske virksomheder for at bruge falske konti til at træne deres chatbots og hævder, at DeepSeek, Moonshot og MiniMax har høstet deres data til dette formål."
+              "title": "Anthropic Anklager 3 Kinesiske Virksomheder for at Høste Dets Data",
+              "summary": "AI-genereret resumé: I en rapport fra februar 2026 fra NYTimes Technology anklagede San Francisco-startuppet Anthropic tre kinesiske virksomheder—DeepSeek, Moonshot og MiniMax—for at bruge omkring 24.000 falske konti til at høste dets data til træning af deres chatbots."
             },
             "es": {
-              "title": "Anthropic acusa a 3 empresas chinas de cosechar sus datos",
-              "summary": "Anthropic ha acusado a tres empresas chinas de usar cuentas fraudulentas para entrenar sus chatbots, afirmando que DeepSeek, Moonshot y MiniMax cosecharon sus datos para este propósito."
+              "title": "Anthropic Acusa a 3 Empresas Chinas de Recopilar Sus Datos",
+              "summary": "Resumen generado por IA: En un informe de febrero de 2026 de NYTimes Technology, la start-up de San Francisco Anthropic acusó a tres empresas chinas—DeepSeek, Moonshot y MiniMax—de usar alrededor de 24,000 cuentas fraudulentas para recopilar sus datos y entrenar sus chatbots."
             }
           }
         },
@@ -140,15 +140,15 @@
               "artificial intelligence"
             ]
           },
-          "aiSummary": "AI-Generated Summary: Anthropic Chief is summoned by the Pentagon amid negotiations with the Defense Department, with the artificial intelligence company pushing for limits to be established.",
+          "aiSummary": "AI-generated summary: The Pentagon has summoned the chief of Anthropic amid a dispute over implementing guardrails in their contract negotiations, as the AI company seeks limits on artificial intelligence use with the Defense Department.",
           "translations": {
             "da": {
-              "title": "Pentagon indkalder Anthropic-chef i strid om A.I.-grænser",
-              "summary": "Anthropic-chefen indkaldes af Pentagon midt i forhandlinger med forsvarsministeriet, hvor den kunstige intelligensvirksomhed presser på for at få etableret grænser."
+              "title": "Pentagon indkalder Anthropic-chef i tvist om AI-grænser",
+              "summary": "AI-genereret resumé: Pentagon har indkaldt chefen for Anthropic midt i en tvist om implementering af sikkerhedsforanstaltninger i deres kontraktforhandlinger, da AI-virksomheden søger grænser for brugen af kunstig intelligens med Forsvarsministeriet."
             },
             "es": {
-              "title": "El Pentágono convoca al jefe de Anthropic en disputa sobre límites de A.I.",
-              "summary": "El jefe de Anthropic es convocado por el Pentágono en medio de negociaciones con el Departamento de Defensa, mientras la empresa de inteligencia artificial presiona para establecer límites."
+              "title": "El Pentágono convoca al jefe de Anthropic por disputa sobre límites de IA",
+              "summary": "Resumen generado por IA: El Pentágono ha convocado al jefe de Anthropic en medio de una disputa sobre la implementación de salvaguardas en sus negociaciones contractuales, ya que la empresa de IA busca límites en el uso de inteligencia artificial con el Departamento de Defensa."
             }
           }
         },
@@ -173,15 +173,15 @@
               "gemini"
             ]
           },
-          "aiSummary": "AI-Generated Summary:\nOver 100 Google A.I. employees have raised concerns about the use of Gemini technology for U.S. surveillance and autonomous weapons, urging for clear boundaries on military applications.",
+          "aiSummary": "AI-generated summary: Over 100 Google A.I. employees have sent a letter to chief scientist Jeff Dean opposing the use of the Gemini project for U.S. surveillance and certain autonomous weapons, reflecting concerns similar to those raised by Anthropic.",
           "translations": {
             "da": {
-              "title": "Google-arbejdere søger 'røde linjer' for militær A.I., som svarer til Anthropic",
-              "summary": "Over 100 Google A.I. medarbejdere har rejst bekymringer om brugen af Gemini-teknologi til amerikansk overvågning og autonome våben, og opfordrer til klare grænser for militære anvendelser."
+              "title": "Google-medarbejdere søger 'røde linjer' for militær A.I., i tråd med Anthropic",
+              "summary": "AI-genereret resumé: Over 100 Google A.I.-medarbejdere har sendt et brev til chefvidenskabsmand Jeff Dean, hvor de modsætter sig brugen af Gemini-projektet til amerikansk overvågning og visse autonome våben, hvilket afspejler bekymringer, der ligner dem fra Anthropic."
             },
             "es": {
-              "title": "Los trabajadores de Google buscan 'líneas rojas' sobre la A.I. militar, eco de Anthropic",
-              "summary": "Más de 100 empleados de A.I. de Google han expresado su preocupación por el uso de la tecnología Gemini para la vigilancia estadounidense y las armas autónomas, instando a establecer límites claros en las aplicaciones militares."
+              "title": "Trabajadores de Google buscan ‘líneas rojas’ en A.I. militar, eco de Anthropic",
+              "summary": "Resumen generado por IA: Más de 100 empleados de A.I. de Google enviaron una carta al científico jefe Jeff Dean oponiéndose al uso del proyecto Gemini para la vigilancia en EE.UU. y ciertas armas autónomas, reflejando preocupaciones similares a las planteadas por Anthropic."
             }
           }
         },
@@ -207,15 +207,15 @@
               "funding"
             ]
           },
-          "aiSummary": "AI-Generated Summary:\nAmazon has committed $50 billion to OpenAI, the largest amount in this funding round, surpassing Nvidia and SoftBank. This investment gives OpenAI a pre-money valuation of $730 billion.",
+          "aiSummary": "AI-generated summary: Amazon has committed $50 billion to OpenAI, marking the largest investment in this funding round and surpassing Nvidia and SoftBank's $30 billion pledges, as part of a multi-year partnership with AWS that values OpenAI at $730 billion pre-money.",
           "translations": {
             "da": {
-              "title": "Amazon forpligter $50 milliarder til OpenAI; annoncerer flerårigt partnerskab med AWS",
-              "summary": "Amazon har forpligtet $50 milliarder til OpenAI, det største beløb i denne finansieringsrunde, som overgår Nvidia og SoftBank. Denne investering giver OpenAI en før-pengevurdering på $730 milliarder."
+              "title": "Amazon investerer 50 milliarder dollars i OpenAI; annoncerer flerårigt partnerskab med AWS",
+              "summary": "AI-genereret resumé: Amazon har forpligtet sig til 50 milliarder dollars til OpenAI, hvilket markerer den største investering i denne finansieringsrunde og overgår Nvidia og SoftBanks løfter på 30 milliarder dollars, som en del af et flerårigt partnerskab med AWS, der værdisætter OpenAI til 730 milliarder dollars før kapitaltilførsel."
             },
             "es": {
-              "title": "Amazon se compromete a $50 mil millones con OpenAI; anuncia asociación a varios años con AWS",
-              "summary": "Amazon se ha comprometido a $50 mil millones con OpenAI, la mayor cantidad en esta ronda de financiación, superando a Nvidia y SoftBank. Esta inversión otorga a OpenAI una valoración previa al dinero de $730 mil millones."
+              "title": "Amazon compromete 50 mil millones de dólares a OpenAI; anuncia asociación multianual con AWS",
+              "summary": "Resumen generado por IA: Amazon ha comprometido 50 mil millones de dólares a OpenAI, marcando la mayor inversión en esta ronda de financiación y superando los compromisos de 30 mil millones de Nvidia y SoftBank, como parte de una asociación multianual con AWS que valora a OpenAI en 730 mil millones antes de la inversión."
             }
           }
         },
@@ -241,15 +241,15 @@
               "anthropic"
             ]
           },
-          "aiSummary": "AI-Generated Summary:\nOpenAI has secured a contract with the Pentagon for its technology on classified networks, implementing robust safeguards to prevent breaches. The deal includes more protective measures compared to previous classified AI deployments, addressing concerns raised by the Pentagon about supply-chain risks.",
+          "aiSummary": "AI-generated summary: OpenAI has secured a deal with the US Department of Defense to deploy its technology on classified networks, incorporating extensive safeguards and layered protections that surpass previous classified AI agreements. This move follows the Pentagon's designation of Anthropic as a supply-chain risk.",
           "translations": {
             "da": {
-              "title": "'Enhver kontraktbrud kan udløse en opsigelse': OpenAIs lagdelte beskyttelser i forsvarsministeriets aftale",
-              "summary": "OpenAI har sikret sig en kontrakt med Pentagon for sin teknologi på klassificerede netværk og implementeret robuste sikkerhedsforanstaltninger for at forhindre brud. Aftalen inkluderer flere beskyttende foranstaltninger sammenlignet med tidligere klassificerede AI-udrulninger, der adresserer bekymringer rejst af Pentagon om forsyningskæderisici."
+              "title": "'Enhver kontraktbrud kan udløse en opsigelse': OpenAIs lagdelte beskyttelser i aftale med det amerikanske forsvarsministerium",
+              "summary": "AI-genereret resumé: OpenAI har sikret en aftale med det amerikanske forsvarsministerium om at implementere sin teknologi på klassificerede netværk, med omfattende sikkerhedsforanstaltninger og lagdelte beskyttelser, der overgår tidligere klassificerede AI-aftaler. Dette sker efter Pentagons udpegning af Anthropic som en forsyningskæderisiko."
             },
             "es": {
-              "title": "'Cualquier incumplimiento del contrato podría desencadenar una rescisión': Las protecciones en capas de OpenAI en el pacto del departamento de defensa de EE. UU.",
-              "summary": "OpenAI ha asegurado un contrato con el Pentágono para su tecnología en redes clasificadas, implementando salvaguardias robustas para prevenir incumplimientos. El acuerdo incluye más medidas de protección en comparación con implementaciones anteriores de IA clasificadas, abordando las preocupaciones planteadas por el Pentágono sobre los riesgos de la cadena de suministro."
+              "title": "'Cualquier incumplimiento del contrato podría desencadenar una terminación': las protecciones en capas de OpenAI en el pacto con el Departamento de Defensa de EE.UU.",
+              "summary": "Resumen generado por IA: OpenAI ha asegurado un acuerdo con el Departamento de Defensa de EE.UU. para desplegar su tecnología en redes clasificadas, incorporando salvaguardas extensas y protecciones en capas que superan acuerdos anteriores de IA clasificada. Este movimiento sigue a la designación de Anthropic por parte del Pentágono como un riesgo en la cadena de suministro."
             }
           }
         }
@@ -279,15 +279,78 @@
               "platform"
             ]
           },
-          "aiSummary": "AI-generated summary:\nMirakl achieved full-year profitability in 2025 as recurring revenue and marketplace activity grew, with annual recurring revenue reaching $218 million, a 23% increase from the previous year.",
+          "aiSummary": "AI-generated summary: Mirakl achieved full-year profitability in 2025, driven by a 23% increase in annual recurring revenue to $218 million and growth in marketplace and dropship activity on its platform. The Boston- and Paris-based ecommerce software provider marked this financial milestone amid expanding marketplace operations.",
           "translations": {
             "da": {
               "title": "Mirakl bliver rentabel, da tilbagevendende indtægter og markedspladsaktivitet vokser",
-              "summary": "Mirakl opnåede fuldårs rentabilitet i 2025, da tilbagevendende indtægter og markedspladsaktivitet voksede, med årlige tilbagevendende indtægter på 218 millioner dollars, en stigning på 23% fra året før."
+              "summary": "Mirakl opnåede fuldårsprofit i 2025, drevet af en 23% stigning i årlige tilbagevendende indtægter til 218 millioner dollars og vækst i markedsplads- og dropship-aktivitet på sin platform. Den Boston- og Paris-baserede e-handelssoftwareudbyder markerede denne økonomiske milepæl midt i udvidelse af markedspladsoperationer."
             },
             "es": {
-              "title": "Mirakl se vuelve rentable a medida que crecen los ingresos recurrentes y la actividad del mercado",
-              "summary": "Mirakl logró rentabilidad anual en 2025 a medida que crecieron los ingresos recurrentes y la actividad del mercado, con ingresos recurrentes anuales alcanzando los 218 millones de dólares, un aumento del 23% en comparación con el año anterior."
+              "title": "Mirakl se vuelve rentable a medida que crecen los ingresos recurrentes y la actividad del marketplace",
+              "summary": "Mirakl alcanzó la rentabilidad anual en 2025, impulsada por un aumento del 23% en los ingresos recurrentes anuales hasta 218 millones de dólares y un crecimiento en la actividad del marketplace y dropship en su plataforma. El proveedor de software de comercio electrónico con sede en Boston y París marcó este hito financiero en medio de la expansión de sus operaciones de marketplace."
+            }
+          }
+        },
+        {
+          "id": "ciihg0",
+          "title": "Why AI agents are reaching checkout without clear rules",
+          "url": "https://www.digitalcommerce360.com/2026/02/24/why-ai-agents-are-reaching-checkout-without-clear-rules/",
+          "source": "Digital Commerce 360",
+          "published_at": "2026-02-24T19:12:57.000Z",
+          "ingested_at": "2026-03-01T06:55:45.847Z",
+          "snippet": "AI agents are moving from answering questions to taking actions (such as checkout) inside browsers, business software and automation platforms, but a new research index finds that the rules governing how those systems operate — and how they are held accountable — are lagging their commercial use. Researchers affiliated with Massachusetts Institute of Technology (MIT) […]\nThe post Why AI agents are reaching checkout without clear rules appeared first on Digital Commerce 360.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "checkout",
+              "platform"
+            ]
+          },
+          "aiSummary": "AI-generated summary: AI agents are increasingly performing actions like completing checkouts within browsers and business software, but research from MIT highlights that regulatory frameworks and accountability measures for these systems have not kept pace with their commercial deployment.",
+          "translations": {
+            "da": {
+              "title": "Hvorfor AI-agenter når kassen uden klare regler",
+              "summary": "AI-genereret resumé: AI-agenter udfører i stigende grad handlinger som at gennemføre køb i browsere og forretningssoftware, men forskning fra MIT understreger, at reguleringsrammer og ansvarlighed for disse systemer ikke har fulgt med deres kommercielle udrulning."
+            },
+            "es": {
+              "title": "Por qué los agentes de IA llegan a la caja sin reglas claras",
+              "summary": "Resumen generado por IA: Los agentes de IA realizan cada vez más acciones como completar compras en navegadores y software empresarial, pero investigaciones del MIT destacan que los marcos regulatorios y las medidas de responsabilidad para estos sistemas no han avanzado al ritmo de su despliegue comercial."
+            }
+          }
+        },
+        {
+          "id": "t1nwva",
+          "title": "Walmart app connects suppliers with store-level data",
+          "url": "https://www.retaildive.com/news/walmart-app-scintilla-in-store-connects-suppliers-store-level-data/813211/",
+          "source": "Retail Dive",
+          "published_at": "2026-02-27T17:20:00.000Z",
+          "ingested_at": "2026-03-01T06:55:45.847Z",
+          "snippet": "Walmart Data Ventures introduced Scintilla In-Store so field representatives can see real-time data — in part to reduce out-of-stocks.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": []
+          },
+          "aiSummary": "AI-generated summary: Walmart Data Ventures launched the Scintilla In-Store app, enabling field representatives to access real-time store-level data to help reduce out-of-stock situations. This development aims to enhance supplier connectivity within Walmart's retail operations.",
+          "translations": {
+            "da": {
+              "title": "Walmart-app forbinder leverandører med data på butiksniveau",
+              "summary": "AI-genereret resumé: Walmart Data Ventures lancerede Scintilla In-Store-appen, som gør det muligt for feltrepræsentanter at få adgang til realtidsdata på butiksniveau for at hjælpe med at reducere udsolgte situationer. Denne udvikling sigter mod at forbedre leverandørforbindelsen i Walmarts detaildrift."
+            },
+            "es": {
+              "title": "La app de Walmart conecta a proveedores con datos a nivel de tienda",
+              "summary": "Resumen generado por IA: Walmart Data Ventures lanzó la app Scintilla In-Store, que permite a los representantes de campo acceder a datos en tiempo real a nivel de tienda para ayudar a reducir las situaciones de falta de stock. Este desarrollo busca mejorar la conectividad de los proveedores dentro de las operaciones minoristas de Walmart."
             }
           }
         },
@@ -311,45 +374,45 @@
               "marketplace"
             ]
           },
-          "aiSummary": "AI-Generated Summary:\nOnline merchants, including Amazon sellers, are not reducing prices despite the Supreme Court's decision to overturn Trump's tariffs, as reported by Modern Retail on February 26, 2026.",
+          "aiSummary": "AI-generated summary: Despite the Supreme Court ruling that struck down Trump's tariffs, many Amazon sellers and online brands report they are not lowering their prices, according to a Modern Retail article dated February 26, 2026.",
           "translations": {
             "da": {
-              "title": "Markedsplads Briefing: Online forhandlere sænker ikke priserne trods Højesteretsafgørelse",
-              "summary": "Online forhandlere, herunder Amazon-sælgere, sænker ikke priserne trods Højesterets beslutning om at omstøde Trumps told, som rapporteret af Modern Retail den 26. februar 2026."
+              "title": "Marketplace Briefing: Onlineforhandlere sænker ikke priserne trods afgørelse fra Højesteret",
+              "summary": "AI-genereret resumé: På trods af Højesterets afgørelse, der ophævede Trumps toldsatser, rapporterer mange Amazon-sælgere og onlinebrands, at de ikke sænker deres priser, ifølge en artikel fra Modern Retail dateret 26. februar 2026."
             },
             "es": {
-              "title": "Informe del Mercado: Los comerciantes en línea no están bajando precios a pesar de la decisión de la Corte Suprema",
-              "summary": "Los comerciantes en línea, incluidos los vendedores de Amazon, no están reduciendo precios a pesar de la decisión de la Corte Suprema de anular los aranceles de Trump, según informó Modern Retail el 26 de febrero de 2026."
+              "title": "Marketplace Briefing: Los comerciantes en línea no bajan los precios a pesar del fallo de la Corte Suprema",
+              "summary": "Resumen generado por IA: A pesar del fallo de la Corte Suprema que anuló los aranceles de Trump, muchos vendedores de Amazon y marcas en línea informan que no están bajando sus precios, según un artículo de Modern Retail fechado el 26 de febrero de 2026."
             }
           }
         },
         {
-          "id": "t1nwva",
-          "title": "Walmart app connects suppliers with store-level data",
-          "url": "https://www.retaildive.com/news/walmart-app-scintilla-in-store-connects-suppliers-store-level-data/813211/",
-          "source": "Retail Dive",
-          "published_at": "2026-02-27T17:20:00.000Z",
+          "id": "168rqp",
+          "title": "ANALYSIS: Dunelm’s new app marks a strategic shift toward deeper omnichannel engagement",
+          "url": "https://internetretailing.net/analysis-dunelms-new-app-marks-a-strategic-shift-toward-deeper-omnichannel-engagement/",
+          "source": "Internet Retailing",
+          "published_at": "2026-02-24T11:32:59.000Z",
           "ingested_at": "2026-03-01T06:55:45.847Z",
-          "snippet": "Walmart Data Ventures introduced Scintilla In-Store so field representatives can see real-time data — in part to reduce out-of-stocks.",
+          "snippet": "Dunelm’s new app - rolled out for iOS and Android this week - is a significant step in the retailer’s long‑running effort to tighten the integration between its physical estate, digital experiences and customer data. \nThe post ANALYSIS: Dunelm’s new app marks a strategic shift toward deeper omnichannel engagement appeared first on InternetRetailing.",
           "sourceType": "rss",
           "relevance": {
-            "scoreTotal": 0.15000000000000002,
+            "scoreTotal": 0.1,
             "recencyScore": 0,
-            "sourceWeight": 0.1,
+            "sourceWeight": 0,
             "keywordBoost": 0,
-            "insightSignalBoost": 0.05,
+            "insightSignalBoost": 0.1,
             "penalty": 0,
             "matchedKeywords": []
           },
-          "aiSummary": "AI-generated summary:\nWalmart Data Ventures launched Scintilla In-Store to provide real-time data to field representatives, aiming to decrease out-of-stocks in stores.",
+          "aiSummary": "AI-generated summary: Dunelm has launched a new app for iOS and Android as part of its ongoing strategy to enhance omnichannel engagement by better integrating its physical stores, digital platforms, and customer data. This move represents a significant shift in the retailer’s approach to ecommerce and retail technology.",
           "translations": {
             "da": {
-              "title": "Walmart-appen forbinder leverandører med data på butiksniveau",
-              "summary": "Walmart Data Ventures lancerede Scintilla In-Store for at give realtidsdata til feltrepræsentanter med det mål at mindske udsolgte varer i butikkerne."
+              "title": "ANALYSE: Dunelms nye app markerer et strategisk skift mod dybere omnichannel engagement",
+              "summary": "AI-genereret resumé: Dunelm har lanceret en ny app til iOS og Android som en del af sin løbende strategi for at forbedre omnichannel engagement ved bedre at integrere sine fysiske butikker, digitale platforme og kundedata. Dette skridt repræsenterer et betydeligt skift i detailhandlerens tilgang til e-handel og detailteknologi."
             },
             "es": {
-              "title": "La app de Walmart conecta a los proveedores con datos a nivel de tienda",
-              "summary": "Walmart Data Ventures lanzó Scintilla In-Store para proporcionar datos en tiempo real a los representantes de campo, con el objetivo de reducir la falta de stock en las tiendas."
+              "title": "ANÁLISIS: La nueva app de Dunelm marca un cambio estratégico hacia un compromiso omnicanal más profundo",
+              "summary": "Resumen generado por IA: Dunelm ha lanzado una nueva app para iOS y Android como parte de su estrategia continua para mejorar el compromiso omnicanal integrando mejor sus tiendas físicas, plataformas digitales y datos de clientes. Este movimiento representa un cambio significativo en el enfoque del minorista hacia el comercio electrónico y la tecnología minorista."
             }
           }
         },
@@ -376,112 +439,48 @@
               "platform"
             ]
           },
-          "aiSummary": "AI-generated summary: Online retailers in 2026 are exploring the use of AI platforms like ChatGPT, Gemini, and Perplexity, as shoppers are utilizing these tools for decision-making and making purchases through new checkout experiences.",
+          "aiSummary": "AI-generated summary: In 2026, online shoppers are increasingly using AI platforms like ChatGPT, Gemini, and Perplexity to research and make purchases, prompting retailers to reconsider their adoption of AI and agentic commerce technologies.",
           "translations": {
             "da": {
-              "title": "Ecommerce Trends: Hvad shoppere bruger AI til at købe",
-              "summary": "AI-genereret resumé: Online detailhandlere i 2026 udforsker brugen af AI-platforme som ChatGPT, Gemini og Perplexity, da shoppere bruger disse værktøjer til beslutningstagning og foretager køb gennem nye betalingsoplevelser."
+              "title": "E-handelstendenser: Hvad kunder bruger AI til at købe",
+              "summary": "AI-genereret resumé: I 2026 bruger onlinekunder i stigende grad AI-platforme som ChatGPT, Gemini og Perplexity til at undersøge og foretage køb, hvilket får detailhandlere til at genoverveje deres brug af AI og agentisk handelsteknologi."
             },
             "es": {
-              "title": "Tendencias de Ecommerce: Lo que los compradores están usando IA para comprar",
-              "summary": "Resumen generado por IA: Los minoristas en línea en 2026 están explorando el uso de plataformas de IA como ChatGPT, Gemini y Perplexity, ya que los compradores están utilizando estas herramientas para la toma de decisiones y realizando compras a través de nuevas experiencias de pago."
+              "title": "Tendencias de comercio electrónico: Lo que los compradores usan IA para comprar",
+              "summary": "Resumen generado por IA: En 2026, los compradores en línea utilizan cada vez más plataformas de IA como ChatGPT, Gemini y Perplexity para investigar y realizar compras, lo que lleva a los minoristas a reconsiderar su adopción de tecnologías de IA y comercio agente."
             }
           }
         },
         {
-          "id": "uws3v4",
-          "title": "Furniture.com launches AI-powered discovery platform",
-          "url": "https://www.digitalcommerce360.com/2026/02/24/furniture-com-launches-ai-powered-discovery-platform/",
-          "source": "Digital Commerce 360",
-          "published_at": "2026-02-24T21:43:09.000Z",
+          "id": "q19qm7",
+          "title": "New Ecommerce Tools: February 25, 2026",
+          "url": "https://www.practicalecommerce.com/new-ecommerce-tools-february-25-2026",
+          "source": "Practical Ecommerce",
+          "published_at": "2026-02-25T11:53:03.000Z",
           "ingested_at": "2026-03-01T06:55:45.847Z",
-          "snippet": "Furniture.com has announced changes to its ecommerce website that it said “evolves” the site “from marketplace aggregator into AI-powered decision infrastructure.” It announced its changes at the eTail Palm Springs conference on Feb. 23. There, Furniture.com said its new artificial intelligence (AI)-powered platform allows consumers to discover, compare and check out furniture across multiple brands. […]\nThe post Furniture.com launches AI-powered discovery platform appeared first on Digital Comm...",
+          "snippet": "This week's rundown includes tools for third-party fulfillment, AI assistants, agentic commerce, omnichannel retail, Shopify, live-streaming, fraud prevention, and more.\nThe post New Ecommerce Tools: February 25, 2026 appeared first on Practical Ecommerce.",
           "sourceType": "rss",
           "relevance": {
-            "scoreTotal": 0.15000000000000002,
+            "scoreTotal": 0.2,
             "recencyScore": 0,
-            "sourceWeight": 0,
-            "keywordBoost": 0.15000000000000002,
-            "insightSignalBoost": 0,
-            "penalty": 0,
-            "matchedKeywords": [
-              "platform",
-              "ecommerce",
-              "marketplace"
-            ]
-          },
-          "aiSummary": "Furniture.com has transformed its ecommerce website into an AI-powered decision infrastructure, allowing consumers to discover, compare, and purchase furniture from various brands. This announcement was made at the eTail Palm Springs conference on Feb. 23, as reported by Digital Commerce 360 on February 24, 2026.",
-          "translations": {
-            "da": {
-              "title": "Furniture.com lancerer AI-drevet opdagelsesplatform",
-              "summary": "Furniture.com har transformeret sin e-handelswebsite til en AI-drevet beslutningsinfrastruktur, der gør det muligt for forbrugerne at opdage, sammenligne og købe møbler fra forskellige mærker. Denne meddelelse blev givet på eTail Palm Springs-konferencen den 23. februar, som rapporteret af Digital Commerce 360 den 24. februar 2026."
-            },
-            "es": {
-              "title": "Furniture.com lanza plataforma de descubrimiento impulsada por IA",
-              "summary": "Furniture.com ha transformado su sitio web de comercio electrónico en una infraestructura de decisión impulsada por IA, permitiendo a los consumidores descubrir, comparar y comprar muebles de varias marcas. Este anuncio se hizo en la conferencia eTail Palm Springs el 23 de febrero, según informó Digital Commerce 360 el 24 de febrero de 2026."
-            }
-          }
-        },
-        {
-          "id": "4rb519",
-          "title": "Roblox surges past TikTok as the fastest‑growing Gen Z shopping channel",
-          "url": "https://internetretailing.net/roblox-surges-past-tiktok-as-the-fastest%e2%80%91growing-gen-z-shopping-channel/",
-          "source": "Internet Retailing",
-          "published_at": "2026-02-25T12:56:48.000Z",
-          "ingested_at": "2026-03-01T06:55:45.847Z",
-          "snippet": "Roblox has overtaken TikTok as the fastest-growing Gen Z commerce channel,  according to the latest research from the Retail Technology Show (RTS).  \nThe post Roblox surges past TikTok as the fastest‑growing Gen Z shopping channel appeared first on InternetRetailing.",
-          "sourceType": "rss",
-          "relevance": {
-            "scoreTotal": 0.1,
-            "recencyScore": 0,
-            "sourceWeight": 0,
+            "sourceWeight": 0.1,
             "keywordBoost": 0.1,
             "insightSignalBoost": 0,
             "penalty": 0,
             "matchedKeywords": [
-              "shopping",
-              "retail tech"
+              "ecommerce",
+              "fulfillment"
             ]
           },
-          "aiSummary": "AI-Generated Summary: Roblox has surpassed TikTok as the quickest-growing shopping platform for Gen Z, based on research from the Retail Technology Show (RTS) as reported by Internet Retailing on February 25, 2026.",
+          "aiSummary": "AI-generated summary: The article from Practical Ecommerce dated February 25, 2026, highlights new ecommerce tools focusing on third-party fulfillment, AI assistants, agentic commerce, omnichannel retail, Shopify integration, live-streaming, and fraud prevention.",
           "translations": {
             "da": {
-              "title": "Roblox overhaler TikTok som den hurtigst voksende shoppingkanal for Gen Z",
-              "summary": "AI-genereret resumé: Roblox har overhalet TikTok som den hurtigst voksende shoppingplatform for Gen Z, baseret på forskning fra Retail Technology Show (RTS) som rapporteret af Internet Retailing den 25. februar 2026."
+              "title": "Nye Ecommerce-værktøjer: 25. februar 2026",
+              "summary": "AI-genereret resumé: Artiklen fra Practical Ecommerce dateret 25. februar 2026 fremhæver nye ecommerce-værktøjer med fokus på tredjepartsopfyldelse, AI-assistenter, agentisk handel, omnichannel detailhandel, Shopify-integration, live-streaming og svindelforebyggelse."
             },
             "es": {
-              "title": "Roblox supera a TikTok como el canal de compras de Gen Z de más rápido crecimiento",
-              "summary": "Resumen generado por IA: Roblox ha superado a TikTok como la plataforma de compras de más rápido crecimiento para Gen Z, según una investigación del Retail Technology Show (RTS) reportada por Internet Retailing el 25 de febrero de 2026."
-            }
-          }
-        },
-        {
-          "id": "168rqp",
-          "title": "ANALYSIS: Dunelm’s new app marks a strategic shift toward deeper omnichannel engagement",
-          "url": "https://internetretailing.net/analysis-dunelms-new-app-marks-a-strategic-shift-toward-deeper-omnichannel-engagement/",
-          "source": "Internet Retailing",
-          "published_at": "2026-02-24T11:32:59.000Z",
-          "ingested_at": "2026-03-01T06:55:45.847Z",
-          "snippet": "Dunelm’s new app - rolled out for iOS and Android this week - is a significant step in the retailer’s long‑running effort to tighten the integration between its physical estate, digital experiences and customer data. \nThe post ANALYSIS: Dunelm’s new app marks a strategic shift toward deeper omnichannel engagement appeared first on InternetRetailing.",
-          "sourceType": "rss",
-          "relevance": {
-            "scoreTotal": 0.1,
-            "recencyScore": 0,
-            "sourceWeight": 0,
-            "keywordBoost": 0,
-            "insightSignalBoost": 0.1,
-            "penalty": 0,
-            "matchedKeywords": []
-          },
-          "aiSummary": "AI-Generated Summary: Dunelm's new app, launched for iOS and Android, signifies a strategic move towards enhancing omnichannel engagement by integrating physical stores, digital experiences, and customer data.",
-          "translations": {
-            "da": {
-              "title": "ANALYSE: Dunelms nye app markerer et strategisk skift mod dybere omnichannel engagement",
-              "summary": "AI-genereret resumé: Dunelms nye app, lanceret til iOS og Android, betyder et strategisk skridt mod at forbedre omnichannel engagement ved at integrere fysiske butikker, digitale oplevelser og kundedata."
-            },
-            "es": {
-              "title": "ANÁLISIS: La nueva app de Dunelm marca un cambio estratégico hacia un compromiso omnicanal más profundo",
-              "summary": "Resumen generado por IA: La nueva app de Dunelm, lanzada para iOS y Android, significa un movimiento estratégico hacia la mejora del compromiso omnicanal al integrar tiendas físicas, experiencias digitales y datos de clientes."
+              "title": "Nuevas herramientas de ecommerce: 25 de febrero de 2026",
+              "summary": "Resumen generado por IA: El artículo de Practical Ecommerce fechado el 25 de febrero de 2026 destaca nuevas herramientas de ecommerce centradas en el cumplimiento por terceros, asistentes de IA, comercio agéntico, venta omnicanal, integración con Shopify, transmisión en vivo y prevención de fraudes."
             }
           }
         }
@@ -490,6 +489,37 @@
     "Luxury_and_Consumer": {
       "total": 80,
       "top": [
+        {
+          "id": "cea5tk",
+          "title": "Shein Pledges China Supply Chain Investment to Woo Beijing",
+          "url": "https://www.businessoffashion.com/news/china/shein-pledges-china-supply-chain-investment-to-woo-beijing/",
+          "source": "Business of Fashion - News",
+          "published_at": "2026-02-24T10:06:52.000Z",
+          "ingested_at": "2026-03-01T06:55:45.847Z",
+          "snippet": "The ultra-fast fashion retailer plans to invest over $1.45 billion into intelligent supply chain systems in Southern China in a bid to reinforce ties with Beijing as it deals with mounting challenges.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": []
+          },
+          "aiSummary": "AI-generated summary: Shein plans to invest over $1.45 billion in intelligent supply chain systems in Southern China to strengthen its relationship with Beijing amid growing challenges. This move reflects the ultra-fast fashion retailer's commitment to enhancing its supply chain capabilities.",
+          "translations": {
+            "da": {
+              "title": "Shein lover investering i Kinas forsyningskæde for at tiltrække Beijing",
+              "summary": "Shein planlægger at investere over 1,45 milliarder dollars i intelligente forsyningskædesystemer i det sydlige Kina for at styrke sit forhold til Beijing midt i voksende udfordringer. Dette skridt afspejler den ultra-hurtige modeforhandlers engagement i at forbedre sine forsyningskædekapaciteter."
+            },
+            "es": {
+              "title": "Shein promete inversión en la cadena de suministro de China para atraer a Beijing",
+              "summary": "Shein planea invertir más de 1.45 mil millones de dólares en sistemas inteligentes de cadena de suministro en el sur de China para fortalecer su relación con Beijing en medio de crecientes desafíos. Este movimiento refleja el compromiso del minorista de moda ultrarrápida para mejorar sus capacidades en la cadena de suministro."
+            }
+          }
+        },
         {
           "id": "ziemk",
           "title": "Saks Global CEO Says Top Brands Are Shipping Despite Bankruptcy",
@@ -512,149 +542,109 @@
               "luxury"
             ]
           },
-          "aiSummary": "AI-Generated Summary:\nSaks Global CEO confirms top luxury brands like Burberry, LVMH, and Kering continue to ship goods despite bankruptcy, with over 380 brands involved.",
+          "aiSummary": "AI-generated summary: According to the Saks Global CEO, over 380 top brands, including Burberry and those under LVMH and Kering, continue to ship goods despite bankruptcy. This highlights ongoing activity within the luxury and consumer sector.",
           "translations": {
             "da": {
-              "title": "Saks Global CEO siger, at topmærker sender varer trods konkurs",
-              "summary": "Saks Global CEO bekræfter, at top luksusmærker som Burberry, LVMH og Kering fortsætter med at sende varer trods konkurs, med over 380 involverede mærker."
+              "title": "Saks Globals CEO siger, at topmærker sender varer trods konkurs",
+              "summary": "Ifølge Saks Globals CEO fortsætter over 380 topmærker, herunder Burberry samt mærker under LVMH og Kering, med at sende varer trods konkurs. Dette fremhæver den fortsatte aktivitet inden for luksus- og forbrugssektoren."
             },
             "es": {
-              "title": "El CEO de Saks Global dice que las principales marcas siguen enviando a pesar de la bancarrota",
-              "summary": "El CEO de Saks Global confirma que las principales marcas de lujo como Burberry, LVMH y Kering continúan enviando productos a pesar de la bancarrota, con más de 380 marcas involucradas."
+              "title": "CEO de Saks Global dice que las principales marcas siguen enviando a pesar de la bancarrota",
+              "summary": "Según el CEO de Saks Global, más de 380 marcas principales, incluyendo Burberry y las bajo LVMH y Kering, continúan enviando productos a pesar de la bancarrota. Esto destaca la actividad continua en el sector de lujo y consumo."
             }
           }
         },
         {
-          "id": "fqr4ph",
-          "title": "Can Marketing Stunts Breathe New Life Into Beauty’s Oldest Brands?",
-          "url": "https://www.businessoffashion.com/articles/beauty/gold-bond-vaseline-new-marketing-strategies-2026/",
+          "id": "o6seuz",
+          "title": "Why Fashion Doesn’t Talk About How It Uses AI",
+          "url": "https://www.businessoffashion.com/briefings/technology/why-fashion-doesnt-talk-about-how-it-uses-ai/",
           "source": "Business of Fashion - News",
-          "published_at": "2026-02-24T13:00:00.000Z",
+          "published_at": "2026-02-25T16:00:51.000Z",
           "ingested_at": "2026-03-01T06:55:45.847Z",
-          "snippet": "Household names like Gold Bond, Vaseline and Sunsilk are investing in new activations and partnerships to reach younger consumers. Do they really need to?",
+          "snippet": "A new analysis suggests most big fashion and retail players are using AI, though many are still reluctant to speak about it publicly.",
           "sourceType": "rss",
           "categoryHint": "Fashion & Luxury",
           "relevance": {
-            "scoreTotal": 0.1,
+            "scoreTotal": 0,
             "recencyScore": 0,
             "sourceWeight": 0,
-            "keywordBoost": 0.1,
-            "insightSignalBoost": 0,
-            "penalty": 0,
-            "matchedKeywords": [
-              "brand",
-              "consumer"
-            ]
-          },
-          "aiSummary": "AI-Generated Summary:\nOld beauty brands like Gold Bond, Vaseline, and Sunsilk are exploring marketing stunts and partnerships to appeal to younger consumers, sparking questions about the necessity of these efforts.",
-          "translations": {
-            "da": {
-              "title": "Kan marketingstunts give nyt liv til skønhedens ældste mærker?",
-              "summary": "Gamle skønhedsmærker som Gold Bond, Vaseline og Sunsilk udforsker marketingstunts og partnerskaber for at tiltrække yngre forbrugere, hvilket rejser spørgsmål om nødvendigheden af disse tiltag."
-            },
-            "es": {
-              "title": "¿Pueden los trucos de marketing dar nueva vida a las marcas de belleza más antiguas?",
-              "summary": "Marcas de belleza antiguas como Gold Bond, Vaseline y Sunsilk están explorando trucos de marketing y asociaciones para atraer a los consumidores más jóvenes, lo que plantea preguntas sobre la necesidad de estos esfuerzos."
-            }
-          }
-        },
-        {
-          "id": "5i0cpj",
-          "title": "Global demand for luxury hotels outpacing supply: JLL",
-          "url": "https://www.luxurydaily.com/global-demand-for-luxury-hotels-outpacing-supply-jll/",
-          "source": "Luxury Daily - Research",
-          "published_at": "2026-02-26T10:00:02.000Z",
-          "ingested_at": "2026-03-01T06:55:45.847Z",
-          "snippet": "Rising wealth and resilient luxury consumer spending in the segment are strengthening the investment case for high-end hospitality, experts state.",
-          "sourceType": "rss",
-          "categoryHint": "Fashion & Luxury",
-          "relevance": {
-            "scoreTotal": 0.2,
-            "recencyScore": 0,
-            "sourceWeight": 0,
-            "keywordBoost": 0.2,
-            "insightSignalBoost": 0,
-            "penalty": 0,
-            "matchedKeywords": [
-              "luxury",
-              "demand",
-              "high-end",
-              "consumer",
-              "spending"
-            ]
-          },
-          "aiSummary": "AI-Generated Summary:\nExperts suggest that the global demand for luxury hotels is surpassing supply due to increasing wealth and strong luxury consumer spending, bolstering the investment appeal of high-end hospitality.",
-          "translations": {
-            "da": {
-              "title": "Den globale efterspørgsel efter luksushoteller overgår udbuddet: JLL",
-              "summary": "Eksperter antyder, at den globale efterspørgsel efter luksushoteller overstiger udbuddet på grund af stigende velstand og stærk forbrug af luksusvarer, hvilket øger investeringsappellen i high-end hospitality."
-            },
-            "es": {
-              "title": "La demanda global de hoteles de lujo supera la oferta: JLL",
-              "summary": "Los expertos sugieren que la demanda global de hoteles de lujo está superando la oferta debido al aumento de la riqueza y al fuerte gasto de los consumidores de lujo, lo que refuerza el atractivo de inversión en la hospitalidad de alta gama."
-            }
-          }
-        },
-        {
-          "id": "vughvd",
-          "title": "Need an Outfit? Pickle Clothing Rental App Helps Users Stay on Trend.",
-          "url": "https://www.nytimes.com/2026/02/23/style/pickle-app-clothing-rental.html",
-          "source": "NYTimes Technology",
-          "published_at": "2026-02-23T10:02:15.000Z",
-          "ingested_at": "2026-03-01T06:55:45.847Z",
-          "snippet": "Pickle, a new peer-to-peer apparel-rental app, helps users stay on trend without having to go into debt or rely on climate-unfriendly fast fashion.",
-          "sourceType": "rss",
-          "relevance": {
-            "scoreTotal": 0.15,
-            "recencyScore": 0,
-            "sourceWeight": 0.15,
             "keywordBoost": 0,
             "insightSignalBoost": 0,
             "penalty": 0,
             "matchedKeywords": []
           },
-          "aiSummary": "AI-Generated Summary:\nPickle Clothing Rental App offers a sustainable solution for staying on trend by allowing users to rent apparel from peers, avoiding debt and fast fashion.",
+          "aiSummary": "AI-generated summary: According to a recent analysis reported by Business of Fashion on February 25, 2026, most major fashion and retail companies are utilizing AI technologies, yet many remain hesitant to discuss their AI use openly.",
           "translations": {
             "da": {
-              "title": "Har du brug for et outfit? Pickle Clothing Rental App hjælper brugere med at følge trenden.",
-              "summary": "Pickle Clothing Rental App tilbyder en bæredygtig løsning til at følge trenden ved at lade brugere leje tøj fra andre, hvilket undgår gæld og fast fashion."
+              "title": "Hvorfor mode ikke taler om, hvordan den bruger AI",
+              "summary": "AI-genereret resumé: Ifølge en nylig analyse rapporteret af Business of Fashion den 25. februar 2026, bruger de fleste store mode- og detailvirksomheder AI-teknologier, men mange er stadig tilbageholdende med åbent at diskutere deres brug af AI."
             },
             "es": {
-              "title": "¿Necesitas un atuendo? La aplicación de alquiler de ropa Pickle ayuda a los usuarios a mantenerse a la moda.",
-              "summary": "La aplicación de alquiler de ropa Pickle ofrece una solución sostenible para mantenerse a la moda al permitir a los usuarios alquilar prendas de otros, evitando deudas y la moda rápida."
+              "title": "Por qué la moda no habla sobre cómo usa la IA",
+              "summary": "Resumen generado por IA: Según un análisis reciente reportado por Business of Fashion el 25 de febrero de 2026, la mayoría de las grandes empresas de moda y retail están utilizando tecnologías de IA, pero muchas siguen siendo reacias a hablar abiertamente sobre su uso de la IA."
             }
           }
         },
         {
-          "id": "tkpoll",
-          "title": "How Big Can an ‘Indie’ Brand Get?",
-          "url": "https://www.businessoffashion.com/briefings/beauty/how-big-can-an-indie-brand-get/",
-          "source": "Business of Fashion - News",
-          "published_at": "2026-02-26T16:00:32.000Z",
+          "id": "9hxhgy",
+          "title": "Off-Price Retailer TJX Accelerates Brick-and-Mortar Expansion Plan",
+          "url": "https://www.pymnts.com/news/retail/2026/off-price-retailer-tjx-accelerates-brick-and-mortar-expansion-plan/",
+          "source": "PYMNTS",
+          "published_at": "2026-02-28T02:51:22.000Z",
           "ingested_at": "2026-03-01T06:55:45.847Z",
-          "snippet": "In Full Coverage, Priya Rao reports on two of the industry’s favourite young brands: Starface and Fara Homidi.",
+          "snippet": "The TJX Companies plans to add 146 net new stores during its fiscal year 2027, which ends Jan. 31, 2027, increasing its store count by about 3%.  The retailer’s plans include 104 net new stores in the United States, 13 in Canada, 19 in Europe and 10 in Australia, TJX Chief Financial Officer John Klinger said […]\nThe post Off-Price Retailer TJX Accelerates Brick-and-Mortar Expansion Plan appeared first on PYMNTS.com.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": -0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0,
+            "insightSignalBoost": 0.05,
+            "penalty": 0.2,
+            "matchedKeywords": []
+          },
+          "aiSummary": "AI-generated summary: The TJX Companies plans to expand its brick-and-mortar presence by adding 146 net new stores across the U.S., Canada, Europe, and Australia during fiscal year 2027, increasing its total store count by approximately 3%. This expansion reflects the retailer's accelerated growth strategy in physical retail locations.",
+          "translations": {
+            "da": {
+              "title": "Off-Price-forhandler TJX fremskynder plan for udvidelse af fysiske butikker",
+              "summary": "AI-genereret resumé: The TJX Companies planlægger at udvide deres fysiske tilstedeværelse ved at tilføje 146 netto nye butikker i USA, Canada, Europa og Australien i regnskabsåret 2027, hvilket øger det samlede antal butikker med cirka 3%. Denne udvidelse afspejler forhandlerens accelererede vækststrategi inden for fysiske detailsteder."
+            },
+            "es": {
+              "title": "El minorista Off-Price TJX acelera el plan de expansión de tiendas físicas",
+              "summary": "Resumen generado por IA: The TJX Companies planea expandir su presencia física añadiendo 146 nuevas tiendas netas en EE. UU., Canadá, Europa y Australia durante el año fiscal 2027, aumentando su número total de tiendas en aproximadamente un 3%. Esta expansión refleja la estrategia de crecimiento acelerado del minorista en ubicaciones físicas."
+            }
+          }
+        },
+        {
+          "id": "qgp1z6",
+          "title": "Annual revenues rise 15pc at The RealReal",
+          "url": "https://www.luxurydaily.com/annual-revenues-rise-15pc-at-the-realreal/",
+          "source": "Luxury Daily - Main",
+          "published_at": "2026-02-27T22:00:50.000Z",
+          "ingested_at": "2026-03-01T06:55:45.847Z",
+          "snippet": "The luxury resale platform generated sales of $693 million in 2025.",
           "sourceType": "rss",
           "categoryHint": "Fashion & Luxury",
           "relevance": {
-            "scoreTotal": 0.1,
+            "scoreTotal": 0.05,
             "recencyScore": 0,
             "sourceWeight": 0,
             "keywordBoost": 0.05,
-            "insightSignalBoost": 0.05,
+            "insightSignalBoost": 0,
             "penalty": 0,
             "matchedKeywords": [
-              "brand"
+              "luxury"
             ]
           },
-          "aiSummary": "AI-Generated Summary:\nPriya Rao's Full Coverage article on Business of Fashion explores the growth potential of indie brands Starface and Fara Homidi in the luxury and consumer market.",
+          "aiSummary": "AI-generated summary: The RealReal's annual revenues increased by 15% in 2025, reaching $693 million, according to Luxury Daily.",
           "translations": {
             "da": {
-              "title": "Hvor Store Kan et ‘Indie’ Mærke Blive?",
-              "summary": "Priya Raos artikel i Business of Fashion undersøger vækstpotentialet for indie-mærkerne Starface og Fara Homidi i luksus- og forbrugermarkedet."
+              "title": "Årlige indtægter stiger 15% hos The RealReal",
+              "summary": "AI-genereret resumé: The RealReals årlige indtægter steg med 15% i 2025 og nåede 693 millioner dollars ifølge Luxury Daily."
             },
             "es": {
-              "title": "¿Qué Tan Grande Puede Llegar a Ser una Marca ‘Indie’?",
-              "summary": "El artículo de Priya Rao en Business of Fashion explora el potencial de crecimiento de las marcas indie Starface y Fara Homidi en el mercado de lujo y consumo."
+              "title": "Los ingresos anuales aumentan un 15% en The RealReal",
+              "summary": "Resumen generado por IA: Los ingresos anuales de The RealReal aumentaron un 15% en 2025, alcanzando los 693 millones de dólares, según Luxury Daily."
             }
           }
         },
@@ -677,48 +667,45 @@
             "penalty": 0,
             "matchedKeywords": []
           },
-          "aiSummary": "AI-generated summary: A survey by the BRC shows growing concerns among retail CFOs and finance directors about rising labor costs due to the Employment Rights Act, leading to increased pessimism about the future of retail jobs.",
+          "aiSummary": "AI-generated summary: A recent BRC survey of retail CFOs and finance directors highlights growing concerns about rising labour costs following the Employment Rights Act's enactment in January, with 69% expressing pessimism about the impact on retail jobs.",
           "translations": {
             "da": {
-              "title": "Detailjobs i fare på grund af stigende beskæftigelsesomkostninger",
-              "summary": "En undersøgelse fra BRC viser voksende bekymringer blandt detail CFO'er og finansdirektører om stigende arbejdsomkostninger på grund af Arbejdsretter, hvilket fører til øget pessimisme omkring fremtiden for detailjobs."
+              "title": "Detailjobs i fare på grund af stigende ansættelsesomkostninger",
+              "summary": "AI-genereret resumé: En nylig BRC-undersøgelse blandt detail-CFO'er og finansdirektører fremhæver voksende bekymringer om stigende lønomkostninger efter vedtagelsen af Employment Rights Act i januar, hvor 69 % er pessimistiske omkring konsekvenserne for detailjobs."
             },
             "es": {
-              "title": "Empleos en el comercio minorista en riesgo por el aumento de los costos laborales",
-              "summary": "Una encuesta de BRC muestra crecientes preocupaciones entre los CFO y directores financieros del comercio minorista sobre el aumento de los costos laborales debido a la Ley de Derechos Laborales, lo que lleva a un aumento del pesimismo sobre el futuro de los empleos en el comercio minorista."
+              "title": "Empleos minoristas en riesgo por el aumento de los costos laborales",
+              "summary": "Resumen generado por IA: Una reciente encuesta de BRC a CFOs y directores financieros del sector minorista destaca crecientes preocupaciones sobre el aumento de los costos laborales tras la promulgación del Employment Rights Act en enero, con un 69 % expresando pesimismo sobre el impacto en los empleos minoristas."
             }
           }
         },
         {
-          "id": "l1p6dm",
-          "title": "Consumer confidence dips in February",
-          "url": "https://www.drapersonline.com/news/consumer-confidence-dips-in-february",
-          "source": "Drapers",
-          "published_at": "2026-02-27T07:43:35.000Z",
+          "id": "vughvd",
+          "title": "Need an Outfit? Pickle Clothing Rental App Helps Users Stay on Trend.",
+          "url": "https://www.nytimes.com/2026/02/23/style/pickle-app-clothing-rental.html",
+          "source": "NYTimes Technology",
+          "published_at": "2026-02-23T10:02:15.000Z",
           "ingested_at": "2026-03-01T06:55:45.847Z",
-          "snippet": "Drapers\nConsumer confidence dips in February\nThe latest GFK Consumer Confidence Index shows consumer confidence has dipped by three points in February.\nThe post Consumer confidence dips in February appeared first on Drapers.",
+          "snippet": "Pickle, a new peer-to-peer apparel-rental app, helps users stay on trend without having to go into debt or rely on climate-unfriendly fast fashion.",
           "sourceType": "rss",
-          "categoryHint": "Fashion & Luxury",
           "relevance": {
-            "scoreTotal": 0.05,
+            "scoreTotal": 0.15,
             "recencyScore": 0,
-            "sourceWeight": 0,
-            "keywordBoost": 0.05,
+            "sourceWeight": 0.15,
+            "keywordBoost": 0,
             "insightSignalBoost": 0,
             "penalty": 0,
-            "matchedKeywords": [
-              "consumer"
-            ]
+            "matchedKeywords": []
           },
-          "aiSummary": "AI-Generated Summary: Consumer confidence has decreased by three points in February, according to the latest GFK Consumer Confidence Index reported by Drapers.",
+          "aiSummary": "AI-generated summary: The Pickle app, featured in NYTimes Technology on February 23, 2026, is a peer-to-peer clothing rental platform that enables users to stay fashionable while avoiding debt and reducing reliance on environmentally harmful fast fashion.",
           "translations": {
             "da": {
-              "title": "Forbrugertillid falder i februar",
-              "summary": "Forbrugertilliden er faldet med tre point i februar, ifølge den seneste GFK Forbrugertillidsindeks rapporteret af Drapers."
+              "title": "Brug for et outfit? Pickle tøjudlejningsapp hjælper brugere med at følge med moden.",
+              "summary": "AI-genereret resumé: Pickle-appen, omtalt i NYTimes Technology den 23. februar 2026, er en peer-to-peer tøjudlejningsplatform, der gør det muligt for brugere at være moderigtige uden gæld og med mindre afhængighed af miljøskadelig fast fashion."
             },
             "es": {
-              "title": "La confianza del consumidor cae en febrero",
-              "summary": "La confianza del consumidor ha disminuido en tres puntos en febrero, según el último Índice de Confianza del Consumidor GFK reportado por Drapers."
+              "title": "¿Necesitas un atuendo? La app de alquiler de ropa Pickle ayuda a los usuarios a estar a la moda.",
+              "summary": "Resumen generado por IA: La app Pickle, destacada en NYTimes Technology el 23 de febrero de 2026, es una plataforma de alquiler de ropa entre pares que permite a los usuarios mantenerse a la moda evitando deudas y reduciendo la dependencia de la moda rápida dañina para el medio ambiente."
             }
           }
         }
@@ -728,37 +715,64 @@
       "total": 18,
       "top": [
         {
-          "id": "wb7d4c",
-          "title": "Interesting diamond jewellery trends outlined in new report",
-          "url": "https://www.jewellermagazine.com/Article/14801/Interesting-diamond-jewellery-trends-outlined-in-new-report",
+          "id": "3g4jj1",
+          "title": "Supreme Court strikes down Trump tariffs",
+          "url": "https://www.jewellermagazine.com/Article/14794/Supreme-Court-strikes-down-Trump-tariffs",
           "source": "Jeweller - Business News",
           "published_at": "2026-02-23T13:00:00.000Z",
           "ingested_at": "2026-03-01T06:55:45.847Z",
-          "snippet": "A new report published by the Natural Diamond Council was highlighted by an increase in engagement jewellery spending among consumers.",
+          "snippet": "The US Supreme Court has voted against US President Donald Trump’s global reciprocal tariffs, ruling them unlawful.",
           "sourceType": "rss",
           "categoryHint": "Jewellery Industry",
           "relevance": {
-            "scoreTotal": 0.35,
+            "scoreTotal": 0.1,
             "recencyScore": 0,
             "sourceWeight": 0.1,
-            "keywordBoost": 0.15000000000000002,
-            "insightSignalBoost": 0.1,
+            "keywordBoost": 0,
+            "insightSignalBoost": 0,
             "penalty": 0,
-            "matchedKeywords": [
-              "jewellery",
-              "diamond",
-              "jeweller"
-            ]
+            "matchedKeywords": []
           },
-          "aiSummary": "AI-Generated Summary:\nA new report from the Natural Diamond Council reveals a rise in consumer spending on engagement jewellery, indicating interesting trends in the diamond jewellery industry.",
+          "aiSummary": "AI-generated summary: On February 23, 2026, the US Supreme Court ruled President Donald Trump’s global reciprocal tariffs unlawful, impacting the jewellery industry.",
           "translations": {
             "da": {
-              "title": "Interesserende trends inden for diamantjuveler skitseret i ny rapport",
-              "summary": "En ny rapport fra Natural Diamond Council afslører en stigning i forbrugerudgifterne til forlovelsesjuveler, hvilket indikerer interessante tendenser i diamantjuvelindustrien."
+              "title": "Højesteret underkender Trumps toldsatser",
+              "summary": "AI-genereret resumé: Den 23. februar 2026 afgjorde USAs højesteret, at præsident Donald Trumps globale gensidige toldsatser var ulovlige, hvilket påvirker smykkeindustrien."
             },
             "es": {
-              "title": "Interesantes tendencias en joyería de diamantes delineadas en nuevo informe",
-              "summary": "Un nuevo informe del Natural Diamond Council revela un aumento en el gasto de los consumidores en joyería de compromiso, lo que indica tendencias interesantes en la industria de la joyería de diamantes."
+              "title": "La Corte Suprema anula los aranceles de Trump",
+              "summary": "Resumen generado por IA: El 23 de febrero de 2026, la Corte Suprema de EE. UU. declaró ilegales los aranceles recíprocos globales del presidente Donald Trump, afectando a la industria de la joyería."
+            }
+          }
+        },
+        {
+          "id": "qznr6s",
+          "title": "The Shipping Mistake That Drives Jewelers Crazy (and the Easy Fix)",
+          "url": "https://instoremag.com/the-shipping-mistake-that-drives-jewelers-crazy-and-the-easy-fix/",
+          "source": "Instore Magazine",
+          "published_at": "2026-02-27T04:00:16.000Z",
+          "ingested_at": "2026-03-01T06:55:45.847Z",
+          "snippet": "A damaged label shouldn't mean a mystery package. One jeweler's emphatic reminder to anyone who ships.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": []
+          },
+          "aiSummary": "AI-generated summary: The article highlights a common shipping issue in the jewellery industry where damaged labels cause package confusion, and offers an easy solution emphasized by a jeweler to prevent such problems.",
+          "translations": {
+            "da": {
+              "title": "Forsendelsesfejlen der driver juvelerer til vanvid (og den nemme løsning)",
+              "summary": "AI-genereret resumé: Artiklen fremhæver et almindeligt forsendelsesproblem i smykkeindustrien, hvor beskadigede labels skaber forvirring om pakker, og tilbyder en nem løsning, som en juveler understreger for at forhindre sådanne problemer."
+            },
+            "es": {
+              "title": "El error de envío que vuelve locos a los joyeros (y la solución fácil)",
+              "summary": "Resumen generado por IA: El artículo destaca un problema común de envío en la industria de la joyería donde las etiquetas dañadas causan confusión con los paquetes, y ofrece una solución fácil enfatizada por un joyero para evitar tales problemas."
             }
           }
         },
@@ -783,15 +797,50 @@
               "jewelry"
             ]
           },
-          "aiSummary": "AI-Generated Summary:\nAmanda Eddy, an Austin jewelry store owner, created custom displays using pink pedestals and budget-friendly items from Amazon, resulting in a uniquely styled store at a fraction of the cost.",
+          "aiSummary": "AI-generated summary: Amanda Eddy, an Austin jewelry store owner, creatively designed her store displays using custom-built pink pedestals and budget-friendly items from Amazon, resulting in a distinctive and cost-effective style.",
           "translations": {
             "da": {
-              "title": "Hvordan en ejer af en smykkebutik i Austin lavede sine udstillinger selv for en brøkdel af prisen",
-              "summary": "Amanda Eddy, ejer af en smykkebutik i Austin, skabte skræddersyede udstillinger med lyserøde pedestaler og budgetvenlige varer fra Amazon, hvilket resulterede i en unikt stylet butik til en brøkdel af prisen."
+              "title": "Hvordan en smykkebutiksejer i Austin lavede sine udstillinger selv til en brøkdel af prisen",
+              "summary": "AI-genereret resumé: Amanda Eddy, en smykkebutiksejer i Austin, designede kreativt sine butiksskærme med specialbyggede pinke podier og budgetvenlige varer fra Amazon, hvilket resulterede i en unik og omkostningseffektiv stil."
             },
             "es": {
-              "title": "Cómo una dueña de una joyería en Austin hizo sus exhibiciones por una fracción del costo",
-              "summary": "Amanda Eddy, dueña de una joyería en Austin, creó exhibiciones personalizadas utilizando pedestales rosas y artículos económicos de Amazon, resultando en una tienda de estilo único por una fracción del costo."
+              "title": "Cómo una dueña de una joyería en Austin hizo sus exhibiciones DIY por una fracción del costo",
+              "summary": "Resumen generado por IA: Amanda Eddy, dueña de una joyería en Austin, diseñó creativamente sus exhibiciones usando pedestales rosas hechos a medida y artículos económicos de Amazon, logrando un estilo distintivo y rentable."
+            }
+          }
+        },
+        {
+          "id": "wb7d4c",
+          "title": "Interesting diamond jewellery trends outlined in new report",
+          "url": "https://www.jewellermagazine.com/Article/14801/Interesting-diamond-jewellery-trends-outlined-in-new-report",
+          "source": "Jeweller - Business News",
+          "published_at": "2026-02-23T13:00:00.000Z",
+          "ingested_at": "2026-03-01T06:55:45.847Z",
+          "snippet": "A new report published by the Natural Diamond Council was highlighted by an increase in engagement jewellery spending among consumers.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.35,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0.1,
+            "penalty": 0,
+            "matchedKeywords": [
+              "jewellery",
+              "diamond",
+              "jeweller"
+            ]
+          },
+          "aiSummary": "AI-generated summary: A new report from the Natural Diamond Council highlights rising consumer spending on engagement jewellery, indicating notable trends in the diamond jewellery market.",
+          "translations": {
+            "da": {
+              "title": "Interessante trends inden for diamant-smykker beskrevet i ny rapport",
+              "summary": "AI-genereret resumé: En ny rapport fra Natural Diamond Council fremhæver stigende forbrugerudgifter på forlovelsessmykker, hvilket indikerer bemærkelsesværdige tendenser på diamant-smykkemarkedet."
+            },
+            "es": {
+              "title": "Interesantes tendencias en joyería de diamantes descritas en nuevo informe",
+              "summary": "Resumen generado por IA: Un nuevo informe de Natural Diamond Council destaca el aumento del gasto de los consumidores en joyería de compromiso, indicando tendencias notables en el mercado de joyería de diamantes."
             }
           }
         },
@@ -818,149 +867,80 @@
               "jeweller"
             ]
           },
-          "aiSummary": "AI-Generated Summary:\nA new study in the jewellery industry reveals the growing popularity of lab-created diamond jewellery among recently married couples.",
+          "aiSummary": "AI-generated summary: A recent large survey of recently married couples reveals the increasing acceptance and popularity of lab-created diamond jewellery, highlighting a notable trend in the jewellery industry.",
           "translations": {
             "da": {
-              "title": "Populariteten af laboratoriefremstillede diamant smykker fremhævet i ny undersøgelse",
-              "summary": "En ny undersøgelse i smykkeindustrien afslører den stigende popularitet af laboratoriefremstillede diamant smykker blandt nyligt gifte par."
+              "title": "Populariteten af laboratorie-skabt diamant-smykker fremhævet i ny undersøgelse",
+              "summary": "AI-genereret resumé: En nylig stor undersøgelse af nygifte par viser den stigende accept og popularitet af laboratorie-skabt diamant-smykker, hvilket fremhæver en bemærkelsesværdig trend i smykkeindustrien."
             },
             "es": {
-              "title": "La popularidad de la joyería de diamantes creados en laboratorio destacada en un nuevo estudio",
-              "summary": "Un nuevo estudio en la industria de la joyería revela la creciente popularidad de la joyería de diamantes creados en laboratorio entre parejas recién casadas."
+              "title": "Popularidad de las joyas de diamantes creados en laboratorio destacada en nuevo estudio",
+              "summary": "Resumen generado por IA: Una reciente gran encuesta a parejas recién casadas revela la creciente aceptación y popularidad de las joyas de diamantes creados en laboratorio, destacando una tendencia notable en la industria de la joyería."
             }
           }
         },
         {
-          "id": "97mv1q",
-          "title": "Inhorgenta Award 2026 winners announced",
-          "url": "https://www.professionaljeweller.com/inhorgenta-award-2026-winners/",
-          "source": "Professional Jeweller",
-          "published_at": "2026-02-23T10:30:06.000Z",
+          "id": "ro1ei4",
+          "title": "Jewelry Store Owners on Exclusivity Agreements: ‘Illusion’, ‘Betrayal’, ‘Tough Lesson to Learn’",
+          "url": "https://instoremag.com/jewelry-store-owners-on-exclusivity-agreements-illusion-betrayal-tough-lesson-to-learn/",
+          "source": "Instore Magazine",
+          "published_at": "2026-02-27T05:10:09.000Z",
           "ingested_at": "2026-03-01T06:55:45.847Z",
-          "snippet": "During the Inhorgenta Award 2026 gala, the winners were honoured at the Bavaria Filmstudios in front of over 500 guests from the industry, retail and the media. The evening was hosted by TV presenter Nazan Eckes and accompanied by singer LOI, whose live performance created emotional highlights. “The Inhorgenta Award demonstrates year after year the […]\nThe post Inhorgenta Award 2026 winners announced appeared first on Professional Jeweller.",
+          "snippet": "In INSTORE's current Real Deal scenario, jewelers weigh in on an advertising promise gone very, very wrong. Now it's your turn to respond.",
           "sourceType": "rss",
           "categoryHint": "Jewellery Industry",
           "relevance": {
-            "scoreTotal": 0.15000000000000002,
+            "scoreTotal": -0.15000000000000002,
             "recencyScore": 0,
-            "sourceWeight": 0.1,
+            "sourceWeight": 0,
             "keywordBoost": 0.05,
             "insightSignalBoost": 0,
-            "penalty": 0,
+            "penalty": 0.2,
             "matchedKeywords": [
-              "jeweller"
+              "jewelry"
             ]
           },
-          "aiSummary": "AI-generated summary: The winners of the Inhorgenta Award 2026 were announced during a gala at the Bavaria Filmstudios, with over 500 industry, retail, and media guests in attendance. The event was hosted by TV presenter Nazan Eckes and featured a live performance by singer LOI.",
+          "aiSummary": "AI-generated summary: Jewelry store owners express feelings of disillusionment and betrayal regarding exclusivity agreements in advertising, describing the experience as a tough lesson to learn, according to Instore Magazine's February 2026 coverage in the jewellery industry.",
           "translations": {
             "da": {
-              "title": "Inhorgenta Award 2026 vindere annonceret",
-              "summary": "Vindere af Inhorgenta Award 2026 blev annonceret under en gala i Bavaria Filmstudios, med over 500 gæster fra branchen, detailhandlen og medierne til stede. Arrangementet blev præsenteret af TV-værten Nazan Eckes og bød på en liveoptræden af sangerinden LOI."
+              "title": "Smykkeforretningsejere om eksklusivitetsaftaler: 'Illusion', 'Forræderi', 'En svær lektion at lære'",
+              "summary": "AI-genereret resumé: Smykkeforretningsejere udtrykker skuffelse og forræderi i forbindelse med eksklusivitetsaftaler i reklame, og beskriver oplevelsen som en svær lektion at lære, ifølge Instore Magazines februar 2026 dækning af smykkeindustrien."
             },
             "es": {
-              "title": "Ganadores del Inhorgenta Award 2026 anunciados",
-              "summary": "Los ganadores del Inhorgenta Award 2026 fueron anunciados durante una gala en los Bavaria Filmstudios, con más de 500 invitados de la industria, comercio y medios presentes. El evento fue presentado por la presentadora de televisión Nazan Eckes y contó con una actuación en vivo de la cantante LOI."
+              "title": "Propietarios de joyerías sobre acuerdos de exclusividad: ‘Ilusión’, ‘Traición’, ‘Lección difícil de aprender’",
+              "summary": "Resumen generado por IA: Los propietarios de joyerías expresan sentimientos de desilusión y traición respecto a los acuerdos de exclusividad en publicidad, describiendo la experiencia como una lección difícil de aprender, según la cobertura de febrero de 2026 de Instore Magazine en la industria de la joyería."
             }
           }
         },
         {
-          "id": "e4njc0",
-          "title": "Spectacular jewels to take centre stage at upcoming Bonhams auction",
-          "url": "https://www.professionaljeweller.com/spectacular-jewels-bonhams-auction/",
-          "source": "Professional Jeweller",
-          "published_at": "2026-02-23T10:01:49.000Z",
+          "id": "3m1tke",
+          "title": "Thai Gold-Trading Curbs Take Effect as Authorities Rein in Baht",
+          "url": "https://www.bloomberg.com/news/articles/2026-03-01/thai-gold-trading-curbs-take-effect-as-authorities-rein-in-baht",
+          "source": "Bloomberg - Technology",
+          "published_at": "2026-03-01T00:00:00.000Z",
           "ingested_at": "2026-03-01T06:55:45.847Z",
-          "snippet": "Bonhams will present its Fine Jewelry California sale on 5 March, a live auction showcasing a selection of signed jewels, loose fancy-colour diamonds, rare gemstones, and period masterpieces. A highlight of the auction is a single-owner collection of 12 iconic David Webb designs, celebrating the designer’s aesthetic and influence on 20th-century American jewellery. Caroline Morrissey, […]\nThe post Spectacular jewels to take centre stage at upcoming Bonhams auction appeared first on Professional ...",
+          "snippet": "Thailand will implement tough new rules governing retail gold-trading from March 1, hoping to curb speculative activity that’s fueled gains in the baht and weakened the nation’s competitiveness.",
           "sourceType": "rss",
-          "categoryHint": "Jewellery Industry",
           "relevance": {
-            "scoreTotal": 0.30000000000000004,
+            "scoreTotal": -0.15000000000000002,
             "recencyScore": 0,
-            "sourceWeight": 0.1,
-            "keywordBoost": 0.2,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
             "insightSignalBoost": 0,
-            "penalty": 0,
+            "penalty": 0.2,
             "matchedKeywords": [
-              "jewellery",
-              "jewelry",
-              "diamond",
-              "jeweller"
+              "gold"
             ]
           },
-          "aiSummary": "AI-generated summary:\nBonhams will host the Fine Jewelry California sale featuring signed jewels, fancy-color diamonds, gemstones, and David Webb designs on March 5. A highlight includes a collection of 12 iconic David Webb pieces, showcasing the designer's influence on American jewelry in the 20th century.",
+          "aiSummary": "AI-generated summary: Starting March 1, 2026, Thailand will enforce strict regulations on retail gold trading to reduce speculative activities that have strengthened the baht and impacted the country's competitiveness, according to Bloomberg.",
           "translations": {
             "da": {
-              "title": "Spektakulære smykker vil tage centrum i den kommende Bonhams auktion",
-              "summary": "Bonhams vil afholde Fine Jewelry California salg med signerede smykker, fancy-farvede diamanter, ædelsten og David Webb designs den 5. marts. Et højdepunkt inkluderer en samling af 12 ikoniske David Webb stykker, der viser designerens indflydelse på amerikansk smykke i det 20. århundrede."
+              "title": "Begrænsninger på thailandsk guldsalg træder i kraft, da myndighederne strammer op om baht",
+              "summary": "AI-genereret resumé: Fra 1. marts 2026 vil Thailand håndhæve strenge regler for detailhandel med guld for at reducere spekulative aktiviteter, der har styrket baht og påvirket landets konkurrenceevne, ifølge Bloomberg."
             },
             "es": {
-              "title": "Espectaculares joyas ocuparán el centro del escenario en la próxima subasta de Bonhams",
-              "summary": "Bonhams llevará a cabo la venta de Fine Jewelry California que contará con joyas firmadas, diamantes de colores fancy, piedras preciosas y diseños de David Webb el 5 de marzo. Un punto destacado incluye una colección de 12 piezas icónicas de David Webb, que muestran la influencia del diseñador en la joyería estadounidense del siglo XX."
-            }
-          }
-        },
-        {
-          "id": "f0w5ec",
-          "title": "SAVE THE DATE: Professional Jeweller Awards 2026",
-          "url": "https://www.professionaljeweller.com/save-the-date-professional-jeweller-awards-2026/",
-          "source": "Professional Jeweller",
-          "published_at": "2026-02-23T10:45:34.000Z",
-          "ingested_at": "2026-03-01T06:55:45.847Z",
-          "snippet": "Save the Date! The Professional Jeweller Awards 2026 will be held on Wednesday 2 September, on the first night of the Jewellery Show. All members of the industry are invited to make their nominations in the coming week, with more coming on this later this week. A refreshed list of awards categories will also be announced, […]\nThe post SAVE THE DATE: Professional Jeweller Awards 2026 appeared first on Professional Jeweller.",
-          "sourceType": "rss",
-          "categoryHint": "Jewellery Industry",
-          "relevance": {
-            "scoreTotal": 0.2,
-            "recencyScore": 0,
-            "sourceWeight": 0.1,
-            "keywordBoost": 0.1,
-            "insightSignalBoost": 0,
-            "penalty": 0,
-            "matchedKeywords": [
-              "jeweller",
-              "jewellery"
-            ]
-          },
-          "aiSummary": "The Professional Jeweller Awards 2026 will take place on September 2, coinciding with the Jewellery Show. Nominations are open for industry members, with new award categories to be announced soon.",
-          "translations": {
-            "da": {
-              "title": "SÆT DATOEN: Professionel Smykkedesigner Awards 2026",
-              "summary": "De Professionel Smykkedesigner Awards 2026 finder sted den 2. september i forbindelse med Jewellery Show. Nomineringer er åbne for branchemedlemmer, med nye pris-kategorier der snart vil blive annonceret."
-            },
-            "es": {
-              "title": "RESERVA LA FECHA: Premios Professional Jeweller 2026",
-              "summary": "Los Premios Professional Jeweller 2026 se llevarán a cabo el 2 de septiembre, coincidiendo con el Jewellery Show. Las nominaciones están abiertas para los miembros de la industria, con nuevas categorías de premios que se anunciarán pronto."
-            }
-          }
-        },
-        {
-          "id": "pqb6c8",
-          "title": "Aussie consumers support futuristic technology to protect retail businesses",
-          "url": "https://www.jewellermagazine.com/Article/14797/Aussie-consumers-support-futuristic-technology-to-protect-retail-businesses",
-          "source": "Jeweller - Business News",
-          "published_at": "2026-02-23T13:00:00.000Z",
-          "ingested_at": "2026-03-01T06:55:45.847Z",
-          "snippet": "A recent survey has found that most Australian consumers support the use of facial recognition technology in retail settings to prevent crime and enhance public safety.",
-          "sourceType": "rss",
-          "categoryHint": "Jewellery Industry",
-          "relevance": {
-            "scoreTotal": 0.15000000000000002,
-            "recencyScore": 0,
-            "sourceWeight": 0.1,
-            "keywordBoost": 0,
-            "insightSignalBoost": 0.05,
-            "penalty": 0,
-            "matchedKeywords": []
-          },
-          "aiSummary": "AI-Generated Summary:\nA survey reveals that Australian consumers favor the implementation of facial recognition technology in retail to boost security and deter crime.",
-          "translations": {
-            "da": {
-              "title": "Australske forbrugere støtter futuristisk teknologi til at beskytte detailvirksomheder",
-              "summary": "En undersøgelse viser, at australske forbrugere foretrækker implementeringen af ansigtsgenkendelsesteknologi i detailhandlen for at øge sikkerheden og afskrække kriminalitet."
-            },
-            "es": {
-              "title": "Los consumidores australianos apoyan la tecnología futurista para proteger los negocios minoristas",
-              "summary": "Una encuesta revela que los consumidores australianos favorecen la implementación de tecnología de reconocimiento facial en el comercio minorista para aumentar la seguridad y disuadir el crimen."
+              "title": "Entradas en vigor las restricciones al comercio de oro en Tailandia mientras las autoridades controlan el baht",
+              "summary": "Resumen generado por IA: A partir del 1 de marzo de 2026, Tailandia aplicará regulaciones estrictas sobre el comercio minorista de oro para reducir actividades especulativas que han fortalecido el baht y afectado la competitividad del país, según Bloomberg."
             }
           }
         }

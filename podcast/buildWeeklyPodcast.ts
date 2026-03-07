@@ -8,6 +8,7 @@ import path from 'path';
 import OpenAI from 'openai';
 import fetch from 'node-fetch';
 import type { WeeklyDigest } from '../lib/types';
+import { getModelFor, maxTokensParam, temperatureParam } from '../lib/llm/models';
 
 /**
  * Generate podcast script from digest
@@ -42,14 +43,15 @@ Structure:
 
 Tone: Professional but conversational, like a business news podcast. Be clear and engaging.`;
 
+  const scriptModel = getModelFor('script');
   const response = await openai.chat.completions.create({
-    model: 'gpt-4o-mini',
+    model: scriptModel,
     messages: [
       { role: 'system', content: 'You are a professional podcast script writer.' },
       { role: 'user', content: prompt },
     ],
-    max_tokens: 4000,
-    temperature: 0.7,
+    ...maxTokensParam(scriptModel, 4000),
+    ...temperatureParam(scriptModel, 0.7),
   });
 
   return response.choices[0]?.message?.content || '';
