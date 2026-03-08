@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import AmplitudeInit from "./components/AmplitudeInit";
+import AnalyticsPageView from "./components/AnalyticsPageView";
 import LanguageSwitcher from "./components/LanguageSwitcher";
 import NavLinks, { FooterNavLinks } from "./components/NavLinks";
 import InstallPwaButton from "./components/InstallPwaButton";
@@ -119,6 +120,7 @@ export default function RootLayout({
         />
         <CanonicalUrlValidator />
         <AmplitudeInit />
+        <AnalyticsPageView />
         <DisplayModeAttribute />
         <ServiceWorkerRegistration />
         {/* Sticky Header - Mobile First */}

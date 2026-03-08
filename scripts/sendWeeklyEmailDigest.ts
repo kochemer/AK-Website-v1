@@ -1,6 +1,7 @@
 /**
  * Send weekly email digest using Resend
  * Dry-run by default (set EMAIL_SEND_ENABLED=true to actually send)
+ * Uses the unified EmailDigest format (data/weeks/{week}/email-digest.json).
  */
 
 import { promises as fs } from 'fs';
@@ -9,8 +10,8 @@ import { fileURLToPath } from 'url';
 import { Resend } from 'resend';
 import { loadEnv } from '../lib/env';
 import { getCurrentDigestWeek, validateWeekLabel } from '../lib/utils/getCurrentDigestWeek';
-import { getTopicDisplayName } from '../lib/utils/topicNames';
-import type { WeeklyDigest, Article, Topic } from '../lib/types';
+import { renderEmailDigestHtml, renderEmailDigestPlaintext } from '../lib/digest/renderEmailDigestHtml';
+import type { EmailDigest } from '../lib/types';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -46,152 +47,19 @@ async function loadRecipients(): Promise<Recipient[]> {
 }
 
 /**
- * Load digest JSON
+ * Load email digest from data/weeks/{week}/email-digest.json (unified format).
  */
-async function loadDigest(weekLabel: string): Promise<WeeklyDigest> {
-  const digestPath = path.join(process.cwd(), 'data', 'digests', `${weekLabel}.json`);
+async function loadDigest(weekLabel: string): Promise<EmailDigest> {
+  const digestPath = path.join(process.cwd(), 'data', 'weeks', weekLabel, 'email-digest.json');
   try {
     const raw = await fs.readFile(digestPath, 'utf-8');
-    return JSON.parse(raw) as WeeklyDigest;
+    return JSON.parse(raw) as EmailDigest;
   } catch (error: any) {
     if (error.code === 'ENOENT') {
-      throw new Error(`Digest not found: ${digestPath}\nRun: npm run digest:weekly -- --week=${weekLabel}`);
+      throw new Error(`Email digest not found: ${digestPath}\nRun the weekly pipeline (including email step) for --week=${weekLabel}`);
     }
-    throw new Error(`Failed to load digest: ${error.message}`);
+    throw new Error(`Failed to load email digest: ${error.message}`);
   }
-}
-
-/**
- * Get article summary (prefer aiSummary, fallback to snippet)
- */
-function getArticleSummary(article: Article): string {
-  if (article.aiSummary && article.aiSummary.trim().length > 0) {
-    return article.aiSummary.trim();
-  }
-  if (article.snippet && article.snippet.trim().length > 0) {
-    return article.snippet.trim();
-  }
-  return 'No summary available.';
-}
-
-/**
- * Render HTML email
- */
-function renderHTML(digest: WeeklyDigest): string {
-  const topicOrder: Topic[] = [
-    'Ecommerce_Retail_Tech',
-    'Jewellery_Industry',
-    'AI_and_Strategy',
-    'Luxury_and_Consumer',
-  ];
-
-  let html = `<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Luxury Intelligence — Weekly Digest ${digest.weekLabel}</title>
-  <style>
-    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; line-height: 1.6; color: #333; max-width: 600px; margin: 0 auto; padding: 20px; }
-    h1 { color: #6b2d5c; font-size: 24px; margin-bottom: 10px; }
-    h2 { color: #25505f; font-size: 18px; margin-top: 30px; margin-bottom: 15px; border-bottom: 2px solid #e0e0e0; padding-bottom: 5px; }
-    .article { margin-bottom: 25px; padding-bottom: 20px; border-bottom: 1px solid #f0f0f0; }
-    .article:last-child { border-bottom: none; }
-    .article-title { font-size: 16px; font-weight: 600; margin-bottom: 5px; }
-    .article-title a { color: #0066cc; text-decoration: none; }
-    .article-title a:hover { text-decoration: underline; }
-    .article-meta { font-size: 12px; color: #666; margin-bottom: 8px; }
-    .article-summary { font-size: 14px; color: #555; line-height: 1.5; }
-    .footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid #e0e0e0; font-size: 12px; color: #999; text-align: center; }
-  </style>
-</head>
-<body>
-  <h1>Luxury Intelligence — Weekly Digest ${digest.weekLabel}</h1>
-`;
-
-  if (digest.introParagraph) {
-    html += `  <p style="font-size: 14px; color: #666; margin-bottom: 30px;">${escapeHtml(digest.introParagraph)}</p>\n`;
-  }
-
-  for (const topicKey of topicOrder) {
-    const topic = digest.topics[topicKey];
-    if (!topic || topic.top.length === 0) continue;
-
-    const topicName = getTopicDisplayName(topicKey);
-    html += `  <h2>${escapeHtml(topicName)}</h2>\n`;
-
-    for (const article of topic.top) {
-      const summary = getArticleSummary(article);
-      html += `  <div class="article">
-    <div class="article-title"><a href="${escapeHtml(article.url)}" target="_blank">${escapeHtml(article.title)}</a></div>
-    <div class="article-meta">${escapeHtml(article.source)}</div>
-    <div class="article-summary">${escapeHtml(summary)}</div>
-  </div>
-`;
-    }
-  }
-
-  html += `  <div class="footer">
-    <p>You're receiving this because you subscribed to Luxury Intelligence weekly digest.</p>
-    <p>Week ${digest.weekLabel} | ${digest.startISO ? new Date(digest.startISO).toLocaleDateString() : ''} - ${digest.endISO ? new Date(digest.endISO).toLocaleDateString() : ''}</p>
-  </div>
-</body>
-</html>`;
-
-  return html;
-}
-
-/**
- * Render plaintext email
- */
-function renderPlaintext(digest: WeeklyDigest): string {
-  const topicOrder: Topic[] = [
-    'Ecommerce_Retail_Tech',
-    'Jewellery_Industry',
-    'AI_and_Strategy',
-    'Luxury_and_Consumer',
-  ];
-
-  let text = `Luxury Intelligence — Weekly Digest ${digest.weekLabel}\n`;
-  text += `${'='.repeat(50)}\n\n`;
-
-  if (digest.introParagraph) {
-    text += `${digest.introParagraph}\n\n`;
-  }
-
-  for (const topicKey of topicOrder) {
-    const topic = digest.topics[topicKey];
-    if (!topic || topic.top.length === 0) continue;
-
-    const topicName = getTopicDisplayName(topicKey);
-    text += `${topicName}\n`;
-    text += `${'-'.repeat(topicName.length)}\n\n`;
-
-    for (const article of topic.top) {
-      const summary = getArticleSummary(article);
-      text += `${article.title}\n`;
-      text += `${article.url}\n`;
-      text += `Source: ${article.source}\n`;
-      text += `${summary}\n\n`;
-    }
-  }
-
-  text += `\n---\n`;
-  text += `Week ${digest.weekLabel} | ${digest.startISO ? new Date(digest.startISO).toLocaleDateString() : ''} - ${digest.endISO ? new Date(digest.endISO).toLocaleDateString() : ''}\n`;
-
-  return text;
-}
-
-/**
- * Escape HTML special characters
- */
-function escapeHtml(text: string): string {
-  return text
-    .replace(/&/g, '&amp;')
-    .replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;')
-    .replace(/"/g, '&quot;')
-    .replace(/'/g, '&#039;');
 }
 
 /**
@@ -317,10 +185,10 @@ async function main() {
     process.exit(1);
   }
 
-  // Render email
+  // Render email (unified digest format: single ranked list)
   const subject = `Luxury Intelligence — Weekly Digest ${weekLabel}`;
-  const html = renderHTML(digest);
-  const text = renderPlaintext(digest);
+  const html = renderEmailDigestHtml(digest, { mode: 'email' });
+  const text = renderEmailDigestPlaintext(digest);
 
   // Check if sending is enabled
   const sendEnabled = process.env.EMAIL_SEND_ENABLED === 'true';
