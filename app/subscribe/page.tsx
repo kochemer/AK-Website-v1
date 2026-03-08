@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import SubscribePricing from '../components/SubscribePricing';
+import AnalyticsSubscribeView from '../components/AnalyticsSubscribeView';
 
 export default function SubscribePage() {
   // Safely read environment variable (server-side)
@@ -10,6 +11,7 @@ export default function SubscribePage() {
 
   return (
     <main className="w-full bg-[#f7f9fb] min-h-screen">
+      <AnalyticsSubscribeView />
       {/* Hero */}
       <section className="w-full border-b border-gray-200 bg-gradient-to-r from-[#2e3741] via-[#394855] to-[#4a5a6b]">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 py-10 sm:py-12">

@@ -1,3 +1,7 @@
+'use client';
+
+import { track } from '@/lib/analytics';
+
 type SubscribePricingProps = {
   formAction: string;
 };
@@ -33,6 +37,7 @@ export default function SubscribePricing({ formAction }: SubscribePricingProps) 
             href="https://buy.stripe.com/eVqaEX09mh1h9RC619f3a00"
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() => track('checkout_start', { plan: 'supporter', price: 1, currency: 'eur' })}
             className="mt-auto inline-flex items-center justify-center rounded-md border border-gray-300 bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500"
             aria-label="Support Luxury Intelligence - Supporter tier"
           >
@@ -60,6 +65,7 @@ export default function SubscribePricing({ formAction }: SubscribePricingProps) 
             href="https://buy.stripe.com/eVqcN51dq26n4xi619f3a01"
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() => track('checkout_start', { plan: 'backer', price: 3, currency: 'eur' })}
             className="mt-auto inline-flex items-center justify-center rounded-md bg-blue-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-blue-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500"
             aria-label="Support Luxury Intelligence - Backer tier"
           >

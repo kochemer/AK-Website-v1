@@ -133,6 +133,7 @@ export default function DigestClientView({
                   emptyCta={t.digest.suggestSource}
                   countLabel={t.digest.articlesCount}
                   aiSummaryLabel={t.digest.aiSummary}
+                  categoryKey={cat.key}
                 />
               </div>
             );
@@ -158,6 +159,7 @@ export default function DigestClientView({
           emptyCta={t.digest.suggestSource}
           countLabel={t.digest.articlesCount}
           aiSummaryLabel={t.digest.aiSummary}
+          categoryKey="AI_and_Strategy"
         />
 
         {/* Ecommerce & Retail Tech */}
@@ -174,6 +176,7 @@ export default function DigestClientView({
           emptyCta={t.digest.suggestSource}
           countLabel={t.digest.articlesCount}
           aiSummaryLabel={t.digest.aiSummary}
+          categoryKey="Ecommerce_Retail_Tech"
         />
 
         {/* Luxury & Consumer */}
@@ -190,6 +193,7 @@ export default function DigestClientView({
           emptyCta={t.digest.suggestSource}
           countLabel={t.digest.articlesCount}
           aiSummaryLabel={t.digest.aiSummary}
+          categoryKey="Luxury_and_Consumer"
         />
 
         {/* Jewellery Industry */}
@@ -206,6 +210,7 @@ export default function DigestClientView({
           emptyCta={t.digest.suggestSource}
           countLabel={t.digest.articlesCount}
           aiSummaryLabel={t.digest.aiSummary}
+          categoryKey="Jewellery_Industry"
         />
       </div>
     );

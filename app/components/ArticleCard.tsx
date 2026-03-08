@@ -1,6 +1,7 @@
 'use client';
 
 import { formatDisplayDate } from '@/lib/utils/formatDisplayDate';
+import { track } from '@/lib/analytics';
 import type { Locale } from '@/lib/i18n/types';
 
 type ArticleCardProps = {
@@ -16,6 +17,10 @@ type ArticleCardProps = {
     es?: { title?: string; summary?: string };
   };
   aiSummaryLabel?: string;
+  /** Analytics: optional for article_click */
+  article_id?: string;
+  article_rank?: number;
+  category?: string;
 };
 
 export default function ArticleCard({
@@ -28,7 +33,27 @@ export default function ArticleCard({
   locale = 'en',
   translations,
   aiSummaryLabel = 'AI summary',
+  article_id,
+  article_rank,
+  category,
 }: ArticleCardProps) {
+  const handleOutboundClick = () => {
+    if (article_id != null || article_rank != null || category != null) {
+      let source_domain: string | undefined;
+      try {
+        source_domain = new URL(url).hostname;
+      } catch {
+        source_domain = undefined;
+      }
+      track('article_click', {
+        article_id,
+        article_rank,
+        category,
+        source_domain,
+      });
+    }
+  };
+
   // Resolve localized title and summary (fallback to English)
   const localizedTitle = (locale !== 'en' && translations?.[locale]?.title) || title;
   const localizedSummary = (locale !== 'en' && translations?.[locale]?.summary) || summary;
@@ -48,6 +73,7 @@ export default function ArticleCard({
         href={url}
         target="_blank"
         rel="noopener noreferrer"
+        onClick={handleOutboundClick}
         className="block pt-4 sm:pt-4 md:pt-5 no-underline text-inherit focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
       >
         {/* Title */}

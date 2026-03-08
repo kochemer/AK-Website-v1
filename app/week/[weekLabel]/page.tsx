@@ -5,6 +5,7 @@ import { DateTime } from 'luxon';
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import DigestClientView from '../../components/DigestClientView';
+import AnalyticsDigestView from '../../components/AnalyticsDigestView';
 import TopNSelector from '../../components/TopNSelector';
 import JsonLd from '../../components/JsonLd';
 import Breadcrumbs from '../../components/Breadcrumbs';
@@ -522,6 +523,7 @@ export default async function WeekPage({
                   ))}
                 </div>
               }>
+                <AnalyticsDigestView weekLabel={weekLabel} />
                 <DigestClientView digest={digest} categoryCards={CATEGORY_CARDS} variant="home" />
               </Suspense>
 

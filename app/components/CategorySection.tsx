@@ -30,6 +30,8 @@ type CategorySectionProps = {
   emptyCta?: string;
   countLabel?: string;
   aiSummaryLabel?: string;
+  /** Topic/category key for analytics (e.g. AI_and_Strategy) */
+  categoryKey?: string;
 };
 
 export default function CategorySection({
@@ -46,6 +48,7 @@ export default function CategorySection({
   emptyCta = 'Suggest a source',
   countLabel = '# of articles processed',
   aiSummaryLabel = 'AI summary',
+  categoryKey,
 }: CategorySectionProps) {
   const isGrid = variant === 'grid';
   
@@ -85,7 +88,7 @@ export default function CategorySection({
       {/* Articles List */}
       <div className="space-y-2.5 sm:space-y-3 md:space-y-3.5">
         {articles.length > 0 ? (
-          articles.map((article) => (
+          articles.map((article, index) => (
             <ArticleCard
               key={article.id}
               title={article.title}
@@ -96,6 +99,9 @@ export default function CategorySection({
               locale={locale}
               translations={article.translations}
               aiSummaryLabel={aiSummaryLabel}
+              article_id={article.id}
+              article_rank={index + 1}
+              category={categoryKey}
             />
           ))
         ) : (
