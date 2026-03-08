@@ -1246,5 +1246,149 @@
     ],
     "cached_at": "2026-03-01T17:07:03.554Z",
     "model": "o4-mini"
+  },
+  "2026-W10:AI_and_Strategy:362c187e310f": {
+    "selected": [
+      {
+        "id": "4",
+        "rank": 1,
+        "why": "Anthropic's revenue growth signals major AI industry economic shift",
+        "confidence": 0.95
+      },
+      {
+        "id": "6",
+        "rank": 2,
+        "why": "China's AI industry reshaping policy impacts global AI development",
+        "confidence": 0.9
+      },
+      {
+        "id": "14",
+        "rank": 3,
+        "why": "Oracle and OpenAI dropping data center expansion affects AI infrastructure",
+        "confidence": 0.9
+      },
+      {
+        "id": "0",
+        "rank": 4,
+        "why": "OpenAI vs Anthropic competition highlights AI industry power dynamics",
+        "confidence": 0.9
+      },
+      {
+        "id": "17",
+        "rank": 5,
+        "why": "OpenAI's Pentagon deal fallout influences AI-government relations",
+        "confidence": 0.85
+      },
+      {
+        "id": "10",
+        "rank": 6,
+        "why": "Anthropic's Pentagon risk designation impact on AI business assessed",
+        "confidence": 0.85
+      },
+      {
+        "id": "3",
+        "rank": 7,
+        "why": "Anthropic study quantifies AI's impact on programming and service jobs",
+        "confidence": 0.8
+      }
+    ],
+    "cached_at": "2026-03-08T07:05:50.282Z",
+    "model": "gpt-4.1-mini"
+  },
+  "2026-W10:Ecommerce_Retail_Tech:7a7412ad5dc5": {
+    "selected": [
+      {
+        "id": "10",
+        "rank": 1,
+        "why": "Major retail fraud and AI impact on payments and AML in 2026",
+        "confidence": 0.95
+      },
+      {
+        "id": "4",
+        "rank": 2,
+        "why": "Best Buy marketplace emerging as significant profit driver",
+        "confidence": 0.9
+      },
+      {
+        "id": "5",
+        "rank": 3,
+        "why": "DSG expands AI and ecommerce across distribution brands",
+        "confidence": 0.9
+      },
+      {
+        "id": "14",
+        "rank": 4,
+        "why": "TikTok Shop cross-border push recruiting US sellers to Mexico",
+        "confidence": 0.85
+      },
+      {
+        "id": "1",
+        "rank": 5,
+        "why": "Middle East war disrupts US B2B ecommerce supply chains",
+        "confidence": 0.85
+      },
+      {
+        "id": "0",
+        "rank": 6,
+        "why": "Meesho faces large tax demand affecting ecommerce marketplace",
+        "confidence": 0.8
+      },
+      {
+        "id": "7",
+        "rank": 7,
+        "why": "Payment friction challenges in Africa impacting ecommerce growth",
+        "confidence": 0.8
+      }
+    ],
+    "cached_at": "2026-03-08T07:06:21.891Z",
+    "model": "gpt-4.1-mini"
+  },
+  "2026-W10:Jewellery_Industry:dd75c9a9d168": {
+    "selected": [
+      {
+        "id": "4",
+        "rank": 1,
+        "why": "Direct relevance to Pandora's product and retail strategy",
+        "confidence": 0.95
+      },
+      {
+        "id": "10",
+        "rank": 2,
+        "why": "Retail lessons from Dior and Kohl’s applicable to jewelers",
+        "confidence": 0.9
+      },
+      {
+        "id": "11",
+        "rank": 3,
+        "why": "Insights on customer engagement and loyalty in jewelry retail",
+        "confidence": 0.88
+      },
+      {
+        "id": "15",
+        "rank": 4,
+        "why": "January sales data with regional retail performance insights",
+        "confidence": 0.87
+      },
+      {
+        "id": "13",
+        "rank": 5,
+        "why": "Case study on modernizing a jeweler with retail implications",
+        "confidence": 0.85
+      },
+      {
+        "id": "2",
+        "rank": 6,
+        "why": "Regulatory changes impacting jewelry retail operations in Australia",
+        "confidence": 0.83
+      },
+      {
+        "id": "1",
+        "rank": 7,
+        "why": "Sustainability masterclass relevant for product and brand strategy",
+        "confidence": 0.8
+      }
+    ],
+    "cached_at": "2026-03-08T07:07:19.995Z",
+    "model": "gpt-4.1-mini"
   }
 }

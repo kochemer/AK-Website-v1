@@ -1,0 +1,14 @@
+{
+  "concept": "platinum-plated checkout conveyor",
+  "primaryHumorDriver": "role reversal",
+  "secondaryEnhancer": "unexpected texture/material combination",
+  "sceneDescription": "A hyper-realistic supermarket checkout scene, but the familiar black rubber conveyor belt is replaced with a gleaming, platinum-plated version, sparkling under the store's fluorescent lights. Moving down the conveyor are luxury jewelry items (like diamond rings and necklaces), a stack of cryptocurrency coins, a BNPL card, and a sleek e-wallet device, all jostling alongside mundane groceries like bread and milk. The barcode scanner is styled like an ornate jewelry loupe, and the plastic divider stick is subtly fashioned from gold. The context is a regular supermarket, but everything on the belt is a playful mashup of high-value retail and payment objects, emphasizing the absurdity of precious and digital assets being processed like everyday goods. The lighting is bright and realistic, the platinum gleams, and the overall effect is both absurd and believable.",
+  "finalImagePrompt": "Hyper-realistic photography of a wide supermarket checkout scene, shot with a 35mm lens and shallow depth of field, natural fluorescent lighting, wide horizontal banner (3:1 aspect ratio, elements in central horizontal band, safe margins). The conveyor belt is made of shiny, platinum-plated metal, highly reflective, with luxury jewelry pieces, cryptocurrency coins, a buy-now-pay-later card, and a digital e-wallet device traveling alongside ordinary groceries like bread and milk. The barcode scanner looks like a jeweler's loupe, and the divider stick is gold. The whole scene is absurd yet believable, with gleaming photorealistic textures and materials. No text, no signage, no screens or UI, no logos. The joke is in the luxury and payment objects being checked out like groceries.",
+  "negativePrompt": [
+    "text, letters, numbers, signage, labels",
+    "screens, UI, dashboards, holograms, floating icons",
+    "logos, brands, watermarks",
+    "cartoon, illustration, CGI, 3D render, anime"
+  ],
+  "confidence": 0.85
+}

@@ -1,0 +1,34 @@
+{
+  "weekLabel": "2026-W10",
+  "homepageTopArticles": [
+    {
+      "title": "Payments, Fraud and AI: Why Retailers Can’t Afford to Ignore AML in 2026",
+      "source": "Retail TouchPoints",
+      "snippet": "For anyone working in online retail, 2026 is shaping up to be a year of major change. Customers are increasingly starting to expect every kind of payment option to be available, from bank transfers and e-wallets to buy now, pay later (BNPL) schemes and, in some locations, even crypto. These choices help retailers reach more […]",
+      "aiSummary": "AI-generated summary: The article highlights that in 2026, online retailers must adapt to evolving customer payment preferences, including bank transfers, e-wallets, BNPL, and cryptocurrencies, emphasizing the importance of addressing anti-money laundering (AML) measures."
+    },
+    {
+      "title": "Best Buy online marketplace gains traction as new profit driver",
+      "source": "Digital Commerce 360",
+      "snippet": "Best Buy’s online marketplace is beginning to emerge as a meaningful contributor to profit, giving the electronics retailer a new source of revenue even as sales in its core business remain uneven. The Minneapolis-based retailer said its U.S. marketplace generated about $300 million in gross merchandise value (GMV) during its fiscal Q4 2026. It now […]\nThe post Best Buy online marketplace gains traction as new profit driver appeared first on Digital Commerce 360.",
+      "aiSummary": "AI-generated summary: Best Buy's online marketplace is becoming a significant profit contributor, generating approximately $300 million in gross merchandise value during fiscal Q4 2026, providing the retailer with a new revenue stream amid uneven core sales."
+    },
+    {
+      "title": "Jewellers judge Pandora’s platinum-plated switch",
+      "source": "Jeweller - Business News",
+      "snippet": "The world’s largest jewellery brand, Pandora, recently confirmed plans to launch a new collection of platinum-plated products.",
+      "aiSummary": "AI-generated summary: Pandora, the world’s largest jewellery brand, has announced plans to launch a new collection featuring platinum-plated products, signaling a notable development in the jewellery industry."
+    },
+    {
+      "title": "Dior Builds a Dream Store. Kohl’s Builds a Deal Rack. Both Have a Lesson for Jewelers.",
+      "source": "Instore Magazine",
+      "snippet": "Plus: what the \"barbell economy\" means for your customers in 2026.",
+      "aiSummary": "AI-generated summary: The article from Instore Magazine (2026-03-06) discusses contrasting retail strategies by Dior and Kohl’s and explores their implications for the jewellery industry, including insights on how the \"barbell economy\" will affect customers in 2026."
+    }
+  ],
+  "model": "gpt-image-1.5",
+  "finalPrompt": "Hyper-realistic photography of a wide supermarket checkout scene, shot with a 35mm lens and shallow depth of field, natural fluorescent lighting, wide horizontal banner (3:1 aspect ratio, elements in central horizontal band, safe margins). The conveyor belt is made of shiny, platinum-plated metal, highly reflective, with luxury jewelry pieces, cryptocurrency coins, a buy-now-pay-later card, and a digital e-wallet device traveling alongside ordinary groceries like bread and milk. The barcode scanner looks like a jeweler's loupe, and the divider stick is gold. The whole scene is absurd yet believable, with gleaming photorealistic textures and materials. No text, no signage, no screens or UI, no logos. The joke is in the luxury and payment objects being checked out like groceries.\n\nCRITICAL CONSTRAINTS (must be strictly avoided):\n- text, letters, numbers, signage, labels, screens, UI, dashboards, holograms, floating icons, logos, brands, watermarks, cartoon, illustration, CGI, 3D render, anime\n\nPHOTOREALISM ENFORCEMENT:\n- Ultra photorealistic editorial photograph, shot on a real DSLR or medium-format camera.\n- Natural lighting, realistic skin texture, realistic reflections, realistic materials, real physics.\n- Candid editorial realism; avoid stock-photo staging.\n\nANTI-CARTOON / ANTI-CGI:\n- No illustration, no cartoon, no anime, no 3D render, no CGI, no synthetic look.\n\nNO-TEXT GUARANTEE:\n- Absolutely no text, letters, numbers, typography, signage, labels, price tags.\n- No screens, dashboards, UI, holograms, floating icons, charts.\n- Avoid any objects that commonly contain text (posters, newspapers, packaging, storefront signs). If unavoidable, they must be fully out of focus and unreadable.\n\nCOMPOSITION FOR WIDE HERO BANNER (CRITICAL):\n- Wide, horizontally expansive banner format (target 3:1 or wider aspect ratio)\n- Vertically minimal height - all important visual elements must be placed in the central horizontal band\n- Safe margins at top and bottom - no critical content near vertical edges\n- Composition must work when displayed in a wide, shallow container\n- Avoid vertical stacking, tall elements, or content that extends to top/bottom edges",
+  "imageSize": "1536x1024",
+  "outputPath": "/weekly-images/2026-W10.png",
+  "generatedAt": "2026-03-08T07:11:04.553Z"
+}

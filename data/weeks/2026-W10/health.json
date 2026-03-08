@@ -1,0 +1,73 @@
+{
+  "digestWeek": "2026-W10",
+  "ingestionWeek": "2026-W10",
+  "startedAt": "2026-03-08T06:54:31.655Z",
+  "finishedAt": "2026-03-08T07:11:04.557Z",
+  "steps": [
+    {
+      "name": "rss",
+      "ok": true,
+      "startedAt": "2026-03-08T06:54:31.674Z",
+      "finishedAt": "2026-03-08T06:54:56.733Z"
+    },
+    {
+      "name": "pages",
+      "ok": true,
+      "startedAt": "2026-03-08T06:54:56.733Z",
+      "finishedAt": "2026-03-08T06:54:57.180Z"
+    },
+    {
+      "name": "discovery",
+      "ok": true,
+      "startedAt": "2026-03-08T06:54:57.181Z",
+      "finishedAt": "2026-03-08T07:05:20.383Z"
+    },
+    {
+      "name": "classification",
+      "ok": true,
+      "startedAt": "2026-03-08T07:05:20.383Z",
+      "finishedAt": "2026-03-08T07:05:20.436Z"
+    },
+    {
+      "name": "digest",
+      "ok": true,
+      "startedAt": "2026-03-08T07:05:20.436Z",
+      "finishedAt": "2026-03-08T07:08:14.532Z"
+    },
+    {
+      "name": "email",
+      "ok": true,
+      "startedAt": "2026-03-08T07:08:14.533Z",
+      "finishedAt": "2026-03-08T07:08:38.032Z"
+    },
+    {
+      "name": "podcast",
+      "ok": true,
+      "startedAt": "2026-03-08T07:08:38.032Z",
+      "finishedAt": "2026-03-08T07:10:11.378Z"
+    },
+    {
+      "name": "cover",
+      "ok": true,
+      "startedAt": "2026-03-08T07:10:11.378Z",
+      "finishedAt": "2026-03-08T07:11:04.555Z"
+    }
+  ],
+  "health": {
+    "warnings": [
+      "Podcast script word count: 1306 words (minimum: 1500)",
+      "AI & Strategy: economictimes.indiatimes.com represents 42.9% (3/7) - exceeds 40% threshold",
+      "Ecommerce & Retail Tech: www.digitalcommerce360.com represents 42.9% (3/7) - exceeds 40% threshold",
+      "Luxury & Consumer: www.businessoffashion.com represents 42.9% (3/7) - exceeds 40% threshold",
+      "Jewellery Industry: instoremag.com represents 42.9% (3/7) - exceeds 40% threshold"
+    ],
+    "metrics": {
+      "paywallPercent": 0,
+      "podcastWordCount": 1306
+    }
+  },
+  "versions": {
+    "node": "v20.20.0",
+    "gitCommit": "c0d331625b9816480742a87a693cf47b97e3845b"
+  }
+}
