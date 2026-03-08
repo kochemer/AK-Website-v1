@@ -95,10 +95,14 @@ export default function FeedbackForm() {
         boxShadow: '0 2px 12px 0 rgba(22, 101, 52, 0.08)',
       }}>
         <div style={{
-          fontSize: '3rem',
+          fontSize: '0.75rem',
+          fontWeight: 600,
+          letterSpacing: '0.12em',
+          textTransform: 'uppercase',
+          color: 'var(--color-accent)',
           marginBottom: '1rem',
         }}>
-          ✓
+          SUCCESS
         </div>
         <div style={{
           fontSize: '1.8rem',

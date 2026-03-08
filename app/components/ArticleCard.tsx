@@ -80,31 +80,31 @@ export default function ArticleCard({
     >
       {/* Source - top, uppercase muted */}
       {source && (
-        <div className="text-xs uppercase tracking-widest text-[var(--color-text-secondary)] mb-1.5">
+        <div className="text-meta uppercase tracking-widest text-[var(--color-text-secondary)] mb-1.5">
           {source}
         </div>
       )}
 
-      {/* Title - serif, prominent */}
+      {/* Title - serif, card title */}
       <a
         {...linkProps}
         className="block no-underline text-inherit focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-accent)] focus-visible:ring-offset-2 rounded-sm"
       >
-        <h3 className="font-serif text-xl font-semibold leading-tight text-[var(--color-text-primary)] mb-2 line-clamp-3 pr-1 hover:text-[var(--color-accent)] transition-colors">
+        <h3 className="font-serif text-card-title font-semibold text-[var(--color-text-primary)] mb-2 line-clamp-3 pr-1 hover:text-[var(--color-accent)] transition-colors">
           {localizedTitle}
         </h3>
       </a>
 
-      {/* Summary - secondary, relaxed */}
+      {/* Summary - body */}
       {cleanSummary && (
-        <div className="text-sm text-[var(--color-text-secondary)] leading-relaxed mb-3 line-clamp-4">
+        <div className="text-body text-[var(--color-text-secondary)] mb-3 line-clamp-4">
           <span className="font-medium">{aiSummaryLabel}: </span>
           {cleanSummary}
         </div>
       )}
 
-      {/* Metadata row - date, relevance (badges) */}
-      <div className="flex flex-wrap items-center gap-x-2 gap-y-1 text-xs text-[var(--color-text-secondary)]">
+      {/* Metadata row - meta */}
+      <div className="flex flex-wrap items-center gap-x-2 gap-y-1 text-meta text-[var(--color-text-secondary)]">
         {displayDate && <span className="whitespace-nowrap">{displayDate}</span>}
         {badges && badges.length > 0 && (
           <>
@@ -127,7 +127,7 @@ export default function ArticleCard({
       <div className="mt-3 flex justify-end">
         <a
           {...linkProps}
-          className="text-sm text-[var(--color-accent)] font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-200 hover:underline focus-visible:opacity-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-accent)] focus-visible:ring-offset-2 rounded px-1 -mr-1"
+          className="text-body text-[var(--color-accent)] font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-200 hover:underline focus-visible:opacity-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-accent)] focus-visible:ring-offset-2 rounded px-1 -mr-1"
         >
           Read article →
         </a>

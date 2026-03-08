@@ -123,12 +123,12 @@ export default function RootLayout({
         </main>
 
         {/* Footer (locale-aware) */}
-        <footer className="mt-4 sm:mt-6 border-t border-[var(--color-accent)] py-5 sm:py-6 text-sm font-sans text-gray-500 bg-white/80 w-full leading-relaxed">
-          <div className="max-w-3xl mx-auto px-4 sm:px-6">
-            <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-3 mb-3">
+        <footer className="mt-auto border-t border-[var(--color-accent)] pt-16 pb-12 text-body font-sans text-gray-500 bg-white/80 w-full">
+          <div className="max-w-5xl mx-auto px-4 sm:px-6">
+            <div className="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-x-12 gap-y-6 sm:gap-x-16 mb-8">
               <FooterNavLinks />
             </div>
-            <div className="text-center px-3 leading-relaxed">
+            <div className="text-center max-w-prose mx-auto px-3 text-body">
               <span className="font-medium">AI-assisted summaries</span> &mdash; Not investment or business advice. Website built and maintained by AK.
             </div>
           </div>

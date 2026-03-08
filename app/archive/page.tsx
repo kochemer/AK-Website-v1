@@ -9,7 +9,6 @@
 import { promises as fs } from 'fs';
 import path from 'path';
 import Link from 'next/link';
-import { DateTime } from 'luxon';
 import { formatDateRange } from '@/lib/utils/formatDate';
 
 async function getAvailableDigests(): Promise<string[]> {
@@ -33,30 +32,32 @@ async function getAvailableDigests(): Promise<string[]> {
   }
 }
 
-async function getWeekDateRange(weekLabel: string): Promise<string | null> {
+async function getWeekMeta(weekLabel: string): Promise<{ dateRange: string | null; coverImageUrl?: string; coverImageAlt?: string }> {
   try {
     const digestPath = path.join(process.cwd(), 'data', 'digests', `${weekLabel}.json`);
     const raw = await fs.readFile(digestPath, 'utf-8');
     const digest = JSON.parse(raw);
-    if (digest.startISO && digest.endISO) {
-      return formatDateRange(digest.startISO, digest.endISO);
-    }
+    const dateRange = digest.startISO && digest.endISO ? formatDateRange(digest.startISO, digest.endISO) : null;
+    return {
+      dateRange,
+      coverImageUrl: digest.coverImageUrl,
+      coverImageAlt: digest.coverImageAlt,
+    };
   } catch {
-    // Digest doesn't exist or doesn't have date range
+    return { dateRange: null };
   }
-  return null;
 }
 
 export default async function ArchivePage() {
   const weekLabels = await getAvailableDigests();
 
   return (
-    <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 py-8 md:py-12">
+    <div className="max-w-5xl mx-auto px-4 md:px-6 lg:px-8 py-16 md:py-20">
       <header className="mb-8 md:mb-12">
-        <h1 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">
+        <h1 className="text-page font-bold mb-4 text-gray-900">
           Weekly Digest Archive
         </h1>
-        <p className="text-base md:text-lg text-gray-600 mb-6 leading-relaxed">
+        <p className="text-body text-gray-600 mb-6">
           Browse all available weekly digests covering AI, ecommerce, luxury, and jewellery industry news.
         </p>
         <Link 
@@ -69,30 +70,39 @@ export default async function ArchivePage() {
 
       {weekLabels.length > 0 ? (
         <div>
-          <p className="text-gray-600 mb-6">
+          <p className="text-body text-gray-600 mb-6">
             Available weekly digests ({weekLabels.length}):
           </p>
           <div className="grid gap-4 md:gap-6">
             {await Promise.all(weekLabels.map(async (weekLabel) => {
-              const dateRange = await getWeekDateRange(weekLabel);
+              const meta = await getWeekMeta(weekLabel);
               return (
                 <Link
                   key={weekLabel}
                   href={`/week/${weekLabel}`}
-                  className="block p-4 md:p-6 bg-white border border-gray-200 rounded-lg hover:border-blue-300 hover:shadow-md transition-all"
+                  className="block p-4 md:p-6 bg-white border border-gray-200 rounded-lg hover:border-blue-300 hover:shadow-md transition-all overflow-hidden"
                 >
-                  <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2">
-                    <div>
-                      <h2 className="text-xl md:text-2xl font-semibold text-gray-900 mb-1">
+                  <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+                    {meta.coverImageUrl && (
+                      <div className="flex-shrink-0 w-full md:w-32 h-40 md:h-24 rounded-md overflow-hidden bg-gray-100">
+                        <img
+                          src={meta.coverImageUrl}
+                          alt={meta.coverImageAlt || `Cover for ${weekLabel}`}
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
+                    )}
+                    <div className="min-w-0 flex-1">
+                      <h2 className="text-card-title font-semibold text-gray-900 mb-1">
                         Week {weekLabel}
                       </h2>
-                      {dateRange && (
-                        <p className="text-sm md:text-base text-gray-600">
-                          {dateRange}
+                      {meta.dateRange && (
+                        <p className="text-meta text-gray-600">
+                          {meta.dateRange}
                         </p>
                       )}
                     </div>
-                    <span className="text-blue-600 text-sm md:text-base font-medium">
+                    <span className="text-blue-600 text-body font-medium shrink-0">
                       View digest →
                     </span>
                   </div>
@@ -103,11 +113,11 @@ export default async function ArchivePage() {
         </div>
       ) : (
         <div className="bg-gray-50 border border-gray-200 rounded-lg p-6 md:p-8">
-          <p className="text-gray-600 mb-4">
+          <p className="text-body text-gray-600 mb-4">
             No weekly digests available yet.
           </p>
-          <p className="text-sm md:text-base text-gray-600">
-            Run <code className="bg-gray-100 px-2 py-1 rounded text-sm font-mono">npx tsx scripts/buildWeeklyDigest.ts --week=YYYY-W##</code> to create digests.
+          <p className="text-body text-gray-600">
+            Run <code className="bg-gray-100 px-2 py-1 rounded text-meta font-mono">npx tsx scripts/buildWeeklyDigest.ts --week=YYYY-W##</code> to create digests.
           </p>
         </div>
       )}

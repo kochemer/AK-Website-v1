@@ -5,6 +5,9 @@ import { DateTime } from 'luxon';
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import DigestClientView from '../../components/DigestClientView';
+import CategoryCard from '../../components/CategoryCard';
+import PodcastPlayer from '../../components/PodcastPlayer';
+import StatsBar from '../../components/StatsBar';
 import AnalyticsDigestView from '../../components/AnalyticsDigestView';
 import TopNSelector from '../../components/TopNSelector';
 import JsonLd from '../../components/JsonLd';
@@ -128,8 +131,8 @@ export default async function WeekPage({
   if (!/^\d{4}-W\d{1,2}$/.test(weekLabel)) {
     return (
       <div className="max-w-5xl mx-auto px-4 md:px-6 py-12 md:py-16">
-        <h1 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">Invalid Week Format</h1>
-        <p className="text-base md:text-lg text-gray-600 mb-8 leading-relaxed">
+        <h1 className="text-page font-bold mb-4 text-gray-900">Invalid Week Format</h1>
+        <p className="text-body text-gray-600 mb-8">
           The week label "{weekLabel}" is not valid. Expected format: YYYY-W## (e.g., 2025-W52).
         </p>
         <div className="flex gap-4">
@@ -169,12 +172,12 @@ export default async function WeekPage({
   if (!digest) {
     return (
       <div className="max-w-5xl mx-auto px-4 md:px-6 py-12 md:py-16">
-        <h1 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">Digest Not Found</h1>
-        <p className="text-base md:text-lg text-gray-600 mb-4 leading-relaxed">
+        <h1 className="text-page font-bold mb-4 text-gray-900">Digest Not Found</h1>
+        <p className="text-body text-gray-600 mb-4">
           The digest for {weekLabel} has not been built yet.
         </p>
-        <p className="text-sm md:text-base text-gray-600 mb-8 leading-relaxed">
-          Run: <code className="bg-gray-100 px-2 py-1 rounded text-sm font-mono">npx tsx scripts/buildWeeklyDigest.ts --week={weekLabel}</code>
+        <p className="text-body text-gray-600 mb-8">
+          Run: <code className="bg-gray-100 px-2 py-1 rounded text-meta font-mono">npx tsx scripts/buildWeeklyDigest.ts --week={weekLabel}</code>
         </p>
         <div className="flex gap-4">
           <Link href="/archive" className="text-blue-600 hover:text-blue-800 underline">
@@ -244,6 +247,7 @@ export default async function WeekPage({
     color: string;
     title: string;
     desc: string;
+    cardDesc: string;
     countBy: string;
     topInfo: string;
     anchorId: string;
@@ -253,6 +257,7 @@ export default async function WeekPage({
       color: CATEGORY_COLORS.Ecommerce_Retail_Tech,
       title: 'Ecommerce & Retail Tech',
       desc: 'Breakthroughs and trends shaping online commerce, retail, and emerging tech.',
+      cardDesc: 'Digital commerce, retail innovation, DTC trends',
       countBy: 'EcommerceRetail',
       topInfo: 'Top 7 articles by recency',
       anchorId: 'ecommerce-retail-tech',
@@ -262,6 +267,7 @@ export default async function WeekPage({
       color: CATEGORY_COLORS.Jewellery_Industry,
       title: 'Jewellery Industry',
       desc: 'Key updates and articles across jewellery brands, trade, and supply chain.',
+      cardDesc: 'Market moves, brand strategy, trade insights',
       countBy: 'Jewellery',
       topInfo: 'Top 7 articles by recency',
       anchorId: 'jewellery-industry',
@@ -271,6 +277,7 @@ export default async function WeekPage({
       color: CATEGORY_COLORS.AI_and_Strategy,
       title: 'Artificial Intelligence News',
       desc: 'The latest advances and strategies in artificial intelligence and business transformation.',
+      cardDesc: 'AI news, strategy, and business transformation',
       countBy: 'AIStrategy',
       topInfo: 'Top 7 articles by relevance',
       anchorId: 'ai-strategy',
@@ -280,6 +287,7 @@ export default async function WeekPage({
       color: CATEGORY_COLORS.Luxury_and_Consumer,
       title: 'Fashion & Luxury',
       desc: 'Innovations and changes in luxury and wider consumer products, experiences, and brands.',
+      cardDesc: 'Luxury brands, consumer trends, fashion',
       countBy: 'LuxuryConsumer',
       topInfo: 'Top 7 articles by recency',
       anchorId: 'luxury-consumer',
@@ -320,7 +328,7 @@ export default async function WeekPage({
             {/* "This week's cover" label - top left */}
             {digest.coverImageUrl && (
               <div className="absolute top-3 left-3 sm:top-6 sm:left-6 z-20">
-                <p className="text-xs sm:text-sm md:text-base text-white font-medium" style={{
+                <p className="text-meta text-white font-medium" style={{
                   textShadow: '0 1px 3px rgba(0,0,0,0.5)'
                 }}>
                   This week&apos;s cover
@@ -331,25 +339,25 @@ export default async function WeekPage({
             {/* Hero content */}
             <div className="relative z-10 h-full flex items-start justify-center px-4 sm:px-6 md:px-8 pt-16 sm:pt-20 md:pt-24 lg:pt-28">
               <div className="w-full max-w-[1400px] lg:max-w-[1600px] 2xl:max-w-[1800px] mx-auto text-center">
-                <div className="bg-black/20 backdrop-blur-sm rounded-xl md:rounded-2xl px-5 py-7 sm:px-6 sm:py-8 md:px-10 md:py-12 inline-block max-w-full mx-2 sm:mx-4">
-                  <h1 className="font-bold mb-3 sm:mb-4 md:mb-5 text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-white leading-tight px-1" style={{
+                <div className="bg-black/20 backdrop-blur-sm rounded-xl md:rounded-2xl px-5 py-7 sm:px-6 sm:py-8 md:px-10 md:py-12 inline-block max-w-full mx-2 sm:mx-4 animate-fade-up">
+                  <h1 className="font-bold mb-3 sm:mb-4 md:mb-5 text-hero text-white px-1" style={{
                     textShadow: '0 2px 8px rgba(0,0,0,0.5)'
                   }}>
                     Luxury Intelligence
                   </h1>
-                  <div className="text-gray-100 leading-relaxed max-w-5xl mx-auto mb-2 sm:mb-2.5 md:mb-3 text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl px-2" style={{
+                  <div className="text-body text-gray-100 max-w-5xl mx-auto mb-2 sm:mb-2.5 md:mb-3 px-2" style={{
                     textShadow: '0 1px 4px rgba(0,0,0,0.3)'
                   }}>
                     Weekly intelligence across AI, ecommerce, luxury, and jewellery.
                   </div>
-                  <p className="text-gray-200 mb-4 sm:mb-5 md:mb-6 text-[10px] sm:text-xs md:text-sm lg:text-base xl:text-lg px-2 sm:px-3" style={{
+                  <p className="text-body text-gray-200 mb-4 sm:mb-5 md:mb-6 px-2 sm:px-3" style={{
                     textShadow: '0 1px 3px rgba(0,0,0,0.3)'
                   }}>
                     Curated articles, signals, and context — handpicked and summarised by AI agents each week.
                   </p>
                   {digest.weekLabel && (
                     <div className="mt-4 sm:mt-6 md:mt-8">
-                      <h2 className="text-base sm:text-lg md:text-3xl lg:text-4xl xl:text-5xl font-bold text-white drop-shadow-lg px-2" style={{ textShadow: '0 2px 8px rgba(0,0,0,0.5)' }}>
+                      <h2 className="text-section font-bold text-white drop-shadow-lg px-2" style={{ textShadow: '0 2px 8px rgba(0,0,0,0.5)' }}>
                         Week {digest.weekLabel}
                       </h2>
                     </div>
@@ -397,7 +405,7 @@ export default async function WeekPage({
             {digest && (
               <div className="absolute bottom-3 right-3 sm:bottom-4 sm:right-4 z-20">
                 <div className="bg-black/50 backdrop-blur-sm rounded-lg px-3 py-1.5 sm:px-4 sm:py-2">
-                  <div className="text-xs sm:text-xs md:text-sm text-white leading-tight" style={{
+                  <div className="text-meta text-white leading-tight" style={{
                     textShadow: '0 1px 2px rgba(0,0,0,0.5)'
                   }}>
                     <span className="block sm:inline">
@@ -416,99 +424,74 @@ export default async function WeekPage({
         </section>
 
         {/* PANELS SECTION - Overtaking Content */}
-        <section className="relative z-20 -mt-[40vh] sm:-mt-[50vh] md:-mt-24">
+        <section className="relative z-20 -mt-[40vh] sm:-mt-[50vh] md:-mt-24 pt-2">
           {/* Panel Container */}
-          <div className="w-full max-w-[1400px] lg:max-w-[1600px] 2xl:max-w-[1800px] mx-auto px-4 sm:px-5 md:px-8">
-            <div className="bg-white/95 dark:bg-zinc-950/90 backdrop-blur rounded-xl md:rounded-2xl shadow-lg border border-black/5 dark:border-white/10 p-3 sm:p-5 md:p-6 lg:p-10">
-              {/* Breadcrumbs */}
-              <div className="mb-4 sm:mb-5 md:mb-6">
-                <Breadcrumbs
+          <div className="w-full max-w-5xl mx-auto px-4 sm:px-5 md:px-6">
+            {/* Breadcrumbs + first content: add mt-2 gap below week header */}
+            <div className="mb-4 sm:mb-5 md:mb-6 mt-2">
+              <Breadcrumbs
                   items={[
                     { label: 'Home', href: '/' },
                     { label: 'Archive', href: '/archive' },
                     { label: `Week ${digest.weekLabel}` },
                   ]}
                 />
-              </div>
+            </div>
 
+            {/* Stats bar: article count between hero and category nav */}
+            <StatsBar
+              totalArticles={digest.totals.total}
+              secondaryLine={`${digest.totals.total} selected · 4 categories`}
+            />
+
+            {/* Podcast + stats on cream */}
+            <div className="bg-[var(--color-bg)] rounded-t-xl md:rounded-t-2xl border border-b-0 border-t border-t-[var(--color-accent)] border-black/5 p-6 sm:p-6 md:p-8 lg:p-10">
               {/* Podcast Player - At top of panel */}
               {podcast && (
                 <div className="mb-5 sm:mb-6 md:mb-8 pb-5 sm:pb-6 md:pb-8 border-b border-gray-200 dark:border-gray-700">
-                  <div className="mb-3 sm:mb-3">
-                    <h3 className="text-base sm:text-base md:text-lg font-semibold text-gray-900 dark:text-gray-100">
-                      🎧 Weekly Luxury Intelligence Podcast · ~12 minutes
-                    </h3>
-                    <p className="text-sm sm:text-sm text-gray-600 dark:text-gray-400 italic mt-1.5 sm:mt-2">
-                      Listen to this week&apos;s key ecommerce, jewellery & luxury stories
-                    </p>
-                  </div>
-                  <audio
-                    controls
-                    preload="none"
-                    className="w-full"
-                    style={{
-                      height: '48px',
-                      minHeight: '48px',
-                      borderRadius: '8px',
-                    }}
-                  >
-                    <source src={podcast.audioPath} type="audio/mpeg" />
-                    Your browser does not support the audio element.
-                  </audio>
+                  <PodcastPlayer
+                    src={podcast.audioPath}
+                    title="Weekly Luxury Intelligence · ~12 minutes"
+                    description="Listen to this week's key ecommerce, jewellery & luxury stories"
+                    durationSeconds={podcast.duration}
+                  />
                 </div>
               )}
 
-              {/* Category Control Bar - Editorial style */}
+              {/* THIS WEEK - Category cards + Top N */}
               <div className="mb-4 sm:mb-5 md:mb-6 pb-4 sm:pb-5 md:pb-6 border-b border-gray-200 dark:border-gray-700">
-                <div className="rounded-xl md:rounded-2xl border border-black/5 bg-white/70 backdrop-blur-sm px-4 sm:px-4 md:px-5 py-3 sm:py-3 md:py-3.5">
-                  <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2.5 sm:gap-3 md:gap-3">
-                    {/* Left: Category Label + Pills */}
-                    <div className="flex flex-col sm:flex-row sm:items-center gap-2.5 sm:gap-3 md:gap-3 flex-wrap">
-                      {/* Category Label */}
-                      <span className="text-sm uppercase tracking-wide text-black/40 whitespace-nowrap">
-                        Browse by category
-                      </span>
-                      
-                      {/* Category Pills */}
-                      <nav className="flex flex-wrap gap-1.5 sm:gap-2 md:gap-2 items-center" aria-label="Category navigation">
-                        {CATEGORY_CARDS.map(cat => (
-                          <a
-                            key={cat.anchorId}
-                            href={`#${cat.anchorId}`}
-                            className="rounded-full border border-black/10 bg-white px-3 py-1.5 sm:px-3.5 sm:py-2 md:px-3.5 md:py-1.5 text-xs sm:text-xs md:text-sm font-medium text-black/70 hover:bg-black/[0.02] hover:border-black/15 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black/20 focus-visible:ring-offset-1 transition-colors min-h-[40px] sm:min-h-0 flex items-center justify-center"
-                            style={{ minHeight: '40px' }}
-                          >
-                            {cat.title}
-                          </a>
-                        ))}
-                      </nav>
-                    </div>
-                    
-                    {/* Right: Top N + Article Count */}
-                    <div className="flex items-center gap-2 sm:gap-2.5 md:gap-3 flex-shrink-0">
-                      {/* Divider */}
-                      <div className="w-px h-5 bg-black/10 hidden sm:block" />
-                      
-                      {/* Top N Selector */}
-                      <div className="flex items-center">
-                        <Suspense fallback={<div className="h-4 w-20" />}>
-                          <TopNSelector />
-                        </Suspense>
-                      </div>
-                      
-                      {/* Divider */}
-                      <div className="w-px h-5 bg-black/10 hidden sm:block" />
-                      
-                      {/* Article Count */}
-                      <div className="flex flex-col items-end">
-                        <span className="text-xs sm:text-xs md:text-sm font-medium text-black/60">
-                          {digest.totals.total}
-                        </span>
-                        <span className="text-[10px] sm:text-[10px] md:text-[11px] text-black/40">
-                          articles analysed this week
-                        </span>
-                      </div>
-                    </div>
+                <span className="text-meta font-medium uppercase tracking-widest text-[var(--color-accent)] block mb-4">
+                  THIS WEEK
+                </span>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                  {CATEGORY_CARDS.map((cat) => {
+                    const byTopic = digest.totals?.byTopic as Record<string, number> | undefined;
+                    const count = byTopic?.[cat.countBy] ?? 0;
+                    return (
+                      <CategoryCard
+                        key={cat.key}
+                        title={cat.title}
+                        description={cat.cardDesc}
+                        articleCount={count}
+                        color={cat.color}
+                        href={`#${cat.anchorId}`}
+                      />
+                    );
+                  })}
+                </div>
+                <div className="flex flex-wrap items-center justify-between gap-2">
+                  <div className="flex items-center">
+                    <Suspense fallback={<div className="h-4 w-20" />}>
+                      <TopNSelector />
+                    </Suspense>
+                  </div>
+                  <div className="flex flex-col items-end">
+                    <span className="text-meta font-medium text-black/60">
+                      {digest.totals.total}
+                    </span>
+                    <span className="text-meta text-black/40">
+                      articles analysed this week
+                    </span>
                   </div>
                 </div>
               </div>
@@ -532,7 +515,7 @@ export default async function WeekPage({
                 <div className="mt-6 sm:mt-8 md:mt-10 pt-4 sm:pt-6 md:pt-8 border-t border-gray-200 dark:border-gray-700">
                   <div className="text-center">
                     {digest.oneSentenceSummary && (
-                      <p className="text-sm sm:text-base md:text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-3 sm:mb-4 px-2">
+                      <p className="text-body text-gray-700 dark:text-gray-300 mb-3 sm:mb-4 px-2">
                         {digest.oneSentenceSummary}
                       </p>
                     )}
@@ -541,7 +524,7 @@ export default async function WeekPage({
                         {digest.keyThemes.map((theme, idx) => (
                           <span
                             key={idx}
-                            className="inline-flex items-center px-2 py-1 sm:px-3 sm:py-1.5 rounded-full text-xs sm:text-sm font-medium bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 border border-blue-200 dark:border-blue-700"
+                            className="inline-flex items-center px-2 py-1 sm:px-3 sm:py-1.5 rounded-full text-meta font-medium bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 border border-blue-200 dark:border-blue-700"
                           >
                             {theme}
                           </span>
@@ -554,16 +537,16 @@ export default async function WeekPage({
 
               {/* Week Navigation */}
               <nav className="mt-6 sm:mt-8 md:mt-10 pt-4 sm:pt-6 md:pt-8 border-t border-gray-200 dark:border-gray-700">
-                <p className="text-sm text-gray-500 dark:text-gray-400 mb-4 text-center">Browse other weeks</p>
+                <p className="text-meta text-gray-500 dark:text-gray-400 mb-4 text-center">Browse other weeks</p>
                 <div className="flex items-center justify-between gap-4">
                   {previousWeek ? (
                     <Link
                       href={`/week/${previousWeek}`}
-                      className="flex items-center gap-2 text-base text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 rounded px-3 py-2"
+                      className="flex items-center gap-2 text-body text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 rounded px-3 py-2"
                     >
                       <span className="text-gray-400 dark:text-gray-500">←</span>
                       <span>Previous week</span>
-                      <span className="text-sm text-gray-500 dark:text-gray-400">({previousWeek})</span>
+                      <span className="text-meta text-gray-500 dark:text-gray-400">({previousWeek})</span>
                     </Link>
                   ) : (
                     <div className="flex-1" />
@@ -571,9 +554,9 @@ export default async function WeekPage({
                   {nextWeek ? (
                     <Link
                       href={`/week/${nextWeek}`}
-                      className="flex items-center gap-2 text-base text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 rounded px-3 py-2 ml-auto"
+                      className="flex items-center gap-2 text-body text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 rounded px-3 py-2 ml-auto"
                     >
-                      <span className="text-sm text-gray-500 dark:text-gray-400">({nextWeek})</span>
+                      <span className="text-meta text-gray-500 dark:text-gray-400">({nextWeek})</span>
                       <span>Next week</span>
                       <span className="text-gray-400 dark:text-gray-500">→</span>
                     </Link>

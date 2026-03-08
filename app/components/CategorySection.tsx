@@ -56,8 +56,8 @@ export default function CategorySection({
     <section 
       id={id}
       className={isGrid 
-        ? "bg-white rounded-lg border border-gray-100 p-4 sm:p-5 md:p-7 scroll-mt-20 sm:scroll-mt-24 relative" 
-        : "mb-8 sm:mb-10 md:mb-12 pb-8 sm:pb-10 md:pb-12 border-b border-gray-200 last:border-b-0 last:pb-0 last:mb-0 scroll-mt-20 sm:scroll-mt-24 relative"
+        ? "bg-white rounded-lg border border-gray-100 p-6 sm:p-7 md:p-8 scroll-mt-20 sm:scroll-mt-24 relative py-16 md:py-20" 
+        : "mb-0 pb-16 md:pb-20 border-b border-gray-200 last:border-b-0 last:pb-0 last:mb-0 scroll-mt-20 sm:scroll-mt-24 relative py-16 md:py-20"
       }
     >
       {/* Count Badge - Absolute top right */}
@@ -68,20 +68,20 @@ export default function CategorySection({
           top: '0',
           right: '0',
         }}>
-          <span className="text-xs sm:text-xs font-medium text-gray-700">
+          <span className="text-meta font-medium text-gray-700">
             {count}
           </span>
-          <span className="text-[10px] sm:text-[10px] text-gray-400 leading-tight mt-0.5 hidden sm:block">
+          <span className="text-meta text-gray-400 leading-tight mt-0.5 hidden sm:block">
             {countLabel}
           </span>
         </div>
       )}
-      {/* Section Header: Title (left) */}
-      <div className="mb-3 sm:mb-4 md:mb-5" style={{ paddingRight: count > 0 ? '3.5rem sm:4.5rem md:5rem' : '0' }}>
-        <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 leading-tight pr-2">{title}</h2>
+      {/* Section Header: Title (left) - generous gap before first card */}
+      <div className="mb-8" style={{ paddingRight: count > 0 ? '3.5rem sm:4.5rem md:5rem' : '0' }}>
+        <h2 className="text-section font-bold text-gray-900 pr-2">{title}</h2>
         {/* Optional Description */}
         {description && (
-          <p className="text-sm sm:text-sm md:text-base text-gray-600 mt-1.5 sm:mt-2 leading-relaxed italic pr-2">{description}</p>
+          <p className="text-body text-gray-600 mt-1.5 sm:mt-2 italic pr-2">{description}</p>
         )}
       </div>
 
@@ -106,16 +106,16 @@ export default function CategorySection({
           ))
         ) : (
           <div className="bg-gray-50 rounded-lg border border-dashed border-gray-200 text-center py-6 sm:py-8 md:py-10 lg:py-12 px-3 sm:px-4 md:px-6">
-            <div className="font-medium text-sm sm:text-base md:text-lg text-gray-600 mb-1.5 sm:mb-2">
+            <div className="font-medium text-card-title text-gray-600 mb-1.5 sm:mb-2">
               {emptyTitle}
             </div>
-            <div className="text-xs sm:text-sm md:text-base text-gray-500 mb-3 sm:mb-4">
+            <div className="text-body text-gray-500 mb-3 sm:mb-4">
               {emptyDesc}
             </div>
             {isGrid && (
-              <Link 
-                href="/feedback" 
-                className="text-xs sm:text-sm md:text-base text-gray-600 hover:text-gray-800 underline"
+              <Link
+                href="/feedback"
+                className="text-meta text-gray-600 hover:text-gray-800 underline"
               >
                 {emptyCta}
               </Link>

@@ -282,16 +282,16 @@ export default function EnableNotificationsButton() {
       <button
         onClick={handleSubscribe}
         disabled={isSubscribing}
-        className="text-[10px] md:text-xs font-medium text-gray-700 hover:text-gray-900 px-2 py-1.5 md:px-2.5 md:py-1 rounded transition-colors hover:bg-gray-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-400 focus-visible:ring-offset-1 min-h-[36px] md:min-h-0 flex items-center disabled:opacity-50 disabled:cursor-not-allowed"
+        className="text-meta font-medium text-gray-700 hover:text-gray-900 px-2 py-1.5 md:px-2.5 md:py-1 rounded transition-colors hover:bg-gray-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-400 focus-visible:ring-offset-1 min-h-[36px] md:min-h-0 flex items-center disabled:opacity-50 disabled:cursor-not-allowed"
         aria-label="Enable notifications"
       >
         {isSubscribing ? 'Enabling...' : 'Enable notifications'}
       </button>
       {status === 'success' && (
-        <span className="text-[10px] md:text-xs text-green-600">✓ Enabled</span>
+        <span className="text-meta text-green-600">✓ Enabled</span>
       )}
       {status === 'error' && (
-        <span className="text-[10px] md:text-xs text-red-600" title={errorMessage}>
+        <span className="text-meta text-red-600" title={errorMessage}>
           ✗ Failed
         </span>
       )}

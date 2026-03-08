@@ -235,10 +235,14 @@ export default function FeedbackPageDA() {
             textAlign: 'center',
           }}>
             <div style={{
-              fontSize: '3rem',
+              fontSize: '0.75rem',
+              fontWeight: 600,
+              letterSpacing: '0.12em',
+              textTransform: 'uppercase',
+              color: 'var(--color-accent)',
               marginBottom: '1rem',
             }}>
-              📧
+              BESKED
             </div>
             <h2 style={{
               fontSize: '1.8rem',

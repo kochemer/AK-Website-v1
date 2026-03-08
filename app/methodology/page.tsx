@@ -29,7 +29,7 @@ export default function MethodologyPage() {
       maxWidth: '100vw',
       minHeight: '100vh',
       fontFamily: 'system-ui, Arial, sans-serif',
-      background: '#f7f9fb',
+      background: 'var(--color-bg)',
       margin: 0,
       padding: 0,
     }}>
@@ -46,7 +46,7 @@ export default function MethodologyPage() {
         padding: 0,
         borderBottom: '1px solid #e5e7eb'
       }}>
-        <div className="w-full max-w-[1200px] lg:max-w-[1400px] 2xl:max-w-[1560px] mx-auto px-4 md:px-8" style={{
+        <div className="w-full max-w-5xl mx-auto px-4 md:px-6" style={{
           position: 'relative',
           zIndex: 2,
           color: '#fff',
@@ -65,7 +65,8 @@ export default function MethodologyPage() {
       </section>
 
       {/* Content Section */}
-      <section className="max-w-3xl mx-auto px-4 md:px-6 py-12 md:py-16">
+      <section className="max-w-5xl mx-auto px-4 md:px-6 py-16 md:py-20">
+        <div className="max-w-prose">
         {/* What this site is */}
         <div className="mb-10 md:mb-12">
           <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 mb-4">
@@ -175,6 +176,7 @@ export default function MethodologyPage() {
           <p className="text-sm text-gray-500 text-center">
             Not affiliated with any publishers. Links go to original sources.
           </p>
+        </div>
         </div>
       </section>
     </main>

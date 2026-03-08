@@ -18,7 +18,7 @@ export default function SubscribePricing({ formAction }: SubscribePricingProps) 
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-5 mb-4">
         {/* Supporter tier */}
-        <div className="rounded-xl border border-[var(--color-accent)] bg-white shadow-sm p-4 sm:p-5 flex flex-col">
+        <div className="rounded-xl border border-[var(--color-accent)] bg-white shadow-sm p-4 sm:p-5 flex flex-col hover:shadow-lg hover:-translate-y-px transition-all duration-200">
           <h3 className="text-base sm:text-lg font-semibold text-gray-900">
             Supporter
           </h3>
@@ -46,7 +46,7 @@ export default function SubscribePricing({ formAction }: SubscribePricingProps) 
         </div>
 
         {/* Backer tier */}
-        <div className="relative rounded-xl border-2 border-[var(--color-accent)] bg-[var(--color-accent-light)] shadow-sm p-4 sm:p-5 flex flex-col">
+        <div className="relative rounded-xl border-2 border-[var(--color-accent)] bg-[var(--color-accent-light)] shadow-sm p-4 sm:p-5 flex flex-col hover:shadow-lg hover:-translate-y-px transition-all duration-200">
           <h3 className="text-base sm:text-lg font-semibold text-gray-900">
             Backer
           </h3>

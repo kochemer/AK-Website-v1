@@ -49,3 +49,20 @@ export function formatTime(isoString: string): string {
 export function formatDateTime(isoString: string): string {
   return DateTime.fromISO(isoString).toFormat('MMM d, yyyy HH:mm');
 }
+
+/**
+ * Format issue line for magazine hero: "Issue W10 · March 2026"
+ * weekLabel: "2026-W10", startISO optional (uses first day of that ISO week if omitted)
+ */
+export function formatIssueLine(weekLabel: string, startISO?: string): string {
+  const issuePart = weekLabel.includes('-') ? weekLabel.split('-')[1] : weekLabel; // e.g. "W10"
+  const monthYear = startISO
+    ? DateTime.fromISO(startISO).toFormat('MMMM yyyy')
+    : (() => {
+        const [y, w] = weekLabel.split('-');
+        const weekNum = parseInt(w?.replace(/^W/i, '') || '1', 10);
+        const year = parseInt(y || String(DateTime.now().year), 10);
+        return DateTime.fromObject({ weekYear: year, weekNumber: weekNum }).toFormat('MMMM yyyy');
+      })();
+  return `Issue ${issuePart} · ${monthYear}`;
+}

@@ -24,6 +24,8 @@ export type Messages = {
   digest: {
     week: string;
     articlesProcessed: string;
+    articlesAnalysedThisWeek: string;
+    thisWeek: string;
     browseByCategory: string;
     articlesAnalysedThisWeek: string;
     coverLabel: string;
@@ -39,15 +41,23 @@ export type Messages = {
     suggestSource: string;
     articlesCount: string;
   };
+  podcast: {
+    title: string;
+    description: string;
+  };
   categories: {
     ecommerceRetailTech: string;
     ecommerceRetailTechDesc: string;
+    ecommerceRetailTechCardDesc: string;
     jewelleryIndustry: string;
     jewelleryIndustryDesc: string;
+    jewelleryIndustryCardDesc: string;
     aiStrategy: string;
     aiStrategyDesc: string;
+    aiStrategyCardDesc: string;
     fashionLuxury: string;
     fashionLuxuryDesc: string;
+    fashionLuxuryCardDesc: string;
   };
   hero: {
     tagline: string;
@@ -70,6 +80,8 @@ const en: Messages = {
   digest: {
     week: 'Week',
     articlesProcessed: 'articles processed this week',
+    articlesAnalysedThisWeek: 'articles analysed this week',
+    thisWeek: 'THIS WEEK',
     browseByCategory: 'Browse by category',
     articlesAnalysedThisWeek: 'articles analysed this week',
     coverLabel: "This week's cover",
@@ -85,15 +97,23 @@ const en: Messages = {
     suggestSource: 'Suggest a source',
     articlesCount: '# of articles processed',
   },
+  podcast: {
+    title: 'Weekly Luxury Intelligence · ~12 minutes',
+    description: "Listen to this week's key ecommerce, jewellery & luxury stories",
+  },
   categories: {
     ecommerceRetailTech: 'Ecommerce & Retail Tech',
     ecommerceRetailTechDesc: 'Breakthroughs and trends shaping online commerce, retail, and emerging tech.',
+    ecommerceRetailTechCardDesc: 'Digital commerce, retail innovation, DTC trends',
     jewelleryIndustry: 'Jewellery Industry',
     jewelleryIndustryDesc: 'Key updates and articles across jewellery brands, trade, and supply chain.',
+    jewelleryIndustryCardDesc: 'Market moves, brand strategy, trade insights',
     aiStrategy: 'Artificial Intelligence News',
     aiStrategyDesc: 'The latest advances and strategies in artificial intelligence and business transformation.',
+    aiStrategyCardDesc: 'AI news, strategy, and business transformation',
     fashionLuxury: 'Fashion & Luxury',
     fashionLuxuryDesc: 'Innovations and changes in luxury and wider consumer products, experiences, and brands.',
+    fashionLuxuryCardDesc: 'Luxury brands, consumer trends, fashion',
   },
   hero: {
     tagline: 'Weekly intelligence across AI, ecommerce, luxury, and jewellery.',
@@ -116,6 +136,8 @@ const da: Messages = {
   digest: {
     week: 'Uge',
     articlesProcessed: 'artikler behandlet denne uge',
+    articlesAnalysedThisWeek: 'artikler analyseret denne uge',
+    thisWeek: 'DENNE UGE',
     browseByCategory: 'Gennemse efter kategori',
     articlesAnalysedThisWeek: 'artikler analyseret denne uge',
     coverLabel: 'Denne uges omslag',
@@ -131,15 +153,23 @@ const da: Messages = {
     suggestSource: 'Foreslå en kilde',
     articlesCount: 'antal artikler behandlet',
   },
+  podcast: {
+    title: 'Ugentlig Luxury Intelligence · ca. 12 min',
+    description: 'Lyt til denne uges vigtigste e-handel-, smykke- og luksusnyheder',
+  },
   categories: {
     ecommerceRetailTech: 'E-handel & Detailhandel Tech',
     ecommerceRetailTechDesc: 'Fremskridt og tendenser, der former online handel, detailhandel og nye teknologier.',
+    ecommerceRetailTechCardDesc: 'Digital handel, retail-innovation, DTC-tendenser',
     jewelleryIndustry: 'Smykkeindustrien',
     jewelleryIndustryDesc: 'Vigtige opdateringer og artikler om smykkemærker, handel og forsyningskæde.',
+    jewelleryIndustryCardDesc: 'Markedsbevægelser, mærkestrategi, handelsindsigter',
     aiStrategy: 'Kunstig Intelligens Nyheder',
     aiStrategyDesc: 'De seneste fremskridt og strategier inden for kunstig intelligens og forretningstransformation.',
+    aiStrategyCardDesc: 'AI-nyheder, strategi og forretningstransformation',
     fashionLuxury: 'Mode & Luksus',
     fashionLuxuryDesc: 'Innovationer og ændringer i luksus og bredere forbrugerprodukter, oplevelser og mærker.',
+    fashionLuxuryCardDesc: 'Luksusmærker, forbruger tendenser, mode',
   },
   hero: {
     tagline: 'Ugentlig intelligens om AI, e-handel, luksus og smykker.',
@@ -162,6 +192,8 @@ const es: Messages = {
   digest: {
     week: 'Semana',
     articlesProcessed: 'artículos procesados esta semana',
+    articlesAnalysedThisWeek: 'artículos analizados esta semana',
+    thisWeek: 'ESTA SEMANA',
     browseByCategory: 'Explorar por categoría',
     articlesAnalysedThisWeek: 'artículos analizados esta semana',
     coverLabel: 'Portada de esta semana',
@@ -177,15 +209,23 @@ const es: Messages = {
     suggestSource: 'Sugerir una fuente',
     articlesCount: 'nº de artículos procesados',
   },
+  podcast: {
+    title: 'Luxury Intelligence semanal · ~12 min',
+    description: 'Escucha las principales noticias de ecommerce, joyería y lujo de esta semana',
+  },
   categories: {
     ecommerceRetailTech: 'Ecommerce y Tecnología Retail',
     ecommerceRetailTechDesc: 'Avances y tendencias que dan forma al comercio en línea, retail y tecnología emergente.',
+    ecommerceRetailTechCardDesc: 'Comercio digital, innovación retail, tendencias DTC',
     jewelleryIndustry: 'Industria de la Joyería',
     jewelleryIndustryDesc: 'Actualizaciones clave y artículos sobre marcas de joyería, comercio y cadena de suministro.',
+    jewelleryIndustryCardDesc: 'Movimientos de mercado, estrategia de marca, información del sector',
     aiStrategy: 'Noticias de Inteligencia Artificial',
     aiStrategyDesc: 'Los últimos avances y estrategias en inteligencia artificial y transformación empresarial.',
+    aiStrategyCardDesc: 'Noticias IA, estrategia y transformación empresarial',
     fashionLuxury: 'Moda y Lujo',
     fashionLuxuryDesc: 'Innovaciones y cambios en lujo y productos de consumo más amplios, experiencias y marcas.',
+    fashionLuxuryCardDesc: 'Marcas de lujo, tendencias de consumo, moda',
   },
   hero: {
     tagline: 'Inteligencia semanal sobre IA, ecommerce, lujo y joyería.',

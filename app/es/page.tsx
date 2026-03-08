@@ -1,30 +1,47 @@
 import { promises as fs } from 'fs';
 import path from 'path';
-import Link from 'next/link';
 import { Suspense } from 'react';
 import DigestClientView from '../components/DigestClientView';
+import CategoryCard from '../components/CategoryCard';
+import PodcastPlayer from '../components/PodcastPlayer';
+import StatsBar from '../components/StatsBar';
 import TopNSelector from '../components/TopNSelector';
 import { TopicKey } from '@/lib/utils/topicNames';
-import { formatDate } from '@/lib/utils/formatDate';
+import { formatDateRange, formatDateTime, formatIssueLine } from '@/lib/utils/formatDate';
 import { getCurrentDigestWeek } from '@/lib/utils/getCurrentDigestWeek';
 import { getMessages } from '@/lib/i18n/messages';
 import { CATEGORY_COLORS } from '@/lib/constants/categoryColors';
 import type { WeeklyDigest } from '@/lib/types';
 
+type PodcastMetadata = {
+  week: string;
+  audioPath: string;
+  model: string;
+  voice: string;
+  generatedAt: string;
+  duration?: number;
+};
 
 async function loadDigest(weekLabel: string): Promise<WeeklyDigest | null> {
   try {
     const digestPath = path.join(process.cwd(), 'data', 'digests', `${weekLabel}.json`);
     const raw = await fs.readFile(digestPath, 'utf-8');
     return JSON.parse(raw) as WeeklyDigest;
-  } catch (err: any) {
-    // File not found is expected if digest hasn't been generated yet
-    if (err?.code === 'ENOENT') {
-      // Silently return null - this is expected behavior
+  } catch (err: unknown) {
+    if (err && typeof err === 'object' && 'code' in err && (err as NodeJS.ErrnoException).code === 'ENOENT') {
       return null;
     }
-    // Log other errors (permissions, parse errors, etc.)
     console.error(`Failed to load digest for ${weekLabel}:`, err);
+    return null;
+  }
+}
+
+async function loadPodcastForWeek(weekLabel: string): Promise<PodcastMetadata | null> {
+  try {
+    const podcastPath = path.join(process.cwd(), 'data', 'weeks', weekLabel, 'podcast.json');
+    const raw = await fs.readFile(podcastPath, 'utf-8');
+    return JSON.parse(raw) as PodcastMetadata;
+  } catch {
     return null;
   }
 }
@@ -32,14 +49,15 @@ async function loadDigest(weekLabel: string): Promise<WeeklyDigest | null> {
 export default async function HomeES() {
   const weekLabel = getCurrentDigestWeek();
   const digest = await loadDigest(weekLabel);
+  const podcast = await loadPodcastForWeek(weekLabel);
   const t = getMessages('es');
 
-  // Category UI meta data — Spanish translations from message dictionary
   const CATEGORY_CARDS: Array<{
     key: TopicKey;
     color: string;
     title: string;
     desc: string;
+    cardDesc: string;
     countBy: string;
     topInfo: string;
     anchorId: string;
@@ -49,6 +67,7 @@ export default async function HomeES() {
       color: CATEGORY_COLORS.Ecommerce_Retail_Tech,
       title: t.categories.ecommerceRetailTech,
       desc: t.categories.ecommerceRetailTechDesc,
+      cardDesc: t.categories.ecommerceRetailTechCardDesc,
       countBy: 'EcommerceRetail',
       topInfo: 'Top 7 artículos por recencia',
       anchorId: 'ecommerce-retail-tech',
@@ -58,6 +77,7 @@ export default async function HomeES() {
       color: CATEGORY_COLORS.Jewellery_Industry,
       title: t.categories.jewelleryIndustry,
       desc: t.categories.jewelleryIndustryDesc,
+      cardDesc: t.categories.jewelleryIndustryCardDesc,
       countBy: 'Jewellery',
       topInfo: 'Top 7 artículos por recencia',
       anchorId: 'jewellery-industry',
@@ -67,6 +87,7 @@ export default async function HomeES() {
       color: CATEGORY_COLORS.AI_and_Strategy,
       title: t.categories.aiStrategy,
       desc: t.categories.aiStrategyDesc,
+      cardDesc: t.categories.aiStrategyCardDesc,
       countBy: 'AIStrategy',
       topInfo: 'Top 7 artículos por relevancia',
       anchorId: 'ai-strategy',
@@ -76,174 +97,200 @@ export default async function HomeES() {
       color: CATEGORY_COLORS.Luxury_and_Consumer,
       title: t.categories.fashionLuxury,
       desc: t.categories.fashionLuxuryDesc,
+      cardDesc: t.categories.fashionLuxuryCardDesc,
       countBy: 'LuxuryConsumer',
       topInfo: 'Top 7 artículos por recencia',
       anchorId: 'luxury-consumer',
     },
   ];
 
-
-  // HERO section (always present)
   return (
-    <main className="w-full" style={{
-      minHeight: '100vh',
-      fontFamily: 'system-ui, Arial, sans-serif',
-      background: 'var(--color-bg)',
-    }}>
-      {/* HERO */}
-      <section className="mb-6" style={{
-        position: 'relative',
-        width: '100%',
-        minHeight: 240,
-        background: 'linear-gradient(120deg, var(--color-deep) 50%, var(--color-accent) 100%)',
-        overflow: 'hidden',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        padding: 0,
-        borderBottom: '1px solid #e5e7eb'
-      }}>
-        <div className="w-full max-w-[1400px] lg:max-w-[1600px] 2xl:max-w-[1800px] mx-auto px-4 md:px-8" style={{
-          position: 'relative',
-          zIndex: 2,
-          color: '#fff',
-          padding: '2rem 1.5rem 1.75rem 1.5rem',
-          textAlign: 'center',
-        }}>
-          <h1 className="text-4xl md:text-5xl font-bold mb-3" style={{
-            textShadow: '0 1px 4px rgba(18,30,49,0.15)'
-          }}>
+    <main
+      className="w-full"
+      style={{
+        minHeight: '100vh',
+        fontFamily: 'system-ui, Arial, sans-serif',
+        background: 'var(--color-bg)',
+      }}
+    >
+      {/* MAGAZINE COVER HERO (Concept A) — full-bleed image, overlaid masthead */}
+      <section className="relative w-full min-h-[60vh] sm:min-h-[70vh] md:min-h-[80vh] overflow-hidden" style={{ zIndex: 0 }}>
+        {digest?.coverImageUrl ? (
+          <img
+            src={digest.coverImageUrl}
+            alt={digest.coverImageAlt || `Portada del resumen semanal para ${digest?.weekLabel || 'semana actual'}`}
+            className="absolute inset-0 w-full h-full object-cover"
+            style={{ objectPosition: 'bottom' }}
+          />
+        ) : (
+          <div
+            className="absolute inset-0 w-full h-full"
+            style={{ background: 'linear-gradient(120deg, var(--color-deep) 50%, var(--color-accent) 100%)' }}
+          />
+        )}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-black/30" />
+        <div className="absolute top-0 left-0 right-0 pt-8 md:pt-12 px-6 md:px-12 z-10">
+          <h1 className="text-white font-serif text-hero tracking-[0.2em] uppercase font-bold">
             Luxury Intelligence
           </h1>
-          <div className="text-base md:text-lg text-gray-100 leading-relaxed max-w-xl mx-auto mb-3">
-            {t.hero.tagline}
-          </div>
-          <p className="text-sm md:text-base text-gray-300 mb-5">
-            {t.hero.subtitle}
-          </p>
-          <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 12, flexWrap: 'wrap'}}>
-            <Link
-              href="/subscribe"
-              style={{
-                fontWeight: 600,
-                color: '#06244c',
-                background: '#fed236',
-                borderRadius: 4,
-                padding: '0.6rem 1.4rem',
-                textDecoration: 'none',
-                transition: 'background 0.2s',
-                fontSize: '1rem',
-                boxShadow: '0 2px 8px rgba(0,0,0,0.18)',
-              }}
-            >
-              {t.nav.subscribeCta} (resumen por email)
-            </Link>
-            <span className="text-gray-300 text-sm">•</span>
-            <Link href="/es/archive" className="text-sm md:text-base text-gray-200 hover:text-white underline">
-              {t.nav.archive}
-            </Link>
-            <span className="text-gray-300 text-sm">•</span>
-            <Link href="/es/about" className="text-sm md:text-base text-gray-200 hover:text-white underline">
-              {t.nav.about}
-            </Link>
-            <span className="text-gray-300 text-sm">•</span>
-            <Link href="/es/support" className="text-sm md:text-base text-gray-200 hover:text-white underline">
-              {t.nav.support}
-            </Link>
-          </div>
+          <div className="w-16 h-px bg-[var(--color-accent)] mt-3 md:mt-4" aria-hidden="true" />
+          {weekLabel && (
+            <p className="text-white/70 text-meta tracking-[0.3em] uppercase mt-2">
+              {formatIssueLine(weekLabel, digest?.startISO)}
+            </p>
+          )}
+        </div>
+        <div className="absolute bottom-0 left-0 right-0 p-6 md:p-12 z-10">
+          {digest?.oneSentenceSummary ? (
+            <p className="font-serif italic text-card-title text-white max-w-2xl" style={{ textShadow: '0 1px 4px rgba(0,0,0,0.4)' }}>
+              {digest.oneSentenceSummary}
+            </p>
+          ) : null}
         </div>
       </section>
 
-      {/* If digest missing, show clear notice */}
-      {!digest ? (
-        <section style={{
-          maxWidth: 520,
-          margin: '3.5rem auto 0 auto',
-          padding: '2.5rem 1.5rem',
-          background: '#fff1e2',
-          borderRadius: 10,
-          border: '1.5px dashed #ffdfa9',
-          fontSize: '1.1rem',
-          color: '#913d00',
-          textAlign: 'center',
-          boxShadow: '0 2px 12px 0 rgba(200,170,100,0.04)'
-        }}>
-          <h2 style={{margin: '0 0 1rem 0', fontSize: '1.6rem', fontWeight: 600}}>{t.digest.digestNotBuilt}</h2>
-          <p style={{marginBottom:'1.1rem'}}>{t.digest.noDigestFound}</p>
-          <div style={{marginBottom:'1.5rem'}}>
-            <span style={{
-              background: '#fff4ca',
-              color: '#905e19',
-              fontFamily: 'monospace',
-              padding: '0.28rem 0.46rem',
-              borderRadius: '4px',
-              fontSize: '1.04rem',
-              display:'inline-block'
-            }}>{t.digest.buildCommand}</span>
-          </div>
-        </section>
-      ) : (
-      <>
-        {/* Weekly Digest Summary / Meta */}
-        <section className="w-full max-w-[1200px] lg:max-w-[1400px] 2xl:max-w-[1560px] mx-auto px-4 md:px-8 mb-4 md:mb-6 pb-6 border-b border-gray-200">
-          <div className="flex items-baseline justify-between flex-wrap gap-4">
-            <div>
-              <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 mb-1">
-                {t.digest.week} {digest.weekLabel}
-              </h2>
-              <p className="text-sm md:text-base text-gray-500">
-                {formatDate(digest.startISO)} a {formatDate(digest.endISO)}
-                {digest.builtAtLocal && (
-                  <span className="ml-2">• Construido {digest.builtAtLocal}</span>
-                )}
-              </p>
-            </div>
-            <div className="text-right">
-              <p className="text-sm md:text-base text-gray-500">
-                {digest.totals.total} {t.digest.articlesProcessed}
-              </p>
-            </div>
-          </div>
-        </section>
+      <div className="relative z-20 -mt-6 md:-mt-8 px-4 sm:px-6 md:px-8 text-center">
+        <p className="text-body text-gray-500 dark:text-gray-400 max-w-2xl mx-auto">
+          {t.hero.tagline}
+        </p>
+      </div>
 
-        {/* Category Jump Navigation */}
-        <section className="w-full max-w-[1200px] lg:max-w-[1400px] 2xl:max-w-[1560px] mx-auto px-4 md:px-8 mb-4 md:mb-6">
-          <div className="flex flex-col items-center gap-4">
-            <nav className="flex flex-wrap gap-2 justify-center" aria-label="Navegación de categorías">
-              {CATEGORY_CARDS.map(cat => (
-                <a
-                  key={cat.anchorId}
-                  href={`#${cat.anchorId}`}
-                  className="px-4 py-2 text-sm font-medium border border-gray-200 bg-gray-50 text-gray-700 rounded-full hover:bg-gray-100 hover:border-gray-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 transition-colors"
-                >
-                  {cat.title}
-                </a>
-              ))}
-            </nav>
-            <div className="flex justify-center">
-              <Suspense fallback={<div className="h-6 w-20" />}>
-                <TopNSelector />
-              </Suspense>
-            </div>
-          </div>
-        </section>
-
-        {/* CATEGORY SECTIONS UI - Client-side rendering with reactive TopN */}
-        <Suspense fallback={
-          <section className="w-full max-w-[1200px] lg:max-w-[1400px] 2xl:max-w-[1560px] mx-auto px-4 md:px-8 mb-16 md:mb-20">
-            <div className="w-full grid grid-cols-12 gap-8 lg:gap-10">
-              {CATEGORY_CARDS.map(cat => (
-                <div key={cat.key} className="col-span-12 lg:col-span-6 w-full">
-                  <div className="bg-white rounded-lg border border-gray-100 p-4 md:p-7 h-64 animate-pulse" />
+      {/* PANELS SECTION - same structure as EN */}
+      <section className="relative z-20 -mt-2 pt-2">
+        <div className="w-full max-w-5xl mx-auto px-4 sm:px-5 md:px-6">
+          {digest && (
+            <StatsBar
+              totalArticles={digest.totals.total}
+              primaryLabel={t.digest.articlesAnalysedThisWeek}
+              secondaryLine={`${digest.totals.total} seleccionados · 4 categorías`}
+            />
+          )}
+          <div className="bg-[var(--color-bg)] rounded-t-xl md:rounded-t-2xl border border-b-0 border-t border-t-[var(--color-accent)] border-black/5 p-6 sm:p-6 md:p-8 lg:p-10">
+            {!digest ? (
+              <div
+                style={{
+                  maxWidth: 520,
+                  margin: '3.5rem auto 0 auto',
+                  padding: '2.5rem 1.5rem',
+                  background: '#fff1e2',
+                  borderRadius: 10,
+                  border: '1.5px dashed #ffdfa9',
+                  fontSize: '1.1rem',
+                  color: '#913d00',
+                  textAlign: 'center',
+                  boxShadow: '0 2px 12px 0 rgba(200,170,100,0.04)',
+                }}
+              >
+                <h2 style={{ margin: '0 0 1rem 0', fontSize: '1.6rem', fontWeight: 600 }}>{t.digest.digestNotBuilt}</h2>
+                <p style={{ marginBottom: '1.1rem' }}>{t.digest.noDigestFound}</p>
+                <div style={{ marginBottom: '1.5rem' }}>
+                  <span
+                    style={{
+                      background: '#fff4ca',
+                      color: '#905e19',
+                      fontFamily: 'monospace',
+                      padding: '0.28rem 0.46rem',
+                      borderRadius: '4px',
+                      fontSize: '1.04rem',
+                      display: 'inline-block',
+                    }}
+                  >
+                    {t.digest.buildCommand}
+                  </span>
                 </div>
-              ))}
-            </div>
-          </section>
-        }>
-          <DigestClientView digest={digest} categoryCards={CATEGORY_CARDS} variant="home" locale="es" />
-        </Suspense>
-      </>
-      )}
+              </div>
+            ) : (
+              <>
+                {podcast && (
+                  <div className="mb-5 sm:mb-6 md:mb-8 pb-5 sm:pb-6 md:pb-8 border-b border-gray-200 dark:border-gray-700">
+                    <PodcastPlayer
+                      src={podcast.audioPath}
+                      title={t.podcast.title}
+                      description={t.podcast.description}
+                      durationSeconds={podcast.duration}
+                    />
+                  </div>
+                )}
+
+                <div className="mb-4 sm:mb-5 md:mb-6 pb-4 sm:pb-5 md:pb-6 border-b border-gray-200 dark:border-gray-700">
+                  <span className="text-meta font-medium uppercase tracking-widest text-[var(--color-accent)] block mb-4">
+                    {t.digest.thisWeek}
+                  </span>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                    {CATEGORY_CARDS.map((cat) => {
+                      const byTopic = digest.totals?.byTopic as Record<string, number> | undefined;
+                      const count = byTopic?.[cat.countBy] ?? 0;
+                      return (
+                        <CategoryCard
+                          key={cat.key}
+                          title={cat.title}
+                          description={cat.cardDesc}
+                          articleCount={count}
+                          color={cat.color}
+                          href={`#${cat.anchorId}`}
+                        />
+                      );
+                    })}
+                  </div>
+                  <div className="flex flex-wrap items-center justify-between gap-2">
+                    <div className="flex items-center">
+                      <Suspense fallback={<div className="h-4 w-20" />}>
+                        <TopNSelector />
+                      </Suspense>
+                    </div>
+                    <div className="flex flex-col items-end">
+                      <span className="text-meta font-medium text-black/60">{digest.totals.total}</span>
+                      <span className="text-meta text-black/40">{t.digest.articlesAnalysedThisWeek}</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  className={`bg-white border-x border-b border-gray-200 px-6 sm:px-6 md:px-8 lg:px-10 py-16 md:py-20 ${!(digest.keyThemes?.length) && !digest.oneSentenceSummary ? 'rounded-b-xl md:rounded-b-2xl' : ''}`}
+                >
+                  <Suspense
+                    fallback={
+                      <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-6">
+                        {CATEGORY_CARDS.map((cat) => (
+                          <div key={cat.key} className="w-full">
+                            <div className="bg-white dark:bg-gray-800 rounded-lg border border-gray-100 dark:border-gray-700 p-4 md:p-7 h-64 animate-pulse" />
+                          </div>
+                        ))}
+                      </div>
+                    }
+                  >
+                    <DigestClientView digest={digest} categoryCards={CATEGORY_CARDS} variant="home" locale="es" />
+                  </Suspense>
+                </div>
+
+                {(digest.keyThemes && digest.keyThemes.length > 0) || digest.oneSentenceSummary ? (
+                  <div className="border-t border-gray-200 dark:border-gray-700 bg-[var(--color-bg)] rounded-b-xl md:rounded-b-2xl px-6 sm:px-6 md:px-8 lg:px-10 py-16 md:py-20">
+                    <div className="text-center">
+                      {digest.oneSentenceSummary && (
+                        <p className="text-body text-gray-700 dark:text-gray-300 mb-3 sm:mb-4 px-2">
+                          {digest.oneSentenceSummary}
+                        </p>
+                      )}
+                      {digest.keyThemes && digest.keyThemes.length > 0 && (
+                        <div className="flex flex-wrap gap-1.5 sm:gap-2 justify-center">
+                          {digest.keyThemes.map((theme, idx) => (
+                            <span
+                              key={idx}
+                              className="inline-flex items-center px-2 py-1 sm:px-3 sm:py-1.5 rounded-full text-meta font-medium bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 border border-blue-200 dark:border-blue-700"
+                            >
+                              {theme}
+                            </span>
+                          ))}
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                ) : null}
+              </>
+            )}
+          </div>
+        </div>
+      </section>
     </main>
   );
 }

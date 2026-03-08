@@ -5,9 +5,12 @@ import Link from 'next/link';
 import { Suspense } from 'react';
 import type { Metadata } from 'next';
 import DigestClientView from './components/DigestClientView';
+import CategoryCard from './components/CategoryCard';
+import PodcastPlayer from './components/PodcastPlayer';
+import StatsBar from './components/StatsBar';
 import TopNSelector from './components/TopNSelector';
 import { TopicKey } from '@/lib/utils/topicNames';
-import { formatDate, formatDateRange, formatDateTime } from '@/lib/utils/formatDate';
+import { formatDate, formatDateRange, formatDateTime, formatIssueLine } from '@/lib/utils/formatDate';
 import { getCurrentDigestWeek } from '@/lib/utils/getCurrentDigestWeek';
 import { getSiteUrl } from '@/lib/utils/siteUrl';
 import { CATEGORY_COLORS } from '@/lib/constants/categoryColors';
@@ -104,6 +107,7 @@ const CATEGORY_CARDS: Array<{
   color: string;
   title: string;
   desc: string;
+  cardDesc: string;
   countBy: string;
   topInfo: string;
   anchorId: string;
@@ -113,6 +117,7 @@ const CATEGORY_CARDS: Array<{
     color: CATEGORY_COLORS.Ecommerce_Retail_Tech,
     title: 'Ecommerce & Retail Tech',
     desc: 'Breakthroughs and trends shaping online commerce, retail, and emerging tech.',
+    cardDesc: 'Digital commerce, retail innovation, DTC trends',
     countBy: 'EcommerceRetail',
     topInfo: 'Top 7 articles by recency',
     anchorId: 'ecommerce-retail-tech',
@@ -122,6 +127,7 @@ const CATEGORY_CARDS: Array<{
     color: CATEGORY_COLORS.Jewellery_Industry,
     title: 'Jewellery Industry',
     desc: 'Key updates and articles across jewellery brands, trade, and supply chain.',
+    cardDesc: 'Market moves, brand strategy, trade insights',
     countBy: 'Jewellery',
     topInfo: 'Top 7 articles by recency',
     anchorId: 'jewellery-industry',
@@ -131,6 +137,7 @@ const CATEGORY_CARDS: Array<{
     color: CATEGORY_COLORS.AI_and_Strategy,
     title: 'Artificial Intelligence News',
     desc: 'The latest advances and strategies in artificial intelligence and business transformation.',
+    cardDesc: 'AI news, strategy, and business transformation',
     countBy: 'AIStrategy',
     topInfo: 'Top 7 articles by relevance',
     anchorId: 'ai-strategy',
@@ -140,6 +147,7 @@ const CATEGORY_CARDS: Array<{
     color: CATEGORY_COLORS.Luxury_and_Consumer,
     title: 'Fashion & Luxury',
     desc: 'Innovations and changes in luxury and wider consumer products, experiences, and brands.',
+    cardDesc: 'Luxury brands, consumer trends, fashion',
     countBy: 'LuxuryConsumer',
     topInfo: 'Top 7 articles by recency',
     anchorId: 'luxury-consumer',
@@ -161,84 +169,64 @@ export default async function Home() {
       background: 'var(--color-bg)',
     }}>
 
-      {/* STICKY FULL-SCREEN HERO */}
-      <section className="relative h-[70vh] md:h-[100svh]" style={{ zIndex: 0 }}>
-        <div className="sticky top-0 h-[70vh] md:h-[100svh] overflow-hidden">
-          {digest?.coverImageUrl ? (
-            <img
-              src={digest.coverImageUrl}
-              alt={digest.coverImageAlt || `Weekly digest cover for ${digest?.weekLabel || 'current week'}`}
-              className="absolute inset-0 w-full h-full object-cover md:object-contain"
-            />
-          ) : (
-            <div
-              className="absolute inset-0 w-full h-full"
-              style={{ background: 'linear-gradient(120deg, var(--color-deep) 50%, var(--color-accent) 100%)' }}
-            />
+      {/* MAGAZINE COVER HERO (Concept A) — full-bleed image, overlaid masthead */}
+      <section className="relative w-full min-h-[60vh] sm:min-h-[70vh] md:min-h-[80vh] overflow-hidden" style={{ zIndex: 0 }}>
+        {/* Cover image — full bleed, anchor to bottom so top crops and bottom is visible */}
+        {digest?.coverImageUrl ? (
+          <img
+            src={digest.coverImageUrl}
+            alt={digest.coverImageAlt || `Weekly digest cover for ${digest?.weekLabel || 'current week'}`}
+            className="absolute inset-0 w-full h-full object-cover"
+            style={{ objectPosition: 'bottom' }}
+          />
+        ) : (
+          <div
+            className="absolute inset-0 w-full h-full"
+            style={{ background: 'linear-gradient(120deg, var(--color-deep) 50%, var(--color-accent) 100%)' }}
+          />
+        )}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-black/30" />
+        {/* Masthead */}
+        <div className="absolute top-0 left-0 right-0 pt-8 md:pt-12 px-6 md:px-12 z-10">
+          <h1 className="text-white font-serif text-hero tracking-[0.2em] uppercase font-bold">
+            Luxury Intelligence
+          </h1>
+          <div className="w-16 h-px bg-[var(--color-accent)] mt-3 md:mt-4" aria-hidden="true" />
+          {weekLabel && (
+            <p className="text-white/70 text-meta tracking-[0.3em] uppercase mt-2">
+              {formatIssueLine(weekLabel, digest?.startISO)}
+            </p>
           )}
-          <div className="absolute inset-0 bg-gradient-to-b from-black/45 via-black/15 to-black/0" />
-          {digest?.coverImageUrl && (
-            <div className="absolute top-3 left-3 sm:top-6 sm:left-6 z-20">
-              <p className="text-xs sm:text-sm md:text-base text-white font-medium" style={{ textShadow: '0 1px 3px rgba(0,0,0,0.5)' }}>
-                This week&apos;s cover
-              </p>
-            </div>
-          )}
-          <div className="relative z-10 h-full flex items-start justify-center px-4 sm:px-6 md:px-8 pt-16 sm:pt-20 md:pt-24 lg:pt-28">
-            <div className="w-full max-w-[1400px] lg:max-w-[1600px] 2xl:max-w-[1800px] mx-auto text-center">
-              <div className="bg-black/20 backdrop-blur-sm rounded-xl md:rounded-2xl px-5 py-7 sm:px-6 sm:py-8 md:px-10 md:py-12 inline-block max-w-full mx-2 sm:mx-4">
-                <h1 className="font-bold mb-3 sm:mb-4 md:mb-5 text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-white leading-tight px-1" style={{ textShadow: '0 2px 8px rgba(0,0,0,0.5)' }}>
-                  Luxury Intelligence
-                </h1>
-                <div className="text-gray-100 leading-relaxed max-w-5xl mx-auto mb-2 sm:mb-2.5 md:mb-3 text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl px-2" style={{ textShadow: '0 1px 4px rgba(0,0,0,0.3)' }}>
-                  Weekly intelligence across AI, ecommerce, luxury, and jewellery.
-                </div>
-                <p className="text-gray-200 mb-4 sm:mb-5 md:mb-6 text-[10px] sm:text-xs md:text-sm lg:text-base xl:text-lg px-2 sm:px-3" style={{ textShadow: '0 1px 3px rgba(0,0,0,0.3)' }}>
-                  Curated articles, signals, and context — handpicked and summarised by AI agents each week.
-                </p>
-                {digest?.weekLabel && (
-                  <div className="mt-4 sm:mt-6 md:mt-8">
-                    <h2 className="text-base sm:text-lg md:text-3xl lg:text-4xl xl:text-5xl font-bold text-white drop-shadow-lg px-2" style={{ textShadow: '0 2px 8px rgba(0,0,0,0.5)' }}>
-                      Week {digest.weekLabel}
-                    </h2>
-                  </div>
-                )}
-              </div>
-            </div>
-            <div
-              className="absolute bottom-16 sm:bottom-32 left-1/2 pointer-events-none hidden sm:block"
-              style={{ transform: 'translateX(-50%)', zIndex: 50, animation: 'scrollIndicator 2s ease-in-out infinite' }}
-            >
-              <div className="rounded-full px-4 py-3 sm:px-6 sm:py-5 bg-black/30 backdrop-blur-md shadow-lg border border-white/10">
-                <svg className="w-8 h-8 sm:w-10 sm:h-10 text-white opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 9l-7 7-7-7" />
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 15l-7 7-7-7" />
-                </svg>
-              </div>
-            </div>
-          </div>
-          {digest && (
-            <div className="absolute bottom-3 right-3 sm:bottom-4 sm:right-4 z-20">
-              <div className="bg-black/50 backdrop-blur-sm rounded-lg px-3 py-1.5 sm:px-4 sm:py-2">
-                <div className="text-xs sm:text-xs md:text-sm text-white leading-tight" style={{ textShadow: '0 1px 2px rgba(0,0,0,0.5)' }}>
-                  <span className="block sm:inline">{formatDateRange(digest.startISO, digest.endISO)}</span>
-                  {digest.builtAtISO && (
-                    <span className="block sm:inline sm:ml-2">
-                      <span className="hidden sm:inline">•</span> Built {formatDateTime(digest.builtAtISO)}
-                    </span>
-                  )}
-                </div>
-              </div>
-            </div>
-          )}
+        </div>
+        {/* Bottom — lead line */}
+        <div className="absolute bottom-0 left-0 right-0 p-6 md:p-12 z-10">
+          {digest?.oneSentenceSummary ? (
+            <p className="font-serif italic text-card-title text-white max-w-2xl" style={{ textShadow: '0 1px 4px rgba(0,0,0,0.4)' }}>
+              {digest.oneSentenceSummary}
+            </p>
+          ) : null}
         </div>
       </section>
 
+      {/* Tagline — below hero as subtle subtitle */}
+      <div className="relative z-20 -mt-6 md:-mt-8 px-4 sm:px-6 md:px-8 text-center">
+        <p className="text-body text-gray-500 dark:text-gray-400 max-w-2xl mx-auto">
+          Weekly intelligence across AI, ecommerce, luxury, and jewellery.
+        </p>
+      </div>
+
       {/* PANELS SECTION */}
-      <section className="relative z-20 -mt-[40vh] sm:-mt-[50vh] md:-mt-24">
-        <div className="w-full max-w-[1400px] lg:max-w-[1600px] 2xl:max-w-[1800px] mx-auto px-4 sm:px-5 md:px-8">
-          <div className="bg-white/95 dark:bg-zinc-950/90 backdrop-blur rounded-xl md:rounded-2xl shadow-lg border border-black/5 dark:border-white/10 p-3 sm:p-5 md:p-6 lg:p-10">
-          {/* If digest missing, show clear notice */}
+      <section className="relative z-20 -mt-2 pt-2">
+        <div className="w-full max-w-5xl mx-auto px-4 sm:px-5 md:px-6">
+          {/* Stats bar: article count between hero and category nav */}
+          {digest && (
+            <StatsBar
+              totalArticles={digest.totals.total}
+              secondaryLine={`${digest.totals.total} selected · 4 categories`}
+            />
+          )}
+          {/* Podcast + stats on cream */}
+          <div className="bg-[var(--color-bg)] rounded-t-xl md:rounded-t-2xl border border-b-0 border-t border-t-[var(--color-accent)] border-black/5 p-6 sm:p-6 md:p-8 lg:p-10">
           {!digest ? (
             <div style={{
               maxWidth: 520,
@@ -268,88 +256,58 @@ export default async function Home() {
             </div>
           ) : (
             <>
-              {/* Podcast Player - At top of panel */}
+              {/* Podcast Player - At top of panel (cream band) */}
               {podcast && (
                 <div className="mb-5 sm:mb-6 md:mb-8 pb-5 sm:pb-6 md:pb-8 border-b border-gray-200 dark:border-gray-700">
-                  <div className="mb-3 sm:mb-3">
-                    <h3 className="text-base sm:text-base md:text-lg font-semibold text-gray-900 dark:text-gray-100">
-                      🎧 Weekly Luxury Intelligence Podcast · ~12 minutes
-                    </h3>
-                    <p className="text-sm sm:text-sm text-gray-600 dark:text-gray-400 italic mt-1.5 sm:mt-2">
-                      Listen to this week&apos;s key ecommerce, jewellery & luxury stories
-                    </p>
-                  </div>
-                  <audio
-                    controls
-                    preload="none"
-                    className="w-full"
-                    style={{
-                      height: '48px',
-                      minHeight: '48px',
-                      borderRadius: '8px',
-                    }}
-                  >
-                    <source src={podcast.audioPath} type="audio/mpeg" />
-                    Your browser does not support the audio element.
-                  </audio>
+                  <PodcastPlayer
+                    src={podcast.audioPath}
+                    title="Weekly Luxury Intelligence · ~12 minutes"
+                    description="Listen to this week's key ecommerce, jewellery & luxury stories"
+                    durationSeconds={podcast.duration}
+                  />
                 </div>
               )}
 
-              {/* Category Control Bar - Editorial style */}
+              {/* THIS WEEK - Category cards + Top N */}
               <div className="mb-4 sm:mb-5 md:mb-6 pb-4 sm:pb-5 md:pb-6 border-b border-gray-200 dark:border-gray-700">
-                <div className="rounded-xl md:rounded-2xl border border-black/5 bg-white/70 backdrop-blur-sm px-4 sm:px-4 md:px-5 py-3 sm:py-3 md:py-3.5">
-                  <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2.5 sm:gap-3 md:gap-3">
-                    {/* Left: Category Label + Pills */}
-                    <div className="flex flex-col sm:flex-row sm:items-center gap-2.5 sm:gap-3 md:gap-3 flex-wrap">
-                      {/* Category Label */}
-                      <span className="text-sm uppercase tracking-wide text-black/40 whitespace-nowrap">
-                        Browse by category
-                      </span>
-                      
-                      {/* Category Pills */}
-                      <nav className="flex flex-wrap gap-1.5 sm:gap-2 md:gap-2 items-center" aria-label="Category navigation">
-                        {CATEGORY_CARDS.map(cat => (
-                          <a
-                            key={cat.anchorId}
-                            href={`#${cat.anchorId}`}
-                            className="rounded-full border border-black/10 bg-white px-3 py-1.5 sm:px-3.5 sm:py-2 md:px-3.5 md:py-1.5 text-xs sm:text-xs md:text-sm font-medium text-black/70 hover:bg-black/[0.02] hover:border-black/15 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black/20 focus-visible:ring-offset-1 transition-colors min-h-[40px] sm:min-h-0 flex items-center justify-center"
-                            style={{ minHeight: '40px' }}
-                          >
-                            {cat.title}
-                          </a>
-                        ))}
-                      </nav>
-                    </div>
-                    
-                    {/* Right: Top N + Article Count */}
-                    <div className="flex items-center gap-2 sm:gap-2.5 md:gap-3 flex-shrink-0">
-                      {/* Divider */}
-                      <div className="w-px h-5 bg-black/10 hidden sm:block" />
-                      
-                      {/* Top N Selector */}
-                      <div className="flex items-center">
-                        <Suspense fallback={<div className="h-4 w-20" />}>
-                          <TopNSelector />
-                        </Suspense>
-                      </div>
-                      
-                      {/* Divider */}
-                      <div className="w-px h-5 bg-black/10 hidden sm:block" />
-                      
-                      {/* Article Count */}
-                      <div className="flex flex-col items-end">
-                        <span className="text-xs sm:text-xs md:text-sm font-medium text-black/60">
-                          {digest.totals.total}
-                        </span>
-                        <span className="text-[10px] sm:text-[10px] md:text-[11px] text-black/40">
-                          articles analysed this week
-                        </span>
-                      </div>
-                    </div>
+                <span className="text-meta font-medium uppercase tracking-widest text-[var(--color-accent)] block mb-4">
+                  THIS WEEK
+                </span>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                  {CATEGORY_CARDS.map((cat) => {
+                    const byTopic = digest.totals?.byTopic as Record<string, number> | undefined;
+                    const count = byTopic?.[cat.countBy] ?? 0;
+                    return (
+                      <CategoryCard
+                        key={cat.key}
+                        title={cat.title}
+                        description={cat.cardDesc}
+                        articleCount={count}
+                        color={cat.color}
+                        href={`#${cat.anchorId}`}
+                      />
+                    );
+                  })}
+                </div>
+                <div className="flex flex-wrap items-center justify-between gap-2">
+                  <div className="flex items-center">
+                    <Suspense fallback={<div className="h-4 w-20" />}>
+                      <TopNSelector />
+                    </Suspense>
+                  </div>
+                  <div className="flex flex-col items-end">
+                    <span className="text-meta font-medium text-black/60">
+                      {digest.totals.total}
+                    </span>
+                    <span className="text-meta text-black/40">
+                      articles analysed this week
+                    </span>
                   </div>
                 </div>
               </div>
 
+              {/* Article sections - white band */}
+              <div className={`bg-white border-x border-b border-gray-200 px-6 sm:px-6 md:px-8 lg:px-10 py-16 md:py-20 ${!(digest.keyThemes?.length) && !digest.oneSentenceSummary ? 'rounded-b-xl md:rounded-b-2xl' : ''}`}>
               {/* CATEGORY SECTIONS UI - Client-side rendering with reactive TopN */}
               <Suspense fallback={
                 <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-6">
@@ -362,13 +320,14 @@ export default async function Home() {
               }>
                 <DigestClientView digest={digest} categoryCards={CATEGORY_CARDS} variant="home" />
               </Suspense>
+              </div>
 
-              {/* Key Themes Summary (Home Page) */}
+              {/* Key Themes Summary (cream band) */}
               {(digest.keyThemes && digest.keyThemes.length > 0) || digest.oneSentenceSummary ? (
-                <div className="mt-6 sm:mt-8 md:mt-10 pt-4 sm:pt-6 md:pt-8 border-t border-gray-200 dark:border-gray-700">
+                <div className="border-t border-gray-200 dark:border-gray-700 bg-[var(--color-bg)] rounded-b-xl md:rounded-b-2xl px-6 sm:px-6 md:px-8 lg:px-10 py-16 md:py-20">
                   <div className="text-center">
                     {digest.oneSentenceSummary && (
-                      <p className="text-sm sm:text-base md:text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-3 sm:mb-4 px-2">
+                      <p className="text-body text-gray-700 dark:text-gray-300 mb-3 sm:mb-4 px-2">
                         {digest.oneSentenceSummary}
                       </p>
                     )}
@@ -377,7 +336,7 @@ export default async function Home() {
                         {digest.keyThemes.map((theme, idx) => (
                           <span
                             key={idx}
-                            className="inline-flex items-center px-2 py-1 sm:px-3 sm:py-1.5 rounded-full text-xs sm:text-sm font-medium bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 border border-blue-200 dark:border-blue-700"
+                            className="inline-flex items-center px-2 py-1 sm:px-3 sm:py-1.5 rounded-full text-meta font-medium bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 border border-blue-200 dark:border-blue-700"
                           >
                             {theme}
                           </span>

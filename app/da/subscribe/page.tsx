@@ -9,8 +9,8 @@ export default function SubscribePageDA() {
   return (
     <main className="w-full bg-[var(--color-bg)] min-h-screen">
       {/* Hero */}
-      <section className="w-full border-b border-gray-200 bg-gradient-to-r from-[#2e3741] via-[#394855] to-[#4a5a6b]">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 py-10 sm:py-12">
+      <section className="w-full border-b border-[var(--color-accent)] bg-gradient-to-r from-[#2e3741] via-[#394855] to-[#4a5a6b]">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 py-16 md:py-20">
           <h1 className="text-3xl sm:text-4xl font-bold text-white mb-4">
             Ugentlig email oversigt
           </h1>
@@ -43,7 +43,7 @@ export default function SubscribePageDA() {
         </div>
       </section>
 
-      <section className="max-w-3xl mx-auto px-4 sm:px-6 py-10 sm:py-12 space-y-10">
+      <section className="max-w-5xl mx-auto px-4 sm:px-6 py-16 md:py-20 space-y-12 border-t border-gray-200">
         {/* Pricing + email capture */}
         <SubscribePricing formAction={formAction} />
 

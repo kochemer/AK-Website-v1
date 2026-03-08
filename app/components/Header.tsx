@@ -87,7 +87,7 @@ export default function Header() {
           <button
             type="button"
             onClick={() => setMobileMenuOpen((o) => !o)}
-            className="p-2 rounded text-gray-700 hover:bg-gray-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-1"
+            className="p-2 rounded text-gray-700 hover:bg-gray-100 focus-visible:outline-none"
             aria-label={mobileMenuOpen ? 'Close menu' : 'Open menu'}
             aria-expanded={mobileMenuOpen}
           >
@@ -107,22 +107,25 @@ export default function Header() {
             <div>
               <p className="text-xs uppercase tracking-wide text-gray-400 mb-2">Menu</p>
               <ul className="space-y-0">
-                {primaryLinks.map((link) => (
+                {primaryLinks.map((link) => {
+                  const isActive = pathname.replace(/\/$/, '') === link.href.replace(/\/$/, '');
+                  return (
                   <li key={link.href}>
                     <Link
                       href={link.href}
                       onClick={() => setMobileMenuOpen(false)}
-                      className="block py-3 text-gray-900 font-medium hover:underline border-b border-gray-100"
+                      className={`link-underline block py-3 font-medium border-b border-gray-100 ${isActive ? 'text-[var(--color-accent)] border-b-2 border-b-[var(--color-accent)]' : 'text-gray-900 hover:underline'}`}
                     >
                       {link.label}
                     </Link>
                   </li>
-                ))}
+                  );
+                })}
                 <li className="pt-3">
                   <Link
                     href={`${prefix}/subscribe`}
                     onClick={() => setMobileMenuOpen(false)}
-                    className="inline-flex items-center justify-center bg-[var(--color-accent)] text-white px-5 py-2.5 rounded-sm font-medium w-full text-center"
+                    className="inline-flex items-center justify-center bg-[var(--color-accent)] text-white px-5 py-2.5 rounded-sm font-medium w-full text-center transition-transform duration-200 hover:scale-105"
                   >
                     {t.nav.subscribeCta}
                   </Link>
@@ -137,7 +140,7 @@ export default function Header() {
                     <Link
                       href={link.href}
                       onClick={() => setMobileMenuOpen(false)}
-                      className="block py-3 text-gray-600 hover:text-gray-900 hover:underline border-b border-gray-100 last:border-b-0"
+                      className="link-underline block py-3 text-gray-600 hover:text-gray-900 border-b border-gray-100 last:border-b-0"
                     >
                       {link.label}
                     </Link>
