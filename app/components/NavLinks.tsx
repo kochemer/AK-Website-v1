@@ -4,33 +4,23 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { getMessages, detectLocaleFromPathname } from '@/lib/i18n/messages';
 
-/**
- * Locale-aware navigation links.
- * Detects locale from current pathname and displays labels in the correct language.
- * Links point to the locale-prefixed versions of each page when on /da or /es.
- */
+/** Primary nav only: Home, Archive, About, Methodology + Subscribe CTA (filled button). */
 export default function NavLinks() {
   const pathname = usePathname() || '/';
   const locale = detectLocaleFromPathname(pathname);
   const t = getMessages(locale);
-
-  // Build locale prefix for links ('/da' or '/es' or '')
   const prefix = locale === 'en' ? '' : `/${locale}`;
 
-  const links = [
+  const primaryLinks = [
     { href: `${prefix}/` || '/', label: t.nav.home },
     { href: `${prefix}/archive`, label: t.nav.archive },
-    { href: '/email-digest', label: t.nav.emailDigest },
-    { href: `${prefix}/subscribe`, label: t.nav.subscribe },
-    { href: `${prefix}/methodology`, label: t.nav.methodology },
     { href: `${prefix}/about`, label: t.nav.about },
-    { href: `${prefix}/support`, label: t.nav.support },
-    { href: `${prefix}/feedback`, label: t.nav.feedback },
+    { href: `${prefix}/methodology`, label: t.nav.methodology },
   ];
 
   return (
     <>
-      {links.map((link) => (
+      {primaryLinks.map((link) => (
         <li key={link.href} className="whitespace-nowrap">
           <Link
             href={link.href}
@@ -40,13 +30,10 @@ export default function NavLinks() {
           </Link>
         </li>
       ))}
-      <li className="whitespace-nowrap">
+      <li className="whitespace-nowrap ml-4 md:ml-6 pl-4 md:pl-6 border-l border-[var(--color-accent)] flex items-center">
         <Link
           href={`${prefix}/subscribe`}
-          className="inline-flex items-center justify-center font-semibold text-[#06244c] bg-[#fed236] rounded-md px-2.5 py-2 md:px-3 md:py-1 text-[11px] md:text-xs transition-colors hover:bg-[#fdd01a] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#06244c] focus-visible:ring-offset-1 min-h-[44px] md:min-h-0 shadow-sm"
-          style={{
-            boxShadow: '0 2px 8px rgba(0,0,0,0.18)',
-          }}
+          className="inline-flex items-center justify-center bg-[var(--color-accent)] text-white px-5 py-2 rounded-sm font-medium transition-colors hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-accent)] focus-visible:ring-offset-1 min-h-[44px] md:min-h-0"
         >
           {t.nav.subscribeCta}
         </Link>
@@ -56,7 +43,7 @@ export default function NavLinks() {
 }
 
 /**
- * Footer navigation links (locale-aware).
+ * Footer: primary (Home, Archive, About, Methodology) + secondary (Email Digest, Support, Feedback).
  */
 export function FooterNavLinks() {
   const pathname = usePathname() || '/';
@@ -64,25 +51,34 @@ export function FooterNavLinks() {
   const t = getMessages(locale);
   const prefix = locale === 'en' ? '' : `/${locale}`;
 
-  const links = [
+  const primary = [
     { href: `${prefix}/` || '/', label: t.nav.home },
     { href: `${prefix}/archive`, label: t.nav.archive },
-    { href: '/email-digest', label: t.nav.emailDigest },
-    { href: `${prefix}/subscribe`, label: t.nav.subscribe },
-    { href: `${prefix}/methodology`, label: t.nav.methodology },
     { href: `${prefix}/about`, label: t.nav.about },
+    { href: `${prefix}/methodology`, label: t.nav.methodology },
+  ];
+  const secondary = [
+    { href: '/email-digest', label: t.nav.emailDigest },
     { href: `${prefix}/support`, label: t.nav.support },
     { href: `${prefix}/feedback`, label: t.nav.feedback },
   ];
 
   return (
     <>
-      {links.map((link) => (
+      {primary.map((link) => (
         <Link
           key={link.href}
           href={link.href}
           className="hover:underline whitespace-nowrap py-1 min-h-[44px] sm:min-h-0 flex items-center"
-          style={{ minHeight: '44px' }}
+        >
+          {link.label}
+        </Link>
+      ))}
+      {secondary.map((link) => (
+        <Link
+          key={link.href}
+          href={link.href}
+          className="hover:underline whitespace-nowrap py-1 min-h-[44px] sm:min-h-0 flex items-center"
         >
           {link.label}
         </Link>

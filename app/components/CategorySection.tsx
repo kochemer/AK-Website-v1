@@ -85,8 +85,8 @@ export default function CategorySection({
         )}
       </div>
 
-      {/* Articles List */}
-      <div className="space-y-2.5 sm:space-y-3 md:space-y-3.5">
+      {/* Articles List - 2-column grid on md+ */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {articles.length > 0 ? (
           articles.map((article, index) => (
             <ArticleCard

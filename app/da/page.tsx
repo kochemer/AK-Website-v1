@@ -8,6 +8,7 @@ import { TopicKey } from '@/lib/utils/topicNames';
 import { formatDate } from '@/lib/utils/formatDate';
 import { getCurrentDigestWeek } from '@/lib/utils/getCurrentDigestWeek';
 import { getMessages } from '@/lib/i18n/messages';
+import { CATEGORY_COLORS } from '@/lib/constants/categoryColors';
 import type { WeeklyDigest } from '@/lib/types';
 
 
@@ -45,7 +46,7 @@ export default async function HomeDA() {
   }> = [
     {
       key: 'Ecommerce_Retail_Tech',
-      color: '#264653',
+      color: CATEGORY_COLORS.Ecommerce_Retail_Tech,
       title: t.categories.ecommerceRetailTech,
       desc: t.categories.ecommerceRetailTechDesc,
       countBy: 'EcommerceRetail',
@@ -54,7 +55,7 @@ export default async function HomeDA() {
     },
     {
       key: 'Jewellery_Industry',
-      color: '#be8b36',
+      color: CATEGORY_COLORS.Jewellery_Industry,
       title: t.categories.jewelleryIndustry,
       desc: t.categories.jewelleryIndustryDesc,
       countBy: 'Jewellery',
@@ -63,7 +64,7 @@ export default async function HomeDA() {
     },
     {
       key: 'AI_and_Strategy',
-      color: '#25505f',
+      color: CATEGORY_COLORS.AI_and_Strategy,
       title: t.categories.aiStrategy,
       desc: t.categories.aiStrategyDesc,
       countBy: 'AIStrategy',
@@ -72,7 +73,7 @@ export default async function HomeDA() {
     },
     {
       key: 'Luxury_and_Consumer',
-      color: '#6b2d5c',
+      color: CATEGORY_COLORS.Luxury_and_Consumer,
       title: t.categories.fashionLuxury,
       desc: t.categories.fashionLuxuryDesc,
       countBy: 'LuxuryConsumer',
@@ -87,14 +88,14 @@ export default async function HomeDA() {
     <main className="w-full" style={{
       minHeight: '100vh',
       fontFamily: 'system-ui, Arial, sans-serif',
-      background: '#f7f9fb',
+      background: 'var(--color-bg)',
     }}>
       {/* HERO */}
       <section className="mb-6" style={{
         position: 'relative',
         width: '100%',
         minHeight: 240,
-        background: 'linear-gradient(120deg,#6b2d5c 50%, #8b4a7a 100%)',
+        background: 'linear-gradient(120deg, var(--color-deep) 50%, var(--color-accent) 100%)',
         overflow: 'hidden',
         display: 'flex',
         alignItems: 'center',

@@ -10,7 +10,7 @@ export default function SubscribePage() {
     'https://formspree.io/f/xwvpbnbz';
 
   return (
-    <main className="w-full bg-[#f7f9fb] min-h-screen">
+    <main className="w-full bg-[var(--color-bg)] min-h-screen">
       <AnalyticsSubscribeView />
       {/* Hero */}
       <section className="w-full border-b border-gray-200 bg-gradient-to-r from-[#2e3741] via-[#394855] to-[#4a5a6b]">

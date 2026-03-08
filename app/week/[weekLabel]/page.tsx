@@ -12,6 +12,7 @@ import Breadcrumbs from '../../components/Breadcrumbs';
 import { getTopicTotalsDisplayName, TopicKey } from '@/lib/utils/topicNames';
 import { formatDate, formatDateRange, formatDateTime } from '@/lib/utils/formatDate';
 import { getSiteUrl } from '@/lib/utils/siteUrl';
+import { CATEGORY_COLORS } from '@/lib/constants/categoryColors';
 import type { WeeklyDigest } from '@/lib/types';
 
 export async function generateMetadata({ params }: { params: Promise<{ weekLabel: string }> }): Promise<Metadata> {
@@ -249,7 +250,7 @@ export default async function WeekPage({
   }> = [
     {
       key: 'Ecommerce_Retail_Tech',
-      color: '#264653',
+      color: CATEGORY_COLORS.Ecommerce_Retail_Tech,
       title: 'Ecommerce & Retail Tech',
       desc: 'Breakthroughs and trends shaping online commerce, retail, and emerging tech.',
       countBy: 'EcommerceRetail',
@@ -258,7 +259,7 @@ export default async function WeekPage({
     },
     {
       key: 'Jewellery_Industry',
-      color: '#be8b36',
+      color: CATEGORY_COLORS.Jewellery_Industry,
       title: 'Jewellery Industry',
       desc: 'Key updates and articles across jewellery brands, trade, and supply chain.',
       countBy: 'Jewellery',
@@ -267,7 +268,7 @@ export default async function WeekPage({
     },
     {
       key: 'AI_and_Strategy',
-      color: '#25505f',
+      color: CATEGORY_COLORS.AI_and_Strategy,
       title: 'Artificial Intelligence News',
       desc: 'The latest advances and strategies in artificial intelligence and business transformation.',
       countBy: 'AIStrategy',
@@ -276,7 +277,7 @@ export default async function WeekPage({
     },
     {
       key: 'Luxury_and_Consumer',
-      color: '#6b2d5c',
+      color: CATEGORY_COLORS.Luxury_and_Consumer,
       title: 'Fashion & Luxury',
       desc: 'Innovations and changes in luxury and wider consumer products, experiences, and brands.',
       countBy: 'LuxuryConsumer',
@@ -289,11 +290,10 @@ export default async function WeekPage({
     <>
       <JsonLd data={collectionPageSchema} />
       <JsonLd data={breadcrumbSchema} />
-      <main className="w-full" style={{
-        minHeight: '100vh',
-        fontFamily: 'system-ui, Arial, sans-serif',
-        background: '#f7f9fb',
-      }}>
+        <main className="w-full" style={{
+          minHeight: '100vh',
+          background: 'var(--color-bg)',
+        }}>
         {/* STICKY FULL-SCREEN HERO */}
         <section className="relative h-[70vh] md:h-[100svh]" style={{ zIndex: 0 }}>
           {/* Sticky layer */}
@@ -309,7 +309,7 @@ export default async function WeekPage({
               <div 
                 className="absolute inset-0 w-full h-full"
                 style={{
-                  background: 'linear-gradient(120deg,#6b2d5c 50%, #8b4a7a 100%)',
+                  background: 'linear-gradient(120deg, var(--color-deep) 50%, var(--color-accent) 100%)',
                 }}
               />
             )}
@@ -465,7 +465,7 @@ export default async function WeekPage({
                     {/* Left: Category Label + Pills */}
                     <div className="flex flex-col sm:flex-row sm:items-center gap-2.5 sm:gap-3 md:gap-3 flex-wrap">
                       {/* Category Label */}
-                      <span className="text-[11px] uppercase tracking-wider text-black/40 whitespace-nowrap">
+                      <span className="text-sm uppercase tracking-wide text-black/40 whitespace-nowrap">
                         Browse by category
                       </span>
                       

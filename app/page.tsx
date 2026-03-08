@@ -10,6 +10,7 @@ import { TopicKey } from '@/lib/utils/topicNames';
 import { formatDate, formatDateRange, formatDateTime } from '@/lib/utils/formatDate';
 import { getCurrentDigestWeek } from '@/lib/utils/getCurrentDigestWeek';
 import { getSiteUrl } from '@/lib/utils/siteUrl';
+import { CATEGORY_COLORS } from '@/lib/constants/categoryColors';
 import type { WeeklyDigest } from '@/lib/types';
 
 // Get site URL once at module load
@@ -46,13 +47,6 @@ export const metadata: Metadata = {
     images: [`${siteUrl}/og-default.svg`],
   },
 };
-
-function getCurrentWeek(): string {
-  const now = DateTime.now().setZone('Europe/Copenhagen');
-  const year = now.year;
-  const weekNumber = now.weekNumber;
-  return `${year}-W${weekNumber.toString().padStart(2, '0')}`;
-}
 
 async function loadDigest(weekLabel: string): Promise<WeeklyDigest | null> {
   try {
@@ -116,7 +110,7 @@ const CATEGORY_CARDS: Array<{
 }> = [
   {
     key: 'Ecommerce_Retail_Tech',
-    color: '#264653',
+    color: CATEGORY_COLORS.Ecommerce_Retail_Tech,
     title: 'Ecommerce & Retail Tech',
     desc: 'Breakthroughs and trends shaping online commerce, retail, and emerging tech.',
     countBy: 'EcommerceRetail',
@@ -125,7 +119,7 @@ const CATEGORY_CARDS: Array<{
   },
   {
     key: 'Jewellery_Industry',
-    color: '#be8b36',
+    color: CATEGORY_COLORS.Jewellery_Industry,
     title: 'Jewellery Industry',
     desc: 'Key updates and articles across jewellery brands, trade, and supply chain.',
     countBy: 'Jewellery',
@@ -134,7 +128,7 @@ const CATEGORY_CARDS: Array<{
   },
   {
     key: 'AI_and_Strategy',
-    color: '#25505f',
+    color: CATEGORY_COLORS.AI_and_Strategy,
     title: 'Artificial Intelligence News',
     desc: 'The latest advances and strategies in artificial intelligence and business transformation.',
     countBy: 'AIStrategy',
@@ -143,7 +137,7 @@ const CATEGORY_CARDS: Array<{
   },
   {
     key: 'Luxury_and_Consumer',
-    color: '#6b2d5c',
+    color: CATEGORY_COLORS.Luxury_and_Consumer,
     title: 'Fashion & Luxury',
     desc: 'Innovations and changes in luxury and wider consumer products, experiences, and brands.',
     countBy: 'LuxuryConsumer',
@@ -164,14 +158,12 @@ export default async function Home() {
     <main className="w-full" style={{
       minHeight: '100vh',
       fontFamily: 'system-ui, Arial, sans-serif',
-      background: '#f7f9fb',
+      background: 'var(--color-bg)',
     }}>
 
       {/* STICKY FULL-SCREEN HERO */}
       <section className="relative h-[70vh] md:h-[100svh]" style={{ zIndex: 0 }}>
-        {/* Sticky layer */}
         <div className="sticky top-0 h-[70vh] md:h-[100svh] overflow-hidden">
-          {/* Cover image or gradient background */}
           {digest?.coverImageUrl ? (
             <img
               src={digest.coverImageUrl}
@@ -179,45 +171,29 @@ export default async function Home() {
               className="absolute inset-0 w-full h-full object-cover md:object-contain"
             />
           ) : (
-            <div 
+            <div
               className="absolute inset-0 w-full h-full"
-              style={{
-                background: 'linear-gradient(120deg,#6b2d5c 50%, #8b4a7a 100%)',
-              }}
+              style={{ background: 'linear-gradient(120deg, var(--color-deep) 50%, var(--color-accent) 100%)' }}
             />
           )}
-          
-          {/* Gradient overlay for text legibility */}
           <div className="absolute inset-0 bg-gradient-to-b from-black/45 via-black/15 to-black/0" />
-          
-          {/* "This week's cover" label - top left */}
           {digest?.coverImageUrl && (
             <div className="absolute top-3 left-3 sm:top-6 sm:left-6 z-20">
-              <p className="text-xs sm:text-sm md:text-base text-white font-medium" style={{
-                textShadow: '0 1px 3px rgba(0,0,0,0.5)'
-              }}>
+              <p className="text-xs sm:text-sm md:text-base text-white font-medium" style={{ textShadow: '0 1px 3px rgba(0,0,0,0.5)' }}>
                 This week&apos;s cover
               </p>
             </div>
           )}
-          
-          {/* Hero content */}
           <div className="relative z-10 h-full flex items-start justify-center px-4 sm:px-6 md:px-8 pt-16 sm:pt-20 md:pt-24 lg:pt-28">
             <div className="w-full max-w-[1400px] lg:max-w-[1600px] 2xl:max-w-[1800px] mx-auto text-center">
               <div className="bg-black/20 backdrop-blur-sm rounded-xl md:rounded-2xl px-5 py-7 sm:px-6 sm:py-8 md:px-10 md:py-12 inline-block max-w-full mx-2 sm:mx-4">
-                <h1 className="font-bold mb-3 sm:mb-4 md:mb-5 text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-white leading-tight px-1" style={{
-                  textShadow: '0 2px 8px rgba(0,0,0,0.5)'
-                }}>
+                <h1 className="font-bold mb-3 sm:mb-4 md:mb-5 text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-white leading-tight px-1" style={{ textShadow: '0 2px 8px rgba(0,0,0,0.5)' }}>
                   Luxury Intelligence
                 </h1>
-                <div className="text-gray-100 leading-relaxed max-w-5xl mx-auto mb-2 sm:mb-2.5 md:mb-3 text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl px-2" style={{
-                  textShadow: '0 1px 4px rgba(0,0,0,0.3)'
-                }}>
+                <div className="text-gray-100 leading-relaxed max-w-5xl mx-auto mb-2 sm:mb-2.5 md:mb-3 text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl px-2" style={{ textShadow: '0 1px 4px rgba(0,0,0,0.3)' }}>
                   Weekly intelligence across AI, ecommerce, luxury, and jewellery.
                 </div>
-                <p className="text-gray-200 mb-4 sm:mb-5 md:mb-6 text-[10px] sm:text-xs md:text-sm lg:text-base xl:text-lg px-2 sm:px-3" style={{
-                  textShadow: '0 1px 3px rgba(0,0,0,0.3)'
-                }}>
+                <p className="text-gray-200 mb-4 sm:mb-5 md:mb-6 text-[10px] sm:text-xs md:text-sm lg:text-base xl:text-lg px-2 sm:px-3" style={{ textShadow: '0 1px 3px rgba(0,0,0,0.3)' }}>
                   Curated articles, signals, and context — handpicked and summarised by AI agents each week.
                 </p>
                 {digest?.weekLabel && (
@@ -229,53 +205,23 @@ export default async function Home() {
                 )}
               </div>
             </div>
-            
-            {/* Scroll indicator - inside hero content area */}
-            <div 
+            <div
               className="absolute bottom-16 sm:bottom-32 left-1/2 pointer-events-none hidden sm:block"
-              style={{
-                transform: 'translateX(-50%)',
-                zIndex: 50,
-                animation: 'scrollIndicator 2s ease-in-out infinite'
-              }}
+              style={{ transform: 'translateX(-50%)', zIndex: 50, animation: 'scrollIndicator 2s ease-in-out infinite' }}
             >
               <div className="rounded-full px-4 py-3 sm:px-6 sm:py-5 bg-black/30 backdrop-blur-md shadow-lg border border-white/10">
-                <svg 
-                  className="w-8 h-8 sm:w-10 sm:h-10 text-white opacity-80" 
-                  fill="none" 
-                  stroke="currentColor" 
-                  viewBox="0 0 24 24"
-                  aria-hidden="true"
-                >
-                  {/* First chevron */}
-                  <path 
-                    strokeLinecap="round" 
-                    strokeLinejoin="round" 
-                    strokeWidth={2.5} 
-                    d="M19 9l-7 7-7-7" 
-                  />
-                  {/* Second chevron (shifted down) */}
-                  <path 
-                    strokeLinecap="round" 
-                    strokeLinejoin="round" 
-                    strokeWidth={2.5} 
-                    d="M19 15l-7 7-7-7" 
-                  />
+                <svg className="w-8 h-8 sm:w-10 sm:h-10 text-white opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 9l-7 7-7-7" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 15l-7 7-7-7" />
                 </svg>
               </div>
             </div>
           </div>
-          
-          {/* Date range and build info - bottom right */}
           {digest && (
             <div className="absolute bottom-3 right-3 sm:bottom-4 sm:right-4 z-20">
               <div className="bg-black/50 backdrop-blur-sm rounded-lg px-3 py-1.5 sm:px-4 sm:py-2">
-                <div className="text-xs sm:text-xs md:text-sm text-white leading-tight" style={{
-                  textShadow: '0 1px 2px rgba(0,0,0,0.5)'
-                }}>
-                  <span className="block sm:inline">
-                    {formatDateRange(digest.startISO, digest.endISO)}
-                  </span>
+                <div className="text-xs sm:text-xs md:text-sm text-white leading-tight" style={{ textShadow: '0 1px 2px rgba(0,0,0,0.5)' }}>
+                  <span className="block sm:inline">{formatDateRange(digest.startISO, digest.endISO)}</span>
                   {digest.builtAtISO && (
                     <span className="block sm:inline sm:ml-2">
                       <span className="hidden sm:inline">•</span> Built {formatDateTime(digest.builtAtISO)}
@@ -288,9 +234,8 @@ export default async function Home() {
         </div>
       </section>
 
-      {/* PANELS SECTION - Overtaking Content */}
+      {/* PANELS SECTION */}
       <section className="relative z-20 -mt-[40vh] sm:-mt-[50vh] md:-mt-24">
-        {/* Panel Container */}
         <div className="w-full max-w-[1400px] lg:max-w-[1600px] 2xl:max-w-[1800px] mx-auto px-4 sm:px-5 md:px-8">
           <div className="bg-white/95 dark:bg-zinc-950/90 backdrop-blur rounded-xl md:rounded-2xl shadow-lg border border-black/5 dark:border-white/10 p-3 sm:p-5 md:p-6 lg:p-10">
           {/* If digest missing, show clear notice */}
@@ -357,7 +302,7 @@ export default async function Home() {
                     {/* Left: Category Label + Pills */}
                     <div className="flex flex-col sm:flex-row sm:items-center gap-2.5 sm:gap-3 md:gap-3 flex-wrap">
                       {/* Category Label */}
-                      <span className="text-[11px] uppercase tracking-wider text-black/40 whitespace-nowrap">
+                      <span className="text-sm uppercase tracking-wide text-black/40 whitespace-nowrap">
                         Browse by category
                       </span>
                       

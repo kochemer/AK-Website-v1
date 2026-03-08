@@ -67,69 +67,71 @@ export default function ArticleCard({
   // Format date for display
   const displayDate = date ? formatDisplayDate(date) : null;
 
+  const linkProps = {
+    href: url,
+    target: '_blank',
+    rel: 'noopener noreferrer' as const,
+    onClick: handleOutboundClick,
+  };
+
   return (
-    <div className="block w-full bg-white pb-4 sm:pb-4 md:pb-5 border-b border-gray-100">
-      <a
-        href={url}
-        target="_blank"
-        rel="noopener noreferrer"
-        onClick={handleOutboundClick}
-        className="block pt-4 sm:pt-4 md:pt-5 no-underline text-inherit focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
-      >
-        {/* Title */}
-        <div className="mb-2 sm:mb-2 md:mb-2.5 font-semibold text-base sm:text-base md:text-lg leading-snug sm:leading-tight text-blue-800 line-clamp-3 pr-1">
-          {localizedTitle}
-        </div>
-
-        {/* Meta row: Source • Date (only render if source or date exists) */}
-        {(source || displayDate) && (
-          <div className="flex flex-wrap items-center gap-1.5 sm:gap-2 text-xs sm:text-sm md:text-base text-gray-600 mb-2 sm:mb-2.5">
-            {source && <span className="break-words">{source}</span>}
-            {source && displayDate && (
-              <span className="text-gray-400 font-light hidden sm:inline">•</span>
-            )}
-            {displayDate && <span className="whitespace-nowrap">{displayDate}</span>}
-            {badges && badges.length > 0 && (
-              <>
-                <span className="text-gray-400 font-light hidden sm:inline">•</span>
-                <div className="flex gap-1.5 sm:gap-1.5 flex-wrap">
-                  {badges.map((badge, idx) => (
-                    <span
-                      key={idx}
-                      className="px-1.5 sm:px-1.5 py-0.5 text-[10px] sm:text-xs bg-gray-100 text-gray-700 rounded"
-                    >
-                      {badge}
-                    </span>
-                  ))}
-                </div>
-              </>
-            )}
-          </div>
-        )}
-
-        {/* Badges row (only render if meta row is hidden and badges exist) */}
-        {!(source || displayDate) && badges && badges.length > 0 && (
-          <div className="flex gap-1 sm:gap-1.5 flex-wrap mb-1">
-            {badges.map((badge, idx) => (
-              <span
-                key={idx}
-                className="px-1 sm:px-1.5 py-0.5 text-[10px] sm:text-xs bg-gray-100 text-gray-700 rounded"
-              >
-                {badge}
-              </span>
-            ))}
-          </div>
-        )}
-      </a>
-
-      {/* Optional summary - responsive clamp */}
-      {cleanSummary && (
-        <div className="mt-2.5 sm:mt-3">
-          <div className="text-sm sm:text-sm md:text-base text-gray-600 bg-gray-50 border-l-2 border-gray-300 rounded px-3 sm:px-3 md:px-4 py-2 sm:py-2 md:py-2.5 line-clamp-4 sm:line-clamp-5 md:line-clamp-6">
-            <span className="text-sm sm:text-sm md:text-base text-gray-600 font-medium">{aiSummaryLabel}: </span>{cleanSummary}
-          </div>
+    <article
+      className="group transition-all duration-200 py-6 border-b border-gray-200 pl-0 hover:pl-3 hover:border-l-2 hover:border-l-[var(--color-accent)] hover:bg-[var(--color-accent-light)] last:border-b-0"
+    >
+      {/* Source - top, uppercase muted */}
+      {source && (
+        <div className="text-xs uppercase tracking-widest text-[var(--color-text-secondary)] mb-1.5">
+          {source}
         </div>
       )}
-    </div>
+
+      {/* Title - serif, prominent */}
+      <a
+        {...linkProps}
+        className="block no-underline text-inherit focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-accent)] focus-visible:ring-offset-2 rounded-sm"
+      >
+        <h3 className="font-serif text-xl font-semibold leading-tight text-[var(--color-text-primary)] mb-2 line-clamp-3 pr-1 hover:text-[var(--color-accent)] transition-colors">
+          {localizedTitle}
+        </h3>
+      </a>
+
+      {/* Summary - secondary, relaxed */}
+      {cleanSummary && (
+        <div className="text-sm text-[var(--color-text-secondary)] leading-relaxed mb-3 line-clamp-4">
+          <span className="font-medium">{aiSummaryLabel}: </span>
+          {cleanSummary}
+        </div>
+      )}
+
+      {/* Metadata row - date, relevance (badges) */}
+      <div className="flex flex-wrap items-center gap-x-2 gap-y-1 text-xs text-[var(--color-text-secondary)]">
+        {displayDate && <span className="whitespace-nowrap">{displayDate}</span>}
+        {badges && badges.length > 0 && (
+          <>
+            {displayDate && <span aria-hidden>·</span>}
+            <div className="flex gap-1.5 flex-wrap">
+              {badges.map((badge, idx) => (
+                <span
+                  key={idx}
+                  className="px-1.5 py-0.5 bg-gray-100 text-gray-700 rounded"
+                >
+                  {badge}
+                </span>
+              ))}
+            </div>
+          </>
+        )}
+      </div>
+
+      {/* Read article → link - bottom right, visible on hover */}
+      <div className="mt-3 flex justify-end">
+        <a
+          {...linkProps}
+          className="text-sm text-[var(--color-accent)] font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-200 hover:underline focus-visible:opacity-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-accent)] focus-visible:ring-offset-2 rounded px-1 -mr-1"
+        >
+          Read article →
+        </a>
+      </div>
+    </article>
   );
 }
