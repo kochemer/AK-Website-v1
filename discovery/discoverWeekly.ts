@@ -47,7 +47,7 @@ export type DiscoverWeeklyOptions = {
 export async function discoverWeekly(options: DiscoverWeeklyOptions): Promise<{ added: number; updated: number }> {
   const {
     weekLabel,
-    maxCandidates = 120,
+    maxCandidates = 240,
     selectTop = 20,
     regenDelta = false,
     noDelta = false,

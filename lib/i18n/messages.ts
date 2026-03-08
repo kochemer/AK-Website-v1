@@ -27,7 +27,6 @@ export type Messages = {
     articlesAnalysedThisWeek: string;
     thisWeek: string;
     browseByCategory: string;
-    articlesAnalysedThisWeek: string;
     coverLabel: string;
     digestNotBuilt: string;
     noDigestFound: string;

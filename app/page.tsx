@@ -173,12 +173,22 @@ export default async function Home() {
       <section className="relative w-full min-h-[60vh] sm:min-h-[70vh] md:min-h-[80vh] overflow-hidden" style={{ zIndex: 0 }}>
         {/* Cover image — full bleed, anchor to bottom so top crops and bottom is visible */}
         {digest?.coverImageUrl ? (
-          <img
-            src={digest.coverImageUrl}
-            alt={digest.coverImageAlt || `Weekly digest cover for ${digest?.weekLabel || 'current week'}`}
-            className="absolute inset-0 w-full h-full object-cover"
-            style={{ objectPosition: 'bottom' }}
-          />
+          <>
+            <div
+              className="absolute inset-0 w-full h-full bg-cover bg-no-repeat bg-center"
+              style={{
+                backgroundImage: `url(${digest.coverImageUrl})`,
+                backgroundPosition: 'center bottom',
+                backgroundSize: 'cover',
+              }}
+              aria-hidden="true"
+            />
+            <img
+              src={digest.coverImageUrl}
+              alt={digest.coverImageAlt || `Weekly digest cover for ${digest?.weekLabel || 'current week'}`}
+              className="sr-only"
+            />
+          </>
         ) : (
           <div
             className="absolute inset-0 w-full h-full"

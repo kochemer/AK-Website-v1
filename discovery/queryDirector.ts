@@ -132,11 +132,11 @@ export async function generateSearchQueries(
     const consultancyQueriesForCategory = consultancyQueriesByCategory[categoryLabel] || [];
     const platformQueriesForCategory = platformQueriesByCategory[categoryLabel] || [];
     
-    if (baseQueriesForCategory.length !== 12) {
-      throw new Error(`Base queries for ${categoryLabel} must have exactly 12 queries, found ${baseQueriesForCategory.length}`);
+    if (baseQueriesForCategory.length !== 24) {
+      throw new Error(`Base queries for ${categoryLabel} must have exactly 24 queries, found ${baseQueriesForCategory.length}`);
     }
     
-    // Combine: base (12) + delta (3) + consultancy (2) + platform (2) = 19 total
+    // Combine: base (24) + delta (6) + consultancy (4) + platform (4) = 38 total
     const combined = [...baseQueriesForCategory, ...deltaQueriesForTopic, ...consultancyQueriesForCategory, ...platformQueriesForCategory];
     finalQueries[topic] = combined;
     deltaQueriesByCategory[categoryLabel] = deltaQueriesForTopic;

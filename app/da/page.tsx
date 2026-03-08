@@ -116,12 +116,22 @@ export default async function HomeDA() {
       {/* MAGAZINE COVER HERO (Concept A) — full-bleed image, overlaid masthead */}
       <section className="relative w-full min-h-[60vh] sm:min-h-[70vh] md:min-h-[80vh] overflow-hidden" style={{ zIndex: 0 }}>
         {digest?.coverImageUrl ? (
-          <img
-            src={digest.coverImageUrl}
-            alt={digest.coverImageAlt || `Ugentlig oversigt omslag for ${digest?.weekLabel || 'current week'}`}
-            className="absolute inset-0 w-full h-full object-cover"
-            style={{ objectPosition: 'bottom' }}
-          />
+          <>
+            <div
+              className="absolute inset-0 w-full h-full bg-cover bg-no-repeat bg-center"
+              style={{
+                backgroundImage: `url(${digest.coverImageUrl})`,
+                backgroundPosition: 'center bottom',
+                backgroundSize: 'cover',
+              }}
+              aria-hidden="true"
+            />
+            <img
+              src={digest.coverImageUrl}
+              alt={digest.coverImageAlt || `Ugentlig oversigt omslag for ${digest?.weekLabel || 'current week'}`}
+              className="sr-only"
+            />
+          </>
         ) : (
           <div
             className="absolute inset-0 w-full h-full"

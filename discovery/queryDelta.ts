@@ -132,7 +132,7 @@ ${headlinesContext}
 Base queries (already used, do NOT repeat these semantically):
 ${baseQueriesList}
 
-Generate exactly 3 NEW web search queries that:
+Generate exactly 6 NEW web search queries that:
 1. Focus on NEW developments this week (not covered by base queries)
 2. Are phrased evergreen (no dates like "October 2023", "2024", etc.)
 3. Avoid war/armed conflict, culture war, election horse-race politics
@@ -143,14 +143,14 @@ Generate exactly 3 NEW web search queries that:
 Return a JSON object:
 {
   "category": "${categoryLabel}",
-  "deltaQueries": ["query1", "query2", "query3"]
+  "deltaQueries": ["query1", "query2", "query3", "query4", "query5", "query6"]
 }`;
 
   try {
     const response = await openai.chat.completions.create({
       model: QUERY_DELTA_MODEL,
       messages: [
-        { role: 'system', content: 'You are a precise web search query generator. Always return valid JSON with exactly 3 queries.' },
+        { role: 'system', content: 'You are a precise web search query generator. Always return valid JSON with exactly 6 queries.' },
         { role: 'user', content: prompt }
       ],
       ...temperatureParam(QUERY_DELTA_MODEL, TEMPERATURE),
@@ -165,8 +165,8 @@ Return a JSON object:
     const output = JSON.parse(content) as DeltaQueriesOutput;
     
     // Validate
-    if (!Array.isArray(output.deltaQueries) || output.deltaQueries.length !== 3) {
-      throw new Error(`Invalid output: deltaQueries must be an array with exactly 3 queries, got ${output.deltaQueries?.length || 0}`);
+    if (!Array.isArray(output.deltaQueries) || output.deltaQueries.length !== 6) {
+      throw new Error(`Invalid output: deltaQueries must be an array with exactly 6 queries, got ${output.deltaQueries?.length || 0}`);
     }
     
     // Validate each query is a non-empty string
@@ -269,11 +269,11 @@ export async function generateDeltaQueries(
     const categoryLabel = getCategoryLabel(topic);
     const baseQueriesForTopic = baseQueries[categoryLabel] || [];
     
-    if (baseQueriesForTopic.length !== 12) {
-      throw new Error(`Base queries for ${categoryLabel} must have exactly 12 queries, found ${baseQueriesForTopic.length}`);
+    if (baseQueriesForTopic.length !== 24) {
+      throw new Error(`Base queries for ${categoryLabel} must have exactly 24 queries, found ${baseQueriesForTopic.length}`);
     }
     
-    console.log(`[QueryDelta] Generating 3 delta queries for ${categoryLabel}...`);
+    console.log(`[QueryDelta] Generating 6 delta queries for ${categoryLabel}...`);
     const deltaQueries = await generateDeltaQueriesForTopic(
       topic,
       weekLabel,

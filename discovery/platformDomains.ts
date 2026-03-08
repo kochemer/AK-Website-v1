@@ -40,12 +40,11 @@ export function isPlatformDomain(domain: string): boolean {
 
 /**
  * Generate platform-targeted queries for a category
- * Returns 2 queries per category that target platform domains
+ * Returns 4 queries per category that target platform domains
  */
 export function generatePlatformQueries(topic: string, categoryLabel: string): string[] {
   const queries: string[] = [];
   
-  // Map topics to relevant platform query patterns
   const topicQueries: Record<string, { google: string; amazon: string; shopify: string; walmart: string }> = {
     "AI_and_Strategy": {
       google: "site:ai.googleblog.com artificial intelligence",
@@ -75,18 +74,15 @@ export function generatePlatformQueries(topic: string, categoryLabel: string): s
   
   const patterns = topicQueries[topic];
   if (patterns) {
-    // Return 2 queries: one from Google/Amazon, one from Shopify/Walmart (alternating)
-    if (categoryLabel.includes("AI") || categoryLabel.includes("Technology")) {
-      queries.push(patterns.google);
-      queries.push(patterns.amazon);
-    } else {
-      queries.push(patterns.shopify);
-      queries.push(patterns.walmart);
-    }
+    queries.push(patterns.google);
+    queries.push(patterns.amazon);
+    queries.push(patterns.shopify);
+    queries.push(patterns.walmart);
   } else {
-    // Fallback: generic platform queries
     queries.push(`site:blog.google ${categoryLabel.toLowerCase()}`);
     queries.push(`site:amazon.com ${categoryLabel.toLowerCase()}`);
+    queries.push(`site:shopify.com ${categoryLabel.toLowerCase()}`);
+    queries.push(`site:corporate.walmart.com ${categoryLabel.toLowerCase()}`);
   }
   
   return queries;
