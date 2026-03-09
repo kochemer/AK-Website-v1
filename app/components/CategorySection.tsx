@@ -75,27 +75,46 @@ export default function CategorySection({
         )}
       </div>
 
-      {/* Articles List - 2-column grid on md+ */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      {/* Articles List: first = Top Story card (full width), rest in 2-col grid */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {articles.length > 0 ? (
-          articles.map((article, index) => (
-            <ArticleCard
-              key={article.id}
-              title={article.title}
-              url={article.url}
-              source={article.source}
-              date={article.date || article.published_at || ''}
-              summary={article.aiSummary}
-              locale={locale}
-              translations={article.translations}
-              aiSummaryLabel={aiSummaryLabel}
-              article_id={article.id}
-              article_rank={index + 1}
-              category={categoryKey}
-            />
-          ))
+          <>
+            <div className="md:col-span-2">
+              <ArticleCard
+                variant="featured"
+                key={articles[0].id}
+                title={articles[0].title}
+                url={articles[0].url}
+                source={articles[0].source}
+                date={articles[0].date || articles[0].published_at || ''}
+                summary={articles[0].aiSummary}
+                locale={locale}
+                translations={articles[0].translations}
+                aiSummaryLabel={aiSummaryLabel}
+                article_id={articles[0].id}
+                article_rank={1}
+                category={categoryKey}
+              />
+            </div>
+            {articles.slice(1).map((article, index) => (
+              <ArticleCard
+                key={article.id}
+                title={article.title}
+                url={article.url}
+                source={article.source}
+                date={article.date || article.published_at || ''}
+                summary={article.aiSummary}
+                locale={locale}
+                translations={article.translations}
+                aiSummaryLabel={aiSummaryLabel}
+                article_id={article.id}
+                article_rank={index + 2}
+                category={categoryKey}
+              />
+            ))}
+          </>
         ) : (
-          <div className="bg-gray-50 rounded-lg border border-dashed border-gray-200 text-center py-6 sm:py-8 md:py-10 lg:py-12 px-3 sm:px-4 md:px-6">
+          <div className="md:col-span-2 bg-gray-50 rounded-lg border border-dashed border-gray-200 text-center py-6 sm:py-8 md:py-10 lg:py-12 px-3 sm:px-4 md:px-6">
             <div className="font-medium text-card-title text-gray-600 mb-1.5 sm:mb-2">
               {emptyTitle}
             </div>

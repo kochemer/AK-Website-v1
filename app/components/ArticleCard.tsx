@@ -21,6 +21,8 @@ type ArticleCardProps = {
   article_id?: string;
   article_rank?: number;
   category?: string;
+  /** 'featured' = top story card with distinct layout */
+  variant?: 'default' | 'featured';
 };
 
 export default function ArticleCard({
@@ -36,6 +38,7 @@ export default function ArticleCard({
   article_id,
   article_rank,
   category,
+  variant = 'default',
 }: ArticleCardProps) {
   const handleOutboundClick = () => {
     if (article_id != null || article_rank != null || category != null) {
@@ -74,9 +77,43 @@ export default function ArticleCard({
     onClick: handleOutboundClick,
   };
 
+  if (variant === 'featured') {
+    return (
+      <article className="bg-[var(--color-accent-light)] border-l-4 border-[var(--color-accent)] p-5 md:p-8 rounded-sm mb-8">
+        <div className="text-[10px] tracking-[0.3em] uppercase text-[var(--color-accent)] font-sans font-bold mb-3">
+          TOP STORY
+        </div>
+        <a
+          {...linkProps}
+          className="block no-underline text-inherit focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-accent)] focus-visible:ring-offset-2 rounded-sm"
+        >
+          <h3 className="font-serif text-section font-bold text-[var(--color-text-primary)] pr-1 hover:text-[var(--color-accent)] transition-colors">
+            {localizedTitle}
+          </h3>
+        </a>
+        {cleanSummary && (
+          <p className="text-body text-[var(--color-text-secondary)] mt-3 max-w-3xl">
+            {cleanSummary}
+          </p>
+        )}
+        <div className="text-meta text-[var(--color-text-secondary)] mt-4">
+          {source && <span className="uppercase tracking-widest">{source}</span>}
+          {source && displayDate && <span className="mx-1.5" aria-hidden>·</span>}
+          {displayDate && <span>{displayDate}</span>}
+        </div>
+        <a
+          {...linkProps}
+          className="text-body text-[var(--color-accent)] font-medium mt-4 inline-block hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-accent)] focus-visible:ring-offset-2 rounded"
+        >
+          Read article →
+        </a>
+      </article>
+    );
+  }
+
   return (
     <article
-      className="group transition-all duration-200 py-6 border-b border-gray-200 pl-0 hover:pl-3 hover:border-l-2 hover:border-l-[var(--color-accent)] hover:bg-[var(--color-accent-light)] last:border-b-0"
+      className="group transition-all duration-200 py-5 border-b border-gray-200 pl-0 hover:pl-3 hover:border-l-2 hover:border-l-[var(--color-accent)] hover:bg-[var(--color-accent-light)] last:border-b-0"
     >
       {/* Source - top, uppercase muted */}
       {source && (
@@ -97,7 +134,7 @@ export default function ArticleCard({
 
       {/* Summary - body */}
       {cleanSummary && (
-        <div className="text-body text-[var(--color-text-secondary)] mb-3 line-clamp-4">
+        <div className="text-body text-[var(--color-text-secondary)] mb-3 line-clamp-3">
           <span className="font-medium">{aiSummaryLabel}: </span>
           {cleanSummary}
         </div>
@@ -123,11 +160,11 @@ export default function ArticleCard({
         )}
       </div>
 
-      {/* Read article → link - bottom right, visible on hover */}
-      <div className="mt-3 flex justify-end">
+      {/* Read article → link - no height when hidden; expands on hover/focus */}
+      <div className="max-h-0 group-hover:max-h-[2.5rem] group-focus-within:max-h-[2.5rem] overflow-hidden transition-[max-height] duration-200 flex justify-end">
         <a
           {...linkProps}
-          className="text-body text-[var(--color-accent)] font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-200 hover:underline focus-visible:opacity-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-accent)] focus-visible:ring-offset-2 rounded px-1 -mr-1"
+          className="text-body text-[var(--color-accent)] font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-200 hover:underline focus-visible:opacity-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-accent)] focus-visible:ring-offset-2 rounded px-1 -mr-1 py-1"
         >
           Read article →
         </a>
