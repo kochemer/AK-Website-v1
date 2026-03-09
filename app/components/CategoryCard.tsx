@@ -18,7 +18,7 @@ export default function CategoryCard({
   return (
     <Link
       href={href}
-      className="block bg-white border border-gray-100 rounded-sm p-5 hover:shadow-lg hover:-translate-y-px hover:border-[var(--color-accent)] transition-all duration-200 text-left focus-visible:outline-none"
+      className="block bg-[var(--color-surface)] border border-gray-100 rounded-sm p-5 hover:shadow-lg hover:-translate-y-px hover:border-[var(--color-accent)] transition-all duration-200 text-left focus-visible:outline-none"
       style={{ borderTopWidth: '4px', borderTopColor: color }}
       aria-label={`${title}, ${articleCount} articles this week`}
     >

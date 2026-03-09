@@ -56,32 +56,22 @@ export default function CategorySection({
     <section 
       id={id}
       className={isGrid 
-        ? "bg-white rounded-lg border border-gray-100 p-6 sm:p-7 md:p-8 scroll-mt-20 sm:scroll-mt-24 relative py-16 md:py-20" 
+        ? "bg-[var(--color-surface)] rounded-lg border border-gray-100 p-6 sm:p-7 md:p-8 scroll-mt-20 sm:scroll-mt-24 relative py-16 md:py-20" 
         : "mb-0 pb-16 md:pb-20 border-b border-gray-200 last:border-b-0 last:pb-0 last:mb-0 scroll-mt-20 sm:scroll-mt-24 relative py-16 md:py-20"
       }
     >
-      {/* Count Badge - Absolute top right */}
-      {count > 0 && (
-        <div className="absolute top-0 right-0 flex flex-col items-end" style={{ 
-          paddingTop: isGrid ? '1rem' : '0',
-          paddingRight: isGrid ? '1rem sm:1.25rem md:1.75rem' : '0',
-          top: '0',
-          right: '0',
-        }}>
-          <span className="text-meta font-medium text-gray-700">
-            {count}
-          </span>
-          <span className="text-meta text-gray-400 leading-tight mt-0.5 hidden sm:block">
-            {countLabel}
-          </span>
-        </div>
-      )}
-      {/* Section Header: Title (left) - generous gap before first card */}
-      <div className="mb-8" style={{ paddingRight: count > 0 ? '3.5rem sm:4.5rem md:5rem' : '0' }}>
+      {/* Gold rule above heading */}
+      <div className="w-full h-px bg-[var(--color-accent)]/30 mb-6" aria-hidden="true" />
+      {/* Section Header: Title, optional description, inline article count */}
+      <div className="mb-8">
         <h2 className="text-section font-bold text-gray-900 pr-2">{title}</h2>
-        {/* Optional Description */}
         {description && (
           <p className="text-body text-gray-600 mt-1.5 sm:mt-2 italic pr-2">{description}</p>
+        )}
+        {(count > 0 || articles.length > 0) && (
+          <p className="text-meta text-[var(--color-text-secondary)] mt-2 opacity-70">
+            {count} articles · {articles.length} selected
+          </p>
         )}
       </div>
 

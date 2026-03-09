@@ -75,7 +75,7 @@ export default function LanguageSwitcher() {
       </button>
       {open && (
         <div
-          className="absolute right-0 top-full mt-1 py-1 min-w-[10rem] w-max bg-white border border-gray-200 rounded-md shadow-lg z-50"
+          className="absolute right-0 top-full mt-1 py-1 min-w-[10rem] w-max bg-[var(--color-surface)] border border-gray-200 rounded-md shadow-lg z-50"
           role="menu"
         >
           <Link

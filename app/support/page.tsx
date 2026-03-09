@@ -45,7 +45,7 @@ export default function SupportPage() {
       <section className="max-w-5xl mx-auto px-4 md:px-6 py-16 md:py-20">
         <div className="max-w-prose">
         {/* Suggest Sources Card */}
-        <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6 md:p-8 mb-12 md:mb-16">
+        <div className="bg-[var(--color-surface)] rounded-xl shadow-sm border border-gray-200 p-6 md:p-8 mb-12 md:mb-16">
           <h2 className="text-section font-semibold text-gray-900 mb-4">
             Suggest a Source
           </h2>
@@ -70,7 +70,7 @@ export default function SupportPage() {
         </div>
 
         {/* Report Issues Card */}
-        <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6 md:p-8 mb-12 md:mb-16">
+        <div className="bg-[var(--color-surface)] rounded-xl shadow-sm border border-gray-200 p-6 md:p-8 mb-12 md:mb-16">
           <h2 className="text-section font-semibold text-gray-900 mb-4">
             Report Issues
           </h2>
@@ -97,7 +97,7 @@ export default function SupportPage() {
         </div>
 
         {/* Contact Card */}
-        <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6 md:p-8 mb-12 md:mb-16">
+        <div className="bg-[var(--color-surface)] rounded-xl shadow-sm border border-gray-200 p-6 md:p-8 mb-12 md:mb-16">
           <h2 className="text-section font-semibold text-gray-900 mb-4">
             Contact
           </h2>

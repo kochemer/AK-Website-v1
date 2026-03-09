@@ -19,6 +19,9 @@
   --text-section: 1.5625rem;   /* 25px */
   --text-page: 2rem;           /* 32px */
   --text-hero: 2.5rem;         /* 40px */
+  /* Hero masthead + issue line: 30% larger than base */
+  --text-hero-masthead: 3.25rem;   /* 40px * 1.3 */
+  --text-issue-line: 1.05625rem;   /* 13px * 1.3 */
 }
 
 @theme inline {
@@ -138,6 +141,14 @@ body {
 .text-hero {
   font-size: var(--text-hero);
   line-height: 1.2;
+}
+.text-hero-masthead {
+  font-size: var(--text-hero-masthead);
+  line-height: 1.2;
+}
+.text-issue-line {
+  font-size: var(--text-issue-line);
+  line-height: 1.4;
 }
 
 /* Decorative dividers and rules use gold accent */

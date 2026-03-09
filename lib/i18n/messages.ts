@@ -62,6 +62,11 @@ export type Messages = {
     tagline: string;
     subtitle: string;
   };
+  footer: {
+    stayInformed: string;
+    stayInformedDesc: string;
+    disclaimer: string;
+  };
 };
 
 const en: Messages = {
@@ -116,6 +121,11 @@ const en: Messages = {
   hero: {
     tagline: 'Weekly intelligence across AI, ecommerce, luxury, and jewellery.',
     subtitle: 'Curated articles, signals, and context — handpicked and summarised by AI agents each week.',
+  },
+  footer: {
+    stayInformed: 'Stay Informed',
+    stayInformedDesc: 'Get the weekly digest in your inbox.',
+    disclaimer: 'AI-assisted summaries — Not investment or business advice. Website built and maintained by AK.',
   },
 };
 
@@ -172,6 +182,11 @@ const da: Messages = {
     tagline: 'Ugentlig intelligens om AI, e-handel, luksus og smykker.',
     subtitle: 'Kurerede artikler, signaler og kontekst — udvalgt og sammenfattet af AI-agenter hver uge.',
   },
+  footer: {
+    stayInformed: 'Bliv informeret',
+    stayInformedDesc: 'Få den ugentlige oversigt i din indbakke.',
+    disclaimer: 'AI-assisterede sammenfatninger — Ikke investerings- eller forretningsrådgivning. Hjemmeside bygget og vedligeholdt af AK.',
+  },
 };
 
 const es: Messages = {
@@ -226,6 +241,11 @@ const es: Messages = {
   hero: {
     tagline: 'Inteligencia semanal sobre IA, ecommerce, lujo y joyería.',
     subtitle: 'Artículos, señales y contexto curados — seleccionados y resumidos por agentes de IA cada semana.',
+  },
+  footer: {
+    stayInformed: 'Mantente informado',
+    stayInformedDesc: 'Recibe el resumen semanal en tu bandeja de entrada.',
+    disclaimer: 'Resúmenes con IA — No son asesoramiento de inversión ni empresarial. Sitio web creado y mantenido por AK.',
   },
 };
 

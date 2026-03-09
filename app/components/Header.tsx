@@ -53,7 +53,7 @@ export default function Header() {
 
   return (
     <header
-      className="sticky top-0 z-30 bg-white/85 backdrop-blur border-b border-[var(--color-accent)]"
+      className="sticky top-0 z-30 bg-[var(--color-bg)]/85 backdrop-blur border-b border-[var(--color-accent)]"
       style={{ boxShadow: '0 1px 10px 0 rgba(0,0,0,0.03)' }}
     >
       {/* Desktop: single row — Logo | Nav | spacer | PWA | Notifications | Globe */}
@@ -99,7 +99,7 @@ export default function Header() {
       {/* Mobile drawer: primary + Subscribe CTA at top, secondary at bottom */}
       {mobileMenuOpen && (
         <div
-            className="md:hidden border-t border-[var(--color-accent)] bg-white"
+            className="md:hidden border-t border-[var(--color-accent)] bg-[var(--color-surface)]"
           role="dialog"
           aria-label="Navigation menu"
         >

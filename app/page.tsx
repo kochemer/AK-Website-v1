@@ -198,12 +198,15 @@ export default async function Home() {
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-black/30" />
         {/* Masthead */}
         <div className="absolute top-0 left-0 right-0 pt-8 md:pt-12 px-6 md:px-12 z-10">
-          <h1 className="text-white font-serif text-hero tracking-[0.2em] uppercase font-bold">
+          <h1 className="text-white font-serif text-hero-masthead tracking-[0.2em] uppercase font-bold">
             Luxury Intelligence
           </h1>
+          <p className="text-white/80 text-body mt-2 max-w-xl">
+            Weekly intelligence across AI, ecommerce, luxury, and jewellery.
+          </p>
           <div className="w-16 h-px bg-[var(--color-accent)] mt-3 md:mt-4" aria-hidden="true" />
           {weekLabel && (
-            <p className="text-white/70 text-meta tracking-[0.3em] uppercase mt-2">
+            <p className="text-white/70 text-issue-line tracking-[0.3em] uppercase mt-2">
               {formatIssueLine(weekLabel, digest?.startISO)}
             </p>
           )}
@@ -218,13 +221,6 @@ export default async function Home() {
         </div>
       </section>
 
-      {/* Tagline — below hero as subtle subtitle */}
-      <div className="relative z-20 -mt-6 md:-mt-8 px-4 sm:px-6 md:px-8 text-center">
-        <p className="text-body text-gray-500 dark:text-gray-400 max-w-2xl mx-auto">
-          Weekly intelligence across AI, ecommerce, luxury, and jewellery.
-        </p>
-      </div>
-
       {/* PANELS SECTION */}
       <section className="relative z-20 -mt-2 pt-2">
         <div className="w-full max-w-5xl mx-auto px-4 sm:px-5 md:px-6">
@@ -232,7 +228,6 @@ export default async function Home() {
           {digest && (
             <StatsBar
               totalArticles={digest.totals.total}
-              secondaryLine={`${digest.totals.total} selected · 4 categories`}
             />
           )}
           {/* Podcast + stats on cream */}
@@ -317,13 +312,13 @@ export default async function Home() {
               </div>
 
               {/* Article sections - white band */}
-              <div className={`bg-white border-x border-b border-gray-200 px-6 sm:px-6 md:px-8 lg:px-10 py-16 md:py-20 ${!(digest.keyThemes?.length) && !digest.oneSentenceSummary ? 'rounded-b-xl md:rounded-b-2xl' : ''}`}>
+              <div className={`bg-[var(--color-surface)] border-x border-b border-gray-200 px-6 sm:px-6 md:px-8 lg:px-10 py-16 md:py-20 ${!(digest.keyThemes?.length) && !digest.oneSentenceSummary ? 'rounded-b-xl md:rounded-b-2xl' : ''}`}>
               {/* CATEGORY SECTIONS UI - Client-side rendering with reactive TopN */}
               <Suspense fallback={
                 <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-6">
                   {CATEGORY_CARDS.map(cat => (
                     <div key={cat.key} className="w-full">
-                      <div className="bg-white dark:bg-gray-800 rounded-lg border border-gray-100 dark:border-gray-700 p-4 md:p-7 h-64 animate-pulse" />
+                      <div className="bg-[var(--color-surface)] dark:bg-gray-800 rounded-lg border border-gray-100 dark:border-gray-700 p-4 md:p-7 h-64 animate-pulse" />
                     </div>
                   ))}
                 </div>

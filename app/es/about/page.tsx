@@ -44,7 +44,7 @@ export default function AboutPageES() {
       {/* Content Section */}
       <section className="max-w-5xl mx-auto px-4 md:px-6 py-12 md:py-16">
         {/* Purpose Card */}
-        <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6 md:p-8 mb-12 md:mb-16">
+        <div className="bg-[var(--color-surface)] rounded-xl shadow-sm border border-gray-200 p-6 md:p-8 mb-12 md:mb-16">
           <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 mb-4">
             Propósito
           </h2>
@@ -62,7 +62,7 @@ export default function AboutPageES() {
         </div>
 
         {/* How It Works Card */}
-        <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6 md:p-8 mb-12 md:mb-16">
+        <div className="bg-[var(--color-surface)] rounded-xl shadow-sm border border-gray-200 p-6 md:p-8 mb-12 md:mb-16">
           <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 mb-8">
             Cómo Funciona
           </h2>
@@ -185,7 +185,7 @@ export default function AboutPageES() {
         </div>
 
         {/* Transparency & Disclaimer Card */}
-        <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6 md:p-8 mb-12 md:mb-16">
+        <div className="bg-[var(--color-surface)] rounded-xl shadow-sm border border-gray-200 p-6 md:p-8 mb-12 md:mb-16">
           <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 mb-6">
             Transparencia y Descargo de Responsabilidad
           </h2>

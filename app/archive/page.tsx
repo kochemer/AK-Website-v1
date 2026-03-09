@@ -80,7 +80,7 @@ export default async function ArchivePage() {
                 <Link
                   key={weekLabel}
                   href={`/week/${weekLabel}`}
-                  className="block p-4 md:p-6 bg-white border border-gray-200 rounded-lg hover:border-blue-300 hover:shadow-md transition-all overflow-hidden"
+                  className="block p-4 md:p-6 bg-[var(--color-surface)] border border-gray-200 rounded-lg hover:border-blue-300 hover:shadow-md transition-all overflow-hidden"
                 >
                   <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
                     {meta.coverImageUrl && (

@@ -18,7 +18,7 @@ export default function SubscribePricing({ formAction }: SubscribePricingProps) 
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-5 mb-4">
         {/* Supporter tier */}
-        <div className="rounded-xl border border-[var(--color-accent)] bg-white shadow-sm p-4 sm:p-5 flex flex-col hover:shadow-lg hover:-translate-y-px transition-all duration-200">
+        <div className="rounded-xl border border-[var(--color-accent)] bg-[var(--color-surface)] shadow-sm p-4 sm:p-5 flex flex-col hover:shadow-lg hover:-translate-y-px transition-all duration-200">
           <h3 className="text-base sm:text-lg font-semibold text-gray-900">
             Supporter
           </h3>
@@ -38,7 +38,7 @@ export default function SubscribePricing({ formAction }: SubscribePricingProps) 
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => track('checkout_start', { plan: 'supporter', price: 1, currency: 'eur' })}
-            className="mt-auto inline-flex items-center justify-center rounded-md border-2 border-[var(--color-accent)] bg-white px-3 py-2 text-sm font-semibold text-[var(--color-accent)] shadow-sm hover:bg-[var(--color-accent-light)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-accent)] focus-visible:ring-offset-2"
+            className="mt-auto inline-flex items-center justify-center rounded-md border-2 border-[var(--color-accent)] bg-[var(--color-surface)] px-3 py-2 text-sm font-semibold text-[var(--color-accent)] shadow-sm hover:bg-[var(--color-accent-light)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-accent)] focus-visible:ring-offset-2"
             aria-label="Support Luxury Intelligence - Supporter tier"
           >
             Support

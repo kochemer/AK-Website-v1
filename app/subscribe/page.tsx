@@ -51,7 +51,7 @@ export default function SubscribePage() {
           >
             What your support does
           </h2>
-          <div className="rounded-xl bg-white border border-gray-200 p-4 sm:p-5 shadow-sm">
+          <div className="rounded-xl bg-[var(--color-surface)] border border-gray-200 p-4 sm:p-5 shadow-sm">
             <ul className="space-y-2 text-sm text-gray-700 mb-4">
               <li className="flex gap-2">
                 <span className="mt-[3px] text-green-500">●</span>
@@ -84,7 +84,7 @@ export default function SubscribePage() {
           >
             What&apos;s included
           </h2>
-          <div className="rounded-xl bg-white border border-gray-200 p-4 sm:p-5 shadow-sm">
+          <div className="rounded-xl bg-[var(--color-surface)] border border-gray-200 p-4 sm:p-5 shadow-sm">
             <p className="text-sm text-gray-600 mb-3">
               The site remains openly accessible. The digest and archive are available regardless of donation. If that changes in the future, supporters will be informed in advance.
             </p>

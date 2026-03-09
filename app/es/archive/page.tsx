@@ -89,7 +89,7 @@ export default async function ArchivePageES() {
                 <li key={weekLabel}>
                   <Link
                     href={`/week/${weekLabel}`}
-                    className="flex flex-col sm:flex-row sm:items-center gap-3 p-4 bg-white border border-gray-200 rounded-lg hover:border-gray-300 hover:shadow-sm transition-colors overflow-hidden"
+                    className="flex flex-col sm:flex-row sm:items-center gap-3 p-4 bg-[var(--color-surface)] border border-gray-200 rounded-lg hover:border-gray-300 hover:shadow-sm transition-colors overflow-hidden"
                   >
                     {meta.coverImageUrl && (
                       <div className="flex-shrink-0 w-full sm:w-28 h-32 sm:h-20 rounded-md overflow-hidden bg-gray-100">

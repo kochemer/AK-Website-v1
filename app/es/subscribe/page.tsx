@@ -55,7 +55,7 @@ export default function SubscribePageES() {
           >
             Qué está incluido
           </h2>
-          <div className="rounded-xl bg-white border border-gray-200 p-4 sm:p-5 shadow-sm">
+          <div className="rounded-xl bg-[var(--color-surface)] border border-gray-200 p-4 sm:p-5 shadow-sm">
             <ul className="space-y-2 text-sm text-gray-700">
               <li className="flex gap-2">
                 <span className="mt-[3px] text-green-500">●</span>

@@ -501,7 +501,7 @@ export default async function WeekPage({
                 <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-6">
                   {CATEGORY_CARDS.map(cat => (
                     <div key={cat.key} className="w-full">
-                      <div className="bg-white dark:bg-gray-800 rounded-lg border border-gray-100 dark:border-gray-700 p-4 md:p-7 h-64 animate-pulse" />
+                      <div className="bg-[var(--color-surface)] dark:bg-gray-800 rounded-lg border border-gray-100 dark:border-gray-700 p-4 md:p-7 h-64 animate-pulse" />
                     </div>
                   ))}
                 </div>

@@ -5,7 +5,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import AmplitudeInit from "./components/AmplitudeInit";
 import AnalyticsPageView from "./components/AnalyticsPageView";
 import Header from "./components/Header";
-import { FooterNavLinks } from "./components/NavLinks";
+import Footer from "./components/Footer";
 import DisplayModeAttribute from "./components/DisplayModeAttribute";
 import ServiceWorkerRegistration from "./components/ServiceWorkerRegistration";
 import JsonLd from "./components/JsonLd";
@@ -93,7 +93,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${libreBaskerville.variable} ${dmSans.variable} ${geistMono.variable} font-sans antialiased bg-white text-gray-900`}
+        className={`${libreBaskerville.variable} ${dmSans.variable} ${geistMono.variable} font-sans antialiased bg-[var(--color-bg)] text-gray-900`}
         style={{ minHeight: "100vh", display: "flex", flexDirection: "column" }}
       >
         <JsonLd
@@ -122,17 +122,8 @@ export default function RootLayout({
           {children}
         </main>
 
-        {/* Footer (locale-aware) */}
-        <footer className="mt-auto border-t border-[var(--color-accent)] pt-16 pb-12 text-body font-sans text-gray-500 bg-white/80 w-full">
-          <div className="max-w-5xl mx-auto px-4 sm:px-6">
-            <div className="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-x-12 gap-y-6 sm:gap-x-16 mb-8">
-              <FooterNavLinks />
-            </div>
-            <div className="text-center max-w-prose mx-auto px-3 text-body">
-              <span className="font-medium">AI-assisted summaries</span> &mdash; Not investment or business advice. Website built and maintained by AK.
-            </div>
-          </div>
-        </footer>
+        {/* Footer (locale-aware, dark 3-column) */}
+        <Footer />
         <SpeedInsights />
       </body>
     </html>
