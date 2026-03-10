@@ -1,6 +1,7 @@
 'use client';
 
 import { useRef, useState, useEffect } from 'react';
+import BrandPattern from './BrandPattern';
 
 const DURATION_MS = 1500;
 
@@ -62,9 +63,10 @@ export default function StatsBar({ totalArticles, primaryLabel = 'articles analy
   return (
     <div
       ref={containerRef}
-      className="w-full py-10 sm:py-12 bg-[var(--color-accent-light)] text-center"
+      className="relative w-full py-10 sm:py-12 bg-[var(--color-accent-light)] text-center overflow-hidden reveal reveal-d2"
     >
-      <div className="max-w-5xl mx-auto px-4 sm:px-6">
+      <BrandPattern variant="light" />
+      <div className="relative max-w-5xl mx-auto px-4 sm:px-6">
         {/* Primary stat: count in gold */}
         <div className="font-serif text-stat-number font-bold text-[var(--color-accent)] tabular-nums">
           {displayValue.toLocaleString()}

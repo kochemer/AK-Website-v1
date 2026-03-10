@@ -3,6 +3,9 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { getMessages, detectLocaleFromPathname } from '@/lib/i18n/messages';
+import BrandPattern from './BrandPattern';
+import GrainOverlay from './GrainOverlay';
+import MastheadLockup from './MastheadLockup';
 
 export default function Footer() {
   const pathname = usePathname() || '/';
@@ -23,14 +26,14 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="mt-auto w-full bg-[var(--color-deep)] text-[#E5E2DB] pt-16 pb-10 px-6 md:px-12 border-t-2 border-[var(--color-accent)]">
-      <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
+    <footer className="relative mt-auto w-full bg-[var(--color-deep)] text-[#E5E2DB] pt-16 pb-10 px-6 md:px-12 border-t-2 border-[var(--color-accent)] overflow-hidden">
+      <BrandPattern variant="dark" />
+      <GrainOverlay id="grain-footer" className="opacity-[0.05] md:opacity-[0.05] max-md:opacity-[0.03]" />
+      <div className="relative max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
         {/* Col 1: Brand */}
         <div className="mb-8 md:mb-0">
-          <div className="font-serif text-lg tracking-wider text-[#FAF9F6] uppercase">
-            Luxury Intelligence
-          </div>
-          <p className="text-meta text-[#999] mt-2">
+          <MastheadLockup variant="footer" />
+          <p className="text-meta text-[#999] mt-4">
             Weekly curated intelligence on AI, ecommerce & luxury
           </p>
           <p className="text-[12px] text-[#666] mt-6">© 2026</p>
@@ -88,7 +91,7 @@ export default function Footer() {
       </div>
 
       {/* Bottom disclaimer */}
-      <div className="max-w-5xl mx-auto mt-12 pt-4 border-t border-white/10 text-[11px] text-[#666] text-center">
+      <div className="relative max-w-5xl mx-auto mt-12 pt-4 border-t border-white/10 text-[11px] text-[#666] text-center">
         {t.footer.disclaimer}
       </div>
     </footer>

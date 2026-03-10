@@ -2,10 +2,14 @@ import { promises as fs } from 'fs';
 import path from 'path';
 import { Suspense } from 'react';
 import DigestClientView from '../components/DigestClientView';
-import CategoryCard from '../components/CategoryCard';
 import PodcastPlayer from '../components/PodcastPlayer';
 import StatsBar from '../components/StatsBar';
+import CategoryCardGrid from '../components/CategoryCardGrid';
 import TopNSelector from '../components/TopNSelector';
+import BrandPattern from '../components/BrandPattern';
+import GrainOverlay from '../components/GrainOverlay';
+import MastheadLockup from '../components/MastheadLockup';
+import ScrollProgressBar from '../components/ScrollProgressBar';
 import { TopicKey } from '@/lib/utils/topicNames';
 import { formatDateRange, formatDateTime, formatIssueLine } from '@/lib/utils/formatDate';
 import { getCurrentDigestWeek } from '@/lib/utils/getCurrentDigestWeek';
@@ -140,20 +144,18 @@ export default async function HomeES() {
           />
         )}
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/25 to-black/50" />
+        <BrandPattern variant="dark" className="z-[1]" />
+        <GrainOverlay id="grain-hero-es" className="z-[2] opacity-[0.08] md:opacity-[0.08] max-md:opacity-[0.03]" />
         <div className="absolute top-0 left-0 right-0 pt-8 md:pt-12 px-6 md:px-12 z-10">
-          <h1
-            className="text-white font-serif text-hero-masthead tracking-[0.2em] uppercase font-bold"
-            style={{ textShadow: '0 2px 16px rgba(0,0,0,0.4)' }}
-          >
-            Luxury Intelligence
-          </h1>
-          <p className="text-white/80 text-body mt-2 max-w-xl">
+          <div className="reveal">
+            <MastheadLockup variant="hero" />
+          </div>
+          <p className="reveal reveal-d1 text-white/80 text-body mt-2 max-w-xl">
             {t.hero.tagline}
           </p>
-          <div className="w-16 h-px bg-[var(--color-accent)] mt-3 md:mt-4" aria-hidden="true" />
           {weekLabel && (
             <p
-              className="text-white/70 text-issue-line tracking-[0.3em] uppercase mt-2"
+              className="reveal reveal-d1 text-white/70 text-issue-line tracking-[0.3em] uppercase mt-2"
               style={{ textShadow: '0 1px 8px rgba(0,0,0,0.3)' }}
             >
               {formatIssueLine(weekLabel, digest?.startISO)}
@@ -168,6 +170,9 @@ export default async function HomeES() {
           ) : null}
         </div>
       </section>
+
+      {/* Scroll progress bar */}
+      <ScrollProgressBar />
 
       {/* PANELS SECTION - same structure as EN */}
       <section className="relative z-20 -mt-2 pt-2">
@@ -234,22 +239,19 @@ export default async function HomeES() {
                   <span className="text-meta font-medium uppercase tracking-widest text-[var(--color-accent)] block mb-4">
                     {t.digest.thisWeek}
                   </span>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-                    {CATEGORY_CARDS.map((cat) => {
+                  <CategoryCardGrid
+                    cards={CATEGORY_CARDS.map((cat) => {
                       const byTopic = digest.totals?.byTopic as Record<string, number> | undefined;
-                      const count = byTopic?.[cat.countBy] ?? 0;
-                      return (
-                        <CategoryCard
-                          key={cat.key}
-                          title={cat.title}
-                          description={cat.cardDesc}
-                          articleCount={count}
-                          color={cat.color}
-                          href={`#${cat.anchorId}`}
-                        />
-                      );
+                      return {
+                        key: cat.key,
+                        title: cat.title,
+                        cardDesc: cat.cardDesc,
+                        color: cat.color,
+                        anchorId: cat.anchorId,
+                        count: byTopic?.[cat.countBy] ?? 0,
+                      };
                     })}
-                  </div>
+                  />
                   <div className="flex flex-wrap items-center justify-between gap-2">
                     <div className="flex items-center">
                       <Suspense fallback={<div className="h-4 w-20" />}>

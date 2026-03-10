@@ -101,8 +101,21 @@ textarea:focus-visible {
   animation: fadeUp 0.6s ease-out forwards;
 }
 
+/* Staggered page-load reveal */
+@keyframes revealUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.reveal       { opacity: 0; animation: revealUp 0.4s ease-out forwards; }
+.reveal-d1    { animation-delay: 0.1s; }
+.reveal-d2    { animation-delay: 0.2s; }
+.reveal-d3    { animation-delay: 0.35s; }
+.reveal-d4    { animation-delay: 0.5s; }
+.reveal-d5    { animation-delay: 0.65s; }
+
 @media (prefers-reduced-motion: reduce) {
-  .animate-fade-up {
+  .animate-fade-up,
+  .reveal {
     animation: none;
     opacity: 1;
     transform: none;
@@ -196,6 +209,15 @@ h3 {
 /* Prevent horizontal scrolling on all elements */
 * {
   max-width: 100%;
+}
+
+/* Category carousel: hide scrollbar */
+.category-carousel {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.category-carousel::-webkit-scrollbar {
+  display: none;
 }
 
 /* Ensure images don't overflow */

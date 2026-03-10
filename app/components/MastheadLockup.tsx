@@ -1,0 +1,46 @@
+/**
+ * Decorative masthead lockup with diamond-ornament rules above and below.
+ * Two sizes: hero (white, large) and footer (accent, compact).
+ */
+export default function MastheadLockup({
+  variant = 'hero',
+}: {
+  variant?: 'hero' | 'footer';
+}) {
+  const isHero = variant === 'hero';
+  const lineColor = isHero ? 'bg-white/30' : 'bg-[var(--color-accent)]/30';
+  const diamondColor = isHero ? 'text-white/50' : 'text-[var(--color-accent)]/60';
+  const textColor = isHero ? 'text-white' : 'text-[#FAF9F6]';
+  const textSize = isHero ? 'text-hero-masthead' : 'text-lg';
+  const tracking = isHero ? 'tracking-[0.2em]' : 'tracking-wider';
+  const bottomRuleWidth = isHero ? 'w-32' : 'w-20';
+  const glow = isHero
+    ? { textShadow: '0 0 40px rgba(139,105,20,0.3), 0 2px 16px rgba(0,0,0,0.4)' }
+    : {};
+
+  return (
+    <div className="flex flex-col items-start" aria-hidden="true">
+      {/* Top rule: line ◇ line */}
+      <div className="flex items-center w-full max-w-xs mb-3">
+        <span className={`flex-1 h-px ${lineColor}`} />
+        <span className={`${diamondColor} text-xs mx-3 select-none`}>◇</span>
+        <span className={`flex-1 h-px ${lineColor}`} />
+      </div>
+
+      {/* Masthead text */}
+      <h1
+        className={`font-serif ${textSize} ${tracking} ${textColor} uppercase font-bold`}
+        style={glow}
+      >
+        Luxury Intelligence
+      </h1>
+
+      {/* Bottom rule: shorter, centred */}
+      <div className={`flex items-center ${bottomRuleWidth} mt-3`}>
+        <span className={`flex-1 h-px ${lineColor}`} />
+        <span className={`${diamondColor} text-[10px] mx-2 select-none`}>◇</span>
+        <span className={`flex-1 h-px ${lineColor}`} />
+      </div>
+    </div>
+  );
+}

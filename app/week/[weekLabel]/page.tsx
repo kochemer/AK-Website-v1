@@ -5,11 +5,12 @@ import { DateTime } from 'luxon';
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import DigestClientView from '../../components/DigestClientView';
-import CategoryCard from '../../components/CategoryCard';
+import CategoryCardGrid from '../../components/CategoryCardGrid';
 import PodcastPlayer from '../../components/PodcastPlayer';
 import StatsBar from '../../components/StatsBar';
 import AnalyticsDigestView from '../../components/AnalyticsDigestView';
 import TopNSelector from '../../components/TopNSelector';
+import ScrollProgressBar from '../../components/ScrollProgressBar';
 import JsonLd from '../../components/JsonLd';
 import Breadcrumbs from '../../components/Breadcrumbs';
 import { getTopicTotalsDisplayName, TopicKey } from '@/lib/utils/topicNames';
@@ -424,6 +425,9 @@ export default async function WeekPage({
           </div>
         </section>
 
+        {/* Scroll progress bar */}
+        <ScrollProgressBar />
+
         {/* PANELS SECTION - Overtaking Content */}
         <section className="relative z-20 -mt-[40vh] sm:-mt-[50vh] md:-mt-24 pt-2">
           {/* Panel Container */}
@@ -468,22 +472,19 @@ export default async function WeekPage({
                 <span className="text-meta font-medium uppercase tracking-widest text-[var(--color-accent)] block mb-4">
                   THIS WEEK
                 </span>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-                  {CATEGORY_CARDS.map((cat) => {
+                <CategoryCardGrid
+                  cards={CATEGORY_CARDS.map((cat) => {
                     const byTopic = digest.totals?.byTopic as Record<string, number> | undefined;
-                    const count = byTopic?.[cat.countBy] ?? 0;
-                    return (
-                      <CategoryCard
-                        key={cat.key}
-                        title={cat.title}
-                        description={cat.cardDesc}
-                        articleCount={count}
-                        color={cat.color}
-                        href={`#${cat.anchorId}`}
-                      />
-                    );
+                    return {
+                      key: cat.key,
+                      title: cat.title,
+                      cardDesc: cat.cardDesc,
+                      color: cat.color,
+                      anchorId: cat.anchorId,
+                      count: byTopic?.[cat.countBy] ?? 0,
+                    };
                   })}
-                </div>
+                />
                 <div className="flex flex-wrap items-center justify-between gap-2">
                   <div className="flex items-center">
                     <Suspense fallback={<div className="h-4 w-20" />}>
