@@ -138,9 +138,12 @@ export default async function HomeDA() {
             style={{ background: 'linear-gradient(120deg, var(--color-deep) 50%, var(--color-accent) 100%)' }}
           />
         )}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-black/30" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/25 to-black/50" />
         <div className="absolute top-0 left-0 right-0 pt-8 md:pt-12 px-6 md:px-12 z-10">
-          <h1 className="text-white font-serif text-hero-masthead tracking-[0.2em] uppercase font-bold">
+          <h1
+            className="text-white font-serif text-hero-masthead tracking-[0.2em] uppercase font-bold"
+            style={{ textShadow: '0 2px 16px rgba(0,0,0,0.4)' }}
+          >
             Luxury Intelligence
           </h1>
           <p className="text-white/80 text-body mt-2 max-w-xl">
@@ -148,7 +151,10 @@ export default async function HomeDA() {
           </p>
           <div className="w-16 h-px bg-[var(--color-accent)] mt-3 md:mt-4" aria-hidden="true" />
           {weekLabel && (
-            <p className="text-white/70 text-issue-line tracking-[0.3em] uppercase mt-2">
+            <p
+              className="text-white/70 text-issue-line tracking-[0.3em] uppercase mt-2"
+              style={{ textShadow: '0 1px 8px rgba(0,0,0,0.3)' }}
+            >
               {formatIssueLine(weekLabel, digest?.startISO)}
             </p>
           )}

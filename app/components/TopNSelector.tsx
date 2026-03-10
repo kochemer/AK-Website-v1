@@ -107,12 +107,11 @@ export default function TopNSelector() {
         <button
           key={n}
           onClick={() => handleChange(n)}
-          className={`px-1.5 sm:px-1.5 md:px-1.5 py-1.5 sm:py-1 md:py-1 text-xs text-black/45 rounded transition-colors cursor-pointer min-w-[36px] sm:min-w-[28px] md:min-w-[24px] min-h-[36px] sm:min-h-0 flex items-center justify-center ${
+          className={`px-1.5 sm:px-1.5 md:px-1.5 py-1 sm:py-0.5 text-xs rounded transition-colors cursor-pointer flex items-center justify-center ${
             currentN === n
-              ? 'bg-black/[0.04] font-medium text-black/60'
-              : 'bg-transparent hover:bg-black/[0.02] hover:text-black/50'
+              ? 'font-semibold text-black/70'
+              : 'text-black/45 hover:text-black/55'
           }`}
-          style={{ minHeight: '36px', minWidth: '36px' }}
           aria-label={`Show ${n} articles per category`}
           aria-pressed={currentN === n}
         >

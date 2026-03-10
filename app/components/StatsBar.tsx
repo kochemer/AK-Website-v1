@@ -63,10 +63,10 @@ export default function StatsBar({ totalArticles, primaryLabel = 'articles analy
     >
       <div className="max-w-5xl mx-auto px-4 sm:px-6">
         {/* Primary stat: count in gold */}
-        <div className="font-serif text-section font-bold text-[var(--color-accent)] tabular-nums">
+        <div className="font-serif text-stat-number font-bold text-[var(--color-accent)] tabular-nums">
           {displayValue.toLocaleString()}
         </div>
-        <p className="text-meta uppercase tracking-widest text-[var(--color-text-secondary)] mt-2">
+        <p className="text-stat-label uppercase tracking-widest text-[var(--color-text-secondary)] mt-2">
           {primaryLabel}
         </p>
 

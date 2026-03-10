@@ -40,14 +40,17 @@ export default function ArticleCard({
   category,
   variant = 'default',
 }: ArticleCardProps) {
+  let hostname: string | undefined;
+  try {
+    hostname = new URL(url).hostname;
+  } catch {
+    hostname = undefined;
+  }
+
   const handleOutboundClick = () => {
     if (article_id != null || article_rank != null || category != null) {
       let source_domain: string | undefined;
-      try {
-        source_domain = new URL(url).hostname;
-      } catch {
-        source_domain = undefined;
-      }
+      source_domain = hostname;
       track('article_click', {
         article_id,
         article_rank,
@@ -80,9 +83,7 @@ export default function ArticleCard({
   if (variant === 'featured') {
     return (
       <article className="bg-[var(--color-accent-light)] border-l-4 border-[var(--color-accent)] p-5 md:p-8 rounded-sm mb-8">
-        <div className="text-[10px] tracking-[0.3em] uppercase text-[var(--color-accent)] font-sans font-bold mb-3">
-          TOP STORY
-        </div>
+        <div className="text-[10px] tracking-[0.3em] uppercase text-[var(--color-accent)] font-sans font-bold mb-3">TOP STORY</div>
         <a
           {...linkProps}
           className="block no-underline text-inherit focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-accent)] focus-visible:ring-offset-2 rounded-sm"
@@ -91,12 +92,18 @@ export default function ArticleCard({
             {localizedTitle}
           </h3>
         </a>
-        {cleanSummary && (
-          <p className="text-body text-[var(--color-text-secondary)] mt-3 max-w-3xl">
-            {cleanSummary}
-          </p>
-        )}
-        <div className="text-meta text-[var(--color-text-secondary)] mt-4">
+        {cleanSummary && <p className="text-body text-[var(--color-text-secondary)] mt-3 max-w-3xl">{cleanSummary}</p>}
+        <div className="text-meta text-[var(--color-text-secondary)] mt-4 flex items-center gap-1.5">
+          {source && hostname && (
+            <img
+              src={`https://www.google.com/s2/favicons?domain=${hostname}&sz=32`}
+              alt=""
+              className="w-4 h-4 rounded-sm inline-block opacity-60 align-baseline"
+              onError={(e) => {
+                e.currentTarget.style.display = 'none';
+              }}
+            />
+          )}
           {source && <span className="uppercase tracking-widest">{source}</span>}
           {source && displayDate && <span className="mx-1.5" aria-hidden>·</span>}
           {displayDate && <span>{displayDate}</span>}
@@ -115,10 +122,20 @@ export default function ArticleCard({
     <article
       className="group transition-all duration-200 py-5 border-b border-gray-200 pl-0 hover:pl-3 hover:border-l-2 hover:border-l-[var(--color-accent)] hover:bg-[var(--color-accent-light)] last:border-b-0"
     >
-      {/* Source - top, uppercase muted */}
+      {/* Source - top, uppercase muted with favicon */}
       {source && (
-        <div className="text-meta uppercase tracking-widest text-[var(--color-text-secondary)] mb-1.5">
-          {source}
+        <div className="text-meta uppercase tracking-widest text-[var(--color-text-secondary)] mb-1.5 inline-flex items-center">
+          {hostname && (
+            <img
+              src={`https://www.google.com/s2/favicons?domain=${hostname}&sz=32`}
+              alt=""
+              className="w-4 h-4 rounded-sm inline-block mr-1.5 opacity-60 align-baseline"
+              onError={(e) => {
+                e.currentTarget.style.display = 'none';
+              }}
+            />
+          )}
+          <span>{source}</span>
         </div>
       )}
 
