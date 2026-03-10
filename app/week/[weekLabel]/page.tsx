@@ -14,6 +14,7 @@ import JsonLd from '../../components/JsonLd';
 import Breadcrumbs from '../../components/Breadcrumbs';
 import { getTopicTotalsDisplayName, TopicKey } from '@/lib/utils/topicNames';
 import { formatDate, formatDateRange, formatDateTime } from '@/lib/utils/formatDate';
+import { getSelectedArticleCount, formatStatsSecondaryLine } from '@/lib/utils/digestStats';
 import { getSiteUrl } from '@/lib/utils/siteUrl';
 import { CATEGORY_COLORS } from '@/lib/constants/categoryColors';
 import type { WeeklyDigest } from '@/lib/types';
@@ -441,7 +442,11 @@ export default async function WeekPage({
             {/* Stats bar: article count between hero and category nav */}
             <StatsBar
               totalArticles={digest.totals.total}
-              secondaryLine={`${digest.totals.total} selected · 4 categories`}
+              secondaryLine={formatStatsSecondaryLine(
+                digest.totals.total,
+                getSelectedArticleCount(digest),
+                podcast?.duration != null ? podcast.duration / 60 : undefined
+              )}
             />
 
             {/* Podcast + stats on cream */}

@@ -2,32 +2,36 @@
 
 import { useRef, useState, useEffect } from 'react';
 
-const DURATION_MS = 1600;
-const FPS = 60;
+const DURATION_MS = 1500;
+
+/** easeOutQuart: 1 - (1 - t)^4 */
+function easeOutQuart(t: number): number {
+  return 1 - (1 - t) ** 4;
+}
 
 type StatsBarProps = {
   /** Total articles analysed (counts up from 0) */
   totalArticles: number;
   /** Label below the number, e.g. "articles analysed this week" */
   primaryLabel?: string;
-  /** Optional secondary line, e.g. "47 selected · 4 categories" */
+  /** Optional secondary line, e.g. "434 articles analysed · 28 selected · 4 categories · ~12 min podcast" */
   secondaryLine?: string;
 };
 
 export default function StatsBar({ totalArticles, primaryLabel = 'articles analysed this week', secondaryLine }: StatsBarProps) {
   const containerRef = useRef<HTMLDivElement>(null);
+  const hasTriggeredRef = useRef(false);
   const [displayValue, setDisplayValue] = useState(0);
-  const [hasAnimated, setHasAnimated] = useState(false);
 
   useEffect(() => {
     const el = containerRef.current;
-    if (!el || hasAnimated || totalArticles <= 0) return;
+    if (!el || hasTriggeredRef.current || totalArticles <= 0) return;
 
     const observer = new IntersectionObserver(
       (entries) => {
         const [entry] = entries;
-        if (!entry?.isIntersecting) return;
-        setHasAnimated(true);
+        if (!entry?.isIntersecting || hasTriggeredRef.current) return;
+        hasTriggeredRef.current = true;
 
         const startTime = performance.now();
         const startValue = 0;
@@ -36,8 +40,7 @@ export default function StatsBar({ totalArticles, primaryLabel = 'articles analy
         const tick = (now: number) => {
           const elapsed = now - startTime;
           const progress = Math.min(elapsed / DURATION_MS, 1);
-          // Ease-out cubic for a smooth slowdown at the end
-          const eased = 1 - (1 - progress) ** 3;
+          const eased = easeOutQuart(progress);
           const current = Math.round(startValue + (endValue - startValue) * eased);
           setDisplayValue(current);
           if (progress < 1) {
@@ -54,7 +57,7 @@ export default function StatsBar({ totalArticles, primaryLabel = 'articles analy
 
     observer.observe(el);
     return () => observer.disconnect();
-  }, [totalArticles, hasAnimated]);
+  }, [totalArticles]);
 
   return (
     <div

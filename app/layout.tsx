@@ -76,6 +76,7 @@ export const metadata: Metadata = {
   openGraph: {
     siteName: "Luxury Intelligence",
     type: "website",
+    images: [{ url: "/api/og?week=2026-W10", width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",

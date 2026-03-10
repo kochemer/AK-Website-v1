@@ -12,6 +12,7 @@ import TopNSelector from './components/TopNSelector';
 import { TopicKey } from '@/lib/utils/topicNames';
 import { formatDate, formatDateRange, formatDateTime, formatIssueLine } from '@/lib/utils/formatDate';
 import { getCurrentDigestWeek } from '@/lib/utils/getCurrentDigestWeek';
+import { getSelectedArticleCount, formatStatsSecondaryLine } from '@/lib/utils/digestStats';
 import { getSiteUrl } from '@/lib/utils/siteUrl';
 import { CATEGORY_COLORS } from '@/lib/constants/categoryColors';
 import type { WeeklyDigest } from '@/lib/types';
@@ -234,6 +235,11 @@ export default async function Home() {
           {digest && (
             <StatsBar
               totalArticles={digest.totals.total}
+              secondaryLine={formatStatsSecondaryLine(
+                digest.totals.total,
+                getSelectedArticleCount(digest),
+                podcast?.duration != null ? podcast.duration / 60 : undefined
+              )}
             />
           )}
           {/* Podcast + stats on cream */}
