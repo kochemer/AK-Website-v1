@@ -10,10 +10,13 @@ const SECTIONS = [
 ] as const;
 
 export default function ScrollProgressBar() {
-  const [color, setColor] = useState(SECTIONS[0].color);
+  type SectionColor = (typeof SECTIONS)[number]['color'];
+  const [color, setColor] = useState<SectionColor>(SECTIONS[0].color);
   const [progress, setProgress] = useState(0);
   const rafRef = useRef(0);
-  const activeRef = useRef<{ el: HTMLElement; color: string } | null>(null);
+  const activeRef = useRef<{ el: HTMLElement; color: SectionColor } | null>(
+    null
+  );
 
   const updateActiveSection = useCallback(() => {
     const viewportMid = window.innerHeight / 3;
