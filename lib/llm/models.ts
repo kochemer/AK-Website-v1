@@ -21,8 +21,8 @@ export type WorkflowName =
 
 // ── Default model per workflow ──────────────────────────────────
 export const DEFAULT_MODEL_BY_WORKFLOW: Record<WorkflowName, string> = {
-  triage:    'gpt-5-nano',
-  classify:  'gpt-5-mini',
+  triage:    'gpt-4.1-mini',
+  classify:  'gpt-4.1-mini',
   summarize: 'gpt-4.1-mini',
   rank:      'o4-mini',
   script:    'gpt-4.1-mini',
@@ -97,8 +97,8 @@ export function temperatureParam(
 
 /** Models that use the new parameter conventions (max_completion_tokens, no custom temperature). */
 function isReasoningOrV5(model: string): boolean {
-  // o-series reasoning models (o1, o3, o4, …) and gpt-5 family
-  return /^o\d/.test(model) || model.startsWith('gpt-5');
+  // o-series reasoning models (o1, o3, o4, …)
+  return /^o\d/.test(model);
 }
 
 /**

@@ -9,6 +9,31 @@ import NavLinks from './NavLinks';
 import LanguageSwitcher from './LanguageSwitcher';
 import InstallPwaButton from './InstallPwaButton';
 import EnableNotificationsButton from './EnableNotificationsButton';
+import { useTheme } from '@/app/context/ThemeContext';
+
+function SunIcon() {
+  return (
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <circle cx="12" cy="12" r="4" />
+      <line x1="12" y1="2" x2="12" y2="4" />
+      <line x1="12" y1="20" x2="12" y2="22" />
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+      <line x1="2" y1="12" x2="4" y2="12" />
+      <line x1="20" y1="12" x2="22" y2="12" />
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+    </svg>
+  );
+}
+
+function MoonIcon() {
+  return (
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+    </svg>
+  );
+}
 
 function HamburgerIcon({ open }: { open: boolean }) {
   return (
@@ -38,6 +63,7 @@ export default function Header() {
   const locale = detectLocaleFromPathname(pathname);
   const t = getMessages(locale);
   const prefix = locale === 'en' ? '' : `/${locale}`;
+  const { isDark, toggleTheme } = useTheme();
 
   const primaryLinks = [
     { href: `${prefix}/` || '/', label: t.nav.home },
@@ -71,6 +97,14 @@ export default function Header() {
           <InstallPwaButton />
           <EnableNotificationsButton />
           <LanguageSwitcher />
+          <button
+            type="button"
+            onClick={toggleTheme}
+            aria-label="Toggle theme"
+            className="w-8 h-8 flex items-center justify-center text-[var(--color-text-secondary)] hover:text-[var(--color-accent)] transition-colors rounded"
+          >
+            {isDark ? <SunIcon /> : <MoonIcon />}
+          </button>
         </div>
       </div>
 
@@ -86,8 +120,16 @@ export default function Header() {
           <LanguageSwitcher />
           <button
             type="button"
+            onClick={toggleTheme}
+            aria-label="Toggle theme"
+            className="w-8 h-8 flex items-center justify-center text-[var(--color-text-secondary)] hover:text-[var(--color-accent)] transition-colors rounded"
+          >
+            {isDark ? <SunIcon /> : <MoonIcon />}
+          </button>
+          <button
+            type="button"
             onClick={() => setMobileMenuOpen((o) => !o)}
-            className="p-2 rounded text-gray-700 hover:bg-gray-100 focus-visible:outline-none"
+            className="p-2 rounded text-[var(--color-text-secondary)] hover:bg-[var(--color-accent-light)] focus-visible:outline-none"
             aria-label={mobileMenuOpen ? 'Close menu' : 'Open menu'}
             aria-expanded={mobileMenuOpen}
           >
@@ -105,7 +147,7 @@ export default function Header() {
         >
           <div className="px-4 py-4 space-y-6">
             <div>
-              <p className="text-xs uppercase tracking-wide text-gray-400 mb-2">Menu</p>
+              <p className="text-xs uppercase tracking-wide text-[var(--color-text-secondary)] mb-2">Menu</p>
               <ul className="space-y-0">
                 {primaryLinks.map((link) => {
                   const isActive = pathname.replace(/\/$/, '') === link.href.replace(/\/$/, '');
@@ -114,7 +156,7 @@ export default function Header() {
                     <Link
                       href={link.href}
                       onClick={() => setMobileMenuOpen(false)}
-                      className={`block py-3 font-medium border-b border-gray-100 no-underline relative ${isActive ? 'text-[var(--color-accent)] after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[2px] after:bg-[var(--color-accent)]' : 'text-gray-900 hover:text-[var(--color-accent)]'}`}
+                      className={`block py-3 font-medium border-b border-[var(--color-border)] no-underline relative ${isActive ? 'text-[var(--color-accent)] after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[2px] after:bg-[var(--color-accent)]' : 'text-[var(--color-text-primary)] hover:text-[var(--color-accent)]'}`}
                     >
                       {link.label}
                     </Link>
@@ -133,14 +175,14 @@ export default function Header() {
               </ul>
             </div>
             <div>
-              <p className="text-xs uppercase tracking-wide text-gray-400 mb-2">More</p>
+              <p className="text-xs uppercase tracking-wide text-[var(--color-text-secondary)] mb-2">More</p>
               <ul className="space-y-0">
                 {secondaryLinks.map((link) => (
                   <li key={link.href}>
                     <Link
                       href={link.href}
                       onClick={() => setMobileMenuOpen(false)}
-                      className="link-underline block py-3 text-gray-600 hover:text-gray-900 border-b border-gray-100 last:border-b-0"
+                      className="link-underline block py-3 text-[var(--color-text-secondary)] hover:text-[var(--color-text-primary)] border-b border-[var(--color-border)] last:border-b-0"
                     >
                       {link.label}
                     </Link>

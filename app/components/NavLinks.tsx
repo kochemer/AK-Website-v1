@@ -27,7 +27,7 @@ export default function NavLinks() {
         <li key={link.href} className="whitespace-nowrap">
           <Link
             href={link.href}
-            className={`link-underline px-2 py-2 md:px-1.5 md:py-0.5 rounded flex items-center min-h-[44px] md:min-h-0 text-gray-900 hover:text-gray-700 no-underline relative ${isActive ? 'after:absolute after:bottom-[-2px] after:left-0 after:right-0 after:h-[2px] after:bg-[var(--color-accent)]' : ''}`}
+            className={`link-underline px-2 py-2 md:px-1.5 md:py-0.5 rounded flex items-center min-h-[44px] md:min-h-0 text-[var(--color-text-primary)] hover:text-[var(--color-text-secondary)] no-underline relative ${isActive ? 'after:absolute after:bottom-[-2px] after:left-0 after:right-0 after:h-[2px] after:bg-[var(--color-accent)]' : ''}`}
           >
             {link.label}
           </Link>

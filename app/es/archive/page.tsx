@@ -81,59 +81,72 @@ function extractIssueLabel(weekLabel: string): string {
 }
 
 export default async function ArchivePageES() {
-  const digests = await getAvailableDigests();
+  const weekLabels = await getAvailableDigests();
+  const issues = await Promise.all(
+    weekLabels.map(async (weekLabel, i) => {
+      const meta = await getWeekMeta(weekLabel);
+      return { weekLabel, meta, issue: extractIssueLabel(weekLabel), i };
+    })
+  );
 
   return (
-    <div className="max-w-4xl mx-auto px-6 md:px-12 lg:px-16 py-16 md:py-20">
-      <header className="mb-10 md:mb-14">
-        <Link href="/es" className="text-[var(--color-accent)] hover:text-[var(--color-text-primary)] text-meta inline-block mb-4 transition-colors">
+    <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 py-16 md:py-20">
+      <header className="max-w-2xl mb-12 md:mb-16">
+        <Link href="/es" className="text-[var(--color-accent)] hover:text-[var(--color-text-primary)] text-meta inline-block mb-6 transition-colors">
           ← Volver al inicio
         </Link>
-        <h1 className="text-page-h1 font-bold mb-3 text-[var(--color-text-primary)]">
+        <p className="text-[11px] tracking-[0.3em] uppercase text-[var(--color-accent)] font-sans font-semibold mb-3">
+          Todas las ediciones
+        </p>
+        <h1 className="font-serif font-normal text-[2.75rem] leading-none tracking-[-0.02em] text-[var(--color-text-primary)] mb-4">
           Archivo de Resúmenes
         </h1>
         <p className="text-body text-[var(--color-text-secondary)]">
-          {digests.length} ediciones · IA, ecommerce, lujo y joyería.
+          {weekLabels.length} ediciones · IA, ecommerce, lujo &amp; joyería
         </p>
         <hr className="border-[var(--color-accent)] border-t-2 mt-6" />
       </header>
 
-      {digests.length > 0 ? (
-        <div>
-          {await Promise.all(digests.map(async (weekLabel) => {
-            const meta = await getWeekMeta(weekLabel);
-            const issue = extractIssueLabel(weekLabel);
-            return (
-              <Link key={weekLabel} href={`/week/${weekLabel}`} className="group block py-6 border-b border-stone-200 first:pt-0 last:border-b-0 transition-colors hover:bg-[var(--color-accent-light)]/40 -mx-3 px-3 rounded-sm">
-                <div className="flex items-start gap-4 md:gap-6">
-                  {meta.coverImageUrl && (
-                    <div className="flex-shrink-0 w-28 h-20 rounded-sm overflow-hidden bg-gray-100">
-                      <img src={meta.coverImageUrl} alt={meta.coverImageAlt || `Portada para ${weekLabel}`} className="w-full h-full object-cover" />
-                    </div>
-                  )}
-                  <div className="min-w-0 flex-1">
-                    <h2 className="text-card-title font-semibold text-[var(--color-text-primary)] leading-tight mb-1 group-hover:text-[var(--color-accent)] transition-colors">
-                      {meta.dateRange || `Semana ${weekLabel}`}
-                    </h2>
-                    <p className="text-[10px] tracking-[0.3em] uppercase text-[var(--color-accent)] font-sans font-semibold mb-2">Edición {issue}</p>
-                    {meta.topArticleTitle ? (
-                      <p className="text-meta text-[var(--color-text-secondary)] line-clamp-1">{meta.topArticleTitle}</p>
-                    ) : meta.totalArticles > 0 ? (
-                      <p className="text-meta text-[var(--color-text-secondary)]">{meta.totalArticles} artículos · {meta.categoryCount} {meta.categoryCount === 1 ? 'categoría' : 'categorías'}</p>
-                    ) : null}
-                    <span className="text-[var(--color-accent)] text-meta font-medium mt-2 inline-block group-hover:underline">Ver resumen →</span>
-                  </div>
-                  <span className="hidden md:block text-5xl font-light text-stone-200 font-serif select-none flex-shrink-0 leading-none pt-1" aria-hidden="true">{issue}</span>
-                </div>
-              </Link>
-            );
-          }))}
+      {issues.length > 0 ? (
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4">
+          {issues.map(({ weekLabel, meta, issue, i }) => (
+            <Link
+              key={weekLabel}
+              href={`/week/${weekLabel}`}
+              className={`group relative overflow-hidden rounded-sm ${
+                i === 0 ? 'col-span-2 row-span-2 aspect-[3/2]' : 'aspect-[3/2]'
+              }`}
+            >
+              {meta.coverImageUrl ? (
+                <img
+                  src={meta.coverImageUrl}
+                  alt={meta.coverImageAlt || `Portada para ${weekLabel}`}
+                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+              ) : (
+                <div
+                  className="absolute inset-0 w-full h-full"
+                  style={{ background: `linear-gradient(135deg, var(--color-deep) 0%, var(--color-accent) 100%)` }}
+                />
+              )}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+              <div className="absolute bottom-0 left-0 right-0 p-3 md:p-4">
+                <p className="text-[10px] tracking-[0.25em] uppercase text-white/60 font-sans mb-0.5">{issue}</p>
+                <p className={`font-serif text-white leading-snug ${i === 0 ? 'text-base md:text-lg' : 'text-xs md:text-sm'}`}>
+                  {meta.dateRange || weekLabel}
+                </p>
+                {meta.totalArticles > 0 && (
+                  <p className="text-[11px] text-white/50 font-sans mt-1">{meta.totalArticles} artículos</p>
+                )}
+              </div>
+            </Link>
+          ))}
         </div>
       ) : (
         <div className="bg-[var(--color-accent-light)] border-l-4 border-[var(--color-accent)] p-5 rounded-sm">
           <p className="text-body text-[var(--color-text-primary)] mb-2 font-medium">Aún no hay ediciones.</p>
           <p className="text-body text-[var(--color-text-secondary)]">
-            Ejecuta <code className="bg-gray-100 px-2 py-1 rounded text-meta font-mono">npx tsx scripts/buildWeeklyDigest.ts</code> para crear resúmenes.
+            Ejecuta <code className="bg-[var(--color-surface)] px-2 py-1 rounded text-meta font-mono border border-[var(--color-border)]">npx tsx scripts/buildWeeklyDigest.ts</code> para crear resúmenes.
           </p>
         </div>
       )}

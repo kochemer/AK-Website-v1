@@ -120,7 +120,7 @@ export default function ArticleCard({
 
   return (
     <article
-      className="group transition-all duration-200 py-6 border-b border-gray-200 pl-0 hover:pl-3 hover:border-l-2 hover:border-l-[var(--color-accent)] hover:bg-[var(--color-accent-light)] last:border-b-0"
+      className="group transition-all duration-200 py-6 border-b border-[var(--color-border)] pl-0 hover:pl-3 hover:border-l-2 hover:border-l-[var(--color-accent)] hover:bg-[var(--color-accent-light)] last:border-b-0"
     >
       {/* Source + date — single metadata line with favicon */}
       {(source || displayDate) && (
@@ -167,7 +167,7 @@ export default function ArticleCard({
           {badges.map((badge, idx) => (
             <span
               key={idx}
-              className="px-1.5 py-0.5 bg-gray-100 text-gray-700 rounded text-meta"
+              className="px-1.5 py-0.5 bg-[var(--color-surface)] text-[var(--color-text-secondary)] rounded text-meta border border-[var(--color-border)]"
             >
               {badge}
             </span>

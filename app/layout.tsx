@@ -10,6 +10,7 @@ import DisplayModeAttribute from "./components/DisplayModeAttribute";
 import ServiceWorkerRegistration from "./components/ServiceWorkerRegistration";
 import JsonLd from "./components/JsonLd";
 import CanonicalUrlValidator from "./components/CanonicalUrlValidator";
+import { ThemeProvider } from "./context/ThemeContext";
 import "./globals.css";
 
 const libreBaskerville = Libre_Baskerville({
@@ -92,40 +93,50 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${libreBaskerville.variable} ${dmSans.variable} ${geistMono.variable} font-sans antialiased bg-[var(--color-bg)] text-gray-900`}
-        style={{ minHeight: "100vh", display: "flex", flexDirection: "column" }}
-      >
-        <JsonLd
-          data={{
-            "@context": "https://schema.org",
-            "@type": "WebSite",
-            name: "Luxury Intelligence",
-            url: siteUrl,
-            description: "Luxury Ecommerce, Retail Technology & AI - Curated intelligence and AI-assisted summaries for luxury, ecommerce, and retail tech.",
-            inLanguage: "en",
-            publisher: {
-              "@type": "Organization",
-              name: "Luxury Intelligence",
-            },
+    <html lang="en" suppressHydrationWarning>
+      <head>
+        {/* Blocking script: apply saved theme before first paint to prevent flash */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `try{var t=localStorage.getItem('theme');if(t==='dark'||t==='light'){document.documentElement.setAttribute('data-theme',t);}else if(window.matchMedia('(prefers-color-scheme:dark)').matches){document.documentElement.setAttribute('data-theme','dark');}}catch(e){}`,
           }}
         />
-        <CanonicalUrlValidator />
-        <AmplitudeInit />
-        <AnalyticsPageView />
-        <DisplayModeAttribute />
-        <ServiceWorkerRegistration />
-        <Header />
+      </head>
+      <body
+        className={`${libreBaskerville.variable} ${dmSans.variable} ${geistMono.variable} font-sans antialiased bg-[var(--color-bg)] text-[var(--color-text-primary)]`}
+        style={{ minHeight: "100vh", display: "flex", flexDirection: "column" }}
+      >
+        <ThemeProvider>
+          <JsonLd
+            data={{
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              name: "Luxury Intelligence",
+              url: siteUrl,
+              description: "Luxury Ecommerce, Retail Technology & AI - Curated intelligence and AI-assisted summaries for luxury, ecommerce, and retail tech.",
+              inLanguage: "en",
+              publisher: {
+                "@type": "Organization",
+                name: "Luxury Intelligence",
+              },
+            }}
+          />
+          <CanonicalUrlValidator />
+          <AmplitudeInit />
+          <AnalyticsPageView />
+          <DisplayModeAttribute />
+          <ServiceWorkerRegistration />
+          <Header />
 
-        {/* Main Layout Container */}
-        <main className="flex-grow w-full">
-          {children}
-        </main>
+          {/* Main Layout Container */}
+          <main className="flex-grow w-full">
+            {children}
+          </main>
 
-        {/* Footer (locale-aware, dark 3-column) */}
-        <Footer />
-        <SpeedInsights />
+          {/* Footer (locale-aware, dark 3-column) */}
+          <Footer />
+          <SpeedInsights />
+        </ThemeProvider>
       </body>
     </html>
   );

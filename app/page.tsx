@@ -13,6 +13,7 @@ import BrandPattern from './components/BrandPattern';
 import GrainOverlay from './components/GrainOverlay';
 import MastheadLockup from './components/MastheadLockup';
 import ScrollProgressBar from './components/ScrollProgressBar';
+import { WeeklyInsight } from './components/WeeklyInsight';
 import { TopicKey } from '@/lib/utils/topicNames';
 import { formatDate, formatDateRange, formatDateTime, formatIssueLine } from '@/lib/utils/formatDate';
 import { getCurrentDigestWeek } from '@/lib/utils/getCurrentDigestWeek';
@@ -221,13 +222,7 @@ export default async function Home() {
           )}
         </div>
         {/* Bottom — lead line */}
-        <div className="absolute bottom-0 left-0 right-0 p-6 md:p-12 z-10">
-          {digest?.oneSentenceSummary ? (
-            <p className="hero-lead font-serif italic text-card-title text-white max-w-2xl" style={{ textShadow: '0 1px 4px rgba(0,0,0,0.4)' }}>
-              {digest.oneSentenceSummary}
-            </p>
-          ) : null}
-        </div>
+        <div className="absolute bottom-0 left-0 right-0 p-6 md:p-12 z-10" />
       </section>
 
       {/* Scroll progress bar below header */}
@@ -247,6 +242,19 @@ export default async function Home() {
               )}
             />
           )}
+
+          {/* Weekly pull-quote — editorial insight between stats and category nav */}
+          {digest && (() => {
+            const quote =
+              digest.weeklyInsight ||
+              digest.oneSentenceSummary ||
+              digest.introParagraph ||
+              digest.topics?.AI_and_Strategy?.top?.[0]?.aiSummary ||
+              digest.topics?.Ecommerce_Retail_Tech?.top?.[0]?.aiSummary ||
+              null;
+            return quote ? <WeeklyInsight quote={quote} /> : null;
+          })()}
+
           {/* Podcast + stats on cream */}
           <div className="bg-[var(--color-bg)] rounded-t-xl md:rounded-t-2xl border border-b-0 border-t border-t-[var(--color-accent)] border-black/5 p-6 sm:p-6 md:p-8 lg:p-10">
           {!digest ? (
@@ -326,7 +334,7 @@ export default async function Home() {
               </div>
 
               {/* Article sections - white band */}
-              <div className={`bg-[var(--color-surface)] border-x border-b border-gray-200 px-6 sm:px-6 md:px-8 lg:px-10 py-16 md:py-20 ${!(digest.keyThemes?.length) && !digest.oneSentenceSummary ? 'rounded-b-xl md:rounded-b-2xl' : ''}`}>
+              <div className={`bg-[var(--color-surface)] border-x border-b border-[var(--color-border)] px-6 sm:px-6 md:px-8 lg:px-10 py-16 md:py-20 ${!(digest.keyThemes?.length) ? 'rounded-b-xl md:rounded-b-2xl' : ''}`}>
               {/* CATEGORY SECTIONS UI - Client-side rendering with reactive TopN */}
               <Suspense fallback={
                 <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-6">
@@ -342,26 +350,17 @@ export default async function Home() {
               </div>
 
               {/* Key Themes Summary (cream band) */}
-              {(digest.keyThemes && digest.keyThemes.length > 0) || digest.oneSentenceSummary ? (
-                <div className="border-t border-gray-200 dark:border-gray-700 bg-[var(--color-bg)] rounded-b-xl md:rounded-b-2xl px-6 sm:px-6 md:px-8 lg:px-10 py-16 md:py-20">
-                  <div className="text-center">
-                    {digest.oneSentenceSummary && (
-                      <p className="text-body text-gray-700 dark:text-gray-300 mb-3 sm:mb-4 px-2">
-                        {digest.oneSentenceSummary}
-                      </p>
-                    )}
-                    {digest.keyThemes && digest.keyThemes.length > 0 && (
-                      <div className="flex flex-wrap gap-1.5 sm:gap-2 justify-center">
-                        {digest.keyThemes.map((theme, idx) => (
-                          <span
-                            key={idx}
-                            className="inline-flex items-center px-2 py-1 sm:px-3 sm:py-1.5 rounded-full text-meta font-medium bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 border border-blue-200 dark:border-blue-700"
-                          >
-                            {theme}
-                          </span>
-                        ))}
-                      </div>
-                    )}
+              {digest.keyThemes && digest.keyThemes.length > 0 ? (
+                <div className="border-t border-[var(--color-border)] bg-[var(--color-bg)] rounded-b-xl md:rounded-b-2xl px-6 sm:px-6 md:px-8 lg:px-10 py-10 md:py-12">
+                  <div className="flex flex-wrap gap-1.5 sm:gap-2 justify-center">
+                    {digest.keyThemes.map((theme, idx) => (
+                      <span
+                        key={idx}
+                        className="inline-flex items-center px-2.5 py-1 sm:px-3 sm:py-1.5 rounded-full text-meta font-medium bg-[var(--color-accent-light)] text-[var(--color-accent)] border border-[var(--color-accent)]/20"
+                      >
+                        {theme}
+                      </span>
+                    ))}
                   </div>
                 </div>
               ) : null}

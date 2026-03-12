@@ -1,3 +1,6 @@
+'use client';
+
+import { useRef, useState, useEffect } from 'react';
 import ArticleCard from './ArticleCard';
 import Link from 'next/link';
 import type { Locale } from '@/lib/i18n/types';
@@ -30,50 +33,75 @@ type CategorySectionProps = {
   emptyCta?: string;
   countLabel?: string;
   aiSummaryLabel?: string;
-  /** Topic/category key for analytics (e.g. AI_and_Strategy) */
   categoryKey?: string;
 };
 
 export default function CategorySection({
   title,
-  description,
   count,
   articles,
-  rankingLabel,
   variant = 'default',
   id,
   locale = 'en',
   emptyTitle = 'Coverage light this week',
   emptyDesc = 'This is a curated weekly selection. Not every category will have articles every week.',
   emptyCta = 'Suggest a source',
-  countLabel = '# of articles processed',
   aiSummaryLabel = 'AI summary',
   categoryKey,
 }: CategorySectionProps) {
   const isGrid = variant === 'grid';
-  
+  const headerRef = useRef<HTMLElement>(null);
+  const [revealed, setRevealed] = useState(false);
+
+  useEffect(() => {
+    const el = headerRef.current;
+    if (!el) return;
+    const mq = window.matchMedia('(prefers-reduced-motion: reduce)');
+    if (mq.matches) { setRevealed(true); return; }
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry?.isIntersecting) {
+          setRevealed(true);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.3 }
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
+
   return (
-    <section 
+    <section
       id={id}
-      className={isGrid 
-        ? "bg-[var(--color-surface)] rounded-lg border border-gray-100 p-6 sm:p-7 md:p-8 scroll-mt-20 sm:scroll-mt-24 relative py-16 md:py-20" 
-        : "mb-0 pb-16 md:pb-20 border-b border-gray-200 last:border-b-0 last:pb-0 last:mb-0 scroll-mt-20 sm:scroll-mt-24 relative py-16 md:py-20"
+      className={isGrid
+        ? "scroll-mt-20 sm:scroll-mt-24 relative pb-16 md:pb-20"
+        : "mb-0 pb-16 md:pb-20 border-b border-[var(--color-border)] last:border-b-0 last:pb-0 last:mb-0 scroll-mt-20 sm:scroll-mt-24 relative py-16 md:py-20"
       }
     >
-      {/* Gold rule above heading */}
-      <div className="w-full h-px bg-[var(--color-accent)]/30 mb-6" aria-hidden="true" />
-      {/* Section Header: Title, optional description, inline article count */}
-      <div className="mb-8">
-        <h2 className="text-section font-bold text-gray-900 pr-2">{title}</h2>
-        {description && (
-          <p className="text-body text-gray-600 mt-1.5 sm:mt-2 italic pr-2">{description}</p>
-        )}
-        {(count > 0 || articles.length > 0) && (
-          <p className="text-meta text-[var(--color-text-secondary)] mt-2 opacity-70">
-            {count} articles · {articles.length} selected
-          </p>
-        )}
-      </div>
+      {/* Editorial frontispiece header */}
+      <header
+        ref={headerRef}
+        className={`mb-10 pt-16 border-t border-[var(--color-accent)] transition-all duration-[600ms] ease-out ${
+          revealed ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
+        }`}
+      >
+        <p className="text-[11px] tracking-[0.3em] uppercase text-[var(--color-accent)] font-sans mb-4">
+          This Week
+        </p>
+        <div className="flex items-end justify-between gap-4">
+          <h2 className="font-serif font-normal text-[2.75rem] leading-none tracking-[-0.02em] text-[var(--color-text-primary)]">
+            {title}
+          </h2>
+          {(count > 0 || articles.length > 0) && (
+            <span className="font-sans text-[11px] tracking-[0.2em] uppercase text-[var(--color-text-secondary)] pb-1 shrink-0">
+              {count} articles · {articles.length} selected
+            </span>
+          )}
+        </div>
+        <hr className="mt-5 border-[var(--color-border)]" />
+      </header>
 
       {/* Articles List: first = Top Story card (full width), rest in 2-col grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -114,17 +142,17 @@ export default function CategorySection({
             ))}
           </>
         ) : (
-          <div className="md:col-span-2 bg-gray-50 rounded-lg border border-dashed border-gray-200 text-center py-6 sm:py-8 md:py-10 lg:py-12 px-3 sm:px-4 md:px-6">
-            <div className="font-medium text-card-title text-gray-600 mb-1.5 sm:mb-2">
+          <div className="md:col-span-2 bg-[var(--color-surface)] rounded-lg border border-dashed border-[var(--color-border)] text-center py-6 sm:py-8 md:py-10 lg:py-12 px-3 sm:px-4 md:px-6">
+            <div className="font-medium text-card-title text-[var(--color-text-secondary)] mb-1.5 sm:mb-2">
               {emptyTitle}
             </div>
-            <div className="text-body text-gray-500 mb-3 sm:mb-4">
+            <div className="text-body text-[var(--color-text-secondary)] mb-3 sm:mb-4">
               {emptyDesc}
             </div>
             {isGrid && (
               <Link
                 href="/feedback"
-                className="text-meta text-gray-600 hover:text-gray-800 underline"
+                className="text-meta text-[var(--color-text-secondary)] hover:text-[var(--color-text-primary)] underline"
               >
                 {emptyCta}
               </Link>

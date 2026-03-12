@@ -22,7 +22,11 @@ const THEME_MODEL = process.env.THEME_MODEL || getModelFor('classify');
 const TEMPERATURE = 0; // Deterministic
 const MAX_TOKENS = 500;
 const CACHE_KIND = 'themes';
-const THEME_VERSION = '2.1'; // Increment to invalidate cache
+const THEME_VERSION = '3.1'; // Incremented: insight framing (not summary)
+
+// Summary generator/judge models
+const SUMMARY_GENERATOR_MODEL = process.env.SUMMARY_GENERATOR_MODEL || getModelFor('summarize');
+const SUMMARY_JUDGE_MODEL     = process.env.SUMMARY_JUDGE_MODEL     || getModelFor('polish');
 
 // Banned phrases that indicate generic/vague themes
 const BANNED_PHRASES = [
@@ -49,11 +53,13 @@ const BANNED_PHRASES = [
 type ThemeResult = {
   keyThemes: string[];
   oneSentenceSummary: string;
+  summaryCandidates?: string[];
 };
 
 type CacheEntry = {
   keyThemes: string[];
   oneSentenceSummary: string;
+  summaryCandidates?: string[]; // All generated candidates before judge selection
   cached_at: string;
   model: string;
   version: string;
@@ -337,6 +343,149 @@ function validateThemes(themes: string[]): { isValid: boolean; issues: string[] 
 }
 
 /**
+ * Stage 1 — Generator: produce 4 structurally distinct insight candidates.
+ * An insight is an interpretation or implication of the week's events — not
+ * a report of what happened, but a non-obvious reading of what it means.
+ */
+async function generateSummaryCandidates(
+  digest: WeeklyDigest,
+  openai: OpenAI
+): Promise<string[]> {
+  const headlines = [
+    ...digest.topics.AI_and_Strategy.top.slice(0, 4),
+    ...digest.topics.Ecommerce_Retail_Tech.top.slice(0, 4),
+    ...digest.topics.Luxury_and_Consumer.top.slice(0, 3),
+    ...digest.topics.Jewellery_Industry.top.slice(0, 2),
+  ]
+    .map((a, i) => `${i + 1}. ${a.title} (${a.source})`)
+    .join('\n');
+
+  const prompt = `You are the editorial voice of a premium intelligence digest covering AI, ecommerce, luxury, and jewellery.
+
+Selected article headlines for week ${digest.weekLabel}:
+${headlines}
+
+Write exactly 4 one-sentence INSIGHTS — not summaries of what happened, but interpretations of what it means. An insight is a non-obvious reading: an implication, a tension, a pattern, or a reframing that a smart reader would not have arrived at on their own.
+
+Each candidate must use a DIFFERENT analytical lens:
+
+Candidate 1 — Implication: What does the week's dominant story quietly signal for the next 6–12 months?
+Candidate 2 — Paradox: What contradiction or irony do the week's events expose that nobody is saying plainly?
+Candidate 3 — Reframe: What conventional wisdom or received narrative do these events undermine or complicate?
+Candidate 4 — Pattern: What small but telling signal, visible across multiple articles, points to a larger structural shift?
+
+Rules for all four:
+- Maximum 25 words each
+- Must be interpretive, not descriptive — avoid "X announced", "Y reported", "Z is growing"
+- No two sentences may share the same opening word or grammatical structure
+- No filler phrases ("this week", "in a world where", "it is clear", "as we see")
+- Grounded in the specific articles above — no insight that could apply to any random week
+- No bullet points, labels, or numbering in the output sentences themselves
+
+Respond as JSON:
+{
+  "candidates": [
+    "Candidate 1 insight here",
+    "Candidate 2 insight here",
+    "Candidate 3 insight here",
+    "Candidate 4 insight here"
+  ]
+}`;
+
+  const response = await openai.chat.completions.create({
+    model: SUMMARY_GENERATOR_MODEL,
+    ...temperatureParam(SUMMARY_GENERATOR_MODEL, 0.9),
+    ...maxTokensParam(SUMMARY_GENERATOR_MODEL, 400),
+    messages: [{ role: 'user', content: prompt }],
+    response_format: { type: 'json_object' },
+  });
+
+  const content = response.choices[0]?.message?.content?.trim();
+  if (!content) return [];
+
+  const parsed = JSON.parse(content);
+  const candidates: string[] = Array.isArray(parsed.candidates)
+    ? parsed.candidates
+        .filter((c: unknown) => typeof c === 'string')
+        .map((c: string) => c.trim())
+        .filter((c: string) => c.length > 0)
+    : [];
+
+  console.log(`[Themes] Generated ${candidates.length} insight candidates`);
+  candidates.forEach((c, i) => console.log(`  [${i + 1}] ${c}`));
+  return candidates;
+}
+
+/**
+ * Stage 2 — Judge: evaluate all candidates and select the best one.
+ * Uses the polish model (most capable) at temperature 0 for deterministic choice.
+ */
+async function judgeAndSelectSummary(
+  candidates: string[],
+  digest: WeeklyDigest,
+  openai: OpenAI
+): Promise<string> {
+  if (candidates.length === 0) return '';
+  if (candidates.length === 1) return candidates[0];
+
+  const headlines = [
+    ...digest.topics.AI_and_Strategy.top.slice(0, 3),
+    ...digest.topics.Ecommerce_Retail_Tech.top.slice(0, 3),
+    ...digest.topics.Luxury_and_Consumer.top.slice(0, 2),
+    ...digest.topics.Jewellery_Industry.top.slice(0, 2),
+  ]
+    .map((a) => `- ${a.title}`)
+    .join('\n');
+
+  const numberedCandidates = candidates
+    .map((c, i) => `${i + 1}. "${c}"`)
+    .join('\n');
+
+  const prompt = `You are the editorial director of a premium intelligence digest. Select the single best insight from the four candidates below.
+
+An insight is NOT a summary of events. It is a non-obvious interpretation — an implication, paradox, reframe, or pattern that reveals something a smart reader would not have thought of alone.
+
+This week's key article headlines (for context):
+${headlines}
+
+Candidates:
+${numberedCandidates}
+
+Evaluate each on three criteria:
+1. Depth — does it reveal something non-obvious, or just restate what happened?
+2. Provocation — would it make an informed reader stop, reconsider, or want to argue with it?
+3. Specificity — is it anchored in this week's actual events, or could it apply to any week?
+
+Reject any candidate that is primarily descriptive ("X announced Y"). Prefer the candidate that feels like the sharpest analytical observation a senior editor would pull out of the week's material.
+
+Ties should be broken in favour of depth.
+
+Respond as JSON:
+{
+  "winner": <number 1-${candidates.length}>,
+  "sentence": "<the exact winning sentence>"
+}`;
+
+  const response = await openai.chat.completions.create({
+    model: SUMMARY_JUDGE_MODEL,
+    ...temperatureParam(SUMMARY_JUDGE_MODEL, 0),
+    ...maxTokensParam(SUMMARY_JUDGE_MODEL, 150),
+    messages: [{ role: 'user', content: prompt }],
+    response_format: { type: 'json_object' },
+  });
+
+  const content = response.choices[0]?.message?.content?.trim();
+  if (!content) return candidates[0];
+
+  const parsed = JSON.parse(content);
+  const winner = typeof parsed.winner === 'number' ? parsed.winner : 1;
+  const sentence = typeof parsed.sentence === 'string' ? parsed.sentence.trim() : '';
+
+  console.log(`[Themes] Judge selected candidate ${winner}: "${sentence}"`);
+  return sentence || candidates[0];
+}
+
+/**
  * Call LLM to generate themes
  */
 async function callLLMForThemes(digest: WeeklyDigest, isRetry: boolean = false): Promise<ThemeResult | null> {
@@ -348,9 +497,10 @@ async function callLLMForThemes(digest: WeeklyDigest, isRetry: boolean = false):
   }
 
   try {
-    const prompt = buildThemePrompt(digest, isRetry);
     const openai = new OpenAI({ apiKey: OPENAI_API_KEY });
-    
+
+    // ── Stage A: key themes (unchanged single-call logic) ─────────────────
+    const prompt = buildThemePrompt(digest, isRetry);
     const response = await openai.chat.completions.create({
       model: THEME_MODEL,
       ...temperatureParam(THEME_MODEL, TEMPERATURE),
@@ -360,71 +510,65 @@ async function callLLMForThemes(digest: WeeklyDigest, isRetry: boolean = false):
     });
 
     const content = response.choices[0]?.message?.content?.trim();
-    if (!content) {
-      return null;
-    }
+    if (!content) return null;
 
-    // Parse JSON response
     const parsed = JSON.parse(content);
-    
-    // Validate and normalize
-    let oneSentenceSummary = typeof parsed.oneSentenceSummary === 'string' 
-      ? parsed.oneSentenceSummary.trim() 
-      : '';
-    
+
     let keyThemes = Array.isArray(parsed.keyThemes)
       ? parsed.keyThemes
           .filter((t: any) => typeof t === 'string')
-          .map((t: string) => t.trim().replace(/[.,;:!?]/g, '')) // Remove punctuation
+          .map((t: string) => t.trim().replace(/[.,;:!?]/g, ''))
           .filter((t: string) => t.length > 0)
-          .slice(0, 5) // Max 5 themes
+          .slice(0, 5)
       : [];
 
-    // Validate word counts
-    const summaryWords = oneSentenceSummary.split(/\s+/).length;
-    if (summaryWords > 22) {
-      console.warn(`[Themes] Summary exceeds 22 words (${summaryWords}), truncating`);
-      const words = oneSentenceSummary.split(/\s+/).slice(0, 22);
-      oneSentenceSummary = words.join(' ');
-    }
-
-    // Validate themes
+    // Validate themes, retry once with stricter prompt if needed
     const validation = validateThemes(keyThemes);
-    if (!validation.isValid) {
-      // If this is not a retry, try once more with stricter prompt
-      if (!isRetry) {
-        console.warn(`[Themes] Validation failed: ${validation.issues.join('; ')}. Retrying with stricter prompt...`);
-        const retryResult = await callLLMForThemes(digest, true);
-        if (retryResult) {
-          const retryValidation = validateThemes(retryResult.keyThemes);
-          if (retryValidation.isValid) {
-            return retryResult;
-          } else {
-            console.warn(`[Themes] Retry still has issues: ${retryValidation.issues.join('; ')}. Using original output.`);
-          }
-        }
-      } else {
-        console.warn(`[Themes] Retry output has validation issues: ${validation.issues.join('; ')}. Using output anyway.`);
+    if (!validation.isValid && !isRetry) {
+      console.warn(`[Themes] Validation failed: ${validation.issues.join('; ')}. Retrying with stricter prompt...`);
+      const retryResult = await callLLMForThemes(digest, true);
+      if (retryResult) {
+        const retryValidation = validateThemes(retryResult.keyThemes);
+        if (retryValidation.isValid) return retryResult;
+        console.warn(`[Themes] Retry still has issues: ${retryValidation.issues.join('; ')}. Using original output.`);
       }
+    } else if (!validation.isValid && isRetry) {
+      console.warn(`[Themes] Retry output has validation issues: ${validation.issues.join('; ')}. Using output anyway.`);
     }
 
-    // Final validation: ensure themes are 2-6 words
     const validatedThemes = keyThemes.map((theme: string) => {
-      const words = theme.split(/\s+/).filter(w => w.length > 0);
-      if (words.length < 2) {
-        // If too short, pad with context (shouldn't happen often)
-        return theme;
-      }
+      const words = theme.split(/\s+/).filter((w: string) => w.length > 0);
       if (words.length > 6) {
         console.warn(`[Themes] Theme exceeds 6 words: "${theme}", truncating`);
         return words.slice(0, 6).join(' ');
       }
       return theme;
-    }).filter((theme: string) => theme.split(/\s+/).length >= 2); // Remove themes that are still too short
+    }).filter((theme: string) => theme.split(/\s+/).length >= 2);
+
+    // ── Stage B: two-stage summary (generator → judge) ────────────────────
+    console.log(`[Themes] Generating insight candidates (generator model: ${SUMMARY_GENERATOR_MODEL})...`);
+    const summaryCandidates = await generateSummaryCandidates(digest, openai);
+
+    let oneSentenceSummary = '';
+    if (summaryCandidates.length > 0) {
+      console.log(`[Themes] Running editorial judge (judge model: ${SUMMARY_JUDGE_MODEL})...`);
+      oneSentenceSummary = await judgeAndSelectSummary(summaryCandidates, digest, openai);
+    }
+
+    // Fallback: if two-stage failed, use summary from themes call
+    if (!oneSentenceSummary) {
+      oneSentenceSummary = typeof parsed.oneSentenceSummary === 'string'
+        ? parsed.oneSentenceSummary.trim()
+        : '';
+      if (oneSentenceSummary) {
+        console.warn('[Themes] Two-stage insight generation failed, falling back to single-call summary');
+      }
+    }
 
     return {
       keyThemes: validatedThemes,
       oneSentenceSummary,
+      summaryCandidates,
     };
   } catch (err: any) {
     console.error(`[Themes] LLM call failed: ${err.message}`);
@@ -467,10 +611,11 @@ export async function generateThemesForDigest(
     return null;
   }
 
-  // Save to cache
+  // Save to cache (include all candidates for audit trail)
   cache[cacheKey] = {
     keyThemes: result.keyThemes,
     oneSentenceSummary: result.oneSentenceSummary,
+    summaryCandidates: result.summaryCandidates,
     cached_at: new Date().toISOString(),
     model: THEME_MODEL,
     version: THEME_VERSION,
@@ -478,6 +623,7 @@ export async function generateThemesForDigest(
   await saveCache(cache);
 
   console.log(`[Themes] Generated ${result.keyThemes.length} themes for ${digest.weekLabel}`);
+  console.log(`[Themes] Final summary: "${result.oneSentenceSummary}"`);
   return result;
 }
 

@@ -8,6 +8,7 @@ import DigestClientView from '../../components/DigestClientView';
 import CategoryCardGrid from '../../components/CategoryCardGrid';
 import PodcastPlayer from '../../components/PodcastPlayer';
 import StatsBar from '../../components/StatsBar';
+import { WeeklyInsight } from '../../components/WeeklyInsight';
 import AnalyticsDigestView from '../../components/AnalyticsDigestView';
 import TopNSelector from '../../components/TopNSelector';
 import ScrollProgressBar from '../../components/ScrollProgressBar';
@@ -452,6 +453,18 @@ export default async function WeekPage({
                 podcast?.duration != null ? podcast.duration / 60 : undefined
               )}
             />
+
+            {/* Weekly insight pull-quote */}
+            {(() => {
+              const quote =
+                digest.weeklyInsight ||
+                digest.oneSentenceSummary ||
+                digest.introParagraph ||
+                digest.topics?.AI_and_Strategy?.top?.[0]?.aiSummary ||
+                digest.topics?.Ecommerce_Retail_Tech?.top?.[0]?.aiSummary ||
+                null;
+              return quote ? <WeeklyInsight quote={quote} /> : null;
+            })()}
 
             {/* Podcast + stats on cream */}
             <div className="bg-[var(--color-bg)] rounded-t-xl md:rounded-t-2xl border border-b-0 border-t border-t-[var(--color-accent)] border-black/5 p-6 sm:p-6 md:p-8 lg:p-10">

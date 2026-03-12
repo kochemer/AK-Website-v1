@@ -2,6 +2,7 @@ import { promises as fs } from 'fs';
 import path from 'path';
 import { buildWeeklyDigest } from '../digest/buildWeeklyDigest';
 import { generateSummariesForDigest } from '../digest/generateSummaries';
+import { generateThemesForDigest } from '../digest/generateThemes';
 import { translateDigestArticles } from '../lib/i18n/translate';
 import { loadEnv } from '../lib/env';
 import { getCurrentDigestWeek, validateWeekLabel } from '../lib/utils/getCurrentDigestWeek';
@@ -41,6 +42,16 @@ async function main() {
     const summaryStats = await generateSummariesForDigest(digest);
     console.log(`[Build Weekly Digest] Summary generation complete - Succeeded: ${summaryStats.succeeded}, Skipped: ${summaryStats.skipped}, Failed: ${summaryStats.failed}`);
     
+    // Generate one-sentence summary for the week
+    console.log(`[Build Weekly Digest] Generating one-sentence summary...`);
+    const themesResult = await generateThemesForDigest(digest);
+    if (themesResult?.oneSentenceSummary) {
+      (digest as any).oneSentenceSummary = themesResult.oneSentenceSummary;
+      console.log(`[Build Weekly Digest] ✓ One-sentence summary: "${themesResult.oneSentenceSummary}"`);
+    } else {
+      console.warn(`[Build Weekly Digest] ⚠ One-sentence summary generation skipped or failed`);
+    }
+
     // Translate article titles + summaries into DA/ES
     console.log(`[Build Weekly Digest] Translating articles into DA/ES...`);
     const allTopArticles = [

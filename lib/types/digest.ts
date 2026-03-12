@@ -97,6 +97,7 @@ export interface WeeklyDigest<T extends Article = Article> {
   keyThemes?: string[]; // Key themes for the week
   oneSentenceSummary?: string; // One-line summary of the week
   introParagraph?: string; // Longer intro paragraph
+  weeklyInsight?: string; // Pull-quote / editorial insight shown between stats and category nav
   
   // === Article counts ===
   totals: DigestTotals;
