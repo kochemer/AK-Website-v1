@@ -88,11 +88,21 @@ textarea:focus-visible {
   box-shadow: 0 0 0 2px var(--color-bg), 0 0 0 4px var(--color-accent);
 }
 
+/* Ken Burns slow zoom-out on hero cover image */
+@keyframes kenBurns {
+  from { transform: scale(1.06); }
+  to   { transform: scale(1.0); }
+}
+.animate-ken-burns {
+  animation: kenBurns 3.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+  will-change: transform;
+}
+
 /* Hero fade-up on load */
 @keyframes fadeUp {
   from {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(14px);
   }
   to {
     opacity: 1;
@@ -102,6 +112,18 @@ textarea:focus-visible {
 .animate-fade-up {
   animation: fadeUp 0.6s ease-out forwards;
 }
+.hero-title   { animation: fadeUp 0.8s 0.3s ease-out both; }
+.hero-sub     { animation: fadeUp 0.8s 0.55s ease-out both; }
+.hero-issue   { animation: fadeUp 0.8s 0.75s ease-out both; }
+.hero-lead    { animation: fadeUp 0.8s 0.95s ease-out both; }
+
+/* Stat count-up landing pulse */
+@keyframes statPulse {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(1.04); }
+  100% { transform: scale(1); }
+}
+.stat-landed { animation: statPulse 0.4s 1.2s ease-out both; }
 
 /* Staggered page-load reveal */
 @keyframes revealUp {
@@ -117,6 +139,12 @@ textarea:focus-visible {
 
 @media (prefers-reduced-motion: reduce) {
   .animate-fade-up,
+  .animate-ken-burns,
+  .hero-title,
+  .hero-sub,
+  .hero-issue,
+  .hero-lead,
+  .stat-landed,
   .reveal {
     animation: none;
     opacity: 1;
@@ -133,6 +161,21 @@ body {
   overflow-x: hidden;
   max-width: 100vw;
   position: relative;
+}
+
+/* Site-wide film grain overlay — static noise for editorial depth */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.035;
+  pointer-events: none;
+  z-index: 9999;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='1'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 200px 200px;
 }
 
 /* Type scale utility classes (1.25 ratio) */

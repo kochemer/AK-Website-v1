@@ -30,7 +30,6 @@ export default function PodcastPlayer({
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(durationSeconds ?? 0);
   const [speedIndex, setSpeedIndex] = useState(0);
-  const [progressHover, setProgressHover] = useState(false);
   const [loaded, setLoaded] = useState(false);
 
   const speed = SPEEDS[speedIndex];
@@ -98,88 +97,78 @@ export default function PodcastPlayer({
   const progressPercent = duration > 0 ? (currentTime / duration) * 100 : 0;
 
   return (
-    <div className="rounded-lg border border-gray-200 bg-[var(--color-accent-light)] p-4 sm:p-5">
-      {/* Label + Title */}
-      <div className="mb-4">
-        <span className="text-meta font-medium uppercase tracking-widest text-[var(--color-accent)]">
-          PODCAST
-        </span>
-        <h3 className="font-serif text-card-title font-semibold text-[var(--color-text-primary)] mt-1">
-          {title}
-        </h3>
-        {description && (
-          <p className="text-body text-[var(--color-text-secondary)] italic mt-1.5">{description}</p>
+    <div className="bg-[var(--color-deep)] rounded-sm p-5 flex items-center gap-5">
+      {/* Play / Pause */}
+      <button
+        type="button"
+        onClick={togglePlay}
+        className={`flex-shrink-0 w-12 h-12 rounded-full border-2 border-[var(--color-accent)] flex items-center justify-center text-white hover:bg-[var(--color-accent)]/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--color-deep)] transition-all ${playing ? 'animate-[pulse_2s_ease-in-out_infinite]' : ''}`}
+        aria-label={playing ? 'Pause' : 'Play'}
+      >
+        {playing ? (
+          <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden>
+            <path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z" />
+          </svg>
+        ) : (
+          <svg className="w-5 h-5 ml-0.5" fill="currentColor" viewBox="0 0 24 24" aria-hidden>
+            <path d="M8 5v14l11-7L8 5z" />
+          </svg>
         )}
-      </div>
+      </button>
 
-      <div className="flex items-center gap-3 sm:gap-4">
-        {/* Play / Pause */}
-        <button
-          type="button"
-          onClick={togglePlay}
-          className="flex-shrink-0 w-12 h-12 rounded-full bg-[var(--color-accent)] text-white flex items-center justify-center hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-accent)] focus-visible:ring-offset-2 transition-opacity"
-          aria-label={playing ? 'Pause' : 'Play'}
-        >
-          {playing ? (
-            <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden>
-              <path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z" />
-            </svg>
-          ) : (
-            <svg className="w-5 h-5 ml-0.5" fill="currentColor" viewBox="0 0 24 24" aria-hidden>
-              <path d="M8 5v14l11-7L8 5z" />
-            </svg>
+      {/* Info + progress */}
+      <div className="flex-1 min-w-0">
+        <div className="flex items-baseline gap-2 mb-2">
+          <p className="font-serif text-white text-sm truncate">{title}</p>
+          {description && (
+            <p className="text-[11px] text-white/40 truncate hidden sm:block">{description}</p>
           )}
-        </button>
-
-        {/* Progress + Time */}
-        <div className="flex-1 min-w-0 flex flex-col gap-1">
-          <div
-            className={`group cursor-pointer rounded-full bg-gray-200 transition-[height] ${progressHover ? 'h-2' : 'h-1'}`}
-            onClick={seek}
-            onMouseEnter={() => setProgressHover(true)}
-            onMouseLeave={() => setProgressHover(false)}
-            role="slider"
-            aria-valuemin={0}
-            aria-valuemax={duration}
-            aria-valuenow={currentTime}
-            tabIndex={0}
-            onKeyDown={(e) => {
-              const el = audioRef.current;
-              if (!el || !duration) return;
-              const step = e.key === 'ArrowRight' ? 5 : e.key === 'ArrowLeft' ? -5 : 0;
-              if (step) {
-                e.preventDefault();
-                const t = Math.max(0, Math.min(duration, el.currentTime + step));
-                el.currentTime = t;
-                setCurrentTime(t);
-              }
-            }}
-          >
-            <div
-              className="h-full rounded-full bg-[var(--color-accent)] transition-[height]"
-              style={{ width: `${progressPercent}%` }}
-            />
-          </div>
-          <div className="flex justify-between text-meta font-mono text-[var(--color-text-secondary)]">
-            <span>{formatTime(currentTime)}</span>
-            <span>{formatTime(duration)}</span>
-          </div>
         </div>
 
-        {/* Speed toggle */}
-        <button
-          type="button"
-          onClick={cycleSpeed}
-          className="flex-shrink-0 text-meta font-medium border border-gray-300 rounded-full px-2.5 py-1.5 text-[var(--color-text-primary)] hover:border-[var(--color-accent)] hover:text-[var(--color-accent)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-accent)] focus-visible:ring-offset-2 transition-colors"
-          aria-label={`Playback speed ${speed}x`}
+        {/* Progress bar */}
+        <div
+          className="relative h-[2px] bg-white/20 rounded-full cursor-pointer"
+          onClick={seek}
+          role="slider"
+          aria-valuemin={0}
+          aria-valuemax={duration}
+          aria-valuenow={currentTime}
+          tabIndex={0}
+          onKeyDown={(e) => {
+            const el = audioRef.current;
+            if (!el || !duration) return;
+            const step = e.key === 'ArrowRight' ? 5 : e.key === 'ArrowLeft' ? -5 : 0;
+            if (step) {
+              e.preventDefault();
+              const t = Math.max(0, Math.min(duration, el.currentTime + step));
+              el.currentTime = t;
+              setCurrentTime(t);
+            }
+          }}
         >
-          {speed}x
-        </button>
+          <div
+            className="h-full bg-[var(--color-accent)] rounded-full transition-all"
+            style={{ width: `${progressPercent}%` }}
+          />
+        </div>
+        <div className="flex justify-between mt-1.5 text-[11px] text-white/50 font-sans tabular-nums">
+          <span>{formatTime(currentTime)}</span>
+          <span>{formatTime(duration)}</span>
+        </div>
       </div>
+
+      {/* Speed toggle */}
+      <button
+        type="button"
+        onClick={cycleSpeed}
+        className="flex-shrink-0 text-[11px] font-medium border border-white/20 rounded-full px-2 py-1 text-white/60 hover:border-[var(--color-accent)] hover:text-[var(--color-accent)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--color-deep)] transition-colors"
+        aria-label={`Playback speed ${speed}x`}
+      >
+        {speed}x
+      </button>
 
       <audio ref={audioRef} preload="metadata" className="sr-only">
         <source src={src} type="audio/mpeg" />
-        Your browser does not support the audio element.
       </audio>
     </div>
   );

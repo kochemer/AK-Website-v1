@@ -180,7 +180,7 @@ export default async function Home() {
         {digest?.coverImageUrl ? (
           <>
             <div
-              className="absolute inset-0 w-full h-full bg-cover bg-no-repeat bg-center"
+              className="absolute inset-0 w-full h-full bg-cover bg-no-repeat bg-center animate-ken-burns"
               style={{
                 backgroundImage: `url(${digest.coverImageUrl})`,
                 backgroundPosition: 'center bottom',
@@ -205,15 +205,15 @@ export default async function Home() {
         <GrainOverlay id="grain-hero" className="z-[2] opacity-[0.08] md:opacity-[0.08] max-md:opacity-[0.03]" />
         {/* Masthead */}
         <div className="absolute top-0 left-0 right-0 pt-8 md:pt-12 px-6 md:px-12 z-10">
-          <div className="reveal">
+          <div className="hero-title">
             <MastheadLockup variant="hero" />
           </div>
-          <p className="reveal reveal-d1 text-white/80 text-body mt-2 max-w-xl">
+          <p className="hero-sub text-white/80 text-body mt-2 max-w-xl">
             Weekly intelligence across AI, ecommerce, luxury, and jewellery.
           </p>
           {weekLabel && (
             <p
-              className="reveal reveal-d1 text-white/70 text-issue-line tracking-[0.3em] uppercase mt-2"
+              className="hero-issue text-white/70 text-issue-line tracking-[0.3em] uppercase mt-2"
               style={{ textShadow: '0 1px 8px rgba(0,0,0,0.3)' }}
             >
               {formatIssueLine(weekLabel, digest?.startISO)}
@@ -223,7 +223,7 @@ export default async function Home() {
         {/* Bottom — lead line */}
         <div className="absolute bottom-0 left-0 right-0 p-6 md:p-12 z-10">
           {digest?.oneSentenceSummary ? (
-            <p className="font-serif italic text-card-title text-white max-w-2xl" style={{ textShadow: '0 1px 4px rgba(0,0,0,0.4)' }}>
+            <p className="hero-lead font-serif italic text-card-title text-white max-w-2xl" style={{ textShadow: '0 1px 4px rgba(0,0,0,0.4)' }}>
               {digest.oneSentenceSummary}
             </p>
           ) : null}
