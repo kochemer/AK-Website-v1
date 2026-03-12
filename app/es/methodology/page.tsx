@@ -52,7 +52,7 @@ export default function MethodologyPageES() {
           padding: '2rem 1.5rem 1.75rem 1.5rem',
           textAlign: 'center',
         }}>
-          <h1 className="text-4xl md:text-5xl font-bold mb-3" style={{
+          <h1 className="text-page-h1 font-bold mb-3" style={{
             textShadow: '0 1px 4px rgba(18,30,49,0.15)'
           }}>
             Metodología
@@ -67,7 +67,7 @@ export default function MethodologyPageES() {
       <section className="max-w-3xl mx-auto px-4 md:px-6 py-12 md:py-16">
         {/* What this site is */}
         <div className="mb-10 md:mb-12">
-          <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 mb-4">
+          <h2 className="text-section font-semibold text-gray-900 mb-4 leading-tight">
             Qué es este sitio
           </h2>
           <p className="text-base md:text-lg text-gray-700 leading-relaxed mb-3">
@@ -80,7 +80,7 @@ export default function MethodologyPageES() {
 
         {/* How articles are collected */}
         <div className="mb-10 md:mb-12">
-          <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 mb-4">
+          <h2 className="text-section font-semibold text-gray-900 mb-4 leading-tight">
             Cómo se recopilan los artículos
           </h2>
           <ul className="space-y-3 text-base md:text-lg text-gray-700 leading-relaxed">
@@ -98,7 +98,7 @@ export default function MethodologyPageES() {
 
         {/* How articles are selected */}
         <div className="mb-10 md:mb-12">
-          <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 mb-4">
+          <h2 className="text-section font-semibold text-gray-900 mb-4 leading-tight">
             Cómo se seleccionan los artículos
           </h2>
           <ul className="space-y-3 text-base md:text-lg text-gray-700 leading-relaxed">
@@ -119,7 +119,7 @@ export default function MethodologyPageES() {
 
         {/* How AI is used */}
         <div className="mb-10 md:mb-12">
-          <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 mb-4">
+          <h2 className="text-section font-semibold text-gray-900 mb-4 leading-tight">
             Cómo se usa la IA
           </h2>
           <p className="text-base md:text-lg text-gray-700 leading-relaxed mb-4">
@@ -148,7 +148,7 @@ export default function MethodologyPageES() {
 
         {/* Transparency & feedback */}
         <div className="mb-10 md:mb-12">
-          <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 mb-4">
+          <h2 className="text-section font-semibold text-gray-900 mb-4 leading-tight">
             Transparencia y comentarios
           </h2>
           <p className="text-base md:text-lg text-gray-700 leading-relaxed mb-3">
@@ -161,7 +161,7 @@ export default function MethodologyPageES() {
 
         {/* Update cadence */}
         <div className="mb-10 md:mb-12">
-          <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 mb-4">
+          <h2 className="text-section font-semibold text-gray-900 mb-4 leading-tight">
             Frecuencia de actualización
           </h2>
           <p className="text-base md:text-lg text-gray-700 leading-relaxed">

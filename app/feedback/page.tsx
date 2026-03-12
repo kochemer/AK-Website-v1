@@ -37,10 +37,7 @@ export default function FeedbackPage() {
           padding: '3rem 1.5rem 2.5rem 1.5rem',
           textAlign: 'center',
         }}>
-          <h1 style={{
-            fontSize: '2.5rem',
-            fontWeight: 700,
-            marginBottom: '1rem',
+          <h1 className="text-page-h1 font-bold mb-4" style={{
             textShadow: '0 2px 8px rgba(18,30,49,0.20)'
           }}>
             Feedback
@@ -73,11 +70,8 @@ export default function FeedbackPage() {
             padding: '2.5rem 2rem',
             marginBottom: '2rem',
           }}>
-            <h2 style={{
-              fontSize: '1.8rem',
-              fontWeight: 600,
+            <h2 className="text-section font-semibold leading-tight mb-6" style={{
               color: '#143c42',
-              marginBottom: '1.5rem',
             }}>
               Submit Feedback
             </h2>
@@ -246,11 +240,8 @@ export default function FeedbackPage() {
             }}>
               MESSAGE
             </div>
-            <h2 style={{
-              fontSize: '1.8rem',
-              fontWeight: 600,
+            <h2 className="text-section font-semibold leading-tight mb-4" style={{
               color: '#143c42',
-              marginBottom: '1rem',
             }}>
               Feedback Form Not Configured
             </h2>

@@ -53,7 +53,7 @@ export default function MethodologyPage() {
           padding: '2rem 1.5rem 1.75rem 1.5rem',
           textAlign: 'center',
         }}>
-          <h1 className="text-4xl md:text-5xl font-bold mb-3" style={{
+          <h1 className="text-page-h1 font-bold mb-3" style={{
             textShadow: '0 1px 4px rgba(18,30,49,0.15)'
           }}>
             Methodology
@@ -69,7 +69,7 @@ export default function MethodologyPage() {
         <div className="max-w-prose">
         {/* What this site is */}
         <div className="mb-10 md:mb-12">
-          <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 mb-4">
+          <h2 className="text-section font-semibold text-gray-900 mb-4 leading-tight">
             What this site is
           </h2>
           <p className="text-base md:text-lg text-gray-700 leading-relaxed mb-3">
@@ -82,7 +82,7 @@ export default function MethodologyPage() {
 
         {/* How articles are collected */}
         <div className="mb-10 md:mb-12">
-          <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 mb-4">
+          <h2 className="text-section font-semibold text-gray-900 mb-4 leading-tight">
             How articles are collected
           </h2>
           <ul className="space-y-3 text-base md:text-lg text-gray-700 leading-relaxed">
@@ -100,7 +100,7 @@ export default function MethodologyPage() {
 
         {/* How articles are selected */}
         <div className="mb-10 md:mb-12">
-          <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 mb-4">
+          <h2 className="text-section font-semibold text-gray-900 mb-4 leading-tight">
             How articles are selected
           </h2>
           <ul className="space-y-3 text-base md:text-lg text-gray-700 leading-relaxed">
@@ -121,7 +121,7 @@ export default function MethodologyPage() {
 
         {/* How AI is used */}
         <div className="mb-10 md:mb-12">
-          <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 mb-4">
+          <h2 className="text-section font-semibold text-gray-900 mb-4 leading-tight">
             How AI is used
           </h2>
           <p className="text-base md:text-lg text-gray-700 leading-relaxed mb-4">
@@ -150,7 +150,7 @@ export default function MethodologyPage() {
 
         {/* Transparency & feedback */}
         <div className="mb-10 md:mb-12">
-          <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 mb-4">
+          <h2 className="text-section font-semibold text-gray-900 mb-4 leading-tight">
             Transparency & feedback
           </h2>
           <p className="text-base md:text-lg text-gray-700 leading-relaxed mb-3">
@@ -163,7 +163,7 @@ export default function MethodologyPage() {
 
         {/* Update cadence */}
         <div className="mb-10 md:mb-12">
-          <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 mb-4">
+          <h2 className="text-section font-semibold text-gray-900 mb-4 leading-tight">
             Update cadence
           </h2>
           <p className="text-base md:text-lg text-gray-700 leading-relaxed">

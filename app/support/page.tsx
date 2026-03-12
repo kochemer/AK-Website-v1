@@ -30,7 +30,7 @@ export default function SupportPage() {
           padding: '3rem 1.5rem 2.5rem 1.5rem',
           textAlign: 'center',
         }}>
-          <h1 className="text-page font-bold mb-4" style={{
+          <h1 className="text-page-h1 font-bold mb-4" style={{
             textShadow: '0 2px 8px rgba(18,30,49,0.20)'
           }}>
             Support & Contact

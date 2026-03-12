@@ -15,7 +15,7 @@ export default function SubscribePage() {
       {/* Hero */}
       <section className="w-full border-b border-[var(--color-accent)] bg-gradient-to-r from-[#2e3741] via-[#394855] to-[#4a5a6b]">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 py-16 md:py-20">
-          <h1 className="text-3xl sm:text-4xl font-bold text-white mb-4">
+          <h1 className="text-page-h1 font-bold text-white mb-4">
             Support Luxury Intelligence
           </h1>
           <p className="text-sm sm:text-base text-gray-100 leading-relaxed mb-3 max-w-xl">

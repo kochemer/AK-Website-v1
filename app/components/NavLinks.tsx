@@ -27,7 +27,7 @@ export default function NavLinks() {
         <li key={link.href} className="whitespace-nowrap">
           <Link
             href={link.href}
-            className={`link-underline px-2 py-2 md:px-1.5 md:py-0.5 rounded flex items-center min-h-[44px] md:min-h-0 text-gray-900 hover:text-gray-700 ${isActive ? 'border-b-2 border-[var(--color-accent)] pb-0.5' : ''}`}
+            className={`link-underline px-2 py-2 md:px-1.5 md:py-0.5 rounded flex items-center min-h-[44px] md:min-h-0 text-gray-900 hover:text-gray-700 no-underline relative ${isActive ? 'after:absolute after:bottom-[-2px] after:left-0 after:right-0 after:h-[2px] after:bg-[var(--color-accent)]' : ''}`}
           >
             {link.label}
           </Link>
@@ -37,7 +37,7 @@ export default function NavLinks() {
       <li className="whitespace-nowrap ml-4 md:ml-6 pl-4 md:pl-6 border-l border-[var(--color-accent)] flex items-center">
         <Link
           href={`${prefix}/subscribe`}
-          className="inline-flex items-center justify-center bg-[var(--color-accent)] text-white px-5 py-2 rounded-sm font-medium transition-colors transition-transform duration-200 hover:opacity-90 hover:scale-105 focus-visible:outline-none min-h-[44px] md:min-h-0"
+          className="inline-flex items-center justify-center bg-[var(--color-accent)] text-white px-5 py-2 rounded-[3px] font-medium transition-colors transition-transform duration-200 hover:opacity-90 hover:scale-105 focus-visible:outline-none min-h-[44px] md:min-h-0"
         >
           {t.nav.subscribeCta}
         </Link>

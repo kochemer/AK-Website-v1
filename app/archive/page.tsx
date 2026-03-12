@@ -32,91 +32,138 @@ async function getAvailableDigests(): Promise<string[]> {
   }
 }
 
-async function getWeekMeta(weekLabel: string): Promise<{ dateRange: string | null; coverImageUrl?: string; coverImageAlt?: string }> {
+type WeekMeta = {
+  dateRange: string | null;
+  coverImageUrl?: string;
+  coverImageAlt?: string;
+  totalArticles: number;
+  categoryCount: number;
+  topArticleTitle?: string;
+};
+
+async function getWeekMeta(weekLabel: string): Promise<WeekMeta> {
   try {
     const digestPath = path.join(process.cwd(), 'data', 'digests', `${weekLabel}.json`);
     const raw = await fs.readFile(digestPath, 'utf-8');
     const digest = JSON.parse(raw);
     const dateRange = digest.startISO && digest.endISO ? formatDateRange(digest.startISO, digest.endISO) : null;
+    const byTopic = digest.totals?.byTopic as Record<string, number> | undefined;
+    const categoryCount = byTopic ? Object.values(byTopic).filter((v: number) => v > 0).length : 0;
+
+    let topArticleTitle: string | undefined;
+    const topics = digest.topics as Record<string, { top?: { title?: string }[] }> | undefined;
+    if (topics) {
+      for (const t of Object.values(topics)) {
+        if (t?.top?.[0]?.title) {
+          topArticleTitle = t.top[0].title;
+          break;
+        }
+      }
+    }
+
     return {
       dateRange,
       coverImageUrl: digest.coverImageUrl,
       coverImageAlt: digest.coverImageAlt,
+      totalArticles: digest.totals?.total ?? 0,
+      categoryCount,
+      topArticleTitle,
     };
   } catch {
-    return { dateRange: null };
+    return { dateRange: null, totalArticles: 0, categoryCount: 0 };
   }
+}
+
+function extractIssueLabel(weekLabel: string): string {
+  const match = weekLabel.match(/W(\d+)$/);
+  return match ? `W${match[1].padStart(2, '0')}` : weekLabel;
 }
 
 export default async function ArchivePage() {
   const weekLabels = await getAvailableDigests();
 
   return (
-    <div className="max-w-5xl mx-auto px-4 md:px-6 lg:px-8 py-16 md:py-20">
-      <header className="mb-8 md:mb-12">
-        <h1 className="text-page font-bold mb-4 text-gray-900">
-          Weekly Digest Archive
-        </h1>
-        <p className="text-body text-gray-600 mb-6">
-          Browse all available weekly digests covering AI, ecommerce, luxury, and jewellery industry news.
-        </p>
-        <Link 
-          href="/" 
-          className="text-blue-600 hover:text-blue-800 underline inline-block"
+    <div className="max-w-4xl mx-auto px-6 md:px-12 lg:px-16 py-16 md:py-20">
+      <header className="mb-10 md:mb-14">
+        <Link
+          href="/"
+          className="text-[var(--color-accent)] hover:text-[var(--color-text-primary)] text-meta inline-block mb-4 transition-colors"
         >
           ← Back to Home
         </Link>
+        <h1 className="text-page-h1 font-bold mb-3 text-[var(--color-text-primary)]">
+          Publication Index
+        </h1>
+        <p className="text-body text-[var(--color-text-secondary)]">
+          {weekLabels.length} issues · AI, ecommerce, luxury, and jewellery industry intelligence.
+        </p>
+        <hr className="border-[var(--color-accent)] border-t-2 mt-6" />
       </header>
 
       {weekLabels.length > 0 ? (
         <div>
-          <p className="text-body text-gray-600 mb-6">
-            Available weekly digests ({weekLabels.length}):
-          </p>
-          <div className="grid gap-4 md:gap-6">
-            {await Promise.all(weekLabels.map(async (weekLabel) => {
-              const meta = await getWeekMeta(weekLabel);
-              return (
-                <Link
-                  key={weekLabel}
-                  href={`/week/${weekLabel}`}
-                  className="block p-4 md:p-6 bg-[var(--color-surface)] border border-gray-200 rounded-lg hover:border-blue-300 hover:shadow-md transition-all overflow-hidden"
-                >
-                  <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-                    {meta.coverImageUrl && (
-                      <div className="flex-shrink-0 w-full md:w-32 h-40 md:h-24 rounded-md overflow-hidden bg-gray-100">
-                        <img
-                          src={meta.coverImageUrl}
-                          alt={meta.coverImageAlt || `Cover for ${weekLabel}`}
-                          className="w-full h-full object-cover"
-                        />
-                      </div>
-                    )}
-                    <div className="min-w-0 flex-1">
-                      <h2 className="text-card-title font-semibold text-gray-900 mb-1">
-                        Week {weekLabel}
-                      </h2>
-                      {meta.dateRange && (
-                        <p className="text-meta text-gray-600">
-                          {meta.dateRange}
-                        </p>
-                      )}
+          {await Promise.all(weekLabels.map(async (weekLabel) => {
+            const meta = await getWeekMeta(weekLabel);
+            const issue = extractIssueLabel(weekLabel);
+            return (
+              <Link
+                key={weekLabel}
+                href={`/week/${weekLabel}`}
+                className="group block py-6 border-b border-stone-200 first:pt-0 last:border-b-0 transition-colors hover:bg-[var(--color-accent-light)]/40 -mx-3 px-3 rounded-sm"
+              >
+                <div className="flex items-start gap-4 md:gap-6">
+                  {/* Thumbnail */}
+                  {meta.coverImageUrl && (
+                    <div className="flex-shrink-0 w-28 h-20 rounded-sm overflow-hidden bg-gray-100">
+                      <img
+                        src={meta.coverImageUrl}
+                        alt={meta.coverImageAlt || `Cover for ${weekLabel}`}
+                        className="w-full h-full object-cover"
+                      />
                     </div>
-                    <span className="text-blue-600 text-body font-medium shrink-0">
+                  )}
+
+                  {/* Content */}
+                  <div className="min-w-0 flex-1">
+                    {/* Date range as primary title */}
+                    <h2 className="text-card-title font-semibold text-[var(--color-text-primary)] leading-tight mb-1 group-hover:text-[var(--color-accent)] transition-colors">
+                      {meta.dateRange || `Week ${weekLabel}`}
+                    </h2>
+                    {/* Issue label */}
+                    <p className="text-[10px] tracking-[0.3em] uppercase text-[var(--color-accent)] font-sans font-semibold mb-2">
+                      Issue {issue}
+                    </p>
+                    {/* Teaser */}
+                    {meta.topArticleTitle ? (
+                      <p className="text-meta text-[var(--color-text-secondary)] line-clamp-1">
+                        {meta.topArticleTitle}
+                      </p>
+                    ) : meta.totalArticles > 0 ? (
+                      <p className="text-meta text-[var(--color-text-secondary)]">
+                        {meta.totalArticles} articles · {meta.categoryCount} {meta.categoryCount === 1 ? 'category' : 'categories'} covered
+                      </p>
+                    ) : null}
+                    {/* View link */}
+                    <span className="text-[var(--color-accent)] text-meta font-medium mt-2 inline-block group-hover:underline">
                       View digest →
                     </span>
                   </div>
-                </Link>
-              );
-            }))}
-          </div>
+
+                  {/* Decorative issue number */}
+                  <span className="hidden md:block text-5xl font-light text-stone-200 font-serif select-none flex-shrink-0 leading-none pt-1" aria-hidden="true">
+                    {issue}
+                  </span>
+                </div>
+              </Link>
+            );
+          }))}
         </div>
       ) : (
-        <div className="bg-gray-50 border border-gray-200 rounded-lg p-6 md:p-8">
-          <p className="text-body text-gray-600 mb-4">
-            No weekly digests available yet.
+        <div className="bg-[var(--color-accent-light)] border-l-4 border-[var(--color-accent)] p-5 rounded-sm">
+          <p className="text-body text-[var(--color-text-primary)] mb-2 font-medium">
+            No issues published yet.
           </p>
-          <p className="text-body text-gray-600">
+          <p className="text-body text-[var(--color-text-secondary)]">
             Run <code className="bg-gray-100 px-2 py-1 rounded text-meta font-mono">npx tsx scripts/buildWeeklyDigest.ts --week=YYYY-W##</code> to create digests.
           </p>
         </div>

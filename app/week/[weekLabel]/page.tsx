@@ -133,7 +133,7 @@ export default async function WeekPage({
   if (!/^\d{4}-W\d{1,2}$/.test(weekLabel)) {
     return (
       <div className="max-w-5xl mx-auto px-4 md:px-6 py-12 md:py-16">
-        <h1 className="text-page font-bold mb-4 text-gray-900">Invalid Week Format</h1>
+        <h1 className="text-page-h1 font-bold mb-4 text-gray-900">Invalid Week Format</h1>
         <p className="text-body text-gray-600 mb-8">
           The week label "{weekLabel}" is not valid. Expected format: YYYY-W## (e.g., 2025-W52).
         </p>
@@ -174,7 +174,7 @@ export default async function WeekPage({
   if (!digest) {
     return (
       <div className="max-w-5xl mx-auto px-4 md:px-6 py-12 md:py-16">
-        <h1 className="text-page font-bold mb-4 text-gray-900">Digest Not Found</h1>
+        <h1 className="text-page-h1 font-bold mb-4 text-gray-900">Digest Not Found</h1>
         <p className="text-body text-gray-600 mb-4">
           The digest for {weekLabel} has not been built yet.
         </p>
@@ -342,7 +342,7 @@ export default async function WeekPage({
             <div className="relative z-10 h-full flex items-start justify-center px-4 sm:px-6 md:px-8 pt-16 sm:pt-20 md:pt-24 lg:pt-28">
               <div className="w-full max-w-[1400px] lg:max-w-[1600px] 2xl:max-w-[1800px] mx-auto text-center">
                 <div className="bg-black/20 backdrop-blur-sm rounded-xl md:rounded-2xl px-5 py-7 sm:px-6 sm:py-8 md:px-10 md:py-12 inline-block max-w-full mx-2 sm:mx-4 animate-fade-up">
-                  <h1 className="font-bold mb-3 sm:mb-4 md:mb-5 text-hero text-white px-1" style={{
+                  <h1 className="font-bold mb-3 sm:mb-4 md:mb-5 text-hero-h1 text-white px-1" style={{
                     textShadow: '0 2px 8px rgba(0,0,0,0.5)'
                   }}>
                     Luxury Intelligence

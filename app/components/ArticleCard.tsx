@@ -93,19 +93,19 @@ export default function ArticleCard({
           </h3>
         </a>
         {cleanSummary && <p className="text-body text-[var(--color-text-secondary)] mt-3 max-w-3xl">{cleanSummary}</p>}
-        <div className="text-meta text-[var(--color-text-secondary)] mt-4 flex items-center gap-1.5">
+        <div className="text-[13px] text-[var(--color-text-secondary)] font-sans flex items-center gap-1.5 mt-4">
           {source && hostname && (
             <img
               src={`https://www.google.com/s2/favicons?domain=${hostname}&sz=32`}
               alt=""
-              className="w-4 h-4 rounded-sm inline-block opacity-60 align-baseline"
+              className="w-4 h-4 rounded-sm inline-block opacity-60"
               onError={(e) => {
                 e.currentTarget.style.display = 'none';
               }}
             />
           )}
           {source && <span className="uppercase tracking-widest">{source}</span>}
-          {source && displayDate && <span className="mx-1.5" aria-hidden>·</span>}
+          {source && displayDate && <span aria-hidden>·</span>}
           {displayDate && <span>{displayDate}</span>}
         </div>
         <a
@@ -120,22 +120,24 @@ export default function ArticleCard({
 
   return (
     <article
-      className="group transition-all duration-200 py-5 border-b border-gray-200 pl-0 hover:pl-3 hover:border-l-2 hover:border-l-[var(--color-accent)] hover:bg-[var(--color-accent-light)] last:border-b-0"
+      className="group transition-all duration-200 py-6 border-b border-gray-200 pl-0 hover:pl-3 hover:border-l-2 hover:border-l-[var(--color-accent)] hover:bg-[var(--color-accent-light)] last:border-b-0"
     >
-      {/* Source - top, uppercase muted with favicon */}
-      {source && (
-        <div className="text-meta uppercase tracking-widest text-[var(--color-text-secondary)] mb-1.5 inline-flex items-center">
-          {hostname && (
+      {/* Source + date — single metadata line with favicon */}
+      {(source || displayDate) && (
+        <div className="text-[13px] text-[var(--color-text-secondary)] font-sans flex items-center gap-1.5 mb-1.5">
+          {source && hostname && (
             <img
               src={`https://www.google.com/s2/favicons?domain=${hostname}&sz=32`}
               alt=""
-              className="w-4 h-4 rounded-sm inline-block mr-1.5 opacity-60 align-baseline"
+              className="w-4 h-4 rounded-sm inline-block opacity-60"
               onError={(e) => {
                 e.currentTarget.style.display = 'none';
               }}
             />
           )}
-          <span>{source}</span>
+          {source && <span className="uppercase tracking-widest">{source}</span>}
+          {source && displayDate && <span aria-hidden>·</span>}
+          {displayDate && <span>{displayDate}</span>}
         </div>
       )}
 
@@ -149,33 +151,29 @@ export default function ArticleCard({
         </h3>
       </a>
 
-      {/* Summary - body */}
+      {/* Summary */}
       {cleanSummary && (
-        <div className="text-body text-[var(--color-text-secondary)] mb-3 line-clamp-3">
-          <span className="font-medium">{aiSummaryLabel}: </span>
-          {cleanSummary}
+        <div className="mb-3">
+          <span className="text-[10px] tracking-widest uppercase text-[var(--color-text-secondary)] mb-1 block">{aiSummaryLabel}</span>
+          <p className="text-body text-[var(--color-text-secondary)] line-clamp-3">
+            {cleanSummary}
+          </p>
         </div>
       )}
 
-      {/* Metadata row - meta */}
-      <div className="flex flex-wrap items-center gap-x-2 gap-y-1 text-meta text-[var(--color-text-secondary)]">
-        {displayDate && <span className="whitespace-nowrap">{displayDate}</span>}
-        {badges && badges.length > 0 && (
-          <>
-            {displayDate && <span aria-hidden>·</span>}
-            <div className="flex gap-1.5 flex-wrap">
-              {badges.map((badge, idx) => (
-                <span
-                  key={idx}
-                  className="px-1.5 py-0.5 bg-gray-100 text-gray-700 rounded"
-                >
-                  {badge}
-                </span>
-              ))}
-            </div>
-          </>
-        )}
-      </div>
+      {/* Badges */}
+      {badges && badges.length > 0 && (
+        <div className="flex gap-1.5 flex-wrap mb-2">
+          {badges.map((badge, idx) => (
+            <span
+              key={idx}
+              className="px-1.5 py-0.5 bg-gray-100 text-gray-700 rounded text-meta"
+            >
+              {badge}
+            </span>
+          ))}
+        </div>
+      )}
 
       {/* Read article → link - no height when hidden; expands on hover/focus */}
       <div className="max-h-0 group-hover:max-h-[2.5rem] group-focus-within:max-h-[2.5rem] overflow-hidden transition-[max-height] duration-200 flex justify-end">

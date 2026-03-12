@@ -30,7 +30,7 @@ export default function AboutPageDA() {
           padding: '3rem 1.5rem 2.5rem 1.5rem',
           textAlign: 'center',
         }}>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4" style={{
+          <h1 className="text-page-h1 font-bold mb-4" style={{
             textShadow: '0 2px 8px rgba(18,30,49,0.20)'
           }}>
             Om Denne Oversigt
@@ -45,7 +45,7 @@ export default function AboutPageDA() {
       <section className="max-w-5xl mx-auto px-4 md:px-6 py-12 md:py-16">
         {/* Purpose Card */}
         <div className="bg-[var(--color-surface)] rounded-xl shadow-sm border border-gray-200 p-6 md:p-8 mb-12 md:mb-16">
-          <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 mb-4">
+          <h2 className="text-section font-semibold text-gray-900 mb-4 leading-tight">
             Formål
           </h2>
           <p className="text-base md:text-lg text-gray-600 leading-relaxed mb-4">
@@ -63,7 +63,7 @@ export default function AboutPageDA() {
 
         {/* How It Works Card */}
         <div className="bg-[var(--color-surface)] rounded-xl shadow-sm border border-gray-200 p-6 md:p-8 mb-12 md:mb-16">
-          <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 mb-8">
+          <h2 className="text-section font-semibold text-gray-900 mb-8 leading-tight">
             Sådan Fungerer Det
           </h2>
           
@@ -186,7 +186,7 @@ export default function AboutPageDA() {
 
         {/* Transparency & Disclaimer Card */}
         <div className="bg-[var(--color-surface)] rounded-xl shadow-sm border border-gray-200 p-6 md:p-8 mb-12 md:mb-16">
-          <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 mb-6">
+          <h2 className="text-section font-semibold text-gray-900 mb-6 leading-tight">
             Gennemsigtighed og Ansvarsfraskrivelse
           </h2>
           <div className="bg-blue-50 border-l-4 border-blue-600 rounded p-4 mb-6">

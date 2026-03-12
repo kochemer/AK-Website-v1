@@ -2,7 +2,7 @@ import { promises as fs } from 'fs';
 import path from 'path';
 import Link from 'next/link';
 import type { Metadata } from 'next';
-import { formatDate } from '@/lib/utils/formatDate';
+import { formatDate, formatIssueLine } from '@/lib/utils/formatDate';
 import { getCurrentDigestWeek } from '@/lib/utils/getCurrentDigestWeek';
 import { getSiteUrl } from '@/lib/utils/siteUrl';
 import type { EmailDigest, EmailDigestItem } from '@/lib/types';
@@ -178,120 +178,116 @@ export default async function EmailDigestPage() {
   const digest = await loadEmailDigest(weekLabel);
 
   return (
-    <main className="w-full max-w-3xl mx-auto px-4 sm:px-6 py-6 sm:py-8">
-      <div className="mb-6 sm:mb-8">
-        <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-2">
+    <main className="w-full font-sans">
+      <div className="max-w-2xl mx-auto px-6 py-12">
+        {/* Editorial page header */}
+        <p className="text-[11px] tracking-[0.3em] uppercase text-[var(--color-accent)] font-sans font-semibold mb-1">
+          {formatIssueLine(weekLabel).toUpperCase()}
+        </p>
+        <h1 className="font-serif text-page-h1 font-bold text-[var(--color-text-primary)] mb-0">
           Email Digest
         </h1>
-        <p className="text-sm sm:text-base text-gray-600">
+        <p className="text-body text-[var(--color-text-secondary)] mt-2">
           A single ranked list of the week&apos;s top articles with sharp insights for retail, luxury, and AI intelligence.
         </p>
-      </div>
+        <hr className="border-[var(--color-accent)] border-t-2 my-6" />
 
-      {!digest ? (
-        <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-6">
-          <h2 className="text-lg font-semibold text-yellow-900 mb-2">
-            Email digest not generated yet
-          </h2>
-          <p className="text-sm text-yellow-800 mb-4">
-            No email digest found for week {weekLabel}.
-          </p>
-          <div className="bg-yellow-100 rounded p-3 font-mono text-sm text-yellow-900">
-            npm run email-digest -- --week={weekLabel}
-          </div>
-        </div>
-      ) : (
-        <>
-          {/* Week Header */}
-          <div className="mb-6 pb-4 border-b border-gray-200">
-            <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2">
-              Week {digest.week}
+        {!digest ? (
+          <div className="bg-[var(--color-accent-light)] border-l-4 border-[var(--color-accent)] p-5 rounded-sm">
+            <h2 className="text-lg font-semibold text-[var(--color-text-primary)] mb-2">
+              Email digest not generated yet
             </h2>
+            <p className="text-sm text-[var(--color-text-secondary)] mb-4">
+              No email digest found for week {weekLabel}.
+            </p>
+            <div className="bg-[var(--color-accent-light)] rounded p-3 font-mono text-sm text-[var(--color-text-primary)]">
+              npm run email-digest -- --week={weekLabel}
+            </div>
+          </div>
+        ) : (
+          <>
+            {/* Week sub-header */}
             {digest.generatedAt && (
-              <p className="text-xs sm:text-sm text-gray-500">
+              <p className="text-meta text-[var(--color-text-secondary)] mb-8">
                 Generated {formatDate(digest.generatedAt)}
               </p>
             )}
-          </div>
 
-          {/* Intro */}
-          {digest.intro && (
-            <div className="mb-6 p-4 bg-gray-50 rounded-lg border border-gray-200">
-              <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
+            {/* Intro */}
+            {digest.intro && (
+              <div className="mb-8 text-body text-[var(--color-text-secondary)] leading-relaxed italic">
                 {digest.intro}
-              </p>
-            </div>
-          )}
+              </div>
+            )}
 
-          {/* Read One Thing */}
-          {digest.readOneThing && (
-            <div className="mb-6 p-4 bg-blue-50 rounded-lg border border-blue-200">
-              <h3 className="text-sm font-semibold text-blue-900 mb-2">
-                Read One Thing
-              </h3>
-              <a
-                href={digest.readOneThing.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-base sm:text-lg font-medium text-blue-800 hover:text-blue-900 hover:underline"
-              >
-                {digest.readOneThing.title}
-              </a>
-            </div>
-          )}
+            {/* Read One Thing */}
+            {digest.readOneThing && (
+              <div className="mb-10 bg-[var(--color-accent-light)] border-l-4 border-[var(--color-accent)] p-5 rounded-sm">
+                <h3 className="text-[10px] tracking-[0.3em] uppercase text-[var(--color-accent)] font-sans font-bold mb-2">
+                  Read One Thing
+                </h3>
+                <a
+                  href={digest.readOneThing.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-serif text-card-title font-semibold text-[var(--color-text-primary)] hover:text-[var(--color-accent)] underline decoration-[var(--color-accent)]/40 hover:decoration-[var(--color-accent)] underline-offset-2 transition-colors"
+                >
+                  {digest.readOneThing.title}
+                </a>
+              </div>
+            )}
 
-          {/* Ranked List */}
-          <div className="space-y-6 sm:space-y-8">
-            {digest.items.map((item) => (
-              <article
-                key={item.rank}
-                className="border-b border-gray-200 pb-6 last:border-b-0 last:pb-0"
-              >
-                <div className="flex items-start gap-3 sm:gap-4">
-                  {/* Rank */}
-                  <div className="flex-shrink-0 w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-gray-100 flex items-center justify-center">
-                    <span className="text-sm sm:text-base font-bold text-gray-700">
-                      {item.rank}
+            {/* Ranked List */}
+            <div className="space-y-10">
+              {digest.items.map((item) => (
+                <article
+                  key={item.rank}
+                  className="border-b border-stone-200 pb-8 last:border-b-0 last:pb-0"
+                >
+                  <div className="flex items-start gap-4">
+                    {/* Rank */}
+                    <span className="text-3xl font-light text-[var(--color-accent)] opacity-60 mr-0 font-serif leading-none pt-1 flex-shrink-0 w-10 text-right">
+                      {String(item.rank).padStart(2, '0')}
                     </span>
-                  </div>
 
-                  {/* Content */}
-                  <div className="flex-1 min-w-0">
-                    <h3 className="mb-2 sm:mb-3">
-                      <a
-                        href={item.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-base sm:text-lg md:text-xl font-semibold text-blue-800 hover:text-blue-900 hover:underline leading-tight"
-                      >
-                        {item.title}
-                      </a>
-                    </h3>
-
-                    {/* Source */}
-                    <p className="text-xs sm:text-sm text-gray-500 mb-2 sm:mb-3">
-                      {item.source}
-                    </p>
-
-                    {/* Bullets */}
-                    <ul className="space-y-1.5 sm:space-y-2">
-                      {extractSummaryBullets(item).map((bullet, idx) => (
-                        <li
-                          key={idx}
-                          className="text-sm sm:text-base text-gray-700 leading-relaxed flex items-start"
+                    {/* Content */}
+                    <div className="flex-1 min-w-0">
+                      <h3 className="mb-2">
+                        <a
+                          href={item.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="font-serif text-card-title font-semibold text-[var(--color-text-primary)] hover:text-[var(--color-accent)] underline decoration-[var(--color-accent)]/40 hover:decoration-[var(--color-accent)] underline-offset-2 transition-colors leading-tight"
                         >
-                          <span className="text-gray-400 mr-2 flex-shrink-0">•</span>
-                          <span>{bullet}</span>
-                        </li>
-                      ))}
-                    </ul>
+                          {item.title}
+                        </a>
+                      </h3>
+
+                      {/* Source */}
+                      <p className="text-meta uppercase tracking-widest text-[var(--color-text-secondary)] mb-3">
+                        {item.source}
+                      </p>
+
+                      {/* Bullets — em-dash list */}
+                      <div className="space-y-1.5 pl-0">
+                        {extractSummaryBullets(item).map((bullet, idx) => (
+                          <p
+                            key={idx}
+                            className="text-body text-[var(--color-text-secondary)] leading-relaxed"
+                          >
+                            <span className="text-[var(--color-accent)] opacity-50 mr-1.5">—</span>
+                            {bullet}
+                          </p>
+                        ))}
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </article>
-            ))}
-          </div>
-        </>
-      )}
+                </article>
+              ))}
+            </div>
+          </>
+        )}
+      </div>
     </main>
   );
 }

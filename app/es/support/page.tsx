@@ -30,7 +30,7 @@ export default function SupportPageES() {
           padding: '3rem 1.5rem 2.5rem 1.5rem',
           textAlign: 'center',
         }}>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4" style={{
+          <h1 className="text-page-h1 font-bold mb-4" style={{
             textShadow: '0 2px 8px rgba(18,30,49,0.20)'
           }}>
             Soporte y Contacto
@@ -45,7 +45,7 @@ export default function SupportPageES() {
       <section className="max-w-5xl mx-auto px-4 md:px-6 py-12 md:py-16">
         {/* Suggest Sources Card */}
         <div className="bg-[var(--color-surface)] rounded-xl shadow-sm border border-gray-200 p-6 md:p-8 mb-12 md:mb-16">
-          <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 mb-4">
+          <h2 className="text-section font-semibold text-gray-900 mb-4 leading-tight">
             Sugerir una Fuente
           </h2>
           <p className="text-base md:text-lg text-gray-600 leading-relaxed mb-6">
@@ -70,7 +70,7 @@ export default function SupportPageES() {
 
         {/* Report Issues Card */}
         <div className="bg-[var(--color-surface)] rounded-xl shadow-sm border border-gray-200 p-6 md:p-8 mb-12 md:mb-16">
-          <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 mb-4">
+          <h2 className="text-section font-semibold text-gray-900 mb-4 leading-tight">
             Reportar Problemas
           </h2>
           <p className="text-base md:text-lg text-gray-600 leading-relaxed mb-6">
@@ -97,7 +97,7 @@ export default function SupportPageES() {
 
         {/* Contact Card */}
         <div className="bg-[var(--color-surface)] rounded-xl shadow-sm border border-gray-200 p-6 md:p-8 mb-12 md:mb-16">
-          <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 mb-4">
+          <h2 className="text-section font-semibold text-gray-900 mb-4 leading-tight">
             Contacto
           </h2>
           <p style={{

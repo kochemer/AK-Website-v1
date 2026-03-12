@@ -57,10 +57,10 @@ export default function Header() {
       style={{ boxShadow: '0 1px 10px 0 rgba(0,0,0,0.03)' }}
     >
       {/* Desktop: single row — Logo | Nav | spacer | PWA | Notifications | Globe */}
-      <div className="hidden md:flex md:items-center md:justify-between md:px-4 md:py-2 lg:px-6">
+      <div className="hidden md:flex md:items-center md:justify-between md:px-4 md:py-0.5 lg:px-6 md:h-14">
         <Link href="/" className="flex items-center gap-2.5 hover:opacity-80 transition-opacity shrink-0">
-          <Image src="/favicon.png" alt="Luxury Intelligence" width={50} height={50} className="flex-shrink-0" />
-          <span className="font-sans font-bold text-base lg:text-lg tracking-tight">Luxury Intelligence</span>
+          <Image src="/favicon.png" alt="Luxury Intelligence" width={36} height={36} className="flex-shrink-0" />
+          <span className="font-sans font-semibold text-base lg:text-lg tracking-tight">Luxury Intelligence</span>
         </Link>
         <nav className="flex items-center min-w-0 mx-4 lg:mx-6">
           <ul className="flex items-center gap-1 lg:gap-2 text-sm font-medium font-sans flex-wrap">
@@ -75,10 +75,10 @@ export default function Header() {
       </div>
 
       {/* Mobile: Logo | PWA | Notifications | Globe | Hamburger */}
-      <div className="flex md:hidden items-center justify-between px-4 py-2.5">
+      <div className="flex md:hidden items-center justify-between px-4 py-2 h-14">
         <Link href="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity shrink-0">
           <Image src="/favicon.png" alt="Luxury Intelligence" width={24} height={24} className="flex-shrink-0" />
-          <span className="font-sans font-bold text-sm tracking-tight">Luxury Intelligence</span>
+          <span className="font-sans font-semibold text-sm tracking-tight">Luxury Intelligence</span>
         </Link>
         <div className="flex items-center gap-2">
           <InstallPwaButton />
@@ -114,7 +114,7 @@ export default function Header() {
                     <Link
                       href={link.href}
                       onClick={() => setMobileMenuOpen(false)}
-                      className={`link-underline block py-3 font-medium border-b border-gray-100 ${isActive ? 'text-[var(--color-accent)] border-b-2 border-b-[var(--color-accent)]' : 'text-gray-900 hover:underline'}`}
+                      className={`block py-3 font-medium border-b border-gray-100 no-underline relative ${isActive ? 'text-[var(--color-accent)] after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[2px] after:bg-[var(--color-accent)]' : 'text-gray-900 hover:text-[var(--color-accent)]'}`}
                     >
                       {link.label}
                     </Link>
@@ -125,7 +125,7 @@ export default function Header() {
                   <Link
                     href={`${prefix}/subscribe`}
                     onClick={() => setMobileMenuOpen(false)}
-                    className="inline-flex items-center justify-center bg-[var(--color-accent)] text-white px-5 py-2.5 rounded-sm font-medium w-full text-center transition-transform duration-200 hover:scale-105"
+                    className="inline-flex items-center justify-center bg-[var(--color-accent)] text-white px-5 py-2.5 rounded-[3px] font-medium w-full text-center transition-transform duration-200 hover:scale-105"
                   >
                     {t.nav.subscribeCta}
                   </Link>
