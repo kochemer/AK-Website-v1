@@ -1,169 +1,206 @@
+import fs from 'fs';
+import path from 'path';
 import Link from 'next/link';
 import SubscribePricing from '../components/SubscribePricing';
 import AnalyticsSubscribeView from '../components/AnalyticsSubscribeView';
 
+// ── Resolve the most recent cover image available ─────────────────────────────
+
+function getCurrentCover(): string | null {
+  try {
+    const dir = path.join(process.cwd(), 'data', 'digests');
+    const files = fs
+      .readdirSync(dir)
+      .filter(f => /^\d{4}-W\d{2}\.json$/.test(f))
+      .sort()
+      .reverse();
+
+    for (const file of files) {
+      try {
+        const json = JSON.parse(fs.readFileSync(path.join(dir, file), 'utf-8')) as {
+          weekLabel?: string;
+          coverImageUrl?: string;
+        };
+        // Prefer explicit coverImageUrl; fall back to derived public path
+        if (json.coverImageUrl) return json.coverImageUrl;
+        if (json.weekLabel) {
+          const derived = `/weekly-images/${json.weekLabel}.png`;
+          const abs = path.join(process.cwd(), 'public', derived);
+          if (fs.existsSync(abs)) return derived;
+        }
+      } catch { /* skip malformed */ }
+    }
+    return null;
+  } catch {
+    return null;
+  }
+}
+
+// ── FAQ data ──────────────────────────────────────────────────────────────────
+
+const FAQS = [
+  {
+    question: 'Is this a paid product?',
+    answer:
+      'Not currently. Payments are voluntary support to help cover running costs — hosting, AI summarisation, and infrastructure. The digest and archive remain freely accessible.',
+  },
+  {
+    question: 'Will I get extra features for supporting?',
+    answer:
+      'No guaranteed extras today. If supporter perks are introduced later, they will be communicated clearly and in advance. Supporting right now is about keeping the brief going.',
+  },
+  {
+    question: 'Can I cancel?',
+    answer:
+      'Yes — you can cancel anytime via Stripe\'s customer portal. No lock-in, no minimum period.',
+  },
+  {
+    question: 'When does the digest go out?',
+    answer:
+      'The digest covers Monday through Sunday in Central European Time (CET/CEST). Issues are typically built and sent early in the following week once the pipeline has run.',
+  },
+  {
+    question: 'Is AI used to write the content?',
+    answer:
+      'AI is used to classify and summarise articles, and to rank candidates for inclusion. It does not access paywalled content or rewrite source material. Every article links to the original source so you can read the full piece.',
+  },
+  {
+    question: 'How many sources does the brief draw from?',
+    answer:
+      '~53 RSS feeds across six source tiers — global newswires, retail trade press, fashion and luxury publications, jewellery specialist titles, specialist technology feeds, and business commentary — supplemented by a web-discovery layer that catches relevant articles outside the feed list.',
+  },
+];
+
+// ── Page ──────────────────────────────────────────────────────────────────────
+
 export default function SubscribePage() {
-  // Safely read environment variable (server-side)
-  // Fallback to Formspree endpoint if not configured
   const formAction =
     process.env.NEXT_PUBLIC_FEEDBACK_FORM_ACTION?.trim() ||
     'https://formspree.io/f/xwvpbnbz';
 
+  const currentCover = getCurrentCover();
+
   return (
-    <main className="w-full bg-[var(--color-bg)] min-h-screen">
+    <main className="w-full min-h-screen" style={{ background: 'var(--color-bg)' }}>
       <AnalyticsSubscribeView />
-      {/* Hero */}
-      <section className="w-full border-b border-[var(--color-accent)] bg-gradient-to-r from-[#2e3741] via-[#394855] to-[#4a5a6b]">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 py-16 md:py-20">
-          <h1 className="text-page-h1 font-bold text-white mb-4">
-            Support Luxury Intelligence
-          </h1>
-          <p className="text-sm sm:text-base text-gray-100 leading-relaxed mb-3 max-w-xl">
-            If you enjoy the weekly digest, consider supporting the project. This is a donation to help cover running costs (hosting, tooling, AI summarisation).
+
+      {/* ── Hero ── */}
+      <section className="relative overflow-hidden bg-[var(--color-deep)]">
+        {/* Blurred cover image background */}
+        {currentCover && (
+          <div
+            className="absolute inset-0 bg-cover bg-center scale-110"
+            style={{
+              backgroundImage: `url(${currentCover})`,
+              opacity: 0.15,
+              filter: 'blur(12px)',
+            }}
+          />
+        )}
+        {/* Dark gradient overlay for readability */}
+        <div className="absolute inset-0 bg-gradient-to-r from-[#1a1f26]/80 via-[#1a1f26]/60 to-transparent" />
+
+        <div className="relative z-10 max-w-5xl mx-auto px-8 md:px-16 py-20 md:py-28">
+          <p className="font-mono text-[11px] tracking-[0.25em] uppercase text-[var(--color-accent)] mb-5">
+            Back the Brief
           </p>
-          <div className="flex flex-wrap items-center gap-3 text-sm">
+          <h1 className="font-serif text-4xl md:text-5xl font-bold text-white leading-tight mb-5 max-w-lg">
+            You&apos;ve read this far.<br />Help us keep going.
+          </h1>
+          <p className="font-sans text-white/70 text-base max-w-md leading-relaxed mb-8">
+            Luxury Intelligence is free. Your support covers the infrastructure — hosting, AI summarisation, and the tools that power each weekly brief.
+          </p>
+          <div className="flex flex-wrap gap-4 text-sm">
             <Link
               href="/"
-              className="inline-flex items-center justify-center rounded-md border border-white/20 bg-white/5 px-3 py-1.5 text-xs font-medium text-gray-50 hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-yellow-300 focus-visible:ring-offset-[#2e3741]"
+              className="font-mono text-[11px] tracking-[0.15em] uppercase text-white/50 hover:text-white/80 transition-colors"
             >
-              View latest digest
+              View latest digest →
             </Link>
-            <span className="text-gray-200 text-xs">or browse the archive</span>
             <Link
               href="/archive"
-              className="text-xs font-medium text-yellow-200 underline underline-offset-4 hover:text-yellow-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-yellow-300 focus-visible:ring-offset-[#2e3741] rounded"
+              className="font-mono text-[11px] tracking-[0.15em] uppercase text-white/50 hover:text-white/80 transition-colors"
             >
-              Archive
+              Browse archive →
             </Link>
           </div>
         </div>
       </section>
 
-      <section className="max-w-5xl mx-auto px-4 sm:px-6 py-16 md:py-20 space-y-12 border-t border-gray-200">
-        {/* Pricing + email capture */}
-        <SubscribePricing formAction={formAction} />
+      {/* ── Main content ── */}
+      <section className="max-w-5xl mx-auto px-4 md:px-8 py-14 md:py-20">
+
+        {/* Pricing */}
+        <div>
+          <p className="font-mono text-[11px] tracking-[0.2em] uppercase text-[var(--color-text-secondary)] mb-1">
+            Support options
+          </p>
+          <h2 className="font-serif text-2xl font-semibold text-[var(--color-text-primary)]">
+            Choose your edition
+          </h2>
+          <SubscribePricing formAction={formAction} />
+        </div>
 
         {/* What your support does */}
-        <section aria-labelledby="support-heading">
-          <h2
-            id="support-heading"
-            className="text-lg sm:text-xl font-semibold text-gray-900 mb-3"
-          >
-            What your support does
+        <div className="mt-16 pt-14 border-t border-stone-200 dark:border-stone-700">
+          <p className="font-mono text-[11px] tracking-[0.2em] uppercase text-[var(--color-text-secondary)] mb-1">
+            Where it goes
+          </p>
+          <h2 className="font-serif text-2xl font-semibold text-[var(--color-text-primary)] mb-8">
+            What your support covers
           </h2>
-          <div className="rounded-xl bg-[var(--color-surface)] border border-gray-200 p-4 sm:p-5 shadow-sm">
-            <ul className="space-y-2 text-sm text-gray-700 mb-4">
-              <li className="flex gap-2">
-                <span className="mt-[3px] text-green-500">●</span>
-                <span>Helps cover hosting and infrastructure costs</span>
-              </li>
-              <li className="flex gap-2">
-                <span className="mt-[3px] text-green-500">●</span>
-                <span>Funds data collection and web discovery tools</span>
-              </li>
-              <li className="flex gap-2">
-                <span className="mt-[3px] text-green-500">●</span>
-                <span>Supports LLM costs for AI summarisation</span>
-              </li>
-              <li className="flex gap-2">
-                <span className="mt-[3px] text-green-500">●</span>
-                <span>Helps maintain and improve the project</span>
-              </li>
-            </ul>
-            <p className="text-sm font-medium text-gray-900 border-t border-gray-200 pt-3 mt-3">
-              Support does not unlock premium content today.
-            </p>
-          </div>
-        </section>
-
-        {/* What's included */}
-        <section aria-labelledby="whats-included-heading">
-          <h2
-            id="whats-included-heading"
-            className="text-lg sm:text-xl font-semibold text-gray-900 mb-3"
-          >
-            What&apos;s included
-          </h2>
-          <div className="rounded-xl bg-[var(--color-surface)] border border-gray-200 p-4 sm:p-5 shadow-sm">
-            <p className="text-sm text-gray-600 mb-3">
-              The site remains openly accessible. The digest and archive are available regardless of donation. If that changes in the future, supporters will be informed in advance.
-            </p>
-            <ul className="space-y-2 text-sm text-gray-700">
-              <li className="flex gap-2">
-                <span className="mt-[3px] text-green-500">●</span>
-                <span>Top stories per category, curated from a broad source list.</span>
-              </li>
-              <li className="flex gap-2">
-                <span className="mt-[3px] text-green-500">●</span>
-                <span>Direct links to original sources for deeper reading.</span>
-              </li>
-              <li className="flex gap-2">
-                <span className="mt-[3px] text-green-500">●</span>
-                <span>Optional AI-assisted summaries to speed up scanning.</span>
-              </li>
-              <li className="flex gap-2">
-                <span className="mt-[3px] text-green-500">●</span>
-                <span>Archive access on the website so you can revisit past weeks.</span>
-              </li>
-            </ul>
-          </div>
-        </section>
+          <dl className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6">
+            {[
+              ['Hosting & infrastructure', 'Vercel deployment, domain, and CDN serving the digest to every reader each week.'],
+              ['AI summarisation', 'The LLM API calls that classify articles, generate summaries, and rank candidates for each issue.'],
+              ['Web discovery', 'Tavily search queries that surface relevant articles outside the curated RSS feed list.'],
+              ['Podcast synthesis', 'ElevenLabs TTS that converts the weekly script into the podcast briefing.'],
+            ].map(([label, desc]) => (
+              <div key={label} className="flex gap-4">
+                <span className="font-mono text-[var(--color-accent)] mt-0.5 shrink-0 select-none text-sm">—</span>
+                <div>
+                  <p className="font-sans font-medium text-[15px] text-[var(--color-text-primary)]">{label}</p>
+                  <p className="font-sans text-sm text-[var(--color-text-secondary)] leading-relaxed mt-1">{desc}</p>
+                </div>
+              </div>
+            ))}
+          </dl>
+          <p className="mt-8 font-mono text-[11px] tracking-[0.15em] uppercase text-[var(--color-text-secondary)] border-t border-stone-200 dark:border-stone-700 pt-5">
+            Support does not unlock premium content — the digest and archive remain freely accessible.
+          </p>
+        </div>
 
         {/* FAQ */}
-        <section aria-labelledby="faq-heading">
-          <h2
-            id="faq-heading"
-            className="text-lg sm:text-xl font-semibold text-gray-900 mb-3"
-          >
+        <div className="mt-16 pt-14 border-t border-stone-200 dark:border-stone-700">
+          <p className="font-mono text-[11px] tracking-[0.2em] uppercase text-[var(--color-text-secondary)] mb-1">
+            Questions
+          </p>
+          <h2 className="font-serif text-2xl font-semibold text-[var(--color-text-primary)] mb-8">
             FAQ
           </h2>
-          <div className="space-y-4 text-sm text-gray-800">
-            <div>
-              <h3 className="font-medium text-gray-900">
-                Is this a paid product?
-              </h3>
-              <p className="mt-1 text-gray-700">
-                Not currently. Payments are treated as support/donations to help cover running costs. The digest and archive remain freely accessible.
-              </p>
-            </div>
-            <div>
-              <h3 className="font-medium text-gray-900">
-                Will I get extra features?
-              </h3>
-              <p className="mt-1 text-gray-700">
-                No guaranteed extras today. If supporter perks are introduced later, they&apos;ll be communicated clearly and separately.
-              </p>
-            </div>
-            <div>
-              <h3 className="font-medium text-gray-900">Can I cancel?</h3>
-              <p className="mt-1 text-gray-700">
-                Yes, you&apos;ll be able to cancel anytime via Stripe&apos;s customer portal once payments are live.
-              </p>
-            </div>
-            <div>
-              <h3 className="font-medium text-gray-900">When do emails go out?</h3>
-              <p className="mt-1 text-gray-700">
-                The digest covers Monday–Sunday in Central European Time (CET).
-                Emails are typically sent early in the following week once the
-                weekly digest is built.
-              </p>
-            </div>
-            <div>
-              <h3 className="font-medium text-gray-900">Is AI used?</h3>
-              <p className="mt-1 text-gray-700">
-                Yes, AI is used to help classify and summarise articles, but the
-                underlying sources are always linked so you can read them in
-                full. The goal is to reduce noise, not to replace original
-                reporting.
-              </p>
-            </div>
+          <div className="divide-y divide-stone-200 dark:divide-stone-700">
+            {FAQS.map((faq) => (
+              <details key={faq.question} className="group">
+                <summary className="flex items-center justify-between py-5 cursor-pointer list-none gap-6">
+                  <span className="font-serif text-[1rem] text-[var(--color-text-primary)] leading-snug">
+                    {faq.question}
+                  </span>
+                  <span
+                    className="font-mono text-[var(--color-accent)] text-xl shrink-0 transition-transform duration-200 group-open:rotate-45 select-none"
+                    aria-hidden="true"
+                  >
+                    +
+                  </span>
+                </summary>
+                <p className="font-sans text-[15px] text-[var(--color-text-secondary)] leading-relaxed pb-5 pr-8">
+                  {faq.answer}
+                </p>
+              </details>
+            ))}
           </div>
-        </section>
+        </div>
 
       </section>
     </main>
   );
 }
-
-
-

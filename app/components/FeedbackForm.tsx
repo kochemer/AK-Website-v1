@@ -1,360 +1,144 @@
 'use client';
 
-import { useState, FormEvent, useMemo } from 'react';
+import { useState, type FormEvent } from 'react';
 
-type FormState = 'idle' | 'submitting' | 'success' | 'error';
+type Props = {
+  formAction: string;
+};
 
-export default function FeedbackForm() {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
-  const [state, setState] = useState<FormState>('idle');
-  const [errorMessage, setErrorMessage] = useState('');
+type Status = 'idle' | 'submitting' | 'success' | 'error';
 
-  // Read form action from client-safe environment variable
-  // NEXT_PUBLIC_* vars are injected at build time by Next.js
-  // Use useMemo to ensure it's only read once and doesn't cause re-renders
-  const formAction = useMemo(() => {
-    try {
-      // Safely access process.env - NEXT_PUBLIC_* vars are replaced at build time
-      // Use a safe access pattern that works in all environments
-      let envVar: string | undefined;
-      if (typeof process !== 'undefined') {
-        try {
-          envVar = process.env?.NEXT_PUBLIC_FEEDBACK_FORM_ACTION;
-        } catch {
-          // process.env access failed, use undefined
-          envVar = undefined;
-        }
-      }
-      // Use environment variable if set, otherwise fallback to Formspree endpoint
-      if (typeof envVar === 'string' && envVar.trim()) {
-        return envVar.trim();
-      }
-      // Fallback to Formspree endpoint
-      return 'https://formspree.io/f/xwvpbnbz';
-    } catch {
-      // Any error during env var access - use fallback
-      return 'https://formspree.io/f/xwvpbnbz';
-    }
-  }, []);
+export default function FeedbackForm({ formAction }: Props) {
+  const [status, setStatus] = useState<Status>('idle');
 
-
-  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
+    setStatus('submitting');
 
-    // Validate required field
-    if (!message.trim()) {
-      setState('error');
-      setErrorMessage('Please enter a message.');
-      return;
-    }
-
-
-    setState('submitting');
-    setErrorMessage('');
+    const form = e.currentTarget;
+    const data = new FormData(form);
 
     try {
-      const formData = new FormData();
-      if (name.trim()) formData.append('name', name.trim());
-      if (email.trim()) formData.append('email', email.trim());
-      formData.append('message', message.trim());
-
-      const response = await fetch(formAction, {
+      const res = await fetch(formAction, {
         method: 'POST',
-        body: formData,
-        headers: {
-          'Accept': 'application/json',
-        },
+        body: data,
+        headers: { Accept: 'application/json' },
       });
 
-      if (response.ok) {
-        setState('success');
-        setName('');
-        setEmail('');
-        setMessage('');
+      if (res.ok) {
+        setStatus('success');
       } else {
-        const data = await response.json().catch(() => ({}));
-        setState('error');
-        setErrorMessage(data.error || `Failed to submit. Status: ${response.status}`);
+        setStatus('error');
       }
-    } catch (error) {
-      setState('error');
-      setErrorMessage(error instanceof Error ? error.message : 'Network error. Please try again.');
+    } catch {
+      setStatus('error');
     }
-  };
+  }
 
-  if (state === 'success') {
+  if (status === 'success') {
     return (
-      <div style={{
-        background: '#f0f9f4',
-        border: '2px solid #86efac',
-        borderRadius: 12,
-        padding: '2.5rem',
-        textAlign: 'center',
-        boxShadow: '0 2px 12px 0 rgba(22, 101, 52, 0.08)',
-      }}>
-        <div style={{
-          fontSize: '0.75rem',
-          fontWeight: 600,
-          letterSpacing: '0.12em',
-          textTransform: 'uppercase',
-          color: 'var(--color-accent)',
-          marginBottom: '1rem',
-        }}>
-          SUCCESS
-        </div>
-        <div style={{
-          fontSize: '1.8rem',
-          color: '#166534',
-          fontWeight: 600,
-          marginBottom: '0.75rem',
-        }}>
-          Thank you!
-        </div>
-        <p style={{
-          fontSize: '1.05rem',
-          color: '#15803d',
-          lineHeight: 1.7,
-          margin: '0 0 2rem 0',
-        }}>
-          Your feedback has been submitted successfully. We'll review it and get back to you if needed.
-        </p>
-        <button
-          onClick={() => setState('idle')}
-          style={{
-            fontWeight: 600,
-            color: '#166534',
-            background: '#fff',
-            borderRadius: 8,
-            padding: '0.75rem 2rem',
-            border: '2px solid #86efac',
-            cursor: 'pointer',
-            fontSize: '1rem',
-            transition: 'background 0.19s, transform 0.1s',
-            boxShadow: '0 2px 8px 0 rgba(22, 101, 52, 0.15)',
-          }}
-          onMouseDown={(e) => {
-            e.currentTarget.style.transform = 'scale(0.98)';
-          }}
-          onMouseUp={(e) => {
-            e.currentTarget.style.transform = 'scale(1)';
-          }}
-          onMouseLeave={(e) => {
-            e.currentTarget.style.transform = 'scale(1)';
-          }}
+      <div className="text-center py-12">
+        <span
+          className="block text-2xl mb-4 select-none"
+          style={{ color: 'var(--color-accent)' }}
+          aria-hidden="true"
         >
-          Submit Another
-        </button>
+          ✦
+        </span>
+        <p className="font-serif italic text-lg text-[var(--color-text-primary)] mb-2">
+          Your note has been received.
+        </p>
+        <p className="font-sans text-sm text-[var(--color-text-secondary)]">
+          Thank you for reading.
+        </p>
       </div>
     );
   }
 
   return (
-    <form onSubmit={handleSubmit}>
-      <div style={{ marginBottom: '1.75rem' }}>
+    <form
+      onSubmit={handleSubmit}
+      className="letter-form space-y-8"
+      noValidate
+    >
+      {/* Honeypot — hidden from humans */}
+      <input
+        type="text"
+        name="website"
+        tabIndex={-1}
+        autoComplete="off"
+        className="sr-only"
+        aria-hidden="true"
+      />
+
+      {/* Name */}
+      <div className="space-y-1">
         <label
-          htmlFor="name"
-          style={{
-            display: 'block',
-            fontSize: '1rem',
-            fontWeight: 500,
-            color: '#233442',
-            marginBottom: '0.5rem',
-          }}
+          htmlFor="lte-name"
+          className="font-mono text-[10px] tracking-[0.2em] uppercase text-[var(--color-text-secondary)]"
         >
-          Name <span style={{ color: '#8a99ac', fontWeight: 400, fontSize: '0.95rem' }}>(optional)</span>
+          Name <span className="normal-case tracking-normal opacity-60">(optional)</span>
         </label>
         <input
           type="text"
-          id="name"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-          style={{
-            width: '100%',
-            padding: '0.875rem',
-            fontSize: '1rem',
-            border: '1px solid #e7ecf0',
-            borderRadius: 8,
-            fontFamily: 'inherit',
-            boxSizing: 'border-box',
-            transition: 'border-color 0.2s, box-shadow 0.2s',
-            outline: 'none',
-          }}
-          onFocus={(e) => {
-            e.target.style.borderColor = '#20678c';
-            e.target.style.boxShadow = '0 0 0 3px rgba(32, 103, 140, 0.1)';
-          }}
-          onBlur={(e) => {
-            e.target.style.borderColor = '#e7ecf0';
-            e.target.style.boxShadow = 'none';
-          }}
-          disabled={state === 'submitting'}
+          id="lte-name"
+          name="name"
+          autoComplete="name"
+          placeholder="Your name"
         />
       </div>
 
-      <div style={{ marginBottom: '1.75rem' }}>
+      {/* Email */}
+      <div className="space-y-1">
         <label
-          htmlFor="email"
-          style={{
-            display: 'block',
-            fontSize: '1rem',
-            fontWeight: 500,
-            color: '#233442',
-            marginBottom: '0.5rem',
-          }}
+          htmlFor="lte-email"
+          className="font-mono text-[10px] tracking-[0.2em] uppercase text-[var(--color-text-secondary)]"
         >
-          Email <span style={{ color: '#8a99ac', fontWeight: 400, fontSize: '0.95rem' }}>(optional)</span>
+          Email <span className="normal-case tracking-normal opacity-60">(optional)</span>
         </label>
         <input
           type="email"
-          id="email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          style={{
-            width: '100%',
-            padding: '0.875rem',
-            fontSize: '1rem',
-            border: '1px solid #e7ecf0',
-            borderRadius: 8,
-            fontFamily: 'inherit',
-            boxSizing: 'border-box',
-            transition: 'border-color 0.2s, box-shadow 0.2s',
-            outline: 'none',
-          }}
-          onFocus={(e) => {
-            e.target.style.borderColor = '#20678c';
-            e.target.style.boxShadow = '0 0 0 3px rgba(32, 103, 140, 0.1)';
-          }}
-          onBlur={(e) => {
-            e.target.style.borderColor = '#e7ecf0';
-            e.target.style.boxShadow = 'none';
-          }}
-          disabled={state === 'submitting'}
+          id="lte-email"
+          name="email"
+          autoComplete="email"
+          placeholder="your@email.com"
         />
       </div>
 
-      <div style={{ marginBottom: '1.75rem' }}>
+      {/* Message */}
+      <div className="space-y-1">
         <label
-          htmlFor="message"
-          style={{
-            display: 'block',
-            fontSize: '1rem',
-            fontWeight: 500,
-            color: '#233442',
-            marginBottom: '0.5rem',
-          }}
+          htmlFor="lte-message"
+          className="font-mono text-[10px] tracking-[0.2em] uppercase text-[var(--color-text-secondary)]"
         >
-          Message <span style={{ color: '#dc2626' }}>*</span>
+          Message <span className="text-[var(--color-accent)]">*</span>
         </label>
         <textarea
-          id="message"
-          value={message}
-          onChange={(e) => setMessage(e.target.value)}
+          id="lte-message"
+          name="message"
           required
-          rows={7}
-          style={{
-            width: '100%',
-            padding: '0.875rem',
-            fontSize: '1rem',
-            border: '1px solid #e7ecf0',
-            borderRadius: 8,
-            fontFamily: 'inherit',
-            resize: 'vertical',
-            boxSizing: 'border-box',
-            transition: 'border-color 0.2s, box-shadow 0.2s',
-            outline: 'none',
-            lineHeight: 1.6,
-          }}
-          onFocus={(e) => {
-            e.target.style.borderColor = '#20678c';
-            e.target.style.boxShadow = '0 0 0 3px rgba(32, 103, 140, 0.1)';
-          }}
-          onBlur={(e) => {
-            e.target.style.borderColor = '#e7ecf0';
-            e.target.style.boxShadow = 'none';
-          }}
-          disabled={state === 'submitting'}
+          rows={6}
+          placeholder="Dear Editor, I wanted to mention…"
         />
       </div>
 
-      <div style={{
-        background: '#f4f7fa',
-        borderLeft: '4px solid #3a7b9c',
-        borderRadius: 4,
-        padding: '1rem 1.25rem',
-        marginBottom: '1.75rem',
-      }}>
-        <p style={{
-          fontSize: '0.95rem',
-          color: '#5c6880',
-          lineHeight: 1.6,
-          margin: 0,
-        }}>
-          <strong style={{ color: '#233442' }}>Note:</strong> Submissions go directly to the site owner. No login required.
+      {status === 'error' && (
+        <p className="font-sans text-sm text-red-600">
+          Something went wrong — please try again or email us directly.
         </p>
-      </div>
-
-      {state === 'error' && (
-        <div style={{
-          background: '#fef2f2',
-          border: '1px solid #fecaca',
-          borderRadius: 8,
-          padding: '1.25rem',
-          marginBottom: '1.75rem',
-        }}>
-          <div style={{
-            fontSize: '1rem',
-            color: '#dc2626',
-            fontWeight: 600,
-            marginBottom: '0.5rem',
-            display: 'flex',
-            alignItems: 'center',
-            gap: '0.5rem',
-          }}>
-            <span>⚠</span> Error
-          </div>
-          <div style={{
-            fontSize: '0.95rem',
-            color: '#991b1b',
-            lineHeight: 1.6,
-          }}>
-            {errorMessage}
-          </div>
-        </div>
       )}
 
       <button
         type="submit"
-        disabled={state === 'submitting'}
-        style={{
-          fontWeight: 600,
-          color: '#fff',
-          background: state === 'submitting' ? '#8a99ac' : '#20678c',
-          borderRadius: 8,
-          padding: '0.875rem 2rem',
-          border: 'none',
-          cursor: state === 'submitting' ? 'not-allowed' : 'pointer',
-          fontSize: '1.1rem',
-          transition: 'background 0.19s, transform 0.1s, box-shadow 0.19s',
-          width: '100%',
-          boxShadow: state === 'submitting' ? 'none' : '0 2px 8px 0 rgba(32, 103, 140, 0.2)',
-        }}
-        onMouseDown={(e) => {
-          if (state !== 'submitting') {
-            e.currentTarget.style.transform = 'scale(0.98)';
-          }
-        }}
-        onMouseUp={(e) => {
-          e.currentTarget.style.transform = 'scale(1)';
-        }}
-        onMouseLeave={(e) => {
-          e.currentTarget.style.transform = 'scale(1)';
-        }}
+        disabled={status === 'submitting'}
+        className="font-sans text-sm tracking-wider text-[var(--color-accent)] border border-[var(--color-accent)] px-6 py-2.5 rounded-[2px] hover:bg-[var(--color-accent)] hover:text-white transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
       >
-        {state === 'submitting' ? 'Submitting...' : 'Submit Feedback'}
+        {status === 'submitting' ? 'Sending…' : 'Send Letter →'}
       </button>
+
+      <p className="font-mono text-[10px] tracking-[0.15em] uppercase text-[var(--color-text-secondary)] opacity-60">
+        Submissions go directly to the editor.
+      </p>
     </form>
   );
 }
-

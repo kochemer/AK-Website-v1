@@ -1,0 +1,22 @@
+{
+  "weekLabel": "2025-W52",
+  "homepageTopArticles": [
+    {
+      "title": "Twins’ Peaks: The Gilbertson Brothers Want to Rewrite Your Country’s Map",
+      "source": "NYTimes Technology",
+      "snippet": "Two brothers, both mechanical engineers, are climbing many of the world’s tall peaks to prove they have been measured incorrectly.",
+      "aiSummary": "AI-Generated Summary:\nThe Gilbertson brothers, mechanical engineers, are challenging the accuracy of measurements of tall peaks by climbing them, aiming to rewrite the maps of various countries."
+    },
+    {
+      "title": "From A.I. to Chips, Big Tech Is Getting What It Wants From Trump",
+      "source": "NYTimes Technology",
+      "snippet": "The president has backed policies that allow the industry to grow unfettered. The mutually beneficial alliance is causing concern among some conservatives.",
+      "aiSummary": "AI-Generated Summary:\nPresident Trump's policies have supported the growth of Big Tech, leading to a mutually beneficial relationship that is causing concern among some conservatives."
+    }
+  ],
+  "model": "gpt-image-1.5",
+  "finalPrompt": "Hyper-realistic photography of two identical computer chips, each wearing tiny, realistic climbing harnesses and anchored with miniature climbing gear, perched triumphantly on the rocky summits of neighboring mountain peaks. Majestic natural mountain landscape in morning sunlight, sharp focus on the chips and gear, with the peaks stretching into the background. Wide horizontal banner composition (3:1 aspect ratio), all elements in the central horizontal band with safe margins. No text, signage, or screens anywhere. Photorealistic materials and textures: real rocky mountains, metallic and silicon details on the chips, fabric and metal for the climbing gear. The scene is playful and absurd but looks like an authentic photograph, capturing the visual metaphor of tech 'conquering' new heights and literally rewriting the map.\n\nCRITICAL CONSTRAINTS (must be strictly avoided):\n- text, letters, numbers, signage, labels, screens, UI, dashboards, holograms, floating icons, logos, brands, watermarks, cartoon, illustration, CGI, 3D render, anime\n\nPHOTOREALISM ENFORCEMENT:\n- Ultra photorealistic editorial photograph, shot on a real DSLR or medium-format camera.\n- Natural lighting, realistic skin texture, realistic reflections, realistic materials, real physics.\n- Candid editorial realism; avoid stock-photo staging.\n\nANTI-CARTOON / ANTI-CGI:\n- No illustration, no cartoon, no anime, no 3D render, no CGI, no synthetic look.\n\nNO-TEXT GUARANTEE:\n- Absolutely no text, letters, numbers, typography, signage, labels, price tags.\n- No screens, dashboards, UI, holograms, floating icons, charts.\n- Avoid any objects that commonly contain text (posters, newspapers, packaging, storefront signs). If unavoidable, they must be fully out of focus and unreadable.\n\nCOMPOSITION FOR WIDE HERO BANNER (CRITICAL):\n- Wide, horizontally expansive banner format (target 3:1 or wider aspect ratio)\n- Vertically minimal height - all important visual elements must be placed in the central horizontal band\n- Safe margins at top and bottom - no critical content near vertical edges\n- Composition must work when displayed in a wide, shallow container\n- Avoid vertical stacking, tall elements, or content that extends to top/bottom edges",
+  "imageSize": "1536x1024",
+  "outputPath": "/weekly-images/2025-W52.png",
+  "generatedAt": "2026-03-13T18:04:47.229Z"
+}

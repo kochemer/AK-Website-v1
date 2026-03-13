@@ -1,11 +1,11 @@
 import Link from 'next/link';
+import PipelineDiagram from '@/app/components/PipelineDiagram';
 
 export default function AboutPage() {
   return (
     <main style={{
       maxWidth: '100vw',
       minHeight: '100vh',
-      fontFamily: 'system-ui, Arial, sans-serif',
       background: 'var(--color-bg)',
       margin: 0,
       padding: 0,
@@ -36,7 +36,7 @@ export default function AboutPage() {
             About This Brief
           </h1>
           <div className="text-body text-gray-200 max-w-2xl mx-auto">
-            Understanding how we curate, score, and summarize the week's most important news
+            ~53 curated sources, an AI ranking layer, and a two-stage editorial model — distilled into your weekly brief
           </div>
         </div>
       </section>
@@ -50,129 +50,97 @@ export default function AboutPage() {
             Purpose
           </h2>
           <p className="text-body text-gray-600 mb-4">
-            Luxury Intelligence saves you hours of reading by curating the most relevant articles across four key sectors: 
-            <strong className="text-gray-900"> AI & Strategy</strong>, 
-            <strong className="text-gray-900"> Ecommerce & Retail Tech</strong>, 
-            <strong className="text-gray-900"> Luxury & Consumer</strong>, and 
+            Luxury Intelligence saves you hours of reading by curating the most relevant articles across four key sectors:
+            <strong className="text-gray-900"> AI & Strategy</strong>,
+            <strong className="text-gray-900"> Ecommerce & Retail Tech</strong>,
+            <strong className="text-gray-900"> Luxury & Consumer</strong>, and
             <strong className="text-gray-900"> Jewellery Industry</strong>.
           </p>
           <p className="text-body text-gray-600">
-            Each week, we automatically ingest articles from trusted sources, score them for relevance and recency, 
-            generate AI-powered summaries, and present the top articles in an easy-to-scan format.
+            Every week, eight ranked articles are published to the web, delivered by email, and scripted into a
+            podcast briefing — so you can read, skim, or listen depending on how your week is going.
           </p>
         </div>
 
         {/* How It Works Card */}
-        <div className="bg-[var(--color-surface)] rounded-xl shadow-sm border border-gray-200 p-6 md:p-8 mb-12 md:mb-16">
-          <h2 className="text-section font-semibold text-gray-900 mb-8">
+        <div className="bg-[var(--color-surface)] rounded-xl shadow-sm border border-[var(--color-border)] p-6 md:p-8 mb-12 md:mb-16">
+          <h2 className="text-section font-semibold text-[var(--color-text-primary)] mb-2">
             How It Works
           </h2>
-          
-          <div style={{ marginBottom: '2rem' }}>
-            <div style={{
-              display: 'flex',
-              alignItems: 'center',
-              gap: '1rem',
-              marginBottom: '1rem',
-            }}>
-              <div style={{
-                width: 40,
-                height: 40,
-                borderRadius: '50%',
-                background: '#20678c',
-                color: '#fff',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                fontWeight: 600,
-                fontSize: '1.2rem',
-                flexShrink: 0,
-              }}>
-                1
-              </div>
-              <div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                  Sources
-                </h3>
-                <p className="text-body text-gray-600">
-                  We monitor RSS feeds and web pages from trusted industry publications, news sites, and expert blogs. 
-                  Articles are automatically ingested on a regular schedule.
-                </p>
-              </div>
+          <p className="text-body text-[var(--color-text-secondary)] mb-6">
+            Five stages transform ~53 live sources into your weekly intelligence brief.
+          </p>
+
+          {/* Animated pipeline diagram */}
+          <PipelineDiagram />
+
+          {/* Detail rows */}
+          <div className="mt-8 space-y-6 border-t border-[var(--color-border)] pt-8">
+            <div className="flex gap-4">
+              <span className="font-mono text-[10px] tracking-[0.2em] uppercase text-[var(--color-accent)] pt-1 w-28 shrink-0">
+                Discovery
+              </span>
+              <p className="text-body text-[var(--color-text-secondary)]">
+                We monitor ~53 RSS feeds from trusted industry publications across six source tiers — from global newswires
+                to specialist jewellery trade press. A Tavily web-discovery layer runs in parallel to surface high-quality
+                articles that fall outside the feed list.
+              </p>
+            </div>
+            <div className="flex gap-4">
+              <span className="font-mono text-[10px] tracking-[0.2em] uppercase text-[var(--color-accent)] pt-1 w-28 shrink-0">
+                Curation
+              </span>
+              <p className="text-body text-[var(--color-text-secondary)]">
+                Each article is deduped, classified into one of four categories using keyword and source heuristics,
+                then pre-scored on{' '}
+                <strong className="text-[var(--color-text-primary)]">recency</strong>,{' '}
+                <strong className="text-[var(--color-text-primary)]">source weight</strong>, and{' '}
+                <strong className="text-[var(--color-text-primary)]">keyword relevance</strong>.
+                Source diversity guards prevent any single publication from dominating.
+              </p>
+            </div>
+            <div className="flex gap-4">
+              <span className="font-mono text-[10px] tracking-[0.2em] uppercase text-[var(--color-accent)] pt-1 w-28 shrink-0">
+                Ranking
+              </span>
+              <p className="text-body text-[var(--color-text-secondary)]">
+                The top 100 candidates per category are passed to a reasoning model (<code className="text-[11px] bg-[var(--color-surface-alt,#f5f0e8)] px-1 rounded">o4-mini</code>),
+                which applies editorial judgement — originality, business materiality, timeliness — to select the final
+                seven articles per category. A paywall filter ensures only articles with accessible full text are included
+                in the email digest.
+              </p>
+            </div>
+            <div className="flex gap-4">
+              <span className="font-mono text-[10px] tracking-[0.2em] uppercase text-[var(--color-accent)] pt-1 w-28 shrink-0">
+                Summaries
+              </span>
+              <p className="text-body text-[var(--color-text-secondary)]">
+                Selected articles receive concise AI-generated summaries from title and snippet only — no full-article
+                scraping, no paywalled content. A separate two-stage process generates the weekly one-sentence insight:
+                one model proposes four analytically distinct candidates; a second model judges and selects the most
+                original and thought-provoking one.
+              </p>
+            </div>
+            <div className="flex gap-4">
+              <span className="font-mono text-[10px] tracking-[0.2em] uppercase text-[var(--color-accent)] pt-1 w-28 shrink-0">
+                Publishing
+              </span>
+              <p className="text-body text-[var(--color-text-secondary)]">
+                The brief is published simultaneously to the web, delivered to subscribers by email, and scripted into
+                a ~12–15 minute podcast briefing synthesised via ElevenLabs. A cover image is generated for each issue
+                using a SceneDirector prompt pipeline designed to produce distinctive, non-generic editorial visuals.
+              </p>
             </div>
           </div>
 
-          <div style={{ marginBottom: '2rem' }}>
-            <div style={{
-              display: 'flex',
-              alignItems: 'center',
-              gap: '1rem',
-              marginBottom: '1rem',
-            }}>
-              <div style={{
-                width: 40,
-                height: 40,
-                borderRadius: '50%',
-                background: '#20678c',
-                color: '#fff',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                fontWeight: 600,
-                fontSize: '1.2rem',
-                flexShrink: 0,
-              }}>
-                2
-              </div>
-              <div>
-                <h3 className="text-card-title font-semibold text-gray-900 mb-2">
-                  Scoring & Ranking
-                </h3>
-                <p className="text-body text-gray-600 mb-3">
-                  Each article is classified into one of four topic categories and scored based on <strong className="text-gray-900">relevance</strong>, <strong className="text-gray-900">recency</strong>, 
-                  and <strong className="text-gray-900">source quality</strong>. The highest-scoring articles are selected for each weekly brief.
-                </p>
-                <p className="text-body text-gray-600">
-                  Articles are ranked within each category by combining these factors: <strong className="text-gray-900">relevance</strong> measures how closely the content matches the category's focus, 
-                  <strong className="text-gray-900"> recency</strong> prioritizes recent publications, and <strong className="text-gray-900">source quality</strong> reflects the publication's reputation and reliability. 
-                  The top articles in each category are displayed in order of their combined score.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div>
-            <div style={{
-              display: 'flex',
-              alignItems: 'center',
-              gap: '1rem',
-              marginBottom: '1rem',
-            }}>
-              <div style={{
-                width: 40,
-                height: 40,
-                borderRadius: '50%',
-                background: '#20678c',
-                color: '#fff',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                fontWeight: 600,
-                fontSize: '1.2rem',
-                flexShrink: 0,
-              }}>
-                3
-              </div>
-              <div>
-                <h3 className="text-card-title font-semibold text-gray-900 mb-2">
-                  AI Summaries
-                </h3>
-                <p className="text-body text-gray-600">
-                  Selected articles receive AI-generated summaries that capture key points and insights, helping you 
-                  quickly understand the article's relevance before deciding to read the full piece.
-                </p>
-              </div>
-            </div>
+          {/* Methodology link */}
+          <div className="mt-8 pt-6 border-t border-[var(--color-border)]">
+            <p className="text-body text-[var(--color-text-secondary)]">
+              For the full technical breakdown of source tiers, scoring weights, and model selection, see the{' '}
+              <Link href="/methodology" className="text-[var(--color-accent)] underline underline-offset-2 hover:opacity-80 transition-opacity font-medium">
+                Methodology page →
+              </Link>
+            </p>
           </div>
         </div>
 

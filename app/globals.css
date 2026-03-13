@@ -374,3 +374,37 @@ html[data-display-mode="standalone"] header nav > div {
   padding-top: 0.625rem;
   padding-bottom: 0.625rem;
 }
+
+/* ── Letter-to-the-editor form ───────────────────────────────────────────── */
+.letter-form input,
+.letter-form textarea {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--color-border);
+  border-radius: 0;
+  padding: 8px 0;
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  color: var(--color-text-primary);
+  outline: none;
+  width: 100%;
+  transition: border-color 0.2s ease;
+  resize: vertical;
+}
+
+.letter-form input::placeholder,
+.letter-form textarea::placeholder {
+  color: var(--color-text-secondary);
+  opacity: 0.6;
+  font-style: italic;
+}
+
+.letter-form input:focus,
+.letter-form textarea:focus {
+  border-bottom-color: var(--color-accent);
+}
+
+.letter-form textarea {
+  resize: vertical;
+  min-height: 140px;
+}
