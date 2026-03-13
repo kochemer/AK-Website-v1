@@ -68,7 +68,10 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: "Luxury Intelligence",
+  title: {
+    template: '%s | Luxury Intelligence',
+    default: 'Weekly AI, Ecommerce & Luxury Industry Digest | Luxury Intelligence',
+  },
   description: "Luxury Ecommerce, Retail Technology & AI - Curated intelligence and AI-assisted summaries for luxury, ecommerce, and retail tech.",
   manifest: "/manifest.webmanifest",
   icons: {

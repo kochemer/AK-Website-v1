@@ -7,16 +7,16 @@ import { getSiteUrl } from '@/lib/utils/siteUrl';
 const getSiteUrlLazy = () => getSiteUrl();
 
 export const metadata: Metadata = {
-  title: 'Methodology – How Luxury Intelligence is curated',
+  title: 'Methodology – How the brief is curated',
   description: 'How the weekly AI, ecommerce, luxury and jewellery digest is collected, ranked and summarized.',
   alternates: { canonical: `${getSiteUrlLazy()}/methodology` },
   openGraph: {
-    title: 'Methodology – How Luxury Intelligence is curated',
+    title: 'Methodology – How the brief is curated',
     description: 'How the weekly AI, ecommerce, luxury and jewellery digest is collected, ranked and summarized.',
     images: [`${getSiteUrlLazy()}/og-default.svg`],
   },
   twitter: {
-    title: 'Methodology – How Luxury Intelligence is curated',
+    title: 'Methodology – How the brief is curated',
     description: 'How the weekly AI, ecommerce, luxury and jewellery digest is collected, ranked and summarized.',
     images: [`${getSiteUrlLazy()}/og-default.svg`],
   },

@@ -5,18 +5,18 @@ import { getSiteUrl } from '@/lib/utils/siteUrl';
 const siteUrl = getSiteUrl();
 
 export const metadata: Metadata = {
-  title: 'Metodología – Cómo se cura Luxury Intelligence',
+  title: 'Metodología – Cómo se elabora el resumen',
   description: 'Cómo se recopila, clasifica y resume el resumen semanal de IA, ecommerce, lujo y joyería.',
   alternates: {
     canonical: `${siteUrl}/es/methodology`,
   },
   openGraph: {
-    title: 'Metodología – Cómo se cura Luxury Intelligence',
+    title: 'Metodología – Cómo se elabora el resumen',
     description: 'Cómo se recopila, clasifica y resume el resumen semanal de IA, ecommerce, lujo y joyería.',
     images: [`${siteUrl}/og-default.svg`],
   },
   twitter: {
-    title: 'Metodología – Cómo se cura Luxury Intelligence',
+    title: 'Metodología – Cómo se elabora el resumen',
     description: 'Cómo se recopila, clasifica y resume el resumen semanal de IA, ecommerce, lujo y joyería.',
     images: [`${siteUrl}/og-default.svg`],
   },
