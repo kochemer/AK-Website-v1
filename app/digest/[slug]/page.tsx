@@ -145,6 +145,18 @@ export default async function DigestPage({
   const digest = await loadDigest(weekLabel);
   const { previousWeek, nextWeek } = await getWeekNavigation(weekLabel);
 
+  // Load adjacent digests to get human-readable date ranges for nav labels
+  const [prevDigest, nextDigest] = await Promise.all([
+    previousWeek ? loadDigest(previousWeek) : Promise.resolve(null),
+    nextWeek     ? loadDigest(nextWeek)     : Promise.resolve(null),
+  ]);
+  const prevLabel = prevDigest
+    ? formatDateRange(prevDigest.startISO, prevDigest.endISO)
+    : previousWeek ?? '';
+  const nextLabel = nextDigest
+    ? formatDateRange(nextDigest.startISO, nextDigest.endISO)
+    : nextWeek ?? '';
+
   type PodcastMetadata = {
     week: string;
     audioPath: string;
@@ -491,30 +503,49 @@ export default async function DigestPage({
                 </div>
               ) : null}
 
-              {/* Week Navigation — links to /digest/ slugs */}
-              <nav className="mt-6 sm:mt-8 md:mt-10 pt-4 sm:pt-6 md:pt-8 border-t border-gray-200 dark:border-gray-700">
-                <p className="text-meta text-gray-500 dark:text-gray-400 mb-4 text-center">Browse other weeks</p>
-                <div className="flex items-center justify-between gap-4">
+              {/* Issue Navigation */}
+              <nav
+                aria-label="Issue navigation"
+                className="mt-6 sm:mt-8 md:mt-10 pt-4 sm:pt-6 md:pt-8 border-t border-gray-200 dark:border-gray-700"
+              >
+                <div className="flex items-start justify-between gap-4">
+                  {/* Previous issue */}
                   {previousWeek ? (
                     <Link
                       href={`/digest/${weekLabelToSlug(previousWeek)}`}
-                      className="flex items-center gap-2 text-body text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 rounded px-3 py-2"
+                      className="group flex flex-col gap-0.5 max-w-[40%] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-accent)] rounded px-1 py-1"
                     >
-                      <span className="text-gray-400 dark:text-gray-500">←</span>
-                      <span>Previous week</span>
-                      <span className="text-meta text-gray-500 dark:text-gray-400">({previousWeek})</span>
+                      <span className="font-mono text-[10px] tracking-[0.2em] uppercase text-[var(--color-text-secondary)] group-hover:text-[var(--color-accent)] transition-colors">
+                        ← Previous Issue
+                      </span>
+                      <span className="font-serif text-sm text-[var(--color-text-primary)] group-hover:text-[var(--color-accent)] transition-colors leading-snug">
+                        {prevLabel}
+                      </span>
                     </Link>
                   ) : (
                     <div className="flex-1" />
                   )}
+
+                  {/* Archive link — centred */}
+                  <Link
+                    href="/archive"
+                    className="font-mono text-[10px] tracking-[0.2em] uppercase text-[var(--color-accent)] hover:opacity-70 transition-opacity whitespace-nowrap self-center px-2"
+                  >
+                    View all issues
+                  </Link>
+
+                  {/* Next issue */}
                   {nextWeek ? (
                     <Link
                       href={`/digest/${weekLabelToSlug(nextWeek)}`}
-                      className="flex items-center gap-2 text-body text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 rounded px-3 py-2 ml-auto"
+                      className="group flex flex-col items-end gap-0.5 max-w-[40%] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-accent)] rounded px-1 py-1"
                     >
-                      <span className="text-meta text-gray-500 dark:text-gray-400">({nextWeek})</span>
-                      <span>Next week</span>
-                      <span className="text-gray-400 dark:text-gray-500">→</span>
+                      <span className="font-mono text-[10px] tracking-[0.2em] uppercase text-[var(--color-text-secondary)] group-hover:text-[var(--color-accent)] transition-colors">
+                        Next Issue →
+                      </span>
+                      <span className="font-serif text-sm text-[var(--color-text-primary)] group-hover:text-[var(--color-accent)] transition-colors leading-snug text-right">
+                        {nextLabel}
+                      </span>
                     </Link>
                   ) : (
                     <div className="flex-1" />

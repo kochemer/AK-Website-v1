@@ -18,6 +18,7 @@ import { formatDate, formatDateRange, formatDateTime, formatIssueLine } from '@/
 import { getCurrentDigestWeek } from '@/lib/utils/getCurrentDigestWeek';
 import { getSelectedArticleCount, formatStatsSecondaryLine } from '@/lib/utils/digestStats';
 import { getSiteUrl } from '@/lib/utils/siteUrl';
+import { weekLabelToSlug } from '@/lib/utils/weekSlug';
 import { CATEGORY_COLORS } from '@/lib/constants/categoryColors';
 import type { WeeklyDigest } from '@/lib/types';
 
@@ -378,6 +379,25 @@ export default async function Home() {
             </>
           )}
           </div>
+
+          {/* Permalink to this issue's dedicated page */}
+          {digest && (
+            <div className="mt-8 mb-2 flex items-center justify-center gap-6">
+              <Link
+                href={`/digest/${weekLabelToSlug(weekLabel)}`}
+                className="font-mono text-[11px] tracking-[0.25em] uppercase text-[var(--color-accent)] hover:opacity-70 transition-opacity"
+              >
+                Read the full {formatDateRange(digest.startISO, digest.endISO)} issue →
+              </Link>
+              <span className="text-[var(--color-border)]">|</span>
+              <Link
+                href="/archive"
+                className="font-mono text-[11px] tracking-[0.25em] uppercase text-[var(--color-text-secondary)] hover:text-[var(--color-accent)] transition-colors"
+              >
+                View all issues
+              </Link>
+            </div>
+          )}
         </div>
       </section>
     </main>
