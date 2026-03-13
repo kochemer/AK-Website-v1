@@ -1,14 +1,14 @@
 {
-  "concept": "AI-commerce-diamond-fish-out-of-water",
-  "primaryHumorDriver": "fish-out-of-water",
-  "secondaryEnhancer": "anachronistic element",
-  "sceneDescription": "In a hyper-realistic scene, a modern AI robot, complete with sleek metallic surfaces and glowing eyes, is placed in a traditional Indian jewelry market. It's standing behind a classic wooden jewelry counter, examining natural diamonds with a large magnifying glass that seems more fitting for a 19th-century detective. The counter is cluttered with a mix of high-tech gadgets like smartphones and VR headsets, alongside traditional jewelry tools. Nearby, a small display of miniature TikTok logos made out of precious stones glistens under warm market lights. The robot's expressionless face contrasts sharply with the bustling, vibrant market setting, creating an absurd yet believable scenario that nods to AI's growing role in commerce and the cultural tension with traditional practices.",
-  "finalImagePrompt": "A hyper-realistic photograph of a sleek AI robot in a traditional Indian jewelry market, examining natural diamonds with an old-fashioned magnifying glass. The scene is lit with warm, natural market lighting, highlighting the contrast between modern and traditional elements. The composition captures the robot behind a wooden counter cluttered with both high-tech gadgets and classic jewelry tools. A display of TikTok logos made from precious stones is visible. Wide horizontal banner composition (3:1 aspect ratio) with elements centered in the horizontal band. Ensure photorealistic textures and materials, with no text or signage.",
+  "concept": "giant-gemstone-warehouse-conveyor",
+  "primaryHumorDriver": "scale absurdity",
+  "secondaryEnhancer": "unexpected texture/material combination",
+  "sceneDescription": "Inside a hyper-realistic, well-lit warehouse resembling a high-tech fulfillment center, an absurdly oversized, sparkling gemstone—larger than a refrigerator—rides majestically along an industrial conveyor belt. Surrounding it, normal-sized gold jewelry items are being sorted by robotic arms, while a few tiny delivery drones buzz around, attempting (and obviously failing) to lift the giant gem. In the background, a group of workers wearing safety vests gaze in disbelief at the spectacle. The gemstone’s facets reflect the utilitarian warehouse lighting, creating a surreal contrast between high luxury and gritty logistics. Everything looks plausible, except for the out-of-place, comically massive jewel dominating the scene.",
+  "finalImagePrompt": "Hyper-realistic photograph of a modern warehouse with bright, practical lighting. In the central horizontal band, a gigantic, sparkling gemstone—larger than a refrigerator—sits atop an industrial conveyor belt, surrounded by regular-sized gold jewelry, robotic arms, and several small delivery drones struggling to lift the gemstone. A few warehouse workers in safety vests watch with astonishment. The jewel's luxurious shine contrasts sharply with the utilitarian warehouse environment. Wide horizontal banner composition (3:1 aspect ratio), all key elements in the central strip, with photorealistic materials and textures. No text, no signage, no screens, no logos. Playful, absurd, but believable scene.",
   "negativePrompt": [
     "text, letters, numbers, signage, labels",
     "screens, UI, dashboards, holograms, floating icons",
     "logos, brands, watermarks",
     "cartoon, illustration, CGI, 3D render, anime"
   ],
-  "confidence": 0.7
+  "confidence": 0.85
 }

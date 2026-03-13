@@ -1,0 +1,14 @@
+{
+  "concept": "mountain-peak-chip-literal-metaphor",
+  "primaryHumorDriver": "literal metaphor",
+  "secondaryEnhancer": "unexpected texture/material combination",
+  "sceneDescription": "In the center of a wide, photorealistic mountain landscape, two identical computer chips (with intricate metallic circuits and gold connectors) are perched at the highest points of two neighboring rocky peaks, as if they are mountain climbers who have conquered the summits. Each chip is wearing a tiny, hyper-realistic climbing harness and is anchored with miniature climbing gear (carabiners and ropes) embedded in the rock. The mountains are real and majestic, but the chips look absurdly out of place, especially with their carefully detailed climbing accessories. The morning light casts a crisp glow over the scene, highlighting the absurdity: these 'climbers' are silicon chips, not humans. The focus is sharp on the chips and their gear, with the dramatic peaks unfurling behind them. The scene is lively, playful, and subtly pokes fun at both the literal mapping of peaks and the dominance of tech 'conquering' new heights.",
+  "finalImagePrompt": "Hyper-realistic photography of two identical computer chips, each wearing tiny, realistic climbing harnesses and anchored with miniature climbing gear, perched triumphantly on the rocky summits of neighboring mountain peaks. Majestic natural mountain landscape in morning sunlight, sharp focus on the chips and gear, with the peaks stretching into the background. Wide horizontal banner composition (3:1 aspect ratio), all elements in the central horizontal band with safe margins. No text, signage, or screens anywhere. Photorealistic materials and textures: real rocky mountains, metallic and silicon details on the chips, fabric and metal for the climbing gear. The scene is playful and absurd but looks like an authentic photograph, capturing the visual metaphor of tech 'conquering' new heights and literally rewriting the map.",
+  "negativePrompt": [
+    "text, letters, numbers, signage, labels",
+    "screens, UI, dashboards, holograms, floating icons",
+    "logos, brands, watermarks",
+    "cartoon, illustration, CGI, 3D render, anime"
+  ],
+  "confidence": 0.86
+}
