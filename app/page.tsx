@@ -12,7 +12,6 @@ import TopNSelector from './components/TopNSelector';
 import BrandPattern from './components/BrandPattern';
 import GrainOverlay from './components/GrainOverlay';
 import MastheadLockup from './components/MastheadLockup';
-import ScrollProgressBar from './components/ScrollProgressBar';
 import { WeeklyInsight } from './components/WeeklyInsight';
 import { TopicKey } from '@/lib/utils/topicNames';
 import { formatDate, formatDateRange, formatDateTime, formatIssueLine } from '@/lib/utils/formatDate';
@@ -204,12 +203,23 @@ export default async function Home() {
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/25 to-black/50" />
         <BrandPattern variant="dark" className="z-[1]" />
         <GrainOverlay id="grain-hero" className="z-[2] opacity-[0.08] md:opacity-[0.08] max-md:opacity-[0.03]" />
+        {/* Dateline stamp — top-left newspaper-style */}
+        <div className="hero-dateline absolute top-6 left-6 md:left-12 z-10 font-mono text-[10px] tracking-[0.2em] uppercase text-white/70">
+          Published&nbsp;·&nbsp;{digest?.startISO
+            ? DateTime.fromISO(digest.startISO).toFormat('dd MMMM yyyy').toUpperCase()
+            : DateTime.fromObject({
+                weekYear: parseInt(weekLabel.split('-')[0] ?? String(DateTime.now().year), 10),
+                weekNumber: parseInt((weekLabel.split('-')[1] ?? 'W1').replace(/^W/i, ''), 10),
+              }).toFormat('dd MMMM yyyy').toUpperCase()
+          }&nbsp;·&nbsp;Copenhagen
+        </div>
+
         {/* Masthead */}
         <div className="absolute top-0 left-0 right-0 pt-8 md:pt-12 px-6 md:px-12 z-10">
           <div className="hero-title">
             <MastheadLockup variant="hero" />
           </div>
-          <p className="hero-sub text-white/80 text-body mt-2 max-w-xl">
+          <p className="hero-sub font-mono text-white/80 text-body mt-2 max-w-xl uppercase">
             Weekly intelligence across AI, ecommerce, luxury, and jewellery.
           </p>
           {weekLabel && (
@@ -221,12 +231,13 @@ export default async function Home() {
             </p>
           )}
         </div>
-        {/* Bottom — lead line */}
-        <div className="absolute bottom-0 left-0 right-0 p-6 md:p-12 z-10" />
-      </section>
 
-      {/* Scroll progress bar below header */}
-      <ScrollProgressBar />
+        {/* Scroll prompt — bottom-right */}
+        <div className="hero-scroll-prompt absolute bottom-8 right-8 z-10 font-mono text-[10px] tracking-[0.2em] uppercase text-white/50 flex items-center gap-2 animate-[breathe_3s_ease-in-out_infinite]">
+          <span>Scroll to read</span>
+          <span className="block w-4 h-px bg-white/50" />
+        </div>
+      </section>
 
       {/* PANELS SECTION */}
       <section className="relative z-20 -mt-2 pt-2">

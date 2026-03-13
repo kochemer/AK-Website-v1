@@ -216,7 +216,7 @@ async function main() {
 
   if (!fromEmail) {
     console.error('[Email] ❌ EMAIL_FROM is required when EMAIL_SEND_ENABLED=true');
-    console.error('[Email] Example: EMAIL_FROM="Luxury Intelligence <noreply@luxury-intel.com>"');
+    console.error('[Email] Example: EMAIL_FROM="Luxury Intelligence <hello@digest.luxury-intel.com>"');
     process.exit(1);
   }
 

@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Libre_Baskerville, DM_Sans } from "next/font/google";
+import { Libre_Baskerville, DM_Sans, Courier_Prime } from "next/font/google";
 import { Geist_Mono } from "next/font/google";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import AmplitudeInit from "./components/AmplitudeInit";
@@ -11,6 +11,7 @@ import ServiceWorkerRegistration from "./components/ServiceWorkerRegistration";
 import JsonLd from "./components/JsonLd";
 import CanonicalUrlValidator from "./components/CanonicalUrlValidator";
 import { ThemeProvider } from "./context/ThemeContext";
+import ScrollProgressBar from "./components/ScrollProgressBar";
 import "./globals.css";
 
 const libreBaskerville = Libre_Baskerville({
@@ -30,6 +31,13 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
   display: "swap",
+});
+
+const courierPrime = Courier_Prime({
+  weight: ["400"],
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-courier-prime",
 });
 
 import { getSiteUrl } from '@/lib/utils/siteUrl';
@@ -103,7 +111,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${libreBaskerville.variable} ${dmSans.variable} ${geistMono.variable} font-sans antialiased bg-[var(--color-bg)] text-[var(--color-text-primary)]`}
+        className={`${libreBaskerville.variable} ${dmSans.variable} ${geistMono.variable} ${courierPrime.variable} font-sans antialiased bg-[var(--color-bg)] text-[var(--color-text-primary)]`}
         style={{ minHeight: "100vh", display: "flex", flexDirection: "column" }}
       >
         <ThemeProvider>
@@ -121,6 +129,7 @@ export default function RootLayout({
               },
             }}
           />
+          <ScrollProgressBar />
           <CanonicalUrlValidator />
           <AmplitudeInit />
           <AnalyticsPageView />

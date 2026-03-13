@@ -4,6 +4,7 @@
  */
 
 import type { EmailDigest, EmailDigestItem } from '../types';
+import { formatIssueLine } from '../utils/formatDate';
 
 const IMPLICATION_PATTERNS = [
   /implication/i,
@@ -76,105 +77,257 @@ export function escapeHtml(text: string): string {
 
 export type RenderEmailDigestOptions = { mode: 'email' };
 
+// Brand palette — hardcoded for email client compatibility (no CSS variables)
+const C = {
+  bg:          '#FAF9F6',   // cream background
+  surface:     '#FFFFFF',
+  textPrimary: '#1A1A1A',
+  textSecond:  '#6B7280',
+  accent:      '#8B6914',   // gold
+  accentLight: '#F5F0E6',   // warm cream
+  accentMuted: '#B7A26E',   // gold at ~60% on cream bg (rank numbers)
+  border:      '#E5E7EB',
+  navy:        '#1B2A4A',   // deep navy
+  navyText:    '#B7BBC2',   // white at 70% on navy
+  navyFaint:   '#697386',   // white at 35% on navy
+};
+
+const SERIF  = "Georgia, 'Times New Roman', serif";
+const SANS   = "'Helvetica Neue', Arial, Helvetica, sans-serif";
+
 /**
  * Render EmailDigest as HTML. For mode 'email', uses inline styles for email clients.
+ * Layout: table-based for maximum email client compatibility.
  */
 export function renderEmailDigestHtml(digest: EmailDigest, _opts: RenderEmailDigestOptions): string {
   const week = digest.week;
+  const issueLine = escapeHtml(formatIssueLine(week));
 
-  let html = `<!DOCTYPE html>
-<html>
+  // Split into tiers
+  const leadItem      = digest.items.find(i => i.rank === 1);
+  const secondaryItems = digest.items.filter(i => i.rank >= 2 && i.rank <= 5);
+  const tertiaryItems  = digest.items.filter(i => i.rank >= 6);
+
+  // Lead article row
+  const leadRow = leadItem ? (() => {
+    const bullets = extractSummaryBullets(leadItem);
+    return `
+          <!-- LEAD STORY -->
+          <tr>
+            <td class="outer-pad" style="background-color:${C.bg}; padding: 0 32px;">
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr><td style="height: 2px; background-color: ${C.accent};"></td></tr>
+                <tr>
+                  <td style="border-left: 3px solid ${C.accent}; padding: 28px 0 32px 20px;">
+                    <p style="margin: 0 0 12px 0;">
+                      <span style="font-family: ${SANS}; font-size: 9px; letter-spacing: 0.25em; text-transform: uppercase; color: ${C.accent}; font-weight: 600;">Lead Story</span>
+                      <span style="font-family: ${SANS}; font-size: 9px; color: ${C.textSecond}; margin-left: 10px;">${escapeHtml(leadItem.source)}</span>
+                    </p>
+                    <h2 style="margin: 0 0 14px 0; font-family: ${SERIF}; font-size: 26px; font-weight: normal; line-height: 1.3; letter-spacing: -0.01em;">
+                      <a href="${escapeHtml(leadItem.url)}" style="color: ${C.textPrimary}; text-decoration: underline;">${escapeHtml(leadItem.title)}</a>
+                    </h2>
+                    <p style="margin: 0 0 16px 0; font-family: ${SANS}; font-size: 14px; line-height: 1.7; color: ${C.textSecond};">${escapeHtml(bullets[0] ?? '')}</p>
+                    <a href="${escapeHtml(leadItem.url)}" style="font-family: ${SANS}; font-size: 12px; color: ${C.accent}; text-decoration: none;">Read full article &rarr;</a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>`;
+  })() : '';
+
+  // Secondary article rows (ranks 2–4)
+  const secondaryRows = secondaryItems.length > 0 ? `
+          <!-- SECONDARY DIVIDER -->
+          <tr>
+            <td class="outer-pad" style="background-color:${C.bg}; padding: 0 32px;">
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr><td style="height: 1px; background-color: ${C.border};"></td></tr>
+              </table>
+            </td>
+          </tr>
+          ${secondaryItems.map(item => {
+            const bullets = extractSummaryBullets(item).slice(0, 2);
+            const rankStr = String(item.rank).padStart(2, '0');
+            return `
+          <!-- Secondary ${rankStr} -->
+          <tr>
+            <td class="outer-pad" style="background-color:${C.bg}; padding: 0 32px;">
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td style="padding-top: 22px; padding-bottom: 24px;">
+                    <p style="margin: 0 0 8px 0;">
+                      <span style="font-family: ${SERIF}; font-size: 13px; color: ${C.accentMuted};">${rankStr}</span>
+                      <span style="font-family: ${SANS}; font-size: 9px; letter-spacing: 0.15em; text-transform: uppercase; color: ${C.textSecond}; margin-left: 8px;">${escapeHtml(item.source)}</span>
+                    </p>
+                    <h3 style="margin: 0 0 10px 0; font-family: ${SERIF}; font-size: 18px; font-weight: normal; line-height: 1.4;">
+                      <a href="${escapeHtml(item.url)}" style="color: ${C.textPrimary}; text-decoration: underline;">${escapeHtml(item.title)}</a>
+                    </h3>
+                    ${bullets.map(b =>
+                      `<p style="margin: 0 0 6px 0; font-family: ${SANS}; font-size: 13px; line-height: 1.6; color: ${C.textSecond};"><span style="color: ${C.accent}; margin-right: 5px;">&mdash;</span>${escapeHtml(b)}</p>`
+                    ).join('\n                    ')}
+                  </td>
+                </tr>
+                <tr><td style="height: 1px; background-color: ${C.border};"></td></tr>
+              </table>
+            </td>
+          </tr>`;
+          }).join('\n')}` : '';
+
+  // Tertiary rows (ranks 5+) — compact list
+  const tertiaryRows = tertiaryItems.length > 0 ? `
+          <!-- ALSO THIS WEEK header -->
+          <tr>
+            <td class="outer-pad" style="background-color:${C.bg}; padding: 20px 32px 8px;">
+              <p style="margin: 0; font-family: ${SANS}; font-size: 9px; letter-spacing: 0.25em; text-transform: uppercase; color: ${C.textSecond};">Also This Week</p>
+            </td>
+          </tr>
+          ${tertiaryItems.map(item => `
+          <!-- Tertiary ${item.rank} -->
+          <tr>
+            <td class="outer-pad" style="background-color:${C.bg}; padding: 0 32px;">
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td style="padding: 10px 0 10px;">
+                    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                      <tr>
+                        <td>
+                          <a href="${escapeHtml(item.url)}" style="font-family: ${SANS}; font-size: 13px; color: ${C.textPrimary}; text-decoration: none; line-height: 1.4;">${escapeHtml(item.title)}</a>
+                        </td>
+                        <td width="90" style="text-align: right; vertical-align: middle; padding-left: 12px;">
+                          <span style="font-family: ${SANS}; font-size: 9px; letter-spacing: 0.1em; text-transform: uppercase; color: ${C.textSecond}; white-space: nowrap;">${escapeHtml(item.source)}</span>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr><td style="height: 1px; background-color: ${C.border};"></td></tr>
+              </table>
+            </td>
+          </tr>`).join('\n')}` : '';
+
+  const articleRows = leadRow + secondaryRows + tertiaryRows;
+
+  const introBlock = digest.intro ? `
+          <!-- Intro -->
+          <tr>
+            <td class="outer-pad" style="background-color: ${C.bg}; padding: 32px 32px 0;">
+              <p style="margin: 0 0 28px 0; font-family: ${SERIF}; font-size: 15px; line-height: 1.75; color: ${C.textSecond}; font-style: italic;">${escapeHtml(digest.intro)}</p>
+            </td>
+          </tr>` : '';
+
+  const readOneBlock = digest.readOneThing ? `
+          <!-- Read One Thing -->
+          <tr>
+            <td class="outer-pad" style="background-color: ${C.bg}; padding: 0 32px 28px;">
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td style="border-left: 3px solid ${C.accent}; background-color: ${C.accentLight}; padding: 18px 20px;">
+                    <p style="margin: 0 0 8px 0; font-family: ${SANS}; font-size: 9px; letter-spacing: 0.3em; text-transform: uppercase; color: ${C.accent}; font-weight: 600;">Read One Thing</p>
+                    <a href="${escapeHtml(digest.readOneThing.url)}" style="font-family: ${SERIF}; font-size: 17px; font-weight: normal; color: ${C.textPrimary}; text-decoration: underline; line-height: 1.45;">${escapeHtml(digest.readOneThing.title)}</a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>` : '';
+
+  return `<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Email Digest — Week ${escapeHtml(week)}</title>
+  <meta name="x-apple-disable-message-reformatting">
+  <title>Luxury Intelligence &mdash; ${issueLine}</title>
+  <!--[if mso]>
+  <noscript><xml><o:OfficeDocumentSettings><o:PixelsPerInch>96</o:PixelsPerInch></o:OfficeDocumentSettings></xml></noscript>
+  <![endif]-->
+  <style>
+    @media screen and (max-width: 600px) {
+      .outer-pad { padding-left: 16px !important; padding-right: 16px !important; }
+      .masthead-pad { padding: 24px 16px 20px !important; }
+      .footer-pad { padding: 22px 16px !important; }
+    }
+  </style>
 </head>
-<body style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; line-height: 1.6; color: #333; max-width: 600px; margin: 0 auto; padding: 20px;">
-  <h1 style="color: #1a1a1a; font-size: 24px; margin-bottom: 8px;">Email Digest</h1>
-  <p style="font-size: 14px; color: #666; margin-bottom: 24px;">A single ranked list of the week's top articles for retail, luxury, and AI intelligence.</p>
-  <div style="margin-bottom: 24px; padding-bottom: 16px; border-bottom: 1px solid #e5e5e5;">
-    <h2 style="font-size: 18px; font-weight: 700; color: #1a1a1a; margin: 0 0 4px 0;">Week ${escapeHtml(week)}</h2>
-    ${digest.generatedAt ? `<p style="font-size: 12px; color: #888; margin: 0;">Generated ${escapeHtml(new Date(digest.generatedAt).toLocaleDateString())}</p>` : ''}
-  </div>
-`;
+<body style="margin: 0; padding: 0; background-color: #EDE9E1; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;">
+  <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #EDE9E1;">
+    <tr>
+      <td align="center" style="padding: 32px 16px;">
+        <table width="600" cellpadding="0" cellspacing="0" border="0" style="max-width: 600px; width: 100%;">
 
-  if (digest.intro) {
-    html += `  <div style="margin-bottom: 24px; padding: 16px; background: #f5f5f5; border: 1px solid #e5e5e5; border-radius: 8px;">
-    <p style="font-size: 14px; color: #444; margin: 0; line-height: 1.5;">${escapeHtml(digest.intro)}</p>
-  </div>
-`;
-  }
+          <!-- ===== MASTHEAD ===== -->
+          <tr>
+            <td class="masthead-pad" style="background-color: ${C.navy}; padding: 32px 40px 28px;">
+              <p style="margin: 0 0 6px 0; font-family: ${SANS}; font-size: 9px; letter-spacing: 0.3em; text-transform: uppercase; color: ${C.accent};">${issueLine}</p>
+              <h1 style="margin: 0; font-family: ${SERIF}; font-size: 28px; font-weight: normal; letter-spacing: 0.06em; color: ${C.bg}; text-transform: uppercase; line-height: 1.2;">Luxury Intelligence</h1>
+              <p style="margin: 8px 0 0 0; font-family: ${SANS}; font-size: 11px; color: ${C.navyFaint}; letter-spacing: 0.05em;">Weekly Intelligence Digest</p>
+            </td>
+          </tr>
 
-  if (digest.readOneThing) {
-    html += `  <div style="margin-bottom: 24px; padding: 16px; background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 8px;">
-    <p style="font-size: 12px; font-weight: 600; color: #1e40af; margin: 0 0 8px 0;">Read One Thing</p>
-    <a href="${escapeHtml(digest.readOneThing.url)}" style="font-size: 16px; font-weight: 500; color: #1d4ed8; text-decoration: none;">${escapeHtml(digest.readOneThing.title)}</a>
-  </div>
-`;
-  }
+          <!-- Gold masthead rule -->
+          <tr><td style="height: 3px; background-color: ${C.accent};"></td></tr>
 
-  html += `  <div style="margin-top: 24px;">
-`;
-  for (const item of digest.items) {
-    const bullets = extractSummaryBullets(item);
-    html += `    <div style="margin-bottom: 24px; padding-bottom: 20px; border-bottom: 1px solid #f0f0f0;">
-      <div style="display: flex; align-items: flex-start; gap: 12px;">
-        <div style="flex-shrink: 0; width: 32px; height: 32px; border-radius: 50%; background: #f0f0f0; display: flex; align-items: center; justify-content: center;">
-          <span style="font-size: 14px; font-weight: 700; color: #555;">${item.rank}</span>
-        </div>
-        <div style="flex: 1; min-width: 0;">
-          <h3 style="margin: 0 0 8px 0; font-size: 16px; line-height: 1.3;">
-            <a href="${escapeHtml(item.url)}" style="color: #1d4ed8; text-decoration: none; font-weight: 600;">${escapeHtml(item.title)}</a>
-          </h3>
-          <p style="font-size: 12px; color: #666; margin: 0 0 8px 0;">${escapeHtml(item.source)}</p>
-          <ul style="margin: 0; padding-left: 18px; font-size: 14px; color: #444; line-height: 1.5;">
-            ${bullets.map(b => `<li style="margin-bottom: 4px;">${escapeHtml(b)}</li>`).join('\n            ')}
-          </ul>
-        </div>
-      </div>
-    </div>
-`;
-  }
+          ${introBlock}
 
-  html += `  </div>
-  <div style="margin-top: 32px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #999; text-align: center;">
-    <p style="margin: 0;">You're receiving this because you subscribed to the weekly digest.</p>
-    <p style="margin: 8px 0 0 0;">Week ${escapeHtml(week)}</p>
-  </div>
+          ${readOneBlock}
+
+          ${articleRows}
+
+          <!-- Bottom padding -->
+          <tr><td style="background-color: ${C.bg}; height: 40px;"></td></tr>
+
+          <!-- ===== FOOTER ===== -->
+          <tr><td style="height: 2px; background-color: ${C.accent};"></td></tr>
+          <tr>
+            <td class="footer-pad" style="background-color: ${C.navy}; padding: 28px 40px; text-align: center;">
+              <p style="margin: 0 0 4px 0; font-family: ${SERIF}; font-size: 13px; color: ${C.navyText}; letter-spacing: 0.05em;">Luxury Intelligence</p>
+              <p style="margin: 0 0 16px 0; font-family: ${SANS}; font-size: 9px; color: ${C.navyFaint}; letter-spacing: 0.2em; text-transform: uppercase;">${escapeHtml(week)}</p>
+              <p style="margin: 0; font-family: ${SANS}; font-size: 10px; color: ${C.navyFaint}; line-height: 1.7;">You&rsquo;re receiving this because you subscribed to the weekly digest.<br>To unsubscribe, reply with &ldquo;unsubscribe&rdquo; in the subject line.</p>
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
 </body>
 </html>`;
-
-  return html;
 }
 
 /**
  * Render EmailDigest as plain text for the email text/plain part.
  */
 export function renderEmailDigestPlaintext(digest: EmailDigest): string {
-  let text = `Email Digest — Week ${digest.week}\n`;
-  text += `${'='.repeat(50)}\n\n`;
+  const issueLine = formatIssueLine(digest.week);
+  let text = `LUXURY INTELLIGENCE\n`;
+  text += `${issueLine}\n`;
+  text += `${'─'.repeat(50)}\n\n`;
 
   if (digest.intro) {
     text += `${digest.intro}\n\n`;
+    text += `${'─'.repeat(50)}\n\n`;
   }
 
   if (digest.readOneThing) {
-    text += `Read One Thing\n`;
+    text += `READ ONE THING\n`;
     text += `${digest.readOneThing.title}\n`;
     text += `${digest.readOneThing.url}\n\n`;
+    text += `${'─'.repeat(50)}\n\n`;
   }
 
   for (const item of digest.items) {
     const bullets = extractSummaryBullets(item);
-    text += `${item.rank}. ${item.title}\n`;
-    text += `${item.url}\n`;
-    text += `Source: ${item.source}\n`;
+    text += `${String(item.rank).padStart(2, '0')}  ${item.title}\n`;
+    text += `    ${item.source.toUpperCase()}\n`;
+    text += `    ${item.url}\n\n`;
     for (const b of bullets) {
-      text += `  • ${b}\n`;
+      text += `    — ${b}\n`;
     }
     text += '\n';
   }
 
-  text += `---\nWeek ${digest.week}\n`;
+  text += `${'─'.repeat(50)}\n`;
+  text += `Luxury Intelligence — ${digest.week}\n`;
+  text += `You're receiving this because you subscribed to the weekly digest.\n`;
+  text += `To unsubscribe, reply with "unsubscribe" in the subject line.\n`;
   return text;
 }

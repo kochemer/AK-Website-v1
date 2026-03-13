@@ -29,9 +29,9 @@ export default function Footer() {
     <footer className="relative mt-auto w-full bg-[var(--color-deep)] text-[#E5E2DB] pt-16 pb-10 px-6 md:px-12 border-t-2 border-[var(--color-accent)] overflow-hidden">
       <BrandPattern variant="dark" />
       <GrainOverlay id="grain-footer" className="opacity-[0.05] md:opacity-[0.05] max-md:opacity-[0.03]" />
-      <div className="relative max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
+      <div className="relative max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-[2.5fr_1fr_1fr_1.5fr] gap-10 md:gap-8">
         {/* Col 1: Brand */}
-        <div className="mb-8 md:mb-0">
+        <div className="col-span-2 md:col-span-1 mb-8 md:mb-0">
           <MastheadLockup variant="footer" />
           <p className="text-meta text-[#999] mt-4">
             Weekly curated intelligence on AI, ecommerce & luxury
@@ -39,7 +39,7 @@ export default function Footer() {
           <p className="text-[12px] text-[#666] mt-6">© 2026</p>
         </div>
 
-        {/* Col 2: Nav */}
+        {/* Col 2: Content */}
         <div className="mb-8 md:mb-0">
           <div className="text-[11px] tracking-widest text-[var(--color-accent)] uppercase mb-3">
             CONTENT
@@ -56,7 +56,11 @@ export default function Footer() {
               </li>
             ))}
           </ul>
-          <div className="text-[11px] tracking-widest text-[var(--color-accent)] uppercase mb-3 mt-8">
+        </div>
+
+        {/* Col 3: About */}
+        <div className="mb-8 md:mb-0">
+          <div className="text-[11px] tracking-widest text-[var(--color-accent)] uppercase mb-3">
             ABOUT
           </div>
           <ul className="space-y-2">
@@ -73,8 +77,8 @@ export default function Footer() {
           </ul>
         </div>
 
-        {/* Col 3: CTA */}
-        <div className="mb-8 md:mb-0">
+        {/* Col 4: CTA */}
+        <div className="col-span-2 md:col-span-1 mb-8 md:mb-0">
           <div className="text-[11px] tracking-widest text-[var(--color-accent)] uppercase mb-3">
             {t.footer.stayInformed}
           </div>

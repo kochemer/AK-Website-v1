@@ -35,7 +35,7 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-dm-sans), system-ui, sans-serif;
   --font-serif: var(--font-libre-baskerville), Georgia, serif;
-  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
+  --font-mono: var(--font-courier-prime), var(--font-geist-mono), 'Courier New', monospace;
   /* Luxury palette */
   --color-luxury-cream: #FAF9F6;
   --color-luxury-gold: #8B6914;
@@ -123,6 +123,21 @@ textarea:focus-visible {
 .hero-issue   { animation: fadeUp 0.8s 0.75s ease-out both; }
 .hero-lead    { animation: fadeUp 0.8s 0.95s ease-out both; }
 
+/* Progress bar completion glow-fade */
+@keyframes progressGlow {
+  0%   { box-shadow: 0 0 8px var(--color-accent); opacity: 1; }
+  100% { box-shadow: none; opacity: 0; }
+}
+.progress-complete {
+  animation: progressGlow 1.5s ease-out 0.3s forwards;
+}
+
+/* Scroll prompt breathe pulse */
+@keyframes breathe {
+  0%, 100% { opacity: 0.4; }
+  50%       { opacity: 0.8; }
+}
+
 /* Stat count-up landing pulse */
 @keyframes statPulse {
   0%   { transform: scale(1); }
@@ -151,7 +166,10 @@ textarea:focus-visible {
   .hero-issue,
   .hero-lead,
   .stat-landed,
-  .reveal {
+  .reveal,
+  .hero-dateline,
+  .hero-scroll-prompt,
+  .progress-complete {
     animation: none;
     opacity: 1;
     transform: none;

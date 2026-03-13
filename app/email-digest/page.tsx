@@ -220,71 +220,116 @@ export default async function EmailDigestPage() {
               </div>
             )}
 
-            {/* Read One Thing */}
-            {digest.readOneThing && (
-              <div className="mb-10 bg-[var(--color-accent-light)] border-l-4 border-[var(--color-accent)] p-5 rounded-sm">
-                <h3 className="text-[10px] tracking-[0.3em] uppercase text-[var(--color-accent)] font-sans font-bold mb-2">
-                  Read One Thing
-                </h3>
-                <a
-                  href={digest.readOneThing.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="font-serif text-card-title font-semibold text-[var(--color-text-primary)] hover:text-[var(--color-accent)] underline decoration-[var(--color-accent)]/40 hover:decoration-[var(--color-accent)] underline-offset-2 transition-colors"
-                >
-                  {digest.readOneThing.title}
-                </a>
-              </div>
-            )}
+            {/* Ranked List — tiered prominence */}
+            {(() => {
+              const lead      = digest.items.find(i => i.rank === 1);
+              const secondary = digest.items.filter(i => i.rank >= 2 && i.rank <= 5);
+              const tertiary  = digest.items.filter(i => i.rank >= 6);
 
-            {/* Ranked List */}
-            <div className="space-y-10">
-              {digest.items.map((item) => (
-                <article
-                  key={item.rank}
-                  className="border-b border-stone-200 pb-8 last:border-b-0 last:pb-0"
-                >
-                  <div className="flex items-start gap-4">
-                    {/* Rank */}
-                    <span className="text-3xl font-light text-[var(--color-accent)] opacity-60 mr-0 font-serif leading-none pt-1 flex-shrink-0 w-10 text-right">
-                      {String(item.rank).padStart(2, '0')}
-                    </span>
-
-                    {/* Content */}
-                    <div className="flex-1 min-w-0">
-                      <h3 className="mb-2">
+              return (
+                <div>
+                  {/* ── LEAD STORY ── */}
+                  {lead && (
+                    <article className="border-l-2 border-[var(--color-accent)] pl-6 py-8 mb-10">
+                      <div className="flex items-center gap-3 mb-3">
+                        <span className="font-mono text-[10px] tracking-[0.2em] uppercase text-[var(--color-accent)]">
+                          Lead Story
+                        </span>
+                        <span className="text-[10px] text-[var(--color-text-secondary)] font-sans">
+                          {lead.source}
+                        </span>
+                      </div>
+                      <h2 className="font-serif text-[1.875rem] leading-tight tracking-[-0.02em] text-[var(--color-text-primary)] mb-4">
                         <a
-                          href={item.url}
+                          href={lead.url}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="font-serif text-card-title font-semibold text-[var(--color-text-primary)] hover:text-[var(--color-accent)] underline decoration-[var(--color-accent)]/40 hover:decoration-[var(--color-accent)] underline-offset-2 transition-colors leading-tight"
+                          className="hover:text-[var(--color-accent)] transition-colors"
                         >
-                          {item.title}
+                          {lead.title}
                         </a>
-                      </h3>
-
-                      {/* Source */}
-                      <p className="text-meta uppercase tracking-widest text-[var(--color-text-secondary)] mb-3">
-                        {item.source}
+                      </h2>
+                      <p className="font-sans text-base leading-relaxed text-[var(--color-text-secondary)] max-w-2xl mb-4">
+                        {extractSummaryBullets(lead)[0]}
                       </p>
+                      <a
+                        href={lead.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="font-sans text-sm text-[var(--color-accent)] hover:underline"
+                      >
+                        Read full article →
+                      </a>
+                    </article>
+                  )}
 
-                      {/* Bullets — em-dash list */}
-                      <div className="space-y-1.5 pl-0">
-                        {extractSummaryBullets(item).map((bullet, idx) => (
-                          <p
-                            key={idx}
-                            className="text-body text-[var(--color-text-secondary)] leading-relaxed"
+                  {/* ── SECONDARY (ranks 2–4) ── */}
+                  {secondary.length > 0 && (
+                    <div className="grid md:grid-cols-2 gap-8 mb-10 pt-8 border-t border-[var(--color-border)]">
+                      {secondary.map(item => {
+                        const bullets = extractSummaryBullets(item).slice(0, 2);
+                        return (
+                          <article key={item.rank}>
+                            <div className="flex items-center gap-2 mb-2">
+                              <span className="font-mono text-[10px] tracking-[0.15em] uppercase text-[var(--color-accent)] opacity-60">
+                                {String(item.rank).padStart(2, '0')}
+                              </span>
+                              <span className="text-[10px] text-[var(--color-text-secondary)] font-sans uppercase tracking-wider">
+                                {item.source}
+                              </span>
+                            </div>
+                            <h3 className="font-serif text-xl leading-snug tracking-[-0.01em] text-[var(--color-text-primary)] mb-3">
+                              <a
+                                href={item.url}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="hover:text-[var(--color-accent)] transition-colors"
+                              >
+                                {item.title}
+                              </a>
+                            </h3>
+                            <div className="space-y-1.5">
+                              {bullets.map((b, idx) => (
+                                <p key={idx} className="text-sm text-[var(--color-text-secondary)] leading-relaxed">
+                                  <span className="text-[var(--color-accent)] opacity-50 mr-1.5">—</span>{b}
+                                </p>
+                              ))}
+                            </div>
+                          </article>
+                        );
+                      })}
+                    </div>
+                  )}
+
+                  {/* ── TERTIARY (ranks 5+) ── */}
+                  {tertiary.length > 0 && (
+                    <div className="border-t border-[var(--color-border)] pt-6">
+                      <p className="font-mono text-[10px] tracking-[0.2em] uppercase text-[var(--color-text-secondary)] mb-4">
+                        Also This Week
+                      </p>
+                      <div className="space-y-0">
+                        {tertiary.map(item => (
+                          <a
+                            key={item.rank}
+                            href={item.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex items-baseline justify-between py-3 border-b border-[var(--color-border)] group hover:bg-[var(--color-accent-light)] px-2 -mx-2 transition-colors rounded-sm"
                           >
-                            <span className="text-[var(--color-accent)] opacity-50 mr-1.5">—</span>
-                            {bullet}
-                          </p>
+                            <span className="font-sans text-sm text-[var(--color-text-primary)] group-hover:text-[var(--color-accent)] transition-colors leading-snug pr-4">
+                              {item.title}
+                            </span>
+                            <span className="font-mono text-[10px] text-[var(--color-text-secondary)] shrink-0 uppercase tracking-wider">
+                              {item.source}
+                            </span>
+                          </a>
                         ))}
                       </div>
                     </div>
-                  </div>
-                </article>
-              ))}
-            </div>
+                  )}
+                </div>
+              );
+            })()}
           </>
         )}
       </div>

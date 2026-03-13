@@ -9,6 +9,7 @@
 import { promises as fs } from 'fs';
 import path from 'path';
 import Link from 'next/link';
+import { DateTime } from 'luxon';
 import { formatDateRange } from '@/lib/utils/formatDate';
 
 async function getAvailableDigests(): Promise<string[]> {
@@ -34,6 +35,7 @@ async function getAvailableDigests(): Promise<string[]> {
 
 type WeekMeta = {
   dateRange: string | null;
+  startISO?: string;
   coverImageUrl?: string;
   coverImageAlt?: string;
   totalArticles: number;
@@ -63,6 +65,7 @@ async function getWeekMeta(weekLabel: string): Promise<WeekMeta> {
 
     return {
       dateRange,
+      startISO: digest.startISO,
       coverImageUrl: digest.coverImageUrl,
       coverImageAlt: digest.coverImageAlt,
       totalArticles: digest.totals?.total ?? 0,
@@ -79,14 +82,37 @@ function extractIssueLabel(weekLabel: string): string {
   return match ? `W${match[1].padStart(2, '0')}` : weekLabel;
 }
 
+function getMonthGroup(weekLabel: string, startISO?: string): string {
+  if (startISO) {
+    return DateTime.fromISO(startISO).toFormat('MMMM yyyy');
+  }
+  const [y, w] = weekLabel.split('-');
+  const year = parseInt(y ?? String(DateTime.now().year), 10);
+  const week = parseInt((w ?? 'W1').replace(/^W/i, ''), 10);
+  return DateTime.fromObject({ weekYear: year, weekNumber: week }).toFormat('MMMM yyyy');
+}
+
 export default async function ArchivePage() {
   const weekLabels = await getAvailableDigests();
   const issues = await Promise.all(
-    weekLabels.map(async (weekLabel, i) => {
+    weekLabels.map(async (weekLabel) => {
       const meta = await getWeekMeta(weekLabel);
-      return { weekLabel, meta, issue: extractIssueLabel(weekLabel), i };
+      return { weekLabel, meta, issue: extractIssueLabel(weekLabel) };
     })
   );
+
+  // Group issues by month (order preserved — newest first)
+  const monthMap = new Map<string, typeof issues>();
+  for (const issue of issues) {
+    const month = getMonthGroup(issue.weekLabel, issue.meta.startISO);
+    if (!monthMap.has(month)) monthMap.set(month, []);
+    monthMap.get(month)!.push(issue);
+  }
+  const monthGroups = Array.from(monthMap.entries());
+  const totalMonths = monthGroups.length;
+
+  // Global index so the very first card gets the hero + gold ring treatment
+  let globalIdx = 0;
 
   return (
     <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 py-16 md:py-20">
@@ -105,56 +131,88 @@ export default async function ArchivePage() {
           Publication Index
         </h1>
         <p className="text-body text-[var(--color-text-secondary)]">
-          {weekLabels.length} issues · AI, ecommerce, luxury &amp; jewellery intelligence
+          {weekLabels.length} issue{weekLabels.length !== 1 ? 's' : ''} across {totalMonths} month{totalMonths !== 1 ? 's' : ''} — and counting
         </p>
         <hr className="border-[var(--color-accent)] border-t-2 mt-6" />
       </header>
 
       {issues.length > 0 ? (
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4">
-          {issues.map(({ weekLabel, meta, issue, i }) => (
-            <Link
-              key={weekLabel}
-              href={`/week/${weekLabel}`}
-              className={`group relative overflow-hidden rounded-sm ${
-                i === 0 ? 'col-span-2 row-span-2 aspect-[3/2]' : 'aspect-[3/2]'
-              }`}
-            >
-              {/* Cover image or fallback gradient */}
-              {meta.coverImageUrl ? (
-                <img
-                  src={meta.coverImageUrl}
-                  alt={meta.coverImageAlt || `Cover for ${weekLabel}`}
-                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                />
-              ) : (
-                <div
-                  className="absolute inset-0 w-full h-full"
-                  style={{
-                    background: `linear-gradient(135deg, var(--color-deep) 0%, var(--color-accent) 100%)`,
-                  }}
-                />
-              )}
+        <div>
+          {monthGroups.map(([month, monthIssues]) => {
+            const monthBlock = (
+              <div key={month}>
+                {/* Month divider */}
+                <div className="flex items-center gap-4 mt-12 mb-6 first:mt-0">
+                  <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-[var(--color-accent)]">
+                    {month}
+                  </span>
+                  <div className="flex-1 h-px bg-[var(--color-border)]" />
+                  <span className="font-mono text-[11px] text-[var(--color-text-secondary)]">
+                    {monthIssues.length} issue{monthIssues.length !== 1 ? 's' : ''}
+                  </span>
+                </div>
 
-              {/* Dark gradient overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+                {/* Grid for this month */}
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4">
+                  {monthIssues.map(({ weekLabel, meta, issue }) => {
+                    const isFirst = globalIdx === 0;
+                    globalIdx++;
+                    return (
+                      <Link
+                        key={weekLabel}
+                        href={`/week/${weekLabel}`}
+                        className={`group relative overflow-hidden rounded-sm ${
+                          isFirst ? 'col-span-2 row-span-2 aspect-[3/2]' : 'aspect-[3/2]'
+                        }`}
+                      >
+                        {/* Cover image, typographic fallback, or gradient */}
+                        {meta.coverImageUrl ? (
+                          <img
+                            src={meta.coverImageUrl}
+                            alt={meta.coverImageAlt || `Cover for ${weekLabel}`}
+                            className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                          />
+                        ) : (
+                          <div className="absolute inset-0 bg-[var(--color-deep)] flex items-center justify-center overflow-hidden">
+                            <span className="font-serif font-light text-[6rem] leading-none text-white/10 select-none pointer-events-none">
+                              {issue}
+                            </span>
+                          </div>
+                        )}
 
-              {/* Issue metadata */}
-              <div className="absolute bottom-0 left-0 right-0 p-3 md:p-4">
-                <p className="text-[10px] tracking-[0.25em] uppercase text-white/60 font-sans mb-0.5">
-                  {issue}
-                </p>
-                <p className={`font-serif text-white leading-snug ${i === 0 ? 'text-base md:text-lg' : 'text-xs md:text-sm'}`}>
-                  {meta.dateRange || weekLabel}
-                </p>
-                {meta.totalArticles > 0 && (
-                  <p className="text-[11px] text-white/50 font-sans mt-1">
-                    {meta.totalArticles} articles
-                  </p>
-                )}
+                        {/* Dark gradient overlay */}
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+
+                        {/* Gold ring on most-recent issue */}
+                        {isFirst && (
+                          <div
+                            className="absolute inset-0 pointer-events-none rounded-sm z-10"
+                            style={{ boxShadow: 'inset 0 0 0 2px var(--color-accent)' }}
+                          />
+                        )}
+
+                        {/* Issue metadata */}
+                        <div className="absolute bottom-0 left-0 right-0 p-3 md:p-4 z-[5]">
+                          <p className="text-[10px] tracking-[0.25em] uppercase text-white/60 font-sans mb-0.5">
+                            {issue}
+                          </p>
+                          <p className={`font-serif text-white leading-snug ${isFirst ? 'text-base md:text-lg' : 'text-xs md:text-sm'}`}>
+                            {meta.dateRange || weekLabel}
+                          </p>
+                          {meta.totalArticles > 0 && (
+                            <p className="text-[11px] text-white/50 font-sans mt-1">
+                              {meta.totalArticles} articles
+                            </p>
+                          )}
+                        </div>
+                      </Link>
+                    );
+                  })}
+                </div>
               </div>
-            </Link>
-          ))}
+            );
+            return monthBlock;
+          })}
         </div>
       ) : (
         <div className="bg-[var(--color-accent-light)] border-l-4 border-[var(--color-accent)] p-5 rounded-sm">
