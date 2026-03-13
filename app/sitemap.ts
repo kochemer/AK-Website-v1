@@ -55,36 +55,41 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const weekLabels = await getAvailableWeekLabels();
   const digestsDir = path.join(process.cwd(), 'data', 'digests');
 
-  // Home page
-  const homeEntry: MetadataRoute.Sitemap[0] = {
-    url: baseUrl,
-    lastModified: new Date(),
-    changeFrequency: 'weekly',
-    priority: 1.0,
-  };
+  const now = new Date();
 
-  // Archive page
-  const archiveEntry: MetadataRoute.Sitemap[0] = {
-    url: `${baseUrl}/archive`,
-    lastModified: new Date(),
-    changeFrequency: 'weekly',
-    priority: 0.6,
-  };
+  // ── Core English pages ────────────────────────────────────────────────────
+  const staticEntries: MetadataRoute.Sitemap = [
+    { url: baseUrl,                          lastModified: now, changeFrequency: 'weekly',  priority: 1.0 },
+    { url: `${baseUrl}/archive`,             lastModified: now, changeFrequency: 'weekly',  priority: 0.6 },
+    { url: `${baseUrl}/email-digest`,        lastModified: now, changeFrequency: 'weekly',  priority: 0.7 },
+    { url: `${baseUrl}/subscribe`,           lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${baseUrl}/about`,               lastModified: now, changeFrequency: 'monthly', priority: 0.5 },
+    { url: `${baseUrl}/methodology`,         lastModified: now, changeFrequency: 'monthly', priority: 0.5 },
+    { url: `${baseUrl}/feedback`,            lastModified: now, changeFrequency: 'yearly',  priority: 0.4 },
+    { url: `${baseUrl}/support`,             lastModified: now, changeFrequency: 'monthly', priority: 0.5 },
+  ];
 
-  // Email digest page
-  const emailDigestEntry: MetadataRoute.Sitemap[0] = {
-    url: `${baseUrl}/email-digest`,
-    lastModified: new Date(),
-    changeFrequency: 'weekly',
-    priority: 0.7,
-  };
+  // ── Localised pages (es · da) ─────────────────────────────────────────────
+  const localeEntries: MetadataRoute.Sitemap = [
+    // Spanish
+    { url: `${baseUrl}/es`,                  lastModified: now, changeFrequency: 'weekly',  priority: 0.8 },
+    { url: `${baseUrl}/es/archive`,          lastModified: now, changeFrequency: 'weekly',  priority: 0.5 },
+    { url: `${baseUrl}/es/subscribe`,        lastModified: now, changeFrequency: 'monthly', priority: 0.6 },
+    { url: `${baseUrl}/es/about`,            lastModified: now, changeFrequency: 'monthly', priority: 0.4 },
+    { url: `${baseUrl}/es/methodology`,      lastModified: now, changeFrequency: 'monthly', priority: 0.4 },
+    // Danish
+    { url: `${baseUrl}/da`,                  lastModified: now, changeFrequency: 'weekly',  priority: 0.8 },
+    { url: `${baseUrl}/da/archive`,          lastModified: now, changeFrequency: 'weekly',  priority: 0.5 },
+    { url: `${baseUrl}/da/subscribe`,        lastModified: now, changeFrequency: 'monthly', priority: 0.6 },
+    { url: `${baseUrl}/da/about`,            lastModified: now, changeFrequency: 'monthly', priority: 0.4 },
+    { url: `${baseUrl}/da/methodology`,      lastModified: now, changeFrequency: 'monthly', priority: 0.4 },
+  ];
 
-  // Week pages - include all available week digests with lastModified from file mtime
+  // ── Weekly digest pages (with file mtime for accurate lastModified) ───────
   const weekEntries = await Promise.all(
     weekLabels.map(async (weekLabel) => {
       const filePath = path.join(digestsDir, `${weekLabel}.json`);
       const lastModified = await getFileModifiedTime(filePath);
-      
       return {
         url: `${baseUrl}/digest/${weekLabelToSlug(weekLabel)}`,
         lastModified,
@@ -94,7 +99,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     })
   );
 
-  return [homeEntry, archiveEntry, emailDigestEntry, ...weekEntries];
+  return [...staticEntries, ...localeEntries, ...weekEntries];
 }
 
 
