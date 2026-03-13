@@ -11,6 +11,7 @@ import path from 'path';
 import Link from 'next/link';
 import { DateTime } from 'luxon';
 import { formatDateRange } from '@/lib/utils/formatDate';
+import { weekLabelToSlug } from '@/lib/utils/weekSlug';
 
 async function getAvailableDigests(): Promise<string[]> {
   try {
@@ -160,7 +161,7 @@ export default async function ArchivePage() {
                     return (
                       <Link
                         key={weekLabel}
-                        href={`/week/${weekLabel}`}
+                        href={`/digest/${weekLabelToSlug(weekLabel)}`}
                         className={`group relative overflow-hidden rounded-sm ${
                           isFirst ? 'col-span-2 row-span-2 aspect-[3/2]' : 'aspect-[3/2]'
                         }`}

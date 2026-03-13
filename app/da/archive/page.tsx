@@ -4,6 +4,7 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 import { getSiteUrl } from '@/lib/utils/siteUrl';
 import { formatDateRange } from '@/lib/utils/formatDate';
+import { weekLabelToSlug } from '@/lib/utils/weekSlug';
 
 const siteUrl = getSiteUrl();
 
@@ -112,7 +113,7 @@ export default async function ArchivePageDA() {
           {issues.map(({ weekLabel, meta, issue, i }) => (
             <Link
               key={weekLabel}
-              href={`/week/${weekLabel}`}
+              href={`/digest/${weekLabelToSlug(weekLabel)}`}
               className={`group relative overflow-hidden rounded-sm ${
                 i === 0 ? 'col-span-2 row-span-2 aspect-[3/2]' : 'aspect-[3/2]'
               }`}

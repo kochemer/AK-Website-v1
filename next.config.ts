@@ -1,11 +1,35 @@
 import type { NextConfig } from "next";
 import withPWA from "next-pwa";
+import { promises as fs } from 'fs';
+import path from 'path';
+import { weekLabelToSlug } from './lib/utils/weekSlug';
+
+/**
+ * Generate 308 permanent redirects for all known /week/YYYY-Www → /digest/slug.
+ * Evaluated at build time. Future weeks (added after deployment) are handled
+ * by the server-side permanentRedirect in app/week/[weekLabel]/page.tsx.
+ */
+async function buildWeekRedirects() {
+  try {
+    const digestsDir = path.join(process.cwd(), 'data', 'digests');
+    const files      = await fs.readdir(digestsDir);
+    const weekLabels = files
+      .filter(f => /^\d{4}-W\d{1,2}\.json$/.test(f))
+      .map(f => f.replace('.json', ''));
+
+    return weekLabels.map(weekLabel => ({
+      source:      `/week/${weekLabel}`,
+      destination: `/digest/${weekLabelToSlug(weekLabel)}`,
+      permanent:   true,
+    }));
+  } catch {
+    return [];
+  }
+}
 
 const nextConfig: NextConfig = {
-  /* config options here */
-  // Redirects removed - handle www to non-www redirect at Vercel platform level
-  // to avoid conflicts and redirect loops
-  // Configure in Vercel Dashboard: Project Settings > Domains > Redirects
+  // Permanent 308 redirects: /week/YYYY-Www → /digest/month-yyyy-week-n
+  redirects: buildWeekRedirects,
   // Use webpack explicitly for next-pwa compatibility (next-pwa requires webpack)
   webpack: (config, { isServer }) => {
     return config;

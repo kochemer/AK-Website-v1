@@ -2,6 +2,7 @@ import { MetadataRoute } from 'next';
 import { promises as fs } from 'fs';
 import path from 'path';
 import { getSiteUrl } from '@/lib/utils/siteUrl';
+import { weekLabelToSlug } from '@/lib/utils/weekSlug';
 
 /**
  * Get all available week labels from digest files.
@@ -85,7 +86,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       const lastModified = await getFileModifiedTime(filePath);
       
       return {
-        url: `${baseUrl}/week/${weekLabel}`,
+        url: `${baseUrl}/digest/${weekLabelToSlug(weekLabel)}`,
         lastModified,
         changeFrequency: 'weekly' as const,
         priority: 0.8,

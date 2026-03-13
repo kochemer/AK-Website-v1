@@ -14,7 +14,8 @@ function resolveAppEnv(): string {
 
 function inferPageType(path: string): string {
   if (path === '/') return 'home';
-  if (path.startsWith('/week/')) return 'digest';
+  if (path.startsWith('/digest/')) return 'digest';
+  if (path.startsWith('/week/')) return 'digest'; // legacy redirect path
   if (path.startsWith('/email-digest')) return 'email_digest';
   if (path.startsWith('/subscribe')) return 'subscribe';
   if (path.startsWith('/archive')) return 'archive';
@@ -24,8 +25,16 @@ function inferPageType(path: string): string {
 }
 
 function extractWeekFromPath(path: string): string | null {
-  const m = path.match(/\/week\/(\d{4}-W\d{2})/);
-  return m ? m[1] : null;
+  // New canonical format: /digest/march-2026-week-10 → 2026-W10
+  const digestMatch = path.match(/\/digest\/[a-z]+-(\d{4})-week-(\d{1,2})/);
+  if (digestMatch) {
+    const year    = digestMatch[1]!;
+    const weekNum = String(digestMatch[2]!).padStart(2, '0');
+    return `${year}-W${weekNum}`;
+  }
+  // Legacy format (caught during redirect): /week/2026-W10
+  const legacyMatch = path.match(/\/week\/(\d{4}-W\d{2})/);
+  return legacyMatch ? legacyMatch[1]! : null;
 }
 
 export function getGlobalEventProps(): Record<string, unknown> {
