@@ -21,30 +21,69 @@ import { getSiteUrl } from '@/lib/utils/siteUrl';
 import { CATEGORY_COLORS } from '@/lib/constants/categoryColors';
 import type { WeeklyDigest } from '@/lib/types';
 
+// ── Meta description builder — uses real digest content ───────────────────────
+function buildWeekMetaDescription(digest: WeeklyDigest, dateRange: string): string {
+  const total    = digest.totals.total;
+  const selected = getSelectedArticleCount(digest);
+  const trunc    = (s: string, max: number) => s.length <= max ? s : s.slice(0, max - 1) + '…';
+
+  // Prefer the editorially-selected weekly insight — it's specific and click-worthy
+  if (digest.oneSentenceSummary) {
+    const insight = trunc(digest.oneSentenceSummary, 155);
+    // Append a compact count suffix only if it fits
+    const withCount = `${insight} (${total} articles · ${selected} curated)`;
+    return withCount.length <= 155 ? withCount : insight;
+  }
+
+  // Fall back to top story + counts
+  const topTitle =
+    digest.topics.AI_and_Strategy.top[0]?.title ??
+    digest.topics.Ecommerce_Retail_Tech.top[0]?.title ??
+    digest.topics.Luxury_and_Consumer.top[0]?.title ??
+    null;
+
+  const base = `${total} articles analysed across AI, ecommerce, luxury & jewellery · ${dateRange}.`;
+  if (topTitle) {
+    const withStory = `${base} Top story: ${topTitle}`;
+    return trunc(withStory, 155);
+  }
+
+  return base;
+}
+
 export async function generateMetadata({ params }: { params: Promise<{ weekLabel: string }> }): Promise<Metadata> {
   const { weekLabel } = await params;
-  const siteUrl = getSiteUrl(); // Call inside function for dev mode compatibility
-  
-  // Load digest to get cover image if available
-  const digest = await loadDigest(weekLabel);
-  const ogImage = digest?.coverImageUrl 
+  const siteUrl = getSiteUrl();
+
+  const digest  = await loadDigest(weekLabel);
+  const ogImage = digest?.coverImageUrl
     ? `${siteUrl}${digest.coverImageUrl}`
     : `${siteUrl}/og-default.svg`;
-  
+
+  // Human-readable date range: "Mar 1-8th 2026" or "Mar 31 - Apr 6, 2026"
+  const dateRange = digest
+    ? formatDateRange(digest.startISO, digest.endISO)
+    : weekLabel;
+
+  const title       = `${dateRange} Intelligence Digest – AI, Ecommerce & Luxury`;
+  const description = digest
+    ? buildWeekMetaDescription(digest, dateRange)
+    : `Curated intelligence for ${weekLabel} — AI, ecommerce, luxury and jewellery industry news with AI-assisted summaries.`;
+
   return {
-    title: `Week ${weekLabel} – AI, Ecommerce & Luxury Industry Digest`,
-    description: `Curated overview of the most relevant AI, ecommerce, luxury and jewellery industry news for week ${weekLabel}. Handpicked articles with AI summaries.`,
+    title,
+    description,
     alternates: {
       canonical: `${siteUrl}/week/${weekLabel}`,
     },
     openGraph: {
-      title: `Week ${weekLabel} – AI, Ecommerce & Luxury Industry Digest`,
-      description: `Curated overview of the most relevant AI, ecommerce, luxury and jewellery industry news for week ${weekLabel}. Handpicked articles with AI summaries.`,
+      title: `${title} | Luxury Intelligence`,
+      description,
       images: [ogImage],
     },
     twitter: {
-      title: `Week ${weekLabel} – AI, Ecommerce & Luxury Industry Digest`,
-      description: `Curated overview of the most relevant AI, ecommerce, luxury and jewellery industry news for week ${weekLabel}. Handpicked articles with AI summaries.`,
+      title: `${title} | Luxury Intelligence`,
+      description,
       images: [ogImage],
     },
   };
