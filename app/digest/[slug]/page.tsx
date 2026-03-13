@@ -213,6 +213,32 @@ export default async function DigestPage({
     ],
   };
 
+  const newsArticleSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'NewsArticle',
+    headline: `${dateRange} Intelligence Digest – AI, Ecommerce & Luxury`,
+    description: digest.oneSentenceSummary
+      ?? `Weekly curated digest: ${digest.totals.total} articles across AI, ecommerce, jewellery, and luxury.`,
+    ...(digest.startISO   && { datePublished: digest.startISO }),
+    ...(digest.builtAtISO && { dateModified:  digest.builtAtISO }),
+    ...(digest.coverImageUrl && { image: `${siteUrl}${digest.coverImageUrl}` }),
+    articleSection: 'AI & Strategy, Ecommerce & Retail Tech, Luxury & Consumer, Jewellery Industry',
+    publisher: {
+      '@type': 'Organization',
+      name: 'Luxury Intelligence',
+      url: siteUrl,
+    },
+    author: {
+      '@type': 'Organization',
+      name: 'Luxury Intelligence',
+      url: siteUrl,
+    },
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': `${siteUrl}/digest/${slug}`,
+    },
+  };
+
   const CATEGORY_CARDS: Array<{
     key: TopicKey;
     color: string;
@@ -267,6 +293,7 @@ export default async function DigestPage({
 
   return (
     <>
+      <JsonLd data={newsArticleSchema} />
       <JsonLd data={collectionPageSchema} />
       <JsonLd data={breadcrumbSchema} />
       <main className="w-full" style={{ minHeight: '100vh', background: 'var(--color-bg)' }}>
