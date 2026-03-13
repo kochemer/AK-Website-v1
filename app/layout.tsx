@@ -88,10 +88,16 @@ export const metadata: Metadata = {
   openGraph: {
     siteName: "Luxury Intelligence",
     type: "website",
-    images: [{ url: "/api/og?week=2026-W10", width: 1200, height: 630 }],
+    images: [{
+      url: "/api/og",
+      width: 1200,
+      height: 630,
+      alt: "Luxury Intelligence – Weekly AI, Ecommerce & Luxury Industry Digest",
+    }],
   },
   twitter: {
     card: "summary_large_image",
+    images: ["/api/og"],
   },
   alternates: {
     canonical: `${siteUrl}/`,

@@ -55,9 +55,10 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   }
 
   const digest  = await loadDigest(weekLabel);
+  // Prefer the AI-generated cover; fall back to the branded dynamic OG card
   const ogImage = digest?.coverImageUrl
     ? `${siteUrl}${digest.coverImageUrl}`
-    : `${siteUrl}/og-default.svg`;
+    : `${siteUrl}/api/og?week=${encodeURIComponent(weekLabel)}`;
 
   const dateRange   = digest ? formatDateRange(digest.startISO, digest.endISO) : slug;
   const title       = `${dateRange} Intelligence Digest – AI, Ecommerce & Luxury`;
