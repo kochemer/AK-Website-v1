@@ -10,8 +10,14 @@ import { promises as fs } from 'fs';
 import path from 'path';
 import Link from 'next/link';
 import { DateTime } from 'luxon';
+import type { Metadata } from 'next';
 import { formatDateRange } from '@/lib/utils/formatDate';
 import { weekLabelToSlug } from '@/lib/utils/weekSlug';
+
+export const metadata: Metadata = {
+  title: 'Archive – All Weekly Digests',
+  description: 'Browse all editions of the Luxury Intelligence weekly digest. Weekly analysis of AI, ecommerce, jewellery, and luxury industry news.',
+};
 
 async function getAvailableDigests(): Promise<string[]> {
   try {
@@ -112,6 +118,15 @@ export default async function ArchivePage() {
   const monthGroups = Array.from(monthMap.entries());
   const totalMonths = monthGroups.length;
 
+  // Group months by year for H2 year headings
+  const yearMap = new Map<string, Array<[string, typeof issues]>>();
+  for (const [month, monthIssues] of monthGroups) {
+    const year = month.split(' ')[1] ?? month;
+    if (!yearMap.has(year)) yearMap.set(year, []);
+    yearMap.get(year)!.push([month, monthIssues]);
+  }
+  const yearGroups = Array.from(yearMap.entries());
+
   // Global index so the very first card gets the hero + gold ring treatment
   let globalIdx = 0;
 
@@ -129,9 +144,12 @@ export default async function ArchivePage() {
           All Issues
         </p>
         <h1 className="font-serif font-normal text-[2.75rem] leading-none tracking-[-0.02em] text-[var(--color-text-primary)] mb-4">
-          Publication Index
+          Luxury Intelligence Archive – Weekly AI, Ecommerce &amp; Jewellery Digests
         </h1>
-        <p className="text-body text-[var(--color-text-secondary)]">
+        <p className="text-body text-[var(--color-text-secondary)] mb-3">
+          Browse every edition of the Luxury Intelligence weekly digest. Each issue analyses hundreds of articles across AI strategy, ecommerce innovation, jewellery industry news, and luxury brand trends — curated and summarised for senior professionals.
+        </p>
+        <p className="text-meta text-[var(--color-text-secondary)]">
           {weekLabels.length} issue{weekLabels.length !== 1 ? 's' : ''} across {totalMonths} month{totalMonths !== 1 ? 's' : ''} — and counting
         </p>
         <hr className="border-[var(--color-accent)] border-t-2 mt-6" />
@@ -139,11 +157,18 @@ export default async function ArchivePage() {
 
       {issues.length > 0 ? (
         <div>
-          {monthGroups.map(([month, monthIssues]) => {
+          {yearGroups.map(([year, yearMonths], yearIdx) => (
+            <section key={year} className={yearIdx > 0 ? 'mt-16' : ''}>
+              {/* Year heading */}
+              <h2 className="font-mono text-[13px] tracking-[0.3em] uppercase text-[var(--color-text-primary)] bg-[var(--color-surface)] border border-[var(--color-border)] inline-block px-3 py-1 mb-8">
+                {year}
+              </h2>
+
+              {yearMonths.map(([month, monthIssues]) => {
             const monthBlock = (
               <div key={month}>
                 {/* Month divider */}
-                <div className="flex items-center gap-4 mt-12 mb-6 first:mt-0">
+                <div className="flex items-center gap-4 mt-10 mb-6 first:mt-0">
                   <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-[var(--color-accent)]">
                     {month}
                   </span>
@@ -214,6 +239,8 @@ export default async function ArchivePage() {
             );
             return monthBlock;
           })}
+            </section>
+          ))}
         </div>
       ) : (
         <div className="bg-[var(--color-accent-light)] border-l-4 border-[var(--color-accent)] p-5 rounded-sm">
