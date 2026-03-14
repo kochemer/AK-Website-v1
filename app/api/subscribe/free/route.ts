@@ -36,7 +36,7 @@ export async function POST(req: Request) {
     // Re-submitting the same email a second time is silently idempotent (no duplicate email).
     if (isNew) {
       sendFreeConfirmationEmail(email).catch(err =>
-        console.error('[api/subscribe/free] confirmation email failed:', err),
+        console.error('[api/subscribe/free] confirmation email failed:', err instanceof Error ? err.message : err),
       );
     }
 
