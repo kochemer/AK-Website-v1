@@ -42,8 +42,8 @@ export async function POST(req: Request) {
         metadata: { email, plan_type: typedPlan },
       },
 
-      success_url: `${siteUrl}/subscribe?success=1&plan=${typedPlan}`,
-      cancel_url:  `${siteUrl}/subscribe?canceled=1`,
+      success_url: `${siteUrl}/subscribe/success?plan=${typedPlan}`,
+      cancel_url:  `${siteUrl}/subscribe/cancel`,
 
       allow_promotion_codes: false,
     });
