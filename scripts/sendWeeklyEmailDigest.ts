@@ -2,6 +2,12 @@
  * Send weekly email digest using Resend
  * Dry-run by default (set EMAIL_SEND_ENABLED=true to actually send)
  * Uses the unified EmailDigest format (data/weeks/{week}/email-digest.json).
+ *
+ * Recipient source priority:
+ *   1. Neon DB (when DATABASE_URL is set) — reads eligible subscribers via
+ *      getEligibleWeeklyDigestRecipients()
+ *   2. data/email/recipients.json — legacy fallback for local dev / CI runs
+ *      where DATABASE_URL is not available
  */
 
 import { promises as fs } from 'fs';
@@ -11,12 +17,15 @@ import { Resend } from 'resend';
 import { loadEnv } from '../lib/env';
 import { getCurrentDigestWeek, validateWeekLabel } from '../lib/utils/getCurrentDigestWeek';
 import { renderEmailDigestHtml, renderEmailDigestPlaintext } from '../lib/digest/renderEmailDigestHtml';
+import { buildUnsubscribeUrl } from '../lib/utils/unsubscribeToken';
+import { getEligibleWeeklyDigestRecipients } from '../lib/db/subscribers';
+import { getSiteUrl } from '../lib/utils/siteUrl';
 import type { EmailDigest } from '../lib/types';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// Load environment variables
+// Load environment variables (.env.local in dev, GitHub env in CI)
 loadEnv();
 
 type Recipient = {
@@ -24,15 +33,29 @@ type Recipient = {
   name?: string;
 };
 
+// ── Recipient loading ──────────────────────────────────────────────────────────
+
 /**
- * Load recipients from data/email/recipients.json
+ * Load eligible recipients from the Neon database.
+ * Returns an array of { email, name? } objects (name is currently unused in schema,
+ * but kept for forward compatibility with the shared Recipient type).
  */
-async function loadRecipients(): Promise<Recipient[]> {
+async function loadRecipientsFromDb(): Promise<Recipient[]> {
+  const rows = await getEligibleWeeklyDigestRecipients();
+  return rows
+    .filter((r): r is typeof r & { email: string } => typeof r.email === 'string' && r.email.length > 0)
+    .map(r => ({ email: r.email }));
+}
+
+/**
+ * Legacy fallback: load recipients from data/email/recipients.json.
+ * This file is written ephemerally by GitHub Actions from EMAIL_RECIPIENTS_JSON secret.
+ */
+async function loadRecipientsFromFile(): Promise<Recipient[]> {
   const recipientsPath = path.join(process.cwd(), 'data', 'email', 'recipients.json');
   try {
     const raw = await fs.readFile(recipientsPath, 'utf-8');
-    // Remove BOM if present
-    const cleaned = raw.replace(/^\uFEFF/, '');
+    const cleaned = raw.replace(/^\uFEFF/, ''); // strip BOM
     const recipients = JSON.parse(cleaned) as Recipient[];
     if (!Array.isArray(recipients)) {
       throw new Error('recipients.json must contain an array');
@@ -40,15 +63,32 @@ async function loadRecipients(): Promise<Recipient[]> {
     return recipients.filter(r => r.email && typeof r.email === 'string');
   } catch (error: any) {
     if (error.code === 'ENOENT') {
-      throw new Error(`Recipients file not found: ${recipientsPath}\nCreate it with: [{"email": "user@example.com", "name": "Optional Name"}]`);
+      throw new Error(
+        `Recipients file not found: ${recipientsPath}\n` +
+        `Either set DATABASE_URL to use DB-driven recipients, or create the file with:\n` +
+        `[{"email": "user@example.com", "name": "Optional Name"}]`,
+      );
     }
-    throw new Error(`Failed to load recipients: ${error.message}`);
+    throw new Error(`Failed to load recipients from file: ${error.message}`);
   }
 }
 
 /**
- * Load email digest from data/weeks/{week}/email-digest.json (unified format).
+ * Load recipients — DB preferred, file fallback when DATABASE_URL is absent.
  */
+async function loadRecipients(): Promise<{ recipients: Recipient[]; source: string }> {
+  if (process.env.DATABASE_URL) {
+    console.log('[Email] Loading recipients from database...');
+    const recipients = await loadRecipientsFromDb();
+    return { recipients, source: 'database' };
+  }
+  console.log('[Email] DATABASE_URL not set — falling back to recipients.json');
+  const recipients = await loadRecipientsFromFile();
+  return { recipients, source: 'file' };
+}
+
+// ── Digest loading ─────────────────────────────────────────────────────────────
+
 async function loadDigest(weekLabel: string): Promise<EmailDigest> {
   const digestPath = path.join(process.cwd(), 'data', 'weeks', weekLabel, 'email-digest.json');
   try {
@@ -56,22 +96,32 @@ async function loadDigest(weekLabel: string): Promise<EmailDigest> {
     return JSON.parse(raw) as EmailDigest;
   } catch (error: any) {
     if (error.code === 'ENOENT') {
-      throw new Error(`Email digest not found: ${digestPath}\nRun the weekly pipeline (including email step) for --week=${weekLabel}`);
+      throw new Error(
+        `Email digest not found: ${digestPath}\n` +
+        `Run the weekly pipeline (including email step) for --week=${weekLabel}`,
+      );
     }
     throw new Error(`Failed to load email digest: ${error.message}`);
   }
 }
 
+// ── Sending ────────────────────────────────────────────────────────────────────
+
+const UNSUBSCRIBE_PLACEHOLDER = '%%UNSUBSCRIBE_URL%%';
+
 /**
- * Send emails in batches
+ * Send emails in batches of 50.
+ * The `htmlTemplate` and `textTemplate` may contain the %%UNSUBSCRIBE_URL%% placeholder
+ * which is replaced with a per-recipient HMAC-signed URL before sending.
  */
 async function sendEmails(
   recipients: Recipient[],
   subject: string,
-  html: string,
-  text: string,
+  htmlTemplate: string,
+  textTemplate: string,
   fromEmail: string,
-  resend: Resend
+  resend: Resend,
+  siteUrl: string,
 ): Promise<{ success: number; failures: Array<{ email: string; error: string }> }> {
   const BATCH_SIZE = 50;
   let success = 0;
@@ -79,49 +129,51 @@ async function sendEmails(
 
   for (let i = 0; i < recipients.length; i += BATCH_SIZE) {
     const batch = recipients.slice(i, i + BATCH_SIZE);
-    console.log(`[Email] Sending batch ${Math.floor(i / BATCH_SIZE) + 1}/${Math.ceil(recipients.length / BATCH_SIZE)} (${batch.length} recipients)...`);
+    const batchNum = Math.floor(i / BATCH_SIZE) + 1;
+    const totalBatches = Math.ceil(recipients.length / BATCH_SIZE);
+    console.log(`[Email] Sending batch ${batchNum}/${totalBatches} (${batch.length} recipients)...`);
 
     const promises = batch.map(async (recipient) => {
+      // Substitute per-recipient unsubscribe URL
+      const unsubUrl = buildUnsubscribeUrl(recipient.email, siteUrl);
+      const html = htmlTemplate.replaceAll(UNSUBSCRIBE_PLACEHOLDER, unsubUrl);
+      const text = textTemplate.replaceAll(UNSUBSCRIBE_PLACEHOLDER, unsubUrl);
+
       try {
         const response = await resend.emails.send({
           from: fromEmail,
-          to: recipient.email,
+          to:   recipient.email,
           subject,
           html,
           text,
         });
-        
-        // Log response for debugging
+
         if (response.data) {
-          console.log(`[Email] Sent to ${recipient.email}, ID: ${response.data.id || 'unknown'}`);
+          console.log(`[Email] ✓ ${recipient.email} — id: ${response.data.id ?? 'unknown'}`);
+          return { success: true, email: recipient.email };
         } else if (response.error) {
-          const errorMsg = response.error.message || JSON.stringify(response.error);
-          console.error(`[Email] Resend API error for ${recipient.email}: ${errorMsg}`);
-          return { success: false, email: recipient.email, error: errorMsg };
+          const msg = response.error.message || JSON.stringify(response.error);
+          console.error(`[Email] ✗ ${recipient.email} — ${msg}`);
+          return { success: false, email: recipient.email, error: msg };
         }
-        
-        return { success: true, email: recipient.email, emailId: response.data?.id };
-      } catch (error: any) {
-        const errorMsg = error.message || error.toString();
-        console.error(`[Email] Exception sending to ${recipient.email}: ${errorMsg}`);
-        if (error.response?.data) {
-          console.error(`[Email] Resend API response: ${JSON.stringify(error.response.data)}`);
-        }
-        return { success: false, email: recipient.email, error: errorMsg };
+        return { success: true, email: recipient.email };
+      } catch (err: any) {
+        const msg = err.message || String(err);
+        console.error(`[Email] ✗ ${recipient.email} — ${msg}`);
+        return { success: false, email: recipient.email, error: msg };
       }
     });
 
     const results = await Promise.all(promises);
-    for (const result of results) {
-      if (result.success) {
+    for (const r of results) {
+      if (r.success) {
         success++;
       } else {
-        failures.push({ email: result.email, error: result.error || 'Unknown error' });
-        console.error(`[Email] Failed to send to ${result.email}: ${result.error || 'Unknown error'}`);
+        failures.push({ email: r.email, error: (r as any).error ?? 'unknown' });
       }
     }
 
-    // Small delay between batches to avoid rate limits
+    // Small delay between batches to stay within Resend rate limits
     if (i + BATCH_SIZE < recipients.length) {
       await new Promise(resolve => setTimeout(resolve, 1000));
     }
@@ -130,144 +182,113 @@ async function sendEmails(
   return { success, failures };
 }
 
-/**
- * Save sent summary
- */
+// ── Sent summary ───────────────────────────────────────────────────────────────
+
 async function saveSentSummary(
   weekLabel: string,
   timestamp: string,
   recipientCount: number,
   successCount: number,
-  failures: Array<{ email: string; error: string }>
+  failures: Array<{ email: string; error: string }>,
 ): Promise<void> {
   const sentDir = path.join(process.cwd(), 'data', 'email', 'sent');
   await fs.mkdir(sentDir, { recursive: true });
-
-  const summary = {
-    weekLabel,
-    timestamp,
-    recipientCount,
-    successCount,
-    failureCount: failures.length,
-    failures,
-  };
-
+  const summary = { weekLabel, timestamp, recipientCount, successCount, failureCount: failures.length, failures };
   const summaryPath = path.join(sentDir, `${weekLabel}.json`);
   await fs.writeFile(summaryPath, JSON.stringify(summary, null, 2), 'utf-8');
-  console.log(`[Email] Sent summary saved to: ${summaryPath}`);
+  console.log(`[Email] Sent summary saved: ${summaryPath}`);
 }
 
+// ── Entry point ────────────────────────────────────────────────────────────────
+
 async function main() {
-  // Parse week argument
   const args = process.argv.slice(2);
   let weekLabel: string | null = null;
-
   for (const arg of args) {
-    if (arg.startsWith('--week=')) {
-      weekLabel = arg.split('=')[1];
-      break;
-    }
+    if (arg.startsWith('--week=')) { weekLabel = arg.split('=')[1]; break; }
   }
-
-  if (!weekLabel) {
-    weekLabel = getCurrentDigestWeek();
-  }
+  if (!weekLabel) weekLabel = getCurrentDigestWeek();
   validateWeekLabel(weekLabel);
 
   console.log(`[Email] Preparing weekly digest email for ${weekLabel}...`);
 
-  // Load digest and recipients
   const digest = await loadDigest(weekLabel);
-  const recipients = await loadRecipients();
+
+  // Load recipients (DB preferred, file fallback)
+  const { recipients, source } = await loadRecipients();
+  console.log(`[Email] Recipients: ${recipients.length} (source: ${source})`);
 
   if (recipients.length === 0) {
-    console.error('[Email] No recipients found in recipients.json');
+    console.error('[Email] No eligible recipients found. Exiting.');
     process.exit(1);
   }
 
-  // Render email (unified digest format: single ranked list)
   const subject = `Luxury Intelligence — Weekly Digest ${weekLabel}`;
-  const html = renderEmailDigestHtml(digest, { mode: 'email' });
-  const text = renderEmailDigestPlaintext(digest);
 
-  // Check if sending is enabled
+  // Render once using the placeholder; substitution happens per-recipient in sendEmails
+  const htmlTemplate = renderEmailDigestHtml(digest, {
+    mode: 'email',
+    unsubscribeUrl: UNSUBSCRIBE_PLACEHOLDER,
+  });
+  const textTemplate = renderEmailDigestPlaintext(digest, UNSUBSCRIBE_PLACEHOLDER);
+
+  // Dry-run check
   const sendEnabled = process.env.EMAIL_SEND_ENABLED === 'true';
-
   if (!sendEnabled) {
-    // Dry run mode
     console.log('\n=== DRY RUN MODE ===');
-    console.log(`Recipients: ${recipients.length}`);
-    console.log(`Subject: ${subject}`);
-    console.log(`HTML preview (first 300 chars):`);
-    console.log(html.substring(0, 300) + '...');
-    console.log('\nTo actually send emails, set: EMAIL_SEND_ENABLED=true');
-    console.log('Also required: RESEND_API_KEY and EMAIL_FROM');
+    console.log(`Recipients : ${recipients.length} (source: ${source})`);
+    console.log(`Subject    : ${subject}`);
+    console.log(`HTML (first 300 chars):\n${htmlTemplate.substring(0, 300)}...`);
+    console.log('\nTo send, set: EMAIL_SEND_ENABLED=true');
+    console.log('Also required: RESEND_API_KEY, EMAIL_FROM, UNSUBSCRIBE_SECRET');
     process.exit(0);
   }
 
-  // Sending enabled - check required env vars
+  // Validate required env vars
   const resendApiKey = process.env.RESEND_API_KEY;
-  let fromEmail = process.env.EMAIL_FROM;
-
   if (!resendApiKey) {
-    console.error('[Email] ❌ RESEND_API_KEY is required when EMAIL_SEND_ENABLED=true');
+    console.error('[Email] ❌ RESEND_API_KEY required when EMAIL_SEND_ENABLED=true');
     process.exit(1);
   }
-
+  let fromEmail = process.env.EMAIL_FROM;
   if (!fromEmail) {
-    console.error('[Email] ❌ EMAIL_FROM is required when EMAIL_SEND_ENABLED=true');
-    console.error('[Email] Example: EMAIL_FROM="Luxury Intelligence <hello@digest.luxury-intel.com>"');
+    console.error('[Email] ❌ EMAIL_FROM required when EMAIL_SEND_ENABLED=true');
     process.exit(1);
   }
-
-  // Strip quotes if present (common when copied from .env files)
   fromEmail = fromEmail.trim().replace(/^["']|["']$/g, '');
-
-  // Validate format: should be either "email@domain.com" or "Name <email@domain.com>"
   const emailPattern = /^(.+?)\s*<([^>]+@[^>]+)>$|^([^\s<]+@[^\s>]+)$/;
   if (!emailPattern.test(fromEmail)) {
-    console.error('[Email] ❌ Invalid EMAIL_FROM format');
-    console.error('[Email] Expected: "email@domain.com" or "Name <email@domain.com>"');
-    console.error('[Email] Got:', JSON.stringify(fromEmail));
+    console.error('[Email] ❌ Invalid EMAIL_FROM format — expected "email@domain" or "Name <email@domain>"');
     process.exit(1);
   }
 
-  // Extract domain from EMAIL_FROM for verification warning
-  let fromDomain: string | null = null;
-  const angleBracketMatch = fromEmail.match(/<([^>]+@[^>]+)>/);
-  const directEmailMatch = fromEmail.match(/([^\s<]+@[^\s>]+)/);
-  const emailAddress = angleBracketMatch ? angleBracketMatch[1] : (directEmailMatch ? directEmailMatch[1] : null);
-  if (emailAddress) {
-    fromDomain = emailAddress.split('@')[1];
-  }
-  if (fromDomain) {
-    console.log(`[Email] Sender domain: ${fromDomain}`);
-    console.log(`[Email] ⚠️  Ensure this domain is verified in your Resend dashboard`);
+  // Warn if UNSUBSCRIBE_SECRET is missing (unsubscribe links won't work)
+  if (!process.env.UNSUBSCRIBE_SECRET) {
+    console.warn('[Email] ⚠️  UNSUBSCRIBE_SECRET is not set — unsubscribe links will be broken');
   }
 
-  // Send emails
+  const siteUrl = getSiteUrl();
   console.log(`[Email] Sending to ${recipients.length} recipients...`);
   console.log(`[Email] From: ${fromEmail}`);
   console.log(`[Email] Subject: ${subject}`);
+
   const resend = new Resend(resendApiKey);
   const timestamp = new Date().toISOString();
+  const { success, failures } = await sendEmails(
+    recipients, subject, htmlTemplate, textTemplate, fromEmail, resend, siteUrl,
+  );
 
-  const { success, failures } = await sendEmails(recipients, subject, html, text, fromEmail, resend);
-
-  console.log(`[Email] ✓ Sent successfully: ${success}/${recipients.length}`);
+  console.log(`[Email] ✓ Sent: ${success}/${recipients.length}`);
   if (failures.length > 0) {
     console.error(`[Email] ✗ Failed: ${failures.length}/${recipients.length}`);
   }
 
-  // Save summary
   await saveSentSummary(weekLabel, timestamp, recipients.length, success, failures);
 
   if (failures.length > 0) {
-    console.error(`[Email] Some emails failed. Check ${path.join('data', 'email', 'sent', `${weekLabel}.json`)} for details.`);
     process.exit(1);
   }
-
-  console.log(`[Email] ✓ All emails sent successfully`);
+  console.log('[Email] ✓ All emails sent successfully');
   process.exit(0);
 }
 

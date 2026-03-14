@@ -7,7 +7,7 @@
  * without an email (e.g. Stripe webhook creates before sign-up) are allowed.
  */
 
-import { eq, and, isNotNull } from 'drizzle-orm';
+import { eq, and, or, inArray, isNotNull } from 'drizzle-orm';
 import { getDb } from './index';
 import { subscribers } from './schema';
 import type { Subscriber, NewSubscriber } from './schema';
@@ -51,6 +51,35 @@ export async function getWeeklyDigestRecipients(): Promise<Subscriber[]> {
       and(
         eq(subscribers.emailDigestEnabled, true),
         isNotNull(subscribers.email),
+      ),
+    );
+}
+
+/**
+ * Returns subscribers eligible to receive the weekly digest email.
+ *
+ * Eligibility rules:
+ *   - email IS NOT NULL
+ *   - email_digest_enabled = true
+ *   - AND one of:
+ *       plan_type = 'free'
+ *       OR (plan_type IN ('supporter_monthly', 'patron_monthly') AND payment_status = 'active')
+ */
+export async function getEligibleWeeklyDigestRecipients(): Promise<Subscriber[]> {
+  return getDb()
+    .select()
+    .from(subscribers)
+    .where(
+      and(
+        isNotNull(subscribers.email),
+        eq(subscribers.emailDigestEnabled, true),
+        or(
+          eq(subscribers.planType, 'free'),
+          and(
+            inArray(subscribers.planType, ['supporter_monthly', 'patron_monthly']),
+            eq(subscribers.paymentStatus, 'active'),
+          ),
+        ),
       ),
     );
 }

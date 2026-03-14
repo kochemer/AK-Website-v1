@@ -75,7 +75,15 @@ export function escapeHtml(text: string): string {
     .replace(/'/g, '&#039;');
 }
 
-export type RenderEmailDigestOptions = { mode: 'email' };
+export type RenderEmailDigestOptions = {
+  mode: 'email';
+  /**
+   * Per-recipient unsubscribe URL.
+   * Pass the literal string `'%%UNSUBSCRIBE_URL%%'` to embed a placeholder
+   * that the send script replaces with the real URL for each recipient.
+   */
+  unsubscribeUrl?: string;
+};
 
 // Brand palette — hardcoded for email client compatibility (no CSS variables)
 const C = {
@@ -99,7 +107,7 @@ const SANS   = "'Helvetica Neue', Arial, Helvetica, sans-serif";
  * Render EmailDigest as HTML. For mode 'email', uses inline styles for email clients.
  * Layout: table-based for maximum email client compatibility.
  */
-export function renderEmailDigestHtml(digest: EmailDigest, _opts: RenderEmailDigestOptions): string {
+export function renderEmailDigestHtml(digest: EmailDigest, opts: RenderEmailDigestOptions): string {
   const week = digest.week;
   const issueLine = escapeHtml(formatIssueLine(week));
 
@@ -281,7 +289,10 @@ export function renderEmailDigestHtml(digest: EmailDigest, _opts: RenderEmailDig
             <td class="footer-pad" style="background-color: ${C.navy}; padding: 28px 40px; text-align: center;">
               <p style="margin: 0 0 4px 0; font-family: ${SERIF}; font-size: 13px; color: ${C.navyText}; letter-spacing: 0.05em;">Luxury Intelligence</p>
               <p style="margin: 0 0 16px 0; font-family: ${SANS}; font-size: 9px; color: ${C.navyFaint}; letter-spacing: 0.2em; text-transform: uppercase;">${escapeHtml(week)}</p>
-              <p style="margin: 0; font-family: ${SANS}; font-size: 10px; color: ${C.navyFaint}; line-height: 1.7;">You&rsquo;re receiving this because you subscribed to the weekly digest.<br>To unsubscribe, reply with &ldquo;unsubscribe&rdquo; in the subject line.</p>
+              <p style="margin: 0 0 10px 0; font-family: ${SANS}; font-size: 10px; color: ${C.navyFaint}; line-height: 1.7;">You&rsquo;re receiving this because you subscribed to the weekly digest.</p>
+              ${opts.unsubscribeUrl
+                ? `<p style="margin: 0; font-family: ${SANS}; font-size: 9px; color: ${C.navyFaint};"><a href="${escapeHtml(opts.unsubscribeUrl)}" style="color: ${C.navyFaint}; text-decoration: underline;">Unsubscribe</a></p>`
+                : `<p style="margin: 0; font-family: ${SANS}; font-size: 9px; color: ${C.navyFaint};">To unsubscribe, reply with &ldquo;unsubscribe&rdquo; in the subject.</p>`}
             </td>
           </tr>
 
@@ -295,8 +306,10 @@ export function renderEmailDigestHtml(digest: EmailDigest, _opts: RenderEmailDig
 
 /**
  * Render EmailDigest as plain text for the email text/plain part.
+ * Pass `unsubscribeUrl` to embed the unsubscribe link.
+ * Pass `'%%UNSUBSCRIBE_URL%%'` as a placeholder to substitute per-recipient.
  */
-export function renderEmailDigestPlaintext(digest: EmailDigest): string {
+export function renderEmailDigestPlaintext(digest: EmailDigest, unsubscribeUrl?: string): string {
   const issueLine = formatIssueLine(digest.week);
   let text = `LUXURY INTELLIGENCE\n`;
   text += `${issueLine}\n`;
@@ -328,6 +341,10 @@ export function renderEmailDigestPlaintext(digest: EmailDigest): string {
   text += `${'─'.repeat(50)}\n`;
   text += `Luxury Intelligence — ${digest.week}\n`;
   text += `You're receiving this because you subscribed to the weekly digest.\n`;
-  text += `To unsubscribe, reply with "unsubscribe" in the subject line.\n`;
+  if (unsubscribeUrl) {
+    text += `To unsubscribe: ${unsubscribeUrl}\n`;
+  } else {
+    text += `To unsubscribe, reply with "unsubscribe" in the subject line.\n`;
+  }
   return text;
 }

@@ -71,7 +71,9 @@ jobs:
           NODE_ENV: production
         run: npm run digest:weekly
 
-      - name: Prepare email recipients file
+      # Legacy fallback: write recipients.json from secret for runs where DATABASE_URL is absent.
+      # When DATABASE_URL is set, the send script uses the DB instead and ignores this file.
+      - name: Prepare email recipients file (legacy fallback)
         run: |
           mkdir -p data/email
           echo '${{ secrets.EMAIL_RECIPIENTS_JSON }}' > data/email/recipients.json
@@ -81,6 +83,10 @@ jobs:
           EMAIL_SEND_ENABLED: ${{ vars.EMAIL_SEND_ENABLED }}
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
           EMAIL_FROM: ${{ secrets.EMAIL_FROM }}
+          # DB-driven recipients (preferred over recipients.json when set)
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          UNSUBSCRIBE_SECRET: ${{ secrets.UNSUBSCRIBE_SECRET }}
+          NEXT_PUBLIC_SITE_URL: ${{ secrets.NEXT_PUBLIC_SITE_URL }}
         run: npm run email:weekly
 
       - name: Check for changes
