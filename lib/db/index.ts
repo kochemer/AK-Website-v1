@@ -1,15 +1,22 @@
 import { neon } from '@neondatabase/serverless';
 import { drizzle } from 'drizzle-orm/neon-http';
+import type { NeonHttpDatabase } from 'drizzle-orm/neon-http';
 import * as schema from './schema';
 
-/**
- * Singleton Drizzle client over Neon's HTTP transport.
- * HTTP (not WebSocket) is correct for serverless/edge — no persistent connection needed.
- *
- * Requires env var:  DATABASE_URL
- * Add to .env.local: DATABASE_URL=postgresql://...
- * Vercel sets this automatically when you attach a Neon / Vercel Postgres database.
- */
-const sql = neon(process.env.DATABASE_URL!);
+type Db = NeonHttpDatabase<typeof schema>;
 
-export const db = drizzle(sql, { schema });
+let _db: Db | undefined;
+
+/**
+ * Returns the shared Drizzle/Neon instance, created lazily on first call.
+ * Lazy init prevents the build from crashing when DATABASE_URL is not set
+ * at compile time — the error surfaces at request time instead, which is correct.
+ */
+export function getDb(): Db {
+  if (!_db) {
+    const url = process.env.DATABASE_URL;
+    if (!url) throw new Error('[db] DATABASE_URL environment variable is not set');
+    _db = drizzle(neon(url), { schema });
+  }
+  return _db;
+}

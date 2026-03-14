@@ -8,7 +8,7 @@
  */
 
 import { eq, and, isNotNull } from 'drizzle-orm';
-import { db } from './index';
+import { getDb } from './index';
 import { subscribers } from './schema';
 import type { Subscriber, NewSubscriber } from './schema';
 
@@ -23,7 +23,7 @@ function now() {
 export async function getSubscriberByEmail(
   email: string,
 ): Promise<Subscriber | null> {
-  const rows = await db
+  const rows = await getDb()
     .select()
     .from(subscribers)
     .where(eq(subscribers.email, email.toLowerCase().trim()))
@@ -34,7 +34,7 @@ export async function getSubscriberByEmail(
 export async function getSubscriberByStripeCustomerId(
   stripeCustomerId: string,
 ): Promise<Subscriber | null> {
-  const rows = await db
+  const rows = await getDb()
     .select()
     .from(subscribers)
     .where(eq(subscribers.stripeCustomerId, stripeCustomerId))
@@ -44,7 +44,7 @@ export async function getSubscriberByStripeCustomerId(
 
 /** Returns all subscribers who have opted in to the weekly email digest. */
 export async function getWeeklyDigestRecipients(): Promise<Subscriber[]> {
-  return db
+  return getDb()
     .select()
     .from(subscribers)
     .where(
@@ -62,7 +62,7 @@ export async function createSubscriber(
   data: Omit<NewSubscriber, 'id' | 'createdAt' | 'updatedAt'>,
 ): Promise<Subscriber> {
   const email = data.email ? data.email.toLowerCase().trim() : data.email;
-  const rows = await db
+  const rows = await getDb()
     .insert(subscribers)
     .values({ ...data, email, createdAt: now(), updatedAt: now() })
     .returning();
@@ -78,7 +78,7 @@ export async function upsertSubscriberByEmail(
   data: Partial<Omit<NewSubscriber, 'id' | 'email' | 'createdAt' | 'updatedAt'>>,
 ): Promise<Subscriber> {
   const normalised = email.toLowerCase().trim();
-  const rows = await db
+  const rows = await getDb()
     .insert(subscribers)
     .values({ email: normalised, ...data, createdAt: now(), updatedAt: now() })
     .onConflictDoUpdate({
@@ -94,7 +94,7 @@ export async function updateSubscriberPlan(
   planType: Subscriber['planType'],
   paymentStatus?: Subscriber['paymentStatus'],
 ): Promise<Subscriber | null> {
-  const rows = await db
+  const rows = await getDb()
     .update(subscribers)
     .set({ planType, paymentStatus: paymentStatus ?? null, updatedAt: now() })
     .where(eq(subscribers.email, email.toLowerCase().trim()))
@@ -108,7 +108,7 @@ export async function updateSubscriberStripeInfo(
   stripeSubscriptionId: string,
   paymentStatus: Subscriber['paymentStatus'],
 ): Promise<Subscriber | null> {
-  const rows = await db
+  const rows = await getDb()
     .update(subscribers)
     .set({ stripeCustomerId, stripeSubscriptionId, paymentStatus, updatedAt: now() })
     .where(eq(subscribers.email, email.toLowerCase().trim()))
@@ -120,7 +120,7 @@ export async function setEmailDigestEnabled(
   email: string,
   enabled: boolean,
 ): Promise<Subscriber | null> {
-  const rows = await db
+  const rows = await getDb()
     .update(subscribers)
     .set({ emailDigestEnabled: enabled, updatedAt: now() })
     .where(eq(subscribers.email, email.toLowerCase().trim()))
@@ -138,7 +138,7 @@ export async function updateSubscriberByStripeCustomerId(
   stripeCustomerId: string,
   data: Partial<Omit<NewSubscriber, 'id' | 'createdAt' | 'updatedAt'>>,
 ): Promise<Subscriber | null> {
-  const rows = await db
+  const rows = await getDb()
     .update(subscribers)
     .set({ ...data, updatedAt: now() })
     .where(eq(subscribers.stripeCustomerId, stripeCustomerId))
