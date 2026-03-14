@@ -74,10 +74,6 @@ const FAQS = [
 // ── Page ──────────────────────────────────────────────────────────────────────
 
 export default function SubscribePage() {
-  const formAction =
-    process.env.NEXT_PUBLIC_FEEDBACK_FORM_ACTION?.trim() ||
-    'https://formspree.io/f/xwvpbnbz';
-
   const currentCover = getCurrentCover();
 
   return (
@@ -138,7 +134,7 @@ export default function SubscribePage() {
           <h2 className="font-serif text-2xl font-semibold text-[var(--color-text-primary)]">
             Choose your edition
           </h2>
-          <SubscribePricing formAction={formAction} />
+          <SubscribePricing />
         </div>
 
         {/* What your support does */}
