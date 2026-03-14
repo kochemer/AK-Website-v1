@@ -2,9 +2,6 @@ import Link from 'next/link';
 import SubscribePricing from '../../components/SubscribePricing';
 
 export default function SubscribePageES() {
-  const formAction =
-    process.env.NEXT_PUBLIC_FEEDBACK_FORM_ACTION?.trim() ||
-    'https://formspree.io/f/xwvpbnbz';
 
   return (
     <main className="w-full bg-[var(--color-bg)] min-h-screen">
@@ -45,7 +42,7 @@ export default function SubscribePageES() {
 
       <section className="max-w-5xl mx-auto px-4 sm:px-6 py-16 md:py-20 space-y-12 border-t border-gray-200">
         {/* Pricing + email capture */}
-        <SubscribePricing formAction={formAction} />
+        <SubscribePricing />
 
         {/* What's included */}
         <section aria-labelledby="whats-included-heading">
