@@ -7,6 +7,9 @@ export default function MastheadLockup({
 }: {
   variant?: 'hero' | 'footer';
 }) {
+  // Use h1 only on hero (homepage). Footer appears on every page — a second h1
+  // there would break the one-h1-per-page rule, so render a span instead.
+  const Tag = variant === 'hero' ? 'h1' : 'span';
   const isHero = variant === 'hero';
   const lineColor = isHero ? 'bg-white/30' : 'bg-[var(--color-accent)]/30';
   const diamondColor = isHero ? 'text-white/50' : 'text-[var(--color-accent)]/60';
@@ -28,12 +31,12 @@ export default function MastheadLockup({
       </div>
 
       {/* Masthead text */}
-      <h1
+      <Tag
         className={`font-serif ${textSize} ${tracking} ${textColor} uppercase font-bold`}
         style={glow}
       >
         Luxury Intelligence
-      </h1>
+      </Tag>
 
       {/* Bottom rule: shorter, centred */}
       <div className={`flex items-center ${bottomRuleWidth} mt-3`}>

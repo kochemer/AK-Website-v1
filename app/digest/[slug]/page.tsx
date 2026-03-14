@@ -340,20 +340,22 @@ export default async function DigestPage({
             <div className="relative z-10 h-full flex items-start justify-center px-4 sm:px-6 md:px-8 pt-16 sm:pt-20 md:pt-24 lg:pt-28">
               <div className="w-full max-w-[1400px] lg:max-w-[1600px] 2xl:max-w-[1800px] mx-auto text-center">
                 <div className="bg-black/20 backdrop-blur-sm rounded-xl md:rounded-2xl px-5 py-7 sm:px-6 sm:py-8 md:px-10 md:py-12 inline-block max-w-full mx-2 sm:mx-4 animate-fade-up">
-                  <h1 className="font-bold mb-3 sm:mb-4 md:mb-5 text-hero-h1 text-white px-1" style={{ textShadow: '0 2px 8px rgba(0,0,0,0.5)' }}>
+                  {/* Brand name — decorative, not the page h1 */}
+                  <p className="font-bold mb-3 sm:mb-4 md:mb-5 text-hero-h1 text-white px-1" style={{ textShadow: '0 2px 8px rgba(0,0,0,0.5)' }}>
                     Luxury Intelligence
-                  </h1>
+                  </p>
                   <div className="text-body text-gray-100 max-w-5xl mx-auto mb-2 sm:mb-2.5 md:mb-3 px-2" style={{ textShadow: '0 1px 4px rgba(0,0,0,0.3)' }}>
                     Weekly intelligence across AI, ecommerce, luxury, and jewellery.
                   </div>
                   <p className="text-body text-gray-200 mb-4 sm:mb-5 md:mb-6 px-2 sm:px-3" style={{ textShadow: '0 1px 3px rgba(0,0,0,0.3)' }}>
                     Curated articles, signals, and context — handpicked and summarised by AI agents each week.
                   </p>
+                  {/* Issue h1 — the unique, page-specific heading */}
                   {digest.weekLabel && (
                     <div className="mt-4 sm:mt-6 md:mt-8">
-                      <h2 className="text-section font-bold text-white drop-shadow-lg px-2" style={{ textShadow: '0 2px 8px rgba(0,0,0,0.5)' }}>
-                        {dateRange}
-                      </h2>
+                      <h1 className="text-section font-bold text-white drop-shadow-lg px-2" style={{ textShadow: '0 2px 8px rgba(0,0,0,0.5)' }}>
+                        {dateRange} Intelligence Digest
+                      </h1>
                     </div>
                   )}
                 </div>
