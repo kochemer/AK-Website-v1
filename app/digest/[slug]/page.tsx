@@ -2,7 +2,7 @@ import { Suspense } from 'react';
 import { promises as fs } from 'fs';
 import path from 'path';
 import Link from 'next/link';
-import { notFound } from 'next/navigation';
+import { notFound, permanentRedirect } from 'next/navigation';
 import type { Metadata } from 'next';
 import DigestClientView from '../../components/DigestClientView';
 import CategoryCardGrid from '../../components/CategoryCardGrid';
@@ -141,6 +141,13 @@ export default async function DigestPage({
   const weekLabel = slugToWeekLabel(slug);
 
   if (!weekLabel) notFound();
+
+  // Canonical redirect: if the slug doesn't match the current canonical form
+  // (e.g. old "december-2026-week-1" → new "january-2026-week-1"), 308 to fix it.
+  const canonicalSlug = weekLabelToSlug(weekLabel);
+  if (slug !== canonicalSlug) {
+    permanentRedirect(`/digest/${canonicalSlug}`);
+  }
 
   const digest = await loadDigest(weekLabel);
   const { previousWeek, nextWeek } = await getWeekNavigation(weekLabel);
