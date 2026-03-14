@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server';
-import { upsertSubscriberByEmail } from '@/lib/db/subscribers';
+import { upsertSubscriberByEmail, getSubscriberByEmail } from '@/lib/db/subscribers';
+import { sendFreeConfirmationEmail } from '@/lib/email/transactional';
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -10,7 +11,6 @@ export async function POST(req: Request) {
       typeof body.email === 'string' ? body.email.trim().toLowerCase() : '';
 
     // No email supplied → acknowledge without touching the DB.
-    // The digest remains publicly accessible at the site; no record is needed.
     if (!email) {
       return NextResponse.json({ ok: true, withDigest: false });
     }
@@ -22,10 +22,23 @@ export async function POST(req: Request) {
       );
     }
 
+    // Check current state before upserting so we can determine whether this is
+    // a genuinely new free signup (and therefore needs a confirmation email).
+    const before = await getSubscriberByEmail(email);
+    const isNew  = !before || before.planType !== 'free';
+
     await upsertSubscriberByEmail(email, {
-      planType: 'free',
+      planType:           'free',
       emailDigestEnabled: true,
     });
+
+    // Send confirmation only on first-time free signup.
+    // Re-submitting the same email a second time is silently idempotent (no duplicate email).
+    if (isNew) {
+      sendFreeConfirmationEmail(email).catch(err =>
+        console.error('[api/subscribe/free] confirmation email failed:', err),
+      );
+    }
 
     return NextResponse.json({ ok: true, withDigest: true });
   } catch (err) {

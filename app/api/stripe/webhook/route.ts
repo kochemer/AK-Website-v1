@@ -12,9 +12,11 @@ import type Stripe from 'stripe';
 import { getStripe, planFromPriceId, digestEnabledForStatus } from '@/lib/stripe';
 import {
   upsertSubscriberByEmail,
+  getSubscriberByEmail,
   getSubscriberByStripeCustomerId,
   updateSubscriberByStripeCustomerId,
 } from '@/lib/db/subscribers';
+import { sendPaidConfirmationEmail } from '@/lib/email/transactional';
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
 
@@ -90,6 +92,15 @@ export async function POST(req: Request) {
           break;
         }
 
+        // Check state before upserting to decide whether this is a fresh activation.
+        // If Stripe retries this event and the row is already active on the same plan,
+        // we skip the confirmation email to prevent duplicates.
+        const beforePaid = await getSubscriberByEmail(email);
+        const isNewActivation =
+          !beforePaid ||
+          beforePaid.planType !== planType ||
+          beforePaid.paymentStatus !== 'active';
+
         await upsertSubscriberByEmail(email, {
           planType,
           paymentStatus:        'active',
@@ -99,6 +110,12 @@ export async function POST(req: Request) {
         });
 
         console.log(`[webhook] checkout.session.completed: subscribed email=${email} plan=${planType}`);
+
+        if (isNewActivation) {
+          sendPaidConfirmationEmail(email, planType).catch(err =>
+            console.error('[webhook] paid confirmation email failed:', err),
+          );
+        }
         break;
       }
 
