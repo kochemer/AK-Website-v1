@@ -48,12 +48,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Weekly AI, Ecommerce & Luxury Industry Digest | Luxury Intelligence',
     description: 'A weekly curated digest covering AI & strategy, ecommerce and retail technology, luxury and jewellery industry news. Updated every week.',
-    images: [`${siteUrl}/og-default.svg`],
+    images: [`${siteUrl}/api/og`],
   },
   twitter: {
     title: 'Weekly AI, Ecommerce & Luxury Industry Digest | Luxury Intelligence',
     description: 'A weekly curated digest covering AI & strategy, ecommerce and retail technology, luxury and jewellery industry news. Updated every week.',
-    images: [`${siteUrl}/og-default.svg`],
+    images: [`${siteUrl}/api/og`],
   },
 };
 

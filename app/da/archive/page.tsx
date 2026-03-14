@@ -17,12 +17,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Arkiv – Ugentlige AI og Luksus Brancheoversigter',
     description: 'Gennemse det komplette arkiv af ugentlige AI, ecommerce, luksus og smykkebrancheoversigter. Få adgang til alle tidligere kurerede intelligensoversigter og ugentlige resuméer.',
-    images: [`${siteUrl}/og-default.svg`],
+    images: [`${siteUrl}/api/og`],
   },
   twitter: {
     title: 'Arkiv – Ugentlige AI og Luksus Brancheoversigter',
     description: 'Gennemse det komplette arkiv af ugentlige AI, ecommerce, luksus og smykkebrancheoversigter. Få adgang til alle tidligere kurerede intelligensoversigter og ugentlige resuméer.',
-    images: [`${siteUrl}/og-default.svg`],
+    images: [`${siteUrl}/api/og`],
   },
 };
 

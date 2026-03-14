@@ -13,12 +13,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Metodología – Cómo se elabora el resumen',
     description: 'Cómo se recopila, clasifica y resume el resumen semanal de IA, ecommerce, lujo y joyería.',
-    images: [`${siteUrl}/og-default.svg`],
+    images: [`${siteUrl}/api/og`],
   },
   twitter: {
     title: 'Metodología – Cómo se elabora el resumen',
     description: 'Cómo se recopila, clasifica y resume el resumen semanal de IA, ecommerce, lujo y joyería.',
-    images: [`${siteUrl}/og-default.svg`],
+    images: [`${siteUrl}/api/og`],
   },
 };
 

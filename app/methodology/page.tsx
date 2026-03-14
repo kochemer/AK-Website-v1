@@ -13,12 +13,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Methodology – How the brief is curated',
     description: 'How the weekly AI, ecommerce, luxury and jewellery digest is collected, ranked and summarized.',
-    images: [`${getSiteUrlLazy()}/og-default.svg`],
+    images: [`${getSiteUrlLazy()}/api/og`],
   },
   twitter: {
     title: 'Methodology – How the brief is curated',
     description: 'How the weekly AI, ecommerce, luxury and jewellery digest is collected, ranked and summarized.',
-    images: [`${getSiteUrlLazy()}/og-default.svg`],
+    images: [`${getSiteUrlLazy()}/api/og`],
   },
 };
 

@@ -13,12 +13,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Metodologi – Sådan laves resuméet',
     description: 'Sådan indsamles, rangeres og opsummeres den ugentlige AI, ecommerce, luksus og smykkebrancheoversigt.',
-    images: [`${siteUrl}/og-default.svg`],
+    images: [`${siteUrl}/api/og`],
   },
   twitter: {
     title: 'Metodologi – Sådan laves resuméet',
     description: 'Sådan indsamles, rangeres og opsummeres den ugentlige AI, ecommerce, luksus og smykkebrancheoversigt.',
-    images: [`${siteUrl}/og-default.svg`],
+    images: [`${siteUrl}/api/og`],
   },
 };
 
