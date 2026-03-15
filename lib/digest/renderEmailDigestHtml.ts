@@ -5,6 +5,9 @@
 
 import type { EmailDigest, EmailDigestItem } from '../types';
 import { formatIssueLine } from '../utils/formatDate';
+import { weekLabelToSlug } from '../utils/weekSlug';
+
+const CANONICAL_URL = 'https://luxury-intel.com';
 
 const IMPLICATION_PATTERNS = [
   /implication/i,
@@ -110,6 +113,7 @@ const SANS   = "'Helvetica Neue', Arial, Helvetica, sans-serif";
 export function renderEmailDigestHtml(digest: EmailDigest, opts: RenderEmailDigestOptions): string {
   const week = digest.week;
   const issueLine = escapeHtml(formatIssueLine(week));
+  const digestUrl = `${CANONICAL_URL}/digest/${weekLabelToSlug(week)}`;
 
   // Split into tiers
   const leadItem      = digest.items.find(i => i.rank === 1);
@@ -246,7 +250,7 @@ export function renderEmailDigestHtml(digest: EmailDigest, opts: RenderEmailDige
   <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #EDE9E1;">
     <tr>
       <td align="center" style="padding: 32px 16px;">
-        <table width="600" cellpadding="0" cellspacing="0" border="0" style="max-width: 600px; width: 100%;">
+        <table width="780" cellpadding="0" cellspacing="0" border="0" style="max-width: 780px; width: 100%;">
 
           <!-- ===== MASTHEAD ===== -->
           <tr>
@@ -264,8 +268,18 @@ export function renderEmailDigestHtml(digest: EmailDigest, opts: RenderEmailDige
 
           ${articleRows}
 
+          <!-- Read online CTA -->
+          <tr>
+            <td class="outer-pad" style="background-color: ${C.bg}; padding: 28px 32px 8px; text-align: center;">
+              <p style="margin: 0; font-family: ${SANS}; font-size: 13px; color: ${C.textSecond}; line-height: 1.6;">
+                Read the full digest on the website &mdash;
+                <a href="${digestUrl}" style="color: ${C.accent}; text-decoration: underline;">luxury-intel.com</a>
+              </p>
+            </td>
+          </tr>
+
           <!-- Bottom padding -->
-          <tr><td style="background-color: ${C.bg}; height: 40px;"></td></tr>
+          <tr><td style="background-color: ${C.bg}; height: 32px;"></td></tr>
 
           <!-- ===== FOOTER ===== -->
           <tr><td style="height: 2px; background-color: ${C.accent};"></td></tr>
@@ -295,6 +309,7 @@ export function renderEmailDigestHtml(digest: EmailDigest, opts: RenderEmailDige
  */
 export function renderEmailDigestPlaintext(digest: EmailDigest, unsubscribeUrl?: string): string {
   const issueLine = formatIssueLine(digest.week);
+  const digestUrl = `${CANONICAL_URL}/digest/${weekLabelToSlug(digest.week)}`;
   let text = `LUXURY INTELLIGENCE\n`;
   text += `${issueLine}\n`;
   text += `${'─'.repeat(50)}\n\n`;
@@ -316,6 +331,7 @@ export function renderEmailDigestPlaintext(digest: EmailDigest, unsubscribeUrl?:
   }
 
   text += `${'─'.repeat(50)}\n`;
+  text += `Read the full digest online: ${digestUrl}\n\n`;
   text += `Luxury Intelligence — ${digest.week}\n`;
   text += `You're receiving this because you subscribed to the weekly digest.\n`;
   if (unsubscribeUrl) {
