@@ -159,6 +159,8 @@ jobs:
           fi
           COMMIT_DATE=$(date -u +%Y-%m-%d)
           git commit -m "Weekly digest: $COMMIT_DATE"
+          # Pull and rebase in case commits landed on main while the pipeline was running
+          git pull --rebase origin main
           git push
 
       - name: Generate run summary
