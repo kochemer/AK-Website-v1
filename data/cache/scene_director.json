@@ -353,5 +353,24 @@
     "version": "v3",
     "cached_at": "2026-03-13T18:03:59.411Z",
     "variant": "safe"
+  },
+  "d3195388f1fbf9f2ebe2645b37ef529ec13ae15e6d3785519f803c5af21a92c9": {
+    "output": {
+      "concept": "jewelry-storefronts-on-conveyor-belt-literal-metaphor",
+      "primaryHumorDriver": "literal metaphor",
+      "secondaryEnhancer": "unexpected texture/material combination",
+      "sceneDescription": "In a hyper-realistic, brightly-lit jewelry showroom, a wide conveyor belt runs horizontally through the center of the space. Instead of gems or jewelry, the conveyor transports miniature, photorealistic storefront façades—one looks like a classic Boston jewelry shop, another mimics a sleek tech store, another resembles an online checkout counter physically rendered. Each storefront has jewelry displayed in their windows, but also strange objects: a gold-plated computer mouse, a diamond-encrusted chatbot icon, and a necklace made of tiny shopping carts. Tiny, shiny robot hands occasionally pop out from the belt, trying to swipe jewelry from the displays, leaving a trail of sparkling, scattered gemstones behind—hinting at fraud. The showroom is opulent but feels slightly absurd due to the moving mini-stores and odd jewelry. The lighting is natural and crisp, with the conveyor and storefronts as the central horizontal band. No text, signage, or screens, just playful photorealism with polished metals, glass, and velvet textures.",
+      "finalImagePrompt": "Hyper-realistic photography of an opulent jewelry showroom with a wide conveyor belt running horizontally, carrying miniature, highly detailed storefront façades: one classic historic jewelry shop, one modern tech-style shop, and one modeled after a checkout counter, each with jewelry in their windows and quirky objects like a gold-plated computer mouse, diamond-encrusted chatbot icon, and a necklace of tiny shopping carts. Tiny shiny robot hands occasionally emerge from the conveyor, attempting to swipe jewelry, leaving a trail of scattered gemstones. The scene is brightly lit with natural daylight, polished metals, glass, velvet, and unexpected objects. Wide horizontal banner composition (3:1 aspect ratio), all elements in a central horizontal band with safe margins, sharp focus, photorealistic materials and textures. No text, signage, screens, or UI elements. The scene looks like a believable, absurd moment in a real photograph.",
+      "negativePrompt": [
+        "text, letters, numbers, signage, labels",
+        "screens, UI, dashboards, holograms, floating icons",
+        "logos, brands, watermarks",
+        "cartoon, illustration, CGI, 3D render, anime"
+      ],
+      "confidence": 0.7
+    },
+    "version": "v3",
+    "cached_at": "2026-03-15T21:22:21.887Z",
+    "variant": "safe"
   }
 }

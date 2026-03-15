@@ -1,0 +1,956 @@
+{
+  "weekLabel": "2026-W11",
+  "tz": "Europe/Copenhagen",
+  "startISO": "2026-03-08T23:00:00.000Z",
+  "endISO": "2026-03-15T22:59:59.999Z",
+  "builtAtISO": "2026-03-15T22:18:56.602+01:00",
+  "builtAtLocal": "2026-03-15 22:18:56",
+  "totals": {
+    "total": 354,
+    "byTopic": {
+      "AIStrategy": 54,
+      "EcommerceRetail": 256,
+      "LuxuryConsumer": 24,
+      "Jewellery": 17
+    }
+  },
+  "topics": {
+    "AI_and_Strategy": {
+      "total": 54,
+      "top": [
+        {
+          "id": "7lwmn4",
+          "title": "An uncomfortable truce in the AI platform wars",
+          "url": "https://www.ft.com/content/976dc9ef-9131-4d7f-8916-7bb62ddced15",
+          "source": "Financial Times - Technology",
+          "published_at": "2026-03-12T18:13:30.000Z",
+          "ingested_at": "2026-03-15T21:03:21.565Z",
+          "snippet": "Anthropic and Microsoft have struck an alliance on agents but the tussle over the future of the technology will only intensify",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ai",
+              "anthropic",
+              "agent"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Anthropic and Microsoft have formed an alliance on AI agents, yet competition over the future direction of the technology is expected to grow more intense.",
+          "translations": {
+            "da": {
+              "title": "En ubehagelig våbenhvile i AI-platformkrigene",
+              "summary": "AI-genereret resumé: Anthropic og Microsoft har dannet en alliance om AI-agenter, men konkurrencen om teknologiens fremtidige retning forventes at blive mere intens."
+            },
+            "es": {
+              "title": "Una tregua incómoda en las guerras de plataformas de IA",
+              "summary": "Resumen generado por IA: Anthropic y Microsoft han formado una alianza sobre agentes de IA, pero se espera que la competencia por la dirección futura de la tecnología se intensifique."
+            }
+          }
+        },
+        {
+          "id": "aqtkpp",
+          "title": "Anthropic Sues Department of Defense Over ‘Supply Chain Risk’ Label",
+          "url": "https://www.nytimes.com/2026/03/09/technology/anthropic-defense-artificial-intelligence-lawsuit.html",
+          "source": "NYTimes Technology",
+          "published_at": "2026-03-09T22:12:34.000Z",
+          "ingested_at": "2026-03-15T21:03:21.565Z",
+          "snippet": "The artificial intelligence company filed two lawsuits against the Department of Defense, saying it was being punished on ideological grounds.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.175,
+            "recencyScore": 0,
+            "sourceWeight": 0.075,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "anthropic",
+              "artificial intelligence"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Anthropic has filed two lawsuits against the Department of Defense, alleging that it is being unfairly targeted and punished based on ideological reasons related to a ‘Supply Chain Risk’ label.",
+          "translations": {
+            "da": {
+              "title": "Anthropic sagsøger Forsvarsministeriet over 'Supply Chain Risk'-mærkat",
+              "summary": "AI-genereret resumé: Anthropic har indgivet to retssager mod Forsvarsministeriet og hævder, at de uretfærdigt bliver målrettet og straffet af ideologiske årsager relateret til et 'Supply Chain Risk'-mærkat."
+            },
+            "es": {
+              "title": "Anthropic demanda al Departamento de Defensa por la etiqueta de ‘Supply Chain Risk’",
+              "summary": "Resumen generado por IA: Anthropic ha presentado dos demandas contra el Departamento de Defensa, alegando que está siendo injustamente señalado y castigado por razones ideológicas relacionadas con una etiqueta de ‘Supply Chain Risk’."
+            }
+          }
+        },
+        {
+          "id": "dteid0",
+          "title": "Cerebras Systems, Amazon strike deal to offer AI chips on AWS cloud ",
+          "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/cerebras-systems-amazon-strike-deal-to-offer-ai-chips-on-aws-cloud/articleshow/129558528.cms",
+          "source": "Economic Times - Technology",
+          "published_at": "2026-03-13T15:12:00.000Z",
+          "ingested_at": "2026-03-15T21:03:21.565Z",
+          "snippet": "Amazon Web Services and Cerebras Systems have joined forces. They will combine their computing chips in a new service. This service aims to speed up AI applications like chatbots and coding tools. Cerebras chips will be integrated into Amazon data centres. They will work alongside Amazon's Trainium3 AI chips. This collaboration is set to enhance AI inference capabilities.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ai",
+              "inference"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Cerebras Systems and Amazon Web Services have partnered to integrate Cerebras AI chips with Amazon's Trainium3 chips in AWS data centers, creating a new service designed to accelerate AI applications such as chatbots and coding tools. This collaboration aims to enhance AI inference capabilities.",
+          "translations": {
+            "da": {
+              "title": "Cerebras Systems og Amazon indgår aftale om AI-chips på AWS cloud",
+              "summary": "AI-genereret resumé: Cerebras Systems og Amazon Web Services har indgået partnerskab om at integrere Cerebras AI-chips med Amazons Trainium3-chips i AWS-datacentre, hvilket skaber en ny service designet til at accelerere AI-applikationer som chatbots og kodningsværktøjer. Dette samarbejde sigter mod at forbedre AI-inferensekapaciteter."
+            },
+            "es": {
+              "title": "Cerebras Systems y Amazon acuerdan ofrecer chips de IA en la nube AWS",
+              "summary": "Resumen generado por IA: Cerebras Systems y Amazon Web Services se han asociado para integrar los chips de IA de Cerebras con los chips Trainium3 de Amazon en los centros de datos de AWS, creando un nuevo servicio diseñado para acelerar aplicaciones de IA como chatbots y herramientas de codificación. Esta colaboración busca mejorar las capacidades de inferencia de IA."
+            }
+          }
+        },
+        {
+          "id": "9ty4rs",
+          "title": "US Commerce Department withdraws planned rule on AI chip exports ",
+          "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/us-commerce-department-withdraws-planned-rule-on-ai-chip-exports/articleshow/129568215.cms",
+          "source": "Economic Times - Technology",
+          "published_at": "2026-03-14T03:28:57.000Z",
+          "ingested_at": "2026-03-15T21:03:21.565Z",
+          "snippet": "The department had sent a draft rule, to replace a January 2025 Biden-era regulation on global access to AI chips, to other agencies for feedback late last ‌month.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": -0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0.2,
+            "matchedKeywords": [
+              "ai",
+              "regulation"
+            ]
+          },
+          "aiSummary": "AI-generated summary: The US Commerce Department has withdrawn its planned rule intended to replace the January 2025 Biden-era regulation on global access to AI chips, after sending the draft for inter-agency feedback last month.",
+          "translations": {
+            "da": {
+              "title": "US Commerce Department trækker planlagt regel om AI-chip-eksport tilbage",
+              "summary": "AI-genereret resumé: US Commerce Department har trukket sin planlagte regel tilbage, som skulle erstatte Biden-æraens regulering fra januar 2025 om global adgang til AI-chips, efter at have sendt udkastet til tværgående feedback sidste måned."
+            },
+            "es": {
+              "title": "Departamento de Comercio de EE.UU. retira la regla prevista sobre exportaciones de chips de IA",
+              "summary": "Resumen generado por IA: El Departamento de Comercio de EE.UU. ha retirado su regla prevista para reemplazar la regulación de la era Biden de enero de 2025 sobre el acceso global a chips de IA, tras enviar el borrador para retroalimentación interinstitucional el mes pasado."
+            }
+          }
+        },
+        {
+          "id": "frgqd5",
+          "title": "Rox Secures $1.2 Billion Valuation as AI Sales Agents Scale",
+          "url": "https://www.pymnts.com/news/investment-tracker/2026/rox-secures-1-2-billion-valuation-as-ai-sales-agents-scale/",
+          "source": "PYMNTS",
+          "published_at": "2026-03-13T23:03:18.000Z",
+          "ingested_at": "2026-03-15T21:03:21.565Z",
+          "snippet": "Rox, a startup developing artificial intelligence (AI) agents for sales functions, closed a funding round late last year that valued it at $1.2 billion, TechCrunch reported Thursday (March 12), citing unnamed sources.  At the time of the fundraise, Rox was expected to have annual recurring revenue of $8 million at the end of 2025, […]\nThe post Rox Secures $1.2 Billion Valuation as AI Sales Agents Scale appeared first on PYMNTS.com.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.25,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.2,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ai",
+              "agent",
+              "artificial intelligence",
+              "funding"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Rox, a startup creating AI agents for sales, secured a $1.2 billion valuation following a recent funding round and is projected to reach $8 million in annual recurring revenue by the end of 2025.",
+          "translations": {
+            "da": {
+              "title": "Rox opnår en værdiansættelse på 1,2 milliarder dollars, mens AI-salgsagenter vokser",
+              "summary": "AI-genereret resumé: Rox, en startup der skaber AI-agenter til salg, opnåede en værdiansættelse på 1,2 milliarder dollars efter en nylig finansieringsrunde og forventes at nå 8 millioner dollars i årlige tilbagevendende indtægter inden udgangen af 2025."
+            },
+            "es": {
+              "title": "Rox asegura una valoración de 1.200 millones de dólares mientras los agentes de ventas con IA crecen",
+              "summary": "Resumen generado por IA: Rox, una startup que crea agentes de IA para ventas, aseguró una valoración de 1.200 millones de dólares tras una reciente ronda de financiación y se proyecta que alcance 8 millones de dólares en ingresos recurrentes anuales para finales de 2025."
+            }
+          }
+        },
+        {
+          "id": "3486nx",
+          "title": "Perplexity’s Computer for Enterprise Completed 3.25 Years of Work in Four Weeks",
+          "url": "https://www.pymnts.com/news/artificial-intelligence/2026/perplexity-computer-enterprise-completed-3-years-work-4-weeks/",
+          "source": "PYMNTS",
+          "published_at": "2026-03-13T19:57:18.000Z",
+          "ingested_at": "2026-03-15T21:03:21.565Z",
+          "snippet": "Artificial intelligence companies are beginning to rethink what a computer actually is, and Perplexity is pushing that idea further with a new platform designed to let AI agents operate across a user’s digital environment.  The company introduced Wednesday (March 11) Personal Computer, a system designed to allow AI agents to interact with files, applications […]\nThe post Perplexity’s Computer for Enterprise Completed 3.25 Years of Work in Four Weeks appeared first on PYMNTS.com.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.2,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "compute",
+              "artificial intelligence",
+              "ai",
+              "agent"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Perplexity has launched Personal Computer, a platform enabling AI agents to operate across users' digital environments, allowing the completion of 3.25 years of enterprise work in just four weeks. This innovation reflects a shift in how AI companies conceptualize computing.",
+          "translations": {
+            "da": {
+              "title": "Perplexitys Computer for Enterprise fuldførte 3,25 års arbejde på fire uger",
+              "summary": "AI-genereret resumé: Perplexity har lanceret Personal Computer, en platform der gør det muligt for AI-agenter at arbejde på tværs af brugernes digitale miljøer og fuldføre 3,25 års virksomhed arbejde på kun fire uger. Denne innovation afspejler et skift i, hvordan AI-virksomheder opfatter computing."
+            },
+            "es": {
+              "title": "La Computer for Enterprise de Perplexity completó 3,25 años de trabajo en cuatro semanas",
+              "summary": "Resumen generado por IA: Perplexity ha lanzado Personal Computer, una plataforma que permite a agentes de IA operar en los entornos digitales de los usuarios, completando 3,25 años de trabajo empresarial en solo cuatro semanas. Esta innovación refleja un cambio en cómo las empresas de IA conceptualizan la computación."
+            }
+          }
+        },
+        {
+          "id": "lvj5wq",
+          "title": "Palantir uses Anthropic’s Claude despite Pentagon's 'supply chain risk' tag: CEO Alex Karp ",
+          "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/palantir-uses-anthropics-claude-despite-pentagons-supply-chain-risk-tag-ceo-alex-karp/articleshow/129589759.cms",
+          "source": "Economic Times - Technology",
+          "published_at": "2026-03-15T12:33:07.000Z",
+          "ingested_at": "2026-03-15T21:03:21.565Z",
+          "snippet": "Palantir CEO Alex Karp said the company still uses Anthropic’s Claude AI models despite the Pentagon classifying the firm as a supply chain risk. The US government plans a phase-out within six months, though officials say replacing systems will take time because the technology is already deeply integrated with military infrastructure.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": -0.04999999999999999,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0,
+            "penalty": 0.2,
+            "matchedKeywords": [
+              "anthropic",
+              "claude",
+              "ai"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Palantir continues to use Anthropic’s Claude AI models despite the Pentagon labeling Anthropic as a supply chain risk, with the US government planning a phase-out within six months. However, officials acknowledge that replacing these systems will be gradual due to their deep integration with military infrastructure.",
+          "translations": {
+            "da": {
+              "title": "Palantir bruger Anthropics Claude trods Pentagons 'forsyningskæderisiko'-mærkat: CEO Alex Karp",
+              "summary": "AI-genereret resumé: Palantir fortsætter med at bruge Anthropics Claude AI-modeller trods Pentagon har mærket Anthropic som en forsyningskæderisiko, mens den amerikanske regering planlægger en udfasning inden for seks måneder. Dog anerkender embedsmænd, at udskiftningen af disse systemer vil være gradvis på grund af deres dybe integration med militær infrastruktur."
+            },
+            "es": {
+              "title": "Palantir usa Claude de Anthropic a pesar de la etiqueta de 'riesgo en la cadena de suministro' del Pentágono: CEO Alex Karp",
+              "summary": "Resumen generado por IA: Palantir continúa utilizando los modelos de IA Claude de Anthropic a pesar de que el Pentágono ha etiquetado a Anthropic como un riesgo en la cadena de suministro, y el gobierno de EE. UU. planea una eliminación gradual en seis meses. Sin embargo, los funcionarios reconocen que reemplazar estos sistemas será gradual debido a su profunda integración con la infraestructura militar."
+            }
+          }
+        }
+      ]
+    },
+    "Ecommerce_Retail_Tech": {
+      "total": 256,
+      "top": [
+        {
+          "id": "cgqzzi",
+          "title": "Marketplace Briefing: Amazon expands AI-powered Shop Direct program that lets customers buy from other retailers’ sites",
+          "url": "https://www.modernretail.co/technology/marketplace-briefing-amazon-expands-ai-powered-shop-direct-program-that-lets-customers-buy-from-other-retailers-sites/?utm_campaign=modernretaildis&utm_medium=rss&utm_source=general-rss",
+          "source": "Modern Retail",
+          "published_at": "2026-03-12T14:00:00.000Z",
+          "ingested_at": "2026-03-15T21:03:21.565Z",
+          "snippet": "Amazon is expanding Shop Direct, a program that lets shoppers find and buy products from other retailers even when those items aren’t sold on Amazon.com.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "marketplace"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Amazon is expanding its AI-powered Shop Direct program, enabling customers to discover and purchase products from other retailers' websites even if those items are not available on Amazon.com.",
+          "translations": {
+            "da": {
+              "title": "Marketplace Briefing: Amazon udvider AI-drevet Shop Direct-program, der lader kunder købe fra andre forhandleres hjemmesider",
+              "summary": "AI-genereret resumé: Amazon udvider sit AI-drevne Shop Direct-program, som gør det muligt for kunder at opdage og købe produkter fra andre forhandleres hjemmesider, selvom varerne ikke findes på Amazon.com."
+            },
+            "es": {
+              "title": "Marketplace Briefing: Amazon expande el programa Shop Direct impulsado por IA que permite a los clientes comprar en sitios de otros minoristas",
+              "summary": "Resumen generado por IA: Amazon está expandiendo su programa Shop Direct impulsado por IA, que permite a los clientes descubrir y comprar productos en sitios web de otros minoristas, incluso si esos artículos no están disponibles en Amazon.com."
+            }
+          }
+        },
+        {
+          "id": "lvrd6w",
+          "title": "Shopify says purchases are coming ‘inside ChatGPT’ through agentic storefronts as OpenAI retreats on Instant Checkout ",
+          "url": "https://www.modernretail.co/technology/shopify-says-purchases-are-coming-inside-chatgpt-through-agentic-storefronts-as-openai-retreats-on-instant-checkout/?utm_campaign=modernretaildis&utm_medium=rss&utm_source=general-rss",
+          "source": "Modern Retail",
+          "published_at": "2026-03-12T17:35:03.000Z",
+          "ingested_at": "2026-03-15T21:03:21.565Z",
+          "snippet": "Shopify told merchants their products will soon be discoverable and purchasable inside ChatGPT through its new “agentic storefronts” feature as OpenAI shifts how checkout works inside the chatbot.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "checkout"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Shopify announced that merchants' products will soon be discoverable and purchasable within ChatGPT via its new \"agentic storefronts\" feature, coinciding with OpenAI's changes to the chatbot's checkout process.",
+          "translations": {
+            "da": {
+              "title": "Shopify siger, at køb kommer ‘inden for ChatGPT’ gennem agentiske butikker, mens OpenAI trækker sig fra Instant Checkout",
+              "summary": "AI-genereret resumé: Shopify annoncerede, at forhandleres produkter snart vil kunne findes og købes inden for ChatGPT via den nye funktion 'agentic storefronts', samtidig med OpenAIs ændringer i chatbotens betalingsproces."
+            },
+            "es": {
+              "title": "Shopify dice que las compras llegarán ‘dentro de ChatGPT’ a través de escaparates agenticos mientras OpenAI retrocede en Instant Checkout",
+              "summary": "Resumen generado por IA: Shopify anunció que los productos de los comerciantes pronto serán descubiertos y comprados dentro de ChatGPT mediante su nueva función de 'agentic storefronts', coincidiendo con los cambios de OpenAI en el proceso de pago del chatbot."
+            }
+          }
+        },
+        {
+          "id": "661kxi",
+          "title": "B2B and B2C companies increase AI investment as agentic commerce gains traction",
+          "url": "https://www.digitalcommerce360.com/2026/03/13/b2b-b2c-ai-investment-agentic-commerce-traction/",
+          "source": "Digital Commerce 360",
+          "published_at": "2026-03-13T21:29:25.000Z",
+          "ingested_at": "2026-03-15T21:03:21.565Z",
+          "snippet": "Artificial intelligence is rapidly becoming a core component of both B2B and B2C enterprise ecommerce operations as companies deploy AI across customer experiences, pricing, inventory management and fulfillment while preparing for the rise of “agentic commerce,” according to new research. Logicbroker commissioned the study, which Midsail Research and On-Call CMO conducted. The companies surveyed 600 ecommerce […]\nThe post B2B and B2C companies increase AI investment as agentic commerce gains tra...",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.25,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0.1,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ecommerce",
+              "fulfillment",
+              "inventory"
+            ]
+          },
+          "aiSummary": "AI-generated summary: According to new research commissioned by Logicbroker, both B2B and B2C ecommerce companies are significantly increasing their AI investments to enhance customer experiences, pricing, inventory management, and fulfillment while preparing for the emergence of agentic commerce.",
+          "translations": {
+            "da": {
+              "title": "B2B- og B2C-virksomheder øger AI-investeringer, efterhånden som agentisk handel vinder frem",
+              "summary": "AI-genereret resumé: Ifølge ny forskning bestilt af Logicbroker øger både B2B- og B2C-e-handelsvirksomheder markant deres AI-investeringer for at forbedre kundeoplevelser, prisfastsættelse, lagerstyring og opfyldelse, samtidig med at de forbereder sig på fremkomsten af agentisk handel."
+            },
+            "es": {
+              "title": "Empresas B2B y B2C aumentan inversión en IA a medida que el comercio agéntico gana terreno",
+              "summary": "Resumen generado por IA: Según una nueva investigación encargada por Logicbroker, tanto las empresas de comercio electrónico B2B como B2C están aumentando significativamente sus inversiones en IA para mejorar la experiencia del cliente, la fijación de precios, la gestión de inventarios y el cumplimiento, mientras se preparan para la aparición del comercio agéntico."
+            }
+          }
+        },
+        {
+          "id": "4n6m6f",
+          "title": "Levi Strauss picks SCAYLE as global ecommerce platform provider",
+          "url": "https://www.digitalcommerce360.com/2026/03/12/levi-strauss-picks-scayle-global-ecommerce-platform-provider/",
+          "source": "Digital Commerce 360",
+          "published_at": "2026-03-12T15:49:11.000Z",
+          "ingested_at": "2026-03-15T21:03:21.565Z",
+          "snippet": "Levi Strauss & Co. has selected SCAYLE to power its global ecommerce platform, the companies announced, as Levi’s continues investing in digital infrastructure to support its direct-to-consumer (D2C) business. Under the agreement, SCAYLE will provide the core technology platform for Levi’s online storefronts across multiple international markets. The companies plan to begin migration of Levi’s […]\nThe post Levi Strauss picks SCAYLE as global ecommerce platform provider appeared first on Digital ...",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ecommerce",
+              "platform"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Levi Strauss & Co. has chosen SCAYLE as the provider for its global ecommerce platform to enhance its direct-to-consumer business, with SCAYLE supplying the core technology for Levi’s online stores across multiple international markets.",
+          "translations": {
+            "da": {
+              "title": "Levi Strauss vælger SCAYLE som global leverandør af e-handelsplatform",
+              "summary": "Levi Strauss & Co. har valgt SCAYLE som leverandør af sin globale e-handelsplatform for at styrke sin direkte-til-forbruger forretning, hvor SCAYLE leverer kerneteknologien til Levis onlinebutikker på tværs af flere internationale markeder."
+            },
+            "es": {
+              "title": "Levi Strauss elige a SCAYLE como proveedor global de plataforma de comercio electrónico",
+              "summary": "Levi Strauss & Co. ha elegido a SCAYLE como proveedor de su plataforma global de comercio electrónico para mejorar su negocio directo al consumidor, con SCAYLE suministrando la tecnología central para las tiendas en línea de Levi’s en varios mercados internacionales."
+            }
+          }
+        },
+        {
+          "id": "mmjdhb",
+          "title": "Petco builds around ‘integrated omnichannel’ experiences",
+          "url": "https://www.digitalcommerce360.com/2026/03/12/petco-integrated-omnichannel-ecommerce-sales-q4-2025/",
+          "source": "Digital Commerce 360",
+          "published_at": "2026-03-12T19:23:57.000Z",
+          "ingested_at": "2026-03-15T21:03:21.565Z",
+          "snippet": "Petco seeks to better integrate ecommerce into its business through what it calls “integrated omnichannel” as its net sales and comparable sales each decreased in its fiscal Q4 and 2025 overall. In its fiscal Q4, Petco net sales decreased 2.4% year over year, to about $1.52 billion in 2025 from $1.55 billion in 2024. For […]\nThe post Petco builds around ‘integrated omnichannel’ experiences appeared first on Digital Commerce 360.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0.1,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ecommerce"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Petco is focusing on developing an \"integrated omnichannel\" approach to better incorporate ecommerce into its operations following a 2.4% decline in net sales to approximately $1.52 billion in fiscal Q4 2025.",
+          "translations": {
+            "da": {
+              "title": "Petco bygger omkring ’integrerede omnichannel’-oplevelser",
+              "summary": "AI-genereret resumé: Petco fokuserer på at udvikle en ’integreret omnichannel’-tilgang for bedre at integrere e-handel i sine operationer efter et fald på 2,4 % i nettoomsætningen til cirka 1,52 milliarder dollars i regnskabsåret Q4 2025."
+            },
+            "es": {
+              "title": "Petco construye en torno a experiencias ‘omnicanal integradas’",
+              "summary": "Resumen generado por IA: Petco se está enfocando en desarrollar un enfoque ‘omnicanal integrado’ para incorporar mejor el comercio electrónico en sus operaciones tras una caída del 2,4 % en las ventas netas a aproximadamente 1.52 mil millones de dólares en el cuarto trimestre fiscal de 2025."
+            }
+          }
+        },
+        {
+          "id": "6eiz74",
+          "title": "UK brands risk billions as one-third of customers switch due to a poor digital retail experience",
+          "url": "https://internetretailing.net/uk-brands-risk-billions-as-one-third-of-customers-switch-due-to-a-poor-digital-retail-experience/",
+          "source": "Internet Retailing",
+          "published_at": "2026-03-13T11:41:22.000Z",
+          "ingested_at": "2026-03-15T21:03:21.565Z",
+          "snippet": "New research has revealed a fundamental mismatch between what UK consumers expect from the digital retail experience and what retailers are actually delivering – and it’s costing businesses millions.\nThe post UK brands risk billions as one-third of customers switch due to a poor digital retail experience appeared first on InternetRetailing.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": []
+          },
+          "aiSummary": "AI-generated summary: New research highlighted by Internet Retailing on March 13, 2026, reveals that UK retailers are losing billions as one-third of customers switch brands due to a poor digital retail experience, indicating a significant gap between consumer expectations and retailer delivery.",
+          "translations": {
+            "da": {
+              "title": "Britiske mærker risikerer milliarder, da en tredjedel af kunder skifter på grund af en dårlig digital detailoplevelse",
+              "summary": "AI-genereret resumé: Ny forskning fremhævet af Internet Retailing den 13. marts 2026 viser, at britiske detailhandlere mister milliarder, da en tredjedel af kunderne skifter mærke på grund af en dårlig digital detailoplevelse, hvilket indikerer en betydelig kløft mellem forbrugerforventninger og detailhandlernes levering."
+            },
+            "es": {
+              "title": "Las marcas del Reino Unido arriesgan miles de millones mientras un tercio de los clientes cambian debido a una mala experiencia digital de venta al por menor",
+              "summary": "Resumen generado por IA: Una nueva investigación destacada por Internet Retailing el 13 de marzo de 2026 revela que los minoristas del Reino Unido están perdiendo miles de millones ya que un tercio de los clientes cambian de marca debido a una mala experiencia digital de venta al por menor, lo que indica una brecha significativa entre las expectativas de los consumidores y la entrega de los minoristas."
+            }
+          }
+        },
+        {
+          "id": "pchj9m",
+          "title": "The Weekly Closeout: Amazon notches a win against Perplexity, Reebok reenters soccer",
+          "url": "https://www.retaildive.com/news/amazon-perplexity-reebok-soccer-legos/814631/",
+          "source": "Retail Dive",
+          "published_at": "2026-03-13T16:27:00.000Z",
+          "ingested_at": "2026-03-15T21:03:21.565Z",
+          "snippet": "The e-commerce giant got a temporary order blocking access for Perplexity’s AI shopping agents, while the athletics brand signed two professional soccer players.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "e-commerce",
+              "shopping"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Amazon secured a temporary order preventing Perplexity’s AI shopping agents from accessing its platform, while Reebok made a comeback in soccer by signing two professional players.",
+          "translations": {
+            "da": {
+              "title": "The Weekly Closeout: Amazon får sejr over Perplexity, Reebok vender tilbage til fodbold",
+              "summary": "AI-genereret resumé: Amazon sikrede en midlertidig kendelse, der forhindrer Perplexitys AI-shoppingagenter i at få adgang til platformen, mens Reebok gjorde comeback i fodbold ved at skrive kontrakt med to professionelle spillere."
+            },
+            "es": {
+              "title": "The Weekly Closeout: Amazon logra una victoria contra Perplexity, Reebok regresa al fútbol",
+              "summary": "Resumen generado por IA: Amazon obtuvo una orden temporal que impide a los agentes de compras de IA de Perplexity acceder a su plataforma, mientras que Reebok regresó al fútbol firmando con dos jugadores profesionales."
+            }
+          }
+        }
+      ]
+    },
+    "Luxury_and_Consumer": {
+      "total": 24,
+      "top": [
+        {
+          "id": "dah49g",
+          "title": "Inside the Vegas bash for elite Amazon sellers doing at least 7 figures in revenue",
+          "url": "https://www.businessinsider.com/million-dollar-sellers-conference-amazon-las-vegas-mds-ecommerce-2026-3",
+          "source": "Business Insider - Tech",
+          "published_at": "2026-03-15T09:15:01.000Z",
+          "ingested_at": "2026-03-15T21:03:21.565Z",
+          "snippet": "Kathleen Elkins\n\nMillion Dollar Sellers, MDS, is a community for top Amazon sellers with $1M+ in annual revenue.\nMDS hosts a variety of events throughout the year, some of which are open to the public.\nI attended MDS Inspire to observe, ask questions, and try to figure out what these elite sellers obsess over.\n\nWhen I spoke to the co-founder of the exclusive Million Dollar Sellers club, Eugene Khayman, last year, he likened their member-only events to a family reunion, \"where you're actually exc...",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "exclusive"
+            ]
+          },
+          "aiSummary": "AI-generated summary: The Million Dollar Sellers (MDS) community hosts exclusive events for elite Amazon sellers generating over $1 million annually, fostering a close-knit environment likened to a family reunion, as observed at the MDS Inspire event.",
+          "translations": {
+            "da": {
+              "title": "Inde i Vegas-festen for elite Amazon-sælgere med mindst 7-cifret omsætning",
+              "summary": "AI-genereret resumé: Million Dollar Sellers (MDS) fællesskabet afholder eksklusive events for elite Amazon-sælgere med over 1 million dollars årligt, og skaber et tæt fællesskab, der minder om en familiegensyn, som set ved MDS Inspire eventet."
+            },
+            "es": {
+              "title": "Dentro de la fiesta en Las Vegas para vendedores élite de Amazon con al menos 7 cifras en ingresos",
+              "summary": "Resumen generado por IA: La comunidad Million Dollar Sellers (MDS) organiza eventos exclusivos para vendedores élite de Amazon que generan más de 1 millón de dólares anuales, fomentando un ambiente cercano similar a una reunión familiar, como se observó en el evento MDS Inspire."
+            }
+          }
+        },
+        {
+          "id": "w42gme",
+          "title": "Aesthetic Doctor Antoni Calmon Dies",
+          "url": "https://wwd.com/beauty-industry-news/beauty-features/aesthetic-doctor-antoni-calmon-dies-beauty-skincare-1238676289/",
+          "source": "WWD - Women's Wear Daily",
+          "published_at": "2026-03-14T20:09:34.000Z",
+          "ingested_at": "2026-03-15T21:03:21.565Z",
+          "snippet": "His four-step protocol inspired the beauty brand PERS Skincare.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "brand"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Antoni Calmon, known for his influential four-step protocol that inspired the beauty brand PERS Skincare, has passed away, as reported by WWD on March 14, 2026.",
+          "translations": {
+            "da": {
+              "title": "Æstetisk Læge Antoni Calmon Dør",
+              "summary": "AI-genereret resumé: Antoni Calmon, kendt for sin indflydelsesrige fire-trins protokol, der inspirerede skønhedsbrandet PERS Skincare, er afgået ved døden, rapporteret af WWD den 14. marts 2026."
+            },
+            "es": {
+              "title": "Muere el Doctor Estético Antoni Calmon",
+              "summary": "Resumen generado por IA: Antoni Calmon, conocido por su influyente protocolo de cuatro pasos que inspiró la marca de belleza PERS Skincare, ha fallecido, según informó WWD el 14 de marzo de 2026."
+            }
+          }
+        },
+        {
+          "id": "7cak4z",
+          "title": "Nina Ricci loses creative director",
+          "url": "https://www.luxurydaily.com/nina-ricci-loses-creative-director/",
+          "source": "Luxury Daily - Main",
+          "published_at": "2026-03-12T15:54:07.000Z",
+          "ingested_at": "2026-03-15T21:03:21.565Z",
+          "snippet": "Harris Reed is stepping down from the helm to focus on his namesake apparel brand.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "brand"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Nina Ricci's creative director, Harris Reed, is stepping down to concentrate on his own apparel brand, according to Luxury Daily on March 12, 2026.",
+          "translations": {
+            "da": {
+              "title": "Nina Ricci mister kreativ direktør",
+              "summary": "AI-genereret resumé: Nina Riccis kreative direktør, Harris Reed, træder tilbage for at fokusere på sit eget tøjbrand, ifølge Luxury Daily den 12. marts 2026."
+            },
+            "es": {
+              "title": "Nina Ricci pierde a su director creativo",
+              "summary": "Resumen generado por IA: El director creativo de Nina Ricci, Harris Reed, renuncia para concentrarse en su propia marca de ropa, según Luxury Daily el 12 de marzo de 2026."
+            }
+          }
+        },
+        {
+          "id": "2v81tx",
+          "title": "Waldorf Astoria Los Cabos Pedregal finalizes large-scale renovation",
+          "url": "https://www.luxurydaily.com/waldorf-astoria-los-cabos-pedregal-finalizes-large-scale-renovation/",
+          "source": "Luxury Daily - Main",
+          "published_at": "2026-03-12T18:22:19.000Z",
+          "ingested_at": "2026-03-15T21:03:21.565Z",
+          "snippet": "The Hilton-owned luxury hotel has overhauled all 112 guest rooms and public spaces.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "luxury"
+            ]
+          },
+          "aiSummary": "AI-generated summary: The Waldorf Astoria Los Cabos Pedregal, a Hilton-owned luxury hotel, has completed a large-scale renovation that includes updates to all 112 guest rooms and public spaces.",
+          "translations": {
+            "da": {
+              "title": "Waldorf Astoria Los Cabos Pedregal færdiggør omfattende renovering",
+              "summary": "AI-genereret resumé: Waldorf Astoria Los Cabos Pedregal, et Hilton-ejet luksushotel, har gennemført en omfattende renovering, der inkluderer opdateringer af alle 112 gæsteværelser og offentlige områder."
+            },
+            "es": {
+              "title": "Waldorf Astoria Los Cabos Pedregal finaliza una renovación a gran escala",
+              "summary": "Resumen generado por IA: Waldorf Astoria Los Cabos Pedregal, un hotel de lujo propiedad de Hilton, ha completado una renovación a gran escala que incluye actualizaciones en las 112 habitaciones y espacios públicos."
+            }
+          }
+        },
+        {
+          "id": "z4sl86",
+          "title": "2026 Gem Awards Celebrate London Jewelers, Ana Khouri, WWD’s Thomas Waller and More",
+          "url": "https://wwd.com/accessories-news/jewelry/2026-gem-awards-london-jewelers-ana-khouri-1238676629/",
+          "source": "WWD - Women's Wear Daily",
+          "published_at": "2026-03-15T19:00:34.000Z",
+          "ingested_at": "2026-03-15T21:03:21.565Z",
+          "snippet": "Other recipients Friday included Silvia Furmanovich, Johnny Nelson and Jessica McCormack.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": []
+          },
+          "aiSummary": "AI-generated summary: The 2026 Gem Awards honored notable figures in luxury jewelry, including London Jewelers, Ana Khouri, WWD’s Thomas Waller, as well as Silvia Furmanovich, Johnny Nelson, and Jessica McCormack.",
+          "translations": {
+            "da": {
+              "title": "2026 Gem Awards hylder London Jewelers, Ana Khouri, WWD’s Thomas Waller og flere",
+              "summary": "AI-genereret resumé: 2026 Gem Awards hædrede bemærkelsesværdige personer inden for luksussmykker, herunder London Jewelers, Ana Khouri, WWD’s Thomas Waller samt Silvia Furmanovich, Johnny Nelson og Jessica McCormack."
+            },
+            "es": {
+              "title": "Premios Gem 2026 celebran a London Jewelers, Ana Khouri, Thomas Waller de WWD y más",
+              "summary": "Resumen generado por IA: Los Premios Gem 2026 honraron a figuras destacadas en joyería de lujo, incluyendo a London Jewelers, Ana Khouri, Thomas Waller de WWD, así como Silvia Furmanovich, Johnny Nelson y Jessica McCormack."
+            }
+          }
+        },
+        {
+          "id": "hipqtq",
+          "title": "Lloyds IT glitch lets customers see other users’ information",
+          "url": "https://www.ft.com/content/d172891e-c6c5-41f9-a274-c1acb87e8409",
+          "source": "Financial Times - Technology",
+          "published_at": "2026-03-12T11:20:40.000Z",
+          "ingested_at": "2026-03-15T21:03:21.565Z",
+          "snippet": "Lender says it is investigating issue that was ‘quickly resolved’ on Thursday",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": []
+          },
+          "aiSummary": "AI-generated summary: On March 12, 2026, Lloyds experienced an IT glitch that temporarily allowed customers to view other users' information, but the lender stated the issue was quickly resolved and is currently under investigation.",
+          "translations": {
+            "da": {
+              "title": "Lloyds IT-fejl lod kunder se andre brugeres oplysninger",
+              "summary": "AI-genereret resumé: Den 12. marts 2026 oplevede Lloyds en IT-fejl, der midlertidigt tillod kunder at se andre brugeres oplysninger, men långiveren oplyste, at problemet hurtigt blev løst og nu er under undersøgelse."
+            },
+            "es": {
+              "title": "Fallo informático de Lloyds permite a clientes ver información de otros usuarios",
+              "summary": "Resumen generado por IA: El 12 de marzo de 2026, Lloyds experimentó un fallo informático que permitió temporalmente a los clientes ver la información de otros usuarios, pero el prestamista declaró que el problema se resolvió rápidamente y está bajo investigación."
+            }
+          }
+        },
+        {
+          "id": "2lttim",
+          "title": "Inside Giorgio Armani’s Rodeo Drive Oscar Party With Hudson Williams, Paul Anthony Kelly and More",
+          "url": "https://wwd.com/eye/parties/giorgio-armani-rodeo-drive-oscar-party-jon-hamm-1238676378/",
+          "source": "WWD - Women's Wear Daily",
+          "published_at": "2026-03-15T15:16:30.000Z",
+          "ingested_at": "2026-03-15T21:03:21.565Z",
+          "snippet": "Samuel L. Jackson, Yara Shahidi and Janelle James were among the guests at Armani’s Rodeo Drive cocktail celebrating awards season.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": []
+          },
+          "aiSummary": "AI-generated summary: Giorgio Armani hosted a Rodeo Drive cocktail party celebrating awards season, attended by notable guests including Samuel L. Jackson, Yara Shahidi, and Janelle James. The event was covered by WWD on March 15, 2026, highlighting its luxury and consumer appeal.",
+          "translations": {
+            "da": {
+              "title": "Inde i Giorgio Armanis Rodeo Drive Oscar-fest med Hudson Williams, Paul Anthony Kelly og flere",
+              "summary": "AI-genereret resumé: Giorgio Armani var vært for en cocktailfest på Rodeo Drive for at fejre prisuddelingen, med bemærkelsesværdige gæster som Samuel L. Jackson, Yara Shahidi og Janelle James. Begivenheden blev dækket af WWD den 15. marts 2026 og fremhævede dens luksus og forbrugerappel."
+            },
+            "es": {
+              "title": "Dentro de la fiesta de los Oscar en Rodeo Drive de Giorgio Armani con Hudson Williams, Paul Anthony Kelly y más",
+              "summary": "Resumen generado por IA: Giorgio Armani organizó una fiesta de cócteles en Rodeo Drive para celebrar la temporada de premios, con invitados notables como Samuel L. Jackson, Yara Shahidi y Janelle James. El evento fue cubierto por WWD el 15 de marzo de 2026, destacando su lujo y atractivo para los consumidores."
+            }
+          }
+        }
+      ]
+    },
+    "Jewellery_Industry": {
+      "total": 17,
+      "top": [
+        {
+          "id": "aorqe3",
+          "title": "Billions of dollars in advertising down the drain due to fraud",
+          "url": "https://www.jewellermagazine.com/Article/14857/Billions-of-dollars-in-advertising-down-the-drain-due-to-fraud",
+          "source": "Jeweller - Business News",
+          "published_at": "2026-03-09T13:00:00.000Z",
+          "ingested_at": "2026-03-15T21:03:21.565Z",
+          "snippet": "According to a new report, advertising fraud driven by ‘bot traffic' may be costing the Australian economy more than $5 billion each year.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": -0.04999999999999999,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0,
+            "insightSignalBoost": 0.05,
+            "penalty": 0.2,
+            "matchedKeywords": []
+          },
+          "aiSummary": "AI-generated summary: A recent report reveals that advertising fraud caused by ‘bot traffic’ is resulting in losses exceeding $5 billion annually for the Australian economy, significantly impacting the jewellery industry.",
+          "translations": {
+            "da": {
+              "title": "Milliarder af dollars i reklamer spildt på grund af svindel",
+              "summary": "AI-genereret resumé: En nylig rapport afslører, at reklamesvindel forårsaget af ’bot-trafik’ resulterer i tab på over 5 milliarder dollars årligt for den australske økonomi, hvilket påvirker smykkeindustrien betydeligt."
+            },
+            "es": {
+              "title": "Miles de millones de dólares en publicidad desperdiciados por fraude",
+              "summary": "Resumen generado por IA: Un informe reciente revela que el fraude publicitario causado por el ‘tráfico de bots’ está generando pérdidas superiores a 5 mil millones de dólares anuales para la economía australiana, impactando significativamente la industria de la joyería."
+            }
+          }
+        },
+        {
+          "id": "9pqtt6",
+          "title": "14 Images that Show Why Long’s Jewelers Associates Was Named One of America’s Coolest Jewelry Stores",
+          "url": "https://instoremag.com/14-images-that-show-why-longs-jewelers-associates-was-named-one-of-americas-coolest-jewelry-stores/",
+          "source": "Instore Magazine",
+          "published_at": "2026-03-14T09:00:32.000Z",
+          "ingested_at": "2026-03-15T21:03:21.565Z",
+          "snippet": "The Boston jeweler's new Newbury Street flagship blends Back Bay architecture with dedicated brand showrooms, private consultation spaces, and hospitality details that reflect 146 years in the business.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "jewelry"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Long’s Jewelers' new Newbury Street flagship in Boston combines historic Back Bay architecture with specialized brand showrooms, private consultation areas, and hospitality features, showcasing the company's 146-year legacy in the jewelry industry.",
+          "translations": {
+            "da": {
+              "title": "14 billeder, der viser hvorfor Long’s Jewelers Associates blev kåret som en af Amerikas fedeste smykkebutikker",
+              "summary": "Long’s Jewelers' nye flagskibsbutik på Newbury Street i Boston kombinerer historisk Back Bay-arkitektur med specialiserede brandshowrooms, private konsultationsområder og gæstfrihedsfunktioner, der viser virksomhedens 146-årige arv inden for smykkeindustrien."
+            },
+            "es": {
+              "title": "14 imágenes que muestran por qué Long’s Jewelers Associates fue nombrada una de las joyerías más geniales de América",
+              "summary": "La nueva tienda insignia de Long’s Jewelers en Newbury Street, Boston, combina la arquitectura histórica de Back Bay con salas de exhibición especializadas, áreas de consulta privada y características de hospitalidad, mostrando el legado de 146 años de la empresa en la industria de la joyería."
+            }
+          }
+        },
+        {
+          "id": "ddiynt",
+          "title": "This Jeweler Checked Her Store’s Security Camera From the Doctor’s Office. What She Saw Got Someone Fired.",
+          "url": "https://instoremag.com/this-jeweler-checked-her-stores-security-camera-from-the-doctors-office-what-she-saw-got-someone-fired/",
+          "source": "Instore Magazine",
+          "published_at": "2026-03-13T04:00:21.000Z",
+          "ingested_at": "2026-03-15T21:03:21.565Z",
+          "snippet": "A Louisiana jeweler's promising new salesperson didn't make it to Day 3.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": []
+          },
+          "aiSummary": "AI-generated summary: A Louisiana jeweler monitored her store's security camera remotely from a doctor's office and discovered an incident that led to someone being fired, resulting in a new salesperson not lasting beyond their second day.",
+          "translations": {
+            "da": {
+              "title": "Denne juveler tjekkede butikkens overvågningskamera fra lægens kontor. Det, hun så, fik en til at blive fyret.",
+              "summary": "En juveler fra Louisiana overvågede fjernbutikkens overvågningskamera fra et lægekontor og opdagede en hændelse, der førte til, at en person blev fyret, og en ny sælger ikke varede længere end til anden dag."
+            },
+            "es": {
+              "title": "Esta joyera revisó la cámara de seguridad de su tienda desde el consultorio del médico. Lo que vio hizo que alguien fuera despedido.",
+              "summary": "Una joyera de Louisiana monitoreó remotamente la cámara de seguridad de su tienda desde un consultorio médico y descubrió un incidente que llevó al despido de alguien, resultando en que un nuevo vendedor no durara más allá de su segundo día."
+            }
+          }
+        },
+        {
+          "id": "zif6z8",
+          "title": "Tomorrow's World Today",
+          "url": "https://www.jewellermagazine.com/Article/14863/Tomorrows-World-Today",
+          "source": "Jeweller - Jewellery Trends",
+          "published_at": "2026-03-11T13:00:00.000Z",
+          "ingested_at": "2026-03-15T21:03:21.565Z",
+          "snippet": "SAMUEL ORD explores the influence of emerging technology on the jewellery industry.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "jewellery",
+              "jeweller"
+            ]
+          },
+          "aiSummary": "AI-generated summary: In \"Tomorrow's World Today,\" published in Jeweller - Jewellery Trends on March 11, 2026, Samuel Ord examines how emerging technology is shaping the future of the jewellery industry.",
+          "translations": {
+            "da": {
+              "title": "Morgendagens Verden I Dag",
+              "summary": "AI-genereret resumé: I \"Tomorrow's World Today,\" udgivet i Jeweller - Jewellery Trends den 11. marts 2026, undersøger Samuel Ord, hvordan ny teknologi former fremtiden for smykkeindustrien."
+            },
+            "es": {
+              "title": "El Mundo del Mañana Hoy",
+              "summary": "Resumen generado por IA: En \"Tomorrow's World Today,\" publicado en Jeweller - Jewellery Trends el 11 de marzo de 2026, Samuel Ord examina cómo la tecnología emergente está moldeando el futuro de la industria de la joyería."
+            }
+          }
+        },
+        {
+          "id": "kj7pqv",
+          "title": "Jewellery buying groups ready for busy weekend in Adelaide",
+          "url": "https://www.jewellermagazine.com/Article/14817/Jewellery-buying-groups-ready-for-busy-weekend-in-Adelaide",
+          "source": "Jeweller - Business News",
+          "published_at": "2026-03-09T13:00:00.000Z",
+          "ingested_at": "2026-03-15T21:03:21.565Z",
+          "snippet": "Anticipation is building for the Australian Jewellery Fair in Adelaide, the first mainstream buying event in South Australian history.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0.2,
+            "matchedKeywords": [
+              "jewellery",
+              "jeweller"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Jewellery buying groups are preparing for a busy weekend at the Australian Jewellery Fair in Adelaide, marking the first mainstream buying event in South Australian history.",
+          "translations": {
+            "da": {
+              "title": "Smykkekøbsgrupper klar til travl weekend i Adelaide",
+              "summary": "AI-genereret resumé: Smykkekøbsgrupper forbereder sig på en travl weekend på Australian Jewellery Fair i Adelaide, der markerer den første store købsbegivenhed i South Australias historie."
+            },
+            "es": {
+              "title": "Grupos de compra de joyería listos para un fin de semana ocupado en Adelaide",
+              "summary": "Resumen generado por IA: Los grupos de compra de joyería se están preparando para un fin de semana ocupado en la Australian Jewellery Fair en Adelaide, marcando el primer evento de compra principal en la historia de South Australia."
+            }
+          }
+        },
+        {
+          "id": "lzpk1u",
+          "title": "New owners confirm Secrets Shhh rebrand",
+          "url": "https://www.jewellermagazine.com/Article/14832/New-owners-confirm-Secrets-Shhh-rebrand",
+          "source": "Jeweller - Business News",
+          "published_at": "2026-03-09T13:00:00.000Z",
+          "ingested_at": "2026-03-15T21:03:21.565Z",
+          "snippet": "Jewellery retailer Secrets Shhh has been rebranded to Secrets by Amaar, with the new owner confirming it will retain its Australian store network and staff.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.25,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "jewellery",
+              "retailer",
+              "jeweller"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Jewellery retailer Secrets Shhh has been rebranded as Secrets by Amaar under new ownership, which confirmed it will maintain its Australian store network and staff.",
+          "translations": {
+            "da": {
+              "title": "Nye ejere bekræfter Secrets Shhh rebranding",
+              "summary": "Smykkeforhandleren Secrets Shhh er blevet omdøbt til Secrets by Amaar under ny ejerskab, som bekræftede, at de vil bevare deres australske butikskæde og personale."
+            },
+            "es": {
+              "title": "Nuevos propietarios confirman el cambio de marca de Secrets Shhh",
+              "summary": "El minorista de joyería Secrets Shhh ha sido renombrado como Secrets by Amaar bajo nueva propiedad, que confirmó que mantendrá su red de tiendas y personal en Australia."
+            }
+          }
+        },
+        {
+          "id": "51wzsc",
+          "title": "‘Emily in Paris’ Star Recovers Stolen Engagement Ring — With Help From a Chicago Jeweler",
+          "url": "https://instoremag.com/emily-in-paris-star-recovers-stolen-engagement-ring-with-help-from-a-chicago-jeweler/",
+          "source": "Instore Magazine",
+          "published_at": "2026-03-14T03:40:36.000Z",
+          "ingested_at": "2026-03-15T21:03:21.565Z",
+          "snippet": "Three years after the theft, a downtown Chicago jeweler recognized the ring at a trade show and returned it.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": -0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0,
+            "insightSignalBoost": 0,
+            "penalty": 0.2,
+            "matchedKeywords": []
+          },
+          "aiSummary": "AI-generated summary: Three years after it was stolen, the engagement ring belonging to the star of \"Emily in Paris\" was identified at a trade show by a downtown Chicago jeweler, who then returned it.",
+          "translations": {
+            "da": {
+              "title": "‘Emily in Paris’-stjernen får stjålet forlovelsesring tilbage – med hjælp fra en juveler i Chicago",
+              "summary": "AI-genereret resumé: Tre år efter den blev stjålet, blev forlovelsesringen tilhørende stjernen fra 'Emily in Paris' identificeret på en messe af en juveler i Chicago, som derefter returnerede den."
+            },
+            "es": {
+              "title": "La estrella de ‘Emily in Paris’ recupera su anillo de compromiso robado — con ayuda de un joyero de Chicago",
+              "summary": "Resumen generado por IA: Tres años después de ser robado, el anillo de compromiso de la estrella de 'Emily in Paris' fue identificado en una feria comercial por un joyero del centro de Chicago, quien luego lo devolvió."
+            }
+          }
+        }
+      ]
+    }
+  },
+  "coverImageUrl": "/weekly-images/2026-W11.png",
+  "coverImageAlt": "Weekly cover illustration for 2026-W11"
+}

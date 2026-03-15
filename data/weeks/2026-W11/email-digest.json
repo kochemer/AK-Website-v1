@@ -1,0 +1,107 @@
+{
+  "week": "2026-W11",
+  "generatedAt": "2026-03-15T21:19:43.210Z",
+  "intro": "This week’s intelligence digest highlights significant advancements in AI-driven commerce, including Amazon’s expanded Shop Direct program and Cerebras Systems’ partnership to offer AI chips via AWS. We also explore evolving retail security practices and shifting regulatory landscapes impacting AI chip exports, underscoring the growing integration of agentic AI in both B2B and B2C sectors.",
+  "readOneThing": {
+    "title": "Marketplace Briefing: Amazon expands AI-powered Shop Direct program that lets customers buy from other retailers’ sites",
+    "url": "https://www.modernretail.co/technology/marketplace-briefing-amazon-expands-ai-powered-shop-direct-program-that-lets-customers-buy-from-other-retailers-sites/?utm_campaign=modernretaildis&utm_medium=rss&utm_source=general-rss"
+  },
+  "items": [
+    {
+      "rank": 1,
+      "title": "Marketplace Briefing: Amazon expands AI-powered Shop Direct program that lets customers buy from other retailers’ sites",
+      "url": "https://www.modernretail.co/technology/marketplace-briefing-amazon-expands-ai-powered-shop-direct-program-that-lets-customers-buy-from-other-retailers-sites/?utm_campaign=modernretaildis&utm_medium=rss&utm_source=general-rss",
+      "source": "Modern Retail",
+      "bullets": [
+        "Amazon has expanded its AI-powered Shop Direct program to allow merchants to sync their catalogs, pricing, and inventory through third-party feed providers.",
+        "The Shop Direct program now includes over 400,000 merchants and more than 100 million products, with listings appearing alongside Amazon's standard search results and AI assistant Rufus recommendations.",
+        "Introduced in February 2025, Shop Direct aims to position Amazon as a starting point for online shopping by directing customers to complete purchases on merchants' own websites."
+      ],
+      "summary": "AI-generated summary: Amazon is expanding its AI-powered Shop Direct program, enabling customers to discover and purchase products from other retailers' websites even if those items are not available on Amazon.com."
+    },
+    {
+      "rank": 2,
+      "title": "14 Images that Show Why Long’s Jewelers Associates Was Named One of America’s Coolest Jewelry Stores",
+      "url": "https://instoremag.com/14-images-that-show-why-longs-jewelers-associates-was-named-one-of-americas-coolest-jewelry-stores/",
+      "source": "Instore Magazine",
+      "bullets": [
+        "Long’s Jewelers flagship store on 9 Newbury Street features a blend of 19th-century Back Bay architecture and a modern two-story interior design. The store includes a dedicated Patek Philippe Lounge with custom cabinetry and formal seating that meets the Swiss brand’s presentation standards. Operating in Boston for 146 years, Long’s Jewelers is led by fourth-generation presidents Craig and Judd Rottenberg and is located on the city’s Luxury Row.",
+        "The Flagship Exterior Long’s 9 Newbury Street flagship occupies a classic red-brick brownstone, blending 19th-century Back Bay architecture with a two-story modern interior",
+        "The building is the latest storied chapter for a jeweler that has operated in Boston for 146 years"
+      ],
+      "summary": "AI-generated summary: Long’s Jewelers' new Newbury Street flagship in Boston combines historic Back Bay architecture with specialized brand showrooms, private consultation areas, and hospitality features, showcasing the company's 146-year legacy in the jewelry industry."
+    },
+    {
+      "rank": 3,
+      "title": "Cerebras Systems, Amazon strike deal to offer AI chips on AWS cloud ",
+      "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/cerebras-systems-amazon-strike-deal-to-offer-ai-chips-on-aws-cloud/articleshow/129558528.cms",
+      "source": "Economic Times - Technology",
+      "bullets": [
+        "Amazon Web Services and Cerebras Systems have partnered to integrate Cerebras AI chips with Amazon's Trainium3 chips in AWS data centers for enhanced AI services.",
+        "Cerebras, valued at $23.1 billion, will handle the decoding stage of AI inference while Amazon's Trainium3 chips manage the prefill stage in their combined service.",
+        "The new AI chip service is expected to launch in the second half of this year, competing with Nvidia's upcoming GPU and Groq chip integration announced earlier."
+      ],
+      "summary": "AI-generated summary: Cerebras Systems and Amazon Web Services have partnered to integrate Cerebras AI chips with Amazon's Trainium3 chips in AWS data centers, creating a new service designed to accelerate AI applications such as chatbots and coding tools. This collaboration aims to enhance AI inference capabilities."
+    },
+    {
+      "rank": 4,
+      "title": "Aesthetic Doctor Antoni Calmon Dies",
+      "url": "https://wwd.com/beauty-industry-news/beauty-features/aesthetic-doctor-antoni-calmon-dies-beauty-skincare-1238676289/",
+      "source": "WWD - Women's Wear Daily",
+      "bullets": [
+        "French aesthetic doctor Antoni Calmon, known for his regenerative and dermatological medicine practice, has died at age 41.",
+        "Calmon inspired the beauty brand PERS Skincare, which launched in 2023 and offers a four-step face care routine based on his protocols.",
+        "He operated clinics in Paris and London, and his sister Magali Calmon now directs his aesthetic medicine clinic in Paris' 8th arrondissement."
+      ],
+      "summary": "AI-generated summary: Antoni Calmon, known for his influential four-step protocol that inspired the beauty brand PERS Skincare, has passed away, as reported by WWD on March 14, 2026."
+    },
+    {
+      "rank": 5,
+      "title": "Shopify says purchases are coming ‘inside ChatGPT’ through agentic storefronts as OpenAI retreats on Instant Checkout ",
+      "url": "https://www.modernretail.co/technology/shopify-says-purchases-are-coming-inside-chatgpt-through-agentic-storefronts-as-openai-retreats-on-instant-checkout/?utm_campaign=modernretaildis&utm_medium=rss&utm_source=general-rss",
+      "source": "Modern Retail",
+      "bullets": [
+        "Shopify announced that its products will soon be discoverable and purchasable inside ChatGPT through a new feature called agentic storefronts launching later in March.",
+        "Under the updated approach, buyers will typically complete purchases on the merchant’s own online storefront via in-app browsers or separate tabs, rather than using OpenAI’s Instant Checkout.",
+        "Shopify first introduced Agentic Storefronts in December to enable merchants to distribute products across AI shopping interfaces without building dedicated ChatGPT apps."
+      ],
+      "summary": "AI-generated summary: Shopify announced that merchants' products will soon be discoverable and purchasable within ChatGPT via its new \"agentic storefronts\" feature, coinciding with OpenAI's changes to the chatbot's checkout process."
+    },
+    {
+      "rank": 6,
+      "title": "US Commerce Department withdraws planned rule on AI chip exports ",
+      "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/us-commerce-department-withdraws-planned-rule-on-ai-chip-exports/articleshow/129568215.cms",
+      "source": "Economic Times - Technology",
+      "bullets": [
+        "The US Commerce Department withdrew a draft rule aimed at replacing the January 2025 Biden-era regulation on AI chip exports. The Trump administration's draft considered requiring foreign countries to invest in US data centers or provide security guarantees for exports of 200,000 chips or more. The Biden rule categorized countries into three tiers for chip access, capping a four-year effort to limit China's access to advanced AI chips while maintaining US leadership.",
+        "\"This supposed rule was always a draft and ​remains a draft,\" a US official said in a statement when asked about the withdrawal",
+        "Add as a Reliable and Trusted News Source Add Now!Read more news onUS Commerce DepartmentAI chip exportsTrump administrationartificial-intelligenceBiden-era regulationU.S"
+      ],
+      "summary": "AI-generated summary: The US Commerce Department has withdrawn its planned rule intended to replace the January 2025 Biden-era regulation on global access to AI chips, after sending the draft for inter-agency feedback last month."
+    },
+    {
+      "rank": 7,
+      "title": "This Jeweler Checked Her Store’s Security Camera From the Doctor’s Office. What She Saw Got Someone Fired.",
+      "url": "https://instoremag.com/this-jeweler-checked-her-stores-security-camera-from-the-doctors-office-what-she-saw-got-someone-fired/",
+      "source": "Instore Magazine",
+      "bullets": [
+        "A Louisiana jeweler monitored her store's security camera remotely from a doctor's office and discovered her new salesperson asleep during a customer visit. The salesperson was fired immediately after the jeweler's husband drove to the store upon witnessing the incident. INSTORE magazine published this story in its April 2026 issue, sharing real experiences from jewelers about hiring challenges and staff management.",
+        "True Tales This Jeweler Checked Her Store’s Security Camera From the Doctor’s Office",
+        "What She Saw Got Someone Fired"
+      ],
+      "summary": "AI-generated summary: A Louisiana jeweler monitored her store's security camera remotely from a doctor's office and discovered an incident that led to someone being fired, resulting in a new salesperson not lasting beyond their second day."
+    },
+    {
+      "rank": 8,
+      "title": "B2B and B2C companies increase AI investment as agentic commerce gains traction",
+      "url": "https://www.digitalcommerce360.com/2026/03/13/b2b-b2c-ai-investment-agentic-commerce-traction/",
+      "source": "Digital Commerce 360",
+      "bullets": [
+        "A recent study found that 95.5% of enterprise ecommerce organizations have deployed at least one AI capability across customer experience, pricing, inventory, or fulfillment systems.",
+        "Nearly half of surveyed companies plan to invest at least $1 million in AI commerce initiatives within the next year, with 7.3% expecting to spend over $10 million.",
+        "Industry forecasts predict AI agents could influence $385 billion in commerce activity by 2030, with AI-driven transactions potentially reaching $1 trillion in U.S. retail revenue by decade's end."
+      ],
+      "summary": "AI-generated summary: According to new research commissioned by Logicbroker, both B2B and B2C ecommerce companies are significantly increasing their AI investments to enhance customer experiences, pricing, inventory management, and fulfillment while preparing for the emergence of agentic commerce."
+    }
+  ]
+}

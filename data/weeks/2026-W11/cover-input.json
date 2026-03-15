@@ -1,0 +1,34 @@
+{
+  "weekLabel": "2026-W11",
+  "homepageTopArticles": [
+    {
+      "title": "Marketplace Briefing: Amazon expands AI-powered Shop Direct program that lets customers buy from other retailers’ sites",
+      "source": "Modern Retail",
+      "snippet": "Amazon is expanding Shop Direct, a program that lets shoppers find and buy products from other retailers even when those items aren’t sold on Amazon.com.",
+      "aiSummary": "AI-generated summary: Amazon is expanding its AI-powered Shop Direct program, enabling customers to discover and purchase products from other retailers' websites even if those items are not available on Amazon.com."
+    },
+    {
+      "title": "Shopify says purchases are coming ‘inside ChatGPT’ through agentic storefronts as OpenAI retreats on Instant Checkout ",
+      "source": "Modern Retail",
+      "snippet": "Shopify told merchants their products will soon be discoverable and purchasable inside ChatGPT through its new “agentic storefronts” feature as OpenAI shifts how checkout works inside the chatbot.",
+      "aiSummary": "AI-generated summary: Shopify announced that merchants' products will soon be discoverable and purchasable within ChatGPT via its new \"agentic storefronts\" feature, coinciding with OpenAI's changes to the chatbot's checkout process."
+    },
+    {
+      "title": "Billions of dollars in advertising down the drain due to fraud",
+      "source": "Jeweller - Business News",
+      "snippet": "According to a new report, advertising fraud driven by ‘bot traffic' may be costing the Australian economy more than $5 billion each year.",
+      "aiSummary": "AI-generated summary: A recent report reveals that advertising fraud caused by ‘bot traffic’ is resulting in losses exceeding $5 billion annually for the Australian economy, significantly impacting the jewellery industry."
+    },
+    {
+      "title": "14 Images that Show Why Long’s Jewelers Associates Was Named One of America’s Coolest Jewelry Stores",
+      "source": "Instore Magazine",
+      "snippet": "The Boston jeweler's new Newbury Street flagship blends Back Bay architecture with dedicated brand showrooms, private consultation spaces, and hospitality details that reflect 146 years in the business.",
+      "aiSummary": "AI-generated summary: Long’s Jewelers' new Newbury Street flagship in Boston combines historic Back Bay architecture with specialized brand showrooms, private consultation areas, and hospitality features, showcasing the company's 146-year legacy in the jewelry industry."
+    }
+  ],
+  "model": "gpt-image-1.5",
+  "finalPrompt": "Hyper-realistic photography of an opulent jewelry showroom with a wide conveyor belt running horizontally, carrying miniature, highly detailed storefront façades: one classic historic jewelry shop, one modern tech-style shop, and one modeled after a checkout counter, each with jewelry in their windows and quirky objects like a gold-plated computer mouse, diamond-encrusted chatbot icon, and a necklace of tiny shopping carts. Tiny shiny robot hands occasionally emerge from the conveyor, attempting to swipe jewelry, leaving a trail of scattered gemstones. The scene is brightly lit with natural daylight, polished metals, glass, velvet, and unexpected objects. Wide horizontal banner composition (3:1 aspect ratio), all elements in a central horizontal band with safe margins, sharp focus, photorealistic materials and textures. No text, signage, screens, or UI elements. The scene looks like a believable, absurd moment in a real photograph.\n\nCRITICAL CONSTRAINTS (must be strictly avoided):\n- text, letters, numbers, signage, labels, screens, UI, dashboards, holograms, floating icons, logos, brands, watermarks, cartoon, illustration, CGI, 3D render, anime\n\nPHOTOREALISM ENFORCEMENT:\n- Ultra photorealistic editorial photograph, shot on a real DSLR or medium-format camera.\n- Natural lighting, realistic skin texture, realistic reflections, realistic materials, real physics.\n- Candid editorial realism; avoid stock-photo staging.\n\nANTI-CARTOON / ANTI-CGI:\n- No illustration, no cartoon, no anime, no 3D render, no CGI, no synthetic look.\n\nNO-TEXT GUARANTEE:\n- Absolutely no text, letters, numbers, typography, signage, labels, price tags.\n- No screens, dashboards, UI, holograms, floating icons, charts.\n- Avoid any objects that commonly contain text (posters, newspapers, packaging, storefront signs). If unavoidable, they must be fully out of focus and unreadable.\n\nCOMPOSITION FOR WIDE HERO BANNER (CRITICAL):\n- Wide, horizontally expansive banner format (target 3:1 or wider aspect ratio)\n- Vertically minimal height - all important visual elements must be placed in the central horizontal band\n- Safe margins at top and bottom - no critical content near vertical edges\n- Composition must work when displayed in a wide, shallow container\n- Avoid vertical stacking, tall elements, or content that extends to top/bottom edges",
+  "imageSize": "1536x1024",
+  "outputPath": "/weekly-images/2026-W11.png",
+  "generatedAt": "2026-03-15T21:23:10.603Z"
+}
