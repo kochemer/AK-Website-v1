@@ -288,9 +288,22 @@ async function selectTopN(
   weekLabel: string
 ): Promise<ArticleWithRelevance[]> {
   if (articles.length === 0) return [];
-  
+
+  // Drop articles with no usable summary — they would fail digest validation downstream.
+  const withSummary = articles.filter(a =>
+    (a.snippet    && a.snippet.trim().length    > 0) ||
+    (a.aiSummary  && a.aiSummary.trim().length  > 0) ||
+    (a.summary    && a.summary.trim().length    > 0)
+  );
+  if (withSummary.length < articles.length) {
+    console.warn(
+      `[selectTopN] ${topic}: skipped ${articles.length - withSummary.length} article(s) with no summary`
+    );
+  }
+  if (withSummary.length === 0) return [];
+
   // Calculate scores for all articles
-  const articlesWithScores = articles.map(article => ({
+  const articlesWithScores = withSummary.map(article => ({
     article,
     relevance: calculateRelevanceScore(article, topic, weekStart, weekEnd),
   }));
