@@ -4,6 +4,7 @@ import { Geist_Mono } from "next/font/google";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import AmplitudeInit from "./components/AmplitudeInit";
 import AnalyticsPageView from "./components/AnalyticsPageView";
+import ConsentBanner from "./components/ConsentBanner";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import DisplayModeAttribute from "./components/DisplayModeAttribute";
@@ -153,6 +154,7 @@ export default function RootLayout({
 
           {/* Footer (locale-aware, dark 3-column) */}
           <Footer />
+          <ConsentBanner />
           <SpeedInsights />
         </ThemeProvider>
       </body>
