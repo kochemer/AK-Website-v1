@@ -2,12 +2,7 @@ import { SourceFeed, SourcePage } from './types.js';
 
 // --- Tier 1: Global Business & News ---
 const TIER_1_FEEDS: SourceFeed[] = [
-  {
-    name: "Reuters - Business",
-    url: "https://www.reuters.com/tools/rss",
-    tier: 1,
-    sourceType: "news"
-  },
+  // Reuters - Business: Removed (tools/rss is an index page, not a feed; public feeds deprecated)
   {
     name: "Financial Times - Technology",
     url: "https://www.ft.com/technology?format=rss",
@@ -32,12 +27,7 @@ const TIER_1_FEEDS: SourceFeed[] = [
     tier: 1,
     sourceType: "news"
   },
-  {
-    name: "Axios - Technology",
-    url: "https://www.axios.com/feed/technology",
-    tier: 1,
-    sourceType: "news"
-  },
+  // Axios - Technology: Removed (feed consistently returns 0 items / blocked)
   {
     name: "The Verge",
     url: "https://www.theverge.com/rss/index.xml",
@@ -51,12 +41,7 @@ const TIER_1_FEEDS: SourceFeed[] = [
     sourceType: "news"
   },
   // Barron's - Technology: Removed (403/blocked, no public RSS available)
-  {
-    name: "AP News - Technology",
-    url: "https://apnews.com/apf-technology",
-    tier: 1,
-    sourceType: "news"
-  },
+  // AP News - Technology: Removed (apnews.com/apf-technology is a section page, not RSS)
   {
     name: "The Guardian - Technology",
     url: "https://www.theguardian.com/technology/rss",
@@ -120,6 +105,20 @@ const TIER_2_FEEDS: SourceFeed[] = [
   },
   // AI Shopper: Removed (redirects to landing page, no RSS feed)
   // BlueAlpha.ai: Removed (404, no RSS feed available)
+  {
+    name: "Marketing Week",
+    url: "https://www.marketingweek.com/feed/",
+    tier: 2,
+    sourceType: "retail"
+  },
+  // The Drum: Removed (all URL variants return 404; no stable public RSS)
+
+  {
+    name: "Sourcing Journal",
+    url: "https://sourcingjournal.com/feed/",
+    tier: 2,
+    sourceType: "retail"
+  },
 ];
 
 // --- Tier 5: Academic & Technical ---
@@ -143,12 +142,7 @@ const TIER_5_FEEDS: SourceFeed[] = [
   //   tier: 5,
   //   sourceType: "academic"
   // },
-  {
-    name: "Microsoft Research - AI",
-    url: "https://www.microsoft.com/en-us/research/feed/tag/artificial-intelligence/",
-    tier: 5,
-    sourceType: "academic"
-  }
+  // Microsoft Research - AI: Removed (404)
 ];
 
 // --- Tier 6: Regional / Specialist ---
@@ -198,13 +192,7 @@ const FASHION_LUXURY_FEEDS: SourceFeed[] = [
     sourceType: "fashion_luxury",
     categoryHint: "Fashion & Luxury"
   },
-  {
-    name: "FashionNetwork",
-    url: "https://www.fashionnetwork.com/rss",
-    tier: 2,
-    sourceType: "fashion_luxury",
-    categoryHint: "Fashion & Luxury"
-  },
+  // FashionNetwork: Removed (403 blocked)
   {
     name: "Luxury Daily - Main",
     url: "https://www.luxurydaily.com/feed/",
@@ -212,13 +200,7 @@ const FASHION_LUXURY_FEEDS: SourceFeed[] = [
     sourceType: "fashion_luxury",
     categoryHint: "Fashion & Luxury"
   },
-  {
-    name: "Vogue Business",
-    url: "https://www.voguebusiness.com/feed",
-    tier: 2,
-    sourceType: "fashion_luxury",
-    categoryHint: "Fashion & Luxury"
-  },
+  // Vogue Business: Removed (no public RSS feed found; all URLs return 404)
   {
     name: "Drapers",
     url: "https://www.drapersonline.com/feed/",
@@ -226,20 +208,8 @@ const FASHION_LUXURY_FEEDS: SourceFeed[] = [
     sourceType: "fashion_luxury",
     categoryHint: "Fashion & Luxury"
   },
-  {
-    name: "The Impression",
-    url: "https://theimpression.com/feed/",
-    tier: 2,
-    sourceType: "fashion_luxury",
-    categoryHint: "Fashion & Luxury"
-  },
-  {
-    name: "Jing Daily",
-    url: "https://jingdaily.com/feed/",
-    tier: 2,
-    sourceType: "fashion_luxury",
-    categoryHint: "Fashion & Luxury"
-  },
+  // The Impression: Removed (returns HTML instead of RSS; blocked)
+  // Jing Daily: Removed (404)
   {
     name: "Retail Gazette",
     url: "https://www.retailgazette.co.uk/feed/",
@@ -253,7 +223,28 @@ const FASHION_LUXURY_FEEDS: SourceFeed[] = [
     tier: 2,
     sourceType: "fashion_luxury",
     categoryHint: "Fashion & Luxury"
-  }
+  },
+  {
+    name: "Glossy",
+    url: "https://www.glossy.co/feed/",
+    tier: 2,
+    sourceType: "fashion_luxury",
+    categoryHint: "Fashion & Luxury"
+  },
+  {
+    name: "Robb Report",
+    url: "https://robbreport.com/feed/",
+    tier: 2,
+    sourceType: "fashion_luxury",
+    categoryHint: "Fashion & Luxury"
+  },
+  {
+    name: "Footwear News",
+    url: "https://footwearnews.com/feed/",
+    tier: 2,
+    sourceType: "fashion_luxury",
+    categoryHint: "Fashion & Luxury"
+  },
 ];
 
 // --- Tier 2: Jewellery Industry ---
@@ -293,27 +284,9 @@ const JEWELLERY_FEEDS: SourceFeed[] = [
     sourceType: "jewellery",
     categoryHint: "Jewellery Industry"
   },
-  {
-    name: "National Jeweler",
-    url: "https://www.nationaljeweler.com/rss",
-    tier: 2,
-    sourceType: "jewellery",
-    categoryHint: "Jewellery Industry"
-  },
-  {
-    name: "Jewellery Focus",
-    url: "https://www.jewelleryfocus.com/feed/",
-    tier: 2,
-    sourceType: "jewellery",
-    categoryHint: "Jewellery Industry"
-  },
-  {
-    name: "Rapaport News",
-    url: "https://www.diamonds.net/rss/",
-    tier: 2,
-    sourceType: "jewellery",
-    categoryHint: "Jewellery Industry"
-  },
+  // National Jeweler: Removed (404)
+  // Jewellery Focus: Removed (network error / unreachable)
+  // Rapaport News: Removed (404)
   {
     name: "Instore Magazine",
     url: "https://instoremag.com/feed/",
@@ -328,13 +301,7 @@ const JEWELLERY_FEEDS: SourceFeed[] = [
     sourceType: "jewellery",
     categoryHint: "Jewellery Industry"
   },
-  {
-    name: "Hodinkee - Business",
-    url: "https://www.hodinkee.com/feed",
-    tier: 2,
-    sourceType: "jewellery",
-    categoryHint: "Jewellery Industry"
-  },
+  // Hodinkee - Business: Removed (404)
   // Legacy Luxury Daily feeds (moved to Fashion & Luxury)
   {
     name: "Luxury Daily - Retail",
@@ -384,7 +351,12 @@ const OTHER_FEEDS: SourceFeed[] = [
   {
     name: "Stratechery",
     url: "https://stratechery.com/feed/",
-  }
+  },
+  {
+    name: "VentureBeat - AI",
+    url: "https://venturebeat.com/category/ai/feed/",
+    sourceType: "news"
+  },
 ];
 
 // Combined RSS feeds list
