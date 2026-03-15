@@ -410,6 +410,44 @@ export const SOURCE_PAGES: SourcePage[] = [
       date: "time"
     },
     linkAttr: "href"
+  },
+  {
+    // Jing Daily: APAC luxury & fashion intelligence.
+    // Homepage lists articles as h2.font-serif elements; links are relative /posts/slug paths.
+    // Dates in time[itemProp="datePublished"] as relative text ("2 days ago") or absolute ("March 13, 2026").
+    // Vogue Business: now merged into vogue.com/business (React-rendered, no stable selectors) — skip.
+    name: "Jing Daily",
+    url: "https://jingdaily.com/",
+    selectors: {
+      // Structure: <a href="/posts/slug"><h3 class="font-serif">Title</h3></a>
+    // The h3 is inside the anchor, so we use closest parent a for the link.
+    item: "a[href^='/posts/']:has(h3.font-serif)",
+      title: "h3",
+      link: "",
+      date: ""
+    },
+    linkAttr: "href",
+    dateFormatHint: "RELATIVE",
+    sourceType: "fashion_luxury",
+    categoryHint: "Fashion & Luxury"
+  },
+  {
+    // The Impression: fashion industry news (appointments, brand moves, campaigns).
+    // /news/ redirects to latest article; /fashion-news/ is the listing page.
+    // Structure: article > div.preview-mini-wrap > div.meta > h3.title > a
+    // No date element in listing — falls back to ingestion date via RELATIVE hint.
+    name: "The Impression",
+    url: "https://theimpression.com/fashion-news/",
+    selectors: {
+      item: "article",
+      title: "h3.title a",
+      link: "h3.title a",
+      date: ""
+    },
+    linkAttr: "href",
+    dateFormatHint: "RELATIVE",
+    sourceType: "fashion_luxury",
+    categoryHint: "Fashion & Luxury"
   }
   // --- Tier 3 & 4 sources are captured via discovery, not page scraping ---
   // See discovery/consultancyDomains.ts and discovery/platformDomains.ts
