@@ -17,7 +17,12 @@
 import { Resend } from 'resend';
 import { escapeHtml } from '@/lib/digest/renderEmailDigestHtml';
 import { buildUnsubscribeUrl } from '@/lib/utils/unsubscribeToken';
-import { getSiteUrl } from '@/lib/utils/siteUrl';
+
+// Transactional emails always link to the canonical production domain.
+// We do NOT use getSiteUrl() here because NEXT_PUBLIC_SITE_URL may be set to
+// a Vercel preview URL on non-production deployments, which would embed the
+// wrong link in emails sent to real users.
+const CANONICAL_URL = 'https://luxury-intel.com';
 
 // ── Brand palette (matches renderEmailDigestHtml) ────────────────────────────
 
@@ -47,7 +52,7 @@ type ConfirmationContent = {
 };
 
 function renderHtml(c: ConfirmationContent): string {
-  const siteUrl = getSiteUrl();
+  const siteUrl = CANONICAL_URL;
   const paragraphs = c.bodyParagraphs
     .map(p => `<p style="margin:0 0 16px 0; font-family:${SANS}; font-size:15px; line-height:1.75; color:${C.textSecond};">${p}</p>`)
     .join('\n              ');
@@ -129,7 +134,7 @@ function renderHtml(c: ConfirmationContent): string {
 }
 
 function renderPlaintext(c: ConfirmationContent): string {
-  const siteUrl = getSiteUrl();
+  const siteUrl = CANONICAL_URL;
   const divider = '─'.repeat(50);
   let t = `LUXURY INTELLIGENCE\n${divider}\n\n`;
   t += `${c.headline}\n\n`;
@@ -177,8 +182,7 @@ async function send(to: string, content: ConfirmationContent): Promise<void> {
  * Call this only when the subscriber is genuinely new / first-time free signup.
  */
 export async function sendFreeConfirmationEmail(email: string): Promise<void> {
-  const siteUrl      = getSiteUrl();
-  const unsubUrl     = buildUnsubscribeUrl(email, siteUrl);
+  const unsubUrl = buildUnsubscribeUrl(email, CANONICAL_URL);
 
   await send(email, {
     subject:   "You're subscribed to Luxury Intelligence",
@@ -188,7 +192,7 @@ export async function sendFreeConfirmationEmail(email: string): Promise<void> {
       "Issues are published each week and also available at luxury-intel.com whenever you want to browse the archive.",
     ],
     ctaLabel:      'Read latest digest',
-    ctaUrl:        siteUrl,
+    ctaUrl:        `${CANONICAL_URL}/archive`,
     unsubscribeUrl: unsubUrl,
   });
 }
@@ -201,8 +205,7 @@ export async function sendPaidConfirmationEmail(
   email:    string,
   planType: 'supporter_monthly' | 'patron_monthly',
 ): Promise<void> {
-  const siteUrl  = getSiteUrl();
-  const unsubUrl = buildUnsubscribeUrl(email, siteUrl);
+  const unsubUrl = buildUnsubscribeUrl(email, CANONICAL_URL);
   const planLabel = planType === 'patron_monthly'
     ? 'Patron — €3 / month'
     : 'Supporter — €1 / month';
@@ -220,7 +223,7 @@ export async function sendPaidConfirmationEmail(
       `Note: ${footerNote}`,
     ],
     ctaLabel:      'Read latest digest',
-    ctaUrl:        siteUrl,
+    ctaUrl:        `${CANONICAL_URL}/archive`,
     footerNote,
     unsubscribeUrl: unsubUrl,
   });
