@@ -311,7 +311,7 @@ export default async function Home() {
               )}
 
               {/* THIS WEEK - Category cards + Top N */}
-              <div className="mb-4 sm:mb-5 md:mb-6 pb-4 sm:pb-5 md:pb-6 border-b border-gray-200 dark:border-gray-700">
+              <div id="categories" className="mb-4 sm:mb-5 md:mb-6 pb-4 sm:pb-5 md:pb-6 border-b border-gray-200 dark:border-gray-700">
                 <span className="text-meta font-medium uppercase tracking-widest text-[var(--color-accent)] block mb-4">
                   THIS WEEK
                 </span>

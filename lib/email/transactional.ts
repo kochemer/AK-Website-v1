@@ -192,7 +192,7 @@ export async function sendFreeConfirmationEmail(email: string): Promise<void> {
       "Issues are published each week and also available at luxury-intel.com whenever you want to browse the archive.",
     ],
     ctaLabel:      'Read latest digest',
-    ctaUrl:        `${CANONICAL_URL}/archive`,
+    ctaUrl:        `${CANONICAL_URL}/#categories`,
     unsubscribeUrl: unsubUrl,
   });
 }
@@ -223,7 +223,7 @@ export async function sendPaidConfirmationEmail(
       `Note: ${footerNote}`,
     ],
     ctaLabel:      'Read latest digest',
-    ctaUrl:        `${CANONICAL_URL}/archive`,
+    ctaUrl:        `${CANONICAL_URL}/#categories`,
     footerNote,
     unsubscribeUrl: unsubUrl,
   });
