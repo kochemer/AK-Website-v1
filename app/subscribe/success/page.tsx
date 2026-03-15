@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import AnalyticsCheckoutComplete from '@/app/components/AnalyticsCheckoutComplete';
 
 export const metadata: Metadata = {
   title: 'Support confirmed',
@@ -22,6 +23,7 @@ export default function SubscribeSuccessPage({
 
   return (
     <main className="w-full min-h-screen" style={{ background: 'var(--color-bg)' }}>
+      <AnalyticsCheckoutComplete plan={plan} />
 
       {/* ── Narrow editorial container ── */}
       <section className="max-w-2xl mx-auto px-6 md:px-8 py-24 md:py-32">
