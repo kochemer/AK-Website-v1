@@ -128,14 +128,14 @@ export function renderEmailDigestHtml(digest: EmailDigest, opts: RenderEmailDige
                 <tr>
                   <td style="border-left: 3px solid ${C.accent}; padding: 28px 0 32px 20px;">
                     <p style="margin: 0 0 12px 0;">
-                      <span style="font-family: ${SANS}; font-size: 9px; letter-spacing: 0.25em; text-transform: uppercase; color: ${C.accent}; font-weight: 600;">Lead Story</span>
-                      <span style="font-family: ${SANS}; font-size: 9px; color: ${C.textSecond}; margin-left: 10px;">${escapeHtml(leadItem.source)}</span>
+                      <span style="font-family: ${SANS}; font-size: 11px; letter-spacing: 0.25em; text-transform: uppercase; color: ${C.accent}; font-weight: 600;">Lead Story</span>
+                      <span style="font-family: ${SANS}; font-size: 11px; color: ${C.textSecond}; margin-left: 10px;">${escapeHtml(leadItem.source)}</span>
                     </p>
-                    <h2 style="margin: 0 0 14px 0; font-family: ${SERIF}; font-size: 26px; font-weight: normal; line-height: 1.3; letter-spacing: -0.01em;">
+                    <h2 style="margin: 0 0 14px 0; font-family: ${SERIF}; font-size: 31px; font-weight: normal; line-height: 1.3; letter-spacing: -0.01em;">
                       <a href="${escapeHtml(leadItem.url)}" style="color: ${C.textPrimary}; text-decoration: underline;">${escapeHtml(leadItem.title)}</a>
                     </h2>
-                    <p style="margin: 0 0 16px 0; font-family: ${SANS}; font-size: 14px; line-height: 1.7; color: ${C.textSecond};">${escapeHtml(bullets[0] ?? '')}</p>
-                    <a href="${escapeHtml(leadItem.url)}" style="font-family: ${SANS}; font-size: 12px; color: ${C.accent}; text-decoration: none;">Read full article &rarr;</a>
+                    <p style="margin: 0 0 16px 0; font-family: ${SANS}; font-size: 17px; line-height: 1.7; color: ${C.textSecond};">${escapeHtml(bullets[0] ?? '')}</p>
+                    <a href="${escapeHtml(leadItem.url)}" style="font-family: ${SANS}; font-size: 14px; color: ${C.accent}; text-decoration: none;">Read full article &rarr;</a>
                   </td>
                 </tr>
               </table>
@@ -164,14 +164,14 @@ export function renderEmailDigestHtml(digest: EmailDigest, opts: RenderEmailDige
                 <tr>
                   <td style="padding-top: 22px; padding-bottom: 24px;">
                     <p style="margin: 0 0 8px 0;">
-                      <span style="font-family: ${SERIF}; font-size: 13px; color: ${C.accentMuted};">${rankStr}</span>
-                      <span style="font-family: ${SANS}; font-size: 9px; letter-spacing: 0.15em; text-transform: uppercase; color: ${C.textSecond}; margin-left: 8px;">${escapeHtml(item.source)}</span>
+                      <span style="font-family: ${SERIF}; font-size: 16px; color: ${C.accentMuted};">${rankStr}</span>
+                      <span style="font-family: ${SANS}; font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase; color: ${C.textSecond}; margin-left: 8px;">${escapeHtml(item.source)}</span>
                     </p>
-                    <h3 style="margin: 0 0 10px 0; font-family: ${SERIF}; font-size: 18px; font-weight: normal; line-height: 1.4;">
+                    <h3 style="margin: 0 0 10px 0; font-family: ${SERIF}; font-size: 22px; font-weight: normal; line-height: 1.4;">
                       <a href="${escapeHtml(item.url)}" style="color: ${C.textPrimary}; text-decoration: underline;">${escapeHtml(item.title)}</a>
                     </h3>
                     ${bullets.map(b =>
-                      `<p style="margin: 0 0 6px 0; font-family: ${SANS}; font-size: 13px; line-height: 1.6; color: ${C.textSecond};"><span style="color: ${C.accent}; margin-right: 5px;">&mdash;</span>${escapeHtml(b)}</p>`
+                      `<p style="margin: 0 0 6px 0; font-family: ${SANS}; font-size: 16px; line-height: 1.6; color: ${C.textSecond};"><span style="color: ${C.accent}; margin-right: 5px;">&mdash;</span>${escapeHtml(b)}</p>`
                     ).join('\n                    ')}
                   </td>
                 </tr>
@@ -186,7 +186,7 @@ export function renderEmailDigestHtml(digest: EmailDigest, opts: RenderEmailDige
           <!-- ALSO THIS WEEK header -->
           <tr>
             <td class="outer-pad" style="background-color:${C.bg}; padding: 20px 32px 8px;">
-              <p style="margin: 0; font-family: ${SANS}; font-size: 9px; letter-spacing: 0.25em; text-transform: uppercase; color: ${C.textSecond};">Also This Week</p>
+              <p style="margin: 0; font-family: ${SANS}; font-size: 11px; letter-spacing: 0.25em; text-transform: uppercase; color: ${C.textSecond};">Also This Week</p>
             </td>
           </tr>
           ${tertiaryItems.map(item => `
@@ -199,10 +199,10 @@ export function renderEmailDigestHtml(digest: EmailDigest, opts: RenderEmailDige
                     <table width="100%" cellpadding="0" cellspacing="0" border="0">
                       <tr>
                         <td>
-                          <a href="${escapeHtml(item.url)}" style="font-family: ${SANS}; font-size: 13px; color: ${C.textPrimary}; text-decoration: none; line-height: 1.4;">${escapeHtml(item.title)}</a>
+                          <a href="${escapeHtml(item.url)}" style="font-family: ${SANS}; font-size: 16px; color: ${C.textPrimary}; text-decoration: none; line-height: 1.4;">${escapeHtml(item.title)}</a>
                         </td>
                         <td width="90" style="text-align: right; vertical-align: middle; padding-left: 12px;">
-                          <span style="font-family: ${SANS}; font-size: 9px; letter-spacing: 0.1em; text-transform: uppercase; color: ${C.textSecond}; white-space: nowrap;">${escapeHtml(item.source)}</span>
+                          <span style="font-family: ${SANS}; font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: ${C.textSecond}; white-space: nowrap;">${escapeHtml(item.source)}</span>
                         </td>
                       </tr>
                     </table>
@@ -219,24 +219,10 @@ export function renderEmailDigestHtml(digest: EmailDigest, opts: RenderEmailDige
           <!-- Intro -->
           <tr>
             <td class="outer-pad" style="background-color: ${C.bg}; padding: 32px 32px 0;">
-              <p style="margin: 0 0 28px 0; font-family: ${SERIF}; font-size: 15px; line-height: 1.75; color: ${C.textSecond}; font-style: italic;">${escapeHtml(digest.intro)}</p>
+              <p style="margin: 0 0 28px 0; font-family: ${SERIF}; font-size: 18px; line-height: 1.75; color: ${C.textSecond}; font-style: italic;">${escapeHtml(digest.intro)}</p>
             </td>
           </tr>` : '';
 
-  const readOneBlock = digest.readOneThing ? `
-          <!-- Read One Thing -->
-          <tr>
-            <td class="outer-pad" style="background-color: ${C.bg}; padding: 0 32px 28px;">
-              <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                <tr>
-                  <td style="border-left: 3px solid ${C.accent}; background-color: ${C.accentLight}; padding: 18px 20px;">
-                    <p style="margin: 0 0 8px 0; font-family: ${SANS}; font-size: 9px; letter-spacing: 0.3em; text-transform: uppercase; color: ${C.accent}; font-weight: 600;">Read One Thing</p>
-                    <a href="${escapeHtml(digest.readOneThing.url)}" style="font-family: ${SERIF}; font-size: 17px; font-weight: normal; color: ${C.textPrimary}; text-decoration: underline; line-height: 1.45;">${escapeHtml(digest.readOneThing.title)}</a>
-                  </td>
-                </tr>
-              </table>
-            </td>
-          </tr>` : '';
 
   return `<!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
@@ -265,9 +251,9 @@ export function renderEmailDigestHtml(digest: EmailDigest, opts: RenderEmailDige
           <!-- ===== MASTHEAD ===== -->
           <tr>
             <td class="masthead-pad" style="background-color: ${C.navy}; padding: 32px 40px 28px;">
-              <p style="margin: 0 0 6px 0; font-family: ${SANS}; font-size: 9px; letter-spacing: 0.3em; text-transform: uppercase; color: ${C.accent};">${issueLine}</p>
-              <h1 style="margin: 0; font-family: ${SERIF}; font-size: 28px; font-weight: normal; letter-spacing: 0.06em; color: ${C.bg}; text-transform: uppercase; line-height: 1.2;">Luxury Intelligence</h1>
-              <p style="margin: 8px 0 0 0; font-family: ${SANS}; font-size: 11px; color: ${C.navyFaint}; letter-spacing: 0.05em;">Weekly Intelligence Digest</p>
+              <p style="margin: 0 0 6px 0; font-family: ${SANS}; font-size: 11px; letter-spacing: 0.3em; text-transform: uppercase; color: ${C.accent};">${issueLine}</p>
+              <h1 style="margin: 0; font-family: ${SERIF}; font-size: 34px; font-weight: normal; letter-spacing: 0.06em; color: ${C.bg}; text-transform: uppercase; line-height: 1.2;">Luxury Intelligence</h1>
+              <p style="margin: 8px 0 0 0; font-family: ${SANS}; font-size: 13px; color: ${C.navyFaint}; letter-spacing: 0.05em;">Weekly Intelligence Digest</p>
             </td>
           </tr>
 
@@ -275,8 +261,6 @@ export function renderEmailDigestHtml(digest: EmailDigest, opts: RenderEmailDige
           <tr><td style="height: 3px; background-color: ${C.accent};"></td></tr>
 
           ${introBlock}
-
-          ${readOneBlock}
 
           ${articleRows}
 
@@ -287,12 +271,12 @@ export function renderEmailDigestHtml(digest: EmailDigest, opts: RenderEmailDige
           <tr><td style="height: 2px; background-color: ${C.accent};"></td></tr>
           <tr>
             <td class="footer-pad" style="background-color: ${C.navy}; padding: 28px 40px; text-align: center;">
-              <p style="margin: 0 0 4px 0; font-family: ${SERIF}; font-size: 13px; color: ${C.navyText}; letter-spacing: 0.05em;">Luxury Intelligence</p>
-              <p style="margin: 0 0 16px 0; font-family: ${SANS}; font-size: 9px; color: ${C.navyFaint}; letter-spacing: 0.2em; text-transform: uppercase;">${escapeHtml(week)}</p>
-              <p style="margin: 0 0 10px 0; font-family: ${SANS}; font-size: 10px; color: ${C.navyFaint}; line-height: 1.7;">You&rsquo;re receiving this because you subscribed to the weekly digest.</p>
+              <p style="margin: 0 0 4px 0; font-family: ${SERIF}; font-size: 16px; color: ${C.navyText}; letter-spacing: 0.05em;">Luxury Intelligence</p>
+              <p style="margin: 0 0 16px 0; font-family: ${SANS}; font-size: 11px; color: ${C.navyFaint}; letter-spacing: 0.2em; text-transform: uppercase;">${escapeHtml(week)}</p>
+              <p style="margin: 0 0 10px 0; font-family: ${SANS}; font-size: 12px; color: ${C.navyFaint}; line-height: 1.7;">You&rsquo;re receiving this because you subscribed to the weekly digest.</p>
               ${opts.unsubscribeUrl
-                ? `<p style="margin: 0; font-family: ${SANS}; font-size: 9px; color: ${C.navyFaint};"><a href="${escapeHtml(opts.unsubscribeUrl)}" style="color: ${C.navyFaint}; text-decoration: underline;">Unsubscribe</a></p>`
-                : `<p style="margin: 0; font-family: ${SANS}; font-size: 9px; color: ${C.navyFaint};">To unsubscribe, reply with &ldquo;unsubscribe&rdquo; in the subject.</p>`}
+                ? `<p style="margin: 0; font-family: ${SANS}; font-size: 11px; color: ${C.navyFaint};"><a href="${escapeHtml(opts.unsubscribeUrl)}" style="color: ${C.navyFaint}; text-decoration: underline;">Unsubscribe</a></p>`
+                : `<p style="margin: 0; font-family: ${SANS}; font-size: 11px; color: ${C.navyFaint};">To unsubscribe, reply with &ldquo;unsubscribe&rdquo; in the subject.</p>`}
             </td>
           </tr>
 
@@ -317,13 +301,6 @@ export function renderEmailDigestPlaintext(digest: EmailDigest, unsubscribeUrl?:
 
   if (digest.intro) {
     text += `${digest.intro}\n\n`;
-    text += `${'─'.repeat(50)}\n\n`;
-  }
-
-  if (digest.readOneThing) {
-    text += `READ ONE THING\n`;
-    text += `${digest.readOneThing.title}\n`;
-    text += `${digest.readOneThing.url}\n\n`;
     text += `${'─'.repeat(50)}\n\n`;
   }
 
