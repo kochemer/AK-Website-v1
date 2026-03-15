@@ -6,7 +6,8 @@ import type { NextRequest } from 'next/server';
  * - Redirect www.luxury-intel.com -> luxury-intel.com (308 permanent)
  * - Redirect /index.html -> / (308 permanent)
  * - Normalize trailing slash: remove trailing slash except for root "/" (308)
- * - Strip tracking query params: utm_*, gclid, fbclid (308 redirect to same path without them)
+ * - Strip ad-platform click IDs (gclid, fbclid) — these are not needed client-side
+ * - Preserve utm_* params so client-side attribution (lib/analytics/attribution.ts) can read them
  * - Preserve path and remaining query params
  */
 export function middleware(request: NextRequest) {
@@ -34,30 +35,24 @@ export function middleware(request: NextRequest) {
     needsRedirect = true;
   }
 
-  // 4. Strip tracking query params: utm_*, gclid, fbclid
-  const trackingParams = ['gclid', 'fbclid'];
-  const utmParams: string[] = [];
-  
-  url.searchParams.forEach((value, key) => {
-    if (key.startsWith('utm_')) {
-      utmParams.push(key);
-    }
-  });
-
-  const hasTrackingParams = trackingParams.some(p => url.searchParams.has(p)) || utmParams.length > 0;
+  // 4. Strip ad-platform click IDs only (gclid, fbclid).
+  //    utm_* params are intentionally preserved — stripping them server-side
+  //    prevents client-side attribution from reading the campaign source.
+  const clickIdParams = ['gclid', 'fbclid'];
+  const hasClickIds = clickIdParams.some(p => url.searchParams.has(p));
 
   // Build new URL with all changes if any redirect is needed
-  if (needsRedirect || hasTrackingParams) {
+  if (needsRedirect || hasClickIds) {
     const protocol = request.nextUrl.protocol;
     const newUrl = new URL(`${protocol}//${targetHost}${targetPath}`);
-    
-    // Copy non-tracking params only
+
+    // Copy all params except ad-platform click IDs
     url.searchParams.forEach((value, key) => {
-      if (!key.startsWith('utm_') && !trackingParams.includes(key)) {
+      if (!clickIdParams.includes(key)) {
         newUrl.searchParams.set(key, value);
       }
     });
-    
+
     return NextResponse.redirect(newUrl, { status: 308 });
   }
 
