@@ -34,12 +34,7 @@ const TIER_1_FEEDS: SourceFeed[] = [
     tier: 1,
     sourceType: "news"
   },
-  {
-    name: "Forbes - Technology",
-    url: "https://www.forbes.com/technology/feed/",
-    tier: 1,
-    sourceType: "news"
-  },
+  // Forbes - Technology: Removed (Cloudflare/bot protection, 403 in production)
   // Barron's - Technology: Removed (403/blocked, no public RSS available)
   // AP News - Technology: Removed (apnews.com/apf-technology is a section page, not RSS)
   {
@@ -148,11 +143,30 @@ const TIER_5_FEEDS: SourceFeed[] = [
 // --- Tier 6: Regional / Specialist ---
 const TIER_6_FEEDS: SourceFeed[] = [
   // Ritzau: Removed (parse error, no valid RSS feed structure)
+  // TechRadar - Ecommerce: Removed (403/bot protection)
   {
-    name: "TechRadar - Ecommerce",
-    url: "https://www.techradar.com/rss/news/ecommerce",
+    name: "TechCrunch - Commerce",
+    url: "https://techcrunch.com/category/commerce/feed/",
     tier: 6,
-    sourceType: "specialist"
+    sourceType: "retail"
+  },
+  {
+    name: "TechCrunch - AI",
+    url: "https://techcrunch.com/category/artificial-intelligence/feed/",
+    tier: 6,
+    sourceType: "news"
+  },
+  {
+    name: "Total Retail",
+    url: "https://www.mytotalretail.com/feed/",
+    tier: 6,
+    sourceType: "retail"
+  },
+  {
+    name: "Payments Journal",
+    url: "https://www.paymentsjournal.com/feed/",
+    tier: 6,
+    sourceType: "retail"
   },
   {
     name: "Computerworld - Ecommerce",
@@ -245,6 +259,13 @@ const FASHION_LUXURY_FEEDS: SourceFeed[] = [
     sourceType: "fashion_luxury",
     categoryHint: "Fashion & Luxury"
   },
+  {
+    name: "Luxe Digital",
+    url: "https://luxe.digital/feed/",
+    tier: 2,
+    sourceType: "fashion_luxury",
+    categoryHint: "Fashion & Luxury"
+  },
 ];
 
 // --- Tier 2: Jewellery Industry ---
@@ -270,9 +291,24 @@ const JEWELLERY_FEEDS: SourceFeed[] = [
     sourceType: "jewellery",
     categoryHint: "Jewellery Industry"
   },
+  // JCK Online: Removed (feed returns 0 items — empty feed)
   {
-    name: "JCK Online",
-    url: "https://www.jckonline.com/feed/",
+    name: "A Blog to Watch",
+    url: "https://www.ablogtowatch.com/feed/",
+    tier: 2,
+    sourceType: "jewellery",
+    categoryHint: "Jewellery Industry"
+  },
+  {
+    name: "Monochrome Watches",
+    url: "https://monochrome-watches.com/feed/",
+    tier: 2,
+    sourceType: "jewellery",
+    categoryHint: "Jewellery Industry"
+  },
+  {
+    name: "Fratello Watches",
+    url: "https://fratellowatches.com/feed/",
     tier: 2,
     sourceType: "jewellery",
     categoryHint: "Jewellery Industry"

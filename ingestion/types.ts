@@ -33,5 +33,6 @@ export type SourcePage = {
     link: string;
     date?: string;
   };
-  sourceType?: 'consultancy' | 'news' | 'blog'; // Optional: categorize source type for future weighting
+  sourceType?: 'consultancy' | 'news' | 'blog' | 'fashion_luxury' | 'jewellery' | 'retail'; // Optional: categorize source type for future weighting
+  categoryHint?: 'Fashion & Luxury' | 'Jewellery Industry'; // Optional hint for classification (non-binding)
 };
