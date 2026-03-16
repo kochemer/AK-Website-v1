@@ -447,6 +447,28 @@ const AI_FEEDS: SourceFeed[] = [
     tier: 3,
     sourceType: "consultancy"
   },
+  // Google News topic-filtered feeds: best available proxy for MBB consultancy content.
+  // McKinsey/BCG/Bain have no RSS and use JS-rendered sites. These topic feeds return
+  // 50 items/week of directly relevant luxury+retail+ecommerce articles from these firms
+  // plus third-party coverage of their research.
+  {
+    name: "McKinsey - Luxury & Retail Research",
+    url: "https://news.google.com/rss/search?q=mckinsey+retail+luxury+ecommerce&hl=en&gl=US&ceid=US:en",
+    tier: 3,
+    sourceType: "consultancy"
+  },
+  {
+    name: "BCG - Luxury & Retail Research",
+    url: "https://news.google.com/rss/search?q=bcg+luxury+retail+ecommerce&hl=en&gl=US&ceid=US:en",
+    tier: 3,
+    sourceType: "consultancy"
+  },
+  {
+    name: "Bain - Luxury & Retail Research",
+    url: "https://news.google.com/rss/search?q=bain+luxury+retail+ecommerce&hl=en&gl=US&ceid=US:en",
+    tier: 3,
+    sourceType: "consultancy"
+  },
   {
     name: "CNBC Technology",
     url: "https://www.cnbc.com/id/19854910/device/rss/rss.html",

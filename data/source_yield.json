@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-03-16T07:00:57.365Z",
+  "timestamp": "2026-03-16T07:02:39.362Z",
   "sources": [
     {
       "sourceName": "Financial Times - Technology",
@@ -200,15 +200,6 @@
       "yieldPct": 0
     },
     {
-      "sourceName": "Business of Fashion - News",
-      "type": "rss",
-      "itemsFetched": 100,
-      "itemsParsed": 100,
-      "newArticlesAdded": 0,
-      "duplicates": 100,
-      "yieldPct": 0
-    },
-    {
       "sourceName": "WWD - Women's Wear Daily",
       "type": "rss",
       "itemsFetched": 10,
@@ -222,9 +213,9 @@
       "type": "rss",
       "itemsFetched": 10,
       "itemsParsed": 10,
-      "newArticlesAdded": 1,
-      "duplicates": 9,
-      "yieldPct": 10
+      "newArticlesAdded": 0,
+      "duplicates": 10,
+      "yieldPct": 0
     },
     {
       "sourceName": "Drapers",
@@ -366,9 +357,9 @@
       "type": "rss",
       "itemsFetched": 30,
       "itemsParsed": 30,
-      "newArticlesAdded": 0,
-      "duplicates": 30,
-      "yieldPct": 0
+      "newArticlesAdded": 1,
+      "duplicates": 29,
+      "yieldPct": 3.3333333333333335
     },
     {
       "sourceName": "Monochrome Watches",
@@ -510,9 +501,36 @@
       "type": "rss",
       "itemsFetched": 30,
       "itemsParsed": 30,
-      "newArticlesAdded": 30,
+      "newArticlesAdded": 0,
+      "duplicates": 30,
+      "yieldPct": 0
+    },
+    {
+      "sourceName": "McKinsey - Luxury & Retail Research",
+      "type": "rss",
+      "itemsFetched": 42,
+      "itemsParsed": 42,
+      "newArticlesAdded": 42,
       "duplicates": 0,
       "yieldPct": 100
+    },
+    {
+      "sourceName": "BCG - Luxury & Retail Research",
+      "type": "rss",
+      "itemsFetched": 50,
+      "itemsParsed": 50,
+      "newArticlesAdded": 50,
+      "duplicates": 0,
+      "yieldPct": 100
+    },
+    {
+      "sourceName": "Bain - Luxury & Retail Research",
+      "type": "rss",
+      "itemsFetched": 51,
+      "itemsParsed": 51,
+      "newArticlesAdded": 50,
+      "duplicates": 1,
+      "yieldPct": 98.0392156862745
     },
     {
       "sourceName": "CNBC Technology",
@@ -615,10 +633,10 @@
     }
   ],
   "summary": {
-    "totalSources": 68,
-    "totalItemsFetched": 1615,
-    "totalNewArticles": 31,
-    "totalDuplicates": 1584,
-    "overallYieldPct": 1.9195046439628483
+    "totalSources": 70,
+    "totalItemsFetched": 1658,
+    "totalNewArticles": 143,
+    "totalDuplicates": 1515,
+    "overallYieldPct": 8.624849215922799
   }
 }
