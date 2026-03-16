@@ -1,6 +1,42 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { storeSubscription, StoredSubscription } from '@/lib/pushStorage';
 
+// Allowed origins for push subscription requests
+const ALLOWED_ORIGINS = [
+  'https://luxury-intel.com',
+  'https://www.luxury-intel.com',
+  // Allow localhost in development
+  ...(process.env.NODE_ENV === 'development' ? ['http://localhost:3000'] : []),
+];
+
+// Known push service endpoint domains — browsers can only create subscriptions
+// via these services, so any other endpoint domain is invalid/spoofed.
+const ALLOWED_PUSH_ENDPOINT_HOSTS = [
+  'fcm.googleapis.com',          // Chrome / Android
+  'updates.push.services.mozilla.com', // Firefox
+  'push.services.mozilla.com',   // Firefox (legacy)
+  'web.push.apple.com',          // Safari / iOS
+  'push.apple.com',              // Apple (alt)
+  'fcm.googleapis.com',          // Chrome desktop
+  'push.googleapis.com',         // Google (alt)
+];
+
+function isAllowedOrigin(origin: string | null): boolean {
+  if (!origin) return false;
+  return ALLOWED_ORIGINS.includes(origin);
+}
+
+function isAllowedPushEndpoint(endpoint: string): boolean {
+  try {
+    const url = new URL(endpoint);
+    return ALLOWED_PUSH_ENDPOINT_HOSTS.some(
+      host => url.hostname === host || url.hostname.endsWith(`.${host}`)
+    );
+  } catch {
+    return false;
+  }
+}
+
 interface PushSubscription {
   endpoint: string;
   keys: {
@@ -16,16 +52,20 @@ interface SubscribeRequestBody {
 }
 
 export async function POST(request: NextRequest) {
-  // DEBUG: Log that endpoint was called
-  console.log('[PUSH SUBSCRIBE DEBUG] subscribe called');
-  
+  // Validate Origin header — only accept requests from our own domain
+  const origin = request.headers.get('origin');
+  if (!isAllowedOrigin(origin)) {
+    return NextResponse.json(
+      { ok: false, error: 'Forbidden' },
+      { status: 403 }
+    );
+  }
+
   try {
     const body: SubscribeRequestBody = await request.json();
-    console.log('[PUSH SUBSCRIBE DEBUG] Request body parsed');
 
     // Validate subscription object
     if (!body.subscription) {
-      console.log('[PUSH SUBSCRIBE DEBUG] Validation failed: Missing subscription object');
       return NextResponse.json(
         { ok: false, error: 'Missing subscription object' },
         { status: 400 }
@@ -36,7 +76,6 @@ export async function POST(request: NextRequest) {
 
     // Validate subscription has required fields
     if (!subscription.endpoint) {
-      console.log('[PUSH SUBSCRIBE DEBUG] Validation failed: Missing endpoint');
       return NextResponse.json(
         { ok: false, error: 'Missing subscription.endpoint' },
         { status: 400 }
@@ -44,7 +83,6 @@ export async function POST(request: NextRequest) {
     }
 
     if (!subscription.keys) {
-      console.log('[PUSH SUBSCRIBE DEBUG] Validation failed: Missing keys');
       return NextResponse.json(
         { ok: false, error: 'Missing subscription.keys' },
         { status: 400 }
@@ -52,14 +90,19 @@ export async function POST(request: NextRequest) {
     }
 
     if (!subscription.keys.p256dh || !subscription.keys.auth) {
-      console.log('[PUSH SUBSCRIBE DEBUG] Validation failed: Missing p256dh or auth');
       return NextResponse.json(
         { ok: false, error: 'Missing subscription.keys.p256dh or subscription.keys.auth' },
         { status: 400 }
       );
     }
 
-    console.log('[PUSH SUBSCRIBE DEBUG] Validation passed');
+    // Validate endpoint comes from a known browser push service
+    if (!isAllowedPushEndpoint(subscription.endpoint)) {
+      return NextResponse.json(
+        { ok: false, error: 'Invalid subscription endpoint' },
+        { status: 400 }
+      );
+    }
 
     // Prepare subscription for storage
     const storedSubscription: StoredSubscription = {
@@ -72,23 +115,15 @@ export async function POST(request: NextRequest) {
       createdAt: body.timestamp || new Date().toISOString(),
     };
 
-    // Store subscription (deduplicated by endpoint)
-    console.log('[PUSH SUBSCRIBE DEBUG] Calling storeSubscription...');
     await storeSubscription(storedSubscription);
-    console.log('[PUSH SUBSCRIBE DEBUG] storeSubscription completed');
 
-    // Log subscription (server-side)
     console.log('[Push Subscribe] Subscription stored:', {
-      endpoint: subscription.endpoint,
       userAgent: body.userAgent || 'unknown',
       timestamp: storedSubscription.createdAt,
-      // Don't log keys for security
     });
 
-    console.log('[PUSH SUBSCRIBE DEBUG] Returning success');
     return NextResponse.json({ ok: true });
   } catch (error) {
-    console.error('[PUSH SUBSCRIBE DEBUG] Error caught:', error);
     console.error('[Push Subscribe] Error:', error);
     return NextResponse.json(
       { ok: false, error: 'Internal server error' },

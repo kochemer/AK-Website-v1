@@ -8,7 +8,7 @@
  * Typical use: webhook for triggering content regeneration, admin UI for forcing a digest refresh, etc.
  */
 
-import { NextResponse } from 'next/server';
+import { NextRequest, NextResponse } from 'next/server';
 import { promises as fs } from 'fs';
 import path from 'path';
 import { DateTime } from 'luxon';
@@ -17,10 +17,27 @@ import { generateSummariesForDigest } from '@/digest/generateSummaries';
 import { generateThemesForDigest } from '@/digest/generateThemes';
 import { loadEnv } from '@/lib/env';
 
-export async function POST() {
+export async function POST(request: NextRequest) {
   // Ensure environment variables are loaded before generating summaries
   // (Next.js should load .env.local automatically, but this ensures it's available)
   loadEnv();
+
+  // Authenticate: require x-admin-secret header matching PUSH_ADMIN_SECRET
+  const adminSecret = request.headers.get('x-admin-secret');
+  const expectedSecret = process.env.PUSH_ADMIN_SECRET;
+  if (!expectedSecret) {
+    return NextResponse.json(
+      { ok: false, error: 'PUSH_ADMIN_SECRET not configured on server' },
+      { status: 500 }
+    );
+  }
+  if (!adminSecret || adminSecret !== expectedSecret) {
+    return NextResponse.json(
+      { ok: false, error: 'Unauthorized' },
+      { status: 401 }
+    );
+  }
+
   try {
     const now = DateTime.now().setZone('Europe/Copenhagen');
     const year = now.year;
