@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-03-15T22:40:38.159Z",
+  "timestamp": "2026-03-16T07:00:57.364Z",
   "sources": [
     {
       "sourceName": "BoF - News (The News in Brief)",
@@ -12,22 +12,6 @@
       "rejectedNoTitle": 0,
       "rejectedNoUrl": 0,
       "rejectedDuplicate": 8,
-      "rejectedSelectorMiss": 0,
-      "articlesKept": 0,
-      "yieldPercentage": 0,
-      "failures": []
-    },
-    {
-      "sourceName": "MIT Technology Review - AI",
-      "pagesFetched": 1,
-      "fetchStatus": 404,
-      "itemsMatched": 0,
-      "articlesExtracted": 0,
-      "rejectedNoDate": 0,
-      "rejectedInvalidDate": 0,
-      "rejectedNoTitle": 0,
-      "rejectedNoUrl": 0,
-      "rejectedDuplicate": 0,
       "rejectedSelectorMiss": 0,
       "articlesKept": 0,
       "yieldPercentage": 0,
@@ -67,7 +51,7 @@
     }
   ],
   "summary": {
-    "totalPagesFetched": 4,
+    "totalPagesFetched": 3,
     "totalItemsMatched": 203,
     "totalArticlesExtracted": 0,
     "totalArticlesKept": 0,

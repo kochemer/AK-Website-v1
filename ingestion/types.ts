@@ -12,7 +12,7 @@ export type SourceFeed = {
   name: string;
   url: string;
   tier?: 1 | 2 | 3 | 4 | 5 | 6; // Source tier classification
-  sourceType?: 'news' | 'retail' | 'academic' | 'specialist' | 'consultancy' | 'platform' | 'fashion_luxury' | 'jewellery'; // Source type for categorization
+  sourceType?: 'news' | 'retail' | 'academic' | 'specialist' | 'consultancy' | 'platform' | 'fashion_luxury' | 'jewellery' | 'blog'; // Source type for categorization
   categoryHint?: 'Fashion & Luxury' | 'Jewellery Industry'; // Optional hint for classification (non-binding)
 };
 

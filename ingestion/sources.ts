@@ -266,6 +266,41 @@ const FASHION_LUXURY_FEEDS: SourceFeed[] = [
     sourceType: "fashion_luxury",
     categoryHint: "Fashion & Luxury"
   },
+  {
+    name: "Fashionista",
+    url: "https://fashionista.com/feed",
+    tier: 2,
+    sourceType: "fashion_luxury",
+    categoryHint: "Fashion & Luxury"
+  },
+  {
+    name: "Just Style",
+    url: "https://www.just-style.com/feed/",
+    tier: 2,
+    sourceType: "fashion_luxury",
+    categoryHint: "Fashion & Luxury"
+  },
+  {
+    name: "Dazed",
+    url: "https://www.dazeddigital.com/rss",
+    tier: 3,
+    sourceType: "fashion_luxury",
+    categoryHint: "Fashion & Luxury"
+  },
+  {
+    name: "Highsnobiety",
+    url: "https://www.highsnobiety.com/feed/",
+    tier: 3,
+    sourceType: "fashion_luxury",
+    categoryHint: "Fashion & Luxury"
+  },
+  {
+    name: "Dezeen",
+    url: "https://www.dezeen.com/feed/",
+    tier: 3,
+    sourceType: "fashion_luxury",
+    categoryHint: "Fashion & Luxury"
+  },
 ];
 
 // --- Tier 2: Jewellery Industry ---
@@ -362,6 +397,64 @@ const JEWELLERY_FEEDS: SourceFeed[] = [
   }
 ];
 
+// --- AI & Strategy Feeds ---
+const AI_FEEDS: SourceFeed[] = [
+  {
+    name: "The Decoder",
+    url: "https://the-decoder.com/feed/",
+    tier: 2,
+    sourceType: "news"
+  },
+  {
+    name: "AI News",
+    url: "https://www.artificialintelligence-news.com/feed/",
+    tier: 2,
+    sourceType: "news"
+  },
+  {
+    name: "MIT Technology Review",
+    url: "https://www.technologyreview.com/feed/",
+    tier: 2,
+    sourceType: "news"
+  },
+  {
+    name: "IEEE Spectrum",
+    url: "https://spectrum.ieee.org/feeds/feed.rss",
+    tier: 2,
+    sourceType: "news"
+  },
+  {
+    name: "Simon Willison",
+    url: "https://simonwillison.net/atom/everything/",
+    tier: 3,
+    sourceType: "blog"
+  },
+  {
+    name: "Forrester Blog",
+    url: "https://www.forrester.com/feed/",
+    tier: 3,
+    sourceType: "consultancy"
+  },
+  {
+    name: "MIT Sloan Management Review",
+    url: "https://sloanreview.mit.edu/feed/",
+    tier: 3,
+    sourceType: "consultancy"
+  },
+  {
+    name: "Strategy+Business",
+    url: "https://www.strategy-business.com/all_updates.xml",
+    tier: 3,
+    sourceType: "consultancy"
+  },
+  {
+    name: "CNBC Technology",
+    url: "https://www.cnbc.com/id/19854910/device/rss/rss.html",
+    tier: 2,
+    sourceType: "news"
+  },
+];
+
 // --- Other Existing Feeds (Tech/AI focused) ---
 const OTHER_FEEDS: SourceFeed[] = [
   {
@@ -403,6 +496,7 @@ export const SOURCE_FEEDS: SourceFeed[] = [
   ...TIER_6_FEEDS,
   ...FASHION_LUXURY_FEEDS,
   ...JEWELLERY_FEEDS,
+  ...AI_FEEDS,
   ...OTHER_FEEDS
 ];
 
@@ -436,17 +530,7 @@ export const SOURCE_PAGES: SourcePage[] = [
       date: ""
     }
   },
-  {
-    name: "MIT Technology Review - AI",
-    url: "https://www.technologyreview.com/ai/",
-    selectors: {
-      item: "article.stream-article",
-      title: "a.stream-article__headline",
-      link: "a.stream-article__headline",
-      date: "time"
-    },
-    linkAttr: "href"
-  },
+  // MIT Technology Review - AI: Removed (section page returns 404; replaced by RSS feed in AI_FEEDS)
   {
     // Jing Daily: APAC luxury & fashion intelligence.
     // Homepage lists articles as h2.font-serif elements; links are relative /posts/slug paths.

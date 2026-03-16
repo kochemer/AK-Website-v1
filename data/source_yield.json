@@ -1,6 +1,591 @@
 {
-  "timestamp": "2026-03-15T22:40:38.173Z",
+  "timestamp": "2026-03-16T07:00:57.365Z",
   "sources": [
+    {
+      "sourceName": "Financial Times - Technology",
+      "type": "rss",
+      "itemsFetched": 25,
+      "itemsParsed": 25,
+      "newArticlesAdded": 0,
+      "duplicates": 25,
+      "yieldPct": 0
+    },
+    {
+      "sourceName": "WSJ - Technology",
+      "type": "rss",
+      "itemsFetched": 20,
+      "itemsParsed": 20,
+      "newArticlesAdded": 0,
+      "duplicates": 20,
+      "yieldPct": 0
+    },
+    {
+      "sourceName": "Bloomberg - Technology",
+      "type": "rss",
+      "itemsFetched": 30,
+      "itemsParsed": 30,
+      "newArticlesAdded": 0,
+      "duplicates": 30,
+      "yieldPct": 0
+    },
+    {
+      "sourceName": "Business Insider - Tech",
+      "type": "rss",
+      "itemsFetched": 20,
+      "itemsParsed": 20,
+      "newArticlesAdded": 0,
+      "duplicates": 20,
+      "yieldPct": 0
+    },
+    {
+      "sourceName": "The Verge",
+      "type": "rss",
+      "itemsFetched": 10,
+      "itemsParsed": 10,
+      "newArticlesAdded": 0,
+      "duplicates": 10,
+      "yieldPct": 0
+    },
+    {
+      "sourceName": "The Guardian - Technology",
+      "type": "rss",
+      "itemsFetched": 24,
+      "itemsParsed": 24,
+      "newArticlesAdded": 0,
+      "duplicates": 24,
+      "yieldPct": 0
+    },
+    {
+      "sourceName": "Economic Times - Technology",
+      "type": "rss",
+      "itemsFetched": 50,
+      "itemsParsed": 50,
+      "newArticlesAdded": 0,
+      "duplicates": 50,
+      "yieldPct": 0
+    },
+    {
+      "sourceName": "Digital Commerce 360",
+      "type": "rss",
+      "itemsFetched": 10,
+      "itemsParsed": 10,
+      "newArticlesAdded": 0,
+      "duplicates": 10,
+      "yieldPct": 0
+    },
+    {
+      "sourceName": "Retail Dive",
+      "type": "rss",
+      "itemsFetched": 10,
+      "itemsParsed": 10,
+      "newArticlesAdded": 0,
+      "duplicates": 10,
+      "yieldPct": 0
+    },
+    {
+      "sourceName": "Grocery Dive",
+      "type": "rss",
+      "itemsFetched": 10,
+      "itemsParsed": 10,
+      "newArticlesAdded": 0,
+      "duplicates": 10,
+      "yieldPct": 0
+    },
+    {
+      "sourceName": "Internet Retailing",
+      "type": "rss",
+      "itemsFetched": 10,
+      "itemsParsed": 10,
+      "newArticlesAdded": 0,
+      "duplicates": 10,
+      "yieldPct": 0
+    },
+    {
+      "sourceName": "Practical Ecommerce",
+      "type": "rss",
+      "itemsFetched": 30,
+      "itemsParsed": 30,
+      "newArticlesAdded": 0,
+      "duplicates": 30,
+      "yieldPct": 0
+    },
+    {
+      "sourceName": "PYMNTS",
+      "type": "rss",
+      "itemsFetched": 10,
+      "itemsParsed": 10,
+      "newArticlesAdded": 0,
+      "duplicates": 10,
+      "yieldPct": 0
+    },
+    {
+      "sourceName": "Marketing Week",
+      "type": "rss",
+      "itemsFetched": 40,
+      "itemsParsed": 40,
+      "newArticlesAdded": 0,
+      "duplicates": 40,
+      "yieldPct": 0
+    },
+    {
+      "sourceName": "Sourcing Journal",
+      "type": "rss",
+      "itemsFetched": 10,
+      "itemsParsed": 10,
+      "newArticlesAdded": 0,
+      "duplicates": 10,
+      "yieldPct": 0
+    },
+    {
+      "sourceName": "TechCrunch - Commerce",
+      "type": "rss",
+      "itemsFetched": 20,
+      "itemsParsed": 20,
+      "newArticlesAdded": 0,
+      "duplicates": 20,
+      "yieldPct": 0
+    },
+    {
+      "sourceName": "TechCrunch - AI",
+      "type": "rss",
+      "itemsFetched": 20,
+      "itemsParsed": 20,
+      "newArticlesAdded": 0,
+      "duplicates": 20,
+      "yieldPct": 0
+    },
+    {
+      "sourceName": "Total Retail",
+      "type": "rss",
+      "itemsFetched": 10,
+      "itemsParsed": 10,
+      "newArticlesAdded": 0,
+      "duplicates": 10,
+      "yieldPct": 0
+    },
+    {
+      "sourceName": "Payments Journal",
+      "type": "rss",
+      "itemsFetched": 10,
+      "itemsParsed": 10,
+      "newArticlesAdded": 0,
+      "duplicates": 10,
+      "yieldPct": 0
+    },
+    {
+      "sourceName": "Computerworld - Ecommerce",
+      "type": "rss",
+      "itemsFetched": 20,
+      "itemsParsed": 20,
+      "newArticlesAdded": 0,
+      "duplicates": 20,
+      "yieldPct": 0
+    },
+    {
+      "sourceName": "UseInsider",
+      "type": "rss",
+      "itemsFetched": 10,
+      "itemsParsed": 10,
+      "newArticlesAdded": 0,
+      "duplicates": 10,
+      "yieldPct": 0
+    },
+    {
+      "sourceName": "ToneTag",
+      "type": "rss",
+      "itemsFetched": 10,
+      "itemsParsed": 10,
+      "newArticlesAdded": 0,
+      "duplicates": 10,
+      "yieldPct": 0
+    },
+    {
+      "sourceName": "Business of Fashion - News",
+      "type": "rss",
+      "itemsFetched": 100,
+      "itemsParsed": 100,
+      "newArticlesAdded": 0,
+      "duplicates": 100,
+      "yieldPct": 0
+    },
+    {
+      "sourceName": "WWD - Women's Wear Daily",
+      "type": "rss",
+      "itemsFetched": 10,
+      "itemsParsed": 10,
+      "newArticlesAdded": 0,
+      "duplicates": 10,
+      "yieldPct": 0
+    },
+    {
+      "sourceName": "Luxury Daily - Main",
+      "type": "rss",
+      "itemsFetched": 10,
+      "itemsParsed": 10,
+      "newArticlesAdded": 1,
+      "duplicates": 9,
+      "yieldPct": 10
+    },
+    {
+      "sourceName": "Drapers",
+      "type": "rss",
+      "itemsFetched": 10,
+      "itemsParsed": 10,
+      "newArticlesAdded": 0,
+      "duplicates": 10,
+      "yieldPct": 0
+    },
+    {
+      "sourceName": "Retail Gazette",
+      "type": "rss",
+      "itemsFetched": 10,
+      "itemsParsed": 10,
+      "newArticlesAdded": 0,
+      "duplicates": 10,
+      "yieldPct": 0
+    },
+    {
+      "sourceName": "Hypebeast - Business",
+      "type": "rss",
+      "itemsFetched": 20,
+      "itemsParsed": 20,
+      "newArticlesAdded": 0,
+      "duplicates": 20,
+      "yieldPct": 0
+    },
+    {
+      "sourceName": "Glossy",
+      "type": "rss",
+      "itemsFetched": 20,
+      "itemsParsed": 20,
+      "newArticlesAdded": 0,
+      "duplicates": 20,
+      "yieldPct": 0
+    },
+    {
+      "sourceName": "Robb Report",
+      "type": "rss",
+      "itemsFetched": 10,
+      "itemsParsed": 10,
+      "newArticlesAdded": 0,
+      "duplicates": 10,
+      "yieldPct": 0
+    },
+    {
+      "sourceName": "Footwear News",
+      "type": "rss",
+      "itemsFetched": 10,
+      "itemsParsed": 10,
+      "newArticlesAdded": 0,
+      "duplicates": 10,
+      "yieldPct": 0
+    },
+    {
+      "sourceName": "Luxe Digital",
+      "type": "rss",
+      "itemsFetched": 10,
+      "itemsParsed": 10,
+      "newArticlesAdded": 0,
+      "duplicates": 10,
+      "yieldPct": 0
+    },
+    {
+      "sourceName": "Fashionista",
+      "type": "rss",
+      "itemsFetched": 50,
+      "itemsParsed": 50,
+      "newArticlesAdded": 0,
+      "duplicates": 50,
+      "yieldPct": 0
+    },
+    {
+      "sourceName": "Just Style",
+      "type": "rss",
+      "itemsFetched": 10,
+      "itemsParsed": 10,
+      "newArticlesAdded": 0,
+      "duplicates": 10,
+      "yieldPct": 0
+    },
+    {
+      "sourceName": "Dazed",
+      "type": "rss",
+      "itemsFetched": 15,
+      "itemsParsed": 15,
+      "newArticlesAdded": 0,
+      "duplicates": 15,
+      "yieldPct": 0
+    },
+    {
+      "sourceName": "Highsnobiety",
+      "type": "rss",
+      "itemsFetched": 9,
+      "itemsParsed": 9,
+      "newArticlesAdded": 0,
+      "duplicates": 9,
+      "yieldPct": 0
+    },
+    {
+      "sourceName": "Dezeen",
+      "type": "rss",
+      "itemsFetched": 50,
+      "itemsParsed": 50,
+      "newArticlesAdded": 0,
+      "duplicates": 50,
+      "yieldPct": 0
+    },
+    {
+      "sourceName": "Jeweller - Business News",
+      "type": "rss",
+      "itemsFetched": 30,
+      "itemsParsed": 30,
+      "newArticlesAdded": 0,
+      "duplicates": 30,
+      "yieldPct": 0
+    },
+    {
+      "sourceName": "Jeweller - Jewellery Trends",
+      "type": "rss",
+      "itemsFetched": 30,
+      "itemsParsed": 30,
+      "newArticlesAdded": 0,
+      "duplicates": 30,
+      "yieldPct": 0
+    },
+    {
+      "sourceName": "Jeweller - Main",
+      "type": "rss",
+      "itemsFetched": 30,
+      "itemsParsed": 30,
+      "newArticlesAdded": 0,
+      "duplicates": 30,
+      "yieldPct": 0
+    },
+    {
+      "sourceName": "A Blog to Watch",
+      "type": "rss",
+      "itemsFetched": 30,
+      "itemsParsed": 30,
+      "newArticlesAdded": 0,
+      "duplicates": 30,
+      "yieldPct": 0
+    },
+    {
+      "sourceName": "Monochrome Watches",
+      "type": "rss",
+      "itemsFetched": 10,
+      "itemsParsed": 10,
+      "newArticlesAdded": 0,
+      "duplicates": 10,
+      "yieldPct": 0
+    },
+    {
+      "sourceName": "Fratello Watches",
+      "type": "rss",
+      "itemsFetched": 10,
+      "itemsParsed": 10,
+      "newArticlesAdded": 0,
+      "duplicates": 10,
+      "yieldPct": 0
+    },
+    {
+      "sourceName": "Professional Jeweller",
+      "type": "rss",
+      "itemsFetched": 10,
+      "itemsParsed": 10,
+      "newArticlesAdded": 0,
+      "duplicates": 10,
+      "yieldPct": 0
+    },
+    {
+      "sourceName": "Instore Magazine",
+      "type": "rss",
+      "itemsFetched": 10,
+      "itemsParsed": 10,
+      "newArticlesAdded": 0,
+      "duplicates": 10,
+      "yieldPct": 0
+    },
+    {
+      "sourceName": "WatchPro",
+      "type": "rss",
+      "itemsFetched": 200,
+      "itemsParsed": 200,
+      "newArticlesAdded": 0,
+      "duplicates": 200,
+      "yieldPct": 0
+    },
+    {
+      "sourceName": "Luxury Daily - Retail",
+      "type": "rss",
+      "itemsFetched": 0,
+      "itemsParsed": 0,
+      "newArticlesAdded": 0,
+      "duplicates": 0,
+      "yieldPct": 0
+    },
+    {
+      "sourceName": "Luxury Daily - Commerce",
+      "type": "rss",
+      "itemsFetched": 0,
+      "itemsParsed": 0,
+      "newArticlesAdded": 0,
+      "duplicates": 0,
+      "yieldPct": 0
+    },
+    {
+      "sourceName": "Luxury Daily - Research",
+      "type": "rss",
+      "itemsFetched": 10,
+      "itemsParsed": 10,
+      "newArticlesAdded": 0,
+      "duplicates": 10,
+      "yieldPct": 0
+    },
+    {
+      "sourceName": "The Decoder",
+      "type": "rss",
+      "itemsFetched": 10,
+      "itemsParsed": 10,
+      "newArticlesAdded": 0,
+      "duplicates": 10,
+      "yieldPct": 0
+    },
+    {
+      "sourceName": "AI News",
+      "type": "rss",
+      "itemsFetched": 12,
+      "itemsParsed": 12,
+      "newArticlesAdded": 0,
+      "duplicates": 12,
+      "yieldPct": 0
+    },
+    {
+      "sourceName": "MIT Technology Review",
+      "type": "rss",
+      "itemsFetched": 10,
+      "itemsParsed": 10,
+      "newArticlesAdded": 0,
+      "duplicates": 10,
+      "yieldPct": 0
+    },
+    {
+      "sourceName": "IEEE Spectrum",
+      "type": "rss",
+      "itemsFetched": 30,
+      "itemsParsed": 30,
+      "newArticlesAdded": 0,
+      "duplicates": 30,
+      "yieldPct": 0
+    },
+    {
+      "sourceName": "Simon Willison",
+      "type": "rss",
+      "itemsFetched": 30,
+      "itemsParsed": 30,
+      "newArticlesAdded": 0,
+      "duplicates": 30,
+      "yieldPct": 0
+    },
+    {
+      "sourceName": "Forrester Blog",
+      "type": "rss",
+      "itemsFetched": 10,
+      "itemsParsed": 10,
+      "newArticlesAdded": 0,
+      "duplicates": 10,
+      "yieldPct": 0
+    },
+    {
+      "sourceName": "MIT Sloan Management Review",
+      "type": "rss",
+      "itemsFetched": 20,
+      "itemsParsed": 20,
+      "newArticlesAdded": 0,
+      "duplicates": 20,
+      "yieldPct": 0
+    },
+    {
+      "sourceName": "Strategy+Business",
+      "type": "rss",
+      "itemsFetched": 30,
+      "itemsParsed": 30,
+      "newArticlesAdded": 30,
+      "duplicates": 0,
+      "yieldPct": 100
+    },
+    {
+      "sourceName": "CNBC Technology",
+      "type": "rss",
+      "itemsFetched": 30,
+      "itemsParsed": 30,
+      "newArticlesAdded": 0,
+      "duplicates": 30,
+      "yieldPct": 0
+    },
+    {
+      "sourceName": "Modern Retail",
+      "type": "rss",
+      "itemsFetched": 10,
+      "itemsParsed": 10,
+      "newArticlesAdded": 0,
+      "duplicates": 10,
+      "yieldPct": 0
+    },
+    {
+      "sourceName": "TechCrunch Ecommerce",
+      "type": "rss",
+      "itemsFetched": 20,
+      "itemsParsed": 20,
+      "newArticlesAdded": 0,
+      "duplicates": 20,
+      "yieldPct": 0
+    },
+    {
+      "sourceName": "NYTimes Technology",
+      "type": "rss",
+      "itemsFetched": 20,
+      "itemsParsed": 20,
+      "newArticlesAdded": 0,
+      "duplicates": 20,
+      "yieldPct": 0
+    },
+    {
+      "sourceName": "MIT Sloan Management Review – AI",
+      "type": "rss",
+      "itemsFetched": 20,
+      "itemsParsed": 20,
+      "newArticlesAdded": 0,
+      "duplicates": 20,
+      "yieldPct": 0
+    },
+    {
+      "sourceName": "Benedict Evans",
+      "type": "rss",
+      "itemsFetched": 20,
+      "itemsParsed": 20,
+      "newArticlesAdded": 0,
+      "duplicates": 20,
+      "yieldPct": 0
+    },
+    {
+      "sourceName": "Stratechery",
+      "type": "rss",
+      "itemsFetched": 10,
+      "itemsParsed": 10,
+      "newArticlesAdded": 0,
+      "duplicates": 10,
+      "yieldPct": 0
+    },
+    {
+      "sourceName": "VentureBeat - AI",
+      "type": "rss",
+      "itemsFetched": 7,
+      "itemsParsed": 7,
+      "newArticlesAdded": 0,
+      "duplicates": 7,
+      "yieldPct": 0
+    },
     {
       "sourceName": "BoF - News (The News in Brief)",
       "type": "page",
@@ -30,10 +615,10 @@
     }
   ],
   "summary": {
-    "totalSources": 3,
-    "totalItemsFetched": 203,
-    "totalNewArticles": 0,
-    "totalDuplicates": 203,
-    "overallYieldPct": 0
+    "totalSources": 68,
+    "totalItemsFetched": 1615,
+    "totalNewArticles": 31,
+    "totalDuplicates": 1584,
+    "overallYieldPct": 1.9195046439628483
   }
 }
