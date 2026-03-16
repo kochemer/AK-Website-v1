@@ -21,9 +21,9 @@ interface SendTestRequestBody {
 
 export async function POST(request: NextRequest) {
   try {
-    // Check admin secret from header or query param
-    const adminSecret = request.headers.get('x-admin-secret') || 
-                       new URL(request.url).searchParams.get('secret');
+    // Check admin secret from header only — never from query params
+    // (query params appear in server logs, browser history, and CDN access logs)
+    const adminSecret = request.headers.get('x-admin-secret');
     
     const expectedSecret = process.env.PUSH_ADMIN_SECRET;
     
@@ -140,8 +140,10 @@ export async function POST(request: NextRequest) {
   }
 }
 
-// Also support GET for convenience
-export async function GET(request: NextRequest) {
-  // Convert GET to POST by calling POST handler
-  return POST(request);
+// GET intentionally not supported — secrets must not appear in URLs
+export async function GET() {
+  return NextResponse.json(
+    { ok: false, error: 'Use POST with x-admin-secret header' },
+    { status: 405 },
+  );
 }

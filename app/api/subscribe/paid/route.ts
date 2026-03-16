@@ -1,12 +1,22 @@
-import { NextResponse } from 'next/server';
+import { NextRequest, NextResponse } from 'next/server';
 import { getStripe, getPriceId } from '@/lib/stripe';
 import { upsertSubscriberByEmail } from '@/lib/db/subscribers';
 import { getSiteUrl } from '@/lib/utils/siteUrl';
+import { checkRateLimit, getClientIp } from '@/lib/rateLimit';
 
 const EMAIL_RE    = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const VALID_PLANS = new Set<string>(['supporter_monthly', 'patron_monthly']);
 
-export async function POST(req: Request) {
+export async function POST(req: NextRequest) {
+  const ip = getClientIp(req);
+  const { allowed } = await checkRateLimit(ip, 'subscribe:paid', 10, 900); // 10 per 15 min
+  if (!allowed) {
+    return NextResponse.json(
+      { ok: false, error: 'Too many requests. Please try again later.' },
+      { status: 429 },
+    );
+  }
+
   try {
     const body  = (await req.json()) as Record<string, unknown>;
     const email = typeof body.email === 'string' ? body.email.trim().toLowerCase() : '';
@@ -48,7 +58,7 @@ export async function POST(req: Request) {
       allow_promotion_codes: false,
     });
 
-    console.log(`[subscribe/paid] session=${session.id} email=${email} plan=${typedPlan}`);
+    console.log(`[subscribe/paid] session=${session.id} plan=${typedPlan}`);
 
     return NextResponse.json({ ok: true, checkoutUrl: session.url });
   } catch (err) {

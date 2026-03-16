@@ -1,10 +1,20 @@
-import { NextResponse } from 'next/server';
+import { NextRequest, NextResponse } from 'next/server';
 import { upsertSubscriberByEmail, getSubscriberByEmail } from '@/lib/db/subscribers';
 import { sendFreeConfirmationEmail } from '@/lib/email/transactional';
+import { checkRateLimit, getClientIp } from '@/lib/rateLimit';
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-export async function POST(req: Request) {
+export async function POST(req: NextRequest) {
+  const ip = getClientIp(req);
+  const { allowed } = await checkRateLimit(ip, 'subscribe:free', 5, 900); // 5 per 15 min
+  if (!allowed) {
+    return NextResponse.json(
+      { ok: false, error: 'Too many requests. Please try again later.' },
+      { status: 429 },
+    );
+  }
+
   try {
     const body = (await req.json()) as Record<string, unknown>;
     const email =

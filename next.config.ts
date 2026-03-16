@@ -27,9 +27,31 @@ async function buildWeekRedirects() {
   }
 }
 
+const securityHeaders = [
+  // Prevent the site being embedded in iframes (clickjacking)
+  { key: 'X-Frame-Options', value: 'DENY' },
+  // Stop browsers guessing content types (MIME sniffing attacks)
+  { key: 'X-Content-Type-Options', value: 'nosniff' },
+  // Force HTTPS for 2 years, include subdomains
+  { key: 'Strict-Transport-Security', value: 'max-age=63072000; includeSubDomains; preload' },
+  // Limit referrer info sent to third parties
+  { key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin' },
+  // Disable unused browser features
+  { key: 'Permissions-Policy', value: 'camera=(), microphone=(), geolocation=()' },
+];
+
 const nextConfig: NextConfig = {
   // Permanent 308 redirects: /week/YYYY-Www → /digest/month-yyyy-week-n
   redirects: buildWeekRedirects,
+  // Security headers applied to all routes
+  async headers() {
+    return [
+      {
+        source: '/(.*)',
+        headers: securityHeaders,
+      },
+    ];
+  },
   // Use webpack explicitly for next-pwa compatibility (next-pwa requires webpack)
   webpack: (config, { isServer }) => {
     return config;

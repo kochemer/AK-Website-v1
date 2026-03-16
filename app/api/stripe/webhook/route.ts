@@ -109,7 +109,7 @@ export async function POST(req: Request) {
           ...(stripeSubscriptionId && { stripeSubscriptionId }),
         });
 
-        console.log(`[webhook] checkout.session.completed: subscribed email=${email} plan=${planType}`);
+        console.log(`[webhook] checkout.session.completed: subscribed customer=${stripeCustomerId} plan=${planType}`);
 
         if (isNewActivation) {
           sendPaidConfirmationEmail(email, planType).catch(err =>
@@ -146,7 +146,7 @@ export async function POST(req: Request) {
           ...(digestEnabled !== undefined && { emailDigestEnabled: digestEnabled }),
         });
 
-        console.log(`[webhook] subscription.created: sub=${sub.id} email=${email} status=${sub.status}`);
+        console.log(`[webhook] subscription.created: sub=${sub.id} customer=${stripeCustomerId} status=${sub.status}`);
         break;
       }
 

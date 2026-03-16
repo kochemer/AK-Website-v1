@@ -69,7 +69,7 @@ export async function GET(req: Request) {
 
   try {
     await setEmailDigestEnabled(email, false);
-    console.log(`[unsubscribe] disabled digest for ${email}`);
+    console.log(`[unsubscribe] digest disabled`);
   } catch (err) {
     console.error('[unsubscribe] DB error:', err);
     return NextResponse.json({ error: 'Failed to unsubscribe. Please try again.' }, { status: 500 });
