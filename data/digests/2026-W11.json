@@ -3,20 +3,20 @@
   "tz": "Europe/Copenhagen",
   "startISO": "2026-03-08T23:00:00.000Z",
   "endISO": "2026-03-15T22:59:59.999Z",
-  "builtAtISO": "2026-03-15T23:42:27.169+01:00",
-  "builtAtLocal": "2026-03-15 23:42:27",
+  "builtAtISO": "2026-03-16T08:07:58.131+01:00",
+  "builtAtLocal": "2026-03-16 08:07:58",
   "totals": {
-    "total": 698,
+    "total": 918,
     "byTopic": {
-      "AIStrategy": 80,
-      "EcommerceRetail": 532,
-      "LuxuryConsumer": 50,
-      "Jewellery": 31
+      "AIStrategy": 132,
+      "EcommerceRetail": 664,
+      "LuxuryConsumer": 84,
+      "Jewellery": 32
     }
   },
   "topics": {
     "AI_and_Strategy": {
-      "total": 80,
+      "total": 132,
       "top": [
         {
           "id": "7lwmn4",
@@ -40,15 +40,15 @@
               "agent"
             ]
           },
-          "aiSummary": "AI-generated summary: Anthropic and Microsoft have formed an alliance on AI agents, yet competition over the future direction of the technology is expected to grow more intense.",
+          "aiSummary": "AI-generated summary: Anthropic and Microsoft have formed an alliance focused on AI agents, yet competition over the future direction of the technology is expected to grow more intense.",
           "translations": {
             "da": {
-              "title": "En ubehagelig våbenhvile i AI-platformkrigene",
-              "summary": "AI-genereret resumé: Anthropic og Microsoft har dannet en alliance om AI-agenter, men konkurrencen om teknologiens fremtidige retning forventes at blive mere intens."
+              "title": "En ubehagelig våbenhvile i AI-platformskrigene",
+              "summary": "AI-genereret resumé: Anthropic og Microsoft har dannet en alliance med fokus på AI-agenter, men konkurrencen om teknologiens fremtidige retning forventes at blive mere intens."
             },
             "es": {
               "title": "Una tregua incómoda en las guerras de plataformas de IA",
-              "summary": "Resumen generado por IA: Anthropic y Microsoft han formado una alianza sobre agentes de IA, pero se espera que la competencia por la dirección futura de la tecnología se intensifique."
+              "summary": "Resumen generado por IA: Anthropic y Microsoft han formado una alianza centrada en agentes de IA, pero se espera que la competencia sobre la dirección futura de la tecnología se intensifique."
             }
           }
         },
@@ -73,15 +73,47 @@
               "artificial intelligence"
             ]
           },
-          "aiSummary": "AI-generated summary: On March 9, 2026, the artificial intelligence company Anthropic filed two lawsuits against the Department of Defense, alleging it was being unfairly targeted due to ideological reasons related to a ‘Supply Chain Risk’ label.",
+          "aiSummary": "AI-generated summary: On March 9, 2026, the AI company Anthropic filed two lawsuits against the Department of Defense, alleging it was unfairly labeled a \"supply chain risk\" and punished for ideological reasons.",
           "translations": {
             "da": {
-              "title": "Anthropic sagsøger Forsvarsministeriet over 'Supply Chain Risk'-mærkat",
-              "summary": "AI-genereret resumé: Den 9. marts 2026 indgav AI-virksomheden Anthropic to retssager mod Forsvarsministeriet og hævdede, at de blev uretfærdigt målrettet af ideologiske årsager relateret til et 'Supply Chain Risk'-mærkat."
+              "title": "Anthropic sagsøger Forsvarsministeriet over 'Supply Chain Risk'-mærkning",
+              "summary": "AI-genereret resumé: Den 9. marts 2026 indgav AI-virksomheden Anthropic to retssager mod Forsvarsministeriet og hævdede, at det uretfærdigt blev mærket som en 'supply chain risk' og straffet af ideologiske årsager."
             },
             "es": {
-              "title": "Anthropic demanda al Departamento de Defensa por la etiqueta de ‘Supply Chain Risk’",
-              "summary": "Resumen generado por IA: El 9 de marzo de 2026, la empresa de inteligencia artificial Anthropic presentó dos demandas contra el Departamento de Defensa, alegando que estaba siendo injustamente atacada por razones ideológicas relacionadas con una etiqueta de ‘Supply Chain Risk’."
+              "title": "Anthropic demanda al Departamento de Defensa por la etiqueta de 'Riesgo en la Cadena de Suministro'",
+              "summary": "Resumen generado por IA: El 9 de marzo de 2026, la empresa de IA Anthropic presentó dos demandas contra el Departamento de Defensa, alegando que fue etiquetada injustamente como un 'riesgo en la cadena de suministro' y castigada por razones ideológicas."
+            }
+          }
+        },
+        {
+          "id": "sn7hsc",
+          "title": "Nvidia may soon unveil a brand-new AI chip. A closer look at the $20 billion bet to make it happen",
+          "url": "https://www.cnbc.com/2026/03/13/a-closer-look-at-nvidias-20-billion-bet-on-tech-for-a-new-ai-chip.html",
+          "source": "CNBC Technology",
+          "published_at": "2026-03-13T22:00:20.000Z",
+          "ingested_at": "2026-03-16T06:53:12.937Z",
+          "snippet": "At its GTC conference, Nvidia is expected to share some of its vision for incorporating technology from AI chip startup Groq.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ai"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Nvidia is anticipated to reveal a new AI chip at its GTC conference, highlighting its strategic $20 billion investment and plans to integrate technology from AI chip startup Groq.",
+          "translations": {
+            "da": {
+              "title": "Nvidia kan snart afsløre en helt ny AI-chip. Et nærmere kig på det 20 milliarder dollars store satsning",
+              "summary": "AI-genereret resumé: Nvidia forventes at afsløre en ny AI-chip på deres GTC-konference, der fremhæver deres strategiske investering på 20 milliarder dollars og planer om at integrere teknologi fra AI-chip startup Groq."
+            },
+            "es": {
+              "title": "Nvidia podría presentar pronto un chip de IA completamente nuevo. Un vistazo más cercano a la apuesta de 20 mil millones de dólares para lograrlo",
+              "summary": "Resumen generado por IA: Se espera que Nvidia revele un nuevo chip de IA en su conferencia GTC, destacando su inversión estratégica de 20 mil millones de dólares y planes para integrar tecnología de la startup de chips de IA Groq."
             }
           }
         },
@@ -106,160 +138,123 @@
               "inference"
             ]
           },
-          "aiSummary": "AI-generated summary: Amazon Web Services and Cerebras Systems have partnered to integrate Cerebras AI chips with Amazon's Trainium3 chips in AWS data centers, creating a new service designed to accelerate AI applications such as chatbots and coding tools.",
+          "aiSummary": "AI-generated summary: Cerebras Systems and Amazon Web Services have partnered to integrate Cerebras AI chips with Amazon's Trainium3 chips in AWS data centers, creating a new service designed to accelerate AI applications such as chatbots and coding tools. This collaboration aims to enhance AI inference capabilities.",
           "translations": {
             "da": {
               "title": "Cerebras Systems og Amazon indgår aftale om AI-chips på AWS cloud",
-              "summary": "Amazon Web Services og Cerebras Systems har indgået partnerskab om at integrere Cerebras AI-chips med Amazons Trainium3-chips i AWS-datacentre, og skaber en ny service til at accelerere AI-applikationer som chatbots og kodningsværktøjer."
+              "summary": "AI-genereret resumé: Cerebras Systems og Amazon Web Services har indgået partnerskab om at integrere Cerebras AI-chips med Amazons Trainium3-chips i AWS-datacentre, hvilket skaber en ny service designet til at accelerere AI-applikationer som chatbots og kodningsværktøjer. Dette samarbejde sigter mod at forbedre AI-inferensekapaciteter."
             },
             "es": {
               "title": "Cerebras Systems y Amazon acuerdan ofrecer chips de IA en la nube AWS",
-              "summary": "Amazon Web Services y Cerebras Systems se han asociado para integrar los chips de IA de Cerebras con los chips Trainium3 de Amazon en los centros de datos de AWS, creando un nuevo servicio diseñado para acelerar aplicaciones de IA como chatbots y herramientas de codificación."
+              "summary": "Resumen generado por IA: Cerebras Systems y Amazon Web Services se han asociado para integrar los chips de IA de Cerebras con los chips Trainium3 de Amazon en los centros de datos de AWS, creando un nuevo servicio diseñado para acelerar aplicaciones de IA como chatbots y herramientas de codificación. Esta colaboración busca mejorar las capacidades de inferencia de IA."
             }
           }
         },
         {
-          "id": "frgqd5",
-          "title": "Rox Secures $1.2 Billion Valuation as AI Sales Agents Scale",
-          "url": "https://www.pymnts.com/news/investment-tracker/2026/rox-secures-1-2-billion-valuation-as-ai-sales-agents-scale/",
-          "source": "PYMNTS",
-          "published_at": "2026-03-13T23:03:18.000Z",
-          "ingested_at": "2026-03-15T21:46:33.216Z",
-          "snippet": "Rox, a startup developing artificial intelligence (AI) agents for sales functions, closed a funding round late last year that valued it at $1.2 billion, TechCrunch reported Thursday (March 12), citing unnamed sources.  At the time of the fundraise, Rox was expected to have annual recurring revenue of $8 million at the end of 2025, […]\nThe post Rox Secures $1.2 Billion Valuation as AI Sales Agents Scale appeared first on PYMNTS.com.",
+          "id": "b78yva",
+          "title": "How to watch Jensen Huang’s Nvidia GTC 2026 keynote",
+          "url": "https://techcrunch.com/2026/03/12/how-to-watch-jensen-huangs-nvidia-gtc-2026-keynote/",
+          "source": "TechCrunch - AI",
+          "published_at": "2026-03-12T23:25:39.000Z",
+          "ingested_at": "2026-03-15T22:36:37.111Z",
+          "snippet": "GTC — which stands for GPU Technology Conference — is Nvidia's flagship annual event, where the chipmaker typically uses the spotlight to announce new products, champion partnerships, and lay out its vision for the future of computing. Huang's keynote will focus on Nvidia's role in the future of computing and AI.",
           "sourceType": "rss",
           "relevance": {
-            "scoreTotal": 0.25,
+            "scoreTotal": 0.30000000000000004,
             "recencyScore": 0,
-            "sourceWeight": 0,
-            "keywordBoost": 0.2,
-            "insightSignalBoost": 0.05,
-            "penalty": 0,
-            "matchedKeywords": [
-              "ai",
-              "agent",
-              "artificial intelligence",
-              "funding"
-            ]
-          },
-          "aiSummary": "AI-generated summary: Rox, a startup specializing in AI sales agents, secured a $1.2 billion valuation following a recent funding round and is projected to reach $8 million in annual recurring revenue by the end of 2025, according to PYMNTS.",
-          "translations": {
-            "da": {
-              "title": "Rox opnår en værdiansættelse på 1,2 milliarder dollars, efterhånden som AI-salgsagenter vokser",
-              "summary": "AI-genereret resumé: Rox, en startup specialiseret i AI-salgsagenter, opnåede en værdiansættelse på 1,2 milliarder dollars efter en nylig finansieringsrunde og forventes at nå 8 millioner dollars i årlig tilbagevendende omsætning ved udgangen af 2025 ifølge PYMNTS."
-            },
-            "es": {
-              "title": "Rox asegura una valoración de 1.200 millones de dólares mientras los agentes de ventas de IA crecen",
-              "summary": "Resumen generado por IA: Rox, una startup especializada en agentes de ventas de IA, aseguró una valoración de 1.200 millones de dólares tras una reciente ronda de financiación y se proyecta que alcanzará 8 millones de dólares en ingresos recurrentes anuales para finales de 2025, según PYMNTS."
-            }
-          }
-        },
-        {
-          "id": "3486nx",
-          "title": "Perplexity’s Computer for Enterprise Completed 3.25 Years of Work in Four Weeks",
-          "url": "https://www.pymnts.com/news/artificial-intelligence/2026/perplexity-computer-enterprise-completed-3-years-work-4-weeks/",
-          "source": "PYMNTS",
-          "published_at": "2026-03-13T19:57:18.000Z",
-          "ingested_at": "2026-03-15T21:46:33.216Z",
-          "snippet": "Artificial intelligence companies are beginning to rethink what a computer actually is, and Perplexity is pushing that idea further with a new platform designed to let AI agents operate across a user’s digital environment.  The company introduced Wednesday (March 11) Personal Computer, a system designed to allow AI agents to interact with files, applications […]\nThe post Perplexity’s Computer for Enterprise Completed 3.25 Years of Work in Four Weeks appeared first on PYMNTS.com.",
-          "sourceType": "rss",
-          "relevance": {
-            "scoreTotal": 0.2,
-            "recencyScore": 0,
-            "sourceWeight": 0,
-            "keywordBoost": 0.2,
+            "sourceWeight": 0.15,
+            "keywordBoost": 0.15000000000000002,
             "insightSignalBoost": 0,
             "penalty": 0,
             "matchedKeywords": [
-              "compute",
-              "artificial intelligence",
+              "ai",
+              "partnership",
+              "gpu"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Jensen Huang's keynote at Nvidia's GTC 2026, the company's flagship GPU Technology Conference, will highlight Nvidia's vision for the future of computing and AI, including new product announcements and strategic partnerships.",
+          "translations": {
+            "da": {
+              "title": "Sådan ser du Jensen Huangs Nvidia GTC 2026 keynote",
+              "summary": "AI-genereret resumé: Jensen Huangs keynote ved Nvidias GTC 2026, virksomhedens flagskibs GPU Technology Conference, vil fremhæve Nvidias vision for fremtidens computing og AI, inklusive nye produktannonceringer og strategiske partnerskaber."
+            },
+            "es": {
+              "title": "Cómo ver la keynote de Jensen Huang en Nvidia GTC 2026",
+              "summary": "Resumen generado por IA: La keynote de Jensen Huang en Nvidia GTC 2026, la conferencia insignia de tecnología GPU de la compañía, destacará la visión de Nvidia para el futuro de la computación y la IA, incluyendo nuevos anuncios de productos y asociaciones estratégicas."
+            }
+          }
+        },
+        {
+          "id": "qyu1a1",
+          "title": "Manulife moves AI agents into core financial workflows",
+          "url": "https://www.artificialintelligence-news.com/news/manulife-moves-ai-agents-into-core-financial-workflows/",
+          "source": "AI News",
+          "published_at": "2026-03-11T10:00:00.000Z",
+          "ingested_at": "2026-03-16T06:53:12.937Z",
+          "snippet": "Large financial firms have spent years testing artificial intelligence in small projects, often limited to data analysis or customer support tools. The next phase appears to involve something more operational: systems that can take action in business workflows. Canadian insurer Manulife is moving in that direction as it works to deploy agent-based AI systems inside […]\nThe post Manulife moves AI agents into core financial workflows appeared first on AI News.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0.05,
+            "penalty": 0.2,
+            "matchedKeywords": [
+              "ai",
+              "agent",
+              "artificial intelligence"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Canadian insurer Manulife is advancing its use of artificial intelligence by integrating agent-based AI systems into core financial workflows, moving beyond limited pilot projects to more operational applications. This shift reflects a broader trend among large financial firms toward embedding AI directly into business processes.",
+          "translations": {
+            "da": {
+              "title": "Manulife integrerer AI-agenter i kerne finansielle arbejdsgange",
+              "summary": "AI-genereret resumé: Det canadiske forsikringsselskab Manulife udvider brugen af kunstig intelligens ved at integrere agentbaserede AI-systemer i kerne finansielle arbejdsgange og går dermed ud over begrænsede pilotprojekter til mere operationelle anvendelser. Denne ændring afspejler en bredere tendens blandt store finansielle virksomheder til at indlejre AI direkte i forretningsprocesser."
+            },
+            "es": {
+              "title": "Manulife integra agentes de IA en flujos financieros centrales",
+              "summary": "Resumen generado por IA: La aseguradora canadiense Manulife está avanzando en el uso de inteligencia artificial al integrar sistemas de IA basados en agentes en flujos financieros centrales, pasando de proyectos piloto limitados a aplicaciones más operativas. Este cambio refleja una tendencia más amplia entre grandes firmas financieras de incorporar la IA directamente en los procesos empresariales."
+            }
+          }
+        },
+        {
+          "id": "k3uwqw",
+          "title": "Codewall's AI agent hacked an AI recruiter, then impersonated Trump to test its voice bot's guardrails",
+          "url": "https://the-decoder.com/codewalls-ai-agent-hacked-an-ai-recruiter-then-impersonated-trump-to-test-its-voice-bots-guardrails/",
+          "source": "The Decoder",
+          "published_at": "2026-03-15T09:02:06.000Z",
+          "ingested_at": "2026-03-16T06:53:12.937Z",
+          "snippet": "AI agents can hack systems, defend them, and be hacked themselves. Codewall's one-hour takeover of an AI recruiting platform shows just how tangled this new security landscape has become.\nThe article Codewall's AI agent hacked an AI recruiter, then impersonated Trump to test its voice bot's guardrails appeared first on The Decoder.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
               "ai",
               "agent"
             ]
           },
-          "aiSummary": "AI-generated summary: Perplexity introduced Personal Computer, a new platform enabling AI agents to operate across users' digital environments, allowing the completion of 3.25 years of enterprise work in just four weeks. This innovation reflects a shift in how AI companies conceptualize computing.",
+          "aiSummary": "AI-generated summary: Codewall's AI agent demonstrated the complex security challenges in AI by hacking an AI recruiting platform within an hour and then impersonating Donald Trump to test the platform's voice bot guardrails, highlighting the intertwined risks of AI systems.",
           "translations": {
             "da": {
-              "title": "Perplexitys Computer for Enterprise gennemførte 3,25 års arbejde på fire uger",
-              "summary": "AI-genereret resumé: Perplexity introducerede Personal Computer, en ny platform der gør det muligt for AI-agenter at arbejde på tværs af brugernes digitale miljøer, hvilket tillader afslutningen af 3,25 års virksomhedarbejde på kun fire uger. Denne innovation afspejler et skift i, hvordan AI-virksomheder konceptualiserer computing."
+              "title": "Codewalls AI-agent hacket en AI-rekrutterer og udgav sig derefter for Trump for at teste sin voice bots sikkerhedsforanstaltninger",
+              "summary": "AI-genereret resumé: Codewalls AI-agent viste de komplekse sikkerhedsudfordringer i AI ved at hacke en AI-rekrutteringsplatform inden for en time og derefter udgive sig for Donald Trump for at teste platformens voice bots sikkerhedsforanstaltninger, hvilket fremhæver de sammenvævede risici ved AI-systemer."
             },
             "es": {
-              "title": "La Computer for Enterprise de Perplexity completó 3.25 años de trabajo en cuatro semanas",
-              "summary": "Resumen generado por IA: Perplexity presentó Personal Computer, una nueva plataforma que permite a agentes de IA operar en los entornos digitales de los usuarios, logrando completar 3.25 años de trabajo empresarial en solo cuatro semanas. Esta innovación refleja un cambio en cómo las empresas de IA conceptualizan la computación."
-            }
-          }
-        },
-        {
-          "id": "lvj5wq",
-          "title": "Palantir uses Anthropic’s Claude despite Pentagon's 'supply chain risk' tag: CEO Alex Karp ",
-          "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/palantir-uses-anthropics-claude-despite-pentagons-supply-chain-risk-tag-ceo-alex-karp/articleshow/129589759.cms",
-          "source": "Economic Times - Technology",
-          "published_at": "2026-03-15T12:33:07.000Z",
-          "ingested_at": "2026-03-15T21:46:33.216Z",
-          "snippet": "Palantir CEO Alex Karp said the company still uses Anthropic’s Claude AI models despite the Pentagon classifying the firm as a supply chain risk. The US government plans a phase-out within six months, though officials say replacing systems will take time because the technology is already deeply integrated with military infrastructure.",
-          "sourceType": "rss",
-          "relevance": {
-            "scoreTotal": -0.04999999999999999,
-            "recencyScore": 0,
-            "sourceWeight": 0,
-            "keywordBoost": 0.15000000000000002,
-            "insightSignalBoost": 0,
-            "penalty": 0.2,
-            "matchedKeywords": [
-              "anthropic",
-              "claude",
-              "ai"
-            ]
-          },
-          "aiSummary": "AI-generated summary: Palantir CEO Alex Karp confirmed that the company continues to use Anthropic’s Claude AI models despite the Pentagon labeling Anthropic as a supply chain risk, with the US government planning a phase-out over six months due to the technology's deep integration in military systems.",
-          "translations": {
-            "da": {
-              "title": "Palantir bruger Anthropic’s Claude trods Pentagons 'forsyningskæderisiko'-mærkning: CEO Alex Karp",
-              "summary": "AI-genereret resumé: Palantirs CEO Alex Karp bekræftede, at virksomheden fortsætter med at bruge Anthropic’s Claude AI-modeller trods Pentagons mærkning af Anthropic som en forsyningskæderisiko, hvor den amerikanske regering planlægger en udfasning over seks måneder på grund af teknologiens dybe integration i militære systemer."
-            },
-            "es": {
-              "title": "Palantir usa Claude de Anthropic a pesar de la etiqueta de 'riesgo en la cadena de suministro' del Pentágono: CEO Alex Karp",
-              "summary": "Resumen generado por IA: El CEO de Palantir, Alex Karp, confirmó que la empresa continúa usando los modelos de IA Claude de Anthropic a pesar de que el Pentágono etiquetó a Anthropic como un riesgo en la cadena de suministro, con el gobierno de EE. UU. planeando una eliminación gradual en seis meses debido a la profunda integración de la tecnología en sistemas militares."
-            }
-          }
-        },
-        {
-          "id": "i3nhko",
-          "title": "FedEx Plans Agent Workforce in Over 50% of Workflows by 2028",
-          "url": "https://www.pymnts.com/artificial-intelligence-2/2026/fedex-plans-agent-workforce-in-over-50percent-of-workflows-by-2028/",
-          "source": "PYMNTS",
-          "published_at": "2026-03-13T22:39:26.000Z",
-          "ingested_at": "2026-03-15T21:46:33.216Z",
-          "snippet": "FedEx plans to embed artificial intelligence (AI) agents into more than half of its operational workflows by 2028, a move that signals how large enterprises are beginning to deploy AI not just as software tools but as systems that execute operational work.  The logistics giant is integrating agentic AI into core processes such as […]\nThe post FedEx Plans Agent Workforce in Over 50% of Workflows by 2028 appeared first on PYMNTS.com.",
-          "sourceType": "rss",
-          "relevance": {
-            "scoreTotal": 0.2,
-            "recencyScore": 0,
-            "sourceWeight": 0,
-            "keywordBoost": 0.15000000000000002,
-            "insightSignalBoost": 0.05,
-            "penalty": 0,
-            "matchedKeywords": [
-              "agent",
-              "artificial intelligence",
-              "ai"
-            ]
-          },
-          "aiSummary": "AI-generated summary: FedEx intends to integrate artificial intelligence agents into over 50% of its operational workflows by 2028, marking a shift toward using AI as active systems executing core logistics processes rather than just software tools.",
-          "translations": {
-            "da": {
-              "title": "FedEx planlægger agentarbejdskraft i over 50% af arbejdsgangene inden 2028",
-              "summary": "AI-genereret resumé: FedEx har til hensigt at integrere kunstige intelligens-agenter i over 50% af sine operationelle arbejdsgange inden 2028, hvilket markerer et skift mod at bruge AI som aktive systemer, der udfører kerne-logistikprocesser frem for blot softwareværktøjer."
-            },
-            "es": {
-              "title": "FedEx planea fuerza laboral de agentes en más del 50% de los flujos de trabajo para 2028",
-              "summary": "Resumen generado por IA: FedEx pretende integrar agentes de inteligencia artificial en más del 50% de sus flujos operativos para 2028, marcando un cambio hacia el uso de IA como sistemas activos que ejecutan procesos logísticos centrales en lugar de solo herramientas de software."
+              "title": "El agente de IA de Codewall hackeó a un reclutador de IA y luego se hizo pasar por Trump para probar las barreras de seguridad del bot de voz",
+              "summary": "Resumen generado por IA: El agente de IA de Codewall demostró los complejos desafíos de seguridad en IA al hackear una plataforma de reclutamiento de IA en una hora y luego hacerse pasar por Donald Trump para probar las barreras de seguridad del bot de voz de la plataforma, destacando los riesgos entrelazados de los sistemas de IA."
             }
           }
         }
       ]
     },
     "Ecommerce_Retail_Tech": {
-      "total": 532,
+      "total": 664,
       "top": [
         {
           "id": "cgqzzi",
@@ -281,15 +276,15 @@
               "marketplace"
             ]
           },
-          "aiSummary": "AI-generated summary: Amazon is expanding its AI-powered Shop Direct program, enabling customers to find and purchase products from other retailers' websites even if those items are not available on Amazon.com.",
+          "aiSummary": "AI-generated summary: Amazon is expanding its AI-powered Shop Direct program, enabling customers to discover and purchase products from other retailers' websites even if those items are not available on Amazon.com.",
           "translations": {
             "da": {
               "title": "Marketplace Briefing: Amazon udvider AI-drevet Shop Direct-program, der lader kunder købe fra andre forhandleres hjemmesider",
-              "summary": "AI-genereret resumé: Amazon udvider sit AI-drevne Shop Direct-program, som gør det muligt for kunder at finde og købe produkter fra andre forhandleres hjemmesider, selvom varerne ikke er tilgængelige på Amazon.com."
+              "summary": "AI-genereret resumé: Amazon udvider sit AI-drevne Shop Direct-program, som gør det muligt for kunder at opdage og købe produkter fra andre forhandleres hjemmesider, selvom varerne ikke findes på Amazon.com."
             },
             "es": {
               "title": "Marketplace Briefing: Amazon expande el programa Shop Direct impulsado por IA que permite a los clientes comprar en sitios de otros minoristas",
-              "summary": "Resumen generado por IA: Amazon está expandiendo su programa Shop Direct impulsado por IA, que permite a los clientes encontrar y comprar productos en sitios web de otros minoristas, incluso si esos artículos no están disponibles en Amazon.com."
+              "summary": "Resumen generado por IA: Amazon está expandiendo su programa Shop Direct impulsado por IA, que permite a los clientes descubrir y comprar productos en sitios web de otros minoristas, incluso si esos artículos no están disponibles en Amazon.com."
             }
           }
         },
@@ -380,48 +375,15 @@
               "payment"
             ]
           },
-          "aiSummary": "AI-generated summary: Uzbekistan’s e-commerce platform Uzum has increased its valuation by over 50% in seven months to $2.3 billion, now serving 20 million users and processing $11 billion in payments as it grows its fintech ecosystem.",
+          "aiSummary": "AI-generated summary: Uzbekistan’s e-commerce platform Uzum has increased its valuation by over 50% in seven months to $2.3 billion, now serving 20 million users and processing $11 billion in payments as it grows its fintech and e-commerce ecosystem.",
           "translations": {
             "da": {
               "title": "Uzbekistans Uzum-værdi stiger over 50 % på 7 måneder til 2,3 mia. $",
-              "summary": "AI-genereret resumé: Uzbekistans e-handelsplatform Uzum har øget sin værdi med over 50 % på syv måneder til 2,3 milliarder $, betjener nu 20 millioner brugere og håndterer betalinger for 11 milliarder $ i takt med, at den udvider sit fintech-økosystem."
+              "summary": "AI-genereret resumé: Uzbekistans e-handelsplatform Uzum har øget sin værdi med over 50 % på syv måneder til 2,3 milliarder $, betjener nu 20 millioner brugere og behandler betalinger for 11 milliarder $ i takt med, at den udvider sit fintech- og e-handelsøkosystem."
             },
             "es": {
               "title": "La valoración de Uzum en Uzbekistán salta más del 50 % en 7 meses hasta 2,3 mil millones de dólares",
-              "summary": "Resumen generado por IA: La plataforma de comercio electrónico Uzum de Uzbekistán ha aumentado su valoración en más del 50 % en siete meses hasta 2,3 mil millones de dólares, atendiendo ahora a 20 millones de usuarios y procesando 11 mil millones de dólares en pagos mientras expande su ecosistema fintech."
-            }
-          }
-        },
-        {
-          "id": "1rdom0",
-          "title": "Amazon reviews AI processes after website outages disrupt shoppers",
-          "url": "https://www.retailgazette.co.uk/blog/2026/03/amazon-ai-disrupt-shoppers/",
-          "source": "Retail Gazette",
-          "published_at": "2026-03-13T08:02:55.000Z",
-          "ingested_at": "2026-03-15T21:46:33.216Z",
-          "snippet": "Amazon is reviewing how its engineers deploy AI-assisted tools after a series of outages disrupted its retail website, reportedly locking customers out of checkout and key account features. According to reports, the retailer experienced four ‘high-severity’ incidents in a single week, including a six-hour outage that prevented shoppers from accessing pricing, account information and checkout...",
-          "sourceType": "rss",
-          "categoryHint": "Fashion & Luxury",
-          "relevance": {
-            "scoreTotal": 0.1,
-            "recencyScore": 0,
-            "sourceWeight": 0,
-            "keywordBoost": 0.05,
-            "insightSignalBoost": 0.05,
-            "penalty": 0,
-            "matchedKeywords": [
-              "checkout"
-            ]
-          },
-          "aiSummary": "AI-generated summary: Amazon is reassessing its AI deployment processes following multiple outages that disrupted its retail website, including a six-hour incident blocking access to pricing, account details, and checkout. These issues led to four high-severity incidents within one week, impacting customer shopping experiences.",
-          "translations": {
-            "da": {
-              "title": "Amazon gennemgår AI-processer efter nedbrud på hjemmesiden, der forstyrrede kunder",
-              "summary": "Amazon genovervejer sine AI-implementeringsprocesser efter flere nedbrud, der forstyrrede deres detailhjemmeside, herunder en seks timer lang hændelse, der blokerede adgang til priser, kontooplysninger og betaling. Disse problemer førte til fire alvorlige hændelser inden for en uge og påvirkede kundernes shoppingoplevelser."
-            },
-            "es": {
-              "title": "Amazon revisa procesos de IA tras interrupciones en el sitio web que afectaron a compradores",
-              "summary": "Amazon está reevaluando sus procesos de implementación de IA tras múltiples interrupciones que afectaron su sitio web minorista, incluyendo un incidente de seis horas que bloqueó el acceso a precios, detalles de cuentas y el pago. Estos problemas causaron cuatro incidentes de alta gravedad en una semana, impactando la experiencia de compra de los clientes."
+              "summary": "Resumen generado por IA: La plataforma de comercio electrónico Uzum de Uzbekistán ha incrementado su valoración en más del 50 % en siete meses hasta 2,3 mil millones de dólares, atendiendo ahora a 20 millones de usuarios y procesando 11 mil millones de dólares en pagos mientras expande su ecosistema fintech y de comercio electrónico."
             }
           }
         },
@@ -445,52 +407,87 @@
               "ecommerce"
             ]
           },
-          "aiSummary": "AI-generated summary: Petco is focusing on developing “integrated omnichannel” experiences to better incorporate ecommerce into its operations following a 2.4% decline in net sales to approximately $1.52 billion in fiscal Q4 2025.",
+          "aiSummary": "AI-generated summary: Petco is focusing on developing an \"integrated omnichannel\" approach to better incorporate ecommerce into its business after experiencing a 2.4% decline in net sales in fiscal Q4 2025. This strategy aims to address the decreases in both net and comparable sales reported during that period.",
           "translations": {
             "da": {
-              "title": "Petco bygger omkring ’integrerede omnichannel’-oplevelser",
-              "summary": "AI-genereret resumé: Petco fokuserer på at udvikle ’integrerede omnichannel’-oplevelser for bedre at integrere ecommerce i sine operationer efter et fald i nettoomsætningen på 2,4 % til cirka 1,52 milliarder dollars i regnskabsåret Q4 2025."
+              "title": "Petco bygger omkring ’integrerede omnichannel’ oplevelser",
+              "summary": "AI-genereret resumé: Petco fokuserer på at udvikle en ’integreret omnichannel’-strategi for bedre at integrere e-handel i sin forretning efter et fald på 2,4 % i nettoomsætningen i regnskabsåret Q4 2025. Denne strategi sigter mod at imødegå faldet i både netto- og sammenlignelige salg i denne periode."
             },
             "es": {
-              "title": "Petco construye alrededor de experiencias ‘omnicanal integradas’",
-              "summary": "Resumen generado por IA: Petco se está enfocando en desarrollar experiencias ‘omnicanal integradas’ para incorporar mejor el comercio electrónico en sus operaciones tras una caída del 2,4 % en las ventas netas a aproximadamente 1,52 mil millones de dólares en el cuarto trimestre fiscal de 2025."
+              "title": "Petco construye en torno a experiencias ‘omnicanal integradas’",
+              "summary": "Resumen generado por IA: Petco se está enfocando en desarrollar un enfoque ‘omnicanal integrado’ para incorporar mejor el comercio electrónico en su negocio tras experimentar una caída del 2,4 % en las ventas netas en el cuarto trimestre fiscal de 2025. Esta estrategia busca abordar las disminuciones en las ventas netas y comparables reportadas durante ese período."
             }
           }
         },
         {
-          "id": "6eiz74",
-          "title": "UK brands risk billions as one-third of customers switch due to a poor digital retail experience",
-          "url": "https://internetretailing.net/uk-brands-risk-billions-as-one-third-of-customers-switch-due-to-a-poor-digital-retail-experience/",
+          "id": "5xqkzi",
+          "title": "Mobile basket abandonment surges past 85% as retailers shift recovery tactics beyond email and SMS",
+          "url": "https://internetretailing.net/mobile-basket-abandonment-surges-past-85-as-retailers-shift-recovery-tactics-beyond-email-and-sms/",
           "source": "Internet Retailing",
-          "published_at": "2026-03-13T11:41:22.000Z",
+          "published_at": "2026-03-10T10:20:00.000Z",
           "ingested_at": "2026-03-15T21:46:33.216Z",
-          "snippet": "New research has revealed a fundamental mismatch between what UK consumers expect from the digital retail experience and what retailers are actually delivering – and it’s costing businesses millions.\nThe post UK brands risk billions as one-third of customers switch due to a poor digital retail experience appeared first on InternetRetailing.",
+          "snippet": "Multiple sources now suggest that mobile shopping basket abandonment has climbed to more than 85%, meaning online retailers need to rethink re-engagement strategies.\nThe post Mobile basket abandonment surges past 85% as retailers shift recovery tactics beyond email and SMS appeared first on InternetRetailing.",
           "sourceType": "rss",
           "relevance": {
-            "scoreTotal": 0,
+            "scoreTotal": 0.15000000000000002,
             "recencyScore": 0,
             "sourceWeight": 0,
-            "keywordBoost": 0,
-            "insightSignalBoost": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0.05,
             "penalty": 0,
-            "matchedKeywords": []
+            "matchedKeywords": [
+              "online retail",
+              "shopping"
+            ]
           },
-          "aiSummary": "AI-generated summary: New research highlighted by Internet Retailing on March 13, 2026, reveals that UK retailers are losing billions as one-third of customers switch brands due to poor digital retail experiences, indicating a significant gap between consumer expectations and retailer delivery.",
+          "aiSummary": "AI-generated summary: Mobile shopping basket abandonment has exceeded 85%, prompting online retailers to explore recovery tactics beyond traditional email and SMS methods, according to multiple sources.",
           "translations": {
             "da": {
-              "title": "Britiske brands risikerer milliarder, da en tredjedel af kunder skifter på grund af en dårlig digital detailoplevelse",
-              "summary": "AI-genereret resumé: Ny forskning fremhævet af Internet Retailing den 13. marts 2026 viser, at britiske detailhandlere mister milliarder, da en tredjedel af kunderne skifter brand på grund af dårlige digitale detailoplevelser, hvilket indikerer en betydelig kløft mellem forbrugerforventninger og detailhandlernes levering."
+              "title": "Mobilkurv forladelse stiger til over 85%, mens detailhandlere ændrer genopretningstaktikker ud over email og SMS",
+              "summary": "AI-genereret resumé: Mobil shoppingkurv forladelse har oversteget 85%, hvilket får online detailhandlere til at udforske genopretningstaktikker ud over traditionelle email- og SMS-metoder, ifølge flere kilder."
             },
             "es": {
-              "title": "Las marcas del Reino Unido arriesgan miles de millones mientras un tercio de los clientes cambian debido a una mala experiencia de venta digital",
-              "summary": "Resumen generado por IA: Una nueva investigación destacada por Internet Retailing el 13 de marzo de 2026 revela que los minoristas del Reino Unido están perdiendo miles de millones ya que un tercio de los clientes cambian de marca debido a malas experiencias de venta digital, lo que indica una brecha significativa entre las expectativas del consumidor y la entrega del minorista."
+              "title": "El abandono del carrito móvil supera el 85% mientras los minoristas cambian tácticas de recuperación más allá del email y SMS",
+              "summary": "Resumen generado por IA: El abandono del carrito de compras móvil ha superado el 85%, lo que impulsa a los minoristas en línea a explorar tácticas de recuperación más allá de los métodos tradicionales de email y SMS, según múltiples fuentes."
+            }
+          }
+        },
+        {
+          "id": "lcybpn",
+          "title": "Publix Is Shutting Down Its Payment App",
+          "url": "https://www.paymentsjournal.com/publix-is-shutting-down-its-payment-app/",
+          "source": "Payments Journal",
+          "published_at": "2026-03-11T18:30:00.000Z",
+          "ingested_at": "2026-03-15T22:36:37.111Z",
+          "snippet": "As some merchants continue pushing customers to pay through their apps, one major retailer is moving in the opposite direction. The Florida-based grocery chain Publix recently notified customers by email that its payment app will be discontinued starting March 19. The Publix Pay app allowed shoppers to store payment methods—including debit cards, credit cards and […]\nThe post Publix Is Shutting Down Its Payment App appeared first on PaymentsJournal.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "payment"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Florida-based grocery chain Publix announced it will discontinue its Publix Pay payment app starting March 19, reversing the trend of merchants encouraging app-based payments. The app had allowed customers to store various payment methods including debit and credit cards.",
+          "translations": {
+            "da": {
+              "title": "Publix lukker sin betalingsapp",
+              "summary": "AI-genereret resumé: Den Florida-baserede dagligvarekæde Publix har annonceret, at de vil stoppe med at bruge deres betalingsapp Publix Pay fra den 19. marts, hvilket går imod trenden med, at handlende opfordrer til app-baserede betalinger. Appen gjorde det muligt for kunder at gemme forskellige betalingsmetoder, herunder debet- og kreditkort."
+            },
+            "es": {
+              "title": "Publix cierra su aplicación de pagos",
+              "summary": "Resumen generado por IA: La cadena de supermercados con sede en Florida, Publix, anunció que descontinuará su aplicación de pagos Publix Pay a partir del 19 de marzo, revirtiendo la tendencia de los comerciantes que fomentan los pagos mediante aplicaciones. La app permitía a los clientes almacenar varios métodos de pago, incluyendo tarjetas de débito y crédito."
             }
           }
         }
       ]
     },
     "Luxury_and_Consumer": {
-      "total": 50,
+      "total": 84,
       "top": [
         {
           "id": "fe5q76",
@@ -513,110 +510,15 @@
               "brand"
             ]
           },
-          "aiSummary": "AI-generated summary: According to a Glossy article from March 2026, 89% of top retailers now offer loyalty programs, up from 79% last year, with brand loyalty expected to grow in importance as AI technology enhances purchasing experiences.",
+          "aiSummary": "AI-generated summary: According to a Glossy article from March 2026, 89% of top retailers now offer loyalty programs, up from 79% last year, with brand loyalty expected to grow in importance as AI technology enhances the purchasing process.",
           "translations": {
             "da": {
               "title": "Detailhandlere tager en mere kompleks tilgang til loyalitet",
-              "summary": "AI-genereret resumé: Ifølge en artikel fra Glossy fra marts 2026 tilbyder 89% af de største detailhandlere nu loyalitetsprogrammer, op fra 79% sidste år, hvor mærkeloyalitet forventes at få større betydning, efterhånden som AI-teknologi forbedrer købsoplevelser."
+              "summary": "AI-genereret resumé: Ifølge en Glossy-artikel fra marts 2026 tilbyder 89 % af de største detailhandlere nu loyalitetsprogrammer, op fra 79 % sidste år, hvor brandloyalitet forventes at få større betydning, efterhånden som AI-teknologi forbedrer købsprocessen."
             },
             "es": {
               "title": "Los minoristas adoptan un enfoque más complejo hacia la lealtad",
-              "summary": "Resumen generado por IA: Según un artículo de Glossy de marzo de 2026, el 89% de los principales minoristas ahora ofrecen programas de lealtad, frente al 79% del año pasado, y se espera que la lealtad a la marca gane importancia a medida que la tecnología de IA mejora las experiencias de compra."
-            }
-          }
-        },
-        {
-          "id": "odwniz",
-          "title": "Gen Z Shopping Habits: Young Consumers Still Love Brick-and-Mortar Stores",
-          "url": "https://sourcingjournal.com/denim/denim-business/gen-z-shopping-habits-yougov-love-brick-and-mortar-stores-1234816024/",
-          "source": "Sourcing Journal",
-          "published_at": "2026-03-13T15:33:48.000Z",
-          "ingested_at": "2026-03-15T21:46:33.216Z",
-          "snippet": "YouGov data suggests that this young cohort is more inclined to spend time in stores.",
-          "sourceType": "rss",
-          "relevance": {
-            "scoreTotal": 0.1,
-            "recencyScore": 0,
-            "sourceWeight": 0,
-            "keywordBoost": 0.05,
-            "insightSignalBoost": 0.05,
-            "penalty": 0,
-            "matchedKeywords": [
-              "consumer"
-            ]
-          },
-          "aiSummary": "AI-generated summary: According to YouGov data reported by Sourcing Journal on March 13, 2026, Gen Z consumers continue to prefer spending time in brick-and-mortar stores despite the rise of online shopping. This trend highlights their ongoing interest in physical retail experiences within the luxury and consumer sectors.",
-          "translations": {
-            "da": {
-              "title": "Gen Z's indkøbsvaner: Unge forbrugere elsker stadig fysiske butikker",
-              "summary": "AI-genereret resumé: Ifølge YouGov-data rapporteret af Sourcing Journal den 13. marts 2026 foretrækker Gen Z-forbrugere stadig at tilbringe tid i fysiske butikker på trods af stigningen i online shopping. Denne tendens understreger deres fortsatte interesse for fysiske detailoplevelser inden for luksus- og forbrugersektorerne."
-            },
-            "es": {
-              "title": "Hábitos de compra de la Generación Z: Los jóvenes consumidores aún prefieren las tiendas físicas",
-              "summary": "Resumen generado por IA: Según datos de YouGov reportados por Sourcing Journal el 13 de marzo de 2026, los consumidores de la Generación Z continúan prefiriendo pasar tiempo en tiendas físicas a pesar del auge de las compras en línea. Esta tendencia destaca su interés continuo en las experiencias minoristas físicas dentro de los sectores de lujo y consumo."
-            }
-          }
-        },
-        {
-          "id": "dah49g",
-          "title": "Inside the Vegas bash for elite Amazon sellers doing at least 7 figures in revenue",
-          "url": "https://www.businessinsider.com/million-dollar-sellers-conference-amazon-las-vegas-mds-ecommerce-2026-3",
-          "source": "Business Insider - Tech",
-          "published_at": "2026-03-15T09:15:01.000Z",
-          "ingested_at": "2026-03-15T21:46:33.216Z",
-          "snippet": "Kathleen Elkins\n\nMillion Dollar Sellers, MDS, is a community for top Amazon sellers with $1M+ in annual revenue.\nMDS hosts a variety of events throughout the year, some of which are open to the public.\nI attended MDS Inspire to observe, ask questions, and try to figure out what these elite sellers obsess over.\n\nWhen I spoke to the co-founder of the exclusive Million Dollar Sellers club, Eugene Khayman, last year, he likened their member-only events to a family reunion, \"where you're actually exc...",
-          "sourceType": "rss",
-          "relevance": {
-            "scoreTotal": 0.05,
-            "recencyScore": 0,
-            "sourceWeight": 0,
-            "keywordBoost": 0.05,
-            "insightSignalBoost": 0,
-            "penalty": 0,
-            "matchedKeywords": [
-              "exclusive"
-            ]
-          },
-          "aiSummary": "AI-generated summary: The Million Dollar Sellers (MDS) community hosts exclusive events for elite Amazon sellers generating over $1 million annually, fostering a close-knit environment likened to a family reunion, where members share insights and obsessions related to their success.",
-          "translations": {
-            "da": {
-              "title": "Inde i Vegas-festen for elite Amazon-sælgere med mindst 7-cifret omsætning",
-              "summary": "AI-genereret resumé: Million Dollar Sellers (MDS) fællesskabet afholder eksklusive events for elite Amazon-sælgere med over 1 million dollars årligt, og skaber et tæt miljø, der minder om en familiegensyn, hvor medlemmer deler indsigt og passioner for deres succes."
-            },
-            "es": {
-              "title": "Dentro de la fiesta en Las Vegas para vendedores élite de Amazon con al menos 7 cifras en ingresos",
-              "summary": "Resumen generado por IA: La comunidad Million Dollar Sellers (MDS) organiza eventos exclusivos para vendedores élite de Amazon que generan más de 1 millón de dólares anuales, fomentando un ambiente cercano similar a una reunión familiar, donde los miembros comparten conocimientos y obsesiones relacionadas con su éxito."
-            }
-          }
-        },
-        {
-          "id": "v852jj",
-          "title": "Inside Audemars Piguet’s Luxe New Space for Watch Collectors in London",
-          "url": "https://robbreport.com/style/watch-collector/audemars-piguet-ap-house-london-1237670654/",
-          "source": "Robb Report",
-          "published_at": "2026-03-14T15:00:00.000Z",
-          "ingested_at": "2026-03-15T21:46:33.216Z",
-          "snippet": "The watchmaker just opened its next chapter in its mission to redefine the horological experience.",
-          "sourceType": "rss",
-          "categoryHint": "Fashion & Luxury",
-          "relevance": {
-            "scoreTotal": 0,
-            "recencyScore": 0,
-            "sourceWeight": 0,
-            "keywordBoost": 0,
-            "insightSignalBoost": 0,
-            "penalty": 0,
-            "matchedKeywords": []
-          },
-          "aiSummary": "AI-generated summary: Audemars Piguet has unveiled a new luxury space in London aimed at redefining the horological experience for watch collectors. This marks the next chapter in the brand's mission to elevate watch appreciation.",
-          "translations": {
-            "da": {
-              "title": "Inde i Audemars Piguets luksuriøse nye rum for ur-samlere i London",
-              "summary": "AI-genereret resumé: Audemars Piguet har åbnet et nyt luksusrum i London med fokus på at genopfinde den horologiske oplevelse for ur-samlere. Dette markerer næste kapitel i brandets mission om at løfte ur-oplevelsen."
-            },
-            "es": {
-              "title": "Dentro del nuevo espacio de lujo de Audemars Piguet para coleccionistas de relojes en Londres",
-              "summary": "Resumen generado por IA: Audemars Piguet ha inaugurado un nuevo espacio de lujo en Londres destinado a redefinir la experiencia horológica para coleccionistas de relojes. Esto marca el siguiente capítulo en la misión de la marca de elevar la apreciación del reloj."
+              "summary": "Resumen generado por IA: Según un artículo de Glossy de marzo de 2026, el 89 % de los principales minoristas ahora ofrecen programas de lealtad, frente al 79 % del año pasado, y se espera que la lealtad a la marca gane importancia a medida que la tecnología de IA mejora el proceso de compra."
             }
           }
         },
@@ -642,28 +544,27 @@
               "brand"
             ]
           },
-          "aiSummary": "AI-generated summary: According to a YouGov 2026 report on U.S. fashion retailer rankings, Nike, Skechers, and Levi’s are among the top brands American consumers would consider purchasing.",
+          "aiSummary": "AI-generated summary: According to a YouGov 2026 report on U.S. fashion retailer rankings, Nike, Skechers, and Levi’s are among the top brands American consumers would consider purchasing. This insight was highlighted in a Footwear News article published on March 12, 2026.",
           "translations": {
             "da": {
-              "title": "Nike, Skechers, Levi’s er blandt de topmærker, amerikanske forbrugere vil overveje at købe: Undersøgelse",
-              "summary": "AI-genereret resumé: Ifølge en YouGov-rapport fra 2026 om amerikanske modeforhandleres rangliste er Nike, Skechers og Levi’s blandt de topmærker, som amerikanske forbrugere vil overveje at købe."
+              "title": "Nike, Skechers, Levi’s er blandt de bedste mærker, amerikanske forbrugere vil overveje at købe: Undersøgelse",
+              "summary": "AI-genereret resumé: Ifølge en YouGov-rapport fra 2026 om amerikanske modeforhandleres rangeringer er Nike, Skechers og Levi’s blandt de bedste mærker, som amerikanske forbrugere vil overveje at købe. Denne indsigt blev fremhævet i en artikel fra Footwear News offentliggjort den 12. marts 2026."
             },
             "es": {
               "title": "Nike, Skechers, Levi’s están entre las principales marcas que los consumidores estadounidenses considerarían comprar: Encuesta",
-              "summary": "Resumen generado por IA: Según un informe de YouGov 2026 sobre el ranking de minoristas de moda en EE.UU., Nike, Skechers y Levi’s están entre las principales marcas que los consumidores estadounidenses considerarían comprar."
+              "summary": "Resumen generado por IA: Según un informe de YouGov 2026 sobre el ranking de minoristas de moda en EE. UU., Nike, Skechers y Levi’s están entre las principales marcas que los consumidores estadounidenses considerarían comprar. Esta información fue destacada en un artículo de Footwear News publicado el 12 de marzo de 2026."
             }
           }
         },
         {
-          "id": "jmg2gc",
-          "title": "Milk remains hot in fragrance — Dedcool aims to own the trend",
-          "url": "https://www.glossy.co/beauty/milk-remains-hot-in-fragrance-dedcool-aims-to-own-the-trend/?utm_campaign=glossydis&utm_medium=rss&utm_source=general-rss",
-          "source": "Glossy",
-          "published_at": "2026-03-11T04:02:00.000Z",
+          "id": "dah49g",
+          "title": "Inside the Vegas bash for elite Amazon sellers doing at least 7 figures in revenue",
+          "url": "https://www.businessinsider.com/million-dollar-sellers-conference-amazon-las-vegas-mds-ecommerce-2026-3",
+          "source": "Business Insider - Tech",
+          "published_at": "2026-03-15T09:15:01.000Z",
           "ingested_at": "2026-03-15T21:46:33.216Z",
-          "snippet": "Next week, fragrance brand Dedcool will introduce the fourth entry in its bestselling Milk franchise — Mineral Milk, a perfume featuring notes of nectar, lavender and amber milk. The launch builds on the success of the brand’s expanding Milk universe, which now includes its original Milk fragrance, the more concentrated Xtra Milk and 2025’s Mochi Milk.",
+          "snippet": "Kathleen Elkins\n\nMillion Dollar Sellers, MDS, is a community for top Amazon sellers with $1M+ in annual revenue.\nMDS hosts a variety of events throughout the year, some of which are open to the public.\nI attended MDS Inspire to observe, ask questions, and try to figure out what these elite sellers obsess over.\n\nWhen I spoke to the co-founder of the exclusive Million Dollar Sellers club, Eugene Khayman, last year, he likened their member-only events to a family reunion, \"where you're actually exc...",
           "sourceType": "rss",
-          "categoryHint": "Fashion & Luxury",
           "relevance": {
             "scoreTotal": 0.05,
             "recencyScore": 0,
@@ -672,56 +573,154 @@
             "insightSignalBoost": 0,
             "penalty": 0,
             "matchedKeywords": [
-              "brand"
+              "exclusive"
             ]
           },
-          "aiSummary": "AI-generated summary: Fragrance brand Dedcool is set to launch Mineral Milk, the fourth addition to its popular Milk perfume line, featuring notes of nectar, lavender, and amber milk. This release continues the growth of Dedcool’s successful Milk franchise, which includes the original Milk, Xtra Milk, and Mochi Milk.",
+          "aiSummary": "AI-generated summary: The Million Dollar Sellers (MDS) community hosts exclusive events for elite Amazon sellers generating over $1 million annually, fostering a close-knit environment likened to a family reunion by co-founder Eugene Khayman. Business Insider's Kathleen Elkins attended MDS Inspire to explore the priorities and culture of these top sellers.",
           "translations": {
             "da": {
-              "title": "Milk forbliver varm i duft — Dedcool sigter mod at eje trenden",
-              "summary": "AI-genereret resumé: Duftmærket Dedcool lancerer Mineral Milk, det fjerde medlem af deres populære Milk-parfumelinje, med noter af nektar, lavendel og amber milk. Denne lancering fortsætter væksten af Dedcools succesfulde Milk-franchise, som inkluderer originalen Milk, Xtra Milk og Mochi Milk."
+              "title": "Inde i Vegas-festen for elite Amazon-sælgere med mindst 7-cifret omsætning",
+              "summary": "AI-genereret resumé: Million Dollar Sellers (MDS) fællesskabet afholder eksklusive events for elite Amazon-sælgere med over 1 million dollars årligt, og skaber et tæt miljø, som medstifter Eugene Khayman sammenligner med en familiegensyn. Business Insiders Kathleen Elkins deltog i MDS Inspire for at udforske prioriteter og kultur blandt disse top-sælgere."
             },
             "es": {
-              "title": "Milk sigue siendo tendencia en fragancias — Dedcool busca liderar la moda",
-              "summary": "Resumen generado por IA: La marca de fragancias Dedcool lanzará Mineral Milk, la cuarta incorporación a su popular línea de perfumes Milk, con notas de néctar, lavanda y amber milk. Este lanzamiento continúa el crecimiento de la exitosa franquicia Milk de Dedcool, que incluye Milk original, Xtra Milk y Mochi Milk."
+              "title": "Dentro de la fiesta en Las Vegas para vendedores élite de Amazon con al menos 7 cifras en ingresos",
+              "summary": "Resumen generado por IA: La comunidad Million Dollar Sellers (MDS) organiza eventos exclusivos para vendedores élite de Amazon que generan más de 1 millón de dólares anuales, fomentando un ambiente cercano que el cofundador Eugene Khayman compara con una reunión familiar. Kathleen Elkins de Business Insider asistió a MDS Inspire para explorar las prioridades y la cultura de estos vendedores top."
             }
           }
         },
         {
-          "id": "kkfbpn",
-          "title": "Burberry unveils collection inspired by Queen Elizabeth II",
-          "url": "https://www.luxurydaily.com/burberry-unveils-collection-inspired-by-queen-elizabeth-ii/",
-          "source": "Luxury Daily - Main",
-          "published_at": "2026-03-13T08:45:55.000Z",
+          "id": "gh4t15",
+          "title": "Shopper Sues Costco for Tariff Refunds",
+          "url": "https://sourcingjournal.com/topics/business-news/costco-tariff-refunds-lawsuit-ieepa-cit-cbp-consumers-retail-1234817121/",
+          "source": "Sourcing Journal",
+          "published_at": "2026-03-13T22:19:01.000Z",
           "ingested_at": "2026-03-15T21:46:33.216Z",
-          "snippet": "The British fashion house is honoring the centenary of the late monarch’s birth on April 21, 1926.",
+          "snippet": "The warehouse club is facing a lawsuit demanding that those refunds be funneled back into shoppers' pocketbooks.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "demand"
+            ]
+          },
+          "aiSummary": "AI-generated summary: A shopper has filed a lawsuit against Costco, demanding that tariff refunds be returned directly to customers. The case highlights consumer concerns within the luxury and consumer sector.",
+          "translations": {
+            "da": {
+              "title": "Kunde sagsøger Costco for toldrefusioner",
+              "summary": "AI-genereret resumé: En kunde har indgivet en sag mod Costco med krav om, at toldrefusioner returneres direkte til kunderne. Sagen fremhæver forbrugerbekymringer inden for luksus- og forbrugersektoren."
+            },
+            "es": {
+              "title": "Comprador demanda a Costco por reembolsos de aranceles",
+              "summary": "Resumen generado por IA: Un comprador ha presentado una demanda contra Costco, exigiendo que los reembolsos de aranceles se devuelvan directamente a los clientes. El caso destaca preocupaciones de los consumidores en el sector de lujo y consumo."
+            }
+          }
+        },
+        {
+          "id": "odwniz",
+          "title": "Gen Z Shopping Habits: Young Consumers Still Love Brick-and-Mortar Stores",
+          "url": "https://sourcingjournal.com/denim/denim-business/gen-z-shopping-habits-yougov-love-brick-and-mortar-stores-1234816024/",
+          "source": "Sourcing Journal",
+          "published_at": "2026-03-13T15:33:48.000Z",
+          "ingested_at": "2026-03-15T21:46:33.216Z",
+          "snippet": "YouGov data suggests that this young cohort is more inclined to spend time in stores.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "consumer"
+            ]
+          },
+          "aiSummary": "AI-generated summary: According to YouGov data reported by Sourcing Journal on March 13, 2026, Gen Z consumers continue to prefer spending time in brick-and-mortar stores despite the rise of online shopping. This trend highlights their ongoing affinity for in-person retail experiences.",
+          "translations": {
+            "da": {
+              "title": "Gen Z's indkøbsvaner: Unge forbrugere elsker stadig fysiske butikker",
+              "summary": "AI-genereret resumé: Ifølge YouGov-data rapporteret af Sourcing Journal den 13. marts 2026 foretrækker Gen Z-forbrugere stadig at tilbringe tid i fysiske butikker trods stigningen i online shopping. Denne tendens fremhæver deres fortsatte forkærlighed for personlige detailoplevelser."
+            },
+            "es": {
+              "title": "Hábitos de compra de la Generación Z: Los jóvenes consumidores aún prefieren las tiendas físicas",
+              "summary": "Resumen generado por IA: Según datos de YouGov reportados por Sourcing Journal el 13 de marzo de 2026, los consumidores de la Generación Z continúan prefiriendo pasar tiempo en tiendas físicas a pesar del auge de las compras en línea. Esta tendencia destaca su afinidad continua por las experiencias de compra en persona."
+            }
+          }
+        },
+        {
+          "id": "s9v8r",
+          "title": "This Trip to Menorca, Spain Might Be the Most Luxurious Way to See a Solar Eclipse",
+          "url": "https://robbreport.com/travel/hotels/vestige-collection-menorca-trip-the-vault-1237674965/",
+          "source": "Robb Report",
+          "published_at": "2026-03-14T19:00:00.000Z",
+          "ingested_at": "2026-03-15T21:46:33.216Z",
+          "snippet": "Astrotourism is surging, and this exclusive summer stay gives elite travelers a front-row seat to view the totality—wrapped in serious luxury.",
           "sourceType": "rss",
           "categoryHint": "Fashion & Luxury",
           "relevance": {
-            "scoreTotal": 0,
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "luxury",
+              "exclusive"
+            ]
+          },
+          "aiSummary": "AI-generated summary: The article from Robb Report (2026-03-14) highlights a luxurious astrotourism experience in Menorca, Spain, offering elite travelers an exclusive summer stay to witness a total solar eclipse in utmost comfort.",
+          "translations": {
+            "da": {
+              "title": "Denne tur til Menorca, Spanien kan være den mest luksuriøse måde at se en solformørkelse på",
+              "summary": "AI-genereret resumé: Artiklen fra Robb Report (2026-03-14) fremhæver en luksuriøs astroturismeoplevelse i Menorca, Spanien, der tilbyder elite-rejsende et eksklusivt sommerophold for at opleve en total solformørkelse i ultimativ komfort."
+            },
+            "es": {
+              "title": "Este viaje a Menorca, España podría ser la forma más lujosa de ver un eclipse solar",
+              "summary": "Resumen generado por IA: El artículo de Robb Report (2026-03-14) destaca una experiencia de astroturismo de lujo en Menorca, España, que ofrece a viajeros élite una estancia exclusiva de verano para presenciar un eclipse solar total con el máximo confort."
+            }
+          }
+        },
+        {
+          "id": "bl456d",
+          "title": "Editor’s Letter: Inside Robb Report’s 2026 Spring Style Issue",
+          "url": "https://robbreport.com/lifestyle/news/spring-style-2026-editors-letter-1237573482/",
+          "source": "Robb Report",
+          "published_at": "2026-03-15T21:00:00.000Z",
+          "ingested_at": "2026-03-15T21:46:33.216Z",
+          "snippet": "We explore the rising fascination with Ralph Lauren, explore pink hues in menswear, and talk Tiffany's new chronograph.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.05,
             "recencyScore": 0,
             "sourceWeight": 0,
             "keywordBoost": 0,
-            "insightSignalBoost": 0,
+            "insightSignalBoost": 0.05,
             "penalty": 0,
             "matchedKeywords": []
           },
-          "aiSummary": "AI-generated summary: Burberry has launched a new collection inspired by Queen Elizabeth II to commemorate the centenary of her birth on April 21, 1926. The British fashion house's tribute highlights its connection to the late monarch.",
+          "aiSummary": "AI-generated summary: The Robb Report's 2026 Spring Style Issue highlights a growing interest in Ralph Lauren, the trend of pink hues in menswear, and features Tiffany's new chronograph.",
           "translations": {
             "da": {
-              "title": "Burberry afslører kollektion inspireret af dronning Elizabeth II",
-              "summary": "AI-genereret resumé: Burberry har lanceret en ny kollektion inspireret af dronning Elizabeth II for at fejre 100-året for hendes fødsel den 21. april 1926. Det britiske modehus hylder den afdøde monark."
+              "title": "Redaktørens Brev: Inden i Robb Reports Forårsudgave 2026 om Stil",
+              "summary": "AI-genereret resumé: Robb Reports Forårsudgave 2026 fremhæver en stigende interesse for Ralph Lauren, trenden med pink nuancer i herremode og præsenterer Tiffanys nye kronograf."
             },
             "es": {
-              "title": "Burberry presenta colección inspirada en la Reina Isabel II",
-              "summary": "Resumen generado por IA: Burberry ha lanzado una nueva colección inspirada en la Reina Isabel II para conmemorar el centenario de su nacimiento el 21 de abril de 1926. El homenaje de la casa de moda británica destaca su conexión con la difunta monarca."
+              "title": "Carta del Editor: Dentro de la Edición de Estilo Primavera 2026 de Robb Report",
+              "summary": "Resumen generado por IA: La edición de estilo primavera 2026 de Robb Report destaca un creciente interés en Ralph Lauren, la tendencia de tonos rosas en la moda masculina y presenta el nuevo cronógrafo de Tiffany."
             }
           }
         }
       ]
     },
     "Jewellery_Industry": {
-      "total": 31,
+      "total": 32,
       "top": [
         {
           "id": "kqer9l",
@@ -747,15 +746,15 @@
               "watch"
             ]
           },
-          "aiSummary": "AI-generated summary: Independent retailer Pragnell is committed to preserving British jewellery-making skills by supporting apprentices through partnerships with the King’s Trust and The British School of Watchmaking, helping them achieve prestigious qualifications such as WOSTEP 1800 and the Level 30 Rolex service specialist accreditation.",
+          "aiSummary": "AI-generated summary: Independent retailer Pragnell is committed to preserving British jewellery-making craftsmanship by supporting apprentices through partnerships with the King’s Trust and The British School of Watchmaking, helping them achieve prestigious qualifications such as WOSTEP 1800 and the Level 30 Rolex service specialist certification.",
           "translations": {
             "da": {
               "title": "Den indvendige historie om, hvordan Pragnell arbejder på at beskytte smykkefremstillingsevner",
-              "summary": "AI-genereret resumé: Den uafhængige forhandler Pragnell er engageret i at bevare britiske smykkefremstillingsevner ved at støtte lærlinge gennem partnerskaber med King’s Trust og The British School of Watchmaking, og hjælper dem med at opnå prestigefyldte kvalifikationer som WOSTEP 1800 og Level 30 Rolex service specialist akkreditering."
+              "summary": "AI-genereret resumé: Den uafhængige forhandler Pragnell er engageret i at bevare britisk smykkefremstilling ved at støtte lærlinge gennem partnerskaber med King’s Trust og The British School of Watchmaking, og hjælper dem med at opnå prestigefyldte kvalifikationer som WOSTEP 1800 og Level 30 Rolex service specialist-certificering."
             },
             "es": {
               "title": "La historia interna sobre cómo Pragnell trabaja para proteger las habilidades en la fabricación de joyas",
-              "summary": "Resumen generado por IA: El minorista independiente Pragnell está comprometido con preservar las habilidades británicas en la fabricación de joyas apoyando a aprendices a través de asociaciones con el King’s Trust y The British School of Watchmaking, ayudándoles a obtener cualificaciones prestigiosas como WOSTEP 1800 y la acreditación de especialista en servicio Rolex Nivel 30."
+              "summary": "Resumen generado por IA: El minorista independiente Pragnell está comprometido con preservar la artesanía británica en la fabricación de joyas apoyando a aprendices mediante asociaciones con King’s Trust y The British School of Watchmaking, ayudándoles a obtener prestigiosas certificaciones como WOSTEP 1800 y la certificación de especialista en servicio Rolex Nivel 30."
             }
           }
         },
@@ -783,15 +782,15 @@
               "jeweller"
             ]
           },
-          "aiSummary": "AI-generated summary: The CEO of Platinum Guild International highlighted that despite challenges from record precious metal prices, platinum jewellery is showing resilience and benefiting from sustained high gold prices, particularly within the bridal market.",
+          "aiSummary": "AI-generated summary: The CEO of Platinum Guild International highlighted that despite challenges from record precious metal prices, platinum jewellery shows notable resilience and is benefiting from sustained high gold prices, particularly within the bridal market.",
           "translations": {
             "da": {
               "title": "PGI CEO: 'Vedvarende høje guldpriser er gode for platin'",
-              "summary": "AI-genereret resumé: CEO for Platinum Guild International fremhævede, at på trods af udfordringer fra rekordhøje ædelmetalpriser, viser platin-smykker modstandsdygtighed og drager fordel af vedvarende høje guldpriser, især på bryllupsmarkedet."
+              "summary": "AI-genereret resumé: CEO for Platinum Guild International fremhævede, at på trods af udfordringer fra rekordhøje ædelmetalpriser, viser platin-smykker bemærkelsesværdig modstandsdygtighed og drager fordel af vedvarende høje guldpriser, især på bryllupsmarkedet."
             },
             "es": {
-              "title": "CEO de PGI: 'Los precios altos sostenidos del oro son buenos para el platino'",
-              "summary": "Resumen generado por IA: El CEO de Platinum Guild International destacó que, a pesar de los desafíos por los precios récord de metales preciosos, la joyería de platino muestra resistencia y se beneficia de los precios altos sostenidos del oro, especialmente en el mercado nupcial."
+              "title": "CEO de PGI: ‘Los precios altos sostenidos del oro son buenos para el platino’",
+              "summary": "Resumen generado por IA: El CEO de Platinum Guild International destacó que, a pesar de los desafíos por los precios récord de metales preciosos, la joyería de platino muestra una notable resistencia y se beneficia de los precios altos sostenidos del oro, especialmente en el mercado nupcial."
             }
           }
         },
@@ -852,15 +851,15 @@
               "jeweller"
             ]
           },
-          "aiSummary": "AI-generated summary: Four individuals were convicted for their involvement in a multi-million dollar jewellery store robbery after they recorded the heist as it happened, according to a report from Jeweller - Business News dated March 9, 2026.",
+          "aiSummary": "AI-generated summary: Four individuals were convicted for their involvement in a multi-million dollar jewellery store robbery, during which they filmed the crime as it happened, according to a report by Jeweller - Business News on March 9, 2026.",
           "translations": {
             "da": {
               "title": "Smykketyve dømt efter at have filmet røveriet, mens det skete",
-              "summary": "AI-genereret resumé: Fire personer blev dømt for deres involvering i et multimillion-dollar smykkebutikrøveri, efter de optog røveriet, mens det fandt sted, ifølge en rapport fra Jeweller - Business News dateret 9. marts 2026."
+              "summary": "AI-genereret resumé: Fire personer blev dømt for deres involvering i et multimillionersmykkerøveri, hvor de filmede forbrydelsen, mens den fandt sted, ifølge en rapport fra Jeweller - Business News den 9. marts 2026."
             },
             "es": {
               "title": "Ladrones de joyas condenados tras grabar el robo mientras ocurría",
-              "summary": "Resumen generado por IA: Cuatro personas fueron condenadas por su participación en un robo de una joyería de varios millones de dólares después de grabar el robo mientras sucedía, según un informe de Jeweller - Business News del 9 de marzo de 2026."
+              "summary": "Resumen generado por IA: Cuatro personas fueron condenadas por su participación en un robo multimillonario en una joyería, durante el cual grabaron el crimen mientras sucedía, según un informe de Jeweller - Business News del 9 de marzo de 2026."
             }
           }
         },
@@ -886,15 +885,15 @@
               "retailer"
             ]
           },
-          "aiSummary": "AI-generated summary: Luxury watch stocks, including Swatch Group, Richemont, and LVMH, rose significantly following US President Trump's statement suggesting the Iran war is nearing completion, boosting investor optimism in the jewellery industry.",
+          "aiSummary": "AI-generated summary: Luxury watch stocks, including Swatch Group, Richemont, and LVMH, rose significantly following US President Trump's statement suggesting the Iran war is nearing completion, boosting market optimism in the jewellery industry.",
           "translations": {
             "da": {
-              "title": "Aktier i luksusure stiger på håb om afslutning på Iran-krig",
-              "summary": "AI-genereret resumé: Aktier i luksusure, herunder Swatch Group, Richemont og LVMH, steg markant efter USAs præsident Trumps udtalelse om, at Iran-krigen nærmer sig sin afslutning, hvilket øgede investorernes optimisme i smykkeindustrien."
+              "title": "Luksusur-aktier stiger på håb om afslutning på Iran-krig",
+              "summary": "AI-genereret resumé: Luksusur-aktier, herunder Swatch Group, Richemont og LVMH, steg markant efter USAs præsident Trumps udtalelse om, at Iran-krigen nærmer sig afslutning, hvilket øgede markedets optimisme i smykkeindustrien."
             },
             "es": {
-              "title": "Las acciones de relojes de lujo se recuperan con la esperanza de que termine la guerra en Irán",
-              "summary": "Resumen generado por IA: Las acciones de relojes de lujo, incluyendo Swatch Group, Richemont y LVMH, subieron significativamente tras la declaración del presidente estadounidense Trump sugiriendo que la guerra en Irán está cerca de terminar, aumentando el optimismo de los inversores en la industria de la joyería."
+              "title": "Las acciones de relojes de lujo se recuperan ante esperanzas de fin de la guerra en Irán",
+              "summary": "Resumen generado por IA: Las acciones de relojes de lujo, incluyendo Swatch Group, Richemont y LVMH, subieron significativamente tras la declaración del presidente de EE.UU., Trump, sugiriendo que la guerra en Irán está cerca de terminar, lo que impulsó el optimismo del mercado en la industria de la joyería."
             }
           }
         },
@@ -920,7 +919,7 @@
               "jeweller"
             ]
           },
-          "aiSummary": "AI-generated summary: Since its launch in late 2024, the Watches of Switzerland Group's apprenticeship scheme has expanded significantly, growing in both scale and ambition to support staff across retail and support functions.",
+          "aiSummary": "AI-generated summary: Since its launch in late 2024, the Watches of Switzerland Group's apprenticeship scheme has expanded considerably, growing in both scale and ambition to support staff across retail and support functions.",
           "translations": {
             "da": {
               "title": "Hvordan støtter Watches of Switzerland Group sine medarbejdere?",
@@ -928,7 +927,7 @@
             },
             "es": {
               "title": "¿Cómo apoya Watches of Switzerland Group a su personal?",
-              "summary": "Resumen generado por IA: Desde su lanzamiento a finales de 2024, el programa de aprendizaje de Watches of Switzerland Group ha crecido significativamente, aumentando en escala y ambición para apoyar al personal en ventas y funciones de apoyo."
+              "summary": "Resumen generado por IA: Desde su lanzamiento a finales de 2024, el programa de aprendizaje de Watches of Switzerland Group se ha expandido considerablemente, creciendo en escala y ambición para apoyar al personal en ventas y funciones de apoyo."
             }
           }
         },

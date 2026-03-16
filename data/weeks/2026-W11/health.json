@@ -1,38 +1,25 @@
 {
   "digestWeek": "2026-W11",
-  "ingestionWeek": "2026-W11",
-  "startedAt": "2026-03-15T22:40:35.839Z",
-  "finishedAt": "2026-03-15T22:42:46.947Z",
+  "ingestionWeek": "2026-W12",
+  "startedAt": "2026-03-16T07:05:33.036Z",
+  "finishedAt": "2026-03-16T07:08:22.393Z",
   "steps": [
-    {
-      "name": "pages",
-      "ok": true,
-      "startedAt": "2026-03-15T22:40:35.892Z",
-      "finishedAt": "2026-03-15T22:40:38.173Z"
-    },
-    {
-      "name": "discovery",
-      "ok": true,
-      "startedAt": "2026-03-15T22:40:38.175Z",
-      "finishedAt": "2026-03-15T22:40:38.205Z"
-    },
     {
       "name": "classification",
       "ok": true,
-      "startedAt": "2026-03-15T22:40:38.205Z",
-      "finishedAt": "2026-03-15T22:40:38.246Z"
+      "startedAt": "2026-03-16T07:05:33.084Z",
+      "finishedAt": "2026-03-16T07:05:33.138Z"
     },
     {
       "name": "digest",
       "ok": true,
-      "startedAt": "2026-03-15T22:40:38.246Z",
-      "finishedAt": "2026-03-15T22:42:46.945Z"
+      "startedAt": "2026-03-16T07:05:33.139Z",
+      "finishedAt": "2026-03-16T07:08:22.391Z"
     }
   ],
   "health": {
     "warnings": [
       "Podcast script word count: 1475 words (minimum: 1500)",
-      "AI & Strategy: www.pymnts.com represents 42.9% (3/7) - exceeds 40% threshold",
       "Jewellery Industry: www.professionaljeweller.com represents 42.9% (3/7) - exceeds 40% threshold",
       "Jewellery Industry: www.jewellermagazine.com represents 42.9% (3/7) - exceeds 40% threshold"
     ],
@@ -43,6 +30,6 @@
   },
   "versions": {
     "node": "v24.12.0",
-    "gitCommit": "fefcb9ee55adc00ff8325ae579d4d43d1008a518"
+    "gitCommit": "484de5f8cf7e4e06bf84ab445691ba565628cbec"
   }
 }

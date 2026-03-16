@@ -1678,5 +1678,101 @@
     ],
     "cached_at": "2026-03-15T22:41:58.010Z",
     "model": "o4-mini"
+  },
+  "2026-W11:AI_and_Strategy:26e1c2002400": {
+    "selected": [
+      {
+        "id": "3",
+        "rank": 1,
+        "why": "Major AI platform alliance shaping future agent ecosystem",
+        "confidence": 0.95
+      },
+      {
+        "id": "2",
+        "rank": 2,
+        "why": "Anthropic lawsuit impacts AI supply chain governance and policy",
+        "confidence": 0.9
+      },
+      {
+        "id": "17",
+        "rank": 3,
+        "why": "Nvidia's $20B AI chip investment signals major hardware leap",
+        "confidence": 0.9
+      },
+      {
+        "id": "11",
+        "rank": 4,
+        "why": "AWS and Cerebras deal advances AI chip cloud availability",
+        "confidence": 0.85
+      },
+      {
+        "id": "7",
+        "rank": 5,
+        "why": "Nvidia GTC keynote previews key AI technology and model updates",
+        "confidence": 0.85
+      },
+      {
+        "id": "6",
+        "rank": 6,
+        "why": "Manulife integrates AI agents into core financial workflows",
+        "confidence": 0.8
+      },
+      {
+        "id": "13",
+        "rank": 7,
+        "why": "AI agent hacking reveals security and guardrail challenges",
+        "confidence": 0.75
+      }
+    ],
+    "cached_at": "2026-03-16T07:06:08.852Z",
+    "model": "gpt-4.1-mini"
+  },
+  "2026-W11:Ecommerce_Retail_Tech:aa442f6bda78": {
+    "selected": [
+      {
+        "id": "4",
+        "rank": 1,
+        "why": "Amazon expands AI-powered marketplace program impacting multi-retailer sales",
+        "confidence": 0.95
+      },
+      {
+        "id": "5",
+        "rank": 2,
+        "why": "Shopify enables purchases inside ChatGPT, advancing agentic commerce integration",
+        "confidence": 0.9
+      },
+      {
+        "id": "1",
+        "rank": 3,
+        "why": "Rising AI investment in B2B and B2C commerce signals broad tech shift",
+        "confidence": 0.9
+      },
+      {
+        "id": "11",
+        "rank": 4,
+        "why": "Uzbekistan’s Uzum valuation surge highlights emerging ecommerce market growth",
+        "confidence": 0.85
+      },
+      {
+        "id": "13",
+        "rank": 5,
+        "why": "Petco’s integrated omnichannel approach advances ecommerce and retail synergy",
+        "confidence": 0.85
+      },
+      {
+        "id": "17",
+        "rank": 6,
+        "why": "Mobile basket abandonment over 85% drives new recovery tactics beyond email",
+        "confidence": 0.8
+      },
+      {
+        "id": "0",
+        "rank": 7,
+        "why": "Publix shutting down payment app signals shifts in retail payment strategies",
+        "confidence": 0.8
+      }
+    ],
+    "cached_at": "2026-03-16T07:06:44.820Z",
+    "model": "gpt-4.1-mini"
   }
 }
