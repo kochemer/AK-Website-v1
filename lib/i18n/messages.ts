@@ -67,6 +67,11 @@ export type Messages = {
     stayInformedDesc: string;
     disclaimer: string;
   };
+  search: {
+    placeholder: string;
+    noResults: string;
+    resultsCount: string;
+  };
 };
 
 const en: Messages = {
@@ -126,6 +131,11 @@ const en: Messages = {
     stayInformed: 'Stay Informed',
     stayInformedDesc: 'Get the weekly digest in your inbox.',
     disclaimer: 'AI-assisted summaries — Not investment or business advice. Website built and maintained by AK.',
+  },
+  search: {
+    placeholder: 'Search articles…',
+    noResults: 'No articles found.',
+    resultsCount: '{count} articles',
   },
 };
 
@@ -187,6 +197,11 @@ const da: Messages = {
     stayInformedDesc: 'Få den ugentlige oversigt i din indbakke.',
     disclaimer: 'AI-assisterede sammenfatninger — Ikke investerings- eller forretningsrådgivning. Hjemmeside bygget og vedligeholdt af AK.',
   },
+  search: {
+    placeholder: 'Søg artikler…',
+    noResults: 'Ingen artikler fundet.',
+    resultsCount: '{count} artikler',
+  },
 };
 
 const es: Messages = {
@@ -246,6 +261,11 @@ const es: Messages = {
     stayInformed: 'Mantente informado',
     stayInformedDesc: 'Recibe el resumen semanal en tu bandeja de entrada.',
     disclaimer: 'Resúmenes con IA — No son asesoramiento de inversión ni empresarial. Sitio web creado y mantenido por AK.',
+  },
+  search: {
+    placeholder: 'Buscar artículos…',
+    noResults: 'No se encontraron artículos.',
+    resultsCount: '{count} artículos',
   },
 };
 

@@ -67,6 +67,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${baseUrl}/methodology`,         lastModified: now, changeFrequency: 'monthly', priority: 0.5 },
     { url: `${baseUrl}/feedback`,            lastModified: now, changeFrequency: 'yearly',  priority: 0.4 },
     { url: `${baseUrl}/support`,             lastModified: now, changeFrequency: 'monthly', priority: 0.5 },
+    { url: `${baseUrl}/search`,              lastModified: now, changeFrequency: 'weekly',  priority: 0.6 },
   ];
 
   // ── Localised pages (es · da) ─────────────────────────────────────────────
