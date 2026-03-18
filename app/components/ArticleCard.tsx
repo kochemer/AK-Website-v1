@@ -175,11 +175,11 @@ export default function ArticleCard({
         </div>
       )}
 
-      {/* Read article → link - no height when hidden; expands on hover/focus */}
-      <div className="max-h-0 group-hover:max-h-[2.5rem] group-focus-within:max-h-[2.5rem] overflow-hidden transition-[max-height] duration-200 flex justify-end">
+      {/* Read article → link — always visible on touch devices, hover-only on desktop */}
+      <div className="max-md:max-h-[2.5rem] md:max-h-0 md:group-hover:max-h-[2.5rem] group-focus-within:max-h-[2.5rem] overflow-hidden transition-[max-height] duration-200 flex justify-end">
         <a
           {...linkProps}
-          className="text-body text-[var(--color-accent)] font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-200 hover:underline focus-visible:opacity-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-accent)] focus-visible:ring-offset-2 rounded px-1 -mr-1 py-1"
+          className="text-body text-[var(--color-accent)] font-medium max-md:opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-200 hover:underline focus-visible:opacity-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-accent)] focus-visible:ring-offset-2 rounded px-1 -mr-1 py-1"
         >
           Read article →
         </a>

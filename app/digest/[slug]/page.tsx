@@ -438,7 +438,7 @@ export default async function DigestPage({
               return quote ? <WeeklyInsight quote={quote} /> : null;
             })()}
 
-            <div className="bg-[var(--color-bg)] rounded-t-xl md:rounded-t-2xl border border-b-0 border-t border-t-[var(--color-accent)] border-black/5 p-6 sm:p-6 md:p-8 lg:p-10">
+            <div className="bg-[var(--color-bg)] rounded-t-xl md:rounded-t-2xl border border-b-0 border-t border-t-[var(--color-accent)] border-black/5 p-4 sm:p-6 md:p-8 lg:p-10">
               {podcast && (
                 <div className="mb-5 sm:mb-6 md:mb-8 pb-5 sm:pb-6 md:pb-8 border-b border-gray-200 dark:border-gray-700">
                   <PodcastPlayer

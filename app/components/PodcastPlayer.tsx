@@ -125,9 +125,9 @@ export default function PodcastPlayer({
           )}
         </div>
 
-        {/* Progress bar */}
+        {/* Progress bar — padded wrapper for larger touch target on mobile */}
         <div
-          className="relative h-[2px] bg-white/20 rounded-full cursor-pointer"
+          className="py-3 -my-3 cursor-pointer"
           onClick={seek}
           role="slider"
           aria-valuemin={0}
@@ -146,10 +146,12 @@ export default function PodcastPlayer({
             }
           }}
         >
-          <div
-            className="h-full bg-[var(--color-accent)] rounded-full transition-all"
-            style={{ width: `${progressPercent}%` }}
-          />
+          <div className="relative h-[2px] bg-white/20 rounded-full pointer-events-none">
+            <div
+              className="h-full bg-[var(--color-accent)] rounded-full transition-all"
+              style={{ width: `${progressPercent}%` }}
+            />
+          </div>
         </div>
         <div className="flex justify-between mt-1.5 text-[11px] text-white/50 font-sans tabular-nums">
           <span>{formatTime(currentTime)}</span>

@@ -268,7 +268,7 @@ export default async function Home() {
           })()}
 
           {/* Podcast + stats on cream */}
-          <div className="bg-[var(--color-bg)] rounded-t-xl md:rounded-t-2xl border border-b-0 border-t border-t-[var(--color-accent)] border-black/5 p-6 sm:p-6 md:p-8 lg:p-10">
+          <div className="bg-[var(--color-bg)] rounded-t-xl md:rounded-t-2xl border border-b-0 border-t border-t-[var(--color-accent)] border-black/5 p-4 sm:p-6 md:p-8 lg:p-10">
           {!digest ? (
             <div style={{
               maxWidth: 520,
@@ -346,7 +346,7 @@ export default async function Home() {
               </div>
 
               {/* Article sections - white band */}
-              <div className={`bg-[var(--color-surface)] border-x border-b border-[var(--color-border)] px-6 sm:px-6 md:px-8 lg:px-10 py-16 md:py-20 ${!(digest.keyThemes?.length) ? 'rounded-b-xl md:rounded-b-2xl' : ''}`}>
+              <div className={`bg-[var(--color-surface)] border-x border-b border-[var(--color-border)] px-4 sm:px-6 md:px-8 lg:px-10 py-10 sm:py-14 md:py-20 ${!(digest.keyThemes?.length) ? 'rounded-b-xl md:rounded-b-2xl' : ''}`}>
               {/* CATEGORY SECTIONS UI - Client-side rendering with reactive TopN */}
               <Suspense fallback={
                 <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-6">
@@ -363,7 +363,7 @@ export default async function Home() {
 
               {/* Key Themes Summary (cream band) */}
               {digest.keyThemes && digest.keyThemes.length > 0 ? (
-                <div className="border-t border-[var(--color-border)] bg-[var(--color-bg)] rounded-b-xl md:rounded-b-2xl px-6 sm:px-6 md:px-8 lg:px-10 py-10 md:py-12">
+                <div className="border-t border-[var(--color-border)] bg-[var(--color-bg)] rounded-b-xl md:rounded-b-2xl px-4 sm:px-6 md:px-8 lg:px-10 py-8 sm:py-10 md:py-12">
                   <div className="flex flex-wrap gap-1.5 sm:gap-2 justify-center">
                     {digest.keyThemes.map((theme, idx) => (
                       <span
@@ -382,14 +382,14 @@ export default async function Home() {
 
           {/* Permalink to this issue's dedicated page */}
           {digest && (
-            <div className="mt-8 mb-2 flex items-center justify-center gap-6">
+            <div className="mt-8 mb-2 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-6">
               <Link
                 href={`/digest/${weekLabelToSlug(weekLabel)}`}
-                className="font-mono text-[11px] tracking-[0.25em] uppercase text-[var(--color-accent)] hover:opacity-70 transition-opacity"
+                className="font-mono text-[11px] tracking-[0.25em] uppercase text-[var(--color-accent)] hover:opacity-70 transition-opacity text-center"
               >
                 Read the full {formatDateRange(digest.startISO, digest.endISO)} issue →
               </Link>
-              <span className="text-[var(--color-border)]">|</span>
+              <span className="hidden sm:inline text-[var(--color-border)]">|</span>
               <Link
                 href="/archive"
                 className="font-mono text-[11px] tracking-[0.25em] uppercase text-[var(--color-text-secondary)] hover:text-[var(--color-accent)] transition-colors"

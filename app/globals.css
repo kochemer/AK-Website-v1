@@ -325,6 +325,18 @@ body {
   }
 }
 
+/* Scale down large hero text on small screens */
+@media (max-width: 639px) {
+  .text-hero-masthead {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+  .text-hero-h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+}
+
 /* Scroll indicator animation */
 @keyframes scrollIndicator {
   0%, 100% {

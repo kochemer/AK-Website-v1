@@ -76,31 +76,31 @@ export default function CategorySection({
     <section
       id={id}
       className={isGrid
-        ? "scroll-mt-20 sm:scroll-mt-24 relative pb-16 md:pb-20"
-        : "mb-0 pb-16 md:pb-20 border-b border-[var(--color-border)] last:border-b-0 last:pb-0 last:mb-0 scroll-mt-20 sm:scroll-mt-24 relative py-16 md:py-20"
+        ? "scroll-mt-20 sm:scroll-mt-24 relative pb-10 md:pb-20"
+        : "mb-0 pb-10 md:pb-20 border-b border-[var(--color-border)] last:border-b-0 last:pb-0 last:mb-0 scroll-mt-20 sm:scroll-mt-24 relative pt-10 pb-10 md:pt-20 md:pb-20"
       }
     >
       {/* Editorial frontispiece header */}
       <header
         ref={headerRef}
-        className={`mb-10 pt-16 border-t border-[var(--color-accent)] transition-all duration-[600ms] ease-out ${
+        className={`mb-6 md:mb-10 pt-10 md:pt-16 border-t border-[var(--color-accent)] transition-all duration-[600ms] ease-out ${
           revealed ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
         }`}
       >
         <p className="text-[11px] tracking-[0.3em] uppercase text-[var(--color-accent)] font-sans mb-4">
           This Week
         </p>
-        <div className="flex items-end justify-between gap-4">
-          <h2 className="font-serif font-normal text-[2.75rem] leading-none tracking-[-0.02em] text-[var(--color-text-primary)]">
+        <div className="flex flex-col gap-1.5 md:flex-row md:items-end md:justify-between md:gap-4">
+          <h2 className="font-serif font-normal text-[1.875rem] md:text-[2.75rem] leading-tight md:leading-none tracking-[-0.02em] text-[var(--color-text-primary)]">
             {title}
           </h2>
           {(count > 0 || articles.length > 0) && (
-            <span className="font-sans text-[11px] tracking-[0.2em] uppercase text-[var(--color-text-secondary)] pb-1 shrink-0">
+            <span className="font-sans text-[11px] tracking-[0.2em] uppercase text-[var(--color-text-secondary)] md:pb-1 shrink-0">
               {count} articles · {articles.length} selected
             </span>
           )}
         </div>
-        <hr className="mt-5 border-[var(--color-border)]" />
+        <hr className="mt-4 md:mt-5 border-[var(--color-border)]" />
       </header>
 
       {/* Articles List: first = Top Story card (full width), rest in 2-col grid */}
