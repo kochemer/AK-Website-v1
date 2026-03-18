@@ -346,7 +346,7 @@ export default async function Home() {
               </div>
 
               {/* Article sections - white band */}
-              <div className={`bg-[var(--color-surface)] border-b sm:border-x border-[var(--color-border)] px-4 sm:px-6 md:px-8 lg:px-10 py-10 sm:py-14 md:py-20 ${!(digest.keyThemes?.length) ? 'rounded-b-xl md:rounded-b-2xl' : ''}`}>
+              <div className={`bg-[var(--color-surface)] border-x border-b border-[var(--color-border)] px-4 sm:px-6 md:px-8 lg:px-10 py-10 sm:py-14 md:py-20 ${!(digest.keyThemes?.length) ? 'rounded-b-xl md:rounded-b-2xl' : ''}`}>
               {/* CATEGORY SECTIONS UI - Client-side rendering with reactive TopN */}
               <Suspense fallback={
                 <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-6">
