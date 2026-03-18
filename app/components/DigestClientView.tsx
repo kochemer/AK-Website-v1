@@ -104,8 +104,8 @@ export default function DigestClientView({
       return null;
     }
     return (
-      <section className="w-full max-w-5xl mx-auto px-4 md:px-8 mb-16 md:mb-20">
-        <div className="w-full grid grid-cols-12 gap-8 lg:gap-10">
+      <section className="w-full max-w-5xl mx-auto mb-6 md:mb-16">
+        <div className="w-full grid grid-cols-12 gap-x-0 gap-y-8 lg:gap-10">
           {categoryCards.map(cat => {
             // @ts-ignore
             const topic = digest.topics[cat.key];
