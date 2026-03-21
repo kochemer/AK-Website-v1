@@ -45,7 +45,7 @@ export default function SearchBar({ compact, defaultValue = '', onSubmit }: Sear
   );
 
   return (
-    <form onSubmit={handleSubmit} className="w-full max-w-sm md:max-w-xs">
+    <form onSubmit={handleSubmit} className="w-full max-w-[230px] md:max-w-[192px]">
       <label htmlFor="header-search" className="sr-only">
         {t.search.placeholder}
       </label>
