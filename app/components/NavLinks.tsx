@@ -63,6 +63,7 @@ export function FooterNavLinks() {
   ];
   const secondary = [
     { href: '/email-digest', label: t.nav.emailDigest },
+    { href: `${prefix}/competitor-watch`, label: t.nav.competitorWatch },
     { href: `${prefix}/support`, label: t.nav.support },
     { href: `${prefix}/feedback`, label: t.nav.feedback },
   ];

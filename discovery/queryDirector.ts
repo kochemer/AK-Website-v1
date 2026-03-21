@@ -20,8 +20,8 @@ async function loadBaseQueries(): Promise<Record<string, string[]>> {
   try {
     const content = await fs.readFile(baseQueriesPath, 'utf-8');
     return JSON.parse(content);
-  } catch (err: any) {
-    throw new Error(`Failed to load base queries: ${err.message}`);
+  } catch (err: unknown) {
+    throw new Error(`Failed to load base queries: ${err instanceof Error ? err.message : String(err)}`);
   }
 }
 
@@ -149,6 +149,16 @@ export async function generateSearchQueries(
     console.log(`[QueryDirector] ${categoryLabel}: base=${baseCount}, delta=${deltaCount}, consultancy=${consultancyCount}, platform=${platformCount}, total=${totalCount}`);
   }
   
+  // Optionally append Competitor Watch queries to Jewellery_Industry
+  const competitorWatchQueries: string[] = baseQueries['Competitor Watch'] ?? [];
+  if (competitorWatchQueries.length > 0) {
+    finalQueries['Jewellery_Industry'] = [
+      ...finalQueries['Jewellery_Industry'],
+      ...competitorWatchQueries,
+    ];
+    console.log(`[QueryDirector] Appended ${competitorWatchQueries.length} Competitor Watch queries to Jewellery_Industry`);
+  }
+
   // Save queries with metadata
   const output: QueriesOutput = {
     baseQueries,

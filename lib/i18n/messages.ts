@@ -20,6 +20,7 @@ export type Messages = {
     support: string;
     feedback: string;
     subscribeCta: string;
+    competitorWatch: string;
   };
   digest: {
     week: string;
@@ -72,6 +73,14 @@ export type Messages = {
     noResults: string;
     resultsCount: string;
   };
+  competitorWatch: {
+    pageTitle: string;
+    pageDescription: string;
+    allBrands: string;
+    noArticles: string;
+    latestIntelligence: string;
+    brandMentioned: string;
+  };
 };
 
 const en: Messages = {
@@ -85,6 +94,7 @@ const en: Messages = {
     support: 'Support',
     feedback: 'Feedback',
     subscribeCta: 'Subscribe',
+    competitorWatch: 'Competitor Watch',
   },
   digest: {
     week: 'Week',
@@ -137,6 +147,15 @@ const en: Messages = {
     noResults: 'No articles found.',
     resultsCount: '{count} articles',
   },
+  competitorWatch: {
+    pageTitle: 'Competitor Watch',
+    pageDescription:
+      "Track news and coverage of Pandora's key jewellery competitors — sourced from the same article feed as the weekly digest.",
+    allBrands: 'All Brands',
+    noArticles: 'No articles found for this brand.',
+    latestIntelligence: 'Latest Intelligence',
+    brandMentioned: 'Mentioned in article',
+  },
 };
 
 const da: Messages = {
@@ -150,6 +169,7 @@ const da: Messages = {
     support: 'Support',
     feedback: 'Feedback',
     subscribeCta: 'Abonner',
+    competitorWatch: 'Konkurrent-overvågning',
   },
   digest: {
     week: 'Uge',
@@ -202,6 +222,15 @@ const da: Messages = {
     noResults: 'Ingen artikler fundet.',
     resultsCount: '{count} artikler',
   },
+  competitorWatch: {
+    pageTitle: 'Konkurrent-overvågning',
+    pageDescription:
+      'Følg nyheder om Pandoras vigtigste smykkekonkurrenter — fra den samme artiklefeed som det ugentlige digest.',
+    allBrands: 'Alle mærker',
+    noArticles: 'Ingen artikler fundet for dette mærke.',
+    latestIntelligence: 'Seneste efterretninger',
+    brandMentioned: 'Nævnt i artikel',
+  },
 };
 
 const es: Messages = {
@@ -215,6 +244,7 @@ const es: Messages = {
     support: 'Soporte',
     feedback: 'Opinión',
     subscribeCta: 'Suscribirse',
+    competitorWatch: 'Seguimiento de Competidores',
   },
   digest: {
     week: 'Semana',
@@ -266,6 +296,15 @@ const es: Messages = {
     placeholder: 'Buscar artículos…',
     noResults: 'No se encontraron artículos.',
     resultsCount: '{count} artículos',
+  },
+  competitorWatch: {
+    pageTitle: 'Seguimiento de Competidores',
+    pageDescription:
+      'Sigue las noticias de los principales competidores de joyería de Pandora — extraídas del mismo feed de artículos que el resumen semanal.',
+    allBrands: 'Todas las marcas',
+    noArticles: 'No se encontraron artículos para esta marca.',
+    latestIntelligence: 'Última inteligencia',
+    brandMentioned: 'Mencionado en artículo',
   },
 };
 
