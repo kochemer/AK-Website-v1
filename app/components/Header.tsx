@@ -89,7 +89,7 @@ export default function Header() {
           <Image src="/favicon.png" alt="Luxury Intelligence" width={36} height={36} className="flex-shrink-0" />
           <span className="font-sans font-semibold text-base lg:text-lg tracking-tight">Luxury Intelligence</span>
         </Link>
-        <div className="flex-1 min-w-0 max-w-xs">
+        <div className="flex-1 min-w-0 max-w-[192px]">
           <SearchBar compact />
         </div>
         <nav className="flex items-center min-w-0 mx-2 lg:mx-4">
