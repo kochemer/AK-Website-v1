@@ -73,7 +73,9 @@ export const COMPETITOR_BRANDS = [
     id: 'pandora',
     name: 'Pandora',
     aliases: ['pandora'],
-    isPublic: false,
+    isPublic: true,
+    ticker: 'PNDORA.CO',
+    tickerParent: 'Pandora A/S',
   },
 ] as const;
 

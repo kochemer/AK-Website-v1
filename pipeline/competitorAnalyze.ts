@@ -42,6 +42,7 @@ const PUBLIC_TICKERS: { ticker: string; parentName: string }[] = [
   { ticker: 'SIG', parentName: 'Signet Jewelers' },
   { ticker: 'CFR.SW', parentName: 'Richemont' },
   { ticker: 'MC.PA', parentName: 'LVMH' },
+  { ticker: 'PNDORA.CO', parentName: 'Pandora A/S' },
 ];
 
 // ── Helpers ────────────────────────────────────────────────────────────────
@@ -154,7 +155,8 @@ async function generateBriefing(
       ...maxTokensParam(model, 400),
       ...temperatureParam(model, 0.3),
     });
-    const raw = resp.choices[0]?.message?.content?.trim() ?? '[]';
+    const raw = (resp.choices[0]?.message?.content?.trim() ?? '[]')
+      .replace(/^```(?:json)?\n?/, '').replace(/\n?```$/, '');
     const bullets = JSON.parse(raw) as string[];
     return Array.isArray(bullets) ? bullets.slice(0, 5) : [];
   } catch {
@@ -166,11 +168,13 @@ async function generateBriefing(
 
 async function fetchFinancials(): Promise<Map<string, FinancialData>> {
   const result = new Map<string, FinancialData>();
-  let yahooFinance: typeof import('yahoo-finance2').default;
-
+  // yahoo-finance2 v3 requires instantiation
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  let yahooFinance: any;
   try {
     const mod = await import('yahoo-finance2');
-    yahooFinance = mod.default;
+    const YF = mod.YahooFinance ?? mod.default;
+    yahooFinance = typeof YF === 'function' ? new YF() : YF;
   } catch {
     console.warn('  [financials] yahoo-finance2 not available, skipping');
     return result;
