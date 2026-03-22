@@ -14,16 +14,6 @@ const SIGNAL_TAGS: SignalTag[] = [
   'Controversy', 'Leadership', 'Expansion',
 ];
 
-const SIGNAL_COLORS: Record<SignalTag, string> = {
-  Launch: 'bg-blue-50 text-blue-700 border-blue-200',
-  Campaign: 'bg-purple-50 text-purple-700 border-purple-200',
-  Partnership: 'bg-teal-50 text-teal-700 border-teal-200',
-  Financials: 'bg-yellow-50 text-yellow-700 border-yellow-200',
-  Controversy: 'bg-red-50 text-red-700 border-red-200',
-  Leadership: 'bg-orange-50 text-orange-700 border-orange-200',
-  Expansion: 'bg-green-50 text-green-700 border-green-200',
-};
-
 type Props = {
   brandMap: Map<CompetitorId, Article[]>;
   activeBrand: string | undefined;
@@ -54,7 +44,7 @@ export default function CompetitorWatchContent({
     ? COMPETITOR_BRANDS.find(b => b.id === activeBrand)?.name
     : undefined;
 
-  // Build deduplicated article rows with brand badges and signal tags
+  // Build deduplicated article rows with brand badges
   type Row = { article: Article; badges: string[] };
   let allRows: Row[] = [];
 
@@ -87,13 +77,13 @@ export default function CompetitorWatchContent({
     ? allRows.filter(r => r.article.signalTag === activeSignalTag)
     : allRows;
 
-  // Controversies: all controversy-tagged articles across all brands
+  // Controversies block
   const controversyRows = allRows.filter(r => r.article.signalTag === 'Controversy');
 
-  // Determine if we're in filtered mode (brand or signal selected)
+  // Filtered mode hides briefing/brand profiles/controversies
   const isFiltered = !!activeBrand || !!activeSignalTag;
 
-  // Build signal filter URL helper
+  // Signal filter URL helper
   const buildSignalUrl = (signal: SignalTag | null) => {
     const params = new URLSearchParams();
     if (activeBrand) params.set('brand', activeBrand);
@@ -102,10 +92,23 @@ export default function CompetitorWatchContent({
     return qs ? `${basePath}?${qs}` : basePath;
   };
 
+  // Financial snapshot pills (for filtered mode)
+  const financialPills = COMPETITOR_BRANDS
+    .map(b => ({ brand: b, fin: intel.brands[b.id]?.financials ?? null }))
+    .filter(({ fin }) => fin !== null) as { brand: typeof COMPETITOR_BRANDS[number]; fin: NonNullable<CompetitorIntel['brands'][CompetitorId]>['financials'] }[];
+
+  // Deduplicate by ticker so Cartier/Van Cleef and Tiffany/Bulgari don't repeat
+  const seenTickers = new Set<string>();
+  const uniqueFinancialPills = financialPills.filter(({ fin }) => {
+    if (!fin || seenTickers.has(fin.ticker)) return false;
+    seenTickers.add(fin.ticker);
+    return true;
+  });
+
   return (
     <div className="max-w-4xl mx-auto px-4 md:px-8 py-12 md:py-16">
       {/* Header */}
-      <header className="mb-10">
+      <header className="mb-6">
         <Link
           href={locale === 'en' ? '/' : `/${locale}`}
           className="text-[var(--color-accent)] hover:text-[var(--color-text-primary)] text-[13px] inline-block mb-6 transition-colors"
@@ -124,7 +127,42 @@ export default function CompetitorWatchContent({
         <hr className="border-[var(--color-accent)] border-t-2 mt-6" />
       </header>
 
-      {/* ── Section 1: Weekly Briefing (only on unfiltered view) ── */}
+      {/* ── Filters (always visible at top) ── */}
+      <div className="mb-10">
+        <BrandFilterBar
+          brands={brandSummaries}
+          activeBrand={activeBrand}
+          basePath={basePath}
+          allBrandsLabel={t.competitorWatch.allBrands}
+        />
+        <div className="flex flex-wrap gap-2 mt-3" role="group" aria-label="Filter by signal type">
+          <a
+            href={buildSignalUrl(null)}
+            className={`px-3 py-1.5 rounded-[3px] text-sm font-medium font-sans border transition-colors ${
+              !activeSignalTag
+                ? 'bg-[var(--color-accent)] text-white border-[var(--color-accent)]'
+                : 'bg-transparent text-[var(--color-text-secondary)] border-[var(--color-border)] hover:border-[var(--color-accent)] hover:text-[var(--color-accent)]'
+            }`}
+          >
+            All signals
+          </a>
+          {SIGNAL_TAGS.map(signal => (
+            <a
+              key={signal}
+              href={buildSignalUrl(signal)}
+              className={`px-3 py-1.5 rounded-[3px] text-sm font-medium font-sans border transition-colors ${
+                activeSignalTag === signal
+                  ? 'bg-[var(--color-accent)] text-white border-[var(--color-accent)]'
+                  : 'bg-transparent border-[var(--color-border)] text-[var(--color-text-secondary)] hover:border-[var(--color-accent)] hover:text-[var(--color-accent)]'
+              }`}
+            >
+              {signal}
+            </a>
+          ))}
+        </div>
+      </div>
+
+      {/* ── Section 1: Weekly Briefing (unfiltered only) ── */}
       {!isFiltered && (
         <CompetitorBriefing
           bullets={intel.briefing}
@@ -132,13 +170,13 @@ export default function CompetitorWatchContent({
         />
       )}
 
-      {/* ── Section 2: Brand Profiles (only on unfiltered view) ── */}
+      {/* ── Section 2: Brand Profiles (unfiltered only) ── */}
       {!isFiltered && (
         <section className="mb-12">
           <p className="text-[11px] tracking-[0.3em] uppercase text-[var(--color-text-secondary)] font-sans font-semibold mb-6">
             Brand Profiles
           </p>
-          <div className="grid grid-cols-1 gap-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
             {COMPETITOR_BRANDS.map(brand => {
               const articles = brandMap.get(brand.id) ?? [];
               if (articles.length === 0 && !intel.brands[brand.id]?.narrative) return null;
@@ -159,7 +197,7 @@ export default function CompetitorWatchContent({
         </section>
       )}
 
-      {/* ── Section 4: Controversies & Risks (only on unfiltered view) ── */}
+      {/* ── Section 4: Controversies & Risks (unfiltered only) ── */}
       {!isFiltered && controversyRows.length > 0 && (
         <section className="mb-12">
           <div className="border-l-4 border-amber-400 bg-amber-50 dark:bg-amber-900/10 rounded-sm px-5 py-4">
@@ -187,45 +225,33 @@ export default function CompetitorWatchContent({
         </section>
       )}
 
-      {/* ── Section 3: Signal Filter Feed ── */}
-      <section>
-        {/* Brand filter bar */}
-        <BrandFilterBar
-          brands={brandSummaries}
-          activeBrand={activeBrand}
-          basePath={basePath}
-          allBrandsLabel={t.competitorWatch.allBrands}
-        />
-
-        {/* Signal type filter bar */}
-        <div className="flex flex-wrap gap-2 mt-3" role="group" aria-label="Filter by signal type">
-          <a
-            href={buildSignalUrl(null)}
-            className={`px-3 py-1.5 rounded-[3px] text-sm font-medium font-sans border transition-colors ${
-              !activeSignalTag
-                ? 'bg-[var(--color-accent)] text-white border-[var(--color-accent)]'
-                : 'bg-transparent text-[var(--color-text-secondary)] border-[var(--color-border)] hover:border-[var(--color-accent)] hover:text-[var(--color-accent)]'
-            }`}
-          >
-            All signals
-          </a>
-          {SIGNAL_TAGS.map(signal => (
-            <a
-              key={signal}
-              href={buildSignalUrl(signal)}
-              className={`px-3 py-1.5 rounded-[3px] text-sm font-medium font-sans border transition-colors ${
-                activeSignalTag === signal
-                  ? 'bg-[var(--color-accent)] text-white border-[var(--color-accent)]'
-                  : `bg-transparent border-[var(--color-border)] text-[var(--color-text-secondary)] hover:border-[var(--color-accent)] hover:text-[var(--color-accent)]`
-              }`}
-            >
-              {signal}
-            </a>
-          ))}
+      {/* ── Financial Snapshot strip (filtered mode only) ── */}
+      {isFiltered && uniqueFinancialPills.length > 0 && (
+        <div className="flex flex-wrap items-center gap-x-4 gap-y-2 mb-8 py-3 border-y border-[var(--color-border)]">
+          <span className="text-[10px] tracking-[0.3em] uppercase text-[var(--color-text-secondary)] font-sans font-semibold shrink-0">
+            Markets
+          </span>
+          {uniqueFinancialPills.map(({ fin }) => {
+            if (!fin) return null;
+            const isUp = fin.change1w >= 0;
+            return (
+              <span key={fin.ticker} className="text-[12px] font-sans text-[var(--color-text-secondary)] whitespace-nowrap">
+                <span className="font-medium text-[var(--color-text-primary)]">{fin.parentName}</span>
+                {' '}
+                <span>{fin.currency} {fin.price.toLocaleString()}</span>
+                {' '}
+                <span className={isUp ? 'text-green-600 dark:text-green-400' : 'text-red-600 dark:text-red-400'}>
+                  {isUp ? '▲' : '▼'}{Math.abs(fin.change1w).toFixed(1)}%
+                </span>
+              </span>
+            );
+          })}
         </div>
+      )}
 
-        {/* Section label + count */}
-        <div className="flex items-center justify-between mt-8 mb-6">
+      {/* ── Section 3: Article feed ── */}
+      <section>
+        <div className="flex items-center justify-between mb-6">
           <h2 className="text-[11px] tracking-[0.3em] uppercase text-[var(--color-text-secondary)] font-sans font-semibold">
             {activeBrandName
               ? `${activeBrandName}${activeSignalTag ? ` · ${activeSignalTag}` : ''}`
@@ -238,7 +264,6 @@ export default function CompetitorWatchContent({
           </span>
         </div>
 
-        {/* Articles */}
         {filteredRows.length === 0 ? (
           <div className="bg-[var(--color-accent-light)] border-l-4 border-[var(--color-accent)] p-5 rounded-sm">
             <p className="text-body text-[var(--color-text-primary)]">
@@ -269,7 +294,7 @@ export default function CompetitorWatchContent({
         )}
       </section>
 
-      {/* ── Section 5: Pandora Reference Strip ── */}
+      {/* ── Section 5: Pandora Reference Strip (unfiltered only) ── */}
       {!isFiltered && (
         <aside className="mt-16 pt-8 border-t border-[var(--color-border)]">
           <p className="text-[11px] tracking-[0.3em] uppercase text-[var(--color-text-secondary)] font-sans font-semibold mb-3">
