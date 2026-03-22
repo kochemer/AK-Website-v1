@@ -69,6 +69,7 @@ export default function Header() {
   const primaryLinks = [
     { href: `${prefix}/` || '/', label: t.nav.home },
     { href: `${prefix}/archive`, label: t.nav.archive },
+    { href: `${prefix}/competitor-watch`, label: t.nav.competitorWatch },
     { href: `${prefix}/about`, label: t.nav.about },
     { href: `${prefix}/methodology`, label: t.nav.methodology },
   ];
