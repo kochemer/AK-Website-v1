@@ -172,7 +172,8 @@ async function fetchFinancials(): Promise<Map<string, FinancialData>> {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   let yahooFinance: any;
   try {
-    const mod = await import('yahoo-finance2');
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const mod = await import('yahoo-finance2') as any;
     const YF = mod.YahooFinance ?? mod.default;
     yahooFinance = typeof YF === 'function' ? new YF() : YF;
   } catch {
