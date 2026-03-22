@@ -1774,5 +1774,101 @@
     ],
     "cached_at": "2026-03-16T07:06:44.820Z",
     "model": "gpt-4.1-mini"
+  },
+  "2026-W12:AI_and_Strategy:9a497f7921a2": {
+    "selected": [
+      {
+        "id": "9",
+        "rank": 1,
+        "why": "US labels Anthropic a national security risk, impacting AI governance",
+        "confidence": 0.95
+      },
+      {
+        "id": "6",
+        "rank": 2,
+        "why": "Jeff Bezos plans $100B AI-driven industrial transformation project",
+        "confidence": 0.9
+      },
+      {
+        "id": "3",
+        "rank": 3,
+        "why": "OpenAI Frontier platform advances enterprise AI agents in SaaS",
+        "confidence": 0.9
+      },
+      {
+        "id": "7",
+        "rank": 4,
+        "why": "OpenAI acquires Astral to enhance Codex AI coding capabilities",
+        "confidence": 0.85
+      },
+      {
+        "id": "13",
+        "rank": 5,
+        "why": "Nvidia CEO highlights high AI token spending, signaling economic scale",
+        "confidence": 0.85
+      },
+      {
+        "id": "15",
+        "rank": 6,
+        "why": "Russia enacts broad powers to restrict foreign AI tools, affecting policy",
+        "confidence": 0.8
+      },
+      {
+        "id": "17",
+        "rank": 7,
+        "why": "Europe’s AI adoption funds foreign platforms, revealing ecosystem challenges",
+        "confidence": 0.8
+      }
+    ],
+    "cached_at": "2026-03-22T07:12:33.105Z",
+    "model": "gpt-4.1-mini"
+  },
+  "2026-W12:Ecommerce_Retail_Tech:4a3b63f6c6f8": {
+    "selected": [
+      {
+        "id": "3",
+        "rank": 1,
+        "why": "Shopify's AI shopping agent strategy signals platform transformation",
+        "confidence": 0.92
+      },
+      {
+        "id": "12",
+        "rank": 2,
+        "why": "Alibaba's AI/cloud push overhauls major ecommerce infrastructure",
+        "confidence": 0.91
+      },
+      {
+        "id": "5",
+        "rank": 3,
+        "why": "JD.com launching Joybuy challenges Amazon in Europe",
+        "confidence": 0.88
+      },
+      {
+        "id": "7",
+        "rank": 4,
+        "why": "New EU rules change marketplace seller transparency requirements",
+        "confidence": 0.85
+      },
+      {
+        "id": "2",
+        "rank": 5,
+        "why": "Amazon reports triple purchase growth via Alexa voice commerce",
+        "confidence": 0.83
+      },
+      {
+        "id": "9",
+        "rank": 6,
+        "why": "AI-powered dynamic pricing driving smarter ecommerce price strategies",
+        "confidence": 0.8
+      },
+      {
+        "id": "17",
+        "rank": 7,
+        "why": "RFID’s role as omnichannel truth layer advances retail operations",
+        "confidence": 0.78
+      }
+    ],
+    "cached_at": "2026-03-22T07:12:51.562Z",
+    "model": "o4-mini"
   }
 }
