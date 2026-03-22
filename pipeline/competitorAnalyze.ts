@@ -189,9 +189,9 @@ async function fetchFinancials(): Promise<Map<string, FinancialData>> {
       try {
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
         chartResult = await (yahooFinance.chart as (symbol: string, opts: any) => Promise<any>)(ticker, {
-          period1: DateTime.now().minus({ days: 7 }).toJSDate(),
+          period1: DateTime.now().minus({ weeks: 13 }).toJSDate(),
           period2: new Date(),
-          interval: '1d',
+          interval: '1wk',
         });
       } catch {
         // chart data unavailable — fall back to today's change
@@ -200,18 +200,29 @@ async function fetchFinancials(): Promise<Map<string, FinancialData>> {
       const price = quote.regularMarketPrice ?? 0;
       const currency = quote.currency ?? 'USD';
 
-      // Calculate 1-week % change from chart data or fallback to 52w low/high
+      // Calculate 1-week % change from most recent two weekly candles
       let change1w = 0;
       if (chartResult?.quotes && chartResult.quotes.length >= 2) {
-        const oldest = chartResult.quotes[0]?.close;
-        const newest = chartResult.quotes[chartResult.quotes.length - 1]?.close;
-        if (oldest && newest && oldest > 0) {
-          change1w = ((newest - oldest) / oldest) * 100;
+        const quotes = chartResult.quotes;
+        const prev = quotes[quotes.length - 2]?.close;
+        const latest = quotes[quotes.length - 1]?.close;
+        if (prev && latest && prev > 0) {
+          change1w = ((latest - prev) / prev) * 100;
         }
       } else if (quote.regularMarketChangePercent != null) {
-        // Fallback: use today's change
         change1w = quote.regularMarketChangePercent;
       }
+
+      // Build price history: last 12 weekly closes
+      const priceHistory = chartResult?.quotes
+        ? (chartResult.quotes as { date?: Date | string; close?: number | null }[])
+            .filter(q => q.close != null)
+            .map(q => ({
+              date: q.date instanceof Date ? q.date.toISOString() : String(q.date),
+              close: q.close as number,
+            }))
+            .slice(-12)
+        : undefined;
 
       result.set(ticker, {
         ticker,
@@ -220,6 +231,7 @@ async function fetchFinancials(): Promise<Map<string, FinancialData>> {
         currency,
         change1w: Math.round(change1w * 100) / 100,
         fetchedAt: new Date().toISOString(),
+        priceHistory,
       });
 
       console.log(`  [financials] ${ticker} (${parentName}): ${currency} ${price.toFixed(2)} (${change1w >= 0 ? '+' : ''}${change1w.toFixed(2)}%)`);

@@ -1,27 +1,77 @@
 {
-  "generatedAt": "2026-03-22T14:25:09.339Z",
+  "generatedAt": "2026-03-22T17:55:13.097Z",
   "weekLabel": "2026-W12",
   "briefing": [
-    "Luxury jewelers are increasingly blending heritage craftsmanship with contemporary culture and youth-oriented collaborations to capture younger, style-conscious consumers, as seen in Swarovski’s and Bulgari’s strategic partnerships with high-profile cultural figures.",
-    "Operational efficiency and portfolio rationalization are key themes, with Signet consolidating brands like James Allen into Blue Nile and Pandora streamlining its retail network to better manage cost pressures and shifting consumer preferences.",
-    "There is a notable pivot toward deepening market penetration through immersive retail experiences and flagship expansions in key luxury hubs, exemplified by Cartier’s U.S. boutique growth and De Beers’ flagship openings in fashion capitals.",
-    "Brands are balancing tradition and innovation by reinforcing artisanal heritage while expanding into adjacent categories such as high-jewellery watchmaking (Tiffany & Co., Bulgari) and digital luxury platforms (Cartier), reflecting evolving consumer engagement channels.",
-    "Sustainability and ethical sourcing are becoming critical differentiators, with Pandora leveraging its leadership credentials in this area to appeal to increasingly values-driven consumers amid broader industry shifts toward responsible luxury."
+    "Luxury jewelers are increasingly blending heritage craftsmanship with contemporary cultural relevance through high-profile collaborations and ambassador-driven campaigns to engage younger, style-conscious consumers across global markets.",
+    "Several brands, including Signet and Pandora, are streamlining their portfolios and retail footprints to enhance operational efficiency and mitigate risks amid soft consumer demand and fluctuating commodity prices.",
+    "There is a notable strategic pivot toward diversifying product materials and targeting emerging affluent markets, exemplified by Pandora’s move into platinum-plated jewelry and De Beers’ focus on affluent Indian consumers amid supply and demand challenges.",
+    "Retail expansion remains a key growth lever for heritage brands like Cartier and De Beers, with flagship openings in luxury hubs reinforcing physical presence alongside digital and cultural engagement strategies.",
+    "Leadership agility and innovation are prioritized across the sector, highlighted by Bulgari’s CEO appointment and Tiffany’s integration of iconic design with cinematic storytelling to balance tradition and modern luxury narratives."
   ],
   "brands": {
     "signet": {
-      "narrative": "Signet Jewelers is navigating a strategic consolidation by streamlining its brand portfolio, exemplified by the decision to sunset James Allen and integrate its offerings into the Blue Nile collection, reflecting a focus on operational efficiency amid shifting consumer preferences. Despite a challenging retail environment, Signet has sustained modest same-store sales growth and robust overall revenue, positioning itself to leverage scale and brand rationalization to maintain market leadership in the global diamond jewelry sector.",
+      "narrative": "Signet Jewelers is navigating a strategic consolidation to reinforce its market leadership amid shifting consumer behaviors and challenging retail conditions. By sunsetting the underperforming James Allen brand and integrating it into the Blue Nile collection, Signet is streamlining its digital portfolio to focus on stronger, more scalable platforms while maintaining steady same-store sales growth. This approach underscores a disciplined emphasis on operational efficiency and brand portfolio optimization to sustain resilience in a competitive luxury jewellery market.",
       "financials": {
         "ticker": "SIG",
         "parentName": "Signet Jewelers",
         "price": 89.05,
         "currency": "USD",
-        "change1w": 6.24,
-        "fetchedAt": "2026-03-22T14:25:08.712Z"
+        "change1w": 0,
+        "fetchedAt": "2026-03-22T17:55:12.491Z",
+        "priceHistory": [
+          {
+            "date": "2026-01-05T05:00:00.000Z",
+            "close": 84.37999725341797
+          },
+          {
+            "date": "2026-01-12T05:00:00.000Z",
+            "close": 95.16000366210938
+          },
+          {
+            "date": "2026-01-19T05:00:00.000Z",
+            "close": 89.79000091552734
+          },
+          {
+            "date": "2026-01-26T05:00:00.000Z",
+            "close": 92.2699966430664
+          },
+          {
+            "date": "2026-02-02T05:00:00.000Z",
+            "close": 97
+          },
+          {
+            "date": "2026-02-09T05:00:00.000Z",
+            "close": 90.08999633789062
+          },
+          {
+            "date": "2026-02-16T05:00:00.000Z",
+            "close": 97.91999816894531
+          },
+          {
+            "date": "2026-02-23T05:00:00.000Z",
+            "close": 96.19000244140625
+          },
+          {
+            "date": "2026-03-02T05:00:00.000Z",
+            "close": 90.7699966430664
+          },
+          {
+            "date": "2026-03-09T04:00:00.000Z",
+            "close": 82.20999908447266
+          },
+          {
+            "date": "2026-03-16T04:00:00.000Z",
+            "close": 89.05000305175781
+          },
+          {
+            "date": "2026-03-20T20:00:02.000Z",
+            "close": 89.05000305175781
+          }
+        ]
       }
     },
     "swarovski": {
-      "narrative": "Swarovski is strategically positioning itself at the intersection of luxury and contemporary culture by blending heritage craftsmanship with bold, youth-oriented collaborations and campaigns. Through partnerships like the Nike x Swarovski Air Jordan and high-profile ambassadors such as Ariana Grande, the brand is actively redefining crystal jewelry as both a statement of personal expression and a versatile accessory for modern lifestyles, signaling a shift toward playful, accessible luxury that resonates with younger, style-conscious consumers.",
+      "narrative": "Swarovski is positioning itself at the intersection of contemporary culture and luxury craftsmanship by leveraging high-profile collaborations and culturally resonant campaigns. Through partnerships like the Nike x Swarovski Air Jordan and ambassador-driven collections such as the 2026 Valentine’s Day Charming Love line, the brand is emphasizing playful self-expression and modern reinterpretations of glamour to engage younger, style-conscious consumers. This approach signals Swarovski’s strategic shift toward blending heritage crystal artistry with streetwear influence and celebrity-driven storytelling to remain relevant in a competitive luxury market.",
       "financials": null
     },
     "mejuri": {
@@ -29,66 +79,316 @@
       "financials": null
     },
     "monica-vinader": {
-      "narrative": "Monica Vinader is positioning itself at the intersection of contemporary culture and personal expression by aligning with emerging creative talents like Sienna Spiro, whose rising profile and authentic artistry resonate with a younger, values-driven audience. This collaboration signals the brand’s strategic shift toward storytelling that emphasizes emotional clarity and individuality, reinforcing its relevance amid evolving consumer expectations for meaningful, identity-affirming luxury.",
+      "narrative": "Monica Vinader is positioning itself at the intersection of contemporary creativity and authentic self-expression by aligning with emerging cultural figures like Sienna Spiro, whose rising profile and artistic integrity resonate with a younger, values-driven audience. This move signals the brand’s strategic shift toward emphasizing emotional connection and individuality over traditional luxury tropes, aiming to deepen relevance in a market increasingly shaped by personal storytelling and cultural currency.",
       "financials": null
     },
     "tiffany": {
-      "narrative": "Tiffany & Co. is actively reinforcing its heritage of artisanal craftsmanship and iconic design through culturally resonant campaigns tied to key calendar moments like Chinese New Year and Valentine’s Day, while simultaneously expanding its presence in high-jewellery watchmaking with collections that reinterpret historic motifs. The brand’s strategic positioning emphasizes a blend of tradition and contemporary storytelling, leveraging celebrity ambassadors and creative directors to deepen emotional engagement, even as it navigates operational challenges in emerging markets such as Indonesia.",
+      "narrative": "Tiffany & Co. is strategically reinforcing its heritage of artisanal craftsmanship and storytelling by integrating iconic design motifs—such as Jean Schlumberger’s Pegasus and enamel bangles—into contemporary high-jewelry and watch collections, while leveraging culturally resonant campaigns tied to key calendar moments like Chinese New Year and Valentine’s Day. Concurrently, the brand is deepening its narrative of modern luxury through collaborations with diverse brand ambassadors and cinematic storytelling, positioning itself at the intersection of tradition and innovation amid evolving global markets and heightened regulatory scrutiny.",
       "financials": {
         "ticker": "MC.PA",
         "parentName": "LVMH",
         "price": 457.95,
         "currency": "EUR",
-        "change1w": -4.39,
-        "fetchedAt": "2026-03-22T14:25:09.137Z"
+        "change1w": 0,
+        "fetchedAt": "2026-03-22T17:55:12.965Z",
+        "priceHistory": [
+          {
+            "date": "2026-01-04T23:00:00.000Z",
+            "close": 652.0999755859375
+          },
+          {
+            "date": "2026-01-11T23:00:00.000Z",
+            "close": 609.2000122070312
+          },
+          {
+            "date": "2026-01-18T23:00:00.000Z",
+            "close": 591.4000244140625
+          },
+          {
+            "date": "2026-01-25T23:00:00.000Z",
+            "close": 546.9000244140625
+          },
+          {
+            "date": "2026-02-01T23:00:00.000Z",
+            "close": 536.2000122070312
+          },
+          {
+            "date": "2026-02-08T23:00:00.000Z",
+            "close": 514.2000122070312
+          },
+          {
+            "date": "2026-02-15T23:00:00.000Z",
+            "close": 554.7000122070312
+          },
+          {
+            "date": "2026-02-22T23:00:00.000Z",
+            "close": 544.0999755859375
+          },
+          {
+            "date": "2026-03-01T23:00:00.000Z",
+            "close": 502.20001220703125
+          },
+          {
+            "date": "2026-03-08T23:00:00.000Z",
+            "close": 473.70001220703125
+          },
+          {
+            "date": "2026-03-15T23:00:00.000Z",
+            "close": 457.95001220703125
+          },
+          {
+            "date": "2026-03-20T16:38:25.000Z",
+            "close": 457.95001220703125
+          }
+        ]
       }
     },
     "cartier": {
-      "narrative": "Cartier is reinforcing its position as a dominant luxury jeweler by aggressively expanding its retail footprint in key U.S. markets, notably with a flagship boutique on Beverly Hills’ Rodeo Drive that rivals its New York presence. This physical growth complements strong sales momentum in established markets like the UK, where Cartier is outpacing its parent company Richemont, signaling a strategic focus on deepening market penetration through immersive, localized brand experiences. Concurrently, partnerships with digital luxury platforms like DREST indicate Cartier’s intent to bridge traditional retail with evolving digital luxury consumption patterns.",
+      "narrative": "Cartier is strategically reinforcing its global luxury footprint through significant retail expansion in key U.S. markets, notably with a flagship boutique on Rodeo Drive that positions the brand alongside its New York “Temple.” This physical growth complements robust sales performance, particularly in the UK and holiday quarters, underscoring Cartier’s role as a primary growth driver within Richemont. Simultaneously, Cartier is deepening engagement with younger, style-conscious consumers through partnerships like the DREST collaboration and refreshed campaigns, signaling a dual focus on heritage-driven luxury and contemporary relevance.",
       "financials": {
         "ticker": "CFR.SW",
         "parentName": "Richemont",
         "price": 130.4,
         "currency": "CHF",
-        "change1w": -5.44,
-        "fetchedAt": "2026-03-22T14:25:08.952Z"
+        "change1w": 0,
+        "fetchedAt": "2026-03-22T17:55:12.685Z",
+        "priceHistory": [
+          {
+            "date": "2026-01-04T23:00:00.000Z",
+            "close": 176.4499969482422
+          },
+          {
+            "date": "2026-01-11T23:00:00.000Z",
+            "close": 161.35000610351562
+          },
+          {
+            "date": "2026-01-18T23:00:00.000Z",
+            "close": 154.5500030517578
+          },
+          {
+            "date": "2026-01-25T23:00:00.000Z",
+            "close": 149.5500030517578
+          },
+          {
+            "date": "2026-02-01T23:00:00.000Z",
+            "close": 155.4499969482422
+          },
+          {
+            "date": "2026-02-08T23:00:00.000Z",
+            "close": 158.64999389648438
+          },
+          {
+            "date": "2026-02-15T23:00:00.000Z",
+            "close": 162.3000030517578
+          },
+          {
+            "date": "2026-02-22T23:00:00.000Z",
+            "close": 157.25
+          },
+          {
+            "date": "2026-03-01T23:00:00.000Z",
+            "close": 142.6999969482422
+          },
+          {
+            "date": "2026-03-08T23:00:00.000Z",
+            "close": 138.10000610351562
+          },
+          {
+            "date": "2026-03-15T23:00:00.000Z",
+            "close": 130.39999389648438
+          },
+          {
+            "date": "2026-03-20T16:30:20.000Z",
+            "close": 130.39999389648438
+          }
+        ]
       }
     },
     "de-beers": {
-      "narrative": "De Beers is navigating a complex market environment marked by declining rough diamond production, falling prices, and shifting consumer demand, particularly due to geopolitical tensions, tariffs, and competition from synthetic stones. In response, the company is strategically pivoting by deepening its focus on affluent markets like India and reinforcing its luxury positioning through flagship expansions in key fashion capitals such as Paris, while simultaneously managing supply constraints and recalibrating its elite buyer network to sustain long-term value.",
+      "narrative": "De Beers is navigating a complex market environment marked by declining rough diamond production, price cuts, and shifting consumer demand, particularly amid slowing Chinese luxury spending and rising synthetic alternatives. The company is strategically pivoting towards affluent Indian consumers and reinforcing its high-jewellery positioning through flagship expansions in key luxury hubs like Paris, while managing supply constraints and geopolitical uncertainties to maintain its premium natural diamond narrative. This approach reflects a balancing act between preserving traditional diamond value and adapting to evolving global luxury dynamics.",
       "financials": null
     },
     "bulgari": {
-      "narrative": "Bulgari is actively repositioning itself at the intersection of contemporary culture and luxury heritage by aligning with globally influential figures like Dua Lipa and Jake Gyllenhaal, signaling a deliberate shift to engage younger, culturally attuned audiences. Concurrently, its integration within LVMH’s watchmaking ecosystem and recent executive leadership changes underscore a strategic emphasis on innovation and operational agility to strengthen its foothold in high-end jewellery and watch markets.",
+      "narrative": "Bulgari is strategically positioning itself at the intersection of contemporary culture and luxury heritage by aligning with globally influential figures like Dua Lipa and Jake Gyllenhaal, signaling a deliberate push to modernize its brand appeal and deepen emotional resonance with younger, culturally engaged consumers. Concurrently, its active participation in LVMH Watch Week underscores a commitment to innovation and craftsmanship within high-end watchmaking, while leadership changes such as the appointment of Laura Burdese as CEO suggest a focus on agile, visionary management to navigate evolving luxury market dynamics.",
       "financials": {
         "ticker": "MC.PA",
         "parentName": "LVMH",
         "price": 457.95,
         "currency": "EUR",
-        "change1w": -4.39,
-        "fetchedAt": "2026-03-22T14:25:09.137Z"
+        "change1w": 0,
+        "fetchedAt": "2026-03-22T17:55:12.965Z",
+        "priceHistory": [
+          {
+            "date": "2026-01-04T23:00:00.000Z",
+            "close": 652.0999755859375
+          },
+          {
+            "date": "2026-01-11T23:00:00.000Z",
+            "close": 609.2000122070312
+          },
+          {
+            "date": "2026-01-18T23:00:00.000Z",
+            "close": 591.4000244140625
+          },
+          {
+            "date": "2026-01-25T23:00:00.000Z",
+            "close": 546.9000244140625
+          },
+          {
+            "date": "2026-02-01T23:00:00.000Z",
+            "close": 536.2000122070312
+          },
+          {
+            "date": "2026-02-08T23:00:00.000Z",
+            "close": 514.2000122070312
+          },
+          {
+            "date": "2026-02-15T23:00:00.000Z",
+            "close": 554.7000122070312
+          },
+          {
+            "date": "2026-02-22T23:00:00.000Z",
+            "close": 544.0999755859375
+          },
+          {
+            "date": "2026-03-01T23:00:00.000Z",
+            "close": 502.20001220703125
+          },
+          {
+            "date": "2026-03-08T23:00:00.000Z",
+            "close": 473.70001220703125
+          },
+          {
+            "date": "2026-03-15T23:00:00.000Z",
+            "close": 457.95001220703125
+          },
+          {
+            "date": "2026-03-20T16:38:25.000Z",
+            "close": 457.95001220703125
+          }
+        ]
       }
     },
     "van-cleef": {
-      "narrative": "Van Cleef & Arpels is reinforcing its position as a heritage-driven luxury jeweler by leveraging both strong commercial momentum and curated exclusivity. Recent robust sales growth within Richemont’s portfolio underscores the brand’s appeal across key global markets, while its strategic presence at high-profile events like TEFAF Maastricht highlights a deliberate emphasis on rare, historically significant pieces to deepen its artisanal narrative and differentiate from competitors. This dual focus on contemporary market performance and heritage curation signals a balanced approach to sustaining long-term brand equity.",
+      "narrative": "Van Cleef & Arpels is reinforcing its position as a heritage-driven luxury jeweler by leveraging both strong contemporary sales momentum and the strategic showcasing of rare archival pieces at prestigious events like TEFAF Maastricht. This dual approach underscores the brand’s commitment to blending timeless craftsmanship with sustained global market growth, particularly within Richemont’s broader portfolio where jewelry maisons are leading regional expansion.",
       "financials": {
         "ticker": "CFR.SW",
         "parentName": "Richemont",
         "price": 130.4,
         "currency": "CHF",
-        "change1w": -5.44,
-        "fetchedAt": "2026-03-22T14:25:08.952Z"
+        "change1w": 0,
+        "fetchedAt": "2026-03-22T17:55:12.685Z",
+        "priceHistory": [
+          {
+            "date": "2026-01-04T23:00:00.000Z",
+            "close": 176.4499969482422
+          },
+          {
+            "date": "2026-01-11T23:00:00.000Z",
+            "close": 161.35000610351562
+          },
+          {
+            "date": "2026-01-18T23:00:00.000Z",
+            "close": 154.5500030517578
+          },
+          {
+            "date": "2026-01-25T23:00:00.000Z",
+            "close": 149.5500030517578
+          },
+          {
+            "date": "2026-02-01T23:00:00.000Z",
+            "close": 155.4499969482422
+          },
+          {
+            "date": "2026-02-08T23:00:00.000Z",
+            "close": 158.64999389648438
+          },
+          {
+            "date": "2026-02-15T23:00:00.000Z",
+            "close": 162.3000030517578
+          },
+          {
+            "date": "2026-02-22T23:00:00.000Z",
+            "close": 157.25
+          },
+          {
+            "date": "2026-03-01T23:00:00.000Z",
+            "close": 142.6999969482422
+          },
+          {
+            "date": "2026-03-08T23:00:00.000Z",
+            "close": 138.10000610351562
+          },
+          {
+            "date": "2026-03-15T23:00:00.000Z",
+            "close": 130.39999389648438
+          },
+          {
+            "date": "2026-03-20T16:30:20.000Z",
+            "close": 130.39999389648438
+          }
+        ]
       }
     },
     "pandora": {
-      "narrative": "Pandora is navigating a transitional phase marked by strategic shifts in product composition and retail control to mitigate commodity price volatility and evolving consumer demand. By expanding into platinum-plated jewelry and consolidating its retail network, the brand is reducing reliance on silver while reinforcing operational control, positioning itself for resilience amid market pressures. Concurrently, Pandora leverages its industry-leading sustainability credentials to differentiate in a competitive landscape increasingly attentive to ethical sourcing and environmental impact.",
+      "narrative": "Pandora is navigating a transitional phase marked by strategic shifts in product composition and retail control amid a backdrop of soft consumer demand and fluctuating precious metal prices. The brand is actively reducing its reliance on silver by introducing platinum-plated jewelry, signaling a diversification of materials to mitigate commodity risk while reinforcing its market resilience. Concurrently, Pandora is consolidating its retail footprint and strengthening leadership with new executive appointments, all while leveraging its sustainability credentials to position itself as a forward-looking, responsible player in the global jewelry industry.",
       "financials": {
         "ticker": "PNDORA.CO",
         "parentName": "Pandora A/S",
         "price": 440.9,
         "currency": "DKK",
-        "change1w": -0.7,
-        "fetchedAt": "2026-03-22T14:25:09.339Z"
+        "change1w": 0,
+        "fetchedAt": "2026-03-22T17:55:13.097Z",
+        "priceHistory": [
+          {
+            "date": "2026-01-04T23:00:00.000Z",
+            "close": 588.4000244140625
+          },
+          {
+            "date": "2026-01-11T23:00:00.000Z",
+            "close": 550
+          },
+          {
+            "date": "2026-01-18T23:00:00.000Z",
+            "close": 505
+          },
+          {
+            "date": "2026-01-25T23:00:00.000Z",
+            "close": 509
+          },
+          {
+            "date": "2026-02-01T23:00:00.000Z",
+            "close": 570
+          },
+          {
+            "date": "2026-02-08T23:00:00.000Z",
+            "close": 539.7999877929688
+          },
+          {
+            "date": "2026-02-15T23:00:00.000Z",
+            "close": 547.4000244140625
+          },
+          {
+            "date": "2026-02-22T23:00:00.000Z",
+            "close": 500
+          },
+          {
+            "date": "2026-03-01T23:00:00.000Z",
+            "close": 493.6000061035156
+          },
+          {
+            "date": "2026-03-08T23:00:00.000Z",
+            "close": 443
+          },
+          {
+            "date": "2026-03-15T23:00:00.000Z",
+            "close": 440.8999938964844
+          },
+          {
+            "date": "2026-03-20T15:59:34.000Z",
+            "close": 440.8999938964844
+          }
+        ]
       }
     }
   }

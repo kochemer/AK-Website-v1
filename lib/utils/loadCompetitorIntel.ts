@@ -9,6 +9,7 @@ export type FinancialData = {
   currency: string;
   change1w: number; // % change over last 5 trading days
   fetchedAt: string;
+  priceHistory?: { date: string; close: number }[];
 };
 
 export type BrandIntel = {
