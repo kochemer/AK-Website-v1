@@ -372,5 +372,24 @@
     "version": "v3",
     "cached_at": "2026-03-15T21:22:21.887Z",
     "variant": "safe"
+  },
+  "99781ea4ffda3b5070c64cc2a82bbabedd670e5507d5e7d99bc1cbfb1072a7f8": {
+    "output": {
+      "concept": "AI-jewelry-store-roboshopper-role-reversal",
+      "primaryHumorDriver": "role reversal",
+      "secondaryEnhancer": "unexpected texture/material combination",
+      "sceneDescription": "In a hyper-realistic upscale jewelry store, the glass display cases are filled not only with sparkling diamond rings and necklaces, but also with small, highly-polished robotic shopping carts, each wearing luxurious jewelry pieces like tiaras and gold chains. The robots are examining the jewelry with magnifying glasses, mimicking discerning shoppers. Meanwhile, a few confused human shoppers stand on the sidelines, holding price tags and looking uncertain, as if unsure whether to approach the robotic 'customers.' The lighting is bright and elegant, glinting off both the gems and the chrome surfaces of the robots. The absurdity comes from the role reversal: AI shopping agents have literally become the store’s main clientele, adorned in the very products they came to buy, while humans are now the hesitant outsiders in the shopping process. The jewelry-on-robots adds an unexpected material twist, blending high-end luxury with utilitarian robotics. Everything is photorealistic and styled like a luxury advertisement.",
+      "finalImagePrompt": "Hyper-realistic photography of a high-end jewelry store interior with bright, elegant lighting. In the central horizontal band, small, shiny robotic shopping carts are wearing diamond necklaces, gold rings, and tiaras, examining jewelry with tiny magnifying glasses as if they are sophisticated shoppers. Human shoppers stand off to the side, looking confused and hesitant. The glass display cases showcase both jewelry and robots. The robots' metal surfaces gleam under the lights, and the gemstones sparkle vividly. Everything looks real, with photorealistic lighting, textures, and materials. Wide horizontal banner composition (3:1 aspect ratio), all primary elements composed in a central band with safe margins. No text, no signage, no screens anywhere. The scene is absurd but believable: robots as jewelry customers, humans as outsiders, jewelry adorning machines. Hyper-realistic, playful, and smart.",
+      "negativePrompt": [
+        "text, letters, numbers, signage, labels",
+        "screens, UI, dashboards, holograms, floating icons",
+        "logos, brands, watermarks",
+        "cartoon, illustration, CGI, 3D render, anime"
+      ],
+      "confidence": 0.77
+    },
+    "version": "v3",
+    "cached_at": "2026-03-22T07:17:12.138Z",
+    "variant": "safe"
   }
 }

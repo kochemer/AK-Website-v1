@@ -1,0 +1,34 @@
+{
+  "weekLabel": "2026-W12",
+  "homepageTopArticles": [
+    {
+      "title": "Shopify is preparing for AI shopping agents to change everything, exec says",
+      "source": "TechCrunch - Commerce",
+      "snippet": "Shopify is preparing for an e-commerce transformation via AI shopping agents, says president Harley Finkelstein.",
+      "aiSummary": "AI-generated summary: Shopify is gearing up for a major shift in e-commerce driven by AI shopping agents, according to president Harley Finkelstein. This transformation is expected to significantly impact the retail technology landscape."
+    },
+    {
+      "title": "Alibaba ties AI push to cloud growth, ecommerce overhaul",
+      "source": "Digital Commerce 360",
+      "snippet": "Alibaba Group is accelerating investments in artificial intelligence, cloud computing and rapid-delivery ecommerce as it positions for what executives describe as a shift to an “agent-driven” digital economy. Revenue for the company rose to $40.7 billion year over year in Alibaba’s fiscal Q3, which ended Dec. 31, 2025. That’s up 2% from $40.1 billion a […]\nThe post Alibaba ties AI push to cloud growth, ecommerce overhaul appeared first on Digital Commerce 360.",
+      "aiSummary": "AI-generated summary: Alibaba Group is accelerating its investments in artificial intelligence, cloud computing, and rapid-delivery ecommerce to support a shift toward an \"agent-driven\" digital economy, with its fiscal Q3 revenue rising 2% year over year to $40.7 billion."
+    },
+    {
+      "title": "Strong fourth quarter jewellery sales for retail giant",
+      "source": "Jeweller - Business News",
+      "snippet": "US-based retailer Signet Jewelers reported strong fourth-quarter results for the period ending 31 January 2026.",
+      "aiSummary": "AI-generated summary: US-based retailer Signet Jewelers reported strong sales results for the fourth quarter ending 31 January 2026, indicating robust performance in the jewellery industry."
+    },
+    {
+      "title": "Positive momentum continues for jewellers in February",
+      "source": "Jeweller - Business News",
+      "snippet": "The latest analysis of sales at independent jewellery stores in Australia has been highlighted by another month of improved performance.",
+      "aiSummary": "AI-generated summary: Independent jewellery stores in Australia experienced continued positive sales momentum in February, reflecting an ongoing improvement in performance."
+    }
+  ],
+  "model": "gpt-image-1.5",
+  "finalPrompt": "Hyper-realistic photography of a high-end jewelry store interior with bright, elegant lighting. In the central horizontal band, small, shiny robotic shopping carts are wearing diamond necklaces, gold rings, and tiaras, examining jewelry with tiny magnifying glasses as if they are sophisticated shoppers. Human shoppers stand off to the side, looking confused and hesitant. The glass display cases showcase both jewelry and robots. The robots' metal surfaces gleam under the lights, and the gemstones sparkle vividly. Everything looks real, with photorealistic lighting, textures, and materials. Wide horizontal banner composition (3:1 aspect ratio), all primary elements composed in a central band with safe margins. No text, no signage, no screens anywhere. The scene is absurd but believable: robots as jewelry customers, humans as outsiders, jewelry adorning machines. Hyper-realistic, playful, and smart.\n\nCRITICAL CONSTRAINTS (must be strictly avoided):\n- text, letters, numbers, signage, labels, screens, UI, dashboards, holograms, floating icons, logos, brands, watermarks, cartoon, illustration, CGI, 3D render, anime\n\nPHOTOREALISM ENFORCEMENT:\n- Ultra photorealistic editorial photograph, shot on a real DSLR or medium-format camera.\n- Natural lighting, realistic skin texture, realistic reflections, realistic materials, real physics.\n- Candid editorial realism; avoid stock-photo staging.\n\nANTI-CARTOON / ANTI-CGI:\n- No illustration, no cartoon, no anime, no 3D render, no CGI, no synthetic look.\n\nNO-TEXT GUARANTEE:\n- Absolutely no text, letters, numbers, typography, signage, labels, price tags.\n- No screens, dashboards, UI, holograms, floating icons, charts.\n- Avoid any objects that commonly contain text (posters, newspapers, packaging, storefront signs). If unavoidable, they must be fully out of focus and unreadable.\n\nCOMPOSITION FOR WIDE HERO BANNER (CRITICAL):\n- Wide, horizontally expansive banner format (target 3:1 or wider aspect ratio)\n- Vertically minimal height - all important visual elements must be placed in the central horizontal band\n- Safe margins at top and bottom - no critical content near vertical edges\n- Composition must work when displayed in a wide, shallow container\n- Avoid vertical stacking, tall elements, or content that extends to top/bottom edges",
+  "imageSize": "1536x1024",
+  "outputPath": "/weekly-images/2026-W12.png",
+  "generatedAt": "2026-03-22T07:18:05.465Z"
+}

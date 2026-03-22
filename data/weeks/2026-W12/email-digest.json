@@ -1,0 +1,107 @@
+{
+  "week": "2026-W12",
+  "generatedAt": "2026-03-22T07:14:33.590Z",
+  "intro": "This week’s intelligence digest highlights transformative moves in retail and AI, from Shopify’s AI-driven shopping agents to Alibaba and JD.com’s global e-commerce expansions. Key developments include Jeff Bezos’s ambitious AI-driven industrial investments and OpenAI’s strategic acquisition to enhance coding capabilities, underscoring the accelerating integration of AI across luxury and retail sectors.",
+  "readOneThing": {
+    "title": "Shopify is preparing for AI shopping agents to change everything, exec says",
+    "url": "https://techcrunch.com/2026/03/16/shopify-is-preparing-for-ai-shopping-agents-to-change-everything-exec-says/"
+  },
+  "items": [
+    {
+      "rank": 1,
+      "title": "Shopify is preparing for AI shopping agents to change everything, exec says",
+      "url": "https://techcrunch.com/2026/03/16/shopify-is-preparing-for-ai-shopping-agents-to-change-everything-exec-says/",
+      "source": "TechCrunch - Commerce",
+      "bullets": [
+        "Shopify's president Harley Finkelstein announced the company's commitment to agentic shopping, using AI personal shoppers to transform e-commerce experiences. Only about 18% of retail purchases in the U.S. are made online, and agentic applications aim to increase this by acting as personalized shopping assistants. Shopify, the second-largest U.S. e-commerce provider, expects the rollout of agentic shopping to be gradual but impactful for both large and smaller merchants.",
+        "Shopify is preparing for the transformation of a lifetime, according to its president, Harley Finkelstein",
+        "Speaking at this year’s Upfront Summit in Los Angeles, the longtime e-commerce veteran spoke about how the company is going all in on agentic shopping"
+      ],
+      "summary": "AI-generated summary: Shopify is gearing up for a major shift in e-commerce driven by AI shopping agents, according to president Harley Finkelstein. This transformation is expected to significantly impact the retail technology landscape."
+    },
+    {
+      "rank": 2,
+      "title": "These Two Types of Managers Could Be Destroying Your Jewelry Business",
+      "url": "https://instoremag.com/these-two-types-of-managers-could-be-destroying-your-jewelry-business/",
+      "source": "Instore Magazine",
+      "bullets": [
+        "The article identifies two types of managers who limit growth in jewelry businesses: former top salespeople unqualified for management and chief administrators lacking sales focus.",
+        "A 2002 Harvard Business Review study cited in the article found only 10 percent of managers focus on activities that truly drive sales, while 90 percent engage in sales-limiting behaviors.",
+        "The article was published in the April 2026 issue of Instore Magazine and draws on insights from a recent podcast and quotes from former New York Yankees manager Casey Stengel."
+      ],
+      "summary": "AI-generated summary: The article from Instore Magazine (2026-03-20) discusses how two types of short-sighted managers can hinder growth in the jewelry industry, each impacting business development in distinct ways."
+    },
+    {
+      "rank": 3,
+      "title": "Jeff Bezos reportedly wants $100 billion to buy and transform old manufacturing firms with AI",
+      "url": "https://techcrunch.com/2026/03/19/jeff-bezos-reportedly-wants-100-billion-to-buy-and-transform-old-manufacturing-firms-with-ai/",
+      "source": "TechCrunch - AI",
+      "bullets": [
+        "Jeff Bezos is seeking $100 billion to create a fund aimed at acquiring and modernizing manufacturing companies using AI technology.",
+        "The fund will support Project Prometheus, Bezos' AI startup, which launched with $6.2 billion to develop AI models for aerospace, automotive, and other sectors.",
+        "Bezos has traveled to Singapore and the Middle East to raise capital for acquiring companies in aerospace, chipmaking, and defense industries."
+      ],
+      "summary": "AI-generated summary: Jeff Bezos aims to raise $100 billion to acquire and transform old manufacturing companies by integrating AI technology, according to a TechCrunch report dated March 19, 2026. This new project focuses on leveraging AI to revamp industrial firms."
+    },
+    {
+      "rank": 4,
+      "title": "Golden Goose Said in Talks to Sell Minority Stake to Qatar Investment Authority",
+      "url": "https://wwd.com/footwear-news/shoe-industry-news/golden-goose-minority-stake-qatar-investment-authority-1238685186/",
+      "source": "WWD - Women's Wear Daily",
+      "bullets": [
+        "Golden Goose is negotiating to sell a 10 percent minority stake to the Qatar Investment Authority, altering its shareholding structure. The luxury sneaker brand reported a 15 percent increase in net revenues to 734 million euros for the 12 months ending December 31, 2025. Founded in 2000, Golden Goose underwent ownership changes with Permira acquiring it in 2020 and HSG taking a majority stake in December 2025.",
+        "The Golden Goose x FiveFourFive co-creation event in Florence, Italy",
+        "Italian newspaper Corriere della Sera was the first to report on the potential sale"
+      ],
+      "summary": "AI-generated summary: Luxury sneakers brand Golden Goose is reportedly in negotiations to sell a 10 percent minority stake to the Qatar Investment Authority, according to local media reports."
+    },
+    {
+      "rank": 5,
+      "title": "Alibaba ties AI push to cloud growth, ecommerce overhaul",
+      "url": "https://www.digitalcommerce360.com/2026/03/20/alibaba-ai-plans-for-cloud-and-ecommerce/",
+      "source": "Digital Commerce 360",
+      "bullets": [
+        "Alibaba Group reported a 2% year-over-year revenue increase to $40.7 billion in fiscal Q3, driven by investments in AI, cloud computing, and rapid-delivery ecommerce.",
+        "Alibaba's Cloud Intelligence Group experienced about 35% revenue growth with AI-related products achieving triple-digit growth for the tenth consecutive quarter.",
+        "The company aims to exceed $100 billion in combined cloud and AI revenue within five years, while targeting over $138 billion in quick-commerce gross merchandise volume by fiscal 2028."
+      ],
+      "summary": "AI-generated summary: Alibaba Group is accelerating its investments in artificial intelligence, cloud computing, and rapid-delivery ecommerce to support a shift toward an \"agent-driven\" digital economy, with its fiscal Q3 revenue rising 2% year over year to $40.7 billion."
+    },
+    {
+      "rank": 6,
+      "title": "OpenAI acquires Astral to bring Python's most popular dev tools into its Codex AI coding platform",
+      "url": "https://the-decoder.com/openai-acquires-astral-to-bring-pythons-most-popular-dev-tools-into-its-codex-ai-coding-platform/",
+      "source": "The Decoder",
+      "bullets": [
+        "OpenAI has acquired Astral, the company behind popular Python developer tools like Ruff, uv, and ty, to integrate them into its Codex AI coding platform.",
+        "Astral's tools are downloaded hundreds of millions of times each month and will remain open source under a permissive license after the acquisition.",
+        "Astral founder Charlie Marsh announced that his team is joining OpenAI's Codex team, the company's platform for agentic AI coding"
+      ],
+      "summary": "AI-generated summary: On March 20, 2026, The Decoder reported that OpenAI is acquiring Astral, the creator of popular Python development tools, to integrate them into its Codex AI coding platform, highlighting the competitive landscape among AI labs in AI-powered coding."
+    },
+    {
+      "rank": 7,
+      "title": "Lainey Wilson’s Golden West Pays Homage to Home State Louisiana With New Cowboy Boot",
+      "url": "https://wwd.com/footwear-news/shoe-trends/lainey-wilson-golden-west-cowboy-boot-the-wild-magnolia-1238683701/",
+      "source": "Footwear News",
+      "bullets": [
+        "Lainey Wilson's brand Golden West launched the Wild Magnolia cowboy boot, featuring a design inspired by Louisiana's state flower, the magnolia. The boot has a 14-inch tall scalloped shaft, a 2-inch heel, and retails for $365 on goldenwestboots.com. Golden West, established in 2025, has released multiple styles in 2026, including the Night Bloom and Forget Me Not Cherry boots, with Michael Petry as creative director.",
+        "The Wild Magnolia boot from Golden West",
+        "Courtesy of Golden West The Wild Magnolia boot, which dropped on Thursday, showcases the state flower of Louisiana, the magnolia"
+      ],
+      "summary": "AI-generated summary: Lainey Wilson’s Golden West collection honors her home state of Louisiana by featuring a new cowboy boot inspired by the state flower, the magnolia."
+    },
+    {
+      "rank": 8,
+      "title": "JD.com takes on Amazon in Europe as China's e-commerce titans expand globally",
+      "url": "https://www.cnbc.com/2026/03/16/jd-launches-joybuy-in-europe-amazon-rival.html",
+      "source": "CNBC Technology",
+      "bullets": [
+        "JD.com launched its European online shopping platform, Joybuy, in six countries including the U.K. and Germany to compete with Amazon and other rivals.",
+        "Joybuy offers same-day delivery for orders placed before 11 a.m. and free delivery on U.K. orders over £29, with a £3.99 monthly membership for unlimited free delivery.",
+        "Unlike AliExpress and Temu, JD.com operates its own warehouses and logistics network in Europe, aiming to replicate its successful fast delivery model from China."
+      ],
+      "summary": "AI-generated summary: JD.com is expanding into Europe by emphasizing same-day delivery and offering international brands to compete with Amazon, according to CNBC Technology on March 16, 2026."
+    }
+  ]
+}
