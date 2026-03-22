@@ -21,6 +21,7 @@ import { buildWeeklyEmailDigest } from '../email/buildWeeklyEmailDigest';
 import { buildWeeklyPodcast } from '../podcast/buildWeeklyPodcast';
 import { regenerateCover } from '../digest/regenerateCover';
 import { printModelRouting } from '../lib/llm/models';
+import { runCompetitorAnalyze } from './competitorAnalyze';
 
 export type RunWeeklyPipelineOptions = {
   week?: string;               // digest week override
@@ -33,6 +34,7 @@ export type RunWeeklyPipelineOptions = {
   skipClassification?: boolean;
   skipEmail?: boolean;
   skipDigest?: boolean;
+  skipCompetitorAnalyze?: boolean;
   forceRebuild?: boolean;      // Force rebuild even if digest exists
   maxTotalArticles?: number;   // Max total articles across all categories (default: 40)
   maxArticlesPerCategory?: number; // Max articles per category (default: 10)
@@ -562,6 +564,29 @@ export async function runWeeklyPipeline(options: RunWeeklyPipelineOptions = {}):
     console.log('');
   } else {
     console.log(`[Pipeline] Skipping cover`);
+  }
+
+  // Step 9: Competitor Intelligence Analysis
+  if (!options.skipCompetitorAnalyze) {
+    const step = await runStep('competitorAnalyze', async () => {
+      console.log(`[Pipeline] Step 9/9: Competitor Intelligence Analysis (${digestWeek})...`);
+      return await runCompetitorAnalyze(digestWeek);
+    });
+    steps.push({
+      name: 'competitorAnalyze',
+      ok: step.ok,
+      startedAt: step.startedAt,
+      finishedAt: step.finishedAt,
+      error: step.error,
+    });
+    if (!step.ok) {
+      console.error(`[Pipeline] ✗ Competitor analyze failed: ${step.error}`);
+    } else {
+      console.log(`[Pipeline] ✓ Competitor intelligence analysis complete`);
+    }
+    console.log('');
+  } else {
+    console.log(`[Pipeline] Skipping competitor intelligence analysis`);
   }
 
   // Run health checks (if digest is available)

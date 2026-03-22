@@ -27,6 +27,19 @@ export type DateConfidence = 'high' | 'medium' | 'low';
 export type CategoryHint = 'Fashion & Luxury' | 'Jewellery Industry';
 
 /**
+ * Competitor intelligence signal taxonomy.
+ * Assigned by competitorAnalyze pipeline step.
+ */
+export type SignalTag =
+  | 'Launch'
+  | 'Campaign'
+  | 'Partnership'
+  | 'Financials'
+  | 'Controversy'
+  | 'Leadership'
+  | 'Expansion';
+
+/**
  * Relevance score breakdown from the ranking algorithm
  */
 export interface RelevanceScore {
@@ -85,6 +98,9 @@ export interface Article {
     da?: { title?: string; summary?: string };
     es?: { title?: string; summary?: string };
   };
+
+  // === Competitor intelligence (populated by competitorAnalyze pipeline step) ===
+  signalTag?: SignalTag; // Competitor signal classification
 }
 
 /**

@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { loadCompetitorArticles } from '@/lib/utils/loadCompetitorArticles';
+import { loadCompetitorIntel } from '@/lib/utils/loadCompetitorIntel';
 import CompetitorWatchContent from './CompetitorWatchContent';
 
 export const dynamic = 'force-dynamic';
@@ -13,15 +14,20 @@ export const metadata: Metadata = {
 export default async function CompetitorWatchPage({
   searchParams,
 }: {
-  searchParams: Promise<{ brand?: string }>;
+  searchParams: Promise<{ brand?: string; signal?: string }>;
 }) {
-  const { brand } = await searchParams;
-  const brandMap = await loadCompetitorArticles();
+  const { brand, signal } = await searchParams;
+  const [brandMap, intel] = await Promise.all([
+    loadCompetitorArticles(),
+    loadCompetitorIntel(),
+  ]);
 
   return (
     <CompetitorWatchContent
       brandMap={brandMap}
       activeBrand={brand}
+      activeSignal={signal}
+      intel={intel}
       locale="en"
       basePath="/competitor-watch"
     />
