@@ -1,0 +1,14 @@
+{
+  "concept": "diamond-marathon-scale-absurdity",
+  "primaryHumorDriver": "scale absurdity",
+  "secondaryEnhancer": "implied motion or 'just happened' moment",
+  "sceneDescription": "A hyper-realistic, wide-angle street scene of a city marathon in full swing. In the center, a gigantic sparkling diamond—over two meters tall—lies in the middle of the race course, with marathon runners streaming past. Some runners are leaping over the diamond, while others glance back in surprise. Along the sidelines, unattended shopping bags from luxury beauty brands (Ulta, Sally Beauty) and miniature Amazon delivery boxes are scattered, as if recently dropped by runners. The lighting is bright and natural, capturing the sense of a crisp marathon morning. The absurdity is in the massive diamond as a literal, impossible obstacle on an otherwise normal marathon route, while subtle hints to commerce and e-commerce (shopping bags, delivery boxes) litter the scene, merging the stories of lost jewels, diamond market disruption, and the e-commerce sales rush.",
+  "finalImagePrompt": "Hyper-realistic photography of a crowded city marathon in progress, bright natural daylight, wide horizontal banner framing (3:1 aspect ratio, central horizontal band). In the center of the street, a massive, photorealistic diamond (over two meters tall) sits as an absurd obstacle. Marathon runners are mid-stride, some leaping over or running around the giant diamond, with surprised or amused expressions. Scattered along the race route and sidelines are realistic shopping bags from high-end beauty brands and small Amazon-style delivery boxes, as if dropped in the rush. No text, no signage, no screens. Realistic urban setting, sharp detail, photorealistic materials and textures (sparkling diamond, sportswear, paper bags, cardboard). Implied motion—runners in action, some glancing back—gives a sense of a just-happened, playful scene.",
+  "negativePrompt": [
+    "text, letters, numbers, signage, labels",
+    "screens, UI, dashboards, holograms, floating icons",
+    "logos, brands, watermarks",
+    "cartoon, illustration, CGI, 3D render, anime"
+  ],
+  "confidence": 0.93
+}

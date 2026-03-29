@@ -1,0 +1,34 @@
+{
+  "weekLabel": "2026-W13",
+  "homepageTopArticles": [
+    {
+      "title": "Sales from major brands on TikTok Shop nearly doubled in 2025, drawing Ulta and Sally Beauty",
+      "source": "Modern Retail",
+      "snippet": "TikTok Shop logged more than 103 billion U.S. searches with e-commerce intent in 2025, while total transaction volume rose nearly 80% year over year.",
+      "aiSummary": "AI-generated summary: In 2025, TikTok Shop experienced a nearly 80% increase in transaction volume and over 103 billion U.S. searches with e-commerce intent, attracting major brands like Ulta and Sally Beauty."
+    },
+    {
+      "title": "Marketplace Briefing: Why Amazon is moving Prime Day to June from July, and what it means for sellers",
+      "source": "Modern Retail",
+      "snippet": "Amazon is planning to move Prime Day to June from its usual July slot this year, shaking up the timing of a sales event many brands rely on.",
+      "aiSummary": "AI-generated summary: Amazon is shifting its Prime Day event from July to June this year, altering the traditional timing of a major sales event that many brands depend on, according to Modern Retail."
+    },
+    {
+      "title": "Diamond producer slashes one-third of sightholders",
+      "source": "Jeweller - Business News",
+      "snippet": "The De Beers Group has reportedly cut the number of sightholders that can purchase goods by as much as one-third.",
+      "aiSummary": "AI-generated summary: The De Beers Group has reduced the number of sightholders eligible to purchase its goods by approximately one-third, according to a report in Jeweller - Business News dated March 23, 2026. This move impacts the jewellery industry by limiting access to De Beers' diamond supply."
+    },
+    {
+      "title": "Diamond District Jeweler Steps Up for Runner Who Lost Heirloom Engagement Ring During NYC Half-Marathon",
+      "source": "Instore Magazine",
+      "snippet": "A New York City jeweler's offer to replace a runner's lost family heirloom turned a heartbreaking story into a feel-good one — and a lesson in smart local marketing.",
+      "aiSummary": "AI-generated summary: A New York City jeweler gained positive local marketing exposure by offering to replace a runner's lost heirloom engagement ring during the NYC Half-Marathon, turning a sad incident into a heartwarming story."
+    }
+  ],
+  "model": "gpt-image-1.5",
+  "finalPrompt": "Hyper-realistic photography of a crowded city marathon in progress, bright natural daylight, wide horizontal banner framing (3:1 aspect ratio, central horizontal band). In the center of the street, a massive, photorealistic diamond (over two meters tall) sits as an absurd obstacle. Marathon runners are mid-stride, some leaping over or running around the giant diamond, with surprised or amused expressions. Scattered along the race route and sidelines are realistic shopping bags from high-end beauty brands and small Amazon-style delivery boxes, as if dropped in the rush. No text, no signage, no screens. Realistic urban setting, sharp detail, photorealistic materials and textures (sparkling diamond, sportswear, paper bags, cardboard). Implied motion—runners in action, some glancing back—gives a sense of a just-happened, playful scene.\n\nCRITICAL CONSTRAINTS (must be strictly avoided):\n- text, letters, numbers, signage, labels, screens, UI, dashboards, holograms, floating icons, logos, brands, watermarks, cartoon, illustration, CGI, 3D render, anime\n\nPHOTOREALISM ENFORCEMENT:\n- Ultra photorealistic editorial photograph, shot on a real DSLR or medium-format camera.\n- Natural lighting, realistic skin texture, realistic reflections, realistic materials, real physics.\n- Candid editorial realism; avoid stock-photo staging.\n\nANTI-CARTOON / ANTI-CGI:\n- No illustration, no cartoon, no anime, no 3D render, no CGI, no synthetic look.\n\nNO-TEXT GUARANTEE:\n- Absolutely no text, letters, numbers, typography, signage, labels, price tags.\n- No screens, dashboards, UI, holograms, floating icons, charts.\n- Avoid any objects that commonly contain text (posters, newspapers, packaging, storefront signs). If unavoidable, they must be fully out of focus and unreadable.\n\nCOMPOSITION FOR WIDE HERO BANNER (CRITICAL):\n- Wide, horizontally expansive banner format (target 3:1 or wider aspect ratio)\n- Vertically minimal height - all important visual elements must be placed in the central horizontal band\n- Safe margins at top and bottom - no critical content near vertical edges\n- Composition must work when displayed in a wide, shallow container\n- Avoid vertical stacking, tall elements, or content that extends to top/bottom edges",
+  "imageSize": "1536x1024",
+  "outputPath": "/weekly-images/2026-W13.png",
+  "generatedAt": "2026-03-29T17:27:37.500Z"
+}

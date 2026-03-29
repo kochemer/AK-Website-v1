@@ -1,0 +1,107 @@
+{
+  "week": "2026-W13",
+  "generatedAt": "2026-03-29T17:24:25.058Z",
+  "intro": "This week’s intelligence digest highlights key shifts in retail and AI innovation, from TikTok Shop’s surging sales attracting major beauty brands to Amazon’s strategic Prime Day rescheduling. Advances in AI, including Mistral’s open-source speech model and Google’s Agent Smith tool, underscore growing integration of intelligent systems across industries, while emerging risks in global data center insurance signal evolving challenges for digital infrastructure.",
+  "readOneThing": {
+    "title": "Sales from major brands on TikTok Shop nearly doubled in 2025, drawing Ulta and Sally Beauty",
+    "url": "https://www.modernretail.co/technology/sales-from-major-brands-on-tiktok-shop-nearly-doubled-in-2025-drawing-ulta-and-sally-beauty/?utm_campaign=modernretaildis&utm_medium=rss&utm_source=general-rss"
+  },
+  "items": [
+    {
+      "rank": 1,
+      "title": "Sales from major brands on TikTok Shop nearly doubled in 2025, drawing Ulta and Sally Beauty",
+      "url": "https://www.modernretail.co/technology/sales-from-major-brands-on-tiktok-shop-nearly-doubled-in-2025-drawing-ulta-and-sally-beauty/?utm_campaign=modernretaildis&utm_medium=rss&utm_source=general-rss",
+      "source": "Modern Retail",
+      "bullets": [
+        "Sales from major brands with at least $30 million in annual revenue nearly doubled on TikTok Shop in 2025, attracting companies like Ulta Beauty and Sally Beauty to launch storefronts.",
+        "TikTok Shop recorded over 103 billion U.S. searches with e-commerce intent and saw total transaction volume increase by nearly 80% year over year in 2025.",
+        "Since its U.S. launch about two and a half years ago, TikTok Shop has grown its creator network by 146%, with over 16,000 creators generating six-figure sales, helping attract larger brands to the platform."
+      ],
+      "summary": "AI-generated summary: In 2025, TikTok Shop experienced a nearly 80% increase in transaction volume and over 103 billion U.S. searches with e-commerce intent, attracting major brands like Ulta and Sally Beauty."
+    },
+    {
+      "rank": 2,
+      "title": "Diamond District Jeweler Steps Up for Runner Who Lost Heirloom Engagement Ring During NYC Half-Marathon",
+      "url": "https://instoremag.com/diamond-district-jeweler-steps-up-for-runner-who-lost-heirloom-engagement-ring-during-nyc-half-marathon/",
+      "source": "Instore Magazine",
+      "bullets": [
+        "Isabel Lahn-Schroeder lost her multi-stone flower design heirloom engagement ring during the United Airlines NYC Half Marathon near Central Park South.",
+        "Zak Nissanov of Big Apple Jewels offered to create a free replica of the lost ring after the story aired on ABC Eyewitness News.",
+        "The jeweler's gesture was covered in a follow-up report on March 26, demonstrating effective local marketing through community engagement."
+      ],
+      "summary": "AI-generated summary: A New York City jeweler gained positive local marketing exposure by offering to replace a runner's lost heirloom engagement ring during the NYC Half-Marathon, turning a sad incident into a heartwarming story."
+    },
+    {
+      "rank": 3,
+      "title": "Mistral releases a new open source model for speech generation",
+      "url": "https://techcrunch.com/2026/03/26/mistral-releases-a-new-open-source-model-for-speech-generation/",
+      "source": "TechCrunch - AI",
+      "bullets": [
+        "French AI company Mistral launched Voxtral TTS, an open source text-to-speech model supporting nine languages for voice AI assistants and enterprise use cases.",
+        "Voxtral TTS can adapt a custom voice with less than five seconds of audio and achieves a time-to-first-audio of 90 milliseconds for a 10-second sample.",
+        "Earlier this year, Mistral released transcription models and aims to build an end-to-end multimodal platform handling audio, text, and image inputs and outputs."
+      ],
+      "summary": "AI-generated summary: On March 26, 2026, Mistral released a new open source speech generation model aimed at enabling enterprises to build voice agents for sales and customer engagement, positioning the company as a competitor to ElevenLabs, Deepgram, and OpenAI."
+    },
+    {
+      "rank": 4,
+      "title": "Demand and risks for global data centre insurance growing: Swiss Re ",
+      "url": "https://economictimes.indiatimes.com/tech/technology/demand-and-risks-for-global-data-centre-insurance-growing-swiss-re/articleshow/129858719.cms",
+      "source": "Economic Times - Technology",
+      "bullets": [
+        "Swiss Re published a report stating that rapid growth in data centre construction is driving increased demand and risks for insurance in the sector.",
+        "Global insurance premiums related to data centres are projected to rise from $10.6 billion currently to $24.2 billion by 2030 due to high construction costs and exposure to natural catastrophes.",
+        "Over 25% of US data centre capacity is located in areas vulnerable to hail, and more than 40% faces significant tornado risks, contributing to potential insured losses nearing $10 billion per site."
+      ],
+      "summary": "AI-generated summary: According to a Swiss Re report cited by Economic Times on March 28, 2026, the rapid growth of data centres is driving increased demand and risks for insurance, with premiums potentially reaching $24.2 billion by 2030 amid challenges like high construction costs, natural disasters, and system failures."
+    },
+    {
+      "rank": 5,
+      "title": "Marketplace Briefing: Why Amazon is moving Prime Day to June from July, and what it means for sellers",
+      "url": "https://www.modernretail.co/operations/marketplace-briefing-why-amazon-is-moving-prime-day-to-june-from-july-and-what-it-means-for-sellers/?utm_campaign=modernretaildis&utm_medium=rss&utm_source=general-rss",
+      "source": "Modern Retail",
+      "bullets": [
+        "Amazon plans to move its Prime Day event from July to late June this year, shifting the timing of a major sales event for many brands.",
+        "The earlier Prime Day could help Amazon fill a sales gap in the first half of the year and benefits sellers with lower tariff pressures allowing more flexible promotions.",
+        "Prime Day, launched in 2015 and expanded to multiple days and a second event in October 2022, has become a key revenue driver for Amazon and its independent sellers, who make up about 60% of marketplace sales."
+      ],
+      "summary": "AI-generated summary: Amazon is shifting its Prime Day event from July to June this year, altering the traditional timing of a major sales event that many brands depend on, according to Modern Retail."
+    },
+    {
+      "rank": 6,
+      "title": "What is Agent Smith? Google’s internal AI tool for operations that helps engineers code ",
+      "url": "https://economictimes.indiatimes.com/tech/technology/what-is-agent-smith-googles-internal-ai-tool-for-operations-that-helps-engineers-code/articleshow/129868907.cms",
+      "source": "Economic Times - Technology",
+      "bullets": [
+        "Google introduced Agent Smith, an internal AI tool that autonomously plans and executes workflows to assist engineers with coding and task automation.",
+        "Engineering teams at Google experienced a 10% increase in development velocity and a 12% reduction in duplicate bugs due to AI integration.",
+        "Agent Smith builds on Google's earlier Antigravity platform and aligns with the company's AI-first strategy emphasized by executives like Sergey Brin and Sundar Pichai in 2024."
+      ],
+      "summary": "AI-generated summary: Google's internal AI tool, Agent Smith, autonomously plans and executes workflows by referencing internal documents and employee profiles, representing a significant advancement over traditional coding assistants. Built on the Antigravity platform, it offers enhanced autonomy and integration for engineering operations."
+    },
+    {
+      "rank": 7,
+      "title": "Stop the world, I want to get off and run a video rental store in the 1990s | Dominik Diamond",
+      "url": "https://www.theguardian.com/games/2026/mar/27/retro-rewind-video-rental-retail-sim",
+      "source": "The Guardian - Technology",
+      "bullets": [
+        "Retro Rewind, an indie simulation game developed by two French creators, allows players to run a 1990s video rental store with nostalgic and tactile gameplay elements. The game sold over 100,000 copies on Steam within a week of its release, quickly becoming an indie favorite. Set against the backdrop of the 1990s, the game features authentic details like late fees, rewinding tapes, and quirky movie titles, capturing the analogue retail experience before digital media dominance.",
+        "‘The antidote to my anxiety and rage’ … Retro Rewind",
+        "Wars starting, then ending, then starting again in the course of a week"
+      ],
+      "summary": "AI-generated summary: In this reflective piece from The Guardian's Technology section, Dominik Diamond expresses nostalgia for the 1990s era of physical media and simpler times, inspired by the indie game Retro Rewind, while commenting on the chaotic and troubling state of the world in 2026."
+    },
+    {
+      "rank": 8,
+      "title": "Oracle embeds AI agents in finance, supply chain and procurement systems",
+      "url": "https://www.digitalcommerce360.com/2026/03/27/oracle-ai-agents-finance-supply-chain-procurement/",
+      "source": "Digital Commerce 360",
+      "bullets": [
+        "Oracle Corp. launched 22 AI-enabled applications integrated into its Fusion Cloud Applications to automate finance, supply chain, and procurement workflows with minimal human input.",
+        "In 2025, 75 of the Top 2000 North American retailers using Oracle's ecommerce platform generated over $132 billion in ecommerce sales, while 160 used Oracle NetSuite for marketing automation, totaling $20 billion in sales.",
+        "Oracle's AI integration represents a shift from manual transaction management toward automated operational processes within enterprise systems supporting B2B ecommerce and supply chain functions."
+      ],
+      "summary": "AI-generated summary: Oracle Corp. has integrated AI-enabled \"Fusion Agentic Applications\" into its finance, supply chain, and procurement software within Oracle Fusion Cloud Applications to enhance automation and support B2B ecommerce transactions."
+    }
+  ]
+}

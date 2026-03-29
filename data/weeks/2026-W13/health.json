@@ -1,0 +1,77 @@
+{
+  "digestWeek": "2026-W13",
+  "ingestionWeek": "2026-W13",
+  "startedAt": "2026-03-29T17:19:09.618Z",
+  "finishedAt": "2026-03-29T17:27:55.422Z",
+  "steps": [
+    {
+      "name": "rss",
+      "ok": true,
+      "startedAt": "2026-03-29T17:19:09.636Z",
+      "finishedAt": "2026-03-29T17:19:44.109Z"
+    },
+    {
+      "name": "pages",
+      "ok": true,
+      "startedAt": "2026-03-29T17:19:44.109Z",
+      "finishedAt": "2026-03-29T17:19:46.100Z"
+    },
+    {
+      "name": "discovery",
+      "ok": true,
+      "startedAt": "2026-03-29T17:19:46.101Z",
+      "finishedAt": "2026-03-29T17:21:32.730Z"
+    },
+    {
+      "name": "classification",
+      "ok": true,
+      "startedAt": "2026-03-29T17:21:32.731Z",
+      "finishedAt": "2026-03-29T17:21:32.805Z"
+    },
+    {
+      "name": "digest",
+      "ok": true,
+      "startedAt": "2026-03-29T17:21:32.805Z",
+      "finishedAt": "2026-03-29T17:24:01.532Z"
+    },
+    {
+      "name": "email",
+      "ok": true,
+      "startedAt": "2026-03-29T17:24:01.533Z",
+      "finishedAt": "2026-03-29T17:24:25.059Z"
+    },
+    {
+      "name": "podcast",
+      "ok": true,
+      "startedAt": "2026-03-29T17:24:25.059Z",
+      "finishedAt": "2026-03-29T17:26:21.517Z"
+    },
+    {
+      "name": "cover",
+      "ok": true,
+      "startedAt": "2026-03-29T17:26:21.517Z",
+      "finishedAt": "2026-03-29T17:27:37.513Z"
+    },
+    {
+      "name": "competitorAnalyze",
+      "ok": true,
+      "startedAt": "2026-03-29T17:27:37.513Z",
+      "finishedAt": "2026-03-29T17:27:55.421Z"
+    }
+  ],
+  "health": {
+    "warnings": [
+      "Podcast script word count: 1387 words (minimum: 1500)",
+      "AI & Strategy: economictimes.indiatimes.com represents 42.9% (3/7) - exceeds 40% threshold",
+      "Jewellery Industry: www.jewellermagazine.com represents 42.9% (3/7) - exceeds 40% threshold"
+    ],
+    "metrics": {
+      "paywallPercent": 0,
+      "podcastWordCount": 1387
+    }
+  },
+  "versions": {
+    "node": "v20.20.1",
+    "gitCommit": "b02b2046e9a018e4f6ffd3c0013387da0a1c522d"
+  }
+}

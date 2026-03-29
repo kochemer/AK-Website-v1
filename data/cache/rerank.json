@@ -1870,5 +1870,101 @@
     ],
     "cached_at": "2026-03-22T07:12:51.562Z",
     "model": "o4-mini"
+  },
+  "2026-W13:AI_and_Strategy:3c963151e861": {
+    "selected": [
+      {
+        "id": "2",
+        "rank": 1,
+        "why": "Legal ruling impacts AI company Anthropic's regulatory status",
+        "confidence": 0.95
+      },
+      {
+        "id": "1",
+        "rank": 2,
+        "why": "New open source speech generation model from Mistral advances AI capabilities",
+        "confidence": 0.9
+      },
+      {
+        "id": "5",
+        "rank": 3,
+        "why": "Google's Agent Smith AI tool enhances engineering operations with planning",
+        "confidence": 0.9
+      },
+      {
+        "id": "13",
+        "rank": 4,
+        "why": "AMD's Helios GPU platform rollout supports AI compute infrastructure expansion",
+        "confidence": 0.85
+      },
+      {
+        "id": "15",
+        "rank": 5,
+        "why": "Major outage at Anthropic's Claude highlights AI service reliability issues",
+        "confidence": 0.8
+      },
+      {
+        "id": "8",
+        "rank": 6,
+        "why": "Analysis of LLMs moderating social media polarisation shows AI societal impact",
+        "confidence": 0.75
+      },
+      {
+        "id": "10",
+        "rank": 7,
+        "why": "Palantir AI deployment in UK finance signals AI adoption in government operations",
+        "confidence": 0.7
+      }
+    ],
+    "cached_at": "2026-03-29T17:22:04.623Z",
+    "model": "gpt-4.1-mini"
+  },
+  "2026-W13:Ecommerce_Retail_Tech:debe0a6e9e1a": {
+    "selected": [
+      {
+        "id": "7",
+        "rank": 1,
+        "why": "TikTok Shop sales nearly doubled, major brands joining, marketplace impact",
+        "confidence": 0.95
+      },
+      {
+        "id": "9",
+        "rank": 2,
+        "why": "Amazon moving Prime Day to June, affecting marketplace seller strategies",
+        "confidence": 0.9
+      },
+      {
+        "id": "1",
+        "rank": 3,
+        "why": "Home Depot’s AI-powered stores enhance relevance and customer experience",
+        "confidence": 0.9
+      },
+      {
+        "id": "14",
+        "rank": 4,
+        "why": "Oracle embeds AI agents in finance and supply chain, broad ecommerce impact",
+        "confidence": 0.85
+      },
+      {
+        "id": "2",
+        "rank": 5,
+        "why": "EU customs crackdown fines marketplaces for unsafe imports, regulatory impact",
+        "confidence": 0.85
+      },
+      {
+        "id": "0",
+        "rank": 6,
+        "why": "ReFiBuy platform optimizes catalog data for agentic commerce innovation",
+        "confidence": 0.8
+      },
+      {
+        "id": "5",
+        "rank": 7,
+        "why": "Solving checkout anonymity problem improves fraud prevention and customer data",
+        "confidence": 0.8
+      }
+    ],
+    "cached_at": "2026-03-29T17:22:35.147Z",
+    "model": "gpt-4.1-mini"
   }
 }

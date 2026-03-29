@@ -1,0 +1,960 @@
+{
+  "weekLabel": "2026-W13",
+  "tz": "Europe/Copenhagen",
+  "startISO": "2026-03-22T23:00:00.000Z",
+  "endISO": "2026-03-29T21:59:59.999Z",
+  "builtAtISO": "2026-03-29T19:23:37.077+02:00",
+  "builtAtLocal": "2026-03-29 19:23:37",
+  "totals": {
+    "total": 763,
+    "byTopic": {
+      "AIStrategy": 122,
+      "EcommerceRetail": 496,
+      "LuxuryConsumer": 128,
+      "Jewellery": 13
+    }
+  },
+  "topics": {
+    "AI_and_Strategy": {
+      "total": 122,
+      "top": [
+        {
+          "id": "der75p",
+          "title": "Judge Stays Pentagon’s Labeling of Anthropic as ‘Supply Chain Risk’",
+          "url": "https://www.nytimes.com/2026/03/26/technology/anthropic-pentagon-risk-injunction.html",
+          "source": "NYTimes Technology",
+          "published_at": "2026-03-27T14:45:53.000Z",
+          "ingested_at": "2026-03-29T17:19:09.637Z",
+          "snippet": "The decision is an early victory for the artificial intelligence company in a rancorous legal battle with the Department of Defense.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.175,
+            "recencyScore": 0,
+            "sourceWeight": 0.075,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "anthropic",
+              "artificial intelligence"
+            ]
+          },
+          "aiSummary": "AI-generated summary: A judge has temporarily halted the Pentagon's designation of Anthropic as a \"supply chain risk,\" marking an early legal win for the AI company in its dispute with the Department of Defense.",
+          "translations": {
+            "da": {
+              "title": "Dommer udsætter Pentagons mærkning af Anthropic som 'forsyningskæderisiko'",
+              "summary": "AI-genereret resumé: En dommer har midlertidigt stoppet Pentagons betegnelse af Anthropic som en \"forsyningskæderisiko,\" hvilket markerer en tidlig juridisk sejr for AI-virksomheden i dens tvist med Forsvarsministeriet."
+            },
+            "es": {
+              "title": "Juez suspende la clasificación del Pentágono de Anthropic como 'riesgo en la cadena de suministro'",
+              "summary": "Resumen generado por IA: Un juez ha detenido temporalmente la designación del Pentágono de Anthropic como un \"riesgo en la cadena de suministro\", marcando una victoria legal temprana para la empresa de IA en su disputa con el Departamento de Defensa."
+            }
+          }
+        },
+        {
+          "id": "mbn4wj",
+          "title": "Mistral releases a new open source model for speech generation",
+          "url": "https://techcrunch.com/2026/03/26/mistral-releases-a-new-open-source-model-for-speech-generation/",
+          "source": "TechCrunch - AI",
+          "published_at": "2026-03-26T11:30:00.000Z",
+          "ingested_at": "2026-03-29T17:19:09.637Z",
+          "snippet": "The model, which lets enterprises build voice agents for sales and customer engagement, puts Mistral in direct competition with the likes of ElevenLabs, Deepgram, and OpenAI.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.30000000000000004,
+            "recencyScore": 0,
+            "sourceWeight": 0.15,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "open source",
+              "openai",
+              "agent"
+            ]
+          },
+          "aiSummary": "AI-generated summary: On March 26, 2026, Mistral released a new open source speech generation model aimed at enabling enterprises to build voice agents for sales and customer engagement, positioning the company as a competitor to ElevenLabs, Deepgram, and OpenAI.",
+          "translations": {
+            "da": {
+              "title": "Mistral frigiver en ny open source-model til talegenerering",
+              "summary": "AI-genereret resumé: Den 26. marts 2026 frigav Mistral en ny open source talegenereringsmodel, der sigter mod at gøre det muligt for virksomheder at bygge stemmeagenter til salg og kundekontakt, hvilket positionerer virksomheden som en konkurrent til ElevenLabs, Deepgram og OpenAI."
+            },
+            "es": {
+              "title": "Mistral lanza un nuevo modelo de código abierto para generación de voz",
+              "summary": "Resumen generado por IA: El 26 de marzo de 2026, Mistral lanzó un nuevo modelo de generación de voz de código abierto destinado a permitir que las empresas creen agentes de voz para ventas y atención al cliente, posicionando a la empresa como competidor de ElevenLabs, Deepgram y OpenAI."
+            }
+          }
+        },
+        {
+          "id": "qg29mv",
+          "title": "What is Agent Smith? Google’s internal AI tool for operations that helps engineers code ",
+          "url": "https://economictimes.indiatimes.com/tech/technology/what-is-agent-smith-googles-internal-ai-tool-for-operations-that-helps-engineers-code/articleshow/129868907.cms",
+          "source": "Economic Times - Technology",
+          "published_at": "2026-03-28T16:59:19.000Z",
+          "ingested_at": "2026-03-29T17:19:09.637Z",
+          "snippet": "Agent Smith by Google: Unlike conventional AI coding assistants, the system is capable of planning and executing workflows autonomously, marking a shift toward more independent AI agents. Agent Smith can reference internal documents and access employee profiles to complete assigned tasks. It is built on Google’s earlier platform, Antigravity, but offers significantly greater autonomy and workflow integration.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ai",
+              "agent"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Google's internal AI tool, Agent Smith, autonomously plans and executes workflows by referencing internal documents and employee profiles, representing a significant advancement over traditional coding assistants. Built on the Antigravity platform, it offers enhanced autonomy and integration for engineering operations.",
+          "translations": {
+            "da": {
+              "title": "Hvad er Agent Smith? Googles interne AI-værktøj til operationer, der hjælper ingeniører med at kode",
+              "summary": "AI-genereret resumé: Googles interne AI-værktøj, Agent Smith, planlægger og udfører selvstændigt arbejdsgange ved at referere til interne dokumenter og medarbejderprofiler, hvilket repræsenterer et betydeligt fremskridt i forhold til traditionelle kodeassistenter. Bygget på Antigravity-platformen tilbyder det øget autonomi og integration til ingeniøropgaver."
+            },
+            "es": {
+              "title": "¿Qué es Agent Smith? La herramienta interna de IA de Google para operaciones que ayuda a los ingenieros a programar",
+              "summary": "Resumen generado por IA: La herramienta interna de IA de Google, Agent Smith, planifica y ejecuta flujos de trabajo de forma autónoma consultando documentos internos y perfiles de empleados, representando un avance significativo sobre los asistentes de codificación tradicionales. Construida sobre la plataforma Antigravity, ofrece mayor autonomía e integración para operaciones de ingeniería."
+            }
+          }
+        },
+        {
+          "id": "51bgw",
+          "title": "AMD expects initial rollout of GPU-based Helios platform in India in H2 2026 ",
+          "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/amd-expects-initial-rollout-of-gpu-based-helios-platform-in-india-in-h2-2026/articleshow/129878247.cms",
+          "source": "Economic Times - Technology",
+          "published_at": "2026-03-29T09:18:17.000Z",
+          "ingested_at": "2026-03-29T17:19:09.637Z",
+          "snippet": "AMD's new Helios GPU platform will start rolling out globally, including India, in the second half of 2026. This move aims to meet the growing demand for Artificial Intelligence and support the expansion of data centers. AMD is partnering with TCS to build AI-ready infrastructure.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0.05,
+            "penalty": 0.2,
+            "matchedKeywords": [
+              "gpu",
+              "artificial intelligence",
+              "ai"
+            ]
+          },
+          "aiSummary": "AI-generated summary: AMD plans to launch its GPU-based Helios platform in India during the second half of 2026 to support AI growth and data center expansion, collaborating with TCS to develop AI-ready infrastructure.",
+          "translations": {
+            "da": {
+              "title": "AMD forventer første udrulning af GPU-baseret Helios-platform i Indien i 2. halvår 2026",
+              "summary": "AI-genereret resumé: AMD planlægger at lancere sin GPU-baserede Helios-platform i Indien i anden halvdel af 2026 for at støtte AI-vækst og udvidelse af datacentre i samarbejde med TCS om at udvikle AI-klar infrastruktur."
+            },
+            "es": {
+              "title": "AMD espera el despliegue inicial de la plataforma Helios basada en GPU en India en el segundo semestre de 2026",
+              "summary": "Resumen generado por IA: AMD planea lanzar su plataforma Helios basada en GPU en India durante la segunda mitad de 2026 para apoyar el crecimiento de la IA y la expansión de centros de datos, colaborando con TCS para desarrollar infraestructura preparada para IA."
+            }
+          }
+        },
+        {
+          "id": "zeh6b8",
+          "title": "Anthropic’s Claude faces major outage till date, services disrupted for nearly five hours ",
+          "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/anthropics-claude-faces-major-outage-till-date-services-disrupted-for-nearly-five-hours/articleshow/129851160.cms",
+          "source": "Economic Times - Technology",
+          "published_at": "2026-03-27T16:28:53.000Z",
+          "ingested_at": "2026-03-29T17:19:09.637Z",
+          "snippet": "Anthropic Outage: The incident, which lasted for nearly five hours, is one of the longest for the platform. While users reported widespread issues with the Claude API and models such as Opus 4.6, Claude for Government remained largely unaffected. This is the second outage at Anthropic’s Claude within a week.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": -0.04999999999999999,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0.05,
+            "penalty": 0.2,
+            "matchedKeywords": [
+              "anthropic",
+              "claude"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Anthropic’s Claude experienced a major outage lasting nearly five hours, causing widespread disruptions to the Claude API and models like Opus 4.6, while Claude for Government remained mostly unaffected. This marks the second outage for the platform within a week.",
+          "translations": {
+            "da": {
+              "title": "Anthropics Claude oplever stor nedetid, tjenester afbrudt i næsten fem timer",
+              "summary": "AI-genereret resumé: Anthropics Claude oplevede en stor nedetid på næsten fem timer, hvilket forårsagede omfattende forstyrrelser i Claude API og modeller som Opus 4.6, mens Claude for Government forblev stort set upåvirket. Dette er den anden nedetid for platformen inden for en uge."
+            },
+            "es": {
+              "title": "Claude de Anthropic enfrenta una gran interrupción hasta la fecha, servicios afectados por casi cinco horas",
+              "summary": "Resumen generado por IA: Claude de Anthropic experimentó una gran interrupción que duró casi cinco horas, causando amplias interrupciones en la API de Claude y modelos como Opus 4.6, mientras que Claude for Government permaneció mayormente sin afectación. Esta es la segunda interrupción para la plataforma en una semana."
+            }
+          }
+        },
+        {
+          "id": "kwot1b",
+          "title": "Social media is populist and polarising; AI may be the opposite",
+          "url": "https://www.ft.com/content/3880176e-d3ac-4311-9052-fdfeaed56a0e",
+          "source": "Financial Times - Technology",
+          "published_at": "2026-03-28T05:00:33.000Z",
+          "ingested_at": "2026-03-29T17:19:09.637Z",
+          "snippet": "Large language models elevate expert consensus and moderate views, in sharp contrast to social platforms",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ai",
+              "large language model"
+            ]
+          },
+          "aiSummary": "AI-generated summary: According to the Financial Times (2026-03-28), large language models promote expert consensus and moderate perspectives, contrasting with the populist and polarising nature of social media platforms.",
+          "translations": {
+            "da": {
+              "title": "Sociale medier er populistiske og polariserende; AI kan være det modsatte",
+              "summary": "AI-genereret resumé: Ifølge Financial Times (2026-03-28) fremmer store sprogmodeller ekspertkonsensus og moderate perspektiver, i kontrast til de populistiske og polariserende sociale medieplatforme."
+            },
+            "es": {
+              "title": "Las redes sociales son populistas y polarizadoras; la IA puede ser lo contrario",
+              "summary": "Resumen generado por IA: Según Financial Times (2026-03-28), los grandes modelos de lenguaje promueven el consenso de expertos y perspectivas moderadas, en contraste con la naturaleza populista y polarizadora de las plataformas de redes sociales."
+            }
+          }
+        },
+        {
+          "id": "ozhxra",
+          "title": "Palantir AI to support UK finance operations",
+          "url": "https://www.artificialintelligence-news.com/news/palantir-ai-to-support-uk-finance-operations/",
+          "source": "AI News",
+          "published_at": "2026-03-23T13:14:23.000Z",
+          "ingested_at": "2026-03-29T17:19:09.637Z",
+          "snippet": "UK authorities believe improving efficiency across national finance operations requires applying AI platforms from vendors like Palantir. The country’s financial regulator, the FCA, has initiated a project leveraging AI to identify illicit activities. The FCA is currently testing the Foundry platform from Miami-based software vendor Palantir. This three-month pilot costs upwards of £30,000 per week […]\nThe post Palantir AI to support UK finance operations appeared first on AI News.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ai"
+            ]
+          },
+          "aiSummary": "AI-generated summary: The UK’s Financial Conduct Authority (FCA) is piloting Palantir’s Foundry AI platform in a three-month project aimed at enhancing efficiency and detecting illicit activities within national finance operations, with costs exceeding £30,000 per week.",
+          "translations": {
+            "da": {
+              "title": "Palantir AI støtter britiske finansoperationer",
+              "summary": "AI-genereret resumé: Storbritanniens Financial Conduct Authority (FCA) afprøver Palantirs Foundry AI-platform i et tre måneders projekt med fokus på at øge effektiviteten og opdage ulovlige aktiviteter i nationale finansoperationer, med omkostninger over £30.000 om ugen."
+            },
+            "es": {
+              "title": "Palantir AI para apoyar las operaciones financieras del Reino Unido",
+              "summary": "Resumen generado por IA: La Financial Conduct Authority (FCA) del Reino Unido está pilotando la plataforma Foundry AI de Palantir en un proyecto de tres meses destinado a mejorar la eficiencia y detectar actividades ilícitas dentro de las operaciones financieras nacionales, con costos que superan las £30,000 por semana."
+            }
+          }
+        }
+      ]
+    },
+    "Ecommerce_Retail_Tech": {
+      "total": 496,
+      "top": [
+        {
+          "id": "dr8fa5",
+          "title": "Sales from major brands on TikTok Shop nearly doubled in 2025, drawing Ulta and Sally Beauty",
+          "url": "https://www.modernretail.co/technology/sales-from-major-brands-on-tiktok-shop-nearly-doubled-in-2025-drawing-ulta-and-sally-beauty/?utm_campaign=modernretaildis&utm_medium=rss&utm_source=general-rss",
+          "source": "Modern Retail",
+          "published_at": "2026-03-26T04:00:00.000Z",
+          "ingested_at": "2026-03-29T17:19:09.637Z",
+          "snippet": "TikTok Shop logged more than 103 billion U.S. searches with e-commerce intent in 2025, while total transaction volume rose nearly 80% year over year.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "e-commerce"
+            ]
+          },
+          "aiSummary": "AI-generated summary: In 2025, TikTok Shop experienced a nearly 80% increase in transaction volume and over 103 billion U.S. searches with e-commerce intent, attracting major brands like Ulta and Sally Beauty.",
+          "translations": {
+            "da": {
+              "title": "Salg fra store mærker på TikTok Shop næsten fordoblet i 2025, tiltrækker Ulta og Sally Beauty",
+              "summary": "AI-genereret resumé: I 2025 oplevede TikTok Shop en næsten 80% stigning i transaktionsvolumen og over 103 milliarder amerikanske søgninger med e-handelsintention, hvilket tiltrak store mærker som Ulta og Sally Beauty."
+            },
+            "es": {
+              "title": "Las ventas de grandes marcas en TikTok Shop casi se duplicaron en 2025, atrayendo a Ulta y Sally Beauty",
+              "summary": "Resumen generado por IA: En 2025, TikTok Shop experimentó un aumento de casi el 80% en el volumen de transacciones y más de 103 mil millones de búsquedas en EE. UU. con intención de comercio electrónico, atrayendo a grandes marcas como Ulta y Sally Beauty."
+            }
+          }
+        },
+        {
+          "id": "6mjqaj",
+          "title": "Marketplace Briefing: Why Amazon is moving Prime Day to June from July, and what it means for sellers",
+          "url": "https://www.modernretail.co/operations/marketplace-briefing-why-amazon-is-moving-prime-day-to-june-from-july-and-what-it-means-for-sellers/?utm_campaign=modernretaildis&utm_medium=rss&utm_source=general-rss",
+          "source": "Modern Retail",
+          "published_at": "2026-03-26T14:00:00.000Z",
+          "ingested_at": "2026-03-29T17:19:09.637Z",
+          "snippet": "Amazon is planning to move Prime Day to June from its usual July slot this year, shaking up the timing of a sales event many brands rely on.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "marketplace"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Amazon is shifting its Prime Day event from July to June this year, altering the traditional timing of a major sales event that many brands depend on, according to Modern Retail.",
+          "translations": {
+            "da": {
+              "title": "Marketplace Briefing: Hvorfor Amazon flytter Prime Day til juni fra juli, og hvad det betyder for sælgere",
+              "summary": "AI-genereret resumé: Amazon flytter i år sit Prime Day-arrangement fra juli til juni, hvilket ændrer den traditionelle timing af en stor salgsbegivenhed, som mange mærker er afhængige af, ifølge Modern Retail."
+            },
+            "es": {
+              "title": "Marketplace Briefing: Por qué Amazon adelanta Prime Day a junio desde julio y qué significa para los vendedores",
+              "summary": "Resumen generado por IA: Amazon está trasladando su evento Prime Day de julio a junio este año, alterando el calendario tradicional de un gran evento de ventas del que dependen muchas marcas, según Modern Retail."
+            }
+          }
+        },
+        {
+          "id": "mr4avl",
+          "title": "In the age of AI, Home Depot’s stores have ‘never been more relevant’",
+          "url": "https://www.retaildive.com/news/home-depot-ai-store-relevance/815910/",
+          "source": "Retail Dive",
+          "published_at": "2026-03-27T14:56:00.000Z",
+          "ingested_at": "2026-03-29T17:19:09.637Z",
+          "snippet": "While the retailer has been ramping up its AI-powered offerings, it aims to provide a frictionless experience across a customer’s shopping journey, wherever that may be.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "shopping"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Home Depot is enhancing its AI-powered offerings to create a seamless shopping experience for customers across all touchpoints, reinforcing the relevance of its physical stores in the digital age.",
+          "translations": {
+            "da": {
+              "title": "I AI-æraen har Home Depots butikker 'aldrig været mere relevante'",
+              "summary": "Home Depot forbedrer sine AI-drevne tilbud for at skabe en problemfri shoppingoplevelse for kunder på alle kontaktpunkter og styrker relevansen af sine fysiske butikker i den digitale tidsalder."
+            },
+            "es": {
+              "title": "En la era de la IA, las tiendas de Home Depot 'nunca han sido más relevantes'",
+              "summary": "Home Depot está mejorando sus ofertas impulsadas por IA para crear una experiencia de compra fluida para los clientes en todos los puntos de contacto, reforzando la relevancia de sus tiendas físicas en la era digital."
+            }
+          }
+        },
+        {
+          "id": "jhry3",
+          "title": "Oracle embeds AI agents in finance, supply chain and procurement systems",
+          "url": "https://www.digitalcommerce360.com/2026/03/27/oracle-ai-agents-finance-supply-chain-procurement/",
+          "source": "Digital Commerce 360",
+          "published_at": "2026-03-27T16:33:34.000Z",
+          "ingested_at": "2026-03-29T17:19:09.637Z",
+          "snippet": "Oracle Corp. has introduced a set of artificial intelligence (AI)-enabled applications embedded across its finance, supply chain, and procurement software, extending automation and agents into systems that support B2B ecommerce transactions. The company said it has integrated “Fusion Agentic Applications” into Oracle Fusion Cloud Applications. It said it designed them to conduct business processes with […]\nThe post Oracle embeds AI agents in finance, supply chain and procurement systems appeared...",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ecommerce"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Oracle Corp. has integrated AI-enabled \"Fusion Agentic Applications\" into its finance, supply chain, and procurement software within Oracle Fusion Cloud Applications to enhance automation and support B2B ecommerce transactions.",
+          "translations": {
+            "da": {
+              "title": "Oracle integrerer AI-agenter i finans-, forsyningskæde- og indkøbssystemer",
+              "summary": "AI-genereret resumé: Oracle Corp. har integreret AI-aktiverede \"Fusion Agentic Applications\" i sin finans-, forsyningskæde- og indkøbssoftware i Oracle Fusion Cloud Applications for at forbedre automatisering og støtte B2B e-handels transaktioner."
+            },
+            "es": {
+              "title": "Oracle integra agentes de IA en finanzas, cadena de suministro y sistemas de adquisiciones",
+              "summary": "Resumen generado por IA: Oracle Corp. ha integrado \"Fusion Agentic Applications\" habilitadas con IA en su software de finanzas, cadena de suministro y adquisiciones dentro de Oracle Fusion Cloud Applications para mejorar la automatización y apoyar las transacciones de comercio electrónico B2B."
+            }
+          }
+        },
+        {
+          "id": "fcqxxr",
+          "title": "EU to fine online marketplaces over unsafe imports in customs crackdown",
+          "url": "https://www.retailgazette.co.uk/blog/2026/03/eu-to-fine-online-marketplaces-over-unsafe-imports-in-customs-crackdown/",
+          "source": "Retail Gazette",
+          "published_at": "2026-03-27T08:17:18.000Z",
+          "ingested_at": "2026-03-29T17:19:09.637Z",
+          "snippet": "The European Union has agreed a major overhaul of its customs regime that will allow regulators to fine online platforms selling unsafe or illegal goods into the bloc, in a move that raises the pressure on cross-border ecommerce operators. Under the new framework, platforms selling goods into the EU through distance sales will be treated...",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "marketplace",
+              "ecommerce",
+              "platform"
+            ]
+          },
+          "aiSummary": "AI-generated summary: The European Union has introduced a new customs framework enabling regulators to fine online marketplaces that sell unsafe or illegal goods into the bloc, increasing scrutiny on cross-border ecommerce operators. This overhaul aims to strengthen consumer safety and compliance in distance sales within the EU.",
+          "translations": {
+            "da": {
+              "title": "EU vil bøde online markedspladser for usikre importvarer i toldindsats",
+              "summary": "EU har indført en ny toldramme, der gør det muligt for myndigheder at bøde online markedspladser, der sælger usikre eller ulovlige varer til EU, hvilket øger kontrollen med grænseoverskridende e-handel. Denne reform har til formål at styrke forbrugersikkerheden og overholdelsen ved fjernsalg i EU."
+            },
+            "es": {
+              "title": "La UE multará a los mercados en línea por importaciones inseguras en una ofensiva aduanera",
+              "summary": "La Unión Europea ha introducido un nuevo marco aduanero que permite a los reguladores multar a los mercados en línea que venden productos inseguros o ilegales en el bloque, aumentando el control sobre los operadores de comercio electrónico transfronterizo. Esta reforma busca fortalecer la seguridad del consumidor y el cumplimiento en las ventas a distancia dentro de la UE."
+            }
+          }
+        },
+        {
+          "id": "b7lsx2",
+          "title": "ReFiBuy debuts platform to optimize catalog data for agentic commerce",
+          "url": "https://www.digitalcommerce360.com/2026/03/25/refibuy-platform-optimize-catalog-data-agentic-commerce/",
+          "source": "Digital Commerce 360",
+          "published_at": "2026-03-25T19:37:32.000Z",
+          "ingested_at": "2026-03-29T17:19:09.637Z",
+          "snippet": "The year-old ecommerce technology startup ReFiBuy launched in 2025 with the company’s focus set on emerging opportunities in the world of agentic commerce. Now, it is rolling out a developer platform that it specifically designed to help merchants update product data from their catalogs to appear and perform better in artificial intelligence (AI)-powered discovery experiences. […]\nThe post ReFiBuy debuts platform to optimize catalog data for agentic commerce appeared first on Digital Commerce 36...",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "platform",
+              "ecommerce"
+            ]
+          },
+          "aiSummary": "AI-generated summary: ReFiBuy, a year-old ecommerce technology startup, has launched a developer platform aimed at helping merchants optimize their product catalog data for improved performance in AI-powered agentic commerce discovery experiences.",
+          "translations": {
+            "da": {
+              "title": "ReFiBuy lancerer platform til optimering af katalogdata for agentisk handel",
+              "summary": "AI-genereret resumé: ReFiBuy, en et år gammel e-handels-teknologistartup, har lanceret en udviklerplatform, der hjælper forhandlere med at optimere deres produktkatalogdata for bedre ydeevne i AI-drevne agentiske handelsoplevelser."
+            },
+            "es": {
+              "title": "ReFiBuy lanza plataforma para optimizar datos de catálogo para comercio agéntico",
+              "summary": "Resumen generado por IA: ReFiBuy, una startup tecnológica de comercio electrónico de un año, ha lanzado una plataforma para desarrolladores destinada a ayudar a los comerciantes a optimizar los datos de su catálogo de productos para mejorar el rendimiento en experiencias de descubrimiento de comercio agéntico impulsadas por IA."
+            }
+          }
+        },
+        {
+          "id": "3qgjxo",
+          "title": "Solving the Anonymity Problem at Checkout",
+          "url": "https://www.mytotalretail.com/article/solving-the-anonymity-problem-at-checkout/",
+          "source": "Total Retail",
+          "published_at": "2026-03-25T21:11:32.000Z",
+          "ingested_at": "2026-03-29T17:19:09.637Z",
+          "snippet": "In the brick-and-mortar retail landscape, businesses often operate with a significant blind spot: they don’t truly know their customers. While digital loyalty programs can yield match rates of up to 30 percent, in-store rates tell a different story. In-person retail identification often lingers in the single digits, leaving the vast majority of in-store shoppers categorized […]",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "checkout"
+            ]
+          },
+          "aiSummary": "AI-generated summary: The article discusses the challenge brick-and-mortar retailers face in accurately identifying in-store customers, highlighting that while digital loyalty programs achieve up to 30 percent match rates, in-person identification remains in the single digits, leaving most shoppers anonymous.",
+          "translations": {
+            "da": {
+              "title": "Løsning på anonymitetsproblemet ved kassen",
+              "summary": "AI-genereret resumé: Artiklen diskuterer udfordringen for fysiske detailhandlere med præcist at identificere kunder i butikken og fremhæver, at mens digitale loyalitetsprogrammer opnår op til 30 procent matchrate, forbliver personlig identifikation på enkeltcifrede niveauer, hvilket efterlader de fleste kunder anonyme."
+            },
+            "es": {
+              "title": "Resolviendo el problema del anonimato en la caja",
+              "summary": "Resumen generado por IA: El artículo analiza el desafío que enfrentan los minoristas físicos para identificar con precisión a los clientes en la tienda, destacando que, aunque los programas de fidelidad digitales alcanzan tasas de coincidencia de hasta el 30 por ciento, la identificación en persona se mantiene en cifras de un solo dígito, dejando a la mayoría de los compradores en el anonimato."
+            }
+          }
+        }
+      ]
+    },
+    "Luxury_and_Consumer": {
+      "total": 128,
+      "top": [
+        {
+          "id": "a7g6tm",
+          "title": "Demand and risks for global data centre insurance growing: Swiss Re ",
+          "url": "https://economictimes.indiatimes.com/tech/technology/demand-and-risks-for-global-data-centre-insurance-growing-swiss-re/articleshow/129858719.cms",
+          "source": "Economic Times - Technology",
+          "published_at": "2026-03-28T04:18:05.000Z",
+          "ingested_at": "2026-03-29T17:19:09.637Z",
+          "snippet": "A report by Swiss Re says rapid data centre growth is increasing insurance demand and risks. Premiums could reach $24.2 billion by 2030. High construction costs, natural catastrophes, and system failures raise exposure, while insurers can cover only part of losses, which could be significant.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0.1,
+            "penalty": 0,
+            "matchedKeywords": [
+              "demand",
+              "premium"
+            ]
+          },
+          "aiSummary": "AI-generated summary: According to a Swiss Re report cited by Economic Times on March 28, 2026, the rapid growth of data centres is driving increased demand and risks for insurance, with premiums potentially reaching $24.2 billion by 2030 amid challenges like high construction costs, natural disasters, and system failures.",
+          "translations": {
+            "da": {
+              "title": "Efterspørgsel og risici for global datacenterforsikring vokser: Swiss Re",
+              "summary": "AI-genereret resumé: Ifølge en Swiss Re-rapport citeret af Economic Times den 28. marts 2026 driver den hurtige vækst i datacentre øget efterspørgsel og risici for forsikring, med præmier, der potentielt når 24,2 milliarder dollars i 2030 på trods af udfordringer som høje byggeomkostninger, naturkatastrofer og systemfejl."
+            },
+            "es": {
+              "title": "Crecen la demanda y los riesgos para el seguro global de centros de datos: Swiss Re",
+              "summary": "Resumen generado por IA: Según un informe de Swiss Re citado por Economic Times el 28 de marzo de 2026, el rápido crecimiento de los centros de datos está impulsando una mayor demanda y riesgos para el seguro, con primas que podrían alcanzar los 24.2 mil millones de dólares para 2030 en medio de desafíos como altos costos de construcción, desastres naturales y fallos del sistema."
+            }
+          }
+        },
+        {
+          "id": "3oqxxd",
+          "title": "Snabbit clocks 1 million orders in March as demand for instant help services picks up ",
+          "url": "https://economictimes.indiatimes.com/tech/technology/snabbit-clocks-1-million-orders-in-march-as-demand-for-instant-help-services-picks-up/articleshow/129878229.cms",
+          "source": "Economic Times - Technology",
+          "published_at": "2026-03-29T09:14:54.000Z",
+          "ingested_at": "2026-03-29T17:19:09.637Z",
+          "snippet": "In December, the Bengaluru-based on-demand home help startup reported 500,000 orders, which rose to 830,000 in February, driven by stronger demand in existing markets. This comes after Urban Company’s quick service vertical, InstaHelp, surpassed one million monthly delivered bookings in March, and rival Pronto, in February, witnessed over 15,000 orders per day within 10 months of launch.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "demand"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Bengaluru-based on-demand home help startup Snabbit reached 1 million orders in March, reflecting growing demand for instant help services, following a rise from 500,000 orders in December and 830,000 in February. This trend aligns with similar growth seen by competitors Urban Company's InstaHelp and Pronto.",
+          "translations": {
+            "da": {
+              "title": "Snabbit når 1 million ordrer i marts, da efterspørgslen efter øjeblikkelig hjælp stiger",
+              "summary": "AI-genereret resumé: Bengaluru-baserede on-demand hjemmehjælpsstartup Snabbit nåede 1 million ordrer i marts, hvilket afspejler en stigende efterspørgsel efter øjeblikkelig hjælp, efter en stigning fra 500.000 ordrer i december og 830.000 i februar. Denne tendens matcher lignende vækst hos konkurrenterne Urban Companys InstaHelp og Pronto."
+            },
+            "es": {
+              "title": "Snabbit alcanza 1 millón de pedidos en marzo mientras crece la demanda de servicios de ayuda instantánea",
+              "summary": "Resumen generado por IA: La startup de ayuda a domicilio bajo demanda Snabbit, con sede en Bengaluru, alcanzó 1 millón de pedidos en marzo, reflejando una creciente demanda de servicios de ayuda instantánea, tras un aumento desde 500,000 pedidos en diciembre y 830,000 en febrero. Esta tendencia coincide con un crecimiento similar observado en los competidores InstaHelp y Pronto de Urban Company."
+            }
+          }
+        },
+        {
+          "id": "uicisb",
+          "title": "Consumer Sentiment Dips as Inflation Fears Resurface",
+          "url": "https://www.pymnts.com/economy/2026/consumer-sentiment-dips-as-inflation-fears-resurface/",
+          "source": "PYMNTS",
+          "published_at": "2026-03-27T19:18:27.000Z",
+          "ingested_at": "2026-03-29T17:19:09.637Z",
+          "snippet": "Consumer sentiment fell back 5.8% this month, ending a three-month positive streak and offsetting all the gains registered during that time, according to final March data from the University of Michigan’s Surveys of Consumers released Friday (March 27).  The index now stands 6.5% below its level of March 2025 and 33% below the register […]\nThe post Consumer Sentiment Dips as Inflation Fears Resurface appeared first on PYMNTS.com.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0.15,
+            "penalty": 0,
+            "matchedKeywords": [
+              "consumer"
+            ]
+          },
+          "aiSummary": "AI-generated summary: According to the University of Michigan’s Surveys of Consumers, consumer sentiment declined by 5.8% in March 2026, ending a three-month positive trend and falling 6.5% below March 2025 levels amid renewed inflation concerns.",
+          "translations": {
+            "da": {
+              "title": "Forbrugertilliden falder, da inflationsbekymringer genopstår",
+              "summary": "AI-genereret resumé: Ifølge University of Michigans Surveys of Consumers faldt forbrugertilliden med 5,8 % i marts 2026, hvilket afsluttede en tre måneder lang positiv trend og lå 6,5 % under niveauet fra marts 2025 på grund af fornyede inflationsbekymringer."
+            },
+            "es": {
+              "title": "El sentimiento del consumidor cae ante el resurgimiento de temores inflacionarios",
+              "summary": "Resumen generado por IA: Según las Surveys of Consumers de la University of Michigan, el sentimiento del consumidor disminuyó un 5,8 % en marzo de 2026, poniendo fin a una tendencia positiva de tres meses y cayendo un 6,5 % por debajo de los niveles de marzo de 2025 en medio de renovadas preocupaciones sobre la inflación."
+            }
+          }
+        },
+        {
+          "id": "i5mrhk",
+          "title": "Chinese Competitors Move Into Nike and Zara’s Core Markets",
+          "url": "https://www.businessoffashion.com/articles/global-markets/how-chinese-fashion-is-going-global/",
+          "source": "Business of Fashion - News",
+          "published_at": "2026-03-24T05:30:00.000Z",
+          "ingested_at": "2026-03-29T17:19:09.637Z",
+          "snippet": "As domestic demand weakens and global consumers seek out lower-priced alternatives, Chinese challenger brands like Anta and Urban Revivo are rolling out stores from Bangkok to Beverly Hills.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "consumer",
+              "demand",
+              "brand"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Chinese challenger brands such as Anta and Urban Revivo are expanding their presence globally, opening stores from Bangkok to Beverly Hills, as domestic demand weakens and consumers increasingly seek lower-priced alternatives.",
+          "translations": {
+            "da": {
+              "title": "Kinesiske konkurrenter trænger ind på Nike og Zaras kerneområder",
+              "summary": "AI-genereret resumé: Kinesiske udfordrerbrands som Anta og Urban Revivo udvider deres tilstedeværelse globalt og åbner butikker fra Bangkok til Beverly Hills, efterhånden som den indenlandske efterspørgsel svækkes, og forbrugere i stigende grad søger billigere alternativer."
+            },
+            "es": {
+              "title": "Competidores chinos ingresan en los mercados principales de Nike y Zara",
+              "summary": "Resumen generado por IA: Marcas chinas desafiantes como Anta y Urban Revivo están expandiendo su presencia globalmente, abriendo tiendas desde Bangkok hasta Beverly Hills, mientras la demanda interna se debilita y los consumidores buscan cada vez más alternativas de menor precio."
+            }
+          }
+        },
+        {
+          "id": "jscb7q",
+          "title": "Consumer Confidence Continues to Drop as Gas Prices Rise",
+          "url": "https://wwd.com/business-news/business-features/consumer-confidence-drops-gas-prices-inflation-1238691989/",
+          "source": "WWD - Women's Wear Daily",
+          "published_at": "2026-03-27T20:52:32.000Z",
+          "ingested_at": "2026-03-29T17:19:09.637Z",
+          "snippet": "The University of Michigan’s sentiment survey found a 6 percent drop for March.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0.1,
+            "penalty": 0,
+            "matchedKeywords": [
+              "consumer"
+            ]
+          },
+          "aiSummary": "AI-generated summary: According to the University of Michigan’s sentiment survey, consumer confidence declined by 6 percent in March, coinciding with rising gas prices. This trend highlights ongoing challenges in the luxury and consumer sectors.",
+          "translations": {
+            "da": {
+              "title": "Forbrugertilliden fortsætter med at falde, mens benzinpriserne stiger",
+              "summary": "AI-genereret resumé: Ifølge University of Michigans sentimentundersøgelse faldt forbrugertilliden med 6 procent i marts, samtidig med at benzinpriserne steg. Denne tendens understreger de fortsatte udfordringer i luksus- og forbrugssektorerne."
+            },
+            "es": {
+              "title": "La confianza del consumidor sigue cayendo mientras suben los precios de la gasolina",
+              "summary": "Resumen generado por IA: Según la encuesta de sentimiento de la University of Michigan, la confianza del consumidor disminuyó un 6 por ciento en marzo, coincidiendo con el aumento de los precios de la gasolina. Esta tendencia destaca los desafíos continuos en los sectores de lujo y consumo."
+            }
+          }
+        },
+        {
+          "id": "93i58p",
+          "title": "Asos Shares Jump as Womenswear Boosts Retailer’s Profitability",
+          "url": "https://www.businessoffashion.com/news/retail/asos-shares-jump-as-womenswear-boosts-retailers-profitability/",
+          "source": "Business of Fashion - News",
+          "published_at": "2026-03-25T10:29:05.000Z",
+          "ingested_at": "2026-03-29T17:19:09.637Z",
+          "snippet": "The online retailer reported a 50 percent increase in underlying profits, despite ongoing turnaround challenges and competition from rivals like Shein.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.15,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0,
+            "insightSignalBoost": 0.15,
+            "penalty": 0,
+            "matchedKeywords": []
+          },
+          "aiSummary": "AI-generated summary: Asos reported a 50 percent increase in underlying profits, driven by strong womenswear sales, despite facing ongoing turnaround challenges and competition from rivals such as Shein. This boost led to a jump in the retailer’s shares.",
+          "translations": {
+            "da": {
+              "title": "Asos-aktier stiger, da womenswear øger detailhandlerens rentabilitet",
+              "summary": "AI-genereret resumé: Asos rapporterede en 50 procent stigning i underliggende overskud, drevet af stærkt salg af womenswear, på trods af fortsatte omstillingsudfordringer og konkurrence fra rivaler som Shein. Denne fremgang førte til et hop i detailhandlerens aktier."
+            },
+            "es": {
+              "title": "Las acciones de Asos suben mientras womenswear impulsa la rentabilidad del minorista",
+              "summary": "Resumen generado por IA: Asos reportó un aumento del 50 por ciento en las ganancias subyacentes, impulsado por fuertes ventas de womenswear, a pesar de enfrentar desafíos continuos de reestructuración y competencia de rivales como Shein. Este impulso llevó a un salto en las acciones del minorista."
+            }
+          }
+        },
+        {
+          "id": "mez3zv",
+          "title": "Sri Lanka apparel sector exports fall on global demand decline",
+          "url": "https://www.just-style.com/news/sri-lanka-apparel-export-february-2026/",
+          "source": "Just Style",
+          "published_at": "2026-03-27T10:58:44.000Z",
+          "ingested_at": "2026-03-29T17:19:09.637Z",
+          "snippet": "Sri Lanka’s apparel exports dropped by 11.46% in February 2026, reaching $361.2m, as key global markets experience increased strain.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0.1,
+            "penalty": 0,
+            "matchedKeywords": [
+              "demand"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Sri Lanka's apparel exports declined by 11.46% in February 2026 to $361.2 million, reflecting weakened demand in major global markets.",
+          "translations": {
+            "da": {
+              "title": "Sri Lankas beklædningssektoreksport falder på grund af global efterspørgselsnedgang",
+              "summary": "AI-genereret resumé: Sri Lankas beklædningseksport faldt med 11,46 % i februar 2026 til 361,2 millioner dollars, hvilket afspejler svækket efterspørgsel på store globale markeder."
+            },
+            "es": {
+              "title": "Las exportaciones del sector de prendas de Sri Lanka caen por la disminución de la demanda global",
+              "summary": "Resumen generado por IA: Las exportaciones de prendas de Sri Lanka disminuyeron un 11,46 % en febrero de 2026 a 361,2 millones de dólares, reflejando una demanda debilitada en los principales mercados globales."
+            }
+          }
+        }
+      ]
+    },
+    "Jewellery_Industry": {
+      "total": 13,
+      "top": [
+        {
+          "id": "3wisad",
+          "title": "Diamond producer slashes one-third of sightholders",
+          "url": "https://www.jewellermagazine.com/Article/14877/Diamond-producer-slashes-one-third-of-sightholders",
+          "source": "Jeweller - Business News",
+          "published_at": "2026-03-23T13:00:00.000Z",
+          "ingested_at": "2026-03-29T17:19:09.637Z",
+          "snippet": "The De Beers Group has reportedly cut the number of sightholders that can purchase goods by as much as one-third.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "diamond"
+            ]
+          },
+          "aiSummary": "AI-generated summary: The De Beers Group has reduced the number of sightholders eligible to purchase its goods by approximately one-third, according to a report in Jeweller - Business News dated March 23, 2026. This move impacts the jewellery industry by limiting access to De Beers' diamond supply.",
+          "translations": {
+            "da": {
+              "title": "Diamantproducent skærer en tredjedel af sightholders væk",
+              "summary": "AI-genereret resumé: De Beers Group har reduceret antallet af sightholders, der er berettiget til at købe deres varer, med cirka en tredjedel ifølge en rapport i Jeweller - Business News dateret 23. marts 2026. Dette påvirker smykkeindustrien ved at begrænse adgangen til De Beers' diamantforsyning."
+            },
+            "es": {
+              "title": "Productor de diamantes reduce un tercio de los sightholders",
+              "summary": "Resumen generado por IA: De Beers Group ha reducido el número de sightholders elegibles para comprar sus productos en aproximadamente un tercio, según un informe de Jeweller - Business News fechado el 23 de marzo de 2026. Esta medida afecta a la industria de la joyería al limitar el acceso al suministro de diamantes de De Beers."
+            }
+          }
+        },
+        {
+          "id": "7zb63m",
+          "title": "Diamond District Jeweler Steps Up for Runner Who Lost Heirloom Engagement Ring During NYC Half-Marathon",
+          "url": "https://instoremag.com/diamond-district-jeweler-steps-up-for-runner-who-lost-heirloom-engagement-ring-during-nyc-half-marathon/",
+          "source": "Instore Magazine",
+          "published_at": "2026-03-29T04:44:33.000Z",
+          "ingested_at": "2026-03-29T17:19:09.637Z",
+          "snippet": "A New York City jeweler's offer to replace a runner's lost family heirloom turned a heartbreaking story into a feel-good one — and a lesson in smart local marketing.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "diamond"
+            ]
+          },
+          "aiSummary": "AI-generated summary: A New York City jeweler gained positive local marketing exposure by offering to replace a runner's lost heirloom engagement ring during the NYC Half-Marathon, turning a sad incident into a heartwarming story.",
+          "translations": {
+            "da": {
+              "title": "Smykkeforretning i Diamond District Træder Til for Løber, der Mistede Arvegave Forlovelsesring under NYC Half-Marathon",
+              "summary": "AI-genereret resumé: En smykkeforretning i New York City fik positiv lokal markedsføring ved at tilbyde at erstatte en løbers mistede arvegave forlovelsesring under NYC Half-Marathon, hvilket forvandlede en trist hændelse til en hjertevarm historie."
+            },
+            "es": {
+              "title": "Joyería del Diamond District Ayuda a Corredor que Perdió Anillo de Compromiso Heredado Durante el Medio Maratón de NYC",
+              "summary": "Resumen generado por IA: Una joyería de Nueva York obtuvo una exposición positiva local al ofrecer reemplazar el anillo de compromiso heredado perdido de un corredor durante el Medio Maratón de NYC, convirtiendo un incidente triste en una historia conmovedora."
+            }
+          }
+        },
+        {
+          "id": "jvp1zn",
+          "title": "Sydney jeweller joins campaign to raise awareness around multiple sclerosis",
+          "url": "https://www.jewellermagazine.com/Article/14878/Sydney-jeweller-joins-campaign-to-raise-awareness-around-multiple-sclerosis",
+          "source": "Jeweller - Business News",
+          "published_at": "2026-03-23T13:00:00.000Z",
+          "ingested_at": "2026-03-29T17:19:09.637Z",
+          "snippet": "A special report has highlighted the efforts of a Sydney jeweller to reduce the stigma around a significant disease.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "jeweller"
+            ]
+          },
+          "aiSummary": "AI-generated summary: A Sydney jeweller is actively participating in a campaign to raise awareness and reduce the stigma surrounding multiple sclerosis, as highlighted in a recent special report.",
+          "translations": {
+            "da": {
+              "title": "Sydney juveler deltager i kampagne for at øge bevidstheden om multipel sklerose",
+              "summary": "AI-genereret resumé: En Sydney juveler deltager aktivt i en kampagne for at øge bevidstheden og reducere stigmaet omkring multipel sklerose, som fremhævet i en nylig specialrapport."
+            },
+            "es": {
+              "title": "Joyero de Sydney se une a campaña para crear conciencia sobre la esclerosis múltiple",
+              "summary": "Resumen generado por IA: Un joyero de Sydney participa activamente en una campaña para crear conciencia y reducir el estigma en torno a la esclerosis múltiple, como se destaca en un informe especial reciente."
+            }
+          }
+        },
+        {
+          "id": "6qieyp",
+          "title": "BECKS to celebrate 50th anniversary at Australian Jewellery Fair",
+          "url": "https://www.jewellermagazine.com/Article/14879/BECKS-to-celebrate-50th-anniversary-at-Australian-Jewellery-Fair",
+          "source": "Jeweller - Business News",
+          "published_at": "2026-03-23T13:00:00.000Z",
+          "ingested_at": "2026-03-29T17:19:09.637Z",
+          "snippet": "The upcoming Australian Jewellery Fair is set to be an important edition for BECKS, which is celebrating its 50th anniversary this year.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "jewellery",
+              "jeweller"
+            ]
+          },
+          "aiSummary": "AI-generated summary: BECKS will mark its 50th anniversary at this year's Australian Jewellery Fair, making the event a significant occasion for the company.",
+          "translations": {
+            "da": {
+              "title": "BECKS fejrer 50-års jubilæum på Australian Jewellery Fair",
+              "summary": "AI-genereret resumé: BECKS markerer sit 50-års jubilæum på årets Australian Jewellery Fair, hvilket gør begivenheden til en vigtig lejlighed for virksomheden."
+            },
+            "es": {
+              "title": "BECKS celebrará su 50º aniversario en la Australian Jewellery Fair",
+              "summary": "Resumen generado por IA: BECKS celebrará su 50º aniversario en la Australian Jewellery Fair de este año, convirtiendo el evento en una ocasión importante para la empresa."
+            }
+          }
+        },
+        {
+          "id": "lbp20s",
+          "title": "Stop the world, I want to get off and run a video rental store in the 1990s | Dominik Diamond",
+          "url": "https://www.theguardian.com/games/2026/mar/27/retro-rewind-video-rental-retail-sim",
+          "source": "The Guardian - Technology",
+          "published_at": "2026-03-27T10:00:02.000Z",
+          "ingested_at": "2026-03-29T17:19:09.637Z",
+          "snippet": "Retail sims aren’t my thing, but the tactile, nostalgic pleasures of hit indie title Retro Rewind have me yearning for the era of physical media, smoking indoors and uncomplicated geopolitics \n\nIt’s early doors, but 2026 may be the biggest bin fire of a year in my lifetime. Wars starting, then ending, then starting again in the course of a week. People running their cars on hopes and dreams because a tank of petrol costs more than the vehicle. Manospheric morons making millions. Several depressi...",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "diamond"
+            ]
+          },
+          "aiSummary": "AI-generated summary: In this reflective piece from The Guardian's Technology section, Dominik Diamond expresses nostalgia for the 1990s era of physical media and simpler times, inspired by the indie game Retro Rewind, while commenting on the chaotic and troubling state of the world in 2026.",
+          "translations": {
+            "da": {
+              "title": "Stop verden, jeg vil af og drive en videoudlejningsbutik i 1990'erne | Dominik Diamond",
+              "summary": "AI-genereret resumé: I dette reflekterende indlæg fra The Guardians Teknologiafdeling udtrykker Dominik Diamond nostalgi for 1990'ernes fysiske medier og enklere tider, inspireret af indie-spillet Retro Rewind, samtidig med at han kommenterer den kaotiske og bekymrende tilstand i verden i 2026."
+            },
+            "es": {
+              "title": "Detén el mundo, quiero bajarme y dirigir una tienda de alquiler de videos en los años 90 | Dominik Diamond",
+              "summary": "Resumen generado por IA: En este artículo reflexivo de la sección de Tecnología de The Guardian, Dominik Diamond expresa nostalgia por la era de los medios físicos y tiempos más simples de los años 90, inspirado por el juego indie Retro Rewind, mientras comenta sobre el estado caótico y preocupante del mundo en 2026."
+            }
+          }
+        },
+        {
+          "id": "yd4uwe",
+          "title": "‘Real Housewives’ Has Been a Meme Gold Mine for 20 Years",
+          "url": "https://www.nytimes.com/2026/03/23/arts/television/real-housewives-memes-bravo.html",
+          "source": "NYTimes Technology",
+          "published_at": "2026-03-23T14:04:54.000Z",
+          "ingested_at": "2026-03-29T17:19:09.637Z",
+          "snippet": "The Bravo TV empire, which turns 20 this month, has also been a gold mine for the internet.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0.15,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "gold"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Celebrating its 20th anniversary, the Bravo TV series \"Real Housewives\" has become a significant source of internet memes. The article, published by NYTimes Technology on March 23, 2026, highlights the show's cultural impact online.",
+          "translations": {
+            "da": {
+              "title": "‘Real Housewives’ Har Været en Meme-guldgrube i 20 År",
+              "summary": "AI-genereret resumé: I anledning af sit 20-års jubilæum er Bravo TV-serien \"Real Housewives\" blevet en vigtig kilde til internetmemes. Artiklen, udgivet af NYTimes Technology den 23. marts 2026, fremhæver seriens kulturelle indflydelse online."
+            },
+            "es": {
+              "title": "‘Real Housewives’ Ha Sido una Mina de Oro de Memes por 20 Años",
+              "summary": "Resumen generado por IA: Celebrando su 20º aniversario, la serie de Bravo TV \"Real Housewives\" se ha convertido en una fuente importante de memes en internet. El artículo, publicado por NYTimes Technology el 23 de marzo de 2026, destaca el impacto cultural del programa en línea."
+            }
+          }
+        },
+        {
+          "id": "r0h4be",
+          "title": "The World’s Best Luxury Watch Brands",
+          "url": "https://luxe.digital/lifestyle/watches/luxury-watch-brands/",
+          "source": "Luxe Digital",
+          "published_at": "2026-03-25T08:45:00.000Z",
+          "ingested_at": "2026-03-29T17:19:09.637Z",
+          "snippet": "The luxury of time.\nThe post The World’s Best Luxury Watch Brands appeared first on Luxe Digital.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "watch"
+            ]
+          },
+          "aiSummary": "AI-generated summary: The article \"The World’s Best Luxury Watch Brands,\" published by Luxe Digital on March 25, 2026, explores top luxury watch brands within the jewellery industry, emphasizing the concept of \"the luxury of time.\"",
+          "translations": {
+            "da": {
+              "title": "Verdens Bedste Luksus Ur-mærker",
+              "summary": "AI-genereret resumé: Artiklen \"The World’s Best Luxury Watch Brands,\" udgivet af Luxe Digital den 25. marts 2026, udforsker top luksus ur-mærker inden for smykkeindustrien med fokus på begrebet \"the luxury of time.\""
+            },
+            "es": {
+              "title": "Las Mejores Marcas de Relojes de Lujo del Mundo",
+              "summary": "Resumen generado por IA: El artículo \"The World’s Best Luxury Watch Brands,\" publicado por Luxe Digital el 25 de marzo de 2026, explora las principales marcas de relojes de lujo dentro de la industria de la joyería, enfatizando el concepto de \"the luxury of time.\""
+            }
+          }
+        }
+      ]
+    }
+  },
+  "coverImageUrl": "/weekly-images/2026-W13.png",
+  "coverImageAlt": "Weekly cover illustration for 2026-W13"
+}
