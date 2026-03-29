@@ -401,13 +401,13 @@ async function generateCoverImage(
   try {
     const openai = new OpenAI({ apiKey });
     
-    console.log('Generating cover image with GPT Image...');
-    
-    // GPT Image model name
-    const model = 'gpt-image-1.5';
-    
-    // Try 1536x1024 first (wide format for cover), fallback to 1024x1024 if not supported
-    let size: "1536x1024" | "1024x1024" = '1536x1024';
+    console.log('Generating cover image with DALL-E 3...');
+
+    // DALL-E 3 model (higher quality than gpt-image-1.5)
+    const model = 'dall-e-3';
+
+    // DALL-E 3 supports 1024x1024 and 1792x1024 (wide format for cover)
+    let size: "1024x1024" | "1792x1024" = '1792x1024';
     let response;
     
     try {
@@ -667,7 +667,7 @@ export async function generateWeeklyCoverImage(
     }
     
     // Add debugging artifacts
-    coverInputData.model = imageResult.model || 'gpt-image-1.5';
+    coverInputData.model = imageResult.model || 'dall-e-3';
     coverInputData.finalPrompt = finalPrompt;
     coverInputData.imageSize = imageResult.size || '1792x1024';
     coverInputData.outputPath = `/weekly-images/${weekLabel}.png`;

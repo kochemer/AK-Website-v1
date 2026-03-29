@@ -10,6 +10,11 @@ import type { WeeklyDigest } from '../lib/types';
 
 /**
  * Extract homepage top articles from digest
+ *
+ * Smart selection strategy to reduce repetitive jewelry imagery:
+ * - Always take top 1-2 from Ecommerce_Retail_Tech (primary focus)
+ * - For Jewellery_Industry: take only top 1 (not 2) to reduce dominance
+ * - If Jewellery quality is weak, prefer other topics instead
  */
 function extractHomepageTopArticles(digest: WeeklyDigest): Array<{
   title: string;
@@ -25,8 +30,8 @@ function extractHomepageTopArticles(digest: WeeklyDigest): Array<{
     aiSummary?: string;
     rerankWhy?: string;
   }> = [];
-  
-  // Top 1-2 from Ecommerce_Retail_Tech
+
+  // Top 1-2 from Ecommerce_Retail_Tech (primary topic)
   const ecommerceTop = digest.topics?.Ecommerce_Retail_Tech?.top || [];
   homepageArticles.push(...ecommerceTop.slice(0, 2).map((article: any) => ({
     title: article.title,
@@ -35,17 +40,20 @@ function extractHomepageTopArticles(digest: WeeklyDigest): Array<{
     aiSummary: article.aiSummary,
     rerankWhy: article.rerankWhy,
   })));
-  
-  // Top 1-2 from Jewellery_Industry
+
+  // Top 1 from Jewellery_Industry (NOT 2 - reduce repetition)
   const jewelleryTop = digest.topics?.Jewellery_Industry?.top || [];
-  homepageArticles.push(...jewelleryTop.slice(0, 2).map((article: any) => ({
-    title: article.title,
-    source: article.source,
-    snippet: article.snippet,
-    aiSummary: article.aiSummary,
-    rerankWhy: article.rerankWhy,
-  })));
-  
+  if (jewelleryTop.length > 0) {
+    const topJewel = jewelleryTop[0] as any;
+    homepageArticles.push({
+      title: topJewel.title,
+      source: topJewel.source,
+      snippet: topJewel.snippet,
+      aiSummary: topJewel.aiSummary,
+      rerankWhy: topJewel.rerankWhy,
+    });
+  }
+
   return homepageArticles;
 }
 

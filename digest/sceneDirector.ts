@@ -12,6 +12,14 @@ import OpenAI from 'openai';
 import { readJsonCache, writeJsonCache } from '../lib/utils/cachePaths';
 import { getModelFor, maxTokensParam, temperatureParam } from '../lib/llm/models';
 
+// Anti-repetition tracking
+type PreviousConcept = {
+  weekLabel: string;
+  concept: string;
+  primaryHumorDriver: string;
+  sceneDescription: string;
+};
+
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
@@ -57,6 +65,46 @@ type SceneDirectorCache = {
 };
 
 export type Variant = 'safe' | 'fun';
+
+// --- Previous Concepts Tracking (avoid repetition) ---
+
+/**
+ * Load previous cover concepts from the last N weeks to avoid repetition.
+ * Looks for cover-scene.json files in data/weeks/{weekLabel}/
+ */
+async function loadPreviousConcepts(currentWeekLabel: string, lookbackWeeks: number = 8): Promise<PreviousConcept[]> {
+  try {
+    const weeksDir = path.join(process.cwd(), 'data', 'weeks');
+    const entries = await fs.readdir(weeksDir, { withFileTypes: true });
+
+    const previousConcepts: PreviousConcept[] = [];
+
+    for (const entry of entries) {
+      if (entry.isDirectory() && entry.name !== currentWeekLabel) {
+        const coverScenePath = path.join(weeksDir, entry.name, 'cover-scene.json');
+        try {
+          const content = await fs.readFile(coverScenePath, 'utf-8');
+          const scene = JSON.parse(content);
+          previousConcepts.push({
+            weekLabel: entry.name,
+            concept: scene.concept || '',
+            primaryHumorDriver: scene.primaryHumorDriver || '',
+            sceneDescription: scene.sceneDescription || ''
+          });
+        } catch {
+          // File doesn't exist or is invalid, skip
+        }
+      }
+    }
+
+    // Sort by week label (descending) and take the most recent N
+    previousConcepts.sort((a, b) => b.weekLabel.localeCompare(a.weekLabel));
+    return previousConcepts.slice(0, lookbackWeeks);
+  } catch {
+    // Directory doesn't exist yet, return empty list
+    return [];
+  }
+}
 
 // --- Cache Management (uses unified cache paths) ---
 
@@ -137,20 +185,43 @@ The scene should be playful and absurd but look like a real photograph.`,
 
 // --- LLM Scene Generation ---
 
-function buildSceneDirectorPrompt(articles: ArticleInput[], variant: Variant): string {
+function buildSceneDirectorPrompt(
+  articles: ArticleInput[],
+  variant: Variant,
+  previousConcepts: PreviousConcept[] = []
+): string {
   const articleList = articles.map((article, idx) => {
     let articleText = `Article ${idx + 1}:
 - Title: ${article.title}
 - Source: ${article.source || 'Unknown'}
 - Summary: ${article.aiSummary || article.snippet || 'No summary available'}
 - Why it matters: ${article.rerankWhy || 'Not specified'}`;
-    
+
     if (article.sponsored) {
       articleText += '\n- Sponsored: Yes';
     }
-    
+
     return articleText;
   }).join('\n\n');
+
+  // Build anti-repetition constraints
+  let antiRepetitionConstraint = '';
+  if (previousConcepts.length > 0) {
+    const recentConcepts = previousConcepts.map(c => `- ${c.weekLabel}: "${c.concept}" (${c.primaryHumorDriver})`).join('\n');
+    antiRepetitionConstraint = `
+AVOID REPETITION (Recent covers):
+${recentConcepts}
+
+DO NOT reuse these concepts or humor drivers. Create something fresh and different.
+If articles involve Jewellery Industry: AVOID literal diamonds, precious stones, or jewelry product photography. Find a metaphor that doesn't involve the product itself—use the *concept* of luxury, rarity, craftsmanship, or exclusivity in unexpected ways instead.`;
+  } else {
+    antiRepetitionConstraint = `
+ANTI-CLICHE GUIDE for Jewellery/Luxury articles:
+- AVOID literal diamonds, precious stones, jewelry showcases, or luxury item close-ups
+- Instead, use the conceptual essence: rarity, craftsmanship, exclusivity, indulgence, competition
+- Example: instead of "diamond on velvet", do "a common object treated like it's precious" (role reversal)
+- Make it clever and fresh, not a product photo`;
+  }
 
   return `You are a Scene Director for a weekly intelligence digest.
 
@@ -191,6 +262,7 @@ Optionally add one Flavor Enhancer:
 - Mirror/reflection reveal
 - Partial obstruction creating mystery
 - Implied motion or "just happened" moment
+${antiRepetitionConstraint}
 
 ARTICLES TO REPRESENT:
 ${articleList}
@@ -220,12 +292,13 @@ async function callSceneDirectorLLM(
   articles: ArticleInput[],
   variant: Variant,
   apiKey: string,
+  previousConcepts: PreviousConcept[] = [],
   isRetry: boolean = false
 ): Promise<SceneDirectorOutput | null> {
   try {
     const openai = new OpenAI({ apiKey });
-    
-    let prompt = buildSceneDirectorPrompt(articles, variant);
+
+    let prompt = buildSceneDirectorPrompt(articles, variant, previousConcepts);
     
     // Add retry message if this is a retry
     if (isRetry) {
@@ -319,7 +392,7 @@ ${prompt}`;
     // If missing primaryHumorDriver and not already a retry, retry once
     if ((errorMessage.includes('primaryHumorDriver') || errorMessage.includes('humor')) && !isRetry) {
       console.warn(`[SceneDirector] Missing Primary Humor Driver, retrying once...`);
-      return callSceneDirectorLLM(articles, variant, apiKey, true);
+      return callSceneDirectorLLM(articles, variant, apiKey, [], true);
     }
     
     console.error(`[SceneDirector] LLM call failed: ${errorMessage}`);
@@ -365,10 +438,16 @@ export async function generateCoverScenePrompt(
     console.warn('[SceneDirector] OPENAI_API_KEY not found, using fallback');
     return generateFallbackPrompt(selectedArticles);
   }
-  
+
+  // Load previous concepts to avoid repetition
+  const previousConcepts = await loadPreviousConcepts(weekLabel);
+  if (previousConcepts.length > 0) {
+    console.log(`[SceneDirector] Found ${previousConcepts.length} previous concepts for anti-repetition guidance`);
+  }
+
   // Call LLM
   console.log(`[SceneDirector] Generating scene for ${weekLabel} (variant: ${variant})...`);
-  const result = await callSceneDirectorLLM(selectedArticles, variant, apiKey);
+  const result = await callSceneDirectorLLM(selectedArticles, variant, apiKey, previousConcepts);
   
   if (!result) {
     console.warn('[SceneDirector] LLM call failed, using fallback');
