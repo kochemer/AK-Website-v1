@@ -89,6 +89,11 @@ jobs:
           NEXT_PUBLIC_SITE_URL: ${{ secrets.NEXT_PUBLIC_SITE_URL }}
         run: npm run email:weekly
 
+      - name: Run competitor analysis
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: npm run competitor:analyze
+
       - name: Check for changes
         id: check-changes
         run: |
@@ -109,6 +114,7 @@ jobs:
           # - public/weekly-images/ (cover images)
           # - data/cache/ (cache files for translations, reranking, etc.)
           # - data/page_source_stats.json (page ingestion stats)
+          # - data/competitor-intel.json (competitor intelligence, updated weekly)
           CHANGED_FILES=$(git status --porcelain | awk '{print $2}')
           # Pattern matches:
           # - data/digests/*.json
@@ -116,11 +122,12 @@ jobs:
           # - data/articles.json
           # - data/source_yield.json
           # - data/page_source_stats.json
+          # - data/competitor-intel.json
           # - data/weeks/*/ (any files under weeks directory)
           # - public/podcast/*.mp3
           # - public/weekly-images/*.png
           # - data/cache/ (any files under cache directory)
-          ALLOWED_PATTERN="^(data/digests/|data/weeks/[^/]+/health\.json|data/articles\.json|data/source_yield\.json|data/page_source_stats\.json|data/weeks/[^/]+/.*|public/podcast/[^/]+\.mp3|public/weekly-images/[^/]+\.png|data/cache/.*)"
+          ALLOWED_PATTERN="^(data/digests/|data/weeks/[^/]+/health\.json|data/articles\.json|data/source_yield\.json|data/page_source_stats\.json|data/competitor-intel\.json|data/weeks/[^/]+/.*|public/podcast/[^/]+\.mp3|public/weekly-images/[^/]+\.png|data/cache/.*)"
           NON_ALLOWED_CHANGES=$(echo "$CHANGED_FILES" | grep -vE "$ALLOWED_PATTERN" || true)
           
           if [ -n "$NON_ALLOWED_CHANGES" ]; then
@@ -133,6 +140,7 @@ jobs:
             echo "  - data/articles.json (article database)"
             echo "  - data/source_yield.json (source yield report)"
             echo "  - data/page_source_stats.json (page ingestion stats)"
+            echo "  - data/competitor-intel.json (competitor intelligence)"
             echo "  - data/weeks/{week}/ (discovery reports, email digest, podcast script)"
             echo "  - public/podcast/ (podcast audio files)"
             echo "  - public/weekly-images/ (cover images)"
@@ -152,7 +160,7 @@ jobs:
       - name: Commit and push changes
         if: steps.check-changes.outputs.has_changes == 'true'
         run: |
-          git add data/digests/ data/weeks/*/health.json data/articles.json data/source_yield.json data/page_source_stats.json data/weeks/*/ public/podcast/*.mp3 public/weekly-images/*.png data/cache/
+          git add data/digests/ data/weeks/*/health.json data/articles.json data/source_yield.json data/page_source_stats.json data/competitor-intel.json data/weeks/*/ public/podcast/*.mp3 public/weekly-images/*.png data/cache/
           if git diff --staged --quiet; then
             echo "No staged changes to commit"
             exit 0
