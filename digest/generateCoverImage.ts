@@ -493,7 +493,12 @@ ANTI-CARTOON / ANTI-CGI:
 NO-TEXT GUARANTEE:
 - Absolutely no text, letters, numbers, typography, signage, labels, price tags.
 - No screens, dashboards, UI, holograms, floating icons, charts.
-- Avoid any objects that commonly contain text (posters, newspapers, packaging, storefront signs). If unavoidable, they must be fully out of focus and unreadable.`;
+- Avoid any objects that commonly contain text (posters, newspapers, packaging, storefront signs). If unavoidable, they must be fully out of focus and unreadable.
+
+HARD BAN - NO DIAMONDS OR GEMSTONES:
+- DO NOT include diamonds, gemstones, precious stones, or jewelry product shots of any kind.
+- No diamond rings, necklaces, earrings, or close-ups of jewelry.
+- This applies regardless of the article topic. Use conceptual metaphors instead.`;
 }
 
 /**

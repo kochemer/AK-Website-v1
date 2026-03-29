@@ -213,13 +213,24 @@ AVOID REPETITION (Recent covers):
 ${recentConcepts}
 
 DO NOT reuse these concepts or humor drivers. Create something fresh and different.
-If articles involve Jewellery Industry: AVOID literal diamonds, precious stones, or jewelry product photography. Find a metaphor that doesn't involve the product itself—use the *concept* of luxury, rarity, craftsmanship, or exclusivity in unexpected ways instead.`;
+
+HARD BAN - NO DIAMONDS (any size, any context):
+- DO NOT feature diamonds, gemstones, or precious stones as the focal point or subject
+- NO "big diamond" visual metaphors
+- NO jewelry product shots, close-ups, or displays
+- Instead, if articles involve Jewellery Industry, use the *concept* of luxury, rarity, craftsmanship, or exclusivity in unexpected, clever ways
+- Example: instead of "diamond on velvet", do "a common object treated like it's precious" or "cutthroat competition for mundane items"`;
   } else {
     antiRepetitionConstraint = `
+HARD BAN - NO DIAMONDS (any size, any context):
+- DO NOT feature diamonds, gemstones, or precious stones as the focal point or subject
+- NO "big diamond" visual metaphors
+- NO jewelry product shots, close-ups, or displays
+
 ANTI-CLICHE GUIDE for Jewellery/Luxury articles:
-- AVOID literal diamonds, precious stones, jewelry showcases, or luxury item close-ups
 - Instead, use the conceptual essence: rarity, craftsmanship, exclusivity, indulgence, competition
 - Example: instead of "diamond on velvet", do "a common object treated like it's precious" (role reversal)
+- Or: cutthroat competition over mundane items, showrooms repurposed for unexpected uses
 - Make it clever and fresh, not a product photo`;
   }
 
@@ -278,7 +289,8 @@ OUTPUT FORMAT (JSON only, no markdown, no code blocks):
     "text, letters, numbers, signage, labels",
     "screens, UI, dashboards, holograms, floating icons",
     "logos, brands, watermarks",
-    "cartoon, illustration, CGI, 3D render, anime"
+    "cartoon, illustration, CGI, 3D render, anime",
+    "diamond, diamonds, gemstone, gemstones, precious stones, jewelry close-up, jewelry product shot, diamond ring, diamond necklace, diamond earring, jeweled, sparkling gemstone"
   ],
   "confidence": 0.0
 }
