@@ -253,16 +253,79 @@ async function fetchFinancials(): Promise<Map<string, FinancialData>> {
     }
   }
 
-  // Merge new candles into persistent history and save
+  // Merge new candles into persistent history and save (native currency)
   const mergedHistory = mergeStockHistory(existingHistory, newCandlesMap);
   await saveStockHistory(mergedHistory);
   console.log('  [financials] Stock history saved to data/stock-history.json');
 
-  // Attach full merged history to each result
-  for (const [ticker, finData] of result) {
-    if (mergedHistory[ticker]) {
-      finData.priceHistory = mergedHistory[ticker];
+  // ── Fetch FX weekly rates for non-USD currencies ──
+  const neededCurrencies = new Set<string>();
+  for (const finData of result.values()) {
+    if (finData.currency !== 'USD') neededCurrencies.add(finData.currency);
+  }
+
+  // Map currency code → Yahoo Finance FX symbol (XXX/USD)
+  const fxSymbolMap: Record<string, string> = {
+    EUR: 'EURUSD=X',
+    CHF: 'CHFUSD=X',
+    DKK: 'DKKUSD=X',
+    GBP: 'GBPUSD=X',
+  };
+
+  // date (YYYY-MM-DD) → USD rate
+  const fxRates = new Map<string, Map<string, number>>();
+
+  for (const currency of neededCurrencies) {
+    const fxSymbol = fxSymbolMap[currency];
+    if (!fxSymbol) {
+      console.warn(`  [fx] No FX symbol known for ${currency}, skipping conversion`);
+      continue;
     }
+    try {
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      const fxChart = await (yahooFinance.chart as (symbol: string, opts: any) => Promise<any>)(fxSymbol, {
+        period1: DateTime.now().minus({ weeks: 54 }).toJSDate(),
+        period2: new Date(),
+        interval: '1wk',
+      });
+      const rateByDate = new Map<string, number>();
+      for (const q of (fxChart?.quotes ?? []) as { date?: Date | string; close?: number | null }[]) {
+        if (q.close == null) continue;
+        const dateKey = (q.date instanceof Date ? q.date.toISOString() : String(q.date)).slice(0, 10);
+        rateByDate.set(dateKey, q.close);
+      }
+      fxRates.set(currency, rateByDate);
+      console.log(`  [fx] ${fxSymbol}: ${rateByDate.size} weekly rate candles`);
+    } catch (err) {
+      console.warn(`  [fx] Failed to fetch ${fxSymbol}:`, err);
+    }
+  }
+
+  // Helper: find nearest FX rate for a date
+  function getRate(currency: string, dateStr: string): number {
+    if (currency === 'USD') return 1;
+    const rateByDate = fxRates.get(currency);
+    if (!rateByDate || rateByDate.size === 0) return 1;
+    const key = dateStr.slice(0, 10);
+    if (rateByDate.has(key)) return rateByDate.get(key)!;
+    // Find nearest available date
+    const keys = Array.from(rateByDate.keys()).sort();
+    let nearest = keys[0];
+    for (const k of keys) {
+      if (k <= key) nearest = k;
+      else break;
+    }
+    return rateByDate.get(nearest) ?? 1;
+  }
+
+  // Attach full merged history converted to USD
+  for (const [ticker, finData] of result) {
+    const history = mergedHistory[ticker];
+    if (!history) continue;
+    finData.priceHistory = history.map(c => ({
+      date: c.date,
+      close: Math.round(c.close * getRate(finData.currency, c.date) * 100) / 100,
+    }));
   }
 
   return result;

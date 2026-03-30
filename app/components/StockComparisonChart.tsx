@@ -38,13 +38,11 @@ const SERIES_COLORS: Record<string, string> = {
 
 const DEFAULT_COLOR = '#6b7280';
 
-// Format date for X axis tick
 function formatXTick(dateStr: string): string {
   const d = new Date(dateStr);
   return d.toLocaleDateString('en-GB', { month: 'short', year: '2-digit' });
 }
 
-// Custom tooltip
 function CustomTooltip({
   active,
   payload,
@@ -56,24 +54,22 @@ function CustomTooltip({
 }) {
   if (!active || !payload?.length) return null;
 
-  const date = label ? new Date(label).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' }) : '';
+  const date = label
+    ? new Date(label).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })
+    : '';
 
   return (
     <div className="bg-[var(--color-surface)] border border-[var(--color-border)] rounded-sm px-3 py-2 shadow-sm text-[12px] font-sans">
       <p className="text-[var(--color-text-secondary)] mb-1.5">{date}</p>
-      {payload.map(p => {
-        const pct = (p.value - 100).toFixed(1);
-        const isUp = p.value >= 100;
-        return (
-          <div key={p.name} className="flex items-center gap-2 mb-0.5">
-            <span className="w-2 h-2 rounded-full shrink-0" style={{ background: p.color }} />
-            <span className="text-[var(--color-text-primary)] font-medium">{p.name}</span>
-            <span className={isUp ? 'text-green-600 dark:text-green-400' : 'text-red-600 dark:text-red-400'}>
-              {isUp ? '+' : ''}{pct}%
-            </span>
-          </div>
-        );
-      })}
+      {payload.map(p => (
+        <div key={p.name} className="flex items-center gap-2 mb-0.5">
+          <span className="w-2 h-2 rounded-full shrink-0" style={{ background: p.color }} />
+          <span className="text-[var(--color-text-primary)] font-medium">{p.name}</span>
+          <span className="text-[var(--color-text-secondary)]">
+            ${p.value.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
+          </span>
+        </div>
+      ))}
     </div>
   );
 }
@@ -87,30 +83,22 @@ export default function StockComparisonChart({ series }: Props) {
   const chartData = useMemo(() => {
     const cutoff = new Date(Date.now() - PERIOD_DAYS[period] * 24 * 60 * 60 * 1000);
 
-    // Filter each series to the period and normalise to 100
-    const filtered = series.map(s => {
-      const pts = s.priceHistory.filter(p => new Date(p.date) >= cutoff);
-      const base = pts[0]?.close;
-      if (!base || base === 0) return { ticker: s.ticker, points: [] as { date: string; value: number }[] };
-      return {
-        ticker: s.ticker,
-        points: pts.map(p => ({ date: p.date, value: (p.close / base) * 100 })),
-      };
-    });
+    const filtered = series.map(s => ({
+      ticker: s.ticker,
+      points: s.priceHistory
+        .filter(p => new Date(p.date) >= cutoff)
+        .map(p => ({ date: p.date, value: p.close })),
+    }));
 
-    // Collect all unique dates
     const allDates = Array.from(
       new Set(filtered.flatMap(s => s.points.map(p => p.date)))
     ).sort();
 
-    // Build rows
     return allDates.map(date => {
       const row: Record<string, string | number> = { date };
       for (const s of filtered) {
         const pt = s.points.find(p => p.date === date);
-        if (pt !== undefined) {
-          row[s.ticker] = Math.round(pt.value * 100) / 100;
-        }
+        if (pt !== undefined) row[s.ticker] = pt.value;
       }
       return row;
     });
@@ -120,7 +108,7 @@ export default function StockComparisonChart({ series }: Props) {
     setActiveSeries(prev => {
       const next = new Set(prev);
       if (next.has(ticker)) {
-        if (next.size > 1) next.delete(ticker); // keep at least one
+        if (next.size > 1) next.delete(ticker);
       } else {
         next.add(ticker);
       }
@@ -152,7 +140,7 @@ export default function StockComparisonChart({ series }: Props) {
           </button>
         ))}
         <span className="ml-auto text-[11px] text-[var(--color-text-secondary)] font-sans">
-          Indexed to 100 at period start
+          USD (converted)
         </span>
       </div>
 
@@ -195,8 +183,8 @@ export default function StockComparisonChart({ series }: Props) {
               tickLine={false}
               axisLine={false}
               domain={['auto', 'auto']}
-              tickFormatter={v => `${v}`}
-              width={36}
+              tickFormatter={v => `$${v}`}
+              width={52}
             />
             <Tooltip content={<CustomTooltip />} />
             <Legend wrapperStyle={{ display: 'none' }} />
