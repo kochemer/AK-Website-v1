@@ -7,6 +7,7 @@ import {
   Line,
   XAxis,
   YAxis,
+  CartesianGrid,
   Tooltip,
   Legend,
 } from 'recharts';
@@ -38,9 +39,32 @@ const SERIES_COLORS: Record<string, string> = {
 
 const DEFAULT_COLOR = '#6b7280';
 
-function formatXTick(dateStr: string): string {
-  const d = new Date(dateStr);
-  return d.toLocaleDateString('en-GB', { month: 'short', year: '2-digit' });
+// Pick ~5 evenly-spaced tick dates from the visible date array
+function computeTicks(dates: string[]): string[] {
+  if (dates.length === 0) return [];
+  if (dates.length <= 6) return dates;
+  const step = Math.floor(dates.length / 5);
+  const ticks: string[] = [];
+  for (let i = 0; i < dates.length - 1; i += step) {
+    ticks.push(dates[i]);
+  }
+  ticks.push(dates[dates.length - 1]);
+  return ticks;
+}
+
+// Format a date tick based on how much data is visible
+function makeTickFormatter(period: Period) {
+  return (dateStr: string) => {
+    const d = new Date(dateStr);
+    if (period === '1M') {
+      // "12 Jan"
+      return d.toLocaleDateString('en-GB', { day: 'numeric', month: 'short' });
+    }
+    // "Jan '26"
+    const month = d.toLocaleDateString('en-GB', { month: 'short' });
+    const year = String(d.getFullYear()).slice(2);
+    return `${month} '${year}`;
+  };
 }
 
 function CustomTooltip({
@@ -80,7 +104,7 @@ export default function StockComparisonChart({ series }: Props) {
     new Set(series.map(s => s.ticker))
   );
 
-  const chartData = useMemo(() => {
+  const { chartData, ticks } = useMemo(() => {
     const cutoff = new Date(Date.now() - PERIOD_DAYS[period] * 24 * 60 * 60 * 1000);
 
     const filtered = series.map(s => ({
@@ -94,7 +118,7 @@ export default function StockComparisonChart({ series }: Props) {
       new Set(filtered.flatMap(s => s.points.map(p => p.date)))
     ).sort();
 
-    return allDates.map(date => {
+    const rows = allDates.map(date => {
       const row: Record<string, string | number> = { date };
       for (const s of filtered) {
         const pt = s.points.find(p => p.date === date);
@@ -102,6 +126,8 @@ export default function StockComparisonChart({ series }: Props) {
       }
       return row;
     });
+
+    return { chartData: rows, ticks: computeTicks(allDates) };
   }, [series, period]);
 
   const toggleSeries = (ticker: string) => {
@@ -117,6 +143,8 @@ export default function StockComparisonChart({ series }: Props) {
   };
 
   if (series.length === 0) return null;
+
+  const tickFormatter = makeTickFormatter(period);
 
   return (
     <section className="mb-12">
@@ -170,13 +198,18 @@ export default function StockComparisonChart({ series }: Props) {
       <div style={{ width: '100%', height: 280 }}>
         <ResponsiveContainer width="100%" height={280}>
           <LineChart data={chartData} margin={{ top: 4, right: 8, bottom: 0, left: 0 }}>
+            <CartesianGrid
+              strokeDasharray="3 3"
+              stroke="var(--color-border)"
+              strokeOpacity={0.5}
+            />
             <XAxis
               dataKey="date"
-              tickFormatter={formatXTick}
+              ticks={ticks}
+              tickFormatter={tickFormatter}
               tick={{ fontSize: 11, fill: 'var(--color-text-secondary)', fontFamily: 'sans-serif' }}
               tickLine={false}
               axisLine={false}
-              interval="preserveStartEnd"
             />
             <YAxis
               tick={{ fontSize: 11, fill: 'var(--color-text-secondary)', fontFamily: 'sans-serif' }}
@@ -193,7 +226,7 @@ export default function StockComparisonChart({ series }: Props) {
               .map(s => (
                 <Line
                   key={s.ticker}
-                  type="monotone"
+                  type="linear"
                   dataKey={s.ticker}
                   name={s.label}
                   stroke={SERIES_COLORS[s.ticker] ?? DEFAULT_COLOR}
