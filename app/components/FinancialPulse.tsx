@@ -1,5 +1,4 @@
 import type { FinancialData } from '@/lib/utils/loadCompetitorIntel';
-import Sparkline from './Sparkline';
 
 type Props = {
   financials: FinancialData | null;
@@ -42,14 +41,6 @@ export default function FinancialPulse({ financials, isPublic }: Props) {
       <span className="text-[11px] text-[var(--color-text-secondary)] font-sans">
         {financials.ticker} · {financials.parentName}
       </span>
-      {financials.priceHistory && financials.priceHistory.length >= 3 && (
-        <span className="ml-auto">
-          <Sparkline
-            data={financials.priceHistory.map(p => p.close)}
-            positive={isUp}
-          />
-        </span>
-      )}
     </div>
   );
 }

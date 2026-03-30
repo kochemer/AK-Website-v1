@@ -8,6 +8,7 @@ import ArticleCard from '@/app/components/ArticleCard';
 import BrandFilterBar, { type BrandSummary } from '@/app/components/BrandFilterBar';
 import CompetitorBriefing from '@/app/components/CompetitorBriefing';
 import BrandProfileCard from '@/app/components/BrandProfileCard';
+import StockComparisonChart, { type StockSeries } from '@/app/components/StockComparisonChart';
 
 const SIGNAL_TAGS: SignalTag[] = [
   'Launch', 'Campaign', 'Partnership', 'Financials',
@@ -33,8 +34,9 @@ export default function CompetitorWatchContent({
 }: Props) {
   const t = getMessages(locale);
 
-  // Brand summaries for filter bar
-  const brandSummaries: BrandSummary[] = COMPETITOR_BRANDS.map(b => ({
+  // Brand summaries for filter bar (exclude Pandora — reference brand, not competitor)
+  const competitorBrands = COMPETITOR_BRANDS.filter(b => b.id !== 'pandora');
+  const brandSummaries: BrandSummary[] = competitorBrands.map(b => ({
     id: b.id,
     name: b.name,
     count: brandMap.get(b.id)?.length ?? 0,
@@ -44,7 +46,7 @@ export default function CompetitorWatchContent({
     ? COMPETITOR_BRANDS.find(b => b.id === activeBrand)?.name
     : undefined;
 
-  // Build deduplicated article rows with brand badges
+  // Build deduplicated article rows (exclude Pandora — has its own section)
   type Row = { article: Article; badges: string[] };
   let allRows: Row[] = [];
 
@@ -56,7 +58,7 @@ export default function CompetitorWatchContent({
     }));
   } else {
     const seen = new Map<string, Row>();
-    for (const brand of COMPETITOR_BRANDS) {
+    for (const brand of competitorBrands) {
       for (const article of brandMap.get(brand.id) ?? []) {
         if (!seen.has(article.url)) {
           seen.set(article.url, { article, badges: [] });
@@ -77,10 +79,10 @@ export default function CompetitorWatchContent({
     ? allRows.filter(r => r.article.signalTag === activeSignalTag)
     : allRows;
 
-  // Controversies block
+  // Controversies block (unfiltered only)
   const controversyRows = allRows.filter(r => r.article.signalTag === 'Controversy');
 
-  // Filtered mode hides briefing/brand profiles/controversies
+  // Filtered mode hides briefing/brand profiles/controversies/financials/pandora section
   const isFiltered = !!activeBrand || !!activeSignalTag;
 
   // Signal filter URL helper
@@ -92,22 +94,37 @@ export default function CompetitorWatchContent({
     return qs ? `${basePath}?${qs}` : basePath;
   };
 
-  // Financial snapshot pills (for filtered mode)
-  const financialPills = COMPETITOR_BRANDS
-    .map(b => ({ brand: b, fin: intel.brands[b.id]?.financials ?? null }))
-    .filter(({ fin }) => fin !== null) as { brand: typeof COMPETITOR_BRANDS[number]; fin: NonNullable<CompetitorIntel['brands'][CompetitorId]>['financials'] }[];
-
-  // Deduplicate by ticker so Cartier/Van Cleef and Tiffany/Bulgari don't repeat
+  // Build StockSeries for chart — deduplicate by ticker, public brands only
   const seenTickers = new Set<string>();
-  const uniqueFinancialPills = financialPills.filter(({ fin }) => {
-    if (!fin || seenTickers.has(fin.ticker)) return false;
-    seenTickers.add(fin.ticker);
-    return true;
-  });
+  const stockSeries: StockSeries[] = [];
+  for (const brand of COMPETITOR_BRANDS) {
+    if (!('isPublic' in brand) || !brand.isPublic) continue;
+    if (!('ticker' in brand) || !brand.ticker) continue;
+    if (seenTickers.has(brand.ticker)) continue;
+    seenTickers.add(brand.ticker);
+    const fin = intel.brands[brand.id]?.financials;
+    if (!fin?.priceHistory?.length) continue;
+    stockSeries.push({
+      ticker: fin.ticker,
+      label: fin.parentName,
+      currency: fin.currency,
+      priceHistory: fin.priceHistory,
+    });
+  }
+
+  // Pandora articles for "Pandora in the News" section
+  const pandoraArticles = (brandMap.get('pandora') ?? [])
+    .sort((a, b) => {
+      const dateA = a.published_at || a.ingested_at || '';
+      const dateB = b.published_at || b.ingested_at || '';
+      return dateB.localeCompare(dateA);
+    })
+    .slice(0, 8);
 
   return (
     <div className="max-w-4xl mx-auto px-4 md:px-8 py-12 md:py-16">
-      {/* Header */}
+
+      {/* ── Section 1: Header ── */}
       <header className="mb-6">
         <Link
           href={locale === 'en' ? '/' : `/${locale}`}
@@ -127,7 +144,7 @@ export default function CompetitorWatchContent({
         <hr className="border-[var(--color-accent)] border-t-2 mt-6" />
       </header>
 
-      {/* ── Filters (always visible at top) ── */}
+      {/* ── Section 2: Filters (always visible) ── */}
       <div className="mb-10">
         <BrandFilterBar
           brands={brandSummaries}
@@ -162,7 +179,7 @@ export default function CompetitorWatchContent({
         </div>
       </div>
 
-      {/* ── Section 1: Weekly Briefing (unfiltered only) ── */}
+      {/* ── Section 3: Weekly Summary (unfiltered only) ── */}
       {!isFiltered && (
         <CompetitorBriefing
           bullets={intel.briefing}
@@ -170,14 +187,19 @@ export default function CompetitorWatchContent({
         />
       )}
 
-      {/* ── Section 2: Brand Profiles (unfiltered only) ── */}
+      {/* ── Section 4: Financial Performance (unfiltered only) ── */}
+      {!isFiltered && stockSeries.length > 0 && (
+        <StockComparisonChart series={stockSeries} />
+      )}
+
+      {/* ── Section 5: Brand Profiles (unfiltered only) ── */}
       {!isFiltered && (
         <section className="mb-12">
           <p className="text-[11px] tracking-[0.3em] uppercase text-[var(--color-text-secondary)] font-sans font-semibold mb-6">
             Brand Profiles
           </p>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-            {COMPETITOR_BRANDS.map(brand => {
+            {competitorBrands.map(brand => {
               const articles = brandMap.get(brand.id) ?? [];
               if (articles.length === 0 && !intel.brands[brand.id]?.narrative) return null;
               return (
@@ -197,7 +219,7 @@ export default function CompetitorWatchContent({
         </section>
       )}
 
-      {/* ── Section 4: Controversies & Risks (unfiltered only) ── */}
+      {/* ── Section 6: Controversies & Risks (unfiltered only) ── */}
       {!isFiltered && controversyRows.length > 0 && (
         <section className="mb-12">
           <div className="border-l-4 border-amber-400 bg-amber-50 dark:bg-amber-900/10 rounded-sm px-5 py-4">
@@ -225,31 +247,7 @@ export default function CompetitorWatchContent({
         </section>
       )}
 
-      {/* ── Financial Snapshot strip (filtered mode only) ── */}
-      {isFiltered && uniqueFinancialPills.length > 0 && (
-        <div className="flex flex-wrap items-center gap-x-4 gap-y-2 mb-8 py-3 border-y border-[var(--color-border)]">
-          <span className="text-[10px] tracking-[0.3em] uppercase text-[var(--color-text-secondary)] font-sans font-semibold shrink-0">
-            Markets
-          </span>
-          {uniqueFinancialPills.map(({ fin }) => {
-            if (!fin) return null;
-            const isUp = fin.change1w >= 0;
-            return (
-              <span key={fin.ticker} className="text-[12px] font-sans text-[var(--color-text-secondary)] whitespace-nowrap">
-                <span className="font-medium text-[var(--color-text-primary)]">{fin.parentName}</span>
-                {' '}
-                <span>{fin.currency} {fin.price.toLocaleString()}</span>
-                {' '}
-                <span className={isUp ? 'text-green-600 dark:text-green-400' : 'text-red-600 dark:text-red-400'}>
-                  {isUp ? '▲' : '▼'}{Math.abs(fin.change1w).toFixed(1)}%
-                </span>
-              </span>
-            );
-          })}
-        </div>
-      )}
-
-      {/* ── Section 3: Article feed ── */}
+      {/* ── Section 7: Latest Intelligence (article feed, always visible) ── */}
       <section>
         <div className="flex items-center justify-between mb-6">
           <h2 className="text-[11px] tracking-[0.3em] uppercase text-[var(--color-text-secondary)] font-sans font-semibold">
@@ -294,16 +292,31 @@ export default function CompetitorWatchContent({
         )}
       </section>
 
-      {/* ── Section 5: Pandora Reference Strip (unfiltered only) ── */}
-      {!isFiltered && (
-        <aside className="mt-16 pt-8 border-t border-[var(--color-border)]">
-          <p className="text-[11px] tracking-[0.3em] uppercase text-[var(--color-text-secondary)] font-sans font-semibold mb-3">
-            Pandora Reference
+      {/* ── Section 8: Pandora in the News (unfiltered only) ── */}
+      {!isFiltered && pandoraArticles.length > 0 && (
+        <section className="mt-16 pt-8 border-t border-[var(--color-border)]">
+          <p className="text-[11px] tracking-[0.3em] uppercase text-[var(--color-text-secondary)] font-sans font-semibold mb-6">
+            Pandora in the News
           </p>
-          <p className="text-body text-[var(--color-text-secondary)] max-w-2xl">
-            Pandora is the world's largest jewellery brand by volume. Price tier: affordable-premium (€10–€300). Key markets: Europe, Americas, Asia-Pacific. Differentiators: charm system, personalisation, accessible luxury, scale manufacturing, wide retail network. Listed on Nasdaq Copenhagen (PNDORA).
-          </p>
-        </aside>
+          <ul>
+            {pandoraArticles.map((article, i) => (
+              <li key={article.url}>
+                <ArticleCard
+                  title={article.title}
+                  url={article.url}
+                  source={article.source}
+                  date={article.published_at}
+                  summary={article.aiSummary}
+                  badges={article.signalTag ? [article.signalTag] : undefined}
+                  locale={locale}
+                  translations={article.translations}
+                  aiSummaryLabel={t.digest.aiSummary}
+                  variant={i === 0 ? 'featured' : 'default'}
+                />
+              </li>
+            ))}
+          </ul>
+        </section>
       )}
     </div>
   );

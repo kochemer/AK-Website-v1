@@ -23,6 +23,8 @@ import { matchCompetitors } from '../lib/utils/competitorMatcher';
 import { getModelFor, maxTokensParam, temperatureParam } from '../lib/llm/models';
 import type { Article, SignalTag } from '../lib/types/article';
 import type { CompetitorIntel, BrandIntel, FinancialData } from '../lib/utils/loadCompetitorIntel';
+import { loadStockHistory, mergeStockHistory, saveStockHistory } from '../lib/utils/stockHistory';
+import type { StockCandle } from '../lib/utils/stockHistory';
 
 // ── Constants ──────────────────────────────────────────────────────────────
 
@@ -181,6 +183,10 @@ async function fetchFinancials(): Promise<Map<string, FinancialData>> {
     return result;
   }
 
+  // Load persistent stock history
+  const existingHistory = await loadStockHistory();
+  const newCandlesMap = new Map<string, StockCandle[]>();
+
   for (const { ticker, parentName } of PUBLIC_TICKERS) {
     try {
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -189,7 +195,7 @@ async function fetchFinancials(): Promise<Map<string, FinancialData>> {
       try {
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
         chartResult = await (yahooFinance.chart as (symbol: string, opts: any) => Promise<any>)(ticker, {
-          period1: DateTime.now().minus({ weeks: 13 }).toJSDate(),
+          period1: DateTime.now().minus({ weeks: 54 }).toJSDate(),
           period2: new Date(),
           interval: '1wk',
         });
@@ -200,12 +206,14 @@ async function fetchFinancials(): Promise<Map<string, FinancialData>> {
       const price = quote.regularMarketPrice ?? 0;
       const currency = quote.currency ?? 'USD';
 
-      // Calculate 1-week % change from most recent two weekly candles
+      // Calculate 1-week % change — skip last candle (partial current week)
       let change1w = 0;
-      if (chartResult?.quotes && chartResult.quotes.length >= 2) {
-        const quotes = chartResult.quotes;
-        const prev = quotes[quotes.length - 2]?.close;
-        const latest = quotes[quotes.length - 1]?.close;
+      if (chartResult?.quotes && chartResult.quotes.length >= 3) {
+        const completedQuotes = (chartResult.quotes as { close?: number | null }[])
+          .filter(q => q.close != null);
+        // Skip last entry (partial current week)
+        const prev = completedQuotes[completedQuotes.length - 3]?.close;
+        const latest = completedQuotes[completedQuotes.length - 2]?.close;
         if (prev && latest && prev > 0) {
           change1w = ((latest - prev) / prev) * 100;
         }
@@ -213,16 +221,20 @@ async function fetchFinancials(): Promise<Map<string, FinancialData>> {
         change1w = quote.regularMarketChangePercent;
       }
 
-      // Build price history: last 12 weekly closes
-      const priceHistory = chartResult?.quotes
+      // Build completed candles from live chart (exclude partial last candle)
+      const liveCandles: StockCandle[] = chartResult?.quotes
         ? (chartResult.quotes as { date?: Date | string; close?: number | null }[])
             .filter(q => q.close != null)
             .map(q => ({
               date: q.date instanceof Date ? q.date.toISOString() : String(q.date),
               close: q.close as number,
             }))
-            .slice(-12)
-        : undefined;
+            .slice(-13, -1)
+        : [];
+
+      if (liveCandles.length > 0) {
+        newCandlesMap.set(ticker, liveCandles);
+      }
 
       result.set(ticker, {
         ticker,
@@ -231,12 +243,25 @@ async function fetchFinancials(): Promise<Map<string, FinancialData>> {
         currency,
         change1w: Math.round(change1w * 100) / 100,
         fetchedAt: new Date().toISOString(),
-        priceHistory,
+        // priceHistory will be replaced with full merged history below
+        priceHistory: liveCandles.length > 0 ? liveCandles : undefined,
       });
 
       console.log(`  [financials] ${ticker} (${parentName}): ${currency} ${price.toFixed(2)} (${change1w >= 0 ? '+' : ''}${change1w.toFixed(2)}%)`);
     } catch (err) {
       console.warn(`  [financials] Failed to fetch ${ticker}:`, err);
+    }
+  }
+
+  // Merge new candles into persistent history and save
+  const mergedHistory = mergeStockHistory(existingHistory, newCandlesMap);
+  await saveStockHistory(mergedHistory);
+  console.log('  [financials] Stock history saved to data/stock-history.json');
+
+  // Attach full merged history to each result
+  for (const [ticker, finData] of result) {
+    if (mergedHistory[ticker]) {
+      finData.priceHistory = mergedHistory[ticker];
     }
   }
 
