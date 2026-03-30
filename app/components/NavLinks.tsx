@@ -17,7 +17,6 @@ export default function NavLinks() {
     { href: `${prefix}/archive`, label: t.nav.archive },
     { href: `${prefix}/competitor-watch`, label: t.nav.competitorWatch },
     { href: `${prefix}/about`, label: t.nav.about },
-    { href: `${prefix}/methodology`, label: t.nav.methodology },
   ];
 
   return (
