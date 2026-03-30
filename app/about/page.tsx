@@ -1,5 +1,27 @@
 import Link from 'next/link';
+import type { Metadata } from 'next';
 import PipelineDiagram from '@/app/components/PipelineDiagram';
+import { getSiteUrl } from '@/lib/utils/siteUrl';
+
+const siteUrl = getSiteUrl();
+
+export const metadata: Metadata = {
+  title: 'About – Luxury Intelligence',
+  description: 'How Luxury Intelligence curates, scores, and summarises the week\'s most important news across AI, ecommerce, luxury, and jewellery.',
+  alternates: {
+    canonical: `${siteUrl}/about`,
+  },
+  openGraph: {
+    title: 'About – Luxury Intelligence',
+    description: 'How Luxury Intelligence curates, scores, and summarises the week\'s most important news across AI, ecommerce, luxury, and jewellery.',
+    images: [`${siteUrl}/api/og`],
+  },
+  twitter: {
+    title: 'About – Luxury Intelligence',
+    description: 'How Luxury Intelligence curates, scores, and summarises the week\'s most important news across AI, ecommerce, luxury, and jewellery.',
+    images: [`${siteUrl}/api/og`],
+  },
+};
 
 export default function AboutPage() {
   return (

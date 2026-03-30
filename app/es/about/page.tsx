@@ -1,4 +1,26 @@
 import Link from 'next/link';
+import type { Metadata } from 'next';
+import { getSiteUrl } from '@/lib/utils/siteUrl';
+
+const siteUrl = getSiteUrl();
+
+export const metadata: Metadata = {
+  title: 'Acerca de – Luxury Intelligence',
+  description: 'Cómo Luxury Intelligence cura, puntúa y resume las noticias más importantes de la semana en IA, ecommerce, lujo y joyería.',
+  alternates: {
+    canonical: `${siteUrl}/es/about`,
+  },
+  openGraph: {
+    title: 'Acerca de – Luxury Intelligence',
+    description: 'Cómo Luxury Intelligence cura, puntúa y resume las noticias más importantes de la semana en IA, ecommerce, lujo y joyería.',
+    images: [`${siteUrl}/api/og`],
+  },
+  twitter: {
+    title: 'Acerca de – Luxury Intelligence',
+    description: 'Cómo Luxury Intelligence cura, puntúa y resume las noticias más importantes de la semana en IA, ecommerce, lujo y joyería.',
+    images: [`${siteUrl}/api/og`],
+  },
+};
 
 export default function AboutPageES() {
   return (
