@@ -482,21 +482,22 @@ async function generateCoverImage(
 function hardenPromptForPhotorealism(prompt: string): string {
   return `${prompt}
 
-HYPER-REALISTIC PHOTOGRAPHY MANDATE (CRITICAL):
-- Shot on professional DSLR or medium-format camera with portrait lens (80-200mm)
-- Shallow depth of field (f/2.8 - f/5.6) with sharp subject, soft background
-- Natural or practical lighting ONLY—no artificial glow, no studio artifacts
-- Real-world textures: fabric weave visible, metal patina, wood grain, marble veining, dust particles
-- Realistic human skin: visible pores, subtle imperfections, realistic hair texture
-- Authentic reflections on glass, metal, and polished surfaces
-- Cinematic color grading (warm, magazine-quality, like Financial Times / Vogue Business)
-- Editorial realism—looks like it could be a real photograph in a real location
+PHOTOGRAPHY REALISM MANDATE (CRITICAL):
+- Looks like a real press or editorial photograph — like a photo in the Financial Times or WSJ
+- Flat, even, overcast daylight or diffused indoor light — no dramatic spotlights, no warm glows, no vignettes
+- EVERYTHING IN FOCUS — large depth of field, sharp foreground AND background
+- No bokeh, no blurred background, no shallow depth of field
+- Colors are natural, slightly desaturated, true-to-life — NOT vivid, NOT golden, NOT cinematic
+- Surfaces look real: slight dust, scratches, imperfections — not perfect and shiny
+- Background is visible and in focus — like a real room or counter, not a dark void
 
-ANTI-CARTOON / ANTI-CGI (STRICT):
-- ZERO illustration, cartoon, anime, 3D render, CGI, or synthetic look
-- No glossy, over-processed, or "perfect" digital rendering
-- NO blurry backgrounds that look AI-generated or unrealistic
-- Must look like actual photography, not digital art
+ANTI-CGI / ANTI-RENDER (STRICT):
+- ZERO 3D render, CGI, game engine, or product-render aesthetic
+- NO dramatic lighting, spotlight halos, glowing edges, or rim lighting
+- NO blurred backgrounds or bokeh
+- NO golden/warm color grading
+- NO perfect reflections or studio-quality polish
+- Must look like a snapshot taken in a real location with natural light
 
 NO-TEXT GUARANTEE:
 - Absolutely no text, letters, numbers, typography, signage, labels, price tags.

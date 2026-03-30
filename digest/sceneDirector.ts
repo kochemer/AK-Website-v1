@@ -240,19 +240,26 @@ ANTI-CLICHE GUIDE (PRODUCT PHOTOGRAPHY STYLE):
 - Keep it pure product photography—no narrative, just smart object selection`;
   }
 
+  const companyNames = articles
+    .map(a => a.source?.replace(/\s*-\s*.*$/, '').trim())
+    .filter(Boolean)
+    .filter((v, i, arr) => arr.indexOf(v) === i)
+    .join(', ');
+
   return `You are a Scene Director for a weekly intelligence digest.
 
 Your job is to create a SINGLE photorealistic scene that acts as a playful, slightly absurd visual metaphor for the week's most important articles.
 
 STYLE & TONE
-- Hyper-realistic photography — looks like a real photograph, not digital art
-- Professional DSLR with shallow depth of field, sharp focus on hero subject
-- Natural or practical lighting, cinematic color grading (Financial Times / Vogue Business)
-- Lively, humorous, slightly silly — grounded in photographic reality
-- Smart visual joke, not cartoonish or CGI
-- Absurd situations allowed if they look like real photographs
-- The goal: viewer pauses, smiles, then gets the joke
-- CONSISTENT AESTHETIC: high-end editorial photography (close-up product shots, store interiors, or luxury environments)
+- Looks like a real press photograph — sharp, flat, everything in focus
+- NO bokeh, NO blurred backgrounds, NO dramatic spotlight lighting, NO dark backgrounds
+- Flat fluorescent or overcast daylight lighting — like a supermarket, an office, a shop floor
+- Natural, neutral colors — not golden, not warm-toned, not cinematic
+- SURFACE CHOICE IS CRITICAL: choose a surface that naturally has flat, bright lighting
+  Good examples: supermarket checkout conveyor belt, stainless steel shop counter, white office desk, grey warehouse floor, plain wooden table near a window
+  Bad examples: dark glossy counter, black surface, velvet, dark backdrop — these always cause dramatic CGI lighting
+- Lively, humorous, slightly silly — but fully grounded in photographic reality
+- CONSISTENT AESTHETIC: editorial press photography (WSJ, FT, Reuters) — sharp, flat, real, mundane setting
 
 MANDATORY RULES
 - NO text, logos, signs, UI, screens, or readable symbols
@@ -282,6 +289,9 @@ Optionally add one Flavor Enhancer:
 - Mirror/reflection reveal
 - Partial obstruction creating mystery
 - Implied motion or "just happened" moment
+
+SUBTLE BRAND LOGOS (ENCOURAGED):
+Include subtle, recognisable logos of the companies mentioned in the articles (${companyNames}) as props within the scene — e.g. on a shopping bag, a box, a tag, a sticker on an object. Keep them small, natural, and incidental. Do NOT make the logo the focal point.
 ${antiRepetitionConstraint}
 
 ARTICLES TO REPRESENT:
@@ -293,13 +303,14 @@ OUTPUT FORMAT (JSON only, no markdown, no code blocks):
   "primaryHumorDriver": "one of: role reversal, scale absurdity, literal metaphor, fish-out-of-water, visual punchline",
   "secondaryEnhancer": "optional flavor enhancer or null",
   "sceneDescription": "vivid, concrete description of the scene. Be specific about objects, lighting, composition, and the visual joke. Describe what makes it absurd but believable.",
-  "finalImagePrompt": "A SINGLE STRING ready for DALL-E. Must include: hyper-realistic photography style, specific lighting (natural/practical), camera framing (lens/DOF), wide horizontal banner composition (3:1 aspect ratio, elements in central horizontal band, safe margins), explicit 'no text/no signage/no screens' constraints, the absurd/playful visual metaphor clearly described, photorealistic materials and textures. The prompt should make the visual joke clear while ensuring photorealism.",
+  "finalImagePrompt": "A SINGLE STRING ready for DALL-E. Must describe: the objects and their arrangement, the surface they sit on (a real counter, shelf, checkout belt — lit by daylight), wide horizontal banner composition (3:1 aspect ratio, elements in central horizontal band). DO NOT mention bokeh, shallow depth of field, f-stops, cinematic, dark background, dramatic lighting, or blurred backgrounds — these cause CGI output. Describe flat overcast daylight, everything in focus, neutral colors, real textures.",
   "negativePrompt": [
-    "text, letters, numbers, signage, labels",
+    "text, letters, numbers, signage, labels, price tags",
     "screens, UI, dashboards, holograms, floating icons",
-    "logos, brands, watermarks",
+    "watermarks, unrelated brand logos",
     "cartoon, illustration, CGI, 3D render, anime",
-    "diamond, diamonds, gemstone, gemstones, precious stones, jewelry close-up, jewelry product shot, diamond ring, diamond necklace, diamond earring, jeweled, sparkling gemstone"
+    "diamond, diamonds, gemstone, gemstones, precious stones, jewelry close-up, jewelry product shot, diamond ring, diamond necklace, diamond earring, jeweled, sparkling gemstone",
+    "dramatic spotlight, glowing edges, rim lighting, vignette, cinematic color grade, blurred background, bokeh"
   ],
   "confidence": 0.0
 }
