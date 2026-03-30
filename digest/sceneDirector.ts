@@ -251,15 +251,11 @@ ANTI-CLICHE GUIDE (PRODUCT PHOTOGRAPHY STYLE):
 Your job is to create a SINGLE photorealistic scene that acts as a playful, slightly absurd visual metaphor for the week's most important articles.
 
 STYLE & TONE
-- Looks like a real press photograph — sharp, flat, everything in focus
-- NO bokeh, NO blurred backgrounds, NO dramatic spotlight lighting, NO dark backgrounds
-- Flat fluorescent or overcast daylight lighting — like a supermarket, an office, a shop floor
-- Natural, neutral colors — not golden, not warm-toned, not cinematic
-- SURFACE CHOICE IS CRITICAL: choose a surface that naturally has flat, bright lighting
-  Good examples: supermarket checkout conveyor belt, stainless steel shop counter, white office desk, grey warehouse floor, plain wooden table near a window
-  Bad examples: dark glossy counter, black surface, velvet, dark backdrop — these always cause dramatic CGI lighting
-- Lively, humorous, slightly silly — but fully grounded in photographic reality
-- CONSISTENT AESTHETIC: editorial press photography (WSJ, FT, Reuters) — sharp, flat, real, mundane setting
+- Hyper-realistic: must look like an actual photograph, not an AI image
+- Think: stock photo from Getty or Shutterstock — something a human photographer could have shot
+- Mundane, naturally-lit setting — supermarket shelf, wooden table, shop counter, checkout belt
+- Avoid dark surfaces, black backdrops, velvet — these cause CGI-looking dramatic lighting
+- Lively and slightly absurd through the combination of objects — not through visual effects
 
 MANDATORY RULES
 - NO text, logos, signs, UI, screens, or readable symbols
@@ -303,7 +299,7 @@ OUTPUT FORMAT (JSON only, no markdown, no code blocks):
   "primaryHumorDriver": "one of: role reversal, scale absurdity, literal metaphor, fish-out-of-water, visual punchline",
   "secondaryEnhancer": "optional flavor enhancer or null",
   "sceneDescription": "vivid, concrete description of the scene. Be specific about objects, lighting, composition, and the visual joke. Describe what makes it absurd but believable.",
-  "finalImagePrompt": "A SINGLE STRING ready for DALL-E. Must describe: the objects and their arrangement, the surface they sit on (a real counter, shelf, checkout belt — lit by daylight), wide horizontal banner composition (3:1 aspect ratio, elements in central horizontal band). DO NOT mention bokeh, shallow depth of field, f-stops, cinematic, dark background, dramatic lighting, or blurred backgrounds — these cause CGI output. Describe flat overcast daylight, everything in focus, neutral colors, real textures.",
+  "finalImagePrompt": "Describe ONLY: what objects are in the scene, where they are placed, and what surface/environment they sit in. Write it as a plain scene description — as if describing a real photograph to someone. Do NOT mention camera settings, f-stops, bokeh, depth of field, lighting rigs, cinematic, or composition rules — those cause CGI output. Keep it under 80 words.",
   "negativePrompt": [
     "text, letters, numbers, signage, labels, price tags",
     "screens, UI, dashboards, holograms, floating icons",

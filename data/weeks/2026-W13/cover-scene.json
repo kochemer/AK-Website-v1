@@ -1,9 +1,9 @@
 {
-  "concept": "tiktok-amazon-relay-race-fish-out-of-water",
+  "concept": "lost-ring-flash-sale-fish-out-of-water",
   "primaryHumorDriver": "fish-out-of-water",
-  "secondaryEnhancer": "implied motion ('just happened' moment)",
-  "sceneDescription": "On a bright white office desk, a line of relay batons made from unexpected retail objects snakes left to right: a TikTok-branded makeup palette (subtle logo), a large Ulta-branded hairbrush, a Sally Beauty nail polish bottle, a tiny cardboard Amazon shipping box with a Prime tape, and an old-fashioned gold pocket watch (standing in for 'lost heirloom', but NOT a diamond). Each baton/object has a runner's hand just out of frame, as if they've just been handed off in a relay. Scattered in the background: a single running shoe, a Modern Retail magazine peeking from a tote, and a small Instore Magazine sticker on the pocket watch. The absurdity is in the retail-themed objects staged as a relay race, visually representing brands 'passing the baton' as commerce events shift. The lighting is flat, bright, and neutral, with everything in sharp focus and natural shadow from overcast daylight.",
-  "finalImagePrompt": "A photorealistic wide banner scene of a bright white office desk under flat daylight, with a horizontal line of relay batons made from retail objects: a TikTok-branded makeup palette, an Ulta-branded hairbrush, a Sally Beauty nail polish bottle, a small Amazon shipping box with Prime tape, and an old-fashioned gold pocket watch. Each object sits in a neat line as if just passed in a relay race, with a runner's hand just out of frame at each baton, implying motion. In the background, a single running shoe, a Modern Retail magazine partly visible from a tote bag, and a tiny Instore Magazine sticker on the pocket watch. Everything is sharply in focus, with natural, neutral colors and real textures. The scene is lively and absurd but believable, with no text or signage.",
+  "secondaryEnhancer": "implied motion",
+  "sceneDescription": "On a supermarket checkout belt, a sleek gold watch sits open on a plastic fruit tray, with beauty product bottles (Ulta, Sally Beauty) tucked among loose bananas. A running shoe, laced with a gold wedding band instead of a shoelace, is caught mid-tip as if just dropped. A small Amazon shipping box and a TikTok-branded tote bag (logos subtle, on box and bag tags) rest awkwardly among the groceries. The playful absurdity: luxury and retail icons in a mundane, everyday shopping moment, with the running shoe suggesting a frantic search for a lost ring—a nod to the marathon jeweler story.",
+  "finalImagePrompt": "A supermarket checkout belt holds an open gold watch on a fruit tray beside a running shoe with a gold ring used as a shoelace tip. Beauty product bottles are nestled among bananas. An Amazon-branded cardboard box and a TikTok-branded reusable tote bag are placed naturally among the groceries. Everything looks freshly placed, as if hurriedly dropped for checkout. The scene is lively and photorealistic, with no text or price tags visible.",
   "negativePrompt": [
     "text, letters, numbers, signage, labels, price tags",
     "screens, UI, dashboards, holograms, floating icons",
@@ -12,5 +12,5 @@
     "diamond, diamonds, gemstone, gemstones, precious stones, jewelry close-up, jewelry product shot, diamond ring, diamond necklace, diamond earring, jeweled, sparkling gemstone",
     "dramatic spotlight, glowing edges, rim lighting, vignette, cinematic color grade, blurred background, bokeh"
   ],
-  "confidence": 0.75
+  "confidence": 0.78
 }

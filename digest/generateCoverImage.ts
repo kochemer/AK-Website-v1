@@ -401,13 +401,12 @@ async function generateCoverImage(
   try {
     const openai = new OpenAI({ apiKey });
     
-    console.log('Generating cover image with DALL-E 3...');
+    console.log('Generating cover image with gpt-image-1...');
 
-    // DALL-E 3 model (higher quality than gpt-image-1.5)
-    const model = 'dall-e-3';
+    const model = 'gpt-image-1';
 
-    // DALL-E 3 supports 1024x1024 and 1792x1024 (wide format for cover)
-    let size: "1024x1024" | "1792x1024" = '1792x1024';
+    // gpt-image-1 supports 1024x1024 and 1536x1024 (wide format for cover)
+    let size: "1024x1024" | "1536x1024" = '1536x1024';
     let response;
     
     try {
@@ -480,49 +479,18 @@ async function generateCoverImage(
  * Harden prompt with ultra-photorealism enforcement and anti-text guarantees
  */
 function hardenPromptForPhotorealism(prompt: string): string {
-  return `${prompt}
+  return `Photograph: ${prompt}
 
-PHOTOGRAPHY REALISM MANDATE (CRITICAL):
-- Looks like a real press or editorial photograph — like a photo in the Financial Times or WSJ
-- Flat, even, overcast daylight or diffused indoor light — no dramatic spotlights, no warm glows, no vignettes
-- EVERYTHING IN FOCUS — large depth of field, sharp foreground AND background
-- No bokeh, no blurred background, no shallow depth of field
-- Colors are natural, slightly desaturated, true-to-life — NOT vivid, NOT golden, NOT cinematic
-- Surfaces look real: slight dust, scratches, imperfections — not perfect and shiny
-- Background is visible and in focus — like a real room or counter, not a dark void
+This must look like a real photograph taken by a human — not AI-generated, not CGI, not a 3D render. Natural light. Real objects. Real imperfections. Fill the entire frame edge to edge with the scene — no black bars, no empty space at the edges.
 
-ANTI-CGI / ANTI-RENDER (STRICT):
-- ZERO 3D render, CGI, game engine, or product-render aesthetic
-- NO dramatic lighting, spotlight halos, glowing edges, or rim lighting
-- NO blurred backgrounds or bokeh
-- NO golden/warm color grading
-- NO perfect reflections or studio-quality polish
-- Must look like a snapshot taken in a real location with natural light
-
-NO-TEXT GUARANTEE:
-- Absolutely no text, letters, numbers, typography, signage, labels, price tags.
-- No screens, dashboards, UI, holograms, floating icons, charts.
-- Avoid objects that commonly contain text. If unavoidable, fully out of focus and unreadable.
-
-HARD BAN - NO DIAMONDS OR GEMSTONES:
-- DO NOT include diamonds, gemstones, precious stones, or jewelry product shots.
-- No diamond rings, necklaces, earrings, or close-ups of jewelry.
-- Use conceptual metaphors instead.`;
+Do not include: text, labels, signage, screens, UI, logos unrelated to the scene, diamonds, gemstones, CGI lighting, dramatic spotlights, or blurred vignette backgrounds.`;
 }
 
 /**
  * Add banner composition constraints to ensure wide, shallow hero image format
  */
 function addBannerCompositionConstraints(prompt: string): string {
-  const hardened = hardenPromptForPhotorealism(prompt);
-  return `${hardened}
-
-COMPOSITION FOR WIDE HERO BANNER (CRITICAL):
-- Wide, horizontally expansive banner format (target 3:1 or wider aspect ratio)
-- Vertically minimal height - all important visual elements must be placed in the central horizontal band
-- Safe margins at top and bottom - no critical content near vertical edges
-- Composition must work when displayed in a wide, shallow container
-- Avoid vertical stacking, tall elements, or content that extends to top/bottom edges`;
+  return hardenPromptForPhotorealism(prompt);
 }
 
 /**
@@ -681,7 +649,7 @@ export async function generateWeeklyCoverImage(
     }
     
     // Add debugging artifacts
-    coverInputData.model = imageResult.model || 'dall-e-3';
+    coverInputData.model = imageResult.model || 'gpt-image-1';
     coverInputData.finalPrompt = finalPrompt;
     coverInputData.imageSize = imageResult.size || '1792x1024';
     coverInputData.outputPath = `/weekly-images/${weekLabel}.png`;
