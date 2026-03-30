@@ -482,23 +482,31 @@ async function generateCoverImage(
 function hardenPromptForPhotorealism(prompt: string): string {
   return `${prompt}
 
-PHOTOREALISM ENFORCEMENT:
-- Ultra photorealistic editorial photograph, shot on a real DSLR or medium-format camera.
-- Natural lighting, realistic skin texture, realistic reflections, realistic materials, real physics.
-- Candid editorial realism; avoid stock-photo staging.
+HYPER-REALISTIC PHOTOGRAPHY MANDATE (CRITICAL):
+- Shot on professional DSLR or medium-format camera with portrait lens (80-200mm)
+- Shallow depth of field (f/2.8 - f/5.6) with sharp subject, soft background
+- Natural or practical lighting ONLY—no artificial glow, no studio artifacts
+- Real-world textures: fabric weave visible, metal patina, wood grain, marble veining, dust particles
+- Realistic human skin: visible pores, subtle imperfections, realistic hair texture
+- Authentic reflections on glass, metal, and polished surfaces
+- Cinematic color grading (warm, magazine-quality, like Financial Times / Vogue Business)
+- Editorial realism—looks like it could be a real photograph in a real location
 
-ANTI-CARTOON / ANTI-CGI:
-- No illustration, no cartoon, no anime, no 3D render, no CGI, no synthetic look.
+ANTI-CARTOON / ANTI-CGI (STRICT):
+- ZERO illustration, cartoon, anime, 3D render, CGI, or synthetic look
+- No glossy, over-processed, or "perfect" digital rendering
+- NO blurry backgrounds that look AI-generated or unrealistic
+- Must look like actual photography, not digital art
 
 NO-TEXT GUARANTEE:
 - Absolutely no text, letters, numbers, typography, signage, labels, price tags.
 - No screens, dashboards, UI, holograms, floating icons, charts.
-- Avoid any objects that commonly contain text (posters, newspapers, packaging, storefront signs). If unavoidable, they must be fully out of focus and unreadable.
+- Avoid objects that commonly contain text. If unavoidable, fully out of focus and unreadable.
 
 HARD BAN - NO DIAMONDS OR GEMSTONES:
-- DO NOT include diamonds, gemstones, precious stones, or jewelry product shots of any kind.
+- DO NOT include diamonds, gemstones, precious stones, or jewelry product shots.
 - No diamond rings, necklaces, earrings, or close-ups of jewelry.
-- This applies regardless of the article topic. Use conceptual metaphors instead.`;
+- Use conceptual metaphors instead.`;
 }
 
 /**

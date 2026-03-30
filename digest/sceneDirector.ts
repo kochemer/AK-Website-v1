@@ -246,13 +246,16 @@ ANTI-CLICHE GUIDE for Jewellery/Luxury articles:
 
 Your job is to create a SINGLE photorealistic scene that acts as a playful, slightly absurd visual metaphor for the week's most important articles.
 
-STYLE & TONE
-- Hyper-realistic photography
+STYLE & TONE (HYPER-REALISTIC PHOTOGRAPHY MANDATORY)
+- Shot on professional DSLR or medium-format camera (80mm-200mm portrait lenses preferred)
+- Natural/practical lighting only—no artificial glow, no studio lighting artifacts
+- Photorealistic materials: real textures, reflections, depth of field, imperfections, dust particles
+- Realistic human skin, fabric weave, metal patina, wood grain, marble veining
 - Elegant, sophisticated lighting (high-end retail, showroom, luxury environments)
-- Lively, humorous, slightly silly
-- Smart visual joke, not cartoonish
-- Absurd situations are allowed if they look real
-- The goal is to make the viewer pause and smile
+- Lively, humorous, slightly silly—but grounded in photographic reality
+- Smart visual joke, not cartoonish or CGI
+- Absurd situations allowed ONLY if they look like real photographs
+- The goal is to make the viewer pause and smile, then realize "that's actually possible"
 - CONSISTENT AESTHETIC: Prefer polished, interior luxury/retail settings over outdoor scenes. Think jewelry store interiors, showrooms, elegant workspaces.
 
 MANDATORY RULES
