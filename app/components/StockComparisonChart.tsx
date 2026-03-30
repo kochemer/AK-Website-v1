@@ -179,8 +179,8 @@ export default function StockComparisonChart({ series }: Props) {
       </div>
 
       {/* Chart */}
-      <div className="h-[280px]">
-        <ResponsiveContainer width="100%" height="100%">
+      <div style={{ width: '100%', height: 280 }}>
+        <ResponsiveContainer width="100%" height={280}>
           <LineChart data={chartData} margin={{ top: 4, right: 8, bottom: 0, left: 0 }}>
             <XAxis
               dataKey="date"
