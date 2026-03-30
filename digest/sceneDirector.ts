@@ -244,37 +244,29 @@ ANTI-CLICHE GUIDE (PRODUCT PHOTOGRAPHY STYLE):
 
 Your job is to create a SINGLE photorealistic scene that acts as a playful, slightly absurd visual metaphor for the week's most important articles.
 
-STYLE & TONE (PRODUCT PHOTOGRAPHY - CLOSE-UP, TABLETOP STYLE)
-- Overhead or 45-degree product photography shot (NOT full-scene narrative)
-- Objects on a dark counter/table surface (kitchen counter, display table, dark background)
-- Professional DSLR with 85-100mm macro lens creating shallow depth of field
-- Sharp focus on hero objects in foreground, soft bokeh background
-- Studio-quality lighting revealing texture, reflections, and material properties
-- Mix everyday items with luxury objects (apples with rings, bread with watches, coins with gold)
-- The absurdism comes from OBJECT COMBINATIONS, not narrative scenarios
-- NO people, NO full-room scenes, NO backgrounds with depth—PURE PRODUCT FOCUS
-- Lively, humorous, slightly silly through object arrangement and juxtaposition
-- Smart visual joke: everyday + luxury = unexpected value commentary
-- The goal: viewer sees arrangement and smiles at the wit of the product mix
-- CONSISTENT AESTHETIC: Tabletop product photography style (like Vogue, WSJ Magazine still life)
+STYLE & TONE
+- Hyper-realistic photography — looks like a real photograph, not digital art
+- Professional DSLR with shallow depth of field, sharp focus on hero subject
+- Natural or practical lighting, cinematic color grading (Financial Times / Vogue Business)
+- Lively, humorous, slightly silly — grounded in photographic reality
+- Smart visual joke, not cartoonish or CGI
+- Absurd situations allowed if they look like real photographs
+- The goal: viewer pauses, smiles, then gets the joke
+- CONSISTENT AESTHETIC: high-end editorial photography (close-up product shots, store interiors, or luxury environments)
 
-MANDATORY RULES (PRODUCT PHOTOGRAPHY)
+MANDATORY RULES
 - NO text, logos, signs, UI, screens, or readable symbols
 - NO illustration, CGI, or cartoon style
-- NO people, NO full-room scenes, NO narrative backgrounds
-- OBJECTS ONLY on a dark surface (table, counter, shelf)
 - Photorealistic lighting, textures, materials, reflections
-- Wide banner composition (objects arranged left-to-right in central horizontal band)
-- Shallow depth of field (bokeh background, sharp focus on objects)
-- ONE coherent product arrangement (no collage, no multi-scene)
+- Wide banner composition (elements in central horizontal band)
+- ONE coherent scene (no collage, no multi-scene)
 
-CREATIVE GUIDANCE (TABLETOP STILL LIFE)
-- Objects are the ONLY subjects—no people, animals, or beings
-- Humor comes from OBJECT COMBINATION: everyday + luxury = unexpected value commentary
-- Think: fancy gold watch next to an apple, diamond ring next to a loaf of bread
-- The visual joke is the juxtaposition, not a narrative or scenario
+CREATIVE GUIDANCE
+- Objects should carry the visual joke — people are optional and secondary
+- Humor comes from unexpected object combinations or situations
+- People in the background are fine; avoid scenes where people are just standing around talking
 - Objects should be recognizable, real, and touchable-looking
-- Recency is irrelevant - focus on the conceptual essence through object selection
+- Recency is irrelevant - focus on the conceptual essence
 
 BORINGNESS BREAKER (REQUIRED - OBJECT-BASED HUMOR)
 You MUST select at least ONE Primary Humor Driver (expressed through OBJECT COMBINATION):
