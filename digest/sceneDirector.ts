@@ -219,7 +219,14 @@ HARD BAN - NO DIAMONDS (any size, any context):
 - NO "big diamond" visual metaphors
 - NO jewelry product shots, close-ups, or displays
 - Instead, if articles involve Jewellery Industry, use the *concept* of luxury, rarity, craftsmanship, or exclusivity in unexpected, clever ways
-- Example: instead of "diamond on velvet", do "a common object treated like it's precious" or "cutthroat competition for mundane items"`;
+- Example: instead of "diamond on velvet", do "a common object treated like it's precious" (robots shopping in a luxury store, robots wearing jewelry)
+- Example: "cutthroat competition for mundane items" (but in elegant retail settings, not outdoor scenes)
+
+AESTHETIC CONSISTENCY:
+- Stay within the established visual language: polished, high-end interiors (jewelry stores, showrooms, luxury workplaces)
+- Avoid outdoor scenes, street-level settings, athletic venues, or natural landscapes
+- Maintain sophisticated, controlled lighting (typical of luxury retail)
+- Keep the playful absurdism grounded in professional/retail contexts`;
   } else {
     antiRepetitionConstraint = `
 HARD BAN - NO DIAMONDS (any size, any context):
@@ -228,10 +235,11 @@ HARD BAN - NO DIAMONDS (any size, any context):
 - NO jewelry product shots, close-ups, or displays
 
 ANTI-CLICHE GUIDE for Jewellery/Luxury articles:
-- Instead, use the conceptual essence: rarity, craftsmanship, exclusivity, indulgence, competition
-- Example: instead of "diamond on velvet", do "a common object treated like it's precious" (role reversal)
-- Or: cutthroat competition over mundane items, showrooms repurposed for unexpected uses
-- Make it clever and fresh, not a product photo`;
+- Use the conceptual essence within luxury retail settings: rarity, craftsmanship, exclusivity, indulgence, competition
+- Example: instead of "diamond on velvet", do robots as luxury shoppers, robots wearing jewelry in a high-end store (role reversal, indoors)
+- Or: abstract competition visualized in an elegant showroom (objects treated with absurd reverence indoors)
+- Stay in professional/retail environments: no outdoor scenes, no athletics, no street-level compositions
+- Make it clever and fresh, not a product photo, but keep the luxe aesthetic`;
   }
 
   return `You are a Scene Director for a weekly intelligence digest.
@@ -240,10 +248,12 @@ Your job is to create a SINGLE photorealistic scene that acts as a playful, slig
 
 STYLE & TONE
 - Hyper-realistic photography
+- Elegant, sophisticated lighting (high-end retail, showroom, luxury environments)
 - Lively, humorous, slightly silly
 - Smart visual joke, not cartoonish
 - Absurd situations are allowed if they look real
 - The goal is to make the viewer pause and smile
+- CONSISTENT AESTHETIC: Prefer polished, interior luxury/retail settings over outdoor scenes. Think jewelry store interiors, showrooms, elegant workspaces.
 
 MANDATORY RULES
 - NO text, logos, signs, UI, screens, or readable symbols
