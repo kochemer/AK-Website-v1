@@ -212,73 +212,77 @@ function buildSceneDirectorPrompt(
 AVOID REPETITION (Recent covers):
 ${recentConcepts}
 
-DO NOT reuse these concepts or humor drivers. Create something fresh and different.
+DO NOT reuse these concepts or humor drivers. Create fresh object pairings.
 
 HARD BAN - NO DIAMONDS (any size, any context):
-- DO NOT feature diamonds, gemstones, or precious stones as the focal point or subject
-- NO "big diamond" visual metaphors
-- NO jewelry product shots, close-ups, or displays
-- Instead, if articles involve Jewellery Industry, use the *concept* of luxury, rarity, craftsmanship, or exclusivity in unexpected, clever ways
-- Example: instead of "diamond on velvet", do "a common object treated like it's precious" (robots shopping in a luxury store, robots wearing jewelry)
-- Example: "cutthroat competition for mundane items" (but in elegant retail settings, not outdoor scenes)
+- DO NOT feature diamonds, gemstones, or precious stones as focal objects
+- For Jewellery Industry: use OTHER luxury objects (gold watches, rings, coins) instead
+- Create value commentary through object pairing (luxury item next to everyday object)
 
-AESTHETIC CONSISTENCY:
-- Stay within the established visual language: polished, high-end interiors (jewelry stores, showrooms, luxury workplaces)
-- Avoid outdoor scenes, street-level settings, athletic venues, or natural landscapes
-- Maintain sophisticated, controlled lighting (typical of luxury retail)
-- Keep the playful absurdism grounded in professional/retail contexts`;
+AESTHETIC CONSISTENCY (PRODUCT PHOTOGRAPHY):
+- Tabletop/counter product photography ONLY
+- Objects arranged left-to-right in horizontal band
+- Dark surface background (black/dark gray counter, table, shelf)
+- Sharp focus on foreground objects, soft background bokeh
+- NO people, NO rooms, NO narrative scenarios`;
   } else {
     antiRepetitionConstraint = `
 HARD BAN - NO DIAMONDS (any size, any context):
-- DO NOT feature diamonds, gemstones, or precious stones as the focal point or subject
-- NO "big diamond" visual metaphors
-- NO jewelry product shots, close-ups, or displays
+- DO NOT feature diamonds, gemstones, or precious stones as focal objects
+- For Jewellery Industry: use OTHER luxury objects (gold watches, rings, coins) instead
+- Create value commentary through object pairing (luxury item next to everyday object)
 
-ANTI-CLICHE GUIDE for Jewellery/Luxury articles:
-- Use the conceptual essence within luxury retail settings: rarity, craftsmanship, exclusivity, indulgence, competition
-- Example: instead of "diamond on velvet", do robots as luxury shoppers, robots wearing jewelry in a high-end store (role reversal, indoors)
-- Or: abstract competition visualized in an elegant showroom (objects treated with absurd reverence indoors)
-- Stay in professional/retail environments: no outdoor scenes, no athletics, no street-level compositions
-- Make it clever and fresh, not a product photo, but keep the luxe aesthetic`;
+ANTI-CLICHE GUIDE (PRODUCT PHOTOGRAPHY STYLE):
+- Mix a luxury object with everyday items: watch + apple, ring + bread, gold coin + orange
+- The joke is the juxtaposition of value and utility
+- Example: "gold watch next to a banana" (role reversal, tabletop)
+- Or: "gold coins scattered among kitchen vegetables" (scale absurdity, mundane context)
+- Keep it pure product photography—no narrative, just smart object selection`;
   }
 
   return `You are a Scene Director for a weekly intelligence digest.
 
 Your job is to create a SINGLE photorealistic scene that acts as a playful, slightly absurd visual metaphor for the week's most important articles.
 
-STYLE & TONE (HYPER-REALISTIC PHOTOGRAPHY MANDATORY)
-- Shot on professional DSLR or medium-format camera (80mm-200mm portrait lenses preferred)
-- Natural/practical lighting only—no artificial glow, no studio lighting artifacts
-- Photorealistic materials: real textures, reflections, depth of field, imperfections, dust particles
-- Realistic human skin, fabric weave, metal patina, wood grain, marble veining
-- Elegant, sophisticated lighting (high-end retail, showroom, luxury environments)
-- Lively, humorous, slightly silly—but grounded in photographic reality
-- Smart visual joke, not cartoonish or CGI
-- Absurd situations allowed ONLY if they look like real photographs
-- The goal is to make the viewer pause and smile, then realize "that's actually possible"
-- CONSISTENT AESTHETIC: Prefer polished, interior luxury/retail settings over outdoor scenes. Think jewelry store interiors, showrooms, elegant workspaces.
+STYLE & TONE (PRODUCT PHOTOGRAPHY - CLOSE-UP, TABLETOP STYLE)
+- Overhead or 45-degree product photography shot (NOT full-scene narrative)
+- Objects on a dark counter/table surface (kitchen counter, display table, dark background)
+- Professional DSLR with 85-100mm macro lens creating shallow depth of field
+- Sharp focus on hero objects in foreground, soft bokeh background
+- Studio-quality lighting revealing texture, reflections, and material properties
+- Mix everyday items with luxury objects (apples with rings, bread with watches, coins with gold)
+- The absurdism comes from OBJECT COMBINATIONS, not narrative scenarios
+- NO people, NO full-room scenes, NO backgrounds with depth—PURE PRODUCT FOCUS
+- Lively, humorous, slightly silly through object arrangement and juxtaposition
+- Smart visual joke: everyday + luxury = unexpected value commentary
+- The goal: viewer sees arrangement and smiles at the wit of the product mix
+- CONSISTENT AESTHETIC: Tabletop product photography style (like Vogue, WSJ Magazine still life)
 
-MANDATORY RULES
+MANDATORY RULES (PRODUCT PHOTOGRAPHY)
 - NO text, logos, signs, UI, screens, or readable symbols
 - NO illustration, CGI, or cartoon style
-- Photorealistic lighting, textures, and materials
-- Wide banner composition (elements in central horizontal band)
-- ONE coherent scene (no collage, no split-screen)
+- NO people, NO full-room scenes, NO narrative backgrounds
+- OBJECTS ONLY on a dark surface (table, counter, shelf)
+- Photorealistic lighting, textures, materials, reflections
+- Wide banner composition (objects arranged left-to-right in central horizontal band)
+- Shallow depth of field (bokeh background, sharp focus on objects)
+- ONE coherent product arrangement (no collage, no multi-scene)
 
-CREATIVE GUIDANCE
-- Prefer object-driven scenes over people-driven scenes
-- Humans may appear, but objects should carry the joke
-- The scene does not need to be realistic — it must be believable
-- Avoid "people standing around discussing things"
-- Recency is irrelevant - focus on the conceptual essence
+CREATIVE GUIDANCE (TABLETOP STILL LIFE)
+- Objects are the ONLY subjects—no people, animals, or beings
+- Humor comes from OBJECT COMBINATION: everyday + luxury = unexpected value commentary
+- Think: fancy gold watch next to an apple, diamond ring next to a loaf of bread
+- The visual joke is the juxtaposition, not a narrative or scenario
+- Objects should be recognizable, real, and touchable-looking
+- Recency is irrelevant - focus on the conceptual essence through object selection
 
-BORINGNESS BREAKER (REQUIRED)
-You MUST select at least ONE Primary Humor Driver:
-1. "role reversal" - Unexpected person/object in wrong context (e.g., CEO doing janitor work, luxury item in mundane setting)
-2. "scale absurdity" - Size mismatch that creates visual humor (e.g., tiny luxury car, giant smartphone)
-3. "literal metaphor" - Taking a phrase or concept literally in a visual way (e.g., "breaking the glass ceiling" = actual broken glass)
-4. "fish-out-of-water" - Object/person in completely wrong environment (e.g., luxury watch in a tool shed)
-5. "visual punchline" - Setup and payoff in one frame, delayed understanding
+BORINGNESS BREAKER (REQUIRED - OBJECT-BASED HUMOR)
+You MUST select at least ONE Primary Humor Driver (expressed through OBJECT COMBINATION):
+1. "role reversal" - Luxury item in mundane context (e.g., diamond ring next to bread, gold watch next to apples)
+2. "scale absurdity" - Objects of mismatched value next to each other (e.g., tiny coin next to giant jewelry)
+3. "literal metaphor" - Objects that embody a concept (e.g., objects representing "supply," "demand," "value")
+4. "fish-out-of-water" - Unexpected object pairing (e.g., kitchen counter items mixed with luxury goods)
+5. "visual punchline" - Object arrangement reveals a wit (e.g., common + rare = commentary on value)
 
 Optionally add one Flavor Enhancer:
 - Unexpected texture/material combination
