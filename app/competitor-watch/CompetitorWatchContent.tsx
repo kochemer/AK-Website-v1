@@ -8,7 +8,8 @@ import ArticleCard from '@/app/components/ArticleCard';
 import BrandFilterBar, { type BrandSummary } from '@/app/components/BrandFilterBar';
 import CompetitorBriefing from '@/app/components/CompetitorBriefing';
 import BrandProfileCard from '@/app/components/BrandProfileCard';
-import StockComparisonChart, { type StockSeries } from '@/app/components/StockComparisonChart';
+import StockChartSection from '@/app/components/StockChartSection';
+import type { StockSeries } from '@/app/components/StockComparisonChart';
 
 const SIGNAL_TAGS: SignalTag[] = [
   'Launch', 'Campaign', 'Partnership', 'Financials',
@@ -189,7 +190,7 @@ export default function CompetitorWatchContent({
 
       {/* ── Section 4: Financial Performance (unfiltered only) ── */}
       {!isFiltered && stockSeries.length > 0 && (
-        <StockComparisonChart series={stockSeries} />
+        <StockChartSection series={stockSeries} />
       )}
 
       {/* ── Section 5: Brand Profiles (unfiltered only) ── */}
