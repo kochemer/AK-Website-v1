@@ -1,3 +1,36 @@
+/**
+ * @module sources
+ *
+ * Master list of RSS feeds and web pages ingested by the weekly pipeline.
+ *
+ * ## Tier system
+ *
+ * Sources are split into four tiers based on editorial quality and relevance:
+ *
+ * | Tier | Description | Priority |
+ * |------|-------------|----------|
+ * | 1 | Global business & news (FT, WSJ, Bloomberg, Guardian) | Highest — broad, authoritative |
+ * | 2 | Retail, ecommerce & commerce-tech specialists | High — directly on-topic for digest |
+ * | 3 | Luxury, fashion, jewellery & consumer specialists | High — directly on-topic for digest |
+ * | 4 | AI, strategy & emerging tech | Medium — supplementary; heavy overlap with discovery |
+ *
+ * Tier 1 sources provide breadth and cross-vertical signals (AI policy, macro
+ * trends) that specialists don't cover. Tiers 2–4 provide depth in the digest's
+ * core verticals.
+ *
+ * ## Adding a new source
+ * 1. Check that the feed URL returns valid RSS/Atom (use `curl -I <url>`).
+ * 2. Pick the appropriate tier and `sourceType`.
+ * 3. Add a `categoryHint` if the source maps cleanly to one topic (optional —
+ *    omit for general/multi-topic sources).
+ * 4. If the source frequently blocks direct fetches, add it to `fetchPages.ts`
+ *    instead as a web page scrape target.
+ *
+ * ## Removed sources
+ * Sources that were removed are kept as comments explaining why (bot protection,
+ * deprecated feeds, index pages not genuine feeds). This prevents re-adding
+ * known broken sources.
+ */
 import { SourceFeed, SourcePage } from './types.js';
 
 // --- Tier 1: Global Business & News ---

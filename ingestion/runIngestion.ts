@@ -1,3 +1,27 @@
+/**
+ * @module runIngestion
+ *
+ * Orchestrates all three ingestion channels in a single pipeline step:
+ *
+ * 1. **RSS** (`fetchRss`) — pulls configured feeds, deduplicates against
+ *    `data/articles.json`, and upserts new articles.
+ * 2. **Pages** (`fetchPages`) — scrapes configured web pages that don't
+ *    publish RSS feeds.
+ * 3. **Web Discovery** (`searchProvider` → `fetchExtract` → `selectTop`) —
+ *    runs Tavily searches using base + delta queries, extracts full article
+ *    text, then uses LLM-based selection to pick the top candidates.
+ *
+ * ## Modes
+ * Controlled by `--mode=<rss|webDiscovery|both>` (default: `both`).
+ * Use `--week=YYYY-Www` to target a specific week (default: current CET week).
+ *
+ * ## Output
+ * - `data/articles.json` — upserted with all new articles.
+ * - `data/weeks/<weekLabel>/discoveryArticles.json` — discovery-only candidates.
+ * - `data/weeks/<weekLabel>/ingestion-report.json` — per-category breakdown of
+ *   found / extracted / excluded counts written by `ingestionReport.ts`.
+ * - `data/source_yield.json` — per-source yield history for monitoring.
+ */
 import { fileURLToPath } from 'url';
 import path from 'path';
 import { runRssIngestion } from "./fetchRss.js";
@@ -23,6 +47,10 @@ loadEnv();
 
 type IngestionMode = 'rss' | 'webDiscovery' | 'both';
 
+/**
+ * Parses CLI arguments into an ingestion mode and optional week label.
+ * Exits the process with code 1 if the week format is invalid.
+ */
 function parseArgs(): { mode: IngestionMode; weekLabel?: string } {
   const args = process.argv.slice(2);
   let mode: IngestionMode = 'both';
@@ -67,6 +95,10 @@ function getDefaultWeekLabel(): string {
   return getCurrentIngestionWeek();
 }
 
+/**
+ * Returns a zeroed-out `DiscoveryIngestionStats` structure for all four topics.
+ * Call once per ingestion run before accumulating counts from sub-systems.
+ */
 function initDiscoveryStats(): DiscoveryIngestionStats {
   return {
     byTopic: {
@@ -102,6 +134,16 @@ function initDiscoveryStats(): DiscoveryIngestionStats {
   };
 }
 
+/**
+ * Runs the full web-discovery sub-pipeline for the given week:
+ * query generation → Tavily search → article extraction → LLM selection → merge.
+ *
+ * Stat aggregation note: `extractionStats` and `reportsByTopic` use different
+ * key structures, so they are mapped into the unified `DiscoveryIngestionStats`
+ * shape manually after each sub-step completes.
+ *
+ * @param weekLabel - ISO week string (e.g. `"2025-W04"`). Defaults to current CET week.
+ */
 async function runWebDiscovery(weekLabel?: string): Promise<{ added: number; updated: number; stats: DiscoveryIngestionStats }> {
   if (!weekLabel) {
     weekLabel = getDefaultWeekLabel();

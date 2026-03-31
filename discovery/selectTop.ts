@@ -1,3 +1,32 @@
+/**
+ * @module selectTop
+ *
+ * Two-phase article selection that narrows a large pool of extracted candidates
+ * down to the top articles passed to digest building.
+ *
+ * ## Phase A — LLM Ranking
+ * Up to `MAX_CANDIDATES` (100) non-sponsored articles per topic are sent to an
+ * LLM with 400–600 char excerpts. The model returns `TOP_K` (40) ranked items,
+ * each annotated with a `controversyRisk` label (`none|low|med|high`) and an
+ * `insightType` tag. Temperature is 0.3 for slight variety while staying
+ * largely deterministic.
+ *
+ * ## Phase B — Deterministic Post-filtering
+ * The ranked list is filtered through hard rules applied in this order:
+ * 1. **Hard controversy exclusion** — articles flagged with war, culture-war, or
+ *    election content are dropped unless they contain a policy-context term from
+ *    `POLICY_ALLOWLIST` (e.g. "tariff", "regulation", "antitrust").
+ * 2. **Near-duplicate removal** — titles sharing >80% of words are collapsed;
+ *    the higher-ranked one survives.
+ * 3. **Domain cap** — at most 2 articles from the same domain are included.
+ *    If the domain cap produces fewer than `targetCount` articles, it is relaxed
+ *    to 3 and flagged in the selection report.
+ *
+ * ## Output
+ * Returns `{ selected, reportsByTopic }` where `selected` is a flat list of
+ * `SelectedArticle` objects and `reportsByTopic` contains per-topic counts for
+ * the ingestion report.
+ */
 import { promises as fs } from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
@@ -9,10 +38,14 @@ import { getModelFor, temperatureParam } from '../lib/llm/models';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
+/** Override via SELECTION_MODEL env var. */
 const SELECTION_MODEL = process.env.SELECTION_MODEL || getModelFor('rank');
+/** Slight non-zero temperature allows the model to vary phrasing in `why` explanations. */
 const TEMPERATURE = 0.3;
-const TOP_K = 40; // Number of items to rank in LLM phase
-const MAX_CANDIDATES = 100; // Max candidates to send to LLM
+/** How many ranked items Phase A returns for Phase B post-filtering. */
+const TOP_K = 40;
+/** Hard cap on candidates sent to the LLM — balances recall vs. token cost. */
+const MAX_CANDIDATES = 100;
 
 function getOpenAIApiKey(): string {
   const key = process.env.OPENAI_API_KEY;
@@ -71,11 +104,23 @@ type SelectionReport = {
   };
 };
 
-// Hard controversy markers for deterministic exclusion
+/**
+ * Three categories of hard-exclude topic markers applied deterministically
+ * in Phase B, after the LLM has already ranked articles.
+ *
+ * Rationale: the LLM can mis-label controversy risk for nuanced articles
+ * (e.g. a trade-policy story that mentions "conflict"). Having deterministic
+ * keyword rules as a final gate ensures consistent editorial quality without
+ * relying on LLM judgment for sensitive topics.
+ *
+ * Override: any article that also matches `POLICY_ALLOWLIST` is exempted —
+ * commerce policy stories (tariffs, antitrust, GDPR) must not be dropped
+ * just because they mention political terms.
+ */
 const HARD_CONTROVERSY_MARKERS = {
-  war: ["war", "armed conflict", "violence", "military action", "combat", "battle", "invasion", "attack", "bombing", "drone strike"],
+  war:        ["war", "armed conflict", "violence", "military action", "combat", "battle", "invasion", "attack", "bombing", "drone strike"],
   cultureWar: ["culture war", "identity politics", "woke", "cancel culture", "political correctness", "gender ideology", "critical race theory"],
-  election: ["election", "campaign", "polling", "voter", "candidate", "primary", "debate", "ballot", "electoral"],
+  election:   ["election", "campaign", "polling", "voter", "candidate", "primary", "debate", "ballot", "electoral"],
 };
 
 const POLICY_ALLOWLIST = [
@@ -106,6 +151,11 @@ function isSponsored(article: ExtractedArticle): boolean {
   return SPONSORED_INDICATORS.some(indicator => text.includes(indicator));
 }
 
+/**
+ * Returns true if the article should be hard-excluded due to controversy.
+ * Policy-context terms from `POLICY_ALLOWLIST` override all markers — a story
+ * about trade tariffs can mention "war" (trade war) without being excluded.
+ */
 function detectHardControversy(article: ExtractedArticle): boolean {
   const text = `${article.title} ${article.snippet} ${article.extractedText}`;
   
@@ -131,6 +181,12 @@ function normalizeTitle(title: string): string {
     .trim();
 }
 
+/**
+ * Returns true if two article titles are near-duplicates.
+ * Titles are normalised (lowercase, punctuation stripped) then compared by
+ * word-overlap ratio. A ratio >80% is considered a duplicate — this catches
+ * syndicated articles with slightly different punctuation or capitalisation.
+ */
 function isNearDuplicate(title1: string, title2: string): boolean {
   const norm1 = normalizeTitle(title1);
   const norm2 = normalizeTitle(title2);

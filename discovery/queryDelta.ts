@@ -1,3 +1,27 @@
+/**
+ * @module queryDelta
+ *
+ * Generates **delta search queries** — topic-specific web-search strings that
+ * complement the static base queries defined in `discovery/queries.base.json`.
+ *
+ * ## Why delta queries?
+ * Base queries are broad and evergreen (e.g. "luxury retail trends"). Delta
+ * queries are generated weekly by an LLM that is given last week's key themes
+ * and top headlines, then asked to surface NEW angles that the base queries
+ * are unlikely to return. Together they improve recall for fast-moving stories.
+ *
+ * ## Caching
+ * Generated queries are written to `<discoveryDir>/delta-queries.json` with a
+ * SHA-256 hash of the base queries file. On the next run, if the hash matches,
+ * the cached file is reused — avoiding unnecessary LLM calls. Pass
+ * `config.regenDelta = true` to force regeneration, or `config.noDelta = true`
+ * to skip delta queries entirely (useful for quick test runs).
+ *
+ * ## Output format
+ * Returns `Record<Topic, string[]>` — 6 queries per topic (24 total).
+ * The delta queries are indexed by topic key and stored by display-label in the
+ * JSON file for human readability.
+ */
 import { promises as fs } from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
@@ -26,6 +50,11 @@ type DeltaQueriesOutput = {
   deltaQueries: string[];
 };
 
+/**
+ * Returns a plain-English description of what falls under `topic`.
+ * Injected into the LLM prompt so it can generate on-topic queries without
+ * additional context about the site's editorial scope.
+ */
 function getTopicDefinition(topic: Topic): string {
   const definitions: Record<Topic, string> = {
     "AI_and_Strategy": "AI strategy, machine learning applications, AI tools, LLMs, generative AI, AI automation, AI personalization, AI-driven business strategy",
@@ -40,6 +69,19 @@ function getCategoryLabel(topic: Topic): string {
   return getTopicDisplayName(topic);
 }
 
+/**
+ * Loads the previous week's digest JSON and extracts up to 10 headline titles
+ * and any stored key themes. This context is fed to the LLM so it can avoid
+ * generating queries that would surface already-covered stories.
+ *
+ * Returns `null` (silently) if the previous week's digest file doesn't exist —
+ * this is normal for the first run of a new year or after a gap week.
+ *
+ * Week arithmetic is simple integer subtraction; week 1 of a year wraps to
+ * week 52 of the previous year (approximate — ISO 8601 years can have 53 weeks,
+ * but the approximation is acceptable here since it only affects the context
+ * window, not any hard data constraint).
+ */
 async function getLastWeekDigest(weekLabel: string): Promise<{
   keyThemes: string[];
   topHeadlines: string[];
@@ -86,6 +128,11 @@ async function getLastWeekDigest(weekLabel: string): Promise<{
   }
 }
 
+/**
+ * Loads the static base queries from `discovery/queries.base.json`.
+ * Each topic must have exactly 24 base queries — this is validated downstream
+ * in `generateDeltaQueriesForTopic` before calling the LLM.
+ */
 async function loadBaseQueries(): Promise<Record<string, string[]>> {
   const baseQueriesPath = path.join(__dirname, 'queries.base.json');
   try {
@@ -100,6 +147,19 @@ function computeHash(input: string): string {
   return crypto.createHash('sha256').update(input).digest('hex').substring(0, 16);
 }
 
+/**
+ * Calls the LLM to generate 6 delta queries for a single topic.
+ *
+ * The prompt instructs the model to:
+ * - Avoid semantic overlap with the 24 base queries.
+ * - Target this week's new developments (last 7 days).
+ * - Exclude war/politics/culture-war topics.
+ * - Use company/product names where relevant for specificity.
+ * - Return evergreen phrasing (no hard-coded dates in the query strings).
+ *
+ * Throws on any LLM error or if the response doesn't contain exactly 6 queries.
+ * The caller (`generateDeltaQueries`) handles errors per-topic.
+ */
 async function generateDeltaQueriesForTopic(
   topic: Topic,
   weekLabel: string,
@@ -183,11 +243,22 @@ Return a JSON object:
   }
 }
 
+/** Controls delta query generation behaviour for a pipeline run. */
 export type QueryDeltaConfig = {
+  /** Force regeneration even if a valid cached file exists. */
   regenDelta: boolean;
+  /** Skip delta generation entirely — return empty arrays for all topics. */
   noDelta: boolean;
 };
 
+/**
+ * Entry point: generates (or loads from cache) delta queries for all four topics.
+ *
+ * @param weekLabel    - ISO week string, e.g. `"2025-W04"`.
+ * @param discoveryDir - Directory where `delta-queries.json` is read/written.
+ * @param config       - Generation behaviour flags.
+ * @returns 6 delta query strings per topic (empty arrays when `noDelta` is set).
+ */
 export async function generateDeltaQueries(
   weekLabel: string,
   discoveryDir: string,
