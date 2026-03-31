@@ -36,6 +36,8 @@
   --font-sans: var(--font-dm-sans), system-ui, sans-serif;
   --font-serif: var(--font-libre-baskerville), Georgia, serif;
   --font-mono: var(--font-courier-prime), var(--font-geist-mono), 'Courier New', monospace;
+  --font-display: var(--font-cormorant-garamond), 'Cormorant Garamond', Georgia, serif;
+  --font-ibm-mono: var(--font-ibm-plex-mono), 'IBM Plex Mono', monospace;
   /* Luxury palette */
   --color-luxury-cream: #FAF9F6;
   --color-luxury-gold: #8B6914;
@@ -419,4 +421,135 @@ html[data-display-mode="standalone"] header nav > div {
 .letter-form textarea {
   resize: vertical;
   min-height: 140px;
+}
+
+/* ── Competitor Watch: Dark Editorial Intelligence ──────────────────────── */
+
+/* Gold hairline divider */
+.intel-rule {
+  border: none;
+  height: 1px;
+  background: var(--color-accent);
+  opacity: 0.25;
+  margin: 0;
+}
+
+/* Animated gold rule — draws left to right */
+@keyframes drawRule {
+  from { transform: scaleX(0); }
+  to   { transform: scaleX(1); }
+}
+.intel-rule-animated {
+  transform: scaleX(0);
+  transform-origin: left center;
+  animation: drawRule 0.7s 0.45s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+/* Brand filter: gold underline draws across bottom on hover/active */
+.brand-filter-btn {
+  position: relative;
+  overflow: visible;
+}
+.brand-filter-btn::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--color-accent);
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 0.25s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.brand-filter-btn:hover::after,
+.brand-filter-btn[aria-pressed="true"]::after {
+  transform: scaleX(1);
+}
+
+/* Signal pill glow — active state */
+.signal-pill-active {
+  box-shadow: 0 0 14px rgba(201, 168, 76, 0.35);
+}
+
+/* Intelligence article row — animated left gold bar */
+.intel-article-row {
+  position: relative;
+  transition: padding-left 0.22s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.intel-article-row::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 2px;
+  height: 0;
+  background: var(--color-accent);
+  transition: height 0.25s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.intel-article-row:hover::before {
+  height: 100%;
+}
+.intel-article-row:hover {
+  padding-left: 12px;
+}
+
+/* Briefing section: subtle diagonal ledger pattern */
+.intel-briefing-bg {
+  background-image: repeating-linear-gradient(
+    -45deg,
+    transparent,
+    transparent 28px,
+    rgba(201, 168, 76, 0.018) 28px,
+    rgba(201, 168, 76, 0.018) 29px
+  );
+}
+
+/* Controversies section: warm red tint bleed */
+.intel-controversy-section {
+  background: rgba(192, 57, 43, 0.05);
+  border-left: 3px solid rgba(192, 57, 43, 0.55);
+}
+
+/* Intelligence page: staggered section reveals with extended delays */
+.reveal-d6  { animation-delay: 0.75s; }
+.reveal-d7  { animation-delay: 0.9s; }
+.reveal-d8  { animation-delay: 1.05s; }
+
+/* Intelligence section header: small-caps label above serif title */
+.intel-section-label {
+  font-size: 0.6875rem;    /* 11px */
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  font-variant-caps: all-small-caps;
+  font-family: var(--font-dm-sans), system-ui, sans-serif;
+  font-weight: 600;
+  color: var(--color-text-secondary);
+}
+
+/* Financial count-up shimmer pulse on land */
+@keyframes finPulse {
+  0%   { opacity: 0.5; }
+  60%  { opacity: 1; }
+  100% { opacity: 1; }
+}
+.fin-land {
+  animation: finPulse 0.55s ease-out forwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .intel-rule-animated {
+    animation: none;
+    transform: scaleX(1);
+  }
+  .brand-filter-btn::after {
+    transition: none;
+  }
+  .intel-article-row,
+  .intel-article-row::before {
+    transition: none;
+  }
+  .signal-pill-active {
+    box-shadow: none;
+  }
 }

@@ -16,6 +16,17 @@ const SIGNAL_TAGS: SignalTag[] = [
   'Controversy', 'Leadership', 'Expansion',
 ];
 
+// Icon prefix per signal type — purely decorative, aria-hidden
+const SIGNAL_ICONS: Record<string, string> = {
+  Launch:      '◆',
+  Campaign:    '◈',
+  Partnership: '⬡',
+  Financials:  '▸',
+  Controversy: '⚠',
+  Leadership:  '◉',
+  Expansion:   '⊕',
+};
+
 type Props = {
   brandMap: Map<CompetitorId, Article[]>;
   activeBrand: string | undefined;
@@ -35,7 +46,6 @@ export default function CompetitorWatchContent({
 }: Props) {
   const t = getMessages(locale);
 
-  // Brand summaries for filter bar (exclude Pandora — reference brand, not competitor)
   const competitorBrands = COMPETITOR_BRANDS.filter(b => b.id !== 'pandora');
   const brandSummaries: BrandSummary[] = competitorBrands.map(b => ({
     id: b.id,
@@ -47,7 +57,6 @@ export default function CompetitorWatchContent({
     ? COMPETITOR_BRANDS.find(b => b.id === activeBrand)?.name
     : undefined;
 
-  // Build deduplicated article rows (exclude Pandora — has its own section)
   type Row = { article: Article; badges: string[] };
   let allRows: Row[] = [];
 
@@ -74,19 +83,14 @@ export default function CompetitorWatchContent({
     });
   }
 
-  // Signal filter
   const activeSignalTag = SIGNAL_TAGS.find(s => s.toLowerCase() === activeSignal?.toLowerCase());
   const filteredRows = activeSignalTag
     ? allRows.filter(r => r.article.signalTag === activeSignalTag)
     : allRows;
 
-  // Controversies block (unfiltered only)
   const controversyRows = allRows.filter(r => r.article.signalTag === 'Controversy');
-
-  // Filtered mode hides briefing/brand profiles/controversies/financials/pandora section
   const isFiltered = !!activeBrand || !!activeSignalTag;
 
-  // Signal filter URL helper
   const buildSignalUrl = (signal: SignalTag | null) => {
     const params = new URLSearchParams();
     if (activeBrand) params.set('brand', activeBrand);
@@ -95,7 +99,6 @@ export default function CompetitorWatchContent({
     return qs ? `${basePath}?${qs}` : basePath;
   };
 
-  // Build StockSeries for chart — deduplicate by ticker, public brands only
   const seenTickers = new Set<string>();
   const stockSeries: StockSeries[] = [];
   for (const brand of COMPETITOR_BRANDS) {
@@ -113,7 +116,6 @@ export default function CompetitorWatchContent({
     });
   }
 
-  // Pandora articles for "Pandora in the News" section
   const pandoraArticles = (brandMap.get('pandora') ?? [])
     .sort((a, b) => {
       const dateA = a.published_at || a.ingested_at || '';
@@ -122,44 +124,67 @@ export default function CompetitorWatchContent({
     })
     .slice(0, 8);
 
+  // Asymmetric brand grid: first brand gets `featured` prop (2× height)
+  const brandsWithContent = competitorBrands.filter(b => {
+    const articles = brandMap.get(b.id) ?? [];
+    return articles.length > 0 || !!intel.brands[b.id]?.narrative;
+  });
+
   return (
     <div className="max-w-4xl mx-auto px-4 md:px-8 py-12 md:py-16">
 
-      {/* ── Section 1: Header ── */}
-      <header className="mb-6">
+      {/* ── Section 1: Header ────────────────────────────────────────────── */}
+      <header className="mb-10 reveal reveal-d1">
         <Link
           href={locale === 'en' ? '/' : `/${locale}`}
-          className="text-[var(--color-accent)] hover:text-[var(--color-text-primary)] text-[13px] inline-block mb-6 transition-colors"
+          className="font-ibm-mono text-[10px] tracking-[0.2em] uppercase text-[var(--color-accent)] hover:text-[var(--color-text-primary)] inline-block mb-8 transition-colors duration-200"
         >
           ← {t.nav.home}
         </Link>
-        <p className="text-[11px] tracking-[0.3em] uppercase text-[var(--color-accent)] font-sans font-semibold mb-3">
+
+        {/* Overline label */}
+        <p className="intel-section-label text-[var(--color-accent)] mb-3 reveal reveal-d2">
           Intelligence
         </p>
-        <h1 className="font-serif font-normal text-[2.25rem] leading-tight tracking-[-0.02em] text-[var(--color-text-primary)] mb-4">
+
+        {/* Display title — Cormorant Garamond */}
+        <h1
+          className="font-display font-semibold leading-[1.05] tracking-[-0.02em] text-[var(--color-text-primary)] mb-4 reveal reveal-d3"
+          style={{ fontSize: 'clamp(2rem, 5vw, 3rem)' }}
+        >
           {t.competitorWatch.pageTitle}
         </h1>
-        <p className="text-body text-[var(--color-text-secondary)] max-w-2xl">
+
+        <p className="text-body text-[var(--color-text-secondary)] max-w-2xl mb-6 reveal reveal-d4">
           {t.competitorWatch.pageDescription}
         </p>
-        <hr className="border-[var(--color-accent)] border-t-2 mt-6" />
+
+        {/* Animated gold rule */}
+        <div className="intel-rule intel-rule-animated reveal reveal-d4" />
       </header>
 
-      {/* ── Section 2: Filters (always visible) ── */}
-      <div className="mb-10">
+      {/* ── Section 2: Filters ───────────────────────────────────────────── */}
+      <div className="mb-10 reveal reveal-d5">
+        {/* Brand filter bar — tab-style with gold underline draw */}
         <BrandFilterBar
           brands={brandSummaries}
           activeBrand={activeBrand}
           basePath={basePath}
           allBrandsLabel={t.competitorWatch.allBrands}
         />
-        <div className="flex flex-wrap gap-2 mt-3" role="group" aria-label="Filter by signal type">
+
+        {/* Signal pills */}
+        <div
+          className="flex flex-wrap gap-2 mt-4"
+          role="group"
+          aria-label="Filter by signal type"
+        >
           <a
             href={buildSignalUrl(null)}
-            className={`px-3 py-1.5 rounded-[3px] text-sm font-medium font-sans border transition-colors ${
+            className={`inline-flex items-center gap-1.5 px-3 py-1.5 text-[11px] font-sans font-semibold tracking-[0.1em] uppercase border transition-all duration-200 ${
               !activeSignalTag
-                ? 'bg-[var(--color-accent)] text-white border-[var(--color-accent)]'
-                : 'bg-transparent text-[var(--color-text-secondary)] border-[var(--color-border)] hover:border-[var(--color-accent)] hover:text-[var(--color-accent)]'
+                ? 'signal-pill-active border-[var(--color-accent)] text-[var(--color-accent)] bg-[var(--color-accent)]/10'
+                : 'border-[var(--color-border)] text-[var(--color-text-secondary)] hover:border-[var(--color-accent)]/50 hover:text-[var(--color-accent)]'
             }`}
           >
             All signals
@@ -168,41 +193,43 @@ export default function CompetitorWatchContent({
             <a
               key={signal}
               href={buildSignalUrl(signal)}
-              className={`px-3 py-1.5 rounded-[3px] text-sm font-medium font-sans border transition-colors ${
+              className={`inline-flex items-center gap-1.5 px-3 py-1.5 text-[11px] font-sans font-semibold tracking-[0.1em] uppercase border transition-all duration-200 ${
                 activeSignalTag === signal
-                  ? 'bg-[var(--color-accent)] text-white border-[var(--color-accent)]'
-                  : 'bg-transparent border-[var(--color-border)] text-[var(--color-text-secondary)] hover:border-[var(--color-accent)] hover:text-[var(--color-accent)]'
+                  ? 'signal-pill-active border-[var(--color-accent)] text-[var(--color-accent)] bg-[var(--color-accent)]/10'
+                  : 'border-[var(--color-border)] text-[var(--color-text-secondary)] hover:border-[var(--color-accent)]/50 hover:text-[var(--color-accent)]'
               }`}
             >
+              <span aria-hidden className="text-[9px] opacity-70">{SIGNAL_ICONS[signal]}</span>
               {signal}
             </a>
           ))}
         </div>
       </div>
 
-      {/* ── Section 3: Weekly Summary (unfiltered only) ── */}
+      {/* ── Section 3: Weekly Briefing (unfiltered only) ─────────────────── */}
       {!isFiltered && (
-        <CompetitorBriefing
-          bullets={intel.briefing}
-          generatedAt={intel.generatedAt}
-        />
+        <div className="reveal reveal-d5">
+          <CompetitorBriefing
+            bullets={intel.briefing}
+            generatedAt={intel.generatedAt}
+          />
+        </div>
       )}
 
-      {/* ── Section 4: Financial Performance (unfiltered only) ── */}
+      {/* ── Section 4: Financial Performance (unfiltered only) ───────────── */}
       {!isFiltered && stockSeries.length > 0 && (
-        <StockChartSection series={stockSeries} />
+        <div className="reveal reveal-d6">
+          <StockChartSection series={stockSeries} />
+        </div>
       )}
 
-      {/* ── Section 5: Brand Profiles (unfiltered only) ── */}
-      {!isFiltered && (
-        <section className="mb-12">
-          <p className="text-[11px] tracking-[0.3em] uppercase text-[var(--color-text-secondary)] font-sans font-semibold mb-6">
-            Brand Profiles
-          </p>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-            {competitorBrands.map(brand => {
+      {/* ── Section 5: Brand Profiles — asymmetric grid (unfiltered only) ── */}
+      {!isFiltered && brandsWithContent.length > 0 && (
+        <section className="mb-12 reveal reveal-d6">
+          <p className="intel-section-label mb-6">Brand Profiles</p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 lg:grid-rows-[auto]">
+            {brandsWithContent.map((brand, idx) => {
               const articles = brandMap.get(brand.id) ?? [];
-              if (articles.length === 0 && !intel.brands[brand.id]?.narrative) return null;
               return (
                 <BrandProfileCard
                   key={brand.id}
@@ -213,6 +240,7 @@ export default function CompetitorWatchContent({
                   intel={intel.brands[brand.id]}
                   locale={locale}
                   basePath={basePath}
+                  featured={idx === 0}
                 />
               );
             })}
@@ -220,57 +248,73 @@ export default function CompetitorWatchContent({
         </section>
       )}
 
-      {/* ── Section 6: Controversies & Risks (unfiltered only) ── */}
+      {/* ── Section 6: Controversies & Risks (unfiltered only) ───────────── */}
       {!isFiltered && controversyRows.length > 0 && (
-        <section className="mb-12">
-          <div className="border-l-4 border-amber-400 bg-amber-50 dark:bg-amber-900/10 rounded-sm px-5 py-4">
-            <p className="text-[11px] tracking-[0.3em] uppercase text-amber-700 dark:text-amber-400 font-sans font-semibold mb-4">
-              Controversies & Risks
+        <section className="intel-controversy-section mb-12 px-5 py-6 reveal reveal-d7">
+          <div className="flex items-center gap-3 mb-5">
+            <span className="text-[var(--color-risk-red,#C0392B)] text-[1.1rem]" aria-hidden>⚠</span>
+            <p className="intel-section-label" style={{ color: 'var(--color-risk-red, #C0392B)' }}>
+              Controversies &amp; Risks
             </p>
-            <ul>
-              {controversyRows.map(({ article, badges }) => (
-                <li key={article.url}>
-                  <ArticleCard
-                    title={article.title}
-                    url={article.url}
-                    source={article.source}
-                    date={article.published_at}
-                    summary={article.aiSummary}
-                    badges={badges}
-                    locale={locale}
-                    translations={article.translations}
-                    aiSummaryLabel={t.digest.aiSummary}
-                  />
-                </li>
-              ))}
-            </ul>
+            <span className="ml-auto font-ibm-mono text-[10px] text-[var(--color-text-secondary)] opacity-60">
+              {controversyRows.length} signal{controversyRows.length !== 1 ? 's' : ''}
+            </span>
           </div>
+          <ul>
+            {controversyRows.map(({ article, badges }) => (
+              <li key={article.url}>
+                <ArticleCard
+                  title={article.title}
+                  url={article.url}
+                  source={article.source}
+                  date={article.published_at}
+                  summary={article.aiSummary}
+                  badges={badges}
+                  locale={locale}
+                  translations={article.translations}
+                  aiSummaryLabel={t.digest.aiSummary}
+                  variant="intelligence"
+                />
+              </li>
+            ))}
+          </ul>
         </section>
       )}
 
-      {/* ── Section 7: Latest Intelligence (article feed, always visible) ── */}
-      <section>
-        <div className="flex items-center justify-between mb-6">
-          <h2 className="text-[11px] tracking-[0.3em] uppercase text-[var(--color-text-secondary)] font-sans font-semibold">
-            {activeBrandName
-              ? `${activeBrandName}${activeSignalTag ? ` · ${activeSignalTag}` : ''}`
-              : activeSignalTag
-              ? activeSignalTag
-              : t.competitorWatch.latestIntelligence}
-          </h2>
-          <span className="text-[13px] text-[var(--color-text-secondary)]">
-            {filteredRows.length} article{filteredRows.length !== 1 ? 's' : ''}
+      {/* ── Section 7: Latest Intelligence feed (always visible) ─────────── */}
+      <section className="reveal reveal-d7">
+        {/* Section header */}
+        <div className="flex items-baseline justify-between mb-1 flex-wrap gap-2">
+          <div>
+            <p className="intel-section-label mb-1">
+              {activeBrandName
+                ? activeBrandName
+                : activeSignalTag
+                ? activeSignalTag
+                : t.competitorWatch.latestIntelligence}
+            </p>
+            {(activeBrandName && activeSignalTag) && (
+              <p className="font-ibm-mono text-[10px] text-[var(--color-text-secondary)] tracking-[0.08em] opacity-70">
+                {activeSignalTag}
+              </p>
+            )}
+          </div>
+          <span className="font-ibm-mono text-[10px] text-[var(--color-text-secondary)] opacity-60 tracking-[0.08em]">
+            {filteredRows.length} ARTICLE{filteredRows.length !== 1 ? 'S' : ''}
           </span>
         </div>
 
+        {/* Gold rule under header */}
+        <div className="intel-rule mb-0 opacity-20" />
+
         {filteredRows.length === 0 ? (
-          <div className="bg-[var(--color-accent-light)] border-l-4 border-[var(--color-accent)] p-5 rounded-sm">
-            <p className="text-body text-[var(--color-text-primary)]">
+          <div className="mt-6 border-l-2 border-[var(--color-accent)]/40 pl-5 py-2">
+            <p className="text-body text-[var(--color-text-secondary)]">
               {t.competitorWatch.noArticles}
             </p>
           </div>
         ) : (
-          <ul>
+          <ul className="mt-2">
             {filteredRows.map(({ article, badges }) => (
               <li key={article.url}>
                 <ArticleCard
@@ -286,6 +330,7 @@ export default function CompetitorWatchContent({
                   locale={locale}
                   translations={article.translations}
                   aiSummaryLabel={t.digest.aiSummary}
+                  variant="intelligence"
                 />
               </li>
             ))}
@@ -293,12 +338,13 @@ export default function CompetitorWatchContent({
         )}
       </section>
 
-      {/* ── Section 8: Pandora in the News (unfiltered only) ── */}
+      {/* ── Section 8: Pandora in the News (unfiltered only) ─────────────── */}
       {!isFiltered && pandoraArticles.length > 0 && (
-        <section className="mt-16 pt-8 border-t border-[var(--color-border)]">
-          <p className="text-[11px] tracking-[0.3em] uppercase text-[var(--color-text-secondary)] font-sans font-semibold mb-6">
-            Pandora in the News
-          </p>
+        <section className="mt-16 pt-8 reveal reveal-d8">
+          {/* Section divider */}
+          <div className="intel-rule mb-6 opacity-20" />
+
+          <p className="intel-section-label mb-6">Pandora in the News</p>
           <ul>
             {pandoraArticles.map((article, i) => (
               <li key={article.url}>
@@ -312,7 +358,7 @@ export default function CompetitorWatchContent({
                   locale={locale}
                   translations={article.translations}
                   aiSummaryLabel={t.digest.aiSummary}
-                  variant={i === 0 ? 'featured' : 'default'}
+                  variant={i === 0 ? 'featured' : 'intelligence'}
                 />
               </li>
             ))}

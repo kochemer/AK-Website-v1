@@ -13,7 +13,6 @@ export type BrandSummary = {
 type BrandFilterBarProps = {
   brands: BrandSummary[];
   activeBrand?: string;
-  /** Base path for navigation, e.g. '/competitor-watch' or '/es/competitor-watch' */
   basePath: string;
   allBrandsLabel?: string;
 };
@@ -37,44 +36,54 @@ export default function BrandFilterBar({
     [router, basePath]
   );
 
-  const activePill =
-    'bg-[var(--color-accent)] text-white border-[var(--color-accent)]';
-  const inactivePill =
-    'bg-transparent text-[var(--color-text-secondary)] border-[var(--color-border)] hover:border-[var(--color-accent)] hover:text-[var(--color-accent)]';
+  const activeClass =
+    'text-[var(--color-accent)] border-b-0';
+  const inactiveClass =
+    'text-[var(--color-text-secondary)] hover:text-[var(--color-text-primary)]';
 
   return (
     <div
-      className="flex flex-wrap gap-2"
+      className="flex flex-wrap gap-x-5 gap-y-2 border-b border-[var(--color-border)]"
       role="group"
       aria-label="Filter by brand"
     >
+      {/* All Brands pill */}
       <button
         type="button"
         onClick={() => handleSelect(null)}
-        className={`px-3 py-1.5 rounded-[3px] text-sm font-medium font-sans transition-colors border ${
-          !activeBrand ? activePill : inactivePill
-        }`}
         aria-pressed={!activeBrand}
+        className={`brand-filter-btn relative pb-3 text-[12px] font-sans font-semibold tracking-[0.12em] uppercase transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-accent)] ${
+          !activeBrand ? activeClass : inactiveClass
+        }`}
       >
         {allBrandsLabel}
       </button>
 
       {brands
         .filter((b) => b.count > 0)
-        .map((brand) => (
-          <button
-            key={brand.id}
-            type="button"
-            onClick={() => handleSelect(brand.id)}
-            className={`px-3 py-1.5 rounded-[3px] text-sm font-medium font-sans transition-colors border ${
-              activeBrand === brand.id ? activePill : inactivePill
-            }`}
-            aria-pressed={activeBrand === brand.id}
-          >
-            {brand.name}
-            <span className="ml-1.5 text-xs opacity-60">{brand.count}</span>
-          </button>
-        ))}
+        .map((brand) => {
+          const isActive = activeBrand === brand.id;
+          return (
+            <button
+              key={brand.id}
+              type="button"
+              onClick={() => handleSelect(brand.id)}
+              aria-pressed={isActive}
+              className={`brand-filter-btn relative pb-3 text-[12px] font-sans font-semibold tracking-[0.12em] uppercase transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-accent)] ${
+                isActive ? activeClass : inactiveClass
+              }`}
+            >
+              {brand.name}
+              <span
+                className={`ml-1.5 font-ibm-mono text-[10px] font-normal transition-opacity ${
+                  isActive ? 'opacity-70' : 'opacity-40'
+                }`}
+              >
+                {brand.count}
+              </span>
+            </button>
+          );
+        })}
     </div>
   );
 }
