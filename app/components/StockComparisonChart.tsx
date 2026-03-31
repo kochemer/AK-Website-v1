@@ -1,16 +1,16 @@
 'use client';
 
-import { useState, useMemo } from 'react';
+import { useEffect, useRef, useState, useMemo } from 'react';
 import {
-  ResponsiveContainer,
-  LineChart,
-  Line,
-  XAxis,
-  YAxis,
-  CartesianGrid,
-  Tooltip,
-  Legend,
-} from 'recharts';
+  createChart,
+  LineSeries,
+  ColorType,
+  type IChartApi,
+  type ISeriesApi,
+  type LineData,
+  type DeepPartial,
+  type ChartOptions,
+} from 'lightweight-charts';
 
 export type StockSeries = {
   ticker: string;
@@ -20,115 +20,139 @@ export type StockSeries = {
 };
 
 type Props = { series: StockSeries[] };
+type Period = '1M' | '3M' | '6M' | '1Y' | 'ALL';
 
-type Period = '1M' | '3M' | '6M' | '1Y';
-
-const PERIOD_DAYS: Record<Period, number> = {
+const PERIOD_DAYS: Record<Period, number | null> = {
   '1M': 30,
   '3M': 90,
   '6M': 182,
   '1Y': 365,
+  'ALL': null,
 };
 
 const SERIES_COLORS: Record<string, string> = {
   'PNDORA.CO': '#8B6914',
-  'SIG': '#2563eb',
-  'CFR.SW': '#16a34a',
-  'MC.PA': '#9333ea',
+  'SIG':       '#2563eb',
+  'CFR.SW':    '#16a34a',
+  'MC.PA':     '#9333ea',
 };
-
 const DEFAULT_COLOR = '#6b7280';
 
-// Pick ~5 evenly-spaced tick dates from the visible date array
-function computeTicks(dates: string[]): string[] {
-  if (dates.length === 0) return [];
-  if (dates.length <= 6) return dates;
-  const step = Math.floor(dates.length / 5);
-  const ticks: string[] = [];
-  for (let i = 0; i < dates.length - 1; i += step) {
-    ticks.push(dates[i]);
-  }
-  ticks.push(dates[dates.length - 1]);
-  return ticks;
-}
-
-// Format a date tick based on how much data is visible
-function makeTickFormatter(period: Period) {
-  return (dateStr: string) => {
-    const d = new Date(dateStr);
-    if (period === '1M') {
-      // "12 Jan"
-      return d.toLocaleDateString('en-GB', { day: 'numeric', month: 'short' });
-    }
-    // "Jan '26"
-    const month = d.toLocaleDateString('en-GB', { month: 'short' });
-    const year = String(d.getFullYear()).slice(2);
-    return `${month} '${year}`;
-  };
-}
-
-function CustomTooltip({
-  active,
-  payload,
-  label,
-}: {
-  active?: boolean;
-  payload?: { name: string; value: number; color: string }[];
-  label?: string;
-}) {
-  if (!active || !payload?.length) return null;
-
-  const date = label
-    ? new Date(label).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })
-    : '';
-
-  return (
-    <div className="bg-[var(--color-surface)] border border-[var(--color-border)] rounded-sm px-3 py-2 shadow-sm text-[12px] font-sans">
-      <p className="text-[var(--color-text-secondary)] mb-1.5">{date}</p>
-      {payload.map(p => (
-        <div key={p.name} className="flex items-center gap-2 mb-0.5">
-          <span className="w-2 h-2 rounded-full shrink-0" style={{ background: p.color }} />
-          <span className="text-[var(--color-text-primary)] font-medium">{p.name}</span>
-          <span className="text-[var(--color-text-secondary)]">
-            ${p.value.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
-          </span>
-        </div>
-      ))}
-    </div>
-  );
-}
-
 export default function StockComparisonChart({ series }: Props) {
-  const [period, setPeriod] = useState<Period>('1Y');
+  const containerRef = useRef<HTMLDivElement>(null);
+  const chartRef     = useRef<IChartApi | null>(null);
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const seriesRefs   = useRef<Map<string, ISeriesApi<'Line', any>>>(new Map());
+
+  const [period, setPeriod]             = useState<Period>('1Y');
   const [activeSeries, setActiveSeries] = useState<Set<string>>(
     new Set(series.map(s => s.ticker))
   );
 
-  const { chartData, ticks } = useMemo(() => {
-    const cutoff = new Date(Date.now() - PERIOD_DAYS[period] * 24 * 60 * 60 * 1000);
+  // Pre-sort each series once
+  const lineDataMap = useMemo<Map<string, LineData[]>>(() => {
+    const map = new Map<string, LineData[]>();
+    for (const s of series) {
+      const data: LineData[] = s.priceHistory
+        .map(p => ({
+          time: p.date.slice(0, 10) as LineData['time'],
+          value: p.close,
+        }))
+        .sort((a, b) => (a.time as string).localeCompare(b.time as string));
+      map.set(s.ticker, data);
+    }
+    return map;
+  }, [series]);
 
-    const filtered = series.map(s => ({
-      ticker: s.ticker,
-      points: s.priceHistory
-        .filter(p => new Date(p.date) >= cutoff)
-        .map(p => ({ date: p.date, value: p.close })),
-    }));
+  // Filter to selected period
+  const filteredDataMap = useMemo<Map<string, LineData[]>>(() => {
+    const days = PERIOD_DAYS[period];
+    const cutoff = days
+      ? new Date(Date.now() - days * 86_400_000).toISOString().slice(0, 10)
+      : null;
+    const map = new Map<string, LineData[]>();
+    for (const [ticker, data] of lineDataMap) {
+      map.set(ticker, cutoff ? data.filter(d => (d.time as string) >= cutoff) : data);
+    }
+    return map;
+  }, [lineDataMap, period]);
 
-    const allDates = Array.from(
-      new Set(filtered.flatMap(s => s.points.map(p => p.date)))
-    ).sort();
+  // ── Create chart once on mount ──
+  useEffect(() => {
+    if (!containerRef.current) return;
 
-    const rows = allDates.map(date => {
-      const row: Record<string, string | number> = { date };
-      for (const s of filtered) {
-        const pt = s.points.find(p => p.date === date);
-        if (pt !== undefined) row[s.ticker] = pt.value;
-      }
-      return row;
+    const opts: DeepPartial<ChartOptions> = {
+      layout: {
+        background:  { type: ColorType.Solid, color: 'transparent' },
+        textColor:   'rgba(128,128,128,0.8)',
+        fontFamily:  'system-ui, sans-serif',
+        fontSize:    11,
+      },
+      grid: {
+        vertLines: { color: 'rgba(128,128,128,0.1)' },
+        horzLines: { color: 'rgba(128,128,128,0.1)' },
+      },
+      rightPriceScale: {
+        borderVisible: false,
+      },
+      timeScale: {
+        borderVisible: false,
+        fixLeftEdge:   true,
+        fixRightEdge:  true,
+        rightOffset:   2,
+      },
+      crosshair: {
+        horzLine: { labelVisible: true },
+        vertLine: { labelVisible: true },
+      },
+      handleScroll: true,
+      handleScale:  true,
+      width:  containerRef.current.clientWidth,
+      height: 300,
+    };
+
+    const chart = createChart(containerRef.current, opts);
+    chartRef.current = chart;
+
+    // Add one line series per ticker
+    for (const s of series) {
+      const color = SERIES_COLORS[s.ticker] ?? DEFAULT_COLOR;
+      const ls = chart.addSeries(LineSeries, {
+        color,
+        lineWidth:        2,
+        priceLineVisible: false,
+        lastValueVisible: true,
+        title:            s.label,
+      });
+      seriesRefs.current.set(s.ticker, ls);
+    }
+
+    // Responsive resize
+    const ro = new ResizeObserver(entries => {
+      const w = entries[0]?.contentRect.width;
+      if (w) chart.applyOptions({ width: w });
     });
+    ro.observe(containerRef.current);
 
-    return { chartData: rows, ticks: computeTicks(allDates) };
-  }, [series, period]);
+    return () => {
+      ro.disconnect();
+      chart.remove();
+      chartRef.current = null;
+      seriesRefs.current.clear();
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  // ── Sync data when period or visibility changes ──
+  useEffect(() => {
+    for (const s of series) {
+      const ls = seriesRefs.current.get(s.ticker);
+      if (!ls) continue;
+      const visible = activeSeries.has(s.ticker);
+      ls.setData(visible ? (filteredDataMap.get(s.ticker) ?? []) : []);
+    }
+    chartRef.current?.timeScale().fitContent();
+  }, [filteredDataMap, activeSeries, series]);
 
   const toggleSeries = (ticker: string) => {
     setActiveSeries(prev => {
@@ -142,9 +166,7 @@ export default function StockComparisonChart({ series }: Props) {
     });
   };
 
-  if (series.length === 0) return null;
-
-  const tickFormatter = makeTickFormatter(period);
+  if (!series.length) return null;
 
   return (
     <section className="mb-12">
@@ -154,7 +176,7 @@ export default function StockComparisonChart({ series }: Props) {
 
       {/* Period selector */}
       <div className="flex items-center gap-2 mb-3" role="group" aria-label="Select time period">
-        {(['1M', '3M', '6M', '1Y'] as Period[]).map(p => (
+        {(['1M', '3M', '6M', '1Y', 'ALL'] as Period[]).map(p => (
           <button
             key={p}
             onClick={() => setPeriod(p)}
@@ -173,9 +195,9 @@ export default function StockComparisonChart({ series }: Props) {
       </div>
 
       {/* Company toggles */}
-      <div className="flex flex-wrap gap-2 mb-4">
+      <div className="flex flex-wrap gap-2 mb-3">
         {series.map(s => {
-          const color = SERIES_COLORS[s.ticker] ?? DEFAULT_COLOR;
+          const color    = SERIES_COLORS[s.ticker] ?? DEFAULT_COLOR;
           const isActive = activeSeries.has(s.ticker);
           return (
             <button
@@ -194,50 +216,8 @@ export default function StockComparisonChart({ series }: Props) {
         })}
       </div>
 
-      {/* Chart */}
-      <div style={{ width: '100%', height: 280 }}>
-        <ResponsiveContainer width="100%" height={280}>
-          <LineChart data={chartData} margin={{ top: 4, right: 8, bottom: 0, left: 0 }}>
-            <CartesianGrid
-              strokeDasharray="3 3"
-              stroke="var(--color-border)"
-              strokeOpacity={0.5}
-            />
-            <XAxis
-              dataKey="date"
-              ticks={ticks}
-              tickFormatter={tickFormatter}
-              tick={{ fontSize: 11, fill: 'var(--color-text-secondary)', fontFamily: 'sans-serif' }}
-              tickLine={false}
-              axisLine={false}
-            />
-            <YAxis
-              tick={{ fontSize: 11, fill: 'var(--color-text-secondary)', fontFamily: 'sans-serif' }}
-              tickLine={false}
-              axisLine={false}
-              domain={['auto', 'auto']}
-              tickFormatter={v => `$${v}`}
-              width={52}
-            />
-            <Tooltip content={<CustomTooltip />} />
-            <Legend wrapperStyle={{ display: 'none' }} />
-            {series
-              .filter(s => activeSeries.has(s.ticker))
-              .map(s => (
-                <Line
-                  key={s.ticker}
-                  type="linear"
-                  dataKey={s.ticker}
-                  name={s.label}
-                  stroke={SERIES_COLORS[s.ticker] ?? DEFAULT_COLOR}
-                  strokeWidth={2}
-                  dot={false}
-                  connectNulls
-                />
-              ))}
-          </LineChart>
-        </ResponsiveContainer>
-      </div>
+      {/* Chart — LWC renders into this div */}
+      <div ref={containerRef} style={{ width: '100%', height: 300 }} />
     </section>
   );
 }
