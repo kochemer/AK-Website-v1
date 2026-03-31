@@ -23,7 +23,7 @@ import { matchCompetitors } from '../lib/utils/competitorMatcher';
 import { getModelFor, maxTokensParam, temperatureParam } from '../lib/llm/models';
 import type { Article, SignalTag } from '../lib/types/article';
 import type { CompetitorIntel, BrandIntel, FinancialData } from '../lib/utils/loadCompetitorIntel';
-import { loadStockHistory, mergeStockHistory, saveStockHistory, toWeekStart } from '../lib/utils/stockHistory';
+import { loadStockHistory, mergeStockHistory, saveStockHistory } from '../lib/utils/stockHistory';
 import type { StockCandle } from '../lib/utils/stockHistory';
 
 // ── Constants ──────────────────────────────────────────────────────────────
@@ -195,9 +195,9 @@ async function fetchFinancials(): Promise<Map<string, FinancialData>> {
       try {
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
         chartResult = await (yahooFinance.chart as (symbol: string, opts: any) => Promise<any>)(ticker, {
-          period1: DateTime.now().minus({ weeks: 54 }).toJSDate(),
+          period1: DateTime.now().minus({ days: 20 }).toJSDate(),
           period2: new Date(),
-          interval: '1wk',
+          interval: '1d',
         });
       } catch {
         // chart data unavailable — fall back to today's change
@@ -206,33 +206,26 @@ async function fetchFinancials(): Promise<Map<string, FinancialData>> {
       const price = quote.regularMarketPrice ?? 0;
       const currency = quote.currency ?? 'USD';
 
-      // Calculate 1-week % change — skip last candle (partial current week)
-      let change1w = 0;
-      if (chartResult?.quotes && chartResult.quotes.length >= 3) {
-        const completedQuotes = (chartResult.quotes as { close?: number | null }[])
-          .filter(q => q.close != null);
-        // Skip last entry (partial current week)
-        const prev = completedQuotes[completedQuotes.length - 3]?.close;
-        const latest = completedQuotes[completedQuotes.length - 2]?.close;
-        if (prev && latest && prev > 0) {
-          change1w = ((latest - prev) / prev) * 100;
-        }
-      } else if (quote.regularMarketChangePercent != null) {
-        change1w = quote.regularMarketChangePercent;
-      }
-
-      // Build completed candles from live chart (exclude partial last candle)
-      // Normalize dates to ISO week-start (Monday YYYY-MM-DD) so US and European
-      // exchange candles align on the same date string.
+      // Build completed daily candles — drop the last entry (today's partial candle)
       const liveCandles: StockCandle[] = chartResult?.quotes
         ? (chartResult.quotes as { date?: Date | string; close?: number | null }[])
             .filter(q => q.close != null)
             .map(q => ({
-              date: toWeekStart(q.date instanceof Date ? q.date.toISOString() : String(q.date)),
+              date: (q.date instanceof Date ? q.date.toISOString() : String(q.date)).slice(0, 10),
               close: q.close as number,
             }))
-            .slice(-13, -1)
+            .slice(0, -1)
         : [];
+
+      // 1-week change: last completed day vs 5 trading days prior
+      let change1w = 0;
+      if (liveCandles.length >= 6) {
+        const latest = liveCandles[liveCandles.length - 1].close;
+        const prev   = liveCandles[liveCandles.length - 6].close;
+        if (prev > 0) change1w = ((latest - prev) / prev) * 100;
+      } else if (quote.regularMarketChangePercent != null) {
+        change1w = quote.regularMarketChangePercent;
+      }
 
       if (liveCandles.length > 0) {
         newCandlesMap.set(ticker, liveCandles);
@@ -286,18 +279,18 @@ async function fetchFinancials(): Promise<Map<string, FinancialData>> {
     try {
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
       const fxChart = await (yahooFinance.chart as (symbol: string, opts: any) => Promise<any>)(fxSymbol, {
-        period1: DateTime.now().minus({ weeks: 54 }).toJSDate(),
+        period1: DateTime.now().minus({ days: 20 }).toJSDate(),
         period2: new Date(),
-        interval: '1wk',
+        interval: '1d',
       });
       const rateByDate = new Map<string, number>();
       for (const q of (fxChart?.quotes ?? []) as { date?: Date | string; close?: number | null }[]) {
         if (q.close == null) continue;
-        const dateKey = toWeekStart(q.date instanceof Date ? q.date.toISOString() : String(q.date));
+        const dateKey = (q.date instanceof Date ? q.date.toISOString() : String(q.date)).slice(0, 10);
         rateByDate.set(dateKey, q.close);
       }
       fxRates.set(currency, rateByDate);
-      console.log(`  [fx] ${fxSymbol}: ${rateByDate.size} weekly rate candles`);
+      console.log(`  [fx] ${fxSymbol}: ${rateByDate.size} daily rate candles`);
     } catch (err) {
       console.warn(`  [fx] Failed to fetch ${fxSymbol}:`, err);
     }
