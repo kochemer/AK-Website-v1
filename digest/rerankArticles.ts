@@ -1,17 +1,43 @@
 /**
- * LLM-based article reranking for weekly digest Top 7 selection.
- * 
- * Replaces deterministic selection with LLM-based selection that considers:
- * - Relevance to category
- * - Diversity of sources
- * - Quality and newsworthiness
- * - Recency
- * 
- * Features:
- * - Deterministic (temperature 0)
- * - Cached by weekLabel + category + candidate hash
- * - Bounded cost (only sends title, source, date, snippet, score)
- * - Failure-safe (falls back to deterministic top 7)
+ * @module rerankArticles
+ *
+ * LLM-based article reranking for weekly digest Top-7 selection.
+ *
+ * ## Why LLM reranking?
+ * Deterministic scoring (keyword frequency, recency, source tier) misses
+ * editorial signals — a short but genuinely important story can be ranked
+ * below a verbose but unremarkable one. The LLM evaluates each candidate
+ * holistically: relevance to the category, source diversity, newsworthiness,
+ * and recency.
+ *
+ * ## Candidate pool construction
+ * Before calling the LLM each category's pool is trimmed to at most
+ * `RERANK_MAX_ITEMS` (default 18) candidates to stay within the model's TPM
+ * budget. Trimming is deterministic: articles are scored by
+ * `scoreCandidateForTrimming` (retail relevance keywords + source quality +
+ * recency proxy), then the top N by score are sent to the LLM. Commerce
+ * Materiality scores (from `scoring/commerceMateriality.ts`) influence
+ * trimming weights but are NOT forwarded to the LLM to keep prompts concise.
+ *
+ * ## Caching
+ * Results are keyed by `weekLabel:topic:<md5(candidateFingerprint)>` and
+ * persisted via `lib/utils/cachePaths.ts`. On re-runs within the same week the
+ * LLM is not called again unless the candidate pool changes (content hash
+ * mismatch). Override with `RERANK_MAX_ITEMS`, `RERANK_MAX_CHARS`, and
+ * `RERANK_COOLDOWN_MS` env vars.
+ *
+ * ## Fallback
+ * If the LLM call fails (quota, timeout, bad JSON) the module falls back to
+ * the deterministic `scoreCandidateForTrimming` ordering — the digest still
+ * publishes, just without LLM curation. Fallbacks are counted in `RerankStats`.
+ *
+ * ## Commerce Materiality weights
+ * Three weight factors tune how much commerce materiality influences trimming:
+ * - `COMMERCE_MATERIALITY_WEIGHT_ECOM` (default 1.5) — Ecommerce & Retail Tech.
+ * - `COMMERCE_MATERIALITY_WEIGHT_EMAIL` (default 1.2) — articles likely to
+ *   resonate in the email digest.
+ * - `COMMERCE_MATERIALITY_WEIGHT_OTHER` (default 0.3) — other topics.
+ * These are tuning levers, not hard filters. Adjust via env vars.
  */
 
 import { promises as fs } from 'fs';
@@ -46,20 +72,29 @@ import { getModelFor, maxTokensParam, temperatureParam } from '../lib/llm/models
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// Configuration
+// --- Configuration ---
+
+/** Primary reranking model. Override with RERANKER_MODEL_PRIMARY env var. */
 const RERANK_MODEL_PRIMARY = process.env.RERANKER_MODEL_PRIMARY || process.env.RERANK_MODEL || getModelFor('rank');
+/** Fallback model used if the primary fails. Should be cheaper/faster. */
 const RERANK_MODEL_FALLBACK = process.env.RERANKER_MODEL_FALLBACK || 'gpt-4.1-mini';
-const TEMPERATURE = 0; // Deterministic
+/** Temperature 0 ensures deterministic selection across identical inputs. */
+const TEMPERATURE = 0;
 const MAX_TOKENS = 2000;
 const CACHE_KIND = 'rerank';
-const CANDIDATE_DEFAULT = 100; // Default candidate pool size
+/** Default candidate pool size passed to `rerankByCategory` callers. */
+const CANDIDATE_DEFAULT = 100;
 const CANDIDATE_MIN = 25;
 const CANDIDATE_MAX = 100;
-const SNIPPET_MAX_LENGTH = 350; // Truncate snippets to bound cost
+/** Snippets are truncated before being sent to the LLM to bound input tokens. */
+const SNIPPET_MAX_LENGTH = 350;
 
-// TPM-safe configuration
+// TPM-safe limits — tune via env vars if you hit rate-limit errors
+/** Maximum articles sent to the LLM per category per call (default 18). */
 const RERANK_MAX_ITEMS = parseInt(process.env.RERANK_MAX_ITEMS || '18', 10);
+/** Maximum total characters sent per LLM call (approx. token budget guard). */
 const RERANK_MAX_CHARS = parseInt(process.env.RERANK_MAX_CHARS || '80000', 10);
+/** Cooldown between sequential category LLM calls to avoid TPM exhaustion. */
 const RERANK_COOLDOWN_MS = parseInt(process.env.RERANK_COOLDOWN_MS || '6500', 10);
 
 // Helper: sleep function
@@ -67,8 +102,10 @@ function sleep(ms: number): Promise<void> {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-// Commerce Materiality weights for reranking
-const COMMERCE_MATERIALITY_WEIGHT_ECOM = parseFloat(process.env.COMMERCE_MATERIALITY_WEIGHT_ECOM || '1.5');
+// Commerce Materiality weights used during deterministic pre-trimming.
+// Higher weights surface more commerce-relevant articles to the LLM.
+// These do NOT alter what the LLM sees — only which candidates reach it.
+const COMMERCE_MATERIALITY_WEIGHT_ECOM  = parseFloat(process.env.COMMERCE_MATERIALITY_WEIGHT_ECOM  || '1.5');
 const COMMERCE_MATERIALITY_WEIGHT_EMAIL = parseFloat(process.env.COMMERCE_MATERIALITY_WEIGHT_EMAIL || '1.2');
 const COMMERCE_MATERIALITY_WEIGHT_OTHER = parseFloat(process.env.COMMERCE_MATERIALITY_WEIGHT_OTHER || '0.3');
 
@@ -122,10 +159,12 @@ let stats: RerankStats = {
   category_stats: [],
 };
 
+/** Returns a shallow copy of current rerank stats (safe to mutate). */
 export function getRerankStats(): RerankStats {
   return { ...stats };
 }
 
+/** Resets stats counters — call at the start of each pipeline run. */
 export function resetRerankStats(): void {
   stats = {
     calls: 0,
@@ -188,7 +227,17 @@ function truncateSnippet(snippet: string | undefined, maxLength: number): string
 }
 
 /**
- * Score candidate for deterministic trimming (retail relevance + recency + source priority)
+ * Deterministic pre-trim score used to select which candidates reach the LLM.
+ *
+ * Scoring components (additive):
+ * - **Retail keyword matches** (+10 per keyword) — 30+ commerce-relevant terms.
+ * - **High-quality source bonus** (+5) — McKinsey, Bain, BCG, FT, Bloomberg, WSJ, Economist.
+ * - **Recency** (small boost proportional to Unix timestamp) — since all
+ *   articles are within the same week this has minimal impact relative to
+ *   keyword matches.
+ *
+ * Commerce Materiality scores (when present) are added after this base score
+ * using the per-category weight constants above.
  */
 function scoreCandidateForTrimming(candidate: CandidateArticle): number {
   let score = 0;

@@ -1,3 +1,31 @@
+/**
+ * @module fetchExtract
+ *
+ * Fetches and extracts article content from candidate URLs discovered by the
+ * search pipeline. Uses a three-strategy waterfall:
+ *
+ * 1. **Direct HTTP fetch** — tries to download the page itself (15 s timeout).
+ *    Parses HTML with cheerio using progressive selector fallback to locate the
+ *    main article body.
+ * 2. **Tavily Extract API** — used as a fallback when the direct fetch returns
+ *    too little content or detects a paywall. Better at bypassing JS-rendered
+ *    pages and consultant/gated sites.
+ * 3. **`time_text` date inference** — if neither strategy yields a publication
+ *    date, a final pass tries to infer it from visible timestamp text in the
+ *    page (`<time>`, "Published:", relative times like "2 hours ago", etc.).
+ *
+ * ## Date confidence levels
+ * - `high`   — date came from JSON-LD `datePublished` or an explicit `<time datetime>` attribute.
+ * - `medium` — date came from an HTML `<meta>` tag or a structured Tavily field.
+ * - `low`    — date was inferred from visible text or is approximate.
+ *
+ * ## Paywall detection
+ * Paywall status is determined in two stages:
+ * - HTTP: 401/402/403 responses are flagged as `likely_paywalled`.
+ * - Text: a set of regex patterns scans the extracted text for subscription prompts.
+ * Paywalled articles are kept in the output (they may still have useful metadata)
+ * but are flagged so downstream filters can deprioritise them.
+ */
 import { promises as fs } from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
@@ -15,29 +43,49 @@ const __dirname = path.dirname(__filename);
 
 const TAVILY_EXTRACT_API_URL = 'https://api.tavily.com/extract';
 
+/**
+ * A fully-extracted article candidate, enriched with metadata derived during
+ * the fetch + parse phase. Written into `data/discovery/<week>/extracted/`.
+ */
 export type ExtractedArticle = {
   url: string;
   title: string;
   snippet: string;
   domain: string;
+  /** ISO date string from the Tavily search result (may be approximate). */
   publishedDate?: string;
+  /** Normalised ISO 8601 timestamp used for week-window filtering. */
   publishedAt?: string | null;
-  publishedDateRaw?: string; // Raw date string before normalization
-  publishedDateInvalid?: boolean; // True if publishedDate is invalid/missing
+  /** Raw date string before normalisation — preserved for debugging. */
+  publishedDateRaw?: string;
+  /** True when the date could not be determined or parsed. */
+  publishedDateInvalid?: boolean;
+  /** Which extraction pass produced the date. */
   dateSource?: 'html' | 'tavily' | 'none' | 'time_text';
+  /** Granular source detail within the winning pass. */
   dateSourceDetail?: 'jsonld' | 'meta' | 'time' | 'time_text' | 'tavily' | 'none';
+  /** Confidence level for the extracted date — see module doc for thresholds. */
   dateConfidence?: 'high' | 'medium' | 'low';
   extractedText: string;
   wordCount: number;
   author?: string;
+  /** 16-char SHA-256 hex hash of the URL; used as a deduplication key. */
   hash: string;
   topic: SearchResult['topic'];
-  discoveredAt?: string; // ISO timestamp when article was discovered/extracted
-  sourceType?: 'discovery' | 'consultancy' | 'platform'; // Tag consultancy/platform articles
-  paywallStatus?: 'not_paywalled' | 'likely_paywalled' | 'unknown'; // Paywall detection status
-  paywallReason?: string; // Reason for paywall status
+  /** ISO timestamp of when this article was extracted (pipeline run time). */
+  discoveredAt?: string;
+  /** Identifies the discovery channel: standard search, consultancy crawl, or platform crawl. */
+  sourceType?: 'discovery' | 'consultancy' | 'platform';
+  /** Paywall detection outcome — paywalled articles are kept but deprioritised. */
+  paywallStatus?: 'not_paywalled' | 'likely_paywalled' | 'unknown';
+  paywallReason?: string;
 };
 
+/**
+ * Generates a 16-character hex hash of a URL used as a filesystem cache key.
+ * SHA-256 is used for collision resistance (not security); the substring keeps
+ * filenames short while remaining practically unique across ~200 articles/week.
+ */
 function hashUrl(url: string): string {
   return crypto.createHash('sha256').update(url).digest('hex').substring(0, 16);
 }
@@ -130,6 +178,19 @@ type FetchResult = {
   paywallReason?: string;
 };
 
+/**
+ * Fetches raw HTML for a URL, caching the result to `fetchDir/<hash>.html`.
+ *
+ * Cache hits skip the network entirely, which makes re-runs during a single
+ * pipeline execution cheap. Cache is scoped to the weekly discovery directory
+ * so stale HTML doesn't carry across weeks.
+ *
+ * Paywall detection is performed in two passes:
+ * 1. HTTP status — 401/402/403 → `likely_paywalled`.
+ * 2. HTML text scan — presence of any `PAYWALL_HTML_MARKERS` substring.
+ *
+ * Returns `html: null` on timeout, network error, or non-200 response.
+ */
 async function fetchHtml(url: string, fetchDir: string): Promise<FetchResult> {
   const hash = hashUrl(url);
   const htmlPath = path.join(fetchDir, `${hash}.html`);
@@ -207,6 +268,14 @@ async function fetchHtml(url: string, fetchDir: string): Promise<FetchResult> {
   }
 }
 
+/**
+ * Walks all `<script type="application/ld+json">` blocks in the page and
+ * returns the first value found for any of: `datePublished`, `dateCreated`,
+ * `dateModified`, `uploadDate`. Handles `@graph` arrays and nested objects.
+ *
+ * Called as a fallback when HTML `<meta>` date selectors return nothing.
+ * Yields `dateConfidence: 'high'` because JSON-LD dates are publisher-canonical.
+ */
 function extractDateFromJsonLd($: cheerio.Root): string | undefined {
   const scripts = $('script[type="application/ld+json"]');
   if (scripts.length === 0) return undefined;
@@ -261,6 +330,18 @@ function extractDateFromJsonLd($: cheerio.Root): string | undefined {
   return undefined;
 }
 
+/**
+ * Extracts clean article text, title, author, and publication date from raw HTML.
+ *
+ * Content selector waterfall (first match with >500 chars wins):
+ * `article` → `[role="main"]` → `main` → `.article-body` → `.post-content`
+ * → `.entry-content` → `.content` → `body`
+ *
+ * Title selector priority: `og:title` meta → `article:title` meta → `<h1>` → `<title>`.
+ *
+ * Date selector priority: various `<time>` and `<meta>` date attributes, then
+ * falls back to JSON-LD via `extractDateFromJsonLd`.
+ */
 function extractText(html: string, url: string): { text: string; title: string; author?: string; date?: string } {
   const $ = cheerio.load(html);
   
@@ -372,8 +453,13 @@ function extractText(html: string, url: string): { text: string; title: string; 
   return { text: content, title, author, date };
 }
 
+/**
+ * Returns true if more than 80% of characters in `text` are ASCII.
+ * Used to filter out non-English articles before adding them to the pool.
+ * This is deliberately loose — Nordic/French articles with a few accented
+ * characters still pass; fully Cyrillic/CJK pages do not.
+ */
 function isEnglish(text: string): boolean {
-  // Simple heuristic: check if >80% of characters are ASCII
   const asciiChars = text.split('').filter(c => c.charCodeAt(0) < 128).length;
   return asciiChars / text.length > 0.8;
 }
@@ -421,6 +507,11 @@ const NON_ARTICLE_PATTERNS = [
     /samtykke/i
 ];
 
+/**
+ * Scans extracted article text for patterns that indicate a paywall or login
+ * gate. This is the second paywall detection pass (the first happens on the
+ * HTTP response status in `fetchHtml`).
+ */
 function detectPaywallInText(text: string): { isPaywalled: boolean; reason?: string } {
   for (const pattern of PAYWALL_PATTERNS) {
     if (pattern.test(text)) {
@@ -441,6 +532,11 @@ function isArticle(text: string): boolean {
   return detectNonArticleReason(text) === null;
 }
 
+/**
+ * Returns true if the URL path contains a segment that strongly suggests
+ * editorial content (`/news/`, `/blog/`, `/insights/`, etc.). Used as a
+ * tiebreaker when the page itself doesn't declare an Article JSON-LD type.
+ */
 function urlLooksLikeArticle(url: string): boolean {
   return /\/(news|blog|insights|article|stories|press)\//i.test(url);
 }

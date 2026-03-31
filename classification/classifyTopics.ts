@@ -1,3 +1,29 @@
+/**
+ * @module classifyTopics
+ *
+ * Assigns each article to one of four topics using a two-stage heuristic:
+ *
+ * **Stage 1 — Source override** (highest priority, applied in this order):
+ * 1. Jewellery Industry — exact/partial source-name match against `JEWELLERY_SOURCES`
+ *    or any source that contains a `JEWELLERY_SOURCE_PATTERNS` substring.
+ * 2. Ecommerce & Retail Tech — same approach with `RETAIL_COMMERCE_SOURCES`.
+ * 3. Luxury & Consumer — same approach with `FASHION_LUXURY_SOURCES`.
+ *
+ * **Stage 2 — Keyword matching** (fallback, tested in priority order):
+ * 1. AI & Strategy  — matched against title + source.
+ * 2. Ecommerce & Retail Tech — matched against title + summary; blocked when
+ *    `LOW_SIGNAL_NEGATIVE` markers are present unless `EXCEPTION_POSITIVE`
+ *    execution-focused markers override.
+ * 3. Luxury & Consumer — matched against title + source.
+ * 4. Jewellery Industry — matched against title + source.
+ *
+ * If no keyword matches, a broad consumer-ish fallback returns `Luxury_and_Consumer`;
+ * the final default is `Ecommerce_Retail_Tech`.
+ *
+ * Short-keyword collision prevention: terms ≤ 3 chars ("ai", "ml", "nlp", "agi")
+ * are matched with word-boundary regexes to avoid false hits inside longer words
+ * (e.g. "ai" inside "sustain").
+ */
 import { promises as fs } from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
@@ -118,8 +144,16 @@ const FASHION_LUXURY_SOURCE_PATTERNS = [
   "fashion", "luxury", "vogue", "wwd", "couture"
 ];
 
-// Helper: Lowercase test for any keyword present
-// Uses word boundaries for short keywords (<= 3 chars) to avoid false matches (e.g., "ai" in "gain", "sustain")
+/**
+ * Returns true if any keyword in `keywords` appears in `text` (case-insensitive).
+ *
+ * For keywords ≤ 3 characters (and the explicit acronyms "ai", "ml", "nlp",
+ * "agi"), a word-boundary regex is used to prevent substring false positives.
+ * For example, `"ai"` would match inside `"gain"` or `"sustain"` without this
+ * guard. The regex also allows a trailing hyphen (`AI-powered`, `AI-driven`).
+ *
+ * Longer keywords use simple `String.includes()` for performance.
+ */
 function matchesAnyKeyword(text: string, keywords: string[]): boolean {
   const lower = text.toLowerCase();
   return keywords.some(kw => {
@@ -137,9 +171,22 @@ function matchesAnyKeyword(text: string, keywords: string[]): boolean {
   });
 }
 
-export function classifyTopic(article: { 
-  title: string; 
-  url: string; 
+/**
+ * Classifies a single article into one of the four topics.
+ *
+ * See the module-level doc for the full two-stage algorithm. The key
+ * design decisions:
+ * - Source overrides are intentionally checked before keywords because a known
+ *   specialist source (e.g. "National Jeweler") is a stronger signal than any
+ *   keyword match.
+ * - Ecommerce uses title + summary (not source) for keyword matching because
+ *   many cross-topic sources (Forbes, Bloomberg) cover commerce stories.
+ * - The `LOW_SIGNAL_NEGATIVE` / `EXCEPTION_POSITIVE` filter prevents sponsored
+ *   listicles from flooding the Ecommerce bucket.
+ */
+export function classifyTopic(article: {
+  title: string;
+  url: string;
   source: string;
   snippet?: string;
   summary?: string;
@@ -257,6 +304,13 @@ async function getArticlesPath(): Promise<string> {
   return path.join(__dirname, "../data/articles.json");
 }
 
+/**
+ * Reads `data/articles.json`, filters to the current CET calendar week, and
+ * classifies each eligible article using `classifyTopic`.
+ *
+ * @param inputDate - Reference date for week calculation (defaults to `new Date()`).
+ * @returns Week label (e.g. `"2025-W04"`) and articles grouped by topic.
+ */
 export async function classifyCurrentWeekArticles(
   inputDate?: Date
 ): Promise<{ weekLabel: string; byTopic: Record<Topic, Article[]> }> {

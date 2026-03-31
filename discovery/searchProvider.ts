@@ -4,7 +4,7 @@ import fetch from 'node-fetch';
 import type { Topic } from '../classification/classifyTopics';
 import { CONSULTANCY_DOMAINS, isConsultancyDomain } from './consultancyDomains';
 import { PLATFORM_DOMAINS, isPlatformDomain } from './platformDomains';
-import { getDiscoveryFilters } from './discoveryFilters';
+import { getDiscoveryFilters, SHARED_EXCLUDE_DOMAIN_PATTERNS, SHARED_EXCLUDE_URL_PATTERNS } from './discoveryFilters';
 import { getDomainRule } from './domainRules';
 
 const TAVILY_API_URL = 'https://api.tavily.com/search';
@@ -13,30 +13,39 @@ const TAVILY_API_URL = 'https://api.tavily.com/search';
 const DISCOVERY_DEBUG = process.env.DISCOVERY_DEBUG === '1';
 const DISCOVERY_TIME_BOUND = process.env.DISCOVERY_TIME_BOUND !== '0'; // Default ON
 
+/**
+ * Exact domains that are unconditionally excluded from search results.
+ * These are known noise sources too specific to capture with a pattern.
+ */
 const HARD_EXCLUDE_DOMAINS = [
   'job.govdoc.lk',
-  'data.montgomerycountymd.gov'
+  'data.montgomerycountymd.gov',
 ];
 
+/**
+ * Domain-name patterns for hard exclusion (applied before topic-level filters).
+ * Extends the shared job/careers patterns from discoveryFilters with government,
+ * military, and education TLDs that are never relevant editorial sources.
+ */
 const HARD_EXCLUDE_DOMAIN_PATTERNS: RegExp[] = [
-  /^job\\./i,
-  /^jobs\\./i,
-  /^careers\\./i,
-  /\\.gov$/i,
-  /\\.gov\\./i,
-  /\\.mil$/i,
-  /\\.edu$/i
+  ...SHARED_EXCLUDE_DOMAIN_PATTERNS,
+  /^job\./i,
+  /^jobs\./i,
+  /^careers\./i,
+  /\.gov$/i,
+  /\.gov\./i,
+  /\.mil$/i,
+  /\.edu$/i,
 ];
 
+/**
+ * URL path patterns for hard exclusion.
+ * Extends the shared patterns from discoveryFilters with press-release pages,
+ * which are editorial noise but not job-listing false-positives.
+ */
 const HARD_EXCLUDE_PATH_PATTERNS: RegExp[] = [
-  /\/careers?\b/i,
-  /\/jobs?\b/i,
-  /\/vacancies\b/i,
-  /\/apply\b/i,
+  ...SHARED_EXCLUDE_URL_PATTERNS,
   /\/press-releases\b/i,
-  /\/apps\//i,
-  /\/app\//i,
-  /\/directory\//i
 ];
 
 function isHardExcludedDomain(domain: string): boolean {

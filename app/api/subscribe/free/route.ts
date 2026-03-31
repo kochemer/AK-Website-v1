@@ -2,8 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { upsertSubscriberByEmail, getSubscriberByEmail } from '@/lib/db/subscribers';
 import { sendFreeConfirmationEmail } from '@/lib/email/transactional';
 import { checkRateLimit, getClientIp } from '@/lib/rateLimit';
-
-const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+import { isValidEmail } from '@/lib/utils/validateEmail';
 
 export async function POST(req: NextRequest) {
   const ip = getClientIp(req);
@@ -25,7 +24,7 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ ok: true, withDigest: false });
     }
 
-    if (!EMAIL_RE.test(email)) {
+    if (!isValidEmail(email)) {
       return NextResponse.json(
         { ok: false, error: 'Please enter a valid email address.' },
         { status: 400 },
