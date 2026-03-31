@@ -23,7 +23,7 @@ import { matchCompetitors } from '../lib/utils/competitorMatcher';
 import { getModelFor, maxTokensParam, temperatureParam } from '../lib/llm/models';
 import type { Article, SignalTag } from '../lib/types/article';
 import type { CompetitorIntel, BrandIntel, FinancialData } from '../lib/utils/loadCompetitorIntel';
-import { loadStockHistory, mergeStockHistory, saveStockHistory } from '../lib/utils/stockHistory';
+import { loadStockHistory, mergeStockHistory, saveStockHistory, toWeekStart } from '../lib/utils/stockHistory';
 import type { StockCandle } from '../lib/utils/stockHistory';
 
 // ── Constants ──────────────────────────────────────────────────────────────
@@ -222,11 +222,13 @@ async function fetchFinancials(): Promise<Map<string, FinancialData>> {
       }
 
       // Build completed candles from live chart (exclude partial last candle)
+      // Normalize dates to ISO week-start (Monday YYYY-MM-DD) so US and European
+      // exchange candles align on the same date string.
       const liveCandles: StockCandle[] = chartResult?.quotes
         ? (chartResult.quotes as { date?: Date | string; close?: number | null }[])
             .filter(q => q.close != null)
             .map(q => ({
-              date: q.date instanceof Date ? q.date.toISOString() : String(q.date),
+              date: toWeekStart(q.date instanceof Date ? q.date.toISOString() : String(q.date)),
               close: q.close as number,
             }))
             .slice(-13, -1)
@@ -291,7 +293,7 @@ async function fetchFinancials(): Promise<Map<string, FinancialData>> {
       const rateByDate = new Map<string, number>();
       for (const q of (fxChart?.quotes ?? []) as { date?: Date | string; close?: number | null }[]) {
         if (q.close == null) continue;
-        const dateKey = (q.date instanceof Date ? q.date.toISOString() : String(q.date)).slice(0, 10);
+        const dateKey = toWeekStart(q.date instanceof Date ? q.date.toISOString() : String(q.date));
         rateByDate.set(dateKey, q.close);
       }
       fxRates.set(currency, rateByDate);
