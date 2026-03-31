@@ -31,12 +31,12 @@ const PERIOD_DAYS: Record<Period, number | null> = {
 };
 
 const SERIES_COLORS: Record<string, string> = {
-  'PNDORA.CO': '#8B6914',
-  'SIG':       '#2563eb',
-  'CFR.SW':    '#16a34a',
-  'MC.PA':     '#9333ea',
+  'PNDORA.CO': '#C9A84C',   // gold — Pandora (reference brand)
+  'SIG':       '#5B8FE8',   // clear blue — Signet
+  'CFR.SW':    '#4EC9A0',   // teal — Richemont (Cartier / Van Cleef)
+  'MC.PA':     '#B07FE8',   // violet — LVMH (Tiffany / Bulgari)
 };
-const DEFAULT_COLOR = '#6b7280';
+const DEFAULT_COLOR = '#9E9484';
 
 export default function StockComparisonChart({ series }: Props) {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -84,13 +84,13 @@ export default function StockComparisonChart({ series }: Props) {
     const opts: DeepPartial<ChartOptions> = {
       layout: {
         background:  { type: ColorType.Solid, color: 'transparent' },
-        textColor:   'rgba(128,128,128,0.8)',
-        fontFamily:  'system-ui, sans-serif',
-        fontSize:    11,
+        textColor:   'rgba(158,148,132,0.85)',   // --text-secondary warm tone
+        fontFamily:  "'IBM Plex Mono', 'Courier New', monospace",
+        fontSize:    10,
       },
       grid: {
-        vertLines: { color: 'rgba(128,128,128,0.1)' },
-        horzLines: { color: 'rgba(128,128,128,0.1)' },
+        vertLines: { color: 'rgba(201,168,76,0.06)' },   // faint gold verticals
+        horzLines: { color: 'rgba(201,168,76,0.06)' },
       },
       rightPriceScale: {
         borderVisible: false,
@@ -170,50 +170,62 @@ export default function StockComparisonChart({ series }: Props) {
 
   return (
     <section className="mb-12">
-      <p className="text-[11px] tracking-[0.3em] uppercase text-[var(--color-text-secondary)] font-sans font-semibold mb-4">
-        Financial Performance
-      </p>
-
-      {/* Period selector */}
-      <div className="flex items-center gap-2 mb-3" role="group" aria-label="Select time period">
-        {(['1M', '3M', '6M', '1Y', 'ALL'] as Period[]).map(p => (
-          <button
-            key={p}
-            onClick={() => setPeriod(p)}
-            className={`px-3 py-1 rounded-[3px] text-[12px] font-medium font-sans border transition-colors ${
-              period === p
-                ? 'bg-[var(--color-accent)] text-white border-[var(--color-accent)]'
-                : 'bg-transparent text-[var(--color-text-secondary)] border-[var(--color-border)] hover:border-[var(--color-accent)] hover:text-[var(--color-accent)]'
-            }`}
-          >
-            {p}
-          </button>
-        ))}
-        <span className="ml-auto text-[11px] text-[var(--color-text-secondary)] font-sans">
-          USD (converted)
+      {/* Section header */}
+      <div className="flex items-end justify-between mb-4 flex-wrap gap-3">
+        <p className="intel-section-label">Financial Performance</p>
+        <span className="font-ibm-mono text-[10px] text-[var(--color-text-secondary)] tracking-[0.08em] opacity-60">
+          USD · CONVERTED
         </span>
       </div>
 
-      {/* Company toggles */}
-      <div className="flex flex-wrap gap-2 mb-3">
-        {series.map(s => {
-          const color    = SERIES_COLORS[s.ticker] ?? DEFAULT_COLOR;
-          const isActive = activeSeries.has(s.ticker);
-          return (
+      {/* Controls row */}
+      <div className="flex items-center gap-4 mb-4 flex-wrap">
+        {/* Period selector */}
+        <div className="flex items-center gap-1" role="group" aria-label="Select time period">
+          {(['1M', '3M', '6M', '1Y', 'ALL'] as Period[]).map(p => (
             <button
-              key={s.ticker}
-              onClick={() => toggleSeries(s.ticker)}
-              className={`flex items-center gap-1.5 px-2.5 py-1 rounded-[3px] text-[12px] font-sans border transition-colors ${
-                isActive
-                  ? 'border-transparent text-white'
-                  : 'bg-transparent border-[var(--color-border)] text-[var(--color-text-secondary)]'
+              key={p}
+              onClick={() => setPeriod(p)}
+              className={`font-ibm-mono text-[10px] tracking-[0.08em] px-2.5 py-1 border transition-colors duration-150 ${
+                period === p
+                  ? 'border-[var(--color-accent)] text-[var(--color-accent)] bg-[var(--color-accent)]/8'
+                  : 'border-[var(--color-border)] text-[var(--color-text-secondary)] hover:border-[var(--color-accent)]/50 hover:text-[var(--color-accent)]'
               }`}
-              style={isActive ? { background: color, borderColor: color } : undefined}
             >
-              {s.label}
+              {p}
             </button>
-          );
-        })}
+          ))}
+        </div>
+
+        {/* Divider */}
+        <div className="h-4 w-px bg-[var(--color-border)]" aria-hidden />
+
+        {/* Company toggles */}
+        <div className="flex flex-wrap gap-1.5">
+          {series.map(s => {
+            const color    = SERIES_COLORS[s.ticker] ?? DEFAULT_COLOR;
+            const isActive = activeSeries.has(s.ticker);
+            return (
+              <button
+                key={s.ticker}
+                onClick={() => toggleSeries(s.ticker)}
+                className="font-ibm-mono text-[10px] tracking-[0.05em] px-2.5 py-1 border transition-all duration-150 flex items-center gap-1.5"
+                style={{
+                  borderColor: isActive ? color : 'var(--color-border)',
+                  color: isActive ? color : 'var(--color-text-secondary)',
+                  background: isActive ? `${color}12` : 'transparent',
+                }}
+              >
+                <span
+                  className="w-1.5 h-1.5 rounded-full shrink-0"
+                  style={{ background: isActive ? color : 'var(--color-border)' }}
+                  aria-hidden
+                />
+                {s.label}
+              </button>
+            );
+          })}
+        </div>
       </div>
 
       {/* Chart — LWC renders into this div */}
