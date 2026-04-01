@@ -9,6 +9,19 @@ import { weekLabelToSlug } from '../utils/weekSlug';
 
 const CANONICAL_URL = 'https://luxury-intel.com';
 
+/**
+ * Append standard email UTM parameters to an internal luxury-intel.com URL.
+ * utm_campaign is set to the week label (e.g. 2026-W13) for per-issue segmentation.
+ */
+function withEmailUtms(url: string, week: string, content?: string): string {
+  const u = new URL(url);
+  u.searchParams.set('utm_source', 'newsletter');
+  u.searchParams.set('utm_medium', 'email');
+  u.searchParams.set('utm_campaign', week);
+  if (content) u.searchParams.set('utm_content', content);
+  return u.toString();
+}
+
 const IMPLICATION_PATTERNS = [
   /implication/i,
   /for retailers/i,
@@ -113,7 +126,7 @@ const SANS   = "'Helvetica Neue', Arial, Helvetica, sans-serif";
 export function renderEmailDigestHtml(digest: EmailDigest, opts: RenderEmailDigestOptions): string {
   const week = digest.week;
   const issueLine = escapeHtml(formatIssueLine(week));
-  const digestUrl = `${CANONICAL_URL}/digest/${weekLabelToSlug(week)}`;
+  const digestUrl = withEmailUtms(`${CANONICAL_URL}/digest/${weekLabelToSlug(week)}`, week, 'read_online_cta');
 
   // Split into tiers
   const leadItem      = digest.items.find(i => i.rank === 1);
@@ -309,7 +322,7 @@ export function renderEmailDigestHtml(digest: EmailDigest, opts: RenderEmailDige
  */
 export function renderEmailDigestPlaintext(digest: EmailDigest, unsubscribeUrl?: string): string {
   const issueLine = formatIssueLine(digest.week);
-  const digestUrl = `${CANONICAL_URL}/digest/${weekLabelToSlug(digest.week)}`;
+  const digestUrl = withEmailUtms(`${CANONICAL_URL}/digest/${weekLabelToSlug(digest.week)}`, digest.week, 'read_online_cta');
   let text = `LUXURY INTELLIGENCE\n`;
   text += `${issueLine}\n`;
   text += `${'─'.repeat(50)}\n\n`;

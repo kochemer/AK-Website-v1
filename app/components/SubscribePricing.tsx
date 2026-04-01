@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { track } from '@/lib/analytics';
+import { identifySubscriber } from '@/lib/analytics/identity';
 
 // ── Types ─────────────────────────────────────────────────────────────────────
 
@@ -84,6 +85,9 @@ export default function SubscribePricing() {
       }
 
       track('checkout_start', { plan: 'free', has_email: !!free.email.trim() });
+      if (free.email.trim()) {
+        void identifySubscriber(free.email.trim(), 'free');
+      }
       setFree(s => ({ ...s, status: data.withDigest ? 'success_digest' : 'success_noemail' }));
     } catch {
       setFree(s => ({ ...s, status: 'error', errorMsg: 'Network error. Please try again.' }));
@@ -116,6 +120,9 @@ export default function SubscribePricing() {
       if (data.ok && data.checkoutUrl) {
         // Step 3: redirect to Stripe checkout
         track('checkout_start', { plan });
+        if (state.email.trim()) {
+          void identifySubscriber(state.email.trim(), plan);
+        }
         window.location.href = data.checkoutUrl;
         return;
       }

@@ -56,10 +56,13 @@ export default function AmplitudeInit() {
       amplitude.initAll(apiKey, {
         serverZone: 'EU',
         analytics: {
-          autocapture: true,
-          defaultTracking: {
-            pageViews: true,
+          autocapture: {
+            // Page views are fired manually via AnalyticsPageView — disable auto to avoid duplicates.
+            pageViews: false,
+            // Sessions managed by Amplitude internally.
             sessions: true,
+            // Element interactions disabled: noisy, risks capturing form field values (PII).
+            elementInteractions: false,
           },
         },
         sessionReplay: {
