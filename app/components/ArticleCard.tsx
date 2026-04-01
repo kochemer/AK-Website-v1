@@ -21,8 +21,8 @@ type ArticleCardProps = {
   article_id?: string;
   article_rank?: number;
   category?: string;
-  /** 'featured' = top story card with distinct layout */
-  variant?: 'default' | 'featured';
+  /** 'featured' = top story card with distinct layout; 'intelligence' = dense two-col editorial row */
+  variant?: 'default' | 'featured' | 'intelligence';
 };
 
 export default function ArticleCard({
@@ -114,6 +114,67 @@ export default function ArticleCard({
         >
           Read article →
         </a>
+      </article>
+    );
+  }
+
+  if (variant === 'intelligence') {
+    return (
+      <article className="intel-article-row group py-4 border-b border-[var(--color-border)] last:border-b-0">
+        <div className="grid grid-cols-1 md:grid-cols-[1fr_auto] gap-x-6 gap-y-1 items-start">
+          {/* Left col: title + summary */}
+          <div>
+            <a
+              {...linkProps}
+              className="block no-underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-accent)] focus-visible:ring-offset-2 rounded-sm"
+            >
+              <h3 className="font-display font-semibold text-[1.05rem] leading-snug tracking-[-0.01em] text-[var(--color-text-primary)] group-hover:text-[var(--color-accent)] transition-colors duration-150 line-clamp-2">
+                {localizedTitle}
+              </h3>
+            </a>
+            {cleanSummary && (
+              <p className="text-[13px] font-sans text-[var(--color-text-secondary)] mt-1 line-clamp-2 leading-relaxed">
+                {cleanSummary}
+              </p>
+            )}
+          </div>
+
+          {/* Right col: source + date + badges */}
+          <div className="flex flex-col items-start md:items-end gap-1.5 mt-0.5 shrink-0">
+            {(source || displayDate) && (
+              <div className="flex items-center gap-1.5 text-[11px] font-sans text-[var(--color-text-secondary)]">
+                {source && hostname && (
+                  <img
+                    src={`https://www.google.com/s2/favicons?domain=${hostname}&sz=32`}
+                    alt=""
+                    className="w-3.5 h-3.5 rounded-sm opacity-50"
+                    onError={(e) => { e.currentTarget.style.display = 'none'; }}
+                  />
+                )}
+                {source && (
+                  <span className="font-ibm-mono text-[10px] tracking-[0.08em] uppercase opacity-70">
+                    {source}
+                  </span>
+                )}
+                {displayDate && (
+                  <span className="opacity-50 text-[10px]">{displayDate}</span>
+                )}
+              </div>
+            )}
+            {badges && badges.length > 0 && (
+              <div className="flex gap-1 flex-wrap justify-end">
+                {badges.map((badge, idx) => (
+                  <span
+                    key={idx}
+                    className="font-ibm-mono text-[9px] tracking-[0.05em] uppercase px-1.5 py-0.5 border border-[var(--color-border)] text-[var(--color-text-secondary)] rounded-sm"
+                  >
+                    {badge}
+                  </span>
+                ))}
+              </div>
+            )}
+          </div>
+        </div>
       </article>
     );
   }
