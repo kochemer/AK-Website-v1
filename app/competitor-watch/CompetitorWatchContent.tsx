@@ -46,12 +46,19 @@ export default function CompetitorWatchContent({
 }: Props) {
   const t = getMessages(locale);
 
+  // Competitors (excluding Pandora — has its own dedicated section)
   const competitorBrands = COMPETITOR_BRANDS.filter(b => b.id !== 'pandora');
-  const brandSummaries: BrandSummary[] = competitorBrands.map(b => ({
-    id: b.id,
-    name: b.name,
-    count: brandMap.get(b.id)?.length ?? 0,
-  }));
+
+  // Brand filter: Pandora first, then competitors
+  const pandoraBrand = COMPETITOR_BRANDS.find(b => b.id === 'pandora')!;
+  const brandSummaries: BrandSummary[] = [
+    { id: pandoraBrand.id, name: pandoraBrand.name, count: brandMap.get('pandora')?.length ?? 0 },
+    ...competitorBrands.map(b => ({
+      id: b.id,
+      name: b.name,
+      count: brandMap.get(b.id)?.length ?? 0,
+    })),
+  ];
 
   const activeBrandName = activeBrand
     ? COMPETITOR_BRANDS.find(b => b.id === activeBrand)?.name
@@ -124,11 +131,16 @@ export default function CompetitorWatchContent({
     })
     .slice(0, 8);
 
-  // Asymmetric brand grid: first brand gets `featured` prop (2× height)
-  const brandsWithContent = competitorBrands.filter(b => {
+  // Brand profiles: Pandora first, then competitors with content
+  const competitorBrandsWithContent = competitorBrands.filter(b => {
     const articles = brandMap.get(b.id) ?? [];
     return articles.length > 0 || !!intel.brands[b.id]?.narrative;
   });
+  const pandoraHasContent =
+    (brandMap.get('pandora') ?? []).length > 0 || !!intel.brands['pandora']?.narrative;
+  const brandsWithContent = pandoraHasContent
+    ? [pandoraBrand, ...competitorBrandsWithContent]
+    : competitorBrandsWithContent;
 
   return (
     <div className="max-w-4xl mx-auto px-4 md:px-8 py-12 md:py-16">
@@ -163,9 +175,25 @@ export default function CompetitorWatchContent({
         <div className="intel-rule intel-rule-animated reveal reveal-d4" />
       </header>
 
-      {/* ── Section 2: Filters ───────────────────────────────────────────── */}
+      {/* ── Section 2: Weekly Briefing (unfiltered only) ─────────────────── */}
+      {!isFiltered && (
+        <div className="reveal reveal-d4">
+          <CompetitorBriefing
+            bullets={intel.briefing}
+            generatedAt={intel.generatedAt}
+          />
+        </div>
+      )}
+
+      {/* ── Section 3: Financial Performance (unfiltered only) ───────────── */}
+      {!isFiltered && stockSeries.length > 0 && (
+        <div className="reveal reveal-d5">
+          <StockChartSection series={stockSeries} />
+        </div>
+      )}
+
+      {/* ── Section 4: Filters — brand + signal, positioned after chart ─── */}
       <div className="mb-10 reveal reveal-d5">
-        {/* Brand filter bar — tab-style with gold underline draw */}
         <BrandFilterBar
           brands={brandSummaries}
           activeBrand={activeBrand}
@@ -173,7 +201,6 @@ export default function CompetitorWatchContent({
           allBrandsLabel={t.competitorWatch.allBrands}
         />
 
-        {/* Signal pills */}
         <div
           className="flex flex-wrap gap-2 mt-4"
           role="group"
@@ -206,29 +233,12 @@ export default function CompetitorWatchContent({
         </div>
       </div>
 
-      {/* ── Section 3: Weekly Briefing (unfiltered only) ─────────────────── */}
-      {!isFiltered && (
-        <div className="reveal reveal-d5">
-          <CompetitorBriefing
-            bullets={intel.briefing}
-            generatedAt={intel.generatedAt}
-          />
-        </div>
-      )}
-
-      {/* ── Section 4: Financial Performance (unfiltered only) ───────────── */}
-      {!isFiltered && stockSeries.length > 0 && (
-        <div className="reveal reveal-d6">
-          <StockChartSection series={stockSeries} />
-        </div>
-      )}
-
-      {/* ── Section 5: Brand Profiles — asymmetric grid (unfiltered only) ── */}
+      {/* ── Section 5: Brand Profiles (unfiltered only) ─────────────────── */}
       {!isFiltered && brandsWithContent.length > 0 && (
         <section className="mb-12 reveal reveal-d6">
           <p className="intel-section-label mb-6">Brand Profiles</p>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 lg:grid-rows-[auto]">
-            {brandsWithContent.map((brand, idx) => {
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+            {brandsWithContent.map((brand) => {
               const articles = brandMap.get(brand.id) ?? [];
               return (
                 <BrandProfileCard
@@ -240,7 +250,6 @@ export default function CompetitorWatchContent({
                   intel={intel.brands[brand.id]}
                   locale={locale}
                   basePath={basePath}
-                  featured={idx === 0}
                 />
               );
             })}
