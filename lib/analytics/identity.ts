@@ -7,7 +7,8 @@
  * - setUserPlan() can be called independently when only the plan is known (e.g. checkout_complete).
  */
 
-import * as amplitude from '@amplitude/unified';
+import { identify, setUserId } from '@amplitude/unified';
+import { Identify } from '@amplitude/analytics-browser';
 
 /**
  * SHA-256 hash an email address using the Web Crypto API.
@@ -35,11 +36,11 @@ export async function identifySubscriber(email: string, planType: string): Promi
   try {
     const userId = await hashEmail(email);
     if (userId) {
-      amplitude.setUserId(userId);
+      setUserId(userId);
     }
-    const identify = new amplitude.Identify();
-    identify.set('plan_type', planType);
-    amplitude.identify(identify);
+    const identifyEvent = new Identify();
+    identifyEvent.set('plan_type', planType);
+    identify(identifyEvent);
   } catch {
     // Non-critical — never block subscribe flow
   }
@@ -52,9 +53,9 @@ export async function identifySubscriber(email: string, planType: string): Promi
 export function setUserPlan(planType: string): void {
   if (typeof window === 'undefined') return;
   try {
-    const identify = new amplitude.Identify();
-    identify.set('plan_type', planType);
-    amplitude.identify(identify);
+    const identifyEvent = new Identify();
+    identifyEvent.set('plan_type', planType);
+    identify(identifyEvent);
   } catch {
     // Non-critical
   }
