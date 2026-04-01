@@ -131,11 +131,16 @@ export default function CompetitorWatchContent({
     })
     .slice(0, 8);
 
-  // Asymmetric brand grid: first brand gets `featured` prop (2× height)
-  const brandsWithContent = competitorBrands.filter(b => {
+  // Brand profiles: Pandora first, then competitors with content
+  const competitorBrandsWithContent = competitorBrands.filter(b => {
     const articles = brandMap.get(b.id) ?? [];
     return articles.length > 0 || !!intel.brands[b.id]?.narrative;
   });
+  const pandoraHasContent =
+    (brandMap.get('pandora') ?? []).length > 0 || !!intel.brands['pandora']?.narrative;
+  const brandsWithContent = pandoraHasContent
+    ? [pandoraBrand, ...competitorBrandsWithContent]
+    : competitorBrandsWithContent;
 
   return (
     <div className="max-w-4xl mx-auto px-4 md:px-8 py-12 md:py-16">
@@ -228,12 +233,12 @@ export default function CompetitorWatchContent({
         </div>
       </div>
 
-      {/* ── Section 5: Brand Profiles — asymmetric grid (unfiltered only) ── */}
+      {/* ── Section 5: Brand Profiles (unfiltered only) ─────────────────── */}
       {!isFiltered && brandsWithContent.length > 0 && (
         <section className="mb-12 reveal reveal-d6">
           <p className="intel-section-label mb-6">Brand Profiles</p>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 lg:grid-rows-[auto]">
-            {brandsWithContent.map((brand, idx) => {
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+            {brandsWithContent.map((brand) => {
               const articles = brandMap.get(brand.id) ?? [];
               return (
                 <BrandProfileCard
@@ -245,7 +250,6 @@ export default function CompetitorWatchContent({
                   intel={intel.brands[brand.id]}
                   locale={locale}
                   basePath={basePath}
-                  featured={idx === 0}
                 />
               );
             })}

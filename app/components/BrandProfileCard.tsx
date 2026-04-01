@@ -33,8 +33,6 @@ type Props = {
   intel: BrandIntel | undefined;
   locale?: 'en' | 'es' | 'da';
   basePath: string;
-  /** When true, renders as a 2× featured card (larger, more narrative space) */
-  featured?: boolean;
 };
 
 /** Returns initials from a brand name for the monogram circle */
@@ -52,7 +50,6 @@ export default function BrandProfileCard({
   intel,
   locale = 'en',
   basePath,
-  featured = false,
 }: Props) {
   if (articles.length === 0 && !intel?.narrative) return null;
 
@@ -66,9 +63,7 @@ export default function BrandProfileCard({
 
   return (
     <article
-      className={`group relative border border-[var(--color-border)] bg-[var(--color-surface)] overflow-hidden transition-[border-color] duration-300 hover:border-[var(--color-accent)]/40 ${
-        featured ? 'lg:row-span-2' : ''
-      }`}
+      className="group relative border border-[var(--color-border)] bg-[var(--color-surface)] overflow-hidden transition-[border-color] duration-300 hover:border-[var(--color-accent)]/40"
     >
       {/* Gold top border — draws on hover */}
       <div
@@ -132,7 +127,7 @@ export default function BrandProfileCard({
             url={bigMoment.url}
             source={bigMoment.source}
             date={bigMoment.published_at}
-            summary={featured ? bigMoment.aiSummary : undefined}
+            summary={undefined}
             badges={bigMoment.signalTag ? [bigMoment.signalTag] : undefined}
             locale={locale}
             translations={bigMoment.translations}

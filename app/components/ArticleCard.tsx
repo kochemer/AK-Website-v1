@@ -120,61 +120,44 @@ export default function ArticleCard({
 
   if (variant === 'intelligence') {
     return (
-      <article className="intel-article-row group py-4 border-b border-[var(--color-border)] last:border-b-0">
-        <div className="grid grid-cols-1 md:grid-cols-[1fr_auto] gap-x-6 gap-y-1 items-start">
-          {/* Left col: title + summary */}
-          <div>
-            <a
-              {...linkProps}
-              className="block no-underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-accent)] focus-visible:ring-offset-2 rounded-sm"
-            >
-              <h3 className="font-display font-semibold text-[1.05rem] leading-snug tracking-[-0.01em] text-[var(--color-text-primary)] group-hover:text-[var(--color-accent)] transition-colors duration-150 line-clamp-2">
-                {localizedTitle}
-              </h3>
-            </a>
-            {cleanSummary && (
-              <p className="text-[13px] font-sans text-[var(--color-text-secondary)] mt-1 line-clamp-2 leading-relaxed">
-                {cleanSummary}
-              </p>
-            )}
-          </div>
-
-          {/* Right col: source + date + badges */}
-          <div className="flex flex-col items-start md:items-end gap-1.5 mt-0.5 shrink-0">
-            {(source || displayDate) && (
-              <div className="flex items-center gap-1.5 text-[11px] font-sans text-[var(--color-text-secondary)]">
-                {source && hostname && (
-                  <img
-                    src={`https://www.google.com/s2/favicons?domain=${hostname}&sz=32`}
-                    alt=""
-                    className="w-3.5 h-3.5 rounded-sm opacity-50"
-                    onError={(e) => { e.currentTarget.style.display = 'none'; }}
-                  />
-                )}
-                {source && (
-                  <span className="font-ibm-mono text-[10px] tracking-[0.08em] uppercase opacity-70">
-                    {source}
-                  </span>
-                )}
-                {displayDate && (
-                  <span className="opacity-50 text-[10px]">{displayDate}</span>
-                )}
-              </div>
-            )}
-            {badges && badges.length > 0 && (
-              <div className="flex gap-1 flex-wrap justify-end">
-                {badges.map((badge, idx) => (
-                  <span
-                    key={idx}
-                    className="font-ibm-mono text-[9px] tracking-[0.05em] uppercase px-1.5 py-0.5 border border-[var(--color-border)] text-[var(--color-text-secondary)] rounded-sm"
-                  >
-                    {badge}
-                  </span>
-                ))}
-              </div>
-            )}
-          </div>
+      <article className="intel-article-row group flex items-baseline gap-3 py-2.5 border-b border-[var(--color-border)] last:border-b-0">
+        {/* Source + date — fixed-width left gutter */}
+        <div className="shrink-0 hidden sm:flex items-center gap-1.5 w-36">
+          {source && (
+            <span className="font-ibm-mono text-[10px] tracking-[0.06em] uppercase text-[var(--color-text-secondary)] opacity-60 truncate">
+              {source}
+            </span>
+          )}
+          {displayDate && (
+            <span className="font-ibm-mono text-[10px] text-[var(--color-text-secondary)] opacity-40 shrink-0">
+              {displayDate}
+            </span>
+          )}
         </div>
+
+        {/* Title — fills remaining space, single line */}
+        <a
+          {...linkProps}
+          className="flex-1 min-w-0 no-underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-accent)] focus-visible:ring-offset-2 rounded-sm"
+        >
+          <span className="text-[0.875rem] font-sans text-[var(--color-text-primary)] group-hover:text-[var(--color-accent)] transition-colors duration-150 line-clamp-1 leading-snug">
+            {localizedTitle}
+          </span>
+        </a>
+
+        {/* Badges — right-aligned, max 2 shown */}
+        {badges && badges.length > 0 && (
+          <div className="shrink-0 flex gap-1 items-center">
+            {badges.slice(0, 2).map((badge, idx) => (
+              <span
+                key={idx}
+                className="font-ibm-mono text-[9px] tracking-[0.05em] uppercase px-1.5 py-0.5 border border-[var(--color-border)] text-[var(--color-text-secondary)] opacity-70 rounded-sm whitespace-nowrap"
+              >
+                {badge}
+              </span>
+            ))}
+          </div>
+        )}
       </article>
     );
   }
