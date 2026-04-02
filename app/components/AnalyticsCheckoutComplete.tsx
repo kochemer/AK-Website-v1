@@ -2,6 +2,7 @@
 
 import { useEffect, useRef } from 'react';
 import { track } from '@/lib/analytics';
+import { setUserPlan } from '@/lib/analytics/identity';
 
 const PLAN_VALUE: Record<string, number> = {
   supporter_monthly: 1,
@@ -22,6 +23,9 @@ export default function AnalyticsCheckoutComplete({ plan }: Props) {
       value: plan ? (PLAN_VALUE[plan] ?? null) : null,
       currency: 'EUR',
     });
+    if (plan) {
+      setUserPlan(plan);
+    }
   }, [plan]);
 
   return null;

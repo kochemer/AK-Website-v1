@@ -8,8 +8,8 @@ import * as amplitude from '@amplitude/unified';
 import { getGlobalEventProps } from './context';
 import { getAnalyticsConsent } from './consent';
 
-export type { LastClickAttribution } from './attribution';
-export { getLastClickAttribution } from './attribution';
+export type { LastClickAttribution, FirstTouchAttribution } from './attribution';
+export { getLastClickAttribution, getFirstTouchAttribution } from './attribution';
 export { getGlobalEventProps } from './context';
 export { getAnalyticsConsent, setAnalyticsConsent } from './consent';
 export type { ConsentValue } from './consent';

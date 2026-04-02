@@ -49,18 +49,40 @@ self.addEventListener('push', function(event) {
   );
 });
 
+// Append UTM parameters to an internal URL for attribution tracking.
+// utm_campaign is sourced from the notification tag (e.g. the week label).
+function addPushUtms(url, tag) {
+  try {
+    const base = url.startsWith('/') ? self.location.origin + url : url;
+    const u = new URL(base);
+    u.searchParams.set('utm_source', 'web_push');
+    u.searchParams.set('utm_medium', 'push');
+    if (tag && tag !== 'default') {
+      u.searchParams.set('utm_campaign', tag);
+    }
+    // Return absolute URL so openWindow works correctly
+    return u.toString();
+  } catch {
+    return url;
+  }
+}
+
 // Handle notification clicks
 self.addEventListener('notificationclick', function(event) {
   event.notification.close();
 
-  const targetUrl = event.notification.data?.url || '/';
+  const rawUrl = event.notification.data?.url || '/';
+  const tag = event.notification.tag || 'default';
+  const targetUrl = addPushUtms(rawUrl, tag);
 
   event.waitUntil(
     clients.matchAll({ type: 'window', includeUncontrolled: true }).then(function(clientList) {
       // Check if there's already a window open
       for (let i = 0; i < clientList.length; i++) {
         const client = clientList[i];
-        if (client.url === self.location.origin + targetUrl && 'focus' in client) {
+        // Match on the raw path (without UTMs) so existing tabs are reused correctly
+        const rawAbsolute = rawUrl.startsWith('/') ? self.location.origin + rawUrl : rawUrl;
+        if (client.url.startsWith(rawAbsolute.split('?')[0]) && 'focus' in client) {
           return client.focus();
         }
       }

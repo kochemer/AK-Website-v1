@@ -3,7 +3,7 @@
  * See measurement-plan.md §4.
  */
 
-import { getLastClickAttribution } from './attribution';
+import { getLastClickAttribution, getFirstTouchAttribution } from './attribution';
 
 function resolveAppEnv(): string {
   const vercelEnv = process.env.NEXT_PUBLIC_VERCEL_ENV;
@@ -49,6 +49,7 @@ export function getGlobalEventProps(): Record<string, unknown> {
   const routePath = window.location.pathname;
 
   const attrib = getLastClickAttribution();
+  const firstTouch = getFirstTouchAttribution(attrib);
 
   return {
     ...base,
@@ -57,5 +58,6 @@ export function getGlobalEventProps(): Record<string, unknown> {
     week: extractWeekFromPath(routePath),
     locale: document.documentElement.lang || 'en',
     ...attrib,
+    ...firstTouch,
   };
 }

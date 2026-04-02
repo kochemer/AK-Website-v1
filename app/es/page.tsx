@@ -1,6 +1,34 @@
+import type { Metadata } from 'next';
 import { promises as fs } from 'fs';
 import path from 'path';
 import { Suspense } from 'react';
+import { getSiteUrl } from '@/lib/utils/siteUrl';
+
+const siteUrl = getSiteUrl();
+
+export const metadata: Metadata = {
+  title: 'Resumen Semanal de IA, Ecommerce y Lujo | Luxury Intelligence',
+  description: 'Inteligencia curada sobre lujo, comercio electrónico y tecnología minorista — resúmenes semanales asistidos por IA.',
+  alternates: {
+    canonical: `${siteUrl}/es`,
+    languages: {
+      'en': `${siteUrl}/`,
+      'es': `${siteUrl}/es`,
+      'da': `${siteUrl}/da`,
+    },
+  },
+  openGraph: {
+    title: 'Resumen Semanal de IA, Ecommerce y Lujo | Luxury Intelligence',
+    description: 'Inteligencia curada sobre lujo, comercio electrónico y tecnología minorista — resúmenes semanales asistidos por IA.',
+    siteName: 'Luxury Intelligence',
+    type: 'website',
+    images: [{ url: '/api/og', width: 1200, height: 630, alt: 'Luxury Intelligence – Resumen Semanal' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    images: ['/api/og'],
+  },
+};
 import DigestClientView from '../components/DigestClientView';
 import PodcastPlayer from '../components/PodcastPlayer';
 import StatsBar from '../components/StatsBar';
