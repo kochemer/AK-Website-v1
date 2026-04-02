@@ -2,6 +2,7 @@ import { Suspense } from 'react';
 import { promises as fs } from 'fs';
 import path from 'path';
 import Link from 'next/link';
+import Image from 'next/image';
 import { notFound, permanentRedirect } from 'next/navigation';
 import type { Metadata } from 'next';
 import DigestClientView from '../../components/DigestClientView';
@@ -327,10 +328,14 @@ export default async function DigestPage({
         <section className="relative h-[70vh] md:h-[100svh]" style={{ zIndex: 0 }}>
           <div className="sticky top-0 h-[70vh] md:h-[100svh] overflow-hidden">
             {digest.coverImageUrl ? (
-              <img
+              <Image
                 src={digest.coverImageUrl}
                 alt={digest.coverImageAlt || `Weekly digest cover for ${digest.weekLabel}`}
-                className="absolute inset-0 w-full h-full object-cover md:object-contain"
+                fill
+                priority
+                unoptimized
+                className="object-cover md:object-contain"
+                sizes="100vw"
               />
             ) : (
               <div
