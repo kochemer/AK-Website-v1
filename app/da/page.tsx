@@ -17,6 +17,34 @@ import { getSelectedArticleCount, formatStatsSecondaryLine } from '@/lib/utils/d
 import { getMessages } from '@/lib/i18n/messages';
 import { CATEGORY_COLORS } from '@/lib/constants/categoryColors';
 import type { WeeklyDigest } from '@/lib/types';
+import type { Metadata } from 'next';
+import { getSiteUrl } from '@/lib/utils/siteUrl';
+
+const siteUrl = getSiteUrl();
+
+export const metadata: Metadata = {
+  title: 'Ugentlig AI, E-handel & Luksus Digest | Luxury Intelligence',
+  description: 'Et ugentligt kurateret digest om AI og strategi, e-handel og retail-teknologi samt nyheder fra luksus- og smykkebranchen. Opdateres ugentligt.',
+  alternates: {
+    canonical: `${siteUrl}/da`,
+    languages: {
+      'en': `${siteUrl}/`,
+      'es': `${siteUrl}/es`,
+      'da': `${siteUrl}/da`,
+      'x-default': `${siteUrl}/`,
+    },
+  },
+  openGraph: {
+    title: 'Ugentlig AI, E-handel & Luksus Digest | Luxury Intelligence',
+    description: 'Et ugentligt kurateret digest om AI og strategi, e-handel og retail-teknologi samt nyheder fra luksus- og smykkebranchen.',
+    images: [`${siteUrl}/api/og`],
+  },
+  twitter: {
+    title: 'Ugentlig AI, E-handel & Luksus Digest | Luxury Intelligence',
+    description: 'Et ugentligt kurateret digest om AI og strategi, e-handel og retail-teknologi samt nyheder fra luksus- og smykkebranchen.',
+    images: [`${siteUrl}/api/og`],
+  },
+};
 
 type PodcastMetadata = {
   week: string;

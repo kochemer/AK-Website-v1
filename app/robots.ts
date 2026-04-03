@@ -15,10 +15,26 @@ export default function robots(): MetadataRoute.Robots {
   }
 
   return {
-    rules: {
-      userAgent: '*',
-      allow: '/',
-    },
+    rules: [
+      {
+        userAgent: '*',
+        allow: '/',
+      },
+      // Explicit Allow for known AI crawler bots — positive GEO signal
+      {
+        userAgent: [
+          'GPTBot',        // OpenAI / ChatGPT Search
+          'ChatGPT-User',  // ChatGPT browsing
+          'ClaudeBot',     // Anthropic Claude
+          'anthropic-ai',  // Anthropic general
+          'PerplexityBot', // Perplexity AI
+          'Google-Extended', // Google Gemini training + AI Overviews
+          'Applebot',      // Apple Intelligence / Siri
+          'Amazonbot',     // Amazon Alexa / AWS AI
+        ],
+        allow: '/',
+      },
+    ],
     sitemap: sitemapUrl,
   };
 }

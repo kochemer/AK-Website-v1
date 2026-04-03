@@ -9,6 +9,12 @@ export const metadata: Metadata = {
   description: 'Hvordan Luxury Intelligence kuraterer, scorer og opsummerer ugens vigtigste nyheder inden for AI, ecommerce, luksus og smykker.',
   alternates: {
     canonical: `${siteUrl}/da/about`,
+    languages: {
+      'en': `${siteUrl}/about`,
+      'es': `${siteUrl}/es/about`,
+      'da': `${siteUrl}/da/about`,
+      'x-default': `${siteUrl}/about`,
+    },
   },
   openGraph: {
     title: 'Om – Luxury Intelligence',

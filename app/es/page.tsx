@@ -17,6 +17,34 @@ import { getSelectedArticleCount, formatStatsSecondaryLine } from '@/lib/utils/d
 import { getMessages } from '@/lib/i18n/messages';
 import { CATEGORY_COLORS } from '@/lib/constants/categoryColors';
 import type { WeeklyDigest } from '@/lib/types';
+import type { Metadata } from 'next';
+import { getSiteUrl } from '@/lib/utils/siteUrl';
+
+const siteUrl = getSiteUrl();
+
+export const metadata: Metadata = {
+  title: 'Digest Semanal de IA, Ecommerce y Lujo | Luxury Intelligence',
+  description: 'Un digest semanal curado sobre IA y estrategia, tecnología de ecommerce y retail, y noticias del sector del lujo y la joyería. Actualizado cada semana.',
+  alternates: {
+    canonical: `${siteUrl}/es`,
+    languages: {
+      'en': `${siteUrl}/`,
+      'es': `${siteUrl}/es`,
+      'da': `${siteUrl}/da`,
+      'x-default': `${siteUrl}/`,
+    },
+  },
+  openGraph: {
+    title: 'Digest Semanal de IA, Ecommerce y Lujo | Luxury Intelligence',
+    description: 'Un digest semanal curado sobre IA y estrategia, tecnología de ecommerce y retail, y noticias del sector del lujo y la joyería.',
+    images: [`${siteUrl}/api/og`],
+  },
+  twitter: {
+    title: 'Digest Semanal de IA, Ecommerce y Lujo | Luxury Intelligence',
+    description: 'Un digest semanal curado sobre IA y estrategia, tecnología de ecommerce y retail, y noticias del sector del lujo y la joyería.',
+    images: [`${siteUrl}/api/og`],
+  },
+};
 
 type PodcastMetadata = {
   week: string;

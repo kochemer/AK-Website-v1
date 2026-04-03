@@ -98,6 +98,10 @@ export interface WeeklyDigest<T extends Article = Article> {
   oneSentenceSummary?: string; // One-line summary of the week
   introParagraph?: string; // Longer intro paragraph
   weeklyInsight?: string; // Pull-quote / editorial insight shown between stats and category nav
+
+  // === Editorial Take ===
+  editorialTake?: string; // AI-generated first-person editorial opinion (~150-200 words)
+  editorialTakeOverride?: boolean; // If true, pipeline will NOT overwrite editorialTake on rebuild
   
   // === Article counts ===
   totals: DigestTotals;
