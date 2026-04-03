@@ -102,11 +102,6 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: `${siteUrl}/`,
-    languages: {
-      'en': `${siteUrl}/`,
-      'es': `${siteUrl}/es`,
-      'da': `${siteUrl}/da`,
-    },
   },
 };
 
