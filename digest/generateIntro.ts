@@ -20,9 +20,9 @@ const __dirname = path.dirname(__filename);
 // Configuration
 const INTRO_MODEL = process.env.INTRO_MODEL || getModelFor('summarize');
 const TEMPERATURE = 0; // Deterministic
-const MAX_TOKENS = 200;
+const MAX_TOKENS = 250;
 const CACHE_KIND = 'intro';
-const INTRO_VERSION = '1.0'; // Increment to invalidate cache
+const INTRO_VERSION = '2.0'; // Increment to invalidate cache
 
 // Types
 type IntroResult = {
@@ -94,42 +94,46 @@ function getCacheKey(weekLabel: string, digest: WeeklyDigest): string {
  * Build prompt for intro paragraph generation
  */
 function buildIntroPrompt(digest: WeeklyDigest): string {
-  const categories = [
-    getTopicDisplayName('AI_and_Strategy'),
-    getTopicDisplayName('Ecommerce_Retail_Tech'),
-    getTopicDisplayName('Luxury_and_Consumer'),
-    getTopicDisplayName('Jewellery_Industry'),
-  ];
+  // Collect top article titles from each topic to give the LLM real signal
+  const topicKeys = ['AI_and_Strategy', 'Ecommerce_Retail_Tech', 'Luxury_and_Consumer', 'Jewellery_Industry'] as const;
+  const articleLines: string[] = [];
 
-  const categoryList = categories.join(', ');
-
-  let contextText = `Week ${digest.weekLabel} covers ${categoryList}.`;
-
-  if (digest.keyThemes && digest.keyThemes.length > 0) {
-    contextText += `\n\nKey themes: ${digest.keyThemes.join(', ')}.`;
+  for (const key of topicKeys) {
+    const topic = digest.topics[key];
+    if (topic?.top) {
+      for (const article of topic.top.slice(0, 3)) {
+        if (article.title) {
+          articleLines.push(`- ${article.title}`);
+        }
+      }
+    }
   }
 
-  if (digest.oneSentenceSummary) {
-    contextText += `\n\nSummary: ${digest.oneSentenceSummary}`;
-  }
+  const articleBlock = articleLines.join('\n');
 
-  return `You are writing a brief introductory paragraph for a weekly digest newsletter.
+  return `You are writing the opening paragraph for a weekly intelligence digest covering luxury, retail tech, and AI.
 
-Context:
-${contextText}
+This week's headlines:
+${articleBlock}
 
-Write a 2-3 sentence introductory paragraph that:
-- Uses a plain, factual tone
-- Avoids hype words like "exciting", "groundbreaking", "revolutionary", "unprecedented"
-- Avoids adjectives that add unnecessary emphasis
-- Mentions at least 2 concrete entities, companies, products, or concepts if present in the themes
-- Does NOT reference "this article", "below", "above", or "this week's digest"
-- Focuses on what happened, not how significant it is
-- Uses present tense or past tense as appropriate
+Write a 3-sentence intro paragraph using this exact structure:
+
+Sentence 1 — BURIED LEAD: Pick the most surprising, counterintuitive, or underreported headline from the list above. State its key fact concisely and directly. Do NOT pick the most obvious or biggest story — pick the one that readers are least likely to expect.
+
+Sentence 2 — CONTEXT BRIDGE: Name 2-3 of the other main stories as quick concrete facts. No commentary, just what happened — companies, numbers, actions.
+
+Sentence 3 — TENSION: End with a one-line observation about what two opposing forces are at play this week (e.g. growth vs. risk, incumbents vs. challengers, acceleration vs. friction). Frame it as a contrast, not a conclusion.
+
+Rules:
+- Use short, punchy declarative sentences. No subordinate clauses.
+- Name specific companies, products, or numbers — never say "major players" or "key developments"
+- No hype words: "groundbreaking", "transformative", "revolutionary", "significant", "exciting"
+- No meta-references: never say "this week", "this digest", "below", "above"
+- Do not editorialize about importance — let the facts carry the weight
 
 Format your response as JSON:
 {
-  "introParagraph": "Your 2-3 sentence paragraph here"
+  "introParagraph": "Your 3-sentence paragraph here"
 }`;
 }
 

@@ -609,6 +609,18 @@ export async function buildAndSaveWeeklyDigest(
     console.log(`[Build Weekly Digest] ✓ All translations validated successfully`);
   }
 
+  // Generate Editor's Take (after summaries so the AI has good context from aiSummary fields)
+  // Skipped automatically if editorialTakeOverride is set in the existing digest JSON.
+  console.log(`[Build Weekly Digest] Generating Editor's Take...`);
+  const { generateEditorialTakeForDigest } = await import('./generateEditorialTake');
+  const editorialResult = await generateEditorialTakeForDigest(digest);
+  if (editorialResult) {
+    (digest as any).editorialTake = editorialResult.editorialTake;
+    console.log(`[Build Weekly Digest] ✓ Editor's Take generated`);
+  } else {
+    console.warn(`[Build Weekly Digest] ⚠ Editor's Take skipped (override set, or generation failed)`);
+  }
+
   // Save to data/digests/{weekLabel}.json
   const outputDir = options?.outputDir || path.join(process.cwd(), 'data', 'digests');
   await fs.mkdir(outputDir, { recursive: true });
@@ -623,6 +635,13 @@ export async function buildAndSaveWeeklyDigest(
       }
       if (existing.coverImageAlt && !(digest as any).coverImageAlt) {
         (digest as any).coverImageAlt = existing.coverImageAlt;
+      }
+      // Preserve manually overridden editorial take — if editorialTakeOverride is set,
+      // the existing text will have been kept by generateEditorialTakeForDigest already,
+      // but we re-apply here as a safety net in case the digest object was rebuilt fresh.
+      if (existing.editorialTakeOverride) {
+        (digest as any).editorialTake = existing.editorialTake;
+        (digest as any).editorialTakeOverride = true;
       }
     } catch {
       // No existing digest — that's fine

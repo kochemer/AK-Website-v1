@@ -32,13 +32,18 @@ async function getAvailableWeekLabels(): Promise<string[]> {
 }
 
 /**
- * Get file modification time for lastModified metadata.
- * Falls back to current date if file doesn't exist.
+ * Get the digest build date from the JSON file itself (builtAtISO field).
+ * Uses builtAtISO rather than file mtime because mtime gets reset during
+ * git operations and deploys — causing all digests to show the same timestamp.
+ * Falls back to startISO (week start), then current date.
  */
-async function getFileModifiedTime(filePath: string): Promise<Date> {
+async function getDigestBuiltAt(filePath: string): Promise<Date> {
   try {
-    const stats = await fs.stat(filePath);
-    return stats.mtime;
+    const raw = await fs.readFile(filePath, 'utf-8');
+    const digest = JSON.parse(raw) as { builtAtISO?: string; startISO?: string };
+    if (digest.builtAtISO) return new Date(digest.builtAtISO);
+    if (digest.startISO)   return new Date(digest.startISO);
+    return new Date();
   } catch {
     return new Date();
   }
@@ -90,7 +95,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const weekEntries = await Promise.all(
     weekLabels.map(async (weekLabel) => {
       const filePath = path.join(digestsDir, `${weekLabel}.json`);
-      const lastModified = await getFileModifiedTime(filePath);
+      const lastModified = await getDigestBuiltAt(filePath);
       return {
         url: `${baseUrl}/digest/${weekLabelToSlug(weekLabel)}`,
         lastModified,

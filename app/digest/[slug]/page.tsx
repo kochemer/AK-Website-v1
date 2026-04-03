@@ -9,6 +9,7 @@ import CategoryCardGrid from '../../components/CategoryCardGrid';
 import PodcastPlayer from '../../components/PodcastPlayer';
 import StatsBar from '../../components/StatsBar';
 import { WeeklyInsight } from '../../components/WeeklyInsight';
+import { EditorialTake } from '../../components/EditorialTake';
 import AnalyticsDigestView from '../../components/AnalyticsDigestView';
 import TopNSelector from '../../components/TopNSelector';
 import ScrollProgressBar from '../../components/ScrollProgressBar';
@@ -240,7 +241,7 @@ export default async function DigestPage({
 
   const newsArticleSchema = {
     '@context': 'https://schema.org',
-    '@type': 'NewsArticle',
+    '@type': 'Article',
     headline: `${dateRange} Intelligence Digest – AI, Ecommerce & Luxury`,
     description: digest.oneSentenceSummary
       ?? `Weekly curated digest: ${digest.totals.total} articles across AI, ecommerce, jewellery, and luxury.`,
@@ -254,9 +255,10 @@ export default async function DigestPage({
       url: siteUrl,
     },
     author: {
-      '@type': 'Organization',
-      name: 'Luxury Intelligence',
-      url: siteUrl,
+      '@type': 'Person',
+      name: 'Alexey Kochemirovskiy',
+      url: `${siteUrl}/about`,
+      sameAs: 'https://www.linkedin.com/in/alexey-kochemirovskiy/',
     },
     mainEntityOfPage: {
       '@type': 'WebPage',
@@ -437,6 +439,13 @@ export default async function DigestPage({
                 null;
               return quote ? <WeeklyInsight quote={quote} /> : null;
             })()}
+
+            {digest.editorialTake && (
+              <EditorialTake
+                text={digest.editorialTake}
+                isOverride={digest.editorialTakeOverride}
+              />
+            )}
 
             <div className="bg-[var(--color-bg)] rounded-t-xl md:rounded-t-2xl border border-b-0 border-t border-t-[var(--color-accent)] border-black/5 p-4 sm:p-6 md:p-8 lg:p-10">
               {podcast && (

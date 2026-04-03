@@ -9,6 +9,12 @@ export const metadata: Metadata = {
   description: 'Cómo Luxury Intelligence cura, puntúa y resume las noticias más importantes de la semana en IA, ecommerce, lujo y joyería.',
   alternates: {
     canonical: `${siteUrl}/es/about`,
+    languages: {
+      'en': `${siteUrl}/about`,
+      'es': `${siteUrl}/es/about`,
+      'da': `${siteUrl}/da/about`,
+      'x-default': `${siteUrl}/about`,
+    },
   },
   openGraph: {
     title: 'Acerca de – Luxury Intelligence',

@@ -44,6 +44,12 @@ export const metadata: Metadata = {
   description: 'A weekly curated digest covering AI & strategy, ecommerce and retail technology, luxury and jewellery industry news. Updated every week.',
   alternates: {
     canonical: `${siteUrl}/`,
+    languages: {
+      'en': `${siteUrl}/`,
+      'es': `${siteUrl}/es`,
+      'da': `${siteUrl}/da`,
+      'x-default': `${siteUrl}/`,
+    },
   },
   openGraph: {
     title: 'Weekly AI, Ecommerce & Luxury Industry Digest | Luxury Intelligence',
