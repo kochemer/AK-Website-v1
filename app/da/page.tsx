@@ -1,34 +1,6 @@
-import type { Metadata } from 'next';
 import { promises as fs } from 'fs';
 import path from 'path';
 import { Suspense } from 'react';
-import { getSiteUrl } from '@/lib/utils/siteUrl';
-
-const siteUrl = getSiteUrl();
-
-export const metadata: Metadata = {
-  title: 'Ugentlig Oversigt over AI, E-handel og Luksus | Luxury Intelligence',
-  description: 'Kureret efterretning om luksus, e-handel og detailteknologi — ugentlige oversigter med AI-assisterede resuméer.',
-  alternates: {
-    canonical: `${siteUrl}/da`,
-    languages: {
-      'en': `${siteUrl}/`,
-      'es': `${siteUrl}/es`,
-      'da': `${siteUrl}/da`,
-    },
-  },
-  openGraph: {
-    title: 'Ugentlig Oversigt over AI, E-handel og Luksus | Luxury Intelligence',
-    description: 'Kureret efterretning om luksus, e-handel og detailteknologi — ugentlige oversigter med AI-assisterede resuméer.',
-    siteName: 'Luxury Intelligence',
-    type: 'website',
-    images: [{ url: '/api/og', width: 1200, height: 630, alt: 'Luxury Intelligence – Ugentlig Oversigt' }],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    images: ['/api/og'],
-  },
-};
 import DigestClientView from '../components/DigestClientView';
 import PodcastPlayer from '../components/PodcastPlayer';
 import StatsBar from '../components/StatsBar';
