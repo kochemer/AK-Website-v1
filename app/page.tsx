@@ -14,6 +14,7 @@ import BrandPattern from './components/BrandPattern';
 import GrainOverlay from './components/GrainOverlay';
 import MastheadLockup from './components/MastheadLockup';
 import { WeeklyInsight } from './components/WeeklyInsight';
+import { EditorSpotlight } from './components/EditorSpotlight';
 import { TopicKey } from '@/lib/utils/topicNames';
 import { formatDate, formatDateRange, formatDateTime, formatIssueLine } from '@/lib/utils/formatDate';
 import { getCurrentDigestWeek } from '@/lib/utils/getCurrentDigestWeek';
@@ -273,6 +274,14 @@ export default async function Home() {
               null;
             return quote ? <WeeklyInsight quote={quote} /> : null;
           })()}
+
+          {digest?.editorialTake && (
+            <EditorSpotlight
+              text={digest.editorialTake}
+              weekLabel={digest.weekLabel}
+              isOverride={digest.editorialTakeOverride}
+            />
+          )}
 
           {/* Podcast + stats on cream */}
           <div className="bg-[var(--color-bg)] rounded-t-xl md:rounded-t-2xl border border-b-0 border-t border-t-[var(--color-accent)] border-black/5 p-4 sm:p-6 md:p-8 lg:p-10">
