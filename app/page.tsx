@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { Suspense } from 'react';
 import type { Metadata } from 'next';
 import DigestClientView from './components/DigestClientView';
+import IssueRating from './components/IssueRating';
 import CategoryCardGrid from './components/CategoryCardGrid';
 import PodcastPlayer from './components/PodcastPlayer';
 import StatsBar from './components/StatsBar';
@@ -385,6 +386,13 @@ export default async function Home() {
             </>
           )}
           </div>
+
+          {/* Issue Rating */}
+          {digest && (
+            <div className="w-full max-w-5xl mx-auto px-4 py-10 md:py-16 text-center border-t border-[var(--color-border)]">
+              <IssueRating slug={weekLabelToSlug(weekLabel)} />
+            </div>
+          )}
 
           {/* Permalink to this issue's dedicated page */}
           {digest && (
