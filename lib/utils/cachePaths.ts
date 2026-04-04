@@ -23,6 +23,7 @@ const CACHE_FILENAMES: Record<string, string> = {
   rerank: 'rerank.json',
   intro: 'intro.json',
   themes: 'themes.json',
+  'editorial-take': 'editorial-take.json',
   scene_director: 'scene_director.json',
   classification: 'classification.json',
   query_director: 'query_director.json',
