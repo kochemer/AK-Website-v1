@@ -70,9 +70,13 @@ export function EditorSpotlight({ text, weekLabel, isOverride = false }: EditorS
           )}
         </div>
 
-        <p className="font-serif text-[1.0rem] sm:text-[1.0625rem] md:text-[1.125rem] leading-[1.78] text-[var(--color-text-primary)] mb-5 md:mb-6">
-          {text}
-        </p>
+        <div className="mb-5 md:mb-6 space-y-4">
+          {text.split('\n\n').map((para, i) => (
+            <p key={i} className="font-serif text-[1.0rem] sm:text-[1.0625rem] md:text-[1.125rem] leading-[1.78] text-[var(--color-text-primary)]">
+              {para.trim()}
+            </p>
+          ))}
+        </div>
 
         <div className="flex items-center justify-between gap-3 flex-wrap">
           <a
