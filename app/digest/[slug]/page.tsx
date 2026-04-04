@@ -5,11 +5,12 @@ import Link from 'next/link';
 import { notFound, permanentRedirect } from 'next/navigation';
 import type { Metadata } from 'next';
 import DigestClientView from '../../components/DigestClientView';
+import IssueRating from '../../components/IssueRating';
 import CategoryCardGrid from '../../components/CategoryCardGrid';
 import PodcastPlayer from '../../components/PodcastPlayer';
 import StatsBar from '../../components/StatsBar';
 import { WeeklyInsight } from '../../components/WeeklyInsight';
-import { EditorialTake } from '../../components/EditorialTake';
+import { EditorSpotlight } from '../../components/EditorSpotlight';
 import AnalyticsDigestView from '../../components/AnalyticsDigestView';
 import TopNSelector from '../../components/TopNSelector';
 import ScrollProgressBar from '../../components/ScrollProgressBar';
@@ -441,8 +442,9 @@ export default async function DigestPage({
             })()}
 
             {digest.editorialTake && (
-              <EditorialTake
+              <EditorSpotlight
                 text={digest.editorialTake}
+                weekLabel={digest.weekLabel}
                 isOverride={digest.editorialTakeOverride}
               />
             )}
@@ -525,6 +527,11 @@ export default async function DigestPage({
                   </div>
                 </div>
               ) : null}
+
+              {/* Issue Rating */}
+              <div className="w-full max-w-5xl mx-auto px-4 py-10 md:py-16 text-center border-t border-[var(--color-border)]">
+                <IssueRating slug={slug} />
+              </div>
 
               {/* Issue Navigation */}
               <nav
