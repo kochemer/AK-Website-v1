@@ -127,7 +127,7 @@ jobs:
           # - public/podcast/*.mp3
           # - public/weekly-images/*.png
           # - data/cache/ (any files under cache directory)
-          ALLOWED_PATTERN="^(data/digests/|data/weeks/[^/]+/health\.json|data/articles\.json|data/source_yield\.json|data/page_source_stats\.json|data/competitor-intel\.json|data/weeks/[^/]+/.*|public/podcast/[^/]+\.mp3|public/weekly-images/[^/]+\.png|data/cache/.*)"
+          ALLOWED_PATTERN="^(data/digests/|data/weeks/[^/]+/health\.json|data/articles\.json|data/source_yield\.json|data/page_source_stats\.json|data/competitor-intel\.json|data/stock-history\.json|data/weeks/[^/]+/.*|public/podcast/[^/]+\.mp3|public/weekly-images/[^/]+\.png|data/cache/.*)"
           NON_ALLOWED_CHANGES=$(echo "$CHANGED_FILES" | grep -vE "$ALLOWED_PATTERN" || true)
           
           if [ -n "$NON_ALLOWED_CHANGES" ]; then
@@ -141,6 +141,7 @@ jobs:
             echo "  - data/source_yield.json (source yield report)"
             echo "  - data/page_source_stats.json (page ingestion stats)"
             echo "  - data/competitor-intel.json (competitor intelligence)"
+            echo "  - data/stock-history.json (stock price history)"
             echo "  - data/weeks/{week}/ (discovery reports, email digest, podcast script)"
             echo "  - public/podcast/ (podcast audio files)"
             echo "  - public/weekly-images/ (cover images)"
@@ -160,7 +161,7 @@ jobs:
       - name: Commit and push changes
         if: steps.check-changes.outputs.has_changes == 'true'
         run: |
-          git add data/digests/ data/weeks/*/health.json data/articles.json data/source_yield.json data/page_source_stats.json data/competitor-intel.json data/weeks/*/ public/podcast/*.mp3 public/weekly-images/*.png data/cache/
+          git add data/digests/ data/weeks/*/health.json data/articles.json data/source_yield.json data/page_source_stats.json data/competitor-intel.json data/stock-history.json data/weeks/*/ public/podcast/*.mp3 public/weekly-images/*.png data/cache/
           if git diff --staged --quiet; then
             echo "No staged changes to commit"
             exit 0
