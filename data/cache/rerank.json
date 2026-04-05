@@ -1966,5 +1966,101 @@
     ],
     "cached_at": "2026-03-29T17:22:35.147Z",
     "model": "gpt-4.1-mini"
+  },
+  "2026-W14:Luxury_and_Consumer:619a5618c51d": {
+    "selected": [
+      {
+        "id": "1",
+        "rank": 1,
+        "why": "AI-powered fashion ecommerce with human-led approach and practical insights",
+        "confidence": 0.95
+      },
+      {
+        "id": "4",
+        "rank": 2,
+        "why": "Luxury portfolio recalibration with implications for retail and ecommerce strategy",
+        "confidence": 0.9
+      },
+      {
+        "id": "13",
+        "rank": 3,
+        "why": "Mejuri’s fastest-selling collection data reveals shopper buying patterns",
+        "confidence": 0.9
+      },
+      {
+        "id": "2",
+        "rank": 4,
+        "why": "E-commerce closure and pivot insights relevant for retail strategy",
+        "confidence": 0.85
+      },
+      {
+        "id": "3",
+        "rank": 5,
+        "why": "Brick-and-mortar rebuilding post-Covid with retail footprint expansion",
+        "confidence": 0.85
+      },
+      {
+        "id": "5",
+        "rank": 6,
+        "why": "Insights on high-net-worth beauty customers for targeted ecommerce strategies",
+        "confidence": 0.8
+      },
+      {
+        "id": "0",
+        "rank": 7,
+        "why": "Luxury workwear brand launch with celebrity influence on retail demand",
+        "confidence": 0.8
+      }
+    ],
+    "cached_at": "2026-04-05T16:35:05.307Z",
+    "model": "gpt-4.1-mini"
+  },
+  "2026-W14:Jewellery_Industry:27e3a90bdac4": {
+    "selected": [
+      {
+        "id": "11",
+        "rank": 1,
+        "why": "Signet restructures brands impacting ecommerce and retail integration",
+        "confidence": 0.95
+      },
+      {
+        "id": "0",
+        "rank": 2,
+        "why": "Perigold expansion offers insights on luxury retail and store operations",
+        "confidence": 0.9
+      },
+      {
+        "id": "2",
+        "rank": 3,
+        "why": "Fuel and cost pressures affecting retail supply chain and margins",
+        "confidence": 0.85
+      },
+      {
+        "id": "15",
+        "rank": 4,
+        "why": "Swarovski revenue rise with outlook on demand and retail challenges",
+        "confidence": 0.85
+      },
+      {
+        "id": "1",
+        "rank": 5,
+        "why": "Store reopening highlights physical retail strategies in jewellery sector",
+        "confidence": 0.8
+      },
+      {
+        "id": "9",
+        "rank": 6,
+        "why": "GIA new campus expands gemology education impacting industry talent",
+        "confidence": 0.75
+      },
+      {
+        "id": "4",
+        "rank": 7,
+        "why": "Mentorship cohort launch supports professional development in jewellery retail",
+        "confidence": 0.7
+      }
+    ],
+    "cached_at": "2026-04-05T16:35:35.378Z",
+    "model": "gpt-4.1-mini"
   }
 }

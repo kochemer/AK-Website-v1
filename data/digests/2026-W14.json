@@ -1,0 +1,975 @@
+{
+  "weekLabel": "2026-W14",
+  "tz": "Europe/Copenhagen",
+  "startISO": "2026-03-29T22:00:00.000Z",
+  "endISO": "2026-04-05T21:59:59.999Z",
+  "builtAtISO": "2026-04-05T18:35:35.379+02:00",
+  "builtAtLocal": "2026-04-05 18:35:35",
+  "totals": {
+    "total": 772,
+    "byTopic": {
+      "AIStrategy": 143,
+      "EcommerceRetail": 472,
+      "LuxuryConsumer": 125,
+      "Jewellery": 28
+    }
+  },
+  "topics": {
+    "AI_and_Strategy": {
+      "total": 143,
+      "top": [
+        {
+          "id": "67z5y1",
+          "title": "Anthropic buys biotech startup Coefficient Bio in $400M deal: Reports",
+          "url": "https://techcrunch.com/2026/04/03/anthropic-buys-biotech-startup-coefficient-bio-in-400m-deal-reports/",
+          "source": "TechCrunch - AI",
+          "published_at": "2026-04-03T20:28:40.000Z",
+          "ingested_at": "2026-04-05T16:22:39.770Z",
+          "snippet": "Anthropic has purchased the stealth biotech AI startup Coefficient Bio in a $400 million stock deal, according to The Information and Eric Newcomer.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.35000000000000003,
+            "recencyScore": 0,
+            "sourceWeight": 0.15,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "anthropic",
+              "ai",
+              "ai startup"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Anthropic acquired the stealth biotech AI startup Coefficient Bio in a $400 million stock deal, as reported by The Information and Eric Newcomer. This strategic move highlights Anthropic's expansion in the AI and biotech sectors.",
+          "translations": {
+            "da": {
+              "title": "Anthropic køber biotech startup Coefficient Bio i en aftale på 400 millioner dollars: Rapport",
+              "summary": "AI-genereret resumé: Anthropic har erhvervet den hemmelige biotech AI-startup Coefficient Bio i en aktieaftale på 400 millioner dollars, rapporteret af The Information og Eric Newcomer. Dette strategiske skridt fremhæver Anthropics udvidelse inden for AI- og biotech-sektorerne."
+            },
+            "es": {
+              "title": "Anthropic compra la startup biotecnológica Coefficient Bio en un acuerdo de 400 millones de dólares: Informes",
+              "summary": "Resumen generado por IA: Anthropic adquirió la startup de IA biotecnológica secreta Coefficient Bio en un acuerdo de acciones por 400 millones de dólares, según informaron The Information y Eric Newcomer. Este movimiento estratégico destaca la expansión de Anthropic en los sectores de IA y biotecnología."
+            }
+          }
+        },
+        {
+          "id": "vux04a",
+          "title": "Anthropic ramps up its political activities with a new PAC",
+          "url": "https://techcrunch.com/2026/04/03/anthropic-ramps-up-its-political-activities-with-a-new-pac/",
+          "source": "TechCrunch - AI",
+          "published_at": "2026-04-03T20:22:18.000Z",
+          "ingested_at": "2026-04-05T16:22:39.770Z",
+          "snippet": "With the midterms right around the corner, the new group is positioned to back candidates who support the AI company's policy agenda.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.35,
+            "recencyScore": 0,
+            "sourceWeight": 0.15,
+            "keywordBoost": 0.2,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "anthropic",
+              "ai",
+              "ai company",
+              "policy"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Anthropic has launched a new political action committee (PAC) aimed at supporting candidates aligned with its AI policy agenda ahead of the upcoming midterm elections.",
+          "translations": {
+            "da": {
+              "title": "Anthropic øger sine politiske aktiviteter med en ny PAC",
+              "summary": "AI-genereret resumé: Anthropic har lanceret en ny politisk handlingskomité (PAC) med det formål at støtte kandidater, der er i overensstemmelse med deres AI-politik, inden de kommende midtvejsvalg."
+            },
+            "es": {
+              "title": "Anthropic intensifica sus actividades políticas con un nuevo PAC",
+              "summary": "Resumen generado por IA: Anthropic ha lanzado un nuevo comité de acción política (PAC) destinado a apoyar a candidatos alineados con su agenda de políticas de IA antes de las próximas elecciones de mitad de mandato."
+            }
+          }
+        },
+        {
+          "id": "w3pocj",
+          "title": "Young Professional’s AI Tool Spots Mental Health Conditions",
+          "url": "https://spectrum.ieee.org/abhishek-appaji-ai-diagnostic-tool",
+          "source": "IEEE Spectrum",
+          "published_at": "2026-04-02T18:00:02.000Z",
+          "ingested_at": "2026-04-05T16:22:39.770Z",
+          "snippet": "Abhishek Appaji has committed his career to bringing lifesaving technology to underresourced communities. The IEEE senior member weaves together artificial intelligence, biomedical engineering, deep learning, and neuroscience to make doctors’ jobs easier and to improve patient outcomes.\n“The intersection of these fields is where the most impactful breakthroughs in diagnostic precision occur,” says Appaji, an associate professor of medical electronics engineering at the B.M.S. College of Engineer...",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.30000000000000004,
+            "recencyScore": 0,
+            "sourceWeight": 0.15,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ai",
+              "artificial intelligence",
+              "deep learning"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Abhishek Appaji, an IEEE senior member and associate professor, integrates artificial intelligence, biomedical engineering, deep learning, and neuroscience to develop tools that enhance diagnostic precision and improve mental health care in underresourced communities.",
+          "translations": {
+            "da": {
+              "title": "Ung professionels AI-værktøj opdager mentale helbredstilstande",
+              "summary": "AI-genereret resumé: Abhishek Appaji, IEEE senior medlem og lektor, integrerer kunstig intelligens, biomedicinsk teknik, dyb læring og neurovidenskab for at udvikle værktøjer, der forbedrer diagnostisk præcision og mental sundhedspleje i underforsynede samfund."
+            },
+            "es": {
+              "title": "Herramienta de IA de joven profesional detecta condiciones de salud mental",
+              "summary": "Resumen generado por IA: Abhishek Appaji, miembro senior de IEEE y profesor asociado, integra inteligencia artificial, ingeniería biomédica, aprendizaje profundo y neurociencia para desarrollar herramientas que mejoran la precisión diagnóstica y la atención de salud mental en comunidades con pocos recursos."
+            }
+          }
+        },
+        {
+          "id": "c0lhwk",
+          "title": "Mercor says it was hit by cyberattack tied to compromise of open source LiteLLM project",
+          "url": "https://techcrunch.com/2026/03/31/mercor-says-it-was-hit-by-cyberattack-tied-to-compromise-of-open-source-litellm-project/",
+          "source": "TechCrunch - AI",
+          "published_at": "2026-04-01T01:42:59.000Z",
+          "ingested_at": "2026-04-05T16:22:39.770Z",
+          "snippet": "The AI recruiting startup confirmed a security incident after an extortion hacking crew took credit for stealing data from the company's systems.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.3,
+            "recencyScore": 0,
+            "sourceWeight": 0.15,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "open source",
+              "ai"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Mercor, an AI recruiting startup, confirmed it was targeted in a cyberattack linked to the compromise of the open source LiteLLM project, with an extortion hacking group claiming to have stolen data from the company's systems.",
+          "translations": {
+            "da": {
+              "title": "Mercor siger, at de blev ramt af cyberangreb forbundet med kompromittering af open source LiteLLM-projektet",
+              "summary": "AI-genereret resumé: Mercor, en AI-rekrutteringsstartup, bekræftede, at de var mål for et cyberangreb knyttet til kompromitteringen af open source LiteLLM-projektet, hvor en afpresningsgruppe hævder at have stjålet data fra virksomhedens systemer."
+            },
+            "es": {
+              "title": "Mercor dice que fue víctima de un ciberataque vinculado a la compromisión del proyecto de código abierto LiteLLM",
+              "summary": "Resumen generado por IA: Mercor, una startup de reclutamiento de IA, confirmó que fue objetivo de un ciberataque relacionado con la compromisión del proyecto de código abierto LiteLLM, con un grupo de hackers extorsionadores que afirma haber robado datos de los sistemas de la empresa."
+            }
+          }
+        },
+        {
+          "id": "lwjc3c",
+          "title": "Shifting to AI model customization is an architectural imperative",
+          "url": "https://www.technologyreview.com/2026/03/31/1134762/shifting-to-ai-model-customization-is-an-architectural-imperative/",
+          "source": "MIT Technology Review",
+          "published_at": "2026-03-31T14:12:50.000Z",
+          "ingested_at": "2026-04-05T16:22:39.770Z",
+          "snippet": "In the early days of large language models (LLMs), we grew accustomed to massive 10x jumps in reasoning and coding capability with every new model iteration. Today, those jumps have flattened into incremental gains. The exception is domain-specialized intelligence, where true step-function improvements are still the norm. When a model is fused with an organization’s…",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.30000000000000004,
+            "recencyScore": 0,
+            "sourceWeight": 0.15,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ai",
+              "large language model",
+              "reasoning"
+            ]
+          },
+          "aiSummary": "AI-generated summary: As large language models experience diminishing general improvements, significant advancements now primarily come from domain-specialized intelligence, making AI model customization a critical architectural focus for organizations.",
+          "translations": {
+            "da": {
+              "title": "Skift til AI-modeltilpasning er en arkitektonisk nødvendighed",
+              "summary": "AI-genereret resumé: Efterhånden som store sprogmodeller oplever aftagende generelle forbedringer, kommer betydelige fremskridt nu primært fra domænespecialiseret intelligens, hvilket gør AI-modeltilpasning til et kritisk arkitektonisk fokus for organisationer."
+            },
+            "es": {
+              "title": "El cambio hacia la personalización de modelos de IA es un imperativo arquitectónico",
+              "summary": "Resumen generado por IA: A medida que los grandes modelos de lenguaje experimentan mejoras generales decrecientes, los avances significativos provienen principalmente de la inteligencia especializada en dominios, haciendo que la personalización de modelos de IA sea un enfoque arquitectónico crítico para las organizaciones."
+            }
+          }
+        },
+        {
+          "id": "c6bp3e",
+          "title": "The Pentagon’s culture war tactic against Anthropic has backfired",
+          "url": "https://www.technologyreview.com/2026/03/30/1134881/the-pentagons-culture-war-tactic-against-anthropic-has-backfired/",
+          "source": "MIT Technology Review",
+          "published_at": "2026-03-30T15:42:50.000Z",
+          "ingested_at": "2026-04-05T16:22:39.770Z",
+          "snippet": "This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. Last Thursday, a California judge temporarily blocked the Pentagon from labeling Anthropic a supply chain risk and ordering government agencies to stop using its AI. It’s the latest development in the month-long…",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.25,
+            "recencyScore": 0,
+            "sourceWeight": 0.15,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "anthropic",
+              "ai"
+            ]
+          },
+          "aiSummary": "AI-generated summary: A California judge recently issued a temporary block preventing the Pentagon from designating Anthropic as a supply chain risk and restricting government use of its AI, marking a setback in the Pentagon's ongoing dispute with the company.",
+          "translations": {
+            "da": {
+              "title": "Pentagons kulturkrigsstrategi mod Anthropic er slået fejl",
+              "summary": "AI-genereret resumé: En dommer i Californien har for nylig udstedt en midlertidig blokering, der forhindrer Pentagon i at betegne Anthropic som en risiko i forsyningskæden og begrænse regeringens brug af deres AI, hvilket markerer et tilbageslag i Pentagons igangværende konflikt med virksomheden."
+            },
+            "es": {
+              "title": "La táctica de guerra cultural del Pentágono contra Anthropic ha fracasado",
+              "summary": "Resumen generado por IA: Un juez de California emitió recientemente un bloqueo temporal que impide al Pentágono designar a Anthropic como un riesgo en la cadena de suministro y restringir el uso gubernamental de su IA, marcando un revés en la disputa continua del Pentágono con la empresa."
+            }
+          }
+        },
+        {
+          "id": "rasghr",
+          "title": "AI-led demand to drive sharp surge in semiconductor revenues: Goldman Sachs ",
+          "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/ai-led-demand-to-drive-sharp-surge-in-semiconductor-revenues-goldman-sachs/articleshow/130036959.cms",
+          "source": "Economic Times - Technology",
+          "published_at": "2026-04-05T09:43:39.000Z",
+          "ingested_at": "2026-04-05T16:22:39.770Z",
+          "snippet": "Artificial intelligence is powering a boom in the semiconductor industry. Goldman Sachs reports strong investment and revenue growth are expected through 2026.  AI-related hardware revenues could reach over $700 billion by late 2026.  This surge is fueled by demand for AI infrastructure.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ai",
+              "artificial intelligence",
+              "investment"
+            ]
+          },
+          "aiSummary": "AI-generated summary: According to Goldman Sachs, artificial intelligence is driving a significant surge in semiconductor revenues, with AI-related hardware sales projected to exceed $700 billion by late 2026 due to strong demand for AI infrastructure.",
+          "translations": {
+            "da": {
+              "title": "AI-drevet efterspørgsel vil føre til kraftig stigning i halvlederindtægter: Goldman Sachs",
+              "summary": "AI-genereret resumé: Ifølge Goldman Sachs driver kunstig intelligens en betydelig stigning i halvlederindtægter, hvor AI-relateret hardware salg forventes at overstige 700 milliarder dollars i slutningen af 2026 på grund af stor efterspørgsel efter AI-infrastruktur."
+            },
+            "es": {
+              "title": "Demanda impulsada por IA impulsará un fuerte aumento en los ingresos de semiconductores: Goldman Sachs",
+              "summary": "Resumen generado por IA: Según Goldman Sachs, la inteligencia artificial está impulsando un aumento significativo en los ingresos por semiconductores, con ventas de hardware relacionadas con IA proyectadas para superar los 700 mil millones de dólares a finales de 2026 debido a la fuerte demanda de infraestructura de IA."
+            }
+          }
+        }
+      ]
+    },
+    "Ecommerce_Retail_Tech": {
+      "total": 472,
+      "top": [
+        {
+          "id": "8iwiqw",
+          "title": "Amazon to issue 3.5% surcharge on fulfillment services as fuel, logistics costs rise",
+          "url": "https://www.modernretail.co/operations/amazon-to-issue-3-5-surcharge-on-fulfillment-services-as-fuel-logistics-costs-rise/?utm_campaign=modernretaildis&utm_medium=rss&utm_source=general-rss",
+          "source": "Modern Retail",
+          "published_at": "2026-04-02T17:43:00.000Z",
+          "ingested_at": "2026-04-05T16:22:39.770Z",
+          "snippet": "Amazon will impose a 3.5% fuel and logistics surcharge on merchants’ fulfillment fees beginning April 17, as rising fuel costs tied to conflict in the Middle East pressure supply chains.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.25,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "fulfillment",
+              "logistics"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Starting April 17, Amazon will add a 3.5% surcharge on merchants' fulfillment fees due to increased fuel and logistics costs driven by Middle East conflicts, impacting supply chains.",
+          "translations": {
+            "da": {
+              "title": "Amazon pålægger 3,5% tillæg på opfyldelsestjenester på grund af stigende brændstof- og logistomkostninger",
+              "summary": "AI-genereret resumé: Fra 17. april vil Amazon tilføje et 3,5% tillæg på sælgeres opfyldelsesgebyrer på grund af øgede brændstof- og logistomkostninger drevet af konflikter i Mellemøsten, hvilket påvirker forsyningskæder."
+            },
+            "es": {
+              "title": "Amazon aplicará un recargo del 3,5% en servicios de cumplimiento debido al aumento de costos de combustible y logística",
+              "summary": "Resumen generado por IA: A partir del 17 de abril, Amazon añadirá un recargo del 3,5% en las tarifas de cumplimiento de los comerciantes debido al aumento de los costos de combustible y logística impulsados por conflictos en Oriente Medio, afectando las cadenas de suministro."
+            }
+          }
+        },
+        {
+          "id": "apekwx",
+          "title": "New Ecommerce Tools: April 1, 2026",
+          "url": "https://www.practicalecommerce.com/new-ecommerce-tools-april-1-2026",
+          "source": "Practical Ecommerce",
+          "published_at": "2026-04-01T12:09:28.000Z",
+          "ingested_at": "2026-04-05T16:22:39.770Z",
+          "snippet": "This week: updates for product images, UGC, box-free returns, BNPL, marketplace integrations, shipping intel, cross-border, and affiliate partnerships.\nThe post New Ecommerce Tools: April 1, 2026 appeared first on Practical Ecommerce.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ecommerce",
+              "marketplace"
+            ]
+          },
+          "aiSummary": "AI-generated summary: The April 1, 2026 Practical Ecommerce article highlights new ecommerce tools including updates for product images, user-generated content, box-free returns, buy now pay later options, marketplace integrations, shipping intelligence, cross-border solutions, and affiliate partnerships.",
+          "translations": {
+            "da": {
+              "title": "Nye Ecommerce-værktøjer: 1. april 2026",
+              "summary": "AI-genereret resumé: Artiklen Practical Ecommerce fra 1. april 2026 fremhæver nye ecommerce-værktøjer, herunder opdateringer til produktbilleder, brugergenereret indhold, boksfri returnering, køb nu betal senere muligheder, markedspladsintegrationer, forsendelsesintelligens, grænseoverskridende løsninger og affiliate-partnerskaber."
+            },
+            "es": {
+              "title": "Nuevas herramientas de Ecommerce: 1 de abril de 2026",
+              "summary": "Resumen generado por IA: El artículo de Practical Ecommerce del 1 de abril de 2026 destaca nuevas herramientas de ecommerce, incluyendo actualizaciones para imágenes de productos, contenido generado por usuarios, devoluciones sin caja, opciones de compra ahora y paga después, integraciones de marketplaces, inteligencia en envíos, soluciones transfronterizas y asociaciones de afiliados."
+            }
+          }
+        },
+        {
+          "id": "p7gpok",
+          "title": "Aldi taps Instacart to power its U.S. website",
+          "url": "https://www.modernretail.co/technology/aldi-taps-instacart-to-power-its-u-s-website/?utm_campaign=modernretaildis&utm_medium=rss&utm_source=general-rss",
+          "source": "Modern Retail",
+          "published_at": "2026-04-01T04:00:00.000Z",
+          "ingested_at": "2026-04-05T16:22:39.770Z",
+          "snippet": "Aldi is the latest grocer to turn to Instacart to do the heavy lifting on its e-commerce website. Aldi U.S. just launched a new website and app powered by Instacart's white-label e-commerce and fulfillment platform, Storefront Pro.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.25,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "e-commerce",
+              "platform",
+              "fulfillment"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Aldi U.S. has launched a new website and app for its e-commerce platform, utilizing Instacart's Storefront Pro white-label technology to enhance its online shopping and fulfillment capabilities.",
+          "translations": {
+            "da": {
+              "title": "Aldi bruger Instacart til at drive sin amerikanske hjemmeside",
+              "summary": "AI-genereret resumé: Aldi U.S. har lanceret en ny hjemmeside og app til sin e-handelsplatform, der bruger Instacarts Storefront Pro white-label teknologi til at forbedre online shopping og opfyldelsesmuligheder."
+            },
+            "es": {
+              "title": "Aldi utiliza Instacart para potenciar su sitio web en EE.UU.",
+              "summary": "Resumen generado por IA: Aldi U.S. ha lanzado un nuevo sitio web y aplicación para su plataforma de comercio electrónico, utilizando la tecnología white-label Storefront Pro de Instacart para mejorar sus capacidades de compra y cumplimiento en línea."
+            }
+          }
+        },
+        {
+          "id": "rrwdni",
+          "title": "Amazon to apply 3.5% fuel and logistics surcharge on fulfillment",
+          "url": "https://www.retaildive.com/news/amazon-fba-2026-fuel-surcharge-increase/816571/",
+          "source": "Retail Dive",
+          "published_at": "2026-04-03T13:38:00.000Z",
+          "ingested_at": "2026-04-05T16:22:39.770Z",
+          "snippet": "The increase, averaging 7 cents per unit for U.S. Fulfillment by Amazon services, comes as supply chains grapple with fuel costs tied to the Iran war.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.30000000000000004,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0.1,
+            "penalty": 0,
+            "matchedKeywords": [
+              "fulfillment",
+              "logistics"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Amazon will implement a 3.5% fuel and logistics surcharge on U.S. Fulfillment by Amazon services, averaging an additional 7 cents per unit, in response to rising fuel costs linked to the Iran war.",
+          "translations": {
+            "da": {
+              "title": "Amazon pålægger 3,5% brændstof- og logistiktillæg på fulfillment",
+              "summary": "AI-genereret resumé: Amazon vil indføre et 3,5% brændstof- og logistiktillæg på U.S. Fulfillment by Amazon-tjenester, i gennemsnit 7 cent ekstra pr. enhed, som reaktion på stigende brændstofomkostninger forbundet med Iran-krigen."
+            },
+            "es": {
+              "title": "Amazon aplicará un recargo del 3,5% por combustible y logística en fulfillment",
+              "summary": "Resumen generado por IA: Amazon implementará un recargo del 3,5% por combustible y logística en los servicios Fulfillment by Amazon en EE. UU., con un promedio de 7 centavos adicionales por unidad, en respuesta al aumento de los costos de combustible vinculados a la guerra en Irán."
+            }
+          }
+        },
+        {
+          "id": "3m7ihr",
+          "title": "From Cost Center to Profit Killer: Rethinking Fulfillment in the Era of Perpetual Rate Increases",
+          "url": "https://www.mytotalretail.com/article/from-cost-center-to-profit-killer-rethinking-fulfillment-in-the-era-of-perpetual-rate-increases/",
+          "source": "Total Retail",
+          "published_at": "2026-03-31T14:13:02.000Z",
+          "ingested_at": "2026-04-05T16:22:39.770Z",
+          "snippet": "U.S. e-commerce was projected to hit $1.3 trillion last year, climbing toward $1.8 trillion by 2029. Behind those impressive figures lies a cost crisis most retailers aren’t prepared for: shipping expenses that compound annually, erode margins silently, and destabilize financial forecasting. Major carriers like UPS and FedEx implemented 5.9 percent general rate increases (GRIs) for […]",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0.1,
+            "penalty": 0,
+            "matchedKeywords": [
+              "fulfillment",
+              "e-commerce"
+            ]
+          },
+          "aiSummary": "AI-generated summary: The article discusses how rising shipping costs, including a 5.9 percent rate increase by major carriers like UPS and FedEx, are creating a cost crisis for U.S. e-commerce retailers, threatening profit margins and complicating financial forecasting despite strong market growth.",
+          "translations": {
+            "da": {
+              "title": "Fra omkostningscenter til profitdræber: Genovervejelse af opfyldelse i æraen med konstante prisstigninger",
+              "summary": "AI-genereret resumé: Artiklen diskuterer, hvordan stigende forsendelsesomkostninger, herunder en prisstigning på 5,9 procent fra store transportører som UPS og FedEx, skaber en omkostningskrise for amerikanske e-handelsforhandlere, truer profitmarginer og komplicerer økonomiske prognoser trods stærk markedsvækst."
+            },
+            "es": {
+              "title": "De centro de costos a asesino de ganancias: Repensando el cumplimiento en la era de aumentos perpetuos de tarifas",
+              "summary": "Resumen generado por IA: El artículo analiza cómo el aumento de los costos de envío, incluyendo un incremento del 5.9 por ciento por parte de grandes transportistas como UPS y FedEx, está creando una crisis de costos para los minoristas de comercio electrónico en EE. UU., amenazando los márgenes de ganancia y complicando las previsiones financieras a pesar del fuerte crecimiento del mercado."
+            }
+          }
+        },
+        {
+          "id": "lf5kj0",
+          "title": "PVH FY earnings sink but revenue growth shows signs of recovery",
+          "url": "https://www.just-style.com/news/pvh-corp-fy25-result/",
+          "source": "Just Style",
+          "published_at": "2026-04-01T11:33:10.000Z",
+          "ingested_at": "2026-04-05T16:22:39.770Z",
+          "snippet": "PVH Corp reported consolidated revenue of $8.95bn for the full year 2025 (FY25), marking a 3% increase over the previous year, with growth driven primarily by the Americas region and its global brands Tommy Hilfiger and Calvin Klein.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.15,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0,
+            "insightSignalBoost": 0.15,
+            "penalty": 0,
+            "matchedKeywords": []
+          },
+          "aiSummary": "AI-generated summary: PVH Corp's full-year 2025 revenue rose 3% to $8.95 billion, driven mainly by growth in the Americas and its global brands Tommy Hilfiger and Calvin Klein, despite a decline in overall earnings.",
+          "translations": {
+            "da": {
+              "title": "PVH årsresultat falder, men omsætningsvækst viser tegn på bedring",
+              "summary": "AI-genereret resumé: PVH Corps omsætning for hele 2025 steg 3% til 8,95 milliarder dollars, drevet primært af vækst i Amerika og deres globale mærker Tommy Hilfiger og Calvin Klein, på trods af et fald i det samlede resultat."
+            },
+            "es": {
+              "title": "Las ganancias anuales de PVH caen pero el crecimiento de ingresos muestra señales de recuperación",
+              "summary": "Resumen generado por IA: Los ingresos anuales de PVH Corp en 2025 aumentaron un 3% hasta 8.95 mil millones de dólares, impulsados principalmente por el crecimiento en las Américas y sus marcas globales Tommy Hilfiger y Calvin Klein, a pesar de una caída en las ganancias totales."
+            }
+          }
+        },
+        {
+          "id": "k26cvy",
+          "title": "Insider One vs Segment vs Bloomreach: Which Enterprise CDP is the Best Fit for You?",
+          "url": "https://insiderone.com/enterprise-cdp-comparison-insider-one-vs-competitors/",
+          "source": "UseInsider",
+          "published_at": "2026-03-31T05:51:10.000Z",
+          "ingested_at": "2026-04-05T16:22:39.770Z",
+          "snippet": "You have a mountain of insights sitting in your CRM, another in your POS, and a third in your mobile app.  But if those systems don’t talk to each other, ecommerce personalization becomes a series of disconnected guesses. That’s the reason so many enterprise marketing teams are turning to Customer Data Platforms (CDP).  These systems […]",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ecommerce",
+              "platform"
+            ]
+          },
+          "aiSummary": "AI-generated summary: The article from UseInsider (2026-03-31) discusses how enterprise marketing teams are adopting Customer Data Platforms (CDPs) like Insider One, Segment, and Bloomreach to unify disparate data from CRM, POS, and mobile apps, enabling more effective ecommerce personalization.",
+          "translations": {
+            "da": {
+              "title": "Insider One vs Segment vs Bloomreach: Hvilken Enterprise CDP passer bedst til dig?",
+              "summary": "AI-genereret resumé: Artiklen fra UseInsider (2026-03-31) beskriver, hvordan enterprise marketingteams anvender Customer Data Platforms (CDP'er) som Insider One, Segment og Bloomreach til at samle forskelligartede data fra CRM, POS og mobilapps for at muliggøre mere effektiv e-handels-personalisering."
+            },
+            "es": {
+              "title": "Insider One vs Segment vs Bloomreach: ¿Cuál Enterprise CDP es la mejor opción para ti?",
+              "summary": "Resumen generado por IA: El artículo de UseInsider (2026-03-31) analiza cómo los equipos de marketing empresarial están adoptando plataformas de datos de clientes (CDP) como Insider One, Segment y Bloomreach para unificar datos dispersos de CRM, POS y aplicaciones móviles, permitiendo una personalización de comercio electrónico más efectiva."
+            }
+          }
+        }
+      ]
+    },
+    "Luxury_and_Consumer": {
+      "total": 125,
+      "top": [
+        {
+          "id": "oaog7w",
+          "title": "Inside Pixel Moda’s Human-Led Approach to AI-Powered Fashion E-Commerce",
+          "url": "https://www.businessoffashion.com/articles/artificial-intelligence/inside-pixel-moda-human-led-approach-to-ai-powered-fashion-ecommerce/",
+          "source": "Business of Fashion - News",
+          "published_at": "2026-03-31T04:00:00.000Z",
+          "ingested_at": "2026-04-05T16:22:39.770Z",
+          "snippet": "The global e-commerce media producer creates AI-generated and AI-assisted product and campaign content for over 900 global brands, multi-brands and retailers — while delivering both efficiency and deeper consumer resonance. BoF learns more about how Pixel Moda supports the production of 14 million pictures and videos a year, while supporting human creativity and maintaining brand identity.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "consumer",
+              "brand"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Pixel Moda combines AI-powered content creation with human-led oversight to produce 14 million images and videos annually for over 900 global brands, enhancing efficiency while preserving creativity and brand identity in luxury e-commerce.",
+          "translations": {
+            "da": {
+              "title": "Inden for Pixel Modas menneskestyrede tilgang til AI-drevet mode e-handel",
+              "summary": "Pixel Moda kombinerer AI-drevet indholdsskabelse med menneskelig overvågning for at producere 14 millioner billeder og videoer årligt for over 900 globale mærker, hvilket øger effektiviteten samtidig med at kreativitet og brandidentitet i luksus e-handel bevares."
+            },
+            "es": {
+              "title": "Dentro del enfoque humano de Pixel Moda para el comercio electrónico de moda impulsado por IA",
+              "summary": "Pixel Moda combina la creación de contenido impulsada por IA con supervisión humana para producir 14 millones de imágenes y videos anualmente para más de 900 marcas globales, mejorando la eficiencia mientras se preserva la creatividad y la identidad de marca en el comercio electrónico de lujo."
+            }
+          }
+        },
+        {
+          "id": "kgv0ak",
+          "title": "How Big Luxury Is Rewiring for the Future",
+          "url": "https://www.businessoffashion.com/articles/luxury/luxury-portfolio-recalibration-lvmh-kering-richemont/",
+          "source": "Business of Fashion - News",
+          "published_at": "2026-03-30T04:30:00.000Z",
+          "ingested_at": "2026-04-05T16:22:39.770Z",
+          "snippet": "Under scrutiny from top managers and investors, LVMH, Kering and Richemont are re-examining their brand portfolios, organisational structures and store networks.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "luxury",
+              "brand"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Leading luxury groups LVMH, Kering, and Richemont are reassessing their brand portfolios, organizational structures, and store networks as they adapt to future challenges.",
+          "translations": {
+            "da": {
+              "title": "Hvordan Stor Luksus Omstiller Sig til Fremtiden",
+              "summary": "AI-genereret resumé: Ledende luksusgrupper LVMH, Kering og Richemont genovervejer deres brandporteføljer, organisationsstrukturer og butikskæder, mens de tilpasser sig fremtidige udfordringer."
+            },
+            "es": {
+              "title": "Cómo el Gran Lujo se Está Reconfigurando para el Futuro",
+              "summary": "Resumen generado por IA: Los principales grupos de lujo LVMH, Kering y Richemont están reevaluando sus carteras de marcas, estructuras organizativas y redes de tiendas mientras se adaptan a los desafíos futuros."
+            }
+          }
+        },
+        {
+          "id": "hq2l0k",
+          "title": "Mejuri builds on its fastest-selling collection, with most shoppers buying 3 products",
+          "url": "https://www.glossy.co/fashion/mejuri-builds-on-its-fastest-selling-collection-with-most-shoppers-buying-3-products/?utm_campaign=glossydis&utm_medium=rss&utm_source=general-rss",
+          "source": "Glossy",
+          "published_at": "2026-03-31T20:58:58.000Z",
+          "ingested_at": "2026-04-05T16:22:39.770Z",
+          "snippet": "When Mejuri launched its Puzzle stacking rings last year, the collection quickly outperformed expectations. Within months, it became the brand’s fastest-selling product to date, driven in large part by how customers shop it. Rather than purchasing a single ring, 60% of shoppers buy three or more at once, turning the collection into a repeat purchase driver from the outset.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "brand"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Mejuri's Puzzle stacking rings, launched last year, rapidly became the brand's fastest-selling collection, with 60% of customers purchasing three or more rings at once, fueling repeat sales.",
+          "translations": {
+            "da": {
+              "title": "Mejuri bygger videre på sin hurtigst sælgende kollektion, hvor de fleste kunder køber 3 produkter",
+              "summary": "AI-genereret resumé: Mejuris Puzzle stacking rings, lanceret sidste år, blev hurtigt brandets hurtigst sælgende kollektion, hvor 60% af kunderne købte tre eller flere ringe ad gangen, hvilket øgede gentagne salg."
+            },
+            "es": {
+              "title": "Mejuri amplía su colección más vendida, con la mayoría de compradores adquiriendo 3 productos",
+              "summary": "Resumen generado por IA: Los Puzzle stacking rings de Mejuri, lanzados el año pasado, se convirtieron rápidamente en la colección más vendida de la marca, con un 60% de clientes comprando tres o más anillos a la vez, impulsando ventas repetidas."
+            }
+          }
+        },
+        {
+          "id": "iu9d6i",
+          "title": "Why Industrie Africa is Closing Its E-Commerce Shop",
+          "url": "https://fashionista.com/2026/04/industrie-africa-shop-closing-retail-advisory-launch-ia-plus",
+          "source": "Fashionista",
+          "published_at": "2026-04-02T12:00:00.000Z",
+          "ingested_at": "2026-04-05T16:22:39.770Z",
+          "snippet": "After five years as a go-to shopping destination for African brands, it's pivoting into a retail advisory.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": -0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0.2,
+            "matchedKeywords": [
+              "brand"
+            ]
+          },
+          "aiSummary": "AI-generated summary: After five years operating as a popular e-commerce platform for African brands, Industrie Africa is closing its online shop to transition into a retail advisory business.",
+          "translations": {
+            "da": {
+              "title": "Hvorfor Industrie Africa lukker sin e-handelsbutik",
+              "summary": "AI-genereret resumé: Efter fem år som en populær e-handelsplatform for afrikanske mærker lukker Industrie Africa sin online butik for at overgå til en detailrådgivningsvirksomhed."
+            },
+            "es": {
+              "title": "Por qué Industrie Africa cierra su tienda de comercio electrónico",
+              "summary": "Resumen generado por IA: Después de cinco años operando como una plataforma de comercio electrónico popular para marcas africanas, Industrie Africa cierra su tienda en línea para convertirse en un negocio de asesoría minorista."
+            }
+          }
+        },
+        {
+          "id": "qydbqp",
+          "title": "How Forty Five Ten Is Rebuilding Its Brick-and-Mortar Footprint Post-Covid",
+          "url": "https://fashionista.com/2026/03/forty-five-ten-fort-worth-store-opening",
+          "source": "Fashionista",
+          "published_at": "2026-03-30T14:00:00.000Z",
+          "ingested_at": "2026-04-05T16:22:39.770Z",
+          "snippet": "After closing nearly all of its stores, the luxury multi-brand retailer is gradually expanding again, starting with Fort Worth, TX.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": -0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0.2,
+            "matchedKeywords": [
+              "luxury",
+              "brand"
+            ]
+          },
+          "aiSummary": "AI-generated summary: After closing nearly all of its stores due to Covid, luxury retailer Forty Five Ten is gradually rebuilding its physical presence, beginning with a location in Fort Worth, TX.",
+          "translations": {
+            "da": {
+              "title": "Hvordan Forty Five Ten Genopbygger Sin Fysiske Butikseffekt Efter Covid",
+              "summary": "AI-genereret resumé: Efter at have lukket næsten alle sine butikker på grund af Covid, genopbygger luksusforhandleren Forty Five Ten gradvist sin fysiske tilstedeværelse, begyndende med en butik i Fort Worth, TX."
+            },
+            "es": {
+              "title": "Cómo Forty Five Ten Está Reconstruyendo Su Presencia Física Post-Covid",
+              "summary": "Resumen generado por IA: Tras cerrar casi todas sus tiendas debido al Covid, el minorista de lujo Forty Five Ten está reconstruyendo gradualmente su presencia física, comenzando con una ubicación en Fort Worth, TX."
+            }
+          }
+        },
+        {
+          "id": "i1gzde",
+          "title": "What Beauty’s Richest Customers Want",
+          "url": "https://www.businessoffashion.com/briefings/beauty/what-beautys-richest-customers-want/",
+          "source": "Business of Fashion - News",
+          "published_at": "2026-04-02T15:00:27.000Z",
+          "ingested_at": "2026-04-05T16:22:39.770Z",
+          "snippet": "Increasingly, beauty brands that target high-net-worth individuals are not competing against their Sephora shelfmates. They’re competing against luxury experiences or goods, like a stay at the Amangiri or a trip to a top plastic surgeon.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "luxury",
+              "brand"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Beauty brands targeting wealthy customers are now competing not just with other beauty products but with luxury experiences and services, such as exclusive travel or high-end cosmetic procedures.",
+          "translations": {
+            "da": {
+              "title": "Hvad Skønhedsbranchens Rigeste Kunder Ønsker",
+              "summary": "Skønhedsbrands, der henvender sig til velhavende kunder, konkurrerer nu ikke kun med andre skønhedsprodukter, men også med luksusoplevelser og -tjenester, såsom eksklusive rejser eller avancerede kosmetiske behandlinger."
+            },
+            "es": {
+              "title": "Lo Que Quieren los Clientes Más Ricos de la Belleza",
+              "summary": "Las marcas de belleza que se dirigen a clientes adinerados ahora compiten no solo con otros productos de belleza, sino también con experiencias y servicios de lujo, como viajes exclusivos o procedimientos cosméticos de alta gama."
+            }
+          }
+        },
+        {
+          "id": "ct38z0",
+          "title": "How Sali Christeson Launched the Go-to Luxury Workwear Brand for Women in Power",
+          "url": "https://fashionista.com/2026/04/how-sali-christeson-launched-the-go-to-luxury-workwear-brand-for-women-in-power",
+          "source": "Fashionista",
+          "published_at": "2026-04-03T12:00:00.000Z",
+          "ingested_at": "2026-04-05T16:22:39.770Z",
+          "snippet": "On The Fashionista Network, watch as Argent's founder and CEO shares which celebs \"move the needle\" for the brand, the everyday customer stories that keep her inspired and what it takes to launch a fashion label from the ground up.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "luxury",
+              "brand"
+            ]
+          },
+          "aiSummary": "AI-generated summary: In this Fashionista feature, Argent founder and CEO Sali Christeson discusses the celebrities influencing her luxury workwear brand, shares inspiring customer stories, and reveals insights into launching a fashion label from scratch.",
+          "translations": {
+            "da": {
+              "title": "Hvordan Sali Christeson lancerede det foretrukne luksusarbejdstøjsmærke for kvinder i magtpositioner",
+              "summary": "AI-genereret resumé: I dette Fashionista-indslag fortæller Argent's grundlægger og CEO Sali Christeson om de berømtheder, der inspirerer hendes luksusarbejdstøjsmærke, deler inspirerende kundehistorier og afslører indsigt i at starte et modemærke fra bunden."
+            },
+            "es": {
+              "title": "Cómo Sali Christeson lanzó la marca de ropa de trabajo de lujo para mujeres en el poder",
+              "summary": "Resumen generado por IA: En este artículo de Fashionista, la fundadora y CEO de Argent, Sali Christeson, habla sobre las celebridades que influyen en su marca de ropa de trabajo de lujo, comparte historias inspiradoras de clientes y revela detalles sobre cómo lanzar una marca de moda desde cero."
+            }
+          }
+        }
+      ]
+    },
+    "Jewellery_Industry": {
+      "total": 28,
+      "top": [
+        {
+          "id": "sh7sci",
+          "title": "Signet restructures multiple brands amid overhaul",
+          "url": "https://www.jewellermagazine.com/Article/14898/Signet-restructures-multiple-brands-amid-overhaul",
+          "source": "Jeweller - Business News",
+          "published_at": "2026-03-30T13:00:00.000Z",
+          "ingested_at": "2026-04-05T16:22:39.770Z",
+          "snippet": "Signet Jewelers will shut down the James Allen and Rocksbox websites and integrate them into its core brands.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": []
+          },
+          "aiSummary": "AI-generated summary: Signet Jewelers is restructuring by shutting down the James Allen and Rocksbox websites and integrating these brands into its core operations, as reported by Jeweller - Business News on March 30, 2026.",
+          "translations": {
+            "da": {
+              "title": "Signet omstrukturerer flere mærker under en gennemgribende ændring",
+              "summary": "AI-genereret resumé: Signet Jewelers omstrukturerer ved at lukke James Allen og Rocksbox hjemmesiderne og integrere disse mærker i sine kerneaktiviteter, rapporteret af Jeweller - Business News den 30. marts 2026."
+            },
+            "es": {
+              "title": "Signet reestructura varias marcas en medio de una renovación",
+              "summary": "Resumen generado por IA: Signet Jewelers está reestructurando al cerrar los sitios web de James Allen y Rocksbox e integrar estas marcas en sus operaciones principales, según informó Jeweller - Business News el 30 de marzo de 2026."
+            }
+          }
+        },
+        {
+          "id": "aph3cb",
+          "title": "An exception to luxury’s slowed growth, Perigold eyes vacant department store locations amid expansion",
+          "url": "https://www.glossy.co/fashion/luxury/https-www-glossy-co-uncategorized-an-exception-to-luxurys-slowed-growth-perigold-eyes-vacant-department-store-locations-amid-expansion/?utm_campaign=glossydis&utm_medium=rss&utm_source=general-rss",
+          "source": "Glossy",
+          "published_at": "2026-03-30T04:00:00.000Z",
+          "ingested_at": "2026-04-05T16:22:39.770Z",
+          "snippet": "Launched by Wayfair to be its luxury counterpart, 9-year-old Perigold is in growth mode — against all odds. In 2025, the home furnishings retailer opened its first two stores, in Houston and West Palm Beach. And just last month, it invested in its first major collaboration.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "gold",
+              "retailer"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Perigold, launched by Wayfair as its luxury counterpart, is expanding despite the luxury sector's slowed growth, having opened its first two stores in Houston and West Palm Beach in 2025 and recently investing in a major collaboration.",
+          "translations": {
+            "da": {
+              "title": "En undtagelse fra luksusens langsomme vækst, Perigold ser på ledige stormagasiner under udvidelse",
+              "summary": "AI-genereret resumé: Perigold, lanceret af Wayfair som dets luksusmodstykke, udvider trods luksussektorens langsomme vækst, efter at have åbnet sine første to butikker i Houston og West Palm Beach i 2025 og for nylig investeret i et stort samarbejde."
+            },
+            "es": {
+              "title": "Una excepción al crecimiento lento del lujo, Perigold apunta a locales vacantes de grandes almacenes en medio de su expansión",
+              "summary": "Resumen generado por IA: Perigold, lanzado por Wayfair como su contraparte de lujo, se está expandiendo a pesar del crecimiento lento del sector de lujo, habiendo abierto sus dos primeras tiendas en Houston y West Palm Beach en 2025 y recientemente invirtiendo en una colaboración importante."
+            }
+          }
+        },
+        {
+          "id": "jxinbg",
+          "title": "Fuel prices, cost of living pressures mounting for retailers",
+          "url": "https://www.jewellermagazine.com/Article/14916/Fuel-prices-cost-of-living-pressures-mounting-for-retailers",
+          "source": "Jeweller - Business News",
+          "published_at": "2026-03-30T13:00:00.000Z",
+          "ingested_at": "2026-04-05T16:22:39.770Z",
+          "snippet": "A new survey published by the Australian Retail Council has found that increasing fuel and supply chain costs have significantly increased pressure on local retailers.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.25,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0.1,
+            "penalty": 0,
+            "matchedKeywords": [
+              "retailer"
+            ]
+          },
+          "aiSummary": "AI-generated summary: A recent survey by the Australian Retail Council reveals that rising fuel and supply chain costs are intensifying financial pressures on local retailers in the jewellery industry.",
+          "translations": {
+            "da": {
+              "title": "Brændstofpriser og leveomkostninger presser detailhandlere",
+              "summary": "AI-genereret resumé: En nylig undersøgelse fra Australian Retail Council viser, at stigende brændstof- og forsyningskædeomkostninger øger de økonomiske pres på lokale detailhandlere i smykkeindustrien."
+            },
+            "es": {
+              "title": "Precios del combustible y presiones del costo de vida aumentan para los minoristas",
+              "summary": "Resumen generado por IA: Una encuesta reciente del Australian Retail Council revela que el aumento de los costos de combustible y la cadena de suministro intensifican las presiones financieras sobre los minoristas locales en la industria de la joyería."
+            }
+          }
+        },
+        {
+          "id": "js5cwn",
+          "title": "Swarovski experiences revenue rise, expects challenges ahead",
+          "url": "https://www.jewellermagazine.com/Article/14900/Swarovski-experiences-revenue-rise-expects-challenges-ahead",
+          "source": "Jeweller - Business News",
+          "published_at": "2026-03-30T13:00:00.000Z",
+          "ingested_at": "2026-04-05T16:22:39.770Z",
+          "snippet": "Swarovski expects a tough year ahead; however, it remains optimistic due to strong demand and key collaborations.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": -0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0,
+            "insightSignalBoost": 0,
+            "penalty": 0.2,
+            "matchedKeywords": []
+          },
+          "aiSummary": "AI-generated summary: Swarovski reported a rise in revenue and remains optimistic about the future despite anticipating challenges ahead, supported by strong demand and important collaborations.",
+          "translations": {
+            "da": {
+              "title": "Swarovski oplever omsætningsstigning, forventer udfordringer fremover",
+              "summary": "AI-genereret resumé: Swarovski rapporterede en stigning i omsætningen og forbliver optimistisk om fremtiden trods forventede udfordringer, støttet af stærk efterspørgsel og vigtige samarbejder."
+            },
+            "es": {
+              "title": "Swarovski experimenta aumento en ingresos, espera desafíos futuros",
+              "summary": "Resumen generado por IA: Swarovski reportó un aumento en sus ingresos y se mantiene optimista sobre el futuro a pesar de anticipar desafíos, apoyado por una fuerte demanda y colaboraciones importantes."
+            }
+          }
+        },
+        {
+          "id": "h1mnnx",
+          "title": "Austen & Blake celebrates reopening of Sheffield Meadowhall store",
+          "url": "https://www.professionaljeweller.com/austen-blake-reopen-sheff-meadowhall/",
+          "source": "Professional Jeweller",
+          "published_at": "2026-04-02T06:42:04.000Z",
+          "ingested_at": "2026-04-05T16:22:39.770Z",
+          "snippet": "Austen & Blake has marked the reopening of its Sheffield store in Meadowhall Shopping Centre.  The reopening celebrates a major refurbishment for the jeweller at one of its most popular store locations globally.  The official reopening for the general public will take place on 11 April, when customers can claim an exclusive saving on purchases […]\nThe post Austen & Blake celebrates reopening of Sheffield Meadowhall store appeared first on Professional Jeweller.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": -0.04999999999999999,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0.2,
+            "matchedKeywords": [
+              "jeweller"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Austen & Blake has celebrated the reopening of its Sheffield Meadowhall store following a major refurbishment, with the official public reopening scheduled for 11 April, offering customers exclusive savings on purchases.",
+          "translations": {
+            "da": {
+              "title": "Austen & Blake fejrer genåbning af Sheffield Meadowhall butik",
+              "summary": "AI-genereret resumé: Austen & Blake har fejret genåbningen af deres Sheffield Meadowhall butik efter en større renovering, med officiel offentlig genåbning planlagt til 11. april, hvor kunder tilbydes eksklusive besparelser på køb."
+            },
+            "es": {
+              "title": "Austen & Blake celebra la reapertura de la tienda Sheffield Meadowhall",
+              "summary": "Resumen generado por IA: Austen & Blake ha celebrado la reapertura de su tienda Sheffield Meadowhall tras una importante remodelación, con la reapertura oficial al público programada para el 11 de abril, ofreciendo a los clientes ahorros exclusivos en sus compras."
+            }
+          }
+        },
+        {
+          "id": "5f53sy",
+          "title": "GIA opens new campus in Taiwan",
+          "url": "https://www.professionaljeweller.com/gia-opens-new-campus-in-taiwan/",
+          "source": "Professional Jeweller",
+          "published_at": "2026-04-02T07:05:00.000Z",
+          "ingested_at": "2026-04-05T16:22:39.770Z",
+          "snippet": "The new GIA School of Gemology and Jewelry Arts campus in Taiwan has officially opened. Just a short walk from Zhongxiao Xinsheng MRT station with quick access to Taipei Main Station, Xinyi District and Zhongshan commercial area, the new campus will also offer flexible weekend and evening classes designed to accommodate prospective students and working […]\nThe post GIA opens new campus in Taiwan appeared first on Professional Jeweller.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "jewelry",
+              "jeweller"
+            ]
+          },
+          "aiSummary": "AI-generated summary: The GIA School of Gemology and Jewelry Arts has opened a new campus in Taiwan, conveniently located near major transit hubs and commercial areas, offering flexible weekend and evening classes to accommodate students and working professionals.",
+          "translations": {
+            "da": {
+              "title": "GIA åbner nyt campus i Taiwan",
+              "summary": "AI-genereret resumé: GIA School of Gemology and Jewelry Arts har åbnet et nyt campus i Taiwan, bekvemt placeret nær store transportknudepunkter og kommercielle områder, med fleksible weekend- og aftenkurser for at imødekomme studerende og erhvervsaktive."
+            },
+            "es": {
+              "title": "GIA abre nuevo campus en Taiwán",
+              "summary": "Resumen generado por IA: La GIA School of Gemology and Jewelry Arts ha abierto un nuevo campus en Taiwán, ubicado cerca de importantes centros de transporte y áreas comerciales, ofreciendo clases flexibles los fines de semana y por la noche para acomodar a estudiantes y profesionales."
+            }
+          }
+        },
+        {
+          "id": "rkxzfn",
+          "title": "Women’s Jewelry Association Launches Jewelry & Watches Mentorship Cohort With Mentoro",
+          "url": "https://instoremag.com/womens-jewelry-association-launches-jewelry-watches-mentorship-cohort-with-mentoro/",
+          "source": "Instore Magazine",
+          "published_at": "2026-04-03T20:56:11.000Z",
+          "ingested_at": "2026-04-05T16:22:39.770Z",
+          "snippet": "WJA and Mentoro matched mentors and mentees across key fields at a March 26 New York launch.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "jewelry",
+              "watch"
+            ]
+          },
+          "aiSummary": "AI-generated summary: The Women’s Jewelry Association partnered with Mentoro to launch a mentorship cohort, matching mentors and mentees across key fields during a March 26 event in New York. This initiative aims to support professionals in the jewellery industry.",
+          "translations": {
+            "da": {
+              "title": "Women’s Jewelry Association lancerer Jewelry & Watches mentorprogram med Mentoro",
+              "summary": "AI-genereret resumé: Women’s Jewelry Association samarbejdede med Mentoro om at lancere et mentorprogram, der matcher mentorer og mentees inden for nøgleområder under en begivenhed den 26. marts i New York. Initiativet har til formål at støtte fagfolk i smykkeindustrien."
+            },
+            "es": {
+              "title": "Women’s Jewelry Association lanza cohorte de mentoría Jewelry & Watches con Mentoro",
+              "summary": "Resumen generado por IA: Women’s Jewelry Association se asoció con Mentoro para lanzar una cohorte de mentoría, emparejando mentores y aprendices en campos clave durante un evento el 26 de marzo en Nueva York. Esta iniciativa busca apoyar a los profesionales de la industria de la joyería."
+            }
+          }
+        }
+      ]
+    }
+  },
+  "editorialTake": "Anthropic’s $400 million acquisition of Coefficient Bio signals a sharp pivot in AI’s battleground: biotech is no longer a fringe play but a core strategic front. This isn’t just about technology convergence; it’s a bet on owning proprietary data and models that can unlock new drug discovery pipelines faster than traditional pharma. Anthropic’s move to back this with a political action committee shows they’re gearing up for influence beyond labs, aiming to shape regulations that will decide who wins in AI-powered biotech.\n\nAmazon’s 3.5% surcharge on fulfillment fees exposes the brutal squeeze logistics costs are placing on ecommerce giants and their merchants. Fuel and supply chain inflation are no longer transient shocks but structural headwinds forcing price shifts downstream. This forces a brutal question: how long before ecommerce platforms stop subsidizing merchants and start demanding more control over pricing and margins? The tension between platform scale and merchant profitability just got a lot sharper.",
+  "coverImageUrl": "/weekly-images/2026-W14.png",
+  "coverImageAlt": "Weekly cover illustration for 2026-W14"
+}

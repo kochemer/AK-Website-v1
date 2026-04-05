@@ -1,0 +1,16 @@
+{
+  "concept": "fuel-can-shopping-cart-literal-metaphor",
+  "primaryHumorDriver": "literal metaphor",
+  "secondaryEnhancer": "unexpected texture/material combination",
+  "sceneDescription": "On a supermarket checkout belt, a bright red plastic fuel canister sits inside a wire miniature shopping cart, as if it's the weekly groceries. Next to it: an ornate gold pocket watch, a crumpled shipping box with a subtle Practical Ecommerce sticker, a tangled bunch of keys, and a stack of toy-sized cardboard boxes. Peeking from the shopping cart, a tiny branded shopping bag shows a corner of the Modern Retail logo, while a jewelry tag with the Jeweller logo dangles off the pocket watch. Everything sits under soft, natural grocery store lighting, making the absurdity of the combination pop yet remain believable.",
+  "finalImagePrompt": "On a light gray supermarket checkout belt, a bright red fuel canister sits inside a miniature wire shopping cart. To the right, a gold pocket watch with a small jewelry tag, a crumpled cardboard shipping box with a discrete sticker, a tangled bunch of keys, and several tiny stacked shipping boxes. A small shopping bag with a subtle logo peeks from the cart. All objects are sharply in focus, with soft supermarket lighting.",
+  "negativePrompt": [
+    "text, letters, numbers, signage, labels, price tags",
+    "screens, UI, dashboards, holograms, floating icons",
+    "watermarks, unrelated brand logos",
+    "cartoon, illustration, CGI, 3D render, anime",
+    "diamond, diamonds, gemstone, gemstones, precious stones, jewelry close-up, jewelry product shot, diamond ring, diamond necklace, diamond earring, jeweled, sparkling gemstone",
+    "dramatic spotlight, glowing edges, rim lighting, vignette, cinematic color grade, blurred background, bokeh"
+  ],
+  "confidence": 0.78
+}

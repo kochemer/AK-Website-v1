@@ -1,0 +1,28 @@
+{
+  "weekLabel": "2026-W14",
+  "homepageTopArticles": [
+    {
+      "title": "Amazon to issue 3.5% surcharge on fulfillment services as fuel, logistics costs rise",
+      "source": "Modern Retail",
+      "snippet": "Amazon will impose a 3.5% fuel and logistics surcharge on merchants’ fulfillment fees beginning April 17, as rising fuel costs tied to conflict in the Middle East pressure supply chains.",
+      "aiSummary": "AI-generated summary: Starting April 17, Amazon will add a 3.5% surcharge on merchants' fulfillment fees due to increased fuel and logistics costs driven by Middle East conflicts, impacting supply chains."
+    },
+    {
+      "title": "New Ecommerce Tools: April 1, 2026",
+      "source": "Practical Ecommerce",
+      "snippet": "This week: updates for product images, UGC, box-free returns, BNPL, marketplace integrations, shipping intel, cross-border, and affiliate partnerships.\nThe post New Ecommerce Tools: April 1, 2026 appeared first on Practical Ecommerce.",
+      "aiSummary": "AI-generated summary: The April 1, 2026 Practical Ecommerce article highlights new ecommerce tools including updates for product images, user-generated content, box-free returns, buy now pay later options, marketplace integrations, shipping intelligence, cross-border solutions, and affiliate partnerships."
+    },
+    {
+      "title": "Signet restructures multiple brands amid overhaul",
+      "source": "Jeweller - Business News",
+      "snippet": "Signet Jewelers will shut down the James Allen and Rocksbox websites and integrate them into its core brands.",
+      "aiSummary": "AI-generated summary: Signet Jewelers is restructuring by shutting down the James Allen and Rocksbox websites and integrating these brands into its core operations, as reported by Jeweller - Business News on March 30, 2026."
+    }
+  ],
+  "model": "gpt-image-1",
+  "finalPrompt": "Photograph: On a light gray supermarket checkout belt, a bright red fuel canister sits inside a miniature wire shopping cart. To the right, a gold pocket watch with a small jewelry tag, a crumpled cardboard shipping box with a discrete sticker, a tangled bunch of keys, and several tiny stacked shipping boxes. A small shopping bag with a subtle logo peeks from the cart. All objects are sharply in focus, with soft supermarket lighting.\n\nCRITICAL CONSTRAINTS (must be strictly avoided):\n- text, letters, numbers, signage, labels, price tags, screens, UI, dashboards, holograms, floating icons, watermarks, unrelated brand logos, cartoon, illustration, CGI, 3D render, anime, diamond, diamonds, gemstone, gemstones, precious stones, jewelry close-up, jewelry product shot, diamond ring, diamond necklace, diamond earring, jeweled, sparkling gemstone, dramatic spotlight, glowing edges, rim lighting, vignette, cinematic color grade, blurred background, bokeh\n\nThis must look like a real photograph taken by a human — not AI-generated, not CGI, not a 3D render. Natural light. Real objects. Real imperfections. Fill the entire frame edge to edge with the scene — no black bars, no empty space at the edges.\n\nDo not include: text, labels, signage, screens, UI, logos unrelated to the scene, diamonds, gemstones, CGI lighting, dramatic spotlights, or blurred vignette backgrounds.",
+  "imageSize": "1536x1024",
+  "outputPath": "/weekly-images/2026-W14.png",
+  "generatedAt": "2026-04-05T16:40:04.149Z"
+}
