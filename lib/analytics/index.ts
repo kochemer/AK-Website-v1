@@ -111,8 +111,6 @@ export function track(
     console.log('[analytics]', eventName, payload);
   }
 
-  if (!process.env.NEXT_PUBLIC_AMPLITUDE_API_KEY && !isDev) return;
-
   try {
     amplitude.track(eventName, payload);
   } catch {
