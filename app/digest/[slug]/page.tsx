@@ -257,9 +257,8 @@ export default async function DigestPage({
     },
     author: {
       '@type': 'Person',
-      name: 'Alexey Kochemirovskiy',
+      name: 'The Editor',
       url: `${siteUrl}/about`,
-      sameAs: 'https://www.linkedin.com/in/alexey-kochemirovskiy/',
     },
     mainEntityOfPage: {
       '@type': 'WebPage',
@@ -441,13 +440,7 @@ export default async function DigestPage({
               return quote ? <WeeklyInsight quote={quote} /> : null;
             })()}
 
-            {digest.editorialTake && (
-              <EditorSpotlight
-                text={digest.editorialTake}
-                weekLabel={digest.weekLabel}
-                isOverride={digest.editorialTakeOverride}
-              />
-            )}
+            {/* EditorSpotlight hidden on archived pages for now */}
 
             <div className="bg-[var(--color-bg)] rounded-t-xl md:rounded-t-2xl border border-b-0 border-t border-t-[var(--color-accent)] border-black/5 p-4 sm:p-6 md:p-8 lg:p-10">
               {podcast && (

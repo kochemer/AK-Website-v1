@@ -155,15 +155,9 @@ export default function RootLayout({
               },
               author: {
                 "@type": "Person",
-                name: "Alexey Kochemirovskiy",
+                name: "The Editor",
                 url: `${siteUrl}/about`,
-                sameAs: "https://www.linkedin.com/in/alexey-kochemirovskiy/",
-                jobTitle: "Strategist",
-                worksFor: {
-                  "@type": "Organization",
-                  name: "Pandora",
-                },
-                description: "Strategist at Pandora, ex-management consultant, and former accelerator physics researcher. Curator of Luxury Intelligence.",
+                description: "Curator of Luxury Intelligence.",
               },
             }}
           />

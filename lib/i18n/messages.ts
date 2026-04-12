@@ -140,7 +140,7 @@ const en: Messages = {
   footer: {
     stayInformed: 'Stay Informed',
     stayInformedDesc: 'Get the weekly digest in your inbox.',
-    disclaimer: 'AI-assisted summaries — Not investment or business advice. Curated by Alexey Kochemirovskiy.',
+    disclaimer: 'AI-assisted summaries — Not investment or business advice. Curated by The Editor.',
   },
   search: {
     placeholder: 'Search articles…',
@@ -215,7 +215,7 @@ const da: Messages = {
   footer: {
     stayInformed: 'Bliv informeret',
     stayInformedDesc: 'Få den ugentlige oversigt i din indbakke.',
-    disclaimer: 'AI-assisterede sammenfatninger — Ikke investerings- eller forretningsrådgivning. Kurateret af Alexey Kochemirovskiy.',
+    disclaimer: 'AI-assisterede sammenfatninger — Ikke investerings- eller forretningsrådgivning. Kurateret af redaktøren.',
   },
   search: {
     placeholder: 'Søg artikler…',
@@ -290,7 +290,7 @@ const es: Messages = {
   footer: {
     stayInformed: 'Mantente informado',
     stayInformedDesc: 'Recibe el resumen semanal en tu bandeja de entrada.',
-    disclaimer: 'Resúmenes con IA — No son asesoramiento de inversión ni empresarial. Curado por Alexey Kochemirovskiy.',
+    disclaimer: 'Resúmenes con IA — No son asesoramiento de inversión ni empresarial. Curado por el editor.',
   },
   search: {
     placeholder: 'Buscar artículos…',

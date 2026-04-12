@@ -147,29 +147,20 @@ export default function AboutPage() {
           <div className="flex flex-col sm:flex-row gap-6 items-start">
             <div className="flex-1">
               <h2 className="text-section font-semibold text-[var(--color-text-primary)] mb-1">
-                Alexey Kochemirovskiy
+                The Editor
               </h2>
               <p className="text-meta text-[var(--color-text-secondary)] mb-4">
-                Strategist, Pandora · Copenhagen
+                Copenhagen
               </p>
               <p className="text-body text-[var(--color-text-secondary)] mb-4">
-                Strategist at Pandora, the world&apos;s largest jewellery brand, with a background
-                in management consulting and particle physics research (Fermilab fellowship,
-                University of Chicago). Based in Copenhagen.
+                Background in management consulting and particle physics research.
+                Based in Copenhagen.
               </p>
               <p className="text-body text-[var(--color-text-secondary)]">
                 Luxury Intelligence is a personal project — a weekly effort to surface the most
                 signal-rich stories across luxury, ecommerce, AI, and jewellery: the four
                 industries I work at the intersection of every day.
               </p>
-              <a
-                href="https://www.linkedin.com/in/alexey-kochemirovskiy/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 mt-4 text-meta text-[var(--color-accent)] hover:opacity-75 transition-opacity font-medium"
-              >
-                LinkedIn →
-              </a>
             </div>
           </div>
         </div>
