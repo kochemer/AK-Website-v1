@@ -1,0 +1,965 @@
+{
+  "weekLabel": "2026-W15",
+  "tz": "Europe/Copenhagen",
+  "startISO": "2026-04-05T22:00:00.000Z",
+  "endISO": "2026-04-12T21:59:59.999Z",
+  "builtAtISO": "2026-04-12T09:38:00.026+02:00",
+  "builtAtLocal": "2026-04-12 09:38:00",
+  "totals": {
+    "total": 714,
+    "byTopic": {
+      "AIStrategy": 151,
+      "EcommerceRetail": 425,
+      "LuxuryConsumer": 121,
+      "Jewellery": 16
+    }
+  },
+  "topics": {
+    "AI_and_Strategy": {
+      "total": 151,
+      "top": [
+        {
+          "id": "sxope",
+          "title": "Amazon CEO Jassy defends $200 billion AI spend: \"We're not going to be conservative\"",
+          "url": "https://www.cnbc.com/2026/04/09/amazon-ceo-andy-jassy-ai-spending.html",
+          "source": "CNBC Technology",
+          "published_at": "2026-04-09T20:08:14.000Z",
+          "ingested_at": "2026-04-12T07:24:22.810Z",
+          "snippet": "Amazon shares have struggled so far this year as investors question the company's aggressive AI spending plans.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ai"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Amazon CEO Andy Jassy defended the company's $200 billion investment in AI despite investor concerns, as Amazon shares have faced challenges this year due to the aggressive spending strategy.",
+          "translations": {
+            "da": {
+              "title": "Amazon CEO Jassy forsvarer AI-udgifter på 200 milliarder: \"Vi vil ikke være konservative\"",
+              "summary": "AI-genereret resumé: Amazon CEO Andy Jassy forsvarer virksomhedens investering på 200 milliarder i AI trods investorbekymringer, da Amazons aktier har haft udfordringer i år på grund af den aggressive udgiftsstrategi."
+            },
+            "es": {
+              "title": "El CEO de Amazon, Jassy, defiende el gasto de 200 mil millones en IA: \"No vamos a ser conservadores\"",
+              "summary": "Resumen generado por IA: El CEO de Amazon, Andy Jassy, defendió la inversión de 200 mil millones en IA a pesar de las preocupaciones de los inversores, ya que las acciones de Amazon han enfrentado desafíos este año debido a la estrategia agresiva de gasto."
+            }
+          }
+        },
+        {
+          "id": "ns96nl",
+          "title": "OpenAI will allocate IPO shares to retail investors as it preps for debut, CFO says",
+          "url": "https://www.cnbc.com/2026/04/08/openai-ipo-sarah-friar-retail-investors.html",
+          "source": "CNBC Technology",
+          "published_at": "2026-04-08T23:16:15.000Z",
+          "ingested_at": "2026-04-12T07:24:22.810Z",
+          "snippet": "CRO Denise Dresser said enterprise is now 40% of the company's revenue and is set to equal consumer by the end of 2026.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "openai"
+            ]
+          },
+          "aiSummary": "AI-generated summary: OpenAI plans to allocate IPO shares to retail investors as it prepares for its debut, with enterprise revenue currently at 40% and expected to match consumer revenue by the end of 2026, according to CFO Denise Dresser.",
+          "translations": {
+            "da": {
+              "title": "OpenAI vil tildele IPO-aktier til detailinvestorer, mens det forbereder debut, siger CFO",
+              "summary": "AI-genereret resumé: OpenAI planlægger at tildele IPO-aktier til detailinvestorer, mens det forbereder sin debut, med virksomhedens indtægter på 40 % og forventes at matche forbrugerindtægterne ved udgangen af 2026, ifølge CFO Denise Dresser."
+            },
+            "es": {
+              "title": "OpenAI asignará acciones de la IPO a inversores minoristas mientras se prepara para su debut, dice la CFO",
+              "summary": "Resumen generado por IA: OpenAI planea asignar acciones de la IPO a inversores minoristas mientras se prepara para su debut, con ingresos empresariales actualmente en 40 % y se espera que igualen los ingresos de consumidores para finales de 2026, según la CFO Denise Dresser."
+            }
+          }
+        },
+        {
+          "id": "8j8vm9",
+          "title": "Anthropic temporarily banned OpenClaw’s creator from accessing Claude",
+          "url": "https://techcrunch.com/2026/04/10/anthropic-temporarily-banned-openclaws-creator-from-accessing-claude/",
+          "source": "TechCrunch - AI",
+          "published_at": "2026-04-10T20:27:52.000Z",
+          "ingested_at": "2026-04-12T07:24:22.810Z",
+          "snippet": "This ban took place after Claude's pricing changed for OpenClaw users last week.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.25,
+            "recencyScore": 0,
+            "sourceWeight": 0.15,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "anthropic",
+              "claude"
+            ]
+          },
+          "aiSummary": "AI-generated summary: On April 10, 2026, TechCrunch reported that Anthropic temporarily banned the creator of OpenClaw from accessing Claude following recent pricing changes for OpenClaw users.",
+          "translations": {
+            "da": {
+              "title": "Anthropic midlertidigt udelukker OpenClaws skaber fra adgang til Claude",
+              "summary": "AI-genereret resumé: Den 10. april 2026 rapporterede TechCrunch, at Anthropic midlertidigt udelukkede skaberen af OpenClaw fra adgang til Claude efter nylige prisændringer for OpenClaw-brugere."
+            },
+            "es": {
+              "title": "Anthropic prohibió temporalmente al creador de OpenClaw acceder a Claude",
+              "summary": "Resumen generado por IA: El 10 de abril de 2026, TechCrunch informó que Anthropic prohibió temporalmente al creador de OpenClaw acceder a Claude tras recientes cambios en los precios para los usuarios de OpenClaw."
+            }
+          }
+        },
+        {
+          "id": "apav6e",
+          "title": "Federal Court Denies Anthropic’s Motion to Lift ‘Supply Chain Risk’ Label",
+          "url": "https://www.nytimes.com/2026/04/08/technology/anthropic-pentagon-risk-circuit-court.html",
+          "source": "NYTimes Technology",
+          "published_at": "2026-04-09T00:19:59.000Z",
+          "ingested_at": "2026-04-12T07:24:22.810Z",
+          "snippet": "The ruling was a setback for the artificial intelligence start-up in its battle with the Defense Department over the use of A.I. in warfare.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.175,
+            "recencyScore": 0,
+            "sourceWeight": 0.075,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "anthropic",
+              "artificial intelligence"
+            ]
+          },
+          "aiSummary": "AI-generated summary: On April 9, 2026, the NYTimes Technology reported that a federal court denied Anthropic’s motion to remove its ‘supply chain risk’ designation, marking a setback for the AI start-up in its dispute with the Defense Department regarding AI use in warfare.",
+          "translations": {
+            "da": {
+              "title": "Føderal Domstol Afviser Anthropics Anmodning om at Fjerne 'Supply Chain Risk'-Mærket",
+              "summary": "AI-genereret resumé: Den 9. april 2026 rapporterede NYTimes Technology, at en føderal domstol afviste Anthropics anmodning om at fjerne deres 'supply chain risk'-betegnelse, hvilket markerer et tilbageslag for AI-startuppet i deres tvist med Forsvarsministeriet om AI-brug i krigsførelse."
+            },
+            "es": {
+              "title": "Tribunal Federal Niega la Solicitud de Anthropic para Levantar la Etiqueta de 'Riesgo en la Cadena de Suministro'",
+              "summary": "Resumen generado por IA: El 9 de abril de 2026, NYTimes Technology informó que un tribunal federal negó la solicitud de Anthropic para eliminar su designación de 'riesgo en la cadena de suministro', marcando un revés para la start-up de IA en su disputa con el Departamento de Defensa sobre el uso de IA en la guerra."
+            }
+          }
+        },
+        {
+          "id": "e7jqzv",
+          "title": "CIA plans to integrate AI assistants into all analysis platforms",
+          "url": "https://the-decoder.com/cia-plans-to-integrate-ai-assistants-into-all-analysis-platforms/",
+          "source": "The Decoder",
+          "published_at": "2026-04-10T14:10:25.000Z",
+          "ingested_at": "2026-04-12T07:24:22.810Z",
+          "snippet": "According to CIA Deputy Director Michael Ellis, the agency recently produced its first fully autonomous intelligence report using AI, Politico reports.\nThe article CIA plans to integrate AI assistants into all analysis platforms appeared first on The Decoder.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ai"
+            ]
+          },
+          "aiSummary": "AI-generated summary: The CIA is moving to incorporate AI assistants across all its analysis platforms, having recently produced its first fully autonomous intelligence report using AI, according to Deputy Director Michael Ellis.",
+          "translations": {
+            "da": {
+              "title": "CIA planlægger at integrere AI-assistenter i alle analyseplatforme",
+              "summary": "AI-genereret resumé: CIA bevæger sig mod at inkorporere AI-assistenter på alle sine analyseplatforme, efter for nylig at have produceret sin første fuldt autonome efterretningsrapport ved hjælp af AI, ifølge vicechef Michael Ellis."
+            },
+            "es": {
+              "title": "CIA planea integrar asistentes de IA en todas las plataformas de análisis",
+              "summary": "Resumen generado por IA: La CIA está avanzando para incorporar asistentes de IA en todas sus plataformas de análisis, habiendo producido recientemente su primer informe de inteligencia totalmente autónomo usando IA, según el subdirector Michael Ellis."
+            }
+          }
+        },
+        {
+          "id": "8cmu5b",
+          "title": "Why AI Systems Fail Quietly",
+          "url": "https://spectrum.ieee.org/ai-reliability",
+          "source": "IEEE Spectrum",
+          "published_at": "2026-04-07T13:00:01.000Z",
+          "ingested_at": "2026-04-12T07:24:22.810Z",
+          "snippet": "In late-stage testing of a distributed AI platform, engineers sometimes encounter a perplexing situation: every monitoring dashboard reads “healthy,” yet users report that the system’s decisions are slowly becoming wrong.\nEngineers are trained to recognize failure in familiar ways: a service crashes, a sensor stops responding, a constraint violation triggers a shutdown. Something breaks, and the system tells you. But a growing class of software failures looks very different. The system keeps run...",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.04999999999999999,
+            "recencyScore": 0,
+            "sourceWeight": 0.15,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0.05,
+            "penalty": 0.2,
+            "matchedKeywords": [
+              "ai"
+            ]
+          },
+          "aiSummary": "AI-generated summary: The article discusses how advanced AI systems can fail silently, with monitoring tools indicating normal operation while the system's decisions gradually degrade, challenging traditional methods of detecting failures. This highlights a new class of software issues where systems continue running without obvious errors despite declining performance.",
+          "translations": {
+            "da": {
+              "title": "Hvorfor AI-systemer fejler stille",
+              "summary": "AI-genereret resumé: Artiklen diskuterer, hvordan avancerede AI-systemer kan fejle uden at give tydelige tegn, hvor overvågningsværktøjer viser normal drift, mens systemets beslutninger gradvist forringes, hvilket udfordrer traditionelle metoder til at opdage fejl. Dette fremhæver en ny type softwareproblemer, hvor systemer fortsætter med at køre uden åbenlyse fejl trods faldende ydeevne."
+            },
+            "es": {
+              "title": "Por qué los sistemas de IA fallan silenciosamente",
+              "summary": "Resumen generado por IA: El artículo analiza cómo los sistemas avanzados de IA pueden fallar de forma silenciosa, con herramientas de monitoreo que indican operación normal mientras las decisiones del sistema se degradan gradualmente, desafiando los métodos tradicionales para detectar fallos. Esto destaca una nueva clase de problemas de software donde los sistemas continúan funcionando sin errores evidentes a pesar del rendimiento decreciente."
+            }
+          }
+        },
+        {
+          "id": "v4p2p4",
+          "title": "After data breach, $10B-valued startup Mercor is having a month",
+          "url": "https://techcrunch.com/2026/04/09/after-data-breach-10b-valued-startup-mercor-is-having-a-month/",
+          "source": "TechCrunch - AI",
+          "published_at": "2026-04-09T19:33:54.000Z",
+          "ingested_at": "2026-04-12T07:24:22.810Z",
+          "snippet": "After falling victim to a hacker, Mercor is facing lawsuits and reportedly losing big-name customers.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.25,
+            "recencyScore": 0,
+            "sourceWeight": 0.15,
+            "keywordBoost": 0,
+            "insightSignalBoost": 0.1,
+            "penalty": 0,
+            "matchedKeywords": []
+          },
+          "aiSummary": "AI-generated summary: Following a data breach, the $10 billion-valued startup Mercor is contending with lawsuits and the loss of major customers, according to TechCrunch's April 9, 2026 report on AI and strategy.",
+          "translations": {
+            "da": {
+              "title": "Efter databrud har den $10 mia. værdsatte startup Mercor en hård måned",
+              "summary": "AI-genereret resumé: Efter et databrud kæmper den $10 milliarder værdsatte startup Mercor med retssager og tab af store kunder, ifølge TechCrunchs rapport den 9. april 2026 om AI og strategi."
+            },
+            "es": {
+              "title": "Tras la brecha de datos, la startup Mercor valorada en $10 mil millones enfrenta un mes difícil",
+              "summary": "Resumen generado por IA: Tras una brecha de datos, la startup Mercor valorada en $10 mil millones enfrenta demandas y la pérdida de grandes clientes, según el informe de TechCrunch del 9 de abril de 2026 sobre IA y estrategia."
+            }
+          }
+        }
+      ]
+    },
+    "Ecommerce_Retail_Tech": {
+      "total": 425,
+      "top": [
+        {
+          "id": "ae4ik9",
+          "title": "Marketplace Briefing: Amazon sellers face cash crunch as fees, policy changes spur order delays, price hikes and supplier renegotiations",
+          "url": "https://www.modernretail.co/operations/marketplace-briefing-amazon-sellers-face-cash-crunch-as-fees-policy-changes-spur-order-delays-price-hikes-and-supplier-renegotiations/?utm_campaign=modernretaildis&utm_medium=rss&utm_source=general-rss",
+          "source": "Modern Retail",
+          "published_at": "2026-04-09T14:15:00.000Z",
+          "ingested_at": "2026-04-12T07:24:22.810Z",
+          "snippet": "Amazon merchants are bracing for more cash flow troubles and margin pressure this year thanks to a bevy of new fees and policy changes.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "marketplace"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Amazon sellers are experiencing increased cash flow challenges and tighter margins in 2026 due to new fees and policy changes, leading to order delays, price increases, and supplier renegotiations, according to Modern Retail.",
+          "translations": {
+            "da": {
+              "title": "Marketplace Briefing: Amazon-sælgere oplever likviditetsproblemer, da gebyrer og politikændringer forårsager ordreudskydelser, prisstigninger og leverandørforhandlinger",
+              "summary": "AI-genereret resumé: Amazon-sælgere oplever øgede likviditetsudfordringer og strammere marginer i 2026 på grund af nye gebyrer og politikændringer, hvilket fører til ordreudskydelser, prisstigninger og leverandørforhandlinger, ifølge Modern Retail."
+            },
+            "es": {
+              "title": "Marketplace Briefing: Los vendedores de Amazon enfrentan problemas de liquidez debido a tarifas y cambios en políticas que provocan retrasos en pedidos, aumentos de precios y renegociaciones con proveedores",
+              "summary": "Resumen generado por IA: Los vendedores de Amazon están experimentando mayores desafíos de flujo de efectivo y márgenes más ajustados en 2026 debido a nuevas tarifas y cambios en políticas, lo que lleva a retrasos en pedidos, aumentos de precios y renegociaciones con proveedores, según Modern Retail."
+            }
+          }
+        },
+        {
+          "id": "8j4hky",
+          "title": "Walmart Marketplace Powers General Merchandise Surge",
+          "url": "https://www.pymnts.com/walmart/2026/walmart-marketplace-powers-general-merchandise-surge/",
+          "source": "PYMNTS",
+          "published_at": "2026-04-10T23:54:06.000Z",
+          "ingested_at": "2026-04-12T07:24:22.810Z",
+          "snippet": "Walmart’s marketplace is playing a key role in its efforts to grow its general merchandise business, Walmart Chief Financial Officer John David Rainey said Wednesday (April 8).  Speaking at the JPMorgan 12th Annual Retail Roundup 2026, Rainey said that growing general merchandise is “one of the major pillars of our strategy” and that marketplace is “the […]\nThe post Walmart Marketplace Powers General Merchandise Surge appeared first on PYMNTS.com.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "marketplace"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Walmart’s marketplace is a central component of its strategy to expand its general merchandise business, according to CFO John David Rainey speaking at the JPMorgan 12th Annual Retail Roundup 2026.",
+          "translations": {
+            "da": {
+              "title": "Walmart Marketplace driver væksten i dagligvarer",
+              "summary": "AI-genereret resumé: Walmarts marketplace er en central del af deres strategi for at udvide deres dagligvareforretning, ifølge CFO John David Rainey ved JPMorgan 12th Annual Retail Roundup 2026."
+            },
+            "es": {
+              "title": "Walmart Marketplace impulsa el auge de productos generales",
+              "summary": "Resumen generado por IA: El marketplace de Walmart es un componente central de su estrategia para expandir su negocio de productos generales, según el CFO John David Rainey en el JPMorgan 12th Annual Retail Roundup 2026."
+            }
+          }
+        },
+        {
+          "id": "ddw0p2",
+          "title": "Frasers Group launches AI shopping assistant, sees conversions jump 25%",
+          "url": "https://www.retailgazette.co.uk/blog/2026/04/frasers-group-launches-ai-shopping-assistant-and-sees-conversions-jump-25/",
+          "source": "Retail Gazette",
+          "published_at": "2026-04-10T07:37:29.000Z",
+          "ingested_at": "2026-04-12T07:24:22.810Z",
+          "snippet": "Frasers Group has launched a new AI shopping assistant across the FRASERS website as it looks to make online product discovery faster, smarter and more intuitive for customers. The new tool, called Ask Frasers, has been rolled out on the retailer’s premium fashion and lifestyle platform and is designed to help shoppers find relevant products...",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "shopping",
+              "platform"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Frasers Group has introduced \"Ask Frasers,\" an AI shopping assistant on its premium fashion and lifestyle website, aiming to enhance online product discovery. Since its launch, the retailer has seen a 25% increase in conversions.",
+          "translations": {
+            "da": {
+              "title": "Frasers Group lancerer AI-shoppingassistent, ser konverteringer stige med 25%",
+              "summary": "AI-genereret resumé: Frasers Group har introduceret \"Ask Frasers,\" en AI-shoppingassistent på deres premium mode- og livsstilswebsite, med det formål at forbedre online produktopdagelse. Siden lanceringen har detailhandleren set en stigning i konverteringer på 25%."
+            },
+            "es": {
+              "title": "Frasers Group lanza asistente de compras con IA, ve un aumento del 25% en conversiones",
+              "summary": "Resumen generado por IA: Frasers Group ha presentado \"Ask Frasers\", un asistente de compras con IA en su sitio web de moda y estilo de vida premium, con el objetivo de mejorar el descubrimiento de productos en línea. Desde su lanzamiento, el minorista ha visto un aumento del 25% en las conversiones."
+            }
+          }
+        },
+        {
+          "id": "psh5k9",
+          "title": "Gap Inc rolls out AI platform to boost traceability across global supply chain",
+          "url": "https://www.retailgazette.co.uk/blog/2026/04/gap-inc-rolls-out-ai-platform-to-boost-traceability-across-global-supply-chain/",
+          "source": "Retail Gazette",
+          "published_at": "2026-04-10T07:57:07.000Z",
+          "ingested_at": "2026-04-12T07:24:22.810Z",
+          "snippet": "Gap Inc is strengthening traceability across its global supply chain through a new partnership with Inspectorio. The retail giant hopes to improve visibility, supplier collaboration and quality management across its brand portfolio. The move will see Gap Inc and its family of brands, including Old Navy, Gap, Banana Republic and Athleta, use AI-powered technology to...",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "platform"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Gap Inc has partnered with Inspectorio to implement an AI-powered platform aimed at enhancing traceability, supplier collaboration, and quality management across its global supply chain and brand portfolio, including Old Navy, Gap, Banana Republic, and Athleta.",
+          "translations": {
+            "da": {
+              "title": "Gap Inc lancerer AI-platform for at forbedre sporbarhed i den globale forsyningskæde",
+              "summary": "Gap Inc har indgået partnerskab med Inspectorio for at implementere en AI-drevet platform, der skal forbedre sporbarhed, leverandørsamarbejde og kvalitetsstyring i deres globale forsyningskæde og brandportefølje, herunder Old Navy, Gap, Banana Republic og Athleta."
+            },
+            "es": {
+              "title": "Gap Inc lanza plataforma de IA para mejorar la trazabilidad en la cadena de suministro global",
+              "summary": "Gap Inc se ha asociado con Inspectorio para implementar una plataforma impulsada por IA destinada a mejorar la trazabilidad, la colaboración con proveedores y la gestión de calidad en su cadena de suministro global y portafolio de marcas, incluyendo Old Navy, Gap, Banana Republic y Athleta."
+            }
+          }
+        },
+        {
+          "id": "enmwy6",
+          "title": "How Viral TikTok Growth is Leaving DTC Brands Vulnerable to Costly Logistics Breakdowns",
+          "url": "https://www.mytotalretail.com/article/how-viral-tiktok-growth-is-leaving-dtc-brands-vulnerable-to-costly-logistics-breakdowns/",
+          "source": "Total Retail",
+          "published_at": "2026-04-08T14:06:20.000Z",
+          "ingested_at": "2026-04-12T07:24:22.810Z",
+          "snippet": "A brand posts a TikTok video about its new perfume and watches it take off overnight. Thousands of orders pour in and it looks like the breakthrough every founder works towards. Then the fulfillment team realizes there’s an issue. Orders are open to both domestic and international buyers, but shipping the product overseas will cost […]",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "logistics",
+              "fulfillment"
+            ]
+          },
+          "aiSummary": "AI-generated summary: The article discusses how rapid viral growth on TikTok can overwhelm direct-to-consumer (DTC) brands, leading to costly logistics challenges such as unexpected international shipping expenses that fulfillment teams may not be prepared to handle.",
+          "translations": {
+            "da": {
+              "title": "Hvordan viral TikTok-vækst efterlader DTC-mærker sårbare over for dyre logistiske sammenbrud",
+              "summary": "AI-genereret resumé: Artiklen diskuterer, hvordan hurtig viral vækst på TikTok kan overvælde direct-to-consumer (DTC) mærker og føre til dyre logistiske udfordringer som uventede internationale forsendelsesomkostninger, som opfyldelsesteams måske ikke er forberedt på."
+            },
+            "es": {
+              "title": "Cómo el crecimiento viral en TikTok está dejando a las marcas DTC vulnerables a costosos fallos logísticos",
+              "summary": "Resumen generado por IA: El artículo analiza cómo el rápido crecimiento viral en TikTok puede abrumar a las marcas directas al consumidor (DTC), lo que conduce a costosos desafíos logísticos como gastos inesperados en envíos internacionales que los equipos de cumplimiento pueden no estar preparados para manejar."
+            }
+          }
+        },
+        {
+          "id": "pcotjq",
+          "title": "Ecommerce Trends: What is AI’s role in resale growth?",
+          "url": "https://www.digitalcommerce360.com/2026/04/09/ecommerce-trends-what-is-ai-role-in-resale-growth/",
+          "source": "Digital Commerce 360",
+          "published_at": "2026-04-09T18:35:15.000Z",
+          "ingested_at": "2026-04-12T07:24:22.810Z",
+          "snippet": "Ecommerce entered 2026 with momentum behind online resale growth, and some of the biggest names in the space — along with young startups — are trying to capitalize on that interest with artificial intelligence (AI). In Seattle, venture-backed Gone.com is using AI for pricing. Elsewhere, the startup Phia, which is barely a year old, is […]\nThe post Ecommerce Trends: What is AI’s role in resale growth? appeared first on Digital Commerce 360.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ecommerce"
+            ]
+          },
+          "aiSummary": "AI-generated summary: As ecommerce resale continues to grow in 2026, established companies and startups like Gone.com and Phia are leveraging artificial intelligence to enhance pricing and capitalize on market momentum.",
+          "translations": {
+            "da": {
+              "title": "E-handelstendenser: Hvad er AIs rolle i væksten af videresalg?",
+              "summary": "AI-genereret resumé: Efterhånden som e-handel videresalg fortsætter med at vokse i 2026, udnytter etablerede virksomheder og startups som Gone.com og Phia kunstig intelligens til at forbedre prisfastsættelse og udnytte markedets momentum."
+            },
+            "es": {
+              "title": "Tendencias de comercio electrónico: ¿Cuál es el papel de la IA en el crecimiento de la reventa?",
+              "summary": "Resumen generado por IA: A medida que la reventa en comercio electrónico sigue creciendo en 2026, empresas consolidadas y startups como Gone.com y Phia están aprovechando la inteligencia artificial para mejorar los precios y capitalizar el impulso del mercado."
+            }
+          }
+        },
+        {
+          "id": "osjn9k",
+          "title": "Rezolve Ai takes merger proposal to Commerce.com’s shareholders",
+          "url": "https://www.digitalcommerce360.com/2026/04/09/rezolve-ai-takes-merger-proposal-to-commerce-com-shareholders/",
+          "source": "Digital Commerce 360",
+          "published_at": "2026-04-09T16:40:59.000Z",
+          "ingested_at": "2026-04-12T07:24:22.810Z",
+          "snippet": "The ecommerce platform Commerce.com’s board of directors publicly rebuffed the terms of a proposed acquisition by the technology company Rezolve Ai. Rezolve announced on April 8 that it would take its offer directly to Commerce.com shareholders. “We have been transparent with the Commerce.com Board, but they have chosen not to engage while their shareholders suffer […]\nThe post Rezolve Ai takes merger proposal to Commerce.com’s shareholders appeared first on Digital Commerce 360.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ecommerce",
+              "platform"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Rezolve Ai has decided to bypass Commerce.com’s board after their rejection of its acquisition proposal and is now taking the merger offer directly to Commerce.com’s shareholders, aiming to advance the deal despite the board’s lack of engagement.",
+          "translations": {
+            "da": {
+              "title": "Rezolve Ai fremsætter fusionsforslag til Commerce.coms aktionærer",
+              "summary": "AI-genereret resumé: Rezolve Ai har besluttet at omgå Commerce.coms bestyrelse efter deres afvisning af opkøbstilbuddet og henvender sig nu direkte til Commerce.coms aktionærer for at fremme aftalen trods bestyrelsens manglende engagement."
+            },
+            "es": {
+              "title": "Rezolve Ai lleva la propuesta de fusión a los accionistas de Commerce.com",
+              "summary": "Resumen generado por IA: Rezolve Ai ha decidido pasar por alto a la junta de Commerce.com tras el rechazo de su propuesta de adquisición y ahora lleva la oferta de fusión directamente a los accionistas de Commerce.com, con el objetivo de avanzar en el acuerdo a pesar de la falta de compromiso de la junta."
+            }
+          }
+        }
+      ]
+    },
+    "Luxury_and_Consumer": {
+      "total": 121,
+      "top": [
+        {
+          "id": "fpxnom",
+          "title": "Customer Engagement Analytics in 2026: How to Transform Data into Action",
+          "url": "https://insiderone.com/customer-engagement-analytics/",
+          "source": "UseInsider",
+          "published_at": "2026-04-07T07:57:53.000Z",
+          "ingested_at": "2026-04-12T07:24:22.810Z",
+          "snippet": "Your analytics dashboard shows 2.4 million sessions last month.  Email open rates are holding at 22%.  App installs are up 18%.  And yet, revenue is flat, repeat purchase rates are slipping, and your highest-value customers are quietly buying elsewhere. More data has not produced more clarity.  That is the central problem with how most brands […]",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0.1,
+            "penalty": 0,
+            "matchedKeywords": [
+              "brand"
+            ]
+          },
+          "aiSummary": "AI-generated summary: The article discusses the paradox where increased customer engagement metrics, such as high session counts and app installs, fail to translate into revenue growth or customer loyalty, highlighting the challenges brands face in turning abundant data into actionable insights.",
+          "translations": {
+            "da": {
+              "title": "Kundeengagementsanalyse i 2026: Sådan omsætter du data til handling",
+              "summary": "AI-genereret resumé: Artiklen diskuterer paradokset, hvor øgede kundeengagementsdata, som høje sessionstal og app-installationer, ikke fører til vækst i omsætning eller kundeloyalitet, og fremhæver de udfordringer, brands møder i at omsætte store mængder data til brugbare indsigter."
+            },
+            "es": {
+              "title": "Análisis de compromiso del cliente en 2026: Cómo transformar datos en acción",
+              "summary": "Resumen generado por IA: El artículo analiza la paradoja donde métricas aumentadas de compromiso del cliente, como altos conteos de sesiones e instalaciones de apps, no se traducen en crecimiento de ingresos ni lealtad del cliente, destacando los desafíos que enfrentan las marcas para convertir datos abundantes en insights accionables."
+            }
+          }
+        },
+        {
+          "id": "rhbp8g",
+          "title": "Indian Jeweller Titan Reports Surging Domestic Sales",
+          "url": "https://www.businessoffashion.com/news/global-markets/indian-jeweller-titan-reports-surging-domestic-sales/",
+          "source": "Business of Fashion - News",
+          "published_at": "2026-04-08T09:31:48.000Z",
+          "ingested_at": "2026-04-12T07:24:22.810Z",
+          "snippet": "The jewellery maker, known for its Tanishq and CaratLane brands, posted a 42 percent rise in quarterly domestic sales as consumers ‌in ⁠the world’s most populous country splurged on gold.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0.1,
+            "penalty": 0,
+            "matchedKeywords": [
+              "consumer",
+              "brand"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Indian jewellery company Titan, recognized for its Tanishq and CaratLane brands, reported a 42 percent increase in quarterly domestic sales driven by heightened gold purchases in India, according to Business of Fashion on April 8, 2026.",
+          "translations": {
+            "da": {
+              "title": "Indisk juveler Titan rapporterer stigende indenlandske salg",
+              "summary": "AI-genereret resumé: Det indiske smykkefirma Titan, kendt for sine mærker Tanishq og CaratLane, rapporterede en stigning på 42 procent i kvartalsvise indenlandske salg drevet af øgede guldkøb i Indien, ifølge Business of Fashion den 8. april 2026."
+            },
+            "es": {
+              "title": "El joyero indio Titan reporta un aumento en las ventas nacionales",
+              "summary": "Resumen generado por IA: La empresa india de joyería Titan, reconocida por sus marcas Tanishq y CaratLane, reportó un aumento del 42 por ciento en las ventas nacionales trimestrales impulsado por un mayor consumo de oro en India, según Business of Fashion el 8 de abril de 2026."
+            }
+          }
+        },
+        {
+          "id": "8f5hyz",
+          "title": "Dispatches From Shanghai: Inside China’s New Luxury Landscape",
+          "url": "https://www.businessoffashion.com/articles/global-markets/dispatches-from-shanghai-inside-chinas-new-luxury-landscape/",
+          "source": "Business of Fashion - News",
+          "published_at": "2026-04-07T04:36:00.000Z",
+          "ingested_at": "2026-04-12T07:24:22.810Z",
+          "snippet": "On his first visit to Shanghai since before the pandemic, Imran Amed finds a market that has fundamentally changed — from status spending to stealth wealth, from megabrands to homegrown labels, from fashion focus to lifestyle emphasis — and asks, can Western brands catch up?",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "luxury",
+              "spending",
+              "brand"
+            ]
+          },
+          "aiSummary": "AI-generated summary: In \"Dispatches From Shanghai: Inside China’s New Luxury Landscape,\" Business of Fashion explores how Shanghai's luxury market has shifted from overt status spending and global megabrands to subtle wealth expression and homegrown labels, raising questions about Western brands' ability to adapt.",
+          "translations": {
+            "da": {
+              "title": "Rapporter fra Shanghai: Indblik i Kinas nye luksuslandskab",
+              "summary": "AI-genereret resumé: I \"Dispatches From Shanghai: Inside China’s New Luxury Landscape\" undersøger Business of Fashion, hvordan Shanghais luksusmarked har bevæget sig fra åbenlys statusforbrug og globale megabrands til subtil rigdomsudtryk og hjemmedyrkede mærker, hvilket rejser spørgsmål om vestlige mærkers evne til at tilpasse sig."
+            },
+            "es": {
+              "title": "Informes desde Shanghái: Dentro del nuevo panorama del lujo en China",
+              "summary": "Resumen generado por IA: En \"Dispatches From Shanghai: Inside China’s New Luxury Landscape,\" Business of Fashion explora cómo el mercado de lujo de Shanghái ha pasado de un gasto ostentoso en estatus y megamarcas globales a una expresión sutil de riqueza y marcas locales, planteando dudas sobre la capacidad de las marcas occidentales para adaptarse."
+            }
+          }
+        },
+        {
+          "id": "a8hkaq",
+          "title": "Consumer goods inflation eased in March, Numerator data shows",
+          "url": "https://www.grocerydive.com/news/inflation-march-2026-consumer-prices-food-numerator/817035/",
+          "source": "Grocery Dive",
+          "published_at": "2026-04-09T14:43:00.000Z",
+          "ingested_at": "2026-04-12T07:24:22.810Z",
+          "snippet": "Prices for everyday household purchases were up at an annual clip of 2% last month, down from 2.7% in February, according to the data analysis firm’s Consumer Goods Price Index.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0.1,
+            "penalty": 0,
+            "matchedKeywords": [
+              "consumer"
+            ]
+          },
+          "aiSummary": "AI-generated summary: According to Numerator's Consumer Goods Price Index, inflation for everyday household items slowed to an annual rate of 2% in March, down from 2.7% in February. This indicates a easing of consumer goods inflation last month.",
+          "translations": {
+            "da": {
+              "title": "Inflationen på forbrugsvarer aftog i marts, viser Numerator-data",
+              "summary": "AI-genereret resumé: Ifølge Numerators Consumer Goods Price Index faldt inflationen for dagligdags husholdningsvarer til en årlig rate på 2 % i marts, ned fra 2,7 % i februar. Dette indikerer en aftagende inflation på forbrugsvarer sidste måned."
+            },
+            "es": {
+              "title": "La inflación de bienes de consumo se moderó en marzo, según datos de Numerator",
+              "summary": "Resumen generado por IA: Según el Consumer Goods Price Index de Numerator, la inflación de artículos domésticos cotidianos se desaceleró a una tasa anual del 2 % en marzo, desde el 2,7 % en febrero. Esto indica una moderación de la inflación de bienes de consumo el mes pasado."
+            }
+          }
+        },
+        {
+          "id": "baabyf",
+          "title": "Sportswear Brands Have Tough Decisions to Make Around the War in the Middle East",
+          "url": "https://www.businessoffashion.com/articles/sports/iran-war-sportswear-prices-nike-adidas-asics/",
+          "source": "Business of Fashion - News",
+          "published_at": "2026-04-06T04:30:00.000Z",
+          "ingested_at": "2026-04-12T07:24:22.810Z",
+          "snippet": "Surging oil prices are raising questions about the structure of supply chains and when companies will need to pass increased costs onto consumers.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "brand",
+              "consumer"
+            ]
+          },
+          "aiSummary": "AI-generated summary: The article discusses how rising oil prices amid the Middle East conflict are prompting sportswear brands to reconsider their supply chain structures and the timing of passing increased costs to consumers.",
+          "translations": {
+            "da": {
+              "title": "Sportswear-mærker står over for svære beslutninger omkring krigen i Mellemøsten",
+              "summary": "AI-genereret resumé: Artiklen diskuterer, hvordan stigende oliepriser under konflikten i Mellemøsten får sportswear-mærker til at genoverveje deres forsyningskædestrukturer og tidspunktet for at videreføre øgede omkostninger til forbrugerne."
+            },
+            "es": {
+              "title": "Las marcas de ropa deportiva enfrentan decisiones difíciles por la guerra en Medio Oriente",
+              "summary": "Resumen generado por IA: El artículo analiza cómo el aumento de los precios del petróleo en medio del conflicto en Medio Oriente está llevando a las marcas de ropa deportiva a reconsiderar sus estructuras de cadena de suministro y el momento de trasladar los costos incrementados a los consumidores."
+            }
+          }
+        },
+        {
+          "id": "pew19e",
+          "title": "Luxury Briefing: Luxury brands proceed with retail plans in the Middle East",
+          "url": "https://www.glossy.co/fashion/luxury/luxury-briefing-luxury-brands-proceed-with-retail-plans-in-the-middle-east/?utm_campaign=glossydis&utm_medium=rss&utm_source=general-rss",
+          "source": "Glossy",
+          "published_at": "2026-04-10T04:00:00.000Z",
+          "ingested_at": "2026-04-12T07:24:22.810Z",
+          "snippet": "For this week’s Luxury Briefing, Glossy spoke to Trevor Hardy, CMO at Chanel-owned Orlebar Brown, about how the brand is strategically opening stores to reach affluent shoppers year-round. Also, an update on Saks, insights into Brunello Cucinelli's earnings, and new executive moves at Tiffany & Co. and Fear of God.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "luxury",
+              "brand",
+              "affluent"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Luxury brands, including Orlebar Brown, are advancing their retail expansion plans in the Middle East to engage affluent shoppers year-round, with additional updates on Saks, Brunello Cucinelli's earnings, and executive changes at Tiffany & Co. and Fear of God, as reported by Glossy.",
+          "translations": {
+            "da": {
+              "title": "Luxury Briefing: Luksusbrands fortsætter med detailplaner i Mellemøsten",
+              "summary": "AI-genereret resumé: Luksusbrands, herunder Orlebar Brown, udvider deres detailplaner i Mellemøsten for at engagere velhavende kunder året rundt, med yderligere opdateringer om Saks, Brunello Cucinellis indtjening og ledelsesændringer hos Tiffany & Co. og Fear of God, rapporteret af Glossy."
+            },
+            "es": {
+              "title": "Luxury Briefing: Las marcas de lujo avanzan con planes minoristas en Oriente Medio",
+              "summary": "Resumen generado por IA: Las marcas de lujo, incluyendo Orlebar Brown, están avanzando en sus planes de expansión minorista en Oriente Medio para atraer a compradores adinerados durante todo el año, con actualizaciones adicionales sobre Saks, las ganancias de Brunello Cucinelli y cambios ejecutivos en Tiffany & Co. y Fear of God, según informa Glossy."
+            }
+          }
+        },
+        {
+          "id": "3trw7l",
+          "title": "How Can Gen Alpha Beauty Brands Successfully Age Up With Their Consumers?",
+          "url": "https://fashionista.com/2026/04/gen-alpha-beauty-brands-aging-up-with-consumers-millennial-gen-z-advice",
+          "source": "Fashionista",
+          "published_at": "2026-04-09T12:45:00.000Z",
+          "ingested_at": "2026-04-12T07:24:22.810Z",
+          "snippet": "Gen Alpha won't be young forever, so what can budding beauty brands learn from their Millennial and Gen Z-focused predecessors about fostering longevity without sidelining their OG audiences?",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "consumer",
+              "brand"
+            ]
+          },
+          "aiSummary": "AI-generated summary: The article explores strategies for Gen Alpha beauty brands to evolve alongside their aging consumers by learning from Millennial and Gen Z-focused brands on maintaining longevity without neglecting their original audiences.",
+          "translations": {
+            "da": {
+              "title": "Hvordan Kan Gen Alpha Beauty Brands Succesfuldt Ældes Sammen Med Deres Forbrugere?",
+              "summary": "Artiklen undersøger strategier for Gen Alpha beauty brands til at udvikle sig sammen med deres aldrende forbrugere ved at lære af Millennial- og Gen Z-fokuserede brands om at bevare lang levetid uden at forsømme deres oprindelige målgruppe."
+            },
+            "es": {
+              "title": "¿Cómo Pueden las Marcas de Belleza Gen Alpha Envejecer con Éxito Junto a Sus Consumidores?",
+              "summary": "El artículo explora estrategias para que las marcas de belleza Gen Alpha evolucionen junto a sus consumidores que envejecen, aprendiendo de marcas enfocadas en Millennials y Gen Z sobre cómo mantener la longevidad sin descuidar a sus audiencias originales."
+            }
+          }
+        }
+      ]
+    },
+    "Jewellery_Industry": {
+      "total": 16,
+      "top": [
+        {
+          "id": "m64r3k",
+          "title": "VIDEO: NJ Mother and Daughter Cling to Robbers’ Car as Thieves Flee With $1M in Gold",
+          "url": "https://instoremag.com/video-nj-mother-and-daughter-cling-to-robbers-car-as-thieves-flee-with-1m-in-gold/",
+          "source": "Instore Magazine",
+          "published_at": "2026-04-10T03:20:42.000Z",
+          "ingested_at": "2026-04-12T07:24:22.810Z",
+          "snippet": "“Brave” intervention leaves owners injured and distraught following smash and grab that wiped out their uninsured inventory.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "gold"
+            ]
+          },
+          "aiSummary": "AI-generated summary: A New Jersey mother and daughter bravely clung to robbers' car during a smash-and-grab theft that resulted in the loss of $1 million in uninsured gold, leaving the owners injured and distraught.",
+          "translations": {
+            "da": {
+              "title": "VIDEO: NJ Mor og Datter Holder Fast i Røveres Bil, Mens Tyve Flygter med 1 Million Dollars i Guld",
+              "summary": "AI-genereret resumé: En mor og datter fra New Jersey holdt modigt fast i røvernes bil under et smash-and-grab-tyveri, der resulterede i tab af 1 million dollars i uforsikret guld, hvilket efterlod ejerne sårede og fortvivlede."
+            },
+            "es": {
+              "title": "VIDEO: Madre e Hija de NJ se Aferran al Auto de Ladrones Mientras Huyen con 1 Millón de Dólares en Oro",
+              "summary": "Resumen generado por IA: Una madre e hija de New Jersey se aferraron valientemente al auto de los ladrones durante un robo rápido que resultó en la pérdida de 1 millón de dólares en oro no asegurado, dejando a los dueños heridos y angustiados."
+            }
+          }
+        },
+        {
+          "id": "vihxux",
+          "title": "Charges laid after violent attack at Melbourne jewellery store",
+          "url": "https://www.jewellermagazine.com/Article/14964/Charges-laid-after-violent-attack-at-Melbourne-jewellery-store",
+          "source": "Jeweller - Business News",
+          "published_at": "2026-04-06T14:00:00.000Z",
+          "ingested_at": "2026-04-12T07:24:22.810Z",
+          "snippet": "Three men have reportedly been charged following an armed robbery at a jewellery store in Berwick that left an individual hospitalised after a violent assault.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.25,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "jewellery",
+              "jeweller"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Three men have been charged after an armed robbery and violent assault at a jewellery store in Berwick, Melbourne, which resulted in one person being hospitalised.",
+          "translations": {
+            "da": {
+              "title": "Anklager rejst efter voldeligt angreb i Melbourne smykkeforretning",
+              "summary": "AI-genereret resumé: Tre mænd er blevet sigtet efter et bevæbnet røveri og voldeligt overfald i en smykkeforretning i Berwick, Melbourne, hvilket resulterede i, at en person blev indlagt på hospitalet."
+            },
+            "es": {
+              "title": "Acusados tras ataque violento en joyería de Melbourne",
+              "summary": "Resumen generado por IA: Tres hombres han sido acusados tras un robo a mano armada y un asalto violento en una joyería en Berwick, Melbourne, que resultó en la hospitalización de una persona."
+            }
+          }
+        },
+        {
+          "id": "sv3if8",
+          "title": "Bvlgari’s Lucia Silvestri Gives Away Top Honours at The Artisan Jewellery Design Awards 2026",
+          "url": "https://instoremag.com/bvlgaris-lucia-silvestri-gives-away-top-honours-at-the-artisan-jewellery-design-awards-2026/",
+          "source": "Instore Magazine",
+          "published_at": "2026-04-10T20:16:49.000Z",
+          "ingested_at": "2026-04-12T07:24:22.810Z",
+          "snippet": "The Artisan Awards 2026 was powered by GIA and supported by the World Gold Council.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "jewellery",
+              "jeweller",
+              "gold"
+            ]
+          },
+          "aiSummary": "AI-generated summary: At The Artisan Jewellery Design Awards 2026, powered by GIA and supported by the World Gold Council, Bvlgari’s Lucia Silvestri presented the top honours, highlighting key achievements in the jewellery industry.",
+          "translations": {
+            "da": {
+              "title": "Bvlgari’s Lucia Silvestri Uddeler Toppriserne ved The Artisan Jewellery Design Awards 2026",
+              "summary": "AI-genereret resumé: Ved The Artisan Jewellery Design Awards 2026, drevet af GIA og støttet af World Gold Council, uddelte Bvlgari’s Lucia Silvestri toppriserne og fremhævede vigtige resultater i smykkeindustrien."
+            },
+            "es": {
+              "title": "Lucia Silvestri de Bvlgari Entrega los Máximos Honores en The Artisan Jewellery Design Awards 2026",
+              "summary": "Resumen generado por IA: En The Artisan Jewellery Design Awards 2026, impulsado por GIA y apoyado por el World Gold Council, Lucia Silvestri de Bvlgari entregó los máximos honores, destacando logros clave en la industria de la joyería."
+            }
+          }
+        },
+        {
+          "id": "qv86en",
+          "title": "Milestone for emerging fashion jewellery chain",
+          "url": "https://www.jewellermagazine.com/Article/14962/Milestone-for-emerging-fashion-jewellery-chain",
+          "source": "Jeweller - Business News",
+          "published_at": "2026-04-06T14:00:00.000Z",
+          "ingested_at": "2026-04-12T07:24:22.810Z",
+          "snippet": "Newly founded Australian fashion jewellery chain Harli + Harpa has surpassed a significant milestone, now operating more than 50 stores worldwide.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "jewellery",
+              "jeweller"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Australian fashion jewellery chain Harli + Harpa has reached a major milestone by expanding to over 50 stores globally, as reported by Jeweller - Business News on April 6, 2026.",
+          "translations": {
+            "da": {
+              "title": "Milepæl for voksende modejuvelerkæde",
+              "summary": "AI-genereret resumé: Den australske modejuvelerkæde Harli + Harpa har nået en vigtig milepæl ved at udvide til over 50 butikker globalt, rapporteret af Jeweller - Business News den 6. april 2026."
+            },
+            "es": {
+              "title": "Hito para la cadena emergente de joyería de moda",
+              "summary": "Resumen generado por IA: La cadena australiana de joyería de moda Harli + Harpa ha alcanzado un hito importante al expandirse a más de 50 tiendas a nivel mundial, según informó Jeweller - Business News el 6 de abril de 2026."
+            }
+          }
+        },
+        {
+          "id": "ddw4re",
+          "title": "Taylor Swift honours Elizabeth Taylor’s iconic jewellery",
+          "url": "https://www.jewellermagazine.com/Article/14969/Taylor-Swift-honours-Elizabeth-Taylors-iconic-jewellery",
+          "source": "Jeweller - Business News",
+          "published_at": "2026-04-06T14:00:00.000Z",
+          "ingested_at": "2026-04-12T07:24:22.810Z",
+          "snippet": "Award-winning musician Taylor Swift has released a new music video titled Elizabeth Taylor, which showcases the late actress’s iconic jewellery.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "jewellery",
+              "jeweller"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Award-winning musician Taylor Swift has released a new music video titled \"Elizabeth Taylor,\" which highlights the late actress’s iconic jewellery.",
+          "translations": {
+            "da": {
+              "title": "Taylor Swift hylder Elizabeth Taylors ikoniske smykker",
+              "summary": "AI-genereret resumé: Den prisvindende musiker Taylor Swift har udgivet en ny musikvideo med titlen \"Elizabeth Taylor,\" som fremhæver den afdøde skuespillers ikoniske smykker."
+            },
+            "es": {
+              "title": "Taylor Swift honra las joyas icónicas de Elizabeth Taylor",
+              "summary": "Resumen generado por IA: La premiada música Taylor Swift ha lanzado un nuevo video musical titulado \"Elizabeth Taylor,\" que destaca las joyas icónicas de la fallecida actriz."
+            }
+          }
+        },
+        {
+          "id": "74k42r",
+          "title": "Say Yes to Charity Help Requests, Make Your Bench the Star — and Even More Jeweler Tips for May",
+          "url": "https://instoremag.com/say-yes-to-charity-help-requests-make-your-bench-the-star-and-even-more-jeweler-tips-for-may/",
+          "source": "Instore Magazine",
+          "published_at": "2026-04-10T04:00:34.000Z",
+          "ingested_at": "2026-04-12T07:24:22.810Z",
+          "snippet": "Andrea Riso hasn't said no to a charity request in years. Her community certainly noticed.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": []
+          },
+          "aiSummary": "AI-generated summary: In the jewellery industry, Andrea Riso has consistently supported charity help requests, earning recognition from her community, as highlighted in Instore Magazine's May 2026 edition.",
+          "translations": {
+            "da": {
+              "title": "Sig ja til velgørenhedsanmodninger, gør din bænk til stjernen — og flere guldsmedetips til maj",
+              "summary": "AI-genereret resumé: I smykkeindustrien har Andrea Riso konsekvent støttet velgørenhedsanmodninger og opnået anerkendelse fra sit fællesskab, som fremhævet i Instore Magazines maj 2026-udgave."
+            },
+            "es": {
+              "title": "Di sí a las solicitudes de ayuda benéfica, haz que tu banco sea la estrella — y más consejos para joyeros en mayo",
+              "summary": "Resumen generado por IA: En la industria de la joyería, Andrea Riso ha apoyado consistentemente las solicitudes de ayuda benéfica, ganando reconocimiento de su comunidad, como se destaca en la edición de mayo de 2026 de Instore Magazine."
+            }
+          }
+        },
+        {
+          "id": "ro42ng",
+          "title": "Goldstein Heather doubles London home's footprint with four-storey extension",
+          "url": "https://www.dezeen.com/2026/04/10/goldstein-heather-west-london-house/",
+          "source": "Dezeen",
+          "published_at": "2026-04-10T10:30:18.000Z",
+          "ingested_at": "2026-04-12T07:24:22.810Z",
+          "snippet": "Architecture studio Goldstein Heather has transformed a Victorian terrace house in London, adding a four-storey extension with arched openings and a sculptural timber staircase. Named West London House, the home in Stamford Brook was overhauled by Goldstein Heather to expand and reorganise what the studio described as a \"disjointed scissor-like layout\" and better accommodate the\nThe post Goldstein Heather doubles London home's footprint with four-storey extension appeared first on Dezeen.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": -0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0.2,
+            "matchedKeywords": [
+              "gold"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Architecture studio Goldstein Heather doubled the footprint of a Victorian terrace house in London’s Stamford Brook by adding a four-storey extension featuring arched openings and a sculptural timber staircase, reorganizing the home's previously disjointed layout.",
+          "translations": {
+            "da": {
+              "title": "Goldstein Heather fordobler London-hjemmets grundplan med fire-etagers tilbygning",
+              "summary": "AI-genereret resumé: Arkitektstudiet Goldstein Heather fordoblede grundplanen på et victoriansk rækkehus i Londons Stamford Brook ved at tilføje en fire-etagers tilbygning med buede åbninger og en skulpturel trætrappe, og omorganiserede husets tidligere usammenhængende plan."
+            },
+            "es": {
+              "title": "Goldstein Heather duplica la superficie de una casa en Londres con una ampliación de cuatro plantas",
+              "summary": "Resumen generado por IA: El estudio de arquitectura Goldstein Heather duplicó la superficie de una casa victoriana en Stamford Brook, Londres, añadiendo una ampliación de cuatro plantas con aberturas arqueadas y una escalera escultórica de madera, reorganizando la distribución previamente desordenada del hogar."
+            }
+          }
+        }
+      ]
+    }
+  },
+  "editorialTake": "Amazon’s $200 billion AI bet is not just about tech muscle—it’s a declaration that the future of ecommerce is a war of scale and speed. Andy Jassy’s refusal to be conservative signals Amazon’s intent to crush competitors by embedding AI deep into every layer, from supply chains to customer experience. Meanwhile, sellers on Amazon’s platform are squeezed by rising fees and policy shifts, showing that Amazon’s AI investment is a double-edged sword: it powers growth but tightens the noose on its ecosystem.\n\nFrasers Group’s 25% jump in conversions after launching an AI shopping assistant proves that AI-driven personalization is no gimmick but a direct revenue driver in premium retail. The question is how many brands can afford to play this game at scale without Amazon’s vast resources. If AI becomes table stakes for conversion, will mid-tier and emerging brands be pushed out, or will new models emerge to democratize access to AI-driven commerce?",
+  "coverImageUrl": "/weekly-images/2026-W15.png",
+  "coverImageAlt": "Weekly cover illustration for 2026-W15"
+}

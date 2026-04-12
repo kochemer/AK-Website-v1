@@ -1,0 +1,16 @@
+{
+  "concept": "gold-bar-bread-loaf-fish-out-of-water",
+  "primaryHumorDriver": "fish-out-of-water",
+  "secondaryEnhancer": "unexpected texture/material combination",
+  "sceneDescription": "On a supermarket bakery shelf, a glistening gold bar is nestled in the middle of a row of everyday sandwich bread loaves. The gold bar’s shiny surface contrasts absurdly against the soft, flour-dusted bread. A Modern Retail-branded shopping bag peeks from the side, a small PYMNTS sticker is stuck to a bread wrapper, and an Instore Magazine logo is subtly stamped on a twist tie. Natural morning light illuminates the shelf, making the gold bar look strangely at home yet completely out of place.",
+  "finalImagePrompt": "A supermarket bakery shelf with ordinary loaves of sandwich bread in a neat row. In the middle, a solid gold bar sits among the bread, gleaming. A Modern Retail shopping bag is tucked at one end of the shelf, a small PYMNTS sticker is on a bread wrapper, and an Instore Magazine logo appears on a bread twist tie. The lighting is bright and natural.",
+  "negativePrompt": [
+    "text, letters, numbers, signage, labels, price tags",
+    "screens, UI, dashboards, holograms, floating icons",
+    "watermarks, unrelated brand logos",
+    "cartoon, illustration, CGI, 3D render, anime",
+    "diamond, diamonds, gemstone, gemstones, precious stones, jewelry close-up, jewelry product shot, diamond ring, diamond necklace, diamond earring, jeweled, sparkling gemstone",
+    "dramatic spotlight, glowing edges, rim lighting, vignette, cinematic color grade, blurred background, bokeh"
+  ],
+  "confidence": 0.72
+}

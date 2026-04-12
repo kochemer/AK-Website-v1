@@ -2062,5 +2062,101 @@
     ],
     "cached_at": "2026-04-05T16:35:35.378Z",
     "model": "gpt-4.1-mini"
+  },
+  "2026-W15:AI_and_Strategy:770ee523f645": {
+    "selected": [
+      {
+        "id": "17",
+        "rank": 1,
+        "why": "Amazon's $200B AI spend signals major industry economic commitment",
+        "confidence": 0.95
+      },
+      {
+        "id": "4",
+        "rank": 2,
+        "why": "OpenAI IPO plans reveal financial strategy and revenue mix shift",
+        "confidence": 0.9
+      },
+      {
+        "id": "9",
+        "rank": 3,
+        "why": "Anthropic's user ban highlights pricing and access control dynamics",
+        "confidence": 0.85
+      },
+      {
+        "id": "11",
+        "rank": 4,
+        "why": "Court ruling impacts Anthropic's AI supply chain risk classification",
+        "confidence": 0.85
+      },
+      {
+        "id": "14",
+        "rank": 5,
+        "why": "CIA integrating AI assistants into analysis platforms marks policy shift",
+        "confidence": 0.9
+      },
+      {
+        "id": "16",
+        "rank": 6,
+        "why": "IEEE article on AI system failures offers technical reliability insights",
+        "confidence": 0.8
+      },
+      {
+        "id": "8",
+        "rank": 7,
+        "why": "Mercor's data breach affects AI startup's customer trust and stability",
+        "confidence": 0.75
+      }
+    ],
+    "cached_at": "2026-04-12T07:36:35.491Z",
+    "model": "gpt-4.1-mini"
+  },
+  "2026-W15:Ecommerce_Retail_Tech:8d1ee92f2149": {
+    "selected": [
+      {
+        "id": "8",
+        "rank": 1,
+        "why": "Amazon marketplace fee and policy changes impact seller economics",
+        "confidence": 0.95
+      },
+      {
+        "id": "16",
+        "rank": 2,
+        "why": "Walmart Marketplace drives significant general merchandise growth",
+        "confidence": 0.9
+      },
+      {
+        "id": "0",
+        "rank": 3,
+        "why": "Frasers Group AI assistant boosts ecommerce conversions by 25%",
+        "confidence": 0.9
+      },
+      {
+        "id": "6",
+        "rank": 4,
+        "why": "Gap Inc adopts AI for enhanced global supply chain traceability",
+        "confidence": 0.9
+      },
+      {
+        "id": "5",
+        "rank": 5,
+        "why": "Viral TikTok growth exposes DTC brands to logistics challenges",
+        "confidence": 0.85
+      },
+      {
+        "id": "13",
+        "rank": 6,
+        "why": "AI's role in resale growth highlights ecommerce trend momentum",
+        "confidence": 0.85
+      },
+      {
+        "id": "10",
+        "rank": 7,
+        "why": "Rezolve Ai merger proposal signals platform consolidation trend",
+        "confidence": 0.8
+      }
+    ],
+    "cached_at": "2026-04-12T07:37:02.441Z",
+    "model": "gpt-4.1-mini"
   }
 }
