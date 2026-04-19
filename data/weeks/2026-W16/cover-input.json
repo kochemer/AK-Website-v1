@@ -1,0 +1,28 @@
+{
+  "weekLabel": "2026-W16",
+  "homepageTopArticles": [
+    {
+      "title": "Amazon Buys Globalstar for $10.8 Billion, Movingto Expand Its Satellite Internet Service",
+      "source": "NYTimes Technology",
+      "snippet": "The e-commerce giant is buying Globalstar, a satellite communications company, as it aims to expand its own satellite internet service to compete with Elon Musk’s Starlink.",
+      "aiSummary": "AI-generated summary: Amazon is acquiring satellite communications company Globalstar for $10.8 billion to expand its satellite internet service and compete with Elon Musk’s Starlink."
+    },
+    {
+      "title": "Airwallex Takes Its Cross-Border Play In-Store",
+      "source": "Payments Journal",
+      "snippet": "Many merchants have long eyed international expansion, only to be daunted by its complexity. That’s the challenge Airwallex is targeting with the launch of its in-store point-of-sale system. The Australia-based fintech is attempting to stand out in a crowded market by offering a physical solution that allows businesses to accept in-person payments across multiple countries […]\nThe post Airwallex Takes Its Cross-Border Play In-Store appeared first on PaymentsJournal.",
+      "aiSummary": "AI-generated summary: Airwallex has launched an in-store point-of-sale system aimed at simplifying international expansion for merchants by enabling businesses to accept in-person payments across multiple countries. This move positions the Australia-based fintech to differentiate itself in the competitive ecommerce and retail tech market."
+    },
+    {
+      "title": "Fashion Briefing: Gold prices are skyrocketing, squeezing the jewelry industry’s margins in uncomfortable ways",
+      "source": "Glossy",
+      "snippet": "The last year has seen the price of gold skyrocket, thanks to steady inflation and tensions in the Middle East. In January, gold futures surpassed $4,900 for the first time in history and briefly reached $5,500. Now, many analysts are predicting that the price could top $6,000 by the end of the year.",
+      "aiSummary": "AI-generated summary: Gold prices have surged dramatically over the past year due to inflation and Middle East tensions, with futures recently exceeding $5,500 and forecasts suggesting they may surpass $6,000 by year-end, putting significant pressure on the jewelry industry's profit margins."
+    }
+  ],
+  "model": "gpt-image-1",
+  "finalPrompt": "Photograph: A supermarket checkout conveyor holds three large gold bars, a satellite dish, and a sleek point-of-sale card reader. A store-branded reusable bag with subtle logos is tucked behind the items. The scene is naturally lit, with gold bars gleaming on a standard gray conveyor in a real supermarket setting.\n\nCRITICAL CONSTRAINTS (must be strictly avoided):\n- text, letters, numbers, signage, labels, price tags, screens, UI, dashboards, holograms, floating icons, watermarks, unrelated brand logos, cartoon, illustration, CGI, 3D render, anime, diamond, diamonds, gemstone, gemstones, precious stones, jewelry close-up, jewelry product shot, diamond ring, diamond necklace, diamond earring, jeweled, sparkling gemstone, dramatic spotlight, glowing edges, rim lighting, vignette, cinematic color grade, blurred background, bokeh\n\nThis must look like a real photograph taken by a human — not AI-generated, not CGI, not a 3D render. Natural light. Real objects. Real imperfections. Fill the entire frame edge to edge with the scene — no black bars, no empty space at the edges.\n\nDo not include: text, labels, signage, screens, UI, logos unrelated to the scene, diamonds, gemstones, CGI lighting, dramatic spotlights, or blurred vignette backgrounds.",
+  "imageSize": "1536x1024",
+  "outputPath": "/weekly-images/2026-W16.png",
+  "generatedAt": "2026-04-19T07:56:35.242Z"
+}

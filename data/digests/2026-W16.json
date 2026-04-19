@@ -1,0 +1,951 @@
+{
+  "weekLabel": "2026-W16",
+  "tz": "Europe/Copenhagen",
+  "startISO": "2026-04-12T22:00:00.000Z",
+  "endISO": "2026-04-19T21:59:59.999Z",
+  "builtAtISO": "2026-04-19T09:53:33.939+02:00",
+  "builtAtLocal": "2026-04-19 09:53:33",
+  "totals": {
+    "total": 753,
+    "byTopic": {
+      "AIStrategy": 132,
+      "EcommerceRetail": 510,
+      "LuxuryConsumer": 78,
+      "Jewellery": 29
+    }
+  },
+  "topics": {
+    "AI_and_Strategy": {
+      "total": 132,
+      "top": [
+        {
+          "id": "smbs2m",
+          "title": "AI chip startup Cerebras files for IPO",
+          "url": "https://techcrunch.com/2026/04/18/ai-chip-startup-cerebras-files-for-ipo/",
+          "source": "TechCrunch - AI",
+          "published_at": "2026-04-18T19:19:11.000Z",
+          "ingested_at": "2026-04-19T07:40:25.149Z",
+          "snippet": "In recent months, the company announced an agreement with Amazon Web Services to use Cerebras chips in Amazon data centers, as well as a deal with OpenAI reportedly worth more than $10 billion.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.35,
+            "recencyScore": 0,
+            "sourceWeight": 0.15,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0.1,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ai",
+              "openai"
+            ]
+          },
+          "aiSummary": "AI-generated summary: AI chip startup Cerebras has filed for an IPO following recent major agreements, including a partnership with Amazon Web Services to deploy its chips in AWS data centers and a reported $10 billion deal with OpenAI.",
+          "translations": {
+            "da": {
+              "title": "AI-chip startup Cerebras indgiver IPO",
+              "summary": "AI-genereret resumé: AI-chip startup Cerebras har indgivet en IPO efter nylige store aftaler, herunder et partnerskab med Amazon Web Services om at implementere deres chips i AWS-datacentre og en rapporteret aftale på 10 milliarder dollars med OpenAI."
+            },
+            "es": {
+              "title": "La startup de chips AI Cerebras presenta solicitud para IPO",
+              "summary": "Resumen generado por AI: La startup de chips AI Cerebras ha presentado una IPO tras recientes acuerdos importantes, incluyendo una asociación con Amazon Web Services para desplegar sus chips en centros de datos de AWS y un acuerdo reportado de 10 mil millones de dólares con OpenAI."
+            }
+          }
+        },
+        {
+          "id": "vo4p3b",
+          "title": "OpenAI loses three executives in one swoop as restructuring reshapes its product lineup",
+          "url": "https://the-decoder.com/openai-loses-three-executives-in-one-swoop-as-restructuring-reshapes-its-product-lineup/",
+          "source": "The Decoder",
+          "published_at": "2026-04-18T07:20:45.000Z",
+          "ingested_at": "2026-04-19T07:40:25.149Z",
+          "snippet": "Three high-profile executives are walking away from OpenAI. The departures come as the company restructures and doubles down on coding and enterprise customers.\nThe article OpenAI loses three executives in one swoop as restructuring reshapes its product lineup appeared first on The Decoder.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "openai"
+            ]
+          },
+          "aiSummary": "AI-generated summary: OpenAI has seen the departure of three high-profile executives amid a company restructuring focused on enhancing its coding capabilities and targeting enterprise customers.",
+          "translations": {
+            "da": {
+              "title": "OpenAI mister tre ledere på én gang, mens omstrukturering ændrer produktudvalget",
+              "summary": "AI-genereret resumé: OpenAI har oplevet afgangen af tre højtstående ledere midt i en omstrukturering, der fokuserer på at forbedre sine kodningsmuligheder og rette sig mod erhvervskunder."
+            },
+            "es": {
+              "title": "OpenAI pierde a tres ejecutivos de un solo golpe mientras la reestructuración redefine su línea de productos",
+              "summary": "Resumen generado por IA: OpenAI ha visto la salida de tres ejecutivos de alto perfil en medio de una reestructuración enfocada en mejorar sus capacidades de codificación y en dirigirse a clientes empresariales."
+            }
+          }
+        },
+        {
+          "id": "cm2oo3",
+          "title": "OpenAI’s Memos, Frontier, Amazon and Anthropic",
+          "url": "https://stratechery.com/2026/openais-memos-frontier-amazon-and-anthropic/",
+          "source": "Stratechery",
+          "published_at": "2026-04-14T10:00:00.000Z",
+          "ingested_at": "2026-04-19T07:40:25.149Z",
+          "snippet": "Breaking down OpenAI's internal memo about taking on Anthropic in the enterprise.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "openai",
+              "anthropic"
+            ]
+          },
+          "aiSummary": "AI-generated summary: The article from Stratechery dated April 14, 2026, analyzes OpenAI's internal memo outlining its strategic approach to competing with Anthropic in the enterprise AI market.",
+          "translations": {
+            "da": {
+              "title": "OpenAI’s Memos, Frontier, Amazon og Anthropic",
+              "summary": "AI-genereret resumé: Artiklen fra Stratechery den 14. april 2026 analyserer OpenAIs interne memo, der skitserer deres strategiske tilgang til at konkurrere med Anthropic på enterprise AI-markedet."
+            },
+            "es": {
+              "title": "OpenAI’s Memos, Frontier, Amazon y Anthropic",
+              "summary": "Resumen generado por IA: El artículo de Stratechery del 14 de abril de 2026 analiza el memo interno de OpenAI que describe su enfoque estratégico para competir con Anthropic en el mercado de IA empresarial."
+            }
+          }
+        },
+        {
+          "id": "1l1u2e",
+          "title": "Google launches generative UI standard for AI agents",
+          "url": "https://the-decoder.com/google-launches-generative-ui-standard-for-ai-agents/",
+          "source": "The Decoder",
+          "published_at": "2026-04-19T07:16:51.000Z",
+          "ingested_at": "2026-04-19T07:40:25.149Z",
+          "snippet": "Google's A2UI 0.9 is a framework-agnostic standard that lets AI agents generate UI elements on the fly, tapping into an app's existing components across web, mobile, and other platforms.\nThe article Google launches generative UI standard for AI agents appeared first on The Decoder.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ai",
+              "agent"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Google has introduced A2UI 0.9, a framework-agnostic generative UI standard that enables AI agents to dynamically create UI elements by leveraging existing components across web, mobile, and other platforms.",
+          "translations": {
+            "da": {
+              "title": "Google lancerer generativ UI-standard for AI-agenter",
+              "summary": "AI-genereret resumé: Google har introduceret A2UI 0.9, en framework-agnostisk generativ UI-standard, der gør det muligt for AI-agenter dynamisk at skabe UI-elementer ved at udnytte eksisterende komponenter på tværs af web, mobil og andre platforme."
+            },
+            "es": {
+              "title": "Google lanza estándar de UI generativa para agentes de IA",
+              "summary": "Resumen generado por IA: Google ha presentado A2UI 0.9, un estándar de UI generativa independiente del framework que permite a los agentes de IA crear dinámicamente elementos de UI aprovechando componentes existentes en web, móvil y otras plataformas."
+            }
+          }
+        },
+        {
+          "id": "ewlwiv",
+          "title": "Slow revenue conversion to dog IT companies as AI queers the pitch ",
+          "url": "https://economictimes.indiatimes.com/tech/information-tech/slow-revenue-conversion-to-dog-it-companies-as-ai-queers-the-pitch/articleshow/130340778.cms",
+          "source": "Economic Times - Technology",
+          "published_at": "2026-04-18T00:30:00.000Z",
+          "ingested_at": "2026-04-19T07:40:25.149Z",
+          "snippet": "Decline in annual revenue runs at even the biggest in Indian IT, such as Tata Consultancy Services (TCS) and Wipro, despite healthy deal pipelines suggests persistence of both slow revenue conversion and discounts spawned by competition from AI, analysts said.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ai"
+            ]
+          },
+          "aiSummary": "AI-generated summary: According to analysts cited in the Economic Times on April 18, 2026, major Indian IT companies like Tata Consultancy Services and Wipro are experiencing slow revenue conversion and increased discounts due to competitive pressures from AI, despite maintaining strong deal pipelines.",
+          "translations": {
+            "da": {
+              "title": "Langsom omsætning til hunde-IT-virksomheder, da AI ændrer spillet",
+              "summary": "Ifølge analytikere citeret i Economic Times den 18. april 2026 oplever store indiske IT-virksomheder som Tata Consultancy Services og Wipro langsom omsætningskonvertering og øgede rabatter på grund af konkurrencepres fra AI, på trods af stærke aftalepipelines."
+            },
+            "es": {
+              "title": "Lenta conversión de ingresos para empresas IT de bajo rendimiento mientras la IA complica el panorama",
+              "summary": "Según analistas citados en Economic Times el 18 de abril de 2026, grandes empresas IT indias como Tata Consultancy Services y Wipro experimentan una lenta conversión de ingresos y mayores descuentos debido a la presión competitiva de la IA, a pesar de mantener sólidas carteras de acuerdos."
+            }
+          }
+        },
+        {
+          "id": "cqwce1",
+          "title": "Quantum stocks on pace for a massive week after Nvidia debuts AI models to boost the tech",
+          "url": "https://www.cnbc.com/2026/04/16/quantum-stocks-nvidia-ai-models.html",
+          "source": "CNBC Technology",
+          "published_at": "2026-04-16T20:15:50.000Z",
+          "ingested_at": "2026-04-19T07:40:25.149Z",
+          "snippet": "Hyperscalers Alphabet, Amazon and Microsoft have been investing heavily in chips to power quantum computing",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ai"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Following Nvidia's debut of AI models aimed at enhancing technology, quantum computing stocks are set for significant gains, supported by major investments in chips from hyperscalers like Alphabet, Amazon, and Microsoft.",
+          "translations": {
+            "da": {
+              "title": "Quantum-aktier på vej mod en massiv uge efter Nvidia lancerer AI-modeller til at styrke teknologien",
+              "summary": "AI-genereret resumé: Efter Nvidias lancering af AI-modeller til at forbedre teknologien, forventes quantum computing-aktier betydelige stigninger, understøttet af store investeringer i chips fra hyperscalers som Alphabet, Amazon og Microsoft."
+            },
+            "es": {
+              "title": "Acciones de quantum en camino a una semana masiva tras el debut de modelos de IA de Nvidia para impulsar la tecnología",
+              "summary": "Resumen generado por IA: Tras el debut de modelos de IA de Nvidia destinados a mejorar la tecnología, las acciones de computación cuántica están preparadas para ganancias significativas, respaldadas por grandes inversiones en chips de hyperscalers como Alphabet, Amazon y Microsoft."
+            }
+          }
+        },
+        {
+          "id": "hvwbpd",
+          "title": "Canva unveils new platform, transitions to ‘AI platform with design tools’ from ‘design platform with AI tools’ ",
+          "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/canva-unveils-new-platform-transitions-to-ai-platform-with-design-tools-from-design-platform-with-ai-tools/articleshow/130329592.cms",
+          "source": "Economic Times - Technology",
+          "published_at": "2026-04-17T10:19:17.000Z",
+          "ingested_at": "2026-04-19T07:40:25.149Z",
+          "snippet": "Design giant Canva unveiled its AI-native platform, Canva 2.0, powered by its own models. This shift transforms it into an AI platform with design tools, aiming for the next generation of users. The company also introduced a new AI Pass for enhanced AI capabilities.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ai"
+            ]
+          },
+          "aiSummary": "AI-generated summary: On April 17, 2026, Canva announced its AI-native platform, Canva 2.0, powered by proprietary models, marking its transition from a design platform with AI tools to an AI platform with design tools, alongside the launch of a new AI Pass for enhanced capabilities.",
+          "translations": {
+            "da": {
+              "title": "Canva lancerer ny platform og går fra 'designplatform med AI-værktøjer' til 'AI-platform med designværktøjer'",
+              "summary": "AI-genereret resumé: Den 17. april 2026 annoncerede Canva sin AI-native platform, Canva 2.0, drevet af proprietære modeller, hvilket markerer overgangen fra en designplatform med AI-værktøjer til en AI-platform med designværktøjer, samtidig med lanceringen af en ny AI Pass for forbedrede funktioner."
+            },
+            "es": {
+              "title": "Canva presenta nueva plataforma y pasa de 'plataforma de diseño con herramientas de IA' a 'plataforma de IA con herramientas de diseño'",
+              "summary": "Resumen generado por IA: El 17 de abril de 2026, Canva anunció su plataforma nativa de IA, Canva 2.0, impulsada por modelos propietarios, marcando su transición de una plataforma de diseño con herramientas de IA a una plataforma de IA con herramientas de diseño, junto con el lanzamiento de un nuevo AI Pass para capacidades mejoradas."
+            }
+          }
+        }
+      ]
+    },
+    "Ecommerce_Retail_Tech": {
+      "total": 510,
+      "top": [
+        {
+          "id": "xazphp",
+          "title": "Amazon Buys Globalstar for $10.8 Billion, Movingto Expand Its Satellite Internet Service",
+          "url": "https://www.nytimes.com/2026/04/14/technology/amazon-buys-globalstar-space-internet.html",
+          "source": "NYTimes Technology",
+          "published_at": "2026-04-14T17:53:43.000Z",
+          "ingested_at": "2026-04-19T07:40:25.149Z",
+          "snippet": "The e-commerce giant is buying Globalstar, a satellite communications company, as it aims to expand its own satellite internet service to compete with Elon Musk’s Starlink.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0.15,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "e-commerce"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Amazon is acquiring satellite communications company Globalstar for $10.8 billion to expand its satellite internet service and compete with Elon Musk’s Starlink.",
+          "translations": {
+            "da": {
+              "title": "Amazon køber Globalstar for 10,8 milliarder dollars og udvider sin satellitinternetservice",
+              "summary": "AI-genereret resumé: Amazon køber satellitkommunikationsfirmaet Globalstar for 10,8 milliarder dollars for at udvide sin satellitinternetservice og konkurrere med Elon Musks Starlink."
+            },
+            "es": {
+              "title": "Amazon compra Globalstar por 10.8 mil millones de dólares para expandir su servicio de internet satelital",
+              "summary": "Resumen generado por IA: Amazon está adquiriendo la compañía de comunicaciones satelitales Globalstar por 10.8 mil millones de dólares para expandir su servicio de internet satelital y competir con Starlink de Elon Musk."
+            }
+          }
+        },
+        {
+          "id": "jfhns",
+          "title": "Airwallex Takes Its Cross-Border Play In-Store",
+          "url": "https://www.paymentsjournal.com/airwallex-takes-its-cross-border-play-in-store/",
+          "source": "Payments Journal",
+          "published_at": "2026-04-17T16:37:59.000Z",
+          "ingested_at": "2026-04-19T07:40:25.149Z",
+          "snippet": "Many merchants have long eyed international expansion, only to be daunted by its complexity. That’s the challenge Airwallex is targeting with the launch of its in-store point-of-sale system. The Australia-based fintech is attempting to stand out in a crowded market by offering a physical solution that allows businesses to accept in-person payments across multiple countries […]\nThe post Airwallex Takes Its Cross-Border Play In-Store appeared first on PaymentsJournal.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "payment"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Airwallex has launched an in-store point-of-sale system aimed at simplifying international expansion for merchants by enabling businesses to accept in-person payments across multiple countries. This move positions the Australia-based fintech to differentiate itself in the competitive ecommerce and retail tech market.",
+          "translations": {
+            "da": {
+              "title": "Airwallex tager sin grænseoverskridende indsats ind i butikken",
+              "summary": "AI-genereret resumé: Airwallex har lanceret et in-store betalingssystem, der skal gøre international ekspansion lettere for handlende ved at muliggøre personlige betalinger på tværs af flere lande. Dette skridt positionerer den australske fintech til at skille sig ud på det konkurrenceprægede ecommerce- og detailteknologimarked."
+            },
+            "es": {
+              "title": "Airwallex lleva su estrategia transfronteriza a la tienda física",
+              "summary": "Resumen generado por IA: Airwallex ha lanzado un sistema de punto de venta en tienda diseñado para simplificar la expansión internacional de los comerciantes al permitir que las empresas acepten pagos presenciales en varios países. Este movimiento posiciona a la fintech australiana para diferenciarse en el competitivo mercado de ecommerce y tecnología minorista."
+            }
+          }
+        },
+        {
+          "id": "5rnjh7",
+          "title": "UK subscription SMEs lose £160k a year to failed payments, new study shows",
+          "url": "https://internetretailing.net/uk-subscription-smes-lose-160k-a-year-to-failed-payments-new-study-shows/",
+          "source": "Internet Retailing",
+          "published_at": "2026-04-15T10:34:20.000Z",
+          "ingested_at": "2026-04-19T07:40:25.149Z",
+          "snippet": "British SMEs with subscription and membership models lose an average of £159,500 annually due to failed payments, abandoned renewals, and checkout friction, according to independent research commissioned by Access PaySuite.\nThe post UK subscription SMEs lose £160k a year to failed payments, new study shows appeared first on InternetRetailing.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "payment",
+              "checkout"
+            ]
+          },
+          "aiSummary": "AI-generated summary: A new study commissioned by Access PaySuite reveals that British SMEs with subscription and membership models lose an average of £159,500 annually due to failed payments, abandoned renewals, and checkout friction. This highlights significant financial challenges faced by UK subscription-based small businesses.",
+          "translations": {
+            "da": {
+              "title": "Britiske abonnements-SMVer mister £160k om året på grund af mislykkede betalinger, viser ny undersøgelse",
+              "summary": "En ny undersøgelse bestilt af Access PaySuite afslører, at britiske SMVer med abonnements- og medlemsmodeller i gennemsnit mister £159.500 årligt på grund af mislykkede betalinger, opgivne fornyelser og betalingsfriktion. Dette fremhæver betydelige økonomiske udfordringer for britiske abonnementsbaserede små virksomheder."
+            },
+            "es": {
+              "title": "Las pymes británicas con suscripción pierden £160k al año por pagos fallidos, según nuevo estudio",
+              "summary": "Un nuevo estudio encargado por Access PaySuite revela que las pymes británicas con modelos de suscripción y membresía pierden un promedio de £159,500 anuales debido a pagos fallidos, renovaciones abandonadas y fricción en el proceso de pago. Esto destaca los importantes desafíos financieros que enfrentan las pequeñas empresas de suscripción en el Reino Unido."
+            }
+          }
+        },
+        {
+          "id": "mrntzh",
+          "title": "Asda and Deliverect partner to enhance rapid delivery across Asda Express",
+          "url": "https://internetretailing.net/asda-and-deliverect-partner-to-enhance-rapid-delivery-across-asda-express/",
+          "source": "Internet Retailing",
+          "published_at": "2026-04-16T00:00:00.000Z",
+          "ingested_at": "2026-04-19T07:40:25.149Z",
+          "snippet": "Asda, the UK's third-largest grocery retailer, has partnered with Deliverect to simplify its quick-commerce operations, availability and pricing synchronisation, and in-store fulfilment.\nThe post Asda and Deliverect partner to enhance rapid delivery across Asda Express appeared first on InternetRetailing.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": []
+          },
+          "aiSummary": "AI-generated summary: Asda has partnered with Deliverect to improve rapid delivery services across Asda Express by streamlining quick-commerce operations, pricing synchronization, and in-store fulfillment. This collaboration aims to enhance the retailer's ecommerce and retail technology capabilities.",
+          "translations": {
+            "da": {
+              "title": "Asda og Deliverect samarbejder om at forbedre hurtig levering i Asda Express",
+              "summary": "Asda har indgået partnerskab med Deliverect for at forbedre hurtig levering i Asda Express ved at effektivisere quick-commerce, pris-synkronisering og in-store opfyldelse. Samarbejdet sigter mod at styrke detailhandlerens ecommerce og detailteknologi."
+            },
+            "es": {
+              "title": "Asda y Deliverect se asocian para mejorar la entrega rápida en Asda Express",
+              "summary": "Asda se ha asociado con Deliverect para mejorar los servicios de entrega rápida en Asda Express mediante la optimización de operaciones de comercio rápido, sincronización de precios y cumplimiento en tienda. Esta colaboración busca potenciar las capacidades de ecommerce y tecnología minorista del minorista."
+            }
+          }
+        },
+        {
+          "id": "fpq3dc",
+          "title": "Marketplace Briefing: How DoorDash is winning over apparel brands",
+          "url": "https://www.modernretail.co/technology/marketplace-briefing-how-doordash-is-winning-over-apparel-brands/?utm_campaign=modernretaildis&utm_medium=rss&utm_source=general-rss",
+          "source": "Modern Retail",
+          "published_at": "2026-04-16T14:00:00.000Z",
+          "ingested_at": "2026-04-19T07:40:25.149Z",
+          "snippet": "DoorDash is expanding beyond food delivery into retail and apparel partnerships. Mike Goldblatt, DoorDash's VP of enterprise sales and business development for grocery and retail, says the expansion is a natural extension of the company's original vision.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "marketplace"
+            ]
+          },
+          "aiSummary": "AI-generated summary: DoorDash is broadening its services beyond food delivery by forming partnerships with apparel brands, viewing this move as a natural extension of its original vision, according to Mike Goldblatt, VP of enterprise sales and business development.",
+          "translations": {
+            "da": {
+              "title": "Marketplace Briefing: Hvordan DoorDash vinder over tøjbrands",
+              "summary": "AI-genereret resumé: DoorDash udvider sine tjenester ud over madlevering ved at indgå partnerskaber med tøjbrands, og ser dette som en naturlig forlængelse af sin oprindelige vision, ifølge Mike Goldblatt, VP for enterprise sales og forretningsudvikling."
+            },
+            "es": {
+              "title": "Marketplace Briefing: Cómo DoorDash está ganando a las marcas de ropa",
+              "summary": "Resumen generado por IA: DoorDash está ampliando sus servicios más allá de la entrega de comida formando alianzas con marcas de ropa, viendo este movimiento como una extensión natural de su visión original, según Mike Goldblatt, VP de ventas empresariales y desarrollo de negocios."
+            }
+          }
+        },
+        {
+          "id": "9wy3sv",
+          "title": "Fashion retailer Express left customers’ personal data and order details exposed to the internet",
+          "url": "https://techcrunch.com/2026/04/16/fashion-retailer-express-left-customers-personal-data-and-order-details-exposed-to-the-internet/",
+          "source": "TechCrunch - Commerce",
+          "published_at": "2026-04-16T12:39:56.000Z",
+          "ingested_at": "2026-04-19T07:40:25.149Z",
+          "snippet": "Retail giant Express was publicly spilling customer information to the open web. The bug is now fixed after TechCrunch alerted Express, but the company would not say if it plans to notify customers.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": []
+          },
+          "aiSummary": "AI-generated summary: Fashion retailer Express exposed customers' personal data and order details online due to a security bug, which has since been fixed following TechCrunch's alert; however, Express has not disclosed whether it will notify affected customers.",
+          "translations": {
+            "da": {
+              "title": "Fashion retailer Express efterlod kunders personlige data og ordreoplysninger eksponeret på internettet",
+              "summary": "AI-genereret resumé: Fashion retailer Express eksponerede kunders personlige data og ordreoplysninger online på grund af en sikkerhedsfejl, som siden er blevet rettet efter TechCrunchs advarsel; Express har dog ikke oplyst, om de vil underrette de berørte kunder."
+            },
+            "es": {
+              "title": "Fashion retailer Express dejó expuestos los datos personales y detalles de pedidos de los clientes en internet",
+              "summary": "Resumen generado por IA: Fashion retailer Express expuso datos personales y detalles de pedidos de clientes en línea debido a un fallo de seguridad, que ha sido corregido tras la alerta de TechCrunch; sin embargo, Express no ha informado si notificará a los clientes afectados."
+            }
+          }
+        },
+        {
+          "id": "rggaiz",
+          "title": "What UK eCommerce brands need to know about Post-Brexit EU fulfilment",
+          "url": "https://internetretailing.net/what-uk-ecommerce-brands-need-to-know-about-post-brexit-eu-fulfilment/",
+          "source": "Internet Retailing",
+          "published_at": "2026-04-14T00:02:00.000Z",
+          "ingested_at": "2026-04-19T07:40:25.149Z",
+          "snippet": "UK brands shipping to EU customers face hidden costs, customs delays and tighter rules from 2026. Here is how to choose the right fulfilment setup, says Cain Fleming, Green Fulfilment.\nThe post What UK eCommerce brands need to know about Post-Brexit EU fulfilment appeared first on InternetRetailing.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ecommerce"
+            ]
+          },
+          "aiSummary": "AI-generated summary: UK eCommerce brands shipping to EU customers from 2026 will encounter hidden costs, customs delays, and stricter regulations post-Brexit, with expert advice on selecting the appropriate fulfilment setup provided by Cain Fleming of Green Fulfilment.",
+          "translations": {
+            "da": {
+              "title": "Hvad UK eCommerce-mærker skal vide om post-Brexit EU-opfyldelse",
+              "summary": "AI-genereret resumé: UK eCommerce-mærker, der sender til EU-kunder fra 2026, vil møde skjulte omkostninger, toldforsinkelser og strengere regler efter Brexit, med ekspertvejledning om valg af passende opfyldelsesløsning fra Cain Fleming fra Green Fulfilment."
+            },
+            "es": {
+              "title": "Lo que las marcas de eCommerce del Reino Unido deben saber sobre el cumplimiento en la UE post-Brexit",
+              "summary": "Resumen generado por IA: Las marcas de eCommerce del Reino Unido que envíen a clientes de la UE a partir de 2026 enfrentarán costos ocultos, retrasos aduaneros y regulaciones más estrictas tras el Brexit, con asesoramiento experto sobre la selección de la configuración de cumplimiento adecuada proporcionado por Cain Fleming de Green Fulfilment."
+            }
+          }
+        }
+      ]
+    },
+    "Luxury_and_Consumer": {
+      "total": 78,
+      "top": [
+        {
+          "id": "z9gkwk",
+          "title": "First-quarter revenue at Kering drops 6pc",
+          "url": "https://www.luxurydaily.com/first-quarter-revenue-at-kering-drops-6pc/",
+          "source": "Luxury Daily - Main",
+          "published_at": "2026-04-15T21:15:17.000Z",
+          "ingested_at": "2026-04-19T07:40:25.149Z",
+          "snippet": "The French luxury conglomerate’s jewelry houses delivered double-digit growth figures, offsetting performances from others, such as Italian fashion label Gucci.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "luxury"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Kering's first-quarter revenue declined by 6%, with strong double-digit growth from its jewelry houses offsetting weaker performances from brands like Gucci.",
+          "translations": {
+            "da": {
+              "title": "Kerings omsætning i første kvartal falder med 6 pct.",
+              "summary": "AI-genereret resumé: Kerings omsætning i første kvartal faldt med 6 %, hvor stærk tocifret vækst fra smykkehusene opvejede svagere resultater fra mærker som Gucci."
+            },
+            "es": {
+              "title": "Los ingresos del primer trimestre de Kering caen un 6%",
+              "summary": "Resumen generado por IA: Los ingresos de Kering en el primer trimestre disminuyeron un 6%, con un fuerte crecimiento de dos dígitos en sus casas de joyería que compensó el desempeño más débil de marcas como Gucci."
+            }
+          }
+        },
+        {
+          "id": "k2fdzq",
+          "title": "The Luxury Rebound Gets a Reality Check",
+          "url": "https://www.businessoffashion.com/briefings/luxury/the-luxury-rebound-gets-a-reality-check/",
+          "source": "Business of Fashion - News",
+          "published_at": "2026-04-17T19:00:23.000Z",
+          "ingested_at": "2026-04-19T07:40:25.149Z",
+          "snippet": "A set of underwhelming first-quarter revenues from French luxury groups LVMH, Kering and Hermès is challenging hopes for a sector recovery this year.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "luxury"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Early 2026 first-quarter revenues from French luxury groups LVMH, Kering, and Hermès have fallen short of expectations, casting doubt on a strong recovery for the luxury sector this year.",
+          "translations": {
+            "da": {
+              "title": "Luksusgenopretningen Får Et Realitetstjek",
+              "summary": "AI-genereret resumé: Indtægterne i første kvartal 2026 fra de franske luksusgrupper LVMH, Kering og Hermès har ikke levet op til forventningerne, hvilket sætter spørgsmålstegn ved en stærk genopretning for luksussektoren i år."
+            },
+            "es": {
+              "title": "El Rebote del Lujo Recibe un Toque de Realidad",
+              "summary": "Resumen generado por IA: Los ingresos del primer trimestre de 2026 de los grupos franceses de lujo LVMH, Kering y Hermès han estado por debajo de las expectativas, poniendo en duda una fuerte recuperación del sector de lujo este año."
+            }
+          }
+        },
+        {
+          "id": "o8vr85",
+          "title": "US fashion retailers outline four tariff impacts on sourcing, supply strategies",
+          "url": "https://www.just-style.com/features/us-fashion-retailers-outline-four-tariff-impacts-on-sourcing-supply-strategies/",
+          "source": "Just Style",
+          "published_at": "2026-04-17T10:48:17.000Z",
+          "ingested_at": "2026-04-19T07:40:25.149Z",
+          "snippet": "Earnings data of 30 leading publicly traded US fashion firms reveal four ways tariff hikes have impacted sourcing and business practices.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": -0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0,
+            "insightSignalBoost": 0.05,
+            "penalty": 0.2,
+            "matchedKeywords": []
+          },
+          "aiSummary": "AI-generated summary: Earnings data from 30 leading US fashion retailers highlight four distinct ways recent tariff increases have affected their sourcing and supply strategies. The findings provide insight into how tariff hikes are reshaping business practices in the luxury and consumer fashion sector.",
+          "translations": {
+            "da": {
+              "title": "US modeforhandlere skitserer fire toldpåvirkninger på sourcing og forsyningsstrategier",
+              "summary": "AI-genereret resumé: Indtjeningsdata fra 30 førende amerikanske modeforhandlere fremhæver fire forskellige måder, hvorpå nylige toldforhøjelser har påvirket deres sourcing- og forsyningsstrategier. Resultaterne giver indsigt i, hvordan toldstigninger omformer forretningspraksis i luksus- og forbrugermodebranchen."
+            },
+            "es": {
+              "title": "Minoristas de moda de EE. UU. describen cuatro impactos arancelarios en estrategias de abastecimiento y suministro",
+              "summary": "Resumen generado por IA: Los datos de ganancias de 30 principales minoristas de moda de EE. UU. destacan cuatro formas distintas en que los recientes aumentos arancelarios han afectado sus estrategias de abastecimiento y suministro. Los hallazgos ofrecen una visión de cómo los incrementos arancelarios están remodelando las prácticas comerciales en el sector de moda de lujo y consumo."
+            }
+          }
+        },
+        {
+          "id": "tqspim",
+          "title": "ShopMy’s New Personal Shopping Service Is Powered by Actual Humans",
+          "url": "https://fashionista.com/2026/04/shopmy-noir-personal-shopping-experience-feature-launch",
+          "source": "Fashionista",
+          "published_at": "2026-04-15T11:00:00.000Z",
+          "ingested_at": "2026-04-19T07:40:25.149Z",
+          "snippet": "\"Noir\" gives the platform's top spenders access to customized recommendations from real creators.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": []
+          },
+          "aiSummary": "AI-generated summary: ShopMy's new personal shopping service, \"Noir,\" offers the platform's highest spenders personalized recommendations curated by real creators, enhancing the luxury consumer experience.",
+          "translations": {
+            "da": {
+              "title": "ShopMy’s nye personlige shoppingservice drives af rigtige mennesker",
+              "summary": "ShopMys nye personlige shoppingservice, \"Noir,\" tilbyder platformens største forbrugere personlige anbefalinger udvalgt af rigtige skabere, hvilket forbedrer luksusforbrugeroplevelsen."
+            },
+            "es": {
+              "title": "El nuevo servicio de compras personales de ShopMy está impulsado por humanos reales",
+              "summary": "El nuevo servicio de compras personales de ShopMy, \"Noir,\" ofrece a los mayores gastadores de la plataforma recomendaciones personalizadas seleccionadas por creadores reales, mejorando la experiencia del consumidor de lujo."
+            }
+          }
+        },
+        {
+          "id": "1x0m7d",
+          "title": "Cyber-attacks one year on: is fashion retail more secure?",
+          "url": "https://www.drapersonline.com/topics/digital-and-tech-topics/how-is-fashion-retail-recovering-from-cyber-attacks",
+          "source": "Drapers",
+          "published_at": "2026-04-17T15:37:00.000Z",
+          "ingested_at": "2026-04-19T07:40:25.149Z",
+          "snippet": "Drapers\nCyber-attacks one year on: is fashion retail more secure?\nLast year’s cyber-attacks on some of the industry’s biggest names have forced fashion retail to take security seriously – but despite greater investment, there remains a lack confidence in their defences.\nThe post Cyber-attacks one year on: is fashion retail more secure? appeared first on Drapers.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": []
+          },
+          "aiSummary": "AI-generated summary: One year after major cyber-attacks, the fashion retail industry has increased its investment in security, yet confidence in its defenses remains low, according to Drapers.",
+          "translations": {
+            "da": {
+              "title": "Cyberangreb et år efter: er modebranchen mere sikker?",
+              "summary": "AI-genereret resumé: Et år efter store cyberangreb har modebranchen øget sine investeringer i sikkerhed, men tilliden til forsvarene er stadig lav, ifølge Drapers."
+            },
+            "es": {
+              "title": "Ciberataques un año después: ¿es el comercio de moda más seguro?",
+              "summary": "Resumen generado por IA: Un año después de los grandes ciberataques, la industria de la moda ha incrementado su inversión en seguridad, pero la confianza en sus defensas sigue siendo baja, según Drapers."
+            }
+          }
+        },
+        {
+          "id": "ggwyn",
+          "title": "Susie Cave to Launch Appointment-Only Storefront in London",
+          "url": "https://www.businessoffashion.com/news/luxury/susie-cave-to-launch-appointment-only-storefront-in-london/",
+          "source": "Business of Fashion - News",
+          "published_at": "2026-04-17T19:24:06.000Z",
+          "ingested_at": "2026-04-19T07:40:25.149Z",
+          "snippet": "Two years after shuttering her brand The Vampire’s Wife, the designer will open a demi-couture boutique in Kensington.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "brand"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Two years after closing her brand The Vampire’s Wife, Susie Cave plans to open an appointment-only demi-couture boutique in Kensington, London.",
+          "translations": {
+            "da": {
+              "title": "Susie Cave åbner butik kun efter aftale i London",
+              "summary": "AI-genereret resumé: To år efter at have lukket sit brand The Vampire’s Wife planlægger Susie Cave at åbne en demi-couture butik kun efter aftale i Kensington, London."
+            },
+            "es": {
+              "title": "Susie Cave abrirá tienda solo con cita previa en Londres",
+              "summary": "Resumen generado por IA: Dos años después de cerrar su marca The Vampire’s Wife, Susie Cave planea abrir una boutique demi-couture solo con cita previa en Kensington, Londres."
+            }
+          }
+        },
+        {
+          "id": "6eq9mi",
+          "title": "When the Supply Chain Becomes the Story",
+          "url": "https://www.businessoffashion.com/articles/beauty/davines-hair-care-relaunch-sustainability/",
+          "source": "Business of Fashion - News",
+          "published_at": "2026-04-17T12:00:00.000Z",
+          "ingested_at": "2026-04-19T07:40:25.149Z",
+          "snippet": "In an industry plagued by greenwashing and waning consumer interest in environmental impact, legacy brand Davines is betting on sustainability as lifestyle branding.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "consumer",
+              "brand"
+            ]
+          },
+          "aiSummary": "AI-generated summary: The article discusses how legacy brand Davines is focusing on sustainability as a core aspect of its lifestyle branding amid challenges of greenwashing and declining consumer interest in environmental issues within the luxury and consumer sector.",
+          "translations": {
+            "da": {
+              "title": "Når forsyningskæden bliver historien",
+              "summary": "AI-genereret resumé: Artiklen diskuterer, hvordan det etablerede brand Davines fokuserer på bæredygtighed som en kerne i sin livsstilsbranding midt i udfordringer med greenwashing og faldende forbrugerinteresse for miljøspørgsmål inden for luksus- og forbrugersektoren."
+            },
+            "es": {
+              "title": "Cuando la cadena de suministro se convierte en la historia",
+              "summary": "Resumen generado por IA: El artículo analiza cómo la marca tradicional Davines se centra en la sostenibilidad como un aspecto clave de su marca de estilo de vida en medio de los desafíos del greenwashing y el descenso del interés del consumidor en temas ambientales dentro del sector de lujo y consumo."
+            }
+          }
+        }
+      ]
+    },
+    "Jewellery_Industry": {
+      "total": 29,
+      "top": [
+        {
+          "id": "h755io",
+          "title": "Fashion Briefing: Gold prices are skyrocketing, squeezing the jewelry industry’s margins in uncomfortable ways",
+          "url": "https://www.glossy.co/fashion/fashion-briefing-gold-prices-are-skyrocketing-squeezing-the-jewelry-industrys-margins-in-uncomfortable-ways/?utm_campaign=glossydis&utm_medium=rss&utm_source=general-rss",
+          "source": "Glossy",
+          "published_at": "2026-04-16T04:00:00.000Z",
+          "ingested_at": "2026-04-19T07:40:25.149Z",
+          "snippet": "The last year has seen the price of gold skyrocket, thanks to steady inflation and tensions in the Middle East. In January, gold futures surpassed $4,900 for the first time in history and briefly reached $5,500. Now, many analysts are predicting that the price could top $6,000 by the end of the year.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": -0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0.2,
+            "matchedKeywords": [
+              "jewelry",
+              "gold"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Gold prices have surged dramatically over the past year due to inflation and Middle East tensions, with futures recently exceeding $5,500 and forecasts suggesting they may surpass $6,000 by year-end, putting significant pressure on the jewelry industry's profit margins.",
+          "translations": {
+            "da": {
+              "title": "Fashion Briefing: Guldpriserne stiger kraftigt og presser smykkeindustriens marginer på ubehagelige måder",
+              "summary": "AI-genereret resumé: Guldpriserne er steget dramatisk det seneste år på grund af inflation og spændinger i Mellemøsten, med futures der for nylig oversteg $5.500 og prognoser, der antyder, at de kan overstige $6.000 ved årets udgang, hvilket lægger betydeligt pres på smykkeindustriens profitmarginer."
+            },
+            "es": {
+              "title": "Fashion Briefing: Los precios del oro se disparan, presionando los márgenes de la industria de joyería de manera incómoda",
+              "summary": "Resumen generado por IA: Los precios del oro han aumentado drásticamente en el último año debido a la inflación y las tensiones en Medio Oriente, con futuros que recientemente superaron los $5,500 y pronósticos que sugieren que podrían superar los $6,000 para fin de año, ejerciendo una presión significativa sobre los márgenes de beneficio de la industria de la joyería."
+            }
+          }
+        },
+        {
+          "id": "djmlps",
+          "title": "Signet Jewelers repositions H. Samuel and Ernest Jones within the watch market",
+          "url": "https://www.watchpro.com/signet-jewelers-repositions-h-samuel-and-ernest-jones-within-the-watch-market/",
+          "source": "WatchPro",
+          "published_at": "2026-04-14T14:21:37.000Z",
+          "ingested_at": "2026-04-19T07:40:25.149Z",
+          "snippet": "It has been a rollercoaster six years since Neil Old took the reins as managing director of Signet Jewelers’ UK business, which operates national jewellery chains H. Samuel and Ernest Jones. Starting in 2019, he almost immediately had to close every showroom because of the pandemic. Two years later war in Ukraine broke out. Since […]\nThe post Signet Jewelers repositions H. Samuel and Ernest Jones within the watch market appeared first on WATCHPRO.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": -0.04999999999999999,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0,
+            "penalty": 0.2,
+            "matchedKeywords": [
+              "watch",
+              "jewellery",
+              "jeweller"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Since Neil Old became managing director of Signet Jewelers’ UK business in 2019, the company has faced significant challenges including pandemic-related showroom closures and the war in Ukraine, leading to a strategic repositioning of its H. Samuel and Ernest Jones brands within the watch market.",
+          "translations": {
+            "da": {
+              "title": "Signet Jewelers repositionerer H. Samuel og Ernest Jones inden for urmærkemarkedet",
+              "summary": "AI-genereret resumé: Siden Neil Old blev administrerende direktør for Signet Jewelers’ UK-forretning i 2019, har virksomheden stået over for betydelige udfordringer, herunder pandemirelaterede lukninger af showroom og krigen i Ukraine, hvilket har ført til en strategisk repositionering af H. Samuel og Ernest Jones-mærkerne inden for urmærkemarkedet."
+            },
+            "es": {
+              "title": "Signet Jewelers reposiciona a H. Samuel y Ernest Jones dentro del mercado de relojes",
+              "summary": "Resumen generado por IA: Desde que Neil Old se convirtió en director general del negocio de Signet Jewelers en el Reino Unido en 2019, la empresa ha enfrentado desafíos significativos, incluyendo cierres de salas de exposición relacionados con la pandemia y la guerra en Ucrania, lo que ha llevado a una reposicionamiento estratégico de las marcas H. Samuel y Ernest Jones dentro del mercado de relojes."
+            }
+          }
+        },
+        {
+          "id": "o4zsch",
+          "title": "Jewellery sales rise at stores across Australia in March",
+          "url": "https://www.jewellermagazine.com/Article/14984/Jewellery-sales-rise-at-stores-across-Australia-in-March",
+          "source": "Jeweller - Business News",
+          "published_at": "2026-04-13T14:00:00.000Z",
+          "ingested_at": "2026-04-19T07:40:25.149Z",
+          "snippet": "Jewellery sales rose at independent jewellery stores in Australia, according to the latest monthly report from Retail Edge Consultants.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.25,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "jewellery",
+              "jeweller"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Jewellery sales increased at independent stores across Australia in March, as reported by Retail Edge Consultants, according to the latest industry data.",
+          "translations": {
+            "da": {
+              "title": "Smykkesalg stiger i butikker over hele Australien i marts",
+              "summary": "AI-genereret resumé: Smykkesalget steg i uafhængige butikker over hele Australien i marts, rapporteret af Retail Edge Consultants ifølge de seneste branchedata."
+            },
+            "es": {
+              "title": "Aumentan las ventas de joyería en tiendas de toda Australia en marzo",
+              "summary": "Resumen generado por IA: Las ventas de joyería aumentaron en tiendas independientes de toda Australia en marzo, según informó Retail Edge Consultants, de acuerdo con los últimos datos del sector."
+            }
+          }
+        },
+        {
+          "id": "vfdhnr",
+          "title": "Smart tech: The Village heads to the Australian Jewellery Fair",
+          "url": "https://www.jewellermagazine.com/Article/14983/Smart-tech-The-Village-heads-to-the-Australian-Jewellery-Fair",
+          "source": "Jeweller - Business News",
+          "published_at": "2026-04-13T14:00:00.000Z",
+          "ingested_at": "2026-04-19T07:40:25.149Z",
+          "snippet": "After a successful debut in Sydney last year, ‘The Village’ concept will return at the upcoming Australian Jewellery Fair next week.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0.2,
+            "matchedKeywords": [
+              "jewellery",
+              "jeweller"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Following a successful debut in Sydney last year, ‘The Village’ concept is set to return at the upcoming Australian Jewellery Fair next week.",
+          "translations": {
+            "da": {
+              "title": "Smart tech: The Village deltager i Australian Jewellery Fair",
+              "summary": "AI-genereret resumé: Efter en succesfuld debut i Sydney sidste år vender ‘The Village’-konceptet tilbage til Australian Jewellery Fair næste uge."
+            },
+            "es": {
+              "title": "Smart tech: The Village en la Australian Jewellery Fair",
+              "summary": "Resumen generado por IA: Tras un exitoso debut en Sídney el año pasado, el concepto ‘The Village’ regresará en la próxima Australian Jewellery Fair la semana que viene."
+            }
+          }
+        },
+        {
+          "id": "9x8sol",
+          "title": "Lead by example: Why Pandora wants to join forces with other companies to make the world a more sustainable place",
+          "url": "https://www.professionaljeweller.com/pandora-join-forces-world-sustainable/",
+          "source": "Professional Jeweller",
+          "published_at": "2026-04-17T07:15:00.000Z",
+          "ingested_at": "2026-04-19T07:40:25.149Z",
+          "snippet": "In its 2026 Global 100 ranking, research company Corporate Knights named Pandora the world’s most sustainable consumer brand. Pandora has placed second overall amongst over 8,000 other assessed companies, underlining its position as a global sustainability leader. The recognition reflects its transformation towards recycled materials and renewable energy. How important are independent rankings like these […]\nThe post Lead by example: Why Pandora wants to join forces with other companies to make ...",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": -0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0,
+            "insightSignalBoost": 0,
+            "penalty": 0.2,
+            "matchedKeywords": []
+          },
+          "aiSummary": "AI-generated summary: In 2026, Pandora was named the world’s most sustainable consumer brand and ranked second overall among over 8,000 companies by Corporate Knights, highlighting its leadership in sustainability through the use of recycled materials and renewable energy. The company aims to collaborate with others to further promote global sustainability in the jewellery industry.",
+          "translations": {
+            "da": {
+              "title": "Led ved eksempel: Derfor vil Pandora samarbejde med andre virksomheder for at gøre verden mere bæredygtig",
+              "summary": "AI-genereret resumé: I 2026 blev Pandora kåret som verdens mest bæredygtige forbrugerbrand og nummer to blandt over 8.000 virksomheder af Corporate Knights, hvilket fremhæver deres lederskab inden for bæredygtighed gennem brug af genanvendte materialer og vedvarende energi. Virksomheden ønsker at samarbejde med andre for at fremme global bæredygtighed i smykkeindustrien."
+            },
+            "es": {
+              "title": "Predicar con el ejemplo: Por qué Pandora quiere unirse a otras empresas para hacer del mundo un lugar más sostenible",
+              "summary": "Resumen generado por IA: En 2026, Pandora fue nombrada la marca de consumo más sostenible del mundo y se ubicó en segundo lugar entre más de 8,000 empresas según Corporate Knights, destacando su liderazgo en sostenibilidad mediante el uso de materiales reciclados y energía renovable. La empresa busca colaborar con otras para promover aún más la sostenibilidad global en la industria de la joyería."
+            }
+          }
+        },
+        {
+          "id": "x7jszc",
+          "title": "Jewelry Veteran Robert Manse Joins ShineBright as Sales & Marketing President",
+          "url": "https://instoremag.com/jewelry-veteran-robert-manse-joins-shinebright-as-sales-marketing-president/",
+          "source": "Instore Magazine",
+          "published_at": "2026-04-16T19:33:45.000Z",
+          "ingested_at": "2026-04-19T07:40:25.149Z",
+          "snippet": "Robert will lead sales and marketing, strengthening retail partnerships, boosting brand positioning, and expanding distribution.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": -0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0.2,
+            "matchedKeywords": [
+              "jewelry"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Jewelry industry veteran Robert Manse has joined ShineBright as Sales & Marketing President, where he will lead efforts to strengthen retail partnerships, enhance brand positioning, and expand distribution.",
+          "translations": {
+            "da": {
+              "title": "Smykkeveteran Robert Manse tiltræder ShineBright som salgs- og marketingpræsident",
+              "summary": "AI-genereret resumé: Smykkeindustriveteranen Robert Manse er tiltrådt ShineBright som salgs- og marketingpræsident, hvor han vil lede indsatsen for at styrke detailpartnerskaber, forbedre brandpositionering og udvide distributionen."
+            },
+            "es": {
+              "title": "El veterano de la joyería Robert Manse se une a ShineBright como presidente de ventas y marketing",
+              "summary": "Resumen generado por IA: El veterano de la industria de la joyería Robert Manse se ha unido a ShineBright como presidente de ventas y marketing, donde liderará los esfuerzos para fortalecer las alianzas minoristas, mejorar el posicionamiento de la marca y expandir la distribución."
+            }
+          }
+        },
+        {
+          "id": "ognyz1",
+          "title": "Spring & Mother’s Day Must-Haves: Natural & Lab-Grown Diamond Jewelry",
+          "url": "https://instoremag.com/spring-mothers-day-must-haves-natural-lab-grown-diamond-jewelry/",
+          "source": "Instore Magazine",
+          "published_at": "2026-04-16T21:47:23.000Z",
+          "ingested_at": "2026-04-19T07:40:25.149Z",
+          "snippet": "GN Diamond offers versatile jewelry programs for everyday wear and gifting.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "jewelry",
+              "diamond"
+            ]
+          },
+          "aiSummary": "AI-generated summary: GN Diamond provides versatile natural and lab-grown diamond jewelry programs ideal for everyday wear and gifting, highlighted as spring and Mother’s Day must-haves in the jewellery industry.",
+          "translations": {
+            "da": {
+              "title": "Forår & Mors Dag Must-Haves: Naturlige & Laboratoriedyrkede Diamantsmykker",
+              "summary": "AI-genereret resumé: GN Diamond tilbyder alsidige programmer med naturlige og laboratoriedyrkede diamantsmykker, ideelle til daglig brug og gaver, fremhævet som must-haves til forår og Mors Dag i smykkeindustrien."
+            },
+            "es": {
+              "title": "Imprescindibles de Primavera y Día de la Madre: Joyería de Diamantes Naturales y Cultivados en Laboratorio",
+              "summary": "Resumen generado por IA: GN Diamond ofrece programas versátiles de joyería con diamantes naturales y cultivados en laboratorio, ideales para uso diario y regalos, destacados como imprescindibles de primavera y Día de la Madre en la industria de la joyería."
+            }
+          }
+        }
+      ]
+    }
+  },
+  "editorialTake": "Amazon’s $10.8 billion acquisition of Globalstar is a bold move to control satellite internet infrastructure, not just expand cloud services. This isn’t about connectivity alone; it’s about owning the backbone for next-gen ecommerce and logistics. Amazon wants to bypass traditional telecom bottlenecks, enabling seamless global coverage for its delivery network and retail platforms. This vertical integration could redefine how ecommerce scales internationally, especially in underserved regions.\n\nThe real question is how competitors will respond when Amazon controls both the satellite pipes and the retail ecosystem. Will this force a new wave of consolidation or push rivals to double down on partnerships with telecom giants? Amazon’s bet on satellite infrastructure challenges the assumption that ecommerce growth depends solely on digital innovation rather than physical network control.",
+  "coverImageUrl": "/weekly-images/2026-W16.png",
+  "coverImageAlt": "Weekly cover illustration for 2026-W16"
+}

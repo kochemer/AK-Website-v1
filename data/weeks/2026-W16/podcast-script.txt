@@ -1,0 +1,101 @@
+[Intro]
+
+Host:  
+Hello, and welcome to Weekly Luxury Intelligence, your go-to podcast for the latest insights in ecommerce, jewellery, luxury, and AI. You’re listening to week 16 of 2026, and we’ve got a packed episode today with major moves from Amazon, shifts in retail payments, gold price surges, and some sobering news from the luxury sector. Let’s dive right in.
+
+---
+
+[Segment 1: Amazon Buys Globalstar for $10.8 Billion – Expanding Satellite Internet]
+
+Host:  
+Our first story comes from the tech world but with big implications for ecommerce and luxury retail. Amazon has announced its acquisition of satellite communications company Globalstar for a whopping $10.8 billion. This move is aimed at expanding Amazon’s satellite internet service, which puts it in direct competition with Elon Musk’s Starlink.
+
+Why does this matter to our audience? Well, reliable global internet connectivity is increasingly critical for ecommerce platforms, luxury brands, and even jewellery retailers who want to reach customers in remote or underserved locations. Amazon’s strategy here seems clear: bolster its infrastructure to provide seamless, high-speed connectivity worldwide, enabling faster transactions, better customer service, and innovative retail experiences.
+
+Globalstar’s satellite network will complement Amazon’s existing Project Kuiper, potentially giving Amazon a massive edge in the emerging satellite internet market. This could revolutionize how luxury goods are marketed and sold globally, especially in regions where traditional internet infrastructure is lacking.
+
+---
+
+[Segment 2: Airwallex Takes Its Cross-Border Play In-Store]
+
+Host:  
+Next up, let’s talk about Airwallex, the Australia-based fintech company that’s making waves by launching an in-store point-of-sale system designed for international merchants. This launch is a strategic extension of Airwallex’s cross-border payment services, now enabling businesses to accept in-person payments across multiple countries seamlessly.
+
+For ecommerce and luxury retailers expanding internationally, this is a game changer. Managing payments across borders can be a logistical headache, with currency conversions, regulatory compliance, and payment processing fees adding complexity and cost.
+
+Airwallex’s system simplifies this by integrating cross-border payment capabilities directly at the physical point of sale, making it easier for brands to enter new markets without the friction traditionally associated with international retail. It’s a smart move that sets Airwallex apart in the highly competitive retail tech space and could accelerate global expansion for many luxury and jewellery brands.
+
+---
+
+[Segment 3: UK Subscription SMEs Lose £160k a Year to Failed Payments]
+
+Host:  
+Shifting gears to subscription-based businesses in the UK, a new study commissioned by Access PaySuite has revealed that SMEs operating membership or subscription models are losing an average of £159,500 annually due to failed payments, abandoned renewals, and checkout friction.
+
+This is a substantial hit, especially for small and medium-sized enterprises trying to build steady revenue streams. Payment failures and poor customer renewal experiences can erode trust and limit growth, which is particularly problematic in the luxury and subscription ecommerce space, where customer retention is crucial.
+
+The study highlights the need for better payment infrastructure and customer engagement strategies. For luxury brands moving into subscriptions—whether for jewellery rental, exclusive memberships, or curated product boxes—addressing these issues could make the difference between thriving and struggling.
+
+---
+
+[Segment 4: Gold Prices Skyrocket, Squeezing Jewellery Industry Margins]
+
+Host:  
+Turning to the jewellery sector, gold prices have surged dramatically over the past year. Inflationary pressures and geopolitical tensions in the Middle East have driven gold futures beyond $5,500 an ounce, with forecasts suggesting prices could exceed $6,000 by the end of 2026.
+
+This sharp rise is squeezing profit margins for jewellery retailers and manufacturers who rely heavily on gold as a raw material. Many brands are forced to either absorb these costs or pass them on to consumers, which can impact sales volumes and customer loyalty.
+
+For luxury jewellery brands, this environment demands creative strategies—whether that means exploring alternative materials, adjusting pricing models, or enhancing the perceived value through design and craftsmanship to justify premium pricing despite rising costs.
+
+---
+
+[Segment 5: Signet Jewelers Repositions H. Samuel and Ernest Jones in the Watch Market]
+
+Host:  
+On the topic of jewellery and watches, Signet Jewelers, one of the world’s largest specialty jewelry retailers, has been repositioning its UK brands H. Samuel and Ernest Jones within the watch market. Since Neil Old took over as managing director in 2019, the company has weathered significant challenges including showroom closures during the pandemic and supply chain disruptions linked to the war in Ukraine.
+
+The repositioning involves refining brand identities and targeting different segments of the watch market to better meet consumer demand. For example, Ernest Jones is being steered toward a more premium watch offering, while H. Samuel is focusing on accessibility and entry-level luxury watches.
+
+This strategic pivot aims to capitalize on the growing interest in watches as both fashion statements and investment pieces, especially important as the jewellery sector contends with external pressures like rising gold prices.
+
+---
+
+[Segment 6: First-Quarter Revenue at Kering Drops 6%]
+
+Host:  
+In luxury brand news, Kering, the French conglomerate behind brands like Gucci and Boucheron, reported a 6% decline in first-quarter revenue. While their jewelry houses saw strong double-digit growth, this was offset by weaker sales from some of their flagship brands such as Gucci.
+
+This mixed performance shows the ongoing challenges in the luxury market as consumer spending patterns shift. Jewelry remains a bright spot, reflecting sustained demand for high-end accessories, but the softening in apparel and other categories suggests that the luxury rebound is not yet fully realized.
+
+For ecommerce and retail professionals, this signals the importance of diversifying product portfolios and staying agile to meet changing consumer preferences.
+
+---
+
+[Segment 7: The Luxury Rebound Gets a Reality Check]
+
+Host:  
+Supporting that view is a broader analysis from the Business of Fashion, which reports that early 2026 first-quarter revenues from French luxury giants LVMH, Kering, and Hermès have fallen short of expectations.
+
+This reality check tempers the optimism around a strong luxury sector recovery this year. Factors like geopolitical instability, inflationary pressures, and cautious consumer spending are all contributing to a slower rebound than many anticipated.
+
+For luxury brands and retailers, it’s a reminder that resilience and innovation remain critical. Digital transformation, personalized experiences, and targeted marketing will be key to navigating this complex landscape.
+
+---
+
+[Segment 8: AI Chip Startup Cerebras Files for IPO]
+
+Host:  
+Finally, in the tech and AI space, Cerebras, a startup specializing in AI chips, has filed for an IPO. The company has recently secured major partnerships, including a deal with Amazon Web Services to deploy its chips in AWS data centers and a reported $10 billion agreement with OpenAI.
+
+Why is this relevant for our listeners? AI is increasingly shaping ecommerce and luxury retail—from personalized recommendations to inventory management and customer service automation. Cerebras’s advanced AI hardware could accelerate these trends by providing the computational power needed for more sophisticated AI applications.
+
+As AI technology evolves, luxury brands that adopt these innovations early may gain significant competitive advantages in efficiency and customer engagement.
+
+---
+
+[Closing]
+
+Host:  
+That wraps up this week’s edition of Weekly Luxury Intelligence. Thanks for tuning in to week 16 of 2026. Join us next week as we continue to track the evolving intersections of ecommerce, luxury, jewellery, and AI. Until then, stay informed and stay ahead.  
+
+I’m [Host Name], and this has been Weekly Luxury Intelligence. Talk soon!

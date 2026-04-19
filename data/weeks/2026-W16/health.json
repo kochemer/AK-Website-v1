@@ -1,0 +1,77 @@
+{
+  "digestWeek": "2026-W16",
+  "ingestionWeek": "2026-W16",
+  "startedAt": "2026-04-19T07:40:25.129Z",
+  "finishedAt": "2026-04-19T07:56:50.149Z",
+  "steps": [
+    {
+      "name": "rss",
+      "ok": true,
+      "startedAt": "2026-04-19T07:40:25.148Z",
+      "finishedAt": "2026-04-19T07:40:47.435Z"
+    },
+    {
+      "name": "pages",
+      "ok": true,
+      "startedAt": "2026-04-19T07:40:47.435Z",
+      "finishedAt": "2026-04-19T07:40:48.888Z"
+    },
+    {
+      "name": "discovery",
+      "ok": true,
+      "startedAt": "2026-04-19T07:40:48.889Z",
+      "finishedAt": "2026-04-19T07:51:43.005Z"
+    },
+    {
+      "name": "classification",
+      "ok": true,
+      "startedAt": "2026-04-19T07:51:43.006Z",
+      "finishedAt": "2026-04-19T07:51:43.100Z"
+    },
+    {
+      "name": "digest",
+      "ok": true,
+      "startedAt": "2026-04-19T07:51:43.100Z",
+      "finishedAt": "2026-04-19T07:53:51.905Z"
+    },
+    {
+      "name": "email",
+      "ok": true,
+      "startedAt": "2026-04-19T07:53:51.905Z",
+      "finishedAt": "2026-04-19T07:54:13.182Z"
+    },
+    {
+      "name": "podcast",
+      "ok": true,
+      "startedAt": "2026-04-19T07:54:13.182Z",
+      "finishedAt": "2026-04-19T07:55:34.989Z"
+    },
+    {
+      "name": "cover",
+      "ok": true,
+      "startedAt": "2026-04-19T07:55:34.989Z",
+      "finishedAt": "2026-04-19T07:56:35.244Z"
+    },
+    {
+      "name": "competitorAnalyze",
+      "ok": true,
+      "startedAt": "2026-04-19T07:56:35.244Z",
+      "finishedAt": "2026-04-19T07:56:50.147Z"
+    }
+  ],
+  "health": {
+    "warnings": [
+      "Podcast script word count: 1207 words (minimum: 1500)",
+      "Ecommerce & Retail Tech: internetretailing.net represents 42.9% (3/7) - exceeds 40% threshold",
+      "Luxury & Consumer: www.businessoffashion.com represents 42.9% (3/7) - exceeds 40% threshold"
+    ],
+    "metrics": {
+      "paywallPercent": 0,
+      "podcastWordCount": 1207
+    }
+  },
+  "versions": {
+    "node": "v20.20.2",
+    "gitCommit": "3bfb65423bdc648c6350dfc2ab9f89bff6baf63b"
+  }
+}

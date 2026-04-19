@@ -452,5 +452,26 @@
     "version": "v3",
     "cached_at": "2026-04-12T07:40:22.360Z",
     "variant": "safe"
+  },
+  "234a875040e7663e9339225cf3d68a246babf98c3cf695c30d795a2cac051ea5": {
+    "output": {
+      "concept": "gold-bar-scanner-literal-metaphor",
+      "primaryHumorDriver": "literal metaphor",
+      "secondaryEnhancer": "unexpected texture/material combination",
+      "sceneDescription": "On a bright supermarket checkout counter, a stack of oversized, gleaming gold bars sits on the conveyor belt next to a compact satellite dish and a modern point-of-sale card reader. A store clerk’s hand (out of focus) is just about to scan a gold bar with a barcode scanner. Tucked among the items, a reusable shopping bag peeks out with subtle NYTimes Technology, Payments Journal, and Glossy logos as store-brand tags. The surreal mix literalizes high gold prices (gold bars as everyday groceries), satellite internet (dish), and global payments (POS terminal), making the ordinary checkout process absurdly valuable.",
+      "finalImagePrompt": "A supermarket checkout conveyor holds three large gold bars, a satellite dish, and a sleek point-of-sale card reader. A store-branded reusable bag with subtle logos is tucked behind the items. The scene is naturally lit, with gold bars gleaming on a standard gray conveyor in a real supermarket setting.",
+      "negativePrompt": [
+        "text, letters, numbers, signage, labels, price tags",
+        "screens, UI, dashboards, holograms, floating icons",
+        "watermarks, unrelated brand logos",
+        "cartoon, illustration, CGI, 3D render, anime",
+        "diamond, diamonds, gemstone, gemstones, precious stones, jewelry close-up, jewelry product shot, diamond ring, diamond necklace, diamond earring, jeweled, sparkling gemstone",
+        "dramatic spotlight, glowing edges, rim lighting, vignette, cinematic color grade, blurred background, bokeh"
+      ],
+      "confidence": 0.74
+    },
+    "version": "v3",
+    "cached_at": "2026-04-19T07:55:38.057Z",
+    "variant": "safe"
   }
 }

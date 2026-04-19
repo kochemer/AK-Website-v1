@@ -1,0 +1,95 @@
+{
+  "week": "2026-W16",
+  "generatedAt": "2026-04-19T07:54:13.181Z",
+  "intro": "This week’s intelligence digest highlights key developments across retail, luxury, and AI sectors, including Airwallex’s expansion into in-store cross-border payments and Cerebras’ IPO filing amid shifting AI market dynamics. Additionally, rising gold prices are impacting jewelry margins, while data security lapses and strategic moves by brands like DoorDash and ShineBright signal evolving challenges and opportunities in the industry.",
+  "readOneThing": {
+    "title": "Airwallex Takes Its Cross-Border Play In-Store",
+    "url": "https://www.paymentsjournal.com/airwallex-takes-its-cross-border-play-in-store/"
+  },
+  "items": [
+    {
+      "rank": 1,
+      "title": "Airwallex Takes Its Cross-Border Play In-Store",
+      "url": "https://www.paymentsjournal.com/airwallex-takes-its-cross-border-play-in-store/",
+      "source": "Payments Journal",
+      "bullets": [
+        "Airwallex launched an in-store point-of-sale system that enables businesses to accept cross-border in-person payments through a single platform.",
+        "The company holds nearly 90 regulatory licenses across about 50 markets and connects to local payment networks in over 100 countries.",
+        "Merchants expanding internationally face operational challenges like onboarding local acquirers and managing domestic vendors, which Airwallex aims to simplify."
+      ],
+      "summary": "AI-generated summary: Airwallex has launched an in-store point-of-sale system aimed at simplifying international expansion for merchants by enabling businesses to accept in-person payments across multiple countries. This move positions the Australia-based fintech to differentiate itself in the competitive ecommerce and retail tech market."
+    },
+    {
+      "rank": 2,
+      "title": "Fashion Briefing: Gold prices are skyrocketing, squeezing the jewelry industry’s margins in uncomfortable ways",
+      "url": "https://www.glossy.co/fashion/fashion-briefing-gold-prices-are-skyrocketing-squeezing-the-jewelry-industrys-margins-in-uncomfortable-ways/?utm_campaign=glossydis&utm_medium=rss&utm_source=general-rss",
+      "source": "Glossy",
+      "bullets": [
+        "Gold prices have surged over 50% in the past year, reaching historic highs above $4,900 per ounce and impacting the jewelry industry significantly.",
+        "Jewelry brand Ring Concierge reported that gold now makes up 60% of their material costs, leading to a 10% price increase and reduced sales volume.",
+        "Analysts predict gold prices could exceed $6,000 by year-end, prompting shifts toward lighter gold pieces, alternative metals, and more diamond-heavy designs in the industry."
+      ],
+      "summary": "AI-generated summary: Gold prices have surged dramatically over the past year due to inflation and Middle East tensions, with futures recently exceeding $5,500 and forecasts suggesting they may surpass $6,000 by year-end, putting significant pressure on the jewelry industry's profit margins."
+    },
+    {
+      "rank": 3,
+      "title": "AI chip startup Cerebras files for IPO",
+      "url": "https://techcrunch.com/2026/04/18/ai-chip-startup-cerebras-files-for-ipo/",
+      "source": "TechCrunch - AI",
+      "bullets": [
+        "Cerebras Systems, an AI chip startup, has filed for an initial public offering planned for mid-May after previously withdrawing its 2024 IPO filing. The company reported $510 million in revenue and a net income of $237.8 million in 2025, with a non-GAAP net loss of $75.7 million excluding one-time items. Cerebras recently secured deals with Amazon Web Services and OpenAI, with the latter reportedly worth over $10 billion, and raised $2.1 billion in funding at a $23 billion valuation.",
+        "The company previously filed for an initial public offering in 2024, but that was delayed due to a federal review of an investment from Abu Dhabi-based G42 and was ultimately withdrawn",
+        "Cerebras raised a $1.1 billion Series G last year, followed by a $1 billion Series H in February at a $23 billion valuation, according to the Wall Street Journal"
+      ],
+      "summary": "AI-generated summary: AI chip startup Cerebras has filed for an IPO following recent major agreements, including a partnership with Amazon Web Services to deploy its chips in AWS data centers and a reported $10 billion deal with OpenAI."
+    },
+    {
+      "rank": 4,
+      "title": "Marketplace Briefing: How DoorDash is winning over apparel brands",
+      "url": "https://www.modernretail.co/technology/marketplace-briefing-how-doordash-is-winning-over-apparel-brands/?utm_campaign=modernretaildis&utm_medium=rss&utm_source=general-rss",
+      "source": "Modern Retail",
+      "bullets": [
+        "DoorDash announced new partnerships with apparel brands Urban Outfitters, Steve Madden, Dolce Vita, and Rally House to expand its marketplace beyond food delivery.",
+        "In the fourth quarter, DoorDash's gross order value increased 39% year over year, reaching an expected $31 billion to $31.8 billion by March.",
+        "DoorDash has grown its non-restaurant retail partners from 115,000 in 2024 to over 150,000, including major retailers like Best Buy, Lowe's, and Petco."
+      ],
+      "summary": "AI-generated summary: DoorDash is broadening its services beyond food delivery by forming partnerships with apparel brands, viewing this move as a natural extension of its original vision, according to Mike Goldblatt, VP of enterprise sales and business development."
+    },
+    {
+      "rank": 5,
+      "title": "Slow revenue conversion to dog IT companies as AI queers the pitch ",
+      "url": "https://economictimes.indiatimes.com/tech/information-tech/slow-revenue-conversion-to-dog-it-companies-as-ai-queers-the-pitch/articleshow/130340778.cms",
+      "source": "Economic Times - Technology",
+      "bullets": [
+        "Tata Consultancy Services and Wipro reported declines in annual revenue despite increases in their total contract values, reflecting slow revenue conversion and competitive discounting due to AI. TCS experienced a 2.4% drop in constant currency annual revenue for FY26, while Wipro's revenue fell by 1.6%, marking its third consecutive year of decline. The decline in revenue is compounded by a 20% contraction in application development and management contract values in Q1 2026 and ongoing pricing pressures amid client cost optimization efforts.",
+        "For Wipro, this is the third year in a row where it has posted an annual decline.This was despite growth in both their total contract values (TCV)",
+        "“We believe a muted demand environment and AI deflation are sucking up all productivity benefits,” the brokerage said"
+      ],
+      "summary": "AI-generated summary: According to analysts cited in the Economic Times on April 18, 2026, major Indian IT companies like Tata Consultancy Services and Wipro are experiencing slow revenue conversion and increased discounts due to competitive pressures from AI, despite maintaining strong deal pipelines."
+    },
+    {
+      "rank": 6,
+      "title": "Jewelry Veteran Robert Manse Joins ShineBright as Sales & Marketing President",
+      "url": "https://instoremag.com/jewelry-veteran-robert-manse-joins-shinebright-as-sales-marketing-president/",
+      "source": "Instore Magazine",
+      "bullets": [
+        "Robert Manse, a jewelry executive with over 30 years of experience, has been appointed President of Sales and Marketing at ShineBright/Dynamic Design Group.",
+        "Manse has generated more than $200 million in branded retail sales and will focus on strengthening retail partnerships and expanding distribution channels.",
+        "Dynamic Design Group, established in 1995 in New York’s diamond district, supplies high-quality natural and lab-grown diamond jewelry nationwide."
+      ],
+      "summary": "AI-generated summary: Jewelry industry veteran Robert Manse has joined ShineBright as Sales & Marketing President, where he will lead efforts to strengthen retail partnerships, enhance brand positioning, and expand distribution."
+    },
+    {
+      "rank": 7,
+      "title": "Fashion retailer Express left customers’ personal data and order details exposed to the internet",
+      "url": "https://techcrunch.com/2026/04/16/fashion-retailer-express-left-customers-personal-data-and-order-details-exposed-to-the-internet/",
+      "source": "TechCrunch - Commerce",
+      "bullets": [
+        "Express patched a security flaw that exposed customers' personal data and order details through publicly accessible order confirmation pages on its website.",
+        "At least a dozen customer orders were indexed by search engines, revealing names, contact information, addresses, purchase details, and partial payment card data.",
+        "The vulnerability was discovered by security advocate Rey Bango, who found no reporting mechanism at Express, and the flaw was fixed after TechCrunch alerted the company in late April 2024."
+      ],
+      "summary": "AI-generated summary: Fashion retailer Express exposed customers' personal data and order details online due to a security bug, which has since been fixed following TechCrunch's alert; however, Express has not disclosed whether it will notify affected customers."
+    }
+  ]
+}
