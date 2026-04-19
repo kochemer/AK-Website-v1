@@ -99,7 +99,7 @@ export const metadata: Metadata = {
     apple: "/favicon.png",
   },
   verification: {
-    google: "nCj2_xV15p2YQcO56omcCNw8q3VVE3L7Fa1uHasUGjg",
+    google: ["nCj2_xV15p2YQcO56omcCNw8q3VVE3L7Fa1uHasUGjg", "KaJ5edrq0bOoztSLgfyfhULos3k6tH3ztcyNIPolOlg"],
   },
   openGraph: {
     siteName: "Luxury Intelligence",
