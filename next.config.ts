@@ -41,6 +41,16 @@ const securityHeaders = [
 ];
 
 const nextConfig: NextConfig = {
+  // Exclude large local data files from serverless function bundles.
+  // data/weeks/ and data/articles.json are only needed at pipeline-build time
+  // (runs locally), not at Vercel request time. Without this, api/build-digest
+  // pulls in ~250 MB of raw article data and exceeds Vercel's function size limit.
+  outputFileTracingExcludes: {
+    '/api/build-digest': [
+      './data/weeks/**',
+      './data/articles.json',
+    ],
+  },
   // Permanent 308 redirects: /week/YYYY-Www → /digest/month-yyyy-week-n
   redirects: buildWeekRedirects,
   // Security headers applied to all routes
