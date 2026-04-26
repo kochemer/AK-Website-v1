@@ -1,0 +1,972 @@
+{
+  "weekLabel": "2026-W17",
+  "tz": "Europe/Copenhagen",
+  "startISO": "2026-04-19T22:00:00.000Z",
+  "endISO": "2026-04-26T21:59:59.999Z",
+  "builtAtISO": "2026-04-26T09:59:08.744+02:00",
+  "builtAtLocal": "2026-04-26 09:59:08",
+  "totals": {
+    "total": 800,
+    "byTopic": {
+      "AIStrategy": 134,
+      "EcommerceRetail": 507,
+      "LuxuryConsumer": 131,
+      "Jewellery": 27
+    }
+  },
+  "topics": {
+    "AI_and_Strategy": {
+      "total": 134,
+      "top": [
+        {
+          "id": "ei6ee0",
+          "title": "Amazon Plans to Invest Up to $25 Billion in Anthropic",
+          "url": "https://www.nytimes.com/2026/04/20/technology/amazon-anthropic-investment.html",
+          "source": "NYTimes Technology",
+          "published_at": "2026-04-21T01:11:05.000Z",
+          "ingested_at": "2026-04-26T07:48:39.658Z",
+          "snippet": "Anthropic also committed to spending $100 billion on Amazon technologies that can help build and deploy A.I. systems.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.125,
+            "recencyScore": 0,
+            "sourceWeight": 0.075,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "anthropic"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Amazon plans to invest up to $25 billion in Anthropic, which has committed to spending $100 billion on Amazon technologies to support the development and deployment of AI systems.",
+          "translations": {
+            "da": {
+              "title": "Amazon planlægger at investere op til 25 milliarder dollars i Anthropic",
+              "summary": "AI-genereret resumé: Amazon planlægger at investere op til 25 milliarder dollars i Anthropic, som har forpligtet sig til at bruge 100 milliarder dollars på Amazon-teknologier for at støtte udviklingen og implementeringen af AI-systemer."
+            },
+            "es": {
+              "title": "Amazon planea invertir hasta 25 mil millones de dólares en Anthropic",
+              "summary": "Resumen generado por IA: Amazon planea invertir hasta 25 mil millones de dólares en Anthropic, que se ha comprometido a gastar 100 mil millones de dólares en tecnologías de Amazon para apoyar el desarrollo y despliegue de sistemas de IA."
+            }
+          }
+        },
+        {
+          "id": "m8ps8m",
+          "title": "Google pours up to $40 billion into ChatGPT rival Anthropic",
+          "url": "https://the-decoder.com/google-pours-up-to-40-billion-into-chatgpt-rival-anthropic/",
+          "source": "The Decoder",
+          "published_at": "2026-04-25T08:26:11.000Z",
+          "ingested_at": "2026-04-26T07:48:39.658Z",
+          "snippet": "Google is investing up to 40 billion dollars in Anthropic. Together with Amazon's pledge of 25 billion dollars, up to 65 billion dollars will flow into the AI company behind Claude in just a few weeks.\nThe article Google pours up to $40 billion into ChatGPT rival Anthropic appeared first on The Decoder.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.2,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "anthropic",
+              "ai",
+              "claude",
+              "ai company"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Google is investing up to $40 billion into Anthropic, the AI company behind Claude, which, combined with Amazon's $25 billion pledge, will bring up to $65 billion in funding to the company within weeks.",
+          "translations": {
+            "da": {
+              "title": "Google investerer op til 40 milliarder dollars i ChatGPT-rivalen Anthropic",
+              "summary": "AI-genereret resumé: Google investerer op til 40 milliarder dollars i Anthropic, AI-virksomheden bag Claude, som sammen med Amazons løfte om 25 milliarder dollars vil bringe op til 65 milliarder dollars i finansiering til virksomheden inden for få uger."
+            },
+            "es": {
+              "title": "Google invierte hasta 40 mil millones de dólares en el rival de ChatGPT, Anthropic",
+              "summary": "Resumen generado por IA: Google está invirtiendo hasta 40 mil millones de dólares en Anthropic, la empresa de IA detrás de Claude, que, junto con el compromiso de 25 mil millones de Amazon, aportará hasta 65 mil millones en financiamiento a la empresa en pocas semanas."
+            }
+          }
+        },
+        {
+          "id": "akczgx",
+          "title": "Meta signs AWS chip deal to support AI workloads ",
+          "url": "https://economictimes.indiatimes.com/tech/technology/meta-strikes-deal-with-amazons-cloud-unit-to-use-its-cpu-chips/articleshow/130495814.cms",
+          "source": "Economic Times - Technology",
+          "published_at": "2026-04-24T13:30:30.000Z",
+          "ingested_at": "2026-04-26T07:48:39.658Z",
+          "snippet": "Meta Platforms has entered a multi-year agreement with Amazon Web Services to utilise tens of millions of AWS Graviton CPU cores for its artificial intelligence infrastructure. This strategic move will bolster Meta's capacity for CPU-intensive agentic AI workloads, enhancing performance and efficiency as the company scales its AI ambitions.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": -0.04999999999999999,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0,
+            "penalty": 0.2,
+            "matchedKeywords": [
+              "ai",
+              "artificial intelligence",
+              "agent"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Meta Platforms has signed a multi-year deal with Amazon Web Services to use tens of millions of AWS Graviton CPU cores, aiming to enhance its AI infrastructure for CPU-intensive workloads and support its growing AI initiatives.",
+          "translations": {
+            "da": {
+              "title": "Meta indgår AWS-chip-aftale for at støtte AI-arbejdsbelastninger",
+              "summary": "AI-genereret resumé: Meta Platforms har indgået en flerårig aftale med Amazon Web Services om at bruge titusindvis af AWS Graviton CPU-kerner for at forbedre sin AI-infrastruktur til CPU-intensive arbejdsbelastninger og støtte sine voksende AI-initiativer."
+            },
+            "es": {
+              "title": "Meta firma acuerdo con chips de AWS para apoyar cargas de trabajo de IA",
+              "summary": "Resumen generado por IA: Meta Platforms ha firmado un acuerdo multianual con Amazon Web Services para usar decenas de millones de núcleos de CPU AWS Graviton, con el objetivo de mejorar su infraestructura de IA para cargas de trabajo intensivas en CPU y apoyar sus crecientes iniciativas de IA."
+            }
+          }
+        },
+        {
+          "id": "7ltb4l",
+          "title": "Bret Taylor’s Sierra buys YC-backed AI startup Fragment",
+          "url": "https://techcrunch.com/2026/04/23/bret-taylors-sierra-buys-yc-backed-ai-startup-fragment/",
+          "source": "TechCrunch - AI",
+          "published_at": "2026-04-23T21:00:00.000Z",
+          "ingested_at": "2026-04-26T07:48:39.658Z",
+          "snippet": "Sierra, the AI customer service agent startup founded by technologist Bret Taylor, announced today that it has acquired the YC-backed French startup Fragment.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.30000000000000004,
+            "recencyScore": 0,
+            "sourceWeight": 0.15,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ai",
+              "ai startup",
+              "agent"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Bret Taylor’s AI customer service startup Sierra has acquired Fragment, a French AI startup backed by Y Combinator, as announced on April 23, 2026.",
+          "translations": {
+            "da": {
+              "title": "Bret Taylors Sierra køber YC-støttet AI-startup Fragment",
+              "summary": "AI-genereret resumé: Bret Taylors AI-kundeservice startup Sierra har opkøbt Fragment, en fransk AI-startup støttet af Y Combinator, som annonceret den 23. april 2026."
+            },
+            "es": {
+              "title": "Sierra de Bret Taylor compra la startup de IA Fragment respaldada por YC",
+              "summary": "Resumen generado por IA: La startup de servicio al cliente de IA de Bret Taylor, Sierra, ha adquirido Fragment, una startup francesa de IA respaldada por Y Combinator, según se anunció el 23 de abril de 2026."
+            }
+          }
+        },
+        {
+          "id": "tyw1l1",
+          "title": "Siemens introduces AI system for automation engineering",
+          "url": "https://www.artificialintelligence-news.com/news/siemens-ai-automation-engineering-workflows/",
+          "source": "AI News",
+          "published_at": "2026-04-21T10:00:00.000Z",
+          "ingested_at": "2026-04-26T07:48:39.658Z",
+          "snippet": "Siemens has introduced the Eigen Engineering Agent, an AI system designed to plan and validate automation engineering tasks in operational environments. The system uses multi-step reasoning and self-correction to carry out tasks autonomously and operates directly inside engineering platforms, letting it to complete workflows from initial design through to validation. Autonomous engineering workflows The agent […]\nThe post Siemens introduces AI system for automation engineering appeared first on ...",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ai",
+              "agent",
+              "reasoning"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Siemens has launched the Eigen Engineering Agent, an AI system that autonomously plans and validates automation engineering tasks using multi-step reasoning and self-correction, operating directly within engineering platforms to manage workflows from design to validation.",
+          "translations": {
+            "da": {
+              "title": "Siemens introducerer AI-system til automationsingeniørarbejde",
+              "summary": "AI-genereret resumé: Siemens har lanceret Eigen Engineering Agent, et AI-system der selvstændigt planlægger og validerer automationsingeniøropgaver ved hjælp af flerstegsresonering og selvkorrektion, og som arbejder direkte i ingeniørplatforme for at styre arbejdsprocesser fra design til validering."
+            },
+            "es": {
+              "title": "Siemens presenta sistema de IA para ingeniería de automatización",
+              "summary": "Resumen generado por IA: Siemens ha lanzado Eigen Engineering Agent, un sistema de IA que planifica y valida de forma autónoma tareas de ingeniería de automatización usando razonamiento en múltiples pasos y autocorrección, operando directamente dentro de plataformas de ingeniería para gestionar flujos de trabajo desde el diseño hasta la validación."
+            }
+          }
+        },
+        {
+          "id": "67n6i0",
+          "title": "AI needs a strong data fabric to deliver business value",
+          "url": "https://www.technologyreview.com/2026/04/22/1135295/ai-needs-a-strong-data-fabric-to-deliver-business-value/",
+          "source": "MIT Technology Review",
+          "published_at": "2026-04-22T10:05:06.000Z",
+          "ingested_at": "2026-04-26T07:48:39.658Z",
+          "snippet": "Artificial intelligence is moving quickly in the enterprise, from experimentation to everyday use. Organizations are deploying copilots, agents, and predictive systems across finance, supply chains, human resources, and customer operations. By the end of 2025, half of companies used AI in at least three business functions, according to a recent survey. But as AI becomes…",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.45000000000000007,
+            "recencyScore": 0,
+            "sourceWeight": 0.15,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0.15,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ai",
+              "artificial intelligence",
+              "agent"
+            ]
+          },
+          "aiSummary": "AI-generated summary: As AI adoption accelerates across multiple business functions such as finance, supply chains, and customer operations, organizations increasingly rely on a robust data fabric to maximize AI's value and effectiveness in enterprise settings.",
+          "translations": {
+            "da": {
+              "title": "AI har brug for et stærkt data fabric for at skabe forretningsværdi",
+              "summary": "AI-genereret resumé: Efterhånden som AI-adoptionen accelererer på tværs af flere forretningsfunktioner som finans, forsyningskæder og kundeoperationer, er organisationer i stigende grad afhængige af et robust data fabric for at maksimere AI's værdi og effektivitet i virksomhedsindstillinger."
+            },
+            "es": {
+              "title": "La IA necesita una sólida infraestructura de datos para aportar valor empresarial",
+              "summary": "Resumen generado por IA: A medida que la adopción de IA se acelera en múltiples funciones empresariales como finanzas, cadenas de suministro y operaciones de clientes, las organizaciones dependen cada vez más de una infraestructura de datos robusta para maximizar el valor y la efectividad de la IA en entornos empresariales."
+            }
+          }
+        },
+        {
+          "id": "g48bc5",
+          "title": "The Friday Checkout: Is agentic AI the next frontier for grocers?",
+          "url": "https://www.grocerydive.com/news/the-friday-checkout-agentic-ai-next-frontier-grocery-technology-instacart-walmart/818407/",
+          "source": "Grocery Dive",
+          "published_at": "2026-04-24T14:51:00.000Z",
+          "ingested_at": "2026-04-26T07:48:39.658Z",
+          "snippet": "Walmart and Instacart are embracing AI assistants to help build online baskets and suggest recipes. But do consumers want this tech right now?",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ai",
+              "agent"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Walmart and Instacart are adopting AI assistants to aid customers in creating online shopping baskets and recommending recipes, raising questions about current consumer readiness for this technology.",
+          "translations": {
+            "da": {
+              "title": "The Friday Checkout: Er agentisk AI den næste front for dagligvarebutikker?",
+              "summary": "AI-genereret resumé: Walmart og Instacart bruger AI-assistenter til at hjælpe kunder med at lave online indkøbskurve og anbefale opskrifter, hvilket rejser spørgsmål om forbrugernes parathed til teknologien."
+            },
+            "es": {
+              "title": "The Friday Checkout: ¿Es la IA agencial la próxima frontera para los supermercados?",
+              "summary": "Resumen generado por IA: Walmart e Instacart están adoptando asistentes de IA para ayudar a los clientes a crear cestas de compra en línea y recomendar recetas, lo que plantea dudas sobre la preparación actual de los consumidores para esta tecnología."
+            }
+          }
+        }
+      ]
+    },
+    "Ecommerce_Retail_Tech": {
+      "total": 507,
+      "top": [
+        {
+          "id": "yxmjbp",
+          "title": "California Accuses Amazon of Price Fixing in Legal Filing",
+          "url": "https://www.nytimes.com/2026/04/20/technology/amazon-antitrust-suit-california.html",
+          "source": "NYTimes Technology",
+          "published_at": "2026-04-20T21:29:04.000Z",
+          "ingested_at": "2026-04-26T07:48:39.658Z",
+          "snippet": "The state claimed the e-commerce giant pressured brands like Levi’s and Hanes to ask competing retailers to raise prices on certain products.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0.15,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "e-commerce"
+            ]
+          },
+          "aiSummary": "AI-generated summary: On April 20, 2026, California filed a legal complaint accusing Amazon of pressuring brands such as Levi’s and Hanes to encourage competing retailers to increase prices on specific products, according to NYTimes Technology.",
+          "translations": {
+            "da": {
+              "title": "California Anklager Amazon for Prissamarbejde i Retlig Indgivelse",
+              "summary": "AI-genereret resumé: Den 20. april 2026 indgav California en retlig klage, hvor Amazon beskyldes for at presse mærker som Levi’s og Hanes til at opfordre konkurrerende detailhandlere til at hæve priserne på specifikke produkter, ifølge NYTimes Technology."
+            },
+            "es": {
+              "title": "California Acusa a Amazon de Fijar Precios en Demanda Legal",
+              "summary": "Resumen generado por IA: El 20 de abril de 2026, California presentó una demanda legal acusando a Amazon de presionar a marcas como Levi’s y Hanes para que animaran a minoristas competidores a aumentar los precios de productos específicos, según NYTimes Technology."
+            }
+          }
+        },
+        {
+          "id": "m7ve0z",
+          "title": "Marketplace Briefing: Amazon’s seller count falls as revenue concentrates among top sellers",
+          "url": "https://www.modernretail.co/operations/marketplace-briefing-amazons-seller-count-falls-as-revenue-concentrates-among-top-sellers/?utm_campaign=modernretaildis&utm_medium=rss&utm_source=general-rss",
+          "source": "Modern Retail",
+          "published_at": "2026-04-23T14:00:00.000Z",
+          "ingested_at": "2026-04-26T07:48:39.658Z",
+          "snippet": "The number of active sellers on Amazon.com has fallen from 584,000 in January 2025 to 500,000 as of March 2026, according to Marketplace Pulse.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "marketplace"
+            ]
+          },
+          "aiSummary": "AI-generated summary: According to Marketplace Pulse, the number of active sellers on Amazon.com declined from 584,000 in January 2025 to 500,000 by March 2026, indicating a concentration of revenue among top sellers.",
+          "translations": {
+            "da": {
+              "title": "Marketplace Briefing: Antallet af sælgere på Amazon falder, mens omsætningen koncentreres blandt top-sælgere",
+              "summary": "AI-genereret resumé: Ifølge Marketplace Pulse faldt antallet af aktive sælgere på Amazon.com fra 584.000 i januar 2025 til 500.000 i marts 2026, hvilket indikerer en koncentration af omsætningen blandt top-sælgere."
+            },
+            "es": {
+              "title": "Marketplace Briefing: El número de vendedores en Amazon disminuye mientras los ingresos se concentran entre los principales vendedores",
+              "summary": "Resumen generado por IA: Según Marketplace Pulse, el número de vendedores activos en Amazon.com disminuyó de 584,000 en enero de 2025 a 500,000 en marzo de 2026, lo que indica una concentración de ingresos entre los principales vendedores."
+            }
+          }
+        },
+        {
+          "id": "dkb1yl",
+          "title": "Pine Labs acquires ecommerce enabler Shopflo for Rs 88 crore ",
+          "url": "https://economictimes.indiatimes.com/tech/technology/pine-labs-acquires-100-stake-in-ecommerce-enabler-shopflo-for-rs-88-crore/articleshow/130511770.cms",
+          "source": "Economic Times - Technology",
+          "published_at": "2026-04-25T09:23:18.000Z",
+          "ingested_at": "2026-04-26T07:48:39.658Z",
+          "snippet": "Digital payments major Pine Labs has acquired ecommerce enabler Shopflo Technologies for Rs 88 crore, aiming to strengthen its online merchant offerings. This strategic move allows Pine Labs to expand its reach into the mid-market and small business segments, intensifying competition with rivals like Razorpay and PayU.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ecommerce",
+              "payment"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Digital payments company Pine Labs has acquired ecommerce enabler Shopflo Technologies for Rs 88 crore to enhance its online merchant services and expand into mid-market and small business segments, increasing competition with rivals such as Razorpay and PayU.",
+          "translations": {
+            "da": {
+              "title": "Pine Labs opkøber ecommerce-aktør Shopflo for Rs 88 crore",
+              "summary": "AI-genereret resumé: Digital betalingsvirksomhed Pine Labs har opkøbt ecommerce-aktøren Shopflo Technologies for Rs 88 crore for at styrke sine online handelsservices og udvide til mellemstore og små virksomheder, hvilket øger konkurrencen med rivaler som Razorpay og PayU."
+            },
+            "es": {
+              "title": "Pine Labs adquiere el facilitador de comercio electrónico Shopflo por Rs 88 crore",
+              "summary": "Resumen generado por IA: La empresa de pagos digitales Pine Labs ha adquirido el facilitador de comercio electrónico Shopflo Technologies por Rs 88 crore para mejorar sus servicios en línea para comerciantes y expandirse en los segmentos de medianas y pequeñas empresas, aumentando la competencia con rivales como Razorpay y PayU."
+            }
+          }
+        },
+        {
+          "id": "s6cw2a",
+          "title": "American Industrial Partners to acquire Honeywell warehouse automation",
+          "url": "https://www.digitalcommerce360.com/2026/04/24/american-industrial-partners-to-acquire-honeywell-warehouse-automation/",
+          "source": "Digital Commerce 360",
+          "published_at": "2026-04-24T16:55:41.000Z",
+          "ingested_at": "2026-04-26T07:48:39.658Z",
+          "snippet": "Private equity firm American Industrial Partners (AIP) will acquire the Warehouse and Workflow Solutions (WWS) piece of Honeywell’s business. AIP did not disclose the terms of the deal, which is expected to close in the second half of 2026. Honeywell operates across logistics and warehouses, manufacturing, retail, data centers and other industries. Meanwhile, AIP’s portfolio […]\nThe post American Industrial Partners to acquire Honeywell warehouse automation appeared first on Digital Commerce 360...",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "warehouse",
+              "logistics"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Private equity firm American Industrial Partners (AIP) will acquire Honeywell’s Warehouse and Workflow Solutions (WWS) business, with the deal expected to close in the second half of 2026. Terms of the acquisition have not been disclosed.",
+          "translations": {
+            "da": {
+              "title": "American Industrial Partners opkøber Honeywell lagerautomatisering",
+              "summary": "AI-genereret resumé: Private equity-firmaet American Industrial Partners (AIP) vil opkøbe Honeywells Warehouse and Workflow Solutions (WWS) forretning, og handlen forventes afsluttet i anden halvdel af 2026. Vilkårene for opkøbet er ikke offentliggjort."
+            },
+            "es": {
+              "title": "American Industrial Partners adquirirá la automatización de almacenes de Honeywell",
+              "summary": "Resumen generado por IA: La firma de capital privado American Industrial Partners (AIP) adquirirá el negocio Warehouse and Workflow Solutions (WWS) de Honeywell, y se espera que la operación se cierre en la segunda mitad de 2026. No se han divulgado los términos de la adquisición."
+            }
+          }
+        },
+        {
+          "id": "y2rs3p",
+          "title": "Google helps develop ‘Ask Macy’s’ AI agent",
+          "url": "https://www.digitalcommerce360.com/2026/04/23/google-helps-develop-ask-macys-ai-agent/",
+          "source": "Digital Commerce 360",
+          "published_at": "2026-04-23T18:52:13.000Z",
+          "ingested_at": "2026-04-26T07:48:39.658Z",
+          "snippet": "Google and Macy’s have developed an artificial intelligence (AI) agent called “Ask Macy’s.” Using Google’s Gemini Enterprise for Customer Experience offering, the department store operator has launched a beta version of its chat interface, Macy’s AI. The launch began with “a small percentage of the [retail] site’s users” (which the companies did not disclose) and […]\nThe post Google helps develop ‘Ask Macy’s’ AI agent appeared first on Digital Commerce 360.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": []
+          },
+          "aiSummary": "AI-generated summary: Google and Macy’s have collaborated to develop “Ask Macy’s,” an AI chat agent powered by Google’s Gemini Enterprise for Customer Experience, currently in beta testing with a limited number of Macy’s website users.",
+          "translations": {
+            "da": {
+              "title": "Google hjælper med at udvikle ‘Ask Macy’s’ AI-agent",
+              "summary": "AI-genereret resumé: Google og Macy’s har samarbejdet om at udvikle “Ask Macy’s,” en AI-chatagent drevet af Googles Gemini Enterprise for Customer Experience, som i øjeblikket er i beta-test med et begrænset antal brugere på Macy’s hjemmeside."
+            },
+            "es": {
+              "title": "Google ayuda a desarrollar el agente de IA ‘Ask Macy’s’",
+              "summary": "Resumen generado por IA: Google y Macy’s han colaborado para desarrollar “Ask Macy’s,” un agente de chat de IA impulsado por Google Gemini Enterprise para la Experiencia del Cliente, actualmente en pruebas beta con un número limitado de usuarios del sitio web de Macy’s."
+            }
+          }
+        },
+        {
+          "id": "90d3fk",
+          "title": "Particular Audience launches PA DiscoveryOS app on Shopify – signalling a new era of accessible enterprise AI for merchants",
+          "url": "https://internetretailing.net/particular-audience-launches-pa-discoveryos-app-on-shopify-signalling-a-new-era-of-accessible-enterprise-ai-for-merchants/",
+          "source": "Internet Retailing",
+          "published_at": "2026-04-21T12:06:19.000Z",
+          "ingested_at": "2026-04-26T07:48:39.658Z",
+          "snippet": "Shopify merchants are gaining access to a new generation of enterprise AI capabilities, as tech once limited to the world’s biggest retailers becomes easier to deploy at scale.\nThe post Particular Audience launches PA DiscoveryOS app on Shopify – signalling a new era of accessible enterprise AI for merchants appeared first on InternetRetailing.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": []
+          },
+          "aiSummary": "AI-generated summary: Particular Audience has launched the PA DiscoveryOS app on Shopify, enabling merchants to access advanced enterprise AI technologies previously available only to large retailers, thereby making these capabilities easier to deploy at scale.",
+          "translations": {
+            "da": {
+              "title": "Particular Audience lancerer PA DiscoveryOS-app på Shopify – signalerer en ny æra af tilgængelig enterprise AI for handlende",
+              "summary": "AI-genereret resumé: Particular Audience har lanceret PA DiscoveryOS-appen på Shopify, hvilket giver handlende adgang til avancerede enterprise AI-teknologier, der tidligere kun var tilgængelige for store detailhandlere, og gør disse muligheder lettere at implementere i stor skala."
+            },
+            "es": {
+              "title": "Particular Audience lanza la app PA DiscoveryOS en Shopify – señalando una nueva era de IA empresarial accesible para comerciantes",
+              "summary": "Resumen generado por IA: Particular Audience ha lanzado la app PA DiscoveryOS en Shopify, permitiendo a los comerciantes acceder a tecnologías avanzadas de IA empresarial que antes solo estaban disponibles para grandes minoristas, facilitando así el despliegue a gran escala."
+            }
+          }
+        },
+        {
+          "id": "p3mf0n",
+          "title": "Ulta Beauty, Google partner on AI-powered shopping experiences",
+          "url": "https://www.retaildive.com/news/ulta-ai-agent-gemini-shopping-experience/818308/",
+          "source": "Retail Dive",
+          "published_at": "2026-04-23T17:25:00.000Z",
+          "ingested_at": "2026-04-26T07:48:39.658Z",
+          "snippet": "The beauty retailer has launched Ulta AI, a shopping assistant available on its website that soon will roll out to its app.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "shopping"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Ulta Beauty has partnered with Google to launch Ulta AI, an AI-powered shopping assistant currently available on its website and soon to be introduced on its app, enhancing the ecommerce shopping experience.",
+          "translations": {
+            "da": {
+              "title": "Ulta Beauty og Google samarbejder om AI-drevne shoppingoplevelser",
+              "summary": "Ulta Beauty har indgået partnerskab med Google om lanceringen af Ulta AI, en AI-drevet shoppingassistent, der allerede er tilgængelig på deres hjemmeside og snart introduceres i deres app, hvilket forbedrer e-handelsoplevelsen."
+            },
+            "es": {
+              "title": "Ulta Beauty y Google se asocian para experiencias de compra impulsadas por IA",
+              "summary": "Ulta Beauty se ha asociado con Google para lanzar Ulta AI, un asistente de compras impulsado por IA disponible actualmente en su sitio web y que pronto estará en su aplicación, mejorando la experiencia de compra en ecommerce."
+            }
+          }
+        }
+      ]
+    },
+    "Luxury_and_Consumer": {
+      "total": 131,
+      "top": [
+        {
+          "id": "lqb5wh",
+          "title": "How COS Orchestrates a Global Elevated Store Experience",
+          "url": "https://www.businessoffashion.com/articles/workplace-talent/how-cos-orchestrates-a-global-elevated-store-experience/",
+          "source": "Business of Fashion - News",
+          "published_at": "2026-04-20T05:00:00.000Z",
+          "ingested_at": "2026-04-26T07:48:39.658Z",
+          "snippet": "As the London-based fashion brand expands to new locations across the world, a cross-functional growth team is driving a localised approach to store rollout, design and portfolio management.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "brand"
+            ]
+          },
+          "aiSummary": "AI-generated summary: The London-based fashion brand COS is expanding globally by employing a cross-functional growth team that focuses on a localized approach to store rollout, design, and portfolio management to create an elevated store experience.",
+          "translations": {
+            "da": {
+              "title": "Hvordan COS orkestrerer en global forhøjet butiksoplevelse",
+              "summary": "AI-genereret resumé: Det London-baserede modebrand COS udvider globalt ved at anvende et tværfunktionelt vækstteam, der fokuserer på en lokaliseret tilgang til butiksudrulning, design og porteføljestyring for at skabe en forhøjet butiksoplevelse."
+            },
+            "es": {
+              "title": "Cómo COS orquesta una experiencia global elevada en tienda",
+              "summary": "Resumen generado por IA: La marca de moda con sede en Londres, COS, se está expandiendo globalmente mediante un equipo de crecimiento multifuncional que se enfoca en un enfoque localizado para el despliegue de tiendas, diseño y gestión de portafolio para crear una experiencia de tienda elevada."
+            }
+          }
+        },
+        {
+          "id": "5ms3mp",
+          "title": "As Brands Get Tariff Refunds, What Do They Owe Their Customers?",
+          "url": "https://www.businessoffashion.com/briefings/retail/as-brands-get-tariff-refunds-what-do-they-owe-their-customers/",
+          "source": "Business of Fashion - News",
+          "published_at": "2026-04-24T19:00:00.000Z",
+          "ingested_at": "2026-04-26T07:48:39.658Z",
+          "snippet": "Brands are finally able to apply for refunds, but now they also have to decide how to deal with the customers who paid higher prices on their products, some of which are filing lawsuits against retailers demanding compensation of their own.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "brand",
+              "demand"
+            ]
+          },
+          "aiSummary": "AI-generated summary: As brands begin applying for tariff refunds, they face the challenge of addressing customers who paid higher prices, with some consumers pursuing lawsuits seeking compensation from retailers.",
+          "translations": {
+            "da": {
+              "title": "Når brands får toldrefusioner, hvad skylder de så deres kunder?",
+              "summary": "AI-genereret resumé: Når brands begynder at ansøge om toldrefusioner, står de over for udfordringen med at håndtere kunder, der har betalt højere priser, hvor nogle forbrugere anlægger sag for at få erstatning fra detailhandlere."
+            },
+            "es": {
+              "title": "A medida que las marcas reciben reembolsos de aranceles, ¿qué deben a sus clientes?",
+              "summary": "Resumen generado por IA: A medida que las marcas comienzan a solicitar reembolsos de aranceles, enfrentan el desafío de atender a los clientes que pagaron precios más altos, con algunos consumidores emprendiendo demandas para obtener compensación de los minoristas."
+            }
+          }
+        },
+        {
+          "id": "y1klqn",
+          "title": "The New Rules for Negotiating With Multibrand Retailers",
+          "url": "https://www.businessoffashion.com/articles/luxury/the-new-rules-for-negotiating-with-multibrand-retailers/",
+          "source": "Business of Fashion - News",
+          "published_at": "2026-04-23T04:29:00.000Z",
+          "ingested_at": "2026-04-26T07:48:39.658Z",
+          "snippet": "Partnerships with multibrand players remain vital to fashion brands of all sizes, but the rules of engagement have changed as the sector has come under immense strain. BoF breaks down what brands need to know to reduce risk while building lasting relationships.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "brand"
+            ]
+          },
+          "aiSummary": "AI-generated summary: The article from Business of Fashion discusses how fashion brands must adapt to new rules when negotiating with multibrand retailers, emphasizing strategies to mitigate risk and foster enduring partnerships amid sector challenges.",
+          "translations": {
+            "da": {
+              "title": "De nye regler for forhandling med multibrand-forhandlere",
+              "summary": "AI-genereret resumé: Artiklen fra Business of Fashion diskuterer, hvordan modebrands skal tilpasse sig nye regler ved forhandling med multibrand-forhandlere, med fokus på strategier til at mindske risiko og skabe varige partnerskaber i en udfordrende sektor."
+            },
+            "es": {
+              "title": "Las nuevas reglas para negociar con minoristas multimarcas",
+              "summary": "Resumen generado por IA: El artículo de Business of Fashion analiza cómo las marcas de moda deben adaptarse a nuevas reglas al negociar con minoristas multimarcas, enfatizando estrategias para mitigar riesgos y fomentar asociaciones duraderas en medio de los desafíos del sector."
+            }
+          }
+        },
+        {
+          "id": "aio1f",
+          "title": "Cider joins Revolve and Shein as online fashion brands open permanent retail stores",
+          "url": "https://www.glossy.co/fashion/cider-joins-revolve-and-shein-as-online-fashion-brands-open-permanent-retail-stores/?utm_campaign=glossydis&utm_medium=rss&utm_source=general-rss",
+          "source": "Glossy",
+          "published_at": "2026-04-21T04:00:00.000Z",
+          "ingested_at": "2026-04-26T07:48:39.658Z",
+          "snippet": "The Los Angeles-based fashion brand Cider has spent the last five years growing its online business and establishing itself as a go-to affordable competitor to brands like H&M and Shein. Now, after years of testing, Cider has opened its first permanent store in its hometown of Los Angeles.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "brand"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Los Angeles-based fashion brand Cider, known for its affordable online offerings competing with H&M and Shein, has opened its first permanent retail store in Los Angeles after five years of online growth and testing. This move aligns Cider with other online fashion brands like Revolve and Shein that are expanding into physical retail.",
+          "translations": {
+            "da": {
+              "title": "Cider slutter sig til Revolve og Shein som online modebrands med permanente butikker",
+              "summary": "Det Los Angeles-baserede modebrand Cider, kendt for sine prisvenlige online tilbud, der konkurrerer med H&M og Shein, har åbnet sin første permanente butik i Los Angeles efter fem års online vækst og test. Dette skridt placerer Cider sammen med andre online modebrands som Revolve og Shein, der udvider til fysisk detailhandel."
+            },
+            "es": {
+              "title": "Cider se une a Revolve y Shein como marcas de moda online que abren tiendas físicas permanentes",
+              "summary": "La marca de moda con sede en Los Ángeles, Cider, conocida por sus ofertas asequibles en línea que compiten con H&M y Shein, ha abierto su primera tienda física permanente en Los Ángeles tras cinco años de crecimiento y pruebas en línea. Este movimiento alinea a Cider con otras marcas de moda online como Revolve y Shein que están expandiéndose al comercio minorista físico."
+            }
+          }
+        },
+        {
+          "id": "w461y7",
+          "title": "What Does Ulta Beauty World Have to Offer Emerging Brands?",
+          "url": "https://fashionista.com/2026/04/ulta-beauty-world-emerging-brands-strategy-opportunity",
+          "source": "Fashionista",
+          "published_at": "2026-04-22T12:45:00.000Z",
+          "ingested_at": "2026-04-26T07:48:39.658Z",
+          "snippet": "Founders and executives share how they're using the exclusive expo to create long-term customer loyalty.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "brand",
+              "exclusive"
+            ]
+          },
+          "aiSummary": "AI-generated summary: The article explores how founders and executives leverage Ulta Beauty World's exclusive expo to build long-term customer loyalty for emerging brands.",
+          "translations": {
+            "da": {
+              "title": "Hvad Har Ulta Beauty World at Tilbyde Nye Brands?",
+              "summary": "AI-genereret resumé: Artiklen undersøger, hvordan grundlæggere og ledere udnytter Ulta Beauty Worlds eksklusive messe til at opbygge langsigtet kundeloyalitet for nye brands."
+            },
+            "es": {
+              "title": "¿Qué Ofrece Ulta Beauty World a las Marcas Emergentes?",
+              "summary": "Resumen generado por IA: El artículo explora cómo fundadores y ejecutivos aprovechan la expo exclusiva de Ulta Beauty World para construir lealtad a largo plazo de los clientes para marcas emergentes."
+            }
+          }
+        },
+        {
+          "id": "ftic0i",
+          "title": "Luxury Briefing: How DeMellier is increasing demand while doing less",
+          "url": "https://www.glossy.co/fashion/luxury/luxury-briefing-demellier-is-growing-by-doing-less-and-focusing-on-craftsmanship/?utm_campaign=glossydis&utm_medium=rss&utm_source=general-rss",
+          "source": "Glossy",
+          "published_at": "2026-04-24T04:00:00.000Z",
+          "ingested_at": "2026-04-26T07:48:39.658Z",
+          "snippet": "According to DeMellier founder Mireia Llusia-Lindh, the cult U.K. bag brand is leaning into craftsmanship and alternative materials to build loyalty in a tougher luxury market.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "luxury",
+              "demand",
+              "brand"
+            ]
+          },
+          "aiSummary": "AI-generated summary: DeMellier, a U.K. luxury bag brand, is boosting demand by focusing on craftsmanship and using alternative materials to strengthen customer loyalty amid a challenging luxury market.",
+          "translations": {
+            "da": {
+              "title": "Luxury Briefing: Hvordan DeMellier øger efterspørgslen ved at gøre mindre",
+              "summary": "AI-genereret resumé: DeMellier, et britisk luksus-taskemærke, øger efterspørgslen ved at fokusere på håndværk og bruge alternative materialer for at styrke kundeloyaliteten i et udfordrende luksusmarked."
+            },
+            "es": {
+              "title": "Luxury Briefing: Cómo DeMellier está aumentando la demanda haciendo menos",
+              "summary": "Resumen generado por IA: DeMellier, una marca británica de bolsos de lujo, está aumentando la demanda al centrarse en la artesanía y usar materiales alternativos para fortalecer la lealtad del cliente en un mercado de lujo desafiante."
+            }
+          }
+        },
+        {
+          "id": "hthpcj",
+          "title": "Danielle Guizio Wants Her Brand to Be a 'One-Stop Shop' for Customers",
+          "url": "https://fashionista.com/2026/04/danielle-guizio-handbag-launch",
+          "source": "Fashionista",
+          "published_at": "2026-04-23T12:00:00.000Z",
+          "ingested_at": "2026-04-26T07:48:39.658Z",
+          "snippet": "Guizio handbags have arrived. We asked the designer about her approach to expansion and what comes next.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "brand"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Danielle Guizio discusses the launch of her handbag line and her vision for expanding her brand into a comprehensive destination for customers.",
+          "translations": {
+            "da": {
+              "title": "Danielle Guizio ønsker, at hendes brand skal være en 'one-stop shop' for kunder",
+              "summary": "AI-genereret resumé: Danielle Guizio taler om lanceringen af sin håndtaskelinje og sin vision om at udvide sit brand til en komplet destination for kunder."
+            },
+            "es": {
+              "title": "Danielle Guizio quiere que su marca sea una 'one-stop shop' para los clientes",
+              "summary": "Resumen generado por IA: Danielle Guizio habla sobre el lanzamiento de su línea de bolsos y su visión de expandir su marca a un destino integral para los clientes."
+            }
+          }
+        }
+      ]
+    },
+    "Jewellery_Industry": {
+      "total": 27,
+      "top": [
+        {
+          "id": "hj4ql5",
+          "title": "Wholesale lab-grown diamond prices down 14%",
+          "url": "https://www.professionaljeweller.com/lab-grown-diamond-prices-down-14/",
+          "source": "Professional Jeweller",
+          "published_at": "2026-04-21T08:41:50.000Z",
+          "ingested_at": "2026-04-26T07:48:39.658Z",
+          "snippet": "The Q1 2026 Lab-Grown Diamond Wholesale Price List has been released, indicating a further 14% decline in lab-grown diamond prices. The weakest segment remains 3-carat rounds, down 28% year-over-year. While still steep, this represents an improvement from the 40%+ annual decline seen in Q1 2025. This moderation suggests that the market is beginning to move […]\nThe post Wholesale lab-grown diamond prices down 14% appeared first on Professional Jeweller.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.25,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "diamond",
+              "jeweller"
+            ]
+          },
+          "aiSummary": "AI-generated summary: The Q1 2026 Lab-Grown Diamond Wholesale Price List reveals a 14% overall decline in lab-grown diamond prices, with 3-carat rounds dropping 28% year-over-year, marking a slowdown from the sharper 40%+ decline seen in Q1 2025. This suggests the market is beginning to stabilize.",
+          "translations": {
+            "da": {
+              "title": "Engrospriser på laboratoriedyrkede diamanter faldt 14%",
+              "summary": "AI-genereret resumé: Q1 2026 Lab-Grown Diamond Wholesale Price List viser et samlet fald på 14% i priserne på laboratoriedyrkede diamanter, hvor 3-carat rundinger er faldet 28% år-til-år, hvilket markerer en afmatning fra det kraftigere fald på over 40% set i Q1 2025. Dette tyder på, at markedet begynder at stabilisere sig."
+            },
+            "es": {
+              "title": "Precios mayoristas de diamantes cultivados en laboratorio bajan un 14%",
+              "summary": "Resumen generado por IA: La Lista de Precios Mayoristas de Diamantes Cultivados en Laboratorio del Q1 2026 revela una caída general del 14% en los precios, con los diamantes redondos de 3 quilates bajando un 28% interanual, marcando una desaceleración respecto a la caída superior al 40% observada en el Q1 2025. Esto sugiere que el mercado está comenzando a estabilizarse."
+            }
+          }
+        },
+        {
+          "id": "uuipr2",
+          "title": "World Diamond Day prompts surge in jewellery interest",
+          "url": "https://www.jewellermagazine.com/Article/14994/World-Diamond-Day-prompts-surge-in-jewellery-interest",
+          "source": "Jeweller - Business News",
+          "published_at": "2026-04-20T14:00:00.000Z",
+          "ingested_at": "2026-04-26T07:48:39.658Z",
+          "snippet": "The Natural Diamond Council has described the inaugural edition of ‘World Diamond Day’ as a rousing success.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.25,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "jewellery",
+              "diamond",
+              "jeweller"
+            ]
+          },
+          "aiSummary": "AI-generated summary: The Natural Diamond Council has hailed the inaugural World Diamond Day as a rousing success, sparking increased interest in jewellery, according to Jeweller - Business News on April 20, 2026.",
+          "translations": {
+            "da": {
+              "title": "World Diamond Day fremkalder øget interesse for smykker",
+              "summary": "AI-genereret resumé: Natural Diamond Council har hyldet den første World Diamond Day som en stor succes, der ifølge Jeweller - Business News den 20. april 2026 har øget interessen for smykker."
+            },
+            "es": {
+              "title": "World Diamond Day impulsa un aumento en el interés por las joyas",
+              "summary": "Resumen generado por IA: Natural Diamond Council ha calificado el primer World Diamond Day como un éxito rotundo, despertando un mayor interés en las joyas, según Jeweller - Business News el 20 de abril de 2026."
+            }
+          }
+        },
+        {
+          "id": "vkosp7",
+          "title": "Why Caravan of Stones sees transparency as a measure of success",
+          "url": "https://www.professionaljeweller.com/caravan-of-stones-transparency/",
+          "source": "Professional Jeweller",
+          "published_at": "2026-04-20T07:00:00.000Z",
+          "ingested_at": "2026-04-26T07:48:39.658Z",
+          "snippet": "Still in its infancy, this month’s cover star, Caravan of Stones, is a founder-led luxury jewellery brand. Although it does not currently operate third-party audits, formal certifications or mine-to-market verification systems, founder Caron Bluestone is careful not to imply a level of traceability that isn’t realistically available at its current scale. This is particularly true […]\nThe post Why Caravan of Stones sees transparency as a measure of success appeared first on Professional Jeweller.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "jewellery",
+              "jeweller"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Caravan of Stones, a founder-led luxury jewellery brand featured in Professional Jeweller, prioritizes transparency as a key measure of success despite not yet implementing third-party audits or formal traceability systems, with founder Caron Bluestone emphasizing realistic communication about the brand's current capabilities.",
+          "translations": {
+            "da": {
+              "title": "Hvorfor Caravan of Stones ser gennemsigtighed som et mål for succes",
+              "summary": "AI-genereret resumé: Caravan of Stones, et grundlæggerdrevet luksussmykkemærke omtalt i Professional Jeweller, prioriterer gennemsigtighed som en vigtig succesfaktor trods manglende tredjepartsaudits eller formelle sporingssystemer, hvor grundlægger Caron Bluestone understreger realistisk kommunikation om mærkets nuværende kapaciteter."
+            },
+            "es": {
+              "title": "Por qué Caravan of Stones considera la transparencia como una medida de éxito",
+              "summary": "Resumen generado por IA: Caravan of Stones, una marca de joyería de lujo dirigida por su fundadora y destacada en Professional Jeweller, prioriza la transparencia como una medida clave de éxito a pesar de no haber implementado auditorías externas ni sistemas formales de trazabilidad, con la fundadora Caron Bluestone enfatizando una comunicación realista sobre las capacidades actuales de la marca."
+            }
+          }
+        },
+        {
+          "id": "w1h5km",
+          "title": "35 Years on: How a killer punchline sunk a jewellery juggernaut",
+          "url": "https://www.jewellermagazine.com/Article/14998/35-Years-on-How-a-killer-punchline-sunk-a-jewellery-juggernaut",
+          "source": "Jeweller - Business News",
+          "published_at": "2026-04-22T14:00:00.000Z",
+          "ingested_at": "2026-04-26T07:48:39.658Z",
+          "snippet": "Today - 23 April 2026 - marks the 35th Anniversary of an extraordinary story that rocked the UK jewellery industry in 1991. While the history of jewellery contains amazing stories dating back thousands of years, this is ‘one for the ages’.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "jewellery",
+              "jeweller"
+            ]
+          },
+          "aiSummary": "AI-generated summary: On 23 April 2026, the UK jewellery industry marks the 35th anniversary of a remarkable event from 1991 that significantly impacted a major jewellery company, described as ‘one for the ages.’ This story remains a notable moment in the history of jewellery.",
+          "translations": {
+            "da": {
+              "title": "35 år senere: Hvordan en dræbende punchline sænkede en smykke-gigant",
+              "summary": "AI-genereret resumé: Den 23. april 2026 markerer den britiske smykkeindustri 35-årsdagen for en bemærkelsesværdig begivenhed fra 1991, der havde stor indflydelse på en stor smykkevirksomhed, beskrevet som ’en for historiebøgerne.’ Denne historie er stadig et bemærkelsesværdigt øjeblik i smykkernes historie."
+            },
+            "es": {
+              "title": "35 años después: Cómo un remate letal hundió a un gigante de la joyería",
+              "summary": "Resumen generado por IA: El 23 de abril de 2026, la industria joyera del Reino Unido celebra el 35º aniversario de un evento notable de 1991 que impactó significativamente a una importante empresa de joyería, descrito como ‘uno para la historia.’ Esta historia sigue siendo un momento destacado en la historia de la joyería."
+            }
+          }
+        },
+        {
+          "id": "pep8uz",
+          "title": "‘Ram-Raid’ Leaves Employee Critically Injured, Jewelry Store in Ruins (Video)",
+          "url": "https://instoremag.com/ram-raid-leaves-employee-critically-injured-jewelry-store-in-ruins-video/",
+          "source": "Instore Magazine",
+          "published_at": "2026-04-24T05:07:15.000Z",
+          "ingested_at": "2026-04-26T07:48:39.658Z",
+          "snippet": "Security guard thwarted apparent coordinated heist after a stolen car was crashed into South Sacramento jewelry store.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "jewelry"
+            ]
+          },
+          "aiSummary": "AI-generated summary: A stolen car was ram-raided into a South Sacramento jewelry store in an apparent coordinated heist, leaving an employee critically injured and the store in ruins, though a security guard managed to thwart the attempt.",
+          "translations": {
+            "da": {
+              "title": "‘Ram-Raid’ Efterlader Medarbejder Kritisk Såret, Smykkeforretning i Ruiner (Video)",
+              "summary": "AI-genereret resumé: En stjålet bil blev brugt til et ram-raidsangreb mod en smykkeforretning i South Sacramento i et tilsyneladende koordineret røveri, hvilket efterlod en medarbejder kritisk såret og butikken i ruiner, selvom en sikkerhedsvagt formåede at forhindre forsøget."
+            },
+            "es": {
+              "title": "‘Ram-Raid’ Deja a Empleado Gravemente Herido, Joyería en Ruinas (Video)",
+              "summary": "Resumen generado por IA: Un coche robado fue usado para un ram-raids en una joyería de South Sacramento en un aparente robo coordinado, dejando a un empleado gravemente herido y la tienda en ruinas, aunque un guardia de seguridad logró frustrar el intento."
+            }
+          }
+        },
+        {
+          "id": "hc6kfs",
+          "title": "Telling your sustainability story accurately with Credere Consultancy",
+          "url": "https://www.professionaljeweller.com/credere-consultancy-debut-jewellery/",
+          "source": "Professional Jeweller",
+          "published_at": "2026-04-21T07:00:00.000Z",
+          "ingested_at": "2026-04-26T07:48:39.658Z",
+          "snippet": "How will Credere Consultancy offer support brands in navigating ethics, transparency and environmental performance? Credere Consultancy exists to help jewellery businesses understand their impacts across sourcing, manufacturing and retail. I work with businesses to identify the areas of highest risk and opportunity, and translate that insight into cost-effective, practical actions. For example, strengthening supply chains, […]\nThe post Telling your sustainability story accurately with Credere Co...",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "jewellery",
+              "jeweller"
+            ]
+          },
+          "aiSummary": "AI-generated summary: The article from Professional Jeweller (2026-04-21) discusses how Credere Consultancy supports jewellery brands in improving ethics, transparency, and environmental performance by identifying risks and opportunities across sourcing, manufacturing, and retail to implement practical, cost-effective actions.",
+          "translations": {
+            "da": {
+              "title": "Fortæl din bæredygtighedshistorie præcist med Credere Consultancy",
+              "summary": "AI-genereret resumé: Artiklen fra Professional Jeweller (2026-04-21) beskriver, hvordan Credere Consultancy hjælper smykkebrands med at forbedre etik, gennemsigtighed og miljøpræstation ved at identificere risici og muligheder i sourcing, produktion og detailhandel for at implementere praktiske og omkostningseffektive tiltag."
+            },
+            "es": {
+              "title": "Contar tu historia de sostenibilidad con precisión con Credere Consultancy",
+              "summary": "Resumen generado por IA: El artículo de Professional Jeweller (2026-04-21) analiza cómo Credere Consultancy apoya a las marcas de joyería a mejorar la ética, la transparencia y el desempeño ambiental identificando riesgos y oportunidades en el abastecimiento, la fabricación y la venta al por menor para implementar acciones prácticas y rentables."
+            }
+          }
+        },
+        {
+          "id": "k6fnfp",
+          "title": "Shopping centre blitz earns high praise from retailers",
+          "url": "https://www.jewellermagazine.com/Article/14989/Shopping-centre-blitz-earns-high-praise-from-retailers",
+          "source": "Jeweller - Business News",
+          "published_at": "2026-04-20T14:00:00.000Z",
+          "ingested_at": "2026-04-26T07:48:39.658Z",
+          "snippet": "Retail industry representatives have praised Victoria Police for the results of ‘Operation Pulse’, a blitz targeting criminals at shopping centres.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "retailer"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Retail industry representatives have commended Victoria Police for the success of ‘Operation Pulse’, a targeted crackdown on criminals at shopping centres, as reported by Jeweller - Business News on April 20, 2026.",
+          "translations": {
+            "da": {
+              "title": "Indkøbscenter-indsats får stor ros fra detailhandlere",
+              "summary": "AI-genereret resumé: Repræsentanter fra detailbranchen har rost Victoria Police for succesen med ’Operation Pulse’, en målrettet indsats mod kriminelle i indkøbscentre, rapporteret af Jeweller - Business News den 20. april 2026."
+            },
+            "es": {
+              "title": "Operativo en centro comercial recibe elogios de minoristas",
+              "summary": "Resumen generado por IA: Representantes de la industria minorista han elogiado a Victoria Police por el éxito de ‘Operation Pulse’, una operación dirigida contra criminales en centros comerciales, según informó Jeweller - Business News el 20 de abril de 2026."
+            }
+          }
+        }
+      ]
+    }
+  },
+  "editorialTake": "Amazon and Google are doubling down on Anthropic with eye-popping investments of up to $25 billion and $40 billion respectively. This isn’t just a funding round, it’s a strategic land grab for AI talent and infrastructure that signals the next battleground in generative AI. Amazon’s move to back Anthropic while also locking Meta into AWS chips shows it’s playing both offense and defense across the AI stack, betting on owning the cloud and the models powering future ecommerce and customer service.\n\nMeanwhile, Amazon’s legal troubles in California and the shrinking seller base on its marketplace reveal a tension between scale and control. As revenue concentrates among top sellers, Amazon risks alienating the long tail that fuels its diversity and innovation. The real question is whether Amazon’s AI bets can offset regulatory and marketplace pressures, or if they’ll accelerate a shift toward more fragmented ecommerce ecosystems.",
+  "coverImageUrl": "/weekly-images/2026-W17.png",
+  "coverImageAlt": "Weekly cover illustration for 2026-W17"
+}

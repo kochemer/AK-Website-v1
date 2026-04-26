@@ -1,0 +1,16 @@
+{
+  "concept": "luxury-jeans-bread-scale-absurdity",
+  "primaryHumorDriver": "scale absurdity",
+  "secondaryEnhancer": "unexpected texture/material combination",
+  "sceneDescription": "A photorealistic supermarket bread shelf displays several loaves of plain white bread, but in the middle sits a perfectly folded pair of Levi’s jeans nestled among the loaves, with a shiny gold wristwatch draped casually over the bread. A small Amazon-branded paper shopping bag is squished at the far end, half-tucked behind a baguette. The scale absurdity comes from the luxury watch and high-end jeans displayed as if they’re just another cheap loaf. The playful twist is heightened by the jeans’ denim texture contrasting with the soft bread, and the gold watch gleaming against the mundane setting. Subtle NYTimes Technology and Modern Retail logos appear as tiny tags peeking from a bread bag and on a sticker on the shopping bag, blending naturally into the scene.",
+  "finalImagePrompt": "On a supermarket bread shelf lined with ordinary loaves, a neatly folded pair of blue Levi’s jeans sits among the bread, with a gold wristwatch draped on top. At the end, a small Amazon shopping bag peeks out behind a baguette. Some bread bags have small, subtle tags with newsy logos. The lighting is soft and natural, giving everything a real, touchable appearance.",
+  "negativePrompt": [
+    "text, letters, numbers, signage, labels, price tags",
+    "screens, UI, dashboards, holograms, floating icons",
+    "watermarks, unrelated brand logos",
+    "cartoon, illustration, CGI, 3D render, anime",
+    "diamond, diamonds, gemstone, gemstones, precious stones, jewelry close-up, jewelry product shot, diamond ring, diamond necklace, diamond earring, jeweled, sparkling gemstone",
+    "dramatic spotlight, glowing edges, rim lighting, vignette, cinematic color grade, blurred background, bokeh"
+  ],
+  "confidence": 0.93
+}

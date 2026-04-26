@@ -2350,5 +2350,149 @@
     ],
     "cached_at": "2026-04-19T07:53:33.938Z",
     "model": "gpt-4.1-mini"
+  },
+  "2026-W17:AI_and_Strategy:0ba6697b9412": {
+    "selected": [
+      {
+        "id": "17",
+        "rank": 1,
+        "why": "Major $25B investment in Anthropic impacts AI industry economics",
+        "confidence": 0.95
+      },
+      {
+        "id": "14",
+        "rank": 2,
+        "why": "Google's $40B investment in Anthropic signals AI power shift",
+        "confidence": 0.95
+      },
+      {
+        "id": "7",
+        "rank": 3,
+        "why": "Meta-AWS chip deal supports large-scale AI workload infrastructure",
+        "confidence": 0.9
+      },
+      {
+        "id": "12",
+        "rank": 4,
+        "why": "Bret Taylor’s Sierra acquires AI startup Fragment, expanding AI agents",
+        "confidence": 0.85
+      },
+      {
+        "id": "16",
+        "rank": 5,
+        "why": "Siemens launches AI system for automation engineering workflows",
+        "confidence": 0.85
+      },
+      {
+        "id": "1",
+        "rank": 6,
+        "why": "Strong data fabric needed for enterprise AI business value delivery",
+        "confidence": 0.8
+      },
+      {
+        "id": "0",
+        "rank": 7,
+        "why": "Agentic AI adoption in grocery signals new AI application frontier",
+        "confidence": 0.75
+      }
+    ],
+    "cached_at": "2026-04-26T07:57:55.291Z",
+    "model": "gpt-4.1-mini"
+  },
+  "2026-W17:Ecommerce_Retail_Tech:601b0ded0c5b": {
+    "selected": [
+      {
+        "id": "0",
+        "rank": 1,
+        "why": "Major antitrust legal action against Amazon affecting marketplace dynamics",
+        "confidence": 0.95
+      },
+      {
+        "id": "9",
+        "rank": 2,
+        "why": "Amazon seller count decline signals marketplace concentration trends",
+        "confidence": 0.9
+      },
+      {
+        "id": "6",
+        "rank": 3,
+        "why": "Pine Labs acquisition expands ecommerce payment and enablement capabilities",
+        "confidence": 0.9
+      },
+      {
+        "id": "8",
+        "rank": 4,
+        "why": "Warehouse automation acquisition impacts logistics and fulfillment technology",
+        "confidence": 0.88
+      },
+      {
+        "id": "7",
+        "rank": 5,
+        "why": "Google and Macy’s AI agent advances personalization and customer service",
+        "confidence": 0.87
+      },
+      {
+        "id": "12",
+        "rank": 6,
+        "why": "New AI app on Shopify signals enterprise AI adoption for merchants",
+        "confidence": 0.85
+      },
+      {
+        "id": "17",
+        "rank": 7,
+        "why": "Ulta and Google launch AI shopping assistant enhancing ecommerce experience",
+        "confidence": 0.85
+      }
+    ],
+    "cached_at": "2026-04-26T07:58:23.030Z",
+    "model": "gpt-4.1-mini"
+  },
+  "2026-W17:Luxury_and_Consumer:16f06263a660": {
+    "selected": [
+      {
+        "id": "8",
+        "rank": 1,
+        "why": "Actionable blueprint for consistent global store experience",
+        "confidence": 0.9
+      },
+      {
+        "id": "5",
+        "rank": 2,
+        "why": "Insight on tariff refunds shaping pricing strategies",
+        "confidence": 0.88
+      },
+      {
+        "id": "7",
+        "rank": 3,
+        "why": "Guidelines for negotiating with multibrand retail partners",
+        "confidence": 0.87
+      },
+      {
+        "id": "2",
+        "rank": 4,
+        "why": "Case study on online brands’ omnichannel retail expansion",
+        "confidence": 0.85
+      },
+      {
+        "id": "11",
+        "rank": 5,
+        "why": "Emerging-brand access and loyalty via Ulta Beauty World",
+        "confidence": 0.84
+      },
+      {
+        "id": "10",
+        "rank": 6,
+        "why": "Demand growth strategy by reducing product volume focus",
+        "confidence": 0.8
+      },
+      {
+        "id": "14",
+        "rank": 7,
+        "why": "One-stop-shop model enhancing customer product assortment",
+        "confidence": 0.8
+      }
+    ],
+    "cached_at": "2026-04-26T07:58:40.705Z",
+    "model": "o4-mini"
   }
 }

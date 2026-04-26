@@ -1,36 +1,36 @@
 {
-  "timestamp": "2026-04-19T07:40:48.888Z",
+  "timestamp": "2026-04-26T07:49:04.290Z",
   "sources": [
     {
       "sourceName": "BoF - News (The News in Brief)",
       "pagesFetched": 1,
       "fetchStatus": 200,
       "itemsMatched": 8,
-      "articlesExtracted": 4,
+      "articlesExtracted": 0,
       "rejectedNoDate": 0,
       "rejectedInvalidDate": 0,
       "rejectedNoTitle": 0,
       "rejectedNoUrl": 0,
-      "rejectedDuplicate": 4,
+      "rejectedDuplicate": 8,
       "rejectedSelectorMiss": 0,
-      "articlesKept": 4,
-      "yieldPercentage": 50,
+      "articlesKept": 0,
+      "yieldPercentage": 0,
       "failures": []
     },
     {
       "sourceName": "Jing Daily",
       "pagesFetched": 1,
       "fetchStatus": 200,
-      "itemsMatched": 25,
-      "articlesExtracted": 14,
+      "itemsMatched": 19,
+      "articlesExtracted": 9,
       "rejectedNoDate": 0,
       "rejectedInvalidDate": 0,
       "rejectedNoTitle": 0,
       "rejectedNoUrl": 0,
-      "rejectedDuplicate": 11,
+      "rejectedDuplicate": 10,
       "rejectedSelectorMiss": 0,
-      "articlesKept": 14,
-      "yieldPercentage": 56.00000000000001,
+      "articlesKept": 9,
+      "yieldPercentage": 47.368421052631575,
       "failures": []
     },
     {
@@ -38,23 +38,23 @@
       "pagesFetched": 1,
       "fetchStatus": 200,
       "itemsMatched": 171,
-      "articlesExtracted": 50,
+      "articlesExtracted": 49,
       "rejectedNoDate": 0,
       "rejectedInvalidDate": 0,
       "rejectedNoTitle": 0,
       "rejectedNoUrl": 0,
-      "rejectedDuplicate": 121,
+      "rejectedDuplicate": 122,
       "rejectedSelectorMiss": 0,
-      "articlesKept": 50,
-      "yieldPercentage": 29.239766081871345,
+      "articlesKept": 49,
+      "yieldPercentage": 28.654970760233915,
       "failures": []
     }
   ],
   "summary": {
     "totalPagesFetched": 3,
-    "totalItemsMatched": 204,
-    "totalArticlesExtracted": 68,
-    "totalArticlesKept": 68,
-    "overallYieldPercentage": 33.33333333333333
+    "totalItemsMatched": 198,
+    "totalArticlesExtracted": 58,
+    "totalArticlesKept": 58,
+    "overallYieldPercentage": 29.292929292929294
   }
 }

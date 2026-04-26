@@ -1,0 +1,28 @@
+{
+  "weekLabel": "2026-W17",
+  "homepageTopArticles": [
+    {
+      "title": "California Accuses Amazon of Price Fixing in Legal Filing",
+      "source": "NYTimes Technology",
+      "snippet": "The state claimed the e-commerce giant pressured brands like Levi’s and Hanes to ask competing retailers to raise prices on certain products.",
+      "aiSummary": "AI-generated summary: On April 20, 2026, California filed a legal complaint accusing Amazon of pressuring brands such as Levi’s and Hanes to encourage competing retailers to increase prices on specific products, according to NYTimes Technology."
+    },
+    {
+      "title": "Marketplace Briefing: Amazon’s seller count falls as revenue concentrates among top sellers",
+      "source": "Modern Retail",
+      "snippet": "The number of active sellers on Amazon.com has fallen from 584,000 in January 2025 to 500,000 as of March 2026, according to Marketplace Pulse.",
+      "aiSummary": "AI-generated summary: According to Marketplace Pulse, the number of active sellers on Amazon.com declined from 584,000 in January 2025 to 500,000 by March 2026, indicating a concentration of revenue among top sellers."
+    },
+    {
+      "title": "Wholesale lab-grown diamond prices down 14%",
+      "source": "Professional Jeweller",
+      "snippet": "The Q1 2026 Lab-Grown Diamond Wholesale Price List has been released, indicating a further 14% decline in lab-grown diamond prices. The weakest segment remains 3-carat rounds, down 28% year-over-year. While still steep, this represents an improvement from the 40%+ annual decline seen in Q1 2025. This moderation suggests that the market is beginning to move […]\nThe post Wholesale lab-grown diamond prices down 14% appeared first on Professional Jeweller.",
+      "aiSummary": "AI-generated summary: The Q1 2026 Lab-Grown Diamond Wholesale Price List reveals a 14% overall decline in lab-grown diamond prices, with 3-carat rounds dropping 28% year-over-year, marking a slowdown from the sharper 40%+ decline seen in Q1 2025. This suggests the market is beginning to stabilize."
+    }
+  ],
+  "model": "gpt-image-1",
+  "finalPrompt": "Photograph: On a supermarket bread shelf lined with ordinary loaves, a neatly folded pair of blue Levi’s jeans sits among the bread, with a gold wristwatch draped on top. At the end, a small Amazon shopping bag peeks out behind a baguette. Some bread bags have small, subtle tags with newsy logos. The lighting is soft and natural, giving everything a real, touchable appearance.\n\nCRITICAL CONSTRAINTS (must be strictly avoided):\n- text, letters, numbers, signage, labels, price tags, screens, UI, dashboards, holograms, floating icons, watermarks, unrelated brand logos, cartoon, illustration, CGI, 3D render, anime, diamond, diamonds, gemstone, gemstones, precious stones, jewelry close-up, jewelry product shot, diamond ring, diamond necklace, diamond earring, jeweled, sparkling gemstone, dramatic spotlight, glowing edges, rim lighting, vignette, cinematic color grade, blurred background, bokeh\n\nThis must look like a real photograph taken by a human — not AI-generated, not CGI, not a 3D render. Natural light. Real objects. Real imperfections. Fill the entire frame edge to edge with the scene — no black bars, no empty space at the edges.\n\nDo not include: text, labels, signage, screens, UI, logos unrelated to the scene, diamonds, gemstones, CGI lighting, dramatic spotlights, or blurred vignette backgrounds.",
+  "imageSize": "1536x1024",
+  "outputPath": "/weekly-images/2026-W17.png",
+  "generatedAt": "2026-04-26T08:02:27.983Z"
+}

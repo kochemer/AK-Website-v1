@@ -1,0 +1,78 @@
+{
+  "digestWeek": "2026-W17",
+  "ingestionWeek": "2026-W17",
+  "startedAt": "2026-04-26T07:48:39.638Z",
+  "finishedAt": "2026-04-26T08:02:43.533Z",
+  "steps": [
+    {
+      "name": "rss",
+      "ok": true,
+      "startedAt": "2026-04-26T07:48:39.657Z",
+      "finishedAt": "2026-04-26T07:49:01.542Z"
+    },
+    {
+      "name": "pages",
+      "ok": true,
+      "startedAt": "2026-04-26T07:49:01.542Z",
+      "finishedAt": "2026-04-26T07:49:04.291Z"
+    },
+    {
+      "name": "discovery",
+      "ok": true,
+      "startedAt": "2026-04-26T07:49:04.341Z",
+      "finishedAt": "2026-04-26T07:57:26.906Z"
+    },
+    {
+      "name": "classification",
+      "ok": true,
+      "startedAt": "2026-04-26T07:57:26.907Z",
+      "finishedAt": "2026-04-26T07:57:26.997Z"
+    },
+    {
+      "name": "digest",
+      "ok": true,
+      "startedAt": "2026-04-26T07:57:26.998Z",
+      "finishedAt": "2026-04-26T07:59:29.373Z"
+    },
+    {
+      "name": "email",
+      "ok": true,
+      "startedAt": "2026-04-26T07:59:29.373Z",
+      "finishedAt": "2026-04-26T07:59:51.044Z"
+    },
+    {
+      "name": "podcast",
+      "ok": true,
+      "startedAt": "2026-04-26T07:59:51.044Z",
+      "finishedAt": "2026-04-26T08:01:22.955Z"
+    },
+    {
+      "name": "cover",
+      "ok": true,
+      "startedAt": "2026-04-26T08:01:22.955Z",
+      "finishedAt": "2026-04-26T08:02:27.991Z"
+    },
+    {
+      "name": "competitorAnalyze",
+      "ok": true,
+      "startedAt": "2026-04-26T08:02:27.991Z",
+      "finishedAt": "2026-04-26T08:02:43.532Z"
+    }
+  ],
+  "health": {
+    "warnings": [
+      "Podcast script word count: 1385 words (minimum: 1500)",
+      "Luxury & Consumer: www.businessoffashion.com represents 42.9% (3/7) - exceeds 40% threshold",
+      "Jewellery Industry: www.professionaljeweller.com represents 42.9% (3/7) - exceeds 40% threshold",
+      "Jewellery Industry: www.jewellermagazine.com represents 42.9% (3/7) - exceeds 40% threshold"
+    ],
+    "metrics": {
+      "paywallPercent": 0,
+      "podcastWordCount": 1385
+    }
+  },
+  "versions": {
+    "node": "v20.20.2",
+    "gitCommit": "e7201e884ee0f3b1389f25a93b6a1f584d954d7b"
+  }
+}
