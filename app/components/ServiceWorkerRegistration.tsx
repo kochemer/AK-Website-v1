@@ -31,33 +31,31 @@ export default function ServiceWorkerRegistration() {
       return;
     }
 
-    // Unregister all existing service workers and clear caches for a fresh start
     const cleanupAndRegister = async () => {
       try {
-        // Get all existing registrations
         const registrations = await navigator.serviceWorker.getRegistrations();
-        
-        // Unregister all existing service workers
+
+        // If sw.js is already registered and active, just check for updates — don't tear it down.
+        // Unregistering invalidates any existing push subscriptions tied to that registration.
+        const existing = registrations.find(r =>
+          r.active?.scriptURL?.endsWith('/sw.js')
+        );
+        if (existing && existing.active) {
+          console.log('[SW Registration] Service worker already active, checking for updates...');
+          existing.update().catch(() => {});
+          return;
+        }
+
+        // Only unregister stale registrations (no active sw.js)
         for (const registration of registrations) {
-          console.log('[SW Registration] Unregistering existing service worker...');
+          console.log('[SW Registration] Unregistering stale service worker...');
           await registration.unregister();
         }
-        
-        // Clear all caches
-        if ('caches' in window) {
-          const cacheNames = await caches.keys();
-          console.log('[SW Registration] Clearing', cacheNames.length, 'caches...');
-          await Promise.all(cacheNames.map(cacheName => caches.delete(cacheName)));
-        }
-        
-        // Small delay to ensure cleanup completes
-        await new Promise(resolve => setTimeout(resolve, 100));
-        
-        // Now register fresh
+
+        // Register fresh
         registerServiceWorker();
       } catch (error) {
         console.error('[SW Registration] Cleanup failed:', error);
-        // Still try to register even if cleanup fails
         registerServiceWorker();
       }
     };

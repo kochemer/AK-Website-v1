@@ -1,13 +1,7 @@
 {
-  "2026-W14:2ab012041048": {
-    "editorialTake": "Anthropic’s $400 million acquisition of Coefficient Bio signals a sharp pivot in AI’s battleground: biotech is no longer a fringe play but a core strategic front. This isn’t just about technology convergence; it’s a bet on owning proprietary data and models that can unlock new drug discovery pipelines faster than traditional pharma. Anthropic’s move to back this with a political action committee shows they’re gearing up for influence beyond labs, aiming to shape regulations that will decide who wins in AI-powered biotech.\n\nAmazon’s 3.5% surcharge on fulfillment fees exposes the brutal squeeze logistics costs are placing on ecommerce giants and their merchants. Fuel and supply chain inflation are no longer transient shocks but structural headwinds forcing price shifts downstream. This forces a brutal question: how long before ecommerce platforms stop subsidizing merchants and start demanding more control over pricing and margins? The tension between platform scale and merchant profitability just got a lot sharper.",
-    "cached_at": "2026-04-05T16:35:54.322Z",
-    "model": "gpt-4.1-mini",
-    "version": "1.1"
-  },
-  "2026-W15:d3666b00b279": {
-    "editorialTake": "Amazon’s $200 billion AI bet is not just about tech muscle—it’s a declaration that the future of ecommerce is a war of scale and speed. Andy Jassy’s refusal to be conservative signals Amazon’s intent to crush competitors by embedding AI deep into every layer, from supply chains to customer experience. Meanwhile, sellers on Amazon’s platform are squeezed by rising fees and policy shifts, showing that Amazon’s AI investment is a double-edged sword: it powers growth but tightens the noose on its ecosystem.\n\nFrasers Group’s 25% jump in conversions after launching an AI shopping assistant proves that AI-driven personalization is no gimmick but a direct revenue driver in premium retail. The question is how many brands can afford to play this game at scale without Amazon’s vast resources. If AI becomes table stakes for conversion, will mid-tier and emerging brands be pushed out, or will new models emerge to democratize access to AI-driven commerce?",
-    "cached_at": "2026-04-12T07:38:20.929Z",
+  "2026-W13:f737866ac3b5": {
+    "editorialTake": "TikTok Shop nearly doubled its sales in 2025, hitting over 103 billion transactions and pulling in major brands like Ulta and Sally Beauty. This is a clear signal that TikTok is no longer just a discovery platform but a serious retail channel. Brands that ignore TikTok’s commerce engine risk losing ground to competitors who master social-driven shopping and younger consumers’ attention.\n\nAmazon moving Prime Day from July to June is more than a calendar tweak: it compresses the summer sales window and forces sellers to rethink inventory and marketing cycles. This shift pressures brands to accelerate product launches and promotions, squeezing margins for those unprepared. The real question is whether sellers can adapt fast enough or if Amazon will further consolidate power by controlling the retail calendar.",
+    "cached_at": "2026-04-04T13:25:28.756Z",
     "model": "gpt-4.1-mini",
     "version": "1.1"
   },
@@ -17,9 +11,9 @@
     "model": "gpt-4.1-mini",
     "version": "1.1"
   },
-  "2026-W17:dec7d105f936": {
-    "editorialTake": "Amazon and Google are doubling down on Anthropic with eye-popping investments of up to $25 billion and $40 billion respectively. This isn’t just a funding round, it’s a strategic land grab for AI talent and infrastructure that signals the next battleground in generative AI. Amazon’s move to back Anthropic while also locking Meta into AWS chips shows it’s playing both offense and defense across the AI stack, betting on owning the cloud and the models powering future ecommerce and customer service.\n\nMeanwhile, Amazon’s legal troubles in California and the shrinking seller base on its marketplace reveal a tension between scale and control. As revenue concentrates among top sellers, Amazon risks alienating the long tail that fuels its diversity and innovation. The real question is whether Amazon’s AI bets can offset regulatory and marketplace pressures, or if they’ll accelerate a shift toward more fragmented ecommerce ecosystems.",
-    "cached_at": "2026-04-26T07:59:29.371Z",
+  "2026-W16:8ac41215f3a1": {
+    "editorialTake": "Amazon’s $10.8 billion acquisition of Globalstar signals a bold pivot beyond ecommerce into satellite internet. This is not just about connectivity but about owning the infrastructure that could redefine last-mile delivery and data access for its sprawling logistics network. Amazon is betting on satellite tech to solve persistent bottlenecks in rural and international markets, which could widen its moat against competitors like Walmart and Shopify.\n\nMeanwhile, OpenAI’s loss of three top executives amid a product lineup shakeup reveals deeper turbulence at the heart of AI innovation. This is a company struggling to balance rapid growth with strategic clarity, even as Google pushes a new generative UI standard. The real question is whether OpenAI can stabilize its leadership and product focus before competitors capitalize on its internal fractures.",
+    "cached_at": "2026-04-21T06:17:35.406Z",
     "model": "gpt-4.1-mini",
     "version": "1.1"
   }

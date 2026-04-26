@@ -1,95 +1,99 @@
 {
   "week": "2026-W17",
-  "generatedAt": "2026-04-26T07:59:51.043Z",
-  "intro": "This week’s intelligence digest highlights key shifts in retail and AI sectors, including Amazon’s narrowing seller base amid revenue concentration and Meta’s strategic AWS chip partnership to boost AI capabilities. Additionally, notable M&A activity and retail expansions underscore evolving market dynamics in ecommerce and luxury.",
+  "generatedAt": "2026-04-26T10:45:25.747Z",
+  "intro": "This week’s intelligence digest highlights significant shifts in retail and AI sectors, including California’s legal challenge against Amazon for price fixing and major investments by Amazon and Google in AI startup Anthropic. Additionally, the luxury market sees evolving dynamics with falling lab-grown diamond prices and renewed consumer interest driven by World Diamond Day.",
   "readOneThing": {
-    "title": "Marketplace Briefing: Amazon’s seller count falls as revenue concentrates among top sellers",
-    "url": "https://www.modernretail.co/operations/marketplace-briefing-amazons-seller-count-falls-as-revenue-concentrates-among-top-sellers/?utm_campaign=modernretaildis&utm_medium=rss&utm_source=general-rss"
+    "title": "California Accuses Amazon of Price Fixing in Legal Filing",
+    "url": "https://www.nytimes.com/2026/04/20/technology/amazon-antitrust-suit-california.html"
   },
   "items": [
     {
       "rank": 1,
+      "title": "California Accuses Amazon of Price Fixing in Legal Filing",
+      "url": "https://www.nytimes.com/2026/04/20/technology/amazon-antitrust-suit-california.html",
+      "source": "NYTimes Technology",
+      "bullets": [
+        "California filed a legal complaint against Amazon on April 20, 2026, accusing the company of pressuring brands to fix product prices.",
+        "The complaint specifically names brands like Levi’s and Hanes as being pressured to encourage competing retailers to raise prices on certain products.",
+        "This legal action reflects ongoing scrutiny of Amazon's market practices and adds to previous investigations into e-commerce price manipulation."
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "Wholesale lab-grown diamond prices down 14%",
+      "url": "https://www.professionaljeweller.com/lab-grown-diamond-prices-down-14/",
+      "source": "Professional Jeweller",
+      "bullets": [
+        "The Q1 2026 Lab-Grown Diamond Wholesale Price List reveals a 14% decline in lab-grown diamond prices, signaling a moderation in market volatility.",
+        "The 3-carat round diamonds experienced the steepest price drop, falling 28% year-over-year, an improvement from the over 40% decline in Q1 2025.",
+        "After nearly a decade of continuous price declines, the lab-grown diamond market is stabilizing with measured demand growth and producers focusing on higher quality output."
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "Amazon Plans to Invest Up to $25 Billion in Anthropic",
+      "url": "https://www.nytimes.com/2026/04/20/technology/amazon-anthropic-investment.html",
+      "source": "NYTimes Technology",
+      "bullets": [
+        "Amazon has announced plans to invest up to $25 billion in the AI startup Anthropic to advance artificial intelligence technologies.",
+        "Anthropic has committed to spending $100 billion on Amazon technologies to support the development and deployment of AI systems.",
+        "This investment represents one of the largest financial commitments in the AI sector, reflecting rapid growth and competition in the industry."
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "How COS Orchestrates a Global Elevated Store Experience",
+      "url": "https://www.businessoffashion.com/articles/workplace-talent/how-cos-orchestrates-a-global-elevated-store-experience/",
+      "source": "Business of Fashion - News",
+      "bullets": [
+        "The brand emphasizes a localized approach to portfolio management to tailor the store experience to different markets worldwide.",
+        "Based in London, COS is executing this strategy across multiple regions to elevate its retail footprint over the coming years.",
+        "Read the full article for details."
+      ]
+    },
+    {
+      "rank": 5,
       "title": "Marketplace Briefing: Amazon’s seller count falls as revenue concentrates among top sellers",
       "url": "https://www.modernretail.co/operations/marketplace-briefing-amazons-seller-count-falls-as-revenue-concentrates-among-top-sellers/?utm_campaign=modernretaildis&utm_medium=rss&utm_source=general-rss",
       "source": "Modern Retail",
       "bullets": [
-        "The number of active sellers on Amazon.com dropped from 584,000 in January 2025 to 500,000 by March 2026 due to rising costs and changing policies.",
-        "Fewer than 8,000 sellers now generate about half of Amazon's U.S. third-party gross merchandise volume, down from approximately 15,000 sellers a few years ago.",
-        "Amazon's third-party seller services produced $172 billion in 2025, accounting for 24% of the company's total net sales and marking an 11% increase from the previous year."
-      ],
-      "summary": "AI-generated summary: According to Marketplace Pulse, the number of active sellers on Amazon.com declined from 584,000 in January 2025 to 500,000 by March 2026, indicating a concentration of revenue among top sellers."
+        "Amazon's active seller count on its marketplace declined from 584,000 in January 2025 to 500,000 by March 2026 amid rising fees and operational costs.",
+        "Marketplace Pulse reported that fewer than 8,000 sellers now generate roughly half of Amazon's U.S. third-party gross merchandise volume, down from about 15,000 sellers a few years ago.",
+        "In 2025, third-party seller services, including commissions and advertising fees, generated $172 billion for Amazon, accounting for approximately 24% of the company's total net sales."
+      ]
     },
     {
-      "rank": 2,
-      "title": "‘Ram-Raid’ Leaves Employee Critically Injured, Jewelry Store in Ruins (Video)",
-      "url": "https://instoremag.com/ram-raid-leaves-employee-critically-injured-jewelry-store-in-ruins-video/",
-      "source": "Instore Magazine",
+      "rank": 6,
+      "title": "Google pours up to $40 billion into ChatGPT rival Anthropic",
+      "url": "https://the-decoder.com/google-pours-up-to-40-billion-into-chatgpt-rival-anthropic/",
+      "source": "The Decoder",
       "bullets": [
-        "A stolen vehicle was deliberately crashed into Chinna Jewellers in South Sacramento, critically injuring an elderly employee and causing extensive storefront damage.",
-        "Private security supervisor Alex Marchuk confronted the suspects with a firearm, preventing the theft despite multiple individuals arriving with bags.",
-        "This incident marks the second time since 2020 that the jewelry store has been targeted, with suspects facing potential charges of attempted robbery and attempted murder."
-      ],
-      "summary": "AI-generated summary: A stolen car was ram-raided into a South Sacramento jewelry store in an apparent coordinated heist, leaving an employee critically injured and the store in ruins, though a security guard managed to thwart the attempt."
+        "Google is investing up to $40 billion into Anthropic, the AI company that developed the ChatGPT rival Claude.",
+        "This investment, combined with Amazon's $25 billion pledge, will provide Anthropic with up to $65 billion in funding within weeks.",
+        "The large-scale funding from major tech companies highlights the growing competition in the AI chatbot market."
+      ]
     },
     {
-      "rank": 3,
-      "title": "Meta signs AWS chip deal to support AI workloads ",
-      "url": "https://economictimes.indiatimes.com/tech/technology/meta-strikes-deal-with-amazons-cloud-unit-to-use-its-cpu-chips/articleshow/130495814.cms",
-      "source": "Economic Times - Technology",
+      "rank": 7,
+      "title": "World Diamond Day prompts surge in jewellery interest",
+      "url": "https://www.jewellermagazine.com/Article/14994/World-Diamond-Day-prompts-surge-in-jewellery-interest",
+      "source": "Jeweller - Business News",
       "bullets": [
-        "Meta Platforms has signed a multi-year agreement with Amazon Web Services to use tens of millions of AWS Graviton CPU cores for its artificial intelligence infrastructure.",
-        "The first deployment will involve tens of millions of Graviton cores, with potential expansion as Meta's AI workload requirements increase.",
-        "AWS has been developing its in-house Graviton processors since 2018 and is currently on its fifth generation, manufactured by Taiwan Semiconductor Manufacturing Company."
-      ],
-      "summary": "AI-generated summary: Meta Platforms has signed a multi-year deal with Amazon Web Services to use tens of millions of AWS Graviton CPU cores, aiming to enhance its AI infrastructure for CPU-intensive workloads and support its growing AI initiatives."
+        "The Natural Diamond Council announced the successful launch of the inaugural World Diamond Day, which aimed to promote diamond jewellery globally.",
+        "The event led to a notable surge in consumer interest and sales of diamond jewellery, as reported by industry sources on April 20, 2026.",
+        "Read the full article for details."
+      ]
     },
     {
-      "rank": 4,
-      "title": "Cider joins Revolve and Shein as online fashion brands open permanent retail stores",
-      "url": "https://www.glossy.co/fashion/cider-joins-revolve-and-shein-as-online-fashion-brands-open-permanent-retail-stores/?utm_campaign=glossydis&utm_medium=rss&utm_source=general-rss",
-      "source": "Glossy",
-      "bullets": [
-        "Cider has opened its first permanent 8,000-square-foot store in Los Angeles' Farmer’s Market after five years of online growth and pop-up testing.",
-        "The company has raised over $130 million in funding, increased revenue sevenfold in five years, and its mobile app has been downloaded 50 million times.",
-        "Following similar moves by Revolve and Shein, Cider's physical store launch reflects a broader trend of online fashion brands expanding into brick-and-mortar retail."
-      ],
-      "summary": "AI-generated summary: Los Angeles-based fashion brand Cider, known for its affordable online offerings competing with H&M and Shein, has opened its first permanent retail store in Los Angeles after five years of online growth and testing. This move aligns Cider with other online fashion brands like Revolve and Shein that are expanding into physical retail."
-    },
-    {
-      "rank": 5,
+      "rank": 8,
       "title": "Pine Labs acquires ecommerce enabler Shopflo for Rs 88 crore ",
       "url": "https://economictimes.indiatimes.com/tech/technology/pine-labs-acquires-100-stake-in-ecommerce-enabler-shopflo-for-rs-88-crore/articleshow/130511770.cms",
       "source": "Economic Times - Technology",
       "bullets": [
         "Shopflo, founded in 2021, serves 1,000 direct-to-consumer brands and offers payment checkout, discounts, loyalty programs, and payment orchestration features.",
-        "Following the acquisition, Pine Labs Online will have about 400 employees and aims to target mid-market and small business segments alongside its existing large enterprise focus.",
-        "SynopsisDigital payments major Pine Labs has acquired ecommerce enabler Shopflo Technologies for Rs 88 crore, aiming to strengthen its online merchant offerings"
-      ],
-      "summary": "AI-generated summary: Digital payments company Pine Labs has acquired ecommerce enabler Shopflo Technologies for Rs 88 crore to enhance its online merchant services and expand into mid-market and small business segments, increasing competition with rivals such as Razorpay and PayU."
-    },
-    {
-      "rank": 6,
-      "title": "Bret Taylor’s Sierra buys YC-backed AI startup Fragment",
-      "url": "https://techcrunch.com/2026/04/23/bret-taylors-sierra-buys-yc-backed-ai-startup-fragment/",
-      "source": "TechCrunch - AI",
-      "bullets": [
-        "Fragment raised approximately $2 million in its seed round and its co-founders Olivier Moindrot and Guillaume Genthial will join Sierra's team.",
-        "This acquisition marks Sierra's third public purchase following recent buys of Japan-based Opera Tech and voice agent company Receptive AI in March 2026.",
-        "This is Sierra’s third public acquisition"
-      ],
-      "summary": "AI-generated summary: Bret Taylor’s AI customer service startup Sierra has acquired Fragment, a French AI startup backed by Y Combinator, as announced on April 23, 2026."
-    },
-    {
-      "rank": 7,
-      "title": "American Industrial Partners to acquire Honeywell warehouse automation",
-      "url": "https://www.digitalcommerce360.com/2026/04/24/american-industrial-partners-to-acquire-honeywell-warehouse-automation/",
-      "source": "Digital Commerce 360",
-      "bullets": [
-        "Private equity firm American Industrial Partners will acquire Honeywell's Warehouse and Workflow Solutions business, with the deal expected to close in the second half of 2026.",
-        "Honeywell's WWS segment generated approximately $935 million in revenue in 2025 and employs over 3,300 people worldwide.",
-        "This acquisition is part of Honeywell's broader strategy to streamline operations by divesting non-core businesses while expanding its focus on aerospace and automation sectors."
-      ],
-      "summary": "AI-generated summary: Private equity firm American Industrial Partners (AIP) will acquire Honeywell’s Warehouse and Workflow Solutions (WWS) business, with the deal expected to close in the second half of 2026. Terms of the acquisition have not been disclosed."
+        "Following the acquisition, Pine Labs Online will have about 400 employees, and Shopflo's founders will step down from executive roles but remain as advisors.",
+        "Read the full article for details."
+      ]
     }
   ]
 }

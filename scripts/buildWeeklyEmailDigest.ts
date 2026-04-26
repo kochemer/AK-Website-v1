@@ -120,33 +120,22 @@ async function selectAndRankArticles(digest: WeeklyDigest, topN: number, weekLab
       continue;
     }
     
-    // Try articles starting from startRankIdx, incrementing until we find one with full text
+    // Take the article at exactly startRankIdx (skip only true duplicates)
     let foundArticle = false;
     for (let rankIdx = startRankIdx; rankIdx < topic.top.length; rankIdx++) {
       if (selected.length >= topN) break;
-      
+
       const article = topic.top[rankIdx];
-      
-      // Skip if already seen (duplicate URL)
-      if (seen.has(article.url)) {
-        continue;
-      }
-      
-      // Check if full text is available (cache or on-demand extraction)
-      const fullText = await getFullTextForArticle({ url: article.url, title: article.title, source: article.source }, weekLabel);
-      if (!fullText) {
-        console.log(`[EmailDigest] Skipping "${article.title}" - full text not available, trying next article in ${categoryKey}`);
-        continue; // Try next article in same category
-      }
-      
-      // Full text available - include this article
+
+      if (seen.has(article.url)) continue;
+
       const materiality = computeCommerceMateriality({
         title: article.title,
         source: article.source,
         snippet: article.snippet,
         aiSummary: article.aiSummary
       });
-      
+
       selected.push({
         id: article.id,
         title: article.title,
@@ -161,11 +150,11 @@ async function selectAndRankArticles(digest: WeeklyDigest, topN: number, weekLab
       });
       seen.add(article.url);
       foundArticle = true;
-      break; // Found one with full text, move to next pattern item
+      break;
     }
-    
+
     if (!foundArticle) {
-      console.warn(`[EmailDigest] No articles with full text found in ${categoryKey} starting from rank ${startRankIdx}`);
+      console.warn(`[EmailDigest] No article found in ${categoryKey} at rank ${startRankIdx}`);
     }
   }
   

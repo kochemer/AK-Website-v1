@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { isIosSafari } from '@/lib/pwa';
+import { isIosSafari, isIosWithPushSupport } from '@/lib/pwa';
 
 // Extract VAPID key at module level to ensure Next.js can statically replace it
 // This pattern ensures build-time replacement works correctly
@@ -80,15 +80,15 @@ export default function EnableNotificationsButton() {
           return;
         }
 
-        // Exclude iOS browsers (Safari/Chrome on iOS)
-        // iOS doesn't properly support Web Push yet
-        if (isIosSafari()) {
+        // Exclude iOS Safari unless running as installed PWA on iOS 16.4+
+        // (Web Push on iOS requires standalone mode + iOS 16.4+)
+        if (isIosSafari() && !isIosWithPushSupport()) {
           setIsSupported(false);
           setIsChecking(false);
           return;
         }
 
-        // Check for iOS Chrome (CriOS) - also exclude
+        // Exclude Chrome/Firefox on iOS — they don't support Web Push regardless of version
         const ua = navigator.userAgent;
         if (/CriOS/.test(ua) || /FxiOS/.test(ua)) {
           setIsSupported(false);

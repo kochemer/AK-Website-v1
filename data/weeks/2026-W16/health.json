@@ -1,69 +1,45 @@
 {
   "digestWeek": "2026-W16",
-  "ingestionWeek": "2026-W16",
-  "startedAt": "2026-04-19T07:40:25.129Z",
-  "finishedAt": "2026-04-19T07:56:50.149Z",
+  "ingestionWeek": "2026-W17",
+  "startedAt": "2026-04-21T06:06:27.607Z",
+  "finishedAt": "2026-04-21T06:17:55.493Z",
   "steps": [
-    {
-      "name": "rss",
-      "ok": true,
-      "startedAt": "2026-04-19T07:40:25.148Z",
-      "finishedAt": "2026-04-19T07:40:47.435Z"
-    },
     {
       "name": "pages",
       "ok": true,
-      "startedAt": "2026-04-19T07:40:47.435Z",
-      "finishedAt": "2026-04-19T07:40:48.888Z"
+      "startedAt": "2026-04-21T06:06:27.621Z",
+      "finishedAt": "2026-04-21T06:06:29.872Z"
     },
     {
       "name": "discovery",
       "ok": true,
-      "startedAt": "2026-04-19T07:40:48.889Z",
-      "finishedAt": "2026-04-19T07:51:43.005Z"
+      "startedAt": "2026-04-21T06:06:29.874Z",
+      "finishedAt": "2026-04-21T06:14:43.691Z"
     },
     {
       "name": "classification",
       "ok": true,
-      "startedAt": "2026-04-19T07:51:43.006Z",
-      "finishedAt": "2026-04-19T07:51:43.100Z"
+      "startedAt": "2026-04-21T06:14:43.691Z",
+      "finishedAt": "2026-04-21T06:14:43.789Z"
     },
     {
       "name": "digest",
       "ok": true,
-      "startedAt": "2026-04-19T07:51:43.100Z",
-      "finishedAt": "2026-04-19T07:53:51.905Z"
-    },
-    {
-      "name": "email",
-      "ok": true,
-      "startedAt": "2026-04-19T07:53:51.905Z",
-      "finishedAt": "2026-04-19T07:54:13.182Z"
-    },
-    {
-      "name": "podcast",
-      "ok": true,
-      "startedAt": "2026-04-19T07:54:13.182Z",
-      "finishedAt": "2026-04-19T07:55:34.989Z"
-    },
-    {
-      "name": "cover",
-      "ok": true,
-      "startedAt": "2026-04-19T07:55:34.989Z",
-      "finishedAt": "2026-04-19T07:56:35.244Z"
+      "startedAt": "2026-04-21T06:14:43.789Z",
+      "finishedAt": "2026-04-21T06:17:35.416Z"
     },
     {
       "name": "competitorAnalyze",
       "ok": true,
-      "startedAt": "2026-04-19T07:56:35.244Z",
-      "finishedAt": "2026-04-19T07:56:50.147Z"
+      "startedAt": "2026-04-21T06:17:35.417Z",
+      "finishedAt": "2026-04-21T06:17:55.491Z"
     }
   ],
   "health": {
     "warnings": [
       "Podcast script word count: 1207 words (minimum: 1500)",
       "Ecommerce & Retail Tech: internetretailing.net represents 42.9% (3/7) - exceeds 40% threshold",
-      "Luxury & Consumer: www.businessoffashion.com represents 42.9% (3/7) - exceeds 40% threshold"
+      "Jewellery Industry: www.jewellermagazine.com represents 42.9% (3/7) - exceeds 40% threshold"
     ],
     "metrics": {
       "paywallPercent": 0,
@@ -71,7 +47,6 @@
     }
   },
   "versions": {
-    "node": "v20.20.2",
-    "gitCommit": "3bfb65423bdc648c6350dfc2ab9f89bff6baf63b"
+    "node": "v24.12.0"
   }
 }

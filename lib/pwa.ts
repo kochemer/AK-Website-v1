@@ -71,6 +71,52 @@ export function isIosSafari(): boolean {
 }
 
 /**
+ * Detects iOS Safari 16.4+ running as an installed PWA (standalone mode).
+ * Web Push on iOS requires:
+ *   1. Safari (not Chrome/Firefox on iOS)
+ *   2. iOS 16.4 or later
+ *   3. Running as installed PWA (added to home screen)
+ *
+ * @returns true if push notifications are supported on this iOS device
+ */
+export function isIosWithPushSupport(): boolean {
+  if (typeof window === 'undefined' || typeof navigator === 'undefined') {
+    return false;
+  }
+
+  const ua = navigator.userAgent;
+
+  // Must be an iOS device (includes iPadOS 13+ detection)
+  const isIOSDevice = /iPad|iPhone|iPod/.test(ua);
+  const isIPadOS = navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1;
+  if (!isIOSDevice && !isIPadOS) {
+    return false;
+  }
+
+  // Chrome and Firefox on iOS don't support Web Push
+  if (/CriOS|FxiOS/.test(ua)) {
+    return false;
+  }
+
+  // Extract iOS version from user agent: "CPU iPhone OS 16_4" or "CPU OS 17_0"
+  const match = ua.match(/OS (\d+)_(\d+)/);
+  if (!match) {
+    return false;
+  }
+
+  const major = parseInt(match[1], 10);
+  const minor = parseInt(match[2], 10);
+
+  // Web Push on iOS requires 16.4+
+  if (major < 16 || (major === 16 && minor < 4)) {
+    return false;
+  }
+
+  // Must be running as an installed PWA — iOS only allows push in standalone mode
+  return isStandalone();
+}
+
+/**
  * Checks if the beforeinstallprompt event has been captured and can be used to prompt installation
  * 
  * This should be used in conjunction with storing the event when it fires.
