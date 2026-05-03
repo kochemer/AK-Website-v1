@@ -1,0 +1,959 @@
+{
+  "weekLabel": "2026-W18",
+  "tz": "Europe/Copenhagen",
+  "startISO": "2026-04-26T22:00:00.000Z",
+  "endISO": "2026-05-03T21:59:59.999Z",
+  "builtAtISO": "2026-05-03T10:20:30.991+02:00",
+  "builtAtLocal": "2026-05-03 10:20:30",
+  "totals": {
+    "total": 788,
+    "byTopic": {
+      "AIStrategy": 126,
+      "EcommerceRetail": 522,
+      "LuxuryConsumer": 119,
+      "Jewellery": 17
+    }
+  },
+  "topics": {
+    "AI_and_Strategy": {
+      "total": 126,
+      "top": [
+        {
+          "id": "3xvalu",
+          "title": "Pentagon signs new military AI deals with Nvidia, Microsoft and Amazon",
+          "url": "https://www.ft.com/content/23d98dfa-dfe7-4a88-bae1-6d66900d74ca",
+          "source": "Financial Times - Technology",
+          "published_at": "2026-05-01T13:19:27.000Z",
+          "ingested_at": "2026-05-03T08:08:54.148Z",
+          "snippet": "New contracts with tech companies come after clash with Anthropic over Claude use",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ai",
+              "anthropic",
+              "claude"
+            ]
+          },
+          "aiSummary": "AI-generated summary: On May 1, 2026, the Pentagon signed new military AI contracts with Nvidia, Microsoft, and Amazon following a dispute with Anthropic regarding the use of its AI model Claude, as reported by Financial Times Technology.",
+          "translations": {
+            "da": {
+              "title": "Pentagon underskriver nye militære AI-aftaler med Nvidia, Microsoft og Amazon",
+              "summary": "AI-genereret resumé: Den 1. maj 2026 underskrev Pentagon nye militære AI-kontrakter med Nvidia, Microsoft og Amazon efter en tvist med Anthropic om brugen af deres AI-model Claude, rapporteret af Financial Times Technology."
+            },
+            "es": {
+              "title": "Pentágono firma nuevos contratos militares de IA con Nvidia, Microsoft y Amazon",
+              "summary": "Resumen generado por IA: El 1 de mayo de 2026, el Pentágono firmó nuevos contratos militares de IA con Nvidia, Microsoft y Amazon tras una disputa con Anthropic sobre el uso de su modelo de IA Claude, según informó Financial Times Technology."
+            }
+          }
+        },
+        {
+          "id": "8hmv5",
+          "title": "Big Tech just proved AI infrastructure spending works. Then it raised the bill anyway",
+          "url": "https://www.artificialintelligence-news.com/news/big-tech-ai-infrastructure-spending-q1-2026-results/",
+          "source": "AI News",
+          "published_at": "2026-04-30T10:00:00.000Z",
+          "ingested_at": "2026-05-03T08:08:54.148Z",
+          "snippet": "Every cloud beat. Every capex forecast rose. That is the two-sentence summary of the biggest earnings day of 2026, and it tells you almost everything you need to know about where Big Tech’s AI infrastructure spending actually stands right now. Microsoft, Alphabet, Meta, and Amazon collectively committed somewhere between US$630 billion and US$650 billion in […]\nThe post Big Tech just proved AI infrastructure spending works. Then it raised the bill anyway appeared first on AI News.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ai"
+            ]
+          },
+          "aiSummary": "AI-generated summary: On the biggest earnings day of 2026, Microsoft, Alphabet, Meta, and Amazon demonstrated that their substantial AI infrastructure investments are effective, yet they collectively increased their capital expenditure forecasts to between US$630 billion and US$650 billion. This reflects Big Tech's continued commitment to expanding AI capabilities despite already proving the value of their spending.",
+          "translations": {
+            "da": {
+              "title": "Big Tech har netop bevist, at investeringer i AI-infrastruktur virker. Alligevel hævede de regningen",
+              "summary": "AI-genereret resumé: På den største indtjeningsdag i 2026 viste Microsoft, Alphabet, Meta og Amazon, at deres betydelige investeringer i AI-infrastruktur er effektive, men de øgede alligevel deres kapitaludgiftsprognoser til mellem 630 og 650 milliarder USD. Dette afspejler Big Techs fortsatte engagement i at udvide AI-mulighederne trods allerede bevist værdi af deres investeringer."
+            },
+            "es": {
+              "title": "Big Tech acaba de demostrar que el gasto en infraestructura de IA funciona. Pero aun así aumentó la factura",
+              "summary": "Resumen generado por IA: En el día de ganancias más importante de 2026, Microsoft, Alphabet, Meta y Amazon demostraron que sus importantes inversiones en infraestructura de IA son efectivas, pero colectivamente aumentaron sus previsiones de gasto de capital a entre 630 y 650 mil millones de dólares. Esto refleja el compromiso continuo de Big Tech con la expansión de las capacidades de IA a pesar de haber demostrado ya el valor de su gasto."
+            }
+          }
+        },
+        {
+          "id": "eklm0r",
+          "title": "Lightelligence’s 400% debut is a bet that AI’s next bottleneck is the optical interconnect",
+          "url": "https://www.artificialintelligence-news.com/news/lightelligence-ipo-optical-interconnect-ai-infrastructure/",
+          "source": "AI News",
+          "published_at": "2026-04-28T10:00:00.000Z",
+          "ingested_at": "2026-05-03T08:08:54.148Z",
+          "snippet": "When a company with US$15.5 million in annual revenue debuts on a stock exchange and its market capitalisation briefly hits US$10 billion, the obvious question is: what do investors know that the financials don’t show yet? In Lightelligence’s case, the answer is optical interconnect and the growing conviction that conventional copper wiring between AI chips […]\nThe post Lightelligence’s 400% debut is a bet that AI’s next bottleneck is the optical interconnect appeared first on AI News.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ai"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Lightelligence’s stock surged 400% at debut despite modest revenue, reflecting investor confidence that optical interconnect technology will address the emerging bottleneck in AI chip communication previously reliant on copper wiring.",
+          "translations": {
+            "da": {
+              "title": "Lightelligences debut stiger 400 % på et væddemål om, at AI's næste flaskehals er den optiske forbindelse",
+              "summary": "AI-genereret resumé: Lightelligences aktie steg 400 % ved debut trods beskedne indtægter, hvilket afspejler investorernes tillid til, at optisk interconnect-teknologi vil løse den nye flaskehals i AI-chipkommunikation, som tidligere var afhængig af kobberledninger."
+            },
+            "es": {
+              "title": "El debut de Lightelligence sube un 400% apostando a que el próximo cuello de botella de la IA es la interconexión óptica",
+              "summary": "Resumen generado por IA: Las acciones de Lightelligence se dispararon un 400% en su debut a pesar de ingresos modestos, reflejando la confianza de los inversores en que la tecnología de interconexión óptica resolverá el cuello de botella emergente en la comunicación de chips de IA que antes dependía del cableado de cobre."
+            }
+          }
+        },
+        {
+          "id": "qkfjck",
+          "title": "Nebius to buy Eigen AI for $643 million to boost inference and US expansion ",
+          "url": "https://economictimes.indiatimes.com/tech/startups/nebius-to-buy-eigen-ai-for-643-million-to-boost-inference-and-us-expansion/articleshow/130680117.cms",
+          "source": "Economic Times - Technology",
+          "published_at": "2026-05-01T14:20:00.000Z",
+          "ingested_at": "2026-05-03T08:08:54.148Z",
+          "snippet": "Amsterdam-based Nebius is acquiring Eigen AI for approximately $643 million. This strategic move aims to enhance Nebius' production-grade artificial intelligence capabilities and expand its United States operations. The deal will integrate Eigen AI's inference and optimization technology into Nebius' Token Factory platform. This acquisition is set to close in the coming weeks.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.2,
+            "insightSignalBoost": 0,
+            "penalty": 0.2,
+            "matchedKeywords": [
+              "ai",
+              "inference",
+              "artificial intelligence",
+              "acquisition"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Amsterdam-based Nebius is acquiring Eigen AI for $643 million to strengthen its production-grade AI capabilities and expand its US presence by integrating Eigen AI's inference and optimization technology into its Token Factory platform. The acquisition is expected to finalize in the coming weeks.",
+          "translations": {
+            "da": {
+              "title": "Nebius køber Eigen AI for 643 millioner dollars for at styrke inferens og udvide i USA",
+              "summary": "AI-genereret resumé: Amsterdam-baserede Nebius erhverver Eigen AI for 643 millioner dollars for at styrke sine produktionsklare AI-kapaciteter og udvide sin tilstedeværelse i USA ved at integrere Eigen AIs inferens- og optimeringsteknologi i sin Token Factory-platform. Opkøbet forventes at blive afsluttet i de kommende uger."
+            },
+            "es": {
+              "title": "Nebius compra Eigen AI por 643 millones de dólares para impulsar la inferencia y la expansión en EE. UU.",
+              "summary": "Resumen generado por IA: Nebius, con sede en Ámsterdam, está adquiriendo Eigen AI por 643 millones de dólares para fortalecer sus capacidades de IA de nivel productivo y expandir su presencia en EE. UU. integrando la tecnología de inferencia y optimización de Eigen AI en su plataforma Token Factory. Se espera que la adquisición se complete en las próximas semanas."
+            }
+          }
+        },
+        {
+          "id": "3z6e2a",
+          "title": "IBM launches AI platform Bob to regulate SDLC costs",
+          "url": "https://www.artificialintelligence-news.com/news/ibm-launches-ai-platform-bob-to-regulate-sdlc-costs/",
+          "source": "AI News",
+          "published_at": "2026-04-28T17:34:21.000Z",
+          "ingested_at": "2026-05-03T08:08:54.148Z",
+          "snippet": "To regulate software delivery costs and SDLC governance, IBM is launching Bob, an AI platform built to anchor enterprise engineering. Accumulated technical debt, hybrid cloud structures, and rigid compliance requirements clash with the raw speed of coding assistants. Without boundaries, they generate unmanaged liabilities rather than functional progress. Dinesh Nirmal, SVP at IBM Software, explained: […]\nThe post IBM launches AI platform Bob to regulate SDLC costs appeared first on AI News.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ai"
+            ]
+          },
+          "aiSummary": "AI-generated summary: IBM has launched Bob, an AI platform designed to regulate software delivery costs and SDLC governance by addressing challenges like technical debt, hybrid cloud complexity, and compliance, aiming to balance coding speed with controlled progress.",
+          "translations": {
+            "da": {
+              "title": "IBM lancerer AI-platformen Bob til regulering af SDLC-omkostninger",
+              "summary": "IBM har lanceret Bob, en AI-platform designet til at regulere omkostninger ved softwarelevering og SDLC-styring ved at tackle udfordringer som teknisk gæld, hybrid cloud-kompleksitet og compliance, med mål om at balancere kodningshastighed med kontrolleret fremdrift."
+            },
+            "es": {
+              "title": "IBM lanza la plataforma de IA Bob para regular los costos del SDLC",
+              "summary": "IBM ha lanzado Bob, una plataforma de IA diseñada para regular los costos de entrega de software y la gobernanza del SDLC abordando desafíos como la deuda técnica, la complejidad del cloud híbrido y el cumplimiento, con el objetivo de equilibrar la velocidad de codificación con un progreso controlado."
+            }
+          }
+        },
+        {
+          "id": "2mvlc0",
+          "title": "Google cloud growth tops Microsoft and Amazon as all three beat estimates on AI demand",
+          "url": "https://www.cnbc.com/2026/04/30/google-microsoft-and-amazon-all-report-cloud-beats-in-earnings.html",
+          "source": "CNBC Technology",
+          "published_at": "2026-04-30T20:00:59.000Z",
+          "ingested_at": "2026-05-03T08:08:54.148Z",
+          "snippet": "Amazon, Google and Microsoft all reported better-than-expected first-quarter cloud results, signaling an acceleration of AI demand",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ai"
+            ]
+          },
+          "aiSummary": "AI-generated summary: In the first quarter, Amazon, Google, and Microsoft all exceeded cloud revenue expectations, with Google Cloud experiencing the fastest growth, reflecting a surge in AI demand.",
+          "translations": {
+            "da": {
+              "title": "Google Clouds vækst overgår Microsoft og Amazon, da alle tre overgår forventningerne på AI-efterspørgsel",
+              "summary": "AI-genereret resumé: I første kvartal overgik Amazon, Google og Microsoft alle forventningerne til cloud-omsætning, hvor Google Cloud oplevede den hurtigste vækst som følge af en stigning i AI-efterspørgslen."
+            },
+            "es": {
+              "title": "El crecimiento de Google Cloud supera a Microsoft y Amazon mientras los tres superan las estimaciones por la demanda de IA",
+              "summary": "Resumen generado por IA: En el primer trimestre, Amazon, Google y Microsoft superaron las expectativas de ingresos en la nube, con Google Cloud experimentando el crecimiento más rápido, reflejando un aumento en la demanda de IA."
+            }
+          }
+        },
+        {
+          "id": "fj6ju3",
+          "title": "Markets are underpricing the risk of Middle East pullback in AI, says tech investor Jack Selby ",
+          "url": "https://www.cnbc.com/2026/04/30/investor-jack-selby-markets-underpricing-middle-east-ai-pullback-risk.html",
+          "source": "CNBC Technology",
+          "published_at": "2026-05-01T12:41:24.000Z",
+          "ingested_at": "2026-05-03T08:08:54.148Z",
+          "snippet": "Middle East investors account for roughly a quarter of global AI investments over the next 5 years, said Jack Selby, managing director of Thiel Capital.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ai",
+              "investment"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Tech investor Jack Selby of Thiel Capital warns that markets are underestimating the risk of a Middle East pullback in AI investments, noting that Middle East investors are expected to contribute about a quarter of global AI funding over the next five years.",
+          "translations": {
+            "da": {
+              "title": "Markeder undervurderer risikoen for tilbagetrækning fra Mellemøsten i AI, siger tech-investor Jack Selby",
+              "summary": "Tech-investor Jack Selby fra Thiel Capital advarer om, at markeder undervurderer risikoen for en tilbagetrækning fra Mellemøsten i AI-investeringer, og bemærker, at investorer fra Mellemøsten forventes at bidrage med omkring en fjerdedel af den globale AI-finansiering i de næste fem år."
+            },
+            "es": {
+              "title": "Los mercados están subestimando el riesgo de retirada de Oriente Medio en IA, dice el inversor tecnológico Jack Selby",
+              "summary": "El inversor tecnológico Jack Selby de Thiel Capital advierte que los mercados están subestimando el riesgo de una retirada de Oriente Medio en inversiones en IA, señalando que se espera que los inversores de Oriente Medio contribuyan con aproximadamente una cuarta parte de la financiación global de IA en los próximos cinco años."
+            }
+          }
+        }
+      ]
+    },
+    "Ecommerce_Retail_Tech": {
+      "total": 522,
+      "top": [
+        {
+          "id": "3dkdep",
+          "title": "Marketplace Briefing: Amazon joins Google-backed shopping effort, suggesting a shift in AI strategy",
+          "url": "https://www.modernretail.co/technology/marketplace-briefing-amazon-joins-google-backed-shopping-effort-suggesting-a-shift-in-ai-strategy/?utm_campaign=modernretaildis&utm_medium=rss&utm_source=general-rss",
+          "source": "Modern Retail",
+          "published_at": "2026-04-30T14:00:00.000Z",
+          "ingested_at": "2026-05-03T08:08:54.148Z",
+          "snippet": "Amazon has joined the technical council overseeing Google’s Universal Commerce Protocol — an open standard designed to power AI driven shopping — after initially sitting out.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "shopping",
+              "marketplace"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Amazon has joined the technical council for Google's Universal Commerce Protocol, an open standard aimed at enabling AI-driven shopping, indicating a potential shift in its AI strategy. This development was reported by Modern Retail on April 30, 2026.",
+          "translations": {
+            "da": {
+              "title": "Marketplace Briefing: Amazon slutter sig til Google-støttet shoppinginitiativ, hvilket antyder et skift i AI-strategi",
+              "summary": "AI-genereret resumé: Amazon har tilsluttet sig det tekniske råd for Googles Universal Commerce Protocol, en åben standard med fokus på AI-drevet shopping, hvilket indikerer et muligt skift i deres AI-strategi. Denne udvikling blev rapporteret af Modern Retail den 30. april 2026."
+            },
+            "es": {
+              "title": "Marketplace Briefing: Amazon se une al esfuerzo de compras respaldado por Google, sugiriendo un cambio en la estrategia de IA",
+              "summary": "Resumen generado por IA: Amazon se ha unido al consejo técnico del Universal Commerce Protocol de Google, un estándar abierto destinado a habilitar compras impulsadas por IA, lo que indica un posible cambio en su estrategia de IA. Este desarrollo fue reportado por Modern Retail el 30 de abril de 2026."
+            }
+          }
+        },
+        {
+          "id": "2j7frb",
+          "title": "Loop targets returns, fraud and lost revenue with AI-led post‑purchase tools",
+          "url": "https://internetretailing.net/loop-targets-returns-fraud-and-lost-revenue-with-ai-led-post%e2%80%91purchase-tools/",
+          "source": "Internet Retailing",
+          "published_at": "2026-04-28T14:35:19.000Z",
+          "ingested_at": "2026-05-03T08:08:54.148Z",
+          "snippet": "Returns are one of the biggest drags on ecommerce margins and a persistent problem for retailers - but Loop believes they can also be a source of growth.\nThe post Loop targets returns, fraud and lost revenue with AI-led post‑purchase tools appeared first on InternetRetailing.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ecommerce"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Loop aims to transform ecommerce challenges like returns, fraud, and lost revenue into growth opportunities by leveraging AI-driven post-purchase tools, addressing a major issue impacting retailer margins.",
+          "translations": {
+            "da": {
+              "title": "Loop målretter returneringer, svindel og tabt omsætning med AI-drevne værktøjer efter køb",
+              "summary": "Loop sigter mod at omdanne udfordringer som returneringer, svindel og tabt omsætning til vækstmuligheder ved at udnytte AI-drevne værktøjer efter køb, der adresserer et stort problem, der påvirker detailhandleres marginer."
+            },
+            "es": {
+              "title": "Loop apunta a devoluciones, fraude y pérdidas de ingresos con herramientas postcompra lideradas por IA",
+              "summary": "Loop busca transformar desafíos del comercio electrónico como devoluciones, fraude y pérdidas de ingresos en oportunidades de crecimiento mediante herramientas postcompra impulsadas por IA, abordando un problema importante que afecta los márgenes de los minoristas."
+            }
+          }
+        },
+        {
+          "id": "9mzx42",
+          "title": "Live-shopping platform Whatnot taps Shopify to reach millions of merchants as it chases growth",
+          "url": "https://www.modernretail.co/technology/live-shopping-platform-whatnot-taps-shopify-to-reach-millions-of-merchants-as-it-chases-growth/?utm_campaign=modernretaildis&utm_medium=rss&utm_source=general-rss",
+          "source": "Modern Retail",
+          "published_at": "2026-04-29T10:00:00.000Z",
+          "ingested_at": "2026-05-03T08:08:54.148Z",
+          "snippet": "Whatnot, the livestream shopping app, now integrates directly with Shopify, opening the door for millions of merchants to sell on its platform.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "shopping",
+              "platform"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Live-shopping platform Whatnot has integrated directly with Shopify, enabling millions of merchants to sell on its app as part of its growth strategy.",
+          "translations": {
+            "da": {
+              "title": "Live-shopping platform Whatnot bruger Shopify til at nå millioner af handlende i jagten på vækst",
+              "summary": "AI-genereret resumé: Live-shopping platform Whatnot har integreret direkte med Shopify, hvilket gør det muligt for millioner af handlende at sælge på dens app som en del af vækststrategien."
+            },
+            "es": {
+              "title": "La plataforma de live-shopping Whatnot utiliza Shopify para llegar a millones de comerciantes mientras busca crecer",
+              "summary": "Resumen generado por IA: La plataforma de live-shopping Whatnot se ha integrado directamente con Shopify, permitiendo que millones de comerciantes vendan en su aplicación como parte de su estrategia de crecimiento."
+            }
+          }
+        },
+        {
+          "id": "ql31w3",
+          "title": "Amazon says its AI shopping assistant is gaining traction, with Rufus users up 115%",
+          "url": "https://www.modernretail.co/technology/amazon-says-its-ai-shopping-assistant-is-gaining-traction-with-rufus-users-up-115/?utm_campaign=modernretaildis&utm_medium=rss&utm_source=general-rss",
+          "source": "Modern Retail",
+          "published_at": "2026-04-30T13:57:16.000Z",
+          "ingested_at": "2026-05-03T08:08:54.148Z",
+          "snippet": "Rufus, Amazon's artificial intelligence-powered shopping assistant, is gaining traction.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "shopping"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Amazon's AI shopping assistant, Rufus, is experiencing significant growth with a 115% increase in users, indicating rising traction in the ecommerce and retail tech sector.",
+          "translations": {
+            "da": {
+              "title": "Amazon siger, at deres AI shoppingassistent får større gennemslagskraft, med Rufus-brugere op 115%",
+              "summary": "AI-genereret resumé: Amazons AI shoppingassistent, Rufus, oplever betydelig vækst med en stigning på 115% i brugere, hvilket indikerer stigende gennemslagskraft inden for e-handel og detailteknologi."
+            },
+            "es": {
+              "title": "Amazon dice que su asistente de compras AI está ganando terreno, con usuarios de Rufus aumentando un 115%",
+              "summary": "Resumen generado por AI: El asistente de compras AI de Amazon, Rufus, está experimentando un crecimiento significativo con un aumento del 115% en usuarios, lo que indica una mayor tracción en el sector de comercio electrónico y tecnología minorista."
+            }
+          }
+        },
+        {
+          "id": "m00qy",
+          "title": "H&M Debuts on Nordstrom Marketplace",
+          "url": "https://www.mytotalretail.com/article/hm-debuts-on-nordstrom-marketplace/",
+          "source": "Total Retail",
+          "published_at": "2026-04-29T12:48:14.000Z",
+          "ingested_at": "2026-05-03T08:08:54.148Z",
+          "snippet": "H&M launched on Tuesday on Nordstrom Marketplace, expanding the brand’s reach and marking its first launch on a curated retail marketplace in the U.S. H&M is making its marketplace debut with a curated selection of womenswear, menswear and childrenswear, alongside the brand’s activewear line, H&M Move. The offering is expected to be refreshed regularly with new seasonal […]",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "marketplace"
+            ]
+          },
+          "aiSummary": "AI-generated summary: On April 29, 2026, H&M launched on Nordstrom Marketplace, marking its first entry into a curated U.S. retail marketplace with a selection of womenswear, menswear, childrenswear, and activewear, which will be regularly updated with new seasonal items.",
+          "translations": {
+            "da": {
+              "title": "H&M debuterer på Nordstrom Marketplace",
+              "summary": "AI-genereret resumé: Den 29. april 2026 lancerede H&M på Nordstrom Marketplace, hvilket markerer deres første indtræden på et kurateret amerikansk detailmarked med et udvalg af dametøj, herretøj, børnetøj og sportstøj, som løbende opdateres med nye sæsonvarer."
+            },
+            "es": {
+              "title": "H&M debuta en Nordstrom Marketplace",
+              "summary": "Resumen generado por IA: El 29 de abril de 2026, H&M se lanzó en Nordstrom Marketplace, marcando su primera entrada en un mercado minorista curado en EE. UU. con una selección de ropa de mujer, hombre, niños y ropa deportiva, que se actualizará regularmente con nuevos artículos de temporada."
+            }
+          }
+        },
+        {
+          "id": "fcn8kc",
+          "title": "The Friday Checkout: Amazon says it’s the second-largest U.S. grocer — stores (mostly) not required",
+          "url": "https://www.grocerydive.com/news/the-friday-checkout-amazon-says-its-the-second-largest-us-grocer-stor/819019/",
+          "source": "Grocery Dive",
+          "published_at": "2026-05-01T15:20:24.000Z",
+          "ingested_at": "2026-05-03T08:08:54.148Z",
+          "snippet": "The company’s grocery business brought in over $150 billion in gross sales last year, yet its brick-and-mortar presence relies mostly on its specialty chain, Whole Foods.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "checkout"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Amazon reported over $150 billion in grocery sales last year, positioning itself as the second-largest U.S. grocer, despite its physical store presence being primarily limited to its Whole Foods chain.",
+          "translations": {
+            "da": {
+              "title": "The Friday Checkout: Amazon siger, det er den næststørste dagligvarebutik i USA — butikker (for det meste) ikke påkrævet",
+              "summary": "AI-genereret resumé: Amazon rapporterede over 150 milliarder dollars i dagligvaresalg sidste år og positionerer sig som den næststørste dagligvarebutik i USA, på trods af at deres fysiske butikker primært er begrænset til Whole Foods-kæden."
+            },
+            "es": {
+              "title": "The Friday Checkout: Amazon dice que es el segundo mayor supermercado de EE. UU. — tiendas (mayormente) no requeridas",
+              "summary": "Resumen generado por IA: Amazon reportó más de 150 mil millones de dólares en ventas de comestibles el año pasado, posicionándose como el segundo mayor supermercado de EE. UU., a pesar de que su presencia física se limita principalmente a la cadena Whole Foods."
+            }
+          }
+        },
+        {
+          "id": "4sulhj",
+          "title": "Apple’s new subscription model signals shift for retail recurring revenue",
+          "url": "https://internetretailing.net/apples-new-subscription-model-signals-shift-for-retail-recurring-revenue/",
+          "source": "Internet Retailing",
+          "published_at": "2026-04-29T09:49:21.000Z",
+          "ingested_at": "2026-05-03T08:08:54.148Z",
+          "snippet": "Apple has unveiled a new App Store subscription option that allows customers to pay monthly while committing to a 12‑month term - a move that could have wider implications for retailers experimenting with subscriptions.\nThe post Apple’s new subscription model signals shift for retail recurring revenue appeared first on InternetRetailing.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": []
+          },
+          "aiSummary": "AI-generated summary: Apple has introduced a new App Store subscription model requiring customers to commit to a 12-month term with monthly payments, potentially influencing how retailers approach recurring revenue strategies. This development highlights a shift in ecommerce and retail technology subscription offerings.",
+          "translations": {
+            "da": {
+              "title": "Apples nye abonnementsmodel signalerer skift for detailhandelens tilbagevendende indtægter",
+              "summary": "AI-genereret resumé: Apple har introduceret en ny App Store-abonnementsmodel, der kræver, at kunder binder sig for 12 måneder med månedlige betalinger, hvilket potentielt påvirker, hvordan detailhandlere håndterer strategier for tilbagevendende indtægter. Denne udvikling fremhæver et skift i e-handel og detailteknologiens abonnementstilbud."
+            },
+            "es": {
+              "title": "El nuevo modelo de suscripción de Apple señala un cambio en los ingresos recurrentes del comercio minorista",
+              "summary": "Resumen generado por IA: Apple ha introducido un nuevo modelo de suscripción en la App Store que requiere que los clientes se comprometan a un plazo de 12 meses con pagos mensuales, lo que podría influir en cómo los minoristas abordan las estrategias de ingresos recurrentes. Este desarrollo destaca un cambio en las ofertas de suscripción en comercio electrónico y tecnología minorista."
+            }
+          }
+        }
+      ]
+    },
+    "Luxury_and_Consumer": {
+      "total": 119,
+      "top": [
+        {
+          "id": "upiz7g",
+          "title": "A.I. Spending Sets a Record, With No End in Sight",
+          "url": "https://www.nytimes.com/2026/04/29/technology/ai-spending-tech-data-centers.html",
+          "source": "NYTimes Technology",
+          "published_at": "2026-04-29T22:53:55.000Z",
+          "ingested_at": "2026-05-03T08:08:54.148Z",
+          "snippet": "Google, Amazon, Microsoft and Meta reported more than $130 billion in quarterly capital expenditures on Wednesday as they build A.I. data centers. There’s more to come.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.30000000000000004,
+            "recencyScore": 0,
+            "sourceWeight": 0.15,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0.1,
+            "penalty": 0,
+            "matchedKeywords": [
+              "spending"
+            ]
+          },
+          "aiSummary": "AI-generated summary: On April 29, 2026, NYTimes Technology reported that Google, Amazon, Microsoft, and Meta collectively spent over $130 billion in quarterly capital expenditures to build AI data centers, with further investments expected.",
+          "translations": {
+            "da": {
+              "title": "A.I.-udgifter sætter rekord uden ende i sigte",
+              "summary": "AI-genereret resumé: Den 29. april 2026 rapporterede NYTimes Technology, at Google, Amazon, Microsoft og Meta samlet brugte over 130 milliarder dollars i kvartalsvise kapitaludgifter på at bygge AI-datacentre, med yderligere investeringer forventet."
+            },
+            "es": {
+              "title": "El gasto en A.I. establece un récord, sin fin a la vista",
+              "summary": "Resumen generado por IA: El 29 de abril de 2026, NYTimes Technology informó que Google, Amazon, Microsoft y Meta gastaron colectivamente más de 130 mil millones de dólares en gastos de capital trimestrales para construir centros de datos de IA, con más inversiones esperadas."
+            }
+          }
+        },
+        {
+          "id": "fidlby",
+          "title": "Inside Amazon Beauty’s Bid to Become a Discovery-Led Destination",
+          "url": "https://www.businessoffashion.com/articles/beauty/amazon-beauty-discovery-led-destination-using-ai-and-entertainment/",
+          "source": "Business of Fashion - News",
+          "published_at": "2026-04-29T04:00:00.000Z",
+          "ingested_at": "2026-05-03T08:08:54.148Z",
+          "snippet": "As competition intensifies across the beauty category, Amazon Beauty is leveraging AI, entertainment, premiumisation and frictionless checkout to help brands turn browsing into purchase.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "premium",
+              "brand"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Amazon Beauty is enhancing its platform by using AI, entertainment, premiumisation, and seamless checkout experiences to transform browsing into purchasing amid growing competition in the beauty sector.",
+          "translations": {
+            "da": {
+              "title": "Inden for Amazon Beautys forsøg på at blive en opdagelsesdrevet destination",
+              "summary": "Amazon Beauty forbedrer sin platform ved at bruge AI, underholdning, premiumisering og problemfri checkout-oplevelser for at omdanne browsing til køb i en voksende konkurrence i skønhedssektoren."
+            },
+            "es": {
+              "title": "Dentro de la apuesta de Amazon Beauty por convertirse en un destino guiado por el descubrimiento",
+              "summary": "Amazon Beauty está mejorando su plataforma mediante el uso de IA, entretenimiento, premiumización y experiencias de pago sin interrupciones para transformar la navegación en compra en medio de una creciente competencia en el sector de la belleza."
+            }
+          }
+        },
+        {
+          "id": "7qo4e1",
+          "title": "Apple revenue guidance tops estimates on booming iPhone, Mac demand",
+          "url": "https://www.cnbc.com/2026/04/30/apple-aapl-q2-2026-earnings-report.html",
+          "source": "CNBC Technology",
+          "published_at": "2026-04-30T23:06:23.000Z",
+          "ingested_at": "2026-05-03T08:08:54.148Z",
+          "snippet": "Apple reported 17% revenue growth, topping estimates, even as iPhone sales came up short.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0.1,
+            "penalty": 0,
+            "matchedKeywords": [
+              "demand"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Apple reported a 17% revenue growth that exceeded estimates, driven by strong demand for iPhones and Macs, despite iPhone sales falling short.",
+          "translations": {
+            "da": {
+              "title": "Apple omsætningsvejledning overgår forventninger på grund af stigende efterspørgsel efter iPhone og Mac",
+              "summary": "AI-genereret resumé: Apple rapporterede en omsætningsvækst på 17 %, der oversteg forventningerne, drevet af stærk efterspørgsel efter iPhones og Macs, på trods af at iPhone-salget var lavere end forventet."
+            },
+            "es": {
+              "title": "La guía de ingresos de Apple supera estimaciones por la gran demanda de iPhone y Mac",
+              "summary": "Resumen generado por IA: Apple reportó un crecimiento de ingresos del 17 % que superó las estimaciones, impulsado por una fuerte demanda de iPhones y Macs, a pesar de que las ventas de iPhone fueron inferiores a lo esperado."
+            }
+          }
+        },
+        {
+          "id": "x88z1q",
+          "title": "Zegna Revenues Rise 7.4%",
+          "url": "https://www.businessoffashion.com/news/luxury/zegna-revenues-rise-74/",
+          "source": "Business of Fashion - News",
+          "published_at": "2026-04-30T16:53:20.000Z",
+          "ingested_at": "2026-05-03T08:08:54.148Z",
+          "snippet": "The Italian luxury group’s first-quarter performance surpassed market expectations powered by solid growth in direct-to-consumer sales in the US.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "luxury",
+              "consumer"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Zegna's revenues increased by 7.4% in the first quarter of 2026, driven by strong growth in direct-to-consumer sales in the US, exceeding market expectations.",
+          "translations": {
+            "da": {
+              "title": "Zegna omsætning stiger 7,4%",
+              "summary": "AI-genereret resumé: Zegnas omsætning steg med 7,4% i første kvartal af 2026, drevet af stærk vækst i direkte-til-forbruger salg i USA, hvilket oversteg markedets forventninger."
+            },
+            "es": {
+              "title": "Ingresos de Zegna aumentan un 7,4%",
+              "summary": "Resumen generado por IA: Los ingresos de Zegna aumentaron un 7,4% en el primer trimestre de 2026, impulsados por un fuerte crecimiento en ventas directas al consumidor en EE. UU., superando las expectativas del mercado."
+            }
+          }
+        },
+        {
+          "id": "uk499j",
+          "title": "Can Beauty’s ‘Limited-Edition’ Launch Strategy Last?",
+          "url": "https://www.businessoffashion.com/articles/beauty/ffern-fragrance-beauty-drops-coach-estee-lauder-harrys/",
+          "source": "Business of Fashion - News",
+          "published_at": "2026-05-01T12:00:00.000Z",
+          "ingested_at": "2026-05-03T08:08:54.148Z",
+          "snippet": "Membership-based fragrance label Ffern is opening its orders to the general public for the first time, as other beauty brands jump in on the product-drop experiment.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "brand"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Membership-based fragrance brand Ffern is expanding its limited-edition product-drop strategy by opening orders to the general public, reflecting a broader trend among beauty brands experimenting with exclusive launches.",
+          "translations": {
+            "da": {
+              "title": "Kan Beautys ’Limited-Edition’-lanceringsstrategi holde?",
+              "summary": "AI-genereret resumé: Medlemsbaserede duftmærke Ffern udvider sin limited-edition produkt-drop strategi ved at åbne ordrer for offentligheden, hvilket afspejler en bredere trend blandt skønhedsmærker, der eksperimenterer med eksklusive lanceringer."
+            },
+            "es": {
+              "title": "¿Puede durar la estrategia de lanzamiento ‘Limited-Edition’ de Beauty?",
+              "summary": "Resumen generado por IA: La marca de fragancias por membresía Ffern está ampliando su estrategia de lanzamientos de edición limitada al abrir pedidos al público general, reflejando una tendencia más amplia entre marcas de belleza que experimentan con lanzamientos exclusivos."
+            }
+          }
+        },
+        {
+          "id": "b836sb",
+          "title": "A Fashion Brand's Guide to Weathering Demand Spikes",
+          "url": "https://fashionista.com/2026/04/fashion-brands-production-strategy-sudden-demand-viral",
+          "source": "Fashionista",
+          "published_at": "2026-04-29T12:45:00.000Z",
+          "ingested_at": "2026-05-03T08:08:54.148Z",
+          "snippet": "A viral moment can be an emerging designer's downfall. Industry experts share how to make sure a sudden surge in orders doesn't end in disaster.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "demand",
+              "brand"
+            ]
+          },
+          "aiSummary": "AI-generated summary: The article from Fashionista dated April 29, 2026, discusses how emerging fashion designers can manage sudden spikes in demand caused by viral moments, with industry experts offering strategies to avoid potential pitfalls.",
+          "translations": {
+            "da": {
+              "title": "En modebrands guide til at håndtere efterspørgselsstigninger",
+              "summary": "AI-genereret resumé: Artiklen fra Fashionista den 29. april 2026 diskuterer, hvordan nye modedesignere kan håndtere pludselige efterspørgselsstigninger forårsaget af virale øjeblikke, med brancheeksperter, der tilbyder strategier til at undgå potentielle faldgruber."
+            },
+            "es": {
+              "title": "Guía de una marca de moda para afrontar picos de demanda",
+              "summary": "Resumen generado por IA: El artículo de Fashionista del 29 de abril de 2026 analiza cómo los diseñadores de moda emergentes pueden gestionar picos repentinos de demanda causados por momentos virales, con expertos de la industria que ofrecen estrategias para evitar posibles obstáculos."
+            }
+          }
+        },
+        {
+          "id": "86hdqh",
+          "title": "Chanel is the World's Hottest Luxury Brand Right Now",
+          "url": "https://fashionista.com/2026/04/lyst-index-q1-2026-top-popular-brands-chanel",
+          "source": "Fashionista",
+          "published_at": "2026-04-29T11:00:00.000Z",
+          "ingested_at": "2026-05-03T08:08:54.148Z",
+          "snippet": "And Saint Laurent's Stand Collar Jacket is the most in-demand product, according to the Q1 2026 Lyst Index.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "luxury",
+              "brand",
+              "demand"
+            ]
+          },
+          "aiSummary": "AI-generated summary: According to the Q1 2026 Lyst Index, Chanel is currently the world's hottest luxury brand, while Saint Laurent's Stand Collar Jacket is the most in-demand product.",
+          "translations": {
+            "da": {
+              "title": "Chanel er verdens hotteste luksusmærke lige nu",
+              "summary": "AI-genereret resumé: Ifølge Q1 2026 Lyst Index er Chanel i øjeblikket verdens hotteste luksusmærke, mens Saint Laurents Stand Collar Jacket er det mest efterspurgte produkt."
+            },
+            "es": {
+              "title": "Chanel es la marca de lujo más popular del mundo en este momento",
+              "summary": "Resumen generado por IA: Según el Índice Lyst del primer trimestre de 2026, Chanel es actualmente la marca de lujo más popular del mundo, mientras que la Stand Collar Jacket de Saint Laurent es el producto más demandado."
+            }
+          }
+        }
+      ]
+    },
+    "Jewellery_Industry": {
+      "total": 17,
+      "top": [
+        {
+          "id": "slvdv4",
+          "title": "How an Inside Buyout Saved This 35-Year-Old Richmond Jewelry Store",
+          "url": "https://instoremag.com/carrying-the-torch-forward/",
+          "source": "Instore Magazine",
+          "published_at": "2026-05-01T01:00:49.000Z",
+          "ingested_at": "2026-05-03T08:08:54.148Z",
+          "snippet": "The manager and a partner bought the shop the owner was ready to close — sales are up 72%.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": -0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0.05,
+            "penalty": 0.2,
+            "matchedKeywords": [
+              "jewelry"
+            ]
+          },
+          "aiSummary": "AI-generated summary: The manager and a partner purchased a 35-year-old Richmond jewelry store that its owner was about to close, resulting in a 72% increase in sales.",
+          "translations": {
+            "da": {
+              "title": "Hvordan et internt opkøb reddede denne 35-årige Richmond smykkeforretning",
+              "summary": "AI-genereret resumé: Manageren og en partner købte en 35-årig Richmond smykkeforretning, som ejeren var ved at lukke, hvilket resulterede i en salgsstigning på 72%."
+            },
+            "es": {
+              "title": "Cómo una compra interna salvó esta joyería de Richmond de 35 años",
+              "summary": "Resumen generado por IA: El gerente y un socio compraron una joyería de Richmond de 35 años que su dueño estaba a punto de cerrar, lo que resultó en un aumento del 72% en las ventas."
+            }
+          }
+        },
+        {
+          "id": "27ffc5",
+          "title": "Charge for Consultations? Many Jewelers Are Starting to Think That’s Probably a Good Idea",
+          "url": "https://instoremag.com/charge-for-consultations-many-jewelers-are-starting-to-think-thats-probably-a-good-idea/",
+          "source": "Instore Magazine",
+          "published_at": "2026-05-01T02:00:49.000Z",
+          "ingested_at": "2026-05-03T08:08:54.148Z",
+          "snippet": "Only about one in 10 jewelers currently demand a fee — but a surprising number of the rest are starting to reconsider.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": []
+          },
+          "aiSummary": "AI-generated summary: According to a May 2026 article in Instore Magazine, while currently only about 10% of jewelers charge consultation fees, many others in the jewellery industry are beginning to consider implementing such charges.",
+          "translations": {
+            "da": {
+              "title": "Gebyr for konsultationer? Mange juvelerer begynder at tænke, at det sandsynligvis er en god idé",
+              "summary": "AI-genereret resumé: Ifølge en artikel fra maj 2026 i Instore Magazine opkræver kun omkring 10 % af juvelerer i øjeblikket konsultationsgebyrer, men mange andre i smykkeindustrien begynder at overveje at indføre sådanne gebyrer."
+            },
+            "es": {
+              "title": "¿Cobrar por consultas? Muchos joyeros están empezando a pensar que probablemente sea una buena idea",
+              "summary": "Resumen generado por IA: Según un artículo de mayo de 2026 en Instore Magazine, aunque actualmente solo alrededor del 10 % de los joyeros cobran tarifas por consultas, muchos otros en la industria de la joyería están comenzando a considerar implementar dichos cargos."
+            }
+          }
+        },
+        {
+          "id": "ym0czu",
+          "title": "Decline in jewellery sales for Chow Tai Fook",
+          "url": "https://www.jewellermagazine.com/Article/15003/Decline-in-jewellery-sales-for-Chow-Tai-Fook",
+          "source": "Jeweller - Business News",
+          "published_at": "2026-04-27T14:00:00.000Z",
+          "ingested_at": "2026-05-03T08:08:54.148Z",
+          "snippet": "International jewellery retail chain Chow Tai Fook reported a modest decline in sales during the fourth quarter of the financial year.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.25,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "jewellery",
+              "jeweller"
+            ]
+          },
+          "aiSummary": "AI-generated summary: International jewellery retailer Chow Tai Fook experienced a modest decline in sales during the fourth quarter of the financial year, according to a report by Jeweller - Business News on April 27, 2026.",
+          "translations": {
+            "da": {
+              "title": "Fald i smykkesalg for Chow Tai Fook",
+              "summary": "AI-genereret resumé: Den internationale smykkeforhandler Chow Tai Fook oplevede et beskedent fald i salget i fjerde kvartal af regnskabsåret, ifølge en rapport fra Jeweller - Business News den 27. april 2026."
+            },
+            "es": {
+              "title": "Disminución en las ventas de joyería de Chow Tai Fook",
+              "summary": "Resumen generado por IA: El minorista internacional de joyería Chow Tai Fook experimentó una modesta disminución en las ventas durante el cuarto trimestre del año fiscal, según un informe de Jeweller - Business News del 27 de abril de 2026."
+            }
+          }
+        },
+        {
+          "id": "f926yb",
+          "title": "The Precious Sea Summit Launches in Torre Del Greco, Capital of Sea Jewellery",
+          "url": "https://instoremag.com/the-precious-sea-summit-launches-in-torre-del-greco-capital-of-sea-jewellery/",
+          "source": "Instore Magazine",
+          "published_at": "2026-05-01T22:46:36.000Z",
+          "ingested_at": "2026-05-03T08:08:54.148Z",
+          "snippet": "21 May 2026, Torre del Greco (Naples): the first marine-materials jewellery summit, led by Assocoral and partners, brings together key industry bodies.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "jewellery",
+              "jeweller"
+            ]
+          },
+          "aiSummary": "AI-generated summary: The Precious Sea Summit, the first jewellery summit focused on marine materials, launched on 21 May 2026 in Torre del Greco, bringing together key industry bodies under the leadership of Assocoral and partners.",
+          "translations": {
+            "da": {
+              "title": "The Precious Sea Summit lanceres i Torre Del Greco, hovedstaden for havsmykker",
+              "summary": "AI-genereret resumé: The Precious Sea Summit, det første smykkesummit med fokus på marine materialer, blev lanceret den 21. maj 2026 i Torre del Greco og samlede nøgleaktører i branchen under ledelse af Assocoral og partnere."
+            },
+            "es": {
+              "title": "The Precious Sea Summit se lanza en Torre Del Greco, capital de la joyería marina",
+              "summary": "Resumen generado por IA: The Precious Sea Summit, la primera cumbre de joyería centrada en materiales marinos, se lanzó el 21 de mayo de 2026 en Torre del Greco, reuniendo a los principales actores de la industria bajo el liderazgo de Assocoral y socios."
+            }
+          }
+        },
+        {
+          "id": "1o1n53",
+          "title": "Bethan Laura Wood reinvents Baccarat chandelier as modular \"vortex\" of jewelled flowers",
+          "url": "https://www.dezeen.com/2026/04/30/bethan-laura-wood-baccarat-chandelier-milan-design-week/",
+          "source": "Dezeen",
+          "published_at": "2026-04-30T08:00:29.000Z",
+          "ingested_at": "2026-05-03T08:08:54.148Z",
+          "snippet": "British designer Bethan Laura Wood has created a modular version of a 175-year-old crystal-glass chandelier, described as \"somewhere between a science-fiction wormhole and the interlacing of Elizabethan garters\". Wood's Mille Fleurs chandelier was the showpiece of Crystal Crypt, the Milan design week exhibition of historic French crystal house Baccarat. The design is an interpretation of\nThe post Bethan Laura Wood reinvents Baccarat chandelier as modular \"vortex\" of jewelled flowers appeared fir...",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": []
+          },
+          "aiSummary": "AI-generated summary: British designer Bethan Laura Wood has reimagined a 175-year-old Baccarat crystal-glass chandelier as a modular \"vortex\" of jewelled flowers, showcased as the centerpiece of the Crystal Crypt exhibition at Milan design week.",
+          "translations": {
+            "da": {
+              "title": "Bethan Laura Wood genopfinder Baccarat lysekrone som modulært \"vortex\" af juvelbesatte blomster",
+              "summary": "Den britiske designer Bethan Laura Wood har genfortolket en 175 år gammel Baccarat krystalglaslysekrone som et modulært \"vortex\" af juvelbesatte blomster, vist som midtpunktet i Crystal Crypt-udstillingen på Milan design uge."
+            },
+            "es": {
+              "title": "Bethan Laura Wood reinventa la lámpara de araña Baccarat como un \"vórtice\" modular de flores joyadas",
+              "summary": "La diseñadora británica Bethan Laura Wood ha reinventado una lámpara de araña de cristal Baccarat de 175 años como un \"vórtice\" modular de flores joyadas, presentada como la pieza central de la exposición Crystal Crypt en la semana del diseño de Milán."
+            }
+          }
+        },
+        {
+          "id": "8oajdm",
+          "title": "Hucker retires; ICA begins hunt for new CEO",
+          "url": "https://www.jewellermagazine.com/Article/15002/Hucker-retires-ICA-begins-hunt-for-new-CEO",
+          "source": "Jeweller - Business News",
+          "published_at": "2026-04-27T14:00:00.000Z",
+          "ingested_at": "2026-05-03T08:08:54.148Z",
+          "snippet": "A search is underway for the next leader of the International Colored Gemstone Association (ICA) after the retirement of CEO Doug Hucker.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": -0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0,
+            "insightSignalBoost": 0,
+            "penalty": 0.2,
+            "matchedKeywords": []
+          },
+          "aiSummary": "AI-generated summary: Following the retirement of CEO Doug Hucker, the International Colored Gemstone Association (ICA) has begun the search for a new leader. This development was reported by Jeweller - Business News on April 27, 2026.",
+          "translations": {
+            "da": {
+              "title": "Hucker trækker sig tilbage; ICA starter jagten på ny CEO",
+              "summary": "AI-genereret resumé: Efter CEO Doug Huckers pensionering har International Colored Gemstone Association (ICA) påbegyndt søgningen efter en ny leder. Denne udvikling blev rapporteret af Jeweller - Business News den 27. april 2026."
+            },
+            "es": {
+              "title": "Hucker se retira; ICA inicia búsqueda de nuevo CEO",
+              "summary": "Resumen generado por IA: Tras la jubilación del CEO Doug Hucker, la International Colored Gemstone Association (ICA) ha comenzado la búsqueda de un nuevo líder. Este desarrollo fue reportado por Jeweller - Business News el 27 de abril de 2026."
+            }
+          }
+        },
+        {
+          "id": "odzwjt",
+          "title": "Jeweller faces fraud and manipulation allegations",
+          "url": "https://www.jewellermagazine.com/Article/15006/Jeweller-faces-fraud-and-manipulation-allegations",
+          "source": "Jeweller - Business News",
+          "published_at": "2026-04-27T14:00:00.000Z",
+          "ingested_at": "2026-05-03T08:08:54.148Z",
+          "snippet": "A jewellery retailer in the UK has been accused of persuading customers and associates to invest significant amounts of money and jewellery before closing his businesses and disappearing.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.04999999999999999,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0,
+            "penalty": 0.2,
+            "matchedKeywords": [
+              "jeweller",
+              "jewellery",
+              "retailer"
+            ]
+          },
+          "aiSummary": "AI-generated summary: A UK jewellery retailer is facing allegations of fraud and manipulation after reportedly convincing customers and associates to invest large sums of money and jewellery before shutting down his businesses and disappearing.",
+          "translations": {
+            "da": {
+              "title": "Smykkeforhandler står over for anklager om bedrageri og manipulation",
+              "summary": "AI-genereret resumé: En britisk smykkeforhandler står over for anklager om bedrageri og manipulation efter angiveligt at have overbevist kunder og samarbejdspartnere om at investere store summer penge og smykker, før han lukkede sine virksomheder og forsvandt."
+            },
+            "es": {
+              "title": "Joyero enfrenta acusaciones de fraude y manipulación",
+              "summary": "Resumen generado por IA: Un minorista de joyería del Reino Unido enfrenta acusaciones de fraude y manipulación tras supuestamente convencer a clientes y asociados de invertir grandes sumas de dinero y joyas antes de cerrar sus negocios y desaparecer."
+            }
+          }
+        }
+      ]
+    }
+  },
+  "editorialTake": "Amazon joining Google’s Universal Commerce Protocol council is a clear signal that even the biggest ecommerce giants see open standards as the next battleground for AI-driven shopping. Amazon’s move undermines its traditional walled-garden approach and suggests it’s betting on interoperability to scale AI tools like its Rufus assistant, which just grew users 115%. This is a strategic pivot: instead of owning the entire stack, Amazon wants to shape a shared infrastructure that could lock in merchants and consumers across platforms.\n\nThis raises a tough question about control versus scale. If Amazon and Google push open protocols, who really owns the customer relationship in AI-powered commerce? Merchants gain reach but risk commoditization. Consumers get better experiences but lose brand loyalty. I think we’re about to see a clash between platform openness and proprietary data advantage that will define who wins the next decade of ecommerce innovation.",
+  "coverImageUrl": "/weekly-images/2026-W18.png",
+  "coverImageAlt": "Weekly cover illustration for 2026-W18"
+}

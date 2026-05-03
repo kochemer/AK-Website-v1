@@ -1,0 +1,107 @@
+{
+  "week": "2026-W18",
+  "generatedAt": "2026-05-03T08:21:17.819Z",
+  "intro": "This week’s intelligence digest highlights significant moves in AI-driven retail and luxury sectors, including Amazon’s strategic pivot with a Google-backed shopping initiative and Nebius’s $643 million acquisition of Eigen AI to enhance US market presence. Additionally, strong tech earnings underscore robust demand for AI services, while innovative retail strategies emerge in jewelry and live-shopping platforms.",
+  "readOneThing": {
+    "title": "Marketplace Briefing: Amazon joins Google-backed shopping effort, suggesting a shift in AI strategy",
+    "url": "https://www.modernretail.co/technology/marketplace-briefing-amazon-joins-google-backed-shopping-effort-suggesting-a-shift-in-ai-strategy/?utm_campaign=modernretaildis&utm_medium=rss&utm_source=general-rss"
+  },
+  "items": [
+    {
+      "rank": 1,
+      "title": "Marketplace Briefing: Amazon joins Google-backed shopping effort, suggesting a shift in AI strategy",
+      "url": "https://www.modernretail.co/technology/marketplace-briefing-amazon-joins-google-backed-shopping-effort-suggesting-a-shift-in-ai-strategy/?utm_campaign=modernretaildis&utm_medium=rss&utm_source=general-rss",
+      "source": "Modern Retail",
+      "bullets": [
+        "Amazon has joined the technical council overseeing Google's Universal Commerce Protocol, an open standard for AI-driven shopping integration. The company has invested $50 billion in OpenAI and plans to invest up to $25 billion more in Anthropic to support its AI initiatives. Google introduced the Universal Commerce Protocol in January 2026, aiming to unify AI shopping experiences across retailers, with members including Meta, Microsoft, Shopify, and Target.",
+        "Now, just a few months later, the e-commerce giant has joined the technical council overseeing the open standard, according to an April 24 announcement",
+        "Other new members include Meta, Microsoft, Stripe and Salesforce"
+      ],
+      "summary": "AI-generated summary: Amazon has joined the technical council for Google's Universal Commerce Protocol, an open standard aimed at enabling AI-driven shopping, indicating a potential shift in its AI strategy. This development was reported by Modern Retail on April 30, 2026."
+    },
+    {
+      "rank": 2,
+      "title": "How an Inside Buyout Saved This 35-Year-Old Richmond Jewelry Store",
+      "url": "https://instoremag.com/carrying-the-torch-forward/",
+      "source": "Instore Magazine",
+      "bullets": [
+        "Caitie Sellers and Maggie Smith purchased Dransfield Jewelers from retiring owner Don Dransfield to continue operating the Richmond jewelry store. Sales increased by 72 percent between 2023 and 2025, and the store now employs three goldsmiths to meet growing demand. Founded in 1991, Dransfield Jewelers underwent a full renovation in 2023 and features a dedicated exhibition space called 'The Jewelry Box' showcasing contemporary jewelry artists.",
+        "Share Tweet Carrying the Torch Forward How Caitie Sellers and Maggie Smith honored a retiring owner's legacy — and grew sales 72%",
+        "His store manager and goldsmith, Caitie Sellers, convinced him otherwise — proposing instead that she bring in a partner with additional management experience to buy the business and keep it going"
+      ],
+      "summary": "AI-generated summary: The manager and a partner purchased a 35-year-old Richmond jewelry store that its owner was about to close, resulting in a 72% increase in sales."
+    },
+    {
+      "rank": 3,
+      "title": "Nebius to buy Eigen AI for $643 million to boost inference and US expansion ",
+      "url": "https://economictimes.indiatimes.com/tech/startups/nebius-to-buy-eigen-ai-for-643-million-to-boost-inference-and-us-expansion/articleshow/130680117.cms",
+      "source": "Economic Times - Technology",
+      "bullets": [
+        "Amsterdam-based AI infrastructure firm Nebius agreed to acquire inference and optimization startup Eigen AI for approximately $643 million.",
+        "The acquisition will integrate Eigen AI's inference and post-training optimization technology into Nebius' Token Factory platform, enhancing managed inference services.",
+        "The deal is expected to close in the coming weeks as Nebius expands its United States operations and secures large AI infrastructure contracts, including one with Meta."
+      ],
+      "summary": "AI-generated summary: Amsterdam-based Nebius is acquiring Eigen AI for $643 million to strengthen its production-grade AI capabilities and expand its US presence by integrating Eigen AI's inference and optimization technology into its Token Factory platform. The acquisition is expected to finalize in the coming weeks."
+    },
+    {
+      "rank": 4,
+      "title": "Apple revenue guidance tops estimates on booming iPhone, Mac demand",
+      "url": "https://www.cnbc.com/2026/04/30/apple-aapl-q2-2026-earnings-report.html",
+      "source": "CNBC Technology",
+      "bullets": [
+        "Apple reported a 17% revenue increase to $111.18 billion in the fiscal second quarter, surpassing analyst expectations despite supply constraints.",
+        "The company's services revenue rose 16% to $30.98 billion, contributing to a gross margin of 49.3%, higher than the expected 48.4%.",
+        "Tim Cook announced his upcoming departure as CEO, with John Ternus set to succeed him on September 1, amid ongoing investments in AI and new product launches."
+      ],
+      "summary": "AI-generated summary: Apple reported a 17% revenue growth that exceeded estimates, driven by strong demand for iPhones and Macs, despite iPhone sales falling short."
+    },
+    {
+      "rank": 5,
+      "title": "Live-shopping platform Whatnot taps Shopify to reach millions of merchants as it chases growth",
+      "url": "https://www.modernretail.co/technology/live-shopping-platform-whatnot-taps-shopify-to-reach-millions-of-merchants-as-it-chases-growth/?utm_campaign=modernretaildis&utm_medium=rss&utm_source=general-rss",
+      "source": "Modern Retail",
+      "bullets": [
+        "Whatnot has launched a direct integration with Shopify, allowing millions of merchants to sync products, inventory, and orders automatically on its live-shopping platform.",
+        "Since its beta launch, around 30 businesses using the integration have generated over $10 million in sales across nearly 20 categories including collectibles and fashion.",
+        "Founded in 2019, Whatnot has rapidly grown with $8 billion in seller sales last year and added more than 20 million new user accounts in 2025."
+      ],
+      "summary": "AI-generated summary: Live-shopping platform Whatnot has integrated directly with Shopify, enabling millions of merchants to sell on its app as part of its growth strategy."
+    },
+    {
+      "rank": 6,
+      "title": "Google cloud growth tops Microsoft and Amazon as all three beat estimates on AI demand",
+      "url": "https://www.cnbc.com/2026/04/30/google-microsoft-and-amazon-all-report-cloud-beats-in-earnings.html",
+      "source": "CNBC Technology",
+      "bullets": [
+        "Google Cloud reported a 63% revenue increase to $20.03 billion in the first quarter, marking its fastest growth rate since 2020.",
+        "Amazon Web Services grew revenue by 28% to $37.6 billion, with Bedrock service customer spending rising 170% from the previous quarter.",
+        "Cloud infrastructure spending reached $129 billion in the quarter, with neocloud providers capturing 5% of the market share according to Synergy Research."
+      ],
+      "summary": "AI-generated summary: In the first quarter, Amazon, Google, and Microsoft all exceeded cloud revenue expectations, with Google Cloud experiencing the fastest growth, reflecting a surge in AI demand."
+    },
+    {
+      "rank": 7,
+      "title": "Charge for Consultations? Many Jewelers Are Starting to Think That’s Probably a Good Idea",
+      "url": "https://instoremag.com/charge-for-consultations-many-jewelers-are-starting-to-think-thats-probably-a-good-idea/",
+      "source": "Instore Magazine",
+      "bullets": [
+        "Only about 9 percent of jewelers currently charge fees for consultations that do not result in sales, but many others are reconsidering this policy due to various challenges.",
+        "A recent INSTORE Brain Squad survey revealed that 91 percent of jewelers offer free consultations, citing relationship-building and high close rates as reasons.",
+        "Rising gold prices and increasing instances of non-serious inquiries have prompted some jewelers to start charging consultation fees to value their expertise and time."
+      ],
+      "summary": "AI-generated summary: According to a May 2026 article in Instore Magazine, while currently only about 10% of jewelers charge consultation fees, many others in the jewellery industry are beginning to consider implementing such charges."
+    },
+    {
+      "rank": 8,
+      "title": "Amazon says its AI shopping assistant is gaining traction, with Rufus users up 115%",
+      "url": "https://www.modernretail.co/technology/amazon-says-its-ai-shopping-assistant-is-gaining-traction-with-rufus-users-up-115/?utm_campaign=modernretaildis&utm_medium=rss&utm_source=general-rss",
+      "source": "Modern Retail",
+      "bullets": [
+        "Read the full article for details.",
+        "Read the full article for complete details.",
+        "Read the full article for more information."
+      ],
+      "summary": "AI-generated summary: Amazon's AI shopping assistant, Rufus, is experiencing significant growth with a 115% increase in users, indicating rising traction in the ecommerce and retail tech sector."
+    }
+  ]
+}

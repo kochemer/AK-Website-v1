@@ -2542,5 +2542,149 @@
     ],
     "cached_at": "2026-04-21T06:17:01.256Z",
     "model": "gpt-4.1-mini"
+  },
+  "2026-W18:AI_and_Strategy:8da0bed4a1fd": {
+    "selected": [
+      {
+        "id": "5",
+        "rank": 1,
+        "why": "Major military AI contracts with Nvidia, Microsoft, Amazon",
+        "confidence": 0.95
+      },
+      {
+        "id": "14",
+        "rank": 2,
+        "why": "Big Tech AI infrastructure spending and economic impact analysis",
+        "confidence": 0.9
+      },
+      {
+        "id": "9",
+        "rank": 3,
+        "why": "Lightelligence IPO highlights AI optical interconnect bottleneck",
+        "confidence": 0.9
+      },
+      {
+        "id": "17",
+        "rank": 4,
+        "why": "Nebius acquisition of Eigen AI to boost inference and US expansion",
+        "confidence": 0.85
+      },
+      {
+        "id": "15",
+        "rank": 5,
+        "why": "IBM launches AI platform Bob for SDLC cost regulation",
+        "confidence": 0.85
+      },
+      {
+        "id": "10",
+        "rank": 6,
+        "why": "Google, Microsoft, Amazon cloud growth driven by AI demand",
+        "confidence": 0.85
+      },
+      {
+        "id": "11",
+        "rank": 7,
+        "why": "Investor warns of Middle East AI investment pullback risk",
+        "confidence": 0.8
+      }
+    ],
+    "cached_at": "2026-05-03T08:18:42.831Z",
+    "model": "gpt-4.1-mini"
+  },
+  "2026-W18:Ecommerce_Retail_Tech:9639f6184d44": {
+    "selected": [
+      {
+        "id": "2",
+        "rank": 1,
+        "why": "Amazon joins Google-backed Universal Commerce Protocol, signaling AI strategy shift",
+        "confidence": 0.95
+      },
+      {
+        "id": "6",
+        "rank": 2,
+        "why": "AI-driven post-purchase tools target returns, fraud, and lost revenue",
+        "confidence": 0.9
+      },
+      {
+        "id": "1",
+        "rank": 3,
+        "why": "Whatnot integrates with Shopify, expanding live-shopping platform reach",
+        "confidence": 0.88
+      },
+      {
+        "id": "17",
+        "rank": 4,
+        "why": "Amazon’s AI shopping assistant Rufus usage up 115%, showing traction",
+        "confidence": 0.87
+      },
+      {
+        "id": "16",
+        "rank": 5,
+        "why": "H&M debuts on Nordstrom Marketplace, expanding marketplace brand reach",
+        "confidence": 0.85
+      },
+      {
+        "id": "14",
+        "rank": 6,
+        "why": "Amazon claims second-largest US grocer status with $150B grocery sales",
+        "confidence": 0.83
+      },
+      {
+        "id": "5",
+        "rank": 7,
+        "why": "Apple’s new subscription model signals shift in retail recurring revenue",
+        "confidence": 0.8
+      }
+    ],
+    "cached_at": "2026-05-03T08:19:22.185Z",
+    "model": "gpt-4.1-mini"
+  },
+  "2026-W18:Jewellery_Industry:aadd8e4cc271": {
+    "selected": [
+      {
+        "id": "10",
+        "rank": 1,
+        "why": "Case study on buyout boosting sales 72%, relevant retail insight",
+        "confidence": 0.95
+      },
+      {
+        "id": "8",
+        "rank": 2,
+        "why": "Retailers considering consultation fees, practical pricing strategy",
+        "confidence": 0.9
+      },
+      {
+        "id": "0",
+        "rank": 3,
+        "why": "Sales decline at major jewellery chain, important market signal",
+        "confidence": 0.85
+      },
+      {
+        "id": "3",
+        "rank": 4,
+        "why": "Launch of marine-materials jewellery summit, new product category insight",
+        "confidence": 0.8
+      },
+      {
+        "id": "9",
+        "rank": 5,
+        "why": "Modular jewellery design innovation, relevant for merchandising and product assortment",
+        "confidence": 0.75
+      },
+      {
+        "id": "12",
+        "rank": 6,
+        "why": "Leadership change at ICA, impacts colored gemstone industry dynamics",
+        "confidence": 0.7
+      },
+      {
+        "id": "6",
+        "rank": 7,
+        "why": "Fraud allegations in jewellery retail, cautionary operational insight",
+        "confidence": 0.65
+      }
+    ],
+    "cached_at": "2026-05-03T08:20:30.989Z",
+    "model": "gpt-4.1-mini"
   }
 }

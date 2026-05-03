@@ -16,5 +16,11 @@
     "cached_at": "2026-04-21T06:17:35.406Z",
     "model": "gpt-4.1-mini",
     "version": "1.1"
+  },
+  "2026-W18:570b4f42b95c": {
+    "editorialTake": "Amazon joining Google’s Universal Commerce Protocol council is a clear signal that even the biggest ecommerce giants see open standards as the next battleground for AI-driven shopping. Amazon’s move undermines its traditional walled-garden approach and suggests it’s betting on interoperability to scale AI tools like its Rufus assistant, which just grew users 115%. This is a strategic pivot: instead of owning the entire stack, Amazon wants to shape a shared infrastructure that could lock in merchants and consumers across platforms.\n\nThis raises a tough question about control versus scale. If Amazon and Google push open protocols, who really owns the customer relationship in AI-powered commerce? Merchants gain reach but risk commoditization. Consumers get better experiences but lose brand loyalty. I think we’re about to see a clash between platform openness and proprietary data advantage that will define who wins the next decade of ecommerce innovation.",
+    "cached_at": "2026-05-03T08:20:54.788Z",
+    "model": "gpt-4.1-mini",
+    "version": "1.1"
   }
 }

@@ -1,0 +1,166 @@
+[Intro]
+
+Host:  
+Welcome to Weekly Luxury Intelligence, your go-to podcast for the latest in ecommerce, jewellery, luxury, and AI news. This is week 18 of 2026, and we’ve got a packed show today—from Amazon’s surprising AI moves to innovations in jewellery retail and explosive AI spending across tech giants. Let’s dive right in.
+
+---
+
+[Segment 1: Amazon Joins Google-Backed Shopping Effort]
+
+Host:  
+First up, some intriguing news on the AI and ecommerce front. Amazon has officially joined the technical council for Google's Universal Commerce Protocol—a Google-backed open standard designed to enable AI-driven shopping. This move, reported by Modern Retail, signals a potential shift in Amazon’s AI strategy.
+
+Historically, Amazon has been quite proprietary with its technology stack, especially around AI. So, its participation in an open standard initiative suggests a willingness to collaborate more broadly in the AI commerce ecosystem. The Universal Commerce Protocol aims to unify shopping experiences across platforms, making it easier for AI tools to help consumers discover and purchase products seamlessly.
+
+For Amazon, this could mean enhancing its AI capabilities by tapping into a broader network of data and services, while also influencing how AI shopping evolves industry-wide. This collaboration might also be a strategic response to the rising competition from Google and other AI innovators in ecommerce.
+
+It’s a fascinating development that could reshape how AI integrates with online shopping, making the experience more intuitive and interconnected across different marketplaces and devices. We’ll be watching closely how this affects Amazon’s offerings and the wider luxury ecommerce space.
+
+---
+
+[Transition]
+
+Host:  
+Speaking of AI transforming ecommerce, let’s look at a startup that’s tackling some of retail’s toughest post-purchase challenges.
+
+---
+
+[Segment 2: Loop’s AI-led Post-Purchase Tools]
+
+Host:  
+Loop is making waves with its AI-driven post-purchase tools aimed at reducing returns, fraud, and lost revenue—three major pain points that weigh heavily on retailer margins. According to Internet Retailing, Loop’s platform leverages AI to streamline returns management, detect fraudulent activity, and recover revenue that might otherwise slip through the cracks.
+
+Returns alone cost the retail industry billions annually, not to mention customer dissatisfaction and operational headaches. Loop’s solution uses data analytics and machine learning to identify patterns, predict problematic returns, and offer smarter options to both merchants and customers. This can include alternative resolutions like exchanges or store credit, reducing the financial impact.
+
+Moreover, AI-powered fraud detection helps protect retailers from increasingly sophisticated scams, while also safeguarding genuine customers’ experiences.
+
+By turning these traditionally costly and frustrating aspects of ecommerce into growth opportunities, Loop is helping retailers protect their margins and improve customer loyalty. For luxury ecommerce, where customer experience and trust are paramount, innovations like Loop’s could be game changers.
+
+---
+
+[Transition]
+
+Host:  
+Now, let’s shift gears to a live-shopping platform making big moves in merchant reach and engagement.
+
+---
+
+[Segment 3: Whatnot’s Shopify Integration]
+
+Host:  
+Live shopping continues to grow as an engaging ecommerce format, and Whatnot, a live-shopping platform, has taken a big step by integrating directly with Shopify. This integration, highlighted by Modern Retail, opens the door for millions of Shopify merchants to sell on Whatnot’s app, boosting reach and variety for consumers.
+
+Live shopping combines entertainment and immediacy, offering a dynamic alternative to traditional online stores. By partnering with Shopify, Whatnot taps into a massive ecosystem of merchants, from small businesses to established brands, enabling them to showcase products in live streams, interact with shoppers, and drive sales in real-time.
+
+This move aligns with Whatnot’s growth strategy to scale quickly by leveraging Shopify’s merchant base and infrastructure. It also highlights how ecommerce platforms are converging to create seamless, multi-channel shopping experiences.
+
+For jewellery and luxury brands, live shopping can be especially powerful—providing an interactive way to showcase craftsmanship, tell brand stories, and build trust. The Whatnot-Shopify partnership could accelerate adoption of live commerce in these sectors, offering exciting new sales channels.
+
+---
+
+[Transition]
+
+Host:  
+From digital growth strategies to inspiring brick-and-mortar success stories—next, a fascinating turnaround in the jewellery retail world.
+
+---
+
+[Segment 4: Inside Buyout Saves Richmond Jewelry Store]
+
+Host:  
+A 35-year-old family-owned jewellery store in Richmond was on the brink of closure—until the store manager and a partner stepped in to buy it. As reported by Instore Magazine, this inside buyout has led to a remarkable 72% increase in sales.
+
+This story is a testament to the power of passion and local knowledge. The new owners leveraged their deep understanding of the store’s customer base and community ties to revitalize operations. They invested in fresh marketing, updated inventory selections, and enhanced customer service—all while preserving the store’s heritage.
+
+In an era when many small jewellery retailers struggle against online giants and shifting consumer habits, this example shows how adaptive leadership and strategic reinvestment can drive growth.
+
+It also underscores the importance of personal relationships and trust in jewellery retail—a sector where clients value expertise and bespoke experiences. This successful buyout provides a blueprint for other independents looking to thrive in a competitive landscape.
+
+---
+
+[Transition]
+
+Host:  
+Speaking of evolving retail models in jewellery, let’s discuss a developing trend around consultation fees.
+
+---
+
+[Segment 5: Jewelers Charging for Consultations?]
+
+Host:  
+Traditionally, jewellery consultations have been complimentary, but that’s beginning to shift. According to a May 2026 article in Instore Magazine, while only about 10% of jewellers currently charge consultation fees, many others are seriously considering it.
+
+Why the change? With rising operational costs and increasing demand for personalized service, some jewellers see consultation fees as a way to ensure clients are serious and to better value their expertise. Charging for consultations can also help manage time efficiently and improve client engagement.
+
+Of course, there’s a balance—charging too much risks deterring customers, but offering no charge can undervalue the jeweller’s skill and time. Some stores are experimenting with refundable fees applied toward purchases or tiered consultation options for more complex bespoke work.
+
+For the luxury jewellery market, where bespoke and high-touch services are key differentiators, consultation fees could become a new norm to enhance service quality and profitability.
+
+---
+
+[Transition]
+
+Host:  
+Now, let’s zoom out and look at the massive scale of AI investment by the world’s largest tech companies.
+
+---
+
+[Segment 6: Record AI Spending by Tech Giants]
+
+Host:  
+The New York Times Technology section reported a staggering new record: Google, Amazon, Microsoft, and Meta collectively spent over $130 billion in quarterly capital expenditures to build AI data centers. And this is just the beginning—further investments are expected.
+
+This massive spending spree underscores the central role AI plays in the future of commerce, technology, and beyond. These companies are racing to build the infrastructure needed to power advanced AI models, from natural language processing to computer vision.
+
+Such investments fuel innovations in personalized shopping, fraud prevention, customer service automation, and even product design. For luxury brands and ecommerce platforms, these AI capabilities open new frontiers in customer engagement and operational efficiency.
+
+But with such scale comes competition and complexity—infrastructure costs, talent acquisition, and ethical considerations around AI use are all critical factors shaping the industry.
+
+---
+
+[Transition]
+
+Host:  
+Speaking of AI in commerce, Amazon is also shaking up its beauty division with a fresh AI-led approach.
+
+---
+
+[Segment 7: Inside Amazon Beauty’s AI-Driven Transformation]
+
+Host:  
+Amazon Beauty is working to become a discovery-led destination, blending AI, entertainment, premiumisation, and seamless checkout experiences. Business of Fashion reports that Amazon is using AI to enhance product recommendations, virtual try-ons, and curated content, transforming browsing into purchasing.
+
+In the highly competitive beauty sector, where consumers crave personalized experiences and expert guidance, Amazon is innovating to capture more market share. AI-driven tools help customers discover new products tailored to their preferences, while entertainment elements keep shoppers engaged.
+
+Additionally, premiumisation—offering luxury and high-end products—combined with frictionless checkout, aims to boost both conversion and customer loyalty.
+
+This approach reflects a broader trend: using AI not just for efficiency, but to create immersive, emotionally resonant shopping experiences that rival brick-and-mortar luxury boutiques.
+
+---
+
+[Transition]
+
+Host:  
+Finally, a quick look at AI’s growing role beyond commerce—in the defense sector.
+
+---
+
+[Segment 8: Pentagon’s New Military AI Deals]
+
+Host:  
+The Pentagon recently signed new military AI contracts with Nvidia, Microsoft, and Amazon, following a dispute with Anthropic over its AI model Claude, as reported by the Financial Times.
+
+These deals highlight how AI is becoming integral to national defense strategies, powering everything from data analysis to autonomous systems. Nvidia, Microsoft, and Amazon are major players supplying cloud infrastructure and AI expertise to the military.
+
+The dispute with Anthropic—another AI company—underscores the competitive and sensitive nature of AI technology in defense contexts.
+
+For luxury tech watchers, this development is a reminder of AI’s broad impact across sectors, driving innovation and raising important questions about governance and ethics.
+
+---
+
+[Closing]
+
+Host:  
+That wraps up this week’s edition of Weekly Luxury Intelligence. Thanks for tuning in to week 18 of 2026. Next week, we’ll explore emerging trends in sustainable luxury and the latest in AI-powered customer personalization. Until then, stay informed and inspired.
+
+[End of podcast]

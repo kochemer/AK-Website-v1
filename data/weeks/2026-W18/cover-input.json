@@ -1,0 +1,28 @@
+{
+  "weekLabel": "2026-W18",
+  "homepageTopArticles": [
+    {
+      "title": "Marketplace Briefing: Amazon joins Google-backed shopping effort, suggesting a shift in AI strategy",
+      "source": "Modern Retail",
+      "snippet": "Amazon has joined the technical council overseeing Google’s Universal Commerce Protocol — an open standard designed to power AI driven shopping — after initially sitting out.",
+      "aiSummary": "AI-generated summary: Amazon has joined the technical council for Google's Universal Commerce Protocol, an open standard aimed at enabling AI-driven shopping, indicating a potential shift in its AI strategy. This development was reported by Modern Retail on April 30, 2026."
+    },
+    {
+      "title": "Loop targets returns, fraud and lost revenue with AI-led post‑purchase tools",
+      "source": "Internet Retailing",
+      "snippet": "Returns are one of the biggest drags on ecommerce margins and a persistent problem for retailers - but Loop believes they can also be a source of growth.\nThe post Loop targets returns, fraud and lost revenue with AI-led post‑purchase tools appeared first on InternetRetailing.",
+      "aiSummary": "AI-generated summary: Loop aims to transform ecommerce challenges like returns, fraud, and lost revenue into growth opportunities by leveraging AI-driven post-purchase tools, addressing a major issue impacting retailer margins."
+    },
+    {
+      "title": "How an Inside Buyout Saved This 35-Year-Old Richmond Jewelry Store",
+      "source": "Instore Magazine",
+      "snippet": "The manager and a partner bought the shop the owner was ready to close — sales are up 72%.",
+      "aiSummary": "AI-generated summary: The manager and a partner purchased a 35-year-old Richmond jewelry store that its owner was about to close, resulting in a 72% increase in sales."
+    }
+  ],
+  "model": "gpt-image-1",
+  "finalPrompt": "Photograph: A luxury gold wristwatch spilling out of an open cereal box onto a light wooden table, surrounded by scattered cereal flakes and an ordinary plastic toy. In the background, a Modern Retail shopping bag and an Instore Magazine-branded coffee mug sit partially visible. Everything looks photorealistic, as if the watch just fell out of the box.\n\nCRITICAL CONSTRAINTS (must be strictly avoided):\n- text, letters, numbers, signage, labels, price tags, screens, UI, dashboards, holograms, floating icons, watermarks, unrelated brand logos, cartoon, illustration, CGI, 3D render, anime, diamond, diamonds, gemstone, gemstones, precious stones, jewelry close-up, jewelry product shot, diamond ring, diamond necklace, diamond earring, jeweled, sparkling gemstone, dramatic spotlight, glowing edges, rim lighting, vignette, cinematic color grade, blurred background, bokeh\n\nThis must look like a real photograph taken by a human — not AI-generated, not CGI, not a 3D render. Natural light. Real objects. Real imperfections. Fill the entire frame edge to edge with the scene — no black bars, no empty space at the edges.\n\nDo not include: text, labels, signage, screens, UI, logos unrelated to the scene, diamonds, gemstones, CGI lighting, dramatic spotlights, or blurred vignette backgrounds.",
+  "imageSize": "1536x1024",
+  "outputPath": "/weekly-images/2026-W18.png",
+  "generatedAt": "2026-05-03T08:24:06.653Z"
+}
