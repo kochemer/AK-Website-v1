@@ -22,5 +22,11 @@
     "cached_at": "2026-05-03T08:20:54.788Z",
     "model": "gpt-4.1-mini",
     "version": "1.1"
+  },
+  "2026-W19:519ce372a162": {
+    "editorialTake": "Anthropic chasing a near $1 trillion valuation as its revenue grows fivefold is a clear sign that AI is no longer just a tech novelty but a core economic force reshaping investment priorities. This valuation talk isn’t about hype: it reflects real revenue momentum that forces every competitor, from OpenAI to Cloudflare, to rethink their growth and talent strategies. Cloudflare’s AI-driven layoffs of 1,100 jobs amid record revenue underline a brutal truth: AI is not just creating value, it’s destroying old roles faster than companies can create new ones.\n\nAmazon’s launch of Amazon Supply Chain Services to open its logistics network to other businesses is a bold move that could redraw the boundaries between ecommerce and supply chain management. This isn’t just about selling more stuff; it’s about Amazon weaponizing its infrastructure as a platform for B2B growth, forcing retailers and brands to decide if they want to compete with or rely on Amazon’s backbone. The big question is how many companies will risk ceding control of their supply chains to Amazon’s expanding empire before it’s too late.",
+    "cached_at": "2026-05-10T08:34:52.869Z",
+    "model": "gpt-4.1-mini",
+    "version": "1.1"
   }
 }

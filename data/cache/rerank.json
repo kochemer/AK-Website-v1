@@ -2686,5 +2686,149 @@
     ],
     "cached_at": "2026-05-03T08:20:30.989Z",
     "model": "gpt-4.1-mini"
+  },
+  "2026-W19:AI_and_Strategy:0924db9ada55": {
+    "selected": [
+      {
+        "id": "10",
+        "rank": 1,
+        "why": "Anthropic nears $1 trillion valuation with rapid revenue growth",
+        "confidence": 0.95
+      },
+      {
+        "id": "16",
+        "rank": 2,
+        "why": "Financial Times coverage of Anthropic's major funding and valuation surge",
+        "confidence": 0.9
+      },
+      {
+        "id": "2",
+        "rank": 3,
+        "why": "OpenAI launches new voice intelligence features in API",
+        "confidence": 0.9
+      },
+      {
+        "id": "15",
+        "rank": 4,
+        "why": "Cloudflare reports AI-driven job cuts amid record revenue",
+        "confidence": 0.85
+      },
+      {
+        "id": "14",
+        "rank": 5,
+        "why": "Paperwork delays impact AI startup funding and IP support in India",
+        "confidence": 0.8
+      },
+      {
+        "id": "1",
+        "rank": 6,
+        "why": "Alibaba integrating Qwen AI with Taobao for agentic shopping",
+        "confidence": 0.8
+      },
+      {
+        "id": "8",
+        "rank": 7,
+        "why": "Airbnb reports 60% of code now AI-generated, accelerating features",
+        "confidence": 0.75
+      }
+    ],
+    "cached_at": "2026-05-10T08:32:46.748Z",
+    "model": "gpt-4.1-mini"
+  },
+  "2026-W19:Ecommerce_Retail_Tech:e9dd3509913d": {
+    "selected": [
+      {
+        "id": "0",
+        "rank": 1,
+        "why": "Amazon launches B2B supply chain service impacting logistics broadly",
+        "confidence": 0.95
+      },
+      {
+        "id": "2",
+        "rank": 2,
+        "why": "GameStop's eBay acquisition bid signals major marketplace shift",
+        "confidence": 0.9
+      },
+      {
+        "id": "4",
+        "rank": 3,
+        "why": "Stater Bros. showcases future of in-store retail media globally",
+        "confidence": 0.85
+      },
+      {
+        "id": "5",
+        "rank": 4,
+        "why": "Ulta Beauty joins Uber Eats marketplace expanding delivery options",
+        "confidence": 0.85
+      },
+      {
+        "id": "10",
+        "rank": 5,
+        "why": "ThredUp revenue jump and GameStop interview reveal resale market trends",
+        "confidence": 0.8
+      },
+      {
+        "id": "14",
+        "rank": 6,
+        "why": "Walmart CEO signals deeper India investment affecting global retail",
+        "confidence": 0.8
+      },
+      {
+        "id": "1",
+        "rank": 7,
+        "why": "New ecommerce tools including supply chain and personalization innovations",
+        "confidence": 0.75
+      }
+    ],
+    "cached_at": "2026-05-10T08:33:18.677Z",
+    "model": "gpt-4.1-mini"
+  },
+  "2026-W19:Luxury_and_Consumer:060c8a029656": {
+    "selected": [
+      {
+        "id": "0",
+        "rank": 1,
+        "why": "Amazon opens logistics network, key for retail supply chain innovation",
+        "confidence": 0.95
+      },
+      {
+        "id": "4",
+        "rank": 2,
+        "why": "Old Navy hires retail veteran, impacting customer experience strategy",
+        "confidence": 0.9
+      },
+      {
+        "id": "12",
+        "rank": 3,
+        "why": "Sustainability rebrand with financial value focus, relevant for merchandising",
+        "confidence": 0.85
+      },
+      {
+        "id": "7",
+        "rank": 4,
+        "why": "Brand events surge, showing shift in customer engagement strategies",
+        "confidence": 0.8
+      },
+      {
+        "id": "8",
+        "rank": 5,
+        "why": "Nike tariff class action highlights pricing and regulatory risks",
+        "confidence": 0.8
+      },
+      {
+        "id": "16",
+        "rank": 6,
+        "why": "Black Beauty Club event merges commerce and culture, boosting CX",
+        "confidence": 0.75
+      },
+      {
+        "id": "11",
+        "rank": 7,
+        "why": "Luxury brands entering sporty sneaker market, relevant for product assortment",
+        "confidence": 0.7
+      }
+    ],
+    "cached_at": "2026-05-10T08:33:50.110Z",
+    "model": "gpt-4.1-mini"
   }
 }

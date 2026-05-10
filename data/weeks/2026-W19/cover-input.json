@@ -1,0 +1,28 @@
+{
+  "weekLabel": "2026-W19",
+  "homepageTopArticles": [
+    {
+      "title": "Amazon launches B2B supply chain service",
+      "source": "Digital Commerce 360",
+      "snippet": "Amazon is making its logistics services available to businesses across retail, health care and manufacturing with the launch of Amazon Supply Chain Services (ASCS).  The online retailer said it will bundle its freight, warehousing, fulfillment and parcel deliveries into a single platform available to any business, not just those that sell on its marketplace. “Amazon […]\nThe post Amazon launches B2B supply chain service appeared first on Digital Commerce 360.",
+      "aiSummary": "AI-generated summary: On May 5, 2026, Amazon launched Amazon Supply Chain Services (ASCS), a B2B platform that integrates freight, warehousing, fulfillment, and parcel delivery for businesses across retail, health care, and manufacturing, extending its logistics services beyond its marketplace sellers."
+    },
+    {
+      "title": "Ecommerce Trends: How online retailers compete against Amazon",
+      "source": "Digital Commerce 360",
+      "snippet": "After GameStop offered to acquire eBay on May 3 in a deal worth $56 billion, GameStop CEO Ryan Cohen framed the move as a path to help eBay compete against Amazon. “It could be a legit competitor to Amazon,” Cohen said in a Wall Street Journal report dated March 4. Part of Cohen’s strategy would […]\nThe post Ecommerce Trends: How online retailers compete against Amazon appeared first on Digital Commerce 360.",
+      "aiSummary": "AI-generated summary: Following GameStop's $56 billion offer to acquire eBay, CEO Ryan Cohen envisions the deal as a strategy to position eBay as a legitimate competitor to Amazon in the ecommerce space."
+    },
+    {
+      "title": "LVMH Australia increases dividend despite sales decline",
+      "source": "Jeweller - Business News",
+      "snippet": "The Australian branch of luxury juggernaut Louis Vuitton Moët Hennessy (LVMH) has increased the dividend payment to its parent company by more than a fifth.",
+      "aiSummary": "AI-generated summary: Despite a decline in sales, LVMH Australia has increased its dividend payment to the parent company by over 20%, according to a May 2026 report from Jeweller - Business News."
+    }
+  ],
+  "model": "gpt-image-1",
+  "finalPrompt": "Photograph: A grocery checkout conveyor belt holds a giant, shiny golden egg next to a stack of plain brown shipping boxes and a slightly crumpled Amazon parcel. Two small stickers with faint company logos (Digital Commerce 360 and Jeweller) are on the boxes. Everything sits on the rubber belt, under bright, natural store lighting. No people or text are visible.\n\nCRITICAL CONSTRAINTS (must be strictly avoided):\n- text, letters, numbers, signage, labels, price tags, screens, UI, dashboards, holograms, floating icons, watermarks, unrelated brand logos, cartoon, illustration, CGI, 3D render, anime, diamond, diamonds, gemstone, gemstones, precious stones, jewelry close-up, jewelry product shot, diamond ring, diamond necklace, diamond earring, jeweled, sparkling gemstone, dramatic spotlight, glowing edges, rim lighting, vignette, cinematic color grade, blurred background, bokeh\n\nThis must look like a real photograph taken by a human — not AI-generated, not CGI, not a 3D render. Natural light. Real objects. Real imperfections. Fill the entire frame edge to edge with the scene — no black bars, no empty space at the edges.\n\nDo not include: text, labels, signage, screens, UI, logos unrelated to the scene, diamonds, gemstones, CGI lighting, dramatic spotlights, or blurred vignette backgrounds.",
+  "imageSize": "1536x1024",
+  "outputPath": "/weekly-images/2026-W19.png",
+  "generatedAt": "2026-05-10T08:38:03.488Z"
+}

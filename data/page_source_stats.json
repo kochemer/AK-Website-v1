@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-05-03T08:09:43.619Z",
+  "timestamp": "2026-05-10T08:18:43.667Z",
   "sources": [
     {
       "sourceName": "BoF - News (The News in Brief)",
@@ -22,39 +22,39 @@
       "pagesFetched": 1,
       "fetchStatus": 200,
       "itemsMatched": 21,
-      "articlesExtracted": 17,
+      "articlesExtracted": 11,
       "rejectedNoDate": 0,
       "rejectedInvalidDate": 0,
       "rejectedNoTitle": 0,
       "rejectedNoUrl": 0,
-      "rejectedDuplicate": 4,
+      "rejectedDuplicate": 10,
       "rejectedSelectorMiss": 0,
-      "articlesKept": 17,
-      "yieldPercentage": 80.95238095238095,
+      "articlesKept": 11,
+      "yieldPercentage": 52.38095238095239,
       "failures": []
     },
     {
       "sourceName": "The Impression",
       "pagesFetched": 1,
       "fetchStatus": 200,
-      "itemsMatched": 171,
-      "articlesExtracted": 66,
+      "itemsMatched": 175,
+      "articlesExtracted": 26,
       "rejectedNoDate": 0,
       "rejectedInvalidDate": 0,
       "rejectedNoTitle": 0,
       "rejectedNoUrl": 0,
-      "rejectedDuplicate": 105,
+      "rejectedDuplicate": 149,
       "rejectedSelectorMiss": 0,
-      "articlesKept": 66,
-      "yieldPercentage": 38.59649122807017,
+      "articlesKept": 26,
+      "yieldPercentage": 14.857142857142858,
       "failures": []
     }
   ],
   "summary": {
     "totalPagesFetched": 3,
-    "totalItemsMatched": 200,
-    "totalArticlesExtracted": 83,
-    "totalArticlesKept": 83,
-    "overallYieldPercentage": 41.5
+    "totalItemsMatched": 204,
+    "totalArticlesExtracted": 37,
+    "totalArticlesKept": 37,
+    "overallYieldPercentage": 18.137254901960784
   }
 }

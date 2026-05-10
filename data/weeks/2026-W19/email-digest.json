@@ -1,0 +1,95 @@
+{
+  "week": "2026-W19",
+  "generatedAt": "2026-05-10T08:35:19.292Z",
+  "intro": "In this week’s digest, key developments span retail innovation, AI advancements, and luxury market dynamics. Highlights include Amazon’s new B2B supply chain service, OpenAI’s voice intelligence API update, and notable shifts in retail delivery and legal challenges. These stories underscore evolving strategies and technological impacts shaping the industry landscape.",
+  "readOneThing": {
+    "title": "Amazon launches B2B supply chain service",
+    "url": "https://www.digitalcommerce360.com/2026/05/05/amazon-launches-b2b-supply-chain-service/"
+  },
+  "items": [
+    {
+      "rank": 1,
+      "title": "Amazon launches B2B supply chain service",
+      "url": "https://www.digitalcommerce360.com/2026/05/05/amazon-launches-b2b-supply-chain-service/",
+      "source": "Digital Commerce 360",
+      "bullets": [
+        "Amazon has launched Amazon Supply Chain Services (ASCS), offering businesses freight, warehousing, fulfillment, and parcel delivery through a unified platform.",
+        "ASCS provides access to Amazon's extensive transportation network, including over 80,000 trailers, 24,000 intermodal containers, and 100 aircraft, with services like customs support and shipment tracking.",
+        "Previously limited to marketplace sellers, Amazon's new service now competes with logistics providers like UPS and FedEx, impacting their stock prices after the announcement."
+      ],
+      "summary": "AI-generated summary: On May 5, 2026, Amazon launched Amazon Supply Chain Services (ASCS), a B2B platform that integrates freight, warehousing, fulfillment, and parcel delivery for businesses across retail, health care, and manufacturing, extending its logistics services beyond its marketplace sellers."
+    },
+    {
+      "rank": 2,
+      "title": "Introducing – The Race-Inspired Lorige BL-Endurance Evolution Bleu Asphalte Gold",
+      "url": "https://monochrome-watches.com/lorige-bl-endurance-evolution-bleu-asphalte-gold-edition-carbon-case-introducing-price/",
+      "source": "Monochrome Watches",
+      "bullets": [
+        "Lorige unveiled the BL-Endurance Evolution Bleu Asphalte Gold Edition, a limited run of 10 watches featuring a blend of recycled carbon/carbon brake pads and 5N rose gold. The watch case is crafted from brake pads of the Heart of Racing Valkyrie No. 23, which podiumed at the 2025 Petit Le Mans, and measures 50mm by 42mm with water resistance up to 50 meters. Founded in 2018 by Clément Etienvre and Emeric Paraud, Lorige is a French-Swiss microbrand known for integrating motorsport materials and collaborating with racing teams like United Autosports and Peugeot Sport.",
+        "Not all images were able to load for printing",
+        "Please close the print window and try again"
+      ],
+      "summary": "AI-generated summary: The Lorige BL-Endurance Evolution Bleu Asphalte Gold Edition, introduced by the French-Swiss microbrand founded in 2018, fully embraces motorsport inspiration, distinguishing itself in the jewellery industry."
+    },
+    {
+      "rank": 3,
+      "title": "OpenAI launches new voice intelligence features in its API",
+      "url": "https://techcrunch.com/2026/05/07/openai-launches-new-voice-intelligence-features-in-its-api/",
+      "source": "TechCrunch - AI",
+      "bullets": [
+        "OpenAI introduced new voice intelligence features in its API, including GPT-Realtime-2 for realistic vocal simulation and GPT-Realtime-Translate for real-time translation.",
+        "The GPT-Realtime-Translate supports over 70 input languages and 13 output languages, while GPT-Realtime-Whisper offers live speech-to-text transcription.",
+        "These voice models are part of OpenAI's Realtime API, with Translate and Whisper billed by the minute and GPT-Realtime-2 billed by token consumption."
+      ],
+      "summary": "AI-generated summary: On May 7, 2026, TechCrunch reported that OpenAI launched new voice intelligence features in its API, designed to enhance customer service systems and applicable across various fields such as education and creator platforms."
+    },
+    {
+      "rank": 4,
+      "title": "Nike Faces Class Action Over Tariff Refunds",
+      "url": "https://wwd.com/sourcing-journal/industry-news/nike-class-action-ieepa-tariff-refunds-costco-lululemon-1238948853/",
+      "source": "WWD - Women's Wear Daily",
+      "bullets": [
+        "Nike is facing a class action lawsuit in Portland, Oregon, for allegedly not passing tariff refunds to consumers after raising prices due to tariffs.",
+        "The lawsuit claims Nike charged consumers $5 to $10 more for footwear and $2 to $10 more for apparel to offset tariff costs and now seeks to keep federal tariff refunds.",
+        "Following the Supreme Court ruling that declared Trump-era IEEPA tariffs unlawful, Customs and Border Protection launched a refund portal on April 20, with refunds starting May 12."
+      ],
+      "summary": "AI-generated summary: Nike is facing a class action lawsuit from consumers who claim they were overcharged due to tariffs reflected in higher retail prices. The case highlights growing consumer pushback against tariff-related costs."
+    },
+    {
+      "rank": 5,
+      "title": "Ulta Beauty joins Uber Eats marketplace, expanding delivery options",
+      "url": "https://www.digitalcommerce360.com/2026/05/07/ulta-beauty-uber-eats-marketplace-same-day-delivery/",
+      "source": "Digital Commerce 360",
+      "bullets": [
+        "Ulta Beauty partnered with Uber Eats to offer same-day delivery from over 1,500 physical stores across the U.S., expanding its fulfillment options.",
+        "Customers can shop thousands of products from more than 600 brands through Uber Eats, with options for immediate or scheduled delivery.",
+        "This collaboration follows similar moves by retailers like Ace Hardware and Sephora, reflecting Uber Eats' expansion into everyday retail beyond food delivery."
+      ],
+      "summary": "AI-generated summary: Ulta Beauty has partnered with Uber Eats to offer same-day delivery through the Uber Eats marketplace, expanding its delivery options ahead of Mother’s Day. This move aligns Ulta with other retailers leveraging last-mile delivery platforms."
+    },
+    {
+      "rank": 6,
+      "title": "Cloudflare says AI made 1,100 jobs obsolete, even as revenue hit a record high",
+      "url": "https://techcrunch.com/2026/05/08/cloudflare-says-ai-made-1100-jobs-obsolete-even-as-revenue-hit-a-record-high/",
+      "source": "TechCrunch - AI",
+      "bullets": [
+        "Cloudflare announced a 20% workforce reduction, cutting approximately 1,100 jobs due to increased AI productivity across teams. The company reported a record quarterly revenue of $639.8 million, a 34% year-over-year increase, alongside a $62 million loss. Cloudflare's internal AI usage surged by over 600% in three months, with nearly all R&D code reviewed by autonomous AI agents as of early 2026.",
+        "The company is cutting people from all teams and geographies except for salespeople who carry revenue quotas, CFO Thomas Seifert detailed on the call",
+        "The news of the workforce cuts came as the company reported quarterly revenues of $639.8 million, a 34% year-over-year increase and the highest single quarter in the company’s history"
+      ],
+      "summary": "AI-generated summary: On May 8, 2026, Cloudflare announced its first large-scale layoff of 1,100 jobs due to AI-driven efficiency gains, even as the company reported record-high revenue, according to CEO Matthew Prince."
+    },
+    {
+      "rank": 7,
+      "title": "The Weekly Closeout: ThredUp’s revenue jump and the interview that shook retail",
+      "url": "https://www.retaildive.com/news/ryan-cohen-gamestop-ebay-interview-thredup-q1-earnings/819613/",
+      "source": "Retail Dive",
+      "bullets": [
+        "ThredUp reported a 15% revenue increase in Q1 with active buyers reaching a record 1.7 million, despite widening net losses to $6.5 million.",
+        "GameStop CEO Ryan Cohen made a $56 billion unsolicited bid to acquire eBay, proposing a mix of cash, stock, and financing through TD Securities.",
+        "Published May 8, 2026 By Retail Dive Staff Share Copy link Email LinkedIn X/Twitter Facebook Print License Add us on Google A ThredUp cleanout bag"
+      ],
+      "summary": "AI-generated summary: ThredUp experienced a revenue increase alongside growth in active buyers, while GameStop’s bid on eBay and the subsequent developments created notable surprises in the ecommerce and retail tech sector."
+    }
+  ]
+}

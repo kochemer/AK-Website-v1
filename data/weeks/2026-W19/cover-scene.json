@@ -1,0 +1,16 @@
+{
+  "concept": "warehouse-carton-egg-scale-absurdity",
+  "primaryHumorDriver": "scale absurdity",
+  "secondaryEnhancer": "unexpected texture/material combination",
+  "sceneDescription": "On a grocery checkout conveyor belt, a giant, pristine golden egg sits awkwardly between a stack of plain brown cardboard shipping boxes (some with subtle Digital Commerce 360 and Jeweller stickers) and an ordinary, battered Amazon parcel. The absurdity comes from the exaggerated size and luxury of the egg compared to the mundane, utilitarian parcels—evoking the bizarre value shifts in online commerce and luxury dividends. The scene is brightly lit, with natural daylight from above, and all objects appear touchable and real.",
+  "finalImagePrompt": "A grocery checkout conveyor belt holds a giant, shiny golden egg next to a stack of plain brown shipping boxes and a slightly crumpled Amazon parcel. Two small stickers with faint company logos (Digital Commerce 360 and Jeweller) are on the boxes. Everything sits on the rubber belt, under bright, natural store lighting. No people or text are visible.",
+  "negativePrompt": [
+    "text, letters, numbers, signage, labels, price tags",
+    "screens, UI, dashboards, holograms, floating icons",
+    "watermarks, unrelated brand logos",
+    "cartoon, illustration, CGI, 3D render, anime",
+    "diamond, diamonds, gemstone, gemstones, precious stones, jewelry close-up, jewelry product shot, diamond ring, diamond necklace, diamond earring, jeweled, sparkling gemstone",
+    "dramatic spotlight, glowing edges, rim lighting, vignette, cinematic color grade, blurred background, bokeh"
+  ],
+  "confidence": 0.93
+}

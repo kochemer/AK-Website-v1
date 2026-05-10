@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-05-03T08:09:43.620Z",
+  "timestamp": "2026-05-10T08:18:43.667Z",
   "sources": [
     {
       "sourceName": "Financial Times - Technology",
@@ -49,11 +49,11 @@
     {
       "sourceName": "The Guardian - Technology",
       "type": "rss",
-      "itemsFetched": 31,
-      "itemsParsed": 31,
-      "newArticlesAdded": 27,
-      "duplicates": 4,
-      "yieldPct": 87.09677419354838
+      "itemsFetched": 32,
+      "itemsParsed": 32,
+      "newArticlesAdded": 21,
+      "duplicates": 11,
+      "yieldPct": 65.625
     },
     {
       "sourceName": "Economic Times - Technology",
@@ -96,36 +96,36 @@
       "type": "rss",
       "itemsFetched": 10,
       "itemsParsed": 10,
-      "newArticlesAdded": 10,
-      "duplicates": 0,
-      "yieldPct": 100
+      "newArticlesAdded": 9,
+      "duplicates": 1,
+      "yieldPct": 90
     },
     {
       "sourceName": "Practical Ecommerce",
       "type": "rss",
       "itemsFetched": 30,
       "itemsParsed": 30,
-      "newArticlesAdded": 11,
-      "duplicates": 19,
-      "yieldPct": 36.666666666666664
+      "newArticlesAdded": 6,
+      "duplicates": 24,
+      "yieldPct": 20
     },
     {
       "sourceName": "TechCrunch - Commerce",
       "type": "rss",
       "itemsFetched": 20,
       "itemsParsed": 20,
-      "newArticlesAdded": 7,
-      "duplicates": 13,
-      "yieldPct": 35
+      "newArticlesAdded": 6,
+      "duplicates": 14,
+      "yieldPct": 30
     },
     {
       "sourceName": "TechCrunch - AI",
       "type": "rss",
-      "itemsFetched": 18,
-      "itemsParsed": 18,
-      "newArticlesAdded": 17,
-      "duplicates": 1,
-      "yieldPct": 94.44444444444444
+      "itemsFetched": 20,
+      "itemsParsed": 20,
+      "newArticlesAdded": 20,
+      "duplicates": 0,
+      "yieldPct": 100
     },
     {
       "sourceName": "Total Retail",
@@ -141,27 +141,27 @@
       "type": "rss",
       "itemsFetched": 1000,
       "itemsParsed": 1000,
-      "newArticlesAdded": 28,
-      "duplicates": 972,
-      "yieldPct": 2.8000000000000003
+      "newArticlesAdded": 17,
+      "duplicates": 983,
+      "yieldPct": 1.7000000000000002
     },
     {
       "sourceName": "Computerworld - Ecommerce",
       "type": "rss",
       "itemsFetched": 20,
       "itemsParsed": 20,
-      "newArticlesAdded": 17,
-      "duplicates": 3,
-      "yieldPct": 85
+      "newArticlesAdded": 19,
+      "duplicates": 1,
+      "yieldPct": 95
     },
     {
       "sourceName": "UseInsider",
       "type": "rss",
       "itemsFetched": 10,
       "itemsParsed": 10,
-      "newArticlesAdded": 10,
-      "duplicates": 0,
-      "yieldPct": 100
+      "newArticlesAdded": 0,
+      "duplicates": 10,
+      "yieldPct": 0
     },
     {
       "sourceName": "ToneTag",
@@ -177,9 +177,9 @@
       "type": "rss",
       "itemsFetched": 100,
       "itemsParsed": 100,
-      "newArticlesAdded": 96,
-      "duplicates": 4,
-      "yieldPct": 96
+      "newArticlesAdded": 55,
+      "duplicates": 45,
+      "yieldPct": 55.00000000000001
     },
     {
       "sourceName": "WWD - Women's Wear Daily",
@@ -222,9 +222,9 @@
       "type": "rss",
       "itemsFetched": 20,
       "itemsParsed": 20,
-      "newArticlesAdded": 20,
-      "duplicates": 0,
-      "yieldPct": 100
+      "newArticlesAdded": 18,
+      "duplicates": 2,
+      "yieldPct": 90
     },
     {
       "sourceName": "Robb Report",
@@ -240,27 +240,27 @@
       "type": "rss",
       "itemsFetched": 10,
       "itemsParsed": 10,
-      "newArticlesAdded": 6,
-      "duplicates": 4,
-      "yieldPct": 60
+      "newArticlesAdded": 7,
+      "duplicates": 3,
+      "yieldPct": 70
     },
     {
       "sourceName": "Luxe Digital",
       "type": "rss",
       "itemsFetched": 10,
       "itemsParsed": 10,
-      "newArticlesAdded": 0,
-      "duplicates": 10,
-      "yieldPct": 0
+      "newArticlesAdded": 1,
+      "duplicates": 9,
+      "yieldPct": 10
     },
     {
       "sourceName": "Fashionista",
       "type": "rss",
       "itemsFetched": 50,
       "itemsParsed": 50,
-      "newArticlesAdded": 46,
-      "duplicates": 4,
-      "yieldPct": 92
+      "newArticlesAdded": 28,
+      "duplicates": 22,
+      "yieldPct": 56.00000000000001
     },
     {
       "sourceName": "Just Style",
@@ -283,9 +283,9 @@
     {
       "sourceName": "Highsnobiety",
       "type": "rss",
-      "itemsFetched": 9,
-      "itemsParsed": 9,
-      "newArticlesAdded": 9,
+      "itemsFetched": 8,
+      "itemsParsed": 8,
+      "newArticlesAdded": 8,
       "duplicates": 0,
       "yieldPct": 100
     },
@@ -303,27 +303,27 @@
       "type": "rss",
       "itemsFetched": 30,
       "itemsParsed": 30,
-      "newArticlesAdded": 19,
-      "duplicates": 11,
-      "yieldPct": 63.33333333333333
+      "newArticlesAdded": 8,
+      "duplicates": 22,
+      "yieldPct": 26.666666666666668
     },
     {
       "sourceName": "Jeweller - Jewellery Trends",
       "type": "rss",
       "itemsFetched": 30,
       "itemsParsed": 30,
-      "newArticlesAdded": 21,
-      "duplicates": 9,
-      "yieldPct": 70
+      "newArticlesAdded": 3,
+      "duplicates": 27,
+      "yieldPct": 10
     },
     {
       "sourceName": "Jeweller - Main",
       "type": "rss",
       "itemsFetched": 30,
       "itemsParsed": 30,
-      "newArticlesAdded": 0,
-      "duplicates": 30,
-      "yieldPct": 0
+      "newArticlesAdded": 21,
+      "duplicates": 9,
+      "yieldPct": 70
     },
     {
       "sourceName": "Monochrome Watches",
@@ -344,58 +344,13 @@
       "yieldPct": 100
     },
     {
-      "sourceName": "Professional Jeweller",
-      "type": "rss",
-      "itemsFetched": 10,
-      "itemsParsed": 10,
-      "newArticlesAdded": 8,
-      "duplicates": 2,
-      "yieldPct": 80
-    },
-    {
-      "sourceName": "Instore Magazine",
-      "type": "rss",
-      "itemsFetched": 10,
-      "itemsParsed": 10,
-      "newArticlesAdded": 10,
-      "duplicates": 0,
-      "yieldPct": 100
-    },
-    {
-      "sourceName": "WatchPro",
-      "type": "rss",
-      "itemsFetched": 200,
-      "itemsParsed": 200,
-      "newArticlesAdded": 45,
-      "duplicates": 155,
-      "yieldPct": 22.5
-    },
-    {
-      "sourceName": "Luxury Daily - Retail",
-      "type": "rss",
-      "itemsFetched": 0,
-      "itemsParsed": 0,
-      "newArticlesAdded": 0,
-      "duplicates": 0,
-      "yieldPct": 0
-    },
-    {
-      "sourceName": "Luxury Daily - Commerce",
-      "type": "rss",
-      "itemsFetched": 0,
-      "itemsParsed": 0,
-      "newArticlesAdded": 0,
-      "duplicates": 0,
-      "yieldPct": 0
-    },
-    {
       "sourceName": "Luxury Daily - Research",
       "type": "rss",
       "itemsFetched": 10,
       "itemsParsed": 10,
-      "newArticlesAdded": 1,
-      "duplicates": 9,
-      "yieldPct": 10
+      "newArticlesAdded": 0,
+      "duplicates": 10,
+      "yieldPct": 0
     },
     {
       "sourceName": "The Decoder",
@@ -403,15 +358,6 @@
       "itemsFetched": 10,
       "itemsParsed": 10,
       "newArticlesAdded": 10,
-      "duplicates": 0,
-      "yieldPct": 100
-    },
-    {
-      "sourceName": "AI News",
-      "type": "rss",
-      "itemsFetched": 12,
-      "itemsParsed": 12,
-      "newArticlesAdded": 12,
       "duplicates": 0,
       "yieldPct": 100
     },
@@ -429,18 +375,18 @@
       "type": "rss",
       "itemsFetched": 30,
       "itemsParsed": 30,
-      "newArticlesAdded": 19,
-      "duplicates": 11,
-      "yieldPct": 63.33333333333333
+      "newArticlesAdded": 6,
+      "duplicates": 24,
+      "yieldPct": 20
     },
     {
       "sourceName": "Simon Willison",
       "type": "rss",
       "itemsFetched": 30,
       "itemsParsed": 30,
-      "newArticlesAdded": 30,
-      "duplicates": 0,
-      "yieldPct": 100
+      "newArticlesAdded": 20,
+      "duplicates": 10,
+      "yieldPct": 66.66666666666666
     },
     {
       "sourceName": "Forrester Blog",
@@ -456,45 +402,36 @@
       "type": "rss",
       "itemsFetched": 20,
       "itemsParsed": 20,
-      "newArticlesAdded": 9,
-      "duplicates": 11,
-      "yieldPct": 45
-    },
-    {
-      "sourceName": "Strategy+Business",
-      "type": "rss",
-      "itemsFetched": 30,
-      "itemsParsed": 30,
-      "newArticlesAdded": 1,
-      "duplicates": 29,
-      "yieldPct": 3.3333333333333335
+      "newArticlesAdded": 4,
+      "duplicates": 16,
+      "yieldPct": 20
     },
     {
       "sourceName": "McKinsey - Luxury & Retail Research",
-      "type": "rss",
-      "itemsFetched": 43,
-      "itemsParsed": 43,
-      "newArticlesAdded": 1,
-      "duplicates": 42,
-      "yieldPct": 2.3255813953488373
-    },
-    {
-      "sourceName": "BCG - Luxury & Retail Research",
-      "type": "rss",
-      "itemsFetched": 50,
-      "itemsParsed": 50,
-      "newArticlesAdded": 2,
-      "duplicates": 48,
-      "yieldPct": 4
-    },
-    {
-      "sourceName": "Bain - Luxury & Retail Research",
       "type": "rss",
       "itemsFetched": 51,
       "itemsParsed": 51,
       "newArticlesAdded": 3,
       "duplicates": 48,
       "yieldPct": 5.88235294117647
+    },
+    {
+      "sourceName": "BCG - Luxury & Retail Research",
+      "type": "rss",
+      "itemsFetched": 51,
+      "itemsParsed": 51,
+      "newArticlesAdded": 1,
+      "duplicates": 50,
+      "yieldPct": 1.9607843137254901
+    },
+    {
+      "sourceName": "Bain - Luxury & Retail Research",
+      "type": "rss",
+      "itemsFetched": 44,
+      "itemsParsed": 44,
+      "newArticlesAdded": 2,
+      "duplicates": 42,
+      "yieldPct": 4.545454545454546
     },
     {
       "sourceName": "CNBC Technology",
@@ -526,11 +463,11 @@
     {
       "sourceName": "NYTimes Technology",
       "type": "rss",
-      "itemsFetched": 45,
-      "itemsParsed": 45,
-      "newArticlesAdded": 45,
-      "duplicates": 0,
-      "yieldPct": 100
+      "itemsFetched": 20,
+      "itemsParsed": 20,
+      "newArticlesAdded": 19,
+      "duplicates": 1,
+      "yieldPct": 95
     },
     {
       "sourceName": "MIT Sloan Management Review – AI",
@@ -555,9 +492,9 @@
       "type": "rss",
       "itemsFetched": 10,
       "itemsParsed": 10,
-      "newArticlesAdded": 10,
-      "duplicates": 0,
-      "yieldPct": 100
+      "newArticlesAdded": 5,
+      "duplicates": 5,
+      "yieldPct": 50
     },
     {
       "sourceName": "VentureBeat - AI",
@@ -581,26 +518,26 @@
       "sourceName": "Jing Daily",
       "type": "page",
       "itemsFetched": 21,
-      "itemsParsed": 17,
-      "newArticlesAdded": 17,
-      "duplicates": 4,
-      "yieldPct": 80.95238095238095
+      "itemsParsed": 11,
+      "newArticlesAdded": 11,
+      "duplicates": 10,
+      "yieldPct": 52.38095238095239
     },
     {
       "sourceName": "The Impression",
       "type": "page",
-      "itemsFetched": 171,
-      "itemsParsed": 66,
-      "newArticlesAdded": 66,
-      "duplicates": 105,
-      "yieldPct": 38.59649122807017
+      "itemsFetched": 175,
+      "itemsParsed": 26,
+      "newArticlesAdded": 26,
+      "duplicates": 149,
+      "yieldPct": 14.857142857142858
     }
   ],
   "summary": {
-    "totalSources": 66,
-    "totalItemsFetched": 2666,
-    "totalNewArticles": 1013,
+    "totalSources": 59,
+    "totalItemsFetched": 2387,
+    "totalNewArticles": 734,
     "totalDuplicates": 1653,
-    "overallYieldPct": 37.996999249812454
+    "overallYieldPct": 30.749895266024296
   }
 }

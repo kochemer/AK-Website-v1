@@ -1,0 +1,78 @@
+{
+  "digestWeek": "2026-W19",
+  "ingestionWeek": "2026-W19",
+  "startedAt": "2026-05-10T08:18:20.780Z",
+  "finishedAt": "2026-05-10T08:38:25.016Z",
+  "steps": [
+    {
+      "name": "rss",
+      "ok": true,
+      "startedAt": "2026-05-10T08:18:20.795Z",
+      "finishedAt": "2026-05-10T08:18:41.549Z"
+    },
+    {
+      "name": "pages",
+      "ok": true,
+      "startedAt": "2026-05-10T08:18:41.549Z",
+      "finishedAt": "2026-05-10T08:18:43.667Z"
+    },
+    {
+      "name": "discovery",
+      "ok": true,
+      "startedAt": "2026-05-10T08:18:43.667Z",
+      "finishedAt": "2026-05-10T08:32:15.349Z"
+    },
+    {
+      "name": "classification",
+      "ok": true,
+      "startedAt": "2026-05-10T08:32:15.349Z",
+      "finishedAt": "2026-05-10T08:32:15.427Z"
+    },
+    {
+      "name": "digest",
+      "ok": true,
+      "startedAt": "2026-05-10T08:32:15.428Z",
+      "finishedAt": "2026-05-10T08:34:52.871Z"
+    },
+    {
+      "name": "email",
+      "ok": true,
+      "startedAt": "2026-05-10T08:34:52.872Z",
+      "finishedAt": "2026-05-10T08:35:19.293Z"
+    },
+    {
+      "name": "podcast",
+      "ok": true,
+      "startedAt": "2026-05-10T08:35:19.293Z",
+      "finishedAt": "2026-05-10T08:37:06.561Z"
+    },
+    {
+      "name": "cover",
+      "ok": true,
+      "startedAt": "2026-05-10T08:37:06.561Z",
+      "finishedAt": "2026-05-10T08:38:03.490Z"
+    },
+    {
+      "name": "competitorAnalyze",
+      "ok": true,
+      "startedAt": "2026-05-10T08:38:03.490Z",
+      "finishedAt": "2026-05-10T08:38:25.015Z"
+    }
+  ],
+  "health": {
+    "warnings": [
+      "AI & Strategy: economictimes.indiatimes.com represents 42.9% (3/7) - exceeds 40% threshold",
+      "Ecommerce & Retail Tech: www.digitalcommerce360.com represents 42.9% (3/7) - exceeds 40% threshold",
+      "Luxury & Consumer: www.businessoffashion.com represents 42.9% (3/7) - exceeds 40% threshold",
+      "Jewellery Industry: www.jewellermagazine.com represents 85.7% (6/7) - exceeds 40% threshold"
+    ],
+    "metrics": {
+      "paywallPercent": 0,
+      "podcastWordCount": 1533
+    }
+  },
+  "versions": {
+    "node": "v20.20.2",
+    "gitCommit": "f01bb49aeeaa4d18cdf071b326bde3945936a0a9"
+  }
+}
