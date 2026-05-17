@@ -25,7 +25,7 @@ export const DEFAULT_MODEL_BY_WORKFLOW: Record<WorkflowName, string> = {
   classify:  'gpt-4.1-mini',
   summarize: 'gpt-4.1-mini',
   rank:      'o4-mini',
-  script:    'gpt-4.1-mini',
+  script:    'gpt-4.1',
   polish:    'gpt-4.1',
 };
 

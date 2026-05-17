@@ -31,17 +31,20 @@ async function generatePodcastScript(digest: WeeklyDigest): Promise<string> {
 
   const prompt = `You are a podcast host for "Weekly Luxury Intelligence", a podcast covering ecommerce, jewellery, luxury, and AI news.
 
-Generate a conversational podcast script (approximately 2000-2500 words, ~12-15 minutes) covering these articles:
+Generate a conversational podcast script covering these ${articles.length} articles. The total script MUST be at least 2000 words and no more than 2500 words.
 
 ${articlesText}
 
-Structure:
-- Brief intro (50 words): Welcome listeners, mention this is week ${digest.weekLabel}
-- Main segments covering each article (150-200 words per article)
-- Brief transitions between segments
-- Closing (50 words): Thank listeners, mention next week
+Word count requirements — you MUST hit these, do not stop early:
+- Intro: 60 words — welcome listeners, mention this is week ${digest.weekLabel}
+- Each of the ${articles.length} article segments: 250 words MINIMUM — cover the full story, explain why it matters, discuss implications and context for the industry. Do not cut a segment short.
+- A one-sentence transition between each segment (~15 words each)
+- Closing: 60 words — thank listeners, tease next week
+The total must reach AT LEAST 2200 words. If you finish a segment early, expand on analysis and context until you reach 250 words for that segment.
 
-Tone: Professional but conversational, like a business news podcast. Be clear and engaging.`;
+Tone: Professional but conversational, like a business news podcast. Be clear and engaging. Write full, complete paragraphs — do not use bullet points or lists.
+
+IMPORTANT: Output plain spoken narration only. Do NOT include any labels, headers, or prefixes such as "Host:", "Intro:", "Segment:", "Closing:", or any other structural markers. The output will be read aloud directly by a text-to-speech engine — it must contain nothing but the words to be spoken.`;
 
   const scriptModel = getModelFor('script');
   const response = await openai.chat.completions.create({
@@ -50,7 +53,7 @@ Tone: Professional but conversational, like a business news podcast. Be clear an
       { role: 'system', content: 'You are a professional podcast script writer.' },
       { role: 'user', content: prompt },
     ],
-    ...maxTokensParam(scriptModel, 4000),
+    ...maxTokensParam(scriptModel, 5000),
     ...temperatureParam(scriptModel, 0.7),
   });
 
@@ -85,7 +88,7 @@ function splitTextIntoChunks(text: string, maxChars: number = 4000): string[] {
 }
 
 /**
- * Generate audio using ElevenLabs API
+ * Generate audio using ElevenLabs API, chunking text to stay under the 10k char limit
  */
 async function generateAudioWithElevenLabs(text: string, outputPath: string): Promise<{ success: boolean; duration?: number }> {
   const apiKey = process.env.ELEVENLABS_API_KEY;
@@ -96,31 +99,38 @@ async function generateAudioWithElevenLabs(text: string, outputPath: string): Pr
   const voiceId = process.env.ELEVENLABS_VOICE_ID || 'XFsVUrYetuzY4ZR8T3nN';
   const model = 'eleven_multilingual_v2';
 
-  try {
-    const response = await fetch(`https://api.elevenlabs.io/v1/text-to-speech/${voiceId}`, {
-      method: 'POST',
-      headers: {
-        'Accept': 'audio/mpeg',
-        'Content-Type': 'application/json',
-        'xi-api-key': apiKey,
-      },
-      body: JSON.stringify({
-        text,
-        model_id: model,
-        voice_settings: {
-          stability: 0.5,
-          similarity_boost: 0.75,
-        },
-      }),
-    });
+  const chunks = splitTextIntoChunks(text, 9500);
 
-    if (!response.ok) {
-      const errorText = await response.text();
-      throw new Error(`ElevenLabs API error: ${response.status} ${errorText}`);
+  try {
+    const audioBuffers: Buffer[] = [];
+
+    for (const chunk of chunks) {
+      const response = await fetch(`https://api.elevenlabs.io/v1/text-to-speech/${voiceId}`, {
+        method: 'POST',
+        headers: {
+          'Accept': 'audio/mpeg',
+          'Content-Type': 'application/json',
+          'xi-api-key': apiKey,
+        },
+        body: JSON.stringify({
+          text: chunk,
+          model_id: model,
+          voice_settings: {
+            stability: 0.5,
+            similarity_boost: 0.75,
+          },
+        }),
+      });
+
+      if (!response.ok) {
+        const errorText = await response.text();
+        throw new Error(`ElevenLabs API error: ${response.status} ${errorText}`);
+      }
+
+      audioBuffers.push(Buffer.from(await response.arrayBuffer()));
     }
 
-    const audioBuffer = Buffer.from(await response.arrayBuffer());
-    await fs.writeFile(outputPath, audioBuffer);
+    await fs.writeFile(outputPath, Buffer.concat(audioBuffers));
 
     const wordCount = text.split(/\s+/).length;
     const duration = Math.round((wordCount / 150) * 60);
