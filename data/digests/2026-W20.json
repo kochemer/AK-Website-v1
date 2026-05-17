@@ -1,0 +1,985 @@
+{
+  "weekLabel": "2026-W20",
+  "tz": "Europe/Copenhagen",
+  "startISO": "2026-05-10T22:00:00.000Z",
+  "endISO": "2026-05-17T21:59:59.999Z",
+  "builtAtISO": "2026-05-17T10:41:54.640+02:00",
+  "builtAtLocal": "2026-05-17 10:41:54",
+  "totals": {
+    "total": 755,
+    "byTopic": {
+      "AIStrategy": 155,
+      "EcommerceRetail": 483,
+      "LuxuryConsumer": 94,
+      "Jewellery": 20
+    }
+  },
+  "topics": {
+    "AI_and_Strategy": {
+      "total": 155,
+      "top": [
+        {
+          "id": "cn9wq2",
+          "title": "Wirestock raises $23M to supply creative multimodal data to AI labs",
+          "url": "https://techcrunch.com/2026/05/14/wirestock-raises-23m-to-supply-multi-modal-data-to-ai-labs/",
+          "source": "TechCrunch - AI",
+          "published_at": "2026-05-14T14:00:00.000Z",
+          "ingested_at": "2026-05-17T08:29:00.778Z",
+          "snippet": "The company pivoted to being a data provider in 2023 and now supplies datasets of images, videos, design assets, and gaming and 3D content to AI labs.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.35000000000000003,
+            "recencyScore": 0,
+            "sourceWeight": 0.15,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ai",
+              "multimodal",
+              "ai lab"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Wirestock, having pivoted to a data provider in 2023, raised $23 million to supply creative multimodal datasets—including images, videos, design assets, and 3D content—to AI labs.",
+          "translations": {
+            "da": {
+              "title": "Wirestock rejser 23 mio. USD for at levere kreativ multimodal data til AI-laboratorier",
+              "summary": "AI-genereret resumé: Wirestock, der i 2023 skiftede til at være dataleverandør, rejste 23 millioner USD for at levere kreative multimodale datasæt – herunder billeder, videoer, designressourcer og 3D-indhold – til AI-laboratorier."
+            },
+            "es": {
+              "title": "Wirestock recauda 23 millones de dólares para suministrar datos multimodales creativos a laboratorios de IA",
+              "summary": "Resumen generado por IA: Wirestock, tras pivotar a proveedor de datos en 2023, recaudó 23 millones de dólares para suministrar conjuntos de datos multimodales creativos —incluyendo imágenes, videos, recursos de diseño y contenido 3D— a laboratorios de IA."
+            }
+          }
+        },
+        {
+          "id": "amfjq4",
+          "title": "Research repository ArXiv will ban authors for a year if they let AI do all the work",
+          "url": "https://techcrunch.com/2026/05/16/research-repository-arxiv-will-ban-authors-for-a-year-if-they-let-ai-do-all-the-work/",
+          "source": "TechCrunch - AI",
+          "published_at": "2026-05-16T18:54:28.000Z",
+          "ingested_at": "2026-05-17T08:29:00.778Z",
+          "snippet": "ArXiv is doing more to crack down on the careless use of large language models in scientific papers.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.35,
+            "recencyScore": 0,
+            "sourceWeight": 0.15,
+            "keywordBoost": 0.2,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ai",
+              "research",
+              "arxiv",
+              "large language model"
+            ]
+          },
+          "aiSummary": "AI-generated summary: ArXiv will impose a one-year ban on authors who allow AI to complete their scientific papers entirely, as part of efforts to curb careless use of large language models.",
+          "translations": {
+            "da": {
+              "title": "Forskningsarkiv ArXiv vil udelukke forfattere i et år, hvis de lader AI gøre alt arbejdet",
+              "summary": "AI-genereret resumé: ArXiv vil indføre et års udelukkelse for forfattere, der lader AI færdiggøre deres videnskabelige artikler helt, som led i indsatsen for at begrænse uforsigtig brug af store sprogmodeller."
+            },
+            "es": {
+              "title": "El repositorio de investigación ArXiv prohibirá a los autores por un año si dejan que la IA haga todo el trabajo",
+              "summary": "Resumen generado por IA: ArXiv impondrá una prohibición de un año a los autores que permitan que la IA complete totalmente sus artículos científicos, como parte de los esfuerzos para frenar el uso descuidado de grandes modelos de lenguaje."
+            }
+          }
+        },
+        {
+          "id": "mt76ec",
+          "title": "OpenAI Bought Company That Offered A.I. Tools for Cloning Voices",
+          "url": "https://www.nytimes.com/2026/05/15/technology/openai-weightsgg-voice-cloning.html",
+          "source": "NYTimes Technology",
+          "published_at": "2026-05-16T00:33:56.000Z",
+          "ingested_at": "2026-05-17T08:29:00.778Z",
+          "snippet": "The acquisition, Weights.gg, was a sort of social network for creating and sharing artificial intelligence algorithms.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.275,
+            "recencyScore": 0,
+            "sourceWeight": 0.075,
+            "keywordBoost": 0.2,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "openai",
+              "artificial intelligence",
+              "weights",
+              "acquisition"
+            ]
+          },
+          "aiSummary": "AI-generated summary: On May 16, 2026, NYTimes Technology reported that OpenAI acquired Weights.gg, a platform functioning as a social network for creating and sharing AI algorithms, including tools for cloning voices.",
+          "translations": {
+            "da": {
+              "title": "OpenAI købte virksomhed, der tilbød AI-værktøjer til stemmekloning",
+              "summary": "AI-genereret resumé: Den 16. maj 2026 rapporterede NYTimes Technology, at OpenAI erhvervede Weights.gg, en platform der fungerer som et socialt netværk til at skabe og dele AI-algoritmer, inklusive værktøjer til stemmekloning."
+            },
+            "es": {
+              "title": "OpenAI compró empresa que ofrecía herramientas de IA para clonar voces",
+              "summary": "Resumen generado por IA: El 16 de mayo de 2026, NYTimes Technology informó que OpenAI adquirió Weights.gg, una plataforma que funciona como una red social para crear y compartir algoritmos de IA, incluyendo herramientas para clonar voces."
+            }
+          }
+        },
+        {
+          "id": "ja5ppd",
+          "title": "Cisco cuts nearly 4,000 jobs to spend more on AI, reports ‘record quarterly revenue’",
+          "url": "https://techcrunch.com/2026/05/14/cisco-cuts-nearly-4000-jobs-to-spend-more-on-ai-reports-record-quarterly-revenue/",
+          "source": "TechCrunch - AI",
+          "published_at": "2026-05-14T14:01:14.000Z",
+          "ingested_at": "2026-05-17T08:29:00.778Z",
+          "snippet": "This is Cisco's latest layoff in recent years, while the company's chief executive touts record revenue and growth.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.25,
+            "recencyScore": 0,
+            "sourceWeight": 0.15,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ai"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Cisco announced nearly 4,000 job cuts as part of its strategy to increase investment in AI, even as the company reports record quarterly revenue and growth.",
+          "translations": {
+            "da": {
+              "title": "Cisco skærer næsten 4.000 job for at investere mere i AI og rapporterer 'rekord kvartalsomsætning'",
+              "summary": "AI-genereret resumé: Cisco annoncerede næsten 4.000 jobnedskæringer som en del af sin strategi for at øge investeringerne i AI, samtidig med at virksomheden rapporterer rekord kvartalsomsætning og vækst."
+            },
+            "es": {
+              "title": "Cisco recorta casi 4,000 empleos para invertir más en IA y reporta 'ingresos trimestrales récord'",
+              "summary": "Resumen generado por IA: Cisco anunció casi 4,000 recortes de empleos como parte de su estrategia para aumentar la inversión en IA, incluso cuando la empresa reporta ingresos trimestrales y crecimiento récord."
+            }
+          }
+        },
+        {
+          "id": "4w5drw",
+          "title": "Anthropic's Claude writes 90% of code: CFO Krishna Rao reveals productivity gains ",
+          "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/anthropics-claude-writes-90-of-code-cfo-krishna-rao-reveals-productivity-gains/articleshow/131121594.cms",
+          "source": "Economic Times - Technology",
+          "published_at": "2026-05-15T16:07:33.000Z",
+          "ingested_at": "2026-05-17T08:29:00.778Z",
+          "snippet": "Anthropic's CFO, Krishna Rao, revealed that over 90% of the company's code is now generated by its AI tool, Claude Code.  AI systems are automating significant portions of software engineering, finance, and operations, freeing employees for oversight and strategy.  Despite automation, Anthropic is accelerating hiring, viewing AI as a productivity enhancer that amplifies talent.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "anthropic",
+              "claude",
+              "ai"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Anthropic's CFO Krishna Rao disclosed that their AI tool, Claude Code, now produces over 90% of the company's code, enabling automation across software engineering, finance, and operations while allowing employees to focus on oversight and strategy. Despite this automation, the company is increasing hiring, viewing AI as a means to boost productivity and amplify talent.",
+          "translations": {
+            "da": {
+              "title": "Anthropics Claude skriver 90 % af koden: CFO Krishna Rao afslører produktivitetsgevinster",
+              "summary": "AI-genereret resumé: Anthropics CFO Krishna Rao afslørede, at deres AI-værktøj, Claude Code, nu producerer over 90 % af virksomhedens kode, hvilket muliggør automatisering inden for softwareudvikling, finans og drift, samtidig med at medarbejdere kan fokusere på tilsyn og strategi. På trods af denne automatisering øger virksomheden ansættelser og ser AI som en måde at øge produktiviteten og forstærke talent."
+            },
+            "es": {
+              "title": "Claude de Anthropic escribe el 90 % del código: CFO Krishna Rao revela ganancias de productividad",
+              "summary": "Resumen generado por IA: El CFO de Anthropic, Krishna Rao, reveló que su herramienta de IA, Claude Code, ahora produce más del 90 % del código de la empresa, permitiendo la automatización en ingeniería de software, finanzas y operaciones, mientras que los empleados se enfocan en supervisión y estrategia. A pesar de esta automatización, la empresa está aumentando contrataciones, viendo la IA como un medio para impulsar la productividad y potenciar el talento."
+            }
+          }
+        },
+        {
+          "id": "iggu6h",
+          "title": "Intel-AMD veterans' Agrani Labs scouts for $100 million to build AI chip ",
+          "url": "https://economictimes.indiatimes.com/tech/technology/intel-amd-veterans-agrani-labs-scouts-for-100-million-to-build-ai-chip/articleshow/131102225.cms",
+          "source": "Economic Times - Technology",
+          "published_at": "2026-05-15T00:30:00.000Z",
+          "ingested_at": "2026-05-17T08:29:00.778Z",
+          "snippet": "Agrani Labs, founded by former Intel and AMD executives, is aiming for a significant $100 million Series A funding. This investment will support the development of AI inference chips designed to work with Nvidia's CUDA software. The company is in talks with Qualcomm and Battery Ventures for potential investment.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.2,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ai",
+              "inference",
+              "funding",
+              "investment"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Agrani Labs, founded by former Intel and AMD veterans, is seeking $100 million in Series A funding to develop AI inference chips compatible with Nvidia's CUDA software, with potential investments from Qualcomm and Battery Ventures.",
+          "translations": {
+            "da": {
+              "title": "Intel-AMD veteraners Agrani Labs søger 100 millioner dollars for at bygge AI-chip",
+              "summary": "AI-genereret resumé: Agrani Labs, grundlagt af tidligere Intel- og AMD-veteraner, søger 100 millioner dollars i Series A-finansiering for at udvikle AI-inference chips kompatible med Nvidias CUDA-software, med potentielle investeringer fra Qualcomm og Battery Ventures."
+            },
+            "es": {
+              "title": "Agrani Labs de veteranos de Intel-AMD busca 100 millones de dólares para construir chip de IA",
+              "summary": "Resumen generado por IA: Agrani Labs, fundada por exveteranos de Intel y AMD, busca 100 millones de dólares en financiación Serie A para desarrollar chips de inferencia de IA compatibles con el software CUDA de Nvidia, con posibles inversiones de Qualcomm y Battery Ventures."
+            }
+          }
+        },
+        {
+          "id": "nre4b9",
+          "title": "OpenAI explores legal options against Apple: Report ",
+          "url": "https://economictimes.indiatimes.com/tech/technology/openai-explores-legal-options-against-apple-report/articleshow/131102681.cms",
+          "source": "Economic Times - Technology",
+          "published_at": "2026-05-14T19:55:03.000Z",
+          "ingested_at": "2026-05-17T08:29:00.778Z",
+          "snippet": "OpenAI's partnership with Apple is facing difficulties. The AI firm reportedly feels it has not received expected benefits from the deal. OpenAI is now exploring legal options, including a breach of contract notice. This comes as Apple plans to integrate other AI models, potentially reducing OpenAI's exclusive role. Apple's upcoming software conference may reveal more AI plans.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "openai",
+              "ai",
+              "partnership"
+            ]
+          },
+          "aiSummary": "AI-generated summary: OpenAI is reportedly considering legal action against Apple over unmet expectations in their partnership, including a potential breach of contract notice, as Apple plans to incorporate other AI models that could diminish OpenAI's exclusive involvement. Apple's forthcoming software conference may provide further details on its AI strategy.",
+          "translations": {
+            "da": {
+              "title": "OpenAI undersøger juridiske muligheder mod Apple: Rapport",
+              "summary": "AI-genereret resumé: OpenAI overvejer angiveligt retlige skridt mod Apple på grund af uopfyldte forventninger i deres partnerskab, herunder en mulig kontraktbrudsmeddelelse, da Apple planlægger at integrere andre AI-modeller, som kan mindske OpenAIs eksklusive involvering. Apples kommende softwarekonference kan give flere detaljer om deres AI-strategi."
+            },
+            "es": {
+              "title": "OpenAI explora opciones legales contra Apple: Informe",
+              "summary": "Resumen generado por IA: Se informa que OpenAI está considerando acciones legales contra Apple por expectativas incumplidas en su asociación, incluyendo un posible aviso de incumplimiento de contrato, ya que Apple planea incorporar otros modelos de IA que podrían reducir la participación exclusiva de OpenAI. La próxima conferencia de software de Apple podría ofrecer más detalles sobre su estrategia de IA."
+            }
+          }
+        }
+      ]
+    },
+    "Ecommerce_Retail_Tech": {
+      "total": 483,
+      "top": [
+        {
+          "id": "whnof5",
+          "title": "Amazon launches an AI shopping assistant for the search bar, powered by Alexa+ ",
+          "url": "https://techcrunch.com/2026/05/13/amazon-launches-an-ai-shopping-assistant-for-the-search-bar-powered-by-alexa/",
+          "source": "TechCrunch - Commerce",
+          "published_at": "2026-05-13T14:59:32.000Z",
+          "ingested_at": "2026-05-17T08:29:00.778Z",
+          "snippet": "Alexa for Shopping offers a voice- and touch-enabled shopping experience across mobile, desktop, and Echo Show smart displays. Alexa for Shopping provides more personalized recommendations and automates the shopping experience across Amazon and other online retailers.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "shopping",
+              "online retail"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Amazon has launched \"Alexa for Shopping,\" an AI-powered assistant integrated into the search bar that offers voice- and touch-enabled personalized shopping experiences across mobile, desktop, and Echo Show devices, streamlining purchases on Amazon and other online retailers.",
+          "translations": {
+            "da": {
+              "title": "Amazon lancerer en AI shoppingassistent til søgefeltet, drevet af Alexa+",
+              "summary": "AI-genereret resumé: Amazon har lanceret \"Alexa for Shopping,\" en AI-drevet assistent integreret i søgefeltet, der tilbyder stemme- og touch-baserede personlige shoppingoplevelser på mobil, desktop og Echo Show-enheder, hvilket forenkler køb på Amazon og andre onlineforhandlere."
+            },
+            "es": {
+              "title": "Amazon lanza un asistente de compras con IA para la barra de búsqueda, impulsado por Alexa+",
+              "summary": "Resumen generado por IA: Amazon ha lanzado \"Alexa for Shopping,\" un asistente impulsado por IA integrado en la barra de búsqueda que ofrece experiencias de compra personalizadas con voz y tacto en dispositivos móviles, de escritorio y Echo Show, facilitando las compras en Amazon y otros minoristas en línea."
+            }
+          }
+        },
+        {
+          "id": "jrr48o",
+          "title": "Marketplace Briefing: Why Amazon discontinued its AI-powered Rufus chatbot for Alexa shopping agent",
+          "url": "https://www.modernretail.co/technology/marketplace-briefing-why-amazon-discontinued-its-ai-powered-rufus-chatbot-for-alexa-shopping-agent/?utm_campaign=modernretaildis&utm_medium=rss&utm_source=general-rss",
+          "source": "Modern Retail",
+          "published_at": "2026-05-14T14:00:00.000Z",
+          "ingested_at": "2026-05-17T08:29:00.778Z",
+          "snippet": "Amazon replaced its Rufus chatbot with a new AI assistant called Alexa for Shopping this week as AI search becomes a bigger part of its online store.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "shopping",
+              "marketplace"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Amazon discontinued its AI-powered Rufus chatbot and introduced a new AI assistant called Alexa for Shopping to enhance its online store's AI search capabilities, according to a May 14, 2026 article from Modern Retail.",
+          "translations": {
+            "da": {
+              "title": "Marketplace Briefing: Hvorfor Amazon stoppede sin AI-drevne Rufus chatbot for Alexa shopping agent",
+              "summary": "AI-genereret resumé: Amazon stoppede sin AI-drevne Rufus chatbot og introducerede en ny AI-assistent kaldet Alexa for Shopping for at forbedre sin online butiks AI-søgefunktioner, ifølge en artikel fra Modern Retail den 14. maj 2026."
+            },
+            "es": {
+              "title": "Marketplace Briefing: Por qué Amazon descontinuó su chatbot Rufus impulsado por IA para el agente de compras Alexa",
+              "summary": "Resumen generado por IA: Amazon descontinuó su chatbot Rufus impulsado por IA e introdujo un nuevo asistente de IA llamado Alexa for Shopping para mejorar las capacidades de búsqueda con IA de su tienda en línea, según un artículo de Modern Retail del 14 de mayo de 2026."
+            }
+          }
+        },
+        {
+          "id": "te0425",
+          "title": "The Friday Checkout: Amazon’s Prime-first approach to grocery",
+          "url": "https://www.grocerydive.com/news/amazon-grocery-prime-membership/820336/",
+          "source": "Grocery Dive",
+          "published_at": "2026-05-15T14:35:00.000Z",
+          "ingested_at": "2026-05-17T08:29:00.778Z",
+          "snippet": "Amazon has refocused its grocery ambitions on what it does best: melding e-commerce with its membership program.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "checkout",
+              "e-commerce"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Amazon is sharpening its grocery strategy by emphasizing the integration of e-commerce with its Prime membership program, reinforcing its strengths in the retail tech space.",
+          "translations": {
+            "da": {
+              "title": "The Friday Checkout: Amazons Prime-første tilgang til dagligvarer",
+              "summary": "Amazon skærper sin dagligvarestrategi ved at fokusere på integrationen af e-handel med sit Prime-medlemsprogram og styrker dermed sine positioner inden for detailteknologi."
+            },
+            "es": {
+              "title": "The Friday Checkout: el enfoque Prime-first de Amazon para comestibles",
+              "summary": "Amazon está afinando su estrategia de comestibles al enfatizar la integración del comercio electrónico con su programa de membresía Prime, reforzando sus fortalezas en el espacio tecnológico minorista."
+            }
+          }
+        },
+        {
+          "id": "4gb9rn",
+          "title": "M&S invests £67.5m in automated distribution hub to fuel online fashion growth",
+          "url": "https://internetretailing.net/ms-invests-67-5m-in-automated-distribution-hub-to-fuel-online-fashion-growth/",
+          "source": "Internet Retailing",
+          "published_at": "2026-05-11T10:58:52.000Z",
+          "ingested_at": "2026-05-17T08:29:00.778Z",
+          "snippet": "Marks & Spencer has invested £67.5m in a highly automated logistics hub in a move designed to underpin long-term digital growth.\nThe post M&S invests £67.5m in automated distribution hub to fuel online fashion growth appeared first on InternetRetailing.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "logistics"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Marks & Spencer has invested £67.5 million in a highly automated distribution hub to support its long-term digital growth in online fashion. This move aims to enhance the retailer's ecommerce and retail technology capabilities.",
+          "translations": {
+            "da": {
+              "title": "M&S investerer £67,5 mio. i automatiseret distributionscenter for at styrke online modevækst",
+              "summary": "AI-genereret resumé: Marks & Spencer har investeret £67,5 millioner i et højt automatiseret distributionscenter for at støtte sin langsigtede digitale vækst inden for online mode. Dette skridt sigter mod at forbedre detailhandlerens ecommerce- og detailteknologiske kapaciteter."
+            },
+            "es": {
+              "title": "M&S invierte £67,5 millones en un centro de distribución automatizado para impulsar el crecimiento de la moda online",
+              "summary": "Resumen generado por IA: Marks & Spencer ha invertido £67,5 millones en un centro de distribución altamente automatizado para apoyar su crecimiento digital a largo plazo en la moda online. Este movimiento busca mejorar las capacidades de comercio electrónico y tecnología minorista del minorista."
+            }
+          }
+        },
+        {
+          "id": "pqcir0",
+          "title": "Deliveroo targets ‘digital high street’ status with multi-store baskets and seamless top-ups",
+          "url": "https://internetretailing.net/deliveroo-targets-digital-high-street-status-with-multi-store-baskets-and-seamless-top-ups/",
+          "source": "Internet Retailing",
+          "published_at": "2026-05-15T10:08:18.000Z",
+          "ingested_at": "2026-05-17T08:29:00.778Z",
+          "snippet": "Deliveroo is tackling one of the biggest friction points in online convenience shopping: fragmented baskets.\nThe post Deliveroo targets ‘digital high street’ status with multi-store baskets and seamless top-ups appeared first on InternetRetailing.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "shopping"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Deliveroo aims to become a ‘digital high street’ by addressing the challenge of fragmented baskets in online convenience shopping through features like multi-store baskets and seamless top-ups.",
+          "translations": {
+            "da": {
+              "title": "Deliveroo sigter mod ‘digital high street’-status med multi-butik kurve og problemfri genopladning",
+              "summary": "AI-genereret resumé: Deliveroo ønsker at blive en ‘digital high street’ ved at løse udfordringen med fragmenterede kurve i online convenience shopping gennem funktioner som multi-butik kurve og problemfri genopladning."
+            },
+            "es": {
+              "title": "Deliveroo apunta a ser una ‘calle digital’ con cestas multi-tienda y recargas sin interrupciones",
+              "summary": "Resumen generado por IA: Deliveroo busca convertirse en una ‘calle digital’ abordando el desafío de las cestas fragmentadas en las compras online de conveniencia mediante funciones como cestas multi-tienda y recargas sin interrupciones."
+            }
+          }
+        },
+        {
+          "id": "t5ambi",
+          "title": "New Ecommerce Tools: May 12, 2026",
+          "url": "https://www.practicalecommerce.com/new-ecommerce-tools-may-12-2026",
+          "source": "Practical Ecommerce",
+          "published_at": "2026-05-12T14:49:21.000Z",
+          "ingested_at": "2026-05-17T08:29:00.778Z",
+          "snippet": "This week: predictive AI, autonomous marketing, site builders, omnichannel fulfillment, programmatic ads, embedded payments, cross-border commerce, and more.\nThe post New Ecommerce Tools: May 12, 2026 appeared first on Practical Ecommerce.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.04999999999999999,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0,
+            "penalty": 0.2,
+            "matchedKeywords": [
+              "ecommerce",
+              "payment",
+              "fulfillment"
+            ]
+          },
+          "aiSummary": "AI-generated summary: The article from Practical Ecommerce dated May 12, 2026, highlights new ecommerce tools including predictive AI, autonomous marketing, site builders, omnichannel fulfillment, programmatic ads, embedded payments, and cross-border commerce innovations.",
+          "translations": {
+            "da": {
+              "title": "Nye Ecommerce-værktøjer: 12. maj 2026",
+              "summary": "AI-genereret resumé: Artiklen fra Practical Ecommerce dateret 12. maj 2026 fremhæver nye ecommerce-værktøjer, herunder predictive AI, autonom marketing, site builders, omnichannel fulfillment, programmatic ads, embedded payments og cross-border commerce innovationer."
+            },
+            "es": {
+              "title": "Nuevas herramientas de Ecommerce: 12 de mayo de 2026",
+              "summary": "Resumen generado por IA: El artículo de Practical Ecommerce fechado el 12 de mayo de 2026 destaca nuevas herramientas de ecommerce, incluyendo predictive AI, marketing autónomo, site builders, omnichannel fulfillment, programmatic ads, embedded payments e innovaciones en cross-border commerce."
+            }
+          }
+        },
+        {
+          "id": "40m18m",
+          "title": "How Vessi uses data to drive operational decisions, conversion",
+          "url": "https://www.digitalcommerce360.com/2026/05/14/vessi-data-operations-conversion/",
+          "source": "Digital Commerce 360",
+          "published_at": "2026-05-14T16:26:19.000Z",
+          "ingested_at": "2026-05-17T08:29:00.778Z",
+          "snippet": "Apparel brand Vessi is always considering conversion when deciding on what to test and implement, according to Ray Hua, director of D2C and lifecycle marketing at the company. He told Digital Commerce 360 that his role surrounds maintaining a good site experience for visitors. Hua elaborated that conversion rate optimization (CRO) discipline guides much of […]\nThe post How Vessi uses data to drive operational decisions, conversion appeared first on Digital Commerce 360.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0,
+            "insightSignalBoost": 0.1,
+            "penalty": 0,
+            "matchedKeywords": []
+          },
+          "aiSummary": "AI-generated summary: Apparel brand Vessi leverages data-driven conversion rate optimization to guide testing and operational decisions, focusing on maintaining a positive site experience for visitors, according to Ray Hua, director of D2C and lifecycle marketing.",
+          "translations": {
+            "da": {
+              "title": "Hvordan Vessi bruger data til at drive operationelle beslutninger og konvertering",
+              "summary": "AI-genereret resumé: Tøjmærket Vessi udnytter datadrevet optimering af konverteringsrater til at styre test og operationelle beslutninger med fokus på at opretholde en positiv oplevelse på siden for besøgende, ifølge Ray Hua, direktør for D2C og livscyklusmarkedsføring."
+            },
+            "es": {
+              "title": "Cómo Vessi utiliza datos para impulsar decisiones operativas y conversiones",
+              "summary": "Resumen generado por IA: La marca de ropa Vessi aprovecha la optimización de la tasa de conversión basada en datos para guiar las pruebas y decisiones operativas, enfocándose en mantener una experiencia positiva en el sitio para los visitantes, según Ray Hua, director de D2C y marketing de ciclo de vida."
+            }
+          }
+        }
+      ]
+    },
+    "Luxury_and_Consumer": {
+      "total": 94,
+      "top": [
+        {
+          "id": "1mf4j7",
+          "title": "D2C brands feel the pinch as consumers cut spending ",
+          "url": "https://economictimes.indiatimes.com/tech/startups/d2c-brands-feel-the-pinch-as-consumers-cut-spending/articleshow/131101315.cms",
+          "source": "Economic Times - Technology",
+          "published_at": "2026-05-15T00:30:00.000Z",
+          "ingested_at": "2026-05-17T08:29:00.778Z",
+          "snippet": "Rising input costs and shrinking demand are squeezing smaller brands, with consumer spending projected to drop 5-6% next quarter. D2C brands face pressure as inflation and a weakening rupee push consumers towards essential purchases, impacting discretionary spending and average order values. Companies are absorbing costs or planning price hikes up to 10%.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.25,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.2,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "consumer",
+              "spending",
+              "brand",
+              "demand"
+            ]
+          },
+          "aiSummary": "AI-generated summary: D2C brands are experiencing financial pressure due to rising input costs and declining consumer demand, with spending expected to fall 5-6% next quarter. Inflation and a weakening rupee are driving consumers toward essential purchases, leading companies to absorb costs or consider price increases up to 10%.",
+          "translations": {
+            "da": {
+              "title": "D2C-mærker mærker presset, da forbrugerne skærer ned på forbruget",
+              "summary": "AI-genereret resumé: D2C-mærker oplever økonomisk pres på grund af stigende inputomkostninger og faldende forbruger efterspørgsel, med forventet fald i forbruget på 5-6% næste kvartal. Inflation og en svækkende rupie driver forbrugerne mod nødvendige køb, hvilket får virksomheder til at absorbere omkostninger eller overveje prisstigninger på op til 10%."
+            },
+            "es": {
+              "title": "Las marcas D2C sienten la presión mientras los consumidores reducen el gasto",
+              "summary": "Resumen generado por IA: Las marcas D2C están experimentando presión financiera debido al aumento de los costos de insumos y la disminución de la demanda del consumidor, con un gasto que se espera caiga entre un 5-6% el próximo trimestre. La inflación y una rupia debilitada están llevando a los consumidores hacia compras esenciales, lo que obliga a las empresas a absorber costos o considerar aumentos de precios de hasta un 10%."
+            }
+          }
+        },
+        {
+          "id": "y5gbko",
+          "title": "US Retail Sales Increase Again in April, Partly Lifted by Higher Prices",
+          "url": "https://www.businessoffashion.com/news/retail/us-retail-sales-increase-again-in-april-partly-lifted-by-higher-prices/",
+          "source": "Business of Fashion - News",
+          "published_at": "2026-05-14T13:33:53.000Z",
+          "ingested_at": "2026-05-17T08:29:00.778Z",
+          "snippet": "First-quarter consumer spending rose at a 1.6 percent annualised rate, cooling from the October-December quarter’s 1.9 percent growth pace.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0.1,
+            "penalty": 0,
+            "matchedKeywords": [
+              "consumer",
+              "spending"
+            ]
+          },
+          "aiSummary": "AI-generated summary: US retail sales continued to rise in April, supported in part by higher prices, while first-quarter consumer spending grew at a 1.6 percent annualized rate, slowing from the previous quarter's 1.9 percent growth.",
+          "translations": {
+            "da": {
+              "title": "US detailhandel stiger igen i april, delvist drevet af højere priser",
+              "summary": "AI-genereret resumé: US detailhandel fortsatte med at stige i april, delvist støttet af højere priser, mens forbrugernes udgifter i første kvartal voksede med en årlig rate på 1,6 procent, hvilket er en afmatning fra kvartalets tidligere vækst på 1,9 procent."
+            },
+            "es": {
+              "title": "Las ventas minoristas en EE. UU. aumentan nuevamente en abril, impulsadas en parte por precios más altos",
+              "summary": "Resumen generado por IA: Las ventas minoristas en EE. UU. continuaron aumentando en abril, apoyadas en parte por precios más altos, mientras que el gasto del consumidor en el primer trimestre creció a una tasa anualizada del 1,6 por ciento, desacelerándose desde el crecimiento del 1,9 por ciento del trimestre anterior."
+            }
+          }
+        },
+        {
+          "id": "q65ka2",
+          "title": "How Zero-Party Data Makes Customer Segmentation Actually Accurate",
+          "url": "https://insiderone.com/zero-party-data-segmentation/",
+          "source": "UseInsider",
+          "published_at": "2026-05-11T08:19:33.000Z",
+          "ingested_at": "2026-05-17T08:29:00.778Z",
+          "snippet": "Summary Zero-party data improves segmentation by capturing what customers explicitly want, not just what they do. It fixes gaps in behavioral inference that can cause outdated or inaccurate targeting. When collected through tools like quizzes, preference centers, and surveys, it can directly power real-time segments. The strongest model uses zero-party data as the foundation, with […]",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0.1,
+            "penalty": 0,
+            "matchedKeywords": [
+              "behavior"
+            ]
+          },
+          "aiSummary": "AI-generated summary: The article explains that zero-party data enhances customer segmentation accuracy by capturing customers' explicit preferences rather than relying solely on behavioral data, enabling real-time, precise targeting through tools like quizzes and surveys. This approach addresses the limitations of traditional behavioral inference models in luxury and consumer markets.",
+          "translations": {
+            "da": {
+              "title": "Hvordan Zero-Party Data Gør Kundesegmentering Faktisk Præcis",
+              "summary": "Artiklen forklarer, at zero-party data forbedrer nøjagtigheden af kundesegmentering ved at indfange kundernes eksplicitte præferencer i stedet for kun at stole på adfærdsdata, hvilket muliggør præcis målretning i realtid gennem værktøjer som quizzer og undersøgelser. Denne tilgang løser begrænsningerne ved traditionelle adfærdsinferenzmodeller i luksus- og forbrugermarkeder."
+            },
+            "es": {
+              "title": "Cómo Zero-Party Data Hace que la Segmentación de Clientes Sea Realmente Precisa",
+              "summary": "El artículo explica que zero-party data mejora la precisión de la segmentación de clientes al capturar las preferencias explícitas de los clientes en lugar de depender únicamente de datos conductuales, permitiendo una segmentación precisa en tiempo real mediante herramientas como cuestionarios y encuestas. Este enfoque aborda las limitaciones de los modelos tradicionales de inferencia conductual en los mercados de lujo y consumo."
+            }
+          }
+        },
+        {
+          "id": "6gg2ii",
+          "title": "‘Belonging Correction’ reshaping wealth signaling: report",
+          "url": "https://www.luxurydaily.com/belonging-correction-reshaping-wealth-signaling-report/",
+          "source": "Luxury Daily - Main",
+          "published_at": "2026-05-14T09:00:00.000Z",
+          "ingested_at": "2026-05-17T08:29:00.778Z",
+          "snippet": "Eighty-one percent of affluents seek acceptance over access, according to findings from the latest edition of an annual report from Publicis Groupe-owned luxury agency Team One that examines the values and behaviors of the world’s top 10 percent household-income earners.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.25,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0.1,
+            "penalty": 0,
+            "matchedKeywords": [
+              "luxury",
+              "behavior",
+              "affluent"
+            ]
+          },
+          "aiSummary": "AI-generated summary: According to a 2026 report by Team One, 81% of affluent individuals prioritize acceptance over access, indicating a shift in how wealth signaling is perceived among the top 10% of household-income earners.",
+          "translations": {
+            "da": {
+              "title": "‘Belonging Correction’ omformer rigdomssignalering: rapport",
+              "summary": "AI-genereret resumé: Ifølge en rapport fra 2026 fra Team One prioriterer 81% af velhavende personer accept frem for adgang, hvilket indikerer en ændring i, hvordan rigdomssignalering opfattes blandt de øverste 10% af husholdningsindkomstindehavere."
+            },
+            "es": {
+              "title": "‘Belonging Correction’ redefine la señalización de riqueza: informe",
+              "summary": "Resumen generado por IA: Según un informe de 2026 de Team One, el 81% de las personas adineradas priorizan la aceptación sobre el acceso, lo que indica un cambio en cómo se percibe la señalización de riqueza entre el 10% superior de los hogares con mayores ingresos."
+            }
+          }
+        },
+        {
+          "id": "ql9le3",
+          "title": "THIERRY LASRY Is Hiring An Office Manager / Customer Service Manager In New York, NY",
+          "url": "https://fashionista.com/2026/05/thierry-lasry-is-hiring-an-office-manager-customer-service-manager-in-new-york-ny",
+          "source": "Fashionista",
+          "published_at": "2026-05-13T18:23:59.000Z",
+          "ingested_at": "2026-05-17T08:29:00.778Z",
+          "snippet": "Founded in 2007, Thierry Lasry is a Paris and New York-based luxury eyewear brand known for its bold, avant-garde designs.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "luxury",
+              "brand"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Thierry Lasry, a luxury eyewear brand established in 2007 and based in Paris and New York, is hiring an Office Manager / Customer Service Manager in New York, NY. The brand is recognized for its bold, avant-garde designs.",
+          "translations": {
+            "da": {
+              "title": "THIERRY LASRY søger en Office Manager / Customer Service Manager i New York, NY",
+              "summary": "AI-genereret resumé: Thierry Lasry, et luksusbrillebrand grundlagt i 2007 med base i Paris og New York, søger en Office Manager / Customer Service Manager i New York, NY. Brandet er kendt for sine dristige, avantgarde designs."
+            },
+            "es": {
+              "title": "THIERRY LASRY está contratando un Office Manager / Customer Service Manager en Nueva York, NY",
+              "summary": "Resumen generado por IA: Thierry Lasry, una marca de gafas de lujo establecida en 2007 y con sede en París y Nueva York, está contratando un Office Manager / Customer Service Manager en Nueva York, NY. La marca es reconocida por sus diseños audaces y vanguardistas."
+            }
+          }
+        },
+        {
+          "id": "if2p0z",
+          "title": "Marc Jacobs Finds a New Home",
+          "url": "https://fashionista.com/2026/05/marc-jacobs-acquired-lvmh-whp-global",
+          "source": "Fashionista",
+          "published_at": "2026-05-14T22:30:50.000Z",
+          "ingested_at": "2026-05-17T08:29:00.778Z",
+          "snippet": "LVMH is selling the brand to WHP Global and G-III as the luxury fashion landscape continues to shift.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "luxury",
+              "brand"
+            ]
+          },
+          "aiSummary": "AI-generated summary: On May 14, 2026, Fashionista reported that LVMH is selling the Marc Jacobs brand to WHP Global and G-III, reflecting ongoing changes in the luxury fashion industry.",
+          "translations": {
+            "da": {
+              "title": "Marc Jacobs Finder et Nyt Hjem",
+              "summary": "AI-genereret resumé: Den 14. maj 2026 rapporterede Fashionista, at LVMH sælger Marc Jacobs-mærket til WHP Global og G-III, hvilket afspejler de igangværende ændringer i luksusmodeindustrien."
+            },
+            "es": {
+              "title": "Marc Jacobs Encuentra un Nuevo Hogar",
+              "summary": "Resumen generado por IA: El 14 de mayo de 2026, Fashionista informó que LVMH está vendiendo la marca Marc Jacobs a WHP Global y G-III, reflejando los cambios continuos en la industria de la moda de lujo."
+            }
+          }
+        },
+        {
+          "id": "7hwhxf",
+          "title": "Raffles plans first alpine resort for French Alps",
+          "url": "https://www.luxurydaily.com/raffles-plans-first-alpine-resort-for-french-alps/",
+          "source": "Luxury Daily - Main",
+          "published_at": "2026-05-14T21:00:00.000Z",
+          "ingested_at": "2026-05-17T08:29:00.778Z",
+          "snippet": "The luxury hospitality brand has tapped Humbert & Poyet for the 50-key retreat, slated to debut for the 2028 winter season.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "luxury",
+              "brand"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Luxury hospitality brand Raffles has partnered with Humbert & Poyet to develop its first alpine resort in the French Alps, featuring 50 keys and set to open for the 2028 winter season.",
+          "translations": {
+            "da": {
+              "title": "Raffles planlægger sit første alpine resort i de franske alper",
+              "summary": "AI-genereret resumé: Luxury hospitality brand Raffles har indgået partnerskab med Humbert & Poyet for at udvikle sit første alpine resort i de franske alper med 50 værelser, der åbner til vintersæsonen 2028."
+            },
+            "es": {
+              "title": "Raffles planea su primer resort alpino en los Alpes franceses",
+              "summary": "Resumen generado por IA: La marca de lujo Raffles se ha asociado con Humbert & Poyet para desarrollar su primer resort alpino en los Alpes franceses, con 50 habitaciones y apertura prevista para la temporada de invierno 2028."
+            }
+          }
+        }
+      ]
+    },
+    "Jewellery_Industry": {
+      "total": 20,
+      "top": [
+        {
+          "id": "egki5e",
+          "title": "Jewellery crime falls overall; losses and violence rise",
+          "url": "https://www.jewellermagazine.com/Article/15048/Jewellery-crime-falls-overall-losses-and-violence-rise",
+          "source": "Jeweller - Business News",
+          "published_at": "2026-05-11T14:00:00.000Z",
+          "ingested_at": "2026-05-17T08:29:00.778Z",
+          "snippet": "A fascinating new report into crimes targeting jewellery businesses has highlighted several disturbing trends.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.25,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "jewellery",
+              "jeweller"
+            ]
+          },
+          "aiSummary": "AI-generated summary: A recent report reveals that while overall jewellery crime has decreased, incidents involving losses and violence within the industry have increased.",
+          "translations": {
+            "da": {
+              "title": "Smykkekriminalitet falder samlet; tab og vold stiger",
+              "summary": "AI-genereret resumé: En nylig rapport viser, at mens den samlede smykkekriminalitet er faldet, er hændelser med tab og vold i branchen steget."
+            },
+            "es": {
+              "title": "Delitos contra joyas disminuyen en general; pérdidas y violencia aumentan",
+              "summary": "Resumen generado por IA: Un informe reciente revela que, aunque los delitos contra joyas han disminuido en general, los incidentes que involucran pérdidas y violencia en la industria han aumentado."
+            }
+          }
+        },
+        {
+          "id": "jx1128",
+          "title": "Beaumont Jewelry Collective Partners with Gem Legacy to Support East African Mining Communities",
+          "url": "https://instoremag.com/beaumont-jewelry-collective-partners-with-gem-legacy-to-support-east-african-mining-communities/",
+          "source": "Instore Magazine",
+          "published_at": "2026-05-15T19:51:49.000Z",
+          "ingested_at": "2026-05-17T08:29:00.778Z",
+          "snippet": "A portion of profits supports Gem Legacy’s education and community programs in East Africa’s gemstone mining regions.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "jewelry",
+              "gem"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Beaumont Jewelry Collective has partnered with Gem Legacy to support education and community programs in East Africa's gemstone mining regions, with a portion of profits dedicated to these initiatives.",
+          "translations": {
+            "da": {
+              "title": "Beaumont Jewelry Collective samarbejder med Gem Legacy for at støtte minedriftsfællesskaber i Østafrika",
+              "summary": "AI-genereret resumé: Beaumont Jewelry Collective har indgået partnerskab med Gem Legacy for at støtte uddannelses- og fællesskabsprogrammer i Østafrikas ædelstensminer, hvor en del af overskuddet går til disse initiativer."
+            },
+            "es": {
+              "title": "Beaumont Jewelry Collective se asocia con Gem Legacy para apoyar a las comunidades mineras de África Oriental",
+              "summary": "Resumen generado por IA: Beaumont Jewelry Collective se ha asociado con Gem Legacy para apoyar programas educativos y comunitarios en las regiones mineras de piedras preciosas de África Oriental, destinando una parte de las ganancias a estas iniciativas."
+            }
+          }
+        },
+        {
+          "id": "4337rh",
+          "title": "Beyoncé at centre of 2026 Met Gala with dazzling diamond display",
+          "url": "https://www.jewellermagazine.com/Article/15049/Beyonc-at-centre-of-2026-Met-Gala-with-dazzling-diamond-display",
+          "source": "Jeweller - Business News",
+          "published_at": "2026-05-11T14:00:00.000Z",
+          "ingested_at": "2026-05-17T08:29:00.778Z",
+          "snippet": "The 2026 Met Gala red carpet featured its typical extraordinary jewellery and diamond pieces, with Beyoncé standing out among the attendees this year.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.25,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "diamond",
+              "jewellery",
+              "jeweller"
+            ]
+          },
+          "aiSummary": "AI-generated summary: At the 2026 Met Gala, the red carpet showcased extraordinary jewellery and diamond pieces, with Beyoncé notably standing out among the attendees, according to Jeweller - Business News.",
+          "translations": {
+            "da": {
+              "title": "Beyoncé i centrum ved 2026 Met Gala med blændende diamantudstilling",
+              "summary": "AI-genereret resumé: Ved 2026 Met Gala viste den røde løber ekstraordinære smykker og diamantstykker, hvor Beyoncé bemærkelsesværdigt skilte sig ud blandt deltagerne, ifølge Jeweller - Business News."
+            },
+            "es": {
+              "title": "Beyoncé en el centro del Met Gala 2026 con un deslumbrante despliegue de diamantes",
+              "summary": "Resumen generado por IA: En el Met Gala 2026, la alfombra roja mostró joyas y piezas de diamantes extraordinarias, con Beyoncé destacando notablemente entre los asistentes, según Jeweller - Business News."
+            }
+          }
+        },
+        {
+          "id": "fumlvn",
+          "title": "First Look – The New A. Lange & Söhne Cabaret Tourbillon Honeygold",
+          "url": "https://monochrome-watches.com/a-lange-sohne-cabaret-tourbillon-honeygold-limited-edition-2026-review/",
+          "source": "Monochrome Watches",
+          "published_at": "2026-05-16T08:01:52.000Z",
+          "ingested_at": "2026-05-17T08:29:00.778Z",
+          "snippet": "A. Lange & Söhne revisits one of its most distinctive designs, the rectangular Cabaret, and reinforces the model’s role by pairing the brand’s proprietary Honeygold alloy with a black-rhodiumed dial, a combination seen earlier in the Tourbograph Perpetual Honeygold, thus highlighting the importance of the watch. First introduced in 1997, the Cabaret stands apart in […]",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "gold",
+              "watch"
+            ]
+          },
+          "aiSummary": "AI-generated summary: A. Lange & Söhne has reintroduced its distinctive rectangular Cabaret watch, now featuring the brand’s proprietary Honeygold alloy combined with a black-rhodiumed dial, emphasizing the model's significance within their collection. This update follows the design approach seen in the earlier Tourbograph Perpetual Honeygold.",
+          "translations": {
+            "da": {
+              "title": "Første kig – Den nye A. Lange & Söhne Cabaret Tourbillon Honeygold",
+              "summary": "AI-genereret resumé: A. Lange & Söhne har genintroduceret sit karakteristiske rektangulære Cabaret-ur, nu med brandets egen Honeygold-legering kombineret med en sort rhodineret skive, hvilket understreger modellens betydning i deres kollektion. Denne opdatering følger designet fra den tidligere Tourbograph Perpetual Honeygold."
+            },
+            "es": {
+              "title": "Primer vistazo – El nuevo A. Lange & Söhne Cabaret Tourbillon Honeygold",
+              "summary": "Resumen generado por IA: A. Lange & Söhne ha reintroducido su distintivo reloj rectangular Cabaret, ahora con la aleación Honeygold patentada de la marca combinada con una esfera rodiada en negro, destacando la importancia del modelo dentro de su colección. Esta actualización sigue el enfoque de diseño visto en el anterior Tourbograph Perpetual Honeygold."
+            }
+          }
+        },
+        {
+          "id": "pi7x0s",
+          "title": "Introducing – The Calatrava-Inspired Horologically Unique HU-01 Finale Series, Smaller and with Diamond Dials",
+          "url": "https://monochrome-watches.com/introducing-calatrava-inspired-horologically-unique-hu-01-finale-series-34mm-diamond-dials-specs-price/",
+          "source": "Monochrome Watches",
+          "published_at": "2026-05-16T12:01:41.000Z",
+          "ingested_at": "2026-05-17T08:29:00.778Z",
+          "snippet": "Like many microbrands, Singapore-based Horologically Unique was fueled by a passion for watches and the desire to create something personal, something that would first answer the own requirements of the creator. In this case, the idea was to offer a watch that respects as much as possible the Patek Philippe Calatrava 96, basically the blueprint […]",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "diamond",
+              "watch"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Singapore-based microbrand Horologically Unique has launched the HU-01 Finale Series, a smaller watch inspired by the Patek Philippe Calatrava 96, featuring diamond dials and reflecting the creator's personal vision.",
+          "translations": {
+            "da": {
+              "title": "Introduktion – Den Calatrava-inspirerede Horologically Unique HU-01 Finale Series, mindre og med diamanturskiver",
+              "summary": "AI-genereret resumé: Singapore-baserede microbrand Horologically Unique har lanceret HU-01 Finale Series, et mindre ur inspireret af Patek Philippe Calatrava 96, med diamanturskiver og der afspejler skaberens personlige vision."
+            },
+            "es": {
+              "title": "Presentando – La Serie Final HU-01 de Horologically Unique inspirada en Calatrava, más pequeña y con esferas de diamantes",
+              "summary": "Resumen generado por IA: La micromarca con sede en Singapur Horologically Unique ha lanzado la Serie Final HU-01, un reloj más pequeño inspirado en el Patek Philippe Calatrava 96, con esferas de diamantes y que refleja la visión personal del creador."
+            }
+          }
+        },
+        {
+          "id": "ttm8ap",
+          "title": "3,500-year-old gold jewellery unearthed in Greece",
+          "url": "https://www.jewellermagazine.com/Article/15052/3-500-year-old-gold-jewellery-unearthed-in-Greece",
+          "source": "Jeweller - Business News",
+          "published_at": "2026-05-11T14:00:00.000Z",
+          "ingested_at": "2026-05-17T08:29:00.778Z",
+          "snippet": "A collection of gold jewellery believed to be more than 3,000 years old has been discovered in Greece and has been described as being in remarkable condition.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.25,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "jewellery",
+              "gold",
+              "jeweller"
+            ]
+          },
+          "aiSummary": "AI-generated summary: A collection of gold jewellery over 3,000 years old has been unearthed in Greece, with the pieces described as being in remarkable condition. This discovery was reported by Jeweller - Business News on May 11, 2026.",
+          "translations": {
+            "da": {
+              "title": "3.500 år gammelt guldsmykke fundet i Grækenland",
+              "summary": "AI-genereret resumé: En samling guldsmykker over 3.000 år gamle er blevet fundet i Grækenland, og genstandene beskrives som værende i bemærkelsesværdig stand. Denne opdagelse blev rapporteret af Jeweller - Business News den 11. maj 2026."
+            },
+            "es": {
+              "title": "Joyas de oro de 3.500 años desenterradas en Grecia",
+              "summary": "Resumen generado por IA: Se ha desenterrado en Grecia una colección de joyas de oro de más de 3.000 años, con las piezas descritas en un estado notable. Este descubrimiento fue reportado por Jeweller - Business News el 11 de mayo de 2026."
+            }
+          }
+        },
+        {
+          "id": "3snogp",
+          "title": "My Rib Dislocated Mid-Diamond Presentation. I Finished the Sale Anyway. ",
+          "url": "https://instoremag.com/my-rib-dislocated-mid-diamond-presentation-i-finished-the-sale-anyway/",
+          "source": "Instore Magazine",
+          "published_at": "2026-05-15T05:05:21.000Z",
+          "ingested_at": "2026-05-17T08:29:00.778Z",
+          "snippet": "And 13 more tales in which jewelers' bodies picked the worst possible time to give out.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "diamond"
+            ]
+          },
+          "aiSummary": "AI-generated summary: In this article from Instore Magazine dated May 15, 2026, a jeweler recounts dislocating a rib during a diamond presentation but still completing the sale, alongside 13 other stories where jewelers faced physical challenges at inopportune moments.",
+          "translations": {
+            "da": {
+              "title": "Mit Ribben gled ud under Diamantpræsentationen. Jeg Færdiggjorde Salget Alligevel.",
+              "summary": "AI-genereret resumé: I denne artikel fra Instore Magazine dateret 15. maj 2026 fortæller en guldsmed om at have dislokeret et ribben under en diamantpræsentation, men alligevel fuldført salget, sammen med 13 andre historier, hvor guldsmede stod over for fysiske udfordringer på ubelejlige tidspunkter."
+            },
+            "es": {
+              "title": "Se me Dislocó una Costilla en Medio de la Presentación del Diamante. Igual Cerré la Venta.",
+              "summary": "Resumen generado por IA: En este artículo de Instore Magazine fechado el 15 de mayo de 2026, un joyero relata cómo se dislocó una costilla durante una presentación de diamantes pero aún así completó la venta, junto con otras 13 historias donde joyeros enfrentaron desafíos físicos en momentos inoportunos."
+            }
+          }
+        }
+      ]
+    }
+  },
+  "editorialTake": "Cisco cutting nearly 4,000 jobs to boost AI investment is a brutal but clear signal: legacy tech giants are betting their future on AI, even if it means shedding large parts of their workforce. This isn’t just cost-cutting disguised as innovation. It’s a strategic pivot showing that AI is no longer a side project but the core driver of growth and relevance in enterprise tech. Companies that hesitate to make these tough calls risk falling behind in the AI arms race.\n\nAmazon’s flip from the Rufus chatbot to an Alexa-powered shopping assistant reveals a deeper tension in ecommerce AI: consumers want seamless utility, not gimmicky bots. The shift to embedding AI directly into the search bar is a smarter, more integrated approach that respects user intent and reduces friction. The question now is whether Amazon’s AI assistant can deliver real value beyond novelty, or if it will join a long list of abandoned AI experiments that fail to move the needle on conversion.",
+  "coverImageUrl": "/weekly-images/2026-W20.png",
+  "coverImageAlt": "Weekly cover illustration for 2026-W20"
+}

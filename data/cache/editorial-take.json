@@ -28,5 +28,11 @@
     "cached_at": "2026-05-10T08:34:52.869Z",
     "model": "gpt-4.1-mini",
     "version": "1.1"
+  },
+  "2026-W20:fe32458efb35": {
+    "editorialTake": "Cisco cutting nearly 4,000 jobs to boost AI investment is a brutal but clear signal: legacy tech giants are betting their future on AI, even if it means shedding large parts of their workforce. This isn’t just cost-cutting disguised as innovation. It’s a strategic pivot showing that AI is no longer a side project but the core driver of growth and relevance in enterprise tech. Companies that hesitate to make these tough calls risk falling behind in the AI arms race.\n\nAmazon’s flip from the Rufus chatbot to an Alexa-powered shopping assistant reveals a deeper tension in ecommerce AI: consumers want seamless utility, not gimmicky bots. The shift to embedding AI directly into the search bar is a smarter, more integrated approach that respects user intent and reduces friction. The question now is whether Amazon’s AI assistant can deliver real value beyond novelty, or if it will join a long list of abandoned AI experiments that fail to move the needle on conversion.",
+    "cached_at": "2026-05-17T08:42:34.901Z",
+    "model": "gpt-4.1-mini",
+    "version": "1.1"
   }
 }

@@ -1,0 +1,78 @@
+{
+  "digestWeek": "2026-W20",
+  "ingestionWeek": "2026-W20",
+  "startedAt": "2026-05-17T08:29:00.758Z",
+  "finishedAt": "2026-05-17T08:45:59.098Z",
+  "steps": [
+    {
+      "name": "rss",
+      "ok": true,
+      "startedAt": "2026-05-17T08:29:00.777Z",
+      "finishedAt": "2026-05-17T08:29:26.551Z"
+    },
+    {
+      "name": "pages",
+      "ok": true,
+      "startedAt": "2026-05-17T08:29:26.551Z",
+      "finishedAt": "2026-05-17T08:29:28.357Z"
+    },
+    {
+      "name": "discovery",
+      "ok": true,
+      "startedAt": "2026-05-17T08:29:28.358Z",
+      "finishedAt": "2026-05-17T08:39:58.428Z"
+    },
+    {
+      "name": "classification",
+      "ok": true,
+      "startedAt": "2026-05-17T08:39:58.428Z",
+      "finishedAt": "2026-05-17T08:39:58.532Z"
+    },
+    {
+      "name": "digest",
+      "ok": true,
+      "startedAt": "2026-05-17T08:39:58.532Z",
+      "finishedAt": "2026-05-17T08:42:34.903Z"
+    },
+    {
+      "name": "email",
+      "ok": true,
+      "startedAt": "2026-05-17T08:42:34.904Z",
+      "finishedAt": "2026-05-17T08:42:57.651Z"
+    },
+    {
+      "name": "podcast",
+      "ok": true,
+      "startedAt": "2026-05-17T08:42:57.651Z",
+      "finishedAt": "2026-05-17T08:44:25.983Z"
+    },
+    {
+      "name": "cover",
+      "ok": true,
+      "startedAt": "2026-05-17T08:44:25.983Z",
+      "finishedAt": "2026-05-17T08:45:40.191Z"
+    },
+    {
+      "name": "competitorAnalyze",
+      "ok": true,
+      "startedAt": "2026-05-17T08:45:40.191Z",
+      "finishedAt": "2026-05-17T08:45:59.093Z"
+    }
+  ],
+  "health": {
+    "warnings": [
+      "Podcast script word count: 1275 words (minimum: 1500)",
+      "AI & Strategy: techcrunch.com represents 42.9% (3/7) - exceeds 40% threshold",
+      "AI & Strategy: economictimes.indiatimes.com represents 42.9% (3/7) - exceeds 40% threshold",
+      "Jewellery Industry: www.jewellermagazine.com represents 42.9% (3/7) - exceeds 40% threshold"
+    ],
+    "metrics": {
+      "paywallPercent": 0,
+      "podcastWordCount": 1275
+    }
+  },
+  "versions": {
+    "node": "v20.20.2",
+    "gitCommit": "80770e172dcf12f671352557e5bd69ef1743fec3"
+  }
+}

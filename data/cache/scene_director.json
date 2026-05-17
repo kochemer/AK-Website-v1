@@ -536,5 +536,26 @@
     "version": "v3",
     "cached_at": "2026-05-10T08:37:09.687Z",
     "variant": "safe"
+  },
+  "40e1209ff176764cf9ccc4b47cbf9d225f0a3c66ef8e755154fb302c13e91bcc": {
+    "output": {
+      "concept": "shopping-cart-gold-watch-bananas-literal-metaphor",
+      "primaryHumorDriver": "literal metaphor",
+      "secondaryEnhancer": "implied motion or 'just happened' moment",
+      "sceneDescription": "A photorealistic supermarket checkout belt displays an overflowing grocery shopping cart tipped over on its side. Bananas and everyday groceries have spilled out, but also—absurdly—a gleaming gold watch lies among them, half-hidden under a bunch of bananas as if hastily thrown in. A small TechCrunch reusable bag and a Modern Retail receipt peek from the pile, while a subtle Jeweller sticker is stuck on the watch’s clasp. The scene is brightly and naturally lit, with the objects arranged in a believable, chaotic sprawl, humorously blending the mundane with the luxurious to comment on AI-driven shopping, discontinued bots, and rising jewelry crime.",
+      "finalImagePrompt": "A supermarket checkout belt with a tipped-over shopping cart spilling bananas, apples, bread, a gold wristwatch, and a few grocery items. The gold watch is half-covered by bananas. A small green shopping bag with a subtle TechCrunch logo and a Modern Retail receipt are partially visible in the pile. A tiny Jeweller sticker is on the watch clasp. Everything sits on a light gray conveyor belt, with bright, natural grocery store lighting.",
+      "negativePrompt": [
+        "text, letters, numbers, signage, labels, price tags",
+        "screens, UI, dashboards, holograms, floating icons",
+        "watermarks, unrelated brand logos",
+        "cartoon, illustration, CGI, 3D render, anime",
+        "diamond, diamonds, gemstone, gemstones, precious stones, jewelry close-up, jewelry product shot, diamond ring, diamond necklace, diamond earring, jeweled, sparkling gemstone",
+        "dramatic spotlight, glowing edges, rim lighting, vignette, cinematic color grade, blurred background, bokeh"
+      ],
+      "confidence": 0.72
+    },
+    "version": "v3",
+    "cached_at": "2026-05-17T08:44:31.231Z",
+    "variant": "safe"
   }
 }

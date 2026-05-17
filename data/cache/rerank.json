@@ -2830,5 +2830,53 @@
     ],
     "cached_at": "2026-05-10T08:33:50.110Z",
     "model": "gpt-4.1-mini"
+  },
+  "2026-W20:Ecommerce_Retail_Tech:f04caa5857ab": {
+    "selected": [
+      {
+        "id": "7",
+        "rank": 1,
+        "why": "Amazon launches AI shopping assistant enhancing search and UX",
+        "confidence": 0.95
+      },
+      {
+        "id": "1",
+        "rank": 2,
+        "why": "Amazon discontinues AI chatbot, signaling strategic AI shift",
+        "confidence": 0.9
+      },
+      {
+        "id": "2",
+        "rank": 3,
+        "why": "Amazon refocuses grocery strategy integrating Prime membership benefits",
+        "confidence": 0.9
+      },
+      {
+        "id": "15",
+        "rank": 4,
+        "why": "M&S invests heavily in automated distribution hub for online growth",
+        "confidence": 0.9
+      },
+      {
+        "id": "14",
+        "rank": 5,
+        "why": "Deliveroo innovates with multi-store baskets to reduce shopping friction",
+        "confidence": 0.85
+      },
+      {
+        "id": "0",
+        "rank": 6,
+        "why": "New ecommerce tools include AI, autonomous marketing, omnichannel fulfillment",
+        "confidence": 0.85
+      },
+      {
+        "id": "8",
+        "rank": 7,
+        "why": "Vessi uses data-driven decisions to improve conversion and operations",
+        "confidence": 0.8
+      }
+    ],
+    "cached_at": "2026-05-17T08:40:57.684Z",
+    "model": "gpt-4.1-mini"
   }
 }

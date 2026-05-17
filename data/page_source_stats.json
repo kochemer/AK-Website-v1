@@ -1,36 +1,36 @@
 {
-  "timestamp": "2026-05-10T08:18:43.667Z",
+  "timestamp": "2026-05-17T08:29:28.357Z",
   "sources": [
     {
       "sourceName": "BoF - News (The News in Brief)",
       "pagesFetched": 1,
       "fetchStatus": 200,
       "itemsMatched": 8,
-      "articlesExtracted": 0,
+      "articlesExtracted": 2,
       "rejectedNoDate": 0,
       "rejectedInvalidDate": 0,
       "rejectedNoTitle": 0,
       "rejectedNoUrl": 0,
-      "rejectedDuplicate": 8,
+      "rejectedDuplicate": 6,
       "rejectedSelectorMiss": 0,
-      "articlesKept": 0,
-      "yieldPercentage": 0,
+      "articlesKept": 2,
+      "yieldPercentage": 25,
       "failures": []
     },
     {
       "sourceName": "Jing Daily",
       "pagesFetched": 1,
       "fetchStatus": 200,
-      "itemsMatched": 21,
-      "articlesExtracted": 11,
+      "itemsMatched": 20,
+      "articlesExtracted": 12,
       "rejectedNoDate": 0,
       "rejectedInvalidDate": 0,
       "rejectedNoTitle": 0,
       "rejectedNoUrl": 0,
-      "rejectedDuplicate": 10,
+      "rejectedDuplicate": 8,
       "rejectedSelectorMiss": 0,
-      "articlesKept": 11,
-      "yieldPercentage": 52.38095238095239,
+      "articlesKept": 12,
+      "yieldPercentage": 60,
       "failures": []
     },
     {
@@ -38,23 +38,23 @@
       "pagesFetched": 1,
       "fetchStatus": 200,
       "itemsMatched": 175,
-      "articlesExtracted": 26,
+      "articlesExtracted": 44,
       "rejectedNoDate": 0,
       "rejectedInvalidDate": 0,
       "rejectedNoTitle": 0,
       "rejectedNoUrl": 0,
-      "rejectedDuplicate": 149,
+      "rejectedDuplicate": 131,
       "rejectedSelectorMiss": 0,
-      "articlesKept": 26,
-      "yieldPercentage": 14.857142857142858,
+      "articlesKept": 44,
+      "yieldPercentage": 25.142857142857146,
       "failures": []
     }
   ],
   "summary": {
     "totalPagesFetched": 3,
-    "totalItemsMatched": 204,
-    "totalArticlesExtracted": 37,
-    "totalArticlesKept": 37,
-    "overallYieldPercentage": 18.137254901960784
+    "totalItemsMatched": 203,
+    "totalArticlesExtracted": 58,
+    "totalArticlesKept": 58,
+    "overallYieldPercentage": 28.57142857142857
   }
 }

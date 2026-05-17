@@ -1,0 +1,107 @@
+{
+  "week": "2026-W20",
+  "generatedAt": "2026-05-17T08:42:57.650Z",
+  "intro": "This week’s digest highlights key developments at the intersection of AI, retail, and luxury, including Amazon’s launch and subsequent discontinuation of AI shopping assistants powered by Alexa+. We also explore funding in creative AI data, shifts in consumer spending impacting D2C brands, and ethical moves in AI research, alongside notable updates from luxury watchmaker A. Lange & Söhne.",
+  "readOneThing": {
+    "title": "Amazon launches an AI shopping assistant for the search bar, powered by Alexa+ ",
+    "url": "https://techcrunch.com/2026/05/13/amazon-launches-an-ai-shopping-assistant-for-the-search-bar-powered-by-alexa/"
+  },
+  "items": [
+    {
+      "rank": 1,
+      "title": "Amazon launches an AI shopping assistant for the search bar, powered by Alexa+ ",
+      "url": "https://techcrunch.com/2026/05/13/amazon-launches-an-ai-shopping-assistant-for-the-search-bar-powered-by-alexa/",
+      "source": "TechCrunch - Commerce",
+      "bullets": [
+        "Alexa for Shopping offers voice- and touch-enabled features across mobile, desktop, and Echo Show devices, providing personalized recommendations and automating tasks like price tracking and recurring orders.",
+        "The launch coincides with Amazon's expansion of its 30-minute delivery service, Amazon Now, across multiple U.S. cities and new AI-driven conversational audio features for customer inquiries.",
+        "Whether you like it or not, Amazon continues to put AI at the center of the shopping journey"
+      ],
+      "summary": "AI-generated summary: Amazon has launched \"Alexa for Shopping,\" an AI-powered assistant integrated into the search bar that offers voice- and touch-enabled personalized shopping experiences across mobile, desktop, and Echo Show devices, streamlining purchases on Amazon and other online retailers."
+    },
+    {
+      "rank": 2,
+      "title": "Beaumont Jewelry Collective Partners with Gem Legacy to Support East African Mining Communities",
+      "url": "https://instoremag.com/beaumont-jewelry-collective-partners-with-gem-legacy-to-support-east-african-mining-communities/",
+      "source": "Instore Magazine",
+      "bullets": [
+        "Beaumont Jewelry Collective has partnered with Gem Legacy to allocate a portion of its profits toward supporting education and community programs in East Africa's gemstone mining regions.",
+        "Gem Legacy's initiatives include constructing the Gem Legacy Campus in Arusha, Tanzania, and providing tools and safety education to artisanal miners in Tanzania and Kenya.",
+        "Since its launch in 2025, Beaumont Jewelry Collective features ten independent designers and joins over a dozen jewelry companies donating profits to Gem Legacy's mission."
+      ],
+      "summary": "AI-generated summary: Beaumont Jewelry Collective has partnered with Gem Legacy to support education and community programs in East Africa's gemstone mining regions, with a portion of profits dedicated to these initiatives."
+    },
+    {
+      "rank": 3,
+      "title": "Wirestock raises $23M to supply creative multimodal data to AI labs",
+      "url": "https://techcrunch.com/2026/05/14/wirestock-raises-23m-to-supply-multi-modal-data-to-ai-labs/",
+      "source": "TechCrunch - AI",
+      "bullets": [
+        "Wirestock raised $23 million in Series A funding to expand its business supplying creative multimodal datasets to AI labs. The company currently has an annual run-rate revenue of $40 million and has paid out $15 million to its contributors. Wirestock pivoted in 2023 from a stock photography distribution platform to a data provider, signing up over 700,000 artists and designers for data collection tasks.",
+        "Wirestock, which previously helped photographers distribute and sell their work on stock photography services like Shutterstock, has taken the latter path",
+        "The company pivoted to being a data provider in 2023 and now supplies datasets of images, videos, design assets, and gaming and 3D content to AI labs"
+      ],
+      "summary": "AI-generated summary: Wirestock, having pivoted to a data provider in 2023, raised $23 million to supply creative multimodal datasets—including images, videos, design assets, and 3D content—to AI labs."
+    },
+    {
+      "rank": 4,
+      "title": "D2C brands feel the pinch as consumers cut spending ",
+      "url": "https://economictimes.indiatimes.com/tech/startups/d2c-brands-feel-the-pinch-as-consumers-cut-spending/articleshow/131101315.cms",
+      "source": "Economic Times - Technology",
+      "bullets": [
+        "Direct-to-consumer (D2C) brands are facing financial pressure due to rising input costs and declining consumer spending on discretionary items. Analysts project a 5-6% drop in consumer spending over the next quarter, impacting average order values and offline store footfall. The weakening rupee, inflation, and increased fuel prices are contributing factors, with companies planning price hikes up to 10% amid ongoing global uncertainties.",
+        "SynopsisRising input costs and shrinking demand are squeezing smaller brands, with consumer spending projected to drop 5-6% next quarter",
+        "D2C brands face pressure as inflation and a weakening rupee push consumers towards essential purchases, impacting discretionary spending and average order values"
+      ],
+      "summary": "AI-generated summary: D2C brands are experiencing financial pressure due to rising input costs and declining consumer demand, with spending expected to fall 5-6% next quarter. Inflation and a weakening rupee are driving consumers toward essential purchases, leading companies to absorb costs or consider price increases up to 10%."
+    },
+    {
+      "rank": 5,
+      "title": "Marketplace Briefing: Why Amazon discontinued its AI-powered Rufus chatbot for Alexa shopping agent",
+      "url": "https://www.modernretail.co/technology/marketplace-briefing-why-amazon-discontinued-its-ai-powered-rufus-chatbot-for-alexa-shopping-agent/?utm_campaign=modernretaildis&utm_medium=rss&utm_source=general-rss",
+      "source": "Modern Retail",
+      "bullets": [
+        "Amazon replaced its AI-powered Rufus chatbot with a new assistant called Alexa for Shopping, integrating AI capabilities directly into its search bar and app. Rufus had 300 million users in 2025 and contributed nearly $12 billion in incremental annualized sales, with users 60% more likely to complete purchases. The rebranding consolidates Amazon's AI shopping tools under the Alexa name, which has stronger brand recognition and overlaps with the upgraded Alexa+ voice assistant launched earlier in 2026.",
+        "More from the series → Amazon replaced its Rufus chatbot with a new AI assistant called Alexa for Shopping this week as AI search becomes a bigger part of its online store",
+        "The company said customers can now ask shopping questions directly in the main search bar, compare products, track prices and automate purchases using natural language prompts"
+      ],
+      "summary": "AI-generated summary: Amazon discontinued its AI-powered Rufus chatbot and introduced a new AI assistant called Alexa for Shopping to enhance its online store's AI search capabilities, according to a May 14, 2026 article from Modern Retail."
+    },
+    {
+      "rank": 6,
+      "title": "Research repository ArXiv will ban authors for a year if they let AI do all the work",
+      "url": "https://techcrunch.com/2026/05/16/research-repository-arxiv-will-ban-authors-for-a-year-if-they-let-ai-do-all-the-work/",
+      "source": "TechCrunch - AI",
+      "bullets": [
+        "ArXiv announced a policy to ban authors for one year if they submit papers with clear evidence of unchecked large language model (LLM) generated content.",
+        "Authors found with fabricated references or comments from LLMs in their submissions will face a one-year ban and must have future papers accepted by peer-reviewed venues.",
+        "ArXiv, hosted by Cornell for over 20 years, is becoming an independent nonprofit to better address challenges like low-quality AI-generated research papers."
+      ],
+      "summary": "AI-generated summary: ArXiv will impose a one-year ban on authors who allow AI to complete their scientific papers entirely, as part of efforts to curb careless use of large language models."
+    },
+    {
+      "rank": 7,
+      "title": "First Look – The New A. Lange & Söhne Cabaret Tourbillon Honeygold",
+      "url": "https://monochrome-watches.com/a-lange-sohne-cabaret-tourbillon-honeygold-limited-edition-2026-review/",
+      "source": "Monochrome Watches",
+      "bullets": [
+        "A. Lange & Söhne has introduced a new Cabaret Tourbillon model crafted in their proprietary Honeygold alloy featuring a black-rhodiumed dial and stop-seconds tourbillon mechanism.",
+        "The watch measures 29.5mm by 39.2mm with a 10.3mm thickness, houses the calibre L042.1 movement with 370 components, and offers a 120-hour power reserve.",
+        "Originally launched in 1997 and discontinued in 2013, the Cabaret line is now revived as a limited edition of 50 pieces, continuing its legacy of Saxon Art Deco design and technical innovation."
+      ],
+      "summary": "AI-generated summary: A. Lange & Söhne has reintroduced its distinctive rectangular Cabaret watch, now featuring the brand’s proprietary Honeygold alloy combined with a black-rhodiumed dial, emphasizing the model's significance within their collection. This update follows the design approach seen in the earlier Tourbograph Perpetual Honeygold."
+    },
+    {
+      "rank": 8,
+      "title": "The Friday Checkout: Amazon’s Prime-first approach to grocery",
+      "url": "https://www.grocerydive.com/news/amazon-grocery-prime-membership/820336/",
+      "source": "Grocery Dive",
+      "bullets": [
+        "Amazon has shifted its grocery strategy to prioritize e-grocery offerings and let Whole Foods lead its brick-and-mortar grocery presence.",
+        "Amazon Now charges Prime members $3.99 for 30-minute grocery delivery, while non-Prime members pay a $13.99 fee, highlighting a significant cost difference.",
+        "This Prime-first approach follows Amazon's discontinuation of Amazon Fresh and Amazon Go banners earlier in 2026 to focus on membership-driven services."
+      ],
+      "summary": "AI-generated summary: Amazon is sharpening its grocery strategy by emphasizing the integration of e-commerce with its Prime membership program, reinforcing its strengths in the retail tech space."
+    }
+  ]
+}
