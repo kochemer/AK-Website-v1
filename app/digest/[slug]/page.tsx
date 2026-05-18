@@ -2,6 +2,7 @@ import { Suspense } from 'react';
 import { promises as fs } from 'fs';
 import path from 'path';
 import Link from 'next/link';
+import { DateTime } from 'luxon';
 import { notFound, permanentRedirect } from 'next/navigation';
 import type { Metadata } from 'next';
 import DigestClientView from '../../components/DigestClientView';
@@ -9,6 +10,9 @@ import IssueRating from '../../components/IssueRating';
 import CategoryCardGrid from '../../components/CategoryCardGrid';
 import PodcastPlayer from '../../components/PodcastPlayer';
 import StatsBar from '../../components/StatsBar';
+import BrandPattern from '../../components/BrandPattern';
+import GrainOverlay from '../../components/GrainOverlay';
+import MastheadLockup from '../../components/MastheadLockup';
 import { WeeklyInsight } from '../../components/WeeklyInsight';
 import { EditorSpotlight } from '../../components/EditorSpotlight';
 import AnalyticsDigestView from '../../components/AnalyticsDigestView';
@@ -17,7 +21,7 @@ import ScrollProgressBar from '../../components/ScrollProgressBar';
 import JsonLd from '../../components/JsonLd';
 import Breadcrumbs from '../../components/Breadcrumbs';
 import { getTopicTotalsDisplayName, TopicKey } from '@/lib/utils/topicNames';
-import { formatDateRange, formatDateTime } from '@/lib/utils/formatDate';
+import { formatDateRange, formatDateTime, formatIssueLine } from '@/lib/utils/formatDate';
 import { getSelectedArticleCount, formatStatsSecondaryLine } from '@/lib/utils/digestStats';
 import { getSiteUrl } from '@/lib/utils/siteUrl';
 import { weekLabelToSlug, slugToWeekLabel } from '@/lib/utils/weekSlug';
@@ -325,90 +329,72 @@ export default async function DigestPage({
       <JsonLd data={breadcrumbSchema} />
       <main className="w-full" style={{ minHeight: '100vh', background: 'var(--color-bg)' }}>
 
-        {/* STICKY FULL-SCREEN HERO */}
-        <section className="relative h-[70vh] md:h-[100svh]" style={{ zIndex: 0 }}>
-          <div className="sticky top-0 h-[70vh] md:h-[100svh] overflow-hidden">
-            {digest.coverImageUrl ? (
+        {/* MAGAZINE COVER HERO — matches homepage style */}
+        <section className="relative w-full min-h-[60vh] sm:min-h-[70vh] md:min-h-[80vh] overflow-hidden" style={{ zIndex: 0 }}>
+          {digest.coverImageUrl ? (
+            <>
+              <div
+                className="absolute inset-0 w-full h-full bg-cover bg-no-repeat bg-center animate-ken-burns"
+                style={{
+                  backgroundImage: `url(${digest.coverImageUrl})`,
+                  backgroundPosition: 'center bottom',
+                  backgroundSize: 'cover',
+                }}
+                aria-hidden="true"
+              />
               <img
                 src={digest.coverImageUrl}
                 alt={digest.coverImageAlt || `Weekly digest cover for ${digest.weekLabel}`}
-                className="absolute inset-0 w-full h-full object-cover md:object-contain"
+                className="sr-only"
               />
-            ) : (
-              <div
-                className="absolute inset-0 w-full h-full"
-                style={{ background: 'linear-gradient(120deg, var(--color-deep) 50%, var(--color-accent) 100%)' }}
-              />
-            )}
+            </>
+          ) : (
+            <div
+              className="absolute inset-0 w-full h-full"
+              style={{ background: 'linear-gradient(120deg, var(--color-deep) 50%, var(--color-accent) 100%)' }}
+            />
+          )}
+          <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/25 to-black/50" />
+          <BrandPattern variant="dark" className="z-[1]" />
+          <GrainOverlay id="grain-hero" className="z-[2] opacity-[0.08] md:opacity-[0.08] max-md:opacity-[0.03]" />
 
-            <div className="absolute inset-0 bg-gradient-to-b from-black/45 via-black/15 to-black/0" />
+          {/* Dateline stamp — top-left */}
+          <div className="hero-dateline absolute top-6 left-6 md:left-12 z-10 font-mono text-[10px] tracking-[0.2em] uppercase text-white/70">
+            Published&nbsp;·&nbsp;{digest.startISO
+              ? DateTime.fromISO(digest.startISO).toFormat('dd MMMM yyyy').toUpperCase()
+              : dateRange.toUpperCase()
+            }&nbsp;·&nbsp;Copenhagen
+          </div>
 
-            {digest.coverImageUrl && (
-              <div className="absolute top-3 left-3 sm:top-6 sm:left-6 z-20">
-                <p className="text-meta text-white font-medium" style={{ textShadow: '0 1px 3px rgba(0,0,0,0.5)' }}>
-                  This week&apos;s cover
-                </p>
-              </div>
-            )}
-
-            <div className="relative z-10 h-full flex items-start justify-center px-4 sm:px-6 md:px-8 pt-16 sm:pt-20 md:pt-24 lg:pt-28">
-              <div className="w-full max-w-[1400px] lg:max-w-[1600px] 2xl:max-w-[1800px] mx-auto text-center">
-                <div className="bg-black/20 backdrop-blur-sm rounded-xl md:rounded-2xl px-5 py-7 sm:px-6 sm:py-8 md:px-10 md:py-12 inline-block max-w-full mx-2 sm:mx-4 animate-fade-up">
-                  {/* Brand name — decorative, not the page h1 */}
-                  <p className="font-bold mb-3 sm:mb-4 md:mb-5 text-hero-h1 text-white px-1" style={{ textShadow: '0 2px 8px rgba(0,0,0,0.5)' }}>
-                    Luxury Intelligence
-                  </p>
-                  <div className="text-body text-gray-100 max-w-5xl mx-auto mb-2 sm:mb-2.5 md:mb-3 px-2" style={{ textShadow: '0 1px 4px rgba(0,0,0,0.3)' }}>
-                    Weekly intelligence across AI, ecommerce, luxury, and jewellery.
-                  </div>
-                  <p className="text-body text-gray-200 mb-4 sm:mb-5 md:mb-6 px-2 sm:px-3" style={{ textShadow: '0 1px 3px rgba(0,0,0,0.3)' }}>
-                    Curated articles, signals, and context — handpicked and summarised by AI agents each week.
-                  </p>
-                  {/* Issue h1 — the unique, page-specific heading */}
-                  {digest.weekLabel && (
-                    <div className="mt-4 sm:mt-6 md:mt-8">
-                      <h1 className="text-section font-bold text-white drop-shadow-lg px-2" style={{ textShadow: '0 2px 8px rgba(0,0,0,0.5)' }}>
-                        {dateRange} Intelligence Digest
-                      </h1>
-                    </div>
-                  )}
-                </div>
-              </div>
-
-              <div
-                className="absolute bottom-16 sm:bottom-32 left-1/2 pointer-events-none hidden sm:block"
-                style={{ transform: 'translateX(-50%)', zIndex: 50, animation: 'scrollIndicator 2s ease-in-out infinite' }}
-              >
-                <div className="rounded-full px-4 py-3 sm:px-6 sm:py-5 bg-black/30 backdrop-blur-md shadow-lg border border-white/10">
-                  <svg className="w-8 h-8 sm:w-10 sm:h-10 text-white opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 9l-7 7-7-7" />
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 15l-7 7-7-7" />
-                  </svg>
-                </div>
-              </div>
+          {/* Masthead */}
+          <div className="absolute top-0 left-0 right-0 pt-8 md:pt-12 px-6 md:px-12 z-10">
+            <div className="hero-title">
+              <MastheadLockup variant="hero" />
             </div>
-
-            {digest && (
-              <div className="absolute bottom-3 right-3 sm:bottom-4 sm:right-4 z-20">
-                <div className="bg-black/50 backdrop-blur-sm rounded-lg px-3 py-1.5 sm:px-4 sm:py-2">
-                  <div className="text-meta text-white leading-tight" style={{ textShadow: '0 1px 2px rgba(0,0,0,0.5)' }}>
-                    <span className="block sm:inline">{dateRange}</span>
-                    {digest.builtAtISO && (
-                      <span className="block sm:inline sm:ml-2">
-                        <span className="hidden sm:inline">•</span> Built {formatDateTime(digest.builtAtISO)}
-                      </span>
-                    )}
-                  </div>
-                </div>
-              </div>
+            <p className="hero-sub font-mono text-white/80 text-body mt-2 max-w-xl uppercase">
+              Weekly intelligence across AI, ecommerce, luxury, and jewellery.
+            </p>
+            {digest.weekLabel && (
+              <p
+                className="hero-issue text-white/70 text-issue-line tracking-[0.3em] uppercase mt-2"
+                style={{ textShadow: '0 1px 8px rgba(0,0,0,0.3)' }}
+              >
+                {formatIssueLine(digest.weekLabel, digest.startISO)}
+              </p>
             )}
+          </div>
+
+          {/* Scroll prompt — bottom-right */}
+          <div className="hero-scroll-prompt absolute bottom-8 right-8 z-10 font-mono text-[10px] tracking-[0.2em] uppercase text-white/50 flex items-center gap-2 animate-[breathe_3s_ease-in-out_infinite]">
+            <span>Scroll to read</span>
+            <span className="block w-4 h-px bg-white/50" />
           </div>
         </section>
 
         <ScrollProgressBar />
 
         {/* PANELS SECTION */}
-        <section className="relative z-20 -mt-[40vh] sm:-mt-[50vh] md:-mt-24 pt-2">
+        <section className="relative z-20 -mt-2 pt-2">
           <div className="w-full max-w-5xl mx-auto px-4 sm:px-5 md:px-6">
             <div className="mb-4 sm:mb-5 md:mb-6 mt-2">
               <Breadcrumbs
