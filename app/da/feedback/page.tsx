@@ -1,4 +1,9 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
+
+export const metadata: Metadata = {
+  robots: { index: false, follow: false },
+};
 
 export default function FeedbackPageDA() {
   const formAction = process.env.NEXT_PUBLIC_FEEDBACK_FORM_ACTION?.trim() || 'https://formspree.io/f/xwvpbnbz';

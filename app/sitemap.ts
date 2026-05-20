@@ -75,20 +75,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${baseUrl}/search`,              lastModified: now, changeFrequency: 'weekly',  priority: 0.6 },
   ];
 
-  // ── Localised pages (es · da) ─────────────────────────────────────────────
+  // ── Localised homepages only (es · da) ───────────────────────────────────
+  // Sub-pages (/es/about, /da/methodology, etc.) are thin wrappers excluded
+  // to concentrate crawl budget on digest content pages.
   const localeEntries: MetadataRoute.Sitemap = [
-    // Spanish
-    { url: `${baseUrl}/es`,                  lastModified: now, changeFrequency: 'weekly',  priority: 0.8 },
-    { url: `${baseUrl}/es/archive`,          lastModified: now, changeFrequency: 'weekly',  priority: 0.5 },
-    { url: `${baseUrl}/es/subscribe`,        lastModified: now, changeFrequency: 'monthly', priority: 0.6 },
-    { url: `${baseUrl}/es/about`,            lastModified: now, changeFrequency: 'monthly', priority: 0.4 },
-    { url: `${baseUrl}/es/methodology`,      lastModified: now, changeFrequency: 'monthly', priority: 0.4 },
-    // Danish
-    { url: `${baseUrl}/da`,                  lastModified: now, changeFrequency: 'weekly',  priority: 0.8 },
-    { url: `${baseUrl}/da/archive`,          lastModified: now, changeFrequency: 'weekly',  priority: 0.5 },
-    { url: `${baseUrl}/da/subscribe`,        lastModified: now, changeFrequency: 'monthly', priority: 0.6 },
-    { url: `${baseUrl}/da/about`,            lastModified: now, changeFrequency: 'monthly', priority: 0.4 },
-    { url: `${baseUrl}/da/methodology`,      lastModified: now, changeFrequency: 'monthly', priority: 0.4 },
+    { url: `${baseUrl}/es`, lastModified: now, changeFrequency: 'weekly', priority: 0.8 },
+    { url: `${baseUrl}/da`, lastModified: now, changeFrequency: 'weekly', priority: 0.8 },
   ];
 
   // ── Weekly digest pages (with file mtime for accurate lastModified) ───────
