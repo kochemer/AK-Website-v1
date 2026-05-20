@@ -22,6 +22,7 @@ import { buildWeeklyPodcast } from '../podcast/buildWeeklyPodcast';
 import { regenerateCover } from '../digest/regenerateCover';
 import { printModelRouting } from '../lib/llm/models';
 import { runCompetitorAnalyze } from './competitorAnalyze';
+import { pingIndexNowForWeek } from '../lib/utils/indexNow';
 
 export type RunWeeklyPipelineOptions = {
   week?: string;               // digest week override
@@ -627,6 +628,9 @@ export async function runWeeklyPipeline(options: RunWeeklyPipelineOptions = {}):
       gitCommit: getGitCommit(),
     },
   };
+
+  // Ping IndexNow so search engines crawl the new digest promptly
+  await pingIndexNowForWeek(digestWeek);
 
   // Save health report
   const healthReportPath = path.join(process.cwd(), 'data', 'weeks', digestWeek, 'health.json');
