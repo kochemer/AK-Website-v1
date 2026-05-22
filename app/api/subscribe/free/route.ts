@@ -43,13 +43,17 @@ export async function POST(req: NextRequest) {
 
     // Send confirmation only on first-time free signup.
     // Re-submitting the same email a second time is silently idempotent (no duplicate email).
+    let emailFailed = false;
     if (isNew) {
-      sendFreeConfirmationEmail(email).catch(err =>
-        console.error('[api/subscribe/free] confirmation email failed:', err instanceof Error ? err.message : err),
-      );
+      try {
+        await sendFreeConfirmationEmail(email);
+      } catch (err) {
+        emailFailed = true;
+        console.error('[api/subscribe/free] confirmation email failed:', err instanceof Error ? err.message : err);
+      }
     }
 
-    return NextResponse.json({ ok: true, withDigest: true });
+    return NextResponse.json({ ok: true, withDigest: true, emailFailed });
   } catch (err) {
     console.error('[api/subscribe/free]', err);
     return NextResponse.json(

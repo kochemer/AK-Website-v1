@@ -9,9 +9,10 @@ import { identifySubscriber } from '@/lib/analytics/identity';
 type TierStatus =
   | 'idle'
   | 'loading'
-  | 'success_digest'   // free signup confirmed with email
-  | 'success_noemail'  // free signup acknowledged without email
-  | 'pending'          // paid — Stripe not yet wired
+  | 'success_digest'        // free signup confirmed with email
+  | 'success_email_failed'  // subscribed but confirmation email didn't send
+  | 'success_noemail'       // free signup acknowledged without email
+  | 'pending'               // paid — Stripe not yet wired
   | 'error';
 
 type TierState = {
@@ -77,7 +78,7 @@ export default function SubscribePricing() {
         headers: { 'Content-Type': 'application/json' },
         body:    JSON.stringify({ email: free.email.trim() }),
       });
-      const data = (await res.json()) as { ok: boolean; withDigest?: boolean; error?: string };
+      const data = (await res.json()) as { ok: boolean; withDigest?: boolean; emailFailed?: boolean; error?: string };
 
       if (!data.ok) {
         setFree(s => ({ ...s, status: 'error', errorMsg: data.error ?? 'Something went wrong.' }));
@@ -88,7 +89,14 @@ export default function SubscribePricing() {
       if (free.email.trim()) {
         void identifySubscriber(free.email.trim(), 'free');
       }
-      setFree(s => ({ ...s, status: data.withDigest ? 'success_digest' : 'success_noemail' }));
+
+      if (!data.withDigest) {
+        setFree(s => ({ ...s, status: 'success_noemail' }));
+      } else if (data.emailFailed) {
+        setFree(s => ({ ...s, status: 'success_email_failed' }));
+      } else {
+        setFree(s => ({ ...s, status: 'success_digest' }));
+      }
     } catch {
       setFree(s => ({ ...s, status: 'error', errorMsg: 'Network error. Please try again.' }));
     }
@@ -167,6 +175,17 @@ export default function SubscribePricing() {
             <p className="font-serif italic text-[var(--color-text-primary)]">You&apos;re on the list.</p>
             <p className="font-sans text-sm text-[var(--color-text-secondary)] mt-1">
               Look out for next week&apos;s issue.
+            </p>
+          </div>
+        )}
+
+        {/* Success — subscribed but confirmation email failed */}
+        {free.status === 'success_email_failed' && (
+          <div className="text-center py-6">
+            <span className="block font-mono text-[var(--color-accent)] text-xl mb-3 select-none">✦</span>
+            <p className="font-serif italic text-[var(--color-text-primary)]">You&apos;re on the list.</p>
+            <p className="font-sans text-sm text-[var(--color-text-secondary)] mt-1">
+              We couldn&apos;t send a confirmation email — please check your spam folder or contact us.
             </p>
           </div>
         )}

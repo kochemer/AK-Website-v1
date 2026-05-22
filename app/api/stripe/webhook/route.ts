@@ -112,9 +112,13 @@ export async function POST(req: Request) {
         console.log(`[webhook] checkout.session.completed: subscribed customer=${stripeCustomerId} plan=${planType}`);
 
         if (isNewActivation) {
-          sendPaidConfirmationEmail(email, planType).catch(err =>
-            console.error('[webhook] paid confirmation email failed:', err),
-          );
+          try {
+            await sendPaidConfirmationEmail(email, planType);
+          } catch (err) {
+            // Log prominently but don't fail the webhook — the subscription is already
+            // saved. Failing here would cause Stripe to retry and re-run all DB updates.
+            console.error('[webhook] paid confirmation email failed for', email, ':', err instanceof Error ? err.message : err);
+          }
         }
         break;
       }
