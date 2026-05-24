@@ -133,8 +133,10 @@ async function sendEmails(
     const totalBatches = Math.ceil(recipients.length / BATCH_SIZE);
     console.log(`[Email] Sending batch ${batchNum}/${totalBatches} (${batch.length} recipients)...`);
 
-    const promises = batch.map(async (recipient) => {
-      // Substitute per-recipient unsubscribe URL
+    // Send sequentially within each batch — Resend limit is 5 req/sec.
+    // 250 ms between sends = ~4/sec, safely under the limit.
+    for (let j = 0; j < batch.length; j++) {
+      const recipient = batch[j];
       const unsubUrl = buildUnsubscribeUrl(recipient.email, siteUrl);
       const html = htmlTemplate.replaceAll(UNSUBSCRIBE_PLACEHOLDER, unsubUrl);
       const text = textTemplate.replaceAll(UNSUBSCRIBE_PLACEHOLDER, unsubUrl);
@@ -148,34 +150,24 @@ async function sendEmails(
           text,
         });
 
-        if (response.data) {
-          console.log(`[Email] ✓ ${recipient.email} — id: ${response.data.id ?? 'unknown'}`);
-          return { success: true, email: recipient.email };
-        } else if (response.error) {
+        if (response.error) {
           const msg = response.error.message || JSON.stringify(response.error);
           console.error(`[Email] ✗ ${recipient.email} — ${msg}`);
-          return { success: false, email: recipient.email, error: msg };
+          failures.push({ email: recipient.email, error: msg });
+        } else {
+          console.log(`[Email] ✓ ${recipient.email} — id: ${response.data?.id ?? 'unknown'}`);
+          success++;
         }
-        return { success: true, email: recipient.email };
       } catch (err: any) {
         const msg = err.message || String(err);
         console.error(`[Email] ✗ ${recipient.email} — ${msg}`);
-        return { success: false, email: recipient.email, error: msg };
+        failures.push({ email: recipient.email, error: msg });
       }
-    });
 
-    const results = await Promise.all(promises);
-    for (const r of results) {
-      if (r.success) {
-        success++;
-      } else {
-        failures.push({ email: r.email, error: (r as any).error ?? 'unknown' });
+      // Throttle: 250 ms between sends (stay under Resend's 5 req/sec limit)
+      if (j < batch.length - 1) {
+        await new Promise(resolve => setTimeout(resolve, 250));
       }
-    }
-
-    // Small delay between batches to stay within Resend rate limits
-    if (i + BATCH_SIZE < recipients.length) {
-      await new Promise(resolve => setTimeout(resolve, 1000));
     }
   }
 
