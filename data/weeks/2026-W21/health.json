@@ -1,0 +1,45 @@
+{
+  "digestWeek": "2026-W21",
+  "ingestionWeek": "2026-W21",
+  "startedAt": "2026-05-24T13:34:02.593Z",
+  "finishedAt": "2026-05-24T13:37:29.396Z",
+  "steps": [
+    {
+      "name": "discovery",
+      "ok": true,
+      "startedAt": "2026-05-24T13:34:02.612Z",
+      "finishedAt": "2026-05-24T13:37:10.050Z"
+    },
+    {
+      "name": "classification",
+      "ok": true,
+      "startedAt": "2026-05-24T13:37:10.051Z",
+      "finishedAt": "2026-05-24T13:37:10.101Z"
+    },
+    {
+      "name": "digest",
+      "ok": true,
+      "startedAt": "2026-05-24T13:37:10.101Z",
+      "finishedAt": "2026-05-24T13:37:10.335Z"
+    },
+    {
+      "name": "competitorAnalyze",
+      "ok": true,
+      "startedAt": "2026-05-24T13:37:10.336Z",
+      "finishedAt": "2026-05-24T13:37:29.396Z"
+    }
+  ],
+  "health": {
+    "warnings": [
+      "AI & Strategy: 0 articles (minimum: 3)",
+      "Ecommerce & Retail Tech: 0 articles (minimum: 3)",
+      "Luxury & Consumer: 0 articles (minimum: 3)",
+      "Jewellery Industry: 0 articles (minimum: 3)"
+    ],
+    "metrics": {}
+  },
+  "versions": {
+    "node": "v24.12.0",
+    "gitCommit": "ba41c6c4d6a00bc2749ff35a6c3495cf8ae5bec2"
+  }
+}

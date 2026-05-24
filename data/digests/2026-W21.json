@@ -1,0 +1,969 @@
+{
+  "weekLabel": "2026-W21",
+  "tz": "Europe/Copenhagen",
+  "startISO": "2026-05-17T22:00:00.000Z",
+  "endISO": "2026-05-24T21:59:59.999Z",
+  "builtAtISO": "2026-05-24T10:51:06.551+02:00",
+  "builtAtLocal": "2026-05-24 10:51:06",
+  "totals": {
+    "total": 761,
+    "byTopic": {
+      "AIStrategy": 133,
+      "EcommerceRetail": 497,
+      "LuxuryConsumer": 106,
+      "Jewellery": 21
+    }
+  },
+  "topics": {
+    "AI_and_Strategy": {
+      "total": 133,
+      "top": [
+        {
+          "id": "d522od",
+          "title": "Jensen Huang says he’s found a ‘brand new’ $200B market for Nvidia",
+          "url": "https://techcrunch.com/2026/05/20/jensen-huang-says-hes-found-a-brand-new-200b-market-for-nvidia/",
+          "source": "TechCrunch - AI",
+          "published_at": "2026-05-21T00:28:31.000Z",
+          "ingested_at": "2026-05-24T08:38:58.112Z",
+          "snippet": "The next big thing for Nvidia will be CPUs for AI agents, $200 billion worth, CEO Jensen Huang predicts.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.25,
+            "recencyScore": 0,
+            "sourceWeight": 0.15,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ai",
+              "agent"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Nvidia CEO Jensen Huang predicts a new $200 billion market opportunity centered on CPUs designed for AI agents, marking a significant strategic focus for the company.",
+          "translations": {
+            "da": {
+              "title": "Jensen Huang siger, at han har fundet et ’helt nyt’ $200 mia. marked for Nvidia",
+              "summary": "AI-genereret opsummering: Nvidia CEO Jensen Huang forudser en ny $200 milliarder markedsmulighed centreret om CPU'er designet til AI-agenter, hvilket markerer et vigtigt strategisk fokus for virksomheden."
+            },
+            "es": {
+              "title": "Jensen Huang dice que ha encontrado un mercado ’completamente nuevo’ de $200 mil millones para Nvidia",
+              "summary": "Resumen generado por IA: El CEO de Nvidia, Jensen Huang, predice una nueva oportunidad de mercado de $200 mil millones centrada en CPUs diseñadas para agentes de IA, marcando un enfoque estratégico significativo para la empresa."
+            }
+          }
+        },
+        {
+          "id": "oyafkl",
+          "title": "Hark raises $700M Series A for its secretive ‘universal’ AI interface",
+          "url": "https://techcrunch.com/2026/05/21/hark-raises-700m-series-a-for-its-secretive-universal-ai-interface/",
+          "source": "TechCrunch - AI",
+          "published_at": "2026-05-21T14:00:00.000Z",
+          "ingested_at": "2026-05-24T08:38:58.112Z",
+          "snippet": "Hark expects to release its first multimodal models this summer, which it says will power a personal AI platform that works with existing products and services. The company expects to follow that with hardware devices built specifically for those systems.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.25,
+            "recencyScore": 0,
+            "sourceWeight": 0.15,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ai",
+              "multimodal"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Hark has raised $700 million in a Series A funding round to develop its multimodal AI models, aiming to launch a personal AI platform compatible with existing products this summer, followed by dedicated hardware devices.",
+          "translations": {
+            "da": {
+              "title": "Hark rejser 700 mio. USD i Series A til sin hemmelige ’universelle’ AI-grænseflade",
+              "summary": "AI-genereret resumé: Hark har rejst 700 millioner USD i en Series A-finansieringsrunde for at udvikle sine multimodale AI-modeller med målet om at lancere en personlig AI-platform kompatibel med eksisterende produkter denne sommer, efterfulgt af dedikerede hardwareenheder."
+            },
+            "es": {
+              "title": "Hark recauda 700 millones de dólares en Serie A para su secreta interfaz de IA ‘universal’",
+              "summary": "Resumen generado por IA: Hark ha recaudado 700 millones de dólares en una ronda de financiación Serie A para desarrollar sus modelos de IA multimodales, con el objetivo de lanzar una plataforma de IA personal compatible con productos existentes este verano, seguida de dispositivos de hardware dedicados."
+            }
+          }
+        },
+        {
+          "id": "1twclu",
+          "title": "Deepseek makes its 75 percent discount permanent, pricing output tokens at least 34x below GPT-5.5",
+          "url": "https://the-decoder.com/deepseek-makes-its-75-percent-discount-permanent-pricing-output-tokens-at-least-34x-below-gpt-5-5/",
+          "source": "The Decoder",
+          "published_at": "2026-05-23T17:10:59.000Z",
+          "ingested_at": "2026-05-24T08:38:58.112Z",
+          "snippet": "Deepseek is making the 75 percent discount on its top model V4-Pro permanent. At $0.435 per million input tokens, it's at least 11.5 times cheaper than GPT-5.5 and over 34 times cheaper on output. For token-hungry agentic systems, this kind of pricing could squeeze Western providers hard.\nThe article Deepseek makes its 75 percent discount permanent, pricing output tokens at least 34x below GPT-5.5 appeared first on The Decoder.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "agent"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Deepseek has made its 75 percent discount on the V4-Pro model permanent, pricing output tokens at $0.435 per million input tokens, which is over 34 times cheaper than GPT-5.5. This aggressive pricing could significantly challenge Western AI providers in token-intensive applications.",
+          "translations": {
+            "da": {
+              "title": "Deepseek gør sin 75 procents rabat permanent og priser outputtokens mindst 34 gange billigere end GPT-5.5",
+              "summary": "AI-genereret resumé: Deepseek har gjort sin 75 procents rabat på V4-Pro modellen permanent og priser outputtokens til $0,435 pr. million inputtokens, hvilket er over 34 gange billigere end GPT-5.5. Denne aggressive prisfastsættelse kan udfordre vestlige AI-udbydere i token-intensive applikationer."
+            },
+            "es": {
+              "title": "Deepseek hace permanente su descuento del 75%, con precios de tokens de salida al menos 34 veces más bajos que GPT-5.5",
+              "summary": "Resumen generado por IA: Deepseek ha hecho permanente su descuento del 75% en el modelo V4-Pro, con un precio de $0.435 por millón de tokens de entrada, lo que es más de 34 veces más barato que GPT-5.5. Esta estrategia de precios agresiva podría desafiar significativamente a los proveedores de IA occidentales en aplicaciones intensivas en tokens."
+            }
+          }
+        },
+        {
+          "id": "11kdux",
+          "title": "Lenovo shares jump nearly 20% on record earnings as AI revenue nearly doubles",
+          "url": "https://www.cnbc.com/2026/05/22/lenovo-shares-jump-15percent-on-record-earnings-as-ai-revenue-nearly-doubles.html",
+          "source": "CNBC Technology",
+          "published_at": "2026-05-22T07:51:12.000Z",
+          "ingested_at": "2026-05-24T08:38:58.112Z",
+          "snippet": "Shares of Lenovo surged over 15% on Friday, after the electronics giant posted strong revenue growth bolstered by its artificial intelligence business.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ai",
+              "artificial intelligence"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Lenovo's shares jumped nearly 20% following record earnings driven by strong revenue growth, with its artificial intelligence business nearly doubling revenue, according to CNBC Technology on May 22, 2026.",
+          "translations": {
+            "da": {
+              "title": "Lenovo-aktier stiger næsten 20% på rekordindtjening, da AI-omsætning næsten fordobles",
+              "summary": "AI-genereret resumé: Lenovos aktier steg næsten 20% efter rekordindtjening drevet af stærk omsætningsvækst, hvor virksomhedens kunstige intelligens-forretning næsten fordoblede omsætningen, ifølge CNBC Technology den 22. maj 2026."
+            },
+            "es": {
+              "title": "Las acciones de Lenovo suben casi un 20% tras ganancias récord mientras los ingresos por IA casi se duplican",
+              "summary": "Resumen generado por IA: Las acciones de Lenovo subieron casi un 20% tras ganancias récord impulsadas por un fuerte crecimiento de ingresos, con su negocio de inteligencia artificial casi duplicando ingresos, según CNBC Technology el 22 de mayo de 2026."
+            }
+          }
+        },
+        {
+          "id": "gea0jr",
+          "title": "California governor orders a plan to cope with AI job upheaval ",
+          "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/california-governor-orders-a-plan-to-cope-with-ai-job-upheaval/articleshow/131255657.cms",
+          "source": "Economic Times - Technology",
+          "published_at": "2026-05-22T03:34:01.000Z",
+          "ingested_at": "2026-05-24T08:38:58.112Z",
+          "snippet": "California Governor Gavin Newsom on Thursday ordered officials to start work on a plan to mitigate the job-destroying impact of artificial intelligence, the first US state to do so. \"California has never sat back and watched as the future happened to us -- and we won't start now,\" he said.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ai",
+              "artificial intelligence"
+            ]
+          },
+          "aiSummary": "AI-generated summary: On May 22, 2026, California Governor Gavin Newsom directed officials to develop a plan addressing the job disruptions caused by artificial intelligence, making California the first US state to take such action.",
+          "translations": {
+            "da": {
+              "title": "California-guvernør beordrer en plan for at håndtere AI-jobforstyrrelser",
+              "summary": "AI-genereret resumé: Den 22. maj 2026 beordrede California-guvernør Gavin Newsom embedsmænd til at udvikle en plan, der adresserer jobforstyrrelser forårsaget af kunstig intelligens, hvilket gør California til den første amerikanske stat, der tager en sådan handling."
+            },
+            "es": {
+              "title": "Gobernador de California ordena un plan para enfrentar la disrupción laboral causada por la IA",
+              "summary": "Resumen generado por IA: El 22 de mayo de 2026, el gobernador de California, Gavin Newsom, instruyó a los funcionarios a desarrollar un plan para abordar las interrupciones laborales causadas por la inteligencia artificial, convirtiendo a California en el primer estado de EE. UU. en tomar tal medida."
+            }
+          }
+        },
+        {
+          "id": "nvjrer",
+          "title": "Anthropic Shifts Stance on Mythos to Enable Shared Threat Intelligence",
+          "url": "https://www.paymentsjournal.com/anthropic-shifts-stance-on-mythos-to-enable-shared-threat-intelligence/",
+          "source": "Payments Journal",
+          "published_at": "2026-05-19T16:36:56.000Z",
+          "ingested_at": "2026-05-24T08:38:58.112Z",
+          "snippet": "Anthropic’s cybersecurity platform Mythos is beginning to change how governments and organizations think about digital defense—and now the artificial intelligence firm is loosening its grip on the information generated by the system. Anthropic has kept Mythos under tight wraps due to the potential for abuse—the model’s capability to detect vulnerabilities could be devasting in the […]\nThe post Anthropic Shifts Stance on Mythos to Enable Shared Threat Intelligence appeared first on PaymentsJourna...",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "anthropic",
+              "artificial intelligence"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Anthropic is altering its approach to its cybersecurity platform Mythos by easing restrictions on the information it generates, aiming to promote shared threat intelligence among governments and organizations while addressing concerns about potential misuse.",
+          "translations": {
+            "da": {
+              "title": "Anthropic ændrer holdning til Mythos for at muliggøre delt trusselsintelligens",
+              "summary": "AI-genereret resumé: Anthropic ændrer sin tilgang til sin cybersikkerhedsplatform Mythos ved at lempe restriktioner på den information, den genererer, med det formål at fremme delt trusselsintelligens blandt regeringer og organisationer samtidig med at bekymringer om potentiel misbrug adresseres."
+            },
+            "es": {
+              "title": "Anthropic cambia postura sobre Mythos para permitir inteligencia compartida de amenazas",
+              "summary": "Resumen generado por IA: Anthropic está modificando su enfoque hacia su plataforma de ciberseguridad Mythos al flexibilizar las restricciones sobre la información que genera, con el objetivo de promover la inteligencia compartida de amenazas entre gobiernos y organizaciones, mientras aborda preocupaciones sobre el posible uso indebido."
+            }
+          }
+        },
+        {
+          "id": "a0ix4a",
+          "title": "How VCs and founders use inflated ‘ARR’ to crown AI startups ",
+          "url": "https://techcrunch.com/2026/05/22/how-vcs-and-founders-use-inflated-arr-to-kingmake-ai-startups/",
+          "source": "TechCrunch - AI",
+          "published_at": "2026-05-22T20:40:48.000Z",
+          "ingested_at": "2026-05-24T08:38:58.112Z",
+          "snippet": "Some AI startups are stretching traditional revenue metrics when talking about progress publicly. And their investors are fully aware.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.09999999999999998,
+            "recencyScore": 0,
+            "sourceWeight": 0.15,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0.05,
+            "penalty": 0.2,
+            "matchedKeywords": [
+              "ai",
+              "ai startup"
+            ]
+          },
+          "aiSummary": "AI-generated summary: The article discusses how some AI startups and their investors knowingly use inflated Annual Recurring Revenue (ARR) figures to portray greater progress, highlighting a strategic approach within the AI funding landscape.",
+          "translations": {
+            "da": {
+              "title": "Hvordan VCs og grundlæggere bruger oppustet ‘ARR’ til at hylde AI-startups",
+              "summary": "AI-genereret resumé: Artiklen diskuterer, hvordan nogle AI-startups og deres investorer bevidst bruger oppustede Annual Recurring Revenue (ARR)-tal for at vise større fremskridt og fremhæver en strategisk tilgang inden for AI-finansieringslandskabet."
+            },
+            "es": {
+              "title": "Cómo los VCs y fundadores usan un ‘ARR’ inflado para coronar startups de IA",
+              "summary": "Resumen generado por IA: El artículo analiza cómo algunas startups de IA y sus inversores usan conscientemente cifras infladas de Annual Recurring Revenue (ARR) para mostrar un mayor progreso, destacando un enfoque estratégico dentro del panorama de financiación de IA."
+            }
+          }
+        }
+      ]
+    },
+    "Ecommerce_Retail_Tech": {
+      "total": 497,
+      "top": [
+        {
+          "id": "umy4lg",
+          "title": "Google unveils its new Universal Cart for agentic commerce",
+          "url": "https://www.digitalcommerce360.com/2026/05/20/google-universal-cart-for-agentic-commerce/",
+          "source": "Digital Commerce 360",
+          "published_at": "2026-05-20T18:16:45.000Z",
+          "ingested_at": "2026-05-24T08:38:58.112Z",
+          "snippet": "Google kicked off its annual Google I/O developer conference on May 19 with numerous announcements, including new details about its latest agentic commerce and checkout tool, the Universal Cart. Universal Cart is built on top of Google’s Universal Commerce Protocol (UCP), which enables artificial intelligence (AI) agents to communicate with payments infrastructure in ecommerce transactions. […]\nThe post Google unveils its new Universal Cart for agentic commerce appeared first on Digital Commerce...",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ecommerce",
+              "checkout",
+              "payment"
+            ]
+          },
+          "aiSummary": "AI-generated summary: On May 19, Google announced its new Universal Cart at the Google I/O developer conference, a checkout tool built on the Universal Commerce Protocol that enables AI agents to interact with ecommerce payment systems. This innovation aims to advance agentic commerce by streamlining transactions.",
+          "translations": {
+            "da": {
+              "title": "Google lancerer sin nye Universal Cart til agentbaseret handel",
+              "summary": "AI-genereret resumé: Den 19. maj annoncerede Google sin nye Universal Cart på Google I/O udviklerkonferencen, et betalingsværktøj baseret på Universal Commerce Protocol, der gør det muligt for AI-agenter at interagere med e-handels betalingssystemer. Denne innovation sigter mod at fremme agentbaseret handel ved at effektivisere transaktioner."
+            },
+            "es": {
+              "title": "Google presenta su nuevo Universal Cart para comercio agentico",
+              "summary": "Resumen generado por IA: El 19 de mayo, Google anunció su nuevo Universal Cart en la conferencia para desarrolladores Google I/O, una herramienta de pago basada en el Universal Commerce Protocol que permite a agentes de IA interactuar con sistemas de pago de comercio electrónico. Esta innovación busca avanzar en el comercio agentico al simplificar las transacciones."
+            }
+          }
+        },
+        {
+          "id": "u60sr4",
+          "title": "Google’s new Universal Cart wants to follow your entire shopping journey across the internet",
+          "url": "https://techcrunch.com/2026/05/19/googles-new-universal-cart-wants-to-follow-your-entire-shopping-journey-across-the-internet/",
+          "source": "TechCrunch - Commerce",
+          "published_at": "2026-05-19T17:45:00.000Z",
+          "ingested_at": "2026-05-24T08:38:58.112Z",
+          "snippet": "Most people shop across multiple devices, many retailers, and over the course of many days, which is why Google is launching Universal Cart.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "shopping"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Google is launching Universal Cart to track and unify shoppers' purchases across multiple devices and retailers over extended periods, addressing the fragmented nature of modern online shopping.",
+          "translations": {
+            "da": {
+              "title": "Googles nye Universal Cart vil følge din hele shoppingrejse på internettet",
+              "summary": "AI-genereret resumé: Google lancerer Universal Cart for at spore og samle shopperes køb på tværs af flere enheder og forhandlere over længere tid og dermed løse det fragmenterede moderne online shoppingmønster."
+            },
+            "es": {
+              "title": "El nuevo Universal Cart de Google quiere seguir todo tu recorrido de compras en internet",
+              "summary": "Resumen generado por IA: Google lanza Universal Cart para rastrear y unificar las compras de los usuarios en múltiples dispositivos y minoristas durante períodos prolongados, abordando la naturaleza fragmentada de las compras en línea modernas."
+            }
+          }
+        },
+        {
+          "id": "30swez",
+          "title": "Klarna releases AI search app for shopping in ChatGPT",
+          "url": "https://www.digitalcommerce360.com/2026/05/20/klarna-ai-shopping-search-app-openai-chatgpt/",
+          "source": "Digital Commerce 360",
+          "published_at": "2026-05-20T20:09:29.000Z",
+          "ingested_at": "2026-05-24T08:38:58.112Z",
+          "snippet": "Payments provider Klarna has launched an artificial intelligence (AI)-powered app in OpenAI’s ChatGPT centered around shopping and search. The Klarna Shopping Search app in ChatGPT enables users to describe the types of products they’re looking for and, in one conversation, see visual results with up-to-date prices, availability and offers from multiple merchants, according to the […]\nThe post Klarna releases AI search app for shopping in ChatGPT appeared first on Digital Commerce 360.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "shopping",
+              "payment"
+            ]
+          },
+          "aiSummary": "This AI-generated summary: Payments provider Klarna has launched an AI-powered Shopping Search app within OpenAI’s ChatGPT, allowing users to find products with visual results, current prices, availability, and offers from multiple merchants in a single conversation.",
+          "translations": {
+            "da": {
+              "title": "Klarna lancerer AI-søgeapp til shopping i ChatGPT",
+              "summary": "Betalingsudbyderen Klarna har lanceret en AI-drevet Shopping Search-app i OpenAIs ChatGPT, som giver brugere mulighed for at finde produkter med visuelle resultater, aktuelle priser, tilgængelighed og tilbud fra flere forhandlere i én samtale."
+            },
+            "es": {
+              "title": "Klarna lanza app de búsqueda AI para compras en ChatGPT",
+              "summary": "El proveedor de pagos Klarna ha lanzado una app de búsqueda de compras impulsada por IA dentro de ChatGPT de OpenAI, que permite a los usuarios encontrar productos con resultados visuales, precios actuales, disponibilidad y ofertas de múltiples comerciantes en una sola conversación."
+            }
+          }
+        },
+        {
+          "id": "my6s3r",
+          "title": "TikTok Shop says sales from U.S. small businesses climbed 66% in 2025",
+          "url": "https://www.modernretail.co/operations/tiktok-shop-says-sales-from-u-s-small-businesses-climbed-66-in-2025/?utm_campaign=modernretaildis&utm_medium=rss&utm_source=general-rss",
+          "source": "Modern Retail",
+          "published_at": "2026-05-19T10:00:00.000Z",
+          "ingested_at": "2026-05-24T08:38:58.112Z",
+          "snippet": "TikTok Shop says it's continuing to drive rapid growth for small businesses, even as bigger brands swarm the platform.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "platform"
+            ]
+          },
+          "aiSummary": "AI-generated summary: TikTok Shop reported a 66% increase in sales from U.S. small businesses in 2025, highlighting its role in driving rapid growth for these sellers despite increased competition from larger brands.",
+          "translations": {
+            "da": {
+              "title": "TikTok Shop siger, at salget fra amerikanske små virksomheder steg med 66 % i 2025",
+              "summary": "AI-genereret resumé: TikTok Shop rapporterede en stigning på 66 % i salget fra amerikanske små virksomheder i 2025 og fremhævede sin rolle i at drive hurtig vækst for disse sælgere trods øget konkurrence fra større mærker."
+            },
+            "es": {
+              "title": "TikTok Shop dice que las ventas de pequeñas empresas estadounidenses aumentaron un 66% en 2025",
+              "summary": "Resumen generado por IA: TikTok Shop reportó un aumento del 66% en las ventas de pequeñas empresas estadounidenses en 2025, destacando su papel en impulsar un rápido crecimiento para estos vendedores a pesar de la mayor competencia de marcas más grandes."
+            }
+          }
+        },
+        {
+          "id": "x65yxp",
+          "title": "Marketplace Briefing: What Shein’s acquisition of Everlane could mean for its marketplace ambitions",
+          "url": "https://www.modernretail.co/marketing/marketplace-briefing-what-sheins-acquisition-of-everlane-could-mean-for-its-marketplace-ambitions/?utm_campaign=modernretaildis&utm_medium=rss&utm_source=general-rss",
+          "source": "Modern Retail",
+          "published_at": "2026-05-21T14:00:00.000Z",
+          "ingested_at": "2026-05-24T08:38:58.112Z",
+          "snippet": "Shein’s purported acquisition of Everlane isn’t its first attempt to boost its brand credibility. In recent years, it struck a partnership with Forever 21, acquired the U.K. brand Missguided and launched a third-party marketplace. But it's still unclear how all of these efforts will live together.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "marketplace"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Shein's acquisition of Everlane marks another step in its efforts to enhance brand credibility, following previous moves like partnering with Forever 21, acquiring Missguided, and launching a third-party marketplace, though how these initiatives will integrate remains uncertain.",
+          "translations": {
+            "da": {
+              "title": "Marketplace Briefing: Hvad Sheins opkøb af Everlane kan betyde for dets markedspladsambitioner",
+              "summary": "AI-genereret resumé: Sheins opkøb af Everlane markerer endnu et skridt i bestræbelserne på at styrke brandets troværdighed, efter tidligere tiltag som samarbejde med Forever 21, opkøb af Missguided og lancering af en tredjeparts markedsplads, selvom integrationen af disse initiativer stadig er usikker."
+            },
+            "es": {
+              "title": "Marketplace Briefing: Lo que la adquisición de Everlane por parte de Shein podría significar para sus ambiciones en el marketplace",
+              "summary": "Resumen generado por IA: La adquisición de Everlane por parte de Shein marca otro paso en sus esfuerzos por mejorar la credibilidad de la marca, tras movimientos previos como la asociación con Forever 21, la compra de Missguided y el lanzamiento de un marketplace de terceros, aunque sigue siendo incierto cómo se integrarán estas iniciativas."
+            }
+          }
+        },
+        {
+          "id": "xpdmqd",
+          "title": "E.U. Product Safety Laws Reach Sellers",
+          "url": "https://www.practicalecommerce.com/e-u-product-safety-laws-reach-sellers",
+          "source": "Practical Ecommerce",
+          "published_at": "2026-05-19T13:10:41.000Z",
+          "ingested_at": "2026-05-24T08:38:58.112Z",
+          "snippet": "The revised General Product Safety Regulation applies to all merchants selling into the E.U., including those based in the U.S.\nThe post E.U. Product Safety Laws Reach Sellers appeared first on Practical Ecommerce.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ecommerce"
+            ]
+          },
+          "aiSummary": "AI-generated summary: The revised General Product Safety Regulation now applies to all merchants selling products into the E.U., including U.S.-based sellers, impacting ecommerce and retail technology businesses.",
+          "translations": {
+            "da": {
+              "title": "E.U.-produktsikkerhedslove gælder for sælgere",
+              "summary": "AI-genereret resumé: Den reviderede General Product Safety Regulation gælder nu for alle handlende, der sælger produkter til E.U., inklusive sælgere baseret i USA, hvilket påvirker e-handel og detailteknologivirksomheder."
+            },
+            "es": {
+              "title": "Leyes de seguridad de productos de la E.U. alcanzan a los vendedores",
+              "summary": "Resumen generado por IA: El Reglamento General de Seguridad de Productos revisado ahora se aplica a todos los comerciantes que venden productos en la E.U., incluidos los vendedores con sede en EE.UU., impactando a negocios de comercio electrónico y tecnología minorista."
+            }
+          }
+        },
+        {
+          "id": "fvfg1n",
+          "title": "Report: SMBs struggle to cope with tariffs, supply chain disruptions in 2026",
+          "url": "https://www.digitalcommerce360.com/2026/05/21/report-smbs-tariffs-supply-chain-disruptions-2026/",
+          "source": "Digital Commerce 360",
+          "published_at": "2026-05-21T20:26:38.000Z",
+          "ingested_at": "2026-05-24T08:38:58.112Z",
+          "snippet": "Small and mid-sized businesses (SMBs) in the U.S. are facing new demands as a result of tariff volatility, rising logistics costs and persistent supply chain disruptions, according to survey data from the firm Ship4wd. Through the survey company Pollfish, Ship4wd surveyed 500 SMBs across the U.S. in April 2026. In the findings, 96% of those […]\nThe post Report: SMBs struggle to cope with tariffs, supply chain disruptions in 2026 appeared first on Digital Commerce 360.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0.15,
+            "penalty": 0,
+            "matchedKeywords": [
+              "logistics"
+            ]
+          },
+          "aiSummary": "AI-generated summary: A 2026 survey by Ship4wd of 500 U.S. small and mid-sized businesses reveals that 96% are struggling with tariff volatility, rising logistics costs, and ongoing supply chain disruptions impacting their operations.",
+          "translations": {
+            "da": {
+              "title": "Rapport: SMB'er kæmper med toldsatser og forstyrrelser i forsyningskæden i 2026",
+              "summary": "AI-genereret resumé: En undersøgelse fra 2026 af Ship4wd blandt 500 små og mellemstore virksomheder i USA viser, at 96 % kæmper med toldvolatilitet, stigende logistikomkostninger og vedvarende forstyrrelser i forsyningskæden, der påvirker deres drift."
+            },
+            "es": {
+              "title": "Informe: Las pymes luchan por hacer frente a los aranceles y las interrupciones en la cadena de suministro en 2026",
+              "summary": "Resumen generado por IA: Una encuesta de 2026 realizada por Ship4wd a 500 pequeñas y medianas empresas de EE.UU. revela que el 96 % enfrenta dificultades debido a la volatilidad de los aranceles, el aumento de los costos logísticos y las continuas interrupciones en la cadena de suministro que afectan sus operaciones."
+            }
+          }
+        }
+      ]
+    },
+    "Luxury_and_Consumer": {
+      "total": 106,
+      "top": [
+        {
+          "id": "ecfw9b",
+          "title": "Knowledge Report | Building Cultural Relevance on TikTok",
+          "url": "https://www.businessoffashion.com/reports/marketing-pr/tiktok-marketing-strategy-fandoms/",
+          "source": "Business of Fashion - News",
+          "published_at": "2026-05-21T03:00:00.000Z",
+          "ingested_at": "2026-05-24T08:38:58.112Z",
+          "snippet": "To recapture consumer attention and inspire loyalty, brands and publishers are exploring new creative approaches on TikTok. This knowledge report examines how players in the fashion, beauty and media industries can leverage cultural capital and creator partnerships to grow their own fan communities.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "consumer",
+              "brand"
+            ]
+          },
+          "aiSummary": "AI-generated summary: The article from Business of Fashion explores how brands and publishers in fashion, beauty, and media are using creative strategies on TikTok, including cultural capital and creator partnerships, to engage consumers and build loyal fan communities.",
+          "translations": {
+            "da": {
+              "title": "Knowledge Report | Opbygning af kulturel relevans på TikTok",
+              "summary": "AI-genereret resumé: Artiklen fra Business of Fashion undersøger, hvordan brands og udgivere inden for mode, skønhed og medier bruger kreative strategier på TikTok, herunder kulturel kapital og samarbejder med skabere, for at engagere forbrugere og opbygge loyale fanfællesskaber."
+            },
+            "es": {
+              "title": "Knowledge Report | Construyendo relevancia cultural en TikTok",
+              "summary": "Resumen generado por IA: El artículo de Business of Fashion explora cómo marcas y editoriales en moda, belleza y medios están utilizando estrategias creativas en TikTok, incluyendo capital cultural y asociaciones con creadores, para involucrar a los consumidores y construir comunidades de fans leales."
+            }
+          }
+        },
+        {
+          "id": "4fgjvy",
+          "title": "Shein Reportedly (and Confusingly) Acquires Everlane",
+          "url": "https://fashionista.com/2026/05/shein-acquires-everlane",
+          "source": "Fashionista",
+          "published_at": "2026-05-18T14:22:35.000Z",
+          "ingested_at": "2026-05-24T08:38:58.112Z",
+          "snippet": "Is the ultra fast-fashion giant looking for a reputational facelift by buying the sustainable direct-to-consumer brand?",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "consumer",
+              "brand"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Shein has reportedly acquired the sustainable direct-to-consumer brand Everlane, raising questions about whether the fast-fashion giant is seeking to improve its reputation.",
+          "translations": {
+            "da": {
+              "title": "Shein har angiveligt (og forvirrende) opkøbt Everlane",
+              "summary": "AI-genereret resumé: Shein har angiveligt opkøbt det bæredygtige direct-to-consumer brand Everlane, hvilket rejser spørgsmål om, hvorvidt fast fashion-giganten søger at forbedre sit omdømme."
+            },
+            "es": {
+              "title": "Shein supuestamente (y confusamente) adquiere Everlane",
+              "summary": "Resumen generado por IA: Se informa que Shein ha adquirido la marca sostenible directa al consumidor Everlane, lo que plantea dudas sobre si el gigante de la moda rápida busca mejorar su reputación."
+            }
+          }
+        },
+        {
+          "id": "tj1g3v",
+          "title": "Chanel Returns to Growth as Blazymania Kicks In",
+          "url": "https://www.businessoffashion.com/articles/luxury/chanel-earnings-results-matthieu-blazy-return-to-growth/",
+          "source": "Business of Fashion - News",
+          "published_at": "2026-05-19T16:00:00.000Z",
+          "ingested_at": "2026-05-24T08:38:58.112Z",
+          "snippet": "The French giant, which returned to high single-digit growth at the end of 2025 on the wings of designer Matthieu Blazy’s brand revamp, plans to maintain elevated investment levels while limiting price increases this year, CEO Leena Nair and CFO Philippe Blondiaux said.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "brand"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Chanel experienced a return to high single-digit growth by the end of 2025, driven by designer Matthieu Blazy’s brand revamp. The company plans to continue significant investments while keeping price increases limited in 2026, according to CEO Leena Nair and CFO Philippe Blondiaux.",
+          "translations": {
+            "da": {
+              "title": "Chanel vender tilbage til vækst, da Blazymania tager fart",
+              "summary": "AI-genereret resumé: Chanel oplevede en tilbagevenden til høj ensifret vækst ved udgangen af 2025, drevet af designer Matthieu Blazys brandfornyelse. Virksomheden planlægger at fortsætte betydelige investeringer samtidig med at prisstigninger holdes begrænsede i 2026, ifølge CEO Leena Nair og CFO Philippe Blondiaux."
+            },
+            "es": {
+              "title": "Chanel vuelve al crecimiento mientras Blazymania se intensifica",
+              "summary": "Resumen generado por IA: Chanel experimentó un retorno a un crecimiento alto de un solo dígito a finales de 2025, impulsado por la renovación de la marca del diseñador Matthieu Blazy. La compañía planea continuar con inversiones significativas mientras mantiene limitados los aumentos de precios en 2026, según la CEO Leena Nair y el CFO Philippe Blondiaux."
+            }
+          }
+        },
+        {
+          "id": "ovd00i",
+          "title": "How This Luxury Boutique Founder Is Introducing Emerging Labels to Toronto Shoppers",
+          "url": "https://fashionista.com/2026/05/kaelen-haworth-absolutely-fabrics-founder-interview",
+          "source": "Fashionista",
+          "published_at": "2026-05-22T14:00:00.000Z",
+          "ingested_at": "2026-05-24T08:38:58.112Z",
+          "snippet": "Watch Absolutely Fabrics' Founder Kaelen Haworth discuss multi-brand retail's resurgence, its new Summerhill flagship and more on The Fashionista Network.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "luxury",
+              "brand"
+            ]
+          },
+          "aiSummary": "AI-generated summary: In the Fashionista article dated May 22, 2026, Absolutely Fabrics' founder Kaelen Haworth discusses the resurgence of multi-brand retail and the opening of the new Summerhill flagship store, highlighting efforts to introduce emerging labels to Toronto shoppers.",
+          "translations": {
+            "da": {
+              "title": "Hvordan denne luksusbutikgrundlægger introducerer nye mærker til shoppere i Toronto",
+              "summary": "AI-genereret resumé: I Fashionista-artiklen fra den 22. maj 2026 diskuterer Absolutely Fabrics' grundlægger Kaelen Haworth genopblomstringen af multi-brand detailhandel og åbningen af den nye Summerhill flagskibsbutik med fokus på at introducere nye mærker til shoppere i Toronto."
+            },
+            "es": {
+              "title": "Cómo esta fundadora de boutique de lujo está presentando marcas emergentes a compradores de Toronto",
+              "summary": "Resumen generado por IA: En el artículo de Fashionista del 22 de mayo de 2026, Kaelen Haworth, fundadora de Absolutely Fabrics, habla sobre el resurgimiento del comercio minorista multimarcas y la apertura de la nueva tienda insignia Summerhill, destacando los esfuerzos para presentar marcas emergentes a los compradores de Toronto."
+            }
+          }
+        },
+        {
+          "id": "3svyot",
+          "title": "Phoebe Philo’s Former Wholesale Director Believes an Indie Retail Renaissance Is Coming",
+          "url": "https://fashionista.com/2026/05/agency-parnell-luxury-wholesale-consultant-interview",
+          "source": "Fashionista",
+          "published_at": "2026-05-20T12:45:00.000Z",
+          "ingested_at": "2026-05-24T08:38:58.112Z",
+          "snippet": "Nicholas Parnell's new agency offers hands-on assistance to luxury brands looking to scale their distribution in a thoughtful way.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "luxury",
+              "brand"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Nicholas Parnell, Phoebe Philo’s former wholesale director, has launched a new agency providing hands-on support to luxury brands aiming to thoughtfully expand their distribution, signaling a potential renaissance for indie retail.",
+          "translations": {
+            "da": {
+              "title": "Phoebe Philos tidligere engrosdirektør tror på en indie detailhandelens renæssance",
+              "summary": "AI-genereret resumé: Nicholas Parnell, Phoebe Philos tidligere engrosdirektør, har lanceret et nyt bureau, der yder praktisk støtte til luksusmærker, som ønsker at udvide deres distribution med omtanke, hvilket signalerer en potentiel renæssance for indie detailhandel."
+            },
+            "es": {
+              "title": "El exdirector mayorista de Phoebe Philo cree que se acerca un renacimiento del comercio minorista independiente",
+              "summary": "Resumen generado por IA: Nicholas Parnell, exdirector mayorista de Phoebe Philo, ha lanzado una nueva agencia que ofrece apoyo práctico a marcas de lujo que buscan expandir su distribución de manera reflexiva, señalando un posible renacimiento del comercio minorista independiente."
+            }
+          }
+        },
+        {
+          "id": "6djf85",
+          "title": "In Defence of the Millennial Dream ",
+          "url": "https://www.businessoffashion.com/briefings/retail/in-defence-of-the-millennial-dream/",
+          "source": "Business of Fashion - News",
+          "published_at": "2026-05-22T19:00:00.000Z",
+          "ingested_at": "2026-05-24T08:38:58.112Z",
+          "snippet": "Don’t mistake Everlane’s reported sale to Shein for a generational eulogy. The ideals the brand helped popularise — conscious, informed consumption — are still very much alive.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "brand"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Despite Everlane's reported sale to Shein, the brand's core values of conscious and informed consumption remain influential and continue to resonate with consumers.",
+          "translations": {
+            "da": {
+              "title": "Til forsvar for millennial-drømmen",
+              "summary": "AI-genereret resumé: På trods af Everlanes rapporterede salg til Shein forbliver brandets kerneværdier om bevidst og informeret forbrug indflydelsesrige og fortsætter med at resonere hos forbrugerne."
+            },
+            "es": {
+              "title": "En defensa del sueño millennial",
+              "summary": "Resumen generado por IA: A pesar de la venta reportada de Everlane a Shein, los valores centrales de la marca sobre el consumo consciente e informado siguen siendo influyentes y continúan resonando con los consumidores."
+            }
+          }
+        },
+        {
+          "id": "bdyl1i",
+          "title": "China's JD.com weighs £2 billion bid for UK retailer The Very Group: Report ",
+          "url": "https://economictimes.indiatimes.com/tech/technology/chinas-jd-com-weighs-2-billion-bid-for-uk-retailer-the-very-group-report/articleshow/131266342.cms",
+          "source": "Economic Times - Technology",
+          "published_at": "2026-05-22T17:18:03.000Z",
+          "ingested_at": "2026-05-24T08:38:58.112Z",
+          "snippet": "The move would follow JD.com's ​earlier UK efforts, including its failed takeover bid for electricals group ​Currys and its decision ⁠last year ‌to walk away ​from ​talks to acquire Argos ⁠from Sainsbury's.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": []
+          },
+          "aiSummary": "AI-generated summary: China's JD.com is reportedly considering a £2 billion bid for UK retailer The Very Group, following previous unsuccessful attempts to acquire Currys and Argos in the UK market.",
+          "translations": {
+            "da": {
+              "title": "Kinas JD.com overvejer bud på 2 milliarder pund for den britiske detailhandler The Very Group: Rapport",
+              "summary": "AI-genereret resumé: Kinas JD.com overvejer angiveligt et bud på 2 milliarder pund for den britiske detailhandler The Very Group efter tidligere mislykkede forsøg på at erhverve Currys og Argos på det britiske marked."
+            },
+            "es": {
+              "title": "JD.com de China considera una oferta de £2 mil millones por el minorista británico The Very Group: Informe",
+              "summary": "Resumen generado por IA: JD.com de China estaría considerando una oferta de £2 mil millones por el minorista británico The Very Group, tras intentos previos fallidos de adquirir Currys y Argos en el mercado del Reino Unido."
+            }
+          }
+        }
+      ]
+    },
+    "Jewellery_Industry": {
+      "total": 21,
+      "top": [
+        {
+          "id": "hivzh2",
+          "title": "Overnight Mountings Launches Ring Builder and Expands Into B2B Jewelry Tech",
+          "url": "https://instoremag.com/overnight-mountings-launches-ring-builder-and-expands-into-b2b-jewelry-tech/",
+          "source": "Instore Magazine",
+          "published_at": "2026-05-22T21:35:29.000Z",
+          "ingested_at": "2026-05-24T08:38:58.112Z",
+          "snippet": "New York jewelry manufacturer introduces retailer-focused digital infrastructure at JCK Las Vegas as the industry shifts toward customization and connected commerce.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "jewelry",
+              "retailer"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Overnight Mountings, a New York jewelry manufacturer, has launched Ring Builder, a retailer-focused digital platform, and is expanding into B2B jewelry technology, reflecting the industry's move toward customization and connected commerce. This announcement was made at JCK Las Vegas.",
+          "translations": {
+            "da": {
+              "title": "Overnight Mountings lancerer Ring Builder og udvider til B2B smykketeknologi",
+              "summary": "AI-genereret resumé: Overnight Mountings, en smykkeproducent fra New York, har lanceret Ring Builder, en digital platform rettet mod detailhandlere, og udvider til B2B smykketeknologi, hvilket afspejler branchens bevægelse mod tilpasning og forbundet handel. Denne meddelelse blev givet på JCK Las Vegas."
+            },
+            "es": {
+              "title": "Overnight Mountings lanza Ring Builder y se expande en tecnología de joyería B2B",
+              "summary": "Resumen generado por IA: Overnight Mountings, un fabricante de joyas de Nueva York, ha lanzado Ring Builder, una plataforma digital enfocada en minoristas, y se está expandiendo en tecnología de joyería B2B, reflejando el movimiento de la industria hacia la personalización y el comercio conectado. Este anuncio se hizo en JCK Las Vegas."
+            }
+          }
+        },
+        {
+          "id": "fnlzed",
+          "title": "Are Rising Gold Prices Costing You on Every Repair?",
+          "url": "https://instoremag.com/are-rising-gold-prices-costing-you-on-every-repair/",
+          "source": "Instore Magazine",
+          "published_at": "2026-05-22T01:00:59.000Z",
+          "ingested_at": "2026-05-24T08:38:58.112Z",
+          "snippet": "If your pricing hasn't changed since gold was $3,000, it's not just outdated — it's actively eroding your margins job by job.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "gold"
+            ]
+          },
+          "aiSummary": "AI-generated summary: The article from Instore Magazine (2026-05-22) highlights that jewellery repair pricing not updated since gold was $3,000 is causing businesses to lose profit margins on each job due to rising gold prices.",
+          "translations": {
+            "da": {
+              "title": "Koster stigende guldpriser dig på hver reparation?",
+              "summary": "AI-genereret resumé: Artiklen fra Instore Magazine (2026-05-22) fremhæver, at priserne på smykkereparationer, som ikke er opdateret siden guldet kostede $3.000, får virksomheder til at miste fortjenstmargener på hver opgave på grund af stigende guldpriser."
+            },
+            "es": {
+              "title": "¿Te están costando las subidas del precio del oro en cada reparación?",
+              "summary": "Resumen generado por IA: El artículo de Instore Magazine (22-05-2026) destaca que los precios de reparación de joyas no actualizados desde que el oro estaba a $3,000 están haciendo que las empresas pierdan márgenes de beneficio en cada trabajo debido al aumento del precio del oro."
+            }
+          }
+        },
+        {
+          "id": "bxijia",
+          "title": "Skip the Diamond Room, Mine Your Mailing List for Hires, and More Tips for June",
+          "url": "https://instoremag.com/more-jeweler-tips-for-june/",
+          "source": "Instore Magazine",
+          "published_at": "2026-05-22T02:00:07.000Z",
+          "ingested_at": "2026-05-24T08:38:58.112Z",
+          "snippet": "Plus: the \"sweet spot\" your salespeople should be standing in.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "diamond"
+            ]
+          },
+          "aiSummary": "AI-generated summary: The article from Instore Magazine dated May 22, 2026, offers practical hiring advice for the jewellery industry, including leveraging your existing mailing list and identifying the optimal sales floor position for salespeople.",
+          "translations": {
+            "da": {
+              "title": "Spring Diamond Room over, brug din mailingliste til ansættelser og flere tips til juni",
+              "summary": "AI-genereret resumé: Artiklen fra Instore Magazine den 22. maj 2026 giver praktiske ansættelsestips til smykkeindustrien, herunder brug af din eksisterende mailingliste og identificering af den optimale salgsplads for sælgere."
+            },
+            "es": {
+              "title": "Omite la Diamond Room, usa tu lista de correo para contrataciones y más consejos para junio",
+              "summary": "Resumen generado por IA: El artículo de Instore Magazine del 22 de mayo de 2026 ofrece consejos prácticos de contratación para la industria de la joyería, incluyendo aprovechar tu lista de correo existente e identificar la posición óptima en el piso de ventas para los vendedores."
+            }
+          }
+        },
+        {
+          "id": "64zf9i",
+          "title": "Another jump in sales for Australian jewellers",
+          "url": "https://www.jewellermagazine.com/Article/15065/Another-jump-in-sales-for-Australian-jewellers",
+          "source": "Jeweller - Business News",
+          "published_at": "2026-05-18T14:00:00.000Z",
+          "ingested_at": "2026-05-24T08:38:58.112Z",
+          "snippet": "Sales analysis of independent jewellery stores across Australia has been headlined by another increase in April.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.04999999999999999,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0.05,
+            "penalty": 0.2,
+            "matchedKeywords": [
+              "jeweller",
+              "jewellery"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Independent jewellery stores across Australia experienced another increase in sales in April, continuing an upward trend in the jewellery industry, according to a sales analysis reported by Jeweller - Business News on May 18, 2026.",
+          "translations": {
+            "da": {
+              "title": "Endnu et spring i salget for australske juvelerer",
+              "summary": "AI-genereret resumé: Uafhængige smykkebutikker i hele Australien oplevede endnu en stigning i salget i april, hvilket fortsætter en opadgående tendens i smykkeindustrien, ifølge en salgsanalyse rapporteret af Jeweller - Business News den 18. maj 2026."
+            },
+            "es": {
+              "title": "Otro aumento en las ventas para joyeros australianos",
+              "summary": "Resumen generado por IA: Las tiendas de joyería independientes en toda Australia experimentaron otro aumento en las ventas en abril, continuando una tendencia al alza en la industria de la joyería, según un análisis de ventas reportado por Jeweller - Business News el 18 de mayo de 2026."
+            }
+          }
+        },
+        {
+          "id": "8kgxzh",
+          "title": "Factors impacting retailers in the 2026 Federal Budget",
+          "url": "https://www.jewellermagazine.com/Article/15057/Factors-impacting-retailers-in-the-2026-Federal-Budget",
+          "source": "Jeweller - Business News",
+          "published_at": "2026-05-18T14:00:00.000Z",
+          "ingested_at": "2026-05-24T08:38:58.112Z",
+          "snippet": "Retail industry representatives have welcomed several measures in the Australian Government's Federal Budget 2026, although trade leaders note that trading conditions remain challenging.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": -0.04999999999999999,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0.2,
+            "matchedKeywords": [
+              "retailer"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Retail industry representatives in the jewellery sector have welcomed several measures in the Australian Government's 2026 Federal Budget, though trade leaders acknowledge that trading conditions continue to be challenging.",
+          "translations": {
+            "da": {
+              "title": "Faktorer der påvirker detailhandlere i den føderale budget 2026",
+              "summary": "AI-genereret resumé: Repræsentanter for detailbranchen inden for smykkeindustrien har taget godt imod flere tiltag i den australske regerings føderale budget for 2026, selvom handelsledere erkender, at handelsforholdene fortsat er udfordrende."
+            },
+            "es": {
+              "title": "Factores que afectan a los minoristas en el Presupuesto Federal 2026",
+              "summary": "Resumen generado por IA: Los representantes de la industria minorista en el sector de joyería han recibido con agrado varias medidas en el Presupuesto Federal 2026 del Gobierno Australiano, aunque los líderes comerciales reconocen que las condiciones comerciales siguen siendo desafiantes."
+            }
+          }
+        },
+        {
+          "id": "gssgv3",
+          "title": "Clarindon Jewellers receives positive response following official launch",
+          "url": "https://www.watchpro.com/clarindon-jewellers-officially-launch/",
+          "source": "WatchPro",
+          "published_at": "2026-05-18T09:30:24.000Z",
+          "ingested_at": "2026-05-24T08:38:58.112Z",
+          "snippet": "James and Sophie Sellors have officially launched Clarindon Jewellers, a new British independent luxury retailer focused on fine jewellery, independent brands, and Swiss and German watchmakers within a private client-led retail environment. The husband-and-wife team bring 40 years of combined family heritage and experience within the jewellery and watch sector, with James Sellors previously serving […]\nThe post Clarindon Jewellers receives positive response following official launch appeared fir...",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.2,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "jeweller",
+              "jewellery",
+              "retailer",
+              "watch"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Clarindon Jewellers, a new British independent luxury retailer specializing in fine jewellery and Swiss and German watchmakers, was officially launched by James and Sophie Sellors, who bring 40 years of combined family experience to the business. The launch has received a positive response.",
+          "translations": {
+            "da": {
+              "title": "Clarindon Jewellers modtager positiv respons efter officiel lancering",
+              "summary": "AI-genereret resumé: Clarindon Jewellers, en ny britisk uafhængig luksusforhandler specialiseret i fint smykke og schweiziske og tyske urmærker, blev officielt lanceret af James og Sophie Sellors, som bringer 40 års samlet familieerfaring til virksomheden. Lanceringen har modtaget en positiv respons."
+            },
+            "es": {
+              "title": "Clarindon Jewellers recibe respuesta positiva tras su lanzamiento oficial",
+              "summary": "Resumen generado por IA: Clarindon Jewellers, un nuevo minorista británico independiente de lujo especializado en joyería fina y relojes suizos y alemanes, fue lanzado oficialmente por James y Sophie Sellors, quienes aportan 40 años de experiencia familiar combinada al negocio. El lanzamiento ha recibido una respuesta positiva."
+            }
+          }
+        },
+        {
+          "id": "c53zdi",
+          "title": "Searay appointed as distributor for Yehuda’s new diamond detection tech",
+          "url": "https://www.jewellermagazine.com/Article/15063/Searay-appointed-as-distributor-for-Yehudas-new-diamond-detection-tech",
+          "source": "Jeweller - Business News",
+          "published_at": "2026-05-18T14:00:00.000Z",
+          "ingested_at": "2026-05-24T08:38:58.112Z",
+          "snippet": "Local jewellery industry supplier Searay has announced its appointment as the Australian and New Zealand distributor for Yehuda’s Sherlock Holmes line of diamond detection technology.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.25,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "diamond",
+              "jewellery",
+              "jeweller"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Searay has been appointed as the distributor for Yehuda’s Sherlock Holmes diamond detection technology in Australia and New Zealand, according to a May 2026 announcement in Jeweller - Business News.",
+          "translations": {
+            "da": {
+              "title": "Searay udnævnt som distributør for Yehudas nye diamantdetektionsteknologi",
+              "summary": "AI-genereret resumé: Searay er blevet udnævnt som distributør for Yehudas Sherlock Holmes diamantdetektionsteknologi i Australien og New Zealand, ifølge en meddelelse fra maj 2026 i Jeweller - Business News."
+            },
+            "es": {
+              "title": "Searay nombrado distribuidor de la nueva tecnología de detección de diamantes de Yehuda",
+              "summary": "Resumen generado por IA: Searay ha sido nombrado distribuidor de la tecnología de detección de diamantes Sherlock Holmes de Yehuda en Australia y Nueva Zelanda, según un anuncio de mayo de 2026 en Jeweller - Business News."
+            }
+          }
+        }
+      ]
+    }
+  },
+  "editorialTake": "Nvidia’s Jensen Huang declaring a new $200 billion market for AI-specific CPUs is a clear signal that AI hardware is no longer a niche play. Lenovo’s nearly 20% share jump on record earnings, fueled by AI revenue doubling, proves the demand is real and immediate. This isn’t about software hype anymore: it’s about the physical infrastructure powering AI at scale. Companies ignoring this hardware surge risk missing the foundation of AI’s next growth phase.\n\nGoogle’s Universal Cart aiming to track and unify shopping across devices is a bold move to own the entire ecommerce journey, not just isolated transactions. Klarna embedding AI search within ChatGPT shows payments and search are merging into conversational commerce. The tension is obvious: who controls the shopper’s intent and data when discovery, payment, and fulfillment blur? The real question is whether any single player can build a seamless, cross-platform commerce experience without sparking privacy backlash or regulatory pushback.",
+  "coverImageUrl": "/weekly-images/2026-W21.png",
+  "coverImageAlt": "Weekly cover illustration for 2026-W21"
+}

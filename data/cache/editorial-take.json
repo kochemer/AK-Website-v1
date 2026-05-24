@@ -34,5 +34,11 @@
     "cached_at": "2026-05-17T08:42:34.901Z",
     "model": "gpt-4.1-mini",
     "version": "1.1"
+  },
+  "2026-W21:d75171398898": {
+    "editorialTake": "Meta’s decision to cut AI hiring by 30% while doubling down on generative AI tools exposes a brutal reckoning in tech: scale and ambition no longer guarantee growth. They are slashing costs not because AI is a fad, but because the economics of AI-powered social platforms are proving far tougher than expected. This signals a shift from chasing endless user engagement to focusing on monetization and sustainable AI investments.\n\nLuxury brands investing heavily in AI-driven ecommerce personalization face a stark challenge: can they justify AI spend when giants like Meta are pulling back? The tension between AI’s promise to transform customer experience and the harsh reality of its ROI is intensifying. My question: will luxury brands double down on AI as a competitive moat or retreat to proven, high-touch service models when the numbers don’t add up?",
+    "cached_at": "2026-05-24T13:36:03.921Z",
+    "model": "gpt-4.1-mini",
+    "version": "1.1"
   }
 }

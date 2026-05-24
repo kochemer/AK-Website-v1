@@ -1,0 +1,16 @@
+{
+  "concept": "universal-cart-ring-builder-fish-out-of-water",
+  "primaryHumorDriver": "fish-out-of-water",
+  "secondaryEnhancer": "unexpected texture/material combination",
+  "sceneDescription": "On a supermarket checkout conveyor belt, a classic metal shopping cart sits miniaturized beside a gold ring mounting holding a plastic barcode scanner instead of a gemstone. A partially filled bag of groceries (apples, bread) is propped awkwardly inside the cart, and a small, subtle Instore Magazine logo is on a sticker on the ring’s prong. Nearby, a paper receipt spills out of a TechCrunch-branded takeaway coffee cup. The ordinary objects combined with luxury jewelry parts, and the absurd barcode-scanner ring, create a witty mashup of commerce, tech, and jewelry industry themes.",
+  "finalImagePrompt": "A supermarket checkout conveyor belt holds a mini shopping cart filled with groceries, next to a gold ring mounting that holds a plastic barcode scanner where a gem would be. A paper coffee cup with a TechCrunch sticker and a bag with a subtle Instore Magazine logo are nearby. The scene is brightly lit and photorealistic, with all objects looking real and touchable.",
+  "negativePrompt": [
+    "text, letters, numbers, signage, labels, price tags",
+    "screens, UI, dashboards, holograms, floating icons",
+    "watermarks, unrelated brand logos",
+    "cartoon, illustration, CGI, 3D render, anime",
+    "diamond, diamonds, gemstone, gemstones, precious stones, jewelry close-up, jewelry product shot, diamond ring, diamond necklace, diamond earring, jeweled, sparkling gemstone",
+    "dramatic spotlight, glowing edges, rim lighting, vignette, cinematic color grade, blurred background, bokeh"
+  ],
+  "confidence": 0.73
+}

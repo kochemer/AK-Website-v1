@@ -1,0 +1,99 @@
+{
+  "week": "2026-W21",
+  "generatedAt": "2026-05-24T13:45:37.392Z",
+  "intro": "In this week’s digest, leading tech and retail innovators unveil transformative AI-driven commerce solutions, from Google’s Universal Cart enhancing seamless shopping journeys to Klarna’s AI-powered search within ChatGPT. Meanwhile, industry shifts emerge with Overnight Mountings expanding B2B jewelry tech and Nvidia identifying a new $200B market, underscoring the accelerating convergence of luxury, retail, and artificial intelligence.",
+  "readOneThing": {
+    "title": "Google unveils its new Universal Cart for agentic commerce",
+    "url": "https://www.digitalcommerce360.com/2026/05/20/google-universal-cart-for-agentic-commerce/"
+  },
+  "items": [
+    {
+      "rank": 1,
+      "title": "Google unveils its new Universal Cart for agentic commerce",
+      "url": "https://www.digitalcommerce360.com/2026/05/20/google-universal-cart-for-agentic-commerce/",
+      "source": "Digital Commerce 360",
+      "bullets": [
+        "Google introduced the Universal Cart at its annual Google I/O developer conference, enabling AI-driven multi-merchant ecommerce transactions across various Google platforms.",
+        "The Universal Cart uses Google's Gemini AI models to provide real-time deal alerts, price history insights, and compatibility recommendations while integrating payment perks from Google Wallet.",
+        "The tool will launch in the U.S. this summer on Google Search and the Gemini app, with expansions planned for YouTube and Gmail, featuring products from major merchants like Nike, Target, and Ulta Beauty."
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "Overnight Mountings Launches Ring Builder and Expands Into B2B Jewelry Tech",
+      "url": "https://instoremag.com/overnight-mountings-launches-ring-builder-and-expands-into-b2b-jewelry-tech/",
+      "source": "Instore Magazine",
+      "bullets": [
+        "The platform supports retailer-branded interfaces for both in-store and online sales, aligning customer choices directly with manufacturing capabilities and production processes.",
+        "Read the full article for details.",
+        "Read the full article for details."
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "Jensen Huang says he’s found a ‘brand new’ $200B market for Nvidia",
+      "url": "https://techcrunch.com/2026/05/20/jensen-huang-says-hes-found-a-brand-new-200b-market-for-nvidia/",
+      "source": "TechCrunch - AI",
+      "bullets": [
+        "Nvidia CEO Jensen Huang introduced the Vera CPU, designed specifically for agentic AI, during the company's earnings call, positioning it as a transformative product.",
+        "Nvidia has already sold $20 billion worth of standalone Vera CPUs this year, signaling strong early market adoption for the new product.",
+        "Huang stated that Vera opens a new $200 billion total addressable market for Nvidia, targeting billions of AI agents expected to use CPU-driven tools in the future."
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "Knowledge Report | Building Cultural Relevance on TikTok",
+      "url": "https://www.businessoffashion.com/reports/marketing-pr/tiktok-marketing-strategy-fandoms/",
+      "source": "Business of Fashion - News",
+      "bullets": [
+        "Fashion, beauty, and media brands are leveraging TikTok to build cultural relevance through creative content and partnerships with popular creators.",
+        "These collaborations have led to increased consumer engagement and the formation of loyal fan communities around specific brands and products.",
+        "The trend has accelerated over the past year as TikTok's user base expanded globally, influencing marketing strategies across multiple industries."
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "Google’s new Universal Cart wants to follow your entire shopping journey across the internet",
+      "url": "https://techcrunch.com/2026/05/19/googles-new-universal-cart-wants-to-follow-your-entire-shopping-journey-across-the-internet/",
+      "source": "TechCrunch - Commerce",
+      "bullets": [
+        "Google introduced Universal Cart at Google I/O, a centralized shopping hub that tracks products and price changes across multiple Google services.",
+        "The Agent Payments Protocol (AP2) allows AI agents to make payments on users' behalf within set limits, ensuring secure and verifiable transactions.",
+        "Universal Cart is launching in the U.S. with plans to expand to the Gemini app, YouTube, Gmail, and international markets like Canada, Australia, and the U.K."
+      ]
+    },
+    {
+      "rank": 6,
+      "title": "Hark raises $700M Series A for its secretive ‘universal’ AI interface",
+      "url": "https://techcrunch.com/2026/05/21/hark-raises-700m-series-a-for-its-secretive-universal-ai-interface/",
+      "source": "TechCrunch - AI",
+      "bullets": [
+        "Hark, an AI lab focused on building models and hardware for a personal AI assistant, raised $700 million in a Series A funding round valued at $6 billion post-money.",
+        "The funding round was led by Parkway Venture Capital and included major investors such as Nvidia, AMD Ventures, Intel Capital, and Salesforce Ventures.",
+        "Hark plans to release its first multimodal AI models this summer and develop hardware devices tailored for these systems, currently employing 70 people and operating a data center with Nvidia B200 GPUs."
+      ]
+    },
+    {
+      "rank": 7,
+      "title": "Are Rising Gold Prices Costing You on Every Repair?",
+      "url": "https://instoremag.com/are-rising-gold-prices-costing-you-on-every-repair/",
+      "source": "Instore Magazine",
+      "bullets": [
+        "Gold prices have nearly doubled since 2025, rising from $2,000-$3,000 to $4,500-$5,000, impacting jewelry repair pricing significantly.",
+        "Repair shops that have not updated their pricing since gold was $3,000 are losing money on every job due to outdated rates.",
+        "Jonathan Geller, a 15th-generation jeweler, advises building tiered pricing structures to adapt to fluctuating gold market conditions effectively."
+      ]
+    },
+    {
+      "rank": 8,
+      "title": "Klarna releases AI search app for shopping in ChatGPT",
+      "url": "https://www.digitalcommerce360.com/2026/05/20/klarna-ai-shopping-search-app-openai-chatgpt/",
+      "source": "Digital Commerce 360",
+      "bullets": [
+        "Klarna launched an AI-powered Shopping Search app within OpenAI's ChatGPT that allows users to find products with real-time prices and availability from multiple merchants.",
+        "The app connects to Klarna's Product Search MCP server, providing access to over 100 million products across 400 million listings in 13 markets.",
+        "In May 2026, Klarna also partnered with Google to offer buy now, pay later options through Google AI Mode, coinciding with Google's Universal Cart announcement at the Google I/O conference."
+      ]
+    }
+  ]
+}
