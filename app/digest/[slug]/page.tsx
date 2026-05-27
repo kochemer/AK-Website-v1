@@ -91,6 +91,18 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   };
 }
 
+export async function generateStaticParams() {
+  try {
+    const digestsDir = path.join(process.cwd(), 'data', 'digests');
+    const files = await fs.readdir(digestsDir);
+    return files
+      .filter(file => /^\d{4}-W\d{1,2}\.json$/.test(file))
+      .map(file => ({ slug: weekLabelToSlug(file.replace('.json', '')) }));
+  } catch {
+    return [];
+  }
+}
+
 async function loadDigest(weekLabel: string): Promise<WeeklyDigest | null> {
   // Defense-in-depth: ensure weekLabel is strictly YYYY-Www before building the path.
   // slugToWeekLabel already validates this, but we guard here too in case the

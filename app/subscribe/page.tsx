@@ -1,8 +1,25 @@
 import fs from 'fs';
 import path from 'path';
 import Link from 'next/link';
+import type { Metadata } from 'next';
 import SubscribePricing from '../components/SubscribePricing';
 import AnalyticsSubscribeView from '../components/AnalyticsSubscribeView';
+import { getSiteUrl } from '@/lib/utils/siteUrl';
+
+const siteUrl = getSiteUrl();
+
+export const metadata: Metadata = {
+  title: 'Support Luxury Intelligence – Back the Brief',
+  description: 'Support Luxury Intelligence with a free or paid subscription. Keep the weekly AI, ecommerce, luxury, and jewellery digest running.',
+  alternates: {
+    canonical: `${siteUrl}/subscribe`,
+  },
+  openGraph: {
+    title: 'Support Luxury Intelligence – Back the Brief',
+    description: 'Support Luxury Intelligence with a free or paid subscription. Keep the weekly AI, ecommerce, luxury, and jewellery digest running.',
+    images: [`${siteUrl}/api/og`],
+  },
+};
 
 // ── Resolve the most recent cover image available ─────────────────────────────
 

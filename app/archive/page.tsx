@@ -13,10 +13,32 @@ import { DateTime } from 'luxon';
 import type { Metadata } from 'next';
 import { formatDateRange } from '@/lib/utils/formatDate';
 import { weekLabelToSlug } from '@/lib/utils/weekSlug';
+import { getSiteUrl } from '@/lib/utils/siteUrl';
+
+const siteUrl = getSiteUrl();
 
 export const metadata: Metadata = {
-  title: 'Archive – All Weekly Digests',
+  title: 'Archive – All Weekly Digests | Luxury Intelligence',
   description: 'Browse all editions of the Luxury Intelligence weekly digest. Weekly analysis of AI, ecommerce, jewellery, and luxury industry news.',
+  alternates: {
+    canonical: `${siteUrl}/archive`,
+    languages: {
+      'en': `${siteUrl}/archive`,
+      'es': `${siteUrl}/es/archive`,
+      'da': `${siteUrl}/da/archive`,
+      'x-default': `${siteUrl}/archive`,
+    },
+  },
+  openGraph: {
+    title: 'Archive – All Weekly Digests | Luxury Intelligence',
+    description: 'Browse all editions of the Luxury Intelligence weekly digest. Weekly analysis of AI, ecommerce, jewellery, and luxury industry news.',
+    images: [`${siteUrl}/api/og`],
+  },
+  twitter: {
+    title: 'Archive – All Weekly Digests | Luxury Intelligence',
+    description: 'Browse all editions of the Luxury Intelligence weekly digest. Weekly analysis of AI, ecommerce, jewellery, and luxury industry news.',
+    images: [`${siteUrl}/api/og`],
+  },
 };
 
 async function getAvailableDigests(): Promise<string[]> {
