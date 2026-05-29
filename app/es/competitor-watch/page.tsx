@@ -3,7 +3,7 @@ import { loadCompetitorArticles } from '@/lib/utils/loadCompetitorArticles';
 import { loadCompetitorIntel } from '@/lib/utils/loadCompetitorIntel';
 import CompetitorWatchContent from '@/app/competitor-watch/CompetitorWatchContent';
 
-export const metadata: Metadata = { robots: { index: false, follow: false } };
+export const metadata: Metadata = { robots: { index: false, follow: true } };
 
 export const dynamic = 'force-dynamic';
 

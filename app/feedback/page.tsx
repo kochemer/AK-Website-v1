@@ -2,7 +2,7 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 import FeedbackForm from '../components/FeedbackForm';
 
-export const metadata: Metadata = { robots: { index: false, follow: false } };
+export const metadata: Metadata = { robots: { index: false, follow: true } };
 
 export default function FeedbackPage() {
   const formAction =

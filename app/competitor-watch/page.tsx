@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   title: 'Competitor Watch — Jewellery Brand Intelligence | Luxury Intelligence',
   description:
     "Track news and coverage of Pandora's key jewellery competitors: Tiffany, Cartier, De Beers, Signet, Swarovski, Mejuri, Monica Vinader, Bulgari, and Van Cleef & Arpels.",
-  robots: { index: false, follow: false },
+  robots: { index: false, follow: true },
   alternates: {
     canonical: `${siteUrl}/competitor-watch`,
   },

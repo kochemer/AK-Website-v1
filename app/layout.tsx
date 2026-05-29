@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import { headers } from "next/headers";
 import { Libre_Baskerville, DM_Sans, Courier_Prime, Cormorant_Garamond, IBM_Plex_Mono } from "next/font/google";
 import { Geist_Mono } from "next/font/google";
 import { SpeedInsights } from "@vercel/speed-insights/next";
@@ -115,18 +116,17 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     images: ["/api/og"],
   },
-  alternates: {
-    canonical: `${siteUrl}/`,
-  },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const pathname = (await headers()).get('x-pathname') ?? '/';
+  const lang = pathname.startsWith('/es') ? 'es' : pathname.startsWith('/da') ? 'da' : 'en';
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang={lang} suppressHydrationWarning>
       <head>
         {/* Blocking script: apply saved theme before first paint to prevent flash */}
         <script

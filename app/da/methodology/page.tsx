@@ -5,7 +5,6 @@ import { getSiteUrl } from '@/lib/utils/siteUrl';
 const siteUrl = getSiteUrl();
 
 export const metadata: Metadata = {
-  robots: { index: false, follow: false },
   title: 'Metodologi – Sådan laves resuméet',
   description: 'Sådan indsamles, rangeres og opsummeres den ugentlige AI, ecommerce, luksus og smykkebrancheoversigt.',
   alternates: {

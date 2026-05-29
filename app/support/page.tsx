@@ -1,4 +1,21 @@
 import Link from 'next/link';
+import type { Metadata } from 'next';
+import { getSiteUrl } from '@/lib/utils/siteUrl';
+
+const siteUrl = getSiteUrl();
+
+export const metadata: Metadata = {
+  title: 'Support & Contact – Luxury Intelligence',
+  description: 'Get help, suggest sources, or report issues with the Luxury Intelligence weekly digest.',
+  alternates: {
+    canonical: `${siteUrl}/support`,
+  },
+  openGraph: {
+    title: 'Support & Contact – Luxury Intelligence',
+    description: 'Get help, suggest sources, or report issues with the Luxury Intelligence weekly digest.',
+    images: [`${siteUrl}/api/og`],
+  },
+};
 
 export default function SupportPage() {
   return (

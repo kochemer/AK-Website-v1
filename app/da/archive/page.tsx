@@ -9,7 +9,6 @@ import { weekLabelToSlug } from '@/lib/utils/weekSlug';
 const siteUrl = getSiteUrl();
 
 export const metadata: Metadata = {
-  robots: { index: false, follow: false },
   title: 'Arkiv – Ugentlige AI og Luksus Brancheoversigter',
   description: 'Gennemse det komplette arkiv af ugentlige AI, ecommerce, luksus og smykkebrancheoversigter. Få adgang til alle tidligere kurerede intelligensoversigter og ugentlige resuméer.',
   alternates: {

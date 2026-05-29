@@ -5,7 +5,6 @@ import { getSiteUrl } from '@/lib/utils/siteUrl';
 const siteUrl = getSiteUrl();
 
 export const metadata: Metadata = {
-  robots: { index: false, follow: false },
   title: 'Acerca de – Luxury Intelligence',
   description: 'Cómo Luxury Intelligence cura, puntúa y resume las noticias más importantes de la semana en IA, ecommerce, lujo y joyería.',
   alternates: {

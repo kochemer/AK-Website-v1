@@ -56,8 +56,11 @@ export function middleware(request: NextRequest) {
     return NextResponse.redirect(newUrl, { status: 308 });
   }
 
-  // No redirect needed, continue
-  return NextResponse.next();
+  // No redirect needed. Forward the pathname as a request header so server
+  // components (e.g. root layout) can derive the locale and set <html lang>.
+  const requestHeaders = new Headers(request.headers);
+  requestHeaders.set('x-pathname', url.pathname);
+  return NextResponse.next({ request: { headers: requestHeaders } });
 }
 
 // Configure which routes the middleware runs on

@@ -5,7 +5,6 @@ import { getSiteUrl } from '@/lib/utils/siteUrl';
 const siteUrl = getSiteUrl();
 
 export const metadata: Metadata = {
-  robots: { index: false, follow: false },
   title: 'Metodología – Cómo se elabora el resumen',
   description: 'Cómo se recopila, clasifica y resume el resumen semanal de IA, ecommerce, lujo y joyería.',
   alternates: {
