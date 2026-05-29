@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Search – Luxury Intelligence',
+  title: 'Search',
   description: 'Search articles across the Luxury Intelligence archive.',
   robots: { index: false, follow: true },
 };

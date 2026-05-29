@@ -9,6 +9,12 @@ export const metadata: Metadata = {
   description: 'Cómo se recopila, clasifica y resume el resumen semanal de IA, ecommerce, lujo y joyería.',
   alternates: {
     canonical: `${siteUrl}/es/methodology`,
+    languages: {
+      'en': `${siteUrl}/methodology`,
+      'es': `${siteUrl}/es/methodology`,
+      'da': `${siteUrl}/da/methodology`,
+      'x-default': `${siteUrl}/methodology`,
+    },
   },
   openGraph: {
     title: 'Metodología – Cómo se elabora el resumen',

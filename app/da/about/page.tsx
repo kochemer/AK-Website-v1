@@ -5,7 +5,7 @@ import { getSiteUrl } from '@/lib/utils/siteUrl';
 const siteUrl = getSiteUrl();
 
 export const metadata: Metadata = {
-  title: 'Om – Luxury Intelligence',
+  title: 'Om',
   description: 'Hvordan Luxury Intelligence kuraterer, scorer og opsummerer ugens vigtigste nyheder inden for AI, ecommerce, luksus og smykker.',
   alternates: {
     canonical: `${siteUrl}/da/about`,

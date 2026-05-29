@@ -12,6 +12,12 @@ export const metadata: Metadata = {
   title: 'Arkiv – Ugentlige AI og Luksus Brancheoversigter',
   description: 'Gennemse det komplette arkiv af ugentlige AI, ecommerce, luksus og smykkebrancheoversigter. Få adgang til alle tidligere kurerede intelligensoversigter og ugentlige resuméer.',
   alternates: {
+    languages: {
+      'en': `${siteUrl}/archive`,
+      'es': `${siteUrl}/es/archive`,
+      'da': `${siteUrl}/da/archive`,
+      'x-default': `${siteUrl}/archive`,
+    },
     canonical: `${siteUrl}/da/archive`,
   },
   openGraph: {

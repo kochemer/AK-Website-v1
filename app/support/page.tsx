@@ -5,7 +5,7 @@ import { getSiteUrl } from '@/lib/utils/siteUrl';
 const siteUrl = getSiteUrl();
 
 export const metadata: Metadata = {
-  title: 'Support & Contact – Luxury Intelligence',
+  title: 'Support & Contact',
   description: 'Get help, suggest sources, or report issues with the Luxury Intelligence weekly digest.',
   alternates: {
     canonical: `${siteUrl}/support`,

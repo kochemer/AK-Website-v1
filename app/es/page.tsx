@@ -23,7 +23,7 @@ import { getSiteUrl } from '@/lib/utils/siteUrl';
 const siteUrl = getSiteUrl();
 
 export const metadata: Metadata = {
-  title: 'Digest Semanal de IA, Ecommerce y Lujo | Luxury Intelligence',
+  title: 'Digest Semanal de IA, Ecommerce y Lujo',
   description: 'Un digest semanal curado sobre IA y estrategia, tecnología de ecommerce y retail, y noticias del sector del lujo y la joyería. Actualizado cada semana.',
   alternates: {
     canonical: `${siteUrl}/es`,

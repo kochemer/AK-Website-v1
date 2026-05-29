@@ -7,7 +7,7 @@ import { getSiteUrl } from '@/lib/utils/siteUrl';
 const siteUrl = getSiteUrl();
 
 export const metadata: Metadata = {
-  title: 'About – Luxury Intelligence',
+  title: 'About',
   description: 'How Luxury Intelligence curates, scores, and summarises the week\'s most important news across AI, ecommerce, luxury, and jewellery.',
   alternates: {
     canonical: `${siteUrl}/about`,

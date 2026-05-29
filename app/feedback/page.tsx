@@ -2,7 +2,11 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 import FeedbackForm from '../components/FeedbackForm';
 
-export const metadata: Metadata = { robots: { index: false, follow: true } };
+export const metadata: Metadata = {
+  title: 'Write to Us – Feedback',
+  description: 'Suggest a source, flag an issue, or share a thought about the Luxury Intelligence weekly digest.',
+  robots: { index: false, follow: true },
+};
 
 export default function FeedbackPage() {
   const formAction =

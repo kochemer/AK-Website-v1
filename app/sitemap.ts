@@ -62,25 +62,45 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   const now = new Date();
 
+  // Multilingual entries declare alternates so Google sees the hreflang cluster
+  // from the sitemap too (reinforces page-level hreflang).
+  const multilingual = (slug: '' | '/about' | '/archive' | '/methodology') => ({
+    languages: {
+      en: `${baseUrl}${slug || '/'}`,
+      es: `${baseUrl}/es${slug}`,
+      da: `${baseUrl}/da${slug}`,
+      'x-default': `${baseUrl}${slug || '/'}`,
+    },
+  });
+
   // ── Core English pages ────────────────────────────────────────────────────
+  // /search is intentionally excluded (noindex). /feedback, /support, /subscribe
+  // are kept but have no locale alternates because their /es and /da variants
+  // are noindex utility pages.
   const staticEntries: MetadataRoute.Sitemap = [
-    { url: baseUrl,                          lastModified: now, changeFrequency: 'weekly',  priority: 1.0 },
-    { url: `${baseUrl}/archive`,             lastModified: now, changeFrequency: 'weekly',  priority: 0.6 },
+    { url: baseUrl,                          lastModified: now, changeFrequency: 'weekly',  priority: 1.0, alternates: multilingual('') },
+    { url: `${baseUrl}/archive`,             lastModified: now, changeFrequency: 'weekly',  priority: 0.6, alternates: multilingual('/archive') },
+    { url: `${baseUrl}/about`,               lastModified: now, changeFrequency: 'monthly', priority: 0.5, alternates: multilingual('/about') },
+    { url: `${baseUrl}/methodology`,         lastModified: now, changeFrequency: 'monthly', priority: 0.5, alternates: multilingual('/methodology') },
     { url: `${baseUrl}/email-digest`,        lastModified: now, changeFrequency: 'weekly',  priority: 0.7 },
     { url: `${baseUrl}/subscribe`,           lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
-    { url: `${baseUrl}/about`,               lastModified: now, changeFrequency: 'monthly', priority: 0.5 },
-    { url: `${baseUrl}/methodology`,         lastModified: now, changeFrequency: 'monthly', priority: 0.5 },
     { url: `${baseUrl}/feedback`,            lastModified: now, changeFrequency: 'yearly',  priority: 0.4 },
     { url: `${baseUrl}/support`,             lastModified: now, changeFrequency: 'monthly', priority: 0.5 },
-    { url: `${baseUrl}/search`,              lastModified: now, changeFrequency: 'weekly',  priority: 0.6 },
   ];
 
-  // ── Localised homepages only (es · da) ───────────────────────────────────
-  // Sub-pages (/es/about, /da/methodology, etc.) are thin wrappers excluded
-  // to concentrate crawl budget on digest content pages.
+  // ── Localised content pages (es · da) ────────────────────────────────────
+  // Locale homepages and the indexable content sub-pages (about, archive,
+  // methodology). Utility locale pages (subscribe, support, feedback,
+  // competitor-watch) are noindex and excluded.
   const localeEntries: MetadataRoute.Sitemap = [
-    { url: `${baseUrl}/es`, lastModified: now, changeFrequency: 'weekly', priority: 0.8 },
-    { url: `${baseUrl}/da`, lastModified: now, changeFrequency: 'weekly', priority: 0.8 },
+    { url: `${baseUrl}/es`,             lastModified: now, changeFrequency: 'weekly',  priority: 0.8, alternates: multilingual('') },
+    { url: `${baseUrl}/da`,             lastModified: now, changeFrequency: 'weekly',  priority: 0.8, alternates: multilingual('') },
+    { url: `${baseUrl}/es/about`,       lastModified: now, changeFrequency: 'monthly', priority: 0.5, alternates: multilingual('/about') },
+    { url: `${baseUrl}/da/about`,       lastModified: now, changeFrequency: 'monthly', priority: 0.5, alternates: multilingual('/about') },
+    { url: `${baseUrl}/es/archive`,     lastModified: now, changeFrequency: 'weekly',  priority: 0.6, alternates: multilingual('/archive') },
+    { url: `${baseUrl}/da/archive`,     lastModified: now, changeFrequency: 'weekly',  priority: 0.6, alternates: multilingual('/archive') },
+    { url: `${baseUrl}/es/methodology`, lastModified: now, changeFrequency: 'monthly', priority: 0.5, alternates: multilingual('/methodology') },
+    { url: `${baseUrl}/da/methodology`, lastModified: now, changeFrequency: 'monthly', priority: 0.5, alternates: multilingual('/methodology') },
   ];
 
   // ── Weekly digest pages (with file mtime for accurate lastModified) ───────

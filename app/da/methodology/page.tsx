@@ -9,6 +9,12 @@ export const metadata: Metadata = {
   description: 'Sådan indsamles, rangeres og opsummeres den ugentlige AI, ecommerce, luksus og smykkebrancheoversigt.',
   alternates: {
     canonical: `${siteUrl}/da/methodology`,
+    languages: {
+      'en': `${siteUrl}/methodology`,
+      'es': `${siteUrl}/es/methodology`,
+      'da': `${siteUrl}/da/methodology`,
+      'x-default': `${siteUrl}/methodology`,
+    },
   },
   openGraph: {
     title: 'Metodologi – Sådan laves resuméet',

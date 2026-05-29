@@ -13,6 +13,12 @@ export const metadata: Metadata = {
   description: 'Explora el archivo completo de resúmenes semanales de IA, ecommerce, lujo y joyería. Accede a todos los informes de inteligencia curados y resúmenes semanales.',
   alternates: {
     canonical: `${siteUrl}/es/archive`,
+    languages: {
+      'en': `${siteUrl}/archive`,
+      'es': `${siteUrl}/es/archive`,
+      'da': `${siteUrl}/da/archive`,
+      'x-default': `${siteUrl}/archive`,
+    },
   },
   openGraph: {
     title: 'Archivo – Resúmenes Semanales de IA y Lujo',

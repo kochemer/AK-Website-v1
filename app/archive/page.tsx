@@ -18,7 +18,7 @@ import { getSiteUrl } from '@/lib/utils/siteUrl';
 const siteUrl = getSiteUrl();
 
 export const metadata: Metadata = {
-  title: 'Archive – All Weekly Digests | Luxury Intelligence',
+  title: 'Archive – All Weekly Digests',
   description: 'Browse all editions of the Luxury Intelligence weekly digest. Weekly analysis of AI, ecommerce, jewellery, and luxury industry news.',
   alternates: {
     canonical: `${siteUrl}/archive`,
