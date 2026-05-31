@@ -273,14 +273,23 @@ async function main() {
   console.log(`[Email] ✓ Sent: ${success}/${recipients.length}`);
   if (failures.length > 0) {
     console.error(`[Email] ✗ Failed: ${failures.length}/${recipients.length}`);
+    failures.forEach(f => console.error(`  - ${f.email}: ${f.error}`));
   }
 
   await saveSentSummary(weekLabel, timestamp, recipients.length, success, failures);
 
-  if (failures.length > 0) {
+  // Exit 1 only when no emails were sent at all. Partial failures (e.g. a single
+  // bounced address) must not block the downstream commit step — the digest
+  // still needs to land on the site for the recipients who did receive it.
+  if (success === 0 && failures.length > 0) {
+    console.error('[Email] ✗ All sends failed — exiting 1');
     process.exit(1);
   }
-  console.log('[Email] ✓ All emails sent successfully');
+  if (failures.length > 0) {
+    console.warn(`[Email] ⚠ Continuing despite ${failures.length} failure(s) — see sent summary`);
+  } else {
+    console.log('[Email] ✓ All emails sent successfully');
+  }
   process.exit(0);
 }
 

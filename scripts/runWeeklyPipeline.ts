@@ -52,20 +52,34 @@ function parseArgs(): RunWeeklyPipelineOptions {
   return options;
 }
 
+// Steps whose failure must halt the workflow. Without a digest there is
+// nothing to ship, so the run cannot proceed. Every other step is
+// best-effort: the website + email + podcast + cover + competitor intel
+// can each degrade independently without invalidating the others.
+const CRITICAL_STEPS = new Set(['digest']);
+
 async function main() {
   const options = parseArgs();
 
   try {
     const result = await runWeeklyPipeline(options);
 
-    // Check if any step failed
-    const failedSteps = result.steps.filter(s => !s.ok);
-    if (failedSteps.length > 0) {
-      console.error(`\n[Pipeline] ✗ Pipeline completed with ${failedSteps.length} failed step(s)`);
+    const failedSteps   = result.steps.filter(s => !s.ok);
+    const criticalFails = failedSteps.filter(s => CRITICAL_STEPS.has(s.name));
+    const optionalFails = failedSteps.filter(s => !CRITICAL_STEPS.has(s.name));
+
+    if (optionalFails.length > 0) {
+      console.warn(`\n[Pipeline] ⚠ ${optionalFails.length} optional step(s) failed (continuing):`);
+      optionalFails.forEach(s => console.warn(`  - ${s.name}: ${s.error}`));
+    }
+
+    if (criticalFails.length > 0) {
+      console.error(`\n[Pipeline] ✗ ${criticalFails.length} critical step(s) failed — halting:`);
+      criticalFails.forEach(s => console.error(`  - ${s.name}: ${s.error}`));
       process.exit(1);
     }
 
-    console.log(`\n[Pipeline] ✓ Pipeline completed successfully`);
+    console.log(`\n[Pipeline] ✓ Pipeline completed${optionalFails.length > 0 ? ' (with non-fatal warnings)' : ' successfully'}`);
     process.exit(0);
   } catch (error) {
     console.error(`\n[Pipeline] ✗ Fatal error:`, error);

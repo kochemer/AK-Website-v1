@@ -94,7 +94,12 @@ jobs:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: npm run competitor:analyze
 
+      # The next three steps run unconditionally so that a built digest is
+      # committed even if email send or competitor analysis had a partial
+      # failure. The "Build weekly digest" step is the gate: if it exits 1,
+      # there is no digest to commit and check-changes will find nothing.
       - name: Check for changes
+        if: always()
         id: check-changes
         run: |
           git status --porcelain > /tmp/changes.txt
@@ -153,13 +158,13 @@ jobs:
           echo "Changes detected in allowed directories"
 
       - name: Configure Git
-        if: steps.check-changes.outputs.has_changes == 'true'
+        if: always() && steps.check-changes.outputs.has_changes == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
       - name: Commit and push changes
-        if: steps.check-changes.outputs.has_changes == 'true'
+        if: always() && steps.check-changes.outputs.has_changes == 'true'
         run: |
           git add data/digests/ data/weeks/*/health.json data/articles.json data/source_yield.json data/page_source_stats.json data/competitor-intel.json data/stock-history.json data/weeks/*/ public/podcast/*.mp3 public/weekly-images/*.png data/cache/
           if git diff --staged --quiet; then
