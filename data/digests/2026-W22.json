@@ -1,0 +1,990 @@
+{
+  "weekLabel": "2026-W22",
+  "tz": "Europe/Copenhagen",
+  "startISO": "2026-05-24T22:00:00.000Z",
+  "endISO": "2026-05-31T21:59:59.999Z",
+  "builtAtISO": "2026-05-31T11:07:53.924+02:00",
+  "builtAtLocal": "2026-05-31 11:07:53",
+  "totals": {
+    "total": 776,
+    "byTopic": {
+      "AIStrategy": 133,
+      "EcommerceRetail": 506,
+      "LuxuryConsumer": 110,
+      "Jewellery": 26
+    }
+  },
+  "topics": {
+    "AI_and_Strategy": {
+      "total": 133,
+      "top": [
+        {
+          "id": "v7okaa",
+          "title": "After Nvidia’s $20B not-acqui-hire, AI chip startup Groq reportedly raising $650M",
+          "url": "https://techcrunch.com/2026/05/29/after-nvidias-20b-not-acqui-hire-ai-chip-startup-groq-reportedly-raising-650m/",
+          "source": "TechCrunch - AI",
+          "published_at": "2026-05-29T17:27:13.000Z",
+          "ingested_at": "2026-05-31T08:55:18.065Z",
+          "snippet": "Chipmaker Groq is looking to raise $650 million in internal funding as it pivots from hardware to focus more on AI inference, the process of refining the way AI models respond to prompted requests, per Axios.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.35000000000000003,
+            "recencyScore": 0,
+            "sourceWeight": 0.15,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ai",
+              "inference",
+              "funding"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Following Nvidia's $20 billion not-acqui-hire, AI chip startup Groq is reportedly seeking to raise $650 million in internal funding as it shifts its focus from hardware to enhancing AI inference capabilities.",
+          "translations": {
+            "da": {
+              "title": "Efter Nvidias $20 mia. ikke-opkøb, AI-chip startup Groq rapporteres at rejse $650 mio.",
+              "summary": "AI-genereret resumé: Efter Nvidias $20 milliarder ikke-opkøb søger AI-chip startup Groq angiveligt at rejse $650 millioner i intern finansiering, mens de skifter fokus fra hardware til forbedring af AI-inferenskapaciteter."
+            },
+            "es": {
+              "title": "Tras el no-adquisición de $20 mil millones de Nvidia, la startup de chips AI Groq supuestamente recauda $650 millones",
+              "summary": "Resumen generado por IA: Tras la no-adquisición de $20 mil millones de Nvidia, la startup de chips AI Groq estaría buscando recaudar $650 millones en financiamiento interno mientras cambia su enfoque de hardware a mejorar las capacidades de inferencia AI."
+            }
+          }
+        },
+        {
+          "id": "occs1i",
+          "title": "AI with Model-Based Design: Virtual Sensor Modeling",
+          "url": "https://content.knowledgehub.wiley.com/ai-with-model-based-design-virtual-sensor-modeling/",
+          "source": "IEEE Spectrum",
+          "published_at": "2026-05-25T10:00:01.000Z",
+          "ingested_at": "2026-05-31T08:55:18.065Z",
+          "snippet": "This webinar presents a workflow offering end-to-end solutions for designing, training, validating and verifying, compressing, and deploying AI-based virtual sensor models to embedded processors within a single environment.\nHighlights\n\nIntegrate AI models into Simulink for system-level simulation, verification, and simulation-based testing\nApply formal verification techniques to assert neural network behavior\nCompress the AI model for memory footprint reduction and execution speedup\nGenerate lib...",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.30000000000000004,
+            "recencyScore": 0,
+            "sourceWeight": 0.15,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ai",
+              "neural network",
+              "training"
+            ]
+          },
+          "aiSummary": "AI-generated summary: The IEEE Spectrum webinar on \"AI with Model-Based Design: Virtual Sensor Modeling\" outlines a comprehensive workflow for designing, training, verifying, compressing, and deploying AI-based virtual sensor models to embedded processors within a unified environment, emphasizing integration with Simulink, formal verification, and model compression.",
+          "translations": {
+            "da": {
+              "title": "AI med Modelbaseret Design: Virtuel Sensormodellering",
+              "summary": "AI-genereret resumé: IEEE Spectrum-webinaret om \"AI med Modelbaseret Design: Virtuel Sensormodellering\" skitserer en omfattende arbejdsgang til design, træning, verifikation, komprimering og implementering af AI-baserede virtuelle sensormodeller til indlejrede processorer i et samlet miljø med fokus på integration med Simulink, formel verifikation og modelkomprimering."
+            },
+            "es": {
+              "title": "IA con Diseño Basado en Modelos: Modelado de Sensores Virtuales",
+              "summary": "Resumen generado por IA: El seminario web de IEEE Spectrum sobre \"IA con Diseño Basado en Modelos: Modelado de Sensores Virtuales\" describe un flujo de trabajo integral para diseñar, entrenar, verificar, comprimir y desplegar modelos de sensores virtuales basados en IA en procesadores embebidos dentro de un entorno unificado, enfatizando la integración con Simulink, la verificación formal y la compresión de modelos."
+            }
+          }
+        },
+        {
+          "id": "smb31i",
+          "title": "Salesforce claims AI agents cut a 231-day migration to 13 days with fewer incidents",
+          "url": "https://the-decoder.com/salesforce-claims-ai-agents-cut-a-231-day-migration-to-13-days-with-fewer-incidents/",
+          "source": "The Decoder",
+          "published_at": "2026-05-30T09:32:57.000Z",
+          "ingested_at": "2026-05-31T08:55:18.065Z",
+          "snippet": "Salesforce says it moved its entire dev org to Anthropic's Claude Code with no token limits and reports massive productivity gains for April 2026: 79 percent more pull requests per developer, five percent fewer incidents. The numbers can't be independently verified. The case shows just how divided the coding world is over the agentic shift: real revolution or the biggest build-up of tech debt ever?\nThe article Salesforce claims AI agents cut a 231-day migration to 13 days with fewer incidents ap...",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.30000000000000004,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.2,
+            "insightSignalBoost": 0.1,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ai",
+              "agent",
+              "anthropic",
+              "claude"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Salesforce reports that using AI agents to migrate its development environment to Anthropic's Claude Code reduced the process from 231 days to 13 days while increasing developer productivity and slightly decreasing incidents, though these claims have not been independently verified.",
+          "translations": {
+            "da": {
+              "title": "Salesforce hævder, at AI-agenter reducerer en 231-dages migration til 13 dage med færre hændelser",
+              "summary": "AI-genereret resumé: Salesforce rapporterer, at brugen af AI-agenter til at migrere deres udviklingsmiljø til Anthropics Claude Code reducerede processen fra 231 dage til 13 dage, samtidig med at udviklerproduktiviteten steg, og hændelserne faldt en smule, selvom disse påstande ikke er uafhængigt verificeret."
+            },
+            "es": {
+              "title": "Salesforce afirma que los agentes de IA reducen una migración de 231 días a 13 días con menos incidentes",
+              "summary": "Resumen generado por IA: Salesforce informa que el uso de agentes de IA para migrar su entorno de desarrollo a Claude Code de Anthropic redujo el proceso de 231 días a 13 días, aumentando la productividad de los desarrolladores y disminuyendo ligeramente los incidentes, aunque estas afirmaciones no han sido verificadas de forma independiente."
+            }
+          }
+        },
+        {
+          "id": "2j5rxq",
+          "title": "Asana acquires no-code agent-builder StackAI",
+          "url": "https://techcrunch.com/2026/05/28/asana-acquires-no-code-agent-builder-stack-ai/",
+          "source": "TechCrunch - AI",
+          "published_at": "2026-05-28T20:06:07.000Z",
+          "ingested_at": "2026-05-31T08:55:18.065Z",
+          "snippet": "Asana will incorporate StackAI into its growing suite of AI workflow tools.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.25,
+            "recencyScore": 0,
+            "sourceWeight": 0.15,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "agent",
+              "ai"
+            ]
+          },
+          "aiSummary": "AI-generated summary: On May 28, 2026, Asana announced its acquisition of no-code agent-builder StackAI, which it plans to integrate into its expanding suite of AI workflow tools.",
+          "translations": {
+            "da": {
+              "title": "Asana opkøber no-code agent-builder StackAI",
+              "summary": "AI-genereret resumé: Den 28. maj 2026 annoncerede Asana sit opkøb af no-code agent-builder StackAI, som de planlægger at integrere i deres voksende suite af AI workflow-værktøjer."
+            },
+            "es": {
+              "title": "Asana adquiere el creador de agentes sin código StackAI",
+              "summary": "Resumen generado por IA: El 28 de mayo de 2026, Asana anunció la adquisición del creador de agentes sin código StackAI, que planea integrar en su creciente suite de herramientas de flujo de trabajo de IA."
+            }
+          }
+        },
+        {
+          "id": "uj2vub",
+          "title": "Cognition’s Scott Wu says AI coding agents shouldn’t replace humans",
+          "url": "https://techcrunch.com/2026/05/29/cognitions-scott-wu-says-ai-coding-agents-shouldnt-replace-humans/",
+          "source": "TechCrunch - AI",
+          "published_at": "2026-05-29T16:13:47.000Z",
+          "ingested_at": "2026-05-31T08:55:18.065Z",
+          "snippet": "Cognition makes Devin, the first and arguably most successful AI coding agent. But famed coder Wu says it isn't designed to supplant human programmers.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.25,
+            "recencyScore": 0,
+            "sourceWeight": 0.15,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ai",
+              "agent"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Cognition's Scott Wu emphasizes that while their AI coding agent Devin is highly successful, it is not intended to replace human programmers.",
+          "translations": {
+            "da": {
+              "title": "Cognitions Scott Wu siger, at AI-kodeagenter ikke bør erstatte mennesker",
+              "summary": "AI-genereret resumé: Cognitions Scott Wu understreger, at selvom deres AI-kodeagent Devin er meget succesfuld, er den ikke beregnet til at erstatte menneskelige programmører."
+            },
+            "es": {
+              "title": "Scott Wu de Cognition dice que los agentes de codificación de IA no deberían reemplazar a los humanos",
+              "summary": "Resumen generado por IA: Scott Wu de Cognition enfatiza que, aunque su agente de codificación de IA Devin tiene mucho éxito, no está destinado a reemplazar a los programadores humanos."
+            }
+          }
+        },
+        {
+          "id": "tmsd4",
+          "title": "South Africa Has AI Leverage. Its Draft Policy Leaves It Unused",
+          "url": "https://spectrum.ieee.org/south-africa-ai-policy",
+          "source": "IEEE Spectrum",
+          "published_at": "2026-05-27T13:00:01.000Z",
+          "ingested_at": "2026-05-31T08:55:18.065Z",
+          "snippet": "This article is adapted by the author with permission from Tech Policy Press. Read the original article.\nSouth Africa is not just another developing country struggling to govern artificial intelligence; it is the exception with leverage, and the window to act on it is closing. It holds approximately 88 percent of global platinum-group metal reserves, critical inputs to parts of the semiconductor and data-center supply chains that make AI infrastructure possible. It hosts the largest data-center ...",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0.15,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0.1,
+            "penalty": 0.2,
+            "matchedKeywords": [
+              "ai",
+              "policy",
+              "artificial intelligence"
+            ]
+          },
+          "aiSummary": "AI-generated summary: South Africa possesses significant strategic leverage in AI development due to its control of 88 percent of global platinum-group metal reserves essential for semiconductor and data-center supply chains, yet its draft AI policy fails to capitalize on this advantage.",
+          "translations": {
+            "da": {
+              "title": "Sydafrika Har AI-Fortrin. Dets Udkast til Politik Udnytter Det Ikke",
+              "summary": "AI-genereret resumé: Sydafrika har betydelig strategisk fordel i AI-udvikling på grund af sin kontrol over 88 procent af de globale platin-gruppe metalreserver, som er essentielle for forsyningskæder til halvledere og datacentre, men dets udkast til AI-politik formår ikke at udnytte denne fordel."
+            },
+            "es": {
+              "title": "Sudáfrica Tiene Ventaja en IA. Su Proyecto de Política No la Aprovecha",
+              "summary": "Resumen generado por IA: Sudáfrica posee una ventaja estratégica significativa en el desarrollo de IA debido a su control del 88 por ciento de las reservas mundiales de metales del grupo del platino, esenciales para las cadenas de suministro de semiconductores y centros de datos, pero su proyecto de política de IA no aprovecha esta ventaja."
+            }
+          }
+        },
+        {
+          "id": "y77ptm",
+          "title": "Anthropic tops OpenAI as most valuable AI startup, nears $1 trillion valuation in latest round",
+          "url": "https://www.cnbc.com/2026/05/28/anthropic-open-ai-startup-value.html",
+          "source": "CNBC Technology",
+          "published_at": "2026-05-28T21:10:06.000Z",
+          "ingested_at": "2026-05-31T08:55:18.065Z",
+          "snippet": "Anthropic is now the most valuable AI company in Silicon Valley after a new $65 billion funding round.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.2,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ai",
+              "openai",
+              "anthropic",
+              "ai startup",
+              "ai company",
+              "funding"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Anthropic has become the most valuable AI startup in Silicon Valley following a $65 billion funding round, surpassing OpenAI and approaching a $1 trillion valuation.",
+          "translations": {
+            "da": {
+              "title": "Anthropic overgår OpenAI som den mest værdifulde AI-startup, nærmer sig en værdi på 1 billion dollars i seneste runde",
+              "summary": "AI-genereret resumé: Anthropic er blevet den mest værdifulde AI-startup i Silicon Valley efter en finansieringsrunde på 65 milliarder dollars, og overgår OpenAI og nærmer sig en værdi på 1 billion dollars."
+            },
+            "es": {
+              "title": "Anthropic supera a OpenAI como la startup de IA más valiosa, se acerca a una valoración de 1 billón de dólares en la última ronda",
+              "summary": "Resumen generado por IA: Anthropic se ha convertido en la startup de IA más valiosa en Silicon Valley tras una ronda de financiación de 65 mil millones de dólares, superando a OpenAI y acercándose a una valoración de 1 billón de dólares."
+            }
+          }
+        }
+      ]
+    },
+    "Ecommerce_Retail_Tech": {
+      "total": 506,
+      "top": [
+        {
+          "id": "wewxc1",
+          "title": "Marketplace Briefing: Why Amazon is selling its AI-powered shopping tools to other retailers",
+          "url": "https://www.modernretail.co/technology/marketplace-briefing-why-amazon-is-selling-its-ai-powered-shopping-tools-to-other-retailers/?utm_campaign=modernretaildis&utm_medium=rss&utm_source=general-rss",
+          "source": "Modern Retail",
+          "published_at": "2026-05-28T14:00:00.000Z",
+          "ingested_at": "2026-05-31T08:55:18.065Z",
+          "snippet": "Amazon is starting to sell the technology behind its AI shopping assistant to other retailers, as the e-commerce giant looks to become a bigger player in the fast-growing market for AI-powered shopping tools.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.25,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "shopping",
+              "marketplace",
+              "e-commerce"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Amazon is expanding its presence in the AI-powered shopping tools market by selling the technology behind its AI shopping assistant to other retailers, aiming to increase its influence in the ecommerce and retail tech sector.",
+          "translations": {
+            "da": {
+              "title": "Marketplace Briefing: Hvorfor Amazon sælger sine AI-drevne shoppingværktøjer til andre detailhandlere",
+              "summary": "Amazon udvider sin tilstedeværelse på markedet for AI-drevne shoppingværktøjer ved at sælge teknologien bag sin AI-shoppingassistent til andre detailhandlere for at øge sin indflydelse i e-handels- og detailteknologisektoren."
+            },
+            "es": {
+              "title": "Marketplace Briefing: Por qué Amazon está vendiendo sus herramientas de compra impulsadas por IA a otros minoristas",
+              "summary": "Amazon está ampliando su presencia en el mercado de herramientas de compra impulsadas por IA al vender la tecnología detrás de su asistente de compras con IA a otros minoristas, con el objetivo de aumentar su influencia en el sector del comercio electrónico y la tecnología minorista."
+            }
+          }
+        },
+        {
+          "id": "b6u67k",
+          "title": "Amazon fulfillment competitor Stord raises $250M at $3B valuation",
+          "url": "https://techcrunch.com/2026/05/26/amazon-fulfillment-competitor-stord-raises-250m-at-3b-valuation/",
+          "source": "TechCrunch - Commerce",
+          "published_at": "2026-05-26T12:00:00.000Z",
+          "ingested_at": "2026-05-31T08:55:18.065Z",
+          "snippet": "Stord offers a network of physical warehouses and inventory management software for e-commerce. It bills itself as a sort of anti-Amazon, giving brands \"the speed to compete\" while still owning their customer relationships.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.2,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "fulfillment",
+              "e-commerce",
+              "warehouse",
+              "inventory"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Stord, an ecommerce fulfillment company positioning itself as an alternative to Amazon by providing a network of warehouses and inventory management software, has raised $250 million at a $3 billion valuation. The company aims to help brands compete quickly while maintaining ownership of their customer relationships.",
+          "translations": {
+            "da": {
+              "title": "Amazon fulfillment-konkurrent Stord rejser 250 mio. USD ved en værdiansættelse på 3 mia. USD",
+              "summary": "AI-genereret resumé: Stord, et ecommerce fulfillment-firma, der positionerer sig som et alternativ til Amazon ved at tilbyde et netværk af lagre og lagerstyringssoftware, har rejst 250 millioner USD ved en værdiansættelse på 3 milliarder USD. Virksomheden sigter mod at hjælpe brands med hurtigt at konkurrere, samtidig med at de bevarer ejerskabet af deres kundeforhold."
+            },
+            "es": {
+              "title": "Competidor de fulfillment de Amazon, Stord, recauda $250M con una valoración de $3B",
+              "summary": "Resumen generado por IA: Stord, una empresa de fulfillment de comercio electrónico que se posiciona como una alternativa a Amazon al ofrecer una red de almacenes y software de gestión de inventarios, ha recaudado 250 millones de dólares con una valoración de 3 mil millones de dólares. La compañía busca ayudar a las marcas a competir rápidamente mientras mantienen la propiedad de sus relaciones con los clientes."
+            }
+          }
+        },
+        {
+          "id": "3lcd8v",
+          "title": "Walmart is becoming a haven for more emerging, premium brands",
+          "url": "https://www.modernretail.co/operations/walmart-is-becoming-a-haven-for-more-emerging-premium-brands/?utm_campaign=modernretaildis&utm_medium=rss&utm_source=general-rss",
+          "source": "Modern Retail",
+          "published_at": "2026-05-28T04:00:00.000Z",
+          "ingested_at": "2026-05-31T08:55:18.065Z",
+          "snippet": "Walmart has evolved beyond its reputation as a low-cost retailer into one giving brands that have started online, are new to physical retail or sit at higher price points the opportunity to scale throughout the U.S.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": []
+          },
+          "aiSummary": "AI-generated summary: Walmart is transforming from a low-cost retailer into a platform that supports emerging and premium brands, including those originating online or new to physical retail, enabling them to expand across the U.S.",
+          "translations": {
+            "da": {
+              "title": "Walmart bliver et tilflugtssted for flere nye, premium brands",
+              "summary": "AI-genereret resumé: Walmart går fra at være en lavprisforhandler til en platform, der støtter nye og premium brands, herunder dem, der stammer fra online eller er nye i fysisk detailhandel, og hjælper dem med at udvide i hele USA."
+            },
+            "es": {
+              "title": "Walmart se está convirtiendo en un refugio para más marcas emergentes y premium",
+              "summary": "Resumen generado por IA: Walmart está transformándose de un minorista de bajo costo a una plataforma que apoya marcas emergentes y premium, incluidas aquellas que provienen del comercio en línea o son nuevas en el comercio físico, permitiéndoles expandirse por todo Estados Unidos."
+            }
+          }
+        },
+        {
+          "id": "lr1vx6",
+          "title": "Temu fined over illegal product risks",
+          "url": "https://www.drapersonline.com/news/temu-fined-over-illegal-product-risks",
+          "source": "Drapers",
+          "published_at": "2026-05-29T06:57:19.000Z",
+          "ingested_at": "2026-05-31T08:55:18.065Z",
+          "snippet": "Drapers\nTemu fined over illegal product risks\nThe European Commission has fined Chinese ecommerce platform Temu €200m (£173m) for breaching the Digital Services Act (DSA) by failing to properly assess the risks of illegal products being sold to European Union consumers.\nThe post Temu fined over illegal product risks appeared first on Drapers.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ecommerce",
+              "platform"
+            ]
+          },
+          "aiSummary": "AI-generated summary: The European Commission has fined Chinese ecommerce platform Temu €200 million for violating the Digital Services Act by inadequately assessing the risks of illegal products sold to EU consumers, according to Drapers (2026-05-29).",
+          "translations": {
+            "da": {
+              "title": "Temu bødefældet for ulovlige produktrisici",
+              "summary": "AI-genereret resumé: Europa-Kommissionen har bødefældet den kinesiske e-handelsplatform Temu med 200 millioner euro for at overtræde Digital Services Act ved utilstrækkeligt at vurdere risiciene ved ulovlige produkter solgt til EU-forbrugere, ifølge Drapers (2026-05-29)."
+            },
+            "es": {
+              "title": "Temu multado por riesgos de productos ilegales",
+              "summary": "Resumen generado por IA: La Comisión Europea ha multado a la plataforma china de comercio electrónico Temu con 200 millones de euros por violar la Ley de Servicios Digitales al evaluar de manera insuficiente los riesgos de productos ilegales vendidos a consumidores de la UE, según Drapers (29-05-2026)."
+            }
+          }
+        },
+        {
+          "id": "pmxwc8",
+          "title": "4 Reasons Your Retail Fulfillment Tech Investment Keeps Falling Short",
+          "url": "https://www.mytotalretail.com/article/4-reasons-your-retail-fulfillment-tech-investment-keeps-falling-short/",
+          "source": "Total Retail",
+          "published_at": "2026-05-26T16:45:14.000Z",
+          "ingested_at": "2026-05-31T08:55:18.065Z",
+          "snippet": "Most retail fulfillment technology investments don’t fail at go-live. They fail months earlier, in a planning meeting where a vendor hands over a 14-week implementation timeline and nobody — not merchandising, not store operations, not the warehouse team — pushes back on the assumptions underlying it. By the time the project is six months in […]",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "fulfillment",
+              "warehouse"
+            ]
+          },
+          "aiSummary": "AI-generated summary: The article from Total Retail (2026-05-26) explains that many retail fulfillment technology investments falter not at launch but during early planning stages, where unrealistic implementation timelines go unchallenged by key teams, leading to project difficulties months later.",
+          "translations": {
+            "da": {
+              "title": "4 grunde til, at din investering i detailopfyldelsesteknologi fortsætter med at skuffe",
+              "summary": "AI-genereret resumé: Artiklen fra Total Retail (2026-05-26) forklarer, at mange investeringer i detailopfyldelsesteknologi fejler ikke ved lanceringen, men under de tidlige planlægningsfaser, hvor urealistiske implementeringstidslinjer ikke udfordres af nøgleteams, hvilket fører til problemer måneder senere."
+            },
+            "es": {
+              "title": "4 razones por las que tu inversión en tecnología de cumplimiento minorista sigue quedando corta",
+              "summary": "Resumen generado por IA: El artículo de Total Retail (2026-05-26) explica que muchas inversiones en tecnología de cumplimiento minorista fallan no en el lanzamiento, sino durante las primeras etapas de planificación, donde los plazos de implementación poco realistas no son cuestionados por los equipos clave, lo que conduce a dificultades en el proyecto meses después."
+            }
+          }
+        },
+        {
+          "id": "qqqaps",
+          "title": "Top Brands Get Half Their Email Revenue From 6% of Sends. Here’s What Those Sends Are and How to Replicate Them",
+          "url": "https://www.mytotalretail.com/article/top-brands-get-half-their-email-revenue-from-6-of-sends-heres-what-those-sends-are-and-how-to-replicate-them/",
+          "source": "Total Retail",
+          "published_at": "2026-05-27T13:52:03.000Z",
+          "ingested_at": "2026-05-31T08:55:18.065Z",
+          "snippet": "Most email strategies are still built around campaigns, but performance is coming from somewhere else. Automated flows make up just 6 percent of sends, yet generate $513 per 1,000 emails compared to $62 for campaigns. That is an 8x difference. And this pattern shows up consistently across North American e-commerce brands. The math is clear: […]",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0.1,
+            "penalty": 0,
+            "matchedKeywords": [
+              "e-commerce"
+            ]
+          },
+          "aiSummary": "AI-generated summary: According to Total Retail (2026-05-27), top North American e-commerce brands generate half of their email revenue from just 6% of sends, with automated flows outperforming traditional campaigns by delivering eight times higher revenue per 1,000 emails. This highlights a significant shift in email strategy effectiveness within ecommerce and retail tech.",
+          "translations": {
+            "da": {
+              "title": "Topmærker får halvdelen af deres emailindtægter fra 6 % af udsendelserne. Her er, hvad disse udsendelser er, og hvordan man kan efterligne dem",
+              "summary": "AI-genereret resumé: Ifølge Total Retail (2026-05-27) genererer top e-handelsmærker i Nordamerika halvdelen af deres emailindtægter fra kun 6 % af udsendelserne, hvor automatiserede flows overgår traditionelle kampagner med otte gange højere indtægter pr. 1.000 emails. Dette fremhæver en betydelig ændring i effektiviteten af emailstrategier inden for e-handel og detailteknologi."
+            },
+            "es": {
+              "title": "Las principales marcas obtienen la mitad de sus ingresos por email de solo el 6 % de los envíos. Esto es lo que son esos envíos y cómo replicarlos",
+              "summary": "Resumen generado por IA: Según Total Retail (2026-05-27), las principales marcas de comercio electrónico de Norteamérica generan la mitad de sus ingresos por email con solo el 6 % de los envíos, con flujos automatizados que superan a las campañas tradicionales al generar ocho veces más ingresos por cada 1,000 emails. Esto destaca un cambio significativo en la efectividad de la estrategia de email en el comercio electrónico y la tecnología minorista."
+            }
+          }
+        },
+        {
+          "id": "hbf40i",
+          "title": "Shoezone steps onto TikTok Shop as it builds its social commerce push",
+          "url": "https://internetretailing.net/shoezone-steps-onto-tiktok-shop-as-it-builds-its-social-commerce-push/",
+          "source": "Internet Retailing",
+          "published_at": "2026-05-26T09:39:29.000Z",
+          "ingested_at": "2026-05-31T08:55:18.065Z",
+          "snippet": "Online and in-store footwear retailer Shoezone has launched its first social shopping channel on TikTok Shop.\nThe post Shoezone steps onto TikTok Shop as it builds its social commerce push appeared first on InternetRetailing.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "shopping"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Footwear retailer Shoezone has launched its first social shopping channel on TikTok Shop as part of its strategy to expand its social commerce presence.",
+          "translations": {
+            "da": {
+              "title": "Shoezone træder ind på TikTok Shop som led i sin satsning på social commerce",
+              "summary": "AI-genereret resumé: Skoforhandleren Shoezone har lanceret sin første sociale shoppingkanal på TikTok Shop som en del af sin strategi for at udvide sin tilstedeværelse inden for social commerce."
+            },
+            "es": {
+              "title": "Shoezone entra en TikTok Shop mientras impulsa su estrategia de comercio social",
+              "summary": "Resumen generado por IA: El minorista de calzado Shoezone ha lanzado su primer canal de compras sociales en TikTok Shop como parte de su estrategia para expandir su presencia en el comercio social."
+            }
+          }
+        }
+      ]
+    },
+    "Luxury_and_Consumer": {
+      "total": 110,
+      "top": [
+        {
+          "id": "4qnown",
+          "title": "Rising prices may hit festive smartphone demand, dent annual sales by up to 30%: Report ",
+          "url": "https://economictimes.indiatimes.com/tech/technology/rising-prices-may-hit-festive-smartphone-demand-dent-annual-sales-by-up-to-30-report/articleshow/131391643.cms",
+          "source": "Economic Times - Technology",
+          "published_at": "2026-05-29T13:19:23.000Z",
+          "ingested_at": "2026-05-31T08:55:18.065Z",
+          "snippet": "Smartphone prices are rising in India. This could cause many buyers to delay purchases or buy used phones. Annual sales might drop significantly. Entry-level phones are seeing the biggest price increases. This situation is a wake-up call for brands. Affordability is key for future growth in the Indian market.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.25,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0.15,
+            "penalty": 0,
+            "matchedKeywords": [
+              "demand",
+              "brand"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Rising smartphone prices in India, especially for entry-level models, may lead buyers to delay purchases or opt for used phones, potentially reducing annual sales by up to 30%, signaling a need for brands to focus on affordability for future growth.",
+          "translations": {
+            "da": {
+              "title": "Stigende priser kan ramme festlig efterspørgsel på smartphones og reducere årligt salg med op til 30%: Rapport",
+              "summary": "AI-genereret resumé: Stigende smartphonepriser i Indien, især for entry-level modeller, kan få købere til at udsætte køb eller vælge brugte telefoner, hvilket potentielt kan reducere det årlige salg med op til 30% og signalere behov for, at mærker fokuserer på overkommelighed for fremtidig vækst."
+            },
+            "es": {
+              "title": "El aumento de precios puede afectar la demanda festiva de smartphones y reducir las ventas anuales hasta en un 30%: Informe",
+              "summary": "Resumen generado por IA: El aumento de precios de smartphones en India, especialmente en modelos de entrada, puede llevar a los compradores a retrasar sus compras o elegir teléfonos usados, lo que podría reducir las ventas anuales hasta en un 30%, señalando la necesidad de que las marcas se enfoquen en la asequibilidad para el crecimiento futuro."
+            }
+          }
+        },
+        {
+          "id": "mt0xzn",
+          "title": "Weak Demand at Gap, American Eagle Signals Constrained Consumer Spending",
+          "url": "https://www.businessoffashion.com/news/retail/weak-demand-at-gap-american-eagle-signals-constrained-consumer-spending/",
+          "source": "Business of Fashion - News",
+          "published_at": "2026-05-29T13:33:22.000Z",
+          "ingested_at": "2026-05-31T08:55:18.065Z",
+          "snippet": "The apparel retailers provided weak annual forecasts as consumers curb discretionary spending amid a tough macroeconomic climate.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "consumer",
+              "spending",
+              "demand"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Apparel retailers Gap and American Eagle reported weak annual forecasts, reflecting constrained consumer spending as shoppers reduce discretionary purchases amid a challenging macroeconomic environment.",
+          "translations": {
+            "da": {
+              "title": "Svag efterspørgsel hos Gap og American Eagle signalerer begrænset forbrug",
+              "summary": "AI-genereret resumé: Tøjforhandlerne Gap og American Eagle rapporterede svage årlige prognoser, hvilket afspejler begrænset forbrug, da kunderne reducerer ikke-nødvendige køb i et udfordrende makroøkonomisk miljø."
+            },
+            "es": {
+              "title": "Demanda débil en Gap y American Eagle señala gasto del consumidor restringido",
+              "summary": "Resumen generado por IA: Los minoristas de ropa Gap y American Eagle reportaron pronósticos anuales débiles, reflejando un gasto del consumidor restringido mientras los compradores reducen compras discrecionales en un entorno macroeconómico desafiante."
+            }
+          }
+        },
+        {
+          "id": "n4lfxy",
+          "title": "How Luxury Can Stay on Top as Every Brand Moves Upmarket",
+          "url": "https://www.businessoffashion.com/articles/luxury/how-luxury-can-stay-on-top-as-every-brand-moves-upmarket/",
+          "source": "Business of Fashion - News",
+          "published_at": "2026-05-28T04:30:00.000Z",
+          "ingested_at": "2026-05-31T08:55:18.065Z",
+          "snippet": "As more mass market and premium brands push upmarket, luxury is differentiating by leaning into specificity, scarcity and culture-creating.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "luxury",
+              "brand",
+              "premium"
+            ]
+          },
+          "aiSummary": "AI-generated summary: As mass market and premium brands move upmarket, luxury brands maintain their edge by focusing on specificity, scarcity, and culture-creating to differentiate themselves.",
+          "translations": {
+            "da": {
+              "title": "Hvordan luksus kan forblive i top, når alle mærker bevæger sig opad",
+              "summary": "AI-genereret resumé: Mens massemarkedet og premiummærker bevæger sig opad, bevarer luksusmærker deres forspring ved at fokusere på specificitet, knaphed og kultur-skabelse for at differentiere sig."
+            },
+            "es": {
+              "title": "Cómo el lujo puede mantenerse en la cima mientras todas las marcas se mueven hacia el mercado premium",
+              "summary": "Resumen generado por IA: A medida que las marcas de mercado masivo y premium se mueven hacia arriba, las marcas de lujo mantienen su ventaja enfocándose en la especificidad, la escasez y la creación de cultura para diferenciarse."
+            }
+          }
+        },
+        {
+          "id": "umd0hp",
+          "title": "EXCLUSIVE: Lisa Eldridge Sets Up Shop in New York",
+          "url": "https://wwd.com/beauty-industry-news/beauty-features/lisa-eldridge-new-york-store-pop-up-makeup-1238986871/",
+          "source": "WWD - Women's Wear Daily",
+          "published_at": "2026-05-31T04:01:00.000Z",
+          "ingested_at": "2026-05-31T08:55:18.065Z",
+          "snippet": "With plans to double down on the U.S. market, the U.K.-based cosmetics brand has opened a monthslong pop-up store in SoHo.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "exclusive",
+              "brand"
+            ]
+          },
+          "aiSummary": "AI-generated summary: U.K.-based cosmetics brand Lisa Eldridge has opened a monthslong pop-up store in SoHo as part of its strategy to expand further into the U.S. market.",
+          "translations": {
+            "da": {
+              "title": "EKSKLUSIVT: Lisa Eldridge åbner butik i New York",
+              "summary": "AI-genereret resumé: Det britiske kosmetikmærke Lisa Eldridge har åbnet en pop-up butik i flere måneder i SoHo som en del af deres strategi for at udvide yderligere på det amerikanske marked."
+            },
+            "es": {
+              "title": "EXCLUSIVO: Lisa Eldridge abre tienda en Nueva York",
+              "summary": "Resumen generado por IA: La marca de cosméticos con sede en el Reino Unido, Lisa Eldridge, ha abierto una tienda pop-up de varios meses en SoHo como parte de su estrategia para expandirse más en el mercado estadounidense."
+            }
+          }
+        },
+        {
+          "id": "dt70yq",
+          "title": "Luxury Briefing: With Versace sold, Capri is betting on new consumer demand for accessible luxury",
+          "url": "https://www.glossy.co/fashion/luxury/luxury-briefing-with-versace-sold-capri-is-betting-on-new-consumer-demand-for-accessible-luxury/?utm_campaign=glossydis&utm_medium=rss&utm_source=general-rss",
+          "source": "Glossy",
+          "published_at": "2026-05-29T04:04:00.000Z",
+          "ingested_at": "2026-05-31T08:55:18.065Z",
+          "snippet": "In this week's Luxury Briefing, I check in with analysts Luca Solca and Simeon Siegel on the state of Capri as it looks to grow Michael Kors and Jimmy Choo with new executive hires.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "luxury",
+              "consumer",
+              "demand"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Following the sale of Versace, Capri is focusing on expanding Michael Kors and Jimmy Choo by leveraging new executive hires to capitalize on emerging consumer demand for accessible luxury, according to analysts Luca Solca and Simeon Siegel.",
+          "translations": {
+            "da": {
+              "title": "Luxury Briefing: Med salget af Versace satser Capri på ny forbruger efterspørgsel efter tilgængelig luksus",
+              "summary": "AI-genereret resumé: Efter salget af Versace fokuserer Capri på at udvide Michael Kors og Jimmy Choo ved at udnytte nye ledelsesansættelser for at kapitalisere på den nye forbruger efterspørgsel efter tilgængelig luksus, ifølge analytikerne Luca Solca og Simeon Siegel."
+            },
+            "es": {
+              "title": "Luxury Briefing: Con la venta de Versace, Capri apuesta por la nueva demanda de consumidores de lujo accesible",
+              "summary": "Resumen generado por IA: Tras la venta de Versace, Capri se está enfocando en expandir Michael Kors y Jimmy Choo aprovechando nuevas contrataciones ejecutivas para capitalizar la demanda emergente de consumidores por lujo accesible, según los analistas Luca Solca y Simeon Siegel."
+            }
+          }
+        },
+        {
+          "id": "c8rnhu",
+          "title": "4 Takeaways From Genesco’s Q1 Earnings Call — From the Peyton Manning Effect to Journeys’ Evolution",
+          "url": "https://wwd.com/footwear-news/shoe-industry-news/genesco-q1-earnings-call-takeaways-analysis-peyton-manning-1238986982/",
+          "source": "WWD - Women's Wear Daily",
+          "published_at": "2026-05-29T20:19:56.000Z",
+          "ingested_at": "2026-05-31T08:55:18.065Z",
+          "snippet": "The NFL Hall of Famer is helping attract a younger consumer to the over 175-year-old Johnston & Murphy brand.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "consumer",
+              "brand"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Genesco's Q1 earnings call highlighted how NFL Hall of Famer Peyton Manning is contributing to attracting a younger consumer base to the historic Johnston & Murphy brand.",
+          "translations": {
+            "da": {
+              "title": "4 Indsigter Fra Genescos Q1 Resultatopkald — Fra Peyton Manning Effekten til Journeys’ Udvikling",
+              "summary": "AI-genereret resumé: Genescos Q1 resultatopkald fremhævede, hvordan NFL Hall of Famer Peyton Manning bidrager til at tiltrække en yngre forbrugerbase til det historiske Johnston & Murphy brand."
+            },
+            "es": {
+              "title": "4 Conclusiones de la Llamada de Resultados del Q1 de Genesco — Desde el Efecto Peyton Manning hasta la Evolución de Journeys",
+              "summary": "Resumen generado por IA: La llamada de resultados del Q1 de Genesco destacó cómo el miembro del Salón de la Fama de la NFL, Peyton Manning, está ayudando a atraer a una base de consumidores más joven a la histórica marca Johnston & Murphy."
+            }
+          }
+        },
+        {
+          "id": "tp4sn5",
+          "title": "Worldview | Luxury Brands Downscale Marketing Efforts for China’s “520” Valentine’s Day",
+          "url": "https://www.businessoffashion.com/articles/global-markets/worldview-luxury-brands-downscale-marketing-efforts-for-chinas-520-valentines-day/",
+          "source": "Business of Fashion - News",
+          "published_at": "2026-05-26T16:20:39.000Z",
+          "ingested_at": "2026-05-31T08:55:18.065Z",
+          "snippet": "This week’s round-up of global markets fashion business news also features Uzbekistan’s Tashkent Fashion Week expansion and Vietnam’s jewellery IPO.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "luxury",
+              "brand"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Luxury brands are reducing their marketing efforts for China’s “520” Valentine’s Day, while global fashion news also highlights Uzbekistan’s Tashkent Fashion Week expansion and Vietnam’s jewellery IPO.",
+          "translations": {
+            "da": {
+              "title": "Worldview | Luksusmærker nedskalerer markedsføringen til Kinas “520” Valentinsdag",
+              "summary": "AI-genereret resumé: Luksusmærker reducerer deres markedsføringsindsats til Kinas “520” Valentinsdag, mens globale modemagasiner også fremhæver Uzbekistans Tashkent Fashion Week-udvidelse og Vietnams smykke-IPO."
+            },
+            "es": {
+              "title": "Worldview | Marcas de lujo reducen esfuerzos de marketing para el “520” Día de San Valentín en China",
+              "summary": "Resumen generado por IA: Las marcas de lujo están reduciendo sus esfuerzos de marketing para el “520” Día de San Valentín en China, mientras que las noticias globales de moda también destacan la expansión de la Semana de la Moda de Tashkent en Uzbekistán y la oferta pública inicial de joyería en Vietnam."
+            }
+          }
+        }
+      ]
+    },
+    "Jewellery_Industry": {
+      "total": 26,
+      "top": [
+        {
+          "id": "c1uk2j",
+          "title": "Richemont reports strong jewellery sales, dismisses brand sale speculation",
+          "url": "https://www.jewellermagazine.com/Article/15069/Richemont-reports-strong-jewellery-sales-dismisses-brand-sale-speculation",
+          "source": "Jeweller - Business News",
+          "published_at": "2026-05-25T14:00:00.000Z",
+          "ingested_at": "2026-05-31T08:55:18.065Z",
+          "snippet": "Richemont has reported a significant increase in sales across its jewellery brands over the past financial year, countering a decline in revenue from watch brands.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.35,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0.1,
+            "penalty": 0,
+            "matchedKeywords": [
+              "jewellery",
+              "jeweller",
+              "watch"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Richemont reported strong sales growth in its jewellery brands over the past financial year, despite a decline in revenue from its watch brands, and dismissed speculation about selling any of its brands.",
+          "translations": {
+            "da": {
+              "title": "Richemont rapporterer stærkt salg af smykker, afviser spekulationer om salg af mærker",
+              "summary": "Richemont rapporterede stærk salgsvækst i sine smykkemærker i det forgangne regnskabsår, på trods af fald i omsætningen fra sine urmærker, og afviste spekulationer om salg af nogen af sine mærker."
+            },
+            "es": {
+              "title": "Richemont reporta fuertes ventas de joyería y descarta especulaciones sobre venta de marcas",
+              "summary": "Richemont reportó un fuerte crecimiento en las ventas de sus marcas de joyería durante el último año fiscal, a pesar de una caída en los ingresos de sus marcas de relojes, y descartó especulaciones sobre la venta de alguna de sus marcas."
+            }
+          }
+        },
+        {
+          "id": "6qrsfe",
+          "title": "Chaos surrounds global launch of Swatch x Audemars Piguet",
+          "url": "https://www.jewellermagazine.com/Article/15074/Chaos-surrounds-global-launch-of-Swatch-x-Audemars-Piguet",
+          "source": "Jeweller - Business News",
+          "published_at": "2026-05-25T14:00:00.000Z",
+          "ingested_at": "2026-05-31T08:55:18.065Z",
+          "snippet": "The launch of Swatch's latest collection, developed in collaboration with Audemars Piguet, led to large crowds, clashes, and police intervention at retail locations globally.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "watch"
+            ]
+          },
+          "aiSummary": "AI-generated summary: The global launch of the Swatch x Audemars Piguet collection sparked large crowds and clashes at retail locations, resulting in police intervention worldwide. The event highlighted significant chaos within the jewellery industry.",
+          "translations": {
+            "da": {
+              "title": "Kaos omgiver global lancering af Swatch x Audemars Piguet",
+              "summary": "AI-genereret resumé: Den globale lancering af Swatch x Audemars Piguet-kollektionen skabte store folkemængder og sammenstød i butikker, hvilket førte til politiets indgriben verden over. Begivenheden fremhævede betydeligt kaos i smykkeindustrien."
+            },
+            "es": {
+              "title": "Caos rodea el lanzamiento global de Swatch x Audemars Piguet",
+              "summary": "Resumen generado por IA: El lanzamiento global de la colección Swatch x Audemars Piguet provocó grandes multitudes y enfrentamientos en puntos de venta, resultando en la intervención policial en todo el mundo. El evento destacó un caos significativo en la industria de la joyería."
+            }
+          }
+        },
+        {
+          "id": "nka33w",
+          "title": "Good times continue for Watches of Switzerland",
+          "url": "https://www.jewellermagazine.com/Article/15070/Good-times-continue-for-Watches-of-Switzerland",
+          "source": "Jeweller - Business News",
+          "published_at": "2026-05-25T14:00:00.000Z",
+          "ingested_at": "2026-05-31T08:55:18.065Z",
+          "snippet": "Watches of Switzerland has reported an increase in revenue for the financial year amid a surge in the US market, which now accounts for over half of the company’s sales.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.25,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0.1,
+            "penalty": 0,
+            "matchedKeywords": [
+              "watch"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Watches of Switzerland has experienced revenue growth in the financial year, driven by a strong surge in the US market, which now represents more than half of the company’s sales.",
+          "translations": {
+            "da": {
+              "title": "Gode tider fortsætter for Watches of Switzerland",
+              "summary": "AI-genereret resumé: Watches of Switzerland har oplevet omsætningsvækst i regnskabsåret, drevet af en stærk stigning på det amerikanske marked, som nu udgør mere end halvdelen af virksomhedens salg."
+            },
+            "es": {
+              "title": "Buenos tiempos continúan para Watches of Switzerland",
+              "summary": "Resumen generado por IA: Watches of Switzerland ha experimentado un crecimiento en los ingresos durante el año fiscal, impulsado por un fuerte aumento en el mercado estadounidense, que ahora representa más de la mitad de las ventas de la empresa."
+            }
+          }
+        },
+        {
+          "id": "85lrvu",
+          "title": "The art of jewellery photography",
+          "url": "https://www.professionaljeweller.com/the-art-of-jewellery-photography/",
+          "source": "Professional Jeweller",
+          "published_at": "2026-05-28T23:01:19.000Z",
+          "ingested_at": "2026-05-31T08:55:18.065Z",
+          "snippet": "How would you describe your photography style, and how does it align with luxury jewellery brands? A mix of high fashion and documentary style. I strive for my work to transcend any particular style. What sets your work apart in the competitive jewellery photography market? My unique approach is what makes me stand out against […]\nThe post The art of jewellery photography appeared first on Professional Jeweller.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "jewellery",
+              "jeweller"
+            ]
+          },
+          "aiSummary": "AI-generated summary: The article explores a jewellery photographer's distinctive blend of high fashion and documentary styles, aiming to create work that transcends traditional categories and stands out in the competitive luxury jewellery market.",
+          "translations": {
+            "da": {
+              "title": "Kunsten at fotografere smykker",
+              "summary": "Artiklen udforsker en smykkefotografs unikke blanding af high fashion og dokumentariske stilarter med det formål at skabe værker, der overskrider traditionelle kategorier og skiller sig ud på det konkurrenceprægede luksussmykkemarked."
+            },
+            "es": {
+              "title": "El arte de la fotografía de joyas",
+              "summary": "El artículo explora la combinación distintiva de estilos de alta moda y documental de un fotógrafo de joyas, con el objetivo de crear obras que trasciendan las categorías tradicionales y destaquen en el competitivo mercado de joyería de lujo."
+            }
+          }
+        },
+        {
+          "id": "y89koo",
+          "title": "New jewellery educational programme to debut in schools",
+          "url": "https://www.professionaljeweller.com/jewellery-education-programme-schools/",
+          "source": "Professional Jeweller",
+          "published_at": "2026-05-28T23:03:00.000Z",
+          "ingested_at": "2026-05-31T08:55:18.065Z",
+          "snippet": "Better known by his online moniker, TheJewelGeek, Brinder Dhatt, is launching The Jewel Geek Education project. A series of educational seminars in schools across England, the project aims to promote careers in the jewellery industry to this generation before they choose their higher education pathways.  This announcement comes after a barrage of reports about the […]\nThe post New jewellery educational programme to debut in schools appeared first on Professional Jeweller.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.04999999999999999,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0.05,
+            "penalty": 0.2,
+            "matchedKeywords": [
+              "jewellery",
+              "jeweller"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Brinder Dhatt, known as TheJewelGeek, is launching The Jewel Geek Education project, a series of seminars in English schools designed to promote careers in the jewellery industry to students before they select their higher education paths.",
+          "translations": {
+            "da": {
+              "title": "Nyt smykkeuddannelsesprogram lanceres i skoler",
+              "summary": "AI-genereret resumé: Brinder Dhatt, kendt som TheJewelGeek, lancerer The Jewel Geek Education-projektet, en række seminarer på engelske skoler designet til at fremme karrierer i smykkeindustrien for elever, inden de vælger deres videregående uddannelse."
+            },
+            "es": {
+              "title": "Nuevo programa educativo de joyería debutará en escuelas",
+              "summary": "Resumen generado por IA: Brinder Dhatt, conocido como TheJewelGeek, está lanzando el proyecto The Jewel Geek Education, una serie de seminarios en escuelas inglesas diseñados para promover carreras en la industria de la joyería entre los estudiantes antes de que elijan sus caminos de educación superior."
+            }
+          }
+        },
+        {
+          "id": "novfk6",
+          "title": "Amber Pepper Signals Luxury-Focused Direction for Natural Diamonds at COUTURE",
+          "url": "https://instoremag.com/amber-pepper-signals-luxury-focused-direction-for-natural-diamonds-at-couture/",
+          "source": "Instore Magazine",
+          "published_at": "2026-05-30T09:38:23.000Z",
+          "ingested_at": "2026-05-31T08:55:18.065Z",
+          "snippet": "\"The more synthetic there is, the more people crave the real,\" says the Natural Diamond Council CEO.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "diamond"
+            ]
+          },
+          "aiSummary": "AI-generated summary: In the jewellery industry, Amber Pepper highlights a luxury-focused approach for natural diamonds at COUTURE, emphasizing that increasing synthetic options drive consumer desire for genuine diamonds, according to the Natural Diamond Council CEO.",
+          "translations": {
+            "da": {
+              "title": "Amber Pepper signalerer luksusfokuseret retning for naturlige diamanter på COUTURE",
+              "summary": "AI-genereret resumé: I smykkeindustrien fremhæver Amber Pepper en luksusfokuseret tilgang til naturlige diamanter på COUTURE og understreger, at flere syntetiske muligheder øger forbrugernes ønske om ægte diamanter, ifølge CEO for Natural Diamond Council."
+            },
+            "es": {
+              "title": "Amber Pepper señala una dirección enfocada en el lujo para diamantes naturales en COUTURE",
+              "summary": "Resumen generado por IA: En la industria de la joyería, Amber Pepper destaca un enfoque centrado en el lujo para los diamantes naturales en COUTURE, enfatizando que el aumento de opciones sintéticas impulsa el deseo del consumidor por diamantes genuinos, según el CEO del Natural Diamond Council."
+            }
+          }
+        },
+        {
+          "id": "4tf80e",
+          "title": "Houlden welcomes two indie retailers on board in its 50th year",
+          "url": "https://www.professionaljeweller.com/houlden-two-new-retailers-50th-year/",
+          "source": "Professional Jeweller",
+          "published_at": "2026-05-28T05:55:00.000Z",
+          "ingested_at": "2026-05-31T08:55:18.065Z",
+          "snippet": "Houlden has welcomed two independent luxury jewellers to its membership during its landmark 50th anniversary year. Established in 1806, Martin & Co is renowned for its heritage, client service and reputation across fine jewellery and luxury watches. Still family-owned today, the business has built its reputation on generations of expertise, trusted relationships and a personal […]\nThe post Houlden welcomes two indie retailers on board in its 50th year appeared first on Professional Jeweller.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.30000000000000004,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.2,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "retailer",
+              "jewellery",
+              "jeweller",
+              "watch"
+            ]
+          },
+          "aiSummary": "AI-generated summary: In its 50th anniversary year, Houlden has welcomed two independent luxury jewellers, including the family-owned Martin & Co, known for its heritage and expertise in fine jewellery and luxury watches, to its membership.",
+          "translations": {
+            "da": {
+              "title": "Houlden byder to uafhængige forhandlere velkommen i sit 50. år",
+              "summary": "AI-genereret resumé: I sit 50-års jubilæumsår har Houlden budt to uafhængige luksussmykkeforhandlere velkommen, herunder det familieejede Martin & Co, kendt for sin arv og ekspertise inden for fint smykke- og luksusurværk, til sit medlemskab."
+            },
+            "es": {
+              "title": "Houlden da la bienvenida a dos minoristas independientes en su 50º aniversario",
+              "summary": "Resumen generado por IA: En su 50º aniversario, Houlden ha dado la bienvenida a dos joyerías independientes de lujo, incluyendo la familiar Martin & Co, conocida por su legado y experiencia en joyería fina y relojes de lujo, a su membresía."
+            }
+          }
+        }
+      ]
+    }
+  },
+  "editorialTake": "Amazon selling its AI-powered shopping tools to other retailers signals a shift from pure dominance to platform enabler. Instead of hoarding AI capabilities to crush competitors, Amazon is monetizing its tech by licensing it out. This move accelerates AI adoption across ecommerce but also forces Amazon to compete on service and scale, not just proprietary advantage.\n\nThat raises a tough question: can Amazon maintain its leadership if its AI edge becomes a commodity? If rivals gain access to the same tools, differentiation will come down to execution, fulfillment, and customer experience. Amazon’s $250 million raise by Stord, a fulfillment competitor, underscores this battleground. The real test is whether Amazon can turn AI from a secret weapon into a growth engine without losing its edge.",
+  "coverImageUrl": "/weekly-images/2026-W22.png",
+  "coverImageAlt": "Weekly cover illustration for 2026-W22"
+}

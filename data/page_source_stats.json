@@ -1,36 +1,36 @@
 {
-  "timestamp": "2026-05-17T08:29:28.357Z",
+  "timestamp": "2026-05-31T08:57:31.323Z",
   "sources": [
     {
       "sourceName": "BoF - News (The News in Brief)",
       "pagesFetched": 1,
       "fetchStatus": 200,
       "itemsMatched": 8,
-      "articlesExtracted": 2,
-      "rejectedNoDate": 0,
-      "rejectedInvalidDate": 0,
-      "rejectedNoTitle": 0,
-      "rejectedNoUrl": 0,
-      "rejectedDuplicate": 6,
-      "rejectedSelectorMiss": 0,
-      "articlesKept": 2,
-      "yieldPercentage": 25,
-      "failures": []
-    },
-    {
-      "sourceName": "Jing Daily",
-      "pagesFetched": 1,
-      "fetchStatus": 200,
-      "itemsMatched": 20,
-      "articlesExtracted": 12,
+      "articlesExtracted": 0,
       "rejectedNoDate": 0,
       "rejectedInvalidDate": 0,
       "rejectedNoTitle": 0,
       "rejectedNoUrl": 0,
       "rejectedDuplicate": 8,
       "rejectedSelectorMiss": 0,
-      "articlesKept": 12,
-      "yieldPercentage": 60,
+      "articlesKept": 0,
+      "yieldPercentage": 0,
+      "failures": []
+    },
+    {
+      "sourceName": "Jing Daily",
+      "pagesFetched": 1,
+      "fetchStatus": 200,
+      "itemsMatched": 28,
+      "articlesExtracted": 23,
+      "rejectedNoDate": 0,
+      "rejectedInvalidDate": 0,
+      "rejectedNoTitle": 0,
+      "rejectedNoUrl": 0,
+      "rejectedDuplicate": 5,
+      "rejectedSelectorMiss": 0,
+      "articlesKept": 23,
+      "yieldPercentage": 82.14285714285714,
       "failures": []
     },
     {
@@ -38,23 +38,23 @@
       "pagesFetched": 1,
       "fetchStatus": 200,
       "itemsMatched": 175,
-      "articlesExtracted": 44,
+      "articlesExtracted": 79,
       "rejectedNoDate": 0,
       "rejectedInvalidDate": 0,
       "rejectedNoTitle": 0,
       "rejectedNoUrl": 0,
-      "rejectedDuplicate": 131,
+      "rejectedDuplicate": 96,
       "rejectedSelectorMiss": 0,
-      "articlesKept": 44,
-      "yieldPercentage": 25.142857142857146,
+      "articlesKept": 79,
+      "yieldPercentage": 45.14285714285714,
       "failures": []
     }
   ],
   "summary": {
     "totalPagesFetched": 3,
-    "totalItemsMatched": 203,
-    "totalArticlesExtracted": 58,
-    "totalArticlesKept": 58,
-    "overallYieldPercentage": 28.57142857142857
+    "totalItemsMatched": 211,
+    "totalArticlesExtracted": 102,
+    "totalArticlesKept": 102,
+    "overallYieldPercentage": 48.34123222748815
   }
 }

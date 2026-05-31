@@ -2878,5 +2878,101 @@
     ],
     "cached_at": "2026-05-17T08:40:57.684Z",
     "model": "gpt-4.1-mini"
+  },
+  "2026-W22:Ecommerce_Retail_Tech:44eacd72ea3a": {
+    "selected": [
+      {
+        "id": "0",
+        "rank": 1,
+        "why": "Amazon selling AI shopping tools to other retailers impacts platform dynamics",
+        "confidence": 0.95
+      },
+      {
+        "id": "1",
+        "rank": 2,
+        "why": "Stord’s $250M raise highlights growth in Amazon fulfillment competition",
+        "confidence": 0.9
+      },
+      {
+        "id": "13",
+        "rank": 3,
+        "why": "Walmart evolving as a platform for emerging premium brands affects marketplace",
+        "confidence": 0.9
+      },
+      {
+        "id": "11",
+        "rank": 4,
+        "why": "Temu fined for illegal product risks signals regulatory impact on ecommerce",
+        "confidence": 0.85
+      },
+      {
+        "id": "14",
+        "rank": 5,
+        "why": "Analysis of retail fulfillment tech investment failures offers operational insights",
+        "confidence": 0.85
+      },
+      {
+        "id": "4",
+        "rank": 6,
+        "why": "Email revenue concentration insights provide data-driven marketing optimization tips",
+        "confidence": 0.8
+      },
+      {
+        "id": "5",
+        "rank": 7,
+        "why": "Shoezone’s TikTok Shop launch exemplifies social commerce platform adoption",
+        "confidence": 0.8
+      }
+    ],
+    "cached_at": "2026-05-31T09:06:56.628Z",
+    "model": "gpt-4.1-mini"
+  },
+  "2026-W22:Jewellery_Industry:e3c1a7850ded": {
+    "selected": [
+      {
+        "id": "0",
+        "rank": 1,
+        "why": "Strong jewellery sales data with retail implications",
+        "confidence": 0.95
+      },
+      {
+        "id": "6",
+        "rank": 2,
+        "why": "Case study on global product launch and retail chaos",
+        "confidence": 0.9
+      },
+      {
+        "id": "4",
+        "rank": 3,
+        "why": "Revenue growth insights for luxury retail brand",
+        "confidence": 0.85
+      },
+      {
+        "id": "2",
+        "rank": 4,
+        "why": "Jewellery photography tips for luxury ecommerce conversion",
+        "confidence": 0.8
+      },
+      {
+        "id": "12",
+        "rank": 5,
+        "why": "New educational program impacting jewellery retail skills",
+        "confidence": 0.75
+      },
+      {
+        "id": "10",
+        "rank": 6,
+        "why": "Luxury natural diamonds market direction and consumer trends",
+        "confidence": 0.7
+      },
+      {
+        "id": "1",
+        "rank": 7,
+        "why": "Indie retailers joining network, relevant for retail partnerships",
+        "confidence": 0.65
+      }
+    ],
+    "cached_at": "2026-05-31T09:07:53.922Z",
+    "model": "gpt-4.1-mini"
   }
 }

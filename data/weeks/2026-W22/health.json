@@ -1,0 +1,78 @@
+{
+  "digestWeek": "2026-W22",
+  "ingestionWeek": "2026-W22",
+  "startedAt": "2026-05-31T08:55:18.045Z",
+  "finishedAt": "2026-05-31T09:13:55.936Z",
+  "steps": [
+    {
+      "name": "rss",
+      "ok": true,
+      "startedAt": "2026-05-31T08:55:18.064Z",
+      "finishedAt": "2026-05-31T08:57:29.319Z"
+    },
+    {
+      "name": "pages",
+      "ok": true,
+      "startedAt": "2026-05-31T08:57:29.319Z",
+      "finishedAt": "2026-05-31T08:57:31.323Z"
+    },
+    {
+      "name": "discovery",
+      "ok": true,
+      "startedAt": "2026-05-31T08:57:31.324Z",
+      "finishedAt": "2026-05-31T09:05:53.870Z"
+    },
+    {
+      "name": "classification",
+      "ok": true,
+      "startedAt": "2026-05-31T09:05:53.870Z",
+      "finishedAt": "2026-05-31T09:05:53.973Z"
+    },
+    {
+      "name": "digest",
+      "ok": true,
+      "startedAt": "2026-05-31T09:05:53.973Z",
+      "finishedAt": "2026-05-31T09:08:23.739Z"
+    },
+    {
+      "name": "email",
+      "ok": true,
+      "startedAt": "2026-05-31T09:08:23.739Z",
+      "finishedAt": "2026-05-31T09:09:14.725Z"
+    },
+    {
+      "name": "podcast",
+      "ok": true,
+      "startedAt": "2026-05-31T09:09:14.725Z",
+      "finishedAt": "2026-05-31T09:12:37.629Z"
+    },
+    {
+      "name": "cover",
+      "ok": true,
+      "startedAt": "2026-05-31T09:12:37.629Z",
+      "finishedAt": "2026-05-31T09:13:37.438Z"
+    },
+    {
+      "name": "competitorAnalyze",
+      "ok": true,
+      "startedAt": "2026-05-31T09:13:37.438Z",
+      "finishedAt": "2026-05-31T09:13:55.934Z"
+    }
+  ],
+  "health": {
+    "warnings": [
+      "AI & Strategy: techcrunch.com represents 42.9% (3/7) - exceeds 40% threshold",
+      "Luxury & Consumer: www.businessoffashion.com represents 42.9% (3/7) - exceeds 40% threshold",
+      "Jewellery Industry: www.jewellermagazine.com represents 42.9% (3/7) - exceeds 40% threshold",
+      "Jewellery Industry: www.professionaljeweller.com represents 42.9% (3/7) - exceeds 40% threshold"
+    ],
+    "metrics": {
+      "paywallPercent": 0,
+      "podcastWordCount": 2377
+    }
+  },
+  "versions": {
+    "node": "v20.20.2",
+    "gitCommit": "769375e272973038e9a02c461b4a7e7ceb578eee"
+  }
+}

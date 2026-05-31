@@ -1,0 +1,83 @@
+{
+  "week": "2026-W22",
+  "generatedAt": "2026-05-31T09:09:14.724Z",
+  "intro": "In this week’s digest, we explore key shifts in AI and retail, including Amazon’s move to license its AI shopping tools and Nvidia’s strategic investment in AI chip startup Groq. Additionally, rising prices threaten smartphone sales during the festive season, while Walmart and emerging brands reshape the premium retail landscape.",
+  "readOneThing": {
+    "title": "Marketplace Briefing: Why Amazon is selling its AI-powered shopping tools to other retailers",
+    "url": "https://www.modernretail.co/technology/marketplace-briefing-why-amazon-is-selling-its-ai-powered-shopping-tools-to-other-retailers/?utm_campaign=modernretaildis&utm_medium=rss&utm_source=general-rss"
+  },
+  "items": [
+    {
+      "rank": 1,
+      "title": "Marketplace Briefing: Why Amazon is selling its AI-powered shopping tools to other retailers",
+      "url": "https://www.modernretail.co/technology/marketplace-briefing-why-amazon-is-selling-its-ai-powered-shopping-tools-to-other-retailers/?utm_campaign=modernretaildis&utm_medium=rss&utm_source=general-rss",
+      "source": "Modern Retail",
+      "bullets": [
+        "Amazon Web Services launched the Agentic Shopping Assistant, enabling retailers to create AI shopping assistants using Amazon's Alexa for Shopping technology.",
+        "Amazon's previous AI shopping assistant, Rufus, was used by over 300 million customers and generated nearly $12 billion in incremental annualized sales last year.",
+        "The AI shopping market is competitive, with companies like OpenAI and Google developing tools, while retailers such as Walmart and Target build their own AI features."
+      ],
+      "summary": "AI-generated summary: Amazon is expanding its presence in the AI-powered shopping tools market by selling the technology behind its AI shopping assistant to other retailers, aiming to increase its influence in the ecommerce and retail tech sector."
+    },
+    {
+      "rank": 2,
+      "title": "After Nvidia’s $20B not-acqui-hire, AI chip startup Groq reportedly raising $650M",
+      "url": "https://techcrunch.com/2026/05/29/after-nvidias-20b-not-acqui-hire-ai-chip-startup-groq-reportedly-raising-650m/",
+      "source": "TechCrunch - AI",
+      "bullets": [
+        "Groq is seeking to raise $650 million from existing investors to expand its inference neocloud business using its proprietary AI chip technology.",
+        "In December, Groq entered a $20 billion not-acquisition deal with Nvidia, which included licensing its hardware technology and the departure of senior employees to Nvidia.",
+        "Groq's interim CEO Adam Winter and CFO Matt Eng are leading the company's new focus on inference processing, which is currently more in demand than AI model training."
+      ],
+      "summary": "AI-generated summary: Following Nvidia's $20 billion not-acqui-hire, AI chip startup Groq is reportedly seeking to raise $650 million in internal funding as it shifts its focus from hardware to enhancing AI inference capabilities."
+    },
+    {
+      "rank": 3,
+      "title": "Rising prices may hit festive smartphone demand, dent annual sales by up to 30%: Report ",
+      "url": "https://economictimes.indiatimes.com/tech/technology/rising-prices-may-hit-festive-smartphone-demand-dent-annual-sales-by-up-to-30-report/articleshow/131391643.cms",
+      "source": "Economic Times - Technology",
+      "bullets": [
+        "A joint report by Trakin Tech and Techarc revealed that rising smartphone prices in India could cause over half of intended buyers to delay purchases or opt for used phones during the festive half-year period.",
+        "The study found that 54% of planned smartphone demand is at risk, potentially reducing annual sales volumes to 115-120 million units, down from 136-138 million last year.",
+        "Price increases between January 2025 and May 2026 were driven by higher global costs for NAND flash and DRAM chips, currency depreciation, and brands prioritizing profitability, with entry-level phones seeing 8-12% price hikes."
+      ],
+      "summary": "AI-generated summary: Rising smartphone prices in India, especially for entry-level models, may lead buyers to delay purchases or opt for used phones, potentially reducing annual sales by up to 30%, signaling a need for brands to focus on affordability for future growth."
+    },
+    {
+      "rank": 4,
+      "title": "Amazon fulfillment competitor Stord raises $250M at $3B valuation",
+      "url": "https://techcrunch.com/2026/05/26/amazon-fulfillment-competitor-stord-raises-250m-at-3b-valuation/",
+      "source": "TechCrunch - Commerce",
+      "bullets": [
+        "Stord, an e-commerce logistics company, raised $250 million in a funding round led by Strike Capital, reaching a $3 billion valuation.",
+        "This latest investment doubles Stord's valuation from the previous year and brings its total funding to approximately $775 million.",
+        "Founded in 2015 by Georgia Tech students Sean Henry and Jacob Boudreau, Stord offers warehouse networks and inventory management software with an AI interface, positioning itself as an alternative to Amazon fulfillment."
+      ],
+      "summary": "AI-generated summary: Stord, an ecommerce fulfillment company positioning itself as an alternative to Amazon by providing a network of warehouses and inventory management software, has raised $250 million at a $3 billion valuation. The company aims to help brands compete quickly while maintaining ownership of their customer relationships."
+    },
+    {
+      "rank": 5,
+      "title": "AI with Model-Based Design: Virtual Sensor Modeling",
+      "url": "https://content.knowledgehub.wiley.com/ai-with-model-based-design-virtual-sensor-modeling/",
+      "source": "IEEE Spectrum",
+      "bullets": [
+        "The webinar demonstrated how AI-based virtual sensors can estimate difficult-to-measure signals like battery state of charge in Battery Management Systems using model-based design.",
+        "The session detailed a workflow for designing, verifying, compressing, and deploying AI virtual sensors to embedded processors within a single environment.",
+        "Sponsored by Mathworks and hosted by IEEE Spectrum, the on-demand event integrates AI models into Simulink for system-level simulation and formal verification."
+      ],
+      "summary": "AI-generated summary: The IEEE Spectrum webinar on \"AI with Model-Based Design: Virtual Sensor Modeling\" outlines a comprehensive workflow for designing, training, verifying, compressing, and deploying AI-based virtual sensor models to embedded processors within a unified environment, emphasizing integration with Simulink, formal verification, and model compression."
+    },
+    {
+      "rank": 6,
+      "title": "Walmart is becoming a haven for more emerging, premium brands",
+      "url": "https://www.modernretail.co/operations/walmart-is-becoming-a-haven-for-more-emerging-premium-brands/?utm_campaign=modernretaildis&utm_medium=rss&utm_source=general-rss",
+      "source": "Modern Retail",
+      "bullets": [
+        "Walmart has expanded its assortment to include more emerging and premium brands, including organic products and luxury beauty items, through initiatives like the Walmart Start accelerator program.",
+        "In the first quarter, 75% of Walmart's beauty category growth came from brands new to the retailer, and its third-party marketplace sales grew nearly 50%.",
+        "Since 2022, Walmart has focused on attracting digitally native brands and higher-income shoppers, gaining market share among households earning over $100,000 annually."
+      ],
+      "summary": "AI-generated summary: Walmart is transforming from a low-cost retailer into a platform that supports emerging and premium brands, including those originating online or new to physical retail, enabling them to expand across the U.S."
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "weekLabel": "2026-W22",
+  "homepageTopArticles": [
+    {
+      "title": "Marketplace Briefing: Why Amazon is selling its AI-powered shopping tools to other retailers",
+      "source": "Modern Retail",
+      "snippet": "Amazon is starting to sell the technology behind its AI shopping assistant to other retailers, as the e-commerce giant looks to become a bigger player in the fast-growing market for AI-powered shopping tools.",
+      "aiSummary": "AI-generated summary: Amazon is expanding its presence in the AI-powered shopping tools market by selling the technology behind its AI shopping assistant to other retailers, aiming to increase its influence in the ecommerce and retail tech sector."
+    },
+    {
+      "title": "Amazon fulfillment competitor Stord raises $250M at $3B valuation",
+      "source": "TechCrunch - Commerce",
+      "snippet": "Stord offers a network of physical warehouses and inventory management software for e-commerce. It bills itself as a sort of anti-Amazon, giving brands \"the speed to compete\" while still owning their customer relationships.",
+      "aiSummary": "AI-generated summary: Stord, an ecommerce fulfillment company positioning itself as an alternative to Amazon by providing a network of warehouses and inventory management software, has raised $250 million at a $3 billion valuation. The company aims to help brands compete quickly while maintaining ownership of their customer relationships."
+    },
+    {
+      "title": "Richemont reports strong jewellery sales, dismisses brand sale speculation",
+      "source": "Jeweller - Business News",
+      "snippet": "Richemont has reported a significant increase in sales across its jewellery brands over the past financial year, countering a decline in revenue from watch brands.",
+      "aiSummary": "AI-generated summary: Richemont reported strong sales growth in its jewellery brands over the past financial year, despite a decline in revenue from its watch brands, and dismissed speculation about selling any of its brands."
+    }
+  ],
+  "model": "gpt-image-1",
+  "finalPrompt": "Photograph: On a light supermarket checkout belt, a shiny robotic warehouse arm is gently placing a fresh croissant among groceries: a carton of milk, apples, and a gold watch. A small Richemont-branded bag sits behind the items, and a Modern Retail magazine is half-visible in an open tote. No people, no text, just the surprising mix of industrial tech, groceries, and a luxury watch.\n\nCRITICAL CONSTRAINTS (must be strictly avoided):\n- text, letters, numbers, signage, labels, price tags, screens, UI, dashboards, holograms, floating icons, watermarks, unrelated brand logos, cartoon, illustration, CGI, 3D render, anime, diamond, diamonds, gemstone, gemstones, precious stones, jewelry close-up, jewelry product shot, diamond ring, diamond necklace, diamond earring, jeweled, sparkling gemstone, dramatic spotlight, glowing edges, rim lighting, vignette, cinematic color grade, blurred background, bokeh\n\nThis must look like a real photograph taken by a human — not AI-generated, not CGI, not a 3D render. Natural light. Real objects. Real imperfections. Fill the entire frame edge to edge with the scene — no black bars, no empty space at the edges.\n\nDo not include: text, labels, signage, screens, UI, logos unrelated to the scene, diamonds, gemstones, CGI lighting, dramatic spotlights, or blurred vignette backgrounds.",
+  "imageSize": "1536x1024",
+  "outputPath": "/weekly-images/2026-W22.png",
+  "generatedAt": "2026-05-31T09:13:37.427Z"
+}

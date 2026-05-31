@@ -40,5 +40,11 @@
     "cached_at": "2026-05-24T13:36:03.921Z",
     "model": "gpt-4.1-mini",
     "version": "1.1"
+  },
+  "2026-W22:7fa57d594965": {
+    "editorialTake": "Amazon selling its AI-powered shopping tools to other retailers signals a shift from pure dominance to platform enabler. Instead of hoarding AI capabilities to crush competitors, Amazon is monetizing its tech by licensing it out. This move accelerates AI adoption across ecommerce but also forces Amazon to compete on service and scale, not just proprietary advantage.\n\nThat raises a tough question: can Amazon maintain its leadership if its AI edge becomes a commodity? If rivals gain access to the same tools, differentiation will come down to execution, fulfillment, and customer experience. Amazon’s $250 million raise by Stord, a fulfillment competitor, underscores this battleground. The real test is whether Amazon can turn AI from a secret weapon into a growth engine without losing its edge.",
+    "cached_at": "2026-05-31T09:08:23.737Z",
+    "model": "gpt-4.1-mini",
+    "version": "1.1"
   }
 }
