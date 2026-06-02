@@ -160,10 +160,15 @@ export default function BrandProfileCard({
                   href={article.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[13px] font-sans text-[var(--color-text-primary)] hover:text-[var(--color-accent)] leading-snug line-clamp-2 transition-colors duration-150"
+                  className="flex-1 text-[13px] font-sans text-[var(--color-text-primary)] hover:text-[var(--color-accent)] leading-snug line-clamp-2 transition-colors duration-150"
                 >
                   {article.title}
                 </a>
+                {(article.published_at || article.ingested_at) && (
+                  <span className="shrink-0 ml-2 mt-0.5 font-ibm-mono text-[10px] text-[var(--color-text-secondary)] whitespace-nowrap">
+                    {new Date(article.published_at || article.ingested_at!).toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}
+                  </span>
+                )}
               </li>
             ))}
           </ul>
