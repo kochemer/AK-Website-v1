@@ -60,7 +60,18 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const weekLabels = await getAvailableWeekLabels();
   const digestsDir = path.join(process.cwd(), 'data', 'digests');
 
-  const now = new Date();
+  // Last meaningful content change for purely static pages (about, methodology,
+  // subscribe, feedback, support). Bump this when those pages are edited so
+  // Google sees a real change signal instead of a fresh timestamp every build.
+  const STATIC_PAGE_LAST_MODIFIED = new Date('2026-06-02');
+
+  // For pages whose content updates whenever a new digest ships (homepage,
+  // archive, email-digest, locale homepages + archives), use the latest digest's
+  // builtAt. This is the actual content-change moment, not the build moment.
+  const latestWeekLabel = weekLabels[weekLabels.length - 1];
+  const latestContentChange = latestWeekLabel
+    ? await getDigestBuiltAt(path.join(digestsDir, `${latestWeekLabel}.json`))
+    : STATIC_PAGE_LAST_MODIFIED;
 
   // Multilingual entries declare alternates so Google sees the hreflang cluster
   // from the sitemap too (reinforces page-level hreflang).
@@ -78,14 +89,14 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // are kept but have no locale alternates because their /es and /da variants
   // are noindex utility pages.
   const staticEntries: MetadataRoute.Sitemap = [
-    { url: baseUrl,                          lastModified: now, changeFrequency: 'weekly',  priority: 1.0, alternates: multilingual('') },
-    { url: `${baseUrl}/archive`,             lastModified: now, changeFrequency: 'weekly',  priority: 0.6, alternates: multilingual('/archive') },
-    { url: `${baseUrl}/about`,               lastModified: now, changeFrequency: 'monthly', priority: 0.5, alternates: multilingual('/about') },
-    { url: `${baseUrl}/methodology`,         lastModified: now, changeFrequency: 'monthly', priority: 0.5, alternates: multilingual('/methodology') },
-    { url: `${baseUrl}/email-digest`,        lastModified: now, changeFrequency: 'weekly',  priority: 0.7 },
-    { url: `${baseUrl}/subscribe`,           lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
-    { url: `${baseUrl}/feedback`,            lastModified: now, changeFrequency: 'yearly',  priority: 0.4 },
-    { url: `${baseUrl}/support`,             lastModified: now, changeFrequency: 'monthly', priority: 0.5 },
+    { url: baseUrl,                          lastModified: latestContentChange,     changeFrequency: 'weekly',  priority: 1.0, alternates: multilingual('') },
+    { url: `${baseUrl}/archive`,             lastModified: latestContentChange,     changeFrequency: 'weekly',  priority: 0.6, alternates: multilingual('/archive') },
+    { url: `${baseUrl}/about`,               lastModified: STATIC_PAGE_LAST_MODIFIED, changeFrequency: 'monthly', priority: 0.5, alternates: multilingual('/about') },
+    { url: `${baseUrl}/methodology`,         lastModified: STATIC_PAGE_LAST_MODIFIED, changeFrequency: 'monthly', priority: 0.5, alternates: multilingual('/methodology') },
+    { url: `${baseUrl}/email-digest`,        lastModified: latestContentChange,     changeFrequency: 'weekly',  priority: 0.7 },
+    { url: `${baseUrl}/subscribe`,           lastModified: STATIC_PAGE_LAST_MODIFIED, changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${baseUrl}/feedback`,            lastModified: STATIC_PAGE_LAST_MODIFIED, changeFrequency: 'yearly',  priority: 0.4 },
+    { url: `${baseUrl}/support`,             lastModified: STATIC_PAGE_LAST_MODIFIED, changeFrequency: 'monthly', priority: 0.5 },
   ];
 
   // ── Localised content pages (es · da) ────────────────────────────────────
@@ -93,14 +104,14 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // methodology). Utility locale pages (subscribe, support, feedback,
   // competitor-watch) are noindex and excluded.
   const localeEntries: MetadataRoute.Sitemap = [
-    { url: `${baseUrl}/es`,             lastModified: now, changeFrequency: 'weekly',  priority: 0.8, alternates: multilingual('') },
-    { url: `${baseUrl}/da`,             lastModified: now, changeFrequency: 'weekly',  priority: 0.8, alternates: multilingual('') },
-    { url: `${baseUrl}/es/about`,       lastModified: now, changeFrequency: 'monthly', priority: 0.5, alternates: multilingual('/about') },
-    { url: `${baseUrl}/da/about`,       lastModified: now, changeFrequency: 'monthly', priority: 0.5, alternates: multilingual('/about') },
-    { url: `${baseUrl}/es/archive`,     lastModified: now, changeFrequency: 'weekly',  priority: 0.6, alternates: multilingual('/archive') },
-    { url: `${baseUrl}/da/archive`,     lastModified: now, changeFrequency: 'weekly',  priority: 0.6, alternates: multilingual('/archive') },
-    { url: `${baseUrl}/es/methodology`, lastModified: now, changeFrequency: 'monthly', priority: 0.5, alternates: multilingual('/methodology') },
-    { url: `${baseUrl}/da/methodology`, lastModified: now, changeFrequency: 'monthly', priority: 0.5, alternates: multilingual('/methodology') },
+    { url: `${baseUrl}/es`,             lastModified: latestContentChange,     changeFrequency: 'weekly',  priority: 0.8, alternates: multilingual('') },
+    { url: `${baseUrl}/da`,             lastModified: latestContentChange,     changeFrequency: 'weekly',  priority: 0.8, alternates: multilingual('') },
+    { url: `${baseUrl}/es/about`,       lastModified: STATIC_PAGE_LAST_MODIFIED, changeFrequency: 'monthly', priority: 0.5, alternates: multilingual('/about') },
+    { url: `${baseUrl}/da/about`,       lastModified: STATIC_PAGE_LAST_MODIFIED, changeFrequency: 'monthly', priority: 0.5, alternates: multilingual('/about') },
+    { url: `${baseUrl}/es/archive`,     lastModified: latestContentChange,     changeFrequency: 'weekly',  priority: 0.6, alternates: multilingual('/archive') },
+    { url: `${baseUrl}/da/archive`,     lastModified: latestContentChange,     changeFrequency: 'weekly',  priority: 0.6, alternates: multilingual('/archive') },
+    { url: `${baseUrl}/es/methodology`, lastModified: STATIC_PAGE_LAST_MODIFIED, changeFrequency: 'monthly', priority: 0.5, alternates: multilingual('/methodology') },
+    { url: `${baseUrl}/da/methodology`, lastModified: STATIC_PAGE_LAST_MODIFIED, changeFrequency: 'monthly', priority: 0.5, alternates: multilingual('/methodology') },
   ];
 
   // ── Weekly digest pages (with file mtime for accurate lastModified) ───────

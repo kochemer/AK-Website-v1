@@ -41,29 +41,43 @@ if (process.env.NODE_ENV === 'production') {
   }
 }
 
-export const metadata: Metadata = {
-  title: 'Weekly AI, Ecommerce & Luxury Industry Digest',
-  description: 'A weekly curated digest covering AI & strategy, ecommerce and retail technology, luxury and jewellery industry news. Updated every week.',
-  alternates: {
-    canonical: `${siteUrl}/`,
-    languages: {
-      'en': `${siteUrl}/`,
-      'es': `${siteUrl}/es`,
-      'da': `${siteUrl}/da`,
-      'x-default': `${siteUrl}/`,
+const HOMEPAGE_TITLE = 'Weekly AI, Ecommerce & Luxury Industry Digest';
+const HOMEPAGE_DESCRIPTION = 'A weekly curated digest covering AI & strategy, ecommerce and retail technology, luxury and jewellery industry news. Updated every week.';
+
+// Use generateMetadata (not static metadata) so the OG image points at the
+// current week's actual cover image instead of the generic /api/og card.
+// Falls back to /api/og when the digest isn't ready (e.g. before first build
+// of the week) or the cover image isn't available.
+export async function generateMetadata(): Promise<Metadata> {
+  const weekLabel = getCurrentDigestWeek();
+  const digest = await loadDigest(weekLabel);
+  const ogImage = digest?.coverImageUrl
+    ? `${siteUrl}${digest.coverImageUrl}`
+    : `${siteUrl}/api/og`;
+  return {
+    title: HOMEPAGE_TITLE,
+    description: HOMEPAGE_DESCRIPTION,
+    alternates: {
+      canonical: `${siteUrl}/`,
+      languages: {
+        'en': `${siteUrl}/`,
+        'es': `${siteUrl}/es`,
+        'da': `${siteUrl}/da`,
+        'x-default': `${siteUrl}/`,
+      },
     },
-  },
-  openGraph: {
-    title: 'Weekly AI, Ecommerce & Luxury Industry Digest | Luxury Intelligence',
-    description: 'A weekly curated digest covering AI & strategy, ecommerce and retail technology, luxury and jewellery industry news. Updated every week.',
-    images: [`${siteUrl}/api/og`],
-  },
-  twitter: {
-    title: 'Weekly AI, Ecommerce & Luxury Industry Digest | Luxury Intelligence',
-    description: 'A weekly curated digest covering AI & strategy, ecommerce and retail technology, luxury and jewellery industry news. Updated every week.',
-    images: [`${siteUrl}/api/og`],
-  },
-};
+    openGraph: {
+      title: `${HOMEPAGE_TITLE} | Luxury Intelligence`,
+      description: HOMEPAGE_DESCRIPTION,
+      images: [ogImage],
+    },
+    twitter: {
+      title: `${HOMEPAGE_TITLE} | Luxury Intelligence`,
+      description: HOMEPAGE_DESCRIPTION,
+      images: [ogImage],
+    },
+  };
+}
 
 async function loadDigest(weekLabel: string): Promise<WeeklyDigest | null> {
   try {

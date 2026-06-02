@@ -147,11 +147,24 @@ function extractSummaryBullets(item: EmailDigestItem): string[] {
   return filteredBullets.slice(0, 3);
 }
 
+const EMAIL_DIGEST_TITLE = 'Email Digest – Weekly Intelligence';
+const EMAIL_DIGEST_DESCRIPTION = 'A single ranked list of the week\'s top articles with sharp insights for retail, luxury, and AI intelligence.';
+
 export const metadata: Metadata = {
-  title: 'Email Digest – Weekly Intelligence',
-  description: 'A single ranked list of the week\'s top articles with sharp insights for retail, luxury, and AI intelligence.',
+  title: EMAIL_DIGEST_TITLE,
+  description: EMAIL_DIGEST_DESCRIPTION,
   alternates: {
     canonical: `${getSiteUrlLazy()}/email-digest`,
+  },
+  openGraph: {
+    title: `${EMAIL_DIGEST_TITLE} | Luxury Intelligence`,
+    description: EMAIL_DIGEST_DESCRIPTION,
+    images: [`${getSiteUrlLazy()}/api/og`],
+  },
+  twitter: {
+    title: `${EMAIL_DIGEST_TITLE} | Luxury Intelligence`,
+    description: EMAIL_DIGEST_DESCRIPTION,
+    images: [`${getSiteUrlLazy()}/api/og`],
   },
 };
 
