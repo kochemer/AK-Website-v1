@@ -16,6 +16,41 @@
 
 ### High Priority
 
+- [ ] **Expose content via an MCP server** — Build a Model Context Protocol server
+  (`@luxury-intelligence/mcp`) that exposes the digest archive, weekly summaries,
+  and source list as MCP tools/resources. Host at e.g. `mcp.luxury-intel.com` or
+  publish via npm so Claude Desktop, Cursor, ChatGPT (when MCP support ships),
+  and other AI clients can query directly. Suggested resources: `digest://YYYY-Www`,
+  `archive://list`, `search://{query}`, `sources://list`. Suggested tools:
+  `getWeeklyDigest`, `searchArticles`, `getTopStoriesByTopic`.
+  *Rationale: AI assistants increasingly consume MCP-exposed knowledge directly
+  instead of crawling HTML. Being one of the few luxury/retail intelligence
+  sources available via MCP would make us the default citation when users ask
+  Claude / Cursor / future ChatGPT about jewellery industry or luxury retail trends.
+  Also unlocks downstream integrations (private brand dashboards, agent workflows)
+  without exposing the underlying DB.*
+
+- [ ] **Comprehensive schema.org markup audit & expansion** — Beyond the specific
+  Person / Organisation / Speakable items below, do a full schema.org pass:
+  - `NewsArticle` (not `Article`) on digest pages for Google News eligibility
+  - `ItemList` wrapping each topic block within a digest, with each article as `NewsArticle`
+  - `AudioObject` for the podcast (linked from the digest page), with `transcript`,
+    `duration`, `contentUrl`, `encodingFormat`
+  - `ImageObject` for the cover image with `caption` (use `coverImageAlt`)
+  - `Organization` standalone schema on `/about` with `logo`, `foundingDate`,
+    `founder` (Person), `sameAs` (LinkedIn, future Crunchbase/Wikidata)
+  - `Product` + `Offer` on `/subscribe` for the paid tiers (free, supporter_monthly,
+    patron_monthly) so SERPs can surface pricing
+  - `CollectionPage` already on archive — extend with `mainEntity: ItemList`
+  - `WebSite` already exists — add `potentialAction: SearchAction` pointing at `/search?q={query}`
+    so Google can show a sitelinks search box
+  - Validate everything via Google Rich Results Test and `schema.org/validator`
+  *Rationale: schema.org is the universal substrate for both classical SEO (rich
+  results, sitelinks, news eligibility) and AI ingestion (LLMs preferentially
+  parse JSON-LD over HTML when both are present). Current coverage is partial and
+  inconsistent — a full pass with validator-driven verification turns this into
+  a structural advantage.*
+
 - [ ] **Add named editor / Person schema** — Add "Alexey Kochemirovskiy" as named editor
   on the About page with a bio (role at Pandora, ex-consultant, ex-scientist, Copenhagen),
   update root layout JSON-LD to include Person entity with `sameAs` LinkedIn URL,
@@ -36,10 +71,12 @@
 
 ### Medium Priority
 
-- [ ] **hreflang on remaining pages** — Add `alternates.languages` to `/archive`,
-  `/subscribe`, `/es/archive`, `/da/archive`, `/es/subscribe`, `/da/subscribe`,
-  `/es/methodology`, `/da/methodology`. Currently only `/`, `/about`, `/methodology`
-  have been updated.
+- [x] **hreflang on remaining pages** — `[DONE 2026-05-28, commits 99b2e56 + 769375e]`
+  Added `alternates.languages` to `/archive`, `/es/archive`, `/da/archive`,
+  `/es/methodology`, `/da/methodology` and made the locale content pages indexable
+  so the cluster is bidirectional. `/subscribe` and its locale variants intentionally
+  stay out of the hreflang cluster — they're noindex utility pages, and pointing
+  hreflang at noindex targets invalidates the cluster per Google's docs.
 
 - [ ] **Organisation schema — `sameAs` links** — Add LinkedIn company page URL and any
   other directory profiles (Crunchbase, etc.) to the `sameAs` array in the WebSite
@@ -49,6 +86,15 @@
 - [ ] **Speakable schema** — Add `Speakable` JSON-LD to digest pages pointing to the
   `oneSentenceSummary` and `weeklyInsight` fields. Relevant for voice/audio AI interfaces
   given the site already has a podcast.
+
+- [ ] **Verify locale homepages aren't treated as duplicates of `/`** — `/es` and `/da`
+  render the same weekly digest data with translated UI chrome but English article
+  titles, summaries, and source links. Worth confirming via Google Search Console
+  (Coverage report) whether Google treats them as duplicates of `/` and consolidates
+  signals. If yes: either translate article summaries on the locale pages (expensive)
+  or accept consolidation and stop maintaining the hreflang cluster for these homepages.
+  *Rationale: hreflang only works when the locale page has materially different content.
+  We've never verified this holds.*
 
 ### Backlog / Ideas
 
@@ -77,23 +123,77 @@
 
 ## Technical / Infrastructure
 
-- [ ] **Remaining sitemap static pages lastmod** — Static pages (`/about`, `/methodology`,
-  etc.) currently use `now` (build time) as lastmod. Consider using known content-change
-  dates or a file-based changelog to give accurate per-page freshness signals.
+- [x] **Sitemap static pages lastmod** — `[DONE 2026-06-02, commit 1816495]`
+  `app/sitemap.ts` now uses a `STATIC_PAGE_LAST_MODIFIED` constant for
+  `/about`, `/methodology`, `/subscribe`, `/feedback`, `/support` and their
+  es/da variants. Weekly pages (`/`, `/archive`, `/email-digest`, locale homes
+  and archives) use the latest digest's `builtAt` timestamp. Bump
+  `STATIC_PAGE_LAST_MODIFIED` when editing static page content.
 
-- [ ] **Archive page canonical + hreflang** — `/archive` page lacks explicit canonical
-  and hreflang. Add `getSiteUrl()` and `alternates` metadata.
+- [x] **Archive page canonical + hreflang** — `[DONE 2026-05-26, commit 99b2e56]`
+  `/archive` has canonical pointing at itself plus the full en/es/da/x-default
+  hreflang cluster. `/es/archive` and `/da/archive` reciprocate (commit 769375e).
+
+- [x] **Homepage OG image uses current cover** — `[DONE 2026-06-02, commit 1816495]`
+  Converted homepage to `generateMetadata`; OG image is now
+  `https://luxury-intel.com/weekly-images/{currentWeek}.png` instead of the
+  generic `/api/og` card. Falls back to `/api/og` when the digest isn't ready yet.
+
+- [x] **`/email-digest` page OG/Twitter metadata** — `[DONE 2026-06-02, commit 1816495]`
+  Added `openGraph` and `twitter` blocks; previously fell through to root
+  layout defaults despite the page being indexable at sitemap priority 0.7.
+
+- [x] **CI: stop single failures from killing the weekly run** — `[DONE 2026-05-31, commit 536f2ff]`
+  Three changes that prevent the W21 disaster pattern: pipeline wrapper now
+  classifies steps as critical (digest only) vs optional; email send exits 0
+  if at least one delivery succeeded; commit/push workflow steps gated with
+  `if: always()` so a partial email failure no longer skips the digest commit.
+
+- [ ] **Stale `planType: 'none'` subscriber cleanup** — Abandoned Stripe checkouts
+  leave silently-ineligible rows in the `subscribers` table (`planType='none'`,
+  `paymentStatus=null`). These look subscribed but `getEligibleWeeklyDigestRecipients()`
+  excludes them, so users never receive emails and never know why. Add a
+  periodic sweep that expires rows older than 24h with `planType='none'`, or
+  upgrade them to `free` if `emailDigestEnabled=true`.
+  *Rationale: We hit this with kochemir@gmail.com after an abandoned Patron checkout.
+  The fix was a one-off script — needs to be automated.*
+
+- [ ] **Resend bounce / complaint webhook** — Listen to Resend's
+  `email.bounced` and `email.complained` events; auto-set `emailDigestEnabled=false`
+  on the corresponding subscriber. Currently a hard bounce repeats every Sunday
+  until manually removed.
+  *Rationale: protects Resend reputation, prevents wasted quota, removes manual cleanup.*
+
+- [ ] **Cover step throws on edge cases** — `digest/regenerateCover.ts:92, :109`
+  throw `Error('No homepage articles found ...')` and `Error('Cover image generation failed')`.
+  Now reclassified as optional in the pipeline wrapper so the workflow no
+  longer halts, but the throws should be softened to skip-and-warn semantics
+  so health.json explicitly records the failure mode.
+
+- [ ] **Competitor analysis runs twice per week** — Once inside the orchestrator
+  (`pipeline/runWeeklyPipeline.ts` Step 9/9) and again as a standalone workflow
+  step (`.github/workflows/weekly-digest.yml`'s `Run competitor analysis`).
+  Either drop the orchestrator step (workflow-level is the fallback) or make
+  the workflow step explicit `if: failure()` on the orchestrator's `competitorAnalyze`.
+  *Rationale: defensive redundancy is good but burns OpenAI tokens unnecessarily.*
 
 ---
 
 ## Product / Features
 
 - [ ] **Competitor Watch** — Already exists at `/competitor-watch`. Evaluate GEO value
-  of making this publicly indexable vs. subscriber-gated.
+  of making this publicly indexable vs. subscriber-gated. Currently `noindex, follow`.
 
-- [ ] **Search page SEO** — `/search` is in the sitemap but likely renders client-side.
-  Ensure it has a meaningful server-rendered title and meta description.
+- [x] **Search page SEO** — `[DONE 2026-05-28, commit 99b2e56]`
+  `app/search/layout.tsx` exports server-rendered metadata with title and
+  `robots: noindex, follow`. Removed from sitemap (commit 769375e) so Google
+  no longer reports "Submitted URL marked noindex" coverage errors.
+
+- [ ] **Customer subscription management UI** — `/account` page reading from
+  Stripe's customer portal so subscribers can change payment method, cancel,
+  or pause without contacting you. Today this is all manual via Stripe dashboard.
+  *Rationale: scales subscriber support and reduces friction for paid tier cancellations.*
 
 ---
 
-*Last reviewed: 2026-04-03*
+*Last reviewed: 2026-06-03 — reconciliation pass: marked 6 items DONE, added 6 new items (subscriber lifecycle, CI hardening, locale duplicate risk).*
