@@ -1,0 +1,77 @@
+{
+  "digestWeek": "2026-W23",
+  "ingestionWeek": "2026-W23",
+  "startedAt": "2026-06-07T09:26:21.199Z",
+  "finishedAt": "2026-06-07T09:42:33.862Z",
+  "steps": [
+    {
+      "name": "rss",
+      "ok": true,
+      "startedAt": "2026-06-07T09:26:21.218Z",
+      "finishedAt": "2026-06-07T09:26:45.216Z"
+    },
+    {
+      "name": "pages",
+      "ok": true,
+      "startedAt": "2026-06-07T09:26:45.216Z",
+      "finishedAt": "2026-06-07T09:26:46.975Z"
+    },
+    {
+      "name": "discovery",
+      "ok": true,
+      "startedAt": "2026-06-07T09:26:46.976Z",
+      "finishedAt": "2026-06-07T09:36:37.471Z"
+    },
+    {
+      "name": "classification",
+      "ok": true,
+      "startedAt": "2026-06-07T09:36:37.471Z",
+      "finishedAt": "2026-06-07T09:36:37.577Z"
+    },
+    {
+      "name": "digest",
+      "ok": true,
+      "startedAt": "2026-06-07T09:36:37.577Z",
+      "finishedAt": "2026-06-07T09:38:48.165Z"
+    },
+    {
+      "name": "email",
+      "ok": true,
+      "startedAt": "2026-06-07T09:38:48.166Z",
+      "finishedAt": "2026-06-07T09:39:05.862Z"
+    },
+    {
+      "name": "podcast",
+      "ok": true,
+      "startedAt": "2026-06-07T09:39:05.862Z",
+      "finishedAt": "2026-06-07T09:41:21.186Z"
+    },
+    {
+      "name": "cover",
+      "ok": true,
+      "startedAt": "2026-06-07T09:41:21.186Z",
+      "finishedAt": "2026-06-07T09:42:18.239Z"
+    },
+    {
+      "name": "competitorAnalyze",
+      "ok": true,
+      "startedAt": "2026-06-07T09:42:18.239Z",
+      "finishedAt": "2026-06-07T09:42:33.853Z"
+    }
+  ],
+  "health": {
+    "warnings": [
+      "Luxury & Consumer: www.businessoffashion.com represents 42.9% (3/7) - exceeds 40% threshold",
+      "Luxury & Consumer: fashionista.com represents 42.9% (3/7) - exceeds 40% threshold",
+      "Jewellery Industry: www.jewellermagazine.com represents 57.1% (4/7) - exceeds 40% threshold"
+    ],
+    "metrics": {
+      "paywallPercent": 0,
+      "podcastWordCount": 2211
+    }
+  },
+  "versions": {
+    "node": "v20.20.2",
+    "gitCommit": "5d5c0e8f0eaecb2f6f87a30beb641a3e63236367"
+  }
+}

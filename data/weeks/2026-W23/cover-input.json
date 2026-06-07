@@ -1,0 +1,28 @@
+{
+  "weekLabel": "2026-W23",
+  "homepageTopArticles": [
+    {
+      "title": "Google’s Universal Cart will soon be available to Walmart, Target shoppers — getting their buy-in may be the hard part",
+      "source": "Modern Retail",
+      "snippet": "Google wants to build the go-to AI-powered shopping cart of the future. But whether shoppers will latch onto it is another question.",
+      "aiSummary": "AI-generated summary: Google is developing an AI-powered Universal Cart aimed at Walmart and Target shoppers, but gaining consumer adoption remains uncertain."
+    },
+    {
+      "title": "Retailers turn to AI for productivity, personalized shopping",
+      "source": "Retail Dive",
+      "snippet": "Best Buy, Gap and Dick’s Sporting Goods detailed how AI investments were reshaping their businesses during their Q1 earnings calls.",
+      "aiSummary": "AI-generated summary: Retailers such as Best Buy, Gap, and Dick’s Sporting Goods highlighted during their Q1 earnings calls how investments in AI are transforming their productivity and personalized shopping experiences."
+    },
+    {
+      "title": "Kate Spade debuts Amazon AI conversational shopping tool",
+      "source": "Professional Jeweller",
+      "snippet": "Kate Spade has become the first retailer to install a new conversation AI tool from Amazon that specifically helps customers buy gifts through product recommendations. Amazon has introduced the AWS Agentic Shopping Assistant, developed with the same technology behind its Alexa for Shopping product, to retailers that utilises artificial intelligence to guide customers through specific […]\nThe post Kate Spade debuts Amazon AI conversational shopping tool appeared first on Professional Jeweller.",
+      "aiSummary": "AI-generated summary: Kate Spade is the first retailer to implement Amazon's new AI conversational shopping tool, the AWS Agentic Shopping Assistant, which uses Alexa technology to provide personalized gift recommendations. This innovation aims to enhance the customer shopping experience in the jewellery industry."
+    }
+  ],
+  "model": "gpt-image-1",
+  "finalPrompt": "Photograph: A supermarket checkout belt with a wire shopping basket holding a shiny gold smart speaker, a Kate Spade purse, bananas, a loaf of bread, and a carton of milk. A Walmart reusable bag is partly visible under the speaker. Small Best Buy and Target stickers are subtly placed on the banana and milk carton. Natural daylight, clean background, all objects clearly visible.\n\nCRITICAL CONSTRAINTS (must be strictly avoided):\n- text, letters, numbers, signage, labels, price tags, screens, UI, dashboards, holograms, floating icons, watermarks, unrelated brand logos, cartoon, illustration, CGI, 3D render, anime, diamond, diamonds, gemstone, gemstones, precious stones, jewelry close-up, jewelry product shot, diamond ring, diamond necklace, diamond earring, jeweled, sparkling gemstone, dramatic spotlight, glowing edges, rim lighting, vignette, cinematic color grade, blurred background, bokeh\n\nThis must look like a real photograph taken by a human — not AI-generated, not CGI, not a 3D render. Natural light. Real objects. Real imperfections. Fill the entire frame edge to edge with the scene — no black bars, no empty space at the edges.\n\nDo not include: text, labels, signage, screens, UI, logos unrelated to the scene, diamonds, gemstones, CGI lighting, dramatic spotlights, or blurred vignette backgrounds.",
+  "imageSize": "1536x1024",
+  "outputPath": "/weekly-images/2026-W23.png",
+  "generatedAt": "2026-06-07T09:42:18.237Z"
+}

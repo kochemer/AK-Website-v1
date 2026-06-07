@@ -2974,5 +2974,149 @@
     ],
     "cached_at": "2026-05-31T09:07:53.922Z",
     "model": "gpt-4.1-mini"
+  },
+  "2026-W23:AI_and_Strategy:21b541feefa8": {
+    "selected": [
+      {
+        "id": "17",
+        "rank": 1,
+        "why": "Anthropic IPO sets major AI industry financial milestone",
+        "confidence": 0.95
+      },
+      {
+        "id": "9",
+        "rank": 2,
+        "why": "Anthropic leadership discusses AI returns ahead of IPO",
+        "confidence": 0.9
+      },
+      {
+        "id": "13",
+        "rank": 3,
+        "why": "Meta launches first paid AI agent product, signaling monetization shift",
+        "confidence": 0.9
+      },
+      {
+        "id": "7",
+        "rank": 4,
+        "why": "Meta AI security breach reveals new risks in AI deployment",
+        "confidence": 0.85
+      },
+      {
+        "id": "14",
+        "rank": 5,
+        "why": "Economic analysis of AI investment trends amid market concerns",
+        "confidence": 0.8
+      },
+      {
+        "id": "2",
+        "rank": 6,
+        "why": "Apple approves first AI agent on Messages platform, expanding AI use cases",
+        "confidence": 0.8
+      },
+      {
+        "id": "5",
+        "rank": 7,
+        "why": "Research on scaling generative AI value creation over three years",
+        "confidence": 0.75
+      }
+    ],
+    "cached_at": "2026-06-07T09:37:05.503Z",
+    "model": "gpt-4.1-mini"
+  },
+  "2026-W23:Ecommerce_Retail_Tech:8b7cc8961bed": {
+    "selected": [
+      {
+        "id": "6",
+        "rank": 1,
+        "why": "Google’s Universal Cart impacts major retailers and AI shopping experience",
+        "confidence": 0.95
+      },
+      {
+        "id": "17",
+        "rank": 2,
+        "why": "Retailers adopting AI for productivity and personalized shopping insights",
+        "confidence": 0.9
+      },
+      {
+        "id": "4",
+        "rank": 3,
+        "why": "Rhino USA’s TikTok Shop success shows marketplace content strategy impact",
+        "confidence": 0.9
+      },
+      {
+        "id": "9",
+        "rank": 4,
+        "why": "Walmart expands delivery with Subway, affecting last-mile logistics",
+        "confidence": 0.88
+      },
+      {
+        "id": "0",
+        "rank": 5,
+        "why": "easyGroup launching easyShop marketplace signals new platform entrant",
+        "confidence": 0.85
+      },
+      {
+        "id": "2",
+        "rank": 6,
+        "why": "Payments Journal analyzes emerging payment trends with industry data",
+        "confidence": 0.83
+      },
+      {
+        "id": "10",
+        "rank": 7,
+        "why": "The Mall app builds universal shopping feed enhancing ecommerce discovery",
+        "confidence": 0.8
+      }
+    ],
+    "cached_at": "2026-06-07T09:37:32.943Z",
+    "model": "gpt-4.1-mini"
+  },
+  "2026-W23:Jewellery_Industry:7b8fe44b3700": {
+    "selected": [
+      {
+        "id": "1",
+        "rank": 1,
+        "why": "Amazon AI tool for conversational shopping enhances CX and ecommerce",
+        "confidence": 0.95
+      },
+      {
+        "id": "5",
+        "rank": 2,
+        "why": "Strategic advice on preparing jewellery retailers for upcoming challenges",
+        "confidence": 0.9
+      },
+      {
+        "id": "9",
+        "rank": 3,
+        "why": "De Beers and GIA investment in diamond verification impacts supply chain",
+        "confidence": 0.9
+      },
+      {
+        "id": "4",
+        "rank": 4,
+        "why": "Cyber attack on Australian retailer highlights ecommerce security risks",
+        "confidence": 0.85
+      },
+      {
+        "id": "0",
+        "rank": 5,
+        "why": "REEDS Jewelers opens new showroom, relevant for store operations insights",
+        "confidence": 0.8
+      },
+      {
+        "id": "15",
+        "rank": 6,
+        "why": "New data on lab-created diamond exports informs product assortment trends",
+        "confidence": 0.8
+      },
+      {
+        "id": "11",
+        "rank": 7,
+        "why": "GIA’s stake in diamond tracing platform affects transparency and CRM",
+        "confidence": 0.8
+      }
+    ],
+    "cached_at": "2026-06-07T09:38:29.560Z",
+    "model": "gpt-4.1-mini"
   }
 }

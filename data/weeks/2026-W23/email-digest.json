@@ -1,0 +1,71 @@
+{
+  "week": "2026-W23",
+  "generatedAt": "2026-06-07T09:39:05.861Z",
+  "intro": "This week’s digest highlights key developments at the intersection of retail and AI, including Google’s expansion of its Universal Cart to major retailers and how AI is reshaping productivity and personalization in shopping. We also examine emerging challenges in AI security following the Meta hack and track innovative content strategies driving rapid growth in social commerce.",
+  "readOneThing": {
+    "title": "Google’s Universal Cart will soon be available to Walmart, Target shoppers — getting their buy-in may be the hard part",
+    "url": "https://www.modernretail.co/technology/google-attracts-retailers-like-walmart-target-to-universal-cart-getting-shoppers-will-be-the-harder-part/?utm_campaign=modernretaildis&utm_medium=rss&utm_source=general-rss"
+  },
+  "items": [
+    {
+      "rank": 1,
+      "title": "Google’s Universal Cart will soon be available to Walmart, Target shoppers — getting their buy-in may be the hard part",
+      "url": "https://www.modernretail.co/technology/google-attracts-retailers-like-walmart-target-to-universal-cart-getting-shoppers-will-be-the-harder-part/?utm_campaign=modernretaildis&utm_medium=rss&utm_source=general-rss",
+      "source": "Modern Retail",
+      "bullets": [
+        "Google announced the Universal Cart, an AI-powered shopping cart that integrates across Google Search, Gemini, YouTube, and Gmail to track deals and manage purchases from multiple merchants.",
+        "The Universal Cart supports checkout via Google Pay or transferring items to merchant websites, with partners including Walmart, Target, Nike, Sephora, and Ulta Beauty enabling these features.",
+        "Launching in the U.S. this summer on Google Search and Gemini, the Universal Cart will later expand to YouTube and Gmail, operating solely within the Google ecosystem without taking a cut of purchases."
+      ],
+      "summary": "AI-generated summary: Google is developing an AI-powered Universal Cart aimed at Walmart and Target shoppers, but gaining consumer adoption remains uncertain."
+    },
+    {
+      "rank": 2,
+      "title": "Ahead of its IPO, Anthropic’s Daniela Amodei shrugs off doubts about AI’s returns",
+      "url": "https://techcrunch.com/2026/06/04/ahead-of-its-ipo-anthropics-daniela-amodei-shrugs-off-doubts-about-ais-returns/",
+      "source": "TechCrunch - AI",
+      "bullets": [
+        "Anthropic has confidentially filed for an IPO as it seeks capital to support the high costs of training and serving AI models.",
+        "The company reported annualized revenue surpassing $47 billion in May, a significant increase from approximately $9 billion at the end of 2025.",
+        "Anthropic partnered with xAI for compute capacity, committing to a $1.25 billion monthly cost disclosed in SpaceX's S-1 filing."
+      ],
+      "summary": "AI-generated summary: Ahead of its IPO, Anthropic's Daniela Amodei remains confident despite skepticism about AI's returns, as the company reports rapid growth with annualized revenue soaring from $9 billion at the end of 2025 to $47 billion in May 2026."
+    },
+    {
+      "rank": 3,
+      "title": "Retailers turn to AI for productivity, personalized shopping",
+      "url": "https://www.retaildive.com/news/gap-best-buy-dicks-retailers-ai-personalization/821843/",
+      "source": "Retail Dive",
+      "bullets": [
+        "Best Buy reported $8.9 billion in revenue with 2% growth in comparable sales, while Gap experienced a 2% increase in comparable sales for the ninth consecutive quarter.",
+        "A National Retail Federation report found 39% of retailers expect AI to comprise over 10% of their technology spending by 2028, with agentic commerce projected to reach $1 trillion in U.S. consumer retail revenue by 2030.",
+        "Published June 4, 2026 Paige Gross Reporter Share Copy link Email LinkedIn X/Twitter Facebook Print License Add us on Google A Gap store stands in Times Square on March 5, 2026, in New York City"
+      ],
+      "summary": "AI-generated summary: Retailers such as Best Buy, Gap, and Dick’s Sporting Goods highlighted during their Q1 earnings calls how investments in AI are transforming their productivity and personalized shopping experiences."
+    },
+    {
+      "rank": 4,
+      "title": "The Meta hack shows there’s more to AI security than Mythos",
+      "url": "https://www.technologyreview.com/2026/06/05/1138437/the-meta-hack-shows-theres-more-to-ai-security-than-mythos/",
+      "source": "MIT Technology Review",
+      "bullets": [
+        "Attackers exploited Meta's AI customer support agent by requesting it to link Instagram accounts to email addresses they controlled, successfully stealing accounts including the dormant Obama White House account.",
+        "The hack involved a simple method where attackers used VPNs matching the account owner's location and directly asked the AI agent to change the account's email address, bypassing security questions.",
+        "Experts warn that as AI agents become more widely used for automating workflows, vulnerabilities like indirect prompt injection and insufficient guardrails pose increasing cybersecurity risks."
+      ],
+      "summary": "AI-generated summary: According to a June 5 report by 404 Media, attackers exploited Meta’s AI customer support agent to hijack Instagram accounts by tricking it into linking accounts to their own email addresses, including breaching the dormant Obama White House account. This incident highlights significant security challenges in AI systems beyond common misconceptions."
+    },
+    {
+      "rank": 5,
+      "title": "Marketplace Briefing: How Rhino USA is building a 182‑acre ‘content factory’ in Texas after riding TikTok Shop to 8-figure sales",
+      "url": "https://www.modernretail.co/operations/marketplace-briefing-how-rhino-usa-is-building-a-182-acre-content-factory-in-texas-after-riding-tiktok-shop-to-8-figure-sales/?utm_campaign=modernretaildis&utm_medium=rss&utm_source=general-rss",
+      "source": "Modern Retail",
+      "bullets": [
+        "Rhino USA is constructing a 182-acre facility called RhinoWorld in Central Texas to produce creator content and product demonstrations for TikTok Shop. The company has generated over eight figures in revenue on TikTok Shop since joining in October 2023, with viral videos driving significant sales. RhinoWorld is expected to open fully by 2027 and will include trails, testing labs, retail space, and live commerce production areas to support ongoing content creation.",
+        "More from the series → On 182 acres of Central Texas scrubland outside Austin, a Ford Bronco crawls over a dirt course taking shape",
+        "Winding trails cut through the property, where obstacles and new buildings are beginning to emerge from the brush"
+      ],
+      "summary": "AI-generated summary: Rhino USA is developing a 182-acre campus in Texas to enhance content creation following its unexpected success on TikTok Shop, where it achieved over eight figures in sales."
+    }
+  ]
+}

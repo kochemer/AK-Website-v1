@@ -1,0 +1,982 @@
+{
+  "weekLabel": "2026-W23",
+  "tz": "Europe/Copenhagen",
+  "startISO": "2026-05-31T22:00:00.000Z",
+  "endISO": "2026-06-07T21:59:59.999Z",
+  "builtAtISO": "2026-06-07T11:38:29.561+02:00",
+  "builtAtLocal": "2026-06-07 11:38:29",
+  "totals": {
+    "total": 759,
+    "byTopic": {
+      "AIStrategy": 138,
+      "EcommerceRetail": 484,
+      "LuxuryConsumer": 113,
+      "Jewellery": 23
+    }
+  },
+  "topics": {
+    "AI_and_Strategy": {
+      "total": 138,
+      "top": [
+        {
+          "id": "axy1ap",
+          "title": "Anthropic Files to Go Public, Setting Stage for Huge I.P.O.",
+          "url": "https://www.nytimes.com/2026/06/01/technology/anthropic-ipo.html",
+          "source": "NYTimes Technology",
+          "published_at": "2026-06-02T17:55:38.000Z",
+          "ingested_at": "2026-06-07T09:26:21.219Z",
+          "snippet": "The artificial intelligence company, which is racing OpenAI to the stock market, has seen explosive growth over the last year thanks largely to technology that can automatically write computer code.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.275,
+            "recencyScore": 0,
+            "sourceWeight": 0.075,
+            "keywordBoost": 0.2,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "anthropic",
+              "artificial intelligence",
+              "openai",
+              "compute"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Anthropic, an artificial intelligence company experiencing rapid growth due to its technology that can automatically write computer code, has filed to go public, positioning itself in direct competition with OpenAI's upcoming stock market debut.",
+          "translations": {
+            "da": {
+              "title": "Anthropic anmoder om børsnotering og baner vejen for stor I.P.O.",
+              "summary": "AI-genereret resumé: Anthropic, et kunstig intelligensfirma i hurtig vækst takket være sin teknologi, der automatisk kan skrive computerkode, har anmodet om børsnotering og positionerer sig i direkte konkurrence med OpenAIs kommende børsintroduktion."
+            },
+            "es": {
+              "title": "Anthropic solicita salir a bolsa, preparando el terreno para una gran O.P.V.",
+              "summary": "Resumen generado por IA: Anthropic, una empresa de inteligencia artificial que experimenta un rápido crecimiento gracias a su tecnología que puede escribir código informático automáticamente, ha solicitado salir a bolsa, posicionándose en competencia directa con la próxima salida a bolsa de OpenAI."
+            }
+          }
+        },
+        {
+          "id": "6jlrze",
+          "title": "Ahead of its IPO, Anthropic’s Daniela Amodei shrugs off doubts about AI’s returns",
+          "url": "https://techcrunch.com/2026/06/04/ahead-of-its-ipo-anthropics-daniela-amodei-shrugs-off-doubts-about-ais-returns/",
+          "source": "TechCrunch - AI",
+          "published_at": "2026-06-04T22:43:26.000Z",
+          "ingested_at": "2026-06-07T09:26:21.219Z",
+          "snippet": "Anthropic has been growing at a breakneck pace. The company announced that annualized revenue crossed $47 billion in May, up dramatically from roughly $9 billion at the end of 2025. That trajectory faces a real test, though.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.04999999999999999,
+            "recencyScore": 0,
+            "sourceWeight": 0.15,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0.2,
+            "matchedKeywords": [
+              "ai",
+              "anthropic"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Ahead of its IPO, Anthropic's Daniela Amodei remains confident despite skepticism about AI's returns, as the company reports rapid growth with annualized revenue soaring from $9 billion at the end of 2025 to $47 billion in May 2026.",
+          "translations": {
+            "da": {
+              "title": "Forud for sin børsintroduktion afviser Anthropics Daniela Amodei tvivl om AI's afkast",
+              "summary": "AI-genereret resumé: Forud for sin børsintroduktion forbliver Anthropics Daniela Amodei selvsikker trods skepsis omkring AI's afkast, da virksomheden rapporterer hurtig vækst med årlige indtægter, der stiger fra 9 milliarder dollars ved udgangen af 2025 til 47 milliarder dollars i maj 2026."
+            },
+            "es": {
+              "title": "Antes de su IPO, Daniela Amodei de Anthropic ignora las dudas sobre los rendimientos de la IA",
+              "summary": "Resumen generado por IA: Antes de su IPO, Daniela Amodei de Anthropic se mantiene confiada a pesar del escepticismo sobre los rendimientos de la IA, ya que la empresa reporta un rápido crecimiento con ingresos anualizados que aumentan de 9 mil millones de dólares a finales de 2025 a 47 mil millones en mayo de 2026."
+            }
+          }
+        },
+        {
+          "id": "8wzi86",
+          "title": "Meta's Hatch AI agent could cost up to $200 a month and marks its first paid AI product",
+          "url": "https://the-decoder.com/metas-hatch-ai-agent-could-cost-up-to-200-a-month-and-marks-its-first-paid-ai-product/",
+          "source": "The Decoder",
+          "published_at": "2026-06-06T11:42:08.000Z",
+          "ingested_at": "2026-06-07T09:26:21.219Z",
+          "snippet": "Meta is developing a paid AI agent product called \"Hatch\" that could cost up to $200 per month. Users describe what they need in simple language, and Hatch builds working tools, schedules appointments, or sends emails. CEO Mark Zuckerberg sees the product as a way to open up new revenue streams beyond advertising and refinance the company's massive AI investments.\nThe article Meta's Hatch AI agent could cost up to $200 a month and marks its first paid AI product appeared first on The Decoder.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": -0.04999999999999999,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0,
+            "penalty": 0.2,
+            "matchedKeywords": [
+              "ai",
+              "agent",
+              "investment"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Meta is launching its first paid AI product, \"Hatch,\" an agent that performs tasks like building tools and managing schedules for up to $200 per month, aiming to create new revenue streams beyond advertising.",
+          "translations": {
+            "da": {
+              "title": "Metas Hatch AI-agent kan koste op til 200 $ om måneden og markerer dets første betalte AI-produkt",
+              "summary": "AI-genereret resumé: Meta lancerer sit første betalte AI-produkt, \"Hatch\", en agent der udfører opgaver som at bygge værktøjer og styre kalendere for op til 200 $ om måneden, med mål om at skabe nye indtægtskilder ud over reklamer."
+            },
+            "es": {
+              "title": "El agente AI Hatch de Meta podría costar hasta 200 $ al mes y marca su primer producto AI de pago",
+              "summary": "Resumen generado por IA: Meta lanza su primer producto AI de pago, \"Hatch\", un agente que realiza tareas como crear herramientas y gestionar agendas por hasta 200 $ al mes, con el objetivo de generar nuevas fuentes de ingresos más allá de la publicidad."
+            }
+          }
+        },
+        {
+          "id": "veaivz",
+          "title": "The Meta hack shows there’s more to AI security than Mythos",
+          "url": "https://www.technologyreview.com/2026/06/05/1138437/the-meta-hack-shows-theres-more-to-ai-security-than-mythos/",
+          "source": "MIT Technology Review",
+          "published_at": "2026-06-05T09:00:00.000Z",
+          "ingested_at": "2026-06-07T09:26:21.219Z",
+          "snippet": "On June 5, 404 Media reported that attackers had been using Meta’s AI customer support agent to steal Instagram accounts. Their approach was simple: They asked the agent to link the accounts to email addresses that they controlled, and the agent complied. One attacker broke into the dormant Obama White House account and made pro-Iran…",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.09999999999999998,
+            "recencyScore": 0,
+            "sourceWeight": 0.15,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0.05,
+            "penalty": 0.2,
+            "matchedKeywords": [
+              "ai",
+              "agent"
+            ]
+          },
+          "aiSummary": "AI-generated summary: According to a June 5 report by 404 Media, attackers exploited Meta’s AI customer support agent to hijack Instagram accounts by tricking it into linking accounts to their own email addresses, including breaching the dormant Obama White House account. This incident highlights significant security challenges in AI systems beyond common misconceptions.",
+          "translations": {
+            "da": {
+              "title": "Meta-hacket viser, at der er mere i AI-sikkerhed end Mythos",
+              "summary": "AI-genereret resumé: Ifølge en rapport fra 5. juni fra 404 Media udnyttede angribere Metas AI-kundesupportagent til at overtage Instagram-konti ved at narre den til at forbinde konti til deres egne e-mailadresser, herunder brud på den sovende Obama White House-konto. Denne hændelse fremhæver betydelige sikkerhedsudfordringer i AI-systemer ud over almindelige misforståelser."
+            },
+            "es": {
+              "title": "El hackeo a Meta muestra que hay más en la seguridad de la IA que Mythos",
+              "summary": "Resumen generado por IA: Según un informe del 5 de junio de 404 Media, atacantes explotaron el agente de soporte al cliente de IA de Meta para secuestrar cuentas de Instagram al engañarlo para vincular cuentas a sus propias direcciones de correo electrónico, incluyendo la violación de la cuenta inactiva de la Casa Blanca de Obama. Este incidente destaca desafíos significativos de seguridad en sistemas de IA más allá de conceptos erróneos comunes."
+            }
+          }
+        },
+        {
+          "id": "71xixc",
+          "title": "AI fever spreads, but are markets masking economic cracks? ",
+          "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/ai-fever-spreads-but-are-markets-masking-economic-cracks/articleshow/131534229.cms",
+          "source": "Economic Times - Technology",
+          "published_at": "2026-06-05T14:23:21.000Z",
+          "ingested_at": "2026-06-07T09:26:21.219Z",
+          "snippet": "Investors are pouring money into Artificial Intelligence, even as economic worries grow. SpaceX's massive IPO signals strong AI interest. Companies like Google are expanding AI infrastructure. Chipmakers are seeing huge demand. However, some signs suggest market expectations may be too high. Analysts are watching closely to see if this AI boom can withstand inflation and slowing growth.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": -0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0.2,
+            "matchedKeywords": [
+              "ai",
+              "artificial intelligence"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Investors are heavily investing in Artificial Intelligence, highlighted by SpaceX's large IPO and increased AI infrastructure by companies like Google, alongside strong demand for chips; however, analysts caution that market optimism may overlook underlying economic challenges such as inflation and slowing growth.",
+          "translations": {
+            "da": {
+              "title": "AI-feber spreder sig, men skjuler markederne økonomiske revner?",
+              "summary": "AI-genereret opsummering: Investorer investerer kraftigt i Artificial Intelligence, fremhævet af SpaceXs store IPO og øget AI-infrastruktur hos virksomheder som Google, sammen med stor efterspørgsel efter chips; dog advarer analytikere om, at markedets optimisme kan overse underliggende økonomiske udfordringer som inflation og aftagende vækst."
+            },
+            "es": {
+              "title": "La fiebre de la IA se extiende, pero ¿los mercados ocultan grietas económicas?",
+              "summary": "Resumen generado por IA: Los inversores están invirtiendo fuertemente en Artificial Intelligence, destacado por la gran IPO de SpaceX y el aumento de la infraestructura de IA por parte de empresas como Google, junto con una fuerte demanda de chips; sin embargo, los analistas advierten que el optimismo del mercado puede pasar por alto desafíos económicos subyacentes como la inflación y el crecimiento lento."
+            }
+          }
+        },
+        {
+          "id": "2pg72o",
+          "title": "Apple approves Poke as the first AI agent on its Messages for Business platform",
+          "url": "https://techcrunch.com/2026/06/04/apple-approves-poke-as-the-first-ai-agent-on-its-messages-for-business-platform/",
+          "source": "TechCrunch - AI",
+          "published_at": "2026-06-04T19:20:58.000Z",
+          "ingested_at": "2026-06-07T09:26:21.219Z",
+          "snippet": "Poke, the startup that lets people use AI agents through simple text messages, has become the first AI agent approved for Apple’s Messages for Business platform.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.25,
+            "recencyScore": 0,
+            "sourceWeight": 0.15,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ai",
+              "agent"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Poke, a startup enabling AI agents via simple text messages, has been approved as the first AI agent on Apple's Messages for Business platform, according to TechCrunch on June 4, 2026.",
+          "translations": {
+            "da": {
+              "title": "Apple godkender Poke som den første AI-agent på sin Messages for Business-platform",
+              "summary": "AI-genereret resumé: Poke, en startup der muliggør AI-agenter via simple tekstbeskeder, er blevet godkendt som den første AI-agent på Apples Messages for Business-platform, ifølge TechCrunch den 4. juni 2026."
+            },
+            "es": {
+              "title": "Apple aprueba a Poke como el primer agente de IA en su plataforma Messages for Business",
+              "summary": "Resumen generado por IA: Poke, una startup que permite agentes de IA mediante mensajes de texto simples, ha sido aprobada como el primer agente de IA en la plataforma Messages for Business de Apple, según TechCrunch el 4 de junio de 2026."
+            }
+          }
+        },
+        {
+          "id": "dhq2gn",
+          "title": "Create Generative AI Value at Scale",
+          "url": "https://sloanreview.mit.edu/article/create-generative-ai-value-at-scale/",
+          "source": "MIT Sloan Management Review",
+          "published_at": "2026-06-02T13:36:36.000Z",
+          "ingested_at": "2026-06-07T09:26:21.219Z",
+          "snippet": "Christian Gralingen The Research Over three years (2022-2025), two of the authors (Kevin and Ivo) engaged with 23 Swiss companies that were members of a research consortium focused on generative AI. The study participants represented a diverse array of industries: retail banking, investment banking, health insurance, insurance, medical coding, energy, law, laboratory instrument manufacturing, equipment […]",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ai",
+              "research",
+              "investment"
+            ]
+          },
+          "aiSummary": "AI-generated summary: The article \"Create Generative AI Value at Scale\" from MIT Sloan Management Review (2026) discusses a three-year study (2022-2025) involving 23 Swiss companies across various industries collaborating in a research consortium to explore the strategic implementation of generative AI.",
+          "translations": {
+            "da": {
+              "title": "Skab Generativ AI-værdi i Stort Omfang",
+              "summary": "AI-genereret resumé: Artiklen \"Create Generative AI Value at Scale\" fra MIT Sloan Management Review (2026) omhandler en treårig undersøgelse (2022-2025) med 23 schweiziske virksomheder fra forskellige brancher, der samarbejder i et forskningskonsortium for at udforske strategisk implementering af generativ AI."
+            },
+            "es": {
+              "title": "Crear Valor con IA Generativa a Gran Escala",
+              "summary": "Resumen generado por IA: El artículo \"Create Generative AI Value at Scale\" de MIT Sloan Management Review (2026) analiza un estudio de tres años (2022-2025) que involucra a 23 empresas suizas de diversas industrias colaborando en un consorcio de investigación para explorar la implementación estratégica de la IA generativa."
+            }
+          }
+        }
+      ]
+    },
+    "Ecommerce_Retail_Tech": {
+      "total": 484,
+      "top": [
+        {
+          "id": "1pplho",
+          "title": "Google’s Universal Cart will soon be available to Walmart, Target shoppers — getting their buy-in may be the hard part",
+          "url": "https://www.modernretail.co/technology/google-attracts-retailers-like-walmart-target-to-universal-cart-getting-shoppers-will-be-the-harder-part/?utm_campaign=modernretaildis&utm_medium=rss&utm_source=general-rss",
+          "source": "Modern Retail",
+          "published_at": "2026-06-04T04:00:00.000Z",
+          "ingested_at": "2026-06-07T09:26:21.219Z",
+          "snippet": "Google wants to build the go-to AI-powered shopping cart of the future. But whether shoppers will latch onto it is another question.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "shopping"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Google is developing an AI-powered Universal Cart aimed at Walmart and Target shoppers, but gaining consumer adoption remains uncertain.",
+          "translations": {
+            "da": {
+              "title": "Googles Universal Cart bliver snart tilgængelig for Walmart- og Target-kunder – at få deres accept kan blive den svære del",
+              "summary": "AI-genereret resumé: Google udvikler en AI-drevet Universal Cart rettet mod Walmart- og Target-kunder, men forbrugernes accept er stadig usikker."
+            },
+            "es": {
+              "title": "El Universal Cart de Google pronto estará disponible para compradores de Walmart y Target — conseguir su aceptación puede ser lo difícil",
+              "summary": "Resumen generado por IA: Google está desarrollando un Universal Cart impulsado por IA dirigido a compradores de Walmart y Target, pero la adopción por parte de los consumidores sigue siendo incierta."
+            }
+          }
+        },
+        {
+          "id": "7i3l7",
+          "title": "Retailers turn to AI for productivity, personalized shopping",
+          "url": "https://www.retaildive.com/news/gap-best-buy-dicks-retailers-ai-personalization/821843/",
+          "source": "Retail Dive",
+          "published_at": "2026-06-04T15:50:00.000Z",
+          "ingested_at": "2026-06-07T09:26:21.219Z",
+          "snippet": "Best Buy, Gap and Dick’s Sporting Goods detailed how AI investments were reshaping their businesses during their Q1 earnings calls.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "shopping"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Retailers such as Best Buy, Gap, and Dick’s Sporting Goods highlighted during their Q1 earnings calls how investments in AI are transforming their productivity and personalized shopping experiences.",
+          "translations": {
+            "da": {
+              "title": "Detailhandlere vender sig mod AI for produktivitet og personlig shopping",
+              "summary": "AI-genereret resumé: Detailhandlere som Best Buy, Gap og Dick’s Sporting Goods fremhævede under deres Q1-indtjeningsopkald, hvordan investeringer i AI forvandler deres produktivitet og personlige shoppingoplevelser."
+            },
+            "es": {
+              "title": "Los minoristas recurren a la IA para la productividad y compras personalizadas",
+              "summary": "Resumen generado por IA: Minoristas como Best Buy, Gap y Dick’s Sporting Goods destacaron durante sus llamadas de resultados del primer trimestre cómo las inversiones en IA están transformando su productividad y experiencias de compra personalizadas."
+            }
+          }
+        },
+        {
+          "id": "y02w21",
+          "title": "Marketplace Briefing: How Rhino USA is building a 182‑acre ‘content factory’ in Texas after riding TikTok Shop to 8-figure sales",
+          "url": "https://www.modernretail.co/operations/marketplace-briefing-how-rhino-usa-is-building-a-182-acre-content-factory-in-texas-after-riding-tiktok-shop-to-8-figure-sales/?utm_campaign=modernretaildis&utm_medium=rss&utm_source=general-rss",
+          "source": "Modern Retail",
+          "published_at": "2026-06-04T14:00:00.000Z",
+          "ingested_at": "2026-06-07T09:26:21.219Z",
+          "snippet": "Rhino USA is building a 182-acre Texas campus to fuel content creation after becoming an unlikely TikTok Shop success story, surpassing eight figures in revenue on the platform.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "marketplace",
+              "platform"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Rhino USA is developing a 182-acre campus in Texas to enhance content creation following its unexpected success on TikTok Shop, where it achieved over eight figures in sales.",
+          "translations": {
+            "da": {
+              "title": "Marketplace Briefing: Hvordan Rhino USA bygger en 182-acre 'content factory' i Texas efter at have opnået 8-cifrede salg på TikTok Shop",
+              "summary": "AI-genereret resumé: Rhino USA udvikler en 182-acre campus i Texas for at forbedre indholdsproduktion efter deres uventede succes på TikTok Shop, hvor de opnåede over otte cifre i salg."
+            },
+            "es": {
+              "title": "Marketplace Briefing: Cómo Rhino USA está construyendo una ‘fábrica de contenido’ de 182 acres en Texas tras alcanzar ventas de 8 cifras en TikTok Shop",
+              "summary": "Resumen generado por IA: Rhino USA está desarrollando un campus de 182 acres en Texas para mejorar la creación de contenido tras su éxito inesperado en TikTok Shop, donde alcanzó ventas de más de ocho cifras."
+            }
+          }
+        },
+        {
+          "id": "w4c2er",
+          "title": "Walmart extends into restaurant delivery with Subway deal",
+          "url": "https://www.retaildive.com/news/walmart-restaurant-delivery-subway/822125/",
+          "source": "Retail Dive",
+          "published_at": "2026-06-05T16:09:00.000Z",
+          "ingested_at": "2026-06-07T09:26:21.219Z",
+          "snippet": "The mass retailer is rolling out its express delivery service for select Subway shops, which is Walmart's largest in-store restaurant tenant.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": []
+          },
+          "aiSummary": "AI-generated summary: Walmart is expanding its express delivery service to include select Subway locations, its largest in-store restaurant tenant, as part of its ecommerce and retail tech initiatives.",
+          "translations": {
+            "da": {
+              "title": "Walmart udvider til restaurantlevering med Subway-aftale",
+              "summary": "AI-genereret resumé: Walmart udvider sin ekspreslevering til udvalgte Subway-lokationer, sin største restaurantlejer i butikken, som en del af sine e-handels- og detailteknologiinitiativer."
+            },
+            "es": {
+              "title": "Walmart se expande en la entrega de restaurantes con acuerdo con Subway",
+              "summary": "Resumen generado por IA: Walmart está ampliando su servicio de entrega exprés para incluir ubicaciones selectas de Subway, su mayor inquilino de restaurante en tienda, como parte de sus iniciativas de comercio electrónico y tecnología minorista."
+            }
+          }
+        },
+        {
+          "id": "ck347w",
+          "title": "easyGroup moves into online retail with launch of easyShop marketplace",
+          "url": "https://www.retailgazette.co.uk/blog/2026/06/easygroup-moves-into-online-retail-with-launch-of-easyshop-marketplace/",
+          "source": "Retail Gazette",
+          "published_at": "2026-06-05T05:10:57.000Z",
+          "ingested_at": "2026-06-07T09:26:21.219Z",
+          "snippet": "easyGroup is entering mainstream online retail with the launch of easyShop.com, a new marketplace set to go live across 21 European countries later this year. The platform, which forms part of the easy family of brands, marks a major expansion for the business into everyday shopping and will be built around its long-standing focus on...",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.2,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "online retail",
+              "marketplace",
+              "shopping",
+              "platform"
+            ]
+          },
+          "aiSummary": "AI-generated summary: easyGroup is expanding into mainstream online retail with the upcoming launch of easyShop.com, a new marketplace set to operate in 21 European countries later this year, marking a significant growth for the brand in everyday shopping.",
+          "translations": {
+            "da": {
+              "title": "easyGroup bevæger sig ind i online detailhandel med lanceringen af easyShop-markedspladsen",
+              "summary": "AI-genereret resumé: easyGroup udvider til mainstream online detailhandel med den kommende lancering af easyShop.com, en ny markedsplads, der skal operere i 21 europæiske lande senere i år, hvilket markerer en betydelig vækst for brandet i dagligdags shopping."
+            },
+            "es": {
+              "title": "easyGroup entra en el comercio minorista en línea con el lanzamiento del mercado easyShop",
+              "summary": "Resumen generado por IA: easyGroup se expande al comercio minorista en línea convencional con el próximo lanzamiento de easyShop.com, un nuevo mercado que operará en 21 países europeos a finales de este año, marcando un crecimiento significativo para la marca en las compras diarias."
+            }
+          }
+        },
+        {
+          "id": "s4qwhm",
+          "title": "Separating Hype from Reality in Emerging Payment Trends",
+          "url": "https://www.paymentsjournal.com/separating-hype-from-reality-in-emerging-payment-trends/",
+          "source": "Payments Journal",
+          "published_at": "2026-06-04T13:00:00.000Z",
+          "ingested_at": "2026-06-07T09:26:21.219Z",
+          "snippet": "Despite near-constant industry buzz, the days when artificial intelligence agents dominate e-commerce—and consumers widely complete in-store purchases with a palm swipe—have not yet arrived. This is not to say they will never arrive, but if the rollout of prior tech trends like biometric authentication and embedded finance is any indication, there is still substantial runway […]\nThe post Separating Hype from Reality in Emerging Payment Trends appeared first on PaymentsJournal.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "payment",
+              "e-commerce"
+            ]
+          },
+          "aiSummary": "AI-generated summary: The article from Payments Journal discusses how, despite ongoing excitement, technologies like AI agents in e-commerce and palm-swipe payments have yet to become mainstream, indicating that widespread adoption of emerging payment trends still has significant progress to make.",
+          "translations": {
+            "da": {
+              "title": "Adskillelse af hype fra virkelighed i nye betalingstendenser",
+              "summary": "AI-genereret resumé: Artiklen fra Payments Journal diskuterer, hvordan teknologier som AI-agenter i e-handel og palm-swipe betalinger endnu ikke er blevet mainstream, hvilket viser, at udbredt adoption af nye betalingstendenser stadig har lang vej igen."
+            },
+            "es": {
+              "title": "Separando el Hype de la Realidad en las Tendencias Emergentes de Pago",
+              "summary": "Resumen generado por IA: El artículo de Payments Journal analiza cómo, a pesar del entusiasmo continuo, tecnologías como los agentes de IA en comercio electrónico y los pagos con deslizamiento de palma aún no se han generalizado, lo que indica que la adopción masiva de las tendencias emergentes de pago aún tiene un progreso significativo por delante."
+            }
+          }
+        },
+        {
+          "id": "v1qbff",
+          "title": "A new app, The Mall, is building a universal feed for online shopping",
+          "url": "https://techcrunch.com/2026/06/01/a-new-app-the-mall-is-building-a-universal-feed-for-online-shopping/",
+          "source": "TechCrunch - Commerce",
+          "published_at": "2026-06-01T17:50:18.000Z",
+          "ingested_at": "2026-06-07T09:26:21.219Z",
+          "snippet": "The Mall lets shoppers build a personalized feed of brands, track sales and drops, and discover products across thousands of retailers.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "shopping"
+            ]
+          },
+          "aiSummary": "AI-generated summary: The Mall is a new app that creates a personalized shopping feed, allowing users to follow brands, monitor sales and product drops, and explore items from thousands of retailers.",
+          "translations": {
+            "da": {
+              "title": "En ny app, The Mall, bygger et universelt feed til online shopping",
+              "summary": "AI-genereret resumé: The Mall er en ny app, der skaber et personligt shopping-feed, som giver brugerne mulighed for at følge mærker, overvåge udsalg og produktudgivelser samt udforske varer fra tusindvis af forhandlere."
+            },
+            "es": {
+              "title": "Una nueva app, The Mall, está creando un feed universal para compras en línea",
+              "summary": "Resumen generado por IA: The Mall es una nueva app que crea un feed de compras personalizado, permitiendo a los usuarios seguir marcas, monitorear ofertas y lanzamientos de productos, y explorar artículos de miles de minoristas."
+            }
+          }
+        }
+      ]
+    },
+    "Luxury_and_Consumer": {
+      "total": 113,
+      "top": [
+        {
+          "id": "ktsut5",
+          "title": "Macy’s Raises Annual Forecast as Luxury Focus Draws Affluent Shoppers",
+          "url": "https://www.businessoffashion.com/news/retail/macys-raises-annual-forecast-as-luxury-focus-draws-affluent-shoppers/",
+          "source": "Business of Fashion - News",
+          "published_at": "2026-06-03T11:58:33.000Z",
+          "ingested_at": "2026-06-07T09:26:21.219Z",
+          "snippet": "The US retailer posted its first quarterly sales growth in nearly four years, driven by strong demand for high-end products at its Bloomingdale’s and Bluemercury stores.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.2,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "luxury",
+              "affluent",
+              "high-end",
+              "demand"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Macy’s has raised its annual forecast after posting its first quarterly sales growth in nearly four years, fueled by increased demand for luxury products at Bloomingdale’s and Bluemercury stores.",
+          "translations": {
+            "da": {
+              "title": "Macy’s hæver årsprognosen, da fokus på luksus tiltrækker velhavende kunder",
+              "summary": "AI-genereret resumé: Macy’s har hævet sin årsprognose efter at have opnået sin første kvartalsvise salgsstigning i næsten fire år, drevet af øget efterspørgsel efter luksusprodukter i Bloomingdale’s og Bluemercury butikker."
+            },
+            "es": {
+              "title": "Macy’s eleva su pronóstico anual mientras el enfoque en lujo atrae a compradores adinerados",
+              "summary": "Resumen generado por IA: Macy’s ha elevado su pronóstico anual tras registrar su primer crecimiento trimestral en ventas en casi cuatro años, impulsado por una mayor demanda de productos de lujo en las tiendas Bloomingdale’s y Bluemercury."
+            }
+          }
+        },
+        {
+          "id": "umcm5",
+          "title": "EVNA PR Is Hiring A Publicist In NYC Or Los Angeles",
+          "url": "https://fashionista.com/2026/06/evna-pr-is-hiring-a-publicist-in-nyc-or-los-angeles",
+          "source": "Fashionista",
+          "published_at": "2026-06-02T14:10:00.000Z",
+          "ingested_at": "2026-06-07T09:26:21.219Z",
+          "snippet": "EVNA PR is a strategic communications agency working across beauty, fashion, and interior design, building brand equity through earned storytelling, affiliate, brand partnerships, events, and awards.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "brand"
+            ]
+          },
+          "aiSummary": "AI-generated summary: EVNA PR, a strategic communications agency specializing in beauty, fashion, and interior design, is hiring a publicist in NYC or Los Angeles to support its work in building brand equity through storytelling, partnerships, events, and awards.",
+          "translations": {
+            "da": {
+              "title": "EVNA PR ansætter en publicist i NYC eller Los Angeles",
+              "summary": "AI-genereret resumé: EVNA PR, et strategisk kommunikationsbureau med speciale i skønhed, mode og indretning, ansætter en publicist i NYC eller Los Angeles til at støtte arbejdet med at opbygge brandværdi gennem historiefortælling, partnerskaber, events og priser."
+            },
+            "es": {
+              "title": "EVNA PR está contratando un publicista en NYC o Los Ángeles",
+              "summary": "Resumen generado por IA: EVNA PR, una agencia de comunicaciones estratégicas especializada en belleza, moda y diseño de interiores, está contratando un publicista en NYC o Los Ángeles para apoyar su trabajo en la construcción de valor de marca a través de narrativas, asociaciones, eventos y premios."
+            }
+          }
+        },
+        {
+          "id": "5i0hcv",
+          "title": "China’s Shoppers Are Buying Luxury Again",
+          "url": "https://www.businessoffashion.com/news/china/chinas-shoppers-are-buying-luxury-again/",
+          "source": "Business of Fashion - News",
+          "published_at": "2026-06-01T09:44:14.000Z",
+          "ingested_at": "2026-06-07T09:26:21.219Z",
+          "snippet": "Results from companies including L’Oréal, LVMH and Ralph Lauren, along with industry data, suggest affluent consumers are starting to spend more again, helped in part by a Chinese equities rally boosting wealth and sentiment.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "luxury",
+              "consumer",
+              "affluent"
+            ]
+          },
+          "aiSummary": "AI-generated summary: According to Business of Fashion (2026-06-01), affluent Chinese consumers are increasing their luxury spending, supported by a rally in Chinese equities that has boosted wealth and consumer sentiment, as reflected in results from companies like L’Oréal, LVMH, and Ralph Lauren.",
+          "translations": {
+            "da": {
+              "title": "Kinesiske forbrugere køber luksus igen",
+              "summary": "AI-genereret resumé: Ifølge Business of Fashion (2026-06-01) øger velhavende kinesiske forbrugere deres luksusforbrug, støttet af en stigning i kinesiske aktier, der har øget velstand og forbrugertillid, som det ses i resultater fra virksomheder som L’Oréal, LVMH og Ralph Lauren."
+            },
+            "es": {
+              "title": "Los compradores chinos vuelven a comprar lujo",
+              "summary": "Resumen generado por IA: Según Business of Fashion (2026-06-01), los consumidores chinos adinerados están aumentando su gasto en lujo, apoyados por un repunte en las acciones chinas que ha impulsado la riqueza y el sentimiento del consumidor, como reflejan los resultados de empresas como L’Oréal, LVMH y Ralph Lauren."
+            }
+          }
+        },
+        {
+          "id": "ehkmjd",
+          "title": "Houlden welcomes two indie retailers on board in its 50th year",
+          "url": "https://www.watchpro.com/houlden-two-new-retailers-50th-year/",
+          "source": "WatchPro",
+          "published_at": "2026-06-02T04:21:56.000Z",
+          "ingested_at": "2026-06-07T09:26:21.219Z",
+          "snippet": "Houlden has welcomed two independent luxury jewellers to its membership during its landmark 50th anniversary year. Established in 1806, Martin & Co is renowned for its heritage, client service and reputation across fine jewellery and luxury watches. Still family-owned today, the business has built its reputation on generations of expertise, trusted relationships and a personal […]\nThe post Houlden welcomes two indie retailers on board in its 50th year appeared first on WATCHPRO.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "luxury",
+              "heritage"
+            ]
+          },
+          "aiSummary": "AI-generated summary: In its 50th anniversary year, Houlden has welcomed two independent luxury jewellers, including the family-owned Martin & Co, known for its heritage and expertise in fine jewellery and luxury watches, to its membership.",
+          "translations": {
+            "da": {
+              "title": "Houlden byder to uafhængige forhandlere velkommen i sit 50. år",
+              "summary": "AI-genereret resumé: I sit 50-års jubilæumsår har Houlden budt to uafhængige luksussmykkeforhandlere velkommen, herunder det familieejede Martin & Co, kendt for sin arv og ekspertise inden for fint smykke- og luksusurværk, til sit medlemskab."
+            },
+            "es": {
+              "title": "Houlden da la bienvenida a dos minoristas independientes en su 50º aniversario",
+              "summary": "Resumen generado por IA: En su 50º aniversario, Houlden ha dado la bienvenida a dos joyerías independientes de lujo, incluyendo la familiar Martin & Co, conocida por su legado y experiencia en joyería fina y relojes de lujo, a su membresía."
+            }
+          }
+        },
+        {
+          "id": "ypahgj",
+          "title": "L’Oréal Scents World’s First AI Art Museum",
+          "url": "https://www.businessoffashion.com/articles/beauty/loreal-scents-worlds-first-ai-art-museum/",
+          "source": "Business of Fashion - News",
+          "published_at": "2026-06-05T12:00:00.000Z",
+          "ingested_at": "2026-06-07T09:26:21.219Z",
+          "snippet": "The beauty conglomerate has become the founding ‘olfactory’ partner of Dataland, embracing the technology that L’Oréal’s Cyril Chapuy calls the ‘luxury of tomorrow.’",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "luxury"
+            ]
+          },
+          "aiSummary": "AI-generated summary: L’Oréal has partnered as the founding ‘olfactory’ collaborator of Dataland, launching the world’s first AI art museum and embracing what Cyril Chapuy describes as the ‘luxury of tomorrow.’ This initiative highlights L’Oréal’s integration of technology within the luxury and consumer sector.",
+          "translations": {
+            "da": {
+              "title": "L’Oréal lancerer verdens første AI-kunstmuseum",
+              "summary": "L’Oréal har indgået partnerskab som den grundlæggende ’olfaktoriske’ samarbejdspartner for Dataland og lancerer verdens første AI-kunstmuseum, hvilket Cyril Chapuy beskriver som ’fremtidens luksus.’ Initiativet fremhæver L’Oréals integration af teknologi i luksus- og forbrugersektoren."
+            },
+            "es": {
+              "title": "L’Oréal presenta el primer museo de arte AI del mundo",
+              "summary": "L’Oréal se ha asociado como colaborador fundador ‘olfativo’ de Dataland, lanzando el primer museo de arte AI del mundo y abrazando lo que Cyril Chapuy describe como el ‘lujo del mañana.’ Esta iniciativa destaca la integración de la tecnología de L’Oréal en el sector de lujo y consumo."
+            }
+          }
+        },
+        {
+          "id": "241d6d",
+          "title": "This Emerging SPF Brand Is Making Mineral Sunscreen 'Sexy'",
+          "url": "https://fashionista.com/2026/06/good-weather-skin-alexandra-spunt-franchesca-hashim-founder-interview",
+          "source": "Fashionista",
+          "published_at": "2026-06-02T12:45:00.000Z",
+          "ingested_at": "2026-06-07T09:26:21.219Z",
+          "snippet": "Founded by two former Everlane executives, Good Weather Skin is not compromising on quality when it comes to formulating SPF.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "brand"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Founded by two former Everlane executives, Good Weather Skin is an emerging luxury SPF brand that emphasizes high-quality mineral sunscreen formulations.",
+          "translations": {
+            "da": {
+              "title": "Dette Fremspirende SPF-mærke Gør Mineral Solcreme 'Sexet'",
+              "summary": "AI-genereret resumé: Grundlagt af to tidligere Everlane-ledere er Good Weather Skin et fremspirende luksus-SPF-mærke, der lægger vægt på højkvalitets mineral solcremeformuleringer."
+            },
+            "es": {
+              "title": "Esta Marca Emergente de SPF Está Haciendo el Protector Solar Mineral 'Sexy'",
+              "summary": "Resumen generado por IA: Fundada por dos ex ejecutivos de Everlane, Good Weather Skin es una marca emergente de SPF de lujo que enfatiza formulaciones de protector solar mineral de alta calidad."
+            }
+          }
+        },
+        {
+          "id": "zezix",
+          "title": "The K-Beauty Hair-Care Boom Is Coming — But Is It Leaving Black Shoppers Behind?",
+          "url": "https://fashionista.com/2026/06/korean-hair-care-brands-coily-textures-black-consumers",
+          "source": "Fashionista",
+          "published_at": "2026-06-03T12:45:00.000Z",
+          "ingested_at": "2026-06-07T09:26:21.219Z",
+          "snippet": "As K-hair labels roll out in the U.S., brand teams are rethinking their product formulations and marketing strategies to attract coily- and kinky-haired shoppers.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "brand"
+            ]
+          },
+          "aiSummary": "AI-generated summary: As K-beauty hair-care brands expand into the U.S. market, they are revising product formulations and marketing approaches to better appeal to consumers with coily and kinky hair textures.",
+          "translations": {
+            "da": {
+              "title": "K-Beauty Hårplejeboom Er På Vej – Men Efterlader Den Sorte Købere?",
+              "summary": "AI-genereret resumé: Efterhånden som K-beauty hårplejemærker udvider til det amerikanske marked, reviderer de produktformuleringer og markedsføringsstrategier for bedre at appellere til forbrugere med kruset og kinky hår."
+            },
+            "es": {
+              "title": "El Auge del Cuidado Capilar K-Beauty Está Llegando — ¿Pero Está Dejando Atrás a los Compradores Negros?",
+              "summary": "Resumen generado por IA: A medida que las marcas de cuidado capilar K-beauty se expanden en el mercado estadounidense, están revisando las formulaciones de productos y enfoques de marketing para atraer mejor a consumidores con texturas de cabello rizado y crespo."
+            }
+          }
+        }
+      ]
+    },
+    "Jewellery_Industry": {
+      "total": 23,
+      "top": [
+        {
+          "id": "eb5rf3",
+          "title": "Kate Spade debuts Amazon AI conversational shopping tool",
+          "url": "https://www.professionaljeweller.com/kate-spade-debuts-amazon-ai-conversational-shopping-tool/",
+          "source": "Professional Jeweller",
+          "published_at": "2026-06-02T10:40:45.000Z",
+          "ingested_at": "2026-06-07T09:26:21.219Z",
+          "snippet": "Kate Spade has become the first retailer to install a new conversation AI tool from Amazon that specifically helps customers buy gifts through product recommendations. Amazon has introduced the AWS Agentic Shopping Assistant, developed with the same technology behind its Alexa for Shopping product, to retailers that utilises artificial intelligence to guide customers through specific […]\nThe post Kate Spade debuts Amazon AI conversational shopping tool appeared first on Professional Jeweller.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0.2,
+            "matchedKeywords": [
+              "retailer",
+              "jeweller"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Kate Spade is the first retailer to implement Amazon's new AI conversational shopping tool, the AWS Agentic Shopping Assistant, which uses Alexa technology to provide personalized gift recommendations. This innovation aims to enhance the customer shopping experience in the jewellery industry.",
+          "translations": {
+            "da": {
+              "title": "Kate Spade lancerer Amazons AI-konversationelle shoppingværktøj",
+              "summary": "Kate Spade er den første detailhandler, der implementerer Amazons nye AI-konversationelle shoppingværktøj, AWS Agentic Shopping Assistant, som bruger Alexa-teknologi til at give personlige gaveanbefalinger. Denne innovation sigter mod at forbedre kundeoplevelsen inden for smykkeindustrien."
+            },
+            "es": {
+              "title": "Kate Spade lanza la herramienta de compras conversacional AI de Amazon",
+              "summary": "Kate Spade es el primer minorista en implementar la nueva herramienta de compras conversacional AI de Amazon, AWS Agentic Shopping Assistant, que utiliza la tecnología Alexa para ofrecer recomendaciones personalizadas de regalos. Esta innovación busca mejorar la experiencia de compra del cliente en la industria de la joyería."
+            }
+          }
+        },
+        {
+          "id": "dhffzr",
+          "title": "Focus on the things that matter",
+          "url": "https://www.jewellermagazine.com/Article/15088/Focus-on-the-things-that-matter",
+          "source": "Jeweller - Main",
+          "published_at": "2026-06-03T14:00:00.000Z",
+          "ingested_at": "2026-06-07T09:26:21.219Z",
+          "snippet": "Winter is coming for jewellery retailers – are you prepared? LEON VAN MEGEN encourages jewellery retailers to get their house in order.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "jewellery",
+              "retailer",
+              "jeweller"
+            ]
+          },
+          "aiSummary": "AI-generated summary: In the article \"Focus on the things that matter\" from Jeweller - Main (2026-06-03), LEON VAN MEGEN advises jewellery retailers to prepare for upcoming challenges in the industry by organizing and strengthening their operations.",
+          "translations": {
+            "da": {
+              "title": "Fokus på de ting, der betyder noget",
+              "summary": "AI-genereret resumé: I artiklen \"Focus on the things that matter\" fra Jeweller - Main (2026-06-03) rådgiver LEON VAN MEGEN smykkeforhandlere om at forberede sig på kommende udfordringer i branchen ved at organisere og styrke deres drift."
+            },
+            "es": {
+              "title": "Enfócate en las cosas que importan",
+              "summary": "Resumen generado por IA: En el artículo \"Focus on the things that matter\" de Jeweller - Main (2026-06-03), LEON VAN MEGEN aconseja a los minoristas de joyería prepararse para los próximos desafíos en la industria organizando y fortaleciendo sus operaciones."
+            }
+          }
+        },
+        {
+          "id": "j0dh3t",
+          "title": "De Beers and GIA snap up stake in diamond verification platform",
+          "url": "https://www.professionaljeweller.com/de-beers-and-gia-snap-up-stake-in-diamond-verification-platform/",
+          "source": "Professional Jeweller",
+          "published_at": "2026-06-02T09:18:49.000Z",
+          "ingested_at": "2026-06-07T09:26:21.219Z",
+          "snippet": "De Beers Group and GIA (Gemological Institute of America) have acquired a 30% shareholding in Tracr, the De Beers Group-backed company behind the development of the pioneering diamond provenance blockchain-driven platform. The agreement marks a significant milestone in Tracr’s evolution towards independence and reflects GIA’s confidence in the platform’s role as an industry-wide infrastructure to […]\nThe post De Beers and GIA snap up stake in diamond verification platform appeared first on Profe...",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "diamond"
+            ]
+          },
+          "aiSummary": "AI-generated summary: De Beers Group and the Gemological Institute of America (GIA) have each acquired a 30% stake in Tracr, a blockchain-based diamond provenance platform backed by De Beers, marking a key step toward the platform's independence and industry-wide adoption.",
+          "translations": {
+            "da": {
+              "title": "De Beers og GIA køber andel i diamantverifikationsplatform",
+              "summary": "De Beers Group og Gemological Institute of America (GIA) har hver erhvervet en 30% andel i Tracr, en blockchain-baseret diamantoprindelsesplatform støttet af De Beers, hvilket markerer et vigtigt skridt mod platformens uafhængighed og brancheomfattende adoption."
+            },
+            "es": {
+              "title": "De Beers y GIA adquieren participación en plataforma de verificación de diamantes",
+              "summary": "De Beers Group y el Gemological Institute of America (GIA) han adquirido cada uno una participación del 30% en Tracr, una plataforma de procedencia de diamantes basada en blockchain respaldada por De Beers, marcando un paso clave hacia la independencia de la plataforma y su adopción en toda la industria."
+            }
+          }
+        },
+        {
+          "id": "k64o9k",
+          "title": "Australian jewellery retailer confirms cyber attack",
+          "url": "https://www.jewellermagazine.com/Article/15085/Australian-jewellery-retailer-confirms-cyber-attack",
+          "source": "Jeweller - Business News",
+          "published_at": "2026-06-01T14:00:00.000Z",
+          "ingested_at": "2026-06-07T09:26:21.219Z",
+          "snippet": "An Australian jewellery business has confirmed a cyber incident after hackers claimed they accessed the company's systems and stole more than half a terabyte of data.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.3,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "jewellery",
+              "retailer",
+              "jeweller"
+            ]
+          },
+          "aiSummary": "AI-generated summary: An Australian jewellery retailer has confirmed a cyber attack following hackers' claims of accessing the company's systems and stealing over half a terabyte of data. The incident highlights cybersecurity challenges within the jewellery industry.",
+          "translations": {
+            "da": {
+              "title": "Australsk smykkeforhandler bekræfter cyberangreb",
+              "summary": "AI-genereret resumé: En australsk smykkeforhandler har bekræftet et cyberangreb efter hackere hævdede at have fået adgang til virksomhedens systemer og stjålet over en halv terabyte data. Hændelsen understreger cybersikkerhedsudfordringer i smykkeindustrien."
+            },
+            "es": {
+              "title": "Minorista de joyería australiano confirma ataque cibernético",
+              "summary": "Resumen generado por IA: Un minorista de joyería australiano ha confirmado un ataque cibernético tras las afirmaciones de hackers sobre el acceso a los sistemas de la empresa y el robo de más de medio terabyte de datos. El incidente destaca los desafíos de ciberseguridad en la industria de la joyería."
+            }
+          }
+        },
+        {
+          "id": "n1gafh",
+          "title": "REEDS Jewelers opens third Rolex-anchored Landmark showroom",
+          "url": "https://www.watchpro.com/reeds-jewelers-opens-third-landmark-showroom/",
+          "source": "WatchPro",
+          "published_at": "2026-06-03T09:21:34.000Z",
+          "ingested_at": "2026-06-07T09:26:21.219Z",
+          "snippet": "REEDS Jewelers has opened a major new Landmark luxury watch and jewellery showroom in Cary, North Carolina, anchored by Rolex and featuring some of the world’s leading Swiss watch brands alongside bridal jewellery, fine jewellery and hospitality-led client experiences. Located at the Fenton mixed-use development in Cary, the 7,800 square foot REEDS Landmark store becomes […]\nThe post REEDS Jewelers opens third Rolex-anchored Landmark showroom appeared first on WATCHPRO.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": -0.04999999999999999,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0,
+            "penalty": 0.2,
+            "matchedKeywords": [
+              "jewellery",
+              "jeweller",
+              "watch"
+            ]
+          },
+          "aiSummary": "AI-generated summary: REEDS Jewelers has launched its third Landmark showroom in Cary, North Carolina, a 7,800 square foot luxury space anchored by Rolex and showcasing top Swiss watch brands alongside fine and bridal jewellery. The new store, located in the Fenton mixed-use development, emphasizes hospitality-led client experiences.",
+          "translations": {
+            "da": {
+              "title": "REEDS Jewelers åbner tredje Landmark showroom med Rolex som anker",
+              "summary": "REEDS Jewelers har åbnet sit tredje Landmark showroom i Cary, North Carolina, et 7.800 kvadratfod luksusområde med Rolex som anker og med top schweiziske urmærker samt fint og brude-smykker. Den nye butik, beliggende i Fenton mixed-use udviklingen, fokuserer på gæstfrihed og kundeoplevelser."
+            },
+            "es": {
+              "title": "REEDS Jewelers abre su tercer showroom Landmark anclado en Rolex",
+              "summary": "REEDS Jewelers ha inaugurado su tercer showroom Landmark en Cary, Carolina del Norte, un espacio de lujo de 7,800 pies cuadrados anclado por Rolex y que exhibe las principales marcas suizas de relojes junto con joyería fina y nupcial. La nueva tienda, ubicada en el desarrollo de uso mixto Fenton, enfatiza experiencias de cliente centradas en la hospitalidad."
+            }
+          }
+        },
+        {
+          "id": "yex8x0",
+          "title": "Tipping the scales: New milestone for lab-created diamonds",
+          "url": "https://www.jewellermagazine.com/Article/15081/Tipping-the-scales-New-milestone-for-lab-created-diamonds",
+          "source": "Jeweller - Business News",
+          "published_at": "2026-06-01T14:00:00.000Z",
+          "ingested_at": "2026-06-07T09:26:21.219Z",
+          "snippet": "New data has found that India exported more polished lab-created diamond carats than natural diamond, a significant symbolic shift for the global jewellery trade.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.09999999999999998,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0.05,
+            "penalty": 0.2,
+            "matchedKeywords": [
+              "diamond",
+              "jewellery",
+              "jeweller"
+            ]
+          },
+          "aiSummary": "AI-generated summary: According to new data reported by Jeweller - Business News on June 1, 2026, India has exported more polished lab-created diamond carats than natural diamonds, marking a significant shift in the global jewellery industry.",
+          "translations": {
+            "da": {
+              "title": "Vægtskålen tipper: Ny milepæl for laboratoriefremstillede diamanter",
+              "summary": "AI-genereret resumé: Ifølge nye data rapporteret af Jeweller - Business News den 1. juni 2026 har Indien eksporteret flere slebne laboratoriefremstillede diamantkarater end naturlige diamanter, hvilket markerer et betydeligt skift i den globale smykkeindustri."
+            },
+            "es": {
+              "title": "Inclinar la balanza: Nuevo hito para los diamantes creados en laboratorio",
+              "summary": "Resumen generado por IA: Según nuevos datos reportados por Jeweller - Business News el 1 de junio de 2026, India ha exportado más quilates de diamantes pulidos creados en laboratorio que diamantes naturales, marcando un cambio significativo en la industria global de la joyería."
+            }
+          }
+        },
+        {
+          "id": "apf22w",
+          "title": "GIA acquires one-third stake in diamond tracing platform",
+          "url": "https://www.jewellermagazine.com/Article/15079/GIA-acquires-one-third-stake-in-diamond-tracing-platform",
+          "source": "Jeweller - Business News",
+          "published_at": "2026-06-01T14:00:00.000Z",
+          "ingested_at": "2026-06-07T09:26:21.219Z",
+          "snippet": "The Gemological Institute of America (GIA) has confirmed it will take a 30 per cent shareholding in Tracr, the De Beers Group’s diamond tracing platform.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "diamond"
+            ]
+          },
+          "aiSummary": "AI-generated summary: The Gemological Institute of America (GIA) has acquired a 30 per cent stake in Tracr, the diamond tracing platform owned by the De Beers Group, as reported by Jeweller - Business News on June 1, 2026.",
+          "translations": {
+            "da": {
+              "title": "GIA erhverver en tredjedel af aktierne i diamantsporingsplatform",
+              "summary": "AI-genereret resumé: Gemological Institute of America (GIA) har erhvervet en 30 procent ejerandel i Tracr, diamantsporingsplatformen ejet af De Beers Group, rapporteret af Jeweller - Business News den 1. juni 2026."
+            },
+            "es": {
+              "title": "GIA adquiere un tercio de participación en la plataforma de rastreo de diamantes",
+              "summary": "Resumen generado por IA: Gemological Institute of America (GIA) ha adquirido una participación del 30 por ciento en Tracr, la plataforma de rastreo de diamantes propiedad de De Beers Group, según informó Jeweller - Business News el 1 de junio de 2026."
+            }
+          }
+        }
+      ]
+    }
+  },
+  "editorialTake": "Anthropic’s IPO filing signals a pivotal moment in AI’s commercialization race. Daniela Amodei’s confidence in delivering returns despite skepticism highlights a growing divide between AI hype and tangible business models. This isn’t just another tech debut; it’s a test of whether AI companies can justify sky-high valuations with real revenue streams. Investors will want to see if Anthropic’s approach to safety and proprietary models can translate into sustainable profits or if it’s just another AI bubble waiting to burst.\n\nMeanwhile, Meta’s launch of Hatch, a $200-a-month AI agent, exposes a sharp tension in AI’s monetization strategy. Charging a premium for AI tools aimed at everyday tasks risks alienating users accustomed to free or low-cost alternatives. Meta’s recent AI-related security breach only deepens the question: can big tech balance aggressive AI monetization with the trust and safety users demand? The real test is whether customers will pay for AI convenience or recoil from the risks and costs.",
+  "coverImageUrl": "/weekly-images/2026-W23.png",
+  "coverImageAlt": "Weekly cover illustration for 2026-W23"
+}
