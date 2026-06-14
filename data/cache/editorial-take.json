@@ -52,5 +52,11 @@
     "cached_at": "2026-06-07T09:38:48.163Z",
     "model": "gpt-4.1-mini",
     "version": "1.1"
+  },
+  "2026-W24:05e348eeb815": {
+    "editorialTake": "The US government’s shutdown of Anthropic’s Fable 5 and Mythos 5 models, driven by Amazon’s security research and CEO Andy Jassy’s concerns, marks a turning point in AI governance. This is not just about one company’s models but a clear signal that national security now trumps open AI innovation. Amazon’s role shows how corporate interests can shape policy, raising the stakes for AI firms that rely on global access and trust.\n\nVisa’s partnership with OpenAI to enhance agent-led payments reveals where ecommerce is heading: seamless, AI-driven financial interactions embedded in everyday commerce. This move shifts the battleground from pure AI capabilities to practical integrations that drive conversion and loyalty. The real question is whether traditional payment giants can outpace fintech disruptors who are already embedding AI deeper into commerce ecosystems.",
+    "cached_at": "2026-06-14T10:01:08.129Z",
+    "model": "gpt-4.1-mini",
+    "version": "1.1"
   }
 }

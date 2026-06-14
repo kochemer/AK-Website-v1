@@ -1,0 +1,16 @@
+{
+  "concept": "payment-card-on-ring-stand-omnichannel-absurdity",
+  "primaryHumorDriver": "fish-out-of-water",
+  "secondaryEnhancer": "unexpected texture/material combination",
+  "sceneDescription": "On a supermarket checkout belt, a gold credit card is perched upright on a classic jewelry ring display stand, flanked by a tangle of plastic shopping bags and a chunky gold ring balanced atop a barcode scanner. To the side, a shopping basket holds a point-of-sale terminal snuggled between apples and a fashionably boxed jewelry cleaner. The absurdity comes from luxury and payment items adopting each other's display roles, blurring commerce and opulence in a mundane setting. Subtle 'Digital Commerce 360' and 'Jeweller' logos peek from bag tags and a jewelry box sticker.",
+  "finalImagePrompt": "On a supermarket checkout belt, a gold credit card stands upright on a jewelry ring display. Nearby, a chunky gold ring sits atop a barcode scanner, and a shopping basket holds a point-of-sale terminal among apples and a boxed jewelry cleaner. Plastic shopping bags, one with a small logo tag, are to the side. Everything sits on the moving black belt, with a naturally lit, everyday store background.",
+  "negativePrompt": [
+    "text, letters, numbers, signage, labels, price tags",
+    "screens, UI, dashboards, holograms, floating icons",
+    "watermarks, unrelated brand logos",
+    "cartoon, illustration, CGI, 3D render, anime",
+    "diamond, diamonds, gemstone, gemstones, precious stones, jewelry close-up, jewelry product shot, diamond ring, diamond necklace, diamond earring, jeweled, sparkling gemstone",
+    "dramatic spotlight, glowing edges, rim lighting, vignette, cinematic color grade, blurred background, bokeh"
+  ],
+  "confidence": 0.7
+}

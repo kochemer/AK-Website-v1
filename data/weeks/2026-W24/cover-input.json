@@ -1,0 +1,28 @@
+{
+  "weekLabel": "2026-W24",
+  "homepageTopArticles": [
+    {
+      "title": "Visa, OpenAI work together to support agent-led payments",
+      "source": "Digital Commerce 360",
+      "snippet": "Visa Inc. is moving deeper into agentic commerce, teaming up with OpenAI to support artificial intelligence (AI) agent-led payments. The payments giant announced the collaboration this week at its Visa Payments Forum in San Francisco. Under the new partnership, Visa said it will integrate its payment capabilities into “OpenAI experiences.” That gives developers and merchants […]\nThe post Visa, OpenAI work together to support agent-led payments appeared first on Digital Commerce 360.",
+      "aiSummary": "AI-generated summary: Visa Inc. is partnering with OpenAI to enhance agent-led payments by integrating Visa's payment capabilities into OpenAI experiences, as announced at the Visa Payments Forum in San Francisco. This collaboration aims to advance AI-driven commerce for developers and merchants."
+    },
+    {
+      "title": "Ecommerce Trends: How do retailers improve conversion with omnichannel options?",
+      "source": "Digital Commerce 360",
+      "snippet": "Higher conversion rates and omnichannel fulfillment go hand in hand for Retail Chains that are able to provide them. The impact shows up year after year in Digital Commerce 360’s annual Omnichannel Report, and the 2026 edition sheds renewed light on which omnichannel options are most popular, as well as how conversion rates vary between […]\nThe post Ecommerce Trends: How do retailers improve conversion with omnichannel options? appeared first on Digital Commerce 360.",
+      "aiSummary": "AI-generated summary: The 2026 Digital Commerce 360 Omnichannel Report highlights that retail chains offering omnichannel fulfillment consistently achieve higher conversion rates, detailing the most popular omnichannel options and their impact on conversion performance."
+    },
+    {
+      "title": "Jewellery sales improve in the aftermath of restructure",
+      "source": "Jeweller - Business News",
+      "snippet": "Signet Jewelers, the world’s largest retailer of diamond jewellery, has reported an increase in revenue in the first quarter of the financial year amid an ongoing strategic overhaul.",
+      "aiSummary": "AI-generated summary: Signet Jewelers, the world's largest diamond jewellery retailer, has reported increased revenue in the first quarter following a strategic restructure, indicating improved jewellery sales."
+    }
+  ],
+  "model": "gpt-image-1",
+  "finalPrompt": "Photograph: On a supermarket checkout belt, a gold credit card stands upright on a jewelry ring display. Nearby, a chunky gold ring sits atop a barcode scanner, and a shopping basket holds a point-of-sale terminal among apples and a boxed jewelry cleaner. Plastic shopping bags, one with a small logo tag, are to the side. Everything sits on the moving black belt, with a naturally lit, everyday store background.\n\nCRITICAL CONSTRAINTS (must be strictly avoided):\n- text, letters, numbers, signage, labels, price tags, screens, UI, dashboards, holograms, floating icons, watermarks, unrelated brand logos, cartoon, illustration, CGI, 3D render, anime, diamond, diamonds, gemstone, gemstones, precious stones, jewelry close-up, jewelry product shot, diamond ring, diamond necklace, diamond earring, jeweled, sparkling gemstone, dramatic spotlight, glowing edges, rim lighting, vignette, cinematic color grade, blurred background, bokeh\n\nThis must look like a real photograph taken by a human — not AI-generated, not CGI, not a 3D render. Natural light. Real objects. Real imperfections. Fill the entire frame edge to edge with the scene — no black bars, no empty space at the edges.\n\nDo not include: text, labels, signage, screens, UI, logos unrelated to the scene, diamonds, gemstones, CGI lighting, dramatic spotlights, or blurred vignette backgrounds.",
+  "imageSize": "1536x1024",
+  "outputPath": "/weekly-images/2026-W24.png",
+  "generatedAt": "2026-06-14T10:04:41.672Z"
+}

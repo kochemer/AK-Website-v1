@@ -1,0 +1,77 @@
+{
+  "digestWeek": "2026-W24",
+  "ingestionWeek": "2026-W24",
+  "startedAt": "2026-06-14T09:47:26.845Z",
+  "finishedAt": "2026-06-14T10:04:55.706Z",
+  "steps": [
+    {
+      "name": "rss",
+      "ok": true,
+      "startedAt": "2026-06-14T09:47:26.864Z",
+      "finishedAt": "2026-06-14T09:47:50.428Z"
+    },
+    {
+      "name": "pages",
+      "ok": true,
+      "startedAt": "2026-06-14T09:47:50.428Z",
+      "finishedAt": "2026-06-14T09:47:52.207Z"
+    },
+    {
+      "name": "discovery",
+      "ok": true,
+      "startedAt": "2026-06-14T09:47:52.208Z",
+      "finishedAt": "2026-06-14T09:59:00.388Z"
+    },
+    {
+      "name": "classification",
+      "ok": true,
+      "startedAt": "2026-06-14T09:59:00.388Z",
+      "finishedAt": "2026-06-14T09:59:00.497Z"
+    },
+    {
+      "name": "digest",
+      "ok": true,
+      "startedAt": "2026-06-14T09:59:00.497Z",
+      "finishedAt": "2026-06-14T10:01:08.132Z"
+    },
+    {
+      "name": "email",
+      "ok": true,
+      "startedAt": "2026-06-14T10:01:08.132Z",
+      "finishedAt": "2026-06-14T10:01:29.472Z"
+    },
+    {
+      "name": "podcast",
+      "ok": true,
+      "startedAt": "2026-06-14T10:01:29.472Z",
+      "finishedAt": "2026-06-14T10:03:49.265Z"
+    },
+    {
+      "name": "cover",
+      "ok": true,
+      "startedAt": "2026-06-14T10:03:49.265Z",
+      "finishedAt": "2026-06-14T10:04:41.686Z"
+    },
+    {
+      "name": "competitorAnalyze",
+      "ok": true,
+      "startedAt": "2026-06-14T10:04:41.686Z",
+      "finishedAt": "2026-06-14T10:04:55.701Z"
+    }
+  ],
+  "health": {
+    "warnings": [
+      "Luxury & Consumer: www.businessoffashion.com represents 42.9% (3/7) - exceeds 40% threshold",
+      "Jewellery Industry: www.jewellermagazine.com represents 57.1% (4/7) - exceeds 40% threshold",
+      "Jewellery Industry: www.professionaljeweller.com represents 42.9% (3/7) - exceeds 40% threshold"
+    ],
+    "metrics": {
+      "paywallPercent": 0,
+      "podcastWordCount": 2213
+    }
+  },
+  "versions": {
+    "node": "v20.20.2",
+    "gitCommit": "7cffad7ad9063a531480394cb94b1dfad16a02d7"
+  }
+}

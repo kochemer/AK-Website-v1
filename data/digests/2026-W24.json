@@ -1,0 +1,972 @@
+{
+  "weekLabel": "2026-W24",
+  "tz": "Europe/Copenhagen",
+  "startISO": "2026-06-07T22:00:00.000Z",
+  "endISO": "2026-06-14T21:59:59.999Z",
+  "builtAtISO": "2026-06-14T12:00:46.345+02:00",
+  "builtAtLocal": "2026-06-14 12:00:46",
+  "totals": {
+    "total": 751,
+    "byTopic": {
+      "AIStrategy": 134,
+      "EcommerceRetail": 479,
+      "LuxuryConsumer": 108,
+      "Jewellery": 27
+    }
+  },
+  "topics": {
+    "AI_and_Strategy": {
+      "total": 134,
+      "top": [
+        {
+          "id": "sbnlma",
+          "title": "US orders shutdown of Anthropic’s Fable 5, Mythos 5 over security concerns ",
+          "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/anthropic-shuts-down-new-ai-models-after-us-export-order/articleshow/131696190.cms",
+          "source": "Economic Times - Technology",
+          "published_at": "2026-06-13T01:37:58.000Z",
+          "ingested_at": "2026-06-14T09:47:26.865Z",
+          "snippet": "The US government has ordered Anthropic to halt access for foreign nationals to its Fable 5 and Mythos 5 artificial intelligence models. This directive stems from national security concerns. Anthropic believes there may be a misunderstanding and is working to restore access. Other Anthropic models remain unaffected by this order.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "anthropic",
+              "artificial intelligence"
+            ]
+          },
+          "aiSummary": "AI-generated summary: The US government has ordered Anthropic to restrict foreign nationals' access to its Fable 5 and Mythos 5 AI models due to national security concerns, while Anthropic seeks to clarify the situation and restore access; other models remain unaffected.",
+          "translations": {
+            "da": {
+              "title": "USA beordrer lukning af Anthropics Fable 5 og Mythos 5 over sikkerhedsbekymringer",
+              "summary": "Den amerikanske regering har beordret Anthropic til at begrænse udenlandske statsborgeres adgang til deres AI-modeller Fable 5 og Mythos 5 på grund af nationale sikkerhedsbekymringer, mens Anthropic forsøger at afklare situationen og genoprette adgangen; andre modeller er upåvirkede."
+            },
+            "es": {
+              "title": "EE.UU. ordena el cierre de Fable 5 y Mythos 5 de Anthropic por preocupaciones de seguridad",
+              "summary": "El gobierno de EE.UU. ha ordenado a Anthropic restringir el acceso de extranjeros a sus modelos de IA Fable 5 y Mythos 5 debido a preocupaciones de seguridad nacional, mientras Anthropic busca aclarar la situación y restaurar el acceso; otros modelos permanecen sin afectar."
+            }
+          }
+        },
+        {
+          "id": "1xqt6v",
+          "title": "Amazon security research reportedly led to the White House’s Anthropic Fable ban",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/949601/amazon-anthropic-fablemythos-government-ban",
+          "source": "The Verge",
+          "published_at": "2026-06-13T21:39:26.000Z",
+          "ingested_at": "2026-06-14T09:47:26.865Z",
+          "snippet": "According to the Wall Street Journal, the export control directive that led to Anthropic cutting off access to Fable 5 and Mythos 5 was triggered in part by cybersecurity research from Amazon and conversations between CEO Andy Jassy and the White House. According to the report, the paper from Amazon claims that, through a series of prompts, it was able to get Fable 5 to serve up information that could be used in cyberattacks. Amazon has yet to respond to a request for comment.\nShortly after Jass...",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "research",
+              "anthropic"
+            ]
+          },
+          "aiSummary": "AI-generated summary: According to The Verge (2026-06-13), Amazon's cybersecurity research, which demonstrated that Anthropic's Fable 5 could be prompted to reveal information useful for cyberattacks, contributed to the White House's export control directive that led to Anthropic banning access to Fable 5 and Mythos 5. This action followed discussions between Amazon CEO Andy Jassy and the White House.",
+          "translations": {
+            "da": {
+              "title": "Amazon sikkerhedsforskning førte angiveligt til Det Hvide Hus’ forbud mod Anthropics Fable",
+              "summary": "AI-genereret resumé: Ifølge The Verge (2026-06-13) bidrog Amazons cybersikkerhedsforskning, som viste, at Anthropics Fable 5 kunne fås til at afsløre information nyttig for cyberangreb, til Det Hvide Hus’ eksportkontrol, der førte til Anthropics forbud mod adgang til Fable 5 og Mythos 5. Denne handling fulgte efter samtaler mellem Amazon CEO Andy Jassy og Det Hvide Hus."
+            },
+            "es": {
+              "title": "La investigación de seguridad de Amazon supuestamente llevó a la prohibición de Anthropic Fable por parte de la Casa Blanca",
+              "summary": "Resumen generado por IA: Según The Verge (2026-06-13), la investigación en ciberseguridad de Amazon, que demostró que Anthropic Fable 5 podía ser inducido a revelar información útil para ciberataques, contribuyó a la directiva de control de exportaciones de la Casa Blanca que llevó a Anthropic a prohibir el acceso a Fable 5 y Mythos 5. Esta acción siguió a conversaciones entre el CEO de Amazon, Andy Jassy, y la Casa Blanca."
+            }
+          }
+        },
+        {
+          "id": "8axjun",
+          "title": "Amazon CEO reportedly raised Anthropic model concerns before government crackdown",
+          "url": "https://techcrunch.com/2026/06/13/amazon-ceo-reportedly-raised-anthropic-model-concerns-before-government-crackdown/",
+          "source": "TechCrunch - AI",
+          "published_at": "2026-06-13T19:11:41.000Z",
+          "ingested_at": "2026-06-14T09:47:26.865Z",
+          "snippet": "Amazon CEO Andy Jassy may have been the source of security concerns that led Anthropic to cut off worldwide access to two models on Friday.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.25,
+            "recencyScore": 0,
+            "sourceWeight": 0.15,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "anthropic"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Amazon CEO Andy Jassy reportedly raised security concerns about Anthropic's models, which may have prompted the company to restrict global access to two of its AI models, according to a TechCrunch report dated June 13, 2026.",
+          "translations": {
+            "da": {
+              "title": "Amazon CEO skal have rejst bekymringer om Anthropics modeller før regeringsindgreb",
+              "summary": "AI-genereret resumé: Amazon CEO Andy Jassy skal angiveligt have rejst sikkerhedsbekymringer om Anthropics modeller, hvilket ifølge en TechCrunch-rapport fra 13. juni 2026 kan have fået virksomheden til at begrænse global adgang til to af sine AI-modeller."
+            },
+            "es": {
+              "title": "El CEO de Amazon supuestamente planteó preocupaciones sobre el modelo de Anthropic antes de la intervención gubernamental",
+              "summary": "Resumen generado por IA: El CEO de Amazon, Andy Jassy, supuestamente planteó preocupaciones de seguridad sobre los modelos de Anthropic, lo que podría haber llevado a la empresa a restringir el acceso global a dos de sus modelos de IA, según un informe de TechCrunch fechado el 13 de junio de 2026."
+            }
+          }
+        },
+        {
+          "id": "fcbsd9",
+          "title": "Coinbase for Agents: Automating portfolio trading with AI",
+          "url": "https://www.artificialintelligence-news.com/news/coinbase-for-agents-automating-portfolio-trading-with-ai/",
+          "source": "AI News",
+          "published_at": "2026-06-12T15:34:23.000Z",
+          "ingested_at": "2026-06-14T09:47:26.865Z",
+          "snippet": "Coinbase for Agents connects AI to financial execution channels to automate trading and payments directly from user portfolios. Large language models process vast quantities of data but lack direct integration with active financial portfolios. Individuals frequently employ these models to evaluate market developments or research investment opportunities. These software tools possess the capacity for complex […]\nThe post Coinbase for Agents: Automating portfolio trading with AI appeared first on ...",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.04999999999999999,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.2,
+            "insightSignalBoost": 0.05,
+            "penalty": 0.2,
+            "matchedKeywords": [
+              "ai",
+              "agent",
+              "large language model",
+              "research",
+              "investment"
+            ]
+          },
+          "aiSummary": "AI-generated summary: The article discusses \"Coinbase for Agents,\" a platform that integrates AI with financial execution channels to automate trading and payments directly from user portfolios, addressing the gap where large language models analyze market data but lack direct portfolio integration.",
+          "translations": {
+            "da": {
+              "title": "Coinbase for Agents: Automatisering af porteføljehandel med AI",
+              "summary": "AI-genereret resumé: Artiklen omhandler \"Coinbase for Agents,\" en platform der integrerer AI med finansielle eksekveringskanaler for at automatisere handel og betalinger direkte fra brugerporteføljer, og adresserer hullet hvor store sprogmodeller analyserer markedsdata, men mangler direkte porteføljeintegration."
+            },
+            "es": {
+              "title": "Coinbase for Agents: Automatización del trading de portafolios con IA",
+              "summary": "Resumen generado por IA: El artículo analiza \"Coinbase for Agents\", una plataforma que integra IA con canales de ejecución financiera para automatizar el trading y los pagos directamente desde los portafolios de los usuarios, abordando la brecha donde los grandes modelos de lenguaje analizan datos del mercado pero carecen de integración directa con portafolios."
+            }
+          }
+        },
+        {
+          "id": "5ffp8o",
+          "title": "Coinbase launches tool to let AI agents manage trading and payments",
+          "url": "https://www.cnbc.com/2026/06/11/coinbase-launches-tool-to-let-ai-agents-manage-trading-and-payments.html",
+          "source": "CNBC Technology",
+          "published_at": "2026-06-11T17:00:38.000Z",
+          "ingested_at": "2026-06-14T09:47:26.865Z",
+          "snippet": "Coinbase is betting that AI agents will become the primary interface for people's financial activity.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": -0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0.2,
+            "matchedKeywords": [
+              "ai",
+              "agent"
+            ]
+          },
+          "aiSummary": "AI-generated summary: On June 11, 2026, CNBC Technology reported that Coinbase has launched a tool enabling AI agents to manage trading and payments, reflecting the company's belief that AI will become the main interface for users' financial activities.",
+          "translations": {
+            "da": {
+              "title": "Coinbase lancerer værktøj, der lader AI-agenter styre handel og betalinger",
+              "summary": "AI-genereret resumé: Den 11. juni 2026 rapporterede CNBC Technology, at Coinbase har lanceret et værktøj, der gør det muligt for AI-agenter at styre handel og betalinger, hvilket afspejler virksomhedens tro på, at AI vil blive hovedgrænsefladen for brugernes finansielle aktiviteter."
+            },
+            "es": {
+              "title": "Coinbase lanza herramienta para que agentes de IA gestionen trading y pagos",
+              "summary": "Resumen generado por IA: El 11 de junio de 2026, CNBC Technology informó que Coinbase ha lanzado una herramienta que permite a agentes de IA gestionar trading y pagos, reflejando la creencia de la empresa de que la IA se convertirá en la interfaz principal para las actividades financieras de los usuarios."
+            }
+          }
+        },
+        {
+          "id": "j61buc",
+          "title": "Visa ChatGPT integration enables AI agent retail purchasing",
+          "url": "https://www.artificialintelligence-news.com/news/visa-chatgpt-integration-enables-ai-agent-retail-purchasing/",
+          "source": "AI News",
+          "published_at": "2026-06-11T11:08:17.000Z",
+          "ingested_at": "2026-06-14T09:47:26.865Z",
+          "snippet": "Visa has linked its payment infrastructure to ChatGPT, enabling AI agents to recommend retail products and execute financial transactions. The deployment removes human intervention from the final stages of the retail funnel. Autonomous agents will now process user prompts, evaluate merchant catalogues, and complete the checkout process using Visa’s payment rails at any supporting merchant. […]\nThe post Visa ChatGPT integration enables AI agent retail purchasing appeared first on AI News.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ai",
+              "agent"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Visa has integrated its payment system with ChatGPT, allowing AI agents to autonomously recommend retail products and complete purchases without human involvement by using Visa’s payment infrastructure at supported merchants.",
+          "translations": {
+            "da": {
+              "title": "Visa ChatGPT-integration muliggør AI-agent detailkøb",
+              "summary": "AI-genereret resumé: Visa har integreret sit betalingssystem med ChatGPT, hvilket gør det muligt for AI-agenter at anbefale detailprodukter og gennemføre køb autonomt uden menneskelig indblanding ved at bruge Visas betalingsinfrastruktur hos understøttede forhandlere."
+            },
+            "es": {
+              "title": "La integración de Visa con ChatGPT permite compras minoristas mediante agentes de IA",
+              "summary": "Resumen generado por IA: Visa ha integrado su sistema de pagos con ChatGPT, permitiendo que agentes de IA recomienden productos minoristas y completen compras de forma autónoma sin intervención humana utilizando la infraestructura de pagos de Visa en comercios compatibles."
+            }
+          }
+        },
+        {
+          "id": "kjn4tu",
+          "title": "Anthropic’s Fable 5 takedown triggers India Inc push for AI self-reliance ",
+          "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/anthropics-fable-5-takedown-triggers-india-inc-push-for-ai-self-reliance/articleshow/131698077.cms",
+          "source": "Economic Times - Technology",
+          "published_at": "2026-06-13T05:09:44.000Z",
+          "ingested_at": "2026-06-14T09:47:26.865Z",
+          "snippet": "A US directive suspending access to Anthropic's AI models has spurred India Inc's push for self-reliance in AI infrastructure. Technology leaders are calling for domestic R&D, open-source models, and semiconductor design to ensure national sovereignty and avoid dependence on external platforms. This move is seen as a wake-up call for localized AI systems.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": -0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0.2,
+            "matchedKeywords": [
+              "ai",
+              "anthropic"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Following a US directive suspending access to Anthropic's AI models, India Inc is accelerating efforts toward AI self-reliance by promoting domestic R&D, open-source models, and semiconductor design to safeguard national sovereignty and reduce dependence on foreign platforms.",
+          "translations": {
+            "da": {
+              "title": "Anthropic’s Fable 5-nedlukning udløser India Inc's satsning på AI-selvforsyning",
+              "summary": "AI-genereret resumé: Efter en amerikansk direktiv, der suspenderer adgangen til Anthropics AI-modeller, fremskynder India Inc indsatsen mod AI-selvforsyning ved at fremme indenlandsk F&U, open source-modeller og design af halvledere for at beskytte national suverænitet og mindske afhængighed af udenlandske platforme."
+            },
+            "es": {
+              "title": "La suspensión de Fable 5 de Anthropic impulsa a India Inc a buscar autosuficiencia en IA",
+              "summary": "Resumen generado por IA: Tras una directiva de EE. UU. que suspende el acceso a los modelos de IA de Anthropic, India Inc acelera esfuerzos hacia la autosuficiencia en IA promoviendo I+D nacional, modelos de código abierto y diseño de semiconductores para salvaguardar la soberanía nacional y reducir la dependencia de plataformas extranjeras."
+            }
+          }
+        }
+      ]
+    },
+    "Ecommerce_Retail_Tech": {
+      "total": 479,
+      "top": [
+        {
+          "id": "gwfeiw",
+          "title": "Visa, OpenAI work together to support agent-led payments",
+          "url": "https://www.digitalcommerce360.com/2026/06/12/visa-openai-agent-led-payments/",
+          "source": "Digital Commerce 360",
+          "published_at": "2026-06-12T22:02:26.000Z",
+          "ingested_at": "2026-06-14T09:47:26.865Z",
+          "snippet": "Visa Inc. is moving deeper into agentic commerce, teaming up with OpenAI to support artificial intelligence (AI) agent-led payments. The payments giant announced the collaboration this week at its Visa Payments Forum in San Francisco. Under the new partnership, Visa said it will integrate its payment capabilities into “OpenAI experiences.” That gives developers and merchants […]\nThe post Visa, OpenAI work together to support agent-led payments appeared first on Digital Commerce 360.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "payment"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Visa Inc. is partnering with OpenAI to enhance agent-led payments by integrating Visa's payment capabilities into OpenAI experiences, as announced at the Visa Payments Forum in San Francisco. This collaboration aims to advance AI-driven commerce for developers and merchants.",
+          "translations": {
+            "da": {
+              "title": "Visa og OpenAI samarbejder om at støtte agentstyrede betalinger",
+              "summary": "Visa Inc. samarbejder med OpenAI for at forbedre agentstyrede betalinger ved at integrere Visas betalingsmuligheder i OpenAI-oplevelser, som annonceret på Visa Payments Forum i San Francisco. Dette samarbejde sigter mod at fremme AI-drevet handel for udviklere og handlende."
+            },
+            "es": {
+              "title": "Visa y OpenAI colaboran para apoyar pagos dirigidos por agentes",
+              "summary": "Visa Inc. se asocia con OpenAI para mejorar los pagos dirigidos por agentes integrando las capacidades de pago de Visa en las experiencias de OpenAI, según se anunció en el Visa Payments Forum en San Francisco. Esta colaboración busca avanzar en el comercio impulsado por IA para desarrolladores y comerciantes."
+            }
+          }
+        },
+        {
+          "id": "5r3bm4",
+          "title": "Ecommerce Trends: How do retailers improve conversion with omnichannel options?",
+          "url": "https://www.digitalcommerce360.com/2026/06/11/ecommerce-trends-how-do-retailers-improve-conversion-with-omnichannel-options/",
+          "source": "Digital Commerce 360",
+          "published_at": "2026-06-11T18:23:12.000Z",
+          "ingested_at": "2026-06-14T09:47:26.865Z",
+          "snippet": "Higher conversion rates and omnichannel fulfillment go hand in hand for Retail Chains that are able to provide them. The impact shows up year after year in Digital Commerce 360’s annual Omnichannel Report, and the 2026 edition sheds renewed light on which omnichannel options are most popular, as well as how conversion rates vary between […]\nThe post Ecommerce Trends: How do retailers improve conversion with omnichannel options? appeared first on Digital Commerce 360.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0.1,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ecommerce",
+              "fulfillment"
+            ]
+          },
+          "aiSummary": "AI-generated summary: The 2026 Digital Commerce 360 Omnichannel Report highlights that retail chains offering omnichannel fulfillment consistently achieve higher conversion rates, detailing the most popular omnichannel options and their impact on conversion performance.",
+          "translations": {
+            "da": {
+              "title": "Ecommerce Trends: Hvordan forbedrer detailhandlere konvertering med omnichannel muligheder?",
+              "summary": "AI-genereret resumé: The 2026 Digital Commerce 360 Omnichannel Report fremhæver, at detailkæder med omnichannel fulfillment konsekvent opnår højere konverteringsrater, og beskriver de mest populære omnichannel muligheder og deres effekt på konverteringsperformance."
+            },
+            "es": {
+              "title": "Tendencias de Ecommerce: ¿Cómo mejoran los minoristas la conversión con opciones omnicanal?",
+              "summary": "Resumen generado por IA: The 2026 Digital Commerce 360 Omnichannel Report destaca que las cadenas minoristas que ofrecen cumplimiento omnicanal logran consistentemente tasas de conversión más altas, detallando las opciones omnicanal más populares y su impacto en el rendimiento de la conversión."
+            }
+          }
+        },
+        {
+          "id": "coahlb",
+          "title": "Recommendation: the new commerce media battleground, industry-consumer survey proves",
+          "url": "https://internetretailing.net/recommendation-the-new-commerce-media-battleground-industry-consumer-survey-proves/",
+          "source": "Internet Retailing",
+          "published_at": "2026-06-10T08:07:00.000Z",
+          "ingested_at": "2026-06-14T09:47:26.865Z",
+          "snippet": "It comes as no surprise that recommendation has become the place where commerce media now looks for more leverage. It is where consumers are to be found looking for things and where brands need to exert influence, but just how ‘in control’ is AI across recommendations from both a commerce media industry perspective and among […]\nThe post Recommendation: the new commerce media battleground, industry-consumer survey proves appeared first on InternetRetailing.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": []
+          },
+          "aiSummary": "AI-generated summary: The article discusses how recommendations have become a crucial battleground in commerce media, highlighting the importance of AI's role in influencing consumer choices and the level of control it holds from both industry and consumer perspectives.",
+          "translations": {
+            "da": {
+              "title": "Anbefaling: det nye handelsmedie slagmark, branche-forbruger undersøgelse beviser",
+              "summary": "AI-genereret resumé: Artiklen diskuterer, hvordan anbefalinger er blevet en afgørende slagmark i handelsmedier, og fremhæver AI's rolle i at påvirke forbrugerbeslutninger samt kontrolniveauet fra både branche- og forbrugersynspunkt."
+            },
+            "es": {
+              "title": "Recomendación: el nuevo campo de batalla del comercio en medios, prueba encuesta industria-consumidor",
+              "summary": "Resumen generado por IA: El artículo analiza cómo las recomendaciones se han convertido en un campo de batalla crucial en los medios comerciales, destacando la importancia del papel de la IA en la influencia de las decisiones del consumidor y el nivel de control desde las perspectivas de la industria y el consumidor."
+            }
+          }
+        },
+        {
+          "id": "xhebvr",
+          "title": "AI Turns Ecommerce Design into Reality",
+          "url": "https://www.practicalecommerce.com/ai-turns-ecommerce-design-into-reality",
+          "source": "Practical Ecommerce",
+          "published_at": "2026-06-11T12:56:48.000Z",
+          "ingested_at": "2026-06-14T09:47:26.865Z",
+          "snippet": "For merchants, the savings in time and money could be a game-changer.\nThe post AI Turns Ecommerce Design into Reality appeared first on Practical Ecommerce.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ecommerce"
+            ]
+          },
+          "aiSummary": "AI-generated summary: The article \"AI Turns Ecommerce Design into Reality\" from Practical Ecommerce (2026-06-11) highlights how AI technology can significantly save time and money for merchants, potentially transforming ecommerce design.",
+          "translations": {
+            "da": {
+              "title": "AI forvandler e-handelsdesign til virkelighed",
+              "summary": "AI-genereret resumé: Artiklen \"AI Turns Ecommerce Design into Reality\" fra Practical Ecommerce (2026-06-11) fremhæver, hvordan AI-teknologi kan spare tid og penge for handlende og potentielt transformere e-handelsdesign."
+            },
+            "es": {
+              "title": "La IA convierte el diseño de comercio electrónico en realidad",
+              "summary": "Resumen generado por IA: El artículo \"AI Turns Ecommerce Design into Reality\" de Practical Ecommerce (2026-06-11) destaca cómo la tecnología de IA puede ahorrar tiempo y dinero a los comerciantes, transformando potencialmente el diseño de comercio electrónico."
+            }
+          }
+        },
+        {
+          "id": "yy8nsu",
+          "title": "Subscriptions lift conversions for online retailers, new data shows",
+          "url": "https://internetretailing.net/subscriptions-lift-conversions-for-online-retailers-new-data-shows/",
+          "source": "Internet Retailing",
+          "published_at": "2026-06-10T10:38:18.000Z",
+          "ingested_at": "2026-06-14T09:47:26.865Z",
+          "snippet": "Online retailers with subscription models enjoy higher conversion rates, according to new data from Digital Commerce 360's latest Top 1000 Report.\nThe post Subscriptions lift conversions for online retailers, new data shows appeared first on InternetRetailing.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0.15,
+            "penalty": 0,
+            "matchedKeywords": [
+              "online retail"
+            ]
+          },
+          "aiSummary": "AI-generated summary: New data from Digital Commerce 360's Top 1000 Report reveals that online retailers using subscription models experience higher conversion rates. This insight highlights the positive impact of subscriptions on ecommerce performance.",
+          "translations": {
+            "da": {
+              "title": "Abonnementer øger konverteringer for onlineforhandlere, viser nye data",
+              "summary": "AI-genereret resumé: Nye data fra Digital Commerce 360's Top 1000 Report viser, at onlineforhandlere, der bruger abonnementsmodeller, oplever højere konverteringsrater. Denne indsigt fremhæver den positive effekt af abonnementer på e-handelspræstationer."
+            },
+            "es": {
+              "title": "Las suscripciones aumentan las conversiones para minoristas en línea, muestran nuevos datos",
+              "summary": "Resumen generado por IA: Nuevos datos del Top 1000 Report de Digital Commerce 360 revelan que los minoristas en línea que usan modelos de suscripción experimentan tasas de conversión más altas. Esta información destaca el impacto positivo de las suscripciones en el rendimiento del comercio electrónico."
+            }
+          }
+        },
+        {
+          "id": "d5ka6m",
+          "title": "Cegid unveils ‘single experience’ app Cegid Retail One at Prague event",
+          "url": "https://www.retailgazette.co.uk/blog/2026/06/cegid-unveils-single-experience-app-cegid-retail-one-at-prague-event/",
+          "source": "Retail Gazette",
+          "published_at": "2026-06-11T16:21:05.000Z",
+          "ingested_at": "2026-06-14T09:47:26.865Z",
+          "snippet": "Cegid this week launched its new Cegid Retail One ‘super app’ at the Cegid Connections Retail 2026 event, held in Prague. Cegid Retail One is a multilingual and modular platform designed to help specialty retailers bring fragmented in-store systems into one connected environment. The cloud-based management software provider said the new solution brings together Cegid’s...",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "platform"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Cegid launched its new multilingual and modular ‘super app’ Cegid Retail One at the Cegid Connections Retail 2026 event in Prague, aiming to unify fragmented in-store systems into a single connected platform for specialty retailers. The cloud-based solution integrates Cegid’s management software to enhance retail operations.",
+          "translations": {
+            "da": {
+              "title": "Cegid lancerer ’single experience’-appen Cegid Retail One ved event i Prag",
+              "summary": "AI-genereret resumé: Cegid lancerede sin nye flersprogede og modulære ’super app’ Cegid Retail One ved Cegid Connections Retail 2026 i Prag med det formål at samle fragmenterede butikssystemer i én sammenhængende platform for specialforhandlere. Den cloud-baserede løsning integrerer Cegids administrationssoftware for at forbedre detaildriften."
+            },
+            "es": {
+              "title": "Cegid presenta la app ‘single experience’ Cegid Retail One en evento en Praga",
+              "summary": "Resumen generado por IA: Cegid lanzó su nueva ‘super app’ multilingüe y modular Cegid Retail One en el evento Cegid Connections Retail 2026 en Praga, con el objetivo de unificar sistemas fragmentados en tienda en una única plataforma conectada para minoristas especializados. La solución en la nube integra el software de gestión de Cegid para mejorar las operaciones minoristas."
+            }
+          }
+        },
+        {
+          "id": "dnnrmt",
+          "title": "How Brands Win at India’s Quick Commerce",
+          "url": "https://www.practicalecommerce.com/how-brands-win-at-indias-quick-commerce",
+          "source": "Practical Ecommerce",
+          "published_at": "2026-06-09T14:20:25.000Z",
+          "ingested_at": "2026-06-14T09:47:26.865Z",
+          "snippet": "India's booming local-delivery model enables consumers to buy goods online and receive them within 30 minutes. \nThe post How Brands Win at India’s Quick Commerce appeared first on Practical Ecommerce.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ecommerce"
+            ]
+          },
+          "aiSummary": "AI-generated summary: The article from Practical Ecommerce discusses how India's rapidly growing quick commerce model allows consumers to purchase goods online and receive them within 30 minutes, highlighting strategies brands use to succeed in this fast-paced market.",
+          "translations": {
+            "da": {
+              "title": "Hvordan brands vinder i Indiens Quick Commerce",
+              "summary": "AI-genereret resumé: Artiklen fra Practical Ecommerce diskuterer, hvordan Indiens hurtigt voksende quick commerce-model gør det muligt for forbrugere at købe varer online og modtage dem inden for 30 minutter, med fokus på strategier brands bruger for at få succes i dette hurtige marked."
+            },
+            "es": {
+              "title": "Cómo las marcas triunfan en el Quick Commerce de India",
+              "summary": "Resumen generado por IA: El artículo de Practical Ecommerce analiza cómo el modelo de quick commerce de rápido crecimiento en India permite a los consumidores comprar productos en línea y recibirlos en 30 minutos, destacando las estrategias que las marcas usan para tener éxito en este mercado acelerado."
+            }
+          }
+        }
+      ]
+    },
+    "Luxury_and_Consumer": {
+      "total": 108,
+      "top": [
+        {
+          "id": "6aor99",
+          "title": "Inside Farfetch’s Strategy for a New Era of Luxury Experience",
+          "url": "https://www.businessoffashion.com/articles/luxury/inside-farfetch-first-luxury-delivery-strategy/",
+          "source": "Business of Fashion - News",
+          "published_at": "2026-06-11T03:00:00.000Z",
+          "ingested_at": "2026-06-14T09:47:26.865Z",
+          "snippet": "Farfetch’s chief commercial officer unpacks the strategy behind Farfetch First, the luxury e-commerce company’s newly launched service designed to elevate its customer experience — and empower a global community of brand partners.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "luxury",
+              "brand"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Farfetch’s chief commercial officer details the strategy behind Farfetch First, a new service aimed at enhancing customer experience and supporting a global network of brand partners in the luxury e-commerce sector.",
+          "translations": {
+            "da": {
+              "title": "Inden for Farfetchs strategi for en ny æra af luksusoplevelser",
+              "summary": "AI-genereret resumé: Farfetchs kommercielle chef beskriver strategien bag Farfetch First, en ny service designet til at forbedre kundeoplevelsen og støtte et globalt netværk af brandpartnere i luksus e-handelssektoren."
+            },
+            "es": {
+              "title": "Dentro de la estrategia de Farfetch para una nueva era de experiencia de lujo",
+              "summary": "Resumen generado por IA: El director comercial de Farfetch detalla la estrategia detrás de Farfetch First, un nuevo servicio destinado a mejorar la experiencia del cliente y apoyar una red global de socios de marca en el sector del comercio electrónico de lujo."
+            }
+          }
+        },
+        {
+          "id": "kmsclw",
+          "title": "AI-powered startup wins eBay Circular Fashion Fund",
+          "url": "https://www.luxurydaily.com/ai-powered-startup-wins-ebay-circular-fashion-fund/",
+          "source": "Luxury Daily - Main",
+          "published_at": "2026-06-09T20:45:00.000Z",
+          "ingested_at": "2026-06-14T09:47:26.865Z",
+          "snippet": "Now in its fourth year, the online retail platform is investing $300,000 in the tech-enabled textile sorting company Trosort.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": []
+          },
+          "aiSummary": "AI-generated summary: The online retail platform eBay has awarded $300,000 from its Circular Fashion Fund to the tech-enabled textile sorting startup Trosort, now in its fourth year.",
+          "translations": {
+            "da": {
+              "title": "AI-drevet startup vinder eBay Circular Fashion Fund",
+              "summary": "Den online detailplatform eBay har tildelt 300.000 dollars fra sin Circular Fashion Fund til den teknologidrevne tekstilsorteringsstartup Trosort, nu i sit fjerde år."
+            },
+            "es": {
+              "title": "Startup impulsada por IA gana el eBay Circular Fashion Fund",
+              "summary": "La plataforma de venta en línea eBay ha otorgado 300,000 dólares de su Circular Fashion Fund a la startup tecnológica de clasificación textil Trosort, ahora en su cuarto año."
+            }
+          }
+        },
+        {
+          "id": "wl5i12",
+          "title": "At Communité, Discovery, Differentiation and the Future of Luxury Retail",
+          "url": "https://www.businessoffashion.com/articles/retail/at-communite-in-istanbul-the-future-of-luxury-retail-with-cem-boyner/",
+          "source": "Business of Fashion - News",
+          "published_at": "2026-06-09T04:00:00.000Z",
+          "ingested_at": "2026-06-14T09:47:26.865Z",
+          "snippet": "Following the opening of two new retail concepts in Istanbul, Boyner Group chairman and CEO Cem Boyner sat down with BoF president Nick Blunden to unpack the forces shaping the future of retail when luxury’s value proposition is under scrutiny.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "luxury"
+            ]
+          },
+          "aiSummary": "AI-generated summary: In a Business of Fashion interview dated June 9, 2026, Boyner Group CEO Cem Boyner discusses with BoF president Nick Blunden how the launch of two new retail concepts in Istanbul reflects evolving forces shaping the future of luxury retail amid changing perceptions of luxury's value.",
+          "translations": {
+            "da": {
+              "title": "Hos Communité, Discovery, Differentiation og Fremtiden for Luxury Retail",
+              "summary": "AI-genereret resumé: I et Business of Fashion-interview den 9. juni 2026 diskuterer Boyner Group CEO Cem Boyner med BoF-præsident Nick Blunden, hvordan lanceringen af to nye detailkoncepter i Istanbul afspejler de udviklende kræfter, der former fremtiden for luxury retail i takt med ændrede opfattelser af luksusværdi."
+            },
+            "es": {
+              "title": "En Communité, Discovery, Differentiation y el Futuro del Luxury Retail",
+              "summary": "Resumen generado por IA: En una entrevista de Business of Fashion del 9 de junio de 2026, el CEO de Boyner Group, Cem Boyner, conversa con el presidente de BoF, Nick Blunden, sobre cómo el lanzamiento de dos nuevos conceptos de retail en Estambul refleja las fuerzas cambiantes que moldean el futuro del luxury retail en medio de percepciones cambiantes del valor del lujo."
+            }
+          }
+        },
+        {
+          "id": "g4emfj",
+          "title": "How retailers can score from the summer of sport",
+          "url": "https://www.drapersonline.com/news/summer-of-sport-how-retailers-can-score-from-the-world-cup-wimbledon-and-beyond",
+          "source": "Drapers",
+          "published_at": "2026-06-12T14:00:00.000Z",
+          "ingested_at": "2026-06-14T09:47:26.865Z",
+          "snippet": "Drapers\nHow retailers can score from the summer of sport\nAs the FIFA Men's World Cup kicks off and Wimbledon prepares to welcome thousands of visitors through its gates, fashion retailers tell Drapers how they are planning to capitalise on the commercial opportunities that accompany this summer's major sporting events.\nThe post How retailers can score from the summer of sport appeared first on Drapers.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": []
+          },
+          "aiSummary": "AI-generated summary: The article from Drapers (2026-06-12) discusses how fashion retailers plan to capitalize on commercial opportunities presented by major sporting events this summer, including the FIFA Men's World Cup and Wimbledon.",
+          "translations": {
+            "da": {
+              "title": "Sådan kan detailhandlere score på sportssommeren",
+              "summary": "AI-genereret resumé: Artiklen fra Drapers (2026-06-12) diskuterer, hvordan modeforhandlere planlægger at udnytte de kommercielle muligheder, som store sportsbegivenheder denne sommer, herunder FIFA Men's World Cup og Wimbledon, giver."
+            },
+            "es": {
+              "title": "Cómo los minoristas pueden aprovechar el verano deportivo",
+              "summary": "Resumen generado por IA: El artículo de Drapers (2026-06-12) analiza cómo los minoristas de moda planean capitalizar las oportunidades comerciales que presentan los grandes eventos deportivos de este verano, incluyendo la FIFA Men's World Cup y Wimbledon."
+            }
+          }
+        },
+        {
+          "id": "62dmpg",
+          "title": "Editor’s comment: Raw material price hikes latest hurdle for fashion retail",
+          "url": "https://www.drapersonline.com/insight/comment/editors-comment-raw-material-price-hikes-latest-hurdle-for-fashion-retail",
+          "source": "Drapers",
+          "published_at": "2026-06-12T15:46:00.000Z",
+          "ingested_at": "2026-06-14T09:47:26.865Z",
+          "snippet": "Drapers\nEditor’s comment: Raw material price hikes latest hurdle for fashion retail\nAs raw material prices spike by up to 30%, the impact for fashion retail is far-reaching, writes Drapers editor Jill Geoghegan.\nThe post Editor’s comment: Raw material price hikes latest hurdle for fashion retail appeared first on Drapers.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": []
+          },
+          "aiSummary": "AI-generated summary: According to Drapers editor Jill Geoghegan, recent raw material price increases of up to 30% present a significant new challenge for the fashion retail sector. This development has wide-ranging implications for the industry.",
+          "translations": {
+            "da": {
+              "title": "Redaktørens kommentar: Prisstigninger på råmaterialer seneste hurdle for modehandel",
+              "summary": "AI-genereret resumé: Ifølge Drapers redaktør Jill Geoghegan udgør de seneste prisstigninger på råmaterialer på op til 30 % en betydelig ny udfordring for modebranchen. Denne udvikling har vidtrækkende konsekvenser for industrien."
+            },
+            "es": {
+              "title": "Comentario del editor: Aumentos en el precio de materias primas, el último obstáculo para el comercio minorista de moda",
+              "summary": "Resumen generado por IA: Según la editora de Drapers, Jill Geoghegan, los recientes aumentos de hasta el 30 % en los precios de las materias primas representan un nuevo desafío importante para el sector minorista de moda. Este desarrollo tiene implicaciones de gran alcance para la industria."
+            }
+          }
+        },
+        {
+          "id": "n1pi3k",
+          "title": "Rolex Raises Gold Watch Prices Again",
+          "url": "https://www.businessoffashion.com/news/luxury/rolex-raises-gold-watch-prices-again/",
+          "source": "Business of Fashion - News",
+          "published_at": "2026-06-12T22:22:39.000Z",
+          "ingested_at": "2026-06-14T09:47:26.865Z",
+          "snippet": "Super-rich clients remain undeterred from purchasing investment timepieces even while more middle class customers have stopped spending on luxury.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "luxury",
+              "spending"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Rolex has increased prices on its gold watches once again, with affluent buyers continuing to invest in these luxury timepieces despite a decline in spending among middle-class customers.",
+          "translations": {
+            "da": {
+              "title": "Rolex hæver igen priserne på guldkure",
+              "summary": "AI-genereret resumé: Rolex har igen hævet priserne på sine guldkure, mens velhavende købere fortsætter med at investere i disse luksusure trods et fald i forbruget blandt middelklassekunder."
+            },
+            "es": {
+              "title": "Rolex vuelve a subir los precios de los relojes de oro",
+              "summary": "Resumen generado por IA: Rolex ha aumentado nuevamente los precios de sus relojes de oro, mientras que los compradores adinerados continúan invirtiendo en estas piezas de lujo a pesar de una disminución en el gasto entre los clientes de clase media."
+            }
+          }
+        },
+        {
+          "id": "3tfbnv",
+          "title": "Luxury Unfiltered: What SpaceX’s IPO reveals about luxury value creation",
+          "url": "https://www.luxurydaily.com/luxury-unfiltered-elon-musk-and-the-art-of-storytelling-how-spacex-became-the-most-valuable-story-ever-told/",
+          "source": "Luxury Daily - Main",
+          "published_at": "2026-06-10T06:00:00.000Z",
+          "ingested_at": "2026-06-14T09:47:26.865Z",
+          "snippet": "Luxury Unfiltered is a weekly column by Daniel Langer, an expert in luxury branding, hospitality and activations who was named a “Global Top 5 Luxury Key Opinion Leader” by Netbase Quid.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": -0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0.2,
+            "matchedKeywords": [
+              "luxury",
+              "brand"
+            ]
+          },
+          "aiSummary": "AI-generated summary: The article \"Luxury Unfiltered: What SpaceX’s IPO reveals about luxury value creation,\" published in Luxury Daily on June 10, 2026, features insights from Daniel Langer, a recognized expert in luxury branding and hospitality, exploring the intersection of luxury value and SpaceX’s IPO.",
+          "translations": {
+            "da": {
+              "title": "Luxury Unfiltered: Hvad SpaceX’s børsintroduktion afslører om skabelse af luksusværdi",
+              "summary": "AI-genereret resumé: Artiklen \"Luxury Unfiltered: What SpaceX’s IPO reveals about luxury value creation,\" udgivet i Luxury Daily den 10. juni 2026, indeholder indsigter fra Daniel Langer, en anerkendt ekspert i luksusbranding og gæstfrihed, der udforsker krydsfeltet mellem luksusværdi og SpaceX’s børsintroduktion."
+            },
+            "es": {
+              "title": "Luxury Unfiltered: Lo que la OPI de SpaceX revela sobre la creación de valor en el lujo",
+              "summary": "Resumen generado por IA: El artículo \"Luxury Unfiltered: What SpaceX’s IPO reveals about luxury value creation,\" publicado en Luxury Daily el 10 de junio de 2026, presenta perspectivas de Daniel Langer, un experto reconocido en branding de lujo y hospitalidad, explorando la intersección entre el valor del lujo y la OPI de SpaceX."
+            }
+          }
+        }
+      ]
+    },
+    "Jewellery_Industry": {
+      "total": 27,
+      "top": [
+        {
+          "id": "ryvou1",
+          "title": "Jewellery sales improve in the aftermath of restructure",
+          "url": "https://www.jewellermagazine.com/Article/15098/Jewellery-sales-improve-in-the-aftermath-of-restructure",
+          "source": "Jeweller - Business News",
+          "published_at": "2026-06-08T14:00:00.000Z",
+          "ingested_at": "2026-06-14T09:47:26.865Z",
+          "snippet": "Signet Jewelers, the world’s largest retailer of diamond jewellery, has reported an increase in revenue in the first quarter of the financial year amid an ongoing strategic overhaul.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.4,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.2,
+            "insightSignalBoost": 0.1,
+            "penalty": 0,
+            "matchedKeywords": [
+              "jewellery",
+              "jeweller",
+              "diamond",
+              "retailer"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Signet Jewelers, the world's largest diamond jewellery retailer, has reported increased revenue in the first quarter following a strategic restructure, indicating improved jewellery sales.",
+          "translations": {
+            "da": {
+              "title": "Smykkesalg forbedres efter omstrukturering",
+              "summary": "AI-genereret resumé: Signet Jewelers, verdens største detailhandler af diamant-smykker, har rapporteret øgede indtægter i første kvartal efter en strategisk omstrukturering, hvilket indikerer forbedret smykkesalg."
+            },
+            "es": {
+              "title": "Las ventas de joyería mejoran tras la reestructuración",
+              "summary": "Resumen generado por IA: Signet Jewelers, el mayor minorista mundial de joyería de diamantes, ha reportado un aumento en los ingresos en el primer trimestre tras una reestructuración estratégica, lo que indica una mejora en las ventas de joyería."
+            }
+          }
+        },
+        {
+          "id": "h6e7cr",
+          "title": "Why Giovanni Raspini stands strong in silver despite rising precious metal prices",
+          "url": "https://www.professionaljeweller.com/giovanni-raspini-precious-metals/",
+          "source": "Professional Jeweller",
+          "published_at": "2026-06-10T06:15:00.000Z",
+          "ingested_at": "2026-06-14T09:47:26.865Z",
+          "snippet": "How would you characterise the current state of the precious metals market? What are the key forces shaping pricing and availability right now? The precious metals market is under sustained pressure, with ongoing volatility in both gold and silver. This is being driven by inflation, geopolitical uncertainty, and continued demand for safe haven assets. What […]\nThe post Why Giovanni Raspini stands strong in silver despite rising precious metal prices appeared first on Professional Jeweller.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.30000000000000004,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.2,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "precious metal",
+              "silver",
+              "gold",
+              "jeweller"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Despite ongoing volatility and rising prices in the precious metals market driven by inflation, geopolitical uncertainty, and demand for safe haven assets, Giovanni Raspini remains resilient in the silver sector within the jewellery industry.",
+          "translations": {
+            "da": {
+              "title": "Hvorfor Giovanni Raspini står stærkt i sølv trods stigende priser på ædle metaller",
+              "summary": "AI-genereret resumé: På trods af vedvarende volatilitet og stigende priser på ædle metaller drevet af inflation, geopolitisk usikkerhed og efterspørgsel efter sikre aktiver, forbliver Giovanni Raspini robust i sølvsektoren inden for smykkeindustrien."
+            },
+            "es": {
+              "title": "Por qué Giovanni Raspini se mantiene fuerte en plata a pesar del aumento de los precios de los metales preciosos",
+              "summary": "Resumen generado por IA: A pesar de la volatilidad continua y el aumento de los precios en el mercado de metales preciosos impulsados por la inflación, la incertidumbre geopolítica y la demanda de activos refugio, Giovanni Raspini se mantiene resistente en el sector de la plata dentro de la industria de la joyería."
+            }
+          }
+        },
+        {
+          "id": "imbu78",
+          "title": "Robert Gatward Jewellers expands offer with Rolex tie-up",
+          "url": "https://www.professionaljeweller.com/robert-gatward-jewellers-expands-offer-with-rolex-tie-up/",
+          "source": "Professional Jeweller",
+          "published_at": "2026-06-09T04:30:00.000Z",
+          "ingested_at": "2026-06-14T09:47:26.865Z",
+          "snippet": "Independent retailer Robert Gatward Jewellers has expanded its offering after introducing the Rolex Certified Pre-Owned programme at its Windsor boutique. The move enables the retailer to offer authenticated pre-owned Rolex watches backed by Rolex’s official certification process, providing customers with access to a curated selection of eligible timepieces that are at least two-years-old. Each watch […]\nThe post Robert Gatward Jewellers expands offer with Rolex tie-up appeared first on Professi...",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.30000000000000004,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.2,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "jeweller",
+              "retailer",
+              "watch",
+              "timepiece"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Independent retailer Robert Gatward Jewellers has expanded its product range by introducing the Rolex Certified Pre-Owned programme at its Windsor boutique, offering customers authenticated pre-owned Rolex watches certified by Rolex. This initiative provides access to a curated selection of eligible timepieces that are at least two years old.",
+          "translations": {
+            "da": {
+              "title": "Robert Gatward Jewellers udvider tilbud med Rolex-samarbejde",
+              "summary": "AI-genereret resumé: Den uafhængige forhandler Robert Gatward Jewellers har udvidet sit produktsortiment ved at introducere Rolex Certified Pre-Owned-programmet i sin Windsor-butik, hvor kunder tilbydes autentificerede brugte Rolex-ure certificeret af Rolex. Initiativet giver adgang til et kurateret udvalg af kvalificerede ure, der er mindst to år gamle."
+            },
+            "es": {
+              "title": "Robert Gatward Jewellers amplía su oferta con alianza con Rolex",
+              "summary": "Resumen generado por IA: El minorista independiente Robert Gatward Jewellers ha ampliado su gama de productos al introducir el programa Rolex Certified Pre-Owned en su boutique de Windsor, ofreciendo a los clientes relojes Rolex usados autenticados y certificados por Rolex. Esta iniciativa brinda acceso a una selección curada de relojes elegibles con al menos dos años de antigüedad."
+            }
+          }
+        },
+        {
+          "id": "h9798g",
+          "title": "Jewellery sales soften for Australian retailers",
+          "url": "https://www.jewellermagazine.com/Article/15101/Jewellery-sales-soften-for-Australian-retailers",
+          "source": "Jeweller - Business News",
+          "published_at": "2026-06-08T14:00:00.000Z",
+          "ingested_at": "2026-06-14T09:47:26.865Z",
+          "snippet": "The latest analysis of jewellery store performance in the Australian market has revealed a modest decline in sales across May.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.25,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "jewellery",
+              "retailer",
+              "jeweller"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Jewellery sales among Australian retailers experienced a modest decline in May, according to recent market analysis reported by Jeweller - Business News on June 8, 2026.",
+          "translations": {
+            "da": {
+              "title": "Smykkesalg falder for australske detailhandlere",
+              "summary": "AI-genereret resumé: Smykkesalget blandt australske detailhandlere oplevede et beskedent fald i maj, ifølge en nylig markedsanalyse rapporteret af Jeweller - Business News den 8. juni 2026."
+            },
+            "es": {
+              "title": "Las ventas de joyería se suavizan para los minoristas australianos",
+              "summary": "Resumen generado por IA: Las ventas de joyería entre los minoristas australianos experimentaron una ligera caída en mayo, según un análisis de mercado reciente reportado por Jeweller - Business News el 8 de junio de 2026."
+            }
+          }
+        },
+        {
+          "id": "y56i79",
+          "title": "The Diamond Store introduces Lab Paraíba YAG gemstones to UK market",
+          "url": "https://www.professionaljeweller.com/the-diamond-store-introduces-lab-paraiba-yag-gemstones-to-uk-market/",
+          "source": "Professional Jeweller",
+          "published_at": "2026-06-10T05:10:00.000Z",
+          "ingested_at": "2026-06-14T09:47:26.865Z",
+          "snippet": "The Diamond Store has unveiled a new collection featuring Lab Paraíba YAG gemstones, becoming one of the first UK jewellery retailers to introduce the innovative material to the British market. The new Lab Paraíba YAG Collection combines laboratory-grown YAG (yttrium aluminium garnet) gemstones with lab-grown diamonds, offering consumers a more accessible route into one of […]\nThe post The Diamond Store introduces Lab Paraíba YAG gemstones to UK market appeared first on Professional Jeweller.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.30000000000000004,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.2,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "diamond",
+              "jewellery",
+              "retailer",
+              "jeweller"
+            ]
+          },
+          "aiSummary": "AI-generated summary: The Diamond Store has launched a new collection featuring Lab Paraíba YAG gemstones combined with lab-grown diamonds, making it one of the first UK retailers to introduce this innovative lab-grown material to the British jewellery market.",
+          "translations": {
+            "da": {
+              "title": "The Diamond Store introducerer Lab Paraíba YAG ædelsten på det britiske marked",
+              "summary": "AI-genereret resumé: The Diamond Store har lanceret en ny kollektion med Lab Paraíba YAG ædelsten kombineret med laboratoriedyrkede diamanter, hvilket gør det til en af de første britiske forhandlere, der introducerer dette innovative laboratoriedyrkede materiale på det britiske smykkemarked."
+            },
+            "es": {
+              "title": "The Diamond Store introduce piedras preciosas Lab Paraíba YAG en el mercado del Reino Unido",
+              "summary": "Resumen generado por IA: The Diamond Store ha lanzado una nueva colección que presenta piedras preciosas Lab Paraíba YAG combinadas con diamantes cultivados en laboratorio, convirtiéndola en una de las primeras tiendas del Reino Unido en introducir este innovador material cultivado en laboratorio en el mercado británico de joyería."
+            }
+          }
+        },
+        {
+          "id": "q1e1ri",
+          "title": "New Zealand retailers push for cost-of-living measures",
+          "url": "https://www.jewellermagazine.com/Article/15099/New-Zealand-retailers-push-for-cost-of-living-measures",
+          "source": "Jeweller - Business News",
+          "published_at": "2026-06-08T14:00:00.000Z",
+          "ingested_at": "2026-06-14T09:47:26.865Z",
+          "snippet": "Retail industry representatives in New Zealand are urging the Federal Government to prioritise cost-of-living relief to aid struggling businesses.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "retailer"
+            ]
+          },
+          "aiSummary": "AI-generated summary: New Zealand's retail industry, including jewellery businesses, is urging the Federal Government to implement cost-of-living relief measures to support struggling companies.",
+          "translations": {
+            "da": {
+              "title": "Nye Zealandske detailhandlere presser på for foranstaltninger mod leveomkostninger",
+              "summary": "AI-genereret resumé: New Zealands detailhandel, herunder smykkevirksomheder, opfordrer den føderale regering til at indføre lettelser i leveomkostninger for at støtte kæmpende virksomheder."
+            },
+            "es": {
+              "title": "Minoristas de Nueva Zelanda presionan por medidas contra el costo de vida",
+              "summary": "Resumen generado por IA: La industria minorista de Nueva Zelanda, incluidas las empresas de joyería, insta al Gobierno Federal a implementar medidas de alivio del costo de vida para apoyar a las empresas en dificultades."
+            }
+          }
+        },
+        {
+          "id": "az17r3",
+          "title": "Walking the fine line between exclusivity and obscurity",
+          "url": "https://www.jewellermagazine.com/Article/15106/Walking-the-fine-line-between-exclusivity-and-obscurity",
+          "source": "Jeweller - Main",
+          "published_at": "2026-06-10T14:00:00.000Z",
+          "ingested_at": "2026-06-14T09:47:26.865Z",
+          "snippet": "People have lost the plot over the new Swatch x Audemars Piguet launch. Or, as SAMUEL ORD explains, they merely failed to see the plot twist.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "watch"
+            ]
+          },
+          "aiSummary": "AI-generated summary: The article discusses the mixed reactions to the new Swatch x Audemars Piguet launch, suggesting that public misunderstanding stems from missing the intended \"plot twist,\" as explained by Samuel Ord.",
+          "translations": {
+            "da": {
+              "title": "At balancere mellem eksklusivitet og uklarhed",
+              "summary": "AI-genereret resumé: Artiklen diskuterer de blandede reaktioner på den nye Swatch x Audemars Piguet lancering og antyder, at offentlighedens misforståelse skyldes, at det tilsigtede \"plot twist\" blev overset, som forklaret af Samuel Ord."
+            },
+            "es": {
+              "title": "Caminando la delgada línea entre la exclusividad y la oscuridad",
+              "summary": "Resumen generado por IA: El artículo analiza las reacciones mixtas al nuevo lanzamiento de Swatch x Audemars Piguet, sugiriendo que la incomprensión pública proviene de no captar el \"giro argumental\" previsto, según explica Samuel Ord."
+            }
+          }
+        }
+      ]
+    }
+  },
+  "editorialTake": "The US government’s shutdown of Anthropic’s Fable 5 and Mythos 5 models, driven by Amazon’s security research and CEO Andy Jassy’s concerns, marks a turning point in AI governance. This is not just about one company’s models but a clear signal that national security now trumps open AI innovation. Amazon’s role shows how corporate interests can shape policy, raising the stakes for AI firms that rely on global access and trust.\n\nVisa’s partnership with OpenAI to enhance agent-led payments reveals where ecommerce is heading: seamless, AI-driven financial interactions embedded in everyday commerce. This move shifts the battleground from pure AI capabilities to practical integrations that drive conversion and loyalty. The real question is whether traditional payment giants can outpace fintech disruptors who are already embedding AI deeper into commerce ecosystems.",
+  "coverImageUrl": "/weekly-images/2026-W24.png",
+  "coverImageAlt": "Weekly cover illustration for 2026-W24"
+}

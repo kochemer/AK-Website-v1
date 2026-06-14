@@ -3118,5 +3118,149 @@
     ],
     "cached_at": "2026-06-07T09:38:29.560Z",
     "model": "gpt-4.1-mini"
+  },
+  "2026-W24:AI_and_Strategy:d5757ffeb289": {
+    "selected": [
+      {
+        "id": "10",
+        "rank": 1,
+        "why": "US government orders shutdown of Anthropic AI models over security",
+        "confidence": 0.95
+      },
+      {
+        "id": "9",
+        "rank": 2,
+        "why": "Amazon security research linked to White House Anthropic export ban",
+        "confidence": 0.9
+      },
+      {
+        "id": "6",
+        "rank": 3,
+        "why": "Amazon CEO raised concerns about Anthropic models before crackdown",
+        "confidence": 0.9
+      },
+      {
+        "id": "11",
+        "rank": 4,
+        "why": "Coinbase automates portfolio trading with AI agents, showing platform shift",
+        "confidence": 0.85
+      },
+      {
+        "id": "17",
+        "rank": 5,
+        "why": "Coinbase launches AI agent tool for managing trading and payments",
+        "confidence": 0.85
+      },
+      {
+        "id": "0",
+        "rank": 6,
+        "why": "Visa integrates ChatGPT enabling AI agent retail purchasing",
+        "confidence": 0.8
+      },
+      {
+        "id": "16",
+        "rank": 7,
+        "why": "Anthropic Fable 5 takedown triggers India push for AI self-reliance",
+        "confidence": 0.8
+      }
+    ],
+    "cached_at": "2026-06-14T09:59:26.106Z",
+    "model": "gpt-4.1-mini"
+  },
+  "2026-W24:Ecommerce_Retail_Tech:793cc71f8654": {
+    "selected": [
+      {
+        "id": "11",
+        "rank": 1,
+        "why": "Visa and OpenAI collaboration on agent-led payments innovation",
+        "confidence": 0.95
+      },
+      {
+        "id": "0",
+        "rank": 2,
+        "why": "Omnichannel fulfillment driving higher conversion rates for retailers",
+        "confidence": 0.9
+      },
+      {
+        "id": "9",
+        "rank": 3,
+        "why": "Recommendation engines as new battleground in commerce media",
+        "confidence": 0.88
+      },
+      {
+        "id": "6",
+        "rank": 4,
+        "why": "AI transforming ecommerce design with cost and time savings",
+        "confidence": 0.87
+      },
+      {
+        "id": "3",
+        "rank": 5,
+        "why": "Subscription models significantly lift online retailer conversion rates",
+        "confidence": 0.85
+      },
+      {
+        "id": "13",
+        "rank": 6,
+        "why": "Cegid launches unified retail app enhancing platform capabilities",
+        "confidence": 0.83
+      },
+      {
+        "id": "7",
+        "rank": 7,
+        "why": "India’s quick commerce model advances local delivery innovations",
+        "confidence": 0.8
+      }
+    ],
+    "cached_at": "2026-06-14T09:59:52.630Z",
+    "model": "gpt-4.1-mini"
+  },
+  "2026-W24:Luxury_and_Consumer:e08417fc82f7": {
+    "selected": [
+      {
+        "id": "0",
+        "rank": 1,
+        "why": "Farfetch’s luxury e-commerce strategy with practical retail insights",
+        "confidence": 0.95
+      },
+      {
+        "id": "3",
+        "rank": 2,
+        "why": "AI startup winning eBay Circular Fashion Fund shows retail tech innovation",
+        "confidence": 0.9
+      },
+      {
+        "id": "9",
+        "rank": 3,
+        "why": "New luxury retail concepts with focus on discovery and differentiation",
+        "confidence": 0.9
+      },
+      {
+        "id": "12",
+        "rank": 4,
+        "why": "Retail strategies to leverage major sports events for sales growth",
+        "confidence": 0.85
+      },
+      {
+        "id": "10",
+        "rank": 5,
+        "why": "Raw material price hikes impact fashion retail margins and supply chain",
+        "confidence": 0.85
+      },
+      {
+        "id": "1",
+        "rank": 6,
+        "why": "Rolex price increases highlight luxury pricing and customer retention",
+        "confidence": 0.8
+      },
+      {
+        "id": "16",
+        "rank": 7,
+        "why": "Luxury branding insights from SpaceX IPO with storytelling applications",
+        "confidence": 0.75
+      }
+    ],
+    "cached_at": "2026-06-14T10:00:19.706Z",
+    "model": "gpt-4.1-mini"
   }
 }
