@@ -3262,5 +3262,101 @@
     ],
     "cached_at": "2026-06-14T10:00:19.706Z",
     "model": "gpt-4.1-mini"
+  },
+  "2026-W25:AI_and_Strategy:d039f53b339e": {
+    "selected": [
+      {
+        "id": "11",
+        "rank": 1,
+        "why": "OpenAI's revenue and burn rate reveal AI industry economics",
+        "confidence": 0.95
+      },
+      {
+        "id": "5",
+        "rank": 2,
+        "why": "Amazon aims to challenge Nvidia with AI chip sales",
+        "confidence": 0.9
+      },
+      {
+        "id": "17",
+        "rank": 3,
+        "why": "Amazon AI chief outlines path to catch up with leaders",
+        "confidence": 0.9
+      },
+      {
+        "id": "4",
+        "rank": 4,
+        "why": "Companies rein in AI usage due to rising operational costs",
+        "confidence": 0.85
+      },
+      {
+        "id": "3",
+        "rank": 5,
+        "why": "Reliance's aggressive AI ambitions impact Indian AI landscape",
+        "confidence": 0.85
+      },
+      {
+        "id": "16",
+        "rank": 6,
+        "why": "OpenAI Codex adds Record & Replay, enhancing AI coding tools",
+        "confidence": 0.85
+      },
+      {
+        "id": "6",
+        "rank": 7,
+        "why": "US government bans Anthropic's Fable 5, affecting AI model release",
+        "confidence": 0.8
+      }
+    ],
+    "cached_at": "2026-06-21T10:13:30.623Z",
+    "model": "gpt-4.1-mini"
+  },
+  "2026-W25:Ecommerce_Retail_Tech:e292d4804483": {
+    "selected": [
+      {
+        "id": "2",
+        "rank": 1,
+        "why": "Shopify enables merchants to track AI-driven sales traffic",
+        "confidence": 0.9
+      },
+      {
+        "id": "9",
+        "rank": 2,
+        "why": "In-depth analysis of fulfillment challenges reshaping ecommerce growth",
+        "confidence": 0.88
+      },
+      {
+        "id": "5",
+        "rank": 3,
+        "why": "Faire broadens marketplace to non-retail segments, expanding B2B use",
+        "confidence": 0.86
+      },
+      {
+        "id": "3",
+        "rank": 4,
+        "why": "commercetools launches AI-driven B2B intake agent, enhancing platform automation",
+        "confidence": 0.84
+      },
+      {
+        "id": "7",
+        "rank": 5,
+        "why": "Live-shopping app Whatnot sees major fashion category growth",
+        "confidence": 0.82
+      },
+      {
+        "id": "10",
+        "rank": 6,
+        "why": "Guidance on BNPL integration addressing payment risk and compliance",
+        "confidence": 0.8
+      },
+      {
+        "id": "8",
+        "rank": 7,
+        "why": "Akeneo’s PricingHUB acquisition boosts AI-driven pricing and commerce personalization",
+        "confidence": 0.78
+      }
+    ],
+    "cached_at": "2026-06-21T10:13:46.798Z",
+    "model": "o4-mini"
   }
 }

@@ -1,0 +1,16 @@
+{
+  "concept": "fulfilment-conveyor-sushi-belt-luxury-mix",
+  "primaryHumorDriver": "fish-out-of-water",
+  "secondaryEnhancer": "unexpected texture/material combination",
+  "sceneDescription": "A photorealistic supermarket conveyor belt at checkout displays an absurd lineup: a gold wristwatch sits inside a clear plastic takeout container (like sushi), next to a barcode scanner nestled in a paper grocery bag, and a toy delivery truck filled with grapes. Mixed among them are ordinary groceries—milk, bread, and apples. Subtle, incidental brand logos from Modern Retail, Internet Retailing, and Jeweller appear as small stickers on the bag, the scanner, and the delivery truck. The scene’s humor comes from luxury and logistical objects being treated as mundane groceries, and the sushi container’s unexpected use for a watch. Everything looks touchable and real under bright, even supermarket lighting with a clean checkout counter surface.",
+  "finalImagePrompt": "A supermarket checkout conveyor belt shows a gold wristwatch inside a clear sushi takeout container, a barcode scanner peeking from a paper grocery bag, and a small toy delivery truck carrying grapes. Ordinary groceries like milk, bread, and apples fill out the lineup. Subtle brand stickers (Modern Retail, Internet Retailing, Jeweller) appear on the bag, scanner, and truck. All objects rest on a clean, light-gray supermarket counter under natural lighting.",
+  "negativePrompt": [
+    "text, letters, numbers, signage, labels, price tags",
+    "screens, UI, dashboards, holograms, floating icons",
+    "watermarks, unrelated brand logos",
+    "cartoon, illustration, CGI, 3D render, anime",
+    "diamond, diamonds, gemstone, gemstones, precious stones, jewelry close-up, jewelry product shot, diamond ring, diamond necklace, diamond earring, jeweled, sparkling gemstone",
+    "dramatic spotlight, glowing edges, rim lighting, vignette, cinematic color grade, blurred background, bokeh"
+  ],
+  "confidence": 0.94
+}

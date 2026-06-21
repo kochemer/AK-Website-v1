@@ -58,5 +58,11 @@
     "cached_at": "2026-06-14T10:01:08.129Z",
     "model": "gpt-4.1-mini",
     "version": "1.1"
+  },
+  "2026-W25:d6518126cd49": {
+    "editorialTake": "OpenAI tripled revenue to $5.7 billion in Q1 but burned through $3.7 billion to get there. That’s a brutal reminder that AI scale still demands massive capital and operational risk. Amazon’s move to sell its AI chips directly to data centers signals it’s finally trying to muscle in on Nvidia’s turf, but with its Nova2 model lagging behind OpenAI and Anthropic, it’s clear AWS is playing catch-up, not lead. The cost pressures forcing companies like Amazon and Walmart to cap AI usage reveal a growing tension: AI’s promise is huge, but so is its expense.\n\nShopify’s new tools to track sales from AI platforms show ecommerce is waking up to AI’s role as a traffic driver, not just a buzzword. Meanwhile, Faire expanding beyond retail to hotels and offices hints at a shift in how marketplaces define customers. I think the biggest question now is whether Amazon’s chip push and AI ambitions can overcome its late start and cost challenges, or if the AI hardware and software race will consolidate around a few winners faster than anyone expects.",
+    "cached_at": "2026-06-21T10:15:07.544Z",
+    "model": "gpt-4.1-mini",
+    "version": "1.1"
   }
 }

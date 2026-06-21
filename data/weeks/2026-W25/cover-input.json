@@ -1,0 +1,28 @@
+{
+  "weekLabel": "2026-W25",
+  "homepageTopArticles": [
+    {
+      "title": "Marketplace Briefing: Shopify launches tools to help merchants track sales and traffic from AI platforms",
+      "source": "Modern Retail",
+      "snippet": "Shopify is rolling out a new set of tools designed to help merchants understand how their products appear across AI shopping platforms.",
+      "aiSummary": "AI-generated summary: Shopify has introduced new tools aimed at helping merchants track how their products are displayed and perform across AI shopping platforms, enhancing insights into sales and traffic."
+    },
+    {
+      "title": "ANALYSIS: Is fulfilment retail’s biggest barrier to growth?",
+      "source": "Internet Retailing",
+      "snippet": "As we enter a new digital era, the main questions about ecommerce are no longer about acquiring customers or shifting from physical to digital channels - they're about fulfilment.\nThe post ANALYSIS: Is fulfilment retail’s biggest barrier to growth? appeared first on InternetRetailing.",
+      "aiSummary": "AI-generated summary: The article from Internet Retailing dated June 16, 2026, discusses how in the evolving digital era, ecommerce challenges have shifted focus from customer acquisition and channel transition to fulfilment, questioning whether fulfilment is the biggest barrier to retail growth."
+    },
+    {
+      "title": "De Beers calls for industry unity in new consumer report",
+      "source": "Jeweller - Business News",
+      "snippet": "A new report published by the De Beers Group has found that purchases of natural diamond jewellery products remain at pre-pandemic levels, despite positive trends in key areas.",
+      "aiSummary": "AI-generated summary: De Beers Group's new report reveals that purchases of natural diamond jewellery have stabilized at pre-pandemic levels, highlighting steady consumer demand despite positive trends in certain areas. The company calls for greater industry unity in response."
+    }
+  ],
+  "model": "gpt-image-1",
+  "finalPrompt": "Photograph: A supermarket checkout conveyor belt shows a gold wristwatch inside a clear sushi takeout container, a barcode scanner peeking from a paper grocery bag, and a small toy delivery truck carrying grapes. Ordinary groceries like milk, bread, and apples fill out the lineup. Subtle brand stickers (Modern Retail, Internet Retailing, Jeweller) appear on the bag, scanner, and truck. All objects rest on a clean, light-gray supermarket counter under natural lighting.\n\nCRITICAL CONSTRAINTS (must be strictly avoided):\n- text, letters, numbers, signage, labels, price tags, screens, UI, dashboards, holograms, floating icons, watermarks, unrelated brand logos, cartoon, illustration, CGI, 3D render, anime, diamond, diamonds, gemstone, gemstones, precious stones, jewelry close-up, jewelry product shot, diamond ring, diamond necklace, diamond earring, jeweled, sparkling gemstone, dramatic spotlight, glowing edges, rim lighting, vignette, cinematic color grade, blurred background, bokeh\n\nThis must look like a real photograph taken by a human — not AI-generated, not CGI, not a 3D render. Natural light. Real objects. Real imperfections. Fill the entire frame edge to edge with the scene — no black bars, no empty space at the edges.\n\nDo not include: text, labels, signage, screens, UI, logos unrelated to the scene, diamonds, gemstones, CGI lighting, dramatic spotlights, or blurred vignette backgrounds.",
+  "imageSize": "1536x1024",
+  "outputPath": "/weekly-images/2026-W25.png",
+  "generatedAt": "2026-06-21T10:19:07.870Z"
+}

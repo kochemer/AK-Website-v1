@@ -1,0 +1,77 @@
+{
+  "digestWeek": "2026-W25",
+  "ingestionWeek": "2026-W25",
+  "startedAt": "2026-06-21T09:58:57.854Z",
+  "finishedAt": "2026-06-21T10:19:25.100Z",
+  "steps": [
+    {
+      "name": "rss",
+      "ok": true,
+      "startedAt": "2026-06-21T09:58:57.874Z",
+      "finishedAt": "2026-06-21T09:59:21.070Z"
+    },
+    {
+      "name": "pages",
+      "ok": true,
+      "startedAt": "2026-06-21T09:59:21.071Z",
+      "finishedAt": "2026-06-21T09:59:22.719Z"
+    },
+    {
+      "name": "discovery",
+      "ok": true,
+      "startedAt": "2026-06-21T09:59:22.720Z",
+      "finishedAt": "2026-06-21T10:12:58.107Z"
+    },
+    {
+      "name": "classification",
+      "ok": true,
+      "startedAt": "2026-06-21T10:12:58.107Z",
+      "finishedAt": "2026-06-21T10:12:58.224Z"
+    },
+    {
+      "name": "digest",
+      "ok": true,
+      "startedAt": "2026-06-21T10:12:58.224Z",
+      "finishedAt": "2026-06-21T10:15:07.546Z"
+    },
+    {
+      "name": "email",
+      "ok": true,
+      "startedAt": "2026-06-21T10:15:07.546Z",
+      "finishedAt": "2026-06-21T10:15:29.009Z"
+    },
+    {
+      "name": "podcast",
+      "ok": true,
+      "startedAt": "2026-06-21T10:15:29.009Z",
+      "finishedAt": "2026-06-21T10:18:06.556Z"
+    },
+    {
+      "name": "cover",
+      "ok": true,
+      "startedAt": "2026-06-21T10:18:06.556Z",
+      "finishedAt": "2026-06-21T10:19:07.881Z"
+    },
+    {
+      "name": "competitorAnalyze",
+      "ok": true,
+      "startedAt": "2026-06-21T10:19:07.881Z",
+      "finishedAt": "2026-06-21T10:19:25.093Z"
+    }
+  ],
+  "health": {
+    "warnings": [
+      "Luxury & Consumer: www.businessoffashion.com represents 42.9% (3/7) - exceeds 40% threshold",
+      "Jewellery Industry: www.jewellermagazine.com represents 42.9% (3/7) - exceeds 40% threshold",
+      "Jewellery Industry: instoremag.com represents 42.9% (3/7) - exceeds 40% threshold"
+    ],
+    "metrics": {
+      "paywallPercent": 0,
+      "podcastWordCount": 2253
+    }
+  },
+  "versions": {
+    "node": "v20.20.2",
+    "gitCommit": "0a88979e616126ccf26a52373d9dd81b2c8dbca4"
+  }
+}

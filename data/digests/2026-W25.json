@@ -1,0 +1,969 @@
+{
+  "weekLabel": "2026-W25",
+  "tz": "Europe/Copenhagen",
+  "startISO": "2026-06-14T22:00:00.000Z",
+  "endISO": "2026-06-21T21:59:59.999Z",
+  "builtAtISO": "2026-06-21T12:14:42.125+02:00",
+  "builtAtLocal": "2026-06-21 12:14:42",
+  "totals": {
+    "total": 751,
+    "byTopic": {
+      "AIStrategy": 109,
+      "EcommerceRetail": 490,
+      "LuxuryConsumer": 129,
+      "Jewellery": 21
+    }
+  },
+  "topics": {
+    "AI_and_Strategy": {
+      "total": 109,
+      "top": [
+        {
+          "id": "jtl2r5",
+          "title": "OpenAI tripled revenue to $5.7 billion in Q1 but burned through $3.7 billion to get there",
+          "url": "https://the-decoder.com/openai-tripled-revenue-to-5-7-billion-in-q1-but-burned-through-3-7-billion-to-get-there/",
+          "source": "The Decoder",
+          "published_at": "2026-06-20T08:02:07.000Z",
+          "ingested_at": "2026-06-21T09:58:57.874Z",
+          "snippet": "In the first quarter of 2026, OpenAI pulled in $5.7 billion in revenue and burned through about $3.7 billion, both figures tripled year over year. Stock-based compensation alone ate up over $2.3 billion. With $73 billion in reserves, OpenAI doesn't need fresh capital right now, but a price war with Anthropic could change that fast.\nThe article OpenAI tripled revenue to $5.7 billion in Q1 but burned through $3.7 billion to get there appeared first on The Decoder.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "openai",
+              "anthropic"
+            ]
+          },
+          "aiSummary": "AI-generated summary: In Q1 2026, OpenAI tripled its revenue to $5.7 billion while also increasing its expenses to $3.7 billion, including over $2.3 billion in stock-based compensation. Despite holding $73 billion in reserves, ongoing competition with Anthropic could impact its financial position.",
+          "translations": {
+            "da": {
+              "title": "OpenAI tredoblede omsætningen til 5,7 milliarder dollars i Q1, men brugte 3,7 milliarder dollars for at nå dertil",
+              "summary": "AI-genereret resumé: I Q1 2026 tredoblede OpenAI sin omsætning til 5,7 milliarder dollars, samtidig med at udgifterne steg til 3,7 milliarder dollars, herunder over 2,3 milliarder dollars i aktiebaseret kompensation. På trods af at have 73 milliarder dollars i reserver, kan den fortsatte konkurrence med Anthropic påvirke den finansielle position."
+            },
+            "es": {
+              "title": "OpenAI triplicó sus ingresos a 5.7 mil millones de dólares en el Q1 pero gastó 3.7 mil millones para lograrlo",
+              "summary": "Resumen generado por IA: En el Q1 de 2026, OpenAI triplicó sus ingresos a 5.7 mil millones de dólares mientras también aumentaba sus gastos a 3.7 mil millones, incluyendo más de 2.3 mil millones en compensación basada en acciones. A pesar de tener 73 mil millones en reservas, la competencia continua con Anthropic podría afectar su posición financiera."
+            }
+          }
+        },
+        {
+          "id": "mqlqru",
+          "title": "Amazon hopes to challenge Nvidia more directly by selling its AI chips",
+          "url": "https://techcrunch.com/2026/06/18/amazon-hopes-to-challenge-nvidia-more-directly-by-selling-its-ai-chips/",
+          "source": "TechCrunch - AI",
+          "published_at": "2026-06-18T18:22:13.000Z",
+          "ingested_at": "2026-06-21T09:58:57.874Z",
+          "snippet": "AWS is in talks to sell its chips to other data centers. CEO Andy Jassy has said this represents a $50 billion opportunity for the company.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.25,
+            "recencyScore": 0,
+            "sourceWeight": 0.15,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ai"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Amazon's AWS is planning to sell its AI chips to other data centers, with CEO Andy Jassy highlighting this move as a $50 billion opportunity to more directly challenge Nvidia.",
+          "translations": {
+            "da": {
+              "title": "Amazon håber at udfordre Nvidia mere direkte ved at sælge sine AI-chips",
+              "summary": "AI-genereret resumé: Amazons AWS planlægger at sælge sine AI-chips til andre datacentre, hvor CEO Andy Jassy fremhæver dette som en 50 milliarder dollars mulighed for at udfordre Nvidia mere direkte."
+            },
+            "es": {
+              "title": "Amazon espera desafiar a Nvidia más directamente vendiendo sus chips de IA",
+              "summary": "Resumen generado por IA: AWS de Amazon planea vender sus chips de IA a otros centros de datos, con el CEO Andy Jassy destacando esta acción como una oportunidad de 50 mil millones de dólares para desafiar a Nvidia más directamente."
+            }
+          }
+        },
+        {
+          "id": "gmpf8u",
+          "title": "Amazon has lagged OpenAI and Anthropic, but AI chief sees path to catch up in 'coming year'",
+          "url": "https://www.cnbc.com/2026/06/17/amazon-ai-frontier-openai-anthropic.html",
+          "source": "CNBC Technology",
+          "published_at": "2026-06-17T17:37:30.000Z",
+          "ingested_at": "2026-06-21T09:58:57.874Z",
+          "snippet": "Amazon's Nova2 model is behind the latest releases from LLM leaders OpenAI and Anthropic.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.2,
+            "insightSignalBoost": 0,
+            "penalty": 0.2,
+            "matchedKeywords": [
+              "ai",
+              "openai",
+              "anthropic",
+              "llm"
+            ]
+          },
+          "aiSummary": "AI-generated summary: According to CNBC Technology on June 17, 2026, Amazon's Nova2 AI model currently lags behind leading large language models from OpenAI and Anthropic, but the company's AI chief anticipates a path to catch up within the coming year.",
+          "translations": {
+            "da": {
+              "title": "Amazon halter bagefter OpenAI og Anthropic, men AI-chefen ser en vej til at indhente inden for det kommende år",
+              "summary": "AI-genereret resumé: Ifølge CNBC Technology den 17. juni 2026 halter Amazons Nova2 AI-model i øjeblikket bagefter førende store sprogmodeller fra OpenAI og Anthropic, men virksomhedens AI-chef forventer en vej til at indhente inden for det kommende år."
+            },
+            "es": {
+              "title": "Amazon ha quedado rezagado frente a OpenAI y Anthropic, pero el jefe de IA ve un camino para ponerse al día en el 'próximo año'",
+              "summary": "Resumen generado por IA: Según CNBC Technology el 17 de junio de 2026, el modelo de IA Nova2 de Amazon actualmente está detrás de los principales modelos de lenguaje grande de OpenAI y Anthropic, pero el jefe de IA de la compañía anticipa un camino para ponerse al día dentro del próximo año."
+            }
+          }
+        },
+        {
+          "id": "8wv5g4",
+          "title": "‘We created a monster’: companies rein in AI usage as costs strain budgets",
+          "url": "https://www.ft.com/content/1d37cc08-e0aa-45a4-a45d-4ad282529314",
+          "source": "Financial Times - Technology",
+          "published_at": "2026-06-19T04:00:11.000Z",
+          "ingested_at": "2026-06-21T09:58:57.874Z",
+          "snippet": "Amazon, Walmart and Uber are among early adopters that have introduced caps or discouraged wasteful activity",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": -0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0.2,
+            "matchedKeywords": [
+              "ai"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Major companies like Amazon, Walmart, and Uber are implementing usage caps and discouraging wasteful AI activity as rising costs strain their budgets.",
+          "translations": {
+            "da": {
+              "title": "’Vi skabte et monster’: virksomheder begrænser AI-brug, da omkostninger presser budgetter",
+              "summary": "AI-genereret resumé: Store virksomheder som Amazon, Walmart og Uber indfører brugstakser og afskrækker spild af AI-aktivitet, da stigende omkostninger presser deres budgetter."
+            },
+            "es": {
+              "title": "‘Creamos un monstruo’: las empresas limitan el uso de IA ante el aumento de costos que afecta los presupuestos",
+              "summary": "Resumen generado por IA: Grandes empresas como Amazon, Walmart y Uber están implementando límites de uso y desalentando actividades de IA innecesarias debido a que los costos crecientes afectan sus presupuestos."
+            }
+          }
+        },
+        {
+          "id": "us6qgi",
+          "title": "Reliance’s AI ambitions &amp; other key takeaways from its 2026 AGM ",
+          "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/reliance-bets-big-on-ai-at-the-annual-general-meeting-2026-key-takeaways/articleshow/131860819.cms",
+          "source": "Economic Times - Technology",
+          "published_at": "2026-06-19T14:11:54.000Z",
+          "ingested_at": "2026-06-21T09:58:57.874Z",
+          "snippet": "Reliance Industries is aggressively pursuing AI leadership in India, aiming to build sovereign infrastructure and develop AI solutions for the nation. The company announced plans for a significant Jio IPO, a rapid expansion of its quick commerce business, and the integration of AI across its network and media platforms.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": -0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0.2,
+            "matchedKeywords": [
+              "ai"
+            ]
+          },
+          "aiSummary": "AI-generated summary: At its 2026 AGM, Reliance Industries outlined ambitious plans to lead AI development in India by building sovereign infrastructure and integrating AI across its network and media platforms, alongside announcing a major Jio IPO and rapid expansion of its quick commerce business.",
+          "translations": {
+            "da": {
+              "title": "Reliances AI-ambitioner og andre vigtige punkter fra deres 2026 generalforsamling",
+              "summary": "AI-genereret resumé: På deres 2026 generalforsamling præsenterede Reliance Industries ambitiøse planer om at lede AI-udviklingen i Indien ved at opbygge suveræn infrastruktur og integrere AI på tværs af deres netværk og medieplatforme, samtidig med at de annoncerede en stor Jio IPO og hurtig udvidelse af deres quick commerce-forretning."
+            },
+            "es": {
+              "title": "Las ambiciones de IA de Reliance y otros puntos clave de su AGM 2026",
+              "summary": "Resumen generado por IA: En su AGM 2026, Reliance Industries presentó planes ambiciosos para liderar el desarrollo de IA en India mediante la construcción de infraestructura soberana e integración de IA en toda su red y plataformas mediáticas, junto con el anuncio de una importante IPO de Jio y la rápida expansión de su negocio de comercio rápido."
+            }
+          }
+        },
+        {
+          "id": "pyw6n4",
+          "title": "OpenAI's Codex can now watch you work once and repeat the task forever",
+          "url": "https://the-decoder.com/openais-codex-can-now-watch-you-work-once-and-repeat-the-task-forever/",
+          "source": "The Decoder",
+          "published_at": "2026-06-20T13:15:08.000Z",
+          "ingested_at": "2026-06-21T09:58:57.874Z",
+          "snippet": "OpenAI has released the \"Record & Replay\" feature for its Codex app on macOS: users demonstrate a workflow once, Codex converts it into a reusable \"skill,\" and then repeats it on its own. The feature isn't available yet in the EU, the UK, or Switzerland.\nThe article OpenAI's Codex can now watch you work once and repeat the task forever appeared first on The Decoder.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "openai"
+            ]
+          },
+          "aiSummary": "AI-generated summary: OpenAI's Codex app on macOS now includes a \"Record & Replay\" feature that allows users to demonstrate a workflow once, which Codex then converts into a reusable skill to automate the task repeatedly. This feature is currently unavailable in the EU, UK, and Switzerland.",
+          "translations": {
+            "da": {
+              "title": "OpenAI's Codex kan nu se dig arbejde én gang og gentage opgaven for evigt",
+              "summary": "AI-genereret resumé: OpenAI's Codex-app på macOS inkluderer nu en \"Record & Replay\"-funktion, der lader brugere demonstrere en arbejdsgang én gang, som Codex derefter omdanner til en genanvendelig færdighed for at automatisere opgaven gentagne gange. Denne funktion er i øjeblikket ikke tilgængelig i EU, UK og Schweiz."
+            },
+            "es": {
+              "title": "Codex de OpenAI ahora puede verte trabajar una vez y repetir la tarea para siempre",
+              "summary": "Resumen generado por IA: La aplicación Codex de OpenAI en macOS ahora incluye una función de \"Grabar y Reproducir\" que permite a los usuarios demostrar un flujo de trabajo una vez, que Codex convierte en una habilidad reutilizable para automatizar la tarea repetidamente. Esta función no está disponible actualmente en la UE, Reino Unido y Suiza."
+            }
+          }
+        },
+        {
+          "id": "5gtign",
+          "title": "The US banned Anthropic’s Fable 5 release, but the numbers don’t seem to care",
+          "url": "https://techcrunch.com/podcast/the-us-banned-anthropics-fable-5-release-but-the-numbers-dont-seem-to-care/",
+          "source": "TechCrunch - AI",
+          "published_at": "2026-06-19T16:01:03.000Z",
+          "ingested_at": "2026-06-21T09:58:57.874Z",
+          "snippet": "Just as last week was ending, the US government forced Anthropic to pull its two newest models, Fable 5 and Mythos 5, citing national security concerns after Amazon researchers allegedly found a way to bypass Fable 5’s guardrails.  Cybersecurity researchers have since signed an open letter calling the move dangerous, and Anthropic itself noted the same jailbreaks exist in other models. So is […]",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.25,
+            "recencyScore": 0,
+            "sourceWeight": 0.15,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "anthropic",
+              "research"
+            ]
+          },
+          "aiSummary": "AI-generated summary: The US government banned Anthropic's release of its AI models Fable 5 and Mythos 5 over national security concerns after alleged guardrail bypasses were discovered, prompting cybersecurity experts to criticize the move as dangerous while Anthropic highlighted similar vulnerabilities in other models.",
+          "translations": {
+            "da": {
+              "title": "USA forbød Anthropic's Fable 5-udgivelse, men tallene ser ikke ud til at bekymre sig",
+              "summary": "AI-genereret resumé: Den amerikanske regering forbød Anthropic's udgivelse af AI-modellerne Fable 5 og Mythos 5 på grund af nationale sikkerhedsbekymringer efter påståede omgåelser af sikkerhedsforanstaltninger, hvilket fik cybersikkerhedseksperter til at kritisere beslutningen som farlig, mens Anthropic fremhævede lignende sårbarheder i andre modeller."
+            },
+            "es": {
+              "title": "EE.UU. prohibió el lanzamiento de Fable 5 de Anthropic, pero los números parecen no importar",
+              "summary": "Resumen generado por IA: El gobierno de EE.UU. prohibió el lanzamiento de los modelos de IA Fable 5 y Mythos 5 de Anthropic por preocupaciones de seguridad nacional tras descubrir supuestas evasiones de medidas de seguridad, lo que llevó a expertos en ciberseguridad a criticar la medida como peligrosa, mientras Anthropic destacó vulnerabilidades similares en otros modelos."
+            }
+          }
+        }
+      ]
+    },
+    "Ecommerce_Retail_Tech": {
+      "total": 490,
+      "top": [
+        {
+          "id": "4cjq5z",
+          "title": "Marketplace Briefing: Shopify launches tools to help merchants track sales and traffic from AI platforms",
+          "url": "https://www.modernretail.co/technology/marketplace-briefing-shopify-launches-tools-to-help-merchants-track-sales-and-traffic-from-ai-platforms/?utm_campaign=modernretaildis&utm_medium=rss&utm_source=general-rss",
+          "source": "Modern Retail",
+          "published_at": "2026-06-18T14:00:00.000Z",
+          "ingested_at": "2026-06-21T09:58:57.874Z",
+          "snippet": "Shopify is rolling out a new set of tools designed to help merchants understand how their products appear across AI shopping platforms.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.25,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "platform",
+              "marketplace",
+              "shopping"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Shopify has introduced new tools aimed at helping merchants track how their products are displayed and perform across AI shopping platforms, enhancing insights into sales and traffic.",
+          "translations": {
+            "da": {
+              "title": "Marketplace Briefing: Shopify lancerer værktøjer til at hjælpe handlende med at spore salg og trafik fra AI-platforme",
+              "summary": "AI-genereret resumé: Shopify har introduceret nye værktøjer, der hjælper handlende med at spore, hvordan deres produkter vises og klarer sig på AI-shoppingplatforme, hvilket forbedrer indsigt i salg og trafik."
+            },
+            "es": {
+              "title": "Marketplace Briefing: Shopify lanza herramientas para ayudar a los comerciantes a rastrear ventas y tráfico desde plataformas de IA",
+              "summary": "Resumen generado por IA: Shopify ha introducido nuevas herramientas destinadas a ayudar a los comerciantes a rastrear cómo se muestran y desempeñan sus productos en plataformas de compras con IA, mejorando la información sobre ventas y tráfico."
+            }
+          }
+        },
+        {
+          "id": "t7vgmy",
+          "title": "ANALYSIS: Is fulfilment retail’s biggest barrier to growth?",
+          "url": "https://internetretailing.net/analysis-is-fulfilment-retails-biggest-barrier-to-growth/",
+          "source": "Internet Retailing",
+          "published_at": "2026-06-16T11:01:28.000Z",
+          "ingested_at": "2026-06-21T09:58:57.874Z",
+          "snippet": "As we enter a new digital era, the main questions about ecommerce are no longer about acquiring customers or shifting from physical to digital channels - they're about fulfilment.\nThe post ANALYSIS: Is fulfilment retail’s biggest barrier to growth? appeared first on InternetRetailing.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ecommerce"
+            ]
+          },
+          "aiSummary": "AI-generated summary: The article from Internet Retailing dated June 16, 2026, discusses how in the evolving digital era, ecommerce challenges have shifted focus from customer acquisition and channel transition to fulfilment, questioning whether fulfilment is the biggest barrier to retail growth.",
+          "translations": {
+            "da": {
+              "title": "ANALYSE: Er opfyldelse detailhandelens største vækstbarriere?",
+              "summary": "AI-genereret resumé: Artiklen fra Internet Retailing dateret 16. juni 2026 diskuterer, hvordan ecommerce-udfordringer i den digitale tidsalder har flyttet fokus fra kundetilegnelse og kanalovergang til opfyldelse og stiller spørgsmål ved, om opfyldelse er den største barriere for detailvækst."
+            },
+            "es": {
+              "title": "ANÁLISIS: ¿Es el cumplimiento la mayor barrera para el crecimiento del retail?",
+              "summary": "Resumen generado por IA: El artículo de Internet Retailing del 16 de junio de 2026 analiza cómo, en la era digital en evolución, los desafíos del comercio electrónico han cambiado el enfoque de la adquisición de clientes y la transición de canales al cumplimiento, cuestionando si este es la mayor barrera para el crecimiento del retail."
+            }
+          }
+        },
+        {
+          "id": "s1mz38",
+          "title": "Faire opens its marketplace up to hotels, offices and non-retail customers",
+          "url": "https://www.modernretail.co/operations/faire-opens-its-marketplace-up-to-hotels-offices-and-non-retail-customers/?utm_campaign=modernretaildis&utm_medium=rss&utm_source=general-rss",
+          "source": "Modern Retail",
+          "published_at": "2026-06-18T04:00:00.000Z",
+          "ingested_at": "2026-06-21T09:58:57.874Z",
+          "snippet": "Faire is growing beyond boutiques by allowing business buyers to use the platform for their own purposes, like stocking mini bars, for client gifts or for front desk amenities.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "marketplace",
+              "platform"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Faire is expanding its marketplace to serve hotels, offices, and other non-retail customers, enabling business buyers to purchase items for uses such as stocking mini bars, client gifts, and front desk amenities.",
+          "translations": {
+            "da": {
+              "title": "Faire åbner sit marked for hoteller, kontorer og ikke-detailkunder",
+              "summary": "Faire udvider sit marked til at betjene hoteller, kontorer og andre ikke-detailkunder, så erhvervskunder kan købe varer til brug som minibarer, kundegaver og receptionens faciliteter."
+            },
+            "es": {
+              "title": "Faire abre su mercado a hoteles, oficinas y clientes no minoristas",
+              "summary": "Faire está ampliando su mercado para atender a hoteles, oficinas y otros clientes no minoristas, permitiendo a compradores empresariales adquirir artículos para usos como abastecer minibares, regalos para clientes y amenidades en la recepción."
+            }
+          }
+        },
+        {
+          "id": "eg1th0",
+          "title": "commercetools debuts B2B Intake Agent that it developed with Mirion Technologies",
+          "url": "https://www.digitalcommerce360.com/2026/06/17/commercetools-b2b-intake-agent-mirion/",
+          "source": "Digital Commerce 360",
+          "published_at": "2026-06-17T20:12:33.000Z",
+          "ingested_at": "2026-06-21T09:58:57.874Z",
+          "snippet": "The ecommerce platform provider commercetools announced the release of the first artificial intelligence (AI) agent that it has co-developed with Mirion Technologies. The agent, which commercetools refers to as the B2B Intake Agent, is designed to help commercetools clients to take unstructured customer order requests and output actionable quotes and cart information. The launch follows […]\nThe post commercetools debuts B2B Intake Agent that it developed with Mirion Technologies appeared first o...",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ecommerce",
+              "platform"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Ecommerce platform provider commercetools, in collaboration with Mirion Technologies, has launched the B2B Intake Agent, an AI tool designed to convert unstructured customer order requests into actionable quotes and cart information. This marks commercetools' first AI agent release aimed at enhancing B2B order processing.",
+          "translations": {
+            "da": {
+              "title": "commercetools lancerer B2B Intake Agent udviklet sammen med Mirion Technologies",
+              "summary": "E-handelsplatformen commercetools har i samarbejde med Mirion Technologies lanceret B2B Intake Agent, et AI-værktøj designet til at omdanne ustrukturerede kundeordrer til handlingsrettede tilbud og indkøbskurvsinformation. Dette er commercetools' første AI-agent til at forbedre B2B-ordrebehandling."
+            },
+            "es": {
+              "title": "commercetools presenta B2B Intake Agent desarrollado con Mirion Technologies",
+              "summary": "El proveedor de plataformas de comercio electrónico commercetools, en colaboración con Mirion Technologies, ha lanzado el B2B Intake Agent, una herramienta de IA diseñada para convertir solicitudes de pedidos de clientes no estructuradas en cotizaciones y datos de carrito accionables. Esta es la primera herramienta de IA de commercetools para mejorar el procesamiento de pedidos B2B."
+            }
+          }
+        },
+        {
+          "id": "lfssjm",
+          "title": "Fashion is now the largest category on Whatnot as brands flock to the platform",
+          "url": "https://www.glossy.co/fashion/fashion-is-now-the-largest-category-on-whatnot-as-brands-flock-to-the-platform/?utm_campaign=glossydis&utm_medium=rss&utm_source=general-rss",
+          "source": "Glossy",
+          "published_at": "2026-06-17T04:00:00.000Z",
+          "ingested_at": "2026-06-21T09:58:57.874Z",
+          "snippet": "The live shopping app Whatnot is in the midst of a notable growth period. After a $225 million funding round late last year, the company is now valued at over $11 billion, with 20 million buyers joining the platform in the last year. And as it grows, Whatnot is becoming even more attractive for fashion consumers, sellers and brands.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "platform",
+              "shopping"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Following a $225 million funding round and a valuation exceeding $11 billion, the live shopping app Whatnot has attracted 20 million buyers in the past year, with fashion now becoming its largest category as more consumers, sellers, and brands join the platform.",
+          "translations": {
+            "da": {
+              "title": "Fashion er nu den største kategori på Whatnot, da mærker strømmer til platformen",
+              "summary": "Efter en finansieringsrunde på 225 millioner dollars og en værdiansættelse på over 11 milliarder dollars har live shopping-appen Whatnot tiltrukket 20 millioner købere det seneste år, hvor fashion nu er dens største kategori, efterhånden som flere forbrugere, sælgere og mærker tilslutter sig platformen."
+            },
+            "es": {
+              "title": "La moda es ahora la categoría más grande en Whatnot mientras las marcas acuden a la plataforma",
+              "summary": "Tras una ronda de financiación de 225 millones de dólares y una valoración que supera los 11 mil millones, la app de compras en vivo Whatnot ha atraído a 20 millones de compradores en el último año, con la moda convirtiéndose en su categoría más grande a medida que más consumidores, vendedores y marcas se unen a la plataforma."
+            }
+          }
+        },
+        {
+          "id": "j2gdft",
+          "title": "How Retailers Can Offer BNPL Without Being Burned",
+          "url": "https://www.mytotalretail.com/article/how-retailers-can-offer-bnpl-without-being-burned/",
+          "source": "Total Retail",
+          "published_at": "2026-06-16T21:21:19.000Z",
+          "ingested_at": "2026-06-21T09:58:57.874Z",
+          "snippet": "Buy now, pay later (BNPL) has quickly become one of the most attractive offerings for new customers and essential to enhancing the overall customer experience. Meeting shoppers where they stand financially in response to rising insecurity is a good thing for retailers. That shouldn’t change. However, late payments on these loans are increasing and brands […]",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "payment"
+            ]
+          },
+          "aiSummary": "AI-generated summary: The article discusses how buy now, pay later (BNPL) services have become vital for attracting customers and improving their experience amid financial insecurity, but retailers must address the rising issue of late payments to avoid negative impacts.",
+          "translations": {
+            "da": {
+              "title": "Hvordan detailhandlere kan tilbyde BNPL uden at blive brændt",
+              "summary": "AI-genereret resumé: Artiklen diskuterer, hvordan buy now, pay later (BNPL) tjenester er blevet vigtige for at tiltrække kunder og forbedre deres oplevelse midt i økonomisk usikkerhed, men detailhandlere skal håndtere det stigende problem med sene betalinger for at undgå negative konsekvenser."
+            },
+            "es": {
+              "title": "Cómo los minoristas pueden ofrecer BNPL sin salir perjudicados",
+              "summary": "Resumen generado por IA: El artículo analiza cómo los servicios de buy now, pay later (BNPL) se han vuelto vitales para atraer clientes y mejorar su experiencia en medio de la inseguridad financiera, pero los minoristas deben abordar el creciente problema de los pagos atrasados para evitar impactos negativos."
+            }
+          }
+        },
+        {
+          "id": "fbo41s",
+          "title": "Akeneo targets AI-driven commerce with PricingHUB acquisition",
+          "url": "https://internetretailing.net/akeneo-targets-ai-driven-commerce-with-pricinghub-acquisition/",
+          "source": "Internet Retailing",
+          "published_at": "2026-06-15T02:30:00.000Z",
+          "ingested_at": "2026-06-21T09:58:57.874Z",
+          "snippet": "Product Cloud solutions-provider Akeneo has acquired pricing platform PricingHUB, bringing both pricing and product information together in a single offering.\nThe post Akeneo targets AI-driven commerce with PricingHUB acquisition appeared first on InternetRetailing.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "platform"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Akeneo has acquired the pricing platform PricingHUB to integrate pricing and product information into a unified Product Cloud solution, aiming to enhance AI-driven commerce.",
+          "translations": {
+            "da": {
+              "title": "Akeneo satser på AI-drevet handel med opkøbet af PricingHUB",
+              "summary": "Akeneo har opkøbt prisplatformen PricingHUB for at integrere pris- og produktinformation i en samlet Product Cloud-løsning med fokus på at forbedre AI-drevet handel."
+            },
+            "es": {
+              "title": "Akeneo apunta al comercio impulsado por IA con la adquisición de PricingHUB",
+              "summary": "Akeneo ha adquirido la plataforma de precios PricingHUB para integrar la información de precios y productos en una solución unificada Product Cloud, con el objetivo de mejorar el comercio impulsado por IA."
+            }
+          }
+        }
+      ]
+    },
+    "Luxury_and_Consumer": {
+      "total": 129,
+      "top": [
+        {
+          "id": "lqvga9",
+          "title": "How To Drive Luxury Conversion Through AI-Powered Virtual Try-On",
+          "url": "https://www.businessoffashion.com/articles/technology/ai-virtual-try-on-luxury-dressx-report/",
+          "source": "Business of Fashion - News",
+          "published_at": "2026-06-20T04:00:00.000Z",
+          "ingested_at": "2026-06-21T09:58:57.874Z",
+          "snippet": "DressX’s latest intelligence report suggests shoppers who engage with AI virtual try-on are 50 percent more likely to purchase overall, while conversion rates among luxury consumers jump up to 10 times higher. BoF unpacks and analyses the key insights from the report.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.25,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0.15,
+            "penalty": 0,
+            "matchedKeywords": [
+              "luxury",
+              "consumer"
+            ]
+          },
+          "aiSummary": "AI-generated summary: According to DressX’s intelligence report highlighted by Business of Fashion, shoppers using AI-powered virtual try-on are 50% more likely to make a purchase, with luxury consumer conversion rates increasing up to tenfold. The article analyzes these significant impacts on luxury retail conversion.",
+          "translations": {
+            "da": {
+              "title": "Sådan Øger Du Luxury Conversion Gennem AI-Drevet Virtuel Prøvning",
+              "summary": "Ifølge DressX’s intelligence report fremhævet af Business of Fashion er shoppere, der bruger AI-drevet virtuel prøvning, 50 % mere tilbøjelige til at købe, med luxury consumer conversion rates, der stiger op til ti gange. Artiklen analyserer disse betydelige effekter på luxury retail conversion."
+            },
+            "es": {
+              "title": "Cómo Impulsar la Conversión de Lujo a Través de la Prueba Virtual Impulsada por IA",
+              "summary": "Según el informe de inteligencia de DressX destacado por Business of Fashion, los compradores que usan la prueba virtual impulsada por IA tienen un 50 % más de probabilidades de realizar una compra, con tasas de conversión de consumidores de lujo que aumentan hasta diez veces. El artículo analiza estos impactos significativos en la conversión del comercio minorista de lujo."
+            }
+          }
+        },
+        {
+          "id": "9kcwy3",
+          "title": "The TikTok-Savvy Activewear Brands Stealing Market Share ",
+          "url": "https://www.businessoffashion.com/articles/retail/the-tiktok-savvy-activewear-brands-stealing-market-share/",
+          "source": "Business of Fashion - News",
+          "published_at": "2026-06-15T04:30:00.000Z",
+          "ingested_at": "2026-06-21T09:58:57.874Z",
+          "snippet": "A crop of small but emerging brands is capitalising on demand for novelty in the category, using TikTok-savvy marketing and a lifestyle-driven position to chip away at the dominance of established players like Lululemon.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "brand",
+              "demand"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Emerging activewear brands are leveraging TikTok-savvy marketing and lifestyle-focused strategies to challenge established players like Lululemon, capitalizing on consumer demand for novelty in the luxury and consumer market.",
+          "translations": {
+            "da": {
+              "title": "De TikTok-kyndige activewear-mærker, der stjæler markedsandele",
+              "summary": "AI-genereret resumé: Nye activewear-mærker udnytter TikTok-kyndig markedsføring og livsstilsfokuserede strategier for at udfordre etablerede spillere som Lululemon og drage fordel af forbrugernes efterspørgsel efter nyheder på luksus- og forbrugermarkedet."
+            },
+            "es": {
+              "title": "Las marcas de ropa deportiva expertas en TikTok que están ganando cuota de mercado",
+              "summary": "Resumen generado por IA: Las marcas emergentes de ropa deportiva están aprovechando el marketing experto en TikTok y estrategias centradas en el estilo de vida para desafiar a jugadores establecidos como Lululemon, capitalizando la demanda de los consumidores por novedades en el mercado de lujo y consumo."
+            }
+          }
+        },
+        {
+          "id": "2ltchb",
+          "title": "Rashi World: An Australian Swimwear Brand Prioritizing Sun Protection",
+          "url": "https://fashionista.com/2026/06/rashi-world-swimwear-brand",
+          "source": "Fashionista",
+          "published_at": "2026-06-18T15:00:00.000Z",
+          "ingested_at": "2026-06-21T09:58:57.874Z",
+          "snippet": "Each garment offers UPF 50+ coverage, blocking 98% of harmful UV rays.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "brand"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Rashi World is an Australian swimwear brand that prioritizes sun protection by offering garments with UPF 50+ coverage, effectively blocking 98% of harmful UV rays.",
+          "translations": {
+            "da": {
+              "title": "Rashi World: Et australsk badetøjsmærke med fokus på solbeskyttelse",
+              "summary": "AI-genereret resumé: Rashi World er et australsk badetøjsmærke, der prioriterer solbeskyttelse ved at tilbyde tøj med UPF 50+ beskyttelse, som effektivt blokerer 98% af skadelige UV-stråler."
+            },
+            "es": {
+              "title": "Rashi World: Una marca australiana de trajes de baño que prioriza la protección solar",
+              "summary": "Resumen generado por IA: Rashi World es una marca australiana de trajes de baño que prioriza la protección solar ofreciendo prendas con cobertura UPF 50+, bloqueando efectivamente el 98% de los rayos UV dañinos."
+            }
+          }
+        },
+        {
+          "id": "nlrold",
+          "title": "Riding High After I.P.O., SpaceX Will Buy A.I. Start-Up for $60 Billion",
+          "url": "https://www.nytimes.com/2026/06/16/business/spacex-cursor-aquisition-ipo.html",
+          "source": "NYTimes Technology",
+          "published_at": "2026-06-16T20:47:18.000Z",
+          "ingested_at": "2026-06-21T09:58:57.874Z",
+          "snippet": "SpaceX exercised its option to acquire Cursor in an all-stock deal, bolstering Elon Musk’s ambitions in artificial intelligence.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.15,
+            "recencyScore": 0,
+            "sourceWeight": 0.15,
+            "keywordBoost": 0,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": []
+          },
+          "aiSummary": "AI-generated summary: Following its recent IPO, SpaceX has exercised its option to acquire the AI start-up Cursor in an all-stock deal valued at $60 billion, advancing Elon Musk's ambitions in artificial intelligence.",
+          "translations": {
+            "da": {
+              "title": "Rider højt efter I.P.O., SpaceX køber AI-startup for 60 milliarder dollars",
+              "summary": "AI-genereret resumé: Efter sin nylige børsintroduktion har SpaceX udnyttet sin option til at erhverve AI-startuppen Cursor i en aktiehandel til en værdi af 60 milliarder dollars og fremmer Elon Musks ambitioner inden for kunstig intelligens."
+            },
+            "es": {
+              "title": "Tras el éxito de la OPI, SpaceX comprará la start-up de IA por 60 mil millones de dólares",
+              "summary": "Resumen generado por IA: Tras su reciente OPI, SpaceX ha ejercido su opción de adquirir la start-up de IA Cursor en un acuerdo totalmente en acciones valorado en 60 mil millones de dólares, avanzando las ambiciones de Elon Musk en inteligencia artificial."
+            }
+          }
+        },
+        {
+          "id": "6bthvs",
+          "title": "Dana-co Acquires Lunya, Expanding Footprint in Premium Sleepwear and Lifestyle Market",
+          "url": "https://wwd.com/business-news/markets/dana-co-acquires-lunya-sleepwear-firm-1239019232/",
+          "source": "WWD - Women's Wear Daily",
+          "published_at": "2026-06-20T18:15:00.000Z",
+          "ingested_at": "2026-06-21T09:58:57.874Z",
+          "snippet": "Dana-co plans to bring operational expertise, product development resources, wholesale relationships, planning discipline, and direct-consumer capabilities to support Lunya's growth.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "premium",
+              "consumer"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Dana-co has acquired Lunya to enhance its presence in the premium sleepwear and lifestyle market, aiming to leverage its operational expertise, product development, wholesale relationships, and direct-to-consumer capabilities to support Lunya's growth.",
+          "translations": {
+            "da": {
+              "title": "Dana-co opkøber Lunya og udvider sin tilstedeværelse på markedet for premium nattøj og livsstil",
+              "summary": "AI-genereret resumé: Dana-co har opkøbt Lunya for at styrke sin position på markedet for premium nattøj og livsstil med fokus på at udnytte sin operationelle ekspertise, produktudvikling, engrosrelationer og direkte-til-forbruger kapaciteter til at støtte Lunyas vækst."
+            },
+            "es": {
+              "title": "Dana-co adquiere Lunya, ampliando su presencia en el mercado de ropa de dormir premium y estilo de vida",
+              "summary": "Resumen generado por IA: Dana-co ha adquirido Lunya para mejorar su presencia en el mercado de ropa de dormir premium y estilo de vida, con el objetivo de aprovechar su experiencia operativa, desarrollo de productos, relaciones mayoristas y capacidades directas al consumidor para apoyar el crecimiento de Lunya."
+            }
+          }
+        },
+        {
+          "id": "acgvq1",
+          "title": "Jo Malone turns Pinterest boards into perfume picks",
+          "url": "https://www.luxurydaily.com/jo-malone-turns-pinterest-boards-into-perfume-picks/",
+          "source": "Luxury Daily - Main",
+          "published_at": "2026-06-19T08:30:00.000Z",
+          "ingested_at": "2026-06-21T09:58:57.874Z",
+          "snippet": "The British luxury fragrance brand is launching “Scent Scanner,” a custom experience that provides personalized product recommendations based on users’ saved content.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "luxury",
+              "brand"
+            ]
+          },
+          "aiSummary": "AI-generated summary: British luxury fragrance brand Jo Malone is launching \"Scent Scanner,\" a personalized experience that offers custom perfume recommendations based on users' saved Pinterest boards.",
+          "translations": {
+            "da": {
+              "title": "Jo Malone forvandler Pinterest boards til parfumevalg",
+              "summary": "AI-genereret resumé: Det britiske luksusduftmærke Jo Malone lancerer \"Scent Scanner,\" en personlig oplevelse, der tilbyder skræddersyede parfumeanbefalinger baseret på brugernes gemte Pinterest boards."
+            },
+            "es": {
+              "title": "Jo Malone convierte tableros de Pinterest en selecciones de perfume",
+              "summary": "Resumen generado por IA: La marca británica de fragancias de lujo Jo Malone lanza \"Scent Scanner\", una experiencia personalizada que ofrece recomendaciones de perfume basadas en los tableros guardados por los usuarios en Pinterest."
+            }
+          }
+        },
+        {
+          "id": "9scygh",
+          "title": "The Business of Euro Summer",
+          "url": "https://www.businessoffashion.com/briefings/luxury/the-business-of-euro-summer/",
+          "source": "Business of Fashion - News",
+          "published_at": "2026-06-19T17:41:17.000Z",
+          "ingested_at": "2026-06-21T09:58:57.874Z",
+          "snippet": "Mytheresa, Gucci and Jacquemus have converged on Monaco for summer takeovers while Burberry sets up shop in Athens. As big luxury’s beach club era stretches into a ninth summer, how are brands tweaking their approach to hooking wealthy clients? Plus, a Q&A with MyTheresa’s new CEO hired from Christie’s, Francis Belin.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "luxury",
+              "brand"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Luxury brands like Mytheresa, Gucci, Jacquemus, and Burberry are continuing their summer takeovers in exclusive locations such as Monaco and Athens, adapting their strategies to attract affluent customers as the beach club trend enters its ninth year. The article also features a Q&A with Mytheresa’s new CEO, Francis Belin.",
+          "translations": {
+            "da": {
+              "title": "Forretningen med Euro Sommer",
+              "summary": "AI-genereret resumé: Luksusmærker som Mytheresa, Gucci, Jacquemus og Burberry fortsætter deres sommerovertagelser i eksklusive steder som Monaco og Athen og tilpasser deres strategier for at tiltrække velhavende kunder, mens beach club-trenden går ind i sit niende år. Artiklen indeholder også et Q&A med Mytheresas nye CEO, Francis Belin."
+            },
+            "es": {
+              "title": "El negocio del verano europeo",
+              "summary": "Resumen generado por IA: Marcas de lujo como Mytheresa, Gucci, Jacquemus y Burberry continúan sus conquistas veraniegas en lugares exclusivos como Mónaco y Atenas, adaptando sus estrategias para atraer a clientes adinerados mientras la tendencia de los beach clubs entra en su noveno año. El artículo también incluye una entrevista con el nuevo CEO de Mytheresa, Francis Belin."
+            }
+          }
+        }
+      ]
+    },
+    "Jewellery_Industry": {
+      "total": 21,
+      "top": [
+        {
+          "id": "gme62g",
+          "title": "De Beers calls for industry unity in new consumer report",
+          "url": "https://www.jewellermagazine.com/Article/15110/De-Beers-calls-for-industry-unity-in-new-consumer-report",
+          "source": "Jeweller - Business News",
+          "published_at": "2026-06-15T14:00:00.000Z",
+          "ingested_at": "2026-06-21T09:58:57.874Z",
+          "snippet": "A new report published by the De Beers Group has found that purchases of natural diamond jewellery products remain at pre-pandemic levels, despite positive trends in key areas.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.3,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "jewellery",
+              "diamond",
+              "jeweller"
+            ]
+          },
+          "aiSummary": "AI-generated summary: De Beers Group's new report reveals that purchases of natural diamond jewellery have stabilized at pre-pandemic levels, highlighting steady consumer demand despite positive trends in certain areas. The company calls for greater industry unity in response.",
+          "translations": {
+            "da": {
+              "title": "De Beers opfordrer til brancheenhed i ny forbrugerrapport",
+              "summary": "AI-genereret resumé: De Beers Groups nye rapport viser, at køb af naturligt diamant-smykker er stabiliseret på niveauer før pandemien og fremhæver en stabil forbruger efterspørgsel trods positive tendenser i visse områder. Virksomheden opfordrer til større brancheenhed som reaktion."
+            },
+            "es": {
+              "title": "De Beers pide unidad en la industria en nuevo informe para consumidores",
+              "summary": "Resumen generado por IA: El nuevo informe de De Beers Group revela que las compras de joyería con diamantes naturales se han estabilizado en niveles previos a la pandemia, destacando una demanda constante de los consumidores a pesar de tendencias positivas en ciertas áreas. La empresa llama a una mayor unidad en la industria en respuesta."
+            }
+          }
+        },
+        {
+          "id": "e2gkvl",
+          "title": "Jewellery sales rise for Chow Tai Fook",
+          "url": "https://www.jewellermagazine.com/Article/15111/Jewellery-sales-rise-for-Chow-Tai-Fook",
+          "source": "Jeweller - Business News",
+          "published_at": "2026-06-15T14:00:00.000Z",
+          "ingested_at": "2026-06-21T09:58:57.874Z",
+          "snippet": "Global jewellery retailer Chow Tai Fook has reported an increase in revenue over the past financial year, with notes concerning improving consumer sentiment.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.35,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0.1,
+            "penalty": 0,
+            "matchedKeywords": [
+              "jewellery",
+              "jeweller",
+              "retailer"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Global jewellery retailer Chow Tai Fook reported a rise in revenue for the past financial year, attributing the growth to improving consumer sentiment.",
+          "translations": {
+            "da": {
+              "title": "Smykkesalg stiger for Chow Tai Fook",
+              "summary": "AI-genereret resumé: Den globale smykkeforhandler Chow Tai Fook rapporterede en stigning i omsætningen for det seneste regnskabsår og tilskriver væksten forbedret forbrugertillid."
+            },
+            "es": {
+              "title": "Aumentan las ventas de joyería para Chow Tai Fook",
+              "summary": "Resumen generado por IA: El minorista global de joyería Chow Tai Fook reportó un aumento en los ingresos del último año fiscal, atribuyendo el crecimiento a una mejora en el sentimiento del consumidor."
+            }
+          }
+        },
+        {
+          "id": "ttm08v",
+          "title": "This Jewelry Retailer Skipped the Models and Let Its Own Employees Tell the Real Story of Motherhood",
+          "url": "https://instoremag.com/this-jewelry-retailer-skipped-the-models-and-let-its-own-employees-tell-the-real-story-of-motherhood/",
+          "source": "Instore Magazine",
+          "published_at": "2026-06-19T05:45:13.000Z",
+          "ingested_at": "2026-06-21T09:58:57.874Z",
+          "snippet": "Day's Jewelers built its Mother's Day campaign around the unscripted voices of its employee-owners — and the authenticity paid off.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "jewelry",
+              "retailer"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Day's Jewelers created its Mother's Day campaign by featuring the genuine stories of its employee-owners instead of professional models, resulting in an authentic and successful promotion.",
+          "translations": {
+            "da": {
+              "title": "Denne smykkeforhandler sprang modellerne over og lod sine egne medarbejdere fortælle den ægte historie om moderskab",
+              "summary": "AI-genereret resumé: Day's Jewelers skabte sin Mors Dag-kampagne ved at fremhæve de ægte historier fra sine medarbejdere-ejere i stedet for professionelle modeller, hvilket resulterede i en autentisk og succesfuld promotion."
+            },
+            "es": {
+              "title": "Este minorista de joyería prescindió de las modelos y dejó que sus propios empleados contaran la verdadera historia de la maternidad",
+              "summary": "Resumen generado por IA: Day's Jewelers creó su campaña del Día de la Madre mostrando las historias genuinas de sus empleados-propietarios en lugar de modelos profesionales, logrando una promoción auténtica y exitosa."
+            }
+          }
+        },
+        {
+          "id": "bhj46d",
+          "title": "Judge the Jewels: Taylor Swift Wears Both Antique and Antique-Inspired Jewelry Together at Toy Story 5 Premiere",
+          "url": "https://instoremag.com/judge-the-jewels-taylor-swift-wears-both-antique-and-antique-inspired-jewelry-together-at-toy-story-5-premiere/",
+          "source": "Instore Magazine",
+          "published_at": "2026-06-19T05:00:05.000Z",
+          "ingested_at": "2026-06-21T09:58:57.874Z",
+          "snippet": "These thoughtful designs feel like the anthesis of the generic AI-fueled nothingness the internet bombards us with every day.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "jewelry"
+            ]
+          },
+          "aiSummary": "AI-generated summary: At the Toy Story 5 premiere, Taylor Swift showcased a blend of antique and antique-inspired jewelry, highlighting thoughtful designs that contrast sharply with the generic, AI-driven content prevalent online.",
+          "translations": {
+            "da": {
+              "title": "Døm Smykkerne: Taylor Swift Bærer Både Antikke og Antik-Inspirerede Smykker Sammen ved Toy Story 5 Premiere",
+              "summary": "AI-genereret resumé: Ved Toy Story 5 premieren viste Taylor Swift en blanding af antikke og antik-inspirerede smykker, der fremhæver gennemarbejdede designs, som står i skarp kontrast til det generiske, AI-drevne indhold, der er udbredt online."
+            },
+            "es": {
+              "title": "Juzga las Joyas: Taylor Swift Lleva Joyería Antigua y de Inspiración Antigua Juntas en el Estreno de Toy Story 5",
+              "summary": "Resumen generado por IA: En el estreno de Toy Story 5, Taylor Swift mostró una mezcla de joyería antigua y de inspiración antigua, destacando diseños cuidadosos que contrastan fuertemente con el contenido genérico impulsado por IA que predomina en línea."
+            }
+          }
+        },
+        {
+          "id": "r8g3fg",
+          "title": "Rivals or Allies? Most Jewelers Choose to Keep It Friendly",
+          "url": "https://instoremag.com/rivals-or-allies-most-jewelers-choose-to-keep-it-friendly/",
+          "source": "Instore Magazine",
+          "published_at": "2026-06-19T09:11:01.000Z",
+          "ingested_at": "2026-06-21T09:58:57.874Z",
+          "snippet": "A full 82% say they stay friendly with their competitors — swapping referrals, sharing sources and, in one case, buying the rival a pizza.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": []
+          },
+          "aiSummary": "AI-generated summary: According to a 2026 article in Instore Magazine, 82% of jewelers maintain friendly relationships with their competitors by exchanging referrals, sharing suppliers, and even engaging in small gestures like buying a rival a pizza. This highlights a collaborative spirit within the jewellery industry.",
+          "translations": {
+            "da": {
+              "title": "Rivaler eller allierede? De fleste juvelerer vælger at holde det venligt",
+              "summary": "AI-genereret resumé: Ifølge en artikel fra 2026 i Instore Magazine opretholder 82 % af juvelerer venlige relationer med deres konkurrenter ved at udveksle henvisninger, dele leverandører og endda engagere sig i små gestusser som at købe en rival en pizza. Dette fremhæver en samarbejdsvillig ånd inden for smykkeindustrien."
+            },
+            "es": {
+              "title": "¿Rivales o aliados? La mayoría de los joyeros eligen mantener una relación amistosa",
+              "summary": "Resumen generado por IA: Según un artículo de 2026 en Instore Magazine, el 82 % de los joyeros mantienen relaciones amistosas con sus competidores intercambiando referencias, compartiendo proveedores e incluso realizando pequeños gestos como comprarle una pizza a un rival. Esto destaca un espíritu colaborativo dentro de la industria de la joyería."
+            }
+          }
+        },
+        {
+          "id": "8yxxnn",
+          "title": "Rare collection of gold jewellery and burial objects found in Egypt",
+          "url": "https://www.jewellermagazine.com/Article/15116/Rare-collection-of-gold-jewellery-and-burial-objects-found-in-Egypt",
+          "source": "Jeweller - Business News",
+          "published_at": "2026-06-15T14:00:00.000Z",
+          "ingested_at": "2026-06-21T09:58:57.874Z",
+          "snippet": "Archaeologists have uncovered a rare, nearly complete funerary assemblage, including jewellery, at the Panhesy necropolis in Cairo, offering new insight into ancient Heliopolis burial practices.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.25,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "jewellery",
+              "gold",
+              "jeweller"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Archaeologists have discovered a rare and nearly complete collection of gold jewellery and burial objects at the Panhesy necropolis in Cairo, shedding light on ancient Heliopolis burial customs. This finding was reported by Jeweller - Business News on June 15, 2026.",
+          "translations": {
+            "da": {
+              "title": "Sjælden samling af guldsmykker og begravelsesgenstande fundet i Egypten",
+              "summary": "AI-genereret resumé: Arkæologer har opdaget en sjælden og næsten komplet samling af guldsmykker og begravelsesgenstande ved Panhesy-necropolis i Cairo, hvilket kaster lys over gamle Heliopolis-begravelsesritualer. Fundet blev rapporteret af Jeweller - Business News den 15. juni 2026."
+            },
+            "es": {
+              "title": "Rara colección de joyas de oro y objetos funerarios encontrados en Egipto",
+              "summary": "Resumen generado por IA: Arqueólogos han descubierto una rara y casi completa colección de joyas de oro y objetos funerarios en la necrópolis de Panhesy en El Cairo, arrojando luz sobre las costumbres funerarias de la antigua Heliópolis. Este hallazgo fue reportado por Jeweller - Business News el 15 de junio de 2026."
+            }
+          }
+        },
+        {
+          "id": "2rr7dq",
+          "title": "Moves of the Diamond Hand is an unfinished, irresistibly weird dice-based RPG",
+          "url": "https://www.theverge.com/games/949875/moves-of-the-diamond-hand-rpg-dice-jazz-noir",
+          "source": "The Verge",
+          "published_at": "2026-06-20T14:00:00.000Z",
+          "ingested_at": "2026-06-21T09:58:57.874Z",
+          "snippet": "From its opening minutes, Moves of the Diamond Hand is upfront about what it offers: You're going to have a lot of strange conversations, and you're going to roll a lot of dice. Get on board with this proposition, and the reward is one of the most creative roleplaying games I've seen in years, even if its many mysteries won't be resolved until 2027.\nMoves of the Diamond Hand is an Early Access videogame available on PC, macOS, and steamOS (including the Steam Deck, where I played it) from musici...",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "diamond"
+            ]
+          },
+          "aiSummary": "AI-generated summary: \"Moves of the Diamond Hand is an unfinished, dice-based RPG offering a uniquely strange and creative roleplaying experience, currently available in Early Access on PC, macOS, and steamOS. Despite many unresolved mysteries expected to be addressed in 2027, the game stands out for its inventive gameplay and dialogue.\"",
+          "translations": {
+            "da": {
+              "title": "Moves of the Diamond Hand er et ufærdigt, uimodståeligt mærkeligt terningebaseret RPG",
+              "summary": "AI-genereret resumé: Moves of the Diamond Hand er et ufærdigt, terningebaseret RPG, der tilbyder en unikt mærkelig og kreativ rollespilsoplevelse, tilgængelig i Early Access på PC, macOS og steamOS. På trods af mange uløste mysterier, der forventes løst i 2027, skiller spillet sig ud med sit opfindsomme gameplay og dialog."
+            },
+            "es": {
+              "title": "Moves of the Diamond Hand es un RPG inacabado, irresistiblemente extraño y basado en dados",
+              "summary": "Resumen generado por IA: Moves of the Diamond Hand es un RPG inacabado basado en dados que ofrece una experiencia de rol única, extraña y creativa, disponible actualmente en Early Access para PC, macOS y steamOS. A pesar de muchos misterios sin resolver que se esperan abordar en 2027, el juego destaca por su jugabilidad inventiva y diálogo."
+            }
+          }
+        }
+      ]
+    }
+  },
+  "editorialTake": "OpenAI tripled revenue to $5.7 billion in Q1 but burned through $3.7 billion to get there. That’s a brutal reminder that AI scale still demands massive capital and operational risk. Amazon’s move to sell its AI chips directly to data centers signals it’s finally trying to muscle in on Nvidia’s turf, but with its Nova2 model lagging behind OpenAI and Anthropic, it’s clear AWS is playing catch-up, not lead. The cost pressures forcing companies like Amazon and Walmart to cap AI usage reveal a growing tension: AI’s promise is huge, but so is its expense.\n\nShopify’s new tools to track sales from AI platforms show ecommerce is waking up to AI’s role as a traffic driver, not just a buzzword. Meanwhile, Faire expanding beyond retail to hotels and offices hints at a shift in how marketplaces define customers. I think the biggest question now is whether Amazon’s chip push and AI ambitions can overcome its late start and cost challenges, or if the AI hardware and software race will consolidate around a few winners faster than anyone expects.",
+  "coverImageUrl": "/weekly-images/2026-W25.png",
+  "coverImageAlt": "Weekly cover illustration for 2026-W25"
+}

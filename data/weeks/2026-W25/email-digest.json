@@ -1,0 +1,107 @@
+{
+  "week": "2026-W25",
+  "generatedAt": "2026-06-21T10:15:29.008Z",
+  "intro": "This week’s intelligence digest highlights key developments at the intersection of retail, luxury, and AI, including Shopify’s new tools for tracking AI-driven sales and Amazon’s strategic push into AI chip manufacturing. Notable moves in premium lifestyle markets and innovative marketplace expansions further underscore the evolving landscape for merchants and brands leveraging advanced technologies.",
+  "readOneThing": {
+    "title": "Marketplace Briefing: Shopify launches tools to help merchants track sales and traffic from AI platforms",
+    "url": "https://www.modernretail.co/technology/marketplace-briefing-shopify-launches-tools-to-help-merchants-track-sales-and-traffic-from-ai-platforms/?utm_campaign=modernretaildis&utm_medium=rss&utm_source=general-rss"
+  },
+  "items": [
+    {
+      "rank": 1,
+      "title": "Marketplace Briefing: Shopify launches tools to help merchants track sales and traffic from AI platforms",
+      "url": "https://www.modernretail.co/technology/marketplace-briefing-shopify-launches-tools-to-help-merchants-track-sales-and-traffic-from-ai-platforms/?utm_campaign=modernretaildis&utm_medium=rss&utm_source=general-rss",
+      "source": "Modern Retail",
+      "bullets": [
+        "Shopify introduced new tools that allow merchants to track sales, orders, and conversions from AI shopping platforms like ChatGPT, Google Gemini, and Microsoft Copilot.",
+        "AI referrals now contribute to over 1.5% of traffic to major retailers such as Walmart and Target, up from less than 1% a year ago, according to Sensor Tower.",
+        "Shopify's updates coincide with a broader industry shift toward AI-assisted shopping, including the development of the Universal Commerce Protocol with Google for cross-platform AI checkout."
+      ],
+      "summary": "AI-generated summary: Shopify has introduced new tools aimed at helping merchants track how their products are displayed and perform across AI shopping platforms, enhancing insights into sales and traffic."
+    },
+    {
+      "rank": 2,
+      "title": "This Jewelry Retailer Skipped the Models and Let Its Own Employees Tell the Real Story of Motherhood",
+      "url": "https://instoremag.com/this-jewelry-retailer-skipped-the-models-and-let-its-own-employees-tell-the-real-story-of-motherhood/",
+      "source": "Instore Magazine",
+      "bullets": [
+        "Day’s Jewelers created a Mother’s Day campaign featuring unscripted stories of motherhood told by its own employee-owners instead of professional models.",
+        "The campaign highlighted various stages of motherhood and included symbolic jewelry pieces like pineapple charm bracelets for infertility awareness and heirloom-inspired lockets.",
+        "The Maine-based company, with 130 employee-owners across eight locations, launched the campaign across YouTube, television, social media, and in-store digital displays in 2026."
+      ],
+      "summary": "AI-generated summary: Day's Jewelers created its Mother's Day campaign by featuring the genuine stories of its employee-owners instead of professional models, resulting in an authentic and successful promotion."
+    },
+    {
+      "rank": 3,
+      "title": "Amazon hopes to challenge Nvidia more directly by selling its AI chips",
+      "url": "https://techcrunch.com/2026/06/18/amazon-hopes-to-challenge-nvidia-more-directly-by-selling-its-ai-chips/",
+      "source": "TechCrunch - AI",
+      "bullets": [
+        "Amazon Web Services is considering selling its AI chip Trainium to other companies for use in data centers, marking a potential expansion beyond internal use.",
+        "Amazon CEO Andy Jassy estimated that if the chip business were standalone and sold to third parties, it could reach an annual run rate of approximately $50 billion.",
+        "Trainium chip capacity has sold out rapidly, including the upcoming Trainium4 model, which will not be available for more than a year, complicating potential third-party sales."
+      ],
+      "summary": "AI-generated summary: Amazon's AWS is planning to sell its AI chips to other data centers, with CEO Andy Jassy highlighting this move as a $50 billion opportunity to more directly challenge Nvidia."
+    },
+    {
+      "rank": 4,
+      "title": "Dana-co Acquires Lunya, Expanding Footprint in Premium Sleepwear and Lifestyle Market",
+      "url": "https://wwd.com/business-news/markets/dana-co-acquires-lunya-sleepwear-firm-1239019232/",
+      "source": "WWD - Women's Wear Daily",
+      "bullets": [
+        "Dana-co LLC acquired the premium sleepwear and lifestyle brand Lunya from founder Ashley Merrill, effective June 12, 2024. Lunya, which peaked at over $50 million in revenue during 2020 and 2021, entered bankruptcy in June 2023 and exited in April 2024. Founded in 2012 and initially selling exclusively online, Lunya will now operate from Dana-co's New York headquarters with a focus on direct-to-consumer and wholesale channels.",
+        "A look from Lunya Photo by E",
+        "The acquisition marks a milestone for Dana-co as the company celebrates its 25th year in business and continues to expand its presence across intimate apparel, sleepwear and lifestyle categories"
+      ],
+      "summary": "AI-generated summary: Dana-co has acquired Lunya to enhance its presence in the premium sleepwear and lifestyle market, aiming to leverage its operational expertise, product development, wholesale relationships, and direct-to-consumer capabilities to support Lunya's growth."
+    },
+    {
+      "rank": 5,
+      "title": "Faire opens its marketplace up to hotels, offices and non-retail customers",
+      "url": "https://www.modernretail.co/operations/faire-opens-its-marketplace-up-to-hotels-offices-and-non-retail-customers/?utm_campaign=modernretaildis&utm_medium=rss&utm_source=general-rss",
+      "source": "Modern Retail",
+      "bullets": [
+        "Faire officially launched a new option allowing buyers to purchase products for business use rather than resale in April after a successful pilot. Approximately 5,000 buyers participated in the pilot program that tested sourcing items for client gifts, mini bars, and front desk amenities. The company adjusted tax and documentation workflows over four months to accommodate the different requirements for business-use and resale purchases.",
+        "After a successful pilot that attracted around 5,000 buyers, Faire in April officially launched an option for buyers to select whether they’re making purchases for resale or business use",
+        "The expansion points to the growing potential brands have to show up in non-traditional retail settings as a way to drive sales or even awareness"
+      ],
+      "summary": "AI-generated summary: Faire is expanding its marketplace to serve hotels, offices, and other non-retail customers, enabling business buyers to purchase items for uses such as stocking mini bars, client gifts, and front desk amenities."
+    },
+    {
+      "rank": 6,
+      "title": "Amazon has lagged OpenAI and Anthropic, but AI chief sees path to catch up in 'coming year'",
+      "url": "https://www.cnbc.com/2026/06/17/amazon-ai-frontier-openai-anthropic.html",
+      "source": "CNBC Technology",
+      "bullets": [
+        "Amazon's AI chief Peter DeSantis stated the company aims to compete with leading AI labs OpenAI and Anthropic within the coming year. Amazon's latest AI model, Nova2, has attracted about 50,000 customers since its release in December. The company is also advancing its AI strategy by designing custom chips under the Trainium and Graviton brands to optimize AI model performance.",
+        "\"We've been taking a very deliberate approach to get our foundations right, our data, our architecture, our infrastructure",
+        "On the one hand, it has a product called Bedrock, which is a sort of marketplace for models from different companies that its cloud computing customers can access"
+      ],
+      "summary": "AI-generated summary: According to CNBC Technology on June 17, 2026, Amazon's Nova2 AI model currently lags behind leading large language models from OpenAI and Anthropic, but the company's AI chief anticipates a path to catch up within the coming year."
+    },
+    {
+      "rank": 7,
+      "title": "Judge the Jewels: Taylor Swift Wears Both Antique and Antique-Inspired Jewelry Together at Toy Story 5 Premiere",
+      "url": "https://instoremag.com/judge-the-jewels-taylor-swift-wears-both-antique-and-antique-inspired-jewelry-together-at-toy-story-5-premiere/",
+      "source": "Instore Magazine",
+      "bullets": [
+        "Taylor Swift attended the Toy Story 5 premiere wearing a combination of antique and antique-inspired jewelry pieces from various designers. The jewelry included Selim Mouzannar’s Gemma ring priced between $5,000 and $10,000 and Le Vian Couture earrings valued at $11,797.50. Antique and vintage-inspired jewelry trends have gained popularity in 2026, partly influenced by Taylor Swift's public appearances and style choices.",
+        "The singer paired the romantic look with a beautifully curated selection of vintage-inspired jewelry representing aesthetics from different eras as well one genuine antique piece",
+        "See More Jewelry Coverage of Taylor Swift The jewels: Here’s what we know Taylor Swift wore: Selim Mouzannar’s Gemma ring (listed online for $5,000 – $10,000)"
+      ],
+      "summary": "AI-generated summary: At the Toy Story 5 premiere, Taylor Swift showcased a blend of antique and antique-inspired jewelry, highlighting thoughtful designs that contrast sharply with the generic, AI-driven content prevalent online."
+    },
+    {
+      "rank": 8,
+      "title": "commercetools debuts B2B Intake Agent that it developed with Mirion Technologies",
+      "url": "https://www.digitalcommerce360.com/2026/06/17/commercetools-b2b-intake-agent-mirion/",
+      "source": "Digital Commerce 360",
+      "bullets": [
+        "Commercetools launched the B2B Intake Agent, an AI tool co-developed with Mirion Technologies to convert unstructured customer orders into actionable quotes and cart details.",
+        "The AI agent integrates with CRM and service platforms like Zendesk through APIs, aiming to reduce manual processing time and improve productivity.",
+        "This release follows commercetools' earlier 2026 update, AgenticLift, and addresses operational challenges validated by Mirion in complex manufacturing order workflows."
+      ],
+      "summary": "AI-generated summary: Ecommerce platform provider commercetools, in collaboration with Mirion Technologies, has launched the B2B Intake Agent, an AI tool designed to convert unstructured customer order requests into actionable quotes and cart information. This marks commercetools' first AI agent release aimed at enhancing B2B order processing."
+    }
+  ]
+}
