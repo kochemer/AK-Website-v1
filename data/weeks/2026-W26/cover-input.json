@@ -1,0 +1,28 @@
+{
+  "weekLabel": "2026-W26",
+  "homepageTopArticles": [
+    {
+      "title": "Walmart-backed Flipkart expands quick-commerce push as Amazon ramps up in India",
+      "source": "TechCrunch - Commerce",
+      "snippet": "Walmart-backed Flipkart has crossed 1,000 micro-fulfillment centers as Amazon accelerates its own quick-commerce push in India.",
+      "aiSummary": "AI-generated summary: Walmart-backed Flipkart has expanded its quick-commerce operations in India by surpassing 1,000 micro-fulfillment centers, while Amazon is simultaneously intensifying its quick-commerce efforts in the country."
+    },
+    {
+      "title": "Google Cuts App Store Fees, Opens Up External Payments",
+      "source": "Payments Journal",
+      "snippet": "In a landmark win for app developers, Google will reduce its Google Play fees and allow developers to use external payment systems and link to their own websites. App stores operated by Apple and Google are a primary way mobile app developers reach customers, but many developers have long argued that the platform’s proprietary billing […]\nThe post Google Cuts App Store Fees, Opens Up External Payments appeared first on PaymentsJournal.",
+      "aiSummary": "AI-generated summary: Google announced a reduction in its Google Play app store fees and will permit developers to use external payment systems and link to their own websites, marking a significant change for app developers. This move addresses longstanding developer concerns over proprietary billing on major app platforms."
+    },
+    {
+      "title": "Judge the Jewels: Michelle Obama Rocks Rainbow K and Yvonne Léon Statement Stacks at Obama Presidential Center Opening ",
+      "source": "Instore Magazine",
+      "snippet": "Chunky mixed-metal layering on her ears and hands signals 2026's reigning jewelry trend.",
+      "aiSummary": "AI-generated summary: At the Obama Presidential Center opening, Michelle Obama showcased 2026's leading jewelry trend with chunky mixed-metal layering on her ears and hands, featuring pieces from Rainbow K and Yvonne Léon."
+    }
+  ],
+  "model": "gpt-image-1",
+  "finalPrompt": "Photograph: A supermarket checkout belt with a large gold ring, chunky and layered, resting on top of a standard egg carton. To one side, several miniature toy delivery scooters are parked, each with tiny grocery bags. A smartphone with its back slightly open, revealing a roll of cash inside, sits nearby. Small, subtle brand stickers are on a scooter bag and the phone. Everything appears touchable and real, under bright, natural store lighting.\n\nCRITICAL CONSTRAINTS (must be strictly avoided):\n- text, letters, numbers, signage, labels, price tags, screens, UI, dashboards, holograms, floating icons, watermarks, unrelated brand logos, cartoon, illustration, CGI, 3D render, anime, diamond, diamonds, gemstone, gemstones, precious stones, jewelry close-up, jewelry product shot, diamond ring, diamond necklace, diamond earring, jeweled, sparkling gemstone, dramatic spotlight, glowing edges, rim lighting, vignette, cinematic color grade, blurred background, bokeh\n\nThis must look like a real photograph taken by a human — not AI-generated, not CGI, not a 3D render. Natural light. Real objects. Real imperfections. Fill the entire frame edge to edge with the scene — no black bars, no empty space at the edges.\n\nDo not include: text, labels, signage, screens, UI, logos unrelated to the scene, diamonds, gemstones, CGI lighting, dramatic spotlights, or blurred vignette backgrounds.",
+  "imageSize": "1536x1024",
+  "outputPath": "/weekly-images/2026-W26.png",
+  "generatedAt": "2026-06-28T09:40:48.560Z"
+}

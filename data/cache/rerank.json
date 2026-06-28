@@ -3358,5 +3358,101 @@
     ],
     "cached_at": "2026-06-21T10:13:46.798Z",
     "model": "o4-mini"
+  },
+  "2026-W26:AI_and_Strategy:0dbcfe401c17": {
+    "selected": [
+      {
+        "id": "13",
+        "rank": 1,
+        "why": "Major AI chip custom designs by top tech giants impact industry economics",
+        "confidence": 0.95
+      },
+      {
+        "id": "2",
+        "rank": 2,
+        "why": "Amazon's $13B AI infrastructure investment signals major AI industry power move",
+        "confidence": 0.9
+      },
+      {
+        "id": "14",
+        "rank": 3,
+        "why": "OpenAI and Anthropic limit model releases due to government cybersecurity review",
+        "confidence": 0.9
+      },
+      {
+        "id": "8",
+        "rank": 4,
+        "why": "Anthropic's Mythos 5 gets US regulatory carveout amid AI governance tensions",
+        "confidence": 0.85
+      },
+      {
+        "id": "4",
+        "rank": 5,
+        "why": "Netris raises $15M to accelerate AI neocloud deployment, impacting AI infrastructure",
+        "confidence": 0.85
+      },
+      {
+        "id": "6",
+        "rank": 6,
+        "why": "Italy joining US-led Pax Silica AI initiative affects international AI governance",
+        "confidence": 0.8
+      },
+      {
+        "id": "7",
+        "rank": 7,
+        "why": "IEEE Spectrum commemorates 70 years of AI, highlighting strategic AI evolution",
+        "confidence": 0.75
+      }
+    ],
+    "cached_at": "2026-06-28T09:33:50.404Z",
+    "model": "gpt-4.1-mini"
+  },
+  "2026-W26:Ecommerce_Retail_Tech:533233cc5b96": {
+    "selected": [
+      {
+        "id": "7",
+        "rank": 1,
+        "why": "Major quick-commerce expansion by Flipkart and Amazon in India",
+        "confidence": 0.95
+      },
+      {
+        "id": "6",
+        "rank": 2,
+        "why": "Google reduces app store fees and opens external payments, impacting commerce",
+        "confidence": 0.9
+      },
+      {
+        "id": "11",
+        "rank": 3,
+        "why": "Lowe’s integrates marketplace into store software for easier ordering",
+        "confidence": 0.88
+      },
+      {
+        "id": "16",
+        "rank": 4,
+        "why": "Gap launches AI marketing overhaul with major tech partners",
+        "confidence": 0.87
+      },
+      {
+        "id": "3",
+        "rank": 5,
+        "why": "Snappy Shopper retail media expansion highlights Q-commerce advertising power",
+        "confidence": 0.85
+      },
+      {
+        "id": "1",
+        "rank": 6,
+        "why": "Early AI data reveals where AI fits in ecommerce operations",
+        "confidence": 0.83
+      },
+      {
+        "id": "9",
+        "rank": 7,
+        "why": "Insightful analysis on merchant of record’s role in global commerce",
+        "confidence": 0.8
+      }
+    ],
+    "cached_at": "2026-06-28T09:34:17.590Z",
+    "model": "gpt-4.1-mini"
   }
 }

@@ -1,0 +1,16 @@
+{
+  "concept": "quick-commerce-giant-gold-ring-on-egg-carton",
+  "primaryHumorDriver": "scale absurdity",
+  "secondaryEnhancer": "unexpected texture/material combination",
+  "sceneDescription": "On a well-lit supermarket checkout belt, a comically oversized gold ring (chunky and layered, evoking statement jewelry trends) sits absurdly atop a standard paper egg carton. To its left, a cluster of miniature delivery scooters zip across the belt, each carrying tiny grocery bags. A smartphone with a generic app store icon, its back half-open revealing a roll of cash inside, sits near the ring. Subtle TechCrunch, Payments Journal, and Instore Magazine logos appear as small stickers on delivery bags and the phone case. The scene is grounded in realism—mundane setting, tactile objects—but the scale mismatch and material juxtapositions create a playful, absurd vibe.",
+  "finalImagePrompt": "A supermarket checkout belt with a large gold ring, chunky and layered, resting on top of a standard egg carton. To one side, several miniature toy delivery scooters are parked, each with tiny grocery bags. A smartphone with its back slightly open, revealing a roll of cash inside, sits nearby. Small, subtle brand stickers are on a scooter bag and the phone. Everything appears touchable and real, under bright, natural store lighting.",
+  "negativePrompt": [
+    "text, letters, numbers, signage, labels, price tags",
+    "screens, UI, dashboards, holograms, floating icons",
+    "watermarks, unrelated brand logos",
+    "cartoon, illustration, CGI, 3D render, anime",
+    "diamond, diamonds, gemstone, gemstones, precious stones, jewelry close-up, jewelry product shot, diamond ring, diamond necklace, diamond earring, jeweled, sparkling gemstone",
+    "dramatic spotlight, glowing edges, rim lighting, vignette, cinematic color grade, blurred background, bokeh"
+  ],
+  "confidence": 0.89
+}

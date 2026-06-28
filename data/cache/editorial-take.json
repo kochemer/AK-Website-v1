@@ -64,5 +64,11 @@
     "cached_at": "2026-06-21T10:15:07.544Z",
     "model": "gpt-4.1-mini",
     "version": "1.1"
+  },
+  "2026-W26:20617f9385c7": {
+    "editorialTake": "Amazon’s $13 billion AI infrastructure bet in India is a clear signal that the company sees the region as a strategic AI battleground, not just a low-cost hub. This isn’t about incremental growth: it’s a full-court press to own AI cloud dominance where Google and Microsoft are also heavily invested. The scale alone forces competitors to rethink their India strategies or risk losing critical market share in a country with 1.4 billion potential users and rapidly growing digital adoption.\n\nMeanwhile, Flipkart’s push past 1,000-minute quick-commerce delivery zones shows Walmart’s aggressive response to Amazon’s India play. Speed is the new currency in ecommerce, and Flipkart’s move forces Amazon to either match or innovate beyond logistics alone. The real question is whether this arms race will drive sustainable profitability or just burn cash faster in a market where consumer loyalty is still fluid and price sensitivity high.",
+    "cached_at": "2026-06-28T09:35:31.663Z",
+    "model": "gpt-4.1-mini",
+    "version": "1.1"
   }
 }

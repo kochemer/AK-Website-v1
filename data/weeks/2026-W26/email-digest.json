@@ -1,0 +1,95 @@
+{
+  "week": "2026-W26",
+  "generatedAt": "2026-06-28T09:35:50.200Z",
+  "intro": "This week’s intelligence digest highlights key moves in retail and AI, including Walmart-backed Flipkart and Amazon intensifying their quick-commerce and AI infrastructure investments in India. Additionally, major tech players like Google and Amazon are advancing custom AI chip development and app store reforms, signaling a shift toward greater innovation and market expansion.",
+  "readOneThing": {
+    "title": "Walmart-backed Flipkart expands quick-commerce push as Amazon ramps up in India",
+    "url": "https://techcrunch.com/2026/06/23/walmart-backed-flipkart-expands-quick-commerce-push-as-amazon-ramps-up-in-india/"
+  },
+  "items": [
+    {
+      "rank": 1,
+      "title": "Walmart-backed Flipkart expands quick-commerce push as Amazon ramps up in India",
+      "url": "https://techcrunch.com/2026/06/23/walmart-backed-flipkart-expands-quick-commerce-push-as-amazon-ramps-up-in-india/",
+      "source": "TechCrunch - Commerce",
+      "bullets": [
+        "Flipkart's Minutes service has established 1,000 micro-fulfillment centers across India less than two years after its launch, aiming to expand to 1,500 by 2026.",
+        "Orders on Flipkart Minutes have increased approximately 400% year-over-year, with customer retention rising 20%, driven by demand beyond groceries into electronics and beauty products.",
+        "India's quick-commerce market features over 5,500 dark stores, with expectations to reach 7,500 by 2030 as companies like Amazon and Flipkart expand rapidly into smaller cities."
+      ],
+      "summary": "AI-generated summary: Walmart-backed Flipkart has expanded its quick-commerce operations in India by surpassing 1,000 micro-fulfillment centers, while Amazon is simultaneously intensifying its quick-commerce efforts in the country."
+    },
+    {
+      "rank": 2,
+      "title": "Behold, the most realistic golf game ever  | Dominik Diamond",
+      "url": "https://www.theguardian.com/games/2026/jun/26/normal-golf-game-steam-dominik-diamond",
+      "source": "The Guardian - Technology",
+      "bullets": [
+        "Normal Golf Game, created by Luke Muscat, is a golf video game designed to be the most challenging and realistic simulation of the sport to date.",
+        "The demo of Normal Golf Game includes only one hole and took the reviewer 428 strokes and nearly two hours to complete due to its difficult controls.",
+        "This game represents a new trend in gaming where control methods are intentionally made complex to closely replicate real-life sports experiences."
+      ],
+      "summary": "AI-generated summary: In \"Behold, the most realistic golf game ever,\" Dominik Diamond reviews Normal Golf Game, praising it for transforming an easy genre into a challenging experience that captures the complexities of playing golf. Despite the game's difficulty, the author appreciates the authentic representation of the sport's leisurely and social aspects."
+    },
+    {
+      "rank": 3,
+      "title": "Beyond Nvidia: Why AI giants like OpenAI, Google and Amazon are building custom chips ",
+      "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/beyond-nvidia-why-ai-giants-like-openai-google-and-amazon-are-building-custom-chips/articleshow/132033167.cms",
+      "source": "Economic Times - Technology",
+      "bullets": [
+        "OpenAI has introduced Jalapeño, its first in-house AI inference chip developed with Broadcom and manufactured by TSMC, for internal deployment.",
+        "Custom inference chips help reduce operational costs by optimizing hardware for high-volume AI workloads, addressing the expensive deployment phase of generative AI.",
+        "Tech giants like Google, Amazon, Microsoft, and Meta have long developed proprietary AI chips, making custom silicon a standard practice alongside Nvidia's dominant GPUs."
+      ],
+      "summary": "AI-generated summary: Tech giants including OpenAI, Google, Amazon, and Microsoft are developing custom chips to reduce deployment costs and gain control over AI infrastructure, signaling a strategic shift beyond relying solely on Nvidia's GPUs for training in the competitive AI landscape."
+    },
+    {
+      "rank": 4,
+      "title": "C.P. Company Men’s Spring 2027: Behind the Seams",
+      "url": "https://wwd.com/runway/mens-spring-2027/paris/cp-company/review/",
+      "source": "WWD - Women's Wear Daily",
+      "bullets": [
+        "C.P. Company showcased its Spring 2027 men's ready-to-wear collection at Paris Men's Fashion Week, blending archival designs with new innovations.",
+        "The collection featured replicas of the 1988 Mille Miglia goggle jacket with a sun-faded look and introduced a newly developed 3D camo fabric made by acid-melting nylon.",
+        "Since 2021, the brand has engaged its community through the Behind the Seams project, inviting members to visit its Italian facilities and interact with archival garments."
+      ],
+      "summary": "AI-generated summary: C.P. Company's Men's Spring 2027 collection, featured in WWD on June 27, 2026, draws inspiration from the brand’s archival Mille Miglia outerwear, showcasing a blend of luxury and heritage design elements."
+    },
+    {
+      "rank": 5,
+      "title": "Google Cuts App Store Fees, Opens Up External Payments",
+      "url": "https://www.paymentsjournal.com/google-cuts-app-store-fees-opens-up-external-payments/",
+      "source": "Payments Journal",
+      "bullets": [
+        "Google will reduce its Google Play fees and allow developers to use external payment systems and link to their own websites starting June 30.",
+        "The new fee structure introduces a 10% commission on the first $1 million in annual earnings from new installs, with higher rates applying thereafter.",
+        "These changes will initially take effect in the U.S., UK, and Europe, with plans for a broader global rollout over time following legal and regulatory pressures."
+      ],
+      "summary": "AI-generated summary: Google announced a reduction in its Google Play app store fees and will permit developers to use external payment systems and link to their own websites, marking a significant change for app developers. This move addresses longstanding developer concerns over proprietary billing on major app platforms."
+    },
+    {
+      "rank": 6,
+      "title": "Amazon ups India bet with fresh $13B AI infrastructure investment",
+      "url": "https://techcrunch.com/2026/06/25/amazon-ups-india-bet-with-fresh-13b-ai-infrastructure-investment/",
+      "source": "TechCrunch - AI",
+      "bullets": [
+        "Amazon announced a $13 billion investment to expand its AI and cloud infrastructure in India through 2030, focusing on data centers in Mumbai and Hyderabad.",
+        "This investment is part of Amazon's total $48 billion commitment to India, including previous pledges made in 2023 and 2025.",
+        "Other global tech companies like Microsoft and Google have also pledged billions to develop AI and data center infrastructure in India by the end of the decade."
+      ],
+      "summary": "AI-generated summary: On June 25, 2026, TechCrunch reported that Amazon is increasing its investment in India’s AI infrastructure with a fresh $13 billion commitment, reflecting the broader trend of global tech companies expanding their AI presence in the country."
+    },
+    {
+      "rank": 7,
+      "title": "Lowe’s makes it easier to order decorative geese, above-ground pools and other marketplace items in over 1,700 stores",
+      "url": "https://www.modernretail.co/operations/lowes-makes-it-easier-to-order-decorative-geese-above-ground-pools-and-other-marketplace-items-in-over-1700-stores/?utm_campaign=modernretaildis&utm_medium=rss&utm_source=general-rss",
+      "source": "Modern Retail",
+      "bullets": [
+        "Lowe’s integrated its third-party marketplace into the My Red Vest software, enabling store associates to help customers order marketplace items in over 1,700 stores.",
+        "Since launching its marketplace in late 2024, Lowe’s has more than doubled its assortment and added thousands of new items weekly, contributing to a 15.5% rise in online sales in Q1 2026.",
+        "The marketplace integration, reaching roughly 97% of Lowe’s stores, supports both consumer and professional customers and helps identify products for potential in-store stocking."
+      ],
+      "summary": "AI-generated summary: Lowe's has integrated its third-party marketplace into My Red Vest, the in-store employee software, making it easier to order items like decorative geese and above-ground pools in over 1,700 stores."
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "digestWeek": "2026-W26",
+  "ingestionWeek": "2026-W26",
+  "startedAt": "2026-06-28T09:20:52.074Z",
+  "finishedAt": "2026-06-28T09:41:07.155Z",
+  "steps": [
+    {
+      "name": "rss",
+      "ok": true,
+      "startedAt": "2026-06-28T09:20:52.092Z",
+      "finishedAt": "2026-06-28T09:21:11.631Z"
+    },
+    {
+      "name": "pages",
+      "ok": true,
+      "startedAt": "2026-06-28T09:21:11.631Z",
+      "finishedAt": "2026-06-28T09:21:13.059Z"
+    },
+    {
+      "name": "discovery",
+      "ok": true,
+      "startedAt": "2026-06-28T09:21:13.060Z",
+      "finishedAt": "2026-06-28T09:33:23.438Z"
+    },
+    {
+      "name": "classification",
+      "ok": true,
+      "startedAt": "2026-06-28T09:33:23.438Z",
+      "finishedAt": "2026-06-28T09:33:23.552Z"
+    },
+    {
+      "name": "digest",
+      "ok": true,
+      "startedAt": "2026-06-28T09:33:23.552Z",
+      "finishedAt": "2026-06-28T09:35:31.664Z"
+    },
+    {
+      "name": "email",
+      "ok": true,
+      "startedAt": "2026-06-28T09:35:31.665Z",
+      "finishedAt": "2026-06-28T09:35:50.200Z"
+    },
+    {
+      "name": "podcast",
+      "ok": true,
+      "startedAt": "2026-06-28T09:35:50.200Z",
+      "finishedAt": "2026-06-28T09:39:49.414Z"
+    },
+    {
+      "name": "cover",
+      "ok": true,
+      "startedAt": "2026-06-28T09:39:49.415Z",
+      "finishedAt": "2026-06-28T09:40:48.562Z"
+    },
+    {
+      "name": "competitorAnalyze",
+      "ok": true,
+      "startedAt": "2026-06-28T09:40:48.562Z",
+      "finishedAt": "2026-06-28T09:41:07.154Z"
+    }
+  ],
+  "health": {
+    "warnings": [
+      "AI & Strategy: economictimes.indiatimes.com represents 42.9% (3/7) - exceeds 40% threshold",
+      "Luxury & Consumer: www.businessoffashion.com represents 42.9% (3/7) - exceeds 40% threshold",
+      "Luxury & Consumer: fashionista.com represents 42.9% (3/7) - exceeds 40% threshold",
+      "Jewellery Industry: instoremag.com represents 42.9% (3/7) - exceeds 40% threshold",
+      "Jewellery Industry: www.jewellermagazine.com represents 42.9% (3/7) - exceeds 40% threshold"
+    ],
+    "metrics": {
+      "paywallPercent": 0,
+      "podcastWordCount": 2270
+    }
+  },
+  "versions": {
+    "node": "v20.20.2",
+    "gitCommit": "b780b12d959b658c9e3f1b14e51380b3c0c45166"
+  }
+}

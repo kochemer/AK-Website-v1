@@ -1,0 +1,975 @@
+{
+  "weekLabel": "2026-W26",
+  "tz": "Europe/Copenhagen",
+  "startISO": "2026-06-21T22:00:00.000Z",
+  "endISO": "2026-06-28T21:59:59.999Z",
+  "builtAtISO": "2026-06-28T11:35:12.920+02:00",
+  "builtAtLocal": "2026-06-28 11:35:12",
+  "totals": {
+    "total": 719,
+    "byTopic": {
+      "AIStrategy": 142,
+      "EcommerceRetail": 440,
+      "LuxuryConsumer": 119,
+      "Jewellery": 16
+    }
+  },
+  "topics": {
+    "AI_and_Strategy": {
+      "total": 142,
+      "top": [
+        {
+          "id": "u62sx0",
+          "title": "Beyond Nvidia: Why AI giants like OpenAI, Google and Amazon are building custom chips ",
+          "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/beyond-nvidia-why-ai-giants-like-openai-google-and-amazon-are-building-custom-chips/articleshow/132033167.cms",
+          "source": "Economic Times - Technology",
+          "published_at": "2026-06-27T10:52:48.000Z",
+          "ingested_at": "2026-06-28T09:20:52.093Z",
+          "snippet": "The AI race is heating up as tech giants like OpenAI, Google, Amazon, and Microsoft design their own chips to optimize AI operations. This strategic move aims to cut soaring deployment costs and gain control over crucial infrastructure, moving beyond just building better models. While Nvidia's GPUs still lead in training, custom silicon is emerging as a vital asset for companies navigating the accelerating AI landscape.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": -0.04999999999999999,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0,
+            "penalty": 0.2,
+            "matchedKeywords": [
+              "ai",
+              "openai",
+              "training"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Tech giants including OpenAI, Google, Amazon, and Microsoft are developing custom chips to reduce deployment costs and gain control over AI infrastructure, signaling a strategic shift beyond relying solely on Nvidia's GPUs for training in the competitive AI landscape.",
+          "translations": {
+            "da": {
+              "title": "Ud over Nvidia: Hvorfor AI-giganter som OpenAI, Google og Amazon bygger specialdesignede chips",
+              "summary": "AI-genereret resumé: Teknologigiganter som OpenAI, Google, Amazon og Microsoft udvikler specialdesignede chips for at reducere implementeringsomkostninger og få kontrol over AI-infrastrukturen, hvilket signalerer et strategisk skifte væk fra udelukkende at stole på Nvidias GPU'er til træning i det konkurrenceprægede AI-landskab."
+            },
+            "es": {
+              "title": "Más allá de Nvidia: Por qué gigantes de la IA como OpenAI, Google y Amazon están creando chips personalizados",
+              "summary": "Resumen generado por IA: Gigantes tecnológicos como OpenAI, Google, Amazon y Microsoft están desarrollando chips personalizados para reducir costos de implementación y obtener control sobre la infraestructura de IA, señalando un cambio estratégico más allá de depender únicamente de las GPU de Nvidia para el entrenamiento en el competitivo panorama de la IA."
+            }
+          }
+        },
+        {
+          "id": "ntf8wl",
+          "title": "Amazon ups India bet with fresh $13B AI infrastructure investment",
+          "url": "https://techcrunch.com/2026/06/25/amazon-ups-india-bet-with-fresh-13b-ai-infrastructure-investment/",
+          "source": "TechCrunch - AI",
+          "published_at": "2026-06-25T12:00:38.000Z",
+          "ingested_at": "2026-06-28T09:20:52.093Z",
+          "snippet": "Amazon’s latest India investment comes as global tech companies race to expand AI infrastructure in the country.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.25,
+            "recencyScore": 0,
+            "sourceWeight": 0.15,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ai",
+              "investment"
+            ]
+          },
+          "aiSummary": "AI-generated summary: On June 25, 2026, TechCrunch reported that Amazon is increasing its investment in India’s AI infrastructure with a fresh $13 billion commitment, reflecting the broader trend of global tech companies expanding their AI presence in the country.",
+          "translations": {
+            "da": {
+              "title": "Amazon øger indsatsen i Indien med ny investering på 13 mia. USD i AI-infrastruktur",
+              "summary": "AI-genereret resumé: Den 25. juni 2026 rapporterede TechCrunch, at Amazon øger sin investering i Indiens AI-infrastruktur med en ny forpligtelse på 13 milliarder USD, hvilket afspejler den bredere tendens blandt globale tech-virksomheder til at udvide deres AI-tilstedeværelse i landet."
+            },
+            "es": {
+              "title": "Amazon aumenta su apuesta en India con una nueva inversión de 13 mil millones de dólares en infraestructura de IA",
+              "summary": "Resumen generado por IA: El 25 de junio de 2026, TechCrunch informó que Amazon está aumentando su inversión en la infraestructura de IA de India con un nuevo compromiso de 13 mil millones de dólares, reflejando la tendencia global de empresas tecnológicas que expanden su presencia en IA en el país."
+            }
+          }
+        },
+        {
+          "id": "4xu2wv",
+          "title": "OpenAI, Anthropic limit new AI models to Trump-approved customers during cybersecurity review ",
+          "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/openai-launches-limited-release-of-new-model-in-us-only/articleshow/132021613.cms",
+          "source": "Economic Times - Technology",
+          "published_at": "2026-06-26T17:25:05.000Z",
+          "ingested_at": "2026-06-28T09:20:52.093Z",
+          "snippet": "AI giants OpenAI and Anthropic are facing unprecedented government scrutiny over their powerful new models.  The Trump administration has requested restricted releases, citing cybersecurity risks, particularly after Anthropic flagged its \"Mythos\" model's potential for misuse. While OpenAI's GPT-5.6 Sol will be available to select partners, Anthropic's \"Mythos 5\" has seen partial approval.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": -0.04999999999999999,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0,
+            "penalty": 0.2,
+            "matchedKeywords": [
+              "ai",
+              "openai",
+              "anthropic"
+            ]
+          },
+          "aiSummary": "AI-generated summary: OpenAI and Anthropic are limiting access to their latest AI models to Trump-approved customers amid government cybersecurity concerns, with OpenAI's GPT-5.6 Sol available to select partners and Anthropic's \"Mythos 5\" receiving partial approval. This move follows scrutiny over potential misuse risks highlighted by Anthropic's \"Mythos\" model.",
+          "translations": {
+            "da": {
+              "title": "OpenAI og Anthropic begrænser nye AI-modeller til Trump-godkendte kunder under cybersikkerhedsgennemgang",
+              "summary": "AI-genereret resumé: OpenAI og Anthropic begrænser adgangen til deres nyeste AI-modeller til Trump-godkendte kunder på grund af regeringens cybersikkerhedsbekymringer, hvor OpenAIs GPT-5.6 Sol er tilgængelig for udvalgte partnere, og Anthropics \"Mythos 5\" har modtaget delvis godkendelse. Dette sker efter kritik af potentielle misbrugsrisici fremhævet af Anthropics \"Mythos\"-model."
+            },
+            "es": {
+              "title": "OpenAI y Anthropic limitan nuevos modelos de IA a clientes aprobados por Trump durante revisión de ciberseguridad",
+              "summary": "Resumen generado por IA: OpenAI y Anthropic están limitando el acceso a sus últimos modelos de IA a clientes aprobados por Trump debido a preocupaciones gubernamentales de ciberseguridad, con GPT-5.6 Sol de OpenAI disponible para socios selectos y \"Mythos 5\" de Anthropic recibiendo aprobación parcial. Esta medida sigue al escrutinio sobre riesgos de uso indebido destacados por el modelo \"Mythos\" de Anthropic."
+            }
+          }
+        },
+        {
+          "id": "n35qfx",
+          "title": "Anthropic's Mythos 5 gets a limited carveout from US restrictions",
+          "url": "https://www.businessinsider.com/anthropic-mythos-5-us-restrictions-fable-5-openai-gpt-2026-6",
+          "source": "Business Insider - Tech",
+          "published_at": "2026-06-27T13:46:28.000Z",
+          "ingested_at": "2026-06-28T09:20:52.093Z",
+          "snippet": "Anthropic CEO Dario Amodei has been navigating a high-stakes clash with the White House over government restrictions on the company's most powerful AI models.\nAnna Moneymaker/Getty Images\n\nAnthropic disabled access to Mythos and Fable earlier this month after a US export-control order.\nAnthropic said Friday it restored access to Mythos 5 for some US organizations.\nThe status of Fable 5 access remained unchanged.\n\nAnthropic says it is getting partial relief from the US-imposed restrictions on its...",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "anthropic",
+              "ai"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Anthropic has received a limited exemption from US export-control restrictions, allowing some US organizations to regain access to its Mythos 5 AI model, while access to Fable 5 remains restricted. This development follows the company's earlier suspension of Mythos and Fable access due to government orders.",
+          "translations": {
+            "da": {
+              "title": "Anthropics Mythos 5 får en begrænset undtagelse fra amerikanske restriktioner",
+              "summary": "AI-genereret resumé: Anthropic har modtaget en begrænset undtagelse fra amerikanske eksportkontrolrestriktioner, hvilket tillader nogle amerikanske organisationer at få adgang til Mythos 5 AI-modellen igen, mens adgangen til Fable 5 forbliver begrænset. Denne udvikling følger virksomhedens tidligere suspension af adgang til Mythos og Fable på grund af regeringsordrer."
+            },
+            "es": {
+              "title": "Mythos 5 de Anthropic recibe una exención limitada de las restricciones de EE. UU.",
+              "summary": "Resumen generado por IA: Anthropic ha recibido una exención limitada de las restricciones de control de exportaciones de EE. UU., lo que permite que algunas organizaciones estadounidenses recuperen el acceso a su modelo de IA Mythos 5, mientras que el acceso a Fable 5 sigue restringido. Este desarrollo sigue a la suspensión previa del acceso a Mythos y Fable por órdenes gubernamentales."
+            }
+          }
+        },
+        {
+          "id": "ceam4z",
+          "title": "Netris raises $15M Series A from a16z to help AI neoclouds go live faster",
+          "url": "https://techcrunch.com/2026/06/25/netris-raises-15m-series-a-from-a16z-to-help-ai-neoclouds-go-live-faster/",
+          "source": "TechCrunch - AI",
+          "published_at": "2026-06-25T14:55:38.000Z",
+          "ingested_at": "2026-06-28T09:20:52.093Z",
+          "snippet": "Netris provides software that runs on network switches, and offers a platform that helps neocloud operators reduce the time it takes to go live.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0.15,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ai"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Netris has raised $15 million in a Series A funding round led by a16z to support its software platform that runs on network switches and helps neocloud operators accelerate their go-live timelines.",
+          "translations": {
+            "da": {
+              "title": "Netris rejser 15 mio. USD i Serie A fra a16z for at hjælpe AI neoclouds med at gå live hurtigere",
+              "summary": "AI-genereret resumé: Netris har rejst 15 millioner USD i en Serie A-finansieringsrunde ledet af a16z for at støtte deres softwareplatform, der kører på netværksswitche og hjælper neocloud-operatører med at fremskynde deres go-live tidsplaner."
+            },
+            "es": {
+              "title": "Netris recauda 15 millones de dólares en Serie A de a16z para ayudar a que las neoclouds de IA se lancen más rápido",
+              "summary": "Resumen generado por IA: Netris ha recaudado 15 millones de dólares en una ronda de financiación Serie A liderada por a16z para apoyar su plataforma de software que funciona en switches de red y ayuda a los operadores de neocloud a acelerar sus tiempos de lanzamiento."
+            }
+          }
+        },
+        {
+          "id": "q642sj",
+          "title": "Italy to join US-led Pax Silica AI initiative despite Trump spat ",
+          "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/italy-to-join-us-led-pax-silica-ai-initiative-despite-trump-spat/articleshow/132018431.cms",
+          "source": "Economic Times - Technology",
+          "published_at": "2026-06-26T14:18:16.000Z",
+          "ingested_at": "2026-06-28T09:20:52.093Z",
+          "snippet": "Italy is set to join the US-led Pax Silica initiative, aimed at securing artificial intelligence supply chains, despite a recent diplomatic tiff between Prime Minister Meloni and former President Trump. Foreign Minister Tajani and US Secretary of State Rubio will sign a memorandum of understanding soon. This move signifies Italy's commitment to bolstering AI collaboration with allied nations, following similar commitments from the European Commission and the Netherlands.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ai",
+              "artificial intelligence"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Italy will join the US-led Pax Silica initiative to secure AI supply chains despite recent diplomatic tensions between Prime Minister Meloni and former President Trump, with a memorandum of understanding to be signed by Foreign Minister Tajani and US Secretary of State Rubio. This move underscores Italy's dedication to enhancing AI collaboration alongside the European Commission and the Netherlands.",
+          "translations": {
+            "da": {
+              "title": "Italien deltager i den USA-ledede Pax Silica AI-initiativ trods strid med Trump",
+              "summary": "Italien vil deltage i det USA-ledede Pax Silica-initiativ for at sikre AI-forsyningskæder trods nylige diplomatiske spændinger mellem premierminister Meloni og tidligere præsident Trump, med en hensigtserklæring, der skal underskrives af udenrigsminister Tajani og USA's udenrigsminister Rubio. Dette understreger Italiens engagement i at styrke AI-samarbejdet sammen med Europa-Kommissionen og Holland."
+            },
+            "es": {
+              "title": "Italia se unirá a la iniciativa Pax Silica liderada por EE.UU. a pesar de disputa con Trump",
+              "summary": "Italia se unirá a la iniciativa Pax Silica liderada por EE.UU. para asegurar las cadenas de suministro de IA a pesar de las recientes tensiones diplomáticas entre la primera ministra Meloni y el expresidente Trump, con un memorando de entendimiento que será firmado por el ministro de Asuntos Exteriores Tajani y el secretario de Estado estadounidense Rubio. Este movimiento destaca el compromiso de Italia para fortalecer la colaboración en IA junto con la Comisión Europea y los Países Bajos."
+            }
+          }
+        },
+        {
+          "id": "9idk8d",
+          "title": "Commemorating 70 Years of Artificial Intelligence",
+          "url": "https://spectrum.ieee.org/70-years-of-artificial-intelligence",
+          "source": "IEEE Spectrum",
+          "published_at": "2026-06-22T18:00:01.000Z",
+          "ingested_at": "2026-06-28T09:20:52.093Z",
+          "snippet": "Artificial intelligence is the transformative, strategic technology of the early 21st century. It is significantly reshaping practically every aspect of our lives, including in ways that probably no one anticipated. Its rate of adoption and impact have been unprecedented when compared with other technologies.\nAI as a distinct field was formally established in 1956 at the Dartmouth Summer Research Project on Artificial Intelligence, proposed by John McCarthy, Marvin Minsky, Nathaniel Rochester, a...",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.10000000000000003,
+            "recencyScore": 0,
+            "sourceWeight": 0.15,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0,
+            "penalty": 0.2,
+            "matchedKeywords": [
+              "artificial intelligence",
+              "ai",
+              "research"
+            ]
+          },
+          "aiSummary": "AI-generated summary: The article commemorates 70 years since the formal establishment of artificial intelligence in 1956, highlighting AI as a transformative and strategic technology of the early 21st century that is reshaping many aspects of life with unprecedented adoption and impact.",
+          "translations": {
+            "da": {
+              "title": "Fejring af 70 år med Artificial Intelligence",
+              "summary": "AI-genereret resumé: Artiklen fejrer 70 år siden den formelle etablering af artificial intelligence i 1956 og fremhæver AI som en transformerende og strategisk teknologi i det tidlige 21. århundrede, der omformer mange aspekter af livet med hidtil uset udbredelse og indflydelse."
+            },
+            "es": {
+              "title": "Conmemorando 70 años de Artificial Intelligence",
+              "summary": "Resumen generado por AI: El artículo conmemora los 70 años desde el establecimiento formal de artificial intelligence en 1956, destacando a AI como una tecnología transformadora y estratégica del siglo XXI que está remodelando muchos aspectos de la vida con una adopción e impacto sin precedentes."
+            }
+          }
+        }
+      ]
+    },
+    "Ecommerce_Retail_Tech": {
+      "total": 440,
+      "top": [
+        {
+          "id": "411a4o",
+          "title": "Walmart-backed Flipkart expands quick-commerce push as Amazon ramps up in India",
+          "url": "https://techcrunch.com/2026/06/23/walmart-backed-flipkart-expands-quick-commerce-push-as-amazon-ramps-up-in-india/",
+          "source": "TechCrunch - Commerce",
+          "published_at": "2026-06-24T00:30:00.000Z",
+          "ingested_at": "2026-06-28T09:20:52.093Z",
+          "snippet": "Walmart-backed Flipkart has crossed 1,000 micro-fulfillment centers as Amazon accelerates its own quick-commerce push in India.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "fulfillment"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Walmart-backed Flipkart has expanded its quick-commerce operations in India by surpassing 1,000 micro-fulfillment centers, while Amazon is simultaneously intensifying its quick-commerce efforts in the country.",
+          "translations": {
+            "da": {
+              "title": "Walmart-støttede Flipkart udvider hurtighandel, mens Amazon øger indsatsen i Indien",
+              "summary": "AI-genereret resumé: Walmart-støttede Flipkart har udvidet sine hurtighandelsoperationer i Indien ved at overgå 1.000 mikro-fuldførelsescentre, mens Amazon samtidig intensiverer sine hurtighandelsindsatser i landet."
+            },
+            "es": {
+              "title": "Flipkart respaldado por Walmart expande su impulso de comercio rápido mientras Amazon aumenta su presencia en India",
+              "summary": "Resumen generado por IA: Flipkart, respaldado por Walmart, ha ampliado sus operaciones de comercio rápido en India superando los 1,000 centros de micro-fulfillment, mientras que Amazon intensifica simultáneamente sus esfuerzos de comercio rápido en el país."
+            }
+          }
+        },
+        {
+          "id": "ipihl9",
+          "title": "Google Cuts App Store Fees, Opens Up External Payments",
+          "url": "https://www.paymentsjournal.com/google-cuts-app-store-fees-opens-up-external-payments/",
+          "source": "Payments Journal",
+          "published_at": "2026-06-25T18:30:00.000Z",
+          "ingested_at": "2026-06-28T09:20:52.093Z",
+          "snippet": "In a landmark win for app developers, Google will reduce its Google Play fees and allow developers to use external payment systems and link to their own websites. App stores operated by Apple and Google are a primary way mobile app developers reach customers, but many developers have long argued that the platform’s proprietary billing […]\nThe post Google Cuts App Store Fees, Opens Up External Payments appeared first on PaymentsJournal.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "payment",
+              "platform"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Google announced a reduction in its Google Play app store fees and will permit developers to use external payment systems and link to their own websites, marking a significant change for app developers. This move addresses longstanding developer concerns over proprietary billing on major app platforms.",
+          "translations": {
+            "da": {
+              "title": "Google Sænker App Store-gebyrer og Åbner for Eksterne Betalinger",
+              "summary": "AI-genereret resumé: Google annoncerede en reduktion af sine Google Play app store-gebyrer og vil tillade udviklere at bruge eksterne betalingssystemer og linke til deres egne hjemmesider, hvilket markerer en væsentlig ændring for app-udviklere. Dette skridt adresserer længevarende bekymringer blandt udviklere om proprietær fakturering på store app-platforme."
+            },
+            "es": {
+              "title": "Google Reduce las Tarifas de la App Store y Permite Pagos Externos",
+              "summary": "Resumen generado por IA: Google anunció una reducción en las tarifas de su tienda de aplicaciones Google Play y permitirá a los desarrolladores usar sistemas de pago externos y enlazar a sus propios sitios web, marcando un cambio significativo para los desarrolladores de apps. Esta medida responde a preocupaciones de larga data sobre la facturación propietaria en las principales plataformas de aplicaciones."
+            }
+          }
+        },
+        {
+          "id": "mgkun9",
+          "title": "Lowe’s makes it easier to order decorative geese, above-ground pools and other marketplace items in over 1,700 stores",
+          "url": "https://www.modernretail.co/operations/lowes-makes-it-easier-to-order-decorative-geese-above-ground-pools-and-other-marketplace-items-in-over-1700-stores/?utm_campaign=modernretaildis&utm_medium=rss&utm_source=general-rss",
+          "source": "Modern Retail",
+          "published_at": "2026-06-26T04:00:00.000Z",
+          "ingested_at": "2026-06-28T09:20:52.093Z",
+          "snippet": "Lowe's recently integrated its third-party marketplace into My Red Vest, the software employees use in stores to help customers place orders.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "marketplace"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Lowe's has integrated its third-party marketplace into My Red Vest, the in-store employee software, making it easier to order items like decorative geese and above-ground pools in over 1,700 stores.",
+          "translations": {
+            "da": {
+              "title": "Lowe’s gør det nemmere at bestille dekorative gæs, ovenjordiske pools og andre markedspladsvarer i over 1.700 butikker",
+              "summary": "AI-genereret resumé: Lowe's har integreret sin tredjeparts markedsplads i My Red Vest, medarbejdersoftwaren i butikken, hvilket gør det nemmere at bestille varer som dekorative gæs og ovenjordiske pools i over 1.700 butikker."
+            },
+            "es": {
+              "title": "Lowe’s facilita el pedido de gansos decorativos, piscinas elevadas y otros artículos del mercado en más de 1,700 tiendas",
+              "summary": "Resumen generado por IA: Lowe's ha integrado su mercado de terceros en My Red Vest, el software para empleados en tienda, facilitando el pedido de artículos como gansos decorativos y piscinas elevadas en más de 1,700 tiendas."
+            }
+          }
+        },
+        {
+          "id": "p8v3do",
+          "title": "Gap launches AI marketing overhaul with Google Cloud, Zeta and Publicis Sapient",
+          "url": "https://www.digitalcommerce360.com/2026/06/24/gap-ai-marketing-overhaul-google-cloud-zeta-publicis-sapient/",
+          "source": "Digital Commerce 360",
+          "published_at": "2026-06-24T19:46:54.000Z",
+          "ingested_at": "2026-06-28T09:20:52.093Z",
+          "snippet": "Gap Inc. is turning to artificial intelligence (AI) to streamline its marketing engine, aiming to deliver more relevant content and reduce friction across its ecommerce channels. In a June 22 announcement, the retailer said it’s working with Google Cloud, Zeta Global and Publicis Sapient on an AI-led overhaul of its marketing organization. The initiative will […]\nThe post Gap launches AI marketing overhaul with Google Cloud, Zeta and Publicis Sapient appeared first on Digital Commerce 360.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ecommerce"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Gap Inc. is partnering with Google Cloud, Zeta Global, and Publicis Sapient to implement an AI-driven overhaul of its marketing operations, aiming to enhance content relevance and reduce friction across its ecommerce channels.",
+          "translations": {
+            "da": {
+              "title": "Gap lancerer AI-markedsføringsomlægning med Google Cloud, Zeta og Publicis Sapient",
+              "summary": "Gap Inc. samarbejder med Google Cloud, Zeta Global og Publicis Sapient om at implementere en AI-drevet omlægning af sine markedsføringsaktiviteter for at forbedre indholdsrelevans og reducere friktion på tværs af sine e-handelskanaler."
+            },
+            "es": {
+              "title": "Gap lanza una renovación de marketing con IA junto a Google Cloud, Zeta y Publicis Sapient",
+              "summary": "Gap Inc. se asocia con Google Cloud, Zeta Global y Publicis Sapient para implementar una renovación impulsada por IA en sus operaciones de marketing, con el objetivo de mejorar la relevancia del contenido y reducir la fricción en sus canales de comercio electrónico."
+            }
+          }
+        },
+        {
+          "id": "ojhhpg",
+          "title": "Snappy Shopper VP on retail media’s power to drive conversations to action",
+          "url": "https://www.retailgazette.co.uk/blog/2026/06/snappy-shopper-vp-retail-media/",
+          "source": "Retail Gazette",
+          "published_at": "2026-06-26T09:21:31.000Z",
+          "ingested_at": "2026-06-28T09:20:52.093Z",
+          "snippet": "With Snappy Shopper expanding beyond the UK mainland, Retail Gazette met with with the Q-commerce platform’s VP of groups & business development Greg Deacon to discuss the “huge growth” moments retail media can provide independent retailers. “We create an opportunity for brands to engage with the customer at the point of purchase – that moment...",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "platform"
+            ]
+          },
+          "aiSummary": "AI-generated summary: In a Retail Gazette interview, Snappy Shopper's VP Greg Deacon highlights how retail media enables independent retailers to drive significant growth by engaging customers at the point of purchase, as the Q-commerce platform expands beyond the UK mainland.",
+          "translations": {
+            "da": {
+              "title": "Snappy Shopper VP om detailmediers kraft til at omsætte samtaler til handling",
+              "summary": "AI-genereret resumé: I et interview med Retail Gazette fremhæver Snappy Shoppers VP Greg Deacon, hvordan detailmedier gør det muligt for uafhængige detailhandlere at skabe betydelig vækst ved at engagere kunder ved købstidspunktet, mens Q-commerce-platformen udvider sig ud over det britiske fastland."
+            },
+            "es": {
+              "title": "VP de Snappy Shopper sobre el poder de los medios minoristas para convertir conversaciones en acción",
+              "summary": "Resumen generado por IA: En una entrevista con Retail Gazette, el VP de Snappy Shopper, Greg Deacon, destaca cómo los medios minoristas permiten a los minoristas independientes impulsar un crecimiento significativo al involucrar a los clientes en el punto de compra, mientras la plataforma de Q-commerce se expande más allá del Reino Unido continental."
+            }
+          }
+        },
+        {
+          "id": "p2kgvj",
+          "title": "Where AI Belongs in E-Commerce (and Where it Doesn’t)",
+          "url": "https://www.mytotalretail.com/article/where-ai-belongs-in-e-commerce-and-where-it-doesnt/",
+          "source": "Total Retail",
+          "published_at": "2026-06-23T19:44:52.000Z",
+          "ingested_at": "2026-06-28T09:20:52.093Z",
+          "snippet": "The early data on artificial intelligence shopping is in and it has a story to tell. Shopify reported that shoppers who arrive at e-commerce sites through AI platforms like ChatGPT, Perplexity, and Gemini are 50 percent more likely to convert to purchase than those coming from organic search. Not only are they more likely to […]",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.30000000000000004,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0.15,
+            "penalty": 0,
+            "matchedKeywords": [
+              "e-commerce",
+              "shopping",
+              "platform"
+            ]
+          },
+          "aiSummary": "AI-generated summary: According to early data reported by Shopify, shoppers arriving at e-commerce sites via AI platforms such as ChatGPT, Perplexity, and Gemini are 50% more likely to make a purchase compared to those from organic search, highlighting AI's impactful role in online retail.",
+          "translations": {
+            "da": {
+              "title": "Hvor AI hører til i e-handel (og hvor det ikke gør)",
+              "summary": "AI-genereret resumé: Ifølge tidlige data rapporteret af Shopify er shoppere, der ankommer til e-handelssteder via AI-platforme som ChatGPT, Perplexity og Gemini, 50 % mere tilbøjelige til at foretage et køb sammenlignet med dem fra organisk søgning, hvilket fremhæver AIs betydningsfulde rolle i online detailhandel."
+            },
+            "es": {
+              "title": "Dónde pertenece la IA en el comercio electrónico (y dónde no)",
+              "summary": "Resumen generado por IA: Según datos iniciales reportados por Shopify, los compradores que llegan a sitios de comercio electrónico a través de plataformas de IA como ChatGPT, Perplexity y Gemini tienen un 50 % más de probabilidades de realizar una compra en comparación con los que provienen de búsqueda orgánica, destacando el papel impactante de la IA en el comercio minorista en línea."
+            }
+          }
+        },
+        {
+          "id": "7kl0xg",
+          "title": "How the Merchant of Record Became a Global Commerce Engine",
+          "url": "https://www.paymentsjournal.com/how-the-merchant-of-record-became-a-global-commerce-engine/",
+          "source": "Payments Journal",
+          "published_at": "2026-06-23T13:00:00.000Z",
+          "ingested_at": "2026-06-28T09:20:52.093Z",
+          "snippet": "Picture the scene; a U.S. developer discovers that one of their fastest-growing markets is overseas. For many digital businesses, the first signs of international opportunity develop quickly. However, new local markets also mean new local complexities. Brazilian customers expect support for Pix. In India, UPI dominates the payments landscape. In Poland, BLIK accounts for as […]\nThe post How the Merchant of Record Became a Global Commerce Engine appeared first on PaymentsJournal.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "payment"
+            ]
+          },
+          "aiSummary": "AI-generated summary: The article explores how the Merchant of Record facilitates global ecommerce by helping digital businesses navigate local payment preferences and complexities, such as Brazil's Pix, India's UPI, and Poland's BLIK. This role has become essential as companies expand rapidly into international markets.",
+          "translations": {
+            "da": {
+              "title": "Hvordan Merchant of Record blev en global handelsmotor",
+              "summary": "Artiklen undersøger, hvordan Merchant of Record faciliterer global e-handel ved at hjælpe digitale virksomheder med at navigere lokale betalingspræferencer og kompleksiteter som Brasiliens Pix, Indiens UPI og Polens BLIK. Denne rolle er blevet essentiel, efterhånden som virksomheder hurtigt ekspanderer til internationale markeder."
+            },
+            "es": {
+              "title": "Cómo el Merchant of Record se convirtió en un motor del comercio global",
+              "summary": "El artículo explora cómo el Merchant of Record facilita el comercio electrónico global ayudando a las empresas digitales a navegar las preferencias y complejidades locales de pago, como Pix en Brasil, UPI en India y BLIK en Polonia. Este rol se ha vuelto esencial a medida que las empresas se expanden rápidamente en mercados internacionales."
+            }
+          }
+        }
+      ]
+    },
+    "Luxury_and_Consumer": {
+      "total": 119,
+      "top": [
+        {
+          "id": "p9qsu8",
+          "title": "Saks Global Exits Bankruptcy and Rebrands to Exemplar Luxury Group ",
+          "url": "https://www.businessoffashion.com/articles/retail/saks-global-exits-bankruptcy-and-rebrands-to-exemplar-luxury-group/",
+          "source": "Business of Fashion - News",
+          "published_at": "2026-06-27T01:54:26.000Z",
+          "ingested_at": "2026-06-28T09:20:52.093Z",
+          "snippet": "The new corporate identity is meant to signal a new chapter for the retailer and hold the retailer accountable to a higher standard of partnership to brands, consumers and its employees, said CEO Geoffroy van Raemdonck.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "luxury",
+              "brand",
+              "consumer"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Saks Global has emerged from bankruptcy and rebranded as Exemplar Luxury Group, aiming to mark a new chapter with a commitment to higher standards for partnerships with brands, consumers, and employees, according to CEO Geoffroy van Raemdonck.",
+          "translations": {
+            "da": {
+              "title": "Saks Global forlader konkurs og omdøber sig til Exemplar Luxury Group",
+              "summary": "Saks Global er kommet ud af konkurs og har omdøbt sig til Exemplar Luxury Group med fokus på højere standarder for samarbejde med brands, forbrugere og medarbejdere, ifølge CEO Geoffroy van Raemdonck."
+            },
+            "es": {
+              "title": "Saks Global sale de la bancarrota y se renombra como Exemplar Luxury Group",
+              "summary": "Saks Global ha salido de la bancarrota y se ha renombrado como Exemplar Luxury Group, con el objetivo de iniciar un nuevo capítulo con un compromiso hacia estándares más altos en las asociaciones con marcas, consumidores y empleados, según el CEO Geoffroy van Raemdonck."
+            }
+          }
+        },
+        {
+          "id": "jud9cs",
+          "title": "Barbari: A Black-Owned Skin-Care Brand Crafting Plant-Based Products",
+          "url": "https://fashionista.com/2026/06/barbari-skin-care-brand",
+          "source": "Fashionista",
+          "published_at": "2026-06-24T14:00:00.000Z",
+          "ingested_at": "2026-06-28T09:20:52.093Z",
+          "snippet": "Founded in 2025, the Brooklyn-based brand supports the economic empowerment of Berber women in Morocco with every purchase.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "brand"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Barbari, a Black-owned skin-care brand founded in 2025 and based in Brooklyn, creates plant-based products while supporting the economic empowerment of Berber women in Morocco with every purchase.",
+          "translations": {
+            "da": {
+              "title": "Barbari: Et Black-ejet hudplejemærke, der laver plantebaserede produkter",
+              "summary": "AI-genereret resumé: Barbari, et Black-ejet hudplejemærke grundlagt i 2025 og baseret i Brooklyn, skaber plantebaserede produkter og støtter økonomisk empowerment af berberkvinder i Marokko ved hvert køb."
+            },
+            "es": {
+              "title": "Barbari: Una marca de cuidado de la piel propiedad de personas negras que crea productos a base de plantas",
+              "summary": "Resumen generado por IA: Barbari, una marca de cuidado de la piel propiedad de personas negras fundada en 2025 y con sede en Brooklyn, crea productos a base de plantas mientras apoya el empoderamiento económico de mujeres bereberes en Marruecos con cada compra."
+            }
+          }
+        },
+        {
+          "id": "p05ewm",
+          "title": "How a Magazine Becomes a Lifestyle Brand ",
+          "url": "https://www.businessoffashion.com/articles/beauty/kinfolk-notes-magazine-product-line/",
+          "source": "Business of Fashion - News",
+          "published_at": "2026-06-24T12:00:00.000Z",
+          "ingested_at": "2026-06-28T09:20:52.093Z",
+          "snippet": "Kinfolk, the quintessential Millennial lifestyle quarterly, is betting it can translate its aspirational aesthetics into a multicategory consumer brand — starting with a fragrance line and a new Manhattan pop-up.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "brand",
+              "consumer",
+              "aspirational"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Kinfolk, a leading Millennial lifestyle magazine, aims to expand into a multicategory consumer brand by launching a fragrance line and opening a new pop-up in Manhattan.",
+          "translations": {
+            "da": {
+              "title": "Hvordan et magasin bliver et livsstilsbrand",
+              "summary": "AI-genereret resumé: Kinfolk, et førende livsstilsmagasin for Millennials, sigter mod at udvide til et multicategory forbrugerbrand ved at lancere en duftserie og åbne en ny pop-up i Manhattan."
+            },
+            "es": {
+              "title": "Cómo una revista se convierte en una marca de estilo de vida",
+              "summary": "Resumen generado por IA: Kinfolk, una revista líder de estilo de vida para Millennials, busca expandirse a una marca de consumo multicategoría lanzando una línea de fragancias y abriendo una nueva pop-up en Manhattan."
+            }
+          }
+        },
+        {
+          "id": "umm15n",
+          "title": "How Abbode's Abby Price Is Steering the Personalization Trend",
+          "url": "https://fashionista.com/2026/06/abby-price-abbode-founder-interview",
+          "source": "Fashionista",
+          "published_at": "2026-06-25T12:45:00.000Z",
+          "ingested_at": "2026-06-28T09:20:52.093Z",
+          "snippet": "Watch the founder discuss the NYC brand's journey to $10 million in sales, on The Fashionista Network.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "brand"
+            ]
+          },
+          "aiSummary": "AI-generated summary: In the Fashionista article \"How Abbode's Abby Price Is Steering the Personalization Trend,\" founder Abby Price discusses the NYC brand's growth to $10 million in sales, highlighting its impact on luxury consumer personalization.",
+          "translations": {
+            "da": {
+              "title": "Hvordan Abbodes Abby Price Styrer Personaliserings-trenden",
+              "summary": "AI-genereret resumé: I Fashionista-artiklen \"How Abbode's Abby Price Is Steering the Personalization Trend\" taler grundlægger Abby Price om NYC-mærkets vækst til 10 millioner dollars i salg og fremhæver dets indflydelse på luksusforbruger-personalisering."
+            },
+            "es": {
+              "title": "Cómo Abby Price de Abbode Está Liderando la Tendencia de Personalización",
+              "summary": "Resumen generado por IA: En el artículo de Fashionista \"How Abbode's Abby Price Is Steering the Personalization Trend\", la fundadora Abby Price habla sobre el crecimiento de la marca de NYC hasta 10 millones en ventas, destacando su impacto en la personalización de consumidores de lujo."
+            }
+          }
+        },
+        {
+          "id": "ykeua3",
+          "title": "How Edition Hotels Is Winning Over the Next Generation of Luxury Travellers",
+          "url": "https://www.businessoffashion.com/articles/travel-hospitality/edition-hotels-strategy-global-luxury-traveller/",
+          "source": "Business of Fashion - News",
+          "published_at": "2026-06-24T04:00:00.000Z",
+          "ingested_at": "2026-06-28T09:20:52.093Z",
+          "snippet": "Marriott International’s Edition brand has expanded into new destinations and experiential offerings to meet the shifting demands of affluent travellers.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.2,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "luxury",
+              "demand",
+              "brand",
+              "affluent"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Marriott International’s Edition brand is attracting the next generation of luxury travellers by expanding into new destinations and enhancing experiential offerings to align with their evolving preferences.",
+          "translations": {
+            "da": {
+              "title": "Hvordan Edition Hotels Vinder Over Den Næste Generation af Luksusrejsende",
+              "summary": "Marriott Internationals Edition-brand tiltrækker den næste generation af luksusrejsende ved at udvide til nye destinationer og forbedre oplevelsesbaserede tilbud for at matche deres udviklende præferencer."
+            },
+            "es": {
+              "title": "Cómo Edition Hotels Está Conquistando a la Próxima Generación de Viajeros de Lujo",
+              "summary": "La marca Edition de Marriott International atrae a la próxima generación de viajeros de lujo al expandirse a nuevos destinos y mejorar las ofertas experienciales para alinearse con sus preferencias cambiantes."
+            }
+          }
+        },
+        {
+          "id": "j0piih",
+          "title": "The Los Angeles-Based Label Making 'Anti-Fashion Fashion'",
+          "url": "https://fashionista.com/2026/06/ella-mae-designer-interview",
+          "source": "Fashionista",
+          "published_at": "2026-06-26T12:00:00.000Z",
+          "ingested_at": "2026-06-28T09:20:52.093Z",
+          "snippet": "Designer Ella Mae on building an \"earth-first\" brand and how she's scaling with limited-batch production.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "brand"
+            ]
+          },
+          "aiSummary": "AI-generated summary: The Los Angeles-based label, led by designer Ella Mae, focuses on creating an \"earth-first\" brand by emphasizing sustainability and scaling through limited-batch production.",
+          "translations": {
+            "da": {
+              "title": "Det Los Angeles-baserede mærke, der laver 'Anti-Fashion Fashion'",
+              "summary": "AI-genereret resumé: Det Los Angeles-baserede mærke, ledet af designer Ella Mae, fokuserer på at skabe et 'jord-først' brand ved at lægge vægt på bæredygtighed og skalering gennem produktion i begrænsede oplag."
+            },
+            "es": {
+              "title": "La marca con sede en Los Ángeles que hace 'Anti-Fashion Fashion'",
+              "summary": "Resumen generado por IA: La marca con sede en Los Ángeles, dirigida por la diseñadora Ella Mae, se centra en crear una marca 'tierra primero' enfatizando la sostenibilidad y escalando mediante producción en lotes limitados."
+            }
+          }
+        },
+        {
+          "id": "lm1vq6",
+          "title": "C.P. Company Men’s Spring 2027: Behind the Seams",
+          "url": "https://wwd.com/runway/mens-spring-2027/paris/cp-company/review/",
+          "source": "WWD - Women's Wear Daily",
+          "published_at": "2026-06-27T15:41:56.000Z",
+          "ingested_at": "2026-06-28T09:20:52.093Z",
+          "snippet": "The looks riffed on the brand’s archival Mille Miglia outerwear.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "brand"
+            ]
+          },
+          "aiSummary": "AI-generated summary: C.P. Company's Men's Spring 2027 collection, featured in WWD on June 27, 2026, draws inspiration from the brand’s archival Mille Miglia outerwear, showcasing a blend of luxury and heritage design elements.",
+          "translations": {
+            "da": {
+              "title": "C.P. Company Herre Forår 2027: Bag Syningerne",
+              "summary": "AI-genereret resumé: C.P. Companys Herre Forår 2027-kollektion, vist i WWD den 27. juni 2026, henter inspiration fra brandets arkiv Mille Miglia overtøj og viser en blanding af luksus og arvestykke design."
+            },
+            "es": {
+              "title": "C.P. Company Hombre Primavera 2027: Detrás de las Costuras",
+              "summary": "Resumen generado por IA: La colección Primavera 2027 para hombre de C.P. Company, presentada en WWD el 27 de junio de 2026, se inspira en las prendas exteriores Mille Miglia de los archivos de la marca, mostrando una mezcla de lujo y elementos de diseño heredados."
+            }
+          }
+        }
+      ]
+    },
+    "Jewellery_Industry": {
+      "total": 16,
+      "top": [
+        {
+          "id": "3nilrf",
+          "title": "Judge the Jewels: Michelle Obama Rocks Rainbow K and Yvonne Léon Statement Stacks at Obama Presidential Center Opening ",
+          "url": "https://instoremag.com/judge-the-jewels-michelle-obama-rocks-rainbow-k-and-yvonne-leon-statement-stacks-at-obama-presidential-center-opening/",
+          "source": "Instore Magazine",
+          "published_at": "2026-06-27T01:00:51.000Z",
+          "ingested_at": "2026-06-28T09:20:52.093Z",
+          "snippet": "Chunky mixed-metal layering on her ears and hands signals 2026's reigning jewelry trend.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "jewelry"
+            ]
+          },
+          "aiSummary": "AI-generated summary: At the Obama Presidential Center opening, Michelle Obama showcased 2026's leading jewelry trend with chunky mixed-metal layering on her ears and hands, featuring pieces from Rainbow K and Yvonne Léon.",
+          "translations": {
+            "da": {
+              "title": "Døm Smykkerne: Michelle Obama Bærer Rainbow K og Yvonne Léons Statement Stacks ved Obama Presidential Center Åbning",
+              "summary": "AI-genereret resumé: Ved åbningen af Obama Presidential Center viste Michelle Obama 2026's førende smykketrend med chunky lag af blandede metaller på ører og hænder, med stykker fra Rainbow K og Yvonne Léon."
+            },
+            "es": {
+              "title": "Juzga las Joyas: Michelle Obama Luce Rainbow K y los Statement Stacks de Yvonne Léon en la Inauguración del Obama Presidential Center",
+              "summary": "Resumen generado por IA: En la inauguración del Obama Presidential Center, Michelle Obama mostró la tendencia principal de joyería de 2026 con capas gruesas de metales mixtos en orejas y manos, con piezas de Rainbow K y Yvonne Léon."
+            }
+          }
+        },
+        {
+          "id": "9irob2",
+          "title": "Blue diamonds command huge returns at auction",
+          "url": "https://www.jewellermagazine.com/Article/15126/Blue-diamonds-command-huge-returns-at-auction",
+          "source": "Jeweller - Business News",
+          "published_at": "2026-06-22T14:00:00.000Z",
+          "ingested_at": "2026-06-28T09:20:52.093Z",
+          "snippet": "Two blue fancy colour diamonds have stunned fine jewellery collectors at auction in New York, generating huge returns.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.25,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "diamond",
+              "jewellery",
+              "jeweller"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Two blue fancy colour diamonds achieved remarkable prices at a New York auction, impressing fine jewellery collectors and commanding huge returns.",
+          "translations": {
+            "da": {
+              "title": "Blå diamanter opnår store afkast ved auktion",
+              "summary": "AI-genereret resumé: To blå fancy colour diamanter opnåede bemærkelsesværdige priser ved en auktion i New York, imponerede samlere af fint smykke og sikrede store afkast."
+            },
+            "es": {
+              "title": "Los diamantes azules generan grandes ganancias en la subasta",
+              "summary": "Resumen generado por IA: Dos diamantes azules fancy colour alcanzaron precios notables en una subasta en Nueva York, impresionando a coleccionistas de joyas finas y generando grandes ganancias."
+            }
+          }
+        },
+        {
+          "id": "jo3tp1",
+          "title": "Troubling crime statistics for Victorian jewellery retailers",
+          "url": "https://www.jewellermagazine.com/Article/15122/Troubling-crime-statistics-for-Victorian-jewellery-retailers",
+          "source": "Jeweller - Business News",
+          "published_at": "2026-06-22T14:00:00.000Z",
+          "ingested_at": "2026-06-28T09:20:52.093Z",
+          "snippet": "Concerning figures have been published regarding criminal activity targeting retail businesses in Victoria.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.25,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "jewellery",
+              "retailer",
+              "jeweller"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Recent reports reveal troubling crime statistics affecting jewellery retailers in Victoria, highlighting increased criminal activity targeting these businesses.",
+          "translations": {
+            "da": {
+              "title": "Bekymrende kriminalitetsstatistikker for smykkeforhandlere i Victoria",
+              "summary": "AI-genereret resumé: Seneste rapporter afslører bekymrende kriminalitetsstatistikker, der påvirker smykkeforhandlere i Victoria, med øget kriminel aktivitet rettet mod disse virksomheder."
+            },
+            "es": {
+              "title": "Preocupantes estadísticas de criminalidad para los minoristas de joyería en Victoria",
+              "summary": "Resumen generado por IA: Informes recientes revelan preocupantes estadísticas de criminalidad que afectan a los minoristas de joyería en Victoria, destacando un aumento de la actividad criminal dirigida a estos negocios."
+            }
+          }
+        },
+        {
+          "id": "8t3933",
+          "title": "Ofer Mizrahi Diamonds Receives Israel’s Outstanding Exporter Award",
+          "url": "https://instoremag.com/ofer-mizrahi-diamonds-receives-israels-outstanding-exporter-award/",
+          "source": "Instore Magazine",
+          "published_at": "2026-06-26T20:54:37.000Z",
+          "ingested_at": "2026-06-28T09:20:52.093Z",
+          "snippet": "The award recognizes Israeli companies across various sectors for their economic resilience, innovation, and outstanding success in global markets.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "diamond"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Ofer Mizrahi Diamonds has been honored with Israel’s Outstanding Exporter Award, recognizing the company's economic resilience, innovation, and exceptional success in global markets within the jewellery industry.",
+          "translations": {
+            "da": {
+              "title": "Ofer Mizrahi Diamonds modtager Israels pris for fremragende eksportør",
+              "summary": "AI-genereret resumé: Ofer Mizrahi Diamonds er blevet hædret med Israels pris for fremragende eksportør, som anerkender virksomhedens økonomiske modstandsdygtighed, innovation og enestående succes på de globale markeder inden for smykkeindustrien."
+            },
+            "es": {
+              "title": "Ofer Mizrahi Diamonds recibe el Premio al Exportador Destacado de Israel",
+              "summary": "Resumen generado por IA: Ofer Mizrahi Diamonds ha sido honrado con el Premio al Exportador Destacado de Israel, reconociendo la resiliencia económica, innovación y éxito excepcional de la empresa en los mercados globales dentro de la industria de la joyería."
+            }
+          }
+        },
+        {
+          "id": "l2j6df",
+          "title": "Rare blue diamond captures hearts and minds at auction",
+          "url": "https://www.jewellermagazine.com/Article/15123/Rare-blue-diamond-captures-hearts-and-minds-at-auction",
+          "source": "Jeweller - Business News",
+          "published_at": "2026-06-22T14:00:00.000Z",
+          "ingested_at": "2026-06-28T09:20:52.093Z",
+          "snippet": "A remarkable fancy colour blue diamond was the star of the show at a recent jewellery auction in New York.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.25,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "diamond",
+              "jewellery",
+              "jeweller"
+            ]
+          },
+          "aiSummary": "AI-generated summary: A rare fancy colour blue diamond captivated attendees at a recent jewellery auction held in New York, becoming the highlight of the event.",
+          "translations": {
+            "da": {
+              "title": "Sjælden blå diamant fanger hjerter og sind ved auktion",
+              "summary": "AI-genereret resumé: En sjælden fancy farvet blå diamant fascinerede deltagerne ved en nylig smykkeauktion i New York og blev aftenens højdepunkt."
+            },
+            "es": {
+              "title": "Raro diamante azul cautiva corazones y mentes en subasta",
+              "summary": "Resumen generado por IA: Un raro diamante azul de color fancy cautivó a los asistentes en una reciente subasta de joyas celebrada en Nueva York, convirtiéndose en el punto culminante del evento."
+            }
+          }
+        },
+        {
+          "id": "td60sb",
+          "title": "How a 77-Year-Old Ottawa Jeweler Wins Lifelong Customers With Old-World Hospitality",
+          "url": "https://instoremag.com/la-maison-dor-jewellers-ottawa-canada-americas-coolest/",
+          "source": "Instore Magazine",
+          "published_at": "2026-06-28T01:00:52.000Z",
+          "ingested_at": "2026-06-28T09:20:52.093Z",
+          "snippet": "La Maison d'Or pairs an in-store café and relentless personal outreach to keep clients for life.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": []
+          },
+          "aiSummary": "AI-generated summary: La Maison d'Or, a jeweler in Ottawa, combines an in-store café with dedicated personal outreach to cultivate lifelong customer relationships. This approach exemplifies old-world hospitality within the jewellery industry.",
+          "translations": {
+            "da": {
+              "title": "Hvordan en 77-årig juveler i Ottawa vinder livslange kunder med gammeldags gæstfrihed",
+              "summary": "AI-genereret resumé: La Maison d'Or, en juveler i Ottawa, kombinerer en café i butikken med dedikeret personlig kontakt for at opbygge livslange kundeforhold. Denne tilgang eksemplificerer gammeldags gæstfrihed inden for smykkeindustrien."
+            },
+            "es": {
+              "title": "Cómo un joyero de Ottawa de 77 años gana clientes de por vida con hospitalidad tradicional",
+              "summary": "Resumen generado por IA: La Maison d'Or, un joyero en Ottawa, combina una cafetería en la tienda con un contacto personal dedicado para cultivar relaciones duraderas con los clientes. Este enfoque ejemplifica la hospitalidad tradicional en la industria de la joyería."
+            }
+          }
+        },
+        {
+          "id": "peu4jk",
+          "title": "Behold, the most realistic golf game ever  | Dominik Diamond",
+          "url": "https://www.theguardian.com/games/2026/jun/26/normal-golf-game-steam-dominik-diamond",
+          "source": "The Guardian - Technology",
+          "published_at": "2026-06-26T11:02:49.000Z",
+          "ingested_at": "2026-06-28T09:20:52.093Z",
+          "snippet": "Normal Golf Game takes a tiresomely easy genre and makes it infernally difficult. Which deserves a round of applause\nI have always struggled playing golf. I wish I didn’t. It’s a beautiful game in concept. A leisurely walk in the sunshine, slapping a ball around, sandwiches and beer consumed during and after play. Sure, you have to dress like Huggy Bear from Starsky and Hutch, and getting membership of an actual club is more complex than joining the Freemasons (although many offer a two for one ...",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "diamond"
+            ]
+          },
+          "aiSummary": "AI-generated summary: In \"Behold, the most realistic golf game ever,\" Dominik Diamond reviews Normal Golf Game, praising it for transforming an easy genre into a challenging experience that captures the complexities of playing golf. Despite the game's difficulty, the author appreciates the authentic representation of the sport's leisurely and social aspects.",
+          "translations": {
+            "da": {
+              "title": "Se, det mest realistiske golfspil nogensinde | Dominik Diamond",
+              "summary": "AI-genereret resumé: I \"Se, det mest realistiske golfspil nogensinde\" anmelder Dominik Diamond Normal Golf Game og roser det for at forvandle en nem genre til en udfordrende oplevelse, der fanger kompleksiteten ved at spille golf. På trods af spillets sværhedsgrad værdsætter forfatteren den autentiske fremstilling af sportens afslappede og sociale aspekter."
+            },
+            "es": {
+              "title": "Contempla, el juego de golf más realista de todos | Dominik Diamond",
+              "summary": "Resumen generado por IA: En \"Contempla, el juego de golf más realista de todos,\" Dominik Diamond reseña Normal Golf Game, elogiándolo por transformar un género sencillo en una experiencia desafiante que captura las complejidades de jugar golf. A pesar de la dificultad del juego, el autor aprecia la representación auténtica de los aspectos sociales y relajados del deporte."
+            }
+          }
+        }
+      ]
+    }
+  },
+  "editorialTake": "Amazon’s $13 billion AI infrastructure bet in India is a clear signal that the company sees the region as a strategic AI battleground, not just a low-cost hub. This isn’t about incremental growth: it’s a full-court press to own AI cloud dominance where Google and Microsoft are also heavily invested. The scale alone forces competitors to rethink their India strategies or risk losing critical market share in a country with 1.4 billion potential users and rapidly growing digital adoption.\n\nMeanwhile, Flipkart’s push past 1,000-minute quick-commerce delivery zones shows Walmart’s aggressive response to Amazon’s India play. Speed is the new currency in ecommerce, and Flipkart’s move forces Amazon to either match or innovate beyond logistics alone. The real question is whether this arms race will drive sustainable profitability or just burn cash faster in a market where consumer loyalty is still fluid and price sensitivity high.",
+  "coverImageUrl": "/weekly-images/2026-W26.png",
+  "coverImageAlt": "Weekly cover illustration for 2026-W26"
+}
