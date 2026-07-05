@@ -1,0 +1,969 @@
+{
+  "weekLabel": "2026-W27",
+  "tz": "Europe/Copenhagen",
+  "startISO": "2026-06-28T22:00:00.000Z",
+  "endISO": "2026-07-05T21:59:59.999Z",
+  "builtAtISO": "2026-07-05T11:31:54.933+02:00",
+  "builtAtLocal": "2026-07-05 11:31:54",
+  "totals": {
+    "total": 682,
+    "byTopic": {
+      "AIStrategy": 127,
+      "EcommerceRetail": 462,
+      "LuxuryConsumer": 62,
+      "Jewellery": 30
+    }
+  },
+  "topics": {
+    "AI_and_Strategy": {
+      "total": 127,
+      "top": [
+        {
+          "id": "7kibyh",
+          "title": "Microsoft launches its own AI deployment company with $2.5 billion commitment",
+          "url": "https://techcrunch.com/2026/07/02/microsoft-launches-its-own-ai-deployment-company-with-2-5-billion-commitment/",
+          "source": "TechCrunch - AI",
+          "published_at": "2026-07-02T13:53:00.000Z",
+          "ingested_at": "2026-07-05T09:15:18.618Z",
+          "snippet": "Microsoft follows Amazon, OpenAI, and Anthropic with its new AI deployment group.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.30000000000000004,
+            "recencyScore": 0,
+            "sourceWeight": 0.15,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ai",
+              "openai",
+              "anthropic"
+            ]
+          },
+          "aiSummary": "AI-generated summary: On July 2, 2026, Microsoft announced the launch of its own AI deployment company with a $2.5 billion commitment, joining industry leaders like Amazon, OpenAI, and Anthropic in advancing AI strategy.",
+          "translations": {
+            "da": {
+              "title": "Microsoft lancerer sit eget AI-implementeringsfirma med en forpligtelse på 2,5 milliarder dollars",
+              "summary": "AI-genereret resumé: Den 2. juli 2026 annoncerede Microsoft lanceringen af sit eget AI-implementeringsfirma med en forpligtelse på 2,5 milliarder dollars og tilslutter sig brancheledere som Amazon, OpenAI og Anthropic i at fremme AI-strategi."
+            },
+            "es": {
+              "title": "Microsoft lanza su propia empresa de despliegue de IA con un compromiso de 2.5 mil millones de dólares",
+              "summary": "Resumen generado por IA: El 2 de julio de 2026, Microsoft anunció el lanzamiento de su propia empresa de despliegue de IA con un compromiso de 2.5 mil millones de dólares, uniéndose a líderes de la industria como Amazon, OpenAI y Anthropic en el avance de la estrategia de IA."
+            }
+          }
+        },
+        {
+          "id": "bt1i8i",
+          "title": "Anthropic deploys Claude Sonnet 5, Fable and Mythos restored",
+          "url": "https://www.artificialintelligence-news.com/news/anthropic-deploys-claude-sonnet-5-fable-and-mythos-restored/",
+          "source": "AI News",
+          "published_at": "2026-07-01T08:47:12.000Z",
+          "ingested_at": "2026-07-05T09:15:18.618Z",
+          "snippet": "Anthropic has launched Claude Sonnet 5 and restored access to its Fable and Mythos frontier models following a federal export control review. The decision marks the conclusion of an eighteen-day operational pause triggered by a US government export control directive on June 12, which forced the temporary suspension of Anthropic’s highest-capability systems. Government officials enacted […]\nThe post Anthropic deploys Claude Sonnet 5, Fable and Mythos restored appeared first on AI News.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "anthropic",
+              "claude",
+              "ai"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Anthropic has resumed operations by deploying Claude Sonnet 5 and restoring access to its Fable and Mythos models after an eighteen-day pause caused by a US federal export control review. This marks the end of the temporary suspension of the company's highest-capability AI systems.",
+          "translations": {
+            "da": {
+              "title": "Anthropic implementerer Claude Sonnet 5, Fable og Mythos genoprettet",
+              "summary": "AI-genereret resumé: Anthropic har genoptaget driften ved at implementere Claude Sonnet 5 og genoprette adgangen til sine Fable- og Mythos-modeller efter en atten dages pause forårsaget af en amerikansk føderal eksportkontrolgennemgang. Dette markerer afslutningen på den midlertidige suspension af virksomhedens AI-systemer med højeste kapacitet."
+            },
+            "es": {
+              "title": "Anthropic despliega Claude Sonnet 5, Fable y Mythos restaurados",
+              "summary": "Resumen generado por IA: Anthropic ha reanudado operaciones desplegando Claude Sonnet 5 y restaurando el acceso a sus modelos Fable y Mythos tras una pausa de dieciocho días causada por una revisión federal de control de exportaciones en EE. UU. Esto marca el fin de la suspensión temporal de los sistemas de IA de mayor capacidad de la empresa."
+            }
+          }
+        },
+        {
+          "id": "vof6lp",
+          "title": "Anthropic in talks with Samsung to develop custom AI chip ",
+          "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/anthropic-in-talks-with-samsung-to-develop-custom-ai-chip/articleshow/132163085.cms",
+          "source": "Economic Times - Technology",
+          "published_at": "2026-07-03T13:33:34.000Z",
+          "ingested_at": "2026-07-05T09:15:18.618Z",
+          "snippet": "AI giant Anthropic is reportedly exploring the creation of its own custom AI chips, holding talks with Samsung for a potential partnership. This move aims to reduce reliance on external suppliers and address ongoing chip shortages, following similar moves by rivals like OpenAI, Amazon, Microsoft, and Meta.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.04999999999999999,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.2,
+            "insightSignalBoost": 0.05,
+            "penalty": 0.2,
+            "matchedKeywords": [
+              "ai",
+              "anthropic",
+              "openai",
+              "partnership"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Anthropic is in discussions with Samsung to develop custom AI chips, aiming to lessen dependence on external suppliers and tackle chip shortages, following similar strategies by other tech giants.",
+          "translations": {
+            "da": {
+              "title": "Anthropic i samtaler med Samsung om at udvikle specialiseret AI-chip",
+              "summary": "AI-genereret resumé: Anthropic er i dialog med Samsung om at udvikle specialiserede AI-chips for at mindske afhængigheden af eksterne leverandører og tackle chipmangel, efter lignende strategier fra andre teknologigiganter."
+            },
+            "es": {
+              "title": "Anthropic en conversaciones con Samsung para desarrollar chip de IA personalizado",
+              "summary": "Resumen generado por IA: Anthropic está en discusiones con Samsung para desarrollar chips de IA personalizados, con el objetivo de reducir la dependencia de proveedores externos y abordar la escasez de chips, siguiendo estrategias similares de otros gigantes tecnológicos."
+            }
+          }
+        },
+        {
+          "id": "y72v36",
+          "title": "Venice AI becomes a unicorn with $65M Series A as its privacy-first AI platform takes off",
+          "url": "https://techcrunch.com/2026/07/01/venice-ai-becomes-a-unicorn-with-65m-series-a-as-its-privacy-first-ai-platform-takes-off/",
+          "source": "TechCrunch - AI",
+          "published_at": "2026-07-01T14:25:23.000Z",
+          "ingested_at": "2026-07-05T09:15:18.618Z",
+          "snippet": "Venice AI is already profitable, with annualized run-rate revenues of over $70 million, CEO Erik Voorhees said.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0,
+            "recencyScore": 0,
+            "sourceWeight": 0.15,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0.2,
+            "matchedKeywords": [
+              "ai"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Venice AI has achieved unicorn status following a $65 million Series A funding round, with CEO Erik Voorhees noting the company is already profitable and generating over $70 million in annualized run-rate revenues.",
+          "translations": {
+            "da": {
+              "title": "Venice AI bliver en enhjørning med $65M Series A, da deres privatlivsfokuserede AI-platform tager fart",
+              "summary": "AI-genereret resumé: Venice AI har opnået enhjørningestatus efter en Series A-finansiering på 65 millioner dollars, hvor CEO Erik Voorhees bemærker, at virksomheden allerede er profitabel og genererer over 70 millioner dollars i årlige indtægter."
+            },
+            "es": {
+              "title": "Venice AI se convierte en unicornio con $65M en Serie A mientras su plataforma de IA centrada en la privacidad despega",
+              "summary": "Resumen generado por IA: Venice AI ha alcanzado el estatus de unicornio tras una ronda de financiación Serie A de 65 millones de dólares, con el CEO Erik Voorhees señalando que la empresa ya es rentable y genera más de 70 millones de dólares en ingresos anualizados."
+            }
+          }
+        },
+        {
+          "id": "t295eo",
+          "title": "NVIDIA BioNeMo accelerates Anthropic Claude Science",
+          "url": "https://www.artificialintelligence-news.com/news/nvidia-bionemo-accelerates-anthropic-claude-science/",
+          "source": "AI News",
+          "published_at": "2026-07-02T14:38:01.000Z",
+          "ingested_at": "2026-07-05T09:15:18.618Z",
+          "snippet": "Anthropic Claude Science now integrates the NVIDIA BioNeMo Agent Toolkit to accelerate computational life sciences research. Anthropic has launched the public beta of Claude Science, an AI workbench built for scientific research. The platform enables scientists to converse directly with digital agents using natural language to execute end-to-end research workflows. This system connects natively to […]\nThe post NVIDIA BioNeMo accelerates Anthropic Claude Science appeared first on AI News.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.2,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "anthropic",
+              "claude",
+              "ai",
+              "research",
+              "agent"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Anthropic has launched the public beta of Claude Science, an AI workbench for scientific research that now integrates NVIDIA's BioNeMo Agent Toolkit to accelerate computational life sciences workflows through natural language interaction with digital agents.",
+          "translations": {
+            "da": {
+              "title": "NVIDIA BioNeMo accelererer Anthropic Claude Science",
+              "summary": "AI-genereret resumé: Anthropic har lanceret den offentlige beta af Claude Science, en AI-arbejdsstation til videnskabelig forskning, som nu integrerer NVIDIA's BioNeMo Agent Toolkit for at accelerere computational life sciences-workflows gennem naturlig sproginteraktion med digitale agenter."
+            },
+            "es": {
+              "title": "NVIDIA BioNeMo acelera Anthropic Claude Science",
+              "summary": "Resumen generado por IA: Anthropic ha lanzado la beta pública de Claude Science, un banco de trabajo de IA para la investigación científica que ahora integra el BioNeMo Agent Toolkit de NVIDIA para acelerar los flujos de trabajo en ciencias de la vida computacionales mediante la interacción en lenguaje natural con agentes digitales."
+            }
+          }
+        },
+        {
+          "id": "3cmjmm",
+          "title": "Takeda signs US$600M AI drug discovery deal with Insilico",
+          "url": "https://www.artificialintelligence-news.com/news/takeda-insilico-ai-drug-discovery-deal/",
+          "source": "AI News",
+          "published_at": "2026-07-03T10:00:00.000Z",
+          "ingested_at": "2026-07-05T09:15:18.618Z",
+          "snippet": "Takeda has entered a strategic collaboration with Hong Kong-based Insilico Medicine to use AI in early-stage drug discovery across the Japanese pharmaceutical company’s therapeutic areas. The companies did not disclose which therapeutic areas or disease targets will be covered under the collaboration. The agreement gives Takeda access to Insilico’s Pharma.AI platform, which supports biological target […]\nThe post Takeda signs US$600M AI drug discovery deal with Insilico appeared first on AI News...",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ai"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Takeda has signed a US$600 million strategic collaboration with Hong Kong-based Insilico Medicine to utilize AI, specifically Insilico’s Pharma.AI platform, for early-stage drug discovery across its therapeutic areas. The specific disease targets involved in the partnership were not disclosed.",
+          "translations": {
+            "da": {
+              "title": "Takeda indgår AI-lægemiddeludviklingsaftale til 600 mio. USD med Insilico",
+              "summary": "Takeda har indgået et strategisk samarbejde til 600 mio. USD med Hongkong-baserede Insilico Medicine for at anvende AI, specifikt Insilicos Pharma.AI-platform, til tidlig lægemiddeludvikling inden for sine terapeutiske områder. De specifikke sygdomsmål i partnerskabet blev ikke oplyst."
+            },
+            "es": {
+              "title": "Takeda firma acuerdo de 600 millones USD para descubrimiento de fármacos con IA con Insilico",
+              "summary": "Takeda ha firmado una colaboración estratégica de 600 millones USD con Insilico Medicine, con sede en Hong Kong, para utilizar IA, específicamente la plataforma Pharma.AI de Insilico, en el descubrimiento temprano de fármacos en sus áreas terapéuticas. No se revelaron las enfermedades específicas involucradas en la asociación."
+            }
+          }
+        },
+        {
+          "id": "lfi4cr",
+          "title": "Microsoft commits $2.5 billion and 6,000 employees to new AI implementation unit",
+          "url": "https://www.cnbc.com/2026/07/02/microsoft-commits-2point5-billion-6000-employees-ai-implementation-unit.html",
+          "source": "CNBC Technology",
+          "published_at": "2026-07-02T13:00:02.000Z",
+          "ingested_at": "2026-07-05T09:15:18.618Z",
+          "snippet": "Microsoft is the latest tech company to form a business focused on helping customers understand and implement artificial intelligence.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ai",
+              "artificial intelligence"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Microsoft has committed $2.5 billion and 6,000 employees to establish a new business unit dedicated to assisting customers with understanding and implementing artificial intelligence.",
+          "translations": {
+            "da": {
+              "title": "Microsoft investerer 2,5 milliarder dollars og 6.000 medarbejdere i ny AI-implementeringsenhed",
+              "summary": "AI-genereret resumé: Microsoft har afsat 2,5 milliarder dollars og 6.000 medarbejdere til at etablere en ny forretningsenhed, der skal hjælpe kunder med at forstå og implementere kunstig intelligens."
+            },
+            "es": {
+              "title": "Microsoft compromete 2.500 millones de dólares y 6.000 empleados a una nueva unidad de implementación de IA",
+              "summary": "Resumen generado por IA: Microsoft ha comprometido 2.500 millones de dólares y 6.000 empleados para establecer una nueva unidad de negocio dedicada a ayudar a los clientes a entender e implementar inteligencia artificial."
+            }
+          }
+        }
+      ]
+    },
+    "Ecommerce_Retail_Tech": {
+      "total": 462,
+      "top": [
+        {
+          "id": "vnpykp",
+          "title": "Square launches agentic commerce integrations with ChatGPT, Claude",
+          "url": "https://www.digitalcommerce360.com/2026/07/01/square-agentic-commerce-integrations-chatgpt-claude/",
+          "source": "Digital Commerce 360",
+          "published_at": "2026-07-01T21:00:41.000Z",
+          "ingested_at": "2026-07-05T09:15:18.618Z",
+          "snippet": "Payments provider Square has announced integrations with artificial intelligence (AI) platforms, OpenAI’s ChatGPT and Anthropic’s Claude, to help enable agentic commerce. The integrations include an app for ChatGPT and a plugin for Claude. Square said they help sellers to “get discovered and transact at the exact moment customers are making purchasing decisions through AI-powered conversations.” […]\nThe post Square launches agentic commerce integrations with ChatGPT, Claude appeared first on Dig...",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "payment",
+              "platform"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Payments provider Square has launched integrations with AI platforms ChatGPT and Claude, including an app and plugin, to enable agentic commerce by helping sellers connect with customers during purchasing decisions through AI-powered conversations.",
+          "translations": {
+            "da": {
+              "title": "Square lancerer agentiske handelsintegrationer med ChatGPT, Claude",
+              "summary": "AI-genereret resumé: Betalingsudbyderen Square har lanceret integrationer med AI-platformene ChatGPT og Claude, inklusive en app og plugin, for at muliggøre agentisk handel ved at hjælpe sælgere med at forbinde med kunder under købsbeslutninger gennem AI-drevne samtaler."
+            },
+            "es": {
+              "title": "Square lanza integraciones de comercio agentivo con ChatGPT, Claude",
+              "summary": "Resumen generado por IA: El proveedor de pagos Square ha lanzado integraciones con las plataformas de IA ChatGPT y Claude, incluyendo una aplicación y un plugin, para habilitar el comercio agentivo ayudando a los vendedores a conectar con los clientes durante las decisiones de compra mediante conversaciones impulsadas por IA."
+            }
+          }
+        },
+        {
+          "id": "rqxk8m",
+          "title": "Report: Friendly fraud on the rise, merchants using AI to mitigate damages",
+          "url": "https://www.digitalcommerce360.com/2026/07/01/retail-friendly-fraud-prevention-ai-chargebacks-911/",
+          "source": "Digital Commerce 360",
+          "published_at": "2026-07-01T20:25:01.000Z",
+          "ingested_at": "2026-07-05T09:15:18.618Z",
+          "snippet": "More than eight in 10 retailers have reported an increase in friendly fraud, according to findings in a report from Chargebacks911, which features insights into where artificial intelligence (AI) fits into the prevention. Friendly fraud refers to when cardholders dispute legitimate transactions. Chargebacks911 provides technology for chargeback prevention and remediation. In its 2026 Chargeback Field […]\nThe post Report: Friendly fraud on the rise, merchants using AI to mitigate damages appeared...",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0,
+            "insightSignalBoost": 0.1,
+            "penalty": 0,
+            "matchedKeywords": []
+          },
+          "aiSummary": "AI-generated summary: A recent report from Chargebacks911 reveals that over 80% of retailers have experienced a rise in friendly fraud, where cardholders dispute legitimate transactions, and highlights how merchants are increasingly using AI technology to prevent and mitigate these chargeback damages.",
+          "translations": {
+            "da": {
+              "title": "Rapport: Venlig svindel stiger, handlende bruger AI til at mindske skader",
+              "summary": "AI-genereret resumé: En nylig rapport fra Chargebacks911 viser, at over 80% af detailhandlere har oplevet en stigning i venlig svindel, hvor kortholdere bestrider legitime transaktioner, og fremhæver, hvordan handlende i stigende grad bruger AI-teknologi til at forhindre og mindske disse chargeback-skader."
+            },
+            "es": {
+              "title": "Informe: Fraude amistoso en aumento, comerciantes usan IA para mitigar daños",
+              "summary": "Resumen generado por IA: Un informe reciente de Chargebacks911 revela que más del 80% de los minoristas han experimentado un aumento en el fraude amistoso, donde los titulares de tarjetas disputan transacciones legítimas, y destaca cómo los comerciantes están utilizando cada vez más la tecnología de IA para prevenir y mitigar estos daños por contracargos."
+            }
+          }
+        },
+        {
+          "id": "zc4gqp",
+          "title": "Back-to-school season has become a summer-long event, thanks to an earlier Prime Day",
+          "url": "https://www.modernretail.co/marketing/back-to-school-season-has-become-a-summer-long-event-thanks-to-an-earlier-prime-day/?utm_campaign=modernretaildis&utm_medium=rss&utm_source=general-rss",
+          "source": "Modern Retail",
+          "published_at": "2026-07-03T04:00:00.000Z",
+          "ingested_at": "2026-07-05T09:15:18.618Z",
+          "snippet": "Amazon’s earlier Prime Day this year pushed back-to-school deals into June. With that, competing retailers including Walmart and Target joined in chasing budget-focused shoppers long before school starts.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": []
+          },
+          "aiSummary": "AI-generated summary: Amazon’s earlier Prime Day in 2026 shifted back-to-school deals into June, prompting retailers like Walmart and Target to start targeting budget-conscious shoppers well before the traditional school season. This change has effectively extended the back-to-school shopping period into a summer-long event.",
+          "translations": {
+            "da": {
+              "title": "Tilbage-til-skolen-sæsonen er blevet en sommerlang begivenhed takket være en tidligere Prime Day",
+              "summary": "AI-genereret resumé: Amazons tidligere Prime Day i 2026 flyttede tilbage-til-skolen-tilbud til juni, hvilket fik detailhandlere som Walmart og Target til at begynde at målrette budgetbevidste kunder længe før den traditionelle skolesæson. Denne ændring har effektivt forlænget tilbage-til-skolen-shoppingperioden til en sommerlang begivenhed."
+            },
+            "es": {
+              "title": "La temporada de regreso a clases se ha convertido en un evento de verano gracias a un Prime Day anticipado",
+              "summary": "Resumen generado por IA: El Prime Day anticipado de Amazon en 2026 adelantó las ofertas de regreso a clases a junio, lo que llevó a minoristas como Walmart y Target a comenzar a dirigirse a compradores conscientes del presupuesto mucho antes de la temporada escolar tradicional. Este cambio ha extendido efectivamente el período de compras de regreso a clases a un evento de verano."
+            }
+          }
+        },
+        {
+          "id": "5db95s",
+          "title": "Klaviyo launches beta for marketing AI agents",
+          "url": "https://www.digitalcommerce360.com/2026/07/01/klaviyo-launches-beta-for-marketing-ai-agents/",
+          "source": "Digital Commerce 360",
+          "published_at": "2026-07-01T19:37:13.000Z",
+          "ingested_at": "2026-07-05T09:15:18.618Z",
+          "snippet": "Klaviyo is moving two artificial intelligence (AI) agents to public beta, eyeing use cases for marketers. The technology provider said it has built the agents into its customer relationship management (CRM) platform, allowing them to work from the same real-time customer data across marketing and service. The agents moving to public beta are Composer, for […]\nThe post Klaviyo launches beta for marketing AI agents appeared first on Digital Commerce 360.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "platform"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Klaviyo has launched a public beta for two AI agents integrated into its CRM platform, designed to assist marketers by leveraging real-time customer data across marketing and service functions.",
+          "translations": {
+            "da": {
+              "title": "Klaviyo lancerer beta for marketing AI-agenter",
+              "summary": "AI-genereret resumé: Klaviyo har lanceret en offentlig beta for to AI-agenter integreret i deres CRM-platform, designet til at hjælpe marketingfolk ved at udnytte realtids kundedata på tværs af marketing- og servicefunktioner."
+            },
+            "es": {
+              "title": "Klaviyo lanza beta para agentes de IA de marketing",
+              "summary": "Resumen generado por IA: Klaviyo ha lanzado una beta pública para dos agentes de IA integrados en su plataforma CRM, diseñados para ayudar a los mercadólogos aprovechando datos de clientes en tiempo real en funciones de marketing y servicio."
+            }
+          }
+        },
+        {
+          "id": "nskzfn",
+          "title": "Rhode Island’s Self-Checkout Law Could Become a National Model",
+          "url": "https://www.paymentsjournal.com/rhode-islands-self-checkout-law-could-become-a-national-model/",
+          "source": "Payments Journal",
+          "published_at": "2026-07-01T18:07:54.000Z",
+          "ingested_at": "2026-07-05T09:15:18.618Z",
+          "snippet": "As the first state to enact staffing requirements for self-checkout lanes, Rhode Island is becoming a test case for the retail industry. Set to take effect on January 1, 2027, the law requires grocery stores to maintain one staffed cashier lane for every three self-checkout stations. It also mandates that employees assigned to monitor self-checkout […]\nThe post Rhode Island’s Self-Checkout Law Could Become a National Model appeared first on PaymentsJournal.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "checkout",
+              "payment"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Rhode Island's new law, effective January 1, 2027, mandates grocery stores to staff one cashier lane for every three self-checkout stations and require employees to monitor these lanes, positioning the state as a potential national model for retail staffing regulations.",
+          "translations": {
+            "da": {
+              "title": "Rhode Islands lov om selvbetjening kan blive en national model",
+              "summary": "AI-genereret resumé: Rhode Islands nye lov, gældende fra 1. januar 2027, kræver, at dagligvarebutikker har en kassemedarbejder for hver tredje selvbetjeningsstation og at medarbejdere overvåger disse baner, hvilket placerer staten som en potentiel national model for detailansættelsesregler."
+            },
+            "es": {
+              "title": "La ley de autoservicio de Rhode Island podría convertirse en un modelo nacional",
+              "summary": "Resumen generado por IA: La nueva ley de Rhode Island, vigente a partir del 1 de enero de 2027, exige que las tiendas de comestibles tengan un cajero por cada tres estaciones de autoservicio y que los empleados supervisen estas líneas, posicionando al estado como un posible modelo nacional para regulaciones de personal en el comercio minorista."
+            }
+          }
+        },
+        {
+          "id": "5iyzwu",
+          "title": "Search Console’s New AI Data Is a Start",
+          "url": "https://www.practicalecommerce.com/search-consoles-new-ai-data-is-a-start",
+          "source": "Practical Ecommerce",
+          "published_at": "2026-06-29T13:55:26.000Z",
+          "ingested_at": "2026-07-05T09:15:18.618Z",
+          "snippet": "The new \"Generative AI\" section reports on a page's visibility in AI Overviews and AI Mode, as well as AI features in Discover.\nThe post Search Console’s New AI Data Is a Start appeared first on Practical Ecommerce.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.25,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0.1,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ecommerce"
+            ]
+          },
+          "aiSummary": "AI-generated summary: The article discusses Search Console’s new \"Generative AI\" section, which provides insights into a page's visibility within AI Overviews, AI Mode, and AI features in Discover, marking an initial step in AI data reporting.",
+          "translations": {
+            "da": {
+              "title": "Search Consoles nye AI-data er et begyndelsespunkt",
+              "summary": "AI-genereret resumé: Artiklen diskuterer Search Consoles nye sektion \"Generative AI\", som giver indsigt i en sides synlighed i AI Overviews, AI Mode og AI-funktioner i Discover, hvilket markerer et første skridt i AI-data rapportering."
+            },
+            "es": {
+              "title": "Los nuevos datos de IA de Search Console son un comienzo",
+              "summary": "Resumen generado por IA: El artículo analiza la nueva sección \"Generative AI\" de Search Console, que ofrece información sobre la visibilidad de una página en AI Overviews, AI Mode y funciones de IA en Discover, marcando un primer paso en la presentación de datos de IA."
+            }
+          }
+        },
+        {
+          "id": "4y6gbx",
+          "title": "Marketplace Briefing: How a cartoon frog wizard is helping Clorox sell Pine-Sol on TikTok Shop",
+          "url": "https://www.modernretail.co/marketing/marketplace-briefing-how-a-cartoon-frog-wizard-is-helping-clorox-sell-pine-sol-on-tiktok-shop/?utm_campaign=modernretaildis&utm_medium=rss&utm_source=general-rss",
+          "source": "Modern Retail",
+          "published_at": "2026-07-02T14:00:00.000Z",
+          "ingested_at": "2026-07-05T09:15:18.618Z",
+          "snippet": "Clorox is using TikTok Shop to test products, reach Gen Z and drive sales. The universe of characters it has created for its cleaning brand, Pine-Sol offers perhaps the best example of the company's approach to TikTok Shop.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "marketplace"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Clorox is leveraging TikTok Shop and a unique universe of characters, including a cartoon frog wizard, to test products, engage Gen Z consumers, and boost sales for its Pine-Sol brand.",
+          "translations": {
+            "da": {
+              "title": "Marketplace Briefing: Hvordan en tegneseriefrø-troldmand hjælper Clorox med at sælge Pine-Sol på TikTok Shop",
+              "summary": "AI-genereret resumé: Clorox udnytter TikTok Shop og et unikt univers af figurer, herunder en tegneseriefrø-troldmand, til at teste produkter, engagere Gen Z-forbrugere og øge salget af Pine-Sol."
+            },
+            "es": {
+              "title": "Marketplace Briefing: Cómo un sapo mago de dibujos animados está ayudando a Clorox a vender Pine-Sol en TikTok Shop",
+              "summary": "Resumen generado por IA: Clorox está aprovechando TikTok Shop y un universo único de personajes, incluido un sapo mago de dibujos animados, para probar productos, atraer a consumidores de la Generación Z y aumentar las ventas de su marca Pine-Sol."
+            }
+          }
+        }
+      ]
+    },
+    "Luxury_and_Consumer": {
+      "total": 62,
+      "top": [
+        {
+          "id": "y72btt",
+          "title": "Quick commerce no longer luxury service, becoming permanent structural shift in urban retail: Report ",
+          "url": "https://economictimes.indiatimes.com/tech/technology/quick-commerce-no-longer-luxury-service-becoming-permanent-structural-shift-in-urban-retail-report/articleshow/132158272.cms",
+          "source": "Economic Times - Technology",
+          "published_at": "2026-07-03T09:58:03.000Z",
+          "ingested_at": "2026-07-05T09:15:18.618Z",
+          "snippet": "Quick commerce is revolutionizing India's retail sector, transforming from a niche service to a permanent fixture. Projections indicate this segment will significantly fuel market growth, reaching an estimated $60 billion by FY31. This expansion is driven by a burgeoning customer base and increasing order volumes, with non-grocery items playing a larger role. The shift signifies a fundamental change in how Indians shop.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "luxury"
+            ]
+          },
+          "aiSummary": "AI-generated summary: According to a report in Economic Times - Technology (2026-07-03), quick commerce in India is evolving from a luxury service into a permanent structural shift in urban retail, expected to drive market growth to $60 billion by FY31, fueled by rising customer demand and increased orders, especially for non-grocery items.",
+          "translations": {
+            "da": {
+              "title": "Quick commerce er ikke længere en luksustjeneste, men bliver en permanent strukturel ændring i byhandel: Rapport",
+              "summary": "AI-genereret resumé: Ifølge en rapport i Economic Times - Technology (2026-07-03) udvikler quick commerce i Indien sig fra en luksustjeneste til en permanent strukturel ændring i byhandel, forventet at drive markedsvækst til 60 milliarder dollars inden FY31, drevet af stigende kundebehov og flere ordrer, især på ikke-madvarer."
+            },
+            "es": {
+              "title": "Quick commerce ya no es un servicio de lujo, se convierte en un cambio estructural permanente en el comercio urbano: Informe",
+              "summary": "Resumen generado por IA: Según un informe de Economic Times - Technology (2026-07-03), el quick commerce en India está evolucionando de un servicio de lujo a un cambio estructural permanente en el comercio urbano, con un crecimiento del mercado esperado de 60 mil millones de dólares para el FY31, impulsado por la creciente demanda de los clientes y el aumento de pedidos, especialmente de productos no alimentarios."
+            }
+          }
+        },
+        {
+          "id": "u9xsmz",
+          "title": "It’s Getting Harder for Small Beauty Brands to Scale",
+          "url": "https://fashionista.com/2026/07/how-to-scale-beauty-brands",
+          "source": "Fashionista",
+          "published_at": "2026-07-01T12:45:00.000Z",
+          "ingested_at": "2026-07-05T09:15:18.618Z",
+          "snippet": "Rising costs, tighter retail expectations and limited access to manufacturing are reshaping how emerging brands grow and who gets left behind.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "brand"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Rising costs, stricter retail demands, and limited manufacturing access are making it increasingly difficult for small beauty brands to scale and succeed in the luxury consumer market.",
+          "translations": {
+            "da": {
+              "title": "Det Bliver Sværere for Små Skønhedsbrands at Vokse",
+              "summary": "AI-genereret resumé: Stigende omkostninger, strengere detailkrav og begrænset adgang til produktion gør det sværere for små skønhedsbrands at vokse og få succes på luksusforbrugermarkedet."
+            },
+            "es": {
+              "title": "Cada Vez es Más Difícil para las Pequeñas Marcas de Belleza Escalar",
+              "summary": "Resumen generado por IA: El aumento de costos, las demandas más estrictas del comercio minorista y el acceso limitado a la fabricación están dificultando cada vez más que las pequeñas marcas de belleza crezcan y tengan éxito en el mercado de consumo de lujo."
+            }
+          }
+        },
+        {
+          "id": "l8chpk",
+          "title": "$90B luxury opportunity sits beyond top spenders: BoF, McKinsey",
+          "url": "https://www.luxurydaily.com/90b-luxury-opportunity-sits-beyond-top-spenders-bof-mckinsey/",
+          "source": "Luxury Daily - Main",
+          "published_at": "2026-06-30T09:00:00.000Z",
+          "ingested_at": "2026-07-05T09:15:18.618Z",
+          "snippet": "Aspirational and established clients could represent $70 billion to $90 billion in growth, according to the latest State of Fashion report.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "luxury",
+              "aspirational"
+            ]
+          },
+          "aiSummary": "AI-generated summary: According to the latest State of Fashion report cited by Luxury Daily on June 30, 2026, the luxury market has a $70 billion to $90 billion growth opportunity beyond its top spenders, driven by aspirational and established clients.",
+          "translations": {
+            "da": {
+              "title": "$90B luksusmulighed ligger ud over de største forbrugere: BoF, McKinsey",
+              "summary": "AI-genereret resumé: Ifølge den seneste State of Fashion-rapport citeret af Luxury Daily den 30. juni 2026 har luksusmarkedet en vækstmulighed på 70 til 90 milliarder dollars ud over de største forbrugere, drevet af aspirerende og etablerede kunder."
+            },
+            "es": {
+              "title": "Oportunidad de lujo de $90B está más allá de los mayores gastadores: BoF, McKinsey",
+              "summary": "Resumen generado por IA: Según el último informe State of Fashion citado por Luxury Daily el 30 de junio de 2026, el mercado de lujo tiene una oportunidad de crecimiento de 70 a 90 mil millones de dólares más allá de sus mayores gastadores, impulsada por clientes aspiracionales y establecidos."
+            }
+          }
+        },
+        {
+          "id": "ly966n",
+          "title": "Must Read: Nike Tops Q4 Revenue Forecasts, Inside CPG Brands' Revamp Strategy",
+          "url": "https://fashionista.com/2026/07/nike-q4-2026-earnings-report",
+          "source": "Fashionista",
+          "published_at": "2026-07-01T16:00:00.000Z",
+          "ingested_at": "2026-07-05T09:15:18.618Z",
+          "snippet": "Plus, Armani works with a consulting firm ahead of stake sale.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": -0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0.2,
+            "matchedKeywords": [
+              "brand"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Nike exceeded Q4 revenue forecasts, while luxury brand Armani is collaborating with a consulting firm in preparation for a stake sale, highlighting strategic shifts within consumer and luxury brands.",
+          "translations": {
+            "da": {
+              "title": "Must Read: Nike overgår Q4 omsætningsprognoser, Inside CPG Brands' omstruktureringsstrategi",
+              "summary": "AI-genereret resumé: Nike overgik Q4 omsætningsprognoser, mens luksusmærket Armani samarbejder med et konsulentfirma som forberedelse til et aktiesalg, hvilket fremhæver strategiske skift inden for forbruger- og luksusmærker."
+            },
+            "es": {
+              "title": "Must Read: Nike supera las previsiones de ingresos del Q4, Inside CPG Brands' estrategia de renovación",
+              "summary": "Resumen generado por IA: Nike superó las previsiones de ingresos del Q4, mientras que la marca de lujo Armani colabora con una consultora en preparación para una venta de participaciones, destacando cambios estratégicos en marcas de consumo y lujo."
+            }
+          }
+        },
+        {
+          "id": "jnkwvx",
+          "title": "Luxury Unfiltered: The cost of waiting — lessons from the Équité 2026-2030 luxury report",
+          "url": "https://www.luxurydaily.com/luxury-unfiltered-the-cost-of-waiting-lessons-from-the-equite-2026-2030-luxury-report/",
+          "source": "Luxury Daily - Main",
+          "published_at": "2026-07-01T06:00:08.000Z",
+          "ingested_at": "2026-07-05T09:15:18.618Z",
+          "snippet": "Luxury Unfiltered is a weekly column by Daniel Langer, an expert in luxury branding, hospitality and activations who was named a “Global Top 5 Luxury Key Opinion Leader” by Netbase Quid.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": -0.04999999999999999,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0.05,
+            "penalty": 0.2,
+            "matchedKeywords": [
+              "luxury",
+              "brand"
+            ]
+          },
+          "aiSummary": "AI-generated summary: The article \"Luxury Unfiltered: The cost of waiting — lessons from the Équité 2026-2030 luxury report,\" published in Luxury Daily on July 1, 2026, features insights from Daniel Langer, a recognized expert in luxury branding and hospitality, sharing key lessons on luxury consumer trends.",
+          "translations": {
+            "da": {
+              "title": "Luxury Unfiltered: Omkostningerne ved at vente — lektioner fra Équité 2026-2030 luksusrapporten",
+              "summary": "AI-genereret resumé: Artiklen \"Luxury Unfiltered: The cost of waiting — lessons from the Équité 2026-2030 luxury report,\" udgivet i Luxury Daily den 1. juli 2026, indeholder indsigt fra Daniel Langer, en anerkendt ekspert i luksusbranding og gæstfrihed, der deler vigtige lektioner om luksusforbrugertendenser."
+            },
+            "es": {
+              "title": "Luxury Unfiltered: El costo de esperar — lecciones del informe de lujo Équité 2026-2030",
+              "summary": "Resumen generado por IA: El artículo \"Luxury Unfiltered: The cost of waiting — lessons from the Équité 2026-2030 luxury report,\" publicado en Luxury Daily el 1 de julio de 2026, presenta ideas de Daniel Langer, un experto reconocido en branding de lujo y hospitalidad, compartiendo lecciones clave sobre tendencias de consumidores de lujo."
+            }
+          }
+        },
+        {
+          "id": "ln390l",
+          "title": "Chanel Just Bought a Beloved Shirtmaker—and Its Menswear Universe Got a Little Bigger",
+          "url": "https://robbreport.com/style/fashion/chanel-charvet-acquisition-1238420318/",
+          "source": "Robb Report",
+          "published_at": "2026-07-02T15:00:00.000Z",
+          "ingested_at": "2026-07-05T09:15:18.618Z",
+          "snippet": "In acquiring Charvet, the fashion house has added yet another gentlemen's clothier to its family of brands.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": -0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0.2,
+            "matchedKeywords": [
+              "brand"
+            ]
+          },
+          "aiSummary": "AI-generated summary: On July 2, 2026, Robb Report reported that Chanel expanded its menswear offerings by acquiring Charvet, a beloved gentlemen's shirtmaker, thereby growing its family of luxury brands.",
+          "translations": {
+            "da": {
+              "title": "Chanel har netop købt en elsket skjortemager – og deres herretøjsunivers blev lidt større",
+              "summary": "AI-genereret resumé: Den 2. juli 2026 rapporterede Robb Report, at Chanel udvidede sit udvalg af herretøj ved at erhverve Charvet, en elsket herreskjortemager, og dermed voksede sin familie af luksusmærker."
+            },
+            "es": {
+              "title": "Chanel acaba de comprar a un querido fabricante de camisas y su universo de ropa masculina creció un poco",
+              "summary": "Resumen generado por IA: El 2 de julio de 2026, Robb Report informó que Chanel amplió su oferta de ropa masculina al adquirir Charvet, un querido fabricante de camisas para caballeros, ampliando así su familia de marcas de lujo."
+            }
+          }
+        },
+        {
+          "id": "geea0f",
+          "title": "For America 250, customers want positive actions more than patriotic branding",
+          "url": "https://www.glossy.co/fashion/for-america-250-customers-want-positive-actions-more-than-patriotic-branding/?utm_campaign=glossydis&utm_medium=rss&utm_source=general-rss",
+          "source": "Glossy",
+          "published_at": "2026-07-03T04:00:00.000Z",
+          "ingested_at": "2026-07-05T09:15:18.618Z",
+          "snippet": "The feeling that consumers will respond well to American branding is supported by data from the consumer sentiment insights company Zappi. June data shows that American product branding still resonates with around half the country, with only 16% of people having a negative association.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0.1,
+            "penalty": 0,
+            "matchedKeywords": [
+              "brand",
+              "consumer"
+            ]
+          },
+          "aiSummary": "AI-generated summary: According to June data from consumer insights firm Zappi, American product branding continues to resonate positively with about half of consumers, while only 16% hold negative associations. However, customers participating in America 250 prioritize positive actions over patriotic branding.",
+          "translations": {
+            "da": {
+              "title": "For America 250 ønsker kunder positive handlinger frem for patriotisk branding",
+              "summary": "AI-genereret resumé: Ifølge juni-data fra forbrugerindsigtsfirmaet Zappi fortsætter amerikansk produktbranding med at resonere positivt hos omkring halvdelen af forbrugerne, mens kun 16 % har negative associationer. Dog prioriterer kunder, der deltager i America 250, positive handlinger frem for patriotisk branding."
+            },
+            "es": {
+              "title": "Para America 250, los clientes quieren acciones positivas más que una marca patriótica",
+              "summary": "Resumen generado por IA: Según datos de junio de la firma de análisis de consumidores Zappi, el branding de productos estadounidenses sigue resonando positivamente en aproximadamente la mitad de los consumidores, mientras que solo el 16 % tiene asociaciones negativas. Sin embargo, los clientes que participan en America 250 priorizan las acciones positivas sobre el branding patriótico."
+            }
+          }
+        }
+      ]
+    },
+    "Jewellery_Industry": {
+      "total": 30,
+      "top": [
+        {
+          "id": "tud3cy",
+          "title": "AI Chatbots: Far from a customer service silver bullet",
+          "url": "https://www.jewellermagazine.com/Article/15135/AI-Chatbots-Far-from-a-customer-service-silver-bullet",
+          "source": "Jeweller - Business News",
+          "published_at": "2026-06-29T14:00:00.000Z",
+          "ingested_at": "2026-07-05T09:15:18.618Z",
+          "snippet": "For some time, chatbots driven by Artificial Intelligence (AI) have been heralded as the next step forward for retail businesses in effectively managing customer service; however, new research suggests there is still a long way to go before consumers are entirely satisfied with this operational shift.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "silver"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Despite being promoted as a major advancement for retail customer service, AI chatbots in the jewellery industry still face challenges in fully satisfying consumers, indicating further development is needed.",
+          "translations": {
+            "da": {
+              "title": "AI-chatbots: Langt fra en sølvkugle til kundeservice",
+              "summary": "AI-genereret resumé: Selvom de fremhæves som et stort fremskridt for detailkundeservice, står AI-chatbots i smykkeindustrien stadig over for udfordringer med fuldt ud at tilfredsstille forbrugerne, hvilket indikerer, at der er behov for yderligere udvikling."
+            },
+            "es": {
+              "title": "Chatbots de IA: Lejos de ser una solución mágica para el servicio al cliente",
+              "summary": "Resumen generado por IA: A pesar de ser promocionados como un gran avance para el servicio al cliente minorista, los chatbots de IA en la industria de la joyería aún enfrentan desafíos para satisfacer completamente a los consumidores, lo que indica que se necesita un mayor desarrollo."
+            }
+          }
+        },
+        {
+          "id": "ej172s",
+          "title": "Ghost stores scammers come for Tasmania's retail market",
+          "url": "https://www.jewellermagazine.com/Article/15137/Ghost-stores-scammers-come-for-Tasmanias-retail-market",
+          "source": "Jeweller - Business News",
+          "published_at": "2026-06-29T14:00:00.000Z",
+          "ingested_at": "2026-07-05T09:15:18.618Z",
+          "snippet": "Tasmanian consumers are being warned about a rise in fake online 'ghost stores' targeting the local retail market.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": []
+          },
+          "aiSummary": "AI-generated summary: Tasmanian consumers are being cautioned about an increase in fraudulent online 'ghost stores' affecting the local jewellery retail market, according to a report by Jeweller - Business News dated June 29, 2026.",
+          "translations": {
+            "da": {
+              "title": "Ghost stores-svindlere rammer Tasmaniens detailmarked",
+              "summary": "AI-genereret resumé: Tasmaniske forbrugere advares om en stigning i bedrageriske online 'ghost stores', der påvirker det lokale smykkemarked, ifølge en rapport fra Jeweller - Business News dateret 29. juni 2026."
+            },
+            "es": {
+              "title": "Estafadores de ghost stores atacan el mercado minorista de Tasmania",
+              "summary": "Resumen generado por IA: Se advierte a los consumidores de Tasmania sobre un aumento de 'ghost stores' fraudulentas en línea que afectan el mercado local de joyería, según un informe de Jeweller - Business News del 29 de junio de 2026."
+            }
+          }
+        },
+        {
+          "id": "st7cdx",
+          "title": "Beaverbrooks unveils new traceable diamond collection",
+          "url": "https://www.professionaljeweller.com/beaverbrooks-traceable-diamond-range/",
+          "source": "Professional Jeweller",
+          "published_at": "2026-06-30T06:00:00.000Z",
+          "ingested_at": "2026-07-05T09:15:18.618Z",
+          "snippet": "Beaverbrooks has launched its latest diamond jewellery collection: True by Beaverbrooks. The family-owned retailer unveils a range of engagement and wedding rings that combines craftsmanship, contemporary design and traceable provenance. The new collection has been designed for couples seeking jewellery that is as meaningful as it is beautiful, especially with the collection being fully traceable. […]\nThe post Beaverbrooks unveils new traceable diamond collection appeared first on Professional J...",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.30000000000000004,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.2,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "diamond",
+              "jewellery",
+              "retailer",
+              "jeweller"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Beaverbrooks has launched \"True by Beaverbrooks,\" a new collection of engagement and wedding rings that emphasizes craftsmanship, contemporary design, and fully traceable diamond provenance, catering to couples seeking meaningful and beautiful jewellery.",
+          "translations": {
+            "da": {
+              "title": "Beaverbrooks lancerer ny sporbar diamantkollektion",
+              "summary": "AI-genereret resumé: Beaverbrooks har lanceret \"True by Beaverbrooks,\" en ny kollektion af forlovelses- og vielsesringe, der lægger vægt på håndværk, moderne design og fuldt sporbar diamantoprindelse, rettet mod par, der søger meningsfulde og smukke smykker."
+            },
+            "es": {
+              "title": "Beaverbrooks presenta nueva colección de diamantes rastreables",
+              "summary": "Resumen generado por IA: Beaverbrooks ha lanzado \"True by Beaverbrooks\", una nueva colección de anillos de compromiso y boda que enfatiza la artesanía, el diseño contemporáneo y la procedencia totalmente rastreable de los diamantes, dirigida a parejas que buscan joyas significativas y hermosas."
+            }
+          }
+        },
+        {
+          "id": "ds1hzt",
+          "title": "Jewellery & Gem Asia Hong Kong 2026: A Jewellery Market In Motion",
+          "url": "https://www.jewellermagazine.com/Article/15132/Jewellery-Gem-Asia-Hong-Kong-2026-A-Jewellery-Market-In-Motion",
+          "source": "Jeweller - Business News",
+          "published_at": "2026-06-29T14:00:00.000Z",
+          "ingested_at": "2026-07-05T09:15:18.618Z",
+          "snippet": "What does the future hold for the jewellery business? ANGELA HAN walks the halls of one of the world’s largest annual jewellery trade shows.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.04999999999999999,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0,
+            "penalty": 0.2,
+            "matchedKeywords": [
+              "jewellery",
+              "gem",
+              "jeweller"
+            ]
+          },
+          "aiSummary": "AI-generated summary: The article explores the future prospects of the jewellery industry through insights gathered at Jewellery & Gem Asia Hong Kong 2026, one of the world's largest annual jewellery trade shows.",
+          "translations": {
+            "da": {
+              "title": "Jewellery & Gem Asia Hong Kong 2026: Et Smykkemarked i Bevægelse",
+              "summary": "AI-genereret resumé: Artiklen undersøger fremtidsudsigterne for smykkeindustrien gennem indsigt indsamlet på Jewellery & Gem Asia Hong Kong 2026, en af verdens største årlige smykkemesser."
+            },
+            "es": {
+              "title": "Jewellery & Gem Asia Hong Kong 2026: Un Mercado de Joyería en Movimiento",
+              "summary": "Resumen generado por IA: El artículo explora las perspectivas futuras de la industria de la joyería a través de las ideas recopiladas en Jewellery & Gem Asia Hong Kong 2026, una de las ferias comerciales de joyería más grandes del mundo."
+            }
+          }
+        },
+        {
+          "id": "ilxg7r",
+          "title": "Hello Kitty is the next icon to join Thomas Sabo’s Charm Club",
+          "url": "https://www.professionaljeweller.com/hello-kitty-thomas-sabo-charm-club/",
+          "source": "Professional Jeweller",
+          "published_at": "2026-07-02T06:00:00.000Z",
+          "ingested_at": "2026-07-05T09:15:18.618Z",
+          "snippet": "An icon of Japanese pop culture symbolising friendship, kindness and joy is joining the Thomas Sabo Charm Club: Hello Kitty. Reimagined as playful jewellery designs, the Thomas Sabo | Hello Kitty collection is a tribute to the little moments that make life unforgettable. Familiar childhood memories transform into pieces that blend nostalgia with a modern […]\nThe post Hello Kitty is the next icon to join Thomas Sabo’s Charm Club appeared first on Professional Jeweller.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "jewellery",
+              "jeweller"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Hello Kitty, a beloved Japanese pop culture icon symbolizing friendship and joy, is joining Thomas Sabo’s Charm Club with a new jewellery collection that blends nostalgia and modern design. The Thomas Sabo | Hello Kitty collection celebrates cherished childhood memories through playful and stylish pieces.",
+          "translations": {
+            "da": {
+              "title": "Hello Kitty er det næste ikon til at slutte sig til Thomas Sabo’s Charm Club",
+              "summary": "AI-genereret resumé: Hello Kitty, en elsket japansk popkulturikon, der symboliserer venskab og glæde, slutter sig til Thomas Sabo’s Charm Club med en ny smykkekollektion, der kombinerer nostalgi og moderne design. Thomas Sabo | Hello Kitty-kollektionen fejrer dyrebare barndomsminder gennem legesyge og stilfulde smykker."
+            },
+            "es": {
+              "title": "Hello Kitty es el próximo icono en unirse al Charm Club de Thomas Sabo",
+              "summary": "Resumen generado por IA: Hello Kitty, un querido icono de la cultura pop japonesa que simboliza la amistad y la alegría, se une al Charm Club de Thomas Sabo con una nueva colección de joyería que combina nostalgia y diseño moderno. La colección Thomas Sabo | Hello Kitty celebra los recuerdos de la infancia a través de piezas divertidas y elegantes."
+            }
+          }
+        },
+        {
+          "id": "3ip7u8",
+          "title": "Weston Beamor and Domino Jewellery to merge this summer",
+          "url": "https://www.professionaljeweller.com/weston-beamor-domino-jewellery-merge/",
+          "source": "Professional Jeweller",
+          "published_at": "2026-07-01T08:45:24.000Z",
+          "ingested_at": "2026-07-05T09:15:18.618Z",
+          "snippet": "Weston Beamor and Domino Jewellery will unite under one umbrella later this summer, creating a more connected future for jewellery manufacturing, design, bridal and bespoke services. Announced today (1 July), the integration brings together decades of shared expertise across casting, bespoke manufacturing, wedding rings, mounts and finished jewellery, marking a significant milestone for the Birmingham-based […]\nThe post Weston Beamor and Domino Jewellery to merge this summer appeared first on Pr...",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0.2,
+            "matchedKeywords": [
+              "jewellery",
+              "jeweller"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Weston Beamor and Domino Jewellery will merge this summer, combining their expertise in jewellery manufacturing, design, and bespoke services to create a more connected future in the industry. The integration marks a significant milestone for the Birmingham-based companies.",
+          "translations": {
+            "da": {
+              "title": "Weston Beamor og Domino Jewellery fusionerer denne sommer",
+              "summary": "AI-genereret resumé: Weston Beamor og Domino Jewellery fusionerer denne sommer og kombinerer deres ekspertise inden for smykkeproduktion, design og skræddersyede tjenester for at skabe en mere sammenkoblet fremtid i branchen. Integration markerer en vigtig milepæl for de Birmingham-baserede virksomheder."
+            },
+            "es": {
+              "title": "Weston Beamor y Domino Jewellery se fusionarán este verano",
+              "summary": "Resumen generado por IA: Weston Beamor y Domino Jewellery se fusionarán este verano, combinando su experiencia en fabricación de joyas, diseño y servicios personalizados para crear un futuro más conectado en la industria. La integración marca un hito importante para las empresas con sede en Birmingham."
+            }
+          }
+        },
+        {
+          "id": "aigsnk",
+          "title": "Luxury Briefing: How Wimbledon players became fine jewelry brands’ ultimate ambassadors",
+          "url": "https://www.glossy.co/fashion/luxury/luxury-briefing-how-wimbledon-players-became-fine-jewelry-brands-ultimate-ambassadors/?utm_campaign=glossydis&utm_medium=rss&utm_source=general-rss",
+          "source": "Glossy",
+          "published_at": "2026-07-03T04:00:00.000Z",
+          "ingested_at": "2026-07-05T09:15:18.618Z",
+          "snippet": "In this week's Luxury Briefing, international reporter Zofia Zwieglinska speaks to executives at Mejuri and Material Good about designing luxury jewelry for the new luxury class and stress-testing collections on courts like Wimbledon. Also, Mytheresa's president of North America discusses its new mobile shopping concept.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": -0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0.05,
+            "penalty": 0.2,
+            "matchedKeywords": [
+              "jewelry"
+            ]
+          },
+          "aiSummary": "AI-generated summary: The article explores how luxury jewelry brands like Mejuri and Material Good collaborate with Wimbledon players to design and promote collections tailored for the new luxury class, while also highlighting Mytheresa's innovative mobile shopping concept in North America.",
+          "translations": {
+            "da": {
+              "title": "Luxury Briefing: Hvordan Wimbledon-spillere blev luksussmykkemærkers ultimative ambassadører",
+              "summary": "AI-genereret resumé: Artiklen undersøger, hvordan luksussmykkemærker som Mejuri og Material Good samarbejder med Wimbledon-spillere om at designe og promovere kollektioner til den nye luksusklasse, samtidig med at Mytheresas innovative mobilshoppingkoncept i Nordamerika fremhæves."
+            },
+            "es": {
+              "title": "Luxury Briefing: Cómo los jugadores de Wimbledon se convirtieron en los máximos embajadores de las marcas de joyería fina",
+              "summary": "Resumen generado por IA: El artículo explora cómo marcas de joyería de lujo como Mejuri y Material Good colaboran con jugadores de Wimbledon para diseñar y promover colecciones dirigidas a la nueva clase de lujo, mientras destaca el innovador concepto de compra móvil de Mytheresa en Norteamérica."
+            }
+          }
+        }
+      ]
+    }
+  },
+  "editorialTake": "Microsoft’s $2.5 billion bet on launching its own AI deployment company signals a shift from platform play to direct service control. They’re no longer content selling tools, they want to own the entire AI rollout process. This raises the stakes for competitors like Anthropic, who are still chasing custom chip deals with Samsung to reduce dependencies. Microsoft’s move forces a reckoning: either build full-stack AI solutions or risk being a mere component supplier.\n\nIn ecommerce, Square’s integration of ChatGPT and Claude into payments is a quiet but critical pivot toward agentic commerce. This isn’t just about chatbots; it’s about AI acting autonomously in transactions, blurring lines between customer service and sales execution. Meanwhile, the rise in friendly fraud is pushing merchants to rely on AI for damage control, not just growth. The real question: can AI handle the messy realities of trust and fraud without breaking the buyer-seller relationship?",
+  "coverImageUrl": "/weekly-images/2026-W27.png",
+  "coverImageAlt": "Weekly cover illustration for 2026-W27"
+}

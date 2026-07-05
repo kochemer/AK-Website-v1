@@ -3454,5 +3454,197 @@
     ],
     "cached_at": "2026-06-28T09:34:17.590Z",
     "model": "gpt-4.1-mini"
+  },
+  "2026-W27:AI_and_Strategy:ea4d1092a4e0": {
+    "selected": [
+      {
+        "id": "5",
+        "rank": 1,
+        "why": "Microsoft's $2.5B AI deployment unit signals major industry investment",
+        "confidence": 0.95
+      },
+      {
+        "id": "9",
+        "rank": 2,
+        "why": "Anthropic launches Claude Sonnet 5, advancing frontier AI models",
+        "confidence": 0.9
+      },
+      {
+        "id": "13",
+        "rank": 3,
+        "why": "Anthropic's talks with Samsung for custom AI chips impact hardware",
+        "confidence": 0.9
+      },
+      {
+        "id": "4",
+        "rank": 4,
+        "why": "Venice AI unicorn status highlights growth in privacy-first AI platforms",
+        "confidence": 0.85
+      },
+      {
+        "id": "7",
+        "rank": 5,
+        "why": "NVIDIA BioNeMo integration accelerates Anthropic Claude Science compute",
+        "confidence": 0.85
+      },
+      {
+        "id": "15",
+        "rank": 6,
+        "why": "Takeda's $600M AI drug discovery deal shows AI's pharma impact",
+        "confidence": 0.8
+      },
+      {
+        "id": "10",
+        "rank": 7,
+        "why": "Microsoft commits 6,000 employees to AI implementation unit expansion",
+        "confidence": 0.8
+      }
+    ],
+    "cached_at": "2026-07-05T09:30:47.249Z",
+    "model": "gpt-4.1-mini"
+  },
+  "2026-W27:Ecommerce_Retail_Tech:ea66642017a5": {
+    "selected": [
+      {
+        "id": "2",
+        "rank": 1,
+        "why": "Square integrates AI agents into commerce payments",
+        "confidence": 0.95
+      },
+      {
+        "id": "13",
+        "rank": 2,
+        "why": "Data-driven rise in friendly fraud, AI mitigation insights",
+        "confidence": 0.93
+      },
+      {
+        "id": "6",
+        "rank": 3,
+        "why": "Amazon’s earlier Prime Day reshapes back-to-school timing",
+        "confidence": 0.9
+      },
+      {
+        "id": "5",
+        "rank": 4,
+        "why": "Klaviyo beta introduces AI marketing agents for personalization",
+        "confidence": 0.88
+      },
+      {
+        "id": "3",
+        "rank": 5,
+        "why": "State self-checkout law poised as national retail regulation model",
+        "confidence": 0.85
+      },
+      {
+        "id": "9",
+        "rank": 6,
+        "why": "Google Search Console adds AI visibility metrics",
+        "confidence": 0.8
+      },
+      {
+        "id": "4",
+        "rank": 7,
+        "why": "Clorox tests TikTok Shop for Gen Z marketplace marketing",
+        "confidence": 0.75
+      }
+    ],
+    "cached_at": "2026-07-05T09:31:03.845Z",
+    "model": "o4-mini"
+  },
+  "2026-W27:Luxury_and_Consumer:511619b569dc": {
+    "selected": [
+      {
+        "id": "0",
+        "rank": 1,
+        "why": "Quick commerce structural shift impacting urban retail operations",
+        "confidence": 0.95
+      },
+      {
+        "id": "9",
+        "rank": 2,
+        "why": "Challenges scaling small beauty brands with retail and manufacturing insights",
+        "confidence": 0.9
+      },
+      {
+        "id": "5",
+        "rank": 3,
+        "why": "Luxury growth opportunity beyond top spenders with data-driven insights",
+        "confidence": 0.9
+      },
+      {
+        "id": "16",
+        "rank": 4,
+        "why": "Nike Q4 revenue and CPG brand strategy relevant for retail benchmarking",
+        "confidence": 0.85
+      },
+      {
+        "id": "13",
+        "rank": 5,
+        "why": "Luxury report with lessons on cost and timing affecting retail strategy",
+        "confidence": 0.85
+      },
+      {
+        "id": "17",
+        "rank": 6,
+        "why": "Chanel acquisition expands menswear, relevant for merchandising strategy",
+        "confidence": 0.8
+      },
+      {
+        "id": "4",
+        "rank": 7,
+        "why": "Consumer preference data on branding and positive actions for retention",
+        "confidence": 0.8
+      }
+    ],
+    "cached_at": "2026-07-05T09:31:32.499Z",
+    "model": "gpt-4.1-mini"
+  },
+  "2026-W27:Jewellery_Industry:e29d7b938b47": {
+    "selected": [
+      {
+        "id": "2",
+        "rank": 1,
+        "why": "Highlights AI chatbot limits in CX for retailers",
+        "confidence": 0.92
+      },
+      {
+        "id": "4",
+        "rank": 2,
+        "why": "Reveals ecommerce ghost stores fraud impacting online retailers",
+        "confidence": 0.88
+      },
+      {
+        "id": "1",
+        "rank": 3,
+        "why": "Traceable diamonds boost transparency and customer trust",
+        "confidence": 0.86
+      },
+      {
+        "id": "14",
+        "rank": 4,
+        "why": "Asia Jewellery conference reveals market and commerce trends",
+        "confidence": 0.84
+      },
+      {
+        "id": "12",
+        "rank": 5,
+        "why": "Pop-culture collaboration drives product engagement",
+        "confidence": 0.82
+      },
+      {
+        "id": "16",
+        "rank": 6,
+        "why": "Merge showcases supply chain and operational integration",
+        "confidence": 0.8
+      },
+      {
+        "id": "0",
+        "rank": 7,
+        "why": "Shows sports stars as luxury brand ambassadors strategy",
+        "confidence": 0.78
+      }
+    ],
+    "cached_at": "2026-07-05T09:31:54.931Z",
+    "model": "o4-mini"
   }
 }

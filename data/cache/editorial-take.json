@@ -70,5 +70,11 @@
     "cached_at": "2026-06-28T09:35:31.663Z",
     "model": "gpt-4.1-mini",
     "version": "1.1"
+  },
+  "2026-W27:8d30862e259e": {
+    "editorialTake": "Microsoft’s $2.5 billion bet on launching its own AI deployment company signals a shift from platform play to direct service control. They’re no longer content selling tools, they want to own the entire AI rollout process. This raises the stakes for competitors like Anthropic, who are still chasing custom chip deals with Samsung to reduce dependencies. Microsoft’s move forces a reckoning: either build full-stack AI solutions or risk being a mere component supplier.\n\nIn ecommerce, Square’s integration of ChatGPT and Claude into payments is a quiet but critical pivot toward agentic commerce. This isn’t just about chatbots; it’s about AI acting autonomously in transactions, blurring lines between customer service and sales execution. Meanwhile, the rise in friendly fraud is pushing merchants to rely on AI for damage control, not just growth. The real question: can AI handle the messy realities of trust and fraud without breaking the buyer-seller relationship?",
+    "cached_at": "2026-07-05T09:32:22.005Z",
+    "model": "gpt-4.1-mini",
+    "version": "1.1"
   }
 }

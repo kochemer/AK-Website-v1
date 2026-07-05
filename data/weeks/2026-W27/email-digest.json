@@ -1,0 +1,95 @@
+{
+  "week": "2026-W27",
+  "generatedAt": "2026-07-05T09:33:09.876Z",
+  "intro": "This week’s digest highlights transformative shifts in AI-driven commerce and retail, from Square’s new agentic integrations with ChatGPT and Claude to Microsoft’s $2.5 billion AI deployment venture. Luxury brands leverage sports ambassadors in innovative ways, while reports reveal quick commerce’s permanence and rising friendly fraud, with AI playing a key role in mitigation efforts.",
+  "readOneThing": {
+    "title": "Square launches agentic commerce integrations with ChatGPT, Claude",
+    "url": "https://www.digitalcommerce360.com/2026/07/01/square-agentic-commerce-integrations-chatgpt-claude/"
+  },
+  "items": [
+    {
+      "rank": 1,
+      "title": "Square launches agentic commerce integrations with ChatGPT, Claude",
+      "url": "https://www.digitalcommerce360.com/2026/07/01/square-agentic-commerce-integrations-chatgpt-claude/",
+      "source": "Digital Commerce 360",
+      "bullets": [
+        "Square has integrated its payments platform with OpenAI's ChatGPT and Anthropic's Claude to enable agentic commerce through AI-powered conversations.",
+        "The first U.S. merchants to use these integrations are Food & Beverage sellers with active Square Online Ordering profiles, with no additional marketplace commissions charged.",
+        "Square is collaborating with Amazon to extend AI-powered discovery into voice commerce via Alexa+ and is participating in agentic commerce protocol groups to shape open standards."
+      ],
+      "summary": "AI-generated summary: Payments provider Square has launched integrations with AI platforms ChatGPT and Claude, including an app and plugin, to enable agentic commerce by helping sellers connect with customers during purchasing decisions through AI-powered conversations."
+    },
+    {
+      "rank": 2,
+      "title": "Luxury Briefing: How Wimbledon players became fine jewelry brands’ ultimate ambassadors",
+      "url": "https://www.glossy.co/fashion/luxury/luxury-briefing-how-wimbledon-players-became-fine-jewelry-brands-ultimate-ambassadors/?utm_campaign=glossydis&utm_medium=rss&utm_source=general-rss",
+      "source": "Glossy",
+      "bullets": [
+        "During Wimbledon, tennis players like Mirra Andreeva and Aryna Sabalenka showcased luxury jewelry brands, with Andreeva's bracelet breaking on court and Sabalenka wearing a custom emerald and brown diamond suite from Material Good.",
+        "Mejuri expanded its Play collection to include pieces ranging from a $60 sterling-silver bracelet to a $7,100 diamond tennis necklace, designed with athlete feedback for durability and style.",
+        "Luxury jewelry brands have increasingly partnered with tennis players over recent years, using Grand Slam events as both marketing platforms and product testing grounds for fine jewelry collections."
+      ],
+      "summary": "AI-generated summary: The article explores how luxury jewelry brands like Mejuri and Material Good collaborate with Wimbledon players to design and promote collections tailored for the new luxury class, while also highlighting Mytheresa's innovative mobile shopping concept in North America."
+    },
+    {
+      "rank": 3,
+      "title": "Microsoft launches its own AI deployment company with $2.5 billion commitment",
+      "url": "https://techcrunch.com/2026/07/02/microsoft-launches-its-own-ai-deployment-company-with-2-5-billion-commitment/",
+      "source": "TechCrunch - AI",
+      "bullets": [
+        "Microsoft announced the launch of Microsoft Frontier Company, a new business dedicated to enterprise AI deployments using its existing AI tools.",
+        "The company is investing $2.5 billion and deploying 6,000 industry and engineering experts to support this AI initiative.",
+        "This move follows similar AI deployment ventures by Amazon Web Services and collaborations by OpenAI and Anthropic, targeting large enterprise clients including the London Stock Exchange Group and Unilever."
+      ],
+      "summary": "AI-generated summary: On July 2, 2026, Microsoft announced the launch of its own AI deployment company with a $2.5 billion commitment, joining industry leaders like Amazon, OpenAI, and Anthropic in advancing AI strategy."
+    },
+    {
+      "rank": 4,
+      "title": "Quick commerce no longer luxury service, becoming permanent structural shift in urban retail: Report ",
+      "url": "https://economictimes.indiatimes.com/tech/technology/quick-commerce-no-longer-luxury-service-becoming-permanent-structural-shift-in-urban-retail-report/articleshow/132158272.cms",
+      "source": "Economic Times - Technology",
+      "bullets": [
+        "Quick commerce in India is transitioning from a niche luxury service to a permanent structural component of the urban retail market, according to Anand Rathi Research. The gross merchandise value of the quick commerce segment is projected to grow from USD 1.6 billion in FY23 to around USD 60 billion by FY31, with a CAGR of approximately 23.3% during FY26-31. India's overall retail market, valued at about USD 1.07 trillion currently, is expected to expand to USD 1.5-1.6 trillion by FY31, with quick commerce contributing 9-11% of the incremental growth and monthly transacting users rising to 105-115 million by FY31.",
+        "SynopsisQuick commerce is revolutionizing India's retail sector, transforming from a niche service to a permanent fixture",
+        "Projections indicate this segment will significantly fuel market growth, reaching an estimated $60 billion by FY31"
+      ],
+      "summary": "AI-generated summary: According to a report in Economic Times - Technology (2026-07-03), quick commerce in India is evolving from a luxury service into a permanent structural shift in urban retail, expected to drive market growth to $60 billion by FY31, fueled by rising customer demand and increased orders, especially for non-grocery items."
+    },
+    {
+      "rank": 5,
+      "title": "Report: Friendly fraud on the rise, merchants using AI to mitigate damages",
+      "url": "https://www.digitalcommerce360.com/2026/07/01/retail-friendly-fraud-prevention-ai-chargebacks-911/",
+      "source": "Digital Commerce 360",
+      "bullets": [
+        "More than 80% of retailers have reported an increase in friendly fraud, with 74.4% describing it as a significant concern according to Chargebacks911's 2026 Chargeback Field Report.",
+        "The report found that 38% of respondents said chargeback costs have influenced the pricing of their goods and services, up from 32.5% the previous year.",
+        "About two-thirds of merchants currently use or plan to use AI-based fraud-prevention tools, while 19.1% accept buy now, pay later payments, which 40% believe increase chargeback exposure."
+      ],
+      "summary": "AI-generated summary: A recent report from Chargebacks911 reveals that over 80% of retailers have experienced a rise in friendly fraud, where cardholders dispute legitimate transactions, and highlights how merchants are increasingly using AI technology to prevent and mitigate these chargeback damages."
+    },
+    {
+      "rank": 6,
+      "title": "Anthropic in talks with Samsung to develop custom AI chip ",
+      "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/anthropic-in-talks-with-samsung-to-develop-custom-ai-chip/articleshow/132163085.cms",
+      "source": "Economic Times - Technology",
+      "bullets": [
+        "Anthropic has held discussions with Samsung to potentially develop a custom AI chip aimed at reducing reliance on external suppliers.",
+        "In April, Anthropic signed a long-term agreement with Google and Broadcom to access 3.5 gigawatts of AI computing capacity starting in 2027.",
+        "This move follows similar efforts by competitors like OpenAI, Amazon, Microsoft, and Meta to create in-house AI processors for optimized workloads."
+      ],
+      "summary": "AI-generated summary: Anthropic is in discussions with Samsung to develop custom AI chips, aiming to lessen dependence on external suppliers and tackle chip shortages, following similar strategies by other tech giants."
+    },
+    {
+      "rank": 7,
+      "title": "Back-to-school season has become a summer-long event, thanks to an earlier Prime Day",
+      "url": "https://www.modernretail.co/marketing/back-to-school-season-has-become-a-summer-long-event-thanks-to-an-earlier-prime-day/?utm_campaign=modernretaildis&utm_medium=rss&utm_source=general-rss",
+      "source": "Modern Retail",
+      "bullets": [
+        "Amazon moved Prime Day to June 23-26, earlier than its usual mid-July timing, triggering an extended back-to-school shopping season throughout summer.",
+        "According to a National Retail Federation survey, 44% of shoppers had received school lists by early June, up from 38% the previous year.",
+        "Coresight Research data indicates that 82.5% of back-to-school shoppers plan to purchase items in-store, with Walmart leading at 59% of shopper preference."
+      ],
+      "summary": "AI-generated summary: Amazon’s earlier Prime Day in 2026 shifted back-to-school deals into June, prompting retailers like Walmart and Target to start targeting budget-conscious shoppers well before the traditional school season. This change has effectively extended the back-to-school shopping period into a summer-long event."
+    }
+  ]
+}

@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-06-28T09:21:13.059Z",
+  "timestamp": "2026-07-05T09:17:49.510Z",
   "sources": [
     {
       "sourceName": "BoF - News (The News in Brief)",
       "pagesFetched": 1,
-      "fetchStatus": 200,
-      "itemsMatched": 8,
+      "fetchStatus": 403,
+      "itemsMatched": 0,
       "articlesExtracted": 0,
       "rejectedNoDate": 0,
       "rejectedInvalidDate": 0,
       "rejectedNoTitle": 0,
       "rejectedNoUrl": 0,
-      "rejectedDuplicate": 8,
+      "rejectedDuplicate": 0,
       "rejectedSelectorMiss": 0,
       "articlesKept": 0,
       "yieldPercentage": 0,
@@ -22,15 +22,15 @@
       "pagesFetched": 1,
       "fetchStatus": 200,
       "itemsMatched": 28,
-      "articlesExtracted": 8,
+      "articlesExtracted": 15,
       "rejectedNoDate": 0,
       "rejectedInvalidDate": 0,
       "rejectedNoTitle": 0,
       "rejectedNoUrl": 0,
-      "rejectedDuplicate": 20,
+      "rejectedDuplicate": 13,
       "rejectedSelectorMiss": 0,
-      "articlesKept": 8,
-      "yieldPercentage": 28.57142857142857,
+      "articlesKept": 15,
+      "yieldPercentage": 53.57142857142857,
       "failures": []
     },
     {
@@ -38,23 +38,23 @@
       "pagesFetched": 1,
       "fetchStatus": 200,
       "itemsMatched": 175,
-      "articlesExtracted": 31,
+      "articlesExtracted": 46,
       "rejectedNoDate": 0,
       "rejectedInvalidDate": 0,
       "rejectedNoTitle": 0,
       "rejectedNoUrl": 0,
-      "rejectedDuplicate": 144,
+      "rejectedDuplicate": 129,
       "rejectedSelectorMiss": 0,
-      "articlesKept": 31,
-      "yieldPercentage": 17.71428571428571,
+      "articlesKept": 46,
+      "yieldPercentage": 26.285714285714285,
       "failures": []
     }
   ],
   "summary": {
     "totalPagesFetched": 3,
-    "totalItemsMatched": 211,
-    "totalArticlesExtracted": 39,
-    "totalArticlesKept": 39,
-    "overallYieldPercentage": 18.48341232227488
+    "totalItemsMatched": 203,
+    "totalArticlesExtracted": 61,
+    "totalArticlesKept": 61,
+    "overallYieldPercentage": 30.049261083743843
   }
 }

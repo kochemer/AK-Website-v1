@@ -1,0 +1,16 @@
+{
+  "concept": "ai-chatbot-cookie-jar-pileup",
+  "primaryHumorDriver": "literal metaphor",
+  "secondaryEnhancer": "unexpected texture/material combination",
+  "sceneDescription": "On a well-lit wooden kitchen counter, a shiny gold watch sits perched atop a classic glass cookie jar, with a stack of credit cards awkwardly wedged underneath the jar as if trying to prop it up. Next to the jar, a sleek, modern speaker shaped like a chatbot head is stuffed with ordinary paper receipts spilling out, and a tiny shopping bag bearing subtle Digital Commerce 360 and Jeweller logos peeks from behind the jar. The absurdity comes from luxury (the gold watch) and tech (chatbot speaker) being used as mundane supports for a cookie jar — a literal metaphor for 'protecting' value and the mixed effectiveness of AI in commerce.",
+  "finalImagePrompt": "A shiny gold watch balanced on top of a classic glass cookie jar sits on a wooden kitchen counter. Several credit cards are wedged under the jar, while a modern, round speaker shaped like a chatbot head is next to it, stuffed with crumpled paper receipts. A small shopping bag with subtle Digital Commerce 360 and Jeweller logos is partly visible behind the jar. Everything is arranged in a horizontal line, natural daylight illuminating the scene.",
+  "negativePrompt": [
+    "text, letters, numbers, signage, labels, price tags",
+    "screens, UI, dashboards, holograms, floating icons",
+    "watermarks, unrelated brand logos",
+    "cartoon, illustration, CGI, 3D render, anime",
+    "diamond, diamonds, gemstone, gemstones, precious stones, jewelry close-up, jewelry product shot, diamond ring, diamond necklace, diamond earring, jeweled, sparkling gemstone",
+    "dramatic spotlight, glowing edges, rim lighting, vignette, cinematic color grade, blurred background, bokeh"
+  ],
+  "confidence": 0.74
+}

@@ -1,0 +1,78 @@
+{
+  "digestWeek": "2026-W27",
+  "ingestionWeek": "2026-W27",
+  "startedAt": "2026-07-05T09:15:18.599Z",
+  "finishedAt": "2026-07-05T09:37:03.787Z",
+  "steps": [
+    {
+      "name": "rss",
+      "ok": true,
+      "startedAt": "2026-07-05T09:15:18.617Z",
+      "finishedAt": "2026-07-05T09:17:47.910Z"
+    },
+    {
+      "name": "pages",
+      "ok": true,
+      "startedAt": "2026-07-05T09:17:47.910Z",
+      "finishedAt": "2026-07-05T09:17:49.510Z"
+    },
+    {
+      "name": "discovery",
+      "ok": true,
+      "startedAt": "2026-07-05T09:17:49.512Z",
+      "finishedAt": "2026-07-05T09:30:20.043Z"
+    },
+    {
+      "name": "classification",
+      "ok": true,
+      "startedAt": "2026-07-05T09:30:20.043Z",
+      "finishedAt": "2026-07-05T09:30:20.170Z"
+    },
+    {
+      "name": "digest",
+      "ok": true,
+      "startedAt": "2026-07-05T09:30:20.170Z",
+      "finishedAt": "2026-07-05T09:32:22.008Z"
+    },
+    {
+      "name": "email",
+      "ok": true,
+      "startedAt": "2026-07-05T09:32:22.008Z",
+      "finishedAt": "2026-07-05T09:33:09.877Z"
+    },
+    {
+      "name": "podcast",
+      "ok": true,
+      "startedAt": "2026-07-05T09:33:09.877Z",
+      "finishedAt": "2026-07-05T09:35:49.268Z"
+    },
+    {
+      "name": "cover",
+      "ok": true,
+      "startedAt": "2026-07-05T09:35:49.268Z",
+      "finishedAt": "2026-07-05T09:36:47.663Z"
+    },
+    {
+      "name": "competitorAnalyze",
+      "ok": true,
+      "startedAt": "2026-07-05T09:36:47.663Z",
+      "finishedAt": "2026-07-05T09:37:03.777Z"
+    }
+  ],
+  "health": {
+    "warnings": [
+      "AI & Strategy: www.artificialintelligence-news.com represents 42.9% (3/7) - exceeds 40% threshold",
+      "Ecommerce & Retail Tech: www.digitalcommerce360.com represents 42.9% (3/7) - exceeds 40% threshold",
+      "Jewellery Industry: www.jewellermagazine.com represents 42.9% (3/7) - exceeds 40% threshold",
+      "Jewellery Industry: www.professionaljeweller.com represents 42.9% (3/7) - exceeds 40% threshold"
+    ],
+    "metrics": {
+      "paywallPercent": 0,
+      "podcastWordCount": 2544
+    }
+  },
+  "versions": {
+    "node": "v20.20.2",
+    "gitCommit": "ec98292fe978e97da2447fce530ea0e72a76bb6b"
+  }
+}

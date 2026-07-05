@@ -1,14 +1,14 @@
 {
-  "timestamp": "2026-06-28T09:21:13.059Z",
+  "timestamp": "2026-07-05T09:17:49.511Z",
   "sources": [
     {
       "sourceName": "Financial Times - Technology",
       "type": "rss",
       "itemsFetched": 25,
       "itemsParsed": 25,
-      "newArticlesAdded": 25,
-      "duplicates": 0,
-      "yieldPct": 100
+      "newArticlesAdded": 24,
+      "duplicates": 1,
+      "yieldPct": 96
     },
     {
       "sourceName": "WSJ - Technology",
@@ -51,9 +51,9 @@
       "type": "rss",
       "itemsFetched": 36,
       "itemsParsed": 36,
-      "newArticlesAdded": 23,
-      "duplicates": 13,
-      "yieldPct": 63.888888888888886
+      "newArticlesAdded": 27,
+      "duplicates": 9,
+      "yieldPct": 75
     },
     {
       "sourceName": "Economic Times - Technology",
@@ -96,18 +96,18 @@
       "type": "rss",
       "itemsFetched": 10,
       "itemsParsed": 10,
-      "newArticlesAdded": 10,
-      "duplicates": 0,
-      "yieldPct": 100
+      "newArticlesAdded": 9,
+      "duplicates": 1,
+      "yieldPct": 90
     },
     {
       "sourceName": "Practical Ecommerce",
       "type": "rss",
       "itemsFetched": 30,
       "itemsParsed": 30,
-      "newArticlesAdded": 6,
-      "duplicates": 24,
-      "yieldPct": 20
+      "newArticlesAdded": 7,
+      "duplicates": 23,
+      "yieldPct": 23.333333333333332
     },
     {
       "sourceName": "PYMNTS",
@@ -123,9 +123,9 @@
       "type": "rss",
       "itemsFetched": 20,
       "itemsParsed": 20,
-      "newArticlesAdded": 1,
-      "duplicates": 19,
-      "yieldPct": 5
+      "newArticlesAdded": 0,
+      "duplicates": 20,
+      "yieldPct": 0
     },
     {
       "sourceName": "TechCrunch - AI",
@@ -150,18 +150,18 @@
       "type": "rss",
       "itemsFetched": 1000,
       "itemsParsed": 1000,
-      "newArticlesAdded": 16,
-      "duplicates": 984,
-      "yieldPct": 1.6
+      "newArticlesAdded": 14,
+      "duplicates": 986,
+      "yieldPct": 1.4000000000000001
     },
     {
       "sourceName": "Computerworld - Ecommerce",
       "type": "rss",
       "itemsFetched": 20,
       "itemsParsed": 20,
-      "newArticlesAdded": 20,
-      "duplicates": 0,
-      "yieldPct": 100
+      "newArticlesAdded": 19,
+      "duplicates": 1,
+      "yieldPct": 95
     },
     {
       "sourceName": "UseInsider",
@@ -182,15 +182,6 @@
       "yieldPct": 0
     },
     {
-      "sourceName": "Business of Fashion - News",
-      "type": "rss",
-      "itemsFetched": 100,
-      "itemsParsed": 100,
-      "newArticlesAdded": 56,
-      "duplicates": 44,
-      "yieldPct": 56.00000000000001
-    },
-    {
       "sourceName": "WWD - Women's Wear Daily",
       "type": "rss",
       "itemsFetched": 10,
@@ -204,9 +195,9 @@
       "type": "rss",
       "itemsFetched": 10,
       "itemsParsed": 10,
-      "newArticlesAdded": 9,
-      "duplicates": 1,
-      "yieldPct": 90
+      "newArticlesAdded": 10,
+      "duplicates": 0,
+      "yieldPct": 100
     },
     {
       "sourceName": "Drapers",
@@ -240,9 +231,9 @@
       "type": "rss",
       "itemsFetched": 20,
       "itemsParsed": 20,
-      "newArticlesAdded": 15,
-      "duplicates": 5,
-      "yieldPct": 75
+      "newArticlesAdded": 16,
+      "duplicates": 4,
+      "yieldPct": 80
     },
     {
       "sourceName": "Robb Report",
@@ -267,18 +258,18 @@
       "type": "rss",
       "itemsFetched": 50,
       "itemsParsed": 50,
-      "newArticlesAdded": 50,
-      "duplicates": 0,
-      "yieldPct": 100
+      "newArticlesAdded": 2,
+      "duplicates": 48,
+      "yieldPct": 4
     },
     {
       "sourceName": "Fashionista",
       "type": "rss",
       "itemsFetched": 50,
       "itemsParsed": 50,
-      "newArticlesAdded": 23,
-      "duplicates": 27,
-      "yieldPct": 46
+      "newArticlesAdded": 20,
+      "duplicates": 30,
+      "yieldPct": 40
     },
     {
       "sourceName": "Dazed",
@@ -292,9 +283,9 @@
     {
       "sourceName": "Highsnobiety",
       "type": "rss",
-      "itemsFetched": 10,
-      "itemsParsed": 10,
-      "newArticlesAdded": 10,
+      "itemsFetched": 4,
+      "itemsParsed": 4,
+      "newArticlesAdded": 4,
       "duplicates": 0,
       "yieldPct": 100
     },
@@ -357,15 +348,6 @@
       "type": "rss",
       "itemsFetched": 10,
       "itemsParsed": 10,
-      "newArticlesAdded": 0,
-      "duplicates": 10,
-      "yieldPct": 0
-    },
-    {
-      "sourceName": "Instore Magazine",
-      "type": "rss",
-      "itemsFetched": 10,
-      "itemsParsed": 10,
       "newArticlesAdded": 10,
       "duplicates": 0,
       "yieldPct": 100
@@ -420,9 +402,9 @@
       "type": "rss",
       "itemsFetched": 30,
       "itemsParsed": 30,
-      "newArticlesAdded": 16,
-      "duplicates": 14,
-      "yieldPct": 53.333333333333336
+      "newArticlesAdded": 22,
+      "duplicates": 8,
+      "yieldPct": 73.33333333333333
     },
     {
       "sourceName": "Forrester Blog",
@@ -438,9 +420,9 @@
       "type": "rss",
       "itemsFetched": 20,
       "itemsParsed": 20,
-      "newArticlesAdded": 3,
-      "duplicates": 17,
-      "yieldPct": 15
+      "newArticlesAdded": 2,
+      "duplicates": 18,
+      "yieldPct": 10
     },
     {
       "sourceName": "Strategy+Business",
@@ -456,27 +438,27 @@
       "type": "rss",
       "itemsFetched": 50,
       "itemsParsed": 50,
-      "newArticlesAdded": 0,
-      "duplicates": 50,
-      "yieldPct": 0
+      "newArticlesAdded": 1,
+      "duplicates": 49,
+      "yieldPct": 2
     },
     {
       "sourceName": "BCG - Luxury & Retail Research",
       "type": "rss",
-      "itemsFetched": 44,
-      "itemsParsed": 44,
-      "newArticlesAdded": 3,
-      "duplicates": 41,
-      "yieldPct": 6.8181818181818175
+      "itemsFetched": 45,
+      "itemsParsed": 45,
+      "newArticlesAdded": 1,
+      "duplicates": 44,
+      "yieldPct": 2.2222222222222223
     },
     {
       "sourceName": "Bain - Luxury & Retail Research",
       "type": "rss",
-      "itemsFetched": 53,
-      "itemsParsed": 53,
-      "newArticlesAdded": 3,
-      "duplicates": 50,
-      "yieldPct": 5.660377358490567
+      "itemsFetched": 51,
+      "itemsParsed": 51,
+      "newArticlesAdded": 2,
+      "duplicates": 49,
+      "yieldPct": 3.9215686274509802
     },
     {
       "sourceName": "CNBC Technology",
@@ -508,11 +490,11 @@
     {
       "sourceName": "NYTimes Technology",
       "type": "rss",
-      "itemsFetched": 21,
-      "itemsParsed": 21,
-      "newArticlesAdded": 21,
-      "duplicates": 0,
-      "yieldPct": 100
+      "itemsFetched": 20,
+      "itemsParsed": 20,
+      "newArticlesAdded": 15,
+      "duplicates": 5,
+      "yieldPct": 75
     },
     {
       "sourceName": "MIT Sloan Management Review – AI",
@@ -537,9 +519,9 @@
       "type": "rss",
       "itemsFetched": 10,
       "itemsParsed": 10,
-      "newArticlesAdded": 5,
-      "duplicates": 5,
-      "yieldPct": 50
+      "newArticlesAdded": 1,
+      "duplicates": 9,
+      "yieldPct": 10
     },
     {
       "sourceName": "VentureBeat - AI",
@@ -551,38 +533,29 @@
       "yieldPct": 0
     },
     {
-      "sourceName": "BoF - News (The News in Brief)",
-      "type": "page",
-      "itemsFetched": 8,
-      "itemsParsed": 0,
-      "newArticlesAdded": 0,
-      "duplicates": 8,
-      "yieldPct": 0
-    },
-    {
       "sourceName": "Jing Daily",
       "type": "page",
       "itemsFetched": 28,
-      "itemsParsed": 8,
-      "newArticlesAdded": 8,
-      "duplicates": 20,
-      "yieldPct": 28.57142857142857
+      "itemsParsed": 15,
+      "newArticlesAdded": 15,
+      "duplicates": 13,
+      "yieldPct": 53.57142857142857
     },
     {
       "sourceName": "The Impression",
       "type": "page",
       "itemsFetched": 175,
-      "itemsParsed": 31,
-      "newArticlesAdded": 31,
-      "duplicates": 144,
-      "yieldPct": 17.71428571428571
+      "itemsParsed": 46,
+      "newArticlesAdded": 46,
+      "duplicates": 129,
+      "yieldPct": 26.285714285714285
     }
   ],
   "summary": {
-    "totalSources": 64,
-    "totalItemsFetched": 2714,
-    "totalNewArticles": 789,
-    "totalDuplicates": 1925,
-    "overallYieldPct": 29.071481208548267
+    "totalSources": 61,
+    "totalItemsFetched": 2588,
+    "totalNewArticles": 692,
+    "totalDuplicates": 1896,
+    "overallYieldPct": 26.738794435857805
   }
 }
