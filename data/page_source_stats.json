@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-07-05T09:17:49.510Z",
+  "timestamp": "2026-07-12T08:26:54.186Z",
   "sources": [
     {
       "sourceName": "BoF - News (The News in Brief)",
@@ -20,17 +20,17 @@
     {
       "sourceName": "Jing Daily",
       "pagesFetched": 1,
-      "fetchStatus": 200,
-      "itemsMatched": 28,
-      "articlesExtracted": 15,
+      "fetchStatus": 429,
+      "itemsMatched": 0,
+      "articlesExtracted": 0,
       "rejectedNoDate": 0,
       "rejectedInvalidDate": 0,
       "rejectedNoTitle": 0,
       "rejectedNoUrl": 0,
-      "rejectedDuplicate": 13,
+      "rejectedDuplicate": 0,
       "rejectedSelectorMiss": 0,
-      "articlesKept": 15,
-      "yieldPercentage": 53.57142857142857,
+      "articlesKept": 0,
+      "yieldPercentage": 0,
       "failures": []
     },
     {
@@ -38,23 +38,23 @@
       "pagesFetched": 1,
       "fetchStatus": 200,
       "itemsMatched": 175,
-      "articlesExtracted": 46,
+      "articlesExtracted": 32,
       "rejectedNoDate": 0,
       "rejectedInvalidDate": 0,
       "rejectedNoTitle": 0,
       "rejectedNoUrl": 0,
-      "rejectedDuplicate": 129,
+      "rejectedDuplicate": 143,
       "rejectedSelectorMiss": 0,
-      "articlesKept": 46,
-      "yieldPercentage": 26.285714285714285,
+      "articlesKept": 32,
+      "yieldPercentage": 18.285714285714285,
       "failures": []
     }
   ],
   "summary": {
     "totalPagesFetched": 3,
-    "totalItemsMatched": 203,
-    "totalArticlesExtracted": 61,
-    "totalArticlesKept": 61,
-    "overallYieldPercentage": 30.049261083743843
+    "totalItemsMatched": 175,
+    "totalArticlesExtracted": 32,
+    "totalArticlesKept": 32,
+    "overallYieldPercentage": 18.285714285714285
   }
 }

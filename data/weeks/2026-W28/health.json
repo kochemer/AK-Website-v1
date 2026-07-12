@@ -1,0 +1,76 @@
+{
+  "digestWeek": "2026-W28",
+  "ingestionWeek": "2026-W28",
+  "startedAt": "2026-07-12T08:26:34.430Z",
+  "finishedAt": "2026-07-12T08:48:13.252Z",
+  "steps": [
+    {
+      "name": "rss",
+      "ok": true,
+      "startedAt": "2026-07-12T08:26:34.449Z",
+      "finishedAt": "2026-07-12T08:26:53.629Z"
+    },
+    {
+      "name": "pages",
+      "ok": true,
+      "startedAt": "2026-07-12T08:26:53.629Z",
+      "finishedAt": "2026-07-12T08:26:54.186Z"
+    },
+    {
+      "name": "discovery",
+      "ok": true,
+      "startedAt": "2026-07-12T08:26:54.187Z",
+      "finishedAt": "2026-07-12T08:42:33.423Z"
+    },
+    {
+      "name": "classification",
+      "ok": true,
+      "startedAt": "2026-07-12T08:42:33.423Z",
+      "finishedAt": "2026-07-12T08:42:33.538Z"
+    },
+    {
+      "name": "digest",
+      "ok": true,
+      "startedAt": "2026-07-12T08:42:33.538Z",
+      "finishedAt": "2026-07-12T08:44:46.025Z"
+    },
+    {
+      "name": "email",
+      "ok": true,
+      "startedAt": "2026-07-12T08:44:46.025Z",
+      "finishedAt": "2026-07-12T08:45:12.644Z"
+    },
+    {
+      "name": "podcast",
+      "ok": true,
+      "startedAt": "2026-07-12T08:45:12.645Z",
+      "finishedAt": "2026-07-12T08:46:59.942Z"
+    },
+    {
+      "name": "cover",
+      "ok": true,
+      "startedAt": "2026-07-12T08:46:59.942Z",
+      "finishedAt": "2026-07-12T08:47:53.607Z"
+    },
+    {
+      "name": "competitorAnalyze",
+      "ok": true,
+      "startedAt": "2026-07-12T08:47:53.607Z",
+      "finishedAt": "2026-07-12T08:48:13.251Z"
+    }
+  ],
+  "health": {
+    "warnings": [
+      "AI & Strategy: economictimes.indiatimes.com represents 42.9% (3/7) - exceeds 40% threshold",
+      "Jewellery Industry: www.jewellermagazine.com represents 42.9% (3/7) - exceeds 40% threshold"
+    ],
+    "metrics": {
+      "paywallPercent": 0,
+      "podcastWordCount": 1964
+    }
+  },
+  "versions": {
+    "node": "v20.20.2",
+    "gitCommit": "1ee9dd06c997298c15b279a58f7aaf524661e7eb"
+  }
+}

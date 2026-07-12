@@ -1,0 +1,959 @@
+{
+  "weekLabel": "2026-W28",
+  "tz": "Europe/Copenhagen",
+  "startISO": "2026-07-05T22:00:00.000Z",
+  "endISO": "2026-07-12T21:59:59.999Z",
+  "builtAtISO": "2026-07-12T10:44:13.493+02:00",
+  "builtAtLocal": "2026-07-12 10:44:13",
+  "totals": {
+    "total": 636,
+    "byTopic": {
+      "AIStrategy": 121,
+      "EcommerceRetail": 428,
+      "LuxuryConsumer": 66,
+      "Jewellery": 18
+    }
+  },
+  "topics": {
+    "AI_and_Strategy": {
+      "total": 121,
+      "top": [
+        {
+          "id": "nstv13",
+          "title": "Big Tech Doubles Down on AI Infrastructure",
+          "url": "https://www.pymnts.com/news/artificial-intelligence/2026/big-tech-doubles-down-on-ai-infrastructure/",
+          "source": "PYMNTS",
+          "published_at": "2026-07-10T18:33:05.000Z",
+          "ingested_at": "2026-07-12T08:26:34.450Z",
+          "snippet": "The five companies spending the most on artificial intelligence (AI) data centers in the United States doubled their debt load over the past five years to finance their efforts, Bloomberg reported Friday (July 10). In total, Alphabet, Amazon, Meta, Microsoft and Oracle added about $350 billion to their debt obligations, according to the report. This marks a change for the software industry, […]\nThe post Big Tech Doubles Down on AI Infrastructure appeared first on PYMNTS.com.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0.1,
+            "penalty": 0.2,
+            "matchedKeywords": [
+              "ai",
+              "artificial intelligence"
+            ]
+          },
+          "aiSummary": "AI-generated summary: According to a PYMNTS article published on July 10, 2026, the top five U.S. companies investing in AI data centers—Alphabet, Amazon, Meta, Microsoft, and Oracle—have doubled their debt over five years, adding approximately $350 billion to finance their AI infrastructure expansion.",
+          "translations": {
+            "da": {
+              "title": "Big Tech fordobler indsatsen på AI-infrastruktur",
+              "summary": "AI-genereret resumé: Ifølge en PYMNTS-artikel offentliggjort den 10. juli 2026 har de fem største amerikanske virksomheder, der investerer i AI-datacentre—Alphabet, Amazon, Meta, Microsoft og Oracle—forøget deres gæld til det dobbelte over fem år og tilføjet cirka 350 milliarder dollars for at finansiere deres AI-infrastrukturudvidelse."
+            },
+            "es": {
+              "title": "Big Tech redobla su apuesta en infraestructura de IA",
+              "summary": "Resumen generado por IA: Según un artículo de PYMNTS publicado el 10 de julio de 2026, las cinco principales empresas estadounidenses que invierten en centros de datos de IA—Alphabet, Amazon, Meta, Microsoft y Oracle—han duplicado su deuda en cinco años, agregando aproximadamente 350 mil millones de dólares para financiar la expansión de su infraestructura de IA."
+            }
+          }
+        },
+        {
+          "id": "bf5ms8",
+          "title": "Taiwanese chipmaker Nanya plans $6 billion in spending in 2027, riding AI boom ",
+          "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/taiwanese-chipmaker-nanya-plans-6-billion-in-spending-in-2027-riding-ai-boom/articleshow/132308807.cms",
+          "source": "Economic Times - Technology",
+          "published_at": "2026-07-10T10:02:19.000Z",
+          "ingested_at": "2026-07-12T08:26:34.450Z",
+          "snippet": "Taiwanese memory chipmaker Nanya Technology plans substantial capital spending next year. This increased investment is driven by soaring demand for memory chips. The company's revenue and net income saw significant surges in the second quarter. Artificial intelligence is underpinning a stronger long-term outlook for the memory industry. Global memory makers are also ramping up investments to meet this demand.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ai",
+              "artificial intelligence",
+              "investment"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Taiwanese memory chipmaker Nanya Technology plans to invest $6 billion in 2027, driven by soaring demand for memory chips fueled by the AI boom. The company reported significant revenue and net income growth in Q2, reflecting a strong long-term outlook for the memory industry.",
+          "translations": {
+            "da": {
+              "title": "Taiwansk chipproducent Nanya planlægger 6 milliarder dollars i investeringer i 2027, drevet af AI-boomet",
+              "summary": "AI-genereret resumé: Taiwansk hukommelseschipproducent Nanya Technology planlægger at investere 6 milliarder dollars i 2027, drevet af stigende efterspørgsel efter hukommelseschips på grund af AI-boomet. Virksomheden rapporterede betydelig vækst i omsætning og nettoindtjening i Q2, hvilket afspejler et stærkt langsigtet udsyn for hukommelsesindustrien."
+            },
+            "es": {
+              "title": "El fabricante taiwanés de chips Nanya planea gastar 6 mil millones de dólares en 2027, aprovechando el auge de la IA",
+              "summary": "Resumen generado por IA: El fabricante taiwanés de chips de memoria Nanya Technology planea invertir 6 mil millones de dólares en 2027, impulsado por la creciente demanda de chips de memoria debido al auge de la IA. La empresa reportó un crecimiento significativo en ingresos y ganancias netas en el segundo trimestre, reflejando una perspectiva sólida a largo plazo para la industria de la memoria."
+            }
+          }
+        },
+        {
+          "id": "imi2lo",
+          "title": "South Korea chip maker SK hynix rides AI boom raising $26.5bn in huge US listing",
+          "url": "https://www.theguardian.com/world/2026/jul/10/south-korea-chip-maker-sk-hynix-rides-ai-boom-raising-265bn-in-huge-us-listing",
+          "source": "The Guardian - Technology",
+          "published_at": "2026-07-10T05:06:57.000Z",
+          "ingested_at": "2026-07-12T08:26:34.450Z",
+          "snippet": "SK hynix, a supplier of advanced memory chips, has seen profits skyrocket thanks to the global race to build AI datacentres\nSouth Korean chip maker SK hynix set pricing for its mega US listing on Friday, aiming to raise $26.5bn as it takes advantage of the AI boom in what will be one of the world’s biggest ever stock sales.\nThe Asian semiconductor giant plans to issue the equivalent of about 18m shares on Wall Street’s tech-heavy Nasdaq index later in the day.\n Continue reading...",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": -0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0.05,
+            "penalty": 0.2,
+            "matchedKeywords": [
+              "ai"
+            ]
+          },
+          "aiSummary": "AI-generated summary: South Korean chip maker SK hynix is capitalizing on the AI boom by pricing a major US listing to raise $26.5 billion, marking one of the largest stock sales globally as demand for advanced memory chips surges.",
+          "translations": {
+            "da": {
+              "title": "Sydkoreansk chipproducent SK hynix udnytter AI-boom og rejser 26,5 mia. USD i stor amerikansk børsnotering",
+              "summary": "AI-genereret resumé: Den sydkoreanske chipproducent SK hynix kapitaliserer på AI-boomet ved at prissætte en stor amerikansk børsnotering for at rejse 26,5 milliarder USD, hvilket markerer et af de største aktiesalg globalt, da efterspørgslen efter avancerede hukommelseschips stiger."
+            },
+            "es": {
+              "title": "El fabricante surcoreano de chips SK hynix aprovecha el auge de la IA recaudando 26.5 mil millones en una gran oferta en EE. UU.",
+              "summary": "Resumen generado por IA: El fabricante surcoreano de chips SK hynix está capitalizando el auge de la IA al fijar el precio de una gran oferta en EE. UU. para recaudar 26.5 mil millones de dólares, marcando una de las mayores ventas de acciones a nivel mundial debido al aumento de la demanda de chips de memoria avanzados."
+            }
+          }
+        },
+        {
+          "id": "ejveny",
+          "title": "Palo Alto CEO Arora says AI pricing needs to fall 90% as token costs skyrocket",
+          "url": "https://www.cnbc.com/2026/07/09/palo-alto-ceo-arora-ai-pricing.html",
+          "source": "CNBC Technology",
+          "published_at": "2026-07-09T18:50:52.000Z",
+          "ingested_at": "2026-07-12T08:26:34.450Z",
+          "snippet": "Palo Alto Networks CEO Nikesh Arora said high token costs could prevent businesses from adopting artificial intelligence at scale.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": -0.04999999999999999,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0.05,
+            "penalty": 0.2,
+            "matchedKeywords": [
+              "ai",
+              "artificial intelligence"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Palo Alto Networks CEO Nikesh Arora stated that AI pricing must decrease by 90% because soaring token costs may hinder widespread business adoption of artificial intelligence.",
+          "translations": {
+            "da": {
+              "title": "Palo Alto CEO Arora siger, at AI-priser skal falde 90 %, da tokenomkostninger stiger kraftigt",
+              "summary": "AI-genereret resumé: Palo Alto Networks CEO Nikesh Arora udtalte, at AI-priser skal falde med 90 %, fordi de stigende tokenomkostninger kan forhindre bred forretningsadoption af kunstig intelligens."
+            },
+            "es": {
+              "title": "El CEO de Palo Alto, Arora, dice que los precios de la IA deben caer un 90 % debido al aumento vertiginoso de los costos de tokens",
+              "summary": "Resumen generado por IA: El CEO de Palo Alto Networks, Nikesh Arora, afirmó que los precios de la IA deben disminuir un 90 % porque los elevados costos de tokens pueden dificultar la adopción generalizada de la inteligencia artificial en los negocios."
+            }
+          }
+        },
+        {
+          "id": "iz9nz1",
+          "title": "Elon Musk praises Mythos/Fable, promises not to ‘cut off’ Anthropic",
+          "url": "https://techcrunch.com/2026/07/09/elon-musk-praises-mythos-fable-promises-not-to-cut-off-anthropic/",
+          "source": "TechCrunch - AI",
+          "published_at": "2026-07-09T21:57:42.000Z",
+          "ingested_at": "2026-07-12T08:26:34.450Z",
+          "snippet": "Should Anthropic trust Elon Musk to host its models? With about $40 billion in revenue at stake, Musk insists that the company can.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0.15,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "anthropic"
+            ]
+          },
+          "aiSummary": "AI-generated summary: In a TechCrunch article dated July 9, 2026, Elon Musk praises Mythos/Fable and assures that he will not \"cut off\" Anthropic, emphasizing trust as the company considers hosting its models amid $40 billion in revenue at stake.",
+          "translations": {
+            "da": {
+              "title": "Elon Musk roser Mythos/Fable, lover ikke at 'afskære' Anthropic",
+              "summary": "AI-genereret resumé: I en TechCrunch-artikel dateret 9. juli 2026 roser Elon Musk Mythos/Fable og forsikrer, at han ikke vil 'afskære' Anthropic, og understreger tillid, mens virksomheden overvejer at hoste sine modeller med 40 milliarder dollars i omsætning på spil."
+            },
+            "es": {
+              "title": "Elon Musk elogia a Mythos/Fable y promete no 'cortar' a Anthropic",
+              "summary": "Resumen generado por IA: En un artículo de TechCrunch fechado el 9 de julio de 2026, Elon Musk elogia a Mythos/Fable y asegura que no 'cortará' a Anthropic, enfatizando la confianza mientras la empresa considera alojar sus modelos con 40 mil millones de dólares en ingresos en juego."
+            }
+          }
+        },
+        {
+          "id": "pb0uhf",
+          "title": "Microsoft emissions surge 27% as AI buildout crimps climate goals ",
+          "url": "https://economictimes.indiatimes.com/tech/technology/microsoft-emissions-surge-27-as-ai-buildout-crimps-climate-goals/articleshow/132295473.cms",
+          "source": "Economic Times - Technology",
+          "published_at": "2026-07-09T17:47:17.000Z",
+          "ingested_at": "2026-07-12T08:26:34.450Z",
+          "snippet": "Microsoft's greenhouse gas emissions jumped 27 percent in its latest fiscal year, the tech giant disclosed Thursday, adding to a wave of worsening environmental reports from an industry racing to build AI infrastructure. The disclosure follows similar reports from Google and Amazon last week showing emissions surging 18 percent and 16 percent respectively, as all three companies acknowledged that AI infrastructure expansion is outpacing their decarbonization efforts.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0.15,
+            "penalty": 0.2,
+            "matchedKeywords": [
+              "ai"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Microsoft's greenhouse gas emissions increased by 27% in its latest fiscal year, reflecting a broader industry trend where rapid AI infrastructure expansion is outpacing decarbonization efforts, as seen also in recent reports from Google and Amazon.",
+          "translations": {
+            "da": {
+              "title": "Microsofts emissioner stiger 27 %, mens AI-udbygning hæmmer klimamål",
+              "summary": "AI-genereret resumé: Microsofts drivhusgasemissioner steg med 27 % i det seneste regnskabsår, hvilket afspejler en bredere branchetrend, hvor hurtig udvidelse af AI-infrastruktur overgår afkarboniseringsindsatsen, som også set i nylige rapporter fra Google og Amazon."
+            },
+            "es": {
+              "title": "Emisiones de Microsoft aumentan 27% mientras expansión de IA frena metas climáticas",
+              "summary": "Resumen generado por IA: Las emisiones de gases de efecto invernadero de Microsoft aumentaron un 27% en su último año fiscal, reflejando una tendencia general en la industria donde la rápida expansión de infraestructura de IA supera los esfuerzos de descarbonización, como también se observa en informes recientes de Google y Amazon."
+            }
+          }
+        },
+        {
+          "id": "i7sjqf",
+          "title": "Music industry launches AI-generated content labels ",
+          "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/music-industry-launches-ai-generated-content-labels/articleshow/132323648.cms",
+          "source": "Economic Times - Technology",
+          "published_at": "2026-07-11T02:40:40.000Z",
+          "ingested_at": "2026-07-12T08:26:34.450Z",
+          "snippet": "Music organisations have introduced a voluntary labeling system for AI-generated content. This system aims to inform listeners about the use of artificial intelligence in music. Two labels will distinguish between fully AI-generated and AI-assisted recordings. Streaming services are closely monitoring this development for enhanced transparency. The proposed labels seek broad global adoption across various platforms.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": -0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0.2,
+            "matchedKeywords": [
+              "ai",
+              "artificial intelligence"
+            ]
+          },
+          "aiSummary": "AI-generated summary: The music industry has introduced a voluntary labeling system to distinguish between fully AI-generated and AI-assisted music, aiming to increase transparency for listeners, with streaming services monitoring the initiative for potential global adoption.",
+          "translations": {
+            "da": {
+              "title": "Musikindustrien lancerer AI-genererede indholdsetiketter",
+              "summary": "Musikindustrien har indført et frivilligt mærkningssystem for at skelne mellem fuldt AI-genereret og AI-assisteret musik med henblik på at øge gennemsigtigheden for lyttere, mens streamingtjenester overvåger initiativet for mulig global adoption."
+            },
+            "es": {
+              "title": "La industria musical lanza etiquetas para contenido generado por IA",
+              "summary": "La industria musical ha introducido un sistema voluntario de etiquetado para distinguir entre música totalmente generada por IA y música asistida por IA, con el objetivo de aumentar la transparencia para los oyentes, mientras los servicios de streaming monitorean la iniciativa para una posible adopción global."
+            }
+          }
+        }
+      ]
+    },
+    "Ecommerce_Retail_Tech": {
+      "total": 428,
+      "top": [
+        {
+          "id": "3ok2io",
+          "title": "Marketplace Briefing: AI traffic is poised to reshape the Amazon funnel",
+          "url": "https://www.modernretail.co/marketing/marketplace-briefing-ai-traffic-is-poised-to-reshape-the-amazon-funnel/?utm_campaign=modernretaildis&utm_medium=rss&utm_source=general-rss",
+          "source": "Modern Retail",
+          "published_at": "2026-07-09T15:00:00.000Z",
+          "ingested_at": "2026-07-12T08:26:34.450Z",
+          "snippet": "Every Amazon agency right now is trying to get a sense of what role AI referral traffic is playing — and will play — in driving purchases, even if they don't have much data to go off of yet.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "marketplace"
+            ]
+          },
+          "aiSummary": "AI-generated summary: According to a July 2026 article in Modern Retail, Amazon agencies are currently exploring how AI-driven referral traffic influences purchase behavior, despite limited available data. This trend is expected to significantly impact the ecommerce funnel.",
+          "translations": {
+            "da": {
+              "title": "Marketplace Briefing: AI-trafik er klar til at omforme Amazon-funnelen",
+              "summary": "AI-genereret resumé: Ifølge en artikel fra juli 2026 i Modern Retail undersøger Amazon-bureauer, hvordan AI-drevet henvisningstrafik påvirker købsadfærd, på trods af begrænsede data. Denne tendens forventes at påvirke ecommerce-funnelen markant."
+            },
+            "es": {
+              "title": "Marketplace Briefing: El tráfico de IA está listo para transformar el embudo de Amazon",
+              "summary": "Resumen generado por IA: Según un artículo de julio de 2026 en Modern Retail, las agencias de Amazon están explorando cómo el tráfico de referencia impulsado por IA influye en el comportamiento de compra, a pesar de los datos limitados disponibles. Se espera que esta tendencia impacte significativamente el embudo de ecommerce."
+            }
+          }
+        },
+        {
+          "id": "rfv6j2",
+          "title": "Why Smart Brands Are Rethinking Discovery in the Age of AI",
+          "url": "https://www.mytotalretail.com/article/why-smart-brands-are-rethinking-discovery-in-the-age-of-ai/",
+          "source": "Total Retail",
+          "published_at": "2026-07-08T12:37:32.000Z",
+          "ingested_at": "2026-07-12T08:26:34.450Z",
+          "snippet": "The shopping journey used to start with a search bar. Now it starts with a conversation. Consumers are increasingly turning to artificial intelligence tools to research products, compare options, and make decisions before they ever land on a brand’s website, walk into a store, or open an app. For retailers, the immediate challenge is visibility: […]",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "shopping"
+            ]
+          },
+          "aiSummary": "AI-generated summary: The article discusses how the traditional shopping journey, once initiated by search bars, is now beginning with AI-driven conversations, as consumers use artificial intelligence tools to research and compare products before engaging directly with brands. Retailers face the challenge of maintaining visibility in this evolving discovery landscape.",
+          "translations": {
+            "da": {
+              "title": "Hvorfor Smarte Brands Genovervejer Opdagelse i AI-æraen",
+              "summary": "Artiklen diskuterer, hvordan den traditionelle shoppingrejse, der tidligere startede med søgefelter, nu begynder med AI-drevne samtaler, da forbrugere bruger kunstig intelligens til at undersøge og sammenligne produkter, før de engagerer sig direkte med brands. Detailhandlere står over for udfordringen med at bevare synlighed i dette udviklende opdagelseslandskab."
+            },
+            "es": {
+              "title": "Por Qué Las Marcas Inteligentes Están Repensando el Descubrimiento en la Era de la IA",
+              "summary": "El artículo analiza cómo el recorrido tradicional de compra, que antes comenzaba con barras de búsqueda, ahora inicia con conversaciones impulsadas por IA, ya que los consumidores utilizan herramientas de inteligencia artificial para investigar y comparar productos antes de interactuar directamente con las marcas. Los minoristas enfrentan el desafío de mantener la visibilidad en este panorama de descubrimiento en evolución."
+            }
+          }
+        },
+        {
+          "id": "f26rpc",
+          "title": "Parcel purgatory costs UK shoppers four working days a year – and retailers their loyalty",
+          "url": "https://internetretailing.net/parcel-purgatory-costs-uk-shoppers-four-working-days-a-year-and-retailers-their-loyalty/",
+          "source": "Internet Retailing",
+          "published_at": "2026-07-07T10:23:33.000Z",
+          "ingested_at": "2026-07-12T08:26:34.450Z",
+          "snippet": "43% of UK customers take time off work or rearrange their day to wait for a parcel delivery, amounting to approximately 32 hours of lost time annually or four full working days.\nThe post Parcel purgatory costs UK shoppers four working days a year – and retailers their loyalty appeared first on InternetRetailing.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": []
+          },
+          "aiSummary": "AI-generated summary: According to Internet Retailing (2026-07-07), 43% of UK shoppers lose around four working days annually by taking time off or rearranging their schedules to wait for parcel deliveries, which negatively impacts retailer loyalty.",
+          "translations": {
+            "da": {
+              "title": "Pakke-purgatorium koster britiske shoppere fire arbejdsdage om året – og detailhandlere deres loyalitet",
+              "summary": "AI-genereret resumé: Ifølge Internet Retailing (2026-07-07) mister 43 % af britiske shoppere omkring fire arbejdsdage årligt ved at tage fri eller omlægge deres planer for at vente på pakkeforsendelser, hvilket påvirker detailhandlernes loyalitet negativt."
+            },
+            "es": {
+              "title": "El purgatorio de los paquetes cuesta a los compradores del Reino Unido cuatro días laborables al año – y a los minoristas su lealtad",
+              "summary": "Resumen generado por IA: Según Internet Retailing (2026-07-07), el 43 % de los compradores del Reino Unido pierden alrededor de cuatro días laborables al año al tomarse tiempo libre o reorganizar sus horarios para esperar entregas de paquetes, lo que afecta negativamente la lealtad hacia los minoristas."
+            }
+          }
+        },
+        {
+          "id": "vl8spa",
+          "title": "M&S expands Amazon partnership to Netherlands as marketplace sales soar",
+          "url": "https://internetretailing.net/ms-expands-amazon-partnership-to-netherlands-as-marketplace-sales-soar/",
+          "source": "Internet Retailing",
+          "published_at": "2026-07-09T10:14:31.000Z",
+          "ingested_at": "2026-07-12T08:26:34.450Z",
+          "snippet": "Marks & Spencer has expanded its Amazon offering to the Netherlands, following exponential growth and demand in this market. \nThe post M&S expands Amazon partnership to Netherlands as marketplace sales soar appeared first on InternetRetailing.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "marketplace"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Marks & Spencer has extended its partnership with Amazon to the Netherlands in response to significant growth and demand in the marketplace. This expansion reflects soaring sales on the platform.",
+          "translations": {
+            "da": {
+              "title": "M&S udvider Amazon-partnerskab til Holland efter stigende markedspladssalg",
+              "summary": "AI-genereret resumé: Marks & Spencer har udvidet sit partnerskab med Amazon til Holland som reaktion på betydelig vækst og efterspørgsel på markedspladsen. Denne udvidelse afspejler stigende salg på platformen."
+            },
+            "es": {
+              "title": "M&S amplía su asociación con Amazon a los Países Bajos ante el auge de ventas en el mercado",
+              "summary": "Resumen generado por IA: Marks & Spencer ha extendido su asociación con Amazon a los Países Bajos en respuesta al crecimiento significativo y la demanda en el mercado. Esta expansión refleja un aumento en las ventas en la plataforma."
+            }
+          }
+        },
+        {
+          "id": "cqr9hg",
+          "title": "Hispanic shoppers and pro customers are key to The Home Depot’s World Cup retail media strategy",
+          "url": "https://www.modernretail.co/marketing/hispanic-shoppers-and-pro-customers-are-key-to-the-home-depots-world-cup-retail-media-strategy/?utm_campaign=modernretaildis&utm_medium=rss&utm_source=general-rss",
+          "source": "Modern Retail",
+          "published_at": "2026-07-10T04:00:00.000Z",
+          "ingested_at": "2026-07-12T08:26:34.450Z",
+          "snippet": "While The Home Depot is not a sports equipment or sports apparel retailer, its consumer base has given it ample reason to develop a comprehensive retail media strategy around the World Cup.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": []
+          },
+          "aiSummary": "AI-generated summary: The Home Depot is leveraging its consumer base, particularly Hispanic shoppers and pro customers, to develop a comprehensive retail media strategy centered on the World Cup, despite not being a sports equipment or apparel retailer.",
+          "translations": {
+            "da": {
+              "title": "Hispaniske kunder og professionelle kunder er nøglen til The Home Depots World Cup detailmediestrategi",
+              "summary": "AI-genereret resumé: The Home Depot udnytter sin kundebase, især hispaniske kunder og professionelle kunder, til at udvikle en omfattende detailmediestrategi med fokus på World Cup, selvom de ikke er en detailhandler af sportsudstyr eller tøj."
+            },
+            "es": {
+              "title": "Los compradores hispanos y clientes profesionales son clave para la estrategia de medios minoristas de The Home Depot en la Copa Mundial",
+              "summary": "Resumen generado por IA: The Home Depot está aprovechando su base de consumidores, especialmente compradores hispanos y clientes profesionales, para desarrollar una estrategia integral de medios minoristas centrada en la Copa Mundial, a pesar de no ser un minorista de equipos o ropa deportiva."
+            }
+          }
+        },
+        {
+          "id": "gie8o2",
+          "title": "Omnia Partners names 10 new suppliers joining is Opus platform",
+          "url": "https://www.digitalcommerce360.com/2026/07/10/omnia-partners-10-suppliers-joining-opus-platform/",
+          "source": "Digital Commerce 360",
+          "published_at": "2026-07-10T21:58:09.000Z",
+          "ingested_at": "2026-07-12T08:26:34.450Z",
+          "snippet": "A business-to-business (B2B) ecommerce portal gained a new wave of suppliers, as Omnia Partners announced 10 new participants for its Opus platform for procurement. Omnia, which operates nationally as a cooperative purchasing organization, has expanded Opus to include more than 8 million SKUs, according to the company. The new suppliers include IT solutions provider SHI, […]\nThe post Omnia Partners names 10 new suppliers joining is Opus platform appeared first on Digital Commerce 360.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "platform",
+              "ecommerce"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Omnia Partners has added 10 new suppliers, including IT solutions provider SHI, to its Opus B2B ecommerce platform, expanding its offerings to over 8 million SKUs. This update enhances the cooperative purchasing organization's national procurement capabilities.",
+          "translations": {
+            "da": {
+              "title": "Omnia Partners tilføjer 10 nye leverandører til sin Opus-platform",
+              "summary": "Omnia Partners har tilføjet 10 nye leverandører, herunder IT-løsningsudbyderen SHI, til sin Opus B2B e-handelsplatform og udvider dermed sit sortiment til over 8 millioner SKU'er. Denne opdatering styrker den kooperative indkøbsorganisations nationale indkøbskapaciteter."
+            },
+            "es": {
+              "title": "Omnia Partners nombra 10 nuevos proveedores que se unen a su plataforma Opus",
+              "summary": "Omnia Partners ha añadido 10 nuevos proveedores, incluido el proveedor de soluciones IT SHI, a su plataforma de comercio electrónico B2B Opus, ampliando su oferta a más de 8 millones de SKU. Esta actualización mejora las capacidades de adquisición nacional de la organización de compras cooperativas."
+            }
+          }
+        },
+        {
+          "id": "wdo0h5",
+          "title": "How Event-Triggered Messaging Strategies Turn Behavior into Revenue",
+          "url": "https://insiderone.com/event-triggered-messaging-revenue/",
+          "source": "UseInsider",
+          "published_at": "2026-07-09T08:09:58.000Z",
+          "ingested_at": "2026-07-12T08:26:34.450Z",
+          "snippet": "Summary Effective triggered marketing goes beyond cart abandonment by responding to high-intent customer behaviors in real time. Prioritizing the right triggers, choosing the best channel, and using AI-powered predictions help brands deliver more relevant experiences and drive greater revenue. There is a quiet ceiling that lifecycle marketers hit around the 18-month mark of running automations. […]",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": []
+          },
+          "aiSummary": "AI-generated summary: The article discusses how effective event-triggered messaging in ecommerce leverages real-time, high-intent customer behaviors and AI-powered predictions to enhance relevance and boost revenue, while noting challenges lifecycle marketers face after extended automation use.",
+          "translations": {
+            "da": {
+              "title": "Hvordan event-udløste beskedstrategier omsætter adfærd til indtægter",
+              "summary": "AI-genereret resumé: Artiklen beskriver, hvordan effektiv event-udløst messaging i ecommerce udnytter realtids, høj-intentions kundeadfærd og AI-drevne forudsigelser til at øge relevans og indtægter, samtidig med at den påpeger udfordringer for lifecycle marketers efter langvarig automatisering."
+            },
+            "es": {
+              "title": "Cómo las estrategias de mensajería activadas por eventos convierten el comportamiento en ingresos",
+              "summary": "Resumen generado por IA: El artículo analiza cómo la mensajería efectiva activada por eventos en ecommerce aprovecha comportamientos de clientes en tiempo real y de alta intención, junto con predicciones impulsadas por IA, para mejorar la relevancia y aumentar los ingresos, señalando a la vez los desafíos que enfrentan los lifecycle marketers tras un uso prolongado de la automatización."
+            }
+          }
+        }
+      ]
+    },
+    "Luxury_and_Consumer": {
+      "total": 66,
+      "top": [
+        {
+          "id": "vntgrr",
+          "title": "A Luxury Fashion Retailer in Bahrain Launches Its Own AI Personal Stylist",
+          "url": "https://wwd.com/sourcing-journal/industry-news/brands-seekers-luxury-fashion-artificial-intelligence-1239063495/",
+          "source": "WWD - Women's Wear Daily",
+          "published_at": "2026-07-10T20:32:26.000Z",
+          "ingested_at": "2026-07-12T08:26:34.450Z",
+          "snippet": "Brands Seekers, a global luxury fashion retailer, said the multi-lingual AI stylist is available in over 150 countries.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "luxury",
+              "brand"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Brands Seekers, a global luxury fashion retailer based in Bahrain, has launched a multi-lingual AI personal stylist now accessible in over 150 countries.",
+          "translations": {
+            "da": {
+              "title": "En luksusmodeforhandler i Bahrain lancerer sin egen AI-personlige stylist",
+              "summary": "AI-genereret resumé: Brands Seekers, en global luksusmodeforhandler med base i Bahrain, har lanceret en flersproget AI-personlig stylist, som nu er tilgængelig i over 150 lande."
+            },
+            "es": {
+              "title": "Un minorista de moda de lujo en Bahréin lanza su propio estilista personal de IA",
+              "summary": "Resumen generado por IA: Brands Seekers, un minorista global de moda de lujo con sede en Bahréin, ha lanzado un estilista personal de IA multilingüe ahora accesible en más de 150 países."
+            }
+          }
+        },
+        {
+          "id": "n7w7ut",
+          "title": "Mytheresa pilots roving Hamptons pop-up",
+          "url": "https://www.luxurydaily.com/mytheresa-pilots-roving-hamptons-pop-up/",
+          "source": "Luxury Daily - Main",
+          "published_at": "2026-07-07T09:00:00.000Z",
+          "ingested_at": "2026-07-12T08:26:34.450Z",
+          "snippet": "The online luxury retailer is trading its digital storefront for a custom Airstream to tour destinations from Wölffer Estate Vineyard to Montauk Yacht Club.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": -0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0.2,
+            "matchedKeywords": [
+              "luxury"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Online luxury retailer Mytheresa is piloting a roving pop-up shop using a custom Airstream trailer to visit locations such as Wölffer Estate Vineyard and Montauk Yacht Club. This initiative shifts the brand from a purely digital storefront to an experiential, mobile presence.",
+          "translations": {
+            "da": {
+              "title": "Mytheresa tester vandrende pop-up i Hamptons",
+              "summary": "AI-genereret resumé: Online luksusforhandler Mytheresa tester en vandrende pop-up butik med en specialbygget Airstream trailer, der besøger steder som Wölffer Estate Vineyard og Montauk Yacht Club. Initiativet flytter brandet fra en ren digital butik til en oplevelsesrig, mobil tilstedeværelse."
+            },
+            "es": {
+              "title": "Mytheresa prueba una pop-up itinerante en Hamptons",
+              "summary": "Resumen generado por IA: El minorista de lujo en línea Mytheresa está probando una tienda pop-up itinerante usando un remolque Airstream personalizado para visitar lugares como Wölffer Estate Vineyard y Montauk Yacht Club. Esta iniciativa transforma la marca de una tienda digital pura a una presencia móvil y experiencial."
+            }
+          }
+        },
+        {
+          "id": "hrjaik",
+          "title": "Why the smartest luxury brands are ditching complexity",
+          "url": "https://www.luxurydaily.com/why-the-smartest-luxury-brands-are-ditching-complexity/",
+          "source": "Luxury Daily - Main",
+          "published_at": "2026-07-07T06:00:00.000Z",
+          "ingested_at": "2026-07-12T08:26:34.450Z",
+          "snippet": "In a market saturated by choice, complexity and constant noise, simplicity has become a powerful differentiator.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "luxury",
+              "brand"
+            ]
+          },
+          "aiSummary": "AI-generated summary: In an increasingly crowded luxury market filled with complexity and noise, the smartest luxury brands are embracing simplicity as a key way to stand out.",
+          "translations": {
+            "da": {
+              "title": "Hvorfor de klogeste luksusmærker dropper kompleksitet",
+              "summary": "AI-genereret resumé: I et stadigt mere overfyldt luksusmarked fyldt med kompleksitet og støj omfavner de klogeste luksusmærker enkelhed som en nøgle til at skille sig ud."
+            },
+            "es": {
+              "title": "Por qué las marcas de lujo más inteligentes están abandonando la complejidad",
+              "summary": "Resumen generado por IA: En un mercado de lujo cada vez más saturado y lleno de complejidad y ruido, las marcas de lujo más inteligentes están adoptando la simplicidad como una forma clave de destacar."
+            }
+          }
+        },
+        {
+          "id": "47g4kn",
+          "title": "Luxury Briefing: As luxury shoppers become more selective, couture is becoming a stronger VIC tool",
+          "url": "https://www.glossy.co/fashion/luxury/haute-couture-younger-luxury-customers-pandora-levis-tory-burch/?utm_campaign=glossydis&utm_medium=rss&utm_source=general-rss",
+          "source": "Glossy",
+          "published_at": "2026-07-10T04:00:00.000Z",
+          "ingested_at": "2026-07-12T08:26:34.450Z",
+          "snippet": "In this week's Luxury Briefing, Glossy digs into Haute Couture Week in Paris with luxury sourcer Gab Waller, concierge specialist Isabel Bazzani, designer Rahul Mishra and Bain senior partner Federica Levato — the brands taking part are increasingly looking to younger customers as their next long-term clients, the sources said. Also, why Pandora and Levi's chose the event to launch new collaborations, and executive moves at Tory Burch.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "luxury",
+              "brand"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Glossy's Luxury Briefing highlights how luxury brands at Haute Couture Week in Paris are targeting younger, more selective shoppers as long-term clients, featuring insights from industry experts and noting new collaborations by Pandora and Levi's alongside executive changes at Tory Burch.",
+          "translations": {
+            "da": {
+              "title": "Luxury Briefing: Efterhånden som luksuskøbere bliver mere selektive, bliver couture et stærkere VIC-værktøj",
+              "summary": "AI-genereret resume: Glossys Luxury Briefing fremhæver, hvordan luksusmærker under Haute Couture-ugen i Paris henvender sig til yngre, mere selektive kunder som langsigtede klienter, med indsigt fra brancheeksperter og nye samarbejder mellem Pandora og Levi's samt ledelsesændringer hos Tory Burch."
+            },
+            "es": {
+              "title": "Luxury Briefing: A medida que los compradores de lujo se vuelven más selectivos, la alta costura se convierte en una herramienta VIC más fuerte",
+              "summary": "Resumen generado por IA: Luxury Briefing de Glossy destaca cómo las marcas de lujo en la Semana de la Alta Costura en París están enfocándose en compradores jóvenes y más selectivos como clientes a largo plazo, con opiniones de expertos de la industria y nuevas colaboraciones de Pandora y Levi's junto con cambios ejecutivos en Tory Burch."
+            }
+          }
+        },
+        {
+          "id": "ch5na6",
+          "title": "7 Fashion and Beauty Store Openings to Know in Southern California",
+          "url": "https://wwd.com/business-news/retail/new-fashion-beauty-stores-los-angeles-southern-california-1239061801/",
+          "source": "WWD - Women's Wear Daily",
+          "published_at": "2026-07-10T20:52:55.000Z",
+          "ingested_at": "2026-07-12T08:26:34.450Z",
+          "snippet": "Fashion, beauty and lifestyle retailers have expanded across Southern California with new flagships and first California stores.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": []
+          },
+          "aiSummary": "AI-generated summary: Several fashion, beauty, and lifestyle retailers have recently opened new flagship and inaugural stores in Southern California, marking significant expansion in the region's luxury and consumer market.",
+          "translations": {
+            "da": {
+              "title": "7 Mode- og Skønhedsbutiksåbninger at kende til i det Sydlige Californien",
+              "summary": "AI-genereret resumé: Flere mode-, skønheds- og livsstilsforhandlere har for nylig åbnet nye flagskibs- og første butikker i det Sydlige Californien, hvilket markerer en betydelig udvidelse af regionens luksus- og forbrugermarked."
+            },
+            "es": {
+              "title": "7 Aperturas de Tiendas de Moda y Belleza para Conocer en el Sur de California",
+              "summary": "Resumen generado por IA: Varios minoristas de moda, belleza y estilo de vida han abierto recientemente nuevas tiendas insignia e inaugurales en el Sur de California, marcando una expansión significativa en el mercado de lujo y consumo de la región."
+            }
+          }
+        },
+        {
+          "id": "gdd25t",
+          "title": "How Amanda Uprichard Independently Scaled Her Occasionwear Brand Over Nearly 20 Years",
+          "url": "https://fashionista.com/2026/07/amanda-uprichard-founder-interview",
+          "source": "Fashionista",
+          "published_at": "2026-07-09T12:00:00.000Z",
+          "ingested_at": "2026-07-12T08:26:34.450Z",
+          "snippet": "Watch the New York City-based founder discuss designing for her core customer and expanding her DTC business, on The Fashionista Network.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "brand"
+            ]
+          },
+          "aiSummary": "AI-generated summary: In the Fashionista article \"How Amanda Uprichard Independently Scaled Her Occasionwear Brand Over Nearly 20 Years,\" the New York City-based founder discusses designing for her core customer and growing her direct-to-consumer business.",
+          "translations": {
+            "da": {
+              "title": "Hvordan Amanda Uprichard Uafhængigt Skalerede Sit Occasionwear-Mærke Over Næsten 20 År",
+              "summary": "AI-genereret resumé: I Fashionista-artiklen \"How Amanda Uprichard Independently Scaled Her Occasionwear Brand Over Nearly 20 Years\" fortæller grundlæggeren fra New York City om at designe til sin kernekunde og vækste sin direkte-til-forbruger-forretning."
+            },
+            "es": {
+              "title": "Cómo Amanda Uprichard Escaló Independientemente Su Marca de Ropa para Ocasiones Durante Casi 20 Años",
+              "summary": "Resumen generado por IA: En el artículo de Fashionista \"How Amanda Uprichard Independently Scaled Her Occasionwear Brand Over Nearly 20 Years,\" la fundadora con sede en Nueva York habla sobre diseñar para su cliente principal y hacer crecer su negocio directo al consumidor."
+            }
+          }
+        },
+        {
+          "id": "iu33yk",
+          "title": "Shirley Jane: A Textured Hair-Care Brand for Maintaining 'Curl Integrity'",
+          "url": "https://fashionista.com/2026/07/shirley-jane-hair-care-brand",
+          "source": "Fashionista",
+          "published_at": "2026-07-08T14:00:00.000Z",
+          "ingested_at": "2026-07-12T08:26:34.450Z",
+          "snippet": "Founder Jenna Satell noticed a gap in the market for effective and easy products for coarse, curly hair.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "brand"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Shirley Jane, founded by Jenna Satell, is a textured hair-care brand addressing the need for effective and easy-to-use products specifically designed for coarse, curly hair.",
+          "translations": {
+            "da": {
+              "title": "Shirley Jane: Et hårplejemærke til tekstureret hår for at bevare 'Curl Integrity'",
+              "summary": "AI-genereret resumé: Shirley Jane, grundlagt af Jenna Satell, er et hårplejemærke til tekstureret hår, der imødekommer behovet for effektive og nemme produkter specielt designet til groft, krøllet hår."
+            },
+            "es": {
+              "title": "Shirley Jane: Una marca de cuidado capilar texturizado para mantener la 'Integridad del Rizo'",
+              "summary": "Resumen generado por IA: Shirley Jane, fundada por Jenna Satell, es una marca de cuidado capilar texturizado que responde a la necesidad de productos efectivos y fáciles de usar, diseñados específicamente para cabello grueso y rizado."
+            }
+          }
+        }
+      ]
+    },
+    "Jewellery_Industry": {
+      "total": 18,
+      "top": [
+        {
+          "id": "g5l5ow",
+          "title": "Pandora launches new jewellery design program",
+          "url": "https://www.jewellermagazine.com/Article/15146/Pandora-launches-new-jewellery-design-program",
+          "source": "Jeweller - Business News",
+          "published_at": "2026-07-06T14:00:00.000Z",
+          "ingested_at": "2026-07-12T08:26:34.450Z",
+          "snippet": "Pandora, the world’s largest jewellery brand, has introduced a new creative platform that will see the company partner with a new designer each year to create new pieces.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "jewellery",
+              "jeweller"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Pandora, the world’s largest jewellery brand, has launched a new design program that partners with a different designer annually to create new jewellery pieces. This initiative was announced on July 6, 2026, in the jewellery industry.",
+          "translations": {
+            "da": {
+              "title": "Pandora lancerer nyt smykkedesignprogram",
+              "summary": "AI-genereret resumé: Pandora, verdens største smykkemærke, har lanceret et nyt designprogram, der hvert år samarbejder med en ny designer om at skabe nye smykker. Initiativet blev annonceret den 6. juli 2026 i smykkeindustrien."
+            },
+            "es": {
+              "title": "Pandora lanza nuevo programa de diseño de joyas",
+              "summary": "Resumen generado por IA: Pandora, la marca de joyería más grande del mundo, ha lanzado un nuevo programa de diseño que se asocia anualmente con un diseñador diferente para crear nuevas piezas de joyería. Esta iniciativa fue anunciada el 6 de julio de 2026 en la industria de la joyería."
+            }
+          }
+        },
+        {
+          "id": "mvf0zd",
+          "title": "Jewellery sales back on track in June",
+          "url": "https://www.jewellermagazine.com/Article/15203/Jewellery-sales-back-on-track-in-June",
+          "source": "Jeweller - Business News",
+          "published_at": "2026-07-09T14:00:00.000Z",
+          "ingested_at": "2026-07-12T08:26:34.450Z",
+          "snippet": "Jewellery sales across Australian independent retailers returned to positive territory over the past month.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.25,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "jewellery",
+              "jeweller",
+              "retailer"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Jewellery sales among Australian independent retailers rebounded to positive growth in June, signaling a recovery in the jewellery industry.",
+          "translations": {
+            "da": {
+              "title": "Smykkesalg tilbage på sporet i juni",
+              "summary": "AI-genereret resumé: Smykkesalget blandt australske uafhængige detailhandlere steg til positiv vækst i juni, hvilket signalerer en genopretning i smykkeindustrien."
+            },
+            "es": {
+              "title": "Ventas de joyería vuelven a la normalidad en junio",
+              "summary": "Resumen generado por IA: Las ventas de joyería entre minoristas independientes australianos se recuperaron con un crecimiento positivo en junio, señalando una recuperación en la industria de la joyería."
+            }
+          }
+        },
+        {
+          "id": "6oj3s6",
+          "title": "Futuristic technology to protect WA jewellery retailers",
+          "url": "https://www.jewellermagazine.com/Article/15151/Futuristic-technology-to-protect-WA-jewellery-retailers",
+          "source": "Jeweller - Business News",
+          "published_at": "2026-07-06T14:00:00.000Z",
+          "ingested_at": "2026-07-12T08:26:34.450Z",
+          "snippet": "In Western Australia, the State Government has launched a trial of ‘live facial recognition’ technology in public spaces, a move that has been welcomed by retail industry representatives.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.25,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "jewellery",
+              "retailer",
+              "jeweller"
+            ]
+          },
+          "aiSummary": "AI-generated summary: The Western Australian State Government has initiated a trial of live facial recognition technology in public spaces, a development supported by jewellery retail industry representatives to enhance protection.",
+          "translations": {
+            "da": {
+              "title": "Futuristisk teknologi til beskyttelse af WA smykkeforhandlere",
+              "summary": "AI-genereret resumé: Western Australian State Government har igangsat en prøve med live ansigtsgenkendelsesteknologi i offentlige rum, en udvikling støttet af repræsentanter fra smykkeindustrien for at øge beskyttelsen."
+            },
+            "es": {
+              "title": "Tecnología futurista para proteger a los minoristas de joyería de WA",
+              "summary": "Resumen generado por IA: El Gobierno del Estado de Western Australia ha iniciado una prueba de tecnología de reconocimiento facial en vivo en espacios públicos, un desarrollo apoyado por representantes de la industria minorista de joyería para mejorar la protección."
+            }
+          }
+        },
+        {
+          "id": "b6tp48",
+          "title": "First Look – The Norqain Freedom GMT Enjoy Life “Holiday” also Comes with a Golden Ticket to an Island Paradise",
+          "url": "https://monochrome-watches.com/norqain-freedom-gmt-enjoy-life-holiday-limited-edition-golden-ticket-win-holiday-maldives-review-price/",
+          "source": "Monochrome Watches",
+          "published_at": "2026-07-09T12:01:51.000Z",
+          "ingested_at": "2026-07-12T08:26:34.450Z",
+          "snippet": "Norqain has never been afraid to inject colour and fun into its robust sports watches. The new Freedom GMT Enjoy Life “Holiday” is one of the brand’s most playful creations. Based on the Freedom GMT and its true GMT movement made by Kenissi, this new 500-piece edition is a colourful celebration of holidays, adventures, and […]",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": -0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0.2,
+            "matchedKeywords": [
+              "gold",
+              "watch"
+            ]
+          },
+          "aiSummary": "AI-generated summary: The Norqain Freedom GMT Enjoy Life “Holiday” is a vibrant, limited 500-piece edition sports watch featuring a true GMT movement by Kenissi, designed as a playful celebration of holidays and adventures.",
+          "translations": {
+            "da": {
+              "title": "Første kig – Norqain Freedom GMT Enjoy Life “Holiday” kommer også med en gylden billet til et øparadis",
+              "summary": "AI-genereret resumé: Norqain Freedom GMT Enjoy Life “Holiday” er et livligt, begrænset sportsur i 500 eksemplarer med en ægte GMT-bevægelse fra Kenissi, designet som en legende fejring af ferier og eventyr."
+            },
+            "es": {
+              "title": "Primer vistazo – El Norqain Freedom GMT Enjoy Life “Holiday” también viene con un boleto dorado a un paraíso isleño",
+              "summary": "Resumen generado por IA: El Norqain Freedom GMT Enjoy Life “Holiday” es un vibrante reloj deportivo de edición limitada a 500 piezas con un verdadero movimiento GMT de Kenissi, diseñado como una celebración lúdica de las vacaciones y aventuras."
+            }
+          }
+        },
+        {
+          "id": "hv7nol",
+          "title": "I’d Give It All Up For You: The Yellow Gold Rolex Daytona 126518LN With A Turquoise Dial",
+          "url": "https://www.fratellowatches.com/rolex-daytona-126518ln/",
+          "source": "Fratello Watches",
+          "published_at": "2026-07-11T05:00:39.000Z",
+          "ingested_at": "2026-07-12T08:26:34.450Z",
+          "snippet": "Something got me started. In fact, it was Brazilian football legend Ronaldo Nazário, who was attending the FIFA World Cup. He was wearing the yellow gold Rolex Daytona 126518LN with a turquoise dial, which debuted last year at Watches and Wonders. My first thought was, “Why are you wearing ‘my’ watch?” It was a rather […]\nVisit I’d Give It All Up For You: The Yellow Gold Rolex Daytona 126518LN With A Turquoise Dial to read the full article.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": -0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0.2,
+            "matchedKeywords": [
+              "gold",
+              "watch"
+            ]
+          },
+          "aiSummary": "AI-generated summary: The article discusses the yellow gold Rolex Daytona 126518LN with a turquoise dial, highlighted by Brazilian football legend Ronaldo Nazário wearing it at the FIFA World Cup, a model that debuted last year at Watches and Wonders.",
+          "translations": {
+            "da": {
+              "title": "Jeg Vil Give Alt Op For Dig: Den Gule Guld Rolex Daytona 126518LN Med En Turkis Skive",
+              "summary": "AI-genereret resumé: Artiklen handler om den gule guld Rolex Daytona 126518LN med en turkis skive, fremhævet af den brasilianske fodboldlegende Ronaldo Nazário, der bar den ved FIFA World Cup, et model der debuterede sidste år på Watches and Wonders."
+            },
+            "es": {
+              "title": "Lo Dejaría Todo Por Ti: El Rolex Daytona 126518LN De Oro Amarillo Con Esfera Turquesa",
+              "summary": "Resumen generado por IA: El artículo trata sobre el Rolex Daytona 126518LN de oro amarillo con esfera turquesa, destacado por la leyenda del fútbol brasileño Ronaldo Nazário usándolo en la Copa Mundial de la FIFA, un modelo que debutó el año pasado en Watches and Wonders."
+            }
+          }
+        },
+        {
+          "id": "w0jhyv",
+          "title": "Every Second Belongs To Someone: Inside Silverstone With H. Moser & Cie.",
+          "url": "https://www.fratellowatches.com/every-second-belongs-to-someone-inside-silverstone-with-h-moser-cie/",
+          "source": "Fratello Watches",
+          "published_at": "2026-07-10T11:00:49.000Z",
+          "ingested_at": "2026-07-12T08:26:34.450Z",
+          "snippet": "My team finished dead last. We had one job — or three, technically, which turned out to be the whole point. During a visit to Enstone, the Alpine F1 team’s factory, with H. Moser & Cie., the team ran a pit-stop challenge for the visiting journalists — teams of three, one tire, against the clock, […]\nVisit Every Second Belongs To Someone: Inside Silverstone With H. Moser & Cie. to read the full article.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": -0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0.2,
+            "matchedKeywords": [
+              "silver"
+            ]
+          },
+          "aiSummary": "AI-generated summary: During a visit to the Alpine F1 team's factory in Enstone with H. Moser & Cie., journalists participated in a pit-stop challenge involving teams of three racing against the clock, highlighting the precision and teamwork in the jewellery and motorsport industries.",
+          "translations": {
+            "da": {
+              "title": "Hvert Sekund Tilhører Nogen: Inde i Silverstone med H. Moser & Cie.",
+              "summary": "AI-genereret resumé: Under et besøg på Alpine F1-holdets fabrik i Enstone med H. Moser & Cie. deltog journalister i en pit-stop udfordring med hold på tre, der kæmpede mod uret, hvilket fremhævede præcision og teamwork i smykke- og motorsportindustrien."
+            },
+            "es": {
+              "title": "Cada Segundo Pertenece a Alguien: Dentro de Silverstone con H. Moser & Cie.",
+              "summary": "Resumen generado por IA: Durante una visita a la fábrica del equipo Alpine F1 en Enstone con H. Moser & Cie., los periodistas participaron en un desafío de pit-stop con equipos de tres compitiendo contra el reloj, destacando la precisión y el trabajo en equipo en las industrias de la joyería y el automovilismo."
+            }
+          }
+        },
+        {
+          "id": "rgiyj5",
+          "title": "SoftBank names ex-Goldman Sachs trader Mark Agne to lead Vision Fund finances ",
+          "url": "https://economictimes.indiatimes.com/tech/technology/softbank-names-ex-goldman-sachs-trader-mark-agne-to-lead-vision-fund-finances/articleshow/132330292.cms",
+          "source": "Economic Times - Technology",
+          "published_at": "2026-07-11T12:15:19.000Z",
+          "ingested_at": "2026-07-12T08:26:34.450Z",
+          "snippet": "SoftBank Vision Fund has appointed Mark Agne to lead finance and technology roles. The move follows a series of staffing changes at SoftBank as its focus shifts alongside founder Masayoshi Son’s quest for technologies underpinning AI services. Agne joined SoftBank in 2019 after 17 years at Goldman Sachs, where he led the Japan securities division and was co-head of Asia-Pacific equity trading.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": -0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0.2,
+            "matchedKeywords": [
+              "gold"
+            ]
+          },
+          "aiSummary": "AI-generated summary: SoftBank Vision Fund has appointed former Goldman Sachs trader Mark Agne to lead its finance and technology roles amid staffing changes, aligning with founder Masayoshi Son’s focus on AI-related technologies. Agne, who joined SoftBank in 2019, previously led the Japan securities division and co-headed Asia-Pacific equity trading at Goldman Sachs.",
+          "translations": {
+            "da": {
+              "title": "SoftBank udnævner tidligere Goldman Sachs-handler Mark Agne til at lede Vision Fund finans",
+              "summary": "SoftBank Vision Fund har udnævnt den tidligere Goldman Sachs-handler Mark Agne til at lede finans- og teknologifunktioner i forbindelse med personaleforandringer, i tråd med grundlæggeren Masayoshi Sons fokus på AI-relaterede teknologier. Agne, der tiltrådte SoftBank i 2019, ledte tidligere Japans værdipapirafdeling og var med til at lede aktiehandel i Asien-Stillehavsområdet hos Goldman Sachs."
+            },
+            "es": {
+              "title": "SoftBank nombra al exoperador de Goldman Sachs Mark Agne para liderar las finanzas del Vision Fund",
+              "summary": "SoftBank Vision Fund ha nombrado al exoperador de Goldman Sachs Mark Agne para liderar sus roles financieros y tecnológicos en medio de cambios de personal, alineándose con el enfoque del fundador Masayoshi Son en tecnologías relacionadas con la IA. Agne, que se unió a SoftBank en 2019, dirigió anteriormente la división de valores de Japón y fue cojefe de negociación de acciones en Asia-Pacífico en Goldman Sachs."
+            }
+          }
+        }
+      ]
+    }
+  },
+  "editorialTake": "SK hynix raising $26.5 billion in its US listing to ride the AI boom is a clear bet on memory chips as the bottleneck in AI infrastructure. This isn’t just about cashing in on hype. It signals where the real value in AI lies: hardware that can scale efficiently under soaring demand. When a chipmaker pulls off the largest tech IPO in years, you have to rethink the supply chain risks for AI developers and the pricing pressures on cloud providers.\n\nMeanwhile, Palo Alto Networks’ CEO calling for a 90% price cut in AI token costs exposes a brutal tension: AI’s rapid growth is colliding with unsustainable economics. If infrastructure costs don’t fall sharply, AI adoption will stall outside elite players. The question is whether this price collapse will come from tech innovation, commoditization, or a shakeout that leaves only a few giants standing.",
+  "coverImageUrl": "/weekly-images/2026-W28.png",
+  "coverImageAlt": "Weekly cover illustration for 2026-W28"
+}

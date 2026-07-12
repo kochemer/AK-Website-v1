@@ -76,5 +76,11 @@
     "cached_at": "2026-07-05T09:32:22.005Z",
     "model": "gpt-4.1-mini",
     "version": "1.1"
+  },
+  "2026-W28:a2d98eb6e1cf": {
+    "editorialTake": "SK hynix raising $26.5 billion in its US listing to ride the AI boom is a clear bet on memory chips as the bottleneck in AI infrastructure. This isn’t just about cashing in on hype. It signals where the real value in AI lies: hardware that can scale efficiently under soaring demand. When a chipmaker pulls off the largest tech IPO in years, you have to rethink the supply chain risks for AI developers and the pricing pressures on cloud providers.\n\nMeanwhile, Palo Alto Networks’ CEO calling for a 90% price cut in AI token costs exposes a brutal tension: AI’s rapid growth is colliding with unsustainable economics. If infrastructure costs don’t fall sharply, AI adoption will stall outside elite players. The question is whether this price collapse will come from tech innovation, commoditization, or a shakeout that leaves only a few giants standing.",
+    "cached_at": "2026-07-12T08:44:46.022Z",
+    "model": "gpt-4.1-mini",
+    "version": "1.1"
   }
 }

@@ -1,0 +1,28 @@
+{
+  "weekLabel": "2026-W28",
+  "homepageTopArticles": [
+    {
+      "title": "Marketplace Briefing: AI traffic is poised to reshape the Amazon funnel",
+      "source": "Modern Retail",
+      "snippet": "Every Amazon agency right now is trying to get a sense of what role AI referral traffic is playing — and will play — in driving purchases, even if they don't have much data to go off of yet.",
+      "aiSummary": "AI-generated summary: According to a July 2026 article in Modern Retail, Amazon agencies are currently exploring how AI-driven referral traffic influences purchase behavior, despite limited available data. This trend is expected to significantly impact the ecommerce funnel."
+    },
+    {
+      "title": "Why Smart Brands Are Rethinking Discovery in the Age of AI",
+      "source": "Total Retail",
+      "snippet": "The shopping journey used to start with a search bar. Now it starts with a conversation. Consumers are increasingly turning to artificial intelligence tools to research products, compare options, and make decisions before they ever land on a brand’s website, walk into a store, or open an app. For retailers, the immediate challenge is visibility: […]",
+      "aiSummary": "AI-generated summary: The article discusses how the traditional shopping journey, once initiated by search bars, is now beginning with AI-driven conversations, as consumers use artificial intelligence tools to research and compare products before engaging directly with brands. Retailers face the challenge of maintaining visibility in this evolving discovery landscape."
+    },
+    {
+      "title": "Pandora launches new jewellery design program",
+      "source": "Jeweller - Business News",
+      "snippet": "Pandora, the world’s largest jewellery brand, has introduced a new creative platform that will see the company partner with a new designer each year to create new pieces.",
+      "aiSummary": "AI-generated summary: Pandora, the world’s largest jewellery brand, has launched a new design program that partners with a different designer annually to create new jewellery pieces. This initiative was announced on July 6, 2026, in the jewellery industry."
+    }
+  ],
+  "model": "gpt-image-1",
+  "finalPrompt": "Photograph: A supermarket checkout conveyor belt displays a pile of chocolate chip cookies, a shiny gold wristwatch resting atop a crinkled bakery bag, and a small metallic toy robot perched on a jewelry box. A shopping bag peeks from the cookies. The belt is paused mid-motion; the objects appear naturally grouped, as if just arriving together. All items are real, tactile, and well-lit. No people.\n\nCRITICAL CONSTRAINTS (must be strictly avoided):\n- text, letters, numbers, signage, labels, price tags, screens, UI, dashboards, holograms, floating icons, watermarks, unrelated brand logos, cartoon, illustration, CGI, 3D render, anime, diamond, diamonds, gemstone, gemstones, precious stones, jewelry close-up, jewelry product shot, diamond ring, diamond necklace, diamond earring, jeweled, sparkling gemstone, dramatic spotlight, glowing edges, rim lighting, vignette, cinematic color grade, blurred background, bokeh\n\nThis must look like a real photograph taken by a human — not AI-generated, not CGI, not a 3D render. Natural light. Real objects. Real imperfections. Fill the entire frame edge to edge with the scene — no black bars, no empty space at the edges.\n\nDo not include: text, labels, signage, screens, UI, logos unrelated to the scene, diamonds, gemstones, CGI lighting, dramatic spotlights, or blurred vignette backgrounds.",
+  "imageSize": "1536x1024",
+  "outputPath": "/weekly-images/2026-W28.png",
+  "generatedAt": "2026-07-12T08:47:53.597Z"
+}

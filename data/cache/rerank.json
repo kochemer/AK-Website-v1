@@ -3646,5 +3646,149 @@
     ],
     "cached_at": "2026-07-05T09:31:54.931Z",
     "model": "o4-mini"
+  },
+  "2026-W28:AI_and_Strategy:722e78ad750e": {
+    "selected": [
+      {
+        "id": "12",
+        "rank": 1,
+        "why": "Major AI infrastructure investments by top tech companies",
+        "confidence": 0.95
+      },
+      {
+        "id": "4",
+        "rank": 2,
+        "why": "Significant $6B chipmaker spending driven by AI boom",
+        "confidence": 0.9
+      },
+      {
+        "id": "17",
+        "rank": 3,
+        "why": "SK hynix's $26.5B US listing fueled by AI demand surge",
+        "confidence": 0.9
+      },
+      {
+        "id": "13",
+        "rank": 4,
+        "why": "CEO highlights urgent need to cut AI token pricing 90%",
+        "confidence": 0.9
+      },
+      {
+        "id": "5",
+        "rank": 5,
+        "why": "Elon Musk's stance impacts Anthropic AI model hosting",
+        "confidence": 0.85
+      },
+      {
+        "id": "11",
+        "rank": 6,
+        "why": "Microsoft's AI buildout causes 27% emissions surge",
+        "confidence": 0.85
+      },
+      {
+        "id": "14",
+        "rank": 7,
+        "why": "Music industry launches AI-generated content labeling system",
+        "confidence": 0.8
+      }
+    ],
+    "cached_at": "2026-07-12T08:43:00.967Z",
+    "model": "gpt-4.1-mini"
+  },
+  "2026-W28:Ecommerce_Retail_Tech:7fbe38d53741": {
+    "selected": [
+      {
+        "id": "11",
+        "rank": 1,
+        "why": "AI-driven referral traffic poised to reshape Amazon marketplace funnel",
+        "confidence": 0.92
+      },
+      {
+        "id": "5",
+        "rank": 2,
+        "why": "AI-powered discovery transforms customer search experience",
+        "confidence": 0.9
+      },
+      {
+        "id": "17",
+        "rank": 3,
+        "why": "Data reveals delivery delays erode customer loyalty significantly",
+        "confidence": 0.88
+      },
+      {
+        "id": "8",
+        "rank": 4,
+        "why": "M&S expands Amazon marketplace reach amid sales surge",
+        "confidence": 0.86
+      },
+      {
+        "id": "14",
+        "rank": 5,
+        "why": "World Cup retail media strategy underscores targeted ad effectiveness",
+        "confidence": 0.85
+      },
+      {
+        "id": "7",
+        "rank": 6,
+        "why": "Opus platform supplier expansion indicates B2B ecommerce scaling",
+        "confidence": 0.83
+      },
+      {
+        "id": "3",
+        "rank": 7,
+        "why": "Event-triggered messaging boosts conversion through behavior-based outreach",
+        "confidence": 0.8
+      }
+    ],
+    "cached_at": "2026-07-12T08:43:17.622Z",
+    "model": "o4-mini"
+  },
+  "2026-W28:Luxury_and_Consumer:98d44f888551": {
+    "selected": [
+      {
+        "id": "0",
+        "rank": 1,
+        "why": "AI personal stylist impacts customer experience and digital commerce",
+        "confidence": 0.9
+      },
+      {
+        "id": "8",
+        "rank": 2,
+        "why": "Mytheresa's roving pop-up blends digital and physical retail innovation",
+        "confidence": 0.88
+      },
+      {
+        "id": "9",
+        "rank": 3,
+        "why": "Luxury brands simplifying complexity for better customer engagement",
+        "confidence": 0.85
+      },
+      {
+        "id": "2",
+        "rank": 4,
+        "why": "Insights on luxury shoppers and couture as a value indicator",
+        "confidence": 0.83
+      },
+      {
+        "id": "6",
+        "rank": 5,
+        "why": "New flagship openings highlight store operations and merchandising trends",
+        "confidence": 0.8
+      },
+      {
+        "id": "1",
+        "rank": 6,
+        "why": "Case study on scaling occasionwear brand with customer focus",
+        "confidence": 0.78
+      },
+      {
+        "id": "17",
+        "rank": 7,
+        "why": "Niche hair-care brand addresses customer retention and product gap",
+        "confidence": 0.75
+      }
+    ],
+    "cached_at": "2026-07-12T08:43:45.627Z",
+    "model": "gpt-4.1-mini"
   }
 }
