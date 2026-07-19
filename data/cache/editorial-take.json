@@ -82,5 +82,11 @@
     "cached_at": "2026-07-12T08:44:46.022Z",
     "model": "gpt-4.1-mini",
     "version": "1.1"
+  },
+  "2026-W29:851ea2b49582": {
+    "editorialTake": "Meta’s talks to lease $10 billion worth of AI compute to Anthropic mark a critical shift in how tech giants monetize their infrastructure. Instead of hoarding excess capacity, Meta is treating compute like a utility, betting that renting it out will offset costs and accelerate AI development. This move forces competitors to rethink their capital strategies: owning hardware is no longer enough, it’s about who can flexibly deploy and monetize it at scale.\n\nAnthropic’s willingness to pay for Meta’s compute signals a new battleground in AI: access to raw processing power as a service, not just proprietary models. This commoditization raises a tough question for AI startups and incumbents alike: will owning your own compute become a competitive advantage or a costly liability? The answer will shape who leads the next wave of AI innovation.",
+    "cached_at": "2026-07-19T08:43:46.849Z",
+    "model": "gpt-4.1-mini",
+    "version": "1.1"
   }
 }

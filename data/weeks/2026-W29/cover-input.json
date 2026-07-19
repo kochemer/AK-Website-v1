@@ -1,0 +1,28 @@
+{
+  "weekLabel": "2026-W29",
+  "homepageTopArticles": [
+    {
+      "title": "Tractor Supply partners with Instacart on one-hour delivery",
+      "source": "Digital Commerce 360",
+      "snippet": "Tractor Supply will appear in the Instacart Marketplace, offering fulfillment for U.S. shoppers in as little as one hour, the companies announced. The partnership makes more than 2,400 of Tractor Supply’s locations available to shoppers using the Instacart Marketplace. Consumers can use the Instacart app or website to shop from the retailer’s stores. Tractor Supply […]\nThe post Tractor Supply partners with Instacart on one-hour delivery appeared first on Digital Commerce 360.",
+      "aiSummary": "AI-generated summary: Tractor Supply has partnered with Instacart to offer one-hour delivery through the Instacart Marketplace, making over 2,400 Tractor Supply locations available to U.S. shoppers via the Instacart app and website. This collaboration aims to enhance ecommerce convenience by providing rapid fulfillment from Tractor Supply stores."
+    },
+    {
+      "title": "Why Return Fraud Has Become Retail’s Next Margin Crisis",
+      "source": "Total Retail",
+      "snippet": "Retailers have spent years strengthening fraud defenses at checkout, but today, wrongdoing committed after customers hit the buy button is far more costly for merchants. Return fraud and abuse have become the newest form of “digital shrink,” which shows up through customer refunds, false claims, policy abuse, and inventory that can’t be resold. And as […]",
+      "aiSummary": "AI-generated summary: The article from Total Retail (2026-07-14) highlights how return fraud has emerged as a significant challenge for retailers, causing substantial losses through false claims, policy abuse, and unsellable inventory, despite strengthened fraud defenses at checkout."
+    },
+    {
+      "title": "Introducing – The Bianchet Rotondo UltraFino now in Rose Gold",
+      "source": "Monochrome Watches",
+      "snippet": "Earlier this year, independent Swiss brand Bianchet expanded beyond its signature tonneau-shaped watches with the launch of the Rotondo UltraFino, a sleek round interpretation of its distinctive designs. With an ultra-thin profile, an integrated bracelet and a flying tourbillon movement, the titanium and carbon models introduced a more versatile side to the young brand while […]",
+      "aiSummary": "AI-generated summary: Swiss brand Bianchet has introduced the Rotondo UltraFino in rose gold, expanding its collection beyond tonneau-shaped watches with a sleek, ultra-thin round design featuring an integrated bracelet and flying tourbillon movement. This new model adds versatility to the brand's offerings, following earlier titanium and carbon versions."
+    }
+  ],
+  "model": "gpt-image-1",
+  "finalPrompt": "Photograph: On a light gray supermarket checkout counter, a wire shopping basket holds a shiny rose gold luxury watch tangled in straw and animal feed pellets. Next to the basket, a rugged ranch boot rests on a return-labeled box. A miniature green tractor toy with a small grocery bag is parked nearby. Subtle, incidental brand stickers are visible on the box and boot. Everything looks naturally lit and touchable.\n\nCRITICAL CONSTRAINTS (must be strictly avoided):\n- text, letters, numbers, signage, labels, price tags, screens, UI, dashboards, holograms, floating icons, watermarks, unrelated brand logos, cartoon, illustration, CGI, 3D render, anime, diamond, diamonds, gemstone, gemstones, precious stones, jewelry close-up, jewelry product shot, diamond ring, diamond necklace, diamond earring, jeweled, sparkling gemstone, dramatic spotlight, glowing edges, rim lighting, vignette, cinematic color grade, blurred background, bokeh\n\nThis must look like a real photograph taken by a human — not AI-generated, not CGI, not a 3D render. Natural light. Real objects. Real imperfections. Fill the entire frame edge to edge with the scene — no black bars, no empty space at the edges.\n\nDo not include: text, labels, signage, screens, UI, logos unrelated to the scene, diamonds, gemstones, CGI lighting, dramatic spotlights, or blurred vignette backgrounds.",
+  "imageSize": "1536x1024",
+  "outputPath": "/weekly-images/2026-W29.png",
+  "generatedAt": "2026-07-19T08:49:42.285Z"
+}

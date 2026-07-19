@@ -1,0 +1,76 @@
+{
+  "digestWeek": "2026-W29",
+  "ingestionWeek": "2026-W29",
+  "startedAt": "2026-07-19T08:28:17.103Z",
+  "finishedAt": "2026-07-19T08:50:03.540Z",
+  "steps": [
+    {
+      "name": "rss",
+      "ok": true,
+      "startedAt": "2026-07-19T08:28:17.125Z",
+      "finishedAt": "2026-07-19T08:28:37.620Z"
+    },
+    {
+      "name": "pages",
+      "ok": true,
+      "startedAt": "2026-07-19T08:28:37.620Z",
+      "finishedAt": "2026-07-19T08:28:38.048Z"
+    },
+    {
+      "name": "discovery",
+      "ok": true,
+      "startedAt": "2026-07-19T08:28:38.049Z",
+      "finishedAt": "2026-07-19T08:41:24.295Z"
+    },
+    {
+      "name": "classification",
+      "ok": true,
+      "startedAt": "2026-07-19T08:41:24.295Z",
+      "finishedAt": "2026-07-19T08:41:24.411Z"
+    },
+    {
+      "name": "digest",
+      "ok": true,
+      "startedAt": "2026-07-19T08:41:24.411Z",
+      "finishedAt": "2026-07-19T08:43:46.852Z"
+    },
+    {
+      "name": "email",
+      "ok": true,
+      "startedAt": "2026-07-19T08:43:46.852Z",
+      "finishedAt": "2026-07-19T08:44:15.640Z"
+    },
+    {
+      "name": "podcast",
+      "ok": true,
+      "startedAt": "2026-07-19T08:44:15.640Z",
+      "finishedAt": "2026-07-19T08:48:39.220Z"
+    },
+    {
+      "name": "cover",
+      "ok": true,
+      "startedAt": "2026-07-19T08:48:39.220Z",
+      "finishedAt": "2026-07-19T08:49:42.300Z"
+    },
+    {
+      "name": "competitorAnalyze",
+      "ok": true,
+      "startedAt": "2026-07-19T08:49:42.300Z",
+      "finishedAt": "2026-07-19T08:50:03.539Z"
+    }
+  ],
+  "health": {
+    "warnings": [
+      "Luxury & Consumer: wwd.com represents 42.9% (3/7) - exceeds 40% threshold",
+      "Jewellery Industry: www.jewellermagazine.com represents 60.0% (3/5) - exceeds 40% threshold"
+    ],
+    "metrics": {
+      "paywallPercent": 0,
+      "podcastWordCount": 2451
+    }
+  },
+  "versions": {
+    "node": "v20.20.2",
+    "gitCommit": "5e750154a52dcfc2c39b6d4d723b8aaa96131aa5"
+  }
+}

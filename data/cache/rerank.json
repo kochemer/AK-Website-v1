@@ -3790,5 +3790,149 @@
     ],
     "cached_at": "2026-07-12T08:43:45.627Z",
     "model": "gpt-4.1-mini"
+  },
+  "2026-W29:AI_and_Strategy:73cb39492397": {
+    "selected": [
+      {
+        "id": "3",
+        "rank": 1,
+        "why": "Major $10B compute lease deal between Meta and Anthropic",
+        "confidence": 0.95
+      },
+      {
+        "id": "5",
+        "rank": 2,
+        "why": "Meta's strategy to monetize excess AI compute with Anthropic",
+        "confidence": 0.9
+      },
+      {
+        "id": "10",
+        "rank": 3,
+        "why": "Bunkerhill raises $55M to scale agentic AI in health systems",
+        "confidence": 0.9
+      },
+      {
+        "id": "8",
+        "rank": 4,
+        "why": "Anthropic updates Claude Fable 5 pricing and API push",
+        "confidence": 0.85
+      },
+      {
+        "id": "13",
+        "rank": 5,
+        "why": "Indonesia's copyright law rewrite impacts AI platform governance",
+        "confidence": 0.85
+      },
+      {
+        "id": "6",
+        "rank": 6,
+        "why": "Netflix acquires AI startup InterPositive for $587M",
+        "confidence": 0.8
+      },
+      {
+        "id": "4",
+        "rank": 7,
+        "why": "Review of Vertu's AI agent performance for executives",
+        "confidence": 0.75
+      }
+    ],
+    "cached_at": "2026-07-19T08:41:52.478Z",
+    "model": "gpt-4.1-mini"
+  },
+  "2026-W29:Ecommerce_Retail_Tech:abc46602014a": {
+    "selected": [
+      {
+        "id": "1",
+        "rank": 1,
+        "why": "Tractor Supply partners with Instacart for one-hour delivery expansion",
+        "confidence": 0.95
+      },
+      {
+        "id": "5",
+        "rank": 2,
+        "why": "Return fraud identified as a growing retail margin crisis with data",
+        "confidence": 0.9
+      },
+      {
+        "id": "15",
+        "rank": 3,
+        "why": "Strategies to reduce payment fraud without harming customer experience",
+        "confidence": 0.9
+      },
+      {
+        "id": "3",
+        "rank": 4,
+        "why": "AI driving key ecommerce trends with concrete retailer applications",
+        "confidence": 0.88
+      },
+      {
+        "id": "9",
+        "rank": 5,
+        "why": "Amazon sales surge insights for startups amid macroeconomic challenges",
+        "confidence": 0.85
+      },
+      {
+        "id": "17",
+        "rank": 6,
+        "why": "Very Group adopts agentic AI to improve pricing strategy effectiveness",
+        "confidence": 0.83
+      },
+      {
+        "id": "0",
+        "rank": 7,
+        "why": "Beauty Pie replatforms to Shopify to support ecommerce growth scalability",
+        "confidence": 0.8
+      }
+    ],
+    "cached_at": "2026-07-19T08:42:20.134Z",
+    "model": "gpt-4.1-mini"
+  },
+  "2026-W29:Luxury_and_Consumer:673efd051ae2": {
+    "selected": [
+      {
+        "id": "0",
+        "rank": 1,
+        "why": "Insights on scaling sneaker brands and merchandising strategy",
+        "confidence": 0.95
+      },
+      {
+        "id": "5",
+        "rank": 2,
+        "why": "Luxury designer collaborations with hotels offer retail ecommerce insights",
+        "confidence": 0.9
+      },
+      {
+        "id": "7",
+        "rank": 3,
+        "why": "Case study on brand expansion beyond core demographic in ecommerce",
+        "confidence": 0.9
+      },
+      {
+        "id": "15",
+        "rank": 4,
+        "why": "Early sneaker release highlights ecommerce product launch strategy",
+        "confidence": 0.85
+      },
+      {
+        "id": "14",
+        "rank": 5,
+        "why": "New fragrance launch with rising popularity impacting retail sales",
+        "confidence": 0.85
+      },
+      {
+        "id": "17",
+        "rank": 6,
+        "why": "Fashion workplace challenges affecting retail operations and talent retention",
+        "confidence": 0.8
+      },
+      {
+        "id": "1",
+        "rank": 7,
+        "why": "Retail merchandising focus on luxury window displays for new collections",
+        "confidence": 0.8
+      }
+    ],
+    "cached_at": "2026-07-19T08:42:51.305Z",
+    "model": "gpt-4.1-mini"
   }
 }

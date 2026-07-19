@@ -1,0 +1,16 @@
+{
+  "concept": "tractor-feed-returns-gold-watch-in-basket",
+  "primaryHumorDriver": "literal metaphor",
+  "secondaryEnhancer": "unexpected texture/material combination",
+  "sceneDescription": "A photorealistic supermarket checkout counter displays a wire shopping basket in the center, containing a shiny rose gold luxury wristwatch entangled in a small pile of straw and animal feed pellets. Next to the basket, a well-worn ranch boot sits awkwardly atop return-labeled packaging, while a barcoded sticker with the Monochrome Watches logo peeks from under the straw. A miniature tractor toy with a tiny Instacart grocery bag is parked beside the pile, and a subtle Total Retail sticker is stuck to the boot heel. The lighting is even and natural, with all objects clearly visible—absurdity comes from the unlikely pairing of luxury, rural, and retail return cues.",
+  "finalImagePrompt": "On a light gray supermarket checkout counter, a wire shopping basket holds a shiny rose gold luxury watch tangled in straw and animal feed pellets. Next to the basket, a rugged ranch boot rests on a return-labeled box. A miniature green tractor toy with a small grocery bag is parked nearby. Subtle, incidental brand stickers are visible on the box and boot. Everything looks naturally lit and touchable.",
+  "negativePrompt": [
+    "text, letters, numbers, signage, labels, price tags",
+    "screens, UI, dashboards, holograms, floating icons",
+    "watermarks, unrelated brand logos",
+    "cartoon, illustration, CGI, 3D render, anime",
+    "diamond, diamonds, gemstone, gemstones, precious stones, jewelry close-up, jewelry product shot, diamond ring, diamond necklace, diamond earring, jeweled, sparkling gemstone",
+    "dramatic spotlight, glowing edges, rim lighting, vignette, cinematic color grade, blurred background, bokeh"
+  ],
+  "confidence": 0.78
+}
