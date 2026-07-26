@@ -1,0 +1,28 @@
+{
+  "weekLabel": "2026-W30",
+  "homepageTopArticles": [
+    {
+      "title": "Failed payments are becoming a hidden driver of subscription cancellations, warns Ecommpay",
+      "source": "Internet Retailing",
+      "snippet": "Ecommerce businesses are losing customers because their payment infrastructure is silently pushing subscribers towards cancellation.\nThe post Failed payments are becoming a hidden driver of subscription cancellations, warns Ecommpay appeared first on InternetRetailing.",
+      "aiSummary": "AI-generated summary: According to Ecommpay, failed payments are increasingly causing ecommerce businesses to lose subscribers, as payment infrastructure issues silently drive cancellations. This trend highlights a hidden challenge within subscription-based retail models."
+    },
+    {
+      "title": "How the ONDC Reshapes India Ecommerce",
+      "source": "Practical Ecommerce",
+      "snippet": "The Open Network for Digital Commerce aims to help small, local merchants, yet brands can access it, too.\nThe post How the ONDC Reshapes India Ecommerce appeared first on Practical Ecommerce.",
+      "aiSummary": "AI-generated summary: The Open Network for Digital Commerce (ONDC) is designed to support small, local merchants in India while also allowing brands to access the platform, thereby reshaping the country's ecommerce landscape."
+    },
+    {
+      "title": "Richemont continues to blaze sales trail in jewellery industry",
+      "source": "Jeweller - Business News",
+      "snippet": "Sales across Richemont’s jewellery division increased over the first quarter of the financial year.",
+      "aiSummary": "AI-generated summary: Richemont's jewellery division experienced increased sales in the first quarter of the financial year, continuing its strong performance in the jewellery industry."
+    }
+  ],
+  "model": "gpt-image-1",
+  "finalPrompt": "Photograph: On a sunlit wooden table, a gold watch teeters atop a fallen teacup with tea spilling out, soaking a pile of plain biscuits. Next to them, a small green and yellow Indian auto-rickshaw toy is wedged in a saucer puddle. A biscuit wrapper, sugar bowl, and the toy’s underside display small, subtle logos. The scene is lively, objects arranged in a playful mid-disaster, with natural daylight and no people.\n\nCRITICAL CONSTRAINTS (must be strictly avoided):\n- text, letters, numbers, signage, labels, price tags, screens, UI, dashboards, holograms, floating icons, watermarks, unrelated brand logos, cartoon, illustration, CGI, 3D render, anime, diamond, diamonds, gemstone, gemstones, precious stones, jewelry close-up, jewelry product shot, diamond ring, diamond necklace, diamond earring, jeweled, sparkling gemstone, dramatic spotlight, glowing edges, rim lighting, vignette, cinematic color grade, blurred background, bokeh\n\nThis must look like a real photograph taken by a human — not AI-generated, not CGI, not a 3D render. Natural light. Real objects. Real imperfections. Fill the entire frame edge to edge with the scene — no black bars, no empty space at the edges.\n\nDo not include: text, labels, signage, screens, UI, logos unrelated to the scene, diamonds, gemstones, CGI lighting, dramatic spotlights, or blurred vignette backgrounds.",
+  "imageSize": "1536x1024",
+  "outputPath": "/weekly-images/2026-W30.png",
+  "generatedAt": "2026-07-26T08:58:45.043Z"
+}

@@ -3934,5 +3934,149 @@
     ],
     "cached_at": "2026-07-19T08:42:51.305Z",
     "model": "gpt-4.1-mini"
+  },
+  "2026-W30:AI_and_Strategy:7484660ef7b8": {
+    "selected": [
+      {
+        "id": "7",
+        "rank": 1,
+        "why": "Moody's analysis of AI spending risks on major tech credit quality",
+        "confidence": 0.95
+      },
+      {
+        "id": "3",
+        "rank": 2,
+        "why": "AMD launches Helios AI rack-scale system challenging Nvidia",
+        "confidence": 0.9
+      },
+      {
+        "id": "13",
+        "rank": 3,
+        "why": "Anthropic's Claude Opus 5 model halves token cost with top scores",
+        "confidence": 0.9
+      },
+      {
+        "id": "15",
+        "rank": 4,
+        "why": "Economic Times reports AI investment boom credit risks from hyperscalers",
+        "confidence": 0.85
+      },
+      {
+        "id": "12",
+        "rank": 5,
+        "why": "Prentis AI lab co-founded by Hoffman and Pincus raising $100M",
+        "confidence": 0.85
+      },
+      {
+        "id": "9",
+        "rank": 6,
+        "why": "OpenAI's loss of control during Hugging Face hack reveals safety gaps",
+        "confidence": 0.9
+      },
+      {
+        "id": "14",
+        "rank": 7,
+        "why": "German AI consortium releases Soofi S, a top-performing open 30B model",
+        "confidence": 0.85
+      }
+    ],
+    "cached_at": "2026-07-26T08:51:43.228Z",
+    "model": "gpt-4.1-mini"
+  },
+  "2026-W30:Ecommerce_Retail_Tech:046a65c8750b": {
+    "selected": [
+      {
+        "id": "1",
+        "rank": 1,
+        "why": "Failed payments driving subscription cancellations, impacting ecommerce revenue",
+        "confidence": 0.95
+      },
+      {
+        "id": "4",
+        "rank": 2,
+        "why": "ONDC reshaping India ecommerce with new marketplace dynamics and merchant access",
+        "confidence": 0.9
+      },
+      {
+        "id": "8",
+        "rank": 3,
+        "why": "Shopify expands pay-on-conversion Shop Campaigns to UK, affecting retailer acquisition",
+        "confidence": 0.9
+      },
+      {
+        "id": "11",
+        "rank": 4,
+        "why": "Whatnot’s AI-powered recommendations refresh rapidly, enhancing marketplace competitiveness",
+        "confidence": 0.88
+      },
+      {
+        "id": "5",
+        "rank": 5,
+        "why": "ESW launches agentic commerce with Microsoft Copilot, advancing ecommerce tech integration",
+        "confidence": 0.87
+      },
+      {
+        "id": "14",
+        "rank": 6,
+        "why": "Michaels shares early results from Gemini-powered AI assistant, showing measurable impact",
+        "confidence": 0.85
+      },
+      {
+        "id": "12",
+        "rank": 7,
+        "why": "Meta launches Seller app providing new sales tools for Facebook Marketplace merchants",
+        "confidence": 0.83
+      }
+    ],
+    "cached_at": "2026-07-26T08:52:11.758Z",
+    "model": "gpt-4.1-mini"
+  },
+  "2026-W30:Luxury_and_Consumer:4217b6469c04": {
+    "selected": [
+      {
+        "id": "0",
+        "rank": 1,
+        "why": "Insights on extended shopping calendar for customer acquisition",
+        "confidence": 0.9
+      },
+      {
+        "id": "12",
+        "rank": 2,
+        "why": "Data on retail sales uplift from discounting and heatwave",
+        "confidence": 0.85
+      },
+      {
+        "id": "2",
+        "rank": 3,
+        "why": "Practical tips on store customer retention and resale strategy",
+        "confidence": 0.85
+      },
+      {
+        "id": "10",
+        "rank": 4,
+        "why": "Retail strategy targeting male teen fragrance buyers at Ulta",
+        "confidence": 0.8
+      },
+      {
+        "id": "1",
+        "rank": 5,
+        "why": "Luxury retailer's fabric focus impacting merchandising and assortment",
+        "confidence": 0.8
+      },
+      {
+        "id": "9",
+        "rank": 6,
+        "why": "Analysis on luxury market homogenization affecting brand strategy",
+        "confidence": 0.75
+      },
+      {
+        "id": "8",
+        "rank": 7,
+        "why": "Grocery retailer tactics to retain lower-income shoppers vs discounters",
+        "confidence": 0.7
+      }
+    ],
+    "cached_at": "2026-07-26T08:52:42.553Z",
+    "model": "gpt-4.1-mini"
   }
 }

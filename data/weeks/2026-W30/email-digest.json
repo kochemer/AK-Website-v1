@@ -1,0 +1,95 @@
+{
+  "week": "2026-W30",
+  "generatedAt": "2026-07-26T08:53:58.071Z",
+  "intro": "This week’s intelligence digest explores transformative shifts in ecommerce and AI, from India’s ONDC reshaping retail landscapes to AI-driven innovations enhancing customer acquisition and competitive positioning. Key insights include Moody’s caution on AI investment risks for tech giants, AMD’s challenge to Nvidia with Helios, and emerging agentic commerce integrations shaping the future of luxury and marketplace experiences.",
+  "readOneThing": {
+    "title": "How the ONDC Reshapes India Ecommerce",
+    "url": "https://www.practicalecommerce.com/how-the-ondc-reshapes-india-ecommerce"
+  },
+  "items": [
+    {
+      "rank": 1,
+      "title": "How the ONDC Reshapes India Ecommerce",
+      "url": "https://www.practicalecommerce.com/how-the-ondc-reshapes-india-ecommerce",
+      "source": "Practical Ecommerce",
+      "bullets": [
+        "The Open Network for Digital Commerce (ONDC), launched in 2021, is an open-source framework connecting apps, payment providers, and logistics companies through open standards in India’s ecommerce sector.",
+        "ONDC seller apps charge fees ranging from 3% to 10%, significantly lower than traditional marketplaces that charge between 18% and 40%, allowing merchants more control over their online presence.",
+        "India’s ecommerce market is poised for growth with 840 million smartphone users and a youthful population, while ONDC supports kirana merchants and brands across categories like grocery, food delivery, and home items."
+      ],
+      "summary": "AI-generated summary: The Open Network for Digital Commerce (ONDC) is designed to support small, local merchants in India while also allowing brands to access the platform, thereby reshaping the country's ecommerce landscape."
+    },
+    {
+      "rank": 2,
+      "title": "Jewelry That Moves: 17 Transformable and Secret-Keeping Pieces for Fall",
+      "url": "https://instoremag.com/move-and-transform/",
+      "source": "Instore Magazine",
+      "bullets": [
+        "Eden Presley offers a 14K gold necklace that can be worn as a 26-inch necklace, two 13-inch chokers, or four separate bracelets, priced at $18,000.",
+        "These innovative jewelry designs, inspired by historical themes, are gaining popularity as versatile and meaningful accessories for the fall and holiday season.",
+        "Independent designers today have to be more creative than ever before with gold prices still high and the different challenges at the retail end"
+      ],
+      "summary": "AI-generated summary: Instore Magazine's article \"Jewelry That Moves: 17 Transformable and Secret-Keeping Pieces for Fall\" highlights convertible necklaces, spinning pendants, and lockets with hidden messages, curated by Beth Bernstein for the holiday season."
+    },
+    {
+      "rank": 3,
+      "title": "Moody's says 'unprecedented' AI spending threatens credit quality of Amazon, Meta, Alphabet and others",
+      "url": "https://www.cnbc.com/2026/07/24/moodys-ai-spending-credit-quality-amazon-meta-alphabet.html",
+      "source": "CNBC Technology",
+      "bullets": [
+        "Moody's Ratings warned that unprecedented AI infrastructure spending is increasing balance-sheet risks and eroding free cash flow for hyperscalers like Amazon, Meta, and Alphabet.",
+        "Capital expenditures for AI-related physical assets are projected to reach $785 billion in 2026 and about $1 trillion in 2027, with direct debt among six tracked companies totaling approximately $460 billion.",
+        "Hyperscalers are increasingly using off-balance-sheet financing through long-term data center leases, which have ballooned to $1.2 trillion, including $820 billion in future lease commitments still under construction."
+      ],
+      "summary": "AI-generated summary: Moody's warns that the \"unprecedented\" AI spending by major corporations like Amazon, Meta, and Alphabet is impacting their credit quality by pushing them to rely more on debt, stock sales, and off-balance-sheet strategies."
+    },
+    {
+      "rank": 4,
+      "title": "How the shifting shopping calendar has become a customer acquisition opportunity",
+      "url": "https://www.glossy.co/podcasts/how-the-shifting-shopping-calendar-has-become-a-customer-acquisition-opportunity/?utm_campaign=glossydis&utm_medium=rss&utm_source=general-rss",
+      "source": "Glossy",
+      "bullets": [
+        "The traditional shopping calendar has expanded with events like Prime Day turning into Prime Week and Black Friday extending to a full month.",
+        "PwC research shows the average family spends about $920 during back-to-school shopping and continues spending around $630 monthly throughout the school year.",
+        "Consumer use of AI for holiday shopping discovery and price-checking surged from nearly 0% last year to 73% this year, according to PwC data."
+      ],
+      "summary": "AI-generated summary: The traditional shopping calendar is expanding as events like Prime Day and Black Friday extend into longer periods, with back-to-school and holiday shopping starting earlier, creating new customer acquisition opportunities for brands and retailers."
+    },
+    {
+      "rank": 5,
+      "title": "Marketplace Briefing: How Whatnot’s AI-powered recommendation system gives it a competitive edge",
+      "url": "https://www.modernretail.co/technology/marketplace-briefing-how-whatnots-ai-powered-recommendation-system-gives-it-a-competitive-edge/?utm_campaign=modernretaildis&utm_medium=rss&utm_source=general-rss",
+      "source": "Modern Retail",
+      "bullets": [
+        "Read the full article for details.",
+        "Read the full article for complete details.",
+        "Read the full article for more information."
+      ],
+      "summary": "AI-generated summary: According to a July 2026 article in Modern Retail, Whatnot's AI-powered recommendation system, which refreshes in minutes, provides the company with a competitive advantage in live commerce. Chief Product Officer Tom Verrilli discussed the unique challenges of recommendations in this sector."
+    },
+    {
+      "rank": 6,
+      "title": "AMD takes on Nvidia with its Helios AI rack-scale system",
+      "url": "https://techcrunch.com/2026/07/23/amd-takes-on-nvidia-with-its-helios-ai-rack-scale-system/",
+      "source": "TechCrunch - AI",
+      "bullets": [
+        "AMD announced its Helios AI rack-scale system at the Advancing AI conference, targeting large AI labs and competing with Nvidia's offerings.",
+        "Helios outperforms Nvidia's Vera Rubin system on several metrics and has secured customers like Microsoft, OpenAI, Meta, Oracle, and Anthropic.",
+        "AMD expects the AI accelerator market to reach $1.4 trillion by 2030, with GPUs dominating due to evolving AI workloads and programmability needs."
+      ],
+      "summary": "AI-generated summary: AMD is entering the AI hardware market with its Helios rack-scale system, aiming to compete directly with Nvidia, with shipments to begin later in 2026."
+    },
+    {
+      "rank": 7,
+      "title": "ESW launches agentic commerce integration, partnering with Microsoft Copilot",
+      "url": "https://www.digitalcommerce360.com/2026/07/22/esw-agentic-commerce-integration-microsoft-copilot/",
+      "source": "Digital Commerce 360",
+      "bullets": [
+        "Ten of the Top 2000 North American online retailers using ESW generated nearly $18.19 billion in web sales in 2025 through its international ecommerce services.",
+        "McKinsey projects agentic commerce could reach a $3 trillion to $5 trillion global opportunity by 2030, while Gartner forecasts a 25% decline in traditional search due to AI shopping assistants.",
+        "ESW describes itself as an international growth engine and a global ecommerce platform"
+      ],
+      "summary": "AI-generated summary: Ecommerce technology provider ESW has launched ESW Agentic Commerce, a new AI-powered product discovery solution developed in partnership with Microsoft Copilot, aimed at helping brands enhance their ecommerce capabilities."
+    }
+  ]
+}

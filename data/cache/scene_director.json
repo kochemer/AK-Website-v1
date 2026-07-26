@@ -725,5 +725,26 @@
     "version": "v3",
     "cached_at": "2026-07-19T08:48:41.762Z",
     "variant": "safe"
+  },
+  "281927bac076b8c19a20fdbaf31aa7b17a8b6ea95d838ebe0ca99a685f7b84c0": {
+    "output": {
+      "concept": "subscription-payment-fail-tea-party-metaphor",
+      "primaryHumorDriver": "literal metaphor",
+      "secondaryEnhancer": "unexpected texture/material combination",
+      "sceneDescription": "A hyper-realistic wooden table displays an absurdly formal tea party gone wrong: a fancy gold watch precariously balanced on a toppled teacup, tea spilling toward a pile of plain, everyday biscuits. Next to them, a miniature Indian auto-rickshaw toy (symbolizing ONDC and India) is stuck in a saucer full of spilled tea, as if stalled. Subtle, incidental branded stickers (Internet Retailing, Practical Ecommerce, Jeweller) are visible on a sugar bowl, a biscuit wrapper, and the rickshaw's underside. The objects' odd pairing (luxury watch, Indian toy, humble biscuits, toppled cup) creates a playful metaphor for failed payments disrupting subscriptions, ONDC reshaping commerce, and continued luxury sales—all as a tea party mishap.",
+      "finalImagePrompt": "On a sunlit wooden table, a gold watch teeters atop a fallen teacup with tea spilling out, soaking a pile of plain biscuits. Next to them, a small green and yellow Indian auto-rickshaw toy is wedged in a saucer puddle. A biscuit wrapper, sugar bowl, and the toy’s underside display small, subtle logos. The scene is lively, objects arranged in a playful mid-disaster, with natural daylight and no people.",
+      "negativePrompt": [
+        "text, letters, numbers, signage, labels, price tags",
+        "screens, UI, dashboards, holograms, floating icons",
+        "watermarks, unrelated brand logos",
+        "cartoon, illustration, CGI, 3D render, anime",
+        "diamond, diamonds, gemstone, gemstones, precious stones, jewelry close-up, jewelry product shot, diamond ring, diamond necklace, diamond earring, jeweled, sparkling gemstone",
+        "dramatic spotlight, glowing edges, rim lighting, vignette, cinematic color grade, blurred background, bokeh"
+      ],
+      "confidence": 0.78
+    },
+    "version": "v3",
+    "cached_at": "2026-07-26T08:57:46.215Z",
+    "variant": "safe"
   }
 }
