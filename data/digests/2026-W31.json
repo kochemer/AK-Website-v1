@@ -1,0 +1,929 @@
+{
+  "weekLabel": "2026-W31",
+  "tz": "Europe/Copenhagen",
+  "startISO": "2026-07-26T22:00:00.000Z",
+  "endISO": "2026-08-02T21:59:59.999Z",
+  "builtAtISO": "2026-08-02T10:50:26.226+02:00",
+  "builtAtLocal": "2026-08-02 10:50:26",
+  "totals": {
+    "total": 654,
+    "byTopic": {
+      "AIStrategy": 134,
+      "EcommerceRetail": 426,
+      "LuxuryConsumer": 79,
+      "Jewellery": 15
+    }
+  },
+  "topics": {
+    "AI_and_Strategy": {
+      "total": 134,
+      "top": [
+        {
+          "id": "zf3l5g",
+          "title": "Big Tech AI spending spree tops $1tn",
+          "url": "https://www.ft.com/content/dcf3873e-7b32-4a24-a90d-3bccf1d2c996?syn-25a6b1a6=1",
+          "source": "Financial Times - Technology",
+          "published_at": "2026-07-31T01:52:48.000Z",
+          "ingested_at": "2026-08-02T08:31:55.578Z",
+          "snippet": "Google, Amazon, Microsoft and Meta have vastly increased their investments since the AI boom began in 2023",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ai",
+              "investment"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Since the AI boom began in 2023, major tech companies including Google, Amazon, Microsoft, and Meta have significantly increased their investments, with total AI spending now exceeding $1 trillion.",
+          "translations": {
+            "da": {
+              "title": "Big Techs AI-udgifter overstiger 1 billion dollars",
+              "summary": "AI-genereret resumé: Siden AI-boomet begyndte i 2023, har store tech-virksomheder som Google, Amazon, Microsoft og Meta øget deres investeringer betydeligt, med samlede AI-udgifter nu over 1 billion dollars."
+            },
+            "es": {
+              "title": "El gasto en IA de Big Tech supera el billón de dólares",
+              "summary": "Resumen generado por IA: Desde que comenzó el auge de la IA en 2023, grandes empresas tecnológicas como Google, Amazon, Microsoft y Meta han incrementado significativamente sus inversiones, con un gasto total en IA que ahora supera el billón de dólares."
+            }
+          }
+        },
+        {
+          "id": "h033l3",
+          "title": "Amazon completes $50bn investment in OpenAI",
+          "url": "https://www.ft.com/content/8ae9e6e4-a53c-44da-8e7d-c9d81f0df4b9?syn-25a6b1a6=1",
+          "source": "Financial Times - Technology",
+          "published_at": "2026-07-31T21:29:58.000Z",
+          "ingested_at": "2026-08-02T08:31:55.578Z",
+          "snippet": "Ecommerce giant has roughly 5% stake in AI lab after equity deal",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.25,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.2,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "openai",
+              "investment",
+              "ai",
+              "ai lab"
+            ]
+          },
+          "aiSummary": "AI-generated summary: On July 31, 2026, the Financial Times reported that Amazon has completed a $50 billion investment in OpenAI, acquiring approximately a 5% equity stake in the AI lab.",
+          "translations": {
+            "da": {
+              "title": "Amazon fuldfører investering på 50 mia. USD i OpenAI",
+              "summary": "AI-genereret resumé: Den 31. juli 2026 rapporterede Financial Times, at Amazon har fuldført en investering på 50 milliarder USD i OpenAI og erhvervet cirka 5 % ejerandel i AI-laboratoriet."
+            },
+            "es": {
+              "title": "Amazon completa inversión de 50.000 millones de dólares en OpenAI",
+              "summary": "Resumen generado por IA: El 31 de julio de 2026, Financial Times informó que Amazon completó una inversión de 50.000 millones de dólares en OpenAI, adquiriendo aproximadamente un 5 % de participación accionaria en el laboratorio de IA."
+            }
+          }
+        },
+        {
+          "id": "g31fot",
+          "title": "OpenAI cuts prices for two of its GPT-5.6 AI models as companies grow sensitive to costs",
+          "url": "https://www.cnbc.com/2026/07/30/open-ai-price-cut-gpt.html",
+          "source": "CNBC Technology",
+          "published_at": "2026-07-30T17:27:49.000Z",
+          "ingested_at": "2026-08-02T08:31:55.578Z",
+          "snippet": "The company is facing pressure to cater to a more cost-sensitive customer base.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ai",
+              "openai"
+            ]
+          },
+          "aiSummary": "AI-generated summary: On July 30, 2026, CNBC Technology reported that OpenAI has reduced prices for two of its GPT-5.6 AI models in response to increasing cost sensitivity among its corporate customers.",
+          "translations": {
+            "da": {
+              "title": "OpenAI sænker priserne på to af sine GPT-5.6 AI-modeller, da virksomheder bliver mere omkostningsfølsomme",
+              "summary": "AI-genereret resumé: Den 30. juli 2026 rapporterede CNBC Technology, at OpenAI har reduceret priserne på to af sine GPT-5.6 AI-modeller som reaktion på stigende omkostningsfølsomhed blandt sine erhvervskunder."
+            },
+            "es": {
+              "title": "OpenAI reduce precios de dos de sus modelos de IA GPT-5.6 ante la creciente sensibilidad al costo de las empresas",
+              "summary": "Resumen generado por IA: El 30 de julio de 2026, CNBC Technology informó que OpenAI ha reducido los precios de dos de sus modelos de IA GPT-5.6 en respuesta al aumento de la sensibilidad a los costos entre sus clientes corporativos."
+            }
+          }
+        },
+        {
+          "id": "ivr5v4",
+          "title": "AI labs want to pump the brakes, but Amazon and SpaceX are still blasting off",
+          "url": "https://techcrunch.com/podcast/ai-labs-want-to-pump-the-brakes-but-amazon-and-spacex-are-still-blasting-off/",
+          "source": "TechCrunch - AI",
+          "published_at": "2026-07-31T14:00:00.000Z",
+          "ingested_at": "2026-08-02T08:31:55.578Z",
+          "snippet": "After years of pushing full speed ahead on AI, OpenAI CEO Sam Altman says maybe it’s time for the AI industry to “pace” itself. The comments came just days after one of OpenAI’s own models broke out of its test environment and got tangled up in a breach at Hugging Face — though as Equity’s hosts point out, sloppy security seems to have […]",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.10000000000000003,
+            "recencyScore": 0,
+            "sourceWeight": 0.15,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0,
+            "penalty": 0.2,
+            "matchedKeywords": [
+              "ai",
+              "ai lab",
+              "openai"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Following a recent security breach involving one of OpenAI's models, OpenAI CEO Sam Altman suggests the AI industry should slow down its rapid development pace, even as companies like Amazon and SpaceX continue aggressive AI advancements.",
+          "translations": {
+            "da": {
+              "title": "AI-laboratorier vil sætte farten ned, men Amazon og SpaceX fortsætter med at skyde i vejret",
+              "summary": "AI-genereret resumé: Efter et nyligt sikkerhedsbrud med en af OpenAIs modeller foreslår OpenAI CEO Sam Altman, at AI-industrien bør bremse sin hurtige udvikling, selvom virksomheder som Amazon og SpaceX fortsætter aggressive AI-fremskridt."
+            },
+            "es": {
+              "title": "Los laboratorios de IA quieren frenar, pero Amazon y SpaceX siguen despegando",
+              "summary": "Resumen generado por IA: Tras una reciente brecha de seguridad que involucró a uno de los modelos de OpenAI, el CEO de OpenAI, Sam Altman, sugiere que la industria de IA debería desacelerar su rápido ritmo de desarrollo, aunque empresas como Amazon y SpaceX continúan con avances agresivos en IA."
+            }
+          }
+        },
+        {
+          "id": "6fmy7g",
+          "title": "MediaTek plans $5 billion financing for AI data-center chips ",
+          "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/mediatek-plans-5-billion-financing-for-ai-data-center-chips/articleshow/132765801.cms",
+          "source": "Economic Times - Technology",
+          "published_at": "2026-07-31T11:22:07.000Z",
+          "ingested_at": "2026-08-02T08:31:55.578Z",
+          "snippet": "MediaTek approved five billion dollars for long-term growth and AI chip expansion.  The company aims to reduce smartphone reliance and supply custom AI chips.  Global smartphone shipments declined, impacting mobile-chip revenue significantly.  MediaTek expects its data-center AI chip business to generate over two billion dollars.  This strategic move positions MediaTek for faster-growing and higher-margin opportunities.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ai"
+            ]
+          },
+          "aiSummary": "AI-generated summary: MediaTek has approved a $5 billion financing plan to expand its AI data-center chip business, aiming to reduce reliance on smartphones amid declining global shipments and target faster-growing, higher-margin opportunities with expected revenues exceeding $2 billion.",
+          "translations": {
+            "da": {
+              "title": "MediaTek planlægger 5 milliarder dollars finansiering til AI-datacenterchips",
+              "summary": "AI-genereret resumé: MediaTek har godkendt en finansieringsplan på 5 milliarder dollars for at udvide sin AI-datacenterchipforretning med mål om at mindske afhængigheden af smartphones under faldende globale leverancer og fokusere på hurtigere voksende, højmarginmuligheder med forventede indtægter over 2 milliarder dollars."
+            },
+            "es": {
+              "title": "MediaTek planea financiamiento de 5 mil millones de dólares para chips de centros de datos de IA",
+              "summary": "Resumen generado por IA: MediaTek ha aprobado un plan de financiamiento de 5 mil millones de dólares para expandir su negocio de chips para centros de datos de IA, con el objetivo de reducir la dependencia de los smartphones en medio de la caída de envíos globales y enfocarse en oportunidades de mayor crecimiento y margen con ingresos esperados que superan los 2 mil millones de dólares."
+            }
+          }
+        },
+        {
+          "id": "rhgimr",
+          "title": "Meta shares tumble as Zuckerberg tries to sell his vision for AI ‘agents’",
+          "url": "https://www.ft.com/content/06d941ed-8136-46a4-a2ec-44bea1b35c3b?syn-25a6b1a6=1",
+          "source": "Financial Times - Technology",
+          "published_at": "2026-07-30T21:02:39.000Z",
+          "ingested_at": "2026-08-02T08:31:55.578Z",
+          "snippet": "Social media chief defends strategy based on personalised bots as costs rise and revenue projections disappoint",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ai",
+              "agent"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Meta's shares declined as CEO Mark Zuckerberg promotes a strategy focused on personalized AI agents, while the social media division faces rising costs and disappointing revenue forecasts.",
+          "translations": {
+            "da": {
+              "title": "Meta-aktier falder, mens Zuckerberg forsøger at sælge sin vision for AI 'agenter'",
+              "summary": "AI-genereret resumé: Metas aktier faldt, da CEO Mark Zuckerberg promoverer en strategi med fokus på personlige AI-agenter, mens sociale mediedivisionen oplever stigende omkostninger og skuffende indtægtsprognoser."
+            },
+            "es": {
+              "title": "Las acciones de Meta caen mientras Zuckerberg intenta vender su visión de ‘agentes’ de IA",
+              "summary": "Resumen generado por IA: Las acciones de Meta disminuyeron mientras el CEO Mark Zuckerberg promueve una estrategia centrada en agentes de IA personalizados, mientras la división de redes sociales enfrenta costos crecientes y pronósticos de ingresos decepcionantes."
+            }
+          }
+        },
+        {
+          "id": "c9dtlh",
+          "title": "Dwindling cash and soaring memory costs: Tech's AI buildout has ballooning price tag",
+          "url": "https://www.cnbc.com/2026/07/31/tech-earnings-cash-memory-ai.html",
+          "source": "CNBC Technology",
+          "published_at": "2026-07-31T19:55:13.000Z",
+          "ingested_at": "2026-08-02T08:31:55.578Z",
+          "snippet": "Amazon, Alphabet and Tesla all reported negative cash flow in the latest quarter, while Meta's cash generation plummeted by 91%.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0.1,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ai"
+            ]
+          },
+          "aiSummary": "AI-generated summary: According to CNBC Technology on July 31, 2026, major tech companies like Amazon, Alphabet, and Tesla experienced negative cash flow in the latest quarter, with Meta's cash generation declining by 91%, highlighting the rising costs associated with AI development.",
+          "translations": {
+            "da": {
+              "title": "Faldende kontanter og stigende hukommelsesomkostninger: Techs AI-udbygning har en eksploderende pris",
+              "summary": "AI-genereret resumé: Ifølge CNBC Technology den 31. juli 2026 oplevede store tech-virksomheder som Amazon, Alphabet og Tesla negativ pengestrøm i det seneste kvartal, hvor Metas kontantgenerering faldt med 91%, hvilket fremhæver de stigende omkostninger forbundet med AI-udvikling."
+            },
+            "es": {
+              "title": "Disminución de efectivo y aumento de costos de memoria: la expansión de IA en tecnología tiene un precio creciente",
+              "summary": "Resumen generado por IA: Según CNBC Technology el 31 de julio de 2026, grandes empresas tecnológicas como Amazon, Alphabet y Tesla experimentaron flujo de caja negativo en el último trimestre, con una caída del 91% en la generación de efectivo de Meta, destacando los crecientes costos asociados con el desarrollo de IA."
+            }
+          }
+        }
+      ]
+    },
+    "Ecommerce_Retail_Tech": {
+      "total": 426,
+      "top": [
+        {
+          "id": "9fyl15",
+          "title": "House Bill Reshapes Marketplace Policies",
+          "url": "https://www.practicalecommerce.com/house-bill-reshapes-marketplace-policies",
+          "source": "Practical Ecommerce",
+          "published_at": "2026-07-30T10:08:46.000Z",
+          "ingested_at": "2026-08-02T08:31:55.578Z",
+          "snippet": "The \"Online Sellers' Bill of Rights Act of 2026\" would require marketplaces to explain account suspensions and give affected sellers opportunities to appeal.\nThe post House Bill Reshapes Marketplace Policies appeared first on Practical Ecommerce.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "marketplace",
+              "ecommerce"
+            ]
+          },
+          "aiSummary": "AI-generated summary: The \"Online Sellers' Bill of Rights Act of 2026,\" discussed in Practical Ecommerce on July 30, 2026, proposes that marketplaces must provide explanations for account suspensions and allow sellers to appeal decisions. This bill aims to increase transparency and fairness in ecommerce platform policies.",
+          "translations": {
+            "da": {
+              "title": "Lovforslag ændrer markedspladsens politikker",
+              "summary": "AI-genereret resumé: \"Online Sellers' Bill of Rights Act of 2026,\" diskuteret i Practical Ecommerce den 30. juli 2026, foreslår, at markedspladser skal give forklaringer på kontosuspensioner og tillade sælgere at appellere beslutninger. Dette lovforslag sigter mod at øge gennemsigtighed og retfærdighed i ecommerce-platformspolitikker."
+            },
+            "es": {
+              "title": "Proyecto de ley reforma políticas de mercado",
+              "summary": "Resumen generado por IA: El \"Online Sellers' Bill of Rights Act of 2026,\" discutido en Practical Ecommerce el 30 de julio de 2026, propone que los mercados deben proporcionar explicaciones para suspensiones de cuentas y permitir a los vendedores apelar decisiones. Este proyecto de ley busca aumentar la transparencia y equidad en las políticas de plataformas de comercio electrónico."
+            }
+          }
+        },
+        {
+          "id": "svzpty",
+          "title": "O’Neill Logistics partners with Robust.AI on warehouse automation",
+          "url": "https://www.digitalcommerce360.com/2026/07/29/oneill-logistics-partners-with-robust-ai-on-warehouse-automation/",
+          "source": "Digital Commerce 360",
+          "published_at": "2026-07-29T16:47:56.000Z",
+          "ingested_at": "2026-08-02T08:31:55.578Z",
+          "snippet": "Third-party logistics (3PL) provider O’Neill Logistics will deploy 24 mobile robots from warehouse automation vendor Robust.AI in New Jersey and Georgia facilities as it seeks to improve order fulfillment efficiency and support retail and direct-to-consumer operations. Robust.AI said in an announcement that O’Neill Logistics will use the Carter model of robots in facilities in New […]\nThe post O’Neill Logistics partners with Robust.AI on warehouse automation appeared first on Digital Commerce 36...",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "logistics",
+              "warehouse",
+              "fulfillment"
+            ]
+          },
+          "aiSummary": "AI-generated summary: O’Neill Logistics is partnering with Robust.AI to deploy 24 Carter model mobile robots in its New Jersey and Georgia warehouses to enhance order fulfillment efficiency and support retail and direct-to-consumer operations.",
+          "translations": {
+            "da": {
+              "title": "O’Neill Logistics samarbejder med Robust.AI om lagerautomatisering",
+              "summary": "O’Neill Logistics samarbejder med Robust.AI om at implementere 24 Carter-model mobile robotter i deres lagre i New Jersey og Georgia for at forbedre ordreopfyldelseseffektiviteten og støtte detail- og direkte-til-forbruger operationer."
+            },
+            "es": {
+              "title": "O’Neill Logistics se asocia con Robust.AI para la automatización de almacenes",
+              "summary": "O’Neill Logistics se asocia con Robust.AI para desplegar 24 robots móviles modelo Carter en sus almacenes de Nueva Jersey y Georgia para mejorar la eficiencia en el cumplimiento de pedidos y apoyar las operaciones minoristas y directas al consumidor."
+            }
+          }
+        },
+        {
+          "id": "ofiitr",
+          "title": "How Walmart uses AI to limit weather disruptions in its supply chain",
+          "url": "https://www.retaildive.com/news/walmart-uses-ai-limit-weather-disruptions-in-supply-chain/826560/",
+          "source": "Retail Dive",
+          "published_at": "2026-07-30T15:53:00.000Z",
+          "ingested_at": "2026-08-02T08:31:55.578Z",
+          "snippet": "The retailer uses technology to determine how to reroute or position inventory before severe weather events occur.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "inventory"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Walmart leverages AI technology to proactively reroute and position inventory ahead of severe weather events, minimizing disruptions in its supply chain.",
+          "translations": {
+            "da": {
+              "title": "Hvordan Walmart bruger AI til at begrænse vejrforstyrrelser i sin forsyningskæde",
+              "summary": "Walmart udnytter AI-teknologi til proaktivt at omlægge og placere lager før alvorlige vejrhændelser, hvilket minimerer forstyrrelser i forsyningskæden."
+            },
+            "es": {
+              "title": "Cómo Walmart utiliza IA para limitar las interrupciones climáticas en su cadena de suministro",
+              "summary": "Walmart aprovecha la tecnología de IA para redirigir y posicionar inventarios de forma proactiva antes de eventos climáticos severos, minimizando las interrupciones en su cadena de suministro."
+            }
+          }
+        },
+        {
+          "id": "vecbgr",
+          "title": "Amazon Prime Day details elusive as AWS takes centerstage",
+          "url": "https://www.retaildive.com/news/amazon-prime-day-details-aws-Q2/826694/",
+          "source": "Retail Dive",
+          "published_at": "2026-07-31T15:20:00.000Z",
+          "ingested_at": "2026-08-02T08:31:55.578Z",
+          "snippet": "The company’s Q2 online store net sales grew 15%, but Amazon has pared back the public release of details on how the major sales event fared.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": []
+          },
+          "aiSummary": "AI-generated summary: Amazon's Q2 online store net sales increased by 15%, yet the company has limited the public disclosure of specific details regarding the performance of its Prime Day sales event, as AWS gains more focus.",
+          "translations": {
+            "da": {
+              "title": "Detaljer om Amazon Prime Day er svære at få, mens AWS tager fokus",
+              "summary": "AI-genereret resumé: Amazons onlinebutiks nettoomsætning i 2. kvartal steg med 15%, men virksomheden har begrænset offentliggørelsen af specifikke detaljer om Prime Day-salget, da AWS får mere opmærksomhed."
+            },
+            "es": {
+              "title": "Detalles de Amazon Prime Day esquivos mientras AWS toma protagonismo",
+              "summary": "Resumen generado por IA: Las ventas netas en línea del segundo trimestre de Amazon aumentaron un 15%, pero la compañía ha limitado la divulgación pública de detalles específicos sobre el desempeño de su evento de ventas Prime Day, mientras AWS gana más atención."
+            }
+          }
+        },
+        {
+          "id": "nmjssc",
+          "title": "Ecommerce Trends: How Lululemon is using AI",
+          "url": "https://www.digitalcommerce360.com/2026/07/30/how-lululemon-is-using-ai/",
+          "source": "Digital Commerce 360",
+          "published_at": "2026-07-30T18:52:13.000Z",
+          "ingested_at": "2026-08-02T08:31:55.578Z",
+          "snippet": "Lululemon Athletica is keeping artificial intelligence front and center in its plans for 2026 — and the athleisure brand has been investing and hiring as it outlines how it is using AI to achieve results across customer service, merchandise and more. In 2025, the company appointed its first chief AI and technology officer, naming Ranju […]\nThe post Ecommerce Trends: How Lululemon is using AI appeared first on Digital Commerce 360.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ecommerce"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Lululemon Athletica is prioritizing artificial intelligence in its 2026 strategy by investing and hiring to enhance areas such as customer service and merchandise, including appointing its first chief AI and technology officer in 2025.",
+          "translations": {
+            "da": {
+              "title": "Ecommerce Trends: Hvordan Lululemon bruger AI",
+              "summary": "AI-genereret resumé: Lululemon Athletica prioriterer kunstig intelligens i sin 2026-strategi ved at investere og ansætte for at forbedre områder som kundeservice og merchandise, herunder udnævnelsen af sin første chef for AI og teknologi i 2025."
+            },
+            "es": {
+              "title": "Tendencias de Ecommerce: Cómo Lululemon está usando IA",
+              "summary": "Resumen generado por IA: Lululemon Athletica está priorizando la inteligencia artificial en su estrategia 2026 mediante inversiones y contrataciones para mejorar áreas como el servicio al cliente y la mercancía, incluyendo el nombramiento de su primer director de IA y tecnología en 2025."
+            }
+          }
+        },
+        {
+          "id": "shf61r",
+          "title": "AWS’s AI business exceeds $25 billion annual revenue run rate",
+          "url": "https://internetretailing.net/awss-ai-business-exceeds-25-billion-annual-revenue-run-rate/",
+          "source": "Internet Retailing",
+          "published_at": "2026-07-31T13:23:45.000Z",
+          "ingested_at": "2026-08-02T08:31:55.578Z",
+          "snippet": "Amazon’s net sales increased by 20% to $200.6bn (£149.47bn) year on year and its operating profit increased 43% to $27.5bn (£20.49bn) in the last financial quarter of 2026.\nThe post AWS’s AI business exceeds $25 billion annual revenue run rate appeared first on InternetRetailing.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0,
+            "insightSignalBoost": 0.1,
+            "penalty": 0,
+            "matchedKeywords": []
+          },
+          "aiSummary": "AI-generated summary: Amazon's net sales rose 20% to $200.6 billion, with operating profit increasing 43% to $27.5 billion in the last quarter of 2026, while AWS’s AI business surpassed a $25 billion annual revenue run rate.",
+          "translations": {
+            "da": {
+              "title": "AWS’s AI-forretning overstiger en årlig omsætningsrate på 25 milliarder dollars",
+              "summary": "AI-genereret resumé: Amazons nettoomsætning steg 20 % til 200,6 milliarder dollars, med en driftsindtjening, der steg 43 % til 27,5 milliarder dollars i sidste kvartal af 2026, mens AWS’s AI-forretning oversteg en årlig omsætningsrate på 25 milliarder dollars."
+            },
+            "es": {
+              "title": "El negocio de IA de AWS supera una tasa de ingresos anual de 25 mil millones de dólares",
+              "summary": "Resumen generado por IA: Las ventas netas de Amazon aumentaron un 20 % hasta 200.6 mil millones de dólares, con un beneficio operativo que creció un 43 % hasta 27.5 mil millones de dólares en el último trimestre de 2026, mientras que el negocio de IA de AWS superó una tasa de ingresos anual de 25 mil millones de dólares."
+            }
+          }
+        },
+        {
+          "id": "osuoib",
+          "title": "Remitly Launches Debit Card to Expand Beyond Remittances",
+          "url": "https://www.paymentsjournal.com/remitly-launches-debit-card-to-expand-beyond-remittances/",
+          "source": "Payments Journal",
+          "published_at": "2026-07-31T19:30:00.000Z",
+          "ingested_at": "2026-08-02T08:31:55.578Z",
+          "snippet": "Remitly, which has built its business on cross-border money transfers, is launching a companion debit card in the U.S., entering the growing market for international payments.   The Remitly Global Card integrates with Remitly’s cross-border payments platform, giving customers access to the company’s foreign exchange rates and transfer services. Remitly says the card provides access […]\nThe post Remitly Launches Debit Card to Expand Beyond Remittances appeared first on PaymentsJournal.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "payment",
+              "platform"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Remitly is expanding beyond its core cross-border money transfer business by launching the Remitly Global Card, a companion debit card in the U.S. that integrates with its payments platform to offer customers access to foreign exchange rates and transfer services.",
+          "translations": {
+            "da": {
+              "title": "Remitly lancerer betalingskort for at udvide ud over overførsler",
+              "summary": "AI-genereret resumé: Remitly udvider ud over sin kerneforretning med grænseoverskridende pengeoverførsler ved at lancere Remitly Global Card, et tilknyttet betalingskort i USA, der integreres med deres betalingsplatform for at give kunder adgang til valutakurser og overførselstjenester."
+            },
+            "es": {
+              "title": "Remitly lanza tarjeta de débito para expandirse más allá de las remesas",
+              "summary": "Resumen generado por IA: Remitly está expandiéndose más allá de su negocio principal de transferencias internacionales de dinero al lanzar la Remitly Global Card, una tarjeta de débito complementaria en EE. UU. que se integra con su plataforma de pagos para ofrecer a los clientes acceso a tasas de cambio y servicios de transferencia."
+            }
+          }
+        }
+      ]
+    },
+    "Luxury_and_Consumer": {
+      "total": 79,
+      "top": [
+        {
+          "id": "1mnj9",
+          "title": "Watches, jewelry lead LVMH first-half performance",
+          "url": "https://www.luxurydaily.com/watches-jewelry-lead-lvmh-first-half-performance/",
+          "source": "Luxury Daily - Main",
+          "published_at": "2026-07-28T08:45:00.000Z",
+          "ingested_at": "2026-08-02T08:31:55.578Z",
+          "snippet": "The French luxury conglomerate’s results suggest demand is stabilizing, with organic sales climbing in Asia and the Americas.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": -0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0.2,
+            "matchedKeywords": [
+              "luxury",
+              "demand"
+            ]
+          },
+          "aiSummary": "AI-generated summary: LVMH's first-half performance was driven by strong sales in watches and jewelry, with organic sales increasing in Asia and the Americas, indicating stabilizing demand.",
+          "translations": {
+            "da": {
+              "title": "Ure og smykker driver LVMHs første halvårsresultat",
+              "summary": "AI-genereret resumé: LVMHs første halvårsresultat blev drevet af stærkt salg af ure og smykker, med organisk vækst i Asien og Amerika, hvilket indikerer stabiliserende efterspørgsel."
+            },
+            "es": {
+              "title": "Relojes y joyería lideran el desempeño de LVMH en el primer semestre",
+              "summary": "Resumen generado por IA: El desempeño de LVMH en el primer semestre fue impulsado por fuertes ventas en relojes y joyería, con un aumento en las ventas orgánicas en Asia y América, lo que indica una demanda estabilizándose."
+            }
+          }
+        },
+        {
+          "id": "8cgk4t",
+          "title": "5 Sneaker Retail and Resale Insiders Talk Top 2026 Trends: ‘The Life Cycle of a Sneaker Feels Shorter Than Ever’",
+          "url": "https://wwd.com/footwear-news/sneaker-news/biggest-sneaker-trends-retail-resale-2026-1239088945/",
+          "source": "Footwear News",
+          "published_at": "2026-07-31T19:55:31.000Z",
+          "ingested_at": "2026-08-02T08:31:55.578Z",
+          "snippet": "Plus, a look at the hot brands that are poised to shake things up in the coming months.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "brand"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Industry insiders discuss how the sneaker life cycle is shortening and highlight the luxury and consumer trends shaping the sneaker retail and resale market in 2026, including emerging hot brands set to make an impact.",
+          "translations": {
+            "da": {
+              "title": "5 Sneaker-detailhandlere og videresælgere deler toptrends for 2026: 'Sneakerens livscyklus føles kortere end nogensinde'",
+              "summary": "AI-genereret resumé: Branchefolk diskuterer, hvordan sneakerens livscyklus forkortes, og fremhæver luksus- og forbrugertendenser, der former sneaker-detail- og videresalgsmarkedet i 2026, inklusive nye hotte mærker, der forventes at gøre indtryk."
+            },
+            "es": {
+              "title": "5 Expertos en Venta y Reventa de Sneakers Hablan de las Principales Tendencias de 2026: ‘El Ciclo de Vida de una Sneaker Se Siente Más Corto Que Nunca’",
+              "summary": "Resumen generado por IA: Expertos de la industria discuten cómo se está acortando el ciclo de vida de las sneakers y destacan las tendencias de lujo y consumo que están moldeando el mercado de venta y reventa de sneakers en 2026, incluyendo marcas emergentes que prometen tener impacto."
+            }
+          }
+        },
+        {
+          "id": "hz3ler",
+          "title": "Watch Retailer Collective Horology Has Sued the U.S. Government Over Its Latest Tariffs",
+          "url": "https://robbreport.com/style/watch-collector/collective-horology-lawsuit-trump-tariffs-1238515501/",
+          "source": "Robb Report",
+          "published_at": "2026-07-31T16:00:00.000Z",
+          "ingested_at": "2026-08-02T08:31:55.578Z",
+          "snippet": "The California company says the president's new round of levies is \"unlawful.\"",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": []
+          },
+          "aiSummary": "AI-generated summary: California-based watch retailer Collective Horology has filed a lawsuit against the U.S. government, claiming that the president's latest tariffs are \"unlawful,\" according to a Robb Report article dated July 31, 2026.",
+          "translations": {
+            "da": {
+              "title": "Urværksforhandleren Collective Horology har sagsøgt den amerikanske regering over de seneste toldsatser",
+              "summary": "AI-genereret resumé: California-baserede urforhandler Collective Horology har indgivet en retssag mod den amerikanske regering og hævder, at præsidentens seneste toldsatser er \"ulovlige,\" ifølge en artikel i Robb Report dateret 31. juli 2026."
+            },
+            "es": {
+              "title": "El minorista de relojes Collective Horology ha demandado al gobierno de EE.UU. por sus últimas tarifas",
+              "summary": "Resumen generado por IA: El minorista de relojes con sede en California, Collective Horology, ha presentado una demanda contra el gobierno de EE.UU., alegando que las últimas tarifas del presidente son \"ilegales,\" según un artículo de Robb Report fechado el 31 de julio de 2026."
+            }
+          }
+        },
+        {
+          "id": "9fkeb3",
+          "title": "Amazon says it got $600 million in Trump tariff refunds and will pass return along to some customers",
+          "url": "https://www.cnbc.com/2026/07/30/amazon-trump-tariff-refunds.html",
+          "source": "CNBC Technology",
+          "published_at": "2026-07-31T15:07:28.000Z",
+          "ingested_at": "2026-08-02T08:31:55.578Z",
+          "snippet": "The company previously hadn't disclosed whether it would recoup tariff costs after the Supreme Court ruled many of President Donald Trump's levies were illegal.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": -0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0,
+            "insightSignalBoost": 0,
+            "penalty": 0.2,
+            "matchedKeywords": []
+          },
+          "aiSummary": "AI-generated summary: Amazon announced it received $600 million in refunds from tariffs imposed during President Trump's administration, following a Supreme Court ruling that deemed many of those levies illegal, and plans to pass some of these returns on to customers.",
+          "translations": {
+            "da": {
+              "title": "Amazon siger, at de har fået 600 millioner dollars i Trump-toldrefusioner og vil give nogle kunder del i beløbet",
+              "summary": "AI-genereret resumé: Amazon meddelte, at de har modtaget 600 millioner dollars i refusioner fra toldsatser pålagt under præsident Trumps administration efter en højesteretsafgørelse, der erklærede mange af disse afgifter ulovlige, og planlægger at give nogle af disse refusioner videre til kunderne."
+            },
+            "es": {
+              "title": "Amazon dice que recibió 600 millones de dólares en reembolsos de aranceles de Trump y los transferirá a algunos clientes",
+              "summary": "Resumen generado por IA: Amazon anunció que recibió 600 millones de dólares en reembolsos por aranceles impuestos durante la administración del presidente Trump, tras una decisión de la Corte Suprema que declaró ilegales muchas de esas tasas, y planea transferir parte de esos reembolsos a los clientes."
+            }
+          }
+        },
+        {
+          "id": "rabuqr",
+          "title": "Independent, Local Retail Is Far From Dead in 2026",
+          "url": "https://fashionista.com/2026/07/independent-local-retail-growth-faire-report-q2",
+          "source": "Fashionista",
+          "published_at": "2026-07-31T12:00:00.000Z",
+          "ingested_at": "2026-08-02T08:31:55.578Z",
+          "snippet": "New wholesale data from Faire suggests that small-town shops are outperforming big-city chains, creating new opportunities for fashion and beauty brands.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": -0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0.05,
+            "penalty": 0.2,
+            "matchedKeywords": [
+              "brand"
+            ]
+          },
+          "aiSummary": "AI-generated summary: According to new wholesale data from Faire, small-town independent retail shops are outperforming big-city chains in 2026, presenting fresh opportunities for fashion and beauty brands.",
+          "translations": {
+            "da": {
+              "title": "Uafhængige, Lokale Detailbutikker Er Langt Fra Døde i 2026",
+              "summary": "AI-genereret resumé: Ifølge nye engrosdata fra Faire klarer småbyens uafhængige detailbutikker sig bedre end storbykæder i 2026 og skaber nye muligheder for mode- og skønhedsbrands."
+            },
+            "es": {
+              "title": "El Comercio Minorista Independiente y Local Está Lejos de Morir en 2026",
+              "summary": "Resumen generado por IA: Según nuevos datos mayoristas de Faire, las tiendas minoristas independientes de pueblos pequeños superan a las cadenas de grandes ciudades en 2026, presentando nuevas oportunidades para marcas de moda y belleza."
+            }
+          }
+        },
+        {
+          "id": "rxq4fk",
+          "title": "Fashion retail’s message for number 10",
+          "url": "https://www.drapersonline.com/insight/analysis/fashion-retails-message-to-no-10",
+          "source": "Drapers",
+          "published_at": "2026-07-30T14:30:00.000Z",
+          "ingested_at": "2026-08-02T08:31:55.578Z",
+          "snippet": "Drapers\nFashion retail’s message for number 10\nFashion retail business leaders tell Drapers what new prime minister Andy Burnham must do to revive the fortunes of the industry.\nThe post Fashion retail’s message for number 10 appeared first on Drapers.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": -0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0,
+            "insightSignalBoost": 0,
+            "penalty": 0.2,
+            "matchedKeywords": []
+          },
+          "aiSummary": "AI-generated summary: Fashion retail business leaders have communicated to new Prime Minister Andy Burnham their recommendations for reviving the industry's fortunes, as reported by Drapers on July 30, 2026.",
+          "translations": {
+            "da": {
+              "title": "Fashion retail’s budskab til nummer 10",
+              "summary": "AI-genereret resumé: Ledende inden for fashion retail har meddelt den nye premierminister Andy Burnham deres anbefalinger til at genoplive branchens fremtid, rapporteret af Drapers den 30. juli 2026."
+            },
+            "es": {
+              "title": "El mensaje de Fashion retail para el número 10",
+              "summary": "Resumen generado por IA: Los líderes del negocio de fashion retail han comunicado al nuevo primer ministro Andy Burnham sus recomendaciones para revitalizar la industria, según informó Drapers el 30 de julio de 2026."
+            }
+          }
+        },
+        {
+          "id": "l6ltu3",
+          "title": "Editor’s comment: Fashion retail calls for support from new PM",
+          "url": "https://www.drapersonline.com/insight/comment/editors-comment-fashion-retail-calls-for-support-from-new-pm",
+          "source": "Drapers",
+          "published_at": "2026-07-31T11:12:00.000Z",
+          "ingested_at": "2026-08-02T08:31:55.578Z",
+          "snippet": "Drapers\nEditor’s comment: Fashion retail calls for support from new PM\nAndy Burnham’s first few weeks as prime minister has brought policy changes and support for some sectors, but fashion retail must not be forgotten, warns Drapers’ editor Jill Geoghegan.\nThe post Editor’s comment: Fashion retail calls for support from new PM appeared first on Drapers.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": []
+          },
+          "aiSummary": "AI-generated summary: In Drapers' editor’s comment dated July 31, 2026, Jill Geoghegan emphasizes that while new Prime Minister Andy Burnham has introduced policy changes benefiting some sectors, the fashion retail industry still requires attention and support.",
+          "translations": {
+            "da": {
+              "title": "Redaktørens kommentar: Modehandel kræver støtte fra ny premierminister",
+              "summary": "AI-genereret resumé: I Drapers' redaktørkommentar dateret 31. juli 2026 understreger Jill Geoghegan, at selvom den nye premierminister Andy Burnham har indført politiske ændringer til fordel for nogle sektorer, kræver modehandelsbranchen stadig opmærksomhed og støtte."
+            },
+            "es": {
+              "title": "Comentario del editor: El comercio minorista de moda pide apoyo al nuevo primer ministro",
+              "summary": "Resumen generado por IA: En el comentario del editor de Drapers fechado el 31 de julio de 2026, Jill Geoghegan enfatiza que, aunque el nuevo primer ministro Andy Burnham ha introducido cambios políticos que benefician a algunos sectores, la industria del comercio minorista de moda aún requiere atención y apoyo."
+            }
+          }
+        }
+      ]
+    },
+    "Jewellery_Industry": {
+      "total": 15,
+      "top": [
+        {
+          "id": "6371ce",
+          "title": "Chow Tai Fook global expansion continues as sales rise",
+          "url": "https://www.jewellermagazine.com/Article/15297/Chow-Tai-Fook-global-expansion-continues-as-sales-rise",
+          "source": "Jeweller - Business News",
+          "published_at": "2026-07-27T14:00:00.000Z",
+          "ingested_at": "2026-08-02T08:31:55.578Z",
+          "snippet": "Major jewellery retailer Chow Tai Fook has reported rising sales in the first quarter of the financial year.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.3,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "jewellery",
+              "retailer",
+              "jeweller"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Major jewellery retailer Chow Tai Fook has continued its global expansion, reporting rising sales in the first quarter of the financial year.",
+          "translations": {
+            "da": {
+              "title": "Chow Tai Fook global ekspansion fortsætter, mens salget stiger",
+              "summary": "AI-genereret resumé: Den store smykkeforhandler Chow Tai Fook har fortsat sin globale ekspansion og rapporterer stigende salg i første kvartal af regnskabsåret."
+            },
+            "es": {
+              "title": "La expansión global de Chow Tai Fook continúa mientras aumentan las ventas",
+              "summary": "Resumen generado por IA: El importante minorista de joyería Chow Tai Fook ha continuado su expansión global, reportando un aumento en las ventas en el primer trimestre del año fiscal."
+            }
+          }
+        },
+        {
+          "id": "554w6h",
+          "title": "Selling the Moment They WIll Never Forget",
+          "url": "https://www.jewellermagazine.com/Article/15222/Selling-the-Moment-They-WIll-Never-Forget",
+          "source": "Jeweller - Jewellery Trends",
+          "published_at": "2026-07-28T14:00:00.000Z",
+          "ingested_at": "2026-08-02T08:31:55.578Z",
+          "snippet": "Tread carefully! There’s treasure ahead. SAMUEL ORD edges along the balancing beam of successful bridal and engagement jewellery sales.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": -0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0.2,
+            "matchedKeywords": [
+              "jewellery",
+              "jeweller"
+            ]
+          },
+          "aiSummary": "AI-generated summary: The article \"Selling the Moment They Will Never Forget\" from Jeweller - Jewellery Trends (2026-07-28) explores the delicate balance required for successful bridal and engagement jewellery sales, highlighting the potential rewards in this market.",
+          "translations": {
+            "da": {
+              "title": "At sælge øjeblikket, de aldrig vil glemme",
+              "summary": "AI-genereret resumé: Artiklen \"Selling the Moment They Will Never Forget\" fra Jeweller - Jewellery Trends (2026-07-28) udforsker den fine balance, der kræves for succesfuldt salg af brude- og forlovelses-smykker, og fremhæver de potentielle belønninger på dette marked."
+            },
+            "es": {
+              "title": "Vendiendo el momento que nunca olvidarán",
+              "summary": "Resumen generado por IA: El artículo \"Selling the Moment They Will Never Forget\" de Jeweller - Jewellery Trends (2026-07-28) explora el delicado equilibrio necesario para el éxito en la venta de joyería nupcial y de compromiso, destacando las posibles recompensas en este mercado."
+            }
+          }
+        },
+        {
+          "id": "3v2p3e",
+          "title": "Retailer details plans for global expansion despite smuggling accusations",
+          "url": "https://www.jewellermagazine.com/Article/15286/Retailer-details-plans-for-global-expansion-despite-smuggling-accusations",
+          "source": "Jeweller - Business News",
+          "published_at": "2026-07-27T14:00:00.000Z",
+          "ingested_at": "2026-08-02T08:31:55.578Z",
+          "snippet": "In Vietnam, the country’s largest jewellery retailer has detailed plans for international expansion despite facing a gold and diamond smuggling scandal.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.30000000000000004,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.2,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "retailer",
+              "jewellery",
+              "diamond",
+              "gold",
+              "jeweller"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Vietnam's largest jewellery retailer has announced plans for global expansion despite being embroiled in a gold and diamond smuggling scandal, according to Jeweller - Business News on July 27, 2026.",
+          "translations": {
+            "da": {
+              "title": "Detailhandler detaljerer planer om global ekspansion trods smugleranklager",
+              "summary": "AI-genereret resumé: Vietnams største smykkeforhandler har annonceret planer om global ekspansion trods at være involveret i en guld- og diamant-smugleriskandale, ifølge Jeweller - Business News den 27. juli 2026."
+            },
+            "es": {
+              "title": "Minorista detalla planes de expansión global a pesar de acusaciones de contrabando",
+              "summary": "Resumen generado por IA: El mayor minorista de joyería de Vietnam ha anunciado planes de expansión global a pesar de estar involucrado en un escándalo de contrabando de oro y diamantes, según Jeweller - Business News el 27 de julio de 2026."
+            }
+          }
+        },
+        {
+          "id": "yno9be",
+          "title": "The Bianchet Rotondo UltraFino Rose Gold: A Stunning Take On Contrast",
+          "url": "https://www.fratellowatches.com/the-bianchet-rotondo-ultrafino-rose-gold-a-stunning-take-on-contrast/",
+          "source": "Fratello Watches",
+          "published_at": "2026-07-30T09:00:56.000Z",
+          "ingested_at": "2026-08-02T08:31:55.578Z",
+          "snippet": "I will admit it: when Bianchet first launched quietly in 2017, the idea of another openworked tourbillon watch wasn’t overly intriguing. Then again, as a traditionalist, I tended to dismiss watches like this in the past. But, as they say, the past is the past. Now, I enjoy more theater in my timepieces. Painstaking finishing, […]\nVisit The Bianchet Rotondo UltraFino Rose Gold: A Stunning Take On Contrast to read the full article.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": -0.04999999999999999,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0,
+            "penalty": 0.2,
+            "matchedKeywords": [
+              "gold",
+              "watch",
+              "timepiece"
+            ]
+          },
+          "aiSummary": "AI-generated summary: The article from Fratello Watches (2026-07-30) discusses the Bianchet Rotondo UltraFino Rose Gold, highlighting a shift in appreciation for openworked tourbillon watches and emphasizing the intricate finishing and theatrical design of this timepiece.",
+          "translations": {
+            "da": {
+              "title": "The Bianchet Rotondo UltraFino Rose Gold: En Fantastisk Fortolkning af Kontrast",
+              "summary": "AI-genereret resumé: Artiklen fra Fratello Watches (2026-07-30) diskuterer Bianchet Rotondo UltraFino Rose Gold og fremhæver en ændring i påskønnelsen af openworked tourbillon-ure samt understreger det indviklede finish og det teatralske design af dette ur."
+            },
+            "es": {
+              "title": "The Bianchet Rotondo UltraFino Rose Gold: Una Impresionante Interpretación del Contraste",
+              "summary": "Resumen generado por IA: El artículo de Fratello Watches (2026-07-30) analiza el Bianchet Rotondo UltraFino Rose Gold, destacando un cambio en la apreciación de los relojes tourbillon esqueletizados y enfatizando el acabado intrincado y el diseño teatral de esta pieza."
+            }
+          }
+        },
+        {
+          "id": "1ak46c",
+          "title": "CIBJO moves to ‘synthetic’ descriptor for lab-created diamonds",
+          "url": "https://www.jewellermagazine.com/Article/15299/CIBJO-moves-to-synthetic-descriptor-for-lab-created-diamonds",
+          "source": "Jeweller - Business News",
+          "published_at": "2026-07-27T14:00:00.000Z",
+          "ingested_at": "2026-08-02T08:31:55.578Z",
+          "snippet": "In a huge shift for the jewellery industry’s terminology landscape, the World Jewellery Confederation (CIBJO) is expected to remove the terms ‘laboratory grown’ and ‘laboratory created’ from its list of recommended language for diamonds.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.25,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "diamond",
+              "jewellery",
+              "jeweller"
+            ]
+          },
+          "aiSummary": "AI-generated summary: The World Jewellery Confederation (CIBJO) plans to eliminate the terms ‘laboratory grown’ and ‘laboratory created’ from its recommended terminology for diamonds, marking a significant change in the jewellery industry's language. This update was reported by Jeweller - Business News on July 27, 2026.",
+          "translations": {
+            "da": {
+              "title": "CIBJO skifter til 'syntetisk' betegnelse for laboratorie-skabte diamanter",
+              "summary": "AI-genereret resumé: World Jewellery Confederation (CIBJO) planlægger at fjerne udtrykkene 'laboratorievokset' og 'laboratorieskabt' fra sin anbefalede terminologi for diamanter, hvilket markerer en væsentlig ændring i smykkeindustriens sprogbrug. Denne opdatering blev rapporteret af Jeweller - Business News den 27. juli 2026."
+            },
+            "es": {
+              "title": "CIBJO adopta el descriptor ‘sintético’ para diamantes creados en laboratorio",
+              "summary": "Resumen generado por IA: La World Jewellery Confederation (CIBJO) planea eliminar los términos ‘laboratory grown’ y ‘laboratory created’ de su terminología recomendada para diamantes, marcando un cambio significativo en el lenguaje de la industria de la joyería. Esta actualización fue reportada por Jeweller - Business News el 27 de julio de 2026."
+            }
+          }
+        },
+        {
+          "id": "ko876q",
+          "title": "My family is coming apart – so it’s time for one last video game session | Dominik Diamond",
+          "url": "https://www.theguardian.com/games/2026/jul/31/my-family-is-coming-apart-so-its-time-for-one-last-video-game-session",
+          "source": "The Guardian - Technology",
+          "published_at": "2026-07-31T09:00:10.000Z",
+          "ingested_at": "2026-08-02T08:31:55.578Z",
+          "snippet": "I wanted our last family games night to be the best fun we’ve ever had. Maybe we should have stuck with Mario Kart …\nIt is the end of an era for the Diamond family. For 20 years, there have been five of us living together. It has not been easy. Militant vegan daughters, sons who have inherited Scottish tempers, and a youngest child who attracts trouble like an industrial magnet, have meant our house has been conflict-laden at times. Throw in the fact that we are beset with all manner of mental h...",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": -0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0.2,
+            "matchedKeywords": [
+              "diamond"
+            ]
+          },
+          "aiSummary": "AI-generated summary: In this personal reflection, Dominik Diamond describes the challenges and conflicts within his family of five over 20 years, culminating in a final, memorable family video game night aimed at bringing them together despite their differences.",
+          "translations": {
+            "da": {
+              "title": "Min familie falder fra hinanden – så det er tid til en sidste videospilssession | Dominik Diamond",
+              "summary": "AI-genereret resumé: I denne personlige refleksion beskriver Dominik Diamond udfordringerne og konflikterne i hans familie på fem over 20 år, som kulminerer i en sidste, mindeværdig familievideospilaften med det formål at samle dem trods deres forskelle."
+            },
+            "es": {
+              "title": "Mi familia se está desmoronando – así que es hora de una última sesión de videojuegos | Dominik Diamond",
+              "summary": "Resumen generado por IA: En esta reflexión personal, Dominik Diamond describe los desafíos y conflictos dentro de su familia de cinco durante 20 años, culminando en una última y memorable noche de videojuegos familiar destinada a unirlos a pesar de sus diferencias."
+            }
+          }
+        }
+      ]
+    }
+  },
+  "editorialTake": "Amazon’s $50 billion completion of its OpenAI investment is the clearest sign yet that AI is no longer a side bet for ecommerce giants. This isn’t just about cloud dominance or voice assistants anymore. Amazon is doubling down on owning the AI stack that powers everything from supply chains to customer experience. Meanwhile, OpenAI’s price cuts on GPT-5.6 models show the pressure to balance innovation with cost efficiency, signaling a shift from hype to hard ROI.\n\nThis raises a tough question: can Amazon leverage this massive AI investment to outpace competitors who are also scaling fast but more cautiously? The risk is that pouring billions into AI without clear, immediate revenue models could backfire if customers don’t see tangible benefits soon. The real test will be whether Amazon’s AI edge translates into faster, cheaper, and smarter ecommerce at a scale no one else can match.",
+  "coverImageUrl": "/weekly-images/2026-W31.png",
+  "coverImageAlt": "Weekly cover illustration for 2026-W31"
+}

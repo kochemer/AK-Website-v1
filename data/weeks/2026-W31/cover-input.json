@@ -1,0 +1,28 @@
+{
+  "weekLabel": "2026-W31",
+  "homepageTopArticles": [
+    {
+      "title": "House Bill Reshapes Marketplace Policies",
+      "source": "Practical Ecommerce",
+      "snippet": "The \"Online Sellers' Bill of Rights Act of 2026\" would require marketplaces to explain account suspensions and give affected sellers opportunities to appeal.\nThe post House Bill Reshapes Marketplace Policies appeared first on Practical Ecommerce.",
+      "aiSummary": "AI-generated summary: The \"Online Sellers' Bill of Rights Act of 2026,\" discussed in Practical Ecommerce on July 30, 2026, proposes that marketplaces must provide explanations for account suspensions and allow sellers to appeal decisions. This bill aims to increase transparency and fairness in ecommerce platform policies."
+    },
+    {
+      "title": "O’Neill Logistics partners with Robust.AI on warehouse automation",
+      "source": "Digital Commerce 360",
+      "snippet": "Third-party logistics (3PL) provider O’Neill Logistics will deploy 24 mobile robots from warehouse automation vendor Robust.AI in New Jersey and Georgia facilities as it seeks to improve order fulfillment efficiency and support retail and direct-to-consumer operations. Robust.AI said in an announcement that O’Neill Logistics will use the Carter model of robots in facilities in New […]\nThe post O’Neill Logistics partners with Robust.AI on warehouse automation appeared first on Digital Commerce 36...",
+      "aiSummary": "AI-generated summary: O’Neill Logistics is partnering with Robust.AI to deploy 24 Carter model mobile robots in its New Jersey and Georgia warehouses to enhance order fulfillment efficiency and support retail and direct-to-consumer operations."
+    },
+    {
+      "title": "Chow Tai Fook global expansion continues as sales rise",
+      "source": "Jeweller - Business News",
+      "snippet": "Major jewellery retailer Chow Tai Fook has reported rising sales in the first quarter of the financial year.",
+      "aiSummary": "AI-generated summary: Major jewellery retailer Chow Tai Fook has continued its global expansion, reporting rising sales in the first quarter of the financial year."
+    }
+  ],
+  "model": "gpt-image-1",
+  "finalPrompt": "Photograph: A supermarket checkout belt with a small warehouse robot carrying stacked cardboard shipping boxes. On top of the boxes sits a shiny gold ring with a tiny jewelry tag. Beside the robot, a judge’s gavel lies amid packing tape and a barcode scanner. A shopping bag with a discreet logo peeks from behind the boxes. Everything is lit by natural store lighting, with the belt and objects in sharp focus.\n\nCRITICAL CONSTRAINTS (must be strictly avoided):\n- text, letters, numbers, signage, labels, price tags, screens, UI, dashboards, holograms, floating icons, watermarks, unrelated brand logos, cartoon, illustration, CGI, 3D render, anime, diamond, diamonds, gemstone, gemstones, precious stones, jewelry close-up, jewelry product shot, diamond ring, diamond necklace, diamond earring, jeweled, sparkling gemstone, dramatic spotlight, glowing edges, rim lighting, vignette, cinematic color grade, blurred background, bokeh\n\nThis must look like a real photograph taken by a human — not AI-generated, not CGI, not a 3D render. Natural light. Real objects. Real imperfections. Fill the entire frame edge to edge with the scene — no black bars, no empty space at the edges.\n\nDo not include: text, labels, signage, screens, UI, logos unrelated to the scene, diamonds, gemstones, CGI lighting, dramatic spotlights, or blurred vignette backgrounds.",
+  "imageSize": "1536x1024",
+  "outputPath": "/weekly-images/2026-W31.png",
+  "generatedAt": "2026-08-02T08:53:08.150Z"
+}

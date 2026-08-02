@@ -4078,5 +4078,149 @@
     ],
     "cached_at": "2026-07-26T08:52:42.553Z",
     "model": "gpt-4.1-mini"
+  },
+  "2026-W31:AI_and_Strategy:5bc5d72a7b3a": {
+    "selected": [
+      {
+        "id": "9",
+        "rank": 1,
+        "why": "Major $1tn AI investment spree by Big Tech impacts industry economics",
+        "confidence": 0.95
+      },
+      {
+        "id": "0",
+        "rank": 2,
+        "why": "Amazon's $50bn OpenAI stake is a significant AI industry power move",
+        "confidence": 0.9
+      },
+      {
+        "id": "15",
+        "rank": 3,
+        "why": "OpenAI cuts GPT-5.6 prices amid growing cost sensitivity in AI market",
+        "confidence": 0.9
+      },
+      {
+        "id": "13",
+        "rank": 4,
+        "why": "OpenAI CEO calls for AI development slowdown amid ongoing rapid growth",
+        "confidence": 0.85
+      },
+      {
+        "id": "11",
+        "rank": 5,
+        "why": "MediaTek's $5bn financing targets AI data-center chip expansion",
+        "confidence": 0.85
+      },
+      {
+        "id": "17",
+        "rank": 6,
+        "why": "Meta's AI agent strategy faces challenges amid rising costs and revenue issues",
+        "confidence": 0.8
+      },
+      {
+        "id": "8",
+        "rank": 7,
+        "why": "Tech's AI buildout faces ballooning costs impacting future AI economics",
+        "confidence": 0.8
+      }
+    ],
+    "cached_at": "2026-08-02T08:49:00.547Z",
+    "model": "gpt-4.1-mini"
+  },
+  "2026-W31:Ecommerce_Retail_Tech:6d30f339561a": {
+    "selected": [
+      {
+        "id": "7",
+        "rank": 1,
+        "why": "New marketplace policy bill reshaping seller protections",
+        "confidence": 0.95
+      },
+      {
+        "id": "1",
+        "rank": 2,
+        "why": "Warehouse automation with mobile robots impacts 3PL logistics",
+        "confidence": 0.9
+      },
+      {
+        "id": "10",
+        "rank": 3,
+        "why": "Walmart uses AI to mitigate weather disruptions in supply chain",
+        "confidence": 0.9
+      },
+      {
+        "id": "16",
+        "rank": 4,
+        "why": "Amazon’s Q2 sales growth and AWS focus signals platform shift",
+        "confidence": 0.88
+      },
+      {
+        "id": "5",
+        "rank": 5,
+        "why": "Lululemon’s AI adoption highlights broader ecommerce personalization trend",
+        "confidence": 0.85
+      },
+      {
+        "id": "11",
+        "rank": 6,
+        "why": "AWS AI business surpasses $25B annual revenue run rate",
+        "confidence": 0.85
+      },
+      {
+        "id": "12",
+        "rank": 7,
+        "why": "Remitly expands payments with new debit card product",
+        "confidence": 0.8
+      }
+    ],
+    "cached_at": "2026-08-02T08:49:29.525Z",
+    "model": "gpt-4.1-mini"
+  },
+  "2026-W31:Luxury_and_Consumer:ff20657d8bca": {
+    "selected": [
+      {
+        "id": "3",
+        "rank": 1,
+        "why": "LVMH sales data shows jewelry demand and retail performance insights",
+        "confidence": 0.95
+      },
+      {
+        "id": "7",
+        "rank": 2,
+        "why": "Sneaker retail trends with resale insights and lifecycle analysis",
+        "confidence": 0.9
+      },
+      {
+        "id": "10",
+        "rank": 3,
+        "why": "Watch retailer lawsuit on tariffs impacts pricing and supply chain",
+        "confidence": 0.9
+      },
+      {
+        "id": "16",
+        "rank": 4,
+        "why": "Amazon tariff refunds affecting ecommerce pricing and customer returns",
+        "confidence": 0.9
+      },
+      {
+        "id": "1",
+        "rank": 5,
+        "why": "Data on independent local retail growth relevant for retail strategy",
+        "confidence": 0.85
+      },
+      {
+        "id": "17",
+        "rank": 6,
+        "why": "Fashion retail leaders’ messages on policy affecting retail operations",
+        "confidence": 0.85
+      },
+      {
+        "id": "11",
+        "rank": 7,
+        "why": "Editorial on fashion retail support needs from new government leadership",
+        "confidence": 0.8
+      }
+    ],
+    "cached_at": "2026-08-02T08:49:57.598Z",
+    "model": "gpt-4.1-mini"
   }
 }

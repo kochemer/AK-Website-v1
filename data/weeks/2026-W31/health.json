@@ -1,0 +1,76 @@
+{
+  "digestWeek": "2026-W31",
+  "ingestionWeek": "2026-W31",
+  "startedAt": "2026-08-02T08:31:55.560Z",
+  "finishedAt": "2026-08-02T08:53:27.790Z",
+  "steps": [
+    {
+      "name": "rss",
+      "ok": true,
+      "startedAt": "2026-08-02T08:31:55.578Z",
+      "finishedAt": "2026-08-02T08:32:30.040Z"
+    },
+    {
+      "name": "pages",
+      "ok": true,
+      "startedAt": "2026-08-02T08:32:30.040Z",
+      "finishedAt": "2026-08-02T08:32:30.835Z"
+    },
+    {
+      "name": "discovery",
+      "ok": true,
+      "startedAt": "2026-08-02T08:32:30.836Z",
+      "finishedAt": "2026-08-02T08:48:32.034Z"
+    },
+    {
+      "name": "classification",
+      "ok": true,
+      "startedAt": "2026-08-02T08:48:32.034Z",
+      "finishedAt": "2026-08-02T08:48:32.177Z"
+    },
+    {
+      "name": "digest",
+      "ok": true,
+      "startedAt": "2026-08-02T08:48:32.177Z",
+      "finishedAt": "2026-08-02T08:50:51.440Z"
+    },
+    {
+      "name": "email",
+      "ok": true,
+      "startedAt": "2026-08-02T08:50:51.440Z",
+      "finishedAt": "2026-08-02T08:51:17.524Z"
+    },
+    {
+      "name": "podcast",
+      "ok": true,
+      "startedAt": "2026-08-02T08:51:17.524Z",
+      "finishedAt": "2026-08-02T08:52:12.308Z"
+    },
+    {
+      "name": "cover",
+      "ok": true,
+      "startedAt": "2026-08-02T08:52:12.308Z",
+      "finishedAt": "2026-08-02T08:53:08.152Z"
+    },
+    {
+      "name": "competitorAnalyze",
+      "ok": true,
+      "startedAt": "2026-08-02T08:53:08.152Z",
+      "finishedAt": "2026-08-02T08:53:27.789Z"
+    }
+  ],
+  "health": {
+    "warnings": [
+      "AI & Strategy: www.ft.com represents 42.9% (3/7) - exceeds 40% threshold",
+      "Jewellery Industry: www.jewellermagazine.com represents 66.7% (4/6) - exceeds 40% threshold"
+    ],
+    "metrics": {
+      "paywallPercent": 0,
+      "podcastWordCount": 2324
+    }
+  },
+  "versions": {
+    "node": "v20.20.2",
+    "gitCommit": "a52f408111d71933cb637967c3937c78cb162664"
+  }
+}
