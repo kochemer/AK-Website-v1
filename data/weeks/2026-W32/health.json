@@ -1,0 +1,78 @@
+{
+  "digestWeek": "2026-W32",
+  "ingestionWeek": "2026-W32",
+  "startedAt": "2026-08-09T07:05:25.453Z",
+  "finishedAt": "2026-08-09T07:32:53.759Z",
+  "steps": [
+    {
+      "name": "rss",
+      "ok": true,
+      "startedAt": "2026-08-09T07:05:25.473Z",
+      "finishedAt": "2026-08-09T07:06:23.470Z"
+    },
+    {
+      "name": "pages",
+      "ok": true,
+      "startedAt": "2026-08-09T07:06:23.470Z",
+      "finishedAt": "2026-08-09T07:06:24.310Z"
+    },
+    {
+      "name": "discovery",
+      "ok": true,
+      "startedAt": "2026-08-09T07:06:24.311Z",
+      "finishedAt": "2026-08-09T07:26:11.627Z"
+    },
+    {
+      "name": "classification",
+      "ok": true,
+      "startedAt": "2026-08-09T07:26:11.627Z",
+      "finishedAt": "2026-08-09T07:26:11.749Z"
+    },
+    {
+      "name": "digest",
+      "ok": true,
+      "startedAt": "2026-08-09T07:26:11.749Z",
+      "finishedAt": "2026-08-09T07:29:31.904Z"
+    },
+    {
+      "name": "email",
+      "ok": true,
+      "startedAt": "2026-08-09T07:29:31.904Z",
+      "finishedAt": "2026-08-09T07:30:07.221Z"
+    },
+    {
+      "name": "podcast",
+      "ok": true,
+      "startedAt": "2026-08-09T07:30:07.221Z",
+      "finishedAt": "2026-08-09T07:31:10.970Z"
+    },
+    {
+      "name": "cover",
+      "ok": true,
+      "startedAt": "2026-08-09T07:31:10.970Z",
+      "finishedAt": "2026-08-09T07:32:03.690Z"
+    },
+    {
+      "name": "competitorAnalyze",
+      "ok": true,
+      "startedAt": "2026-08-09T07:32:03.690Z",
+      "finishedAt": "2026-08-09T07:32:53.757Z"
+    }
+  ],
+  "health": {
+    "warnings": [
+      "AI & Strategy: techcrunch.com represents 42.9% (3/7) - exceeds 40% threshold",
+      "Luxury & Consumer: fashionista.com represents 42.9% (3/7) - exceeds 40% threshold",
+      "Jewellery Industry: www.jewellermagazine.com represents 42.9% (3/7) - exceeds 40% threshold",
+      "Jewellery Industry: instoremag.com represents 42.9% (3/7) - exceeds 40% threshold"
+    ],
+    "metrics": {
+      "paywallPercent": 0,
+      "podcastWordCount": 2640
+    }
+  },
+  "versions": {
+    "node": "v20.20.2",
+    "gitCommit": "1c113fcd39b1ee41d019c9ed8fabfd8a272662ff"
+  }
+}

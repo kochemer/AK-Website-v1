@@ -1,0 +1,95 @@
+{
+  "week": "2026-W32",
+  "generatedAt": "2026-08-09T07:30:07.221Z",
+  "intro": "This week’s intelligence digest highlights key developments at the intersection of retail, luxury, and AI innovation. From Gorilla Commerce’s expansion into Walmart and Girard-Perregaux’s latest luxury timepiece to major funding rounds and strategic acquisitions shaping customer engagement and e-commerce, these stories underscore evolving market dynamics and technology-driven growth.",
+  "readOneThing": {
+    "title": "Gorilla Commerce built a 9-figure business on Amazon. Now, it’s launching in Walmart stores",
+    "url": "https://www.modernretail.co/operations/gorilla-commerce-built-a-9-figure-business-on-amazon-now-its-launching-in-walmart-stores/?utm_campaign=modernretaildis&utm_medium=rss&utm_source=general-rss"
+  },
+  "items": [
+    {
+      "rank": 1,
+      "title": "Gorilla Commerce built a 9-figure business on Amazon. Now, it’s launching in Walmart stores",
+      "url": "https://www.modernretail.co/operations/gorilla-commerce-built-a-9-figure-business-on-amazon-now-its-launching-in-walmart-stores/?utm_campaign=modernretaildis&utm_medium=rss&utm_source=general-rss",
+      "source": "Modern Retail",
+      "bullets": [
+        "Gorilla Commerce launched its Gorilla Grip bath mats in over 2,600 Walmart stores after two years of selling on Walmart's third-party marketplace.",
+        "The Gorilla Grip bath mat has received more than 1,000 reviews on Walmart.com with an average rating of 4.6 and was named Walmart's Outstanding Home Seller of the Year in 2025.",
+        "Founded in 2014, Gorilla Commerce grew its Amazon business to a couple hundred million dollars in revenue before expanding to Walmart's marketplace and physical stores starting in 2025."
+      ],
+      "summary": "AI-generated summary: Gorilla Commerce, renowned for its slip-resistant bath mats and nine-figure sales on Amazon, is expanding its presence by launching its Gorilla Grip products in over 2,600 Walmart stores after entering Walmart's marketplace two years ago."
+    },
+    {
+      "rank": 2,
+      "title": "The Perfect Laureato? Hands-On With The Girard-Perregaux Laureato Fifty With A Rose-Gold Dial",
+      "url": "https://www.fratellowatches.com/the-perfect-laureato-hands-on-with-the-girard-perregaux-laureato-fifty-with-a-rose-gold-dial/",
+      "source": "Fratello Watches",
+      "bullets": [
+        "Girard-Perregaux introduced the Laureato Fifty with an 18K rose-gold dial, featuring the in-house GP4800 automatic movement and a 39mm stainless steel case.",
+        "The rose-gold dial version is priced at €22,700, slightly less expensive than the blue enamel-dialed model priced at €24,000.",
+        "The Laureato Fifty's design includes a comfortable integrated bracelet, a sapphire caseback showcasing the decorated GP4800 caliber, and dimensions optimized for wrist comfort."
+      ],
+      "summary": "AI-generated summary: The article provides a hands-on review of the new Girard-Perregaux Laureato Fifty with a rose-gold dial, reflecting on the author's experience testing the watch prior to its official release."
+    },
+    {
+      "rank": 3,
+      "title": "Omilia raises $67M to scale its customer support platform",
+      "url": "https://techcrunch.com/2026/08/06/omilia-raises-67m-to-scale-its-customer-support-platform/",
+      "source": "TechCrunch - AI",
+      "bullets": [
+        "Omilia secured $67 million in a Series B funding round led by Expedition Growth Capital to expand its customer support platform and build self-learning agents.",
+        "The company increased its annual recurring revenue tenfold to $60 million since its previous $20 million raise in 2020 and currently serves clients like Capital One and Taco Bell.",
+        "But according to Athens-based Omilia, which has been working on automating voice calls and customer support since 2002, throwing AI at every process can be wasteful"
+      ],
+      "summary": "AI-generated summary: Omilia has raised $67 million in a Series B funding round to expand its customer support platform, marking its second capital raise since 2020 during which it grew its annual recurring revenue tenfold to $60 million."
+    },
+    {
+      "rank": 4,
+      "title": "Streaming’s Next Battle Is For Customer Relationships",
+      "url": "https://www.forrester.com/blogs/streamings-next-battle-is-for-customer-relationships/",
+      "source": "Forrester Blog",
+      "bullets": [
+        "The report shows streaming services underperform on customer relationship attributes like loyalty rewards, transparent data policies, and problem resolution compared to other industries.",
+        "Disney CEO Josh D’Amaro emphasized leveraging Disney+ as a hub connecting streaming, sports, parks, and merchandise to deepen fan relationships amid increasing competition.",
+        "Because it points to a bigger market question: What keeps streaming consumers engaged when their hit show isn’t on"
+      ],
+      "summary": "AI-generated summary: The SVOD industry is focusing on understanding how to maintain consumer engagement beyond hit shows, as highlighted by Netflix’s declining viewership between seasons. This challenge underscores the importance of customer relationships in streaming’s competitive landscape."
+    },
+    {
+      "rank": 5,
+      "title": "Ex-Spotify employees raise $10M to bring the AI behind its recommendations to e-commerce",
+      "url": "https://techcrunch.com/2026/08/06/ex-spotify-employees-raise-10m-to-bring-the-ai-behind-its-recommendations-to-e-commerce/",
+      "source": "TechCrunch - Commerce",
+      "bullets": [
+        "Former Spotify engineers Sidd Motwani, Ian Anderson, and Shivaditya Sinha launched Malachyte to bring AI-driven real-time shopping recommendations to e-commerce. The startup raised $10 million in seed funding to expand distribution and hire product and commercial leaders. Malachyte's platform, developed since 2024, has been live with Fun.com since fall 2025 and is available to Shopify merchants and larger retailers via API integration.",
+        "Sidd Motwani, Ian Anderson, and Shivaditya Sinha spent years building the behavioral intelligence infrastructure behind Spotify’s recommendation engine",
+        "Called Vector AI, the system is designed to predict a person’s intent and next actions instead of relying only on their past behavior"
+      ],
+      "summary": "AI-generated summary: Former Spotify employees have raised $10 million to develop an AI-driven e-commerce platform that predicts shoppers' next desired products by learning their tastes and continuously adapting in real time."
+    },
+    {
+      "rank": 6,
+      "title": "Klaviyo acquires Elias Torres’ Agency in full-circle reunion for tech founders",
+      "url": "https://techcrunch.com/2026/08/05/klaviyo-acquires-elias-torres-agency-in-full-circle-reunion-for-tech-founders/",
+      "source": "TechCrunch - AI",
+      "bullets": [
+        "Klaviyo has acquired the AI-powered customer success startup Agency, founded by Elias Torres, with Torres joining Klaviyo as chief product officer.",
+        "Agency raised $32 million from investors including Sequoia, Menlo Ventures, and Felicis before the acquisition by Klaviyo.",
+        "Elias Torres and Klaviyo co-founder Andrew Bialecki have a long history, dating back to 2010 when Bialecki was hired by Torres at Performable."
+      ],
+      "summary": "AI-generated summary: Klaviyo has acquired Elias Torres’ agency, bringing the serial entrepreneur on board as Chief Product Officer to lead its AI agents, marking a full-circle reunion for the tech founders."
+    },
+    {
+      "rank": 7,
+      "title": "Whatnot valued at $20 billion as live shopping continues to boom",
+      "url": "https://www.cnbc.com/2026/08/07/whatnot-live-shopping-valuation-20-billion.html",
+      "source": "CNBC Technology",
+      "bullets": [
+        "Whatnot raised $545 million in a Series G funding round, achieving a $20 billion valuation nearly double its value from less than a year ago.",
+        "The company reported more than 650,000 new users joining weekly and surpassed $8 billion in gross merchandise volume last year.",
+        "The live shopping market is valued at over $22 billion, with Whatnot claiming approximately 60% market share amid growing competition from eBay, Fanatics, and TikTok's Shop Live."
+      ],
+      "summary": "AI-generated summary: Whatnot, a live commerce platform, has reached a valuation of $20 billion amid the rising popularity of live shopping, according to CNBC Technology on August 7, 2026."
+    }
+  ]
+}

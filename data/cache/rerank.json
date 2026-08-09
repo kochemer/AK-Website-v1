@@ -4222,5 +4222,101 @@
     ],
     "cached_at": "2026-08-02T08:49:57.598Z",
     "model": "gpt-4.1-mini"
+  },
+  "2026-W32:AI_and_Strategy:b09663cdd654": {
+    "selected": [
+      {
+        "id": "12",
+        "rank": 1,
+        "why": "Alibaba's new AI model release signals major capability and market impact",
+        "confidence": 0.95
+      },
+      {
+        "id": "16",
+        "rank": 2,
+        "why": "SpaceX reports soaring AI spending, indicating strategic AI investment",
+        "confidence": 0.9
+      },
+      {
+        "id": "7",
+        "rank": 3,
+        "why": "Omilia's $67M raise highlights AI customer support platform scaling",
+        "confidence": 0.85
+      },
+      {
+        "id": "9",
+        "rank": 4,
+        "why": "Klaviyo acquisition to lead AI agents shows AI industry consolidation",
+        "confidence": 0.85
+      },
+      {
+        "id": "15",
+        "rank": 5,
+        "why": "Amazon's data center investment impacts AI compute infrastructure economics",
+        "confidence": 0.8
+      },
+      {
+        "id": "17",
+        "rank": 6,
+        "why": "Snowflake Summit highlights shift from AI building to AI operating focus",
+        "confidence": 0.8
+      },
+      {
+        "id": "8",
+        "rank": 7,
+        "why": "Visa acquisition of BioCatch reflects AI reshaping payment fraud detection",
+        "confidence": 0.75
+      }
+    ],
+    "cached_at": "2026-08-09T07:26:42.600Z",
+    "model": "gpt-4.1-mini"
+  },
+  "2026-W32:Ecommerce_Retail_Tech:ec4c18b5fb36": {
+    "selected": [
+      {
+        "id": "0",
+        "rank": 1,
+        "why": "Major platform expansion from Amazon to Walmart stores",
+        "confidence": 0.95
+      },
+      {
+        "id": "7",
+        "rank": 2,
+        "why": "AI-driven personalization tech from ex-Spotify employees for ecommerce",
+        "confidence": 0.9
+      },
+      {
+        "id": "6",
+        "rank": 3,
+        "why": "Whatnot's $20B valuation highlights live shopping growth trend",
+        "confidence": 0.9
+      },
+      {
+        "id": "2",
+        "rank": 4,
+        "why": "Shopify's strategic approach to agentic AI in ecommerce platform",
+        "confidence": 0.85
+      },
+      {
+        "id": "3",
+        "rank": 5,
+        "why": "Insightful analysis on importance of payment choice in digital economy",
+        "confidence": 0.85
+      },
+      {
+        "id": "11",
+        "rank": 6,
+        "why": "Kohl’s launches Gemini AI assistant enhancing back-to-school shopping",
+        "confidence": 0.8
+      },
+      {
+        "id": "12",
+        "rank": 7,
+        "why": "Federal scrutiny on AI pricing practices impacts retail pricing strategies",
+        "confidence": 0.8
+      }
+    ],
+    "cached_at": "2026-08-09T07:27:14.966Z",
+    "model": "gpt-4.1-mini"
   }
 }

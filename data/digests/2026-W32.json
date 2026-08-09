@@ -1,0 +1,964 @@
+{
+  "weekLabel": "2026-W32",
+  "tz": "Europe/Copenhagen",
+  "startISO": "2026-08-02T22:00:00.000Z",
+  "endISO": "2026-08-09T21:59:59.999Z",
+  "builtAtISO": "2026-08-09T09:28:22.845+02:00",
+  "builtAtLocal": "2026-08-09 09:28:22",
+  "totals": {
+    "total": 654,
+    "byTopic": {
+      "AIStrategy": 132,
+      "EcommerceRetail": 434,
+      "LuxuryConsumer": 66,
+      "Jewellery": 18
+    }
+  },
+  "topics": {
+    "AI_and_Strategy": {
+      "total": 132,
+      "top": [
+        {
+          "id": "j1xzmm",
+          "title": "Alibaba’s latest AI model puts it back in the great game",
+          "url": "https://www.ft.com/content/391c5f14-4bf2-4d24-92f0-65b912574513?syn-25a6b1a6=1",
+          "source": "Financial Times - Technology",
+          "published_at": "2026-08-06T23:00:03.000Z",
+          "ingested_at": "2026-08-09T07:05:25.473Z",
+          "snippet": "The ecommerce and cloud company hopes to recoup some of its lost shine with Monday’s release",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ai"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Alibaba aims to regain its competitive edge in the AI sector with the release of its latest AI model, as reported by the Financial Times on August 6, 2026.",
+          "translations": {
+            "da": {
+              "title": "Alibabas nyeste AI-model bringer dem tilbage i det store spil",
+              "summary": "AI-genereret resumé: Alibaba sigter mod at genvinde sin konkurrencefordel inden for AI-sektoren med lanceringen af deres nyeste AI-model, rapporteret af Financial Times den 6. august 2026."
+            },
+            "es": {
+              "title": "El último modelo de IA de Alibaba lo vuelve a poner en el gran juego",
+              "summary": "Resumen generado por IA: Alibaba busca recuperar su ventaja competitiva en el sector de IA con el lanzamiento de su último modelo de IA, según informó Financial Times el 6 de agosto de 2026."
+            }
+          }
+        },
+        {
+          "id": "aygz3r",
+          "title": "SpaceX, in First Earnings After IPO, Reports Soaring AI Spending",
+          "url": "https://www.nytimes.com/2026/08/04/technology/spacex-earnings-elon-musk.html",
+          "source": "NYTimes Technology",
+          "published_at": "2026-08-04T22:52:45.000Z",
+          "ingested_at": "2026-08-09T07:05:25.473Z",
+          "snippet": "Elon Musk’s rocket company said its capital expenditures jumped nearly seven times from a year ago. Revenue also rose.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.175,
+            "recencyScore": 0,
+            "sourceWeight": 0.075,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ai"
+            ]
+          },
+          "aiSummary": "AI-generated summary: In its first earnings report since going public, SpaceX revealed that its capital expenditures have increased nearly sevenfold compared to last year, alongside a rise in revenue. The company is notably boosting its spending on AI initiatives.",
+          "translations": {
+            "da": {
+              "title": "SpaceX rapporterer stigende AI-udgifter i første regnskab efter børsnotering",
+              "summary": "AI-genereret resumé: I sin første regnskabsrapport siden børsnoteringen afslørede SpaceX, at deres kapitaludgifter er steget næsten syv gange sammenlignet med sidste år, samtidig med en stigning i omsætningen. Virksomheden øger markant sine investeringer i AI-initiativer."
+            },
+            "es": {
+              "title": "SpaceX, en sus primeros resultados tras la OPI, reporta un aumento en el gasto en IA",
+              "summary": "Resumen generado por IA: En su primer informe de ganancias desde que salió a bolsa, SpaceX reveló que sus gastos de capital aumentaron casi siete veces en comparación con el año pasado, junto con un incremento en los ingresos. La empresa está aumentando notablemente su inversión en iniciativas de IA."
+            }
+          }
+        },
+        {
+          "id": "sgdzlm",
+          "title": "Omilia raises $67M to scale its customer support platform",
+          "url": "https://techcrunch.com/2026/08/06/omilia-raises-67m-to-scale-its-customer-support-platform/",
+          "source": "TechCrunch - AI",
+          "published_at": "2026-08-06T12:00:00.000Z",
+          "ingested_at": "2026-08-09T07:05:25.473Z",
+          "snippet": "The Series B is the company's second fundraise since it last raised capital in 2020. In that time, it has increased its ARR by 10x to $60 million.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0.15,
+            "keywordBoost": 0,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": []
+          },
+          "aiSummary": "AI-generated summary: Omilia has raised $67 million in a Series B funding round to expand its customer support platform, marking its second capital raise since 2020 during which it grew its annual recurring revenue tenfold to $60 million.",
+          "translations": {
+            "da": {
+              "title": "Omilia rejser 67 mio. $ for at udvide sin kundesupportplatform",
+              "summary": "AI-genereret resumé: Omilia har rejst 67 millioner dollars i en Serie B-finansieringsrunde for at udvide sin kundesupportplatform, hvilket markerer deres anden kapitalrejsning siden 2020, hvor de tidoblede deres årlige tilbagevendende omsætning til 60 millioner dollars."
+            },
+            "es": {
+              "title": "Omilia recauda 67 millones de dólares para escalar su plataforma de soporte al cliente",
+              "summary": "Resumen generado por IA: Omilia ha recaudado 67 millones de dólares en una ronda de financiación Serie B para expandir su plataforma de soporte al cliente, marcando su segunda captación de capital desde 2020, durante la cual multiplicó por diez sus ingresos recurrentes anuales hasta 60 millones de dólares."
+            }
+          }
+        },
+        {
+          "id": "m6myam",
+          "title": "Klaviyo acquires Elias Torres’ Agency in full-circle reunion for tech founders",
+          "url": "https://techcrunch.com/2026/08/05/klaviyo-acquires-elias-torres-agency-in-full-circle-reunion-for-tech-founders/",
+          "source": "TechCrunch - AI",
+          "published_at": "2026-08-05T20:05:00.000Z",
+          "ingested_at": "2026-08-09T07:05:25.473Z",
+          "snippet": "The serial entrepreneur joins the e-commerce company as CPO to lead its AI agents.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.04999999999999999,
+            "recencyScore": 0,
+            "sourceWeight": 0.15,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0.2,
+            "matchedKeywords": [
+              "ai",
+              "agent"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Klaviyo has acquired Elias Torres’ agency, bringing the serial entrepreneur on board as Chief Product Officer to lead its AI agents, marking a full-circle reunion for the tech founders.",
+          "translations": {
+            "da": {
+              "title": "Klaviyo opkøber Elias Torres’ bureau i en fuld cirkel-genforening for tech-grundlæggere",
+              "summary": "AI-genereret resumé: Klaviyo har opkøbt Elias Torres’ bureau og ansætter den serielle iværksætter som Chief Product Officer til at lede sine AI-agenter, hvilket markerer en fuld cirkel-genforening for tech-grundlæggerne."
+            },
+            "es": {
+              "title": "Klaviyo adquiere la agencia de Elias Torres en una reunión de círculo completo para fundadores tecnológicos",
+              "summary": "Resumen generado por IA: Klaviyo ha adquirido la agencia de Elias Torres, incorporando al emprendedor en serie como Chief Product Officer para liderar sus agentes de IA, marcando una reunión de círculo completo para los fundadores tecnológicos."
+            }
+          }
+        },
+        {
+          "id": "je5heb",
+          "title": "Planned Amazon data center could become the biggest climate polluter in the U.S.",
+          "url": "https://techcrunch.com/2026/08/08/planned-amazon-data-center-could-become-the-biggest-climate-polluter-in-the-u-s/",
+          "source": "TechCrunch - AI",
+          "published_at": "2026-08-08T21:24:02.000Z",
+          "ingested_at": "2026-08-09T07:05:25.473Z",
+          "snippet": "As part of a planned Texas data center, Amazon is investing in an on-site power plant that could reportedly become the largest source of climate pollution in the United States.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.25,
+            "recencyScore": 0,
+            "sourceWeight": 0.15,
+            "keywordBoost": 0,
+            "insightSignalBoost": 0.1,
+            "penalty": 0,
+            "matchedKeywords": []
+          },
+          "aiSummary": "AI-generated summary: Amazon's planned Texas data center includes an on-site power plant that may become the largest source of climate pollution in the U.S., raising concerns about its environmental impact.",
+          "translations": {
+            "da": {
+              "title": "Planlagt Amazon-datacenter kan blive den største klimaforurener i USA",
+              "summary": "AI-genereret resumé: Amazons planlagte datacenter i Texas inkluderer et kraftværk på stedet, som kan blive den største kilde til klimaforurening i USA og vækker bekymring om miljøpåvirkningen."
+            },
+            "es": {
+              "title": "El centro de datos planeado de Amazon podría convertirse en el mayor contaminante climático en EE. UU.",
+              "summary": "Resumen generado por IA: El centro de datos planeado por Amazon en Texas incluye una planta de energía en el sitio que podría convertirse en la mayor fuente de contaminación climática en EE. UU., lo que genera preocupaciones sobre su impacto ambiental."
+            }
+          }
+        },
+        {
+          "id": "ivac8j",
+          "title": "Snowflake Summit 2026: The Race Has Shifted From Building AI To Operating It",
+          "url": "https://www.forrester.com/blogs/snowflake-summit-2026-the-race-has-shifted-from-building-ai-to-operating-it/",
+          "source": "Forrester Blog",
+          "published_at": "2026-08-07T20:53:40.000Z",
+          "ingested_at": "2026-08-09T07:05:25.473Z",
+          "snippet": "The biggest takeaway from Snowflake Summit 2026 wasn’t another AI announcement; it was a fundamental shift in what enterprises should expect from a data platform for AI. The conversation has moved beyond building models and copilots to operationalizing agentic AI at scale. It requires more than AI infrastructure; it demands a lakehouse capable of delivering […]",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ai",
+              "agent"
+            ]
+          },
+          "aiSummary": "AI-generated summary: The Snowflake Summit 2026 highlighted a shift in enterprise focus from merely building AI models to effectively operating and scaling agentic AI, emphasizing the need for advanced data platforms like lakehouses to support this transition.",
+          "translations": {
+            "da": {
+              "title": "Snowflake Summit 2026: Kapløbet er flyttet fra at bygge AI til at drive det",
+              "summary": "AI-genereret resumé: Snowflake Summit 2026 fremhævede et skift i virksomheders fokus fra blot at bygge AI-modeller til effektivt at drive og skalere agentisk AI, med vægt på behovet for avancerede dataplatforme som lakehouses til at understøtte denne overgang."
+            },
+            "es": {
+              "title": "Snowflake Summit 2026: La carrera ha cambiado de construir IA a operarla",
+              "summary": "Resumen generado por IA: El Snowflake Summit 2026 destacó un cambio en el enfoque empresarial, pasando de simplemente construir modelos de IA a operar y escalar eficazmente la IA agentica, enfatizando la necesidad de plataformas de datos avanzadas como lakehouses para apoyar esta transición."
+            }
+          }
+        },
+        {
+          "id": "nug2dx",
+          "title": "Visa Acquires BioCatch as AI Reshapes Payment Fraud",
+          "url": "https://www.paymentsjournal.com/visa-acquires-biocatch-as-ai-reshapes-payment-fraud/",
+          "source": "Payments Journal",
+          "published_at": "2026-08-06T19:00:00.000Z",
+          "ingested_at": "2026-08-09T07:05:25.473Z",
+          "snippet": "Visa’s $2.4 billion acquisition of fintech BioCatch signals a major shift in the fight against payment fraud. As AI makes scams more sophisticated and harder to detect, behavioral biometrics are emerging as one of the financial industry’s most important tools for distinguishing legitimate customers from fraudsters. Biometrics are increasingly being used to enhance identity verification […]\nThe post Visa Acquires BioCatch as AI Reshapes Payment Fraud appeared first on PaymentsJournal.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ai",
+              "acquisition"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Visa's $2.4 billion acquisition of fintech BioCatch highlights the growing role of AI-driven behavioral biometrics in combating increasingly sophisticated payment fraud. This strategic move underscores the financial industry's shift toward advanced identity verification methods.",
+          "translations": {
+            "da": {
+              "title": "Visa opkøber BioCatch, mens AI omformer betalingssvindel",
+              "summary": "Visas opkøb af fintech BioCatch til 2,4 milliarder dollars fremhæver den voksende rolle af AI-drevne adfærdsbiometriske metoder i kampen mod stadig mere sofistikeret betalingssvindel. Dette strategiske skridt understreger finansbranchens skift mod avancerede identitetsverifikationsmetoder."
+            },
+            "es": {
+              "title": "Visa adquiere BioCatch mientras la IA transforma el fraude en pagos",
+              "summary": "La adquisición de BioCatch por 2.4 mil millones de dólares por parte de Visa destaca el creciente papel de la biometría conductual impulsada por IA en la lucha contra el fraude en pagos cada vez más sofisticado. Este movimiento estratégico subraya el cambio de la industria financiera hacia métodos avanzados de verificación de identidad."
+            }
+          }
+        }
+      ]
+    },
+    "Ecommerce_Retail_Tech": {
+      "total": 434,
+      "top": [
+        {
+          "id": "u6s7g0",
+          "title": "Gorilla Commerce built a 9-figure business on Amazon. Now, it’s launching in Walmart stores",
+          "url": "https://www.modernretail.co/operations/gorilla-commerce-built-a-9-figure-business-on-amazon-now-its-launching-in-walmart-stores/?utm_campaign=modernretaildis&utm_medium=rss&utm_source=general-rss",
+          "source": "Modern Retail",
+          "published_at": "2026-08-05T04:00:00.000Z",
+          "ingested_at": "2026-08-09T07:05:25.473Z",
+          "snippet": "Gorilla Commerce, most well-known for its slip-resistant bath mats, has found tremendous success primarily through Amazon, surpassing nine figures in sales. But the company wants to prove it's more than just an Amazon brand. Two years ago, it launched on Walmart's marketplace, and last month, the company brought Gorilla Grip to more than 2,600 Walmart stores.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "marketplace"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Gorilla Commerce, renowned for its slip-resistant bath mats and nine-figure sales on Amazon, is expanding its presence by launching its Gorilla Grip products in over 2,600 Walmart stores after entering Walmart's marketplace two years ago.",
+          "translations": {
+            "da": {
+              "title": "Gorilla Commerce byggede en 9-cifret forretning på Amazon. Nu lancerer de i Walmart-butikker",
+              "summary": "AI-genereret resumé: Gorilla Commerce, kendt for sine skridsikre bademåtter og ni-cifrede salg på Amazon, udvider sin tilstedeværelse ved at lancere Gorilla Grip-produkter i over 2.600 Walmart-butikker efter at have indtrådt på Walmarts markedsplads for to år siden."
+            },
+            "es": {
+              "title": "Gorilla Commerce construyó un negocio de 9 cifras en Amazon. Ahora, se lanza en tiendas Walmart",
+              "summary": "Resumen generado por IA: Gorilla Commerce, conocido por sus tapetes de baño antideslizantes y ventas de nueve cifras en Amazon, está ampliando su presencia lanzando sus productos Gorilla Grip en más de 2,600 tiendas Walmart tras ingresar al mercado de Walmart hace dos años."
+            }
+          }
+        },
+        {
+          "id": "bvbo8e",
+          "title": "Ex-Spotify employees raise $10M to bring the AI behind its recommendations to e-commerce",
+          "url": "https://techcrunch.com/2026/08/06/ex-spotify-employees-raise-10m-to-bring-the-ai-behind-its-recommendations-to-e-commerce/",
+          "source": "TechCrunch - Commerce",
+          "published_at": "2026-08-06T13:00:00.000Z",
+          "ingested_at": "2026-08-09T07:05:25.473Z",
+          "snippet": "The startup's platform predicts which product a shopper wants next, learns their general taste, and fine-tunes continuously based on what they do in real time.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "e-commerce",
+              "platform"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Former Spotify employees have raised $10 million to develop an AI-driven e-commerce platform that predicts shoppers' next desired products by learning their tastes and continuously adapting in real time.",
+          "translations": {
+            "da": {
+              "title": "Tidligere Spotify-medarbejdere rejser 10 mio. dollars for at bringe AI'en bag deres anbefalinger til e-handel",
+              "summary": "AI-genereret resumé: Tidligere Spotify-medarbejdere har rejst 10 millioner dollars til at udvikle en AI-drevet e-handelsplatform, der forudsiger kunders næste ønskede produkter ved at lære deres smag og tilpasse sig løbende i realtid."
+            },
+            "es": {
+              "title": "Ex empleados de Spotify recaudan $10M para llevar la IA detrás de sus recomendaciones al comercio electrónico",
+              "summary": "Resumen generado por IA: Ex empleados de Spotify han recaudado 10 millones de dólares para desarrollar una plataforma de comercio electrónico impulsada por IA que predice los próximos productos deseados por los compradores aprendiendo sus gustos y adaptándose continuamente en tiempo real."
+            }
+          }
+        },
+        {
+          "id": "f3rx3u",
+          "title": "Whatnot valued at $20 billion as live shopping continues to boom",
+          "url": "https://www.cnbc.com/2026/08/07/whatnot-live-shopping-valuation-20-billion.html",
+          "source": "CNBC Technology",
+          "published_at": "2026-08-07T15:02:12.000Z",
+          "ingested_at": "2026-08-09T07:05:25.473Z",
+          "snippet": "Whatnot, the live commerce platform, has increased its valuation to $20 billion as the popularity of live shopping continues to grow.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "shopping",
+              "platform"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Whatnot, a live commerce platform, has reached a valuation of $20 billion amid the rising popularity of live shopping, according to CNBC Technology on August 7, 2026.",
+          "translations": {
+            "da": {
+              "title": "Whatnot vurderet til 20 milliarder dollars, da live shopping fortsætter med at vokse",
+              "summary": "AI-genereret resumé: Whatnot, en live commerce-platform, har nået en værdiansættelse på 20 milliarder dollars i takt med den stigende popularitet af live shopping, ifølge CNBC Technology den 7. august 2026."
+            },
+            "es": {
+              "title": "Whatnot valorado en 20 mil millones de dólares mientras las compras en vivo siguen en auge",
+              "summary": "Resumen generado por IA: Whatnot, una plataforma de comercio en vivo, ha alcanzado una valoración de 20 mil millones de dólares en medio de la creciente popularidad de las compras en vivo, según CNBC Technology el 7 de agosto de 2026."
+            }
+          }
+        },
+        {
+          "id": "v1cnl6",
+          "title": "How Shopify is approaching agentic AI so far in 2026",
+          "url": "https://www.digitalcommerce360.com/2026/08/06/how-shopify-is-approaching-agentic-ai-2026/",
+          "source": "Digital Commerce 360",
+          "published_at": "2026-08-06T19:18:05.000Z",
+          "ingested_at": "2026-08-09T07:05:25.473Z",
+          "snippet": "On Shopify’s Q2 earnings call with analysts, president Harley Finkelstein said the ecommerce platform and its ecosystem are “well-suited to this agentic era” of artificial intelligence (AI). Finkelstein said Shopify has been investing in the search index for about two years. It has been going through 20 years of commerce data from more than 1 […]\nThe post How Shopify is approaching agentic AI so far in 2026 appeared first on Digital Commerce 360.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ecommerce",
+              "platform"
+            ]
+          },
+          "aiSummary": "AI-generated summary: In its Q2 2026 earnings call, Shopify president Harley Finkelstein highlighted the company's readiness for the \"agentic era\" of AI, noting ongoing investments in its search index and leveraging two decades of commerce data to enhance its ecommerce platform and ecosystem.",
+          "translations": {
+            "da": {
+              "title": "Hvordan Shopify indtil videre tilgår agentisk AI i 2026",
+              "summary": "AI-genereret resumé: På sin Q2 2026 indtjeningsopkald fremhævede Shopify-præsident Harley Finkelstein virksomhedens parathed til AI's \"agentiske æra\" og nævnte løbende investeringer i deres søgeindeks samt udnyttelse af to årtiers handelsdata til at forbedre deres ecommerce-platform og økosystem."
+            },
+            "es": {
+              "title": "Cómo Shopify está abordando la IA agéntica hasta ahora en 2026",
+              "summary": "Resumen generado por IA: En la llamada de resultados del segundo trimestre de 2026, el presidente de Shopify, Harley Finkelstein, destacó la preparación de la empresa para la \"era agéntica\" de la IA, señalando inversiones continuas en su índice de búsqueda y aprovechando dos décadas de datos comerciales para mejorar su plataforma y ecosistema de comercio electrónico."
+            }
+          }
+        },
+        {
+          "id": "ibgqc0",
+          "title": "Why Payment Choice Still Matters in a Digital-First Economy",
+          "url": "https://www.paymentsjournal.com/why-payment-choice-still-matters-in-a-digital-first-economy/",
+          "source": "Payments Journal",
+          "published_at": "2026-08-04T13:00:00.000Z",
+          "ingested_at": "2026-08-09T07:05:25.473Z",
+          "snippet": "Digital payments continue to shift how Americans pay for goods and services. Mobile wallets, contactless cards, peer-to-peer payment platforms, and real-time payment networks are becoming increasingly embedded in everyday commerce. As these technologies gain traction, some retailers have moved toward cashless operations, viewing digital payments as a more efficient way to conduct transactions. At the […]\nThe post Why Payment Choice Still Matters in a Digital-First Economy appeared first on Payme...",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "payment",
+              "platform"
+            ]
+          },
+          "aiSummary": "AI-generated summary: The article discusses the growing adoption of digital payment methods like mobile wallets and contactless cards in the U.S., highlighting how some retailers are shifting toward cashless operations to enhance transaction efficiency in a digital-first economy.",
+          "translations": {
+            "da": {
+              "title": "Hvorfor betalingsvalg stadig betyder noget i en digital-første økonomi",
+              "summary": "AI-genereret resumé: Artiklen diskuterer den stigende brug af digitale betalingsmetoder som mobile wallets og kontaktløse kort i USA og fremhæver, hvordan nogle detailhandlere bevæger sig mod kontantløse operationer for at øge transaktionseffektiviteten i en digital-første økonomi."
+            },
+            "es": {
+              "title": "Por qué la elección de pago sigue siendo importante en una economía digital primero",
+              "summary": "Resumen generado por IA: El artículo analiza la creciente adopción de métodos de pago digitales como billeteras móviles y tarjetas sin contacto en EE. UU., destacando cómo algunos minoristas están optando por operaciones sin efectivo para mejorar la eficiencia de las transacciones en una economía digital primero."
+            }
+          }
+        },
+        {
+          "id": "ooskv9",
+          "title": "Kohl’s debuts Gemini-powered AI assistant in time for back-to-school shopping",
+          "url": "https://www.digitalcommerce360.com/2026/08/05/kohls-google-gemini-ai-assistant-back-to-school-shopping/",
+          "source": "Digital Commerce 360",
+          "published_at": "2026-08-05T19:06:59.000Z",
+          "ingested_at": "2026-08-09T07:05:25.473Z",
+          "snippet": "Kohl’s unveiled its latest artificial intelligence (AI) tool, urging back-to-school shoppers to give the technology a try for school supplies recommendations and other use cases. The Kohl’s AI assistant, which was built using Google Cloud’s Gemini Enterprise for Customer Experience, according to the retailer, follows the retailer’s Mother’s Day Gift Finder as the company looks […]\nThe post Kohl’s debuts Gemini-powered AI assistant in time for back-to-school shopping appeared first on Digital Com...",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "shopping"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Kohl’s has launched a new AI assistant powered by Google Cloud’s Gemini Enterprise to help back-to-school shoppers with school supplies recommendations and other uses. This tool follows the retailer’s previous AI initiative, the Mother’s Day Gift Finder.",
+          "translations": {
+            "da": {
+              "title": "Kohl’s lancerer Gemini-drevet AI-assistent til skolestart",
+              "summary": "Kohl’s har lanceret en ny AI-assistent drevet af Google Cloud’s Gemini Enterprise for at hjælpe med anbefalinger til skolestart og andre formål. Værktøjet følger efter detailhandlerens tidligere AI-initiativ, Mother’s Day Gift Finder."
+            },
+            "es": {
+              "title": "Kohl’s presenta asistente de IA impulsado por Gemini para la vuelta al cole",
+              "summary": "Kohl’s ha lanzado un nuevo asistente de IA impulsado por Google Cloud’s Gemini Enterprise para ayudar a los compradores de vuelta al cole con recomendaciones de útiles escolares y otros usos. Esta herramienta sigue a la iniciativa previa de IA del minorista, Mother’s Day Gift Finder."
+            }
+          }
+        },
+        {
+          "id": "5ucw1w",
+          "title": "The Friday Checkout: Federal scrutiny of pricing practices ramps up",
+          "url": "https://www.grocerydive.com/news/the-friday-checkout-senate-hearing-artificial-intelligence-surveillance-pr/827315/",
+          "source": "Grocery Dive",
+          "published_at": "2026-08-07T15:05:00.000Z",
+          "ingested_at": "2026-08-09T07:05:25.473Z",
+          "snippet": "A Senate subcommittee hearing put companies on blast for “AI surveillance pricing,” highlighting how retailers risk losing consumer trust.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "checkout"
+            ]
+          },
+          "aiSummary": "AI-generated summary: A recent Senate subcommittee hearing intensified federal scrutiny on retailers' pricing strategies, specifically criticizing \"AI surveillance pricing\" practices and warning of potential consumer trust erosion.",
+          "translations": {
+            "da": {
+              "title": "Fredagsopgørelsen: Føderal kontrol med prisfastsættelse skærpes",
+              "summary": "AI-genereret resumé: En nylig høring i Senatets underudvalg intensiverede den føderale kontrol med detailhandleres prisstrategier, især med kritik af \"AI overvågningsprissætning\" og advarsler om potentiel erosion af forbrugertillid."
+            },
+            "es": {
+              "title": "El Resumen del Viernes: Aumenta el escrutinio federal sobre prácticas de precios",
+              "summary": "Resumen generado por IA: Una reciente audiencia del subcomité del Senado intensificó el escrutinio federal sobre las estrategias de precios de los minoristas, criticando específicamente las prácticas de \"precios de vigilancia con IA\" y advirtiendo sobre una posible erosión de la confianza del consumidor."
+            }
+          }
+        }
+      ]
+    },
+    "Luxury_and_Consumer": {
+      "total": 66,
+      "top": [
+        {
+          "id": "bhhp90",
+          "title": "The New York Knicks Cap Was Fashion's Hottest Product of Q2 2026",
+          "url": "https://fashionista.com/2026/08/lyst-index-q2-2026-top-popular-brands-chanel-knicks",
+          "source": "Fashionista",
+          "published_at": "2026-08-05T11:00:00.000Z",
+          "ingested_at": "2026-08-09T07:05:25.473Z",
+          "snippet": "Plus, Chanel is still the world's hottest luxury brand, Phoebe Philo saw a surge in demand and more from the latest Lyst Index.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "luxury",
+              "demand",
+              "brand"
+            ]
+          },
+          "aiSummary": "AI-generated summary: The New York Knicks cap emerged as the hottest fashion product in Q2 2026, while Chanel maintained its position as the world's leading luxury brand and Phoebe Philo experienced increased demand, according to the latest Lyst Index reported by Fashionista.",
+          "translations": {
+            "da": {
+              "title": "The New York Knicks Cap var Modes mest populære produkt i 2. kvartal 2026",
+              "summary": "AI-genereret resumé: The New York Knicks cap blev det hotteste modeprodukt i 2. kvartal 2026, mens Chanel bevarede sin position som verdens førende luksusbrand, og Phoebe Philo oplevede øget efterspørgsel ifølge den seneste Lyst Index rapporteret af Fashionista."
+            },
+            "es": {
+              "title": "La Gorra de New York Knicks Fue el Producto de Moda Más Popular del 2T 2026",
+              "summary": "Resumen generado por IA: La gorra de New York Knicks se convirtió en el producto de moda más popular en el 2T de 2026, mientras que Chanel mantuvo su posición como la principal marca de lujo mundial y Phoebe Philo experimentó un aumento en la demanda, según el último Lyst Index reportado por Fashionista."
+            }
+          }
+        },
+        {
+          "id": "paunww",
+          "title": "Streaming’s Next Battle Is For Customer Relationships",
+          "url": "https://www.forrester.com/blogs/streamings-next-battle-is-for-customer-relationships/",
+          "source": "Forrester Blog",
+          "published_at": "2026-08-05T20:07:15.000Z",
+          "ingested_at": "2026-08-09T07:05:25.473Z",
+          "snippet": "The SVOD (streaming video on demand) industry is abuzz about Netflix’s engagement trends and declining viewership between first and second seasons. Why? Because it points to a bigger market question: What keeps streaming consumers engaged when their hit show isn’t on? While original programming, sports rights, and other exclusive content draw consumers to a given […]",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "consumer",
+              "demand",
+              "exclusive"
+            ]
+          },
+          "aiSummary": "AI-generated summary: The SVOD industry is focusing on understanding how to maintain consumer engagement beyond hit shows, as highlighted by Netflix’s declining viewership between seasons. This challenge underscores the importance of customer relationships in streaming’s competitive landscape.",
+          "translations": {
+            "da": {
+              "title": "Streamings næste kamp er for kundeforhold",
+              "summary": "AI-genereret resumé: SVOD-industrien fokuserer på at forstå, hvordan man opretholder forbrugerengagement ud over populære serier, som det ses i Netflix’ faldende seertal mellem sæsoner. Denne udfordring understreger vigtigheden af kundeforhold i streamingens konkurrenceprægede landskab."
+            },
+            "es": {
+              "title": "La próxima batalla del streaming es por las relaciones con los clientes",
+              "summary": "Resumen generado por IA: La industria SVOD se está enfocando en entender cómo mantener el compromiso del consumidor más allá de los éxitos, como lo destaca la disminución de audiencia de Netflix entre temporadas. Este desafío subraya la importancia de las relaciones con los clientes en el competitivo panorama del streaming."
+            }
+          }
+        },
+        {
+          "id": "hftyg",
+          "title": "Panerai celebrates heritage in Florence, presenting centenary exhibition",
+          "url": "https://www.luxurydaily.com/panerai-celebrates-heritage-in-florence-presenting-centenary-exhibition/",
+          "source": "Luxury Daily - Main",
+          "published_at": "2026-08-07T08:45:00.000Z",
+          "ingested_at": "2026-08-09T07:05:25.473Z",
+          "snippet": "Opening Sept. 10, the “Immersion” showcase will highlight the Italian watchmaker’s naval history at the Museo Marino Marini, taking to the city where the brand’s first boutique opened 100 years ago.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "heritage",
+              "brand"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Panerai is celebrating its centenary by opening the “Immersion” exhibition on September 10 at Florence’s Museo Marino Marini, showcasing the Italian watchmaker’s naval heritage in the city where its first boutique opened 100 years ago.",
+          "translations": {
+            "da": {
+              "title": "Panerai fejrer arv i Firenze med præsentation af hundredeårig udstilling",
+              "summary": "Panerai fejrer sit hundredeårsjubilæum ved at åbne udstillingen “Immersion” den 10. september på Florences Museo Marino Marini, hvor det italienske urmærkes maritime arv vises i byen, hvor dets første butik åbnede for 100 år siden."
+            },
+            "es": {
+              "title": "Panerai celebra su legado en Florencia presentando una exposición centenaria",
+              "summary": "Panerai celebra su centenario con la apertura de la exposición “Immersion” el 10 de septiembre en el Museo Marino Marini de Florencia, mostrando la herencia naval del relojero italiano en la ciudad donde abrió su primera boutique hace 100 años."
+            }
+          }
+        },
+        {
+          "id": "f39o3r",
+          "title": "GLP-1 users’ grocery spending is dropping",
+          "url": "https://www.grocerydive.com/news/glp1-weight-loss-drugs-medication-grocery-spend-numerator/827277/",
+          "source": "Grocery Dive",
+          "published_at": "2026-08-07T14:54:56.000Z",
+          "ingested_at": "2026-08-09T07:05:25.473Z",
+          "snippet": "GLP-1 shoppers’ spending power is now over $660 billion, but their grocery spending is down 4%, Numerator found.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "spending"
+            ]
+          },
+          "aiSummary": "AI-generated summary: According to Grocery Dive on August 7, 2026, GLP-1 users collectively have a spending power exceeding $660 billion, yet their grocery spending has declined by 4%, as reported by Numerator.",
+          "translations": {
+            "da": {
+              "title": "GLP-1 brugeres dagligvareforbrug falder",
+              "summary": "AI-genereret resume: Ifølge Grocery Dive den 7. august 2026 har GLP-1 brugere samlet en købekraft på over 660 milliarder dollars, men deres dagligvareforbrug er faldet med 4 %, rapporteret af Numerator."
+            },
+            "es": {
+              "title": "El gasto en comestibles de los usuarios de GLP-1 está disminuyendo",
+              "summary": "Resumen generado por IA: Según Grocery Dive el 7 de agosto de 2026, los usuarios de GLP-1 tienen un poder adquisitivo conjunto que supera los 660 mil millones de dólares, pero su gasto en comestibles ha disminuido un 4 %, según Numerator."
+            }
+          }
+        },
+        {
+          "id": "rr9qdu",
+          "title": "Brooklyn PR Is Hiring A Freelance Publicist In Los Angeles",
+          "url": "https://fashionista.com/2026/08/brooklyn-pr-is-hiring-a-freelance-publicist-in-los-angeles",
+          "source": "Fashionista",
+          "published_at": "2026-08-06T20:20:11.000Z",
+          "ingested_at": "2026-08-09T07:05:25.473Z",
+          "snippet": "Brooklyn PR is a LA based PR Agency specializing in VIP & Editorial, Brand Collaborations and Endorsements.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "brand"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Brooklyn PR, a Los Angeles-based agency specializing in VIP and editorial services, brand collaborations, and endorsements, is currently hiring a freelance publicist.",
+          "translations": {
+            "da": {
+              "title": "Brooklyn PR søger freelance publicist i Los Angeles",
+              "summary": "AI-genereret resumé: Brooklyn PR, et Los Angeles-baseret bureau specialiseret i VIP- og redaktionelle tjenester, brand-samarbejder og endorsement, søger i øjeblikket en freelance publicist."
+            },
+            "es": {
+              "title": "Brooklyn PR está contratando un publicista freelance en Los Ángeles",
+              "summary": "Resumen generado por IA: Brooklyn PR, una agencia con sede en Los Ángeles especializada en servicios VIP y editoriales, colaboraciones de marca y endorsements, está contratando actualmente un publicista freelance."
+            }
+          }
+        },
+        {
+          "id": "nlewcr",
+          "title": "Is Century 21 Still the Iconic NYC Designer Discount Destination It Once Was?",
+          "url": "https://fashionista.com/2026/08/century-21-nyc-discount-store-turnaround",
+          "source": "Fashionista",
+          "published_at": "2026-08-04T12:30:00.000Z",
+          "ingested_at": "2026-08-09T07:05:25.473Z",
+          "snippet": "Three years into its post-pandemic turnaround, the downtown Manhattan store is refocusing on IRL retail and courting younger consumers.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "consumer"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Three years after its post-pandemic turnaround, Century 21's downtown Manhattan store is shifting its focus back to in-person retail and aiming to attract younger consumers.",
+          "translations": {
+            "da": {
+              "title": "Er Century 21 stadig den ikoniske designer-discountdestination i NYC, som den engang var?",
+              "summary": "AI-genereret resumé: Tre år efter sin post-pandemiske vending fokuserer Century 21's butik i downtown Manhattan igen på fysisk detailhandel og sigter mod at tiltrække yngre forbrugere."
+            },
+            "es": {
+              "title": "¿Sigue siendo Century 21 el icónico destino de descuentos de diseño en NYC que solía ser?",
+              "summary": "Resumen generado por IA: Tres años después de su recuperación post-pandemia, la tienda de Century 21 en el centro de Manhattan está volviendo a centrarse en la venta presencial y busca atraer a consumidores más jóvenes."
+            }
+          }
+        },
+        {
+          "id": "sii3bo",
+          "title": "What a Week of Treatments at Sha Mexico’s Luxury Wellness Retreat Looks Like",
+          "url": "https://robbreport.com/lifestyle/health-wellness/sha-mexico-wellness-retreat-review-1238504020/",
+          "source": "Robb Report",
+          "published_at": "2026-08-08T15:00:00.000Z",
+          "ingested_at": "2026-08-09T07:05:25.473Z",
+          "snippet": "How seven days of functional medicine and curated meals affected us.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "luxury"
+            ]
+          },
+          "aiSummary": "AI-generated summary: The article from Robb Report dated August 8, 2026, explores the impact of a week-long experience at Sha Mexico’s luxury wellness retreat, focusing on the effects of functional medicine treatments and curated meals.",
+          "translations": {
+            "da": {
+              "title": "Sådan ser en uge med behandlinger ud på Sha Mexicos luksuriøse wellness-retreat",
+              "summary": "AI-genereret resumé: Artiklen fra Robb Report dateret 8. august 2026 udforsker effekten af en ugelang oplevelse på Sha Mexicos luksuriøse wellness-retreat med fokus på virkningerne af funktionelle medicinbehandlinger og kuraterede måltider."
+            },
+            "es": {
+              "title": "Cómo es una semana de tratamientos en el retiro de bienestar de lujo Sha Mexico",
+              "summary": "Resumen generado por IA: El artículo de Robb Report del 8 de agosto de 2026 explora el impacto de una experiencia de una semana en el retiro de bienestar de lujo Sha Mexico, enfocándose en los efectos de los tratamientos de medicina funcional y las comidas seleccionadas."
+            }
+          }
+        }
+      ]
+    },
+    "Jewellery_Industry": {
+      "total": 18,
+      "top": [
+        {
+          "id": "iq5j3h",
+          "title": "Second half rebound spikes jewellery sales for Michael Hill",
+          "url": "https://www.jewellermagazine.com/Article/15308/Second-half-rebound-spikes-jewellery-sales-for-Michael-Hill",
+          "source": "Jeweller - Business News",
+          "published_at": "2026-08-03T14:00:00.000Z",
+          "ingested_at": "2026-08-09T07:05:25.473Z",
+          "snippet": "Michael Hill International has reported an increase in sales over the past financial year following the implementation of a restructuring strategy.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.30000000000000004,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0.1,
+            "penalty": 0,
+            "matchedKeywords": [
+              "jewellery",
+              "jeweller"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Michael Hill International experienced a rise in jewellery sales in the past financial year, attributed to the successful implementation of a restructuring strategy. This rebound was highlighted in a recent report by Jeweller - Business News on August 3, 2026.",
+          "translations": {
+            "da": {
+              "title": "Anden halvårs opsving øger smykkesalget for Michael Hill",
+              "summary": "AI-genereret resumé: Michael Hill International oplevede en stigning i smykkesalget i det forgangne regnskabsår, tilskrevet en vellykket implementering af en omstruktureringsstrategi. Dette opsving blev fremhævet i en nylig rapport fra Jeweller - Business News den 3. august 2026."
+            },
+            "es": {
+              "title": "El repunte en la segunda mitad impulsa las ventas de joyería de Michael Hill",
+              "summary": "Resumen generado por IA: Michael Hill International experimentó un aumento en las ventas de joyería en el último año fiscal, atribuido a la exitosa implementación de una estrategia de reestructuración. Este repunte fue destacado en un informe reciente de Jeweller - Business News el 3 de agosto de 2026."
+            }
+          }
+        },
+        {
+          "id": "auxjtv",
+          "title": "Atlanta Cocktail Bar Offers $10K Martini that Comes With a Diamond Necklace",
+          "url": "https://instoremag.com/atlanta-cocktail-bar-offers-10k-martini-that-comes-with-a-diamond-necklace/",
+          "source": "Instore Magazine",
+          "published_at": "2026-08-06T04:27:40.000Z",
+          "ingested_at": "2026-08-09T07:05:25.473Z",
+          "snippet": "Roaring Social partners with Solomon Brothers Jewelers on a “special cocktail experience”.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "diamond"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Atlanta's Roaring Social cocktail bar has teamed up with Solomon Brothers Jewelers to offer a unique $10,000 martini that includes a diamond necklace, creating a special cocktail experience.",
+          "translations": {
+            "da": {
+              "title": "Atlanta Cocktailbar Tilbyder $10K Martini med Diamanthalskæde",
+              "summary": "AI-genereret resumé: Atlantas Roaring Social cocktailbar har samarbejdet med Solomon Brothers Jewelers om at tilbyde en unik $10.000 martini, der inkluderer en diamanthalskæde og skaber en særlig cocktailoplevelse."
+            },
+            "es": {
+              "title": "Bar de Cócteles en Atlanta Ofrece Martini de $10K que Incluye un Collar de Diamantes",
+              "summary": "Resumen generado por IA: El bar de cócteles Roaring Social de Atlanta se ha asociado con Solomon Brothers Jewelers para ofrecer un martini único de $10,000 que incluye un collar de diamantes, creando una experiencia especial de cóctel."
+            }
+          }
+        },
+        {
+          "id": "ca4cwk",
+          "title": "GN Diamond Wins RJO 2026 Vendor of the Year for Loose Diamonds for Fifth Time",
+          "url": "https://instoremag.com/gn-diamond-wins-rjo-2026-vendor-of-the-year-for-loose-diamonds-for-fourth-time/",
+          "source": "Instore Magazine",
+          "published_at": "2026-08-06T22:07:10.000Z",
+          "ingested_at": "2026-08-09T07:05:25.473Z",
+          "snippet": "The award, selected by RJO's retail membership, recognizes excellence in sales, service and support.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "diamond"
+            ]
+          },
+          "aiSummary": "AI-generated summary: GN Diamond has been named RJO's 2026 Vendor of the Year for Loose Diamonds for the fifth time, an award chosen by RJO's retail membership to honor excellence in sales, service, and support.",
+          "translations": {
+            "da": {
+              "title": "GN Diamond vinder RJO 2026 Leverandør af året for løse diamanter for femte gang",
+              "summary": "AI-genereret resumé: GN Diamond er blevet kåret som RJO's 2026 Leverandør af året for løse diamanter for femte gang, en pris valgt af RJOs detailmedlemmer til at hædre fremragende salg, service og support."
+            },
+            "es": {
+              "title": "GN Diamond gana el premio RJO 2026 Proveedor del Año en Diamantes Sueltos por quinta vez",
+              "summary": "Resumen generado por IA: GN Diamond ha sido nombrado Proveedor del Año 2026 de RJO en Diamantes Sueltos por quinta vez, un premio elegido por los miembros minoristas de RJO para reconocer la excelencia en ventas, servicio y soporte."
+            }
+          }
+        },
+        {
+          "id": "crdpto",
+          "title": "Ever Wondered What a Half Ton of Gold Looks Like?",
+          "url": "https://instoremag.com/ever-wondered-what-a-half-ton-of-gold-looks-like/",
+          "source": "Instore Magazine",
+          "published_at": "2026-08-07T03:50:45.000Z",
+          "ingested_at": "2026-08-09T07:05:25.473Z",
+          "snippet": "Perth Mint earns Guinness World Records title for largest gold bar ever cast.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "gold"
+            ]
+          },
+          "aiSummary": "AI-generated summary: The Perth Mint has earned a Guinness World Records title for casting the largest gold bar ever, weighing half a ton, highlighting a remarkable achievement in the jewellery industry.",
+          "translations": {
+            "da": {
+              "title": "Har du nogensinde spekuleret på, hvordan en halv tons guld ser ud?",
+              "summary": "AI-genereret resumé: Perth Mint har opnået en Guinness World Records-titel for at støbe den største guldbarrer nogensinde, der vejer en halv ton, hvilket fremhæver en bemærkelsesværdig bedrift i smykkeindustrien."
+            },
+            "es": {
+              "title": "¿Alguna vez te has preguntado cómo se ve media tonelada de oro?",
+              "summary": "Resumen generado por IA: Perth Mint ha obtenido un récord Guinness por fundir la barra de oro más grande jamás hecha, con un peso de media tonelada, destacando un logro notable en la industria de la joyería."
+            }
+          }
+        },
+        {
+          "id": "h9wjvq",
+          "title": "Perth jeweller in court over $1.5 million tax debt",
+          "url": "https://www.jewellermagazine.com/Article/15311/Perth-jeweller-in-court-over-1-5-million-tax-debt",
+          "source": "Jeweller - Business News",
+          "published_at": "2026-08-03T14:00:00.000Z",
+          "ingested_at": "2026-08-09T07:05:25.473Z",
+          "snippet": "A prominent Perth jewellery retailer is being sued by the Australian Taxation Office (ATO) over an alleged debt of more than $1.5 million.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.25,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "jeweller",
+              "jewellery",
+              "retailer"
+            ]
+          },
+          "aiSummary": "AI-generated summary: A well-known Perth jewellery retailer is facing legal action from the Australian Taxation Office over an alleged tax debt exceeding $1.5 million. The case highlights financial disputes within the jewellery industry.",
+          "translations": {
+            "da": {
+              "title": "Perth juveler i retten over 1,5 millioner dollars i skatteskuld",
+              "summary": "AI-genereret resumé: En velkendt Perth smykkeforhandler står over for retssag fra Australian Taxation Office over en påstået skatteskuld på over 1,5 millioner dollars. Sagen fremhæver økonomiske tvister inden for smykkeindustrien."
+            },
+            "es": {
+              "title": "Joyero de Perth en la corte por deuda tributaria de 1,5 millones de dólares",
+              "summary": "Resumen generado por IA: Un conocido minorista de joyería de Perth enfrenta acciones legales por parte de la Australian Taxation Office debido a una supuesta deuda tributaria que supera los 1,5 millones de dólares. El caso destaca disputas financieras dentro de la industria de la joyería."
+            }
+          }
+        },
+        {
+          "id": "mauuc9",
+          "title": "Ancient gold jewellery snatched as French museum thefts continue",
+          "url": "https://www.jewellermagazine.com/Article/15310/Ancient-gold-jewellery-snatched-as-French-museum-thefts-continue",
+          "source": "Jeweller - Business News",
+          "published_at": "2026-08-03T14:00:00.000Z",
+          "ingested_at": "2026-08-09T07:05:25.473Z",
+          "snippet": "A 2,500-year-old Celtic gold torque has been stolen from a French museum, marking the continuation of a bizarre series of well-known jewellery thefts across the country.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.25,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "jewellery",
+              "gold",
+              "jeweller"
+            ]
+          },
+          "aiSummary": "AI-generated summary: A 2,500-year-old Celtic gold torque was stolen from a French museum, continuing a series of notable jewellery thefts across France, according to Jeweller - Business News on August 3, 2026.",
+          "translations": {
+            "da": {
+              "title": "Oldgammelt guldsmykke stjålet, mens tyverier på franske museer fortsætter",
+              "summary": "AI-genereret resumé: En 2.500 år gammel keltisk guldtorque blev stjålet fra et fransk museum, hvilket fortsætter en række bemærkelsesværdige smykketyverier i hele Frankrig, ifølge Jeweller - Business News den 3. august 2026."
+            },
+            "es": {
+              "title": "Joyería antigua de oro robada mientras continúan los robos en museos franceses",
+              "summary": "Resumen generado por IA: Un torque celta de oro de 2.500 años fue robado de un museo francés, continuando una serie de robos notables de joyas en toda Francia, según Jeweller - Business News el 3 de agosto de 2026."
+            }
+          }
+        },
+        {
+          "id": "271h13",
+          "title": "The Perfect Laureato? Hands-On With The Girard-Perregaux Laureato Fifty With A Rose-Gold Dial",
+          "url": "https://www.fratellowatches.com/the-perfect-laureato-hands-on-with-the-girard-perregaux-laureato-fifty-with-a-rose-gold-dial/",
+          "source": "Fratello Watches",
+          "published_at": "2026-08-06T09:00:16.000Z",
+          "ingested_at": "2026-08-09T07:05:25.473Z",
+          "snippet": "Last year, I had the honor of testing the new Girard-Perregaux Laureato Fifty in bi-color prior to its release. It’s a tricky thing to walk around with a watch that isn’t out yet, but luckily, I live in a small village where the risk of it being spotted is rather low. Back then, I was […]\nVisit The Perfect Laureato? Hands-On With The Girard-Perregaux Laureato Fifty With A Rose-Gold Dial to read the full article.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": -0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0.2,
+            "matchedKeywords": [
+              "gold",
+              "watch"
+            ]
+          },
+          "aiSummary": "AI-generated summary: The article provides a hands-on review of the new Girard-Perregaux Laureato Fifty with a rose-gold dial, reflecting on the author's experience testing the watch prior to its official release.",
+          "translations": {
+            "da": {
+              "title": "Den Perfekte Laureato? Hands-On Med Girard-Perregaux Laureato Fifty Med En Rosagulds-Urskive",
+              "summary": "AI-genereret resumé: Artiklen giver en hands-on anmeldelse af den nye Girard-Perregaux Laureato Fifty med en rosagulds-urskive og reflekterer over forfatterens oplevelse med at teste uret før den officielle lancering."
+            },
+            "es": {
+              "title": "¿El Laureato Perfecto? Prueba Práctica del Girard-Perregaux Laureato Fifty con Esfera de Oro Rosa",
+              "summary": "Resumen generado por IA: El artículo ofrece una reseña práctica del nuevo Girard-Perregaux Laureato Fifty con esfera de oro rosa, reflejando la experiencia del autor al probar el reloj antes de su lanzamiento oficial."
+            }
+          }
+        }
+      ]
+    }
+  },
+  "editorialTake": "Alibaba’s latest AI model signals a clear push to reclaim relevance in a space dominated by US giants. After years of trailing, this move isn’t about catching up but about staking a claim in AI-powered commerce and cloud services where Alibaba’s scale can actually matter. The question is whether this model can translate into tangible advantages for its ecommerce and logistics arms, or if it will end up as another tech showcase with limited market impact.\n\nMeanwhile, SpaceX’s soaring AI spending after its IPO shows how AI is becoming a core part of even capital-intensive, hardware-focused companies. This isn’t just R&D fluff: it’s a bet that AI will optimize everything from manufacturing to operations in aerospace. The tension now is whether such heavy AI investment will deliver returns fast enough to justify the scale, or if it risks becoming a costly distraction from SpaceX’s core mission.",
+  "coverImageUrl": "/weekly-images/2026-W32.png",
+  "coverImageAlt": "Weekly cover illustration for 2026-W32"
+}

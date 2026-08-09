@@ -1,0 +1,28 @@
+{
+  "weekLabel": "2026-W32",
+  "homepageTopArticles": [
+    {
+      "title": "Gorilla Commerce built a 9-figure business on Amazon. Now, it’s launching in Walmart stores",
+      "source": "Modern Retail",
+      "snippet": "Gorilla Commerce, most well-known for its slip-resistant bath mats, has found tremendous success primarily through Amazon, surpassing nine figures in sales. But the company wants to prove it's more than just an Amazon brand. Two years ago, it launched on Walmart's marketplace, and last month, the company brought Gorilla Grip to more than 2,600 Walmart stores.",
+      "aiSummary": "AI-generated summary: Gorilla Commerce, renowned for its slip-resistant bath mats and nine-figure sales on Amazon, is expanding its presence by launching its Gorilla Grip products in over 2,600 Walmart stores after entering Walmart's marketplace two years ago."
+    },
+    {
+      "title": "Ex-Spotify employees raise $10M to bring the AI behind its recommendations to e-commerce",
+      "source": "TechCrunch - Commerce",
+      "snippet": "The startup's platform predicts which product a shopper wants next, learns their general taste, and fine-tunes continuously based on what they do in real time.",
+      "aiSummary": "AI-generated summary: Former Spotify employees have raised $10 million to develop an AI-driven e-commerce platform that predicts shoppers' next desired products by learning their tastes and continuously adapting in real time."
+    },
+    {
+      "title": "Second half rebound spikes jewellery sales for Michael Hill",
+      "source": "Jeweller - Business News",
+      "snippet": "Michael Hill International has reported an increase in sales over the past financial year following the implementation of a restructuring strategy.",
+      "aiSummary": "AI-generated summary: Michael Hill International experienced a rise in jewellery sales in the past financial year, attributed to the successful implementation of a restructuring strategy. This rebound was highlighted in a recent report by Jeweller - Business News on August 3, 2026."
+    }
+  ],
+  "model": "gpt-image-1",
+  "finalPrompt": "Photograph: A supermarket checkout belt displays a large plush gray bath mat unrolled across the center, a shiny gold wristwatch placed on one corner, and a ripe banana beside them. A small shopping bag with tiny, subtle logos peeks from the edge of the mat. Everything sits on the textured black conveyor belt, with natural store lighting and blurred grocery items in the distant background.\n\nCRITICAL CONSTRAINTS (must be strictly avoided):\n- text, letters, numbers, signage, labels, price tags, screens, UI, dashboards, holograms, floating icons, watermarks, unrelated brand logos, cartoon, illustration, CGI, 3D render, anime, diamond, diamonds, gemstone, gemstones, precious stones, jewelry close-up, jewelry product shot, diamond ring, diamond necklace, diamond earring, jeweled, sparkling gemstone, dramatic spotlight, glowing edges, rim lighting, vignette, cinematic color grade, blurred background, bokeh\n\nThis must look like a real photograph taken by a human — not AI-generated, not CGI, not a 3D render. Natural light. Real objects. Real imperfections. Fill the entire frame edge to edge with the scene — no black bars, no empty space at the edges.\n\nDo not include: text, labels, signage, screens, UI, logos unrelated to the scene, diamonds, gemstones, CGI lighting, dramatic spotlights, or blurred vignette backgrounds.",
+  "imageSize": "1536x1024",
+  "outputPath": "/weekly-images/2026-W32.png",
+  "generatedAt": "2026-08-09T07:32:03.688Z"
+}
