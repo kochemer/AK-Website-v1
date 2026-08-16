@@ -1,0 +1,964 @@
+{
+  "weekLabel": "2026-W33",
+  "tz": "Europe/Copenhagen",
+  "startISO": "2026-08-09T22:00:00.000Z",
+  "endISO": "2026-08-16T21:59:59.999Z",
+  "builtAtISO": "2026-08-16T09:10:34.287+02:00",
+  "builtAtLocal": "2026-08-16 09:10:34",
+  "totals": {
+    "total": 644,
+    "byTopic": {
+      "AIStrategy": 118,
+      "EcommerceRetail": 428,
+      "LuxuryConsumer": 64,
+      "Jewellery": 31
+    }
+  },
+  "topics": {
+    "AI_and_Strategy": {
+      "total": 118,
+      "top": [
+        {
+          "id": "3i4ude",
+          "title": "Anthropic revenue reportedly jumps to more than $11.5 billion in second quarter",
+          "url": "https://www.cnbc.com/2026/08/15/anthropic-revenue-jumps-to-over-11point5-billion-in-q2-report.html",
+          "source": "CNBC Technology",
+          "published_at": "2026-08-15T14:45:31.000Z",
+          "ingested_at": "2026-08-16T06:50:49.061Z",
+          "snippet": "The jump in revenue underscores the rapid growth of the Claude chatbot maker as it prepares for a potential blockbuster initial public offering.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "anthropic",
+              "claude"
+            ]
+          },
+          "aiSummary": "AI-generated summary: According to CNBC Technology on August 15, 2026, Anthropic's revenue surged to over $11.5 billion in the second quarter, highlighting the rapid growth of the Claude chatbot maker as it readies for a potential major initial public offering.",
+          "translations": {
+            "da": {
+              "title": "Anthropics omsætning steg angiveligt til over 11,5 milliarder dollars i andet kvartal",
+              "summary": "AI-genereret resumé: Ifølge CNBC Technology den 15. august 2026 steg Anthropics omsætning til over 11,5 milliarder dollars i andet kvartal, hvilket fremhæver den hurtige vækst for Claude-chatbot-producenten, mens de forbereder en potentiel stor børsintroduktion."
+            },
+            "es": {
+              "title": "Los ingresos de Anthropic supuestamente saltan a más de 11.5 mil millones de dólares en el segundo trimestre",
+              "summary": "Resumen generado por IA: Según CNBC Technology el 15 de agosto de 2026, los ingresos de Anthropic se dispararon a más de 11.5 mil millones de dólares en el segundo trimestre, destacando el rápido crecimiento del fabricante del chatbot Claude mientras se prepara para una posible oferta pública inicial importante."
+            }
+          }
+        },
+        {
+          "id": "edzvjh",
+          "title": "Anthropic investors bet on $2tn valuation in record IPO",
+          "url": "https://www.ft.com/content/840ac156-af1c-4a82-b260-ae791072fcfa?syn-25a6b1a6=1",
+          "source": "Financial Times - Technology",
+          "published_at": "2026-08-13T04:00:23.000Z",
+          "ingested_at": "2026-08-16T06:50:49.061Z",
+          "snippet": "Rapid revenue growth fuels hope Claude maker can overcome challenges to become the biggest listing in history",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "anthropic",
+              "claude"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Investors in Anthropic are betting on a $2 trillion valuation in its record-breaking IPO, driven by rapid revenue growth and optimism that the Claude maker can overcome challenges to become the largest listing in history.",
+          "translations": {
+            "da": {
+              "title": "Anthropic-investorer satser på 2 billioners værdiansættelse i rekord-IPO",
+              "summary": "AI-genereret resumé: Investorer i Anthropic satser på en værdiansættelse på 2 billioner dollars i deres rekordstore IPO, drevet af hurtig omsætningsvækst og optimisme om, at Claude-producenten kan overvinde udfordringer og blive den største børsnotering i historien."
+            },
+            "es": {
+              "title": "Inversores de Anthropic apuestan por una valoración de 2 billones de dólares en IPO récord",
+              "summary": "Resumen generado por IA: Los inversores en Anthropic apuestan por una valoración de 2 billones de dólares en su IPO récord, impulsada por un rápido crecimiento de ingresos y el optimismo de que el creador de Claude puede superar desafíos para convertirse en la mayor cotización de la historia."
+            }
+          }
+        },
+        {
+          "id": "fd77k7",
+          "title": "Investor pressure forces Nvidia to shrink its OpenAI bet just as Anthropic's numbers defy bubble warnings",
+          "url": "https://the-decoder.com/investor-pressure-forces-nvidia-to-shrink-its-openai-bet-just-as-anthropics-numbers-defy-bubble-warnings/",
+          "source": "The Decoder",
+          "published_at": "2026-08-15T15:41:02.000Z",
+          "ingested_at": "2026-08-16T06:50:49.061Z",
+          "snippet": "Nvidia has cut its guarantee for OpenAI's planned data center in Ohio nearly in half, from $250 billion to just under $120 billion, after investors pushed back on the risk. Meanwhile, Anthropic is complicating the AI bubble debate with revenue that jumped from $4.7 billion to $11.5 billion in a single quarter.\nThe article Investor pressure forces Nvidia to shrink its OpenAI bet just as Anthropic's numbers defy bubble warnings appeared first on The Decoder.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "openai",
+              "anthropic",
+              "ai"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Nvidia has reduced its financial commitment to OpenAI's Ohio data center from $250 billion to under $120 billion due to investor concerns, while Anthropic's revenue surged from $4.7 billion to $11.5 billion in one quarter, challenging AI bubble skepticism.",
+          "translations": {
+            "da": {
+              "title": "Investorpres tvinger Nvidia til at reducere sin OpenAI-indsats, netop som Anthropics tal trodser bobleadvarsler",
+              "summary": "AI-genereret resumé: Nvidia har reduceret sin økonomiske forpligtelse til OpenAIs datacenter i Ohio fra 250 milliarder til under 120 milliarder på grund af investorbekymringer, mens Anthropics omsætning steg fra 4,7 milliarder til 11,5 milliarder på et kvartal og udfordrer skepsis om AI-boblen."
+            },
+            "es": {
+              "title": "La presión de los inversores obliga a Nvidia a reducir su apuesta en OpenAI justo cuando las cifras de Anthropic desafían las advertencias de burbuja",
+              "summary": "Resumen generado por IA: Nvidia ha reducido su compromiso financiero con el centro de datos de OpenAI en Ohio de 250 mil millones a menos de 120 mil millones debido a preocupaciones de los inversores, mientras que los ingresos de Anthropic aumentaron de 4.7 mil millones a 11.5 mil millones en un trimestre, desafiando el escepticismo sobre la burbuja de IA."
+            }
+          }
+        },
+        {
+          "id": "lygb3d",
+          "title": "Nvidia Uses $500 Billion Financing Initiative to Dispel AI Bubble Fears",
+          "url": "https://www.pymnts.com/news/artificial-intelligence/2026/nvidia-uses-500-billion-dollar-financing-initiative-dispel-ai-bubble-fears/",
+          "source": "PYMNTS",
+          "published_at": "2026-08-14T23:28:16.000Z",
+          "ingested_at": "2026-08-16T06:50:49.061Z",
+          "snippet": "Nvidia’s $500 billion artificial intelligence financing initiative that was announced Monday (Aug. 10) aims to assure the company’s investors that there is plenty of financing available to the AI startups and other companies that buy or use the firm’s chips, Bloomberg reported Friday (Aug. 14). The initiative is also meant to expand Nvidia’s customer base […]\nThe post Nvidia Uses $500 Billion Financing Initiative to Dispel AI Bubble Fears appeared first on PYMNTS.com.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ai",
+              "artificial intelligence",
+              "ai startup"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Nvidia announced a $500 billion financing initiative to reassure investors about ample funding for AI startups and companies using its chips, while also aiming to expand its customer base.",
+          "translations": {
+            "da": {
+              "title": "Nvidia bruger 500 milliarder dollars finansieringsinitiativ til at afvise AI-bobleangst",
+              "summary": "AI-genereret resumé: Nvidia annoncerede et finansieringsinitiativ på 500 milliarder dollars for at berolige investorer om rigelig finansiering til AI-startups og virksomheder, der bruger deres chips, samtidig med at de sigter mod at udvide deres kundebase."
+            },
+            "es": {
+              "title": "Nvidia utiliza una iniciativa de financiación de 500 mil millones de dólares para disipar temores de burbuja de IA",
+              "summary": "Resumen generado por IA: Nvidia anunció una iniciativa de financiación de 500 mil millones de dólares para tranquilizar a los inversores sobre la amplia financiación para startups de IA y empresas que usan sus chips, mientras también busca ampliar su base de clientes."
+            }
+          }
+        },
+        {
+          "id": "xczvu4",
+          "title": "Optima tackles AI benchmarking's biggest flaw by letting users test models against their own data",
+          "url": "https://the-decoder.com/optima-tackles-ai-benchmarkings-biggest-flaw-by-letting-users-test-models-against-their-own-data/",
+          "source": "The Decoder",
+          "published_at": "2026-08-16T05:50:50.000Z",
+          "ingested_at": "2026-08-16T06:50:49.061Z",
+          "snippet": "Artificial Analysis has launched Optima, a platform that lets users build custom AI benchmarks from their own data and workflows. Models can be compared not just on quality but also on cost and time per task. For agent-based applications, those metrics often tell you more than raw token pricing.\nThe article Optima tackles AI benchmarking's biggest flaw by letting users test models against their own data appeared first on The Decoder.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.30000000000000004,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0.15,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ai",
+              "benchmark",
+              "agent"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Artificial Analysis has introduced Optima, a platform enabling users to create custom AI benchmarks using their own data and workflows, allowing model comparisons based on quality, cost, and time per task rather than just raw token pricing.",
+          "translations": {
+            "da": {
+              "title": "Optima løser AI-benchmarkings største svaghed ved at lade brugere teste modeller med deres egne data",
+              "summary": "AI-genereret resumé: Artificial Analysis har lanceret Optima, en platform der gør det muligt for brugere at skabe tilpassede AI-benchmarks med egne data og arbejdsgange, så modeller kan sammenlignes ud fra kvalitet, pris og tid pr. opgave frem for kun rå token-priser."
+            },
+            "es": {
+              "title": "Optima aborda la mayor falla del benchmarking de IA permitiendo a los usuarios probar modelos con sus propios datos",
+              "summary": "Resumen generado por IA: Artificial Analysis ha presentado Optima, una plataforma que permite a los usuarios crear benchmarks personalizados de IA usando sus propios datos y flujos de trabajo, facilitando comparaciones de modelos basadas en calidad, costo y tiempo por tarea en lugar de solo el precio por token."
+            }
+          }
+        },
+        {
+          "id": "6wb69r",
+          "title": "OpenAI hires new CRO as executive shake-up continues",
+          "url": "https://techcrunch.com/2026/08/13/openai-hires-new-cro-as-executive-shake-up-continues/",
+          "source": "TechCrunch - AI",
+          "published_at": "2026-08-13T17:07:13.000Z",
+          "ingested_at": "2026-08-16T06:50:49.061Z",
+          "snippet": "OpenAI has replaced chief revenue officer Denise Dresser after just nine months on the job, tapping Wiz president and chief operating officer Dali Rajic to take on frontier lab's top sales job.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0.15,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "openai"
+            ]
+          },
+          "aiSummary": "AI-generated summary: OpenAI has appointed Dali Rajic, president and COO of Wiz, as its new chief revenue officer, replacing Denise Dresser after nine months in the role, amid ongoing executive changes.",
+          "translations": {
+            "da": {
+              "title": "OpenAI ansætter ny CRO, mens ledelsesomvæltninger fortsætter",
+              "summary": "AI-genereret resumé: OpenAI har udnævnt Dali Rajic, præsident og COO for Wiz, som sin nye chief revenue officer og erstatter Denise Dresser efter ni måneder i rollen, midt i igangværende ledelsesændringer."
+            },
+            "es": {
+              "title": "OpenAI contrata nuevo CRO mientras continúan los cambios ejecutivos",
+              "summary": "Resumen generado por IA: OpenAI ha nombrado a Dali Rajic, presidente y COO de Wiz, como su nuevo director de ingresos, reemplazando a Denise Dresser después de nueve meses en el cargo, en medio de cambios ejecutivos en curso."
+            }
+          }
+        },
+        {
+          "id": "u80kyk",
+          "title": "Chinese chipmaker SMIC increases prices on strong AI demand ",
+          "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/chinese-chipmaker-smic-increases-prices-on-strong-ai-demand/articleshow/133228093.cms",
+          "source": "Economic Times - Technology",
+          "published_at": "2026-08-14T03:17:33.000Z",
+          "ingested_at": "2026-08-16T06:50:49.061Z",
+          "snippet": "Co-CEO Zhao Haijun said on an earnings call that SMIC raised prices following negotiations with customers in the first quarter, and that it would charge more for wafers processed in the third quarter.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ai"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Chinese chipmaker SMIC announced price increases for its wafers in response to strong AI demand, with higher charges set for the third quarter following customer negotiations in the first quarter, according to Co-CEO Zhao Haijun.",
+          "translations": {
+            "da": {
+              "title": "Kinesisk chipproducent SMIC hæver priserne på grund af stærk AI-efterspørgsel",
+              "summary": "AI-genereret resumé: Kinesiske chipproducent SMIC annoncerede prisstigninger på sine wafers som reaktion på stærk AI-efterspørgsel, med højere priser sat til tredje kvartal efter kundeforhandlinger i første kvartal, ifølge Co-CEO Zhao Haijun."
+            },
+            "es": {
+              "title": "El fabricante chino de chips SMIC aumenta precios por fuerte demanda de IA",
+              "summary": "Resumen generado por IA: El fabricante chino de chips SMIC anunció aumentos de precios en sus obleas en respuesta a la fuerte demanda de IA, con cargos más altos previstos para el tercer trimestre tras negociaciones con clientes en el primer trimestre, según el Co-CEO Zhao Haijun."
+            }
+          }
+        }
+      ]
+    },
+    "Ecommerce_Retail_Tech": {
+      "total": 428,
+      "top": [
+        {
+          "id": "2blnmb",
+          "title": "Target builds digital-twin platform to improve inventory availability",
+          "url": "https://www.modernretail.co/operations/target-builds-digital-twin-platform-to-improve-inventory-availability/?utm_campaign=modernretaildis&utm_medium=rss&utm_source=general-rss",
+          "source": "Modern Retail",
+          "published_at": "2026-08-13T18:54:53.000Z",
+          "ingested_at": "2026-08-16T06:50:49.061Z",
+          "snippet": "Target has unveiled a new technology play as it continues to work to improve inventory levels in stores.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "platform",
+              "inventory"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Target has launched a digital-twin platform aimed at enhancing inventory availability in its stores, reflecting its ongoing efforts to improve stock levels.",
+          "translations": {
+            "da": {
+              "title": "Target bygger digital-tvilling platform for at forbedre lager tilgængelighed",
+              "summary": "AI-genereret resumé: Target har lanceret en digital-tvilling platform med det formål at forbedre lager tilgængeligheden i sine butikker, som en del af deres fortsatte indsats for at optimere lagerniveauer."
+            },
+            "es": {
+              "title": "Target crea plataforma de gemelo digital para mejorar la disponibilidad de inventario",
+              "summary": "Resumen generado por IA: Target ha lanzado una plataforma de gemelo digital destinada a mejorar la disponibilidad de inventario en sus tiendas, reflejando sus esfuerzos continuos por optimizar los niveles de stock."
+            }
+          }
+        },
+        {
+          "id": "nhoiga",
+          "title": "The Friday Checkout: Can Kroger’s new e-commerce chief sort out its messy online business?",
+          "url": "https://www.grocerydive.com/news/the-friday-checkout-kroger-messy-ecommerce-nate-faust/827846/",
+          "source": "Grocery Dive",
+          "published_at": "2026-08-14T15:50:00.000Z",
+          "ingested_at": "2026-08-16T06:50:49.061Z",
+          "snippet": "Nate Faust brings a founder’s energy and an outsider’s perspective to a digital business that has become overly complex.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "e-commerce",
+              "checkout"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Nate Faust, Kroger’s new e-commerce chief, aims to simplify and revitalize the company’s increasingly complex online business by applying his founder’s energy and outsider perspective.",
+          "translations": {
+            "da": {
+              "title": "The Friday Checkout: Kan Krogers nye e-handelschef rydde op i deres rodede onlineforretning?",
+              "summary": "AI-genereret resumé: Nate Faust, Krogers nye e-handelschef, sigter mod at forenkle og genoplive virksomhedens stadig mere komplekse onlineforretning ved at anvende sin grundlæggerenergi og outsiderperspektiv."
+            },
+            "es": {
+              "title": "The Friday Checkout: ¿Puede el nuevo jefe de comercio electrónico de Kroger arreglar su desordenado negocio en línea?",
+              "summary": "Resumen generado por IA: Nate Faust, el nuevo jefe de comercio electrónico de Kroger, busca simplificar y revitalizar el negocio en línea cada vez más complejo de la empresa aplicando su energía de fundador y perspectiva externa."
+            }
+          }
+        },
+        {
+          "id": "wq35zt",
+          "title": "Kroger names former Walmart executive as first e-commerce chief",
+          "url": "https://www.grocerydive.com/news/kroger-names-executive-vice-president-chief-ecommerce-officer-csuite-appointment/827610/",
+          "source": "Grocery Dive",
+          "published_at": "2026-08-11T20:03:00.000Z",
+          "ingested_at": "2026-08-16T06:50:49.061Z",
+          "snippet": "The grocer tapped Nate Faust for the new top digital role just months after it named fellow Walmart veteran Greg Foran as its CEO.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "e-commerce"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Kroger has appointed Nate Faust, a former Walmart executive, as its first e-commerce chief, following the recent naming of another Walmart veteran, Greg Foran, as CEO. This move highlights Kroger's focus on strengthening its digital and e-commerce leadership.",
+          "translations": {
+            "da": {
+              "title": "Kroger udnævner tidligere Walmart-direktør som første e-handelschef",
+              "summary": "AI-genereret resumé: Kroger har udnævnt Nate Faust, en tidligere Walmart-direktør, som sin første e-handelschef efter nyligt at have udnævnt en anden Walmart-veteran, Greg Foran, som CEO. Dette skridt understreger Kroger's fokus på at styrke sin digitale og e-handelsledelse."
+            },
+            "es": {
+              "title": "Kroger nombra a exejecutivo de Walmart como su primer jefe de comercio electrónico",
+              "summary": "Resumen generado por IA: Kroger ha nombrado a Nate Faust, un exejecutivo de Walmart, como su primer jefe de comercio electrónico, tras el reciente nombramiento de otro veterano de Walmart, Greg Foran, como CEO. Este movimiento destaca el enfoque de Kroger en fortalecer su liderazgo digital y de comercio electrónico."
+            }
+          }
+        },
+        {
+          "id": "3r4k9l",
+          "title": "3 ways Etsy is investing in AI, according to its CEO",
+          "url": "https://www.digitalcommerce360.com/2026/08/12/3-ways-etsy-investing-ai-ceo/",
+          "source": "Digital Commerce 360",
+          "published_at": "2026-08-12T18:15:55.000Z",
+          "ingested_at": "2026-08-16T06:50:49.061Z",
+          "snippet": "Etsy CEO Kruti Goyal said she thinks about artificial intelligence (AI) in three ways: making the online marketplace more personal and more discoverable, while learning how the next generation of the shopping experience is going to evolve. She noted that agentic AI experiences still account for less than 1% of Etsy’s overall traffic as of […]\nThe post 3 ways Etsy is investing in AI, according to its CEO appeared first on Digital Commerce 360.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "shopping",
+              "marketplace"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Etsy CEO Kruti Goyal highlighted three key AI investments focused on personalizing the marketplace, enhancing product discoverability, and evolving the future shopping experience, noting that agentic AI currently represents less than 1% of Etsy’s traffic.",
+          "translations": {
+            "da": {
+              "title": "3 måder Etsy investerer i AI på, ifølge deres CEO",
+              "summary": "Etsys CEO Kruti Goyal fremhævede tre nøgleinvesteringer i AI med fokus på at personalisere markedet, forbedre produktopdagelse og udvikle den fremtidige shoppingoplevelse, og bemærkede, at agentisk AI i øjeblikket udgør mindre end 1% af Etsys trafik."
+            },
+            "es": {
+              "title": "3 formas en que Etsy está invirtiendo en IA, según su CEO",
+              "summary": "La CEO de Etsy, Kruti Goyal, destacó tres inversiones clave en IA centradas en personalizar el mercado, mejorar la descubribilidad de productos y evolucionar la experiencia de compra futura, señalando que la IA agentiva representa actualmente menos del 1% del tráfico de Etsy."
+            }
+          }
+        },
+        {
+          "id": "a3czbk",
+          "title": "GUEST POST What in-store BNPL tells us about the future of retail payments",
+          "url": "https://internetretailing.net/guest-post-what-in-store-bnpl-tells-us-about-the-future-of-retail-payments/",
+          "source": "Internet Retailing",
+          "published_at": "2026-08-11T09:21:19.000Z",
+          "ingested_at": "2026-08-16T06:50:49.061Z",
+          "snippet": "As Lululemon introduces Klarna at its in-store checkouts, Michaela Weber, SVP Payments at Commerce, explores the place  of BNPL in omnichannel retail.\nThe post GUEST POST What in-store BNPL tells us about the future of retail payments appeared first on InternetRetailing.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "payment",
+              "checkout"
+            ]
+          },
+          "aiSummary": "AI-generated summary: The article discusses Lululemon's integration of Klarna's Buy Now, Pay Later (BNPL) service at in-store checkouts, with Michaela Weber examining the role of BNPL in shaping the future of omnichannel retail payments.",
+          "translations": {
+            "da": {
+              "title": "GÆSTEINDLÆG Hvad in-store BNPL fortæller os om fremtiden for detailbetalinger",
+              "summary": "AI-genereret resumé: Artiklen diskuterer Lululemons integration af Klarnas Buy Now, Pay Later (BNPL) service ved kassen i butikker, hvor Michaela Weber undersøger BNPL's rolle i at forme fremtiden for omnichannel detailbetalinger."
+            },
+            "es": {
+              "title": "PUBLICACIÓN DE INVITADO Lo que BNPL en tienda nos dice sobre el futuro de los pagos minoristas",
+              "summary": "Resumen generado por IA: El artículo analiza la integración del servicio Buy Now, Pay Later (BNPL) de Klarna en las cajas de Lululemon, con Michaela Weber examinando el papel de BNPL en la configuración del futuro de los pagos minoristas omnicanal."
+            }
+          }
+        },
+        {
+          "id": "h55rjg",
+          "title": "New Ecommerce Tools: August 12, 2026",
+          "url": "https://www.practicalecommerce.com/new-ecommerce-tools-august-12-2026",
+          "source": "Practical Ecommerce",
+          "published_at": "2026-08-12T13:11:12.000Z",
+          "ingested_at": "2026-08-16T06:50:49.061Z",
+          "snippet": "New services for live shopping, ecommerce carts, product listing generators, social commerce, fulfillment, cross-border deliveries, autonomous marketing, and more.\nThe post New Ecommerce Tools: August 12, 2026 appeared first on Practical Ecommerce.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.25,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ecommerce",
+              "shopping",
+              "fulfillment"
+            ]
+          },
+          "aiSummary": "AI-generated summary: The article from Practical Ecommerce dated August 12, 2026, highlights new ecommerce tools including live shopping services, ecommerce carts, product listing generators, social commerce solutions, fulfillment options, cross-border delivery innovations, and autonomous marketing technologies.",
+          "translations": {
+            "da": {
+              "title": "Nye Ecommerce-værktøjer: 12. august 2026",
+              "summary": "AI-genereret resumé: Artiklen fra Practical Ecommerce dateret 12. august 2026 fremhæver nye ecommerce-værktøjer, herunder live shopping-tjenester, ecommerce-indkøbskurve, produktlistegeneratorer, social commerce-løsninger, opfyldelsesmuligheder, innovationer inden for grænseoverskridende levering og autonome marketingteknologier."
+            },
+            "es": {
+              "title": "Nuevas herramientas de Ecommerce: 12 de agosto de 2026",
+              "summary": "Resumen generado por IA: El artículo de Practical Ecommerce fechado el 12 de agosto de 2026 destaca nuevas herramientas de ecommerce, incluyendo servicios de compra en vivo, carritos de ecommerce, generadores de listados de productos, soluciones de comercio social, opciones de cumplimiento, innovaciones en entregas transfronterizas y tecnologías de marketing autónomas."
+            }
+          }
+        },
+        {
+          "id": "3b66o",
+          "title": "Michaels debuts new store format at 3 locations",
+          "url": "https://www.retaildive.com/news/michaels-debuts-store-format-knit-sew-party-shops/827904/",
+          "source": "Retail Dive",
+          "published_at": "2026-08-14T15:41:00.000Z",
+          "ingested_at": "2026-08-16T06:50:49.061Z",
+          "snippet": "The spaces include revamped department layouts, new personalization services and a self-checkout queue exclusive to rewards members.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "checkout"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Michaels has introduced a new store format at three locations featuring redesigned department layouts, enhanced personalization services, and a self-checkout queue available exclusively to rewards members.",
+          "translations": {
+            "da": {
+              "title": "Michaels introducerer nyt butikskoncept på 3 lokationer",
+              "summary": "AI-genereret resumé: Michaels har introduceret et nyt butikskoncept på tre lokationer med redesignet afdelingslayout, forbedrede personaliseringstjenester og en selvbetjeningskasse kun for rewards-medlemmer."
+            },
+            "es": {
+              "title": "Michaels estrena nuevo formato de tienda en 3 ubicaciones",
+              "summary": "Resumen generado por IA: Michaels ha introducido un nuevo formato de tienda en tres ubicaciones con diseños de departamentos rediseñados, servicios de personalización mejorados y una fila de auto-pago disponible exclusivamente para miembros de rewards."
+            }
+          }
+        }
+      ]
+    },
+    "Luxury_and_Consumer": {
+      "total": 64,
+      "top": [
+        {
+          "id": "tqt81f",
+          "title": "The Customer Identity And Access Management Solutions Landscape, Q3 2026 Is Live",
+          "url": "https://www.forrester.com/blogs/the-customer-identity-and-access-management-solutions-landscape-q3-2026-is-live/",
+          "source": "Forrester Blog",
+          "published_at": "2026-08-13T19:21:46.000Z",
+          "ingested_at": "2026-08-16T06:50:49.061Z",
+          "snippet": "The 2026 installment of the customer identity and access management (CIAM) landscape report has just published. The report identifies three primary drivers in the CIAM landscape. AI agents are a new identity type in CIAM. In our research, we found that CIAM solutions are increasingly enabling organizations to: Properly manage inbound access of customers’ AI […]",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": []
+          },
+          "aiSummary": "AI-generated summary: The 2026 Customer Identity and Access Management (CIAM) landscape report, published by Forrester, highlights three main drivers shaping the field and introduces AI agents as a new identity type, emphasizing how CIAM solutions are evolving to better manage customer access in the luxury and consumer sectors.",
+          "translations": {
+            "da": {
+              "title": "The Customer Identity And Access Management Solutions Landscape, Q3 2026 Er Live",
+              "summary": "AI-genereret resumé: 2026-rapporten om Customer Identity and Access Management (CIAM) landskabet, udgivet af Forrester, fremhæver tre hoveddrivere, der former feltet, og introducerer AI-agenter som en ny identitetstype, med fokus på hvordan CIAM-løsninger udvikler sig til bedre at håndtere kundeadgang i luksus- og forbrugersektorerne."
+            },
+            "es": {
+              "title": "The Customer Identity And Access Management Solutions Landscape, Q3 2026 Está Disponible",
+              "summary": "Resumen generado por IA: El informe del panorama de Customer Identity and Access Management (CIAM) 2026, publicado por Forrester, destaca tres impulsores principales que moldean el campo e introduce agentes de IA como un nuevo tipo de identidad, enfatizando cómo las soluciones CIAM están evolucionando para gestionar mejor el acceso de los clientes en los sectores de lujo y consumo."
+            }
+          }
+        },
+        {
+          "id": "ncomi3",
+          "title": "Exclusive: Jupiter enters Ulta Beauty as the retailer targets dandruff, solution-based hair care",
+          "url": "https://www.glossy.co/beauty/exclusive-jupiter-enters-ulta-beauty-as-the-retailer-targets-dandruff-solution-based-hair-care/?utm_campaign=glossydis&utm_medium=rss&utm_source=general-rss",
+          "source": "Glossy",
+          "published_at": "2026-08-10T04:00:00.000Z",
+          "ingested_at": "2026-08-16T06:50:49.061Z",
+          "snippet": "Jupiter, the 6-year-old dandruff category disruptor, is entering 500 Ulta Beauty stores this month as the retailer pushes deeper into clinical- and solution-based hair care.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "exclusive"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Jupiter, a six-year-old brand known for disrupting the dandruff category, is launching in 500 Ulta Beauty stores as the retailer expands its focus on clinical and solution-based hair care.",
+          "translations": {
+            "da": {
+              "title": "Eksklusivt: Jupiter træder ind i Ulta Beauty, mens detailhandlen fokuserer på skæl og løsningsbaseret hårpleje",
+              "summary": "AI-genereret resumé: Jupiter, et seks år gammelt mærke kendt for at forstyrre skælkategorien, lanceres i 500 Ulta Beauty-butikker, mens detailhandlen udvider sit fokus på klinisk og løsningsbaseret hårpleje."
+            },
+            "es": {
+              "title": "Exclusiva: Jupiter entra en Ulta Beauty mientras el minorista apunta a la caspa y el cuidado capilar basado en soluciones",
+              "summary": "Resumen generado por IA: Jupiter, una marca de seis años conocida por revolucionar la categoría de caspa, se lanza en 500 tiendas Ulta Beauty mientras el minorista amplía su enfoque en el cuidado capilar clínico y basado en soluciones."
+            }
+          }
+        },
+        {
+          "id": "gs51ew",
+          "title": "Must Read: Why Emerging Fashion Brands Are Betting on L.A. Manufacturing, JW Anderson Denies Zara Collaboration Rumor",
+          "url": "https://fashionista.com/2026/08/why-emerging-fashion-brands-are-betting-on-la-manufacturing",
+          "source": "Fashionista",
+          "published_at": "2026-08-14T16:00:00.000Z",
+          "ingested_at": "2026-08-16T06:50:49.061Z",
+          "snippet": "Plus, Palisades Village is reopening.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": -0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0.2,
+            "matchedKeywords": [
+              "brand"
+            ]
+          },
+          "aiSummary": "AI-generated summary: The article discusses why emerging fashion brands are increasingly choosing Los Angeles for manufacturing and addresses JW Anderson's denial of a collaboration rumor with Zara, alongside news of Palisades Village reopening.",
+          "translations": {
+            "da": {
+              "title": "Must Read: Hvorfor nye modebrands satser på produktion i L.A., JW Anderson afviser rygte om samarbejde med Zara",
+              "summary": "AI-genereret resumé: Artiklen diskuterer, hvorfor nye modebrands i stigende grad vælger Los Angeles til produktion, og omtaler JW Andersons afvisning af et samarbejdsrygte med Zara samt nyheder om genåbningen af Palisades Village."
+            },
+            "es": {
+              "title": "Lectura obligada: Por qué las marcas de moda emergentes apuestan por la fabricación en L.A., JW Anderson niega rumor de colaboración con Zara",
+              "summary": "Resumen generado por IA: El artículo analiza por qué las marcas de moda emergentes están eligiendo cada vez más Los Ángeles para la fabricación y aborda la negación de JW Anderson sobre un rumor de colaboración con Zara, junto con noticias sobre la reapertura de Palisades Village."
+            }
+          }
+        },
+        {
+          "id": "shdo9l",
+          "title": "Jo Malone London activation premieres in Fortnite",
+          "url": "https://www.luxurydaily.com/jo-malone-london-activation-premieres-in-fortnite/",
+          "source": "Luxury Daily - Main",
+          "published_at": "2026-08-12T09:00:00.000Z",
+          "ingested_at": "2026-08-16T06:50:49.061Z",
+          "snippet": "The British luxury fragrance brand is using the Epic Games platform to plug its new Sea Salt & Bergamot Cologne through an immersive, exploration-based digital world.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "luxury",
+              "brand"
+            ]
+          },
+          "aiSummary": "AI-generated summary: British luxury fragrance brand Jo Malone London has launched an immersive, exploration-based activation in Fortnite to promote its new Sea Salt & Bergamot Cologne, utilizing the Epic Games platform.",
+          "translations": {
+            "da": {
+              "title": "Jo Malone London-aktivering har premiere i Fortnite",
+              "summary": "AI-genereret resumé: Det britiske luksusduftmærke Jo Malone London har lanceret en immersiv, udforskningsbaseret aktivering i Fortnite for at promovere sin nye Sea Salt & Bergamot Cologne ved hjælp af Epic Games-platformen."
+            },
+            "es": {
+              "title": "Activación de Jo Malone London se estrena en Fortnite",
+              "summary": "Resumen generado por IA: La marca británica de fragancias de lujo Jo Malone London ha lanzado una activación inmersiva basada en la exploración en Fortnite para promocionar su nueva Sea Salt & Bergamot Cologne, utilizando la plataforma de Epic Games."
+            }
+          }
+        },
+        {
+          "id": "pb3h2b",
+          "title": "Sézane Officially Has a Permanent Store in L.A.",
+          "url": "https://fashionista.com/2026/08/sezane-brentwood-los-angeles-store",
+          "source": "Fashionista",
+          "published_at": "2026-08-14T10:00:00.000Z",
+          "ingested_at": "2026-08-16T06:50:49.061Z",
+          "snippet": "It reimagined its Brentwood Country Mart store as a smaller \"petite boutique\" featuring best sellers. This coincides with a new chapter for the French brand.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "brand"
+            ]
+          },
+          "aiSummary": "AI-generated summary: French luxury brand Sézane has transformed its Brentwood Country Mart location into a smaller \"petite boutique\" showcasing best sellers, marking a new chapter for the company in Los Angeles.",
+          "translations": {
+            "da": {
+              "title": "Sézane Har Officielt en Permanent Butik i L.A.",
+              "summary": "AI-genereret resumé: Det franske luksusmærke Sézane har forvandlet sin Brentwood Country Mart-lokation til en mindre \"petite boutique\" med bestsellere, hvilket markerer et nyt kapitel for virksomheden i Los Angeles."
+            },
+            "es": {
+              "title": "Sézane Tiene Oficialmente una Tienda Permanente en L.A.",
+              "summary": "Resumen generado por IA: La marca francesa de lujo Sézane ha transformado su ubicación en Brentwood Country Mart en una \"petite boutique\" más pequeña que exhibe los más vendidos, marcando un nuevo capítulo para la empresa en Los Ángeles."
+            }
+          }
+        },
+        {
+          "id": "nqmkrj",
+          "title": "Saucony Is the Fastest-Growing Sneaker Brand on StockX",
+          "url": "https://fashionista.com/2026/08/fastest-growing-sneaker-brands-stockx-2026-report",
+          "source": "Fashionista",
+          "published_at": "2026-08-12T13:00:00.000Z",
+          "ingested_at": "2026-08-16T06:50:49.061Z",
+          "snippet": "Vans, Mihara Yasuhiro, Onitsuka Tiger and Salomon are also on the rise according to the resale platform's new 2026 Big Facts report.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "brand"
+            ]
+          },
+          "aiSummary": "AI-generated summary: According to StockX's 2026 Big Facts report highlighted by Fashionista on August 12, Saucony is the fastest-growing sneaker brand, with Vans, Mihara Yasuhiro, Onitsuka Tiger, and Salomon also experiencing growth in the resale market.",
+          "translations": {
+            "da": {
+              "title": "Saucony er det hurtigst voksende sneakerbrand på StockX",
+              "summary": "AI-genereret resumé: Ifølge StockX's 2026 Big Facts-rapport fremhævet af Fashionista den 12. august, er Saucony det hurtigst voksende sneakerbrand, med Vans, Mihara Yasuhiro, Onitsuka Tiger og Salomon, der også oplever vækst på videresalgsmarkedet."
+            },
+            "es": {
+              "title": "Saucony es la marca de zapatillas de más rápido crecimiento en StockX",
+              "summary": "Resumen generado por IA: Según el informe Big Facts 2026 de StockX destacado por Fashionista el 12 de agosto, Saucony es la marca de zapatillas de más rápido crecimiento, con Vans, Mihara Yasuhiro, Onitsuka Tiger y Salomon también experimentando crecimiento en el mercado de reventa."
+            }
+          }
+        },
+        {
+          "id": "o1elbi",
+          "title": "Michael Jordan’s Most Popular Air Jordan Is Getting a Brand-new Chicago Bulls-themed Release",
+          "url": "https://wwd.com/footwear-news/sneaker-news/air-jordan-4-retro-og-bloodline-release-date-fv5029-005-1239126010/",
+          "source": "WWD - Women's Wear Daily",
+          "published_at": "2026-08-15T17:31:28.000Z",
+          "ingested_at": "2026-08-16T06:50:49.061Z",
+          "snippet": "The Air Jordan 4 Retro OG will be released in a new-yet-familiar \"Bloodline\" colorway.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "brand"
+            ]
+          },
+          "aiSummary": "AI-generated summary: The Air Jordan 4 Retro OG is set to be released in a new \"Bloodline\" colorway inspired by the Chicago Bulls, blending fresh design with classic elements.",
+          "translations": {
+            "da": {
+              "title": "Michael Jordans mest populære Air Jordan får en helt ny Chicago Bulls-temaudgivelse",
+              "summary": "AI-genereret resumé: Air Jordan 4 Retro OG udgives i en ny \"Bloodline\" farve inspireret af Chicago Bulls, der blander frisk design med klassiske elementer."
+            },
+            "es": {
+              "title": "El Air Jordan más popular de Michael Jordan tendrá un lanzamiento completamente nuevo con temática de Chicago Bulls",
+              "summary": "Resumen generado por IA: El Air Jordan 4 Retro OG se lanzará en una nueva versión \"Bloodline\" inspirada en los Chicago Bulls, combinando un diseño fresco con elementos clásicos."
+            }
+          }
+        }
+      ]
+    },
+    "Jewellery_Industry": {
+      "total": 31,
+      "top": [
+        {
+          "id": "eesg0q",
+          "title": "Modest sales boost for Pandora amid course correction",
+          "url": "https://www.jewellermagazine.com/Article/15430/Modest-sales-boost-for-Pandora-amid-course-correction",
+          "source": "Jeweller - Business News",
+          "published_at": "2026-08-13T14:00:00.000Z",
+          "ingested_at": "2026-08-16T06:50:49.061Z",
+          "snippet": "The world’s largest jewellery brand, Pandora, has reported an increase in sales amid an ongoing network expansion.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.30000000000000004,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0.1,
+            "penalty": 0,
+            "matchedKeywords": [
+              "jewellery",
+              "jeweller"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Pandora, the world’s largest jewellery brand, has experienced a modest increase in sales alongside its ongoing network expansion, according to a report by Jeweller - Business News on August 13, 2026.",
+          "translations": {
+            "da": {
+              "title": "Moderat salgsstigning for Pandora under kurskorrektion",
+              "summary": "AI-genereret resumé: Pandora, verdens største smykkebrand, har oplevet en moderat stigning i salget samtidig med sin igangværende netværksudvidelse, ifølge en rapport fra Jeweller - Business News den 13. august 2026."
+            },
+            "es": {
+              "title": "Aumento modesto en ventas para Pandora en medio de corrección de rumbo",
+              "summary": "Resumen generado por IA: Pandora, la marca de joyería más grande del mundo, ha experimentado un aumento modesto en las ventas junto con su expansión continua de red, según un informe de Jeweller - Business News del 13 de agosto de 2026."
+            }
+          }
+        },
+        {
+          "id": "n9fwcn",
+          "title": "Mystery Box Bench Challenge back for round three",
+          "url": "https://www.jewellermagazine.com/Article/15284/Mystery-Box-Bench-Challenge-back-for-round-three",
+          "source": "Jeweller - Business News",
+          "published_at": "2026-08-10T14:00:00.000Z",
+          "ingested_at": "2026-08-16T06:50:49.061Z",
+          "snippet": "What has quickly become one of the most popular annual attractions at the International Jewellery Fair in Sydney, the Mystery Box Bench Challenge, is set for a blockbuster return later this month.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "jewellery",
+              "jeweller"
+            ]
+          },
+          "aiSummary": "AI-generated summary: The Mystery Box Bench Challenge, a popular annual event at the International Jewellery Fair in Sydney, is returning for its third round later this month. This event has quickly become a highlight in the jewellery industry.",
+          "translations": {
+            "da": {
+              "title": "Mystery Box Bench Challenge tilbage til tredje runde",
+              "summary": "AI-genereret resumé: Mystery Box Bench Challenge, en populær årlig begivenhed på International Jewellery Fair i Sydney, vender tilbage til sin tredje runde senere på måneden. Denne begivenhed er hurtigt blevet et højdepunkt i smykkeindustrien."
+            },
+            "es": {
+              "title": "Mystery Box Bench Challenge regresa para la tercera ronda",
+              "summary": "Resumen generado por IA: El Mystery Box Bench Challenge, un evento anual popular en la International Jewellery Fair en Sydney, regresa para su tercera ronda a finales de este mes. Este evento se ha convertido rápidamente en un punto destacado en la industria de la joyería."
+            }
+          }
+        },
+        {
+          "id": "ipjmgl",
+          "title": "Modest jewellery sales decline for independents in July",
+          "url": "https://www.jewellermagazine.com/Article/15320/Modest-jewellery-sales-decline-for-independents-in-July",
+          "source": "Jeweller - Business News",
+          "published_at": "2026-08-10T14:00:00.000Z",
+          "ingested_at": "2026-08-16T06:50:49.061Z",
+          "snippet": "Jewellery sales experienced a modest decline across independent jewellers in Australia in July.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "jewellery",
+              "jeweller"
+            ]
+          },
+          "aiSummary": "AI-generated summary: In July 2026, independent jewellers in Australia saw a modest decline in jewellery sales, according to Jeweller - Business News.",
+          "translations": {
+            "da": {
+              "title": "Moderat fald i smykkesalg for uafhængige i juli",
+              "summary": "AI-genereret resumé: I juli 2026 oplevede uafhængige juvelerer i Australien et moderat fald i smykkesalget ifølge Jeweller - Business News."
+            },
+            "es": {
+              "title": "Modesta caída en ventas de joyería para independientes en julio",
+              "summary": "Resumen generado por IA: En julio de 2026, los joyeros independientes en Australia vieron una modesta disminución en las ventas de joyería, según Jeweller - Business News."
+            }
+          }
+        },
+        {
+          "id": "scgw41",
+          "title": "The Case for ‘Vuja De,’ and More Bonus Jeweler Tips For September",
+          "url": "https://instoremag.com/the-case-for-vuja-de-and-more-bonus-jeweler-tips-for-september/",
+          "source": "Instore Magazine",
+          "published_at": "2026-08-13T00:00:20.000Z",
+          "ingested_at": "2026-08-16T06:50:49.061Z",
+          "snippet": "Plus: why your October numbers might trigger a major marketing blitz.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": []
+          },
+          "aiSummary": "AI-generated summary: The article from Instore Magazine dated August 13, 2026, discusses the concept of ‘Vuja De’ and offers additional tips for jewelers in September, while also highlighting how October sales figures could prompt a significant marketing campaign.",
+          "translations": {
+            "da": {
+              "title": "Argumentet for ‘Vuja De’ og flere bonus tips til juvelerer i september",
+              "summary": "AI-genereret resumé: Artiklen fra Instore Magazine dateret 13. august 2026 diskuterer konceptet ‘Vuja De’ og tilbyder yderligere tips til juvelerer i september, samtidig med at den fremhæver, hvordan oktobers salgstal kan føre til en stor markedsføringskampagne."
+            },
+            "es": {
+              "title": "El caso de ‘Vuja De’ y más consejos extra para joyeros en septiembre",
+              "summary": "Resumen generado por IA: El artículo de Instore Magazine fechado el 13 de agosto de 2026 analiza el concepto de ‘Vuja De’ y ofrece consejos adicionales para joyeros en septiembre, además de destacar cómo las cifras de ventas de octubre podrían impulsar una campaña de marketing significativa."
+            }
+          }
+        },
+        {
+          "id": "4mfa7w",
+          "title": "Report: Americans Are Sitting on $750 Billion in Unappraised Gold Jewelry",
+          "url": "https://instoremag.com/report-americans-are-sitting-on-750-billion-in-unappraised-gold-jewelry/",
+          "source": "Instore Magazine",
+          "published_at": "2026-08-13T02:56:30.000Z",
+          "ingested_at": "2026-08-16T06:50:49.061Z",
+          "snippet": "A new industry index says most owners drastically underestimate what's in their jewelry boxes — and most haven’t had it valued for insurance.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": -0.04999999999999999,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0.05,
+            "penalty": 0.2,
+            "matchedKeywords": [
+              "jewelry",
+              "gold"
+            ]
+          },
+          "aiSummary": "AI-generated summary: According to a new industry index reported by Instore Magazine on August 13, 2026, Americans collectively hold $750 billion in gold jewelry that remains unappraised, with most owners significantly underestimating its value and lacking proper insurance valuations.",
+          "translations": {
+            "da": {
+              "title": "Rapport: Amerikanere Sidder på 750 Milliarder Dollars i Uvurderet Guldsmykker",
+              "summary": "AI-genereret resumé: Ifølge en ny brancheindeks rapporteret af Instore Magazine den 13. august 2026, ejer amerikanere samlet set guldsmykker for 750 milliarder dollars, som stadig er uvurderede, hvor de fleste ejere væsentligt undervurderer deres værdi og mangler korrekte forsikringsvurderinger."
+            },
+            "es": {
+              "title": "Informe: Los Americanos Poseen 750 Mil Millones de Dólares en Joyas de Oro No Tasadas",
+              "summary": "Resumen generado por IA: Según un nuevo índice de la industria reportado por Instore Magazine el 13 de agosto de 2026, los estadounidenses poseen colectivamente 750 mil millones de dólares en joyas de oro que no han sido tasadas, con la mayoría de los propietarios subestimando significativamente su valor y sin valoraciones adecuadas para seguros."
+            }
+          }
+        },
+        {
+          "id": "361kuc",
+          "title": "Workday shares post best day in 10 years on Silver Lake takeover report",
+          "url": "https://www.cnbc.com/2026/08/13/workday-skyrockets-25percent-before-trading-halted-on-report-of-silver-lake-takeover.html",
+          "source": "CNBC Technology",
+          "published_at": "2026-08-13T20:07:24.000Z",
+          "ingested_at": "2026-08-16T06:50:49.061Z",
+          "snippet": "Workday investors have been on edge over the prospect of AI disrupting its business model",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "silver"
+            ]
+          },
+          "aiSummary": "AI-generated summary: On August 13, 2026, CNBC Technology reported that Workday shares experienced their best day in a decade following takeover rumors by Silver Lake, amid investor concerns about AI potentially disrupting the company's business model.",
+          "translations": {
+            "da": {
+              "title": "Workday-aktier stiger efter bedste dag i 10 år på rapport om Silver Lake-overtagelse",
+              "summary": "AI-genereret resumé: Den 13. august 2026 rapporterede CNBC Technology, at Workday-aktier oplevede deres bedste dag i et årti efter overtagelsesrygter fra Silver Lake, midt i investorbekymringer om, at AI potentielt kan forstyrre virksomhedens forretningsmodel."
+            },
+            "es": {
+              "title": "Acciones de Workday registran su mejor día en 10 años tras informe de adquisición por Silver Lake",
+              "summary": "Resumen generado por IA: El 13 de agosto de 2026, CNBC Technology informó que las acciones de Workday tuvieron su mejor día en una década tras rumores de adquisición por parte de Silver Lake, en medio de preocupaciones de los inversores sobre que la IA podría alterar el modelo de negocio de la empresa."
+            }
+          }
+        },
+        {
+          "id": "9cqkcg",
+          "title": "Silver Lake in talks to buy Workday, sources say ",
+          "url": "https://economictimes.indiatimes.com/tech/technology/silver-lake-in-talks-to-buy-workday-sources-say/articleshow/133223353.cms",
+          "source": "Economic Times - Technology",
+          "published_at": "2026-08-13T19:02:23.000Z",
+          "ingested_at": "2026-08-16T06:50:49.061Z",
+          "snippet": "Silver Lake and the human-resources and financial management software company have ​held discussions about a ⁠potential deal ‌in recent months, ​the ​people said. The talks are ⁠ongoing and there is no guarantee ​a deal will materialize, said ​the sources, who spoke on condition of anonymity because the discussions are confidential.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "silver"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Silver Lake has been in ongoing confidential talks with Workday, a human-resources and financial management software company, about a potential acquisition, though no deal is guaranteed, according to anonymous sources.",
+          "translations": {
+            "da": {
+              "title": "Silver Lake i samtaler om at købe Workday, siger kilder",
+              "summary": "AI-genereret resumé: Silver Lake har været i fortrolige forhandlinger med Workday, et softwarefirma inden for HR og finansiel styring, om en potentiel opkøb, men ingen aftale er garanteret, ifølge anonyme kilder."
+            },
+            "es": {
+              "title": "Silver Lake en conversaciones para comprar Workday, según fuentes",
+              "summary": "Resumen generado por IA: Silver Lake ha estado en conversaciones confidenciales continuas con Workday, una empresa de software de gestión de recursos humanos y finanzas, sobre una posible adquisición, aunque no se garantiza ningún acuerdo, según fuentes anónimas."
+            }
+          }
+        }
+      ]
+    }
+  },
+  "editorialTake": "Anthropic’s leap to $11.5 billion in Q2 revenue and the push for a $2 trillion IPO valuation is a clear signal that AI is no longer a speculative play but a core economic force. Nvidia’s simultaneous pullback from its $250 billion OpenAI data center bet, despite launching a $500 billion financing initiative, shows a rare tension between cautious capital allocation and bullish market narratives. This split reveals that even the biggest players are wrestling with how to balance hype and hard numbers in AI’s next phase.\n\nTarget’s launch of a digital-twin platform to improve inventory availability is a quiet but sharp move that could reshape retail execution. Kroger’s appointment of Nate Faust as its first e-commerce chief signals a serious attempt to fix a messy online operation, but it will take more than leadership to catch up with Amazon-level efficiency. The real question is whether legacy retailers can use tech like digital twins to close the gap fast enough before pure-play ecommerce pulls even further ahead.",
+  "coverImageUrl": "/weekly-images/2026-W33.png",
+  "coverImageAlt": "Weekly cover illustration for 2026-W33"
+}

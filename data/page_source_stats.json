@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-09T07:06:24.310Z",
+  "timestamp": "2026-08-16T06:51:20.037Z",
   "sources": [
     {
       "sourceName": "BoF - News (The News in Brief)",
@@ -38,23 +38,23 @@
       "pagesFetched": 1,
       "fetchStatus": 200,
       "itemsMatched": 175,
-      "articlesExtracted": 26,
+      "articlesExtracted": 17,
       "rejectedNoDate": 0,
       "rejectedInvalidDate": 0,
       "rejectedNoTitle": 0,
       "rejectedNoUrl": 0,
-      "rejectedDuplicate": 149,
+      "rejectedDuplicate": 158,
       "rejectedSelectorMiss": 0,
-      "articlesKept": 26,
-      "yieldPercentage": 14.857142857142858,
+      "articlesKept": 17,
+      "yieldPercentage": 9.714285714285714,
       "failures": []
     }
   ],
   "summary": {
     "totalPagesFetched": 3,
     "totalItemsMatched": 175,
-    "totalArticlesExtracted": 26,
-    "totalArticlesKept": 26,
-    "overallYieldPercentage": 14.857142857142858
+    "totalArticlesExtracted": 17,
+    "totalArticlesKept": 17,
+    "overallYieldPercentage": 9.714285714285714
   }
 }

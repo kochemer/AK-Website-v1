@@ -4318,5 +4318,149 @@
     ],
     "cached_at": "2026-08-09T07:27:14.966Z",
     "model": "gpt-4.1-mini"
+  },
+  "2026-W33:AI_and_Strategy:e030da86210b": {
+    "selected": [
+      {
+        "id": "11",
+        "rank": 1,
+        "why": "Anthropic's rapid revenue growth highlights AI industry economics",
+        "confidence": 0.95
+      },
+      {
+        "id": "16",
+        "rank": 2,
+        "why": "Anthropic IPO valuation signals major AI market power move",
+        "confidence": 0.9
+      },
+      {
+        "id": "8",
+        "rank": 3,
+        "why": "Nvidia cuts OpenAI bet amid investor pressure, impacting AI funding",
+        "confidence": 0.9
+      },
+      {
+        "id": "9",
+        "rank": 4,
+        "why": "Nvidia's $500B AI financing initiative addresses bubble fears",
+        "confidence": 0.9
+      },
+      {
+        "id": "1",
+        "rank": 5,
+        "why": "Optima platform enables custom AI benchmarking on user data",
+        "confidence": 0.85
+      },
+      {
+        "id": "7",
+        "rank": 6,
+        "why": "OpenAI executive change reflects leadership shifts in AI industry",
+        "confidence": 0.8
+      },
+      {
+        "id": "13",
+        "rank": 7,
+        "why": "SMIC raises chip prices driven by strong AI demand",
+        "confidence": 0.8
+      }
+    ],
+    "cached_at": "2026-08-16T07:09:20.243Z",
+    "model": "gpt-4.1-mini"
+  },
+  "2026-W33:Ecommerce_Retail_Tech:30614f7c913b": {
+    "selected": [
+      {
+        "id": "12",
+        "rank": 1,
+        "why": "Target's digital-twin platform improves inventory availability industry-wide",
+        "confidence": 0.95
+      },
+      {
+        "id": "8",
+        "rank": 2,
+        "why": "Kroger’s new e-commerce chief aims to fix major online business issues",
+        "confidence": 0.9
+      },
+      {
+        "id": "11",
+        "rank": 3,
+        "why": "Kroger appoints former Walmart exec as first e-commerce chief, signaling strategy shift",
+        "confidence": 0.9
+      },
+      {
+        "id": "5",
+        "rank": 4,
+        "why": "Etsy’s AI investments impact personalization and marketplace dynamics broadly",
+        "confidence": 0.88
+      },
+      {
+        "id": "0",
+        "rank": 5,
+        "why": "In-store BNPL adoption at Lululemon signals future retail payments trends",
+        "confidence": 0.85
+      },
+      {
+        "id": "2",
+        "rank": 6,
+        "why": "New ecommerce tools for live shopping and fulfillment show industry innovation",
+        "confidence": 0.8
+      },
+      {
+        "id": "16",
+        "rank": 7,
+        "why": "Michaels’ new store format includes personalization and self-checkout tech",
+        "confidence": 0.78
+      }
+    ],
+    "cached_at": "2026-08-16T07:09:48.599Z",
+    "model": "gpt-4.1-mini"
+  },
+  "2026-W33:Luxury_and_Consumer:b0ad982599ef": {
+    "selected": [
+      {
+        "id": "17",
+        "rank": 1,
+        "why": "Deep CIAM report crucial for e-commerce identity management",
+        "confidence": 0.9
+      },
+      {
+        "id": "8",
+        "rank": 2,
+        "why": "Exclusive Ulta partnership highlights assortment and supply strategy",
+        "confidence": 0.88
+      },
+      {
+        "id": "11",
+        "rank": 3,
+        "why": "LA manufacturing insights drive faster supply chain agility",
+        "confidence": 0.87
+      },
+      {
+        "id": "1",
+        "rank": 4,
+        "why": "Fortnite activation shows innovative digital commerce integration",
+        "confidence": 0.85
+      },
+      {
+        "id": "6",
+        "rank": 5,
+        "why": "New LA boutique concept offers store operations best practices",
+        "confidence": 0.82
+      },
+      {
+        "id": "4",
+        "rank": 6,
+        "why": "Resale data on Saucony informs demand and pricing strategies",
+        "confidence": 0.8
+      },
+      {
+        "id": "16",
+        "rank": 7,
+        "why": "Jordan release exemplifies hype-driven merchandising and promotion tactics",
+        "confidence": 0.75
+      }
+    ],
+    "cached_at": "2026-08-16T07:10:05.224Z",
+    "model": "o4-mini"
   }
 }

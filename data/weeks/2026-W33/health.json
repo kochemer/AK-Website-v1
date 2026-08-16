@@ -1,0 +1,76 @@
+{
+  "digestWeek": "2026-W33",
+  "ingestionWeek": "2026-W33",
+  "startedAt": "2026-08-16T06:50:49.041Z",
+  "finishedAt": "2026-08-16T07:13:27.806Z",
+  "steps": [
+    {
+      "name": "rss",
+      "ok": true,
+      "startedAt": "2026-08-16T06:50:49.060Z",
+      "finishedAt": "2026-08-16T06:51:19.526Z"
+    },
+    {
+      "name": "pages",
+      "ok": true,
+      "startedAt": "2026-08-16T06:51:19.527Z",
+      "finishedAt": "2026-08-16T06:51:20.038Z"
+    },
+    {
+      "name": "discovery",
+      "ok": true,
+      "startedAt": "2026-08-16T06:51:20.038Z",
+      "finishedAt": "2026-08-16T07:08:49.743Z"
+    },
+    {
+      "name": "classification",
+      "ok": true,
+      "startedAt": "2026-08-16T07:08:49.743Z",
+      "finishedAt": "2026-08-16T07:08:49.872Z"
+    },
+    {
+      "name": "digest",
+      "ok": true,
+      "startedAt": "2026-08-16T07:08:49.872Z",
+      "finishedAt": "2026-08-16T07:10:54.705Z"
+    },
+    {
+      "name": "email",
+      "ok": true,
+      "startedAt": "2026-08-16T07:10:54.706Z",
+      "finishedAt": "2026-08-16T07:11:20.317Z"
+    },
+    {
+      "name": "podcast",
+      "ok": true,
+      "startedAt": "2026-08-16T07:11:20.317Z",
+      "finishedAt": "2026-08-16T07:12:15.013Z"
+    },
+    {
+      "name": "cover",
+      "ok": true,
+      "startedAt": "2026-08-16T07:12:15.013Z",
+      "finishedAt": "2026-08-16T07:13:11.675Z"
+    },
+    {
+      "name": "competitorAnalyze",
+      "ok": true,
+      "startedAt": "2026-08-16T07:13:11.675Z",
+      "finishedAt": "2026-08-16T07:13:27.804Z"
+    }
+  ],
+  "health": {
+    "warnings": [
+      "Luxury & Consumer: fashionista.com represents 42.9% (3/7) - exceeds 40% threshold",
+      "Jewellery Industry: www.jewellermagazine.com represents 42.9% (3/7) - exceeds 40% threshold"
+    ],
+    "metrics": {
+      "paywallPercent": 0,
+      "podcastWordCount": 2231
+    }
+  },
+  "versions": {
+    "node": "v20.20.2",
+    "gitCommit": "011f9a76707ff1da65bfe78ba01ca5e8b03c7a46"
+  }
+}

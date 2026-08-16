@@ -1,0 +1,28 @@
+{
+  "weekLabel": "2026-W33",
+  "homepageTopArticles": [
+    {
+      "title": "Target builds digital-twin platform to improve inventory availability",
+      "source": "Modern Retail",
+      "snippet": "Target has unveiled a new technology play as it continues to work to improve inventory levels in stores.",
+      "aiSummary": "AI-generated summary: Target has launched a digital-twin platform aimed at enhancing inventory availability in its stores, reflecting its ongoing efforts to improve stock levels."
+    },
+    {
+      "title": "The Friday Checkout: Can Kroger’s new e-commerce chief sort out its messy online business?",
+      "source": "Grocery Dive",
+      "snippet": "Nate Faust brings a founder’s energy and an outsider’s perspective to a digital business that has become overly complex.",
+      "aiSummary": "AI-generated summary: Nate Faust, Kroger’s new e-commerce chief, aims to simplify and revitalize the company’s increasingly complex online business by applying his founder’s energy and outsider perspective."
+    },
+    {
+      "title": "Modest sales boost for Pandora amid course correction",
+      "source": "Jeweller - Business News",
+      "snippet": "The world’s largest jewellery brand, Pandora, has reported an increase in sales amid an ongoing network expansion.",
+      "aiSummary": "AI-generated summary: Pandora, the world’s largest jewellery brand, has experienced a modest increase in sales alongside its ongoing network expansion, according to a report by Jeweller - Business News on August 13, 2026."
+    }
+  ],
+  "model": "gpt-image-1",
+  "finalPrompt": "Photograph: A supermarket checkout belt with a small shiny toy shopping cart and a full loaf of bread side by side. A large mirror behind them reflects the cart as full-sized and the loaf as a tiny toy. Next to the bread is a jewelry box with a gold bracelet partly exposed. A paper grocery bag and a Modern Retail sticker are subtly visible among the items. Natural store lighting on a light gray conveyor surface.\n\nCRITICAL CONSTRAINTS (must be strictly avoided):\n- text, letters, numbers, signage, labels, price tags, screens, UI, dashboards, holograms, floating icons, watermarks, unrelated brand logos, cartoon, illustration, CGI, 3D render, anime, diamond, diamonds, gemstone, gemstones, precious stones, jewelry close-up, jewelry product shot, diamond ring, diamond necklace, diamond earring, jeweled, sparkling gemstone, dramatic spotlight, glowing edges, rim lighting, vignette, cinematic color grade, blurred background, bokeh\n\nThis must look like a real photograph taken by a human — not AI-generated, not CGI, not a 3D render. Natural light. Real objects. Real imperfections. Fill the entire frame edge to edge with the scene — no black bars, no empty space at the edges.\n\nDo not include: text, labels, signage, screens, UI, logos unrelated to the scene, diamonds, gemstones, CGI lighting, dramatic spotlights, or blurred vignette backgrounds.",
+  "imageSize": "1536x1024",
+  "outputPath": "/weekly-images/2026-W33.png",
+  "generatedAt": "2026-08-16T07:13:11.664Z"
+}
