@@ -1,0 +1,962 @@
+{
+  "weekLabel": "2026-W34",
+  "tz": "Europe/Copenhagen",
+  "startISO": "2026-08-16T22:00:00.000Z",
+  "endISO": "2026-08-23T21:59:59.999Z",
+  "builtAtISO": "2026-08-23T09:12:13.591+02:00",
+  "builtAtLocal": "2026-08-23 09:12:13",
+  "totals": {
+    "total": 640,
+    "byTopic": {
+      "AIStrategy": 105,
+      "EcommerceRetail": 453,
+      "LuxuryConsumer": 62,
+      "Jewellery": 18
+    }
+  },
+  "topics": {
+    "AI_and_Strategy": {
+      "total": 105,
+      "top": [
+        {
+          "id": "2tctty",
+          "title": "From AI Copilots to Agent Swarms",
+          "url": "https://spectrum.ieee.org/amd-agent-swarms",
+          "source": "IEEE Spectrum",
+          "published_at": "2026-08-17T14:00:01.000Z",
+          "ingested_at": "2026-08-23T06:51:24.054Z",
+          "snippet": "The impact of AI on software development has been both profound and ever-evolving. Last year, I wrote about AMD’s plans to use AI not just for generating new lines of code, but also for other steps in the software development lifecycle (SDLC), such as triaging problems, debugging code, and testing the software. At the time, we were hoping for a 25 percent productivity boost from AI use over the course of two or three years.\nBut with each new release, the capabilities of large language models (LL...",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.35000000000000003,
+            "recencyScore": 0,
+            "sourceWeight": 0.15,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ai",
+              "agent",
+              "large language model"
+            ]
+          },
+          "aiSummary": "AI-generated summary: The article discusses the evolving role of AI in software development, highlighting AMD's efforts to integrate AI across various stages of the software development lifecycle to enhance productivity, with expectations of a 25 percent boost over a few years.",
+          "translations": {
+            "da": {
+              "title": "Fra AI Copiloter til Agent Sværme",
+              "summary": "AI-genereret resumé: Artiklen diskuterer AI's udviklende rolle i softwareudvikling og fremhæver AMD's indsats for at integrere AI i forskellige faser af softwareudviklingscyklussen for at øge produktiviteten med forventet 25 procent stigning over nogle år."
+            },
+            "es": {
+              "title": "De Copilotos de IA a Enjambres de Agentes",
+              "summary": "Resumen generado por IA: El artículo analiza el papel evolutivo de la IA en el desarrollo de software, destacando los esfuerzos de AMD para integrar IA en varias etapas del ciclo de desarrollo de software para mejorar la productividad, con expectativas de un aumento del 25 por ciento en unos años."
+            }
+          }
+        },
+        {
+          "id": "pqpg6p",
+          "title": "OpenAI is gaining on Anthropic with business users, new data indicates",
+          "url": "https://techcrunch.com/2026/08/20/openai-is-gaining-on-anthropic-with-business-users-new-data-indicates/",
+          "source": "TechCrunch - AI",
+          "published_at": "2026-08-20T22:36:37.000Z",
+          "ingested_at": "2026-08-23T06:51:24.054Z",
+          "snippet": "Businesses are willing to flop back and forth as each lab releases new models, volatility that should give both companies' investors pause about how \"sticky\" enterprise AI spending really is.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.35000000000000003,
+            "recencyScore": 0,
+            "sourceWeight": 0.15,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "openai",
+              "anthropic",
+              "ai"
+            ]
+          },
+          "aiSummary": "AI-generated summary: According to new data reported by TechCrunch on August 20, 2026, OpenAI is closing the gap with Anthropic among business users, though frequent shifts between models from both companies highlight uncertainty about the long-term stability of enterprise AI spending.",
+          "translations": {
+            "da": {
+              "title": "OpenAI indhenter Anthropic blandt erhvervsbrugere, nye data viser",
+              "summary": "AI-genereret resumé: Ifølge nye data rapporteret af TechCrunch den 20. august 2026 indhenter OpenAI Anthropic blandt erhvervsbrugere, selvom hyppige skift mellem modeller fra begge virksomheder understreger usikkerhed om den langsigtede stabilitet i virksomheders AI-udgifter."
+            },
+            "es": {
+              "title": "OpenAI se acerca a Anthropic entre usuarios empresariales, indican nuevos datos",
+              "summary": "Resumen generado por IA: Según nuevos datos reportados por TechCrunch el 20 de agosto de 2026, OpenAI está cerrando la brecha con Anthropic entre usuarios empresariales, aunque los frecuentes cambios entre modelos de ambas compañías reflejan incertidumbre sobre la estabilidad a largo plazo del gasto empresarial en IA."
+            }
+          }
+        },
+        {
+          "id": "vgtg3p",
+          "title": "Nvidia just showed that the harness, not the AI model, is now the real hero",
+          "url": "https://techcrunch.com/2026/08/21/nvidia-just-showed-that-the-harness-not-the-ai-model-is-now-the-real-hero/",
+          "source": "TechCrunch - AI",
+          "published_at": "2026-08-21T19:43:39.000Z",
+          "ingested_at": "2026-08-23T06:51:24.054Z",
+          "snippet": "Nvidia research shows that AI agents can perform well, and not go off the deep end, through fine-tuning, even if the AI model isn't that great at the task.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.35,
+            "recencyScore": 0,
+            "sourceWeight": 0.15,
+            "keywordBoost": 0.2,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ai",
+              "research",
+              "agent",
+              "fine-tuning"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Nvidia's research demonstrates that effective fine-tuning of AI agents, rather than the inherent quality of the AI model itself, is crucial for achieving strong and stable performance.",
+          "translations": {
+            "da": {
+              "title": "Nvidia viste netop, at udstyret, ikke AI-modellen, nu er den sande helt",
+              "summary": "AI-genereret resumé: Nvidias forskning viser, at effektiv finjustering af AI-agenter, snarere end den iboende kvalitet af AI-modellen, er afgørende for at opnå stærk og stabil ydeevne."
+            },
+            "es": {
+              "title": "Nvidia acaba de demostrar que el arnés, no el modelo de IA, es ahora el verdadero héroe",
+              "summary": "Resumen generado por IA: La investigación de Nvidia demuestra que el ajuste fino efectivo de los agentes de IA, más que la calidad inherente del modelo de IA, es crucial para lograr un rendimiento fuerte y estable."
+            }
+          }
+        },
+        {
+          "id": "zc6mlh",
+          "title": "AI data startup Micro1 reaches $500M gross run rate amid AI training boom",
+          "url": "https://techcrunch.com/2026/08/20/ai-data-startup-micro1-reaches-500m-gross-run-rate-amid-ai-training-boom/",
+          "source": "TechCrunch - AI",
+          "published_at": "2026-08-21T00:13:44.000Z",
+          "ingested_at": "2026-08-23T06:51:24.054Z",
+          "snippet": "Surging demand for AI training data is driving rapid growth for the startup and its rivals.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.3,
+            "recencyScore": 0,
+            "sourceWeight": 0.15,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ai",
+              "training"
+            ]
+          },
+          "aiSummary": "AI-generated summary: AI data startup Micro1 has reached a $500 million gross run rate, fueled by the booming demand for AI training data, reflecting rapid growth in the sector.",
+          "translations": {
+            "da": {
+              "title": "AI-datastartup Micro1 når 500 mio. dollars bruttoomsætning under AI-træningsboom",
+              "summary": "AI-genereret resumé: AI-datastartup Micro1 har nået en bruttoomsætning på 500 millioner dollars, drevet af den stigende efterspørgsel efter AI-træningsdata, hvilket afspejler hurtig vækst i sektoren."
+            },
+            "es": {
+              "title": "La startup de datos AI Micro1 alcanza una tasa bruta de 500 millones de dólares en medio del auge del entrenamiento de IA",
+              "summary": "Resumen generado por IA: La startup de datos AI Micro1 ha alcanzado una tasa bruta de 500 millones de dólares, impulsada por la creciente demanda de datos para entrenamiento de IA, reflejando un rápido crecimiento en el sector."
+            }
+          }
+        },
+        {
+          "id": "4gpshf",
+          "title": "Brazil launches AI supercomputer push, splits projects between Chinese, US firms ",
+          "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/brazil-launches-ai-supercomputer-push-splits-projects-between-chinese-us-firms/articleshow/133398770.cms",
+          "source": "Economic Times - Technology",
+          "published_at": "2026-08-21T08:56:14.000Z",
+          "ingested_at": "2026-08-23T06:51:24.054Z",
+          "snippet": "Just over half the total, 1.3 billion reais, will fund a supercomputing infrastructure project in Rio de Janeiro developed in partnership with China's Huawei Technologies and iFlytek. President Luiz Inacio ‌Lula da Silva's ⁠government ⁠said the infrastructure will be used primarily to develop large language models for general and sector-specific applications.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.2,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ai",
+              "compute",
+              "large language model",
+              "partnership"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Brazil is investing 1.3 billion reais in a supercomputing infrastructure project in Rio de Janeiro, partnering with Chinese firms Huawei Technologies and iFlytek to develop large language models for various applications. This initiative reflects President Luiz Inacio Lula da Silva's government's focus on advancing AI capabilities.",
+          "translations": {
+            "da": {
+              "title": "Brasilien lancerer AI-supercomputerindsats, deler projekter mellem kinesiske og amerikanske firmaer",
+              "summary": "Brasilien investerer 1,3 milliarder reais i et supercomputerinfrastrukturprojekt i Rio de Janeiro og samarbejder med kinesiske firmaer Huawei Technologies og iFlytek om at udvikle store sprogmodeller til forskellige anvendelser. Initiativet afspejler præsident Luiz Inacio Lula da Silvas regerings fokus på at fremme AI-kapaciteter."
+            },
+            "es": {
+              "title": "Brasil lanza impulso de supercomputadora AI, divide proyectos entre empresas chinas y estadounidenses",
+              "summary": "Brasil está invirtiendo 1.3 mil millones de reales en un proyecto de infraestructura de supercomputación en Río de Janeiro, asociándose con las empresas chinas Huawei Technologies e iFlytek para desarrollar grandes modelos de lenguaje para diversas aplicaciones. Esta iniciativa refleja el enfoque del gobierno del presidente Luiz Inacio Lula da Silva en avanzar las capacidades de IA."
+            }
+          }
+        },
+        {
+          "id": "v3rg5s",
+          "title": "OpenAI cuts developer pricing for frontier GPT-5.6 Sol model by more than 20% ",
+          "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/openai-cuts-developer-pricing-for-frontier-gpt-5-6-sol-model-by-more-than-20/articleshow/133416508.cms",
+          "source": "Economic Times - Technology",
+          "published_at": "2026-08-22T03:07:52.000Z",
+          "ingested_at": "2026-08-23T06:51:24.054Z",
+          "snippet": "The price cuts ​are effective on OpenAI's application programming interface, or API, and ​are rolling out across eligible plans for credits on its agentic AI product ChatGPT Work ​and its coding tool Codex, ⁠OpenAI said.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "openai",
+              "ai",
+              "agent"
+            ]
+          },
+          "aiSummary": "AI-generated summary: On August 22, 2026, OpenAI announced a price reduction of over 20% for developers using its GPT-5.6 Sol model API, applying to eligible plans for ChatGPT Work and Codex, according to Economic Times - Technology.",
+          "translations": {
+            "da": {
+              "title": "OpenAI sænker udviklerpriserne for frontier GPT-5.6 Sol-modellen med over 20%",
+              "summary": "AI-genereret resumé: Den 22. august 2026 annoncerede OpenAI en prisnedsættelse på over 20% for udviklere, der bruger GPT-5.6 Sol-modellens API, gældende for berettigede planer til ChatGPT Work og Codex, ifølge Economic Times - Technology."
+            },
+            "es": {
+              "title": "OpenAI reduce los precios para desarrolladores del modelo frontier GPT-5.6 Sol en más del 20%",
+              "summary": "Resumen generado por IA: El 22 de agosto de 2026, OpenAI anunció una reducción de precios de más del 20% para desarrolladores que usan la API del modelo GPT-5.6 Sol, aplicable a planes elegibles para ChatGPT Work y Codex, según Economic Times - Technology."
+            }
+          }
+        },
+        {
+          "id": "ni3xw4",
+          "title": "Psychological methods reveal major weaknesses in AI security testing",
+          "url": "https://the-decoder.com/psychological-methods-reveal-major-weaknesses-in-ai-security-testing/",
+          "source": "The Decoder",
+          "published_at": "2026-08-22T07:00:05.000Z",
+          "ingested_at": "2026-08-23T06:51:24.054Z",
+          "snippet": "Researchers at the UK AI Security Institute used psychometric methods to show that popular safety benchmarks for language models don't measure one consistent trait. Blanket blocking of requests can artificially inflate a safety score even as the model gets less useful day to day. The study also offers a method for catching models that act more cautious during tests than they do in normal use.\nThe article Psychological methods reveal major weaknesses in AI security testing appeared first on The D...",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ai",
+              "benchmark",
+              "research"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Researchers at the UK AI Security Institute demonstrated that common safety benchmarks for language models fail to measure a consistent trait, with blanket request blocking inflating safety scores despite reduced model usefulness. They also proposed a method to detect models that behave more cautiously during tests than in regular use.",
+          "translations": {
+            "da": {
+              "title": "Psykologiske metoder afslører store svagheder i AI-sikkerhedstest",
+              "summary": "Forskere ved UK AI Security Institute viste, at almindelige sikkerhedsbenchmarks for sprogmodeller ikke måler en konsistent egenskab, hvor bred blokering af forespørgsler oppuster sikkerhedsscorer trods reduceret modelbrugbarhed. De foreslog også en metode til at opdage modeller, der opfører sig mere forsigtigt under tests end i almindelig brug."
+            },
+            "es": {
+              "title": "Métodos psicológicos revelan grandes debilidades en las pruebas de seguridad de IA",
+              "summary": "Investigadores del UK AI Security Institute demostraron que los puntos de referencia comunes de seguridad para modelos de lenguaje no miden un rasgo consistente, con el bloqueo generalizado de solicitudes inflando las puntuaciones de seguridad a pesar de la reducción en la utilidad del modelo. También propusieron un método para detectar modelos que se comportan con más cautela durante las pruebas que en el uso regular."
+            }
+          }
+        }
+      ]
+    },
+    "Ecommerce_Retail_Tech": {
+      "total": 453,
+      "top": [
+        {
+          "id": "5z10x",
+          "title": "Amazon to expand drone delivery reach sixfold this year",
+          "url": "https://www.grocerydive.com/news/amazon-expand-drone-delivery-reach-sixfold/828389/",
+          "source": "Grocery Dive",
+          "published_at": "2026-08-20T15:13:00.000Z",
+          "ingested_at": "2026-08-23T06:51:24.054Z",
+          "snippet": "The e-commerce giant will soon launch Prime Air deliveries in metro Atlanta, Chicago and Cleveland, giving customers another fast shipping option.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "e-commerce"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Amazon plans to expand its Prime Air drone delivery service sixfold in 2026, launching in metro Atlanta, Chicago, and Cleveland to offer customers faster shipping options.",
+          "translations": {
+            "da": {
+              "title": "Amazon udvider dronelevering seks gange i år",
+              "summary": "AI-genereret resumé: Amazon planlægger at udvide sin Prime Air dronelevering seks gange i 2026 med lancering i metro Atlanta, Chicago og Cleveland for at tilbyde kunder hurtigere forsendelsesmuligheder."
+            },
+            "es": {
+              "title": "Amazon ampliará seis veces el alcance de la entrega con drones este año",
+              "summary": "Resumen generado por IA: Amazon planea expandir su servicio de entrega con drones Prime Air seis veces en 2026, lanzando en metro Atlanta, Chicago y Cleveland para ofrecer a los clientes opciones de envío más rápidas."
+            }
+          }
+        },
+        {
+          "id": "7fpwm1",
+          "title": "Walmart finally starts supporting Apple Pay and Google Pay",
+          "url": "https://www.modernretail.co/technology/walmart-finally-starts-supporting-apple-pay-and-google-pay/?utm_campaign=modernretaildis&utm_medium=rss&utm_source=general-rss",
+          "source": "Modern Retail",
+          "published_at": "2026-08-21T15:27:03.000Z",
+          "ingested_at": "2026-08-23T06:51:24.054Z",
+          "snippet": "By the end of this year, shoppers will finally be able to use Apple Pay and Google Pay in Walmart stores, ending years of frustration that the retailer didn't support what is now a nearly ubiquitous payment option.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "payment"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Walmart will begin accepting Apple Pay and Google Pay in its stores by the end of 2026, resolving years of customer frustration over the lack of support for these popular payment methods.",
+          "translations": {
+            "da": {
+              "title": "Walmart begynder endelig at understøtte Apple Pay og Google Pay",
+              "summary": "AI-genereret resumé: Walmart vil begynde at acceptere Apple Pay og Google Pay i sine butikker inden udgangen af 2026, hvilket løser års frustration blandt kunder over manglende support for disse populære betalingsmetoder."
+            },
+            "es": {
+              "title": "Walmart finalmente comienza a aceptar Apple Pay y Google Pay",
+              "summary": "Resumen generado por IA: Walmart comenzará a aceptar Apple Pay y Google Pay en sus tiendas para finales de 2026, resolviendo años de frustración de los clientes por la falta de soporte para estos populares métodos de pago."
+            }
+          }
+        },
+        {
+          "id": "hmaeyb",
+          "title": "Walmart extends Scintilla data platform to Sam’s Club",
+          "url": "https://www.modernretail.co/technology/walmart-extends-scintilla-data-platform-to-sams-club/?utm_campaign=modernretaildis&utm_medium=rss&utm_source=general-rss",
+          "source": "Modern Retail",
+          "published_at": "2026-08-20T13:57:00.000Z",
+          "ingested_at": "2026-08-23T06:51:24.054Z",
+          "snippet": "Sam's Club merchants and brands will soon be able to use Walmart's data analytics platform to better understand and predict member behavior.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "platform"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Walmart is expanding its Scintilla data analytics platform to Sam’s Club, enabling merchants and brands to better understand and predict member behavior. This move aims to enhance data-driven insights within Sam’s Club operations.",
+          "translations": {
+            "da": {
+              "title": "Walmart udvider Scintilla data platform til Sam’s Club",
+              "summary": "AI-genereret resumé: Walmart udvider sin Scintilla dataanalyseplatform til Sam’s Club, hvilket gør det muligt for handlende og mærker bedre at forstå og forudsige medlemsadfærd. Dette skridt har til formål at forbedre datadrevne indsigter i Sam’s Club's drift."
+            },
+            "es": {
+              "title": "Walmart extiende la plataforma de datos Scintilla a Sam’s Club",
+              "summary": "Resumen generado por IA: Walmart está ampliando su plataforma de análisis de datos Scintilla a Sam’s Club, permitiendo a comerciantes y marcas comprender y predecir mejor el comportamiento de los miembros. Este movimiento busca mejorar los conocimientos basados en datos dentro de las operaciones de Sam’s Club."
+            }
+          }
+        },
+        {
+          "id": "sgz9mu",
+          "title": "Ecommerce Trends: Which online retailers AI is helping the most",
+          "url": "https://www.digitalcommerce360.com/2026/08/20/ecommerce-trends-which-online-retailers-ai-is-helping-the-most/",
+          "source": "Digital Commerce 360",
+          "published_at": "2026-08-20T17:51:55.000Z",
+          "ingested_at": "2026-08-23T06:51:24.054Z",
+          "snippet": "The AI Commerce Rankings that Digital Commerce 360 and ReFiBuy launched in July debuted as a new way to understand which online retailers were getting the most help from artificial intelligence, looking not only at how visible they are in AI channels, but also — among other data points — how well their AI-associated reach […]\nThe post Ecommerce Trends: Which online retailers AI is helping the most appeared first on Digital Commerce 360.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ecommerce",
+              "online retail"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Digital Commerce 360 and ReFiBuy introduced the AI Commerce Rankings in July to identify which online retailers benefit most from artificial intelligence by analyzing their visibility and AI-related reach across various data points. This new ranking offers insights into ecommerce trends and the impact of AI on retail tech.",
+          "translations": {
+            "da": {
+              "title": "Ecommerce Trends: Hvilke onlineforhandlere AI hjælper mest",
+              "summary": "AI-genereret resumé: Digital Commerce 360 og ReFiBuy introducerede AI Commerce Rankings i juli for at identificere, hvilke onlineforhandlere der drager mest fordel af kunstig intelligens ved at analysere deres synlighed og AI-relaterede rækkevidde på tværs af forskellige datapunkter. Denne nye rangering giver indsigt i ecommerce-trends og AI's indflydelse på detailteknologi."
+            },
+            "es": {
+              "title": "Tendencias de Ecommerce: Qué minoristas en línea ayuda más la IA",
+              "summary": "Resumen generado por IA: Digital Commerce 360 y ReFiBuy presentaron en julio los AI Commerce Rankings para identificar qué minoristas en línea se benefician más de la inteligencia artificial analizando su visibilidad y alcance relacionado con IA en varios puntos de datos. Este nuevo ranking ofrece perspectivas sobre las tendencias del ecommerce y el impacto de la IA en la tecnología minorista."
+            }
+          }
+        },
+        {
+          "id": "2p7uyq",
+          "title": "Bero prepares for its third Cyber 5 with channel-based insights",
+          "url": "https://www.digitalcommerce360.com/2026/08/18/bero-prepares-for-cyber-5-amazon-dtc/",
+          "source": "Digital Commerce 360",
+          "published_at": "2026-08-18T14:10:41.000Z",
+          "ingested_at": "2026-08-23T06:51:24.054Z",
+          "snippet": "Following an Amazon Prime Day period with year-over-year growth in conversion, non-alcoholic beer brand Bero has begun planning for the Cyber 5. Hyojin Park, senior director of ecommerce solutions and growth at Bero, told Digital Commerce 360 that the direct-to-consumer (DTC) brand launched on Amazon in 2025. And in 2026, it benefited from having a […]\nThe post Bero prepares for its third Cyber 5 with channel-based insights appeared first on Digital Commerce 360.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ecommerce"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Non-alcoholic beer brand Bero, which launched on Amazon in 2025, experienced year-over-year growth during Amazon Prime Day and is now preparing for its third Cyber 5 using channel-based insights, according to Digital Commerce 360.",
+          "translations": {
+            "da": {
+              "title": "Bero forbereder sig på sin tredje Cyber 5 med kanalbaserede indsigter",
+              "summary": "AI-genereret resumé: Det alkoholfrie ølmærke Bero, som blev lanceret på Amazon i 2025, oplevede vækst år for år under Amazon Prime Day og forbereder sig nu på sin tredje Cyber 5 ved hjælp af kanalbaserede indsigter, ifølge Digital Commerce 360."
+            },
+            "es": {
+              "title": "Bero se prepara para su tercer Cyber 5 con insights basados en canales",
+              "summary": "Resumen generado por IA: La marca de cerveza sin alcohol Bero, que se lanzó en Amazon en 2025, experimentó un crecimiento interanual durante el Amazon Prime Day y ahora se prepara para su tercer Cyber 5 utilizando insights basados en canales, según Digital Commerce 360."
+            }
+          }
+        },
+        {
+          "id": "dxfc25",
+          "title": "Amazon plans drone delivery expansion to 5 more U.S. metro areas",
+          "url": "https://www.digitalcommerce360.com/2026/08/21/amazon-drone-delivery-expansion-summer-2026/",
+          "source": "Digital Commerce 360",
+          "published_at": "2026-08-21T20:44:00.000Z",
+          "ingested_at": "2026-08-23T06:51:24.054Z",
+          "snippet": "Amazon.com Inc. is expanding its Prime Air drone delivery to five more U.S. metro areas, the online retail giant announced Aug. 19. The fast-delivery service is slated to launch “soon” in the Chicago, Syracuse, Cleveland, Atlanta and Boise markets, with more communities to follow later this year, Amazon said in a blog post. The expansion […]\nThe post Amazon plans drone delivery expansion to 5 more U.S. metro areas appeared first on Digital Commerce 360.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "online retail"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Amazon.com Inc. announced plans to expand its Prime Air drone delivery service to five additional U.S. metro areas—Chicago, Syracuse, Cleveland, Atlanta, and Boise—with launches expected soon and further expansions later this year.",
+          "translations": {
+            "da": {
+              "title": "Amazon planlægger dronelevering i 5 flere amerikanske storbyområder",
+              "summary": "AI-genereret resumé: Amazon.com Inc. annoncerede planer om at udvide sin Prime Air dronelevering til fem yderligere amerikanske storbyområder—Chicago, Syracuse, Cleveland, Atlanta og Boise—with lanceringer forventet snart og yderligere udvidelser senere i år."
+            },
+            "es": {
+              "title": "Amazon planea expandir la entrega con drones a 5 áreas metropolitanas más en EE.UU.",
+              "summary": "Resumen generado por IA: Amazon.com Inc. anunció planes para expandir su servicio de entrega con drones Prime Air a cinco áreas metropolitanas adicionales en EE.UU.—Chicago, Syracuse, Cleveland, Atlanta y Boise—con lanzamientos esperados pronto y más expansiones a lo largo del año."
+            }
+          }
+        },
+        {
+          "id": "kjey1q",
+          "title": "Walmart’s stores have ‘evolved’ as e-commerce grows",
+          "url": "https://www.retaildive.com/news/walmarts-stores-omnichannel-tariffs-drug-pricing-regulation/828387/",
+          "source": "Retail Dive",
+          "published_at": "2026-08-20T16:07:00.000Z",
+          "ingested_at": "2026-08-23T06:51:24.054Z",
+          "snippet": "CFO John David Rainey said brick and mortar is vital as retail becomes more omnichannel. Meanwhile, Walmart's Q2 U.S. comps were softened by drug pricing regulation.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "e-commerce"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Walmart's CFO John David Rainey emphasized the continued importance of brick-and-mortar stores as the company adapts to an increasingly omnichannel retail environment, while noting that Q2 U.S. comparable sales were impacted by drug pricing regulations.",
+          "translations": {
+            "da": {
+              "title": "Walmarts butikker har 'udviklet sig', efterhånden som e-handel vokser",
+              "summary": "AI-genereret resumé: Walmarts CFO John David Rainey understregede den fortsatte vigtighed af fysiske butikker, mens virksomheden tilpasser sig et stadigt mere omnichannel detailmiljø, og bemærkede, at Q2 amerikanske sammenlignelige salg blev påvirket af regler om medicinpriser."
+            },
+            "es": {
+              "title": "Las tiendas de Walmart se han 'evolucionado' a medida que crece el comercio electrónico",
+              "summary": "Resumen generado por IA: El CFO de Walmart, John David Rainey, enfatizó la importancia continua de las tiendas físicas mientras la empresa se adapta a un entorno minorista cada vez más omnicanal, señalando que las ventas comparables en EE. UU. del segundo trimestre se vieron afectadas por regulaciones de precios de medicamentos."
+            }
+          }
+        }
+      ]
+    },
+    "Luxury_and_Consumer": {
+      "total": 62,
+      "top": [
+        {
+          "id": "tzo5u1",
+          "title": "Zara flagship store in Shanghai reflects \"the future of physical retail\"",
+          "url": "https://www.dezeen.com/2026/08/20/aim-architecture-zara-flagship-shanghai/",
+          "source": "Dezeen",
+          "published_at": "2026-08-20T08:00:36.000Z",
+          "ingested_at": "2026-08-23T06:51:24.054Z",
+          "snippet": "AIM Architecture has designed Zara Huaihai Road, a flagship store for the Spanish fashion brand in Shanghai, with an amphitheatre-like brick podium that connects the building with the street. Located on Huaihai Road, a well-known commercial district in central Shanghai, the new flagship store took over an existing five-storey concrete building, which AIM Architecture aimed\nThe post Zara flagship store in Shanghai reflects \"the future of physical retail\" appeared first on Dezeen.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": -0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0.2,
+            "matchedKeywords": [
+              "brand"
+            ]
+          },
+          "aiSummary": "AI-generated summary: AIM Architecture designed Zara's new flagship store on Huaihai Road in Shanghai, featuring an amphitheatre-like brick podium that integrates the building with the street, exemplifying the future of physical retail.",
+          "translations": {
+            "da": {
+              "title": "Zaras flagskibsbutik i Shanghai afspejler \"fremtiden for fysisk detailhandel\"",
+              "summary": "AI-genereret resumé: AIM Architecture har designet Zaras nye flagskibsbutik på Huaihai Road i Shanghai med en amfiteaterlignende podium i mursten, der integrerer bygningen med gaden og eksemplificerer fremtiden for fysisk detailhandel."
+            },
+            "es": {
+              "title": "La tienda insignia de Zara en Shanghái refleja \"el futuro del comercio minorista físico\"",
+              "summary": "Resumen generado por IA: AIM Architecture diseñó la nueva tienda insignia de Zara en Huaihai Road en Shanghái, con un podio de ladrillo tipo anfiteatro que integra el edificio con la calle, ejemplificando el futuro del comercio minorista físico."
+            }
+          }
+        },
+        {
+          "id": "qcbty5",
+          "title": "The Platform That Just Solved Beauty’s Biggest Shopping Annoyance Is Finally Here",
+          "url": "https://fashionista.com/2026/08/the-platform-that-just-solved-beautys-biggest-shopping-annoyance-is-finally-here",
+          "source": "Fashionista",
+          "published_at": "2026-08-19T15:00:00.000Z",
+          "ingested_at": "2026-08-23T06:51:24.054Z",
+          "snippet": "Why REVERSIBLE's new launch is about to become your favorite beauty shortcut.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": []
+          },
+          "aiSummary": "AI-generated summary: REVERSIBLE's new platform launch aims to address a major frustration in beauty shopping, positioning itself as a convenient and favored shortcut for consumers.",
+          "translations": {
+            "da": {
+              "title": "Platformen, der netop har løst skønhedsbranchens største shoppingirritation, er endelig her",
+              "summary": "AI-genereret resumé: REVERSIBLEs nye platform lanceres for at løse en stor frustration ved skønhedsshopping og positionerer sig som en bekvem og foretrukken genvej for forbrugerne."
+            },
+            "es": {
+              "title": "La plataforma que acaba de resolver la mayor molestia en las compras de belleza ya está aquí",
+              "summary": "Resumen generado por IA: El lanzamiento de la nueva plataforma de REVERSIBLE busca abordar una gran frustración en las compras de belleza, posicionándose como un atajo conveniente y preferido para los consumidores."
+            }
+          }
+        },
+        {
+          "id": "e2zoq",
+          "title": "The FTC is turning its sights on personalized pricing. What does it mean for customers?",
+          "url": "https://www.grocerydive.com/news/ftc-personalized-surveillance-pricing-customers/828490/",
+          "source": "Grocery Dive",
+          "published_at": "2026-08-21T14:15:00.000Z",
+          "ingested_at": "2026-08-23T06:51:24.054Z",
+          "snippet": "Consumers are anathema to what they see as unfair pricing practices. Now, the Federal Trade Commission is giving businesses yet another reason to be wary of implementing personalized or surveillance pricing.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": -0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0.2,
+            "matchedKeywords": [
+              "consumer"
+            ]
+          },
+          "aiSummary": "AI-generated summary: The Federal Trade Commission is increasing scrutiny on personalized pricing practices, signaling potential challenges for businesses amid consumer concerns over unfair pricing. This move highlights growing regulatory attention in the luxury and consumer sectors.",
+          "translations": {
+            "da": {
+              "title": "FTC retter fokus mod personlig prissætning. Hvad betyder det for kunderne?",
+              "summary": "AI-genereret resumé: Federal Trade Commission øger tilsynet med personlig prissætning og signalerer potentielle udfordringer for virksomheder i lyset af forbrugernes bekymringer om urimelig prissætning. Dette skridt understreger øget reguleringsopmærksomhed i luksus- og forbrugersektorerne."
+            },
+            "es": {
+              "title": "La FTC pone su atención en la fijación de precios personalizada. ¿Qué significa para los clientes?",
+              "summary": "Resumen generado por IA: La Federal Trade Commission está aumentando el escrutinio sobre las prácticas de precios personalizados, señalando posibles desafíos para las empresas ante las preocupaciones de los consumidores sobre precios injustos. Este movimiento destaca una creciente atención regulatoria en los sectores de lujo y consumo."
+            }
+          }
+        },
+        {
+          "id": "kjduyj",
+          "title": "UK retail sales fall in July as clothing demand lags",
+          "url": "https://www.drapersonline.com/news/uk-retail-sales-fall-in-july-as-clothing-demand-lags",
+          "source": "Drapers",
+          "published_at": "2026-08-21T06:58:58.000Z",
+          "ingested_at": "2026-08-23T06:51:24.054Z",
+          "snippet": "Drapers\nUK retail sales fall in July as clothing demand lags\nRetail sales volumes softened by 0.5% in July, following a revised increase of 0.7% in June, according to the latest Office for National Statistics (ONS) figures.\nThe post UK retail sales fall in July as clothing demand lags appeared first on Drapers.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0.1,
+            "penalty": 0,
+            "matchedKeywords": [
+              "demand"
+            ]
+          },
+          "aiSummary": "AI-generated summary: According to the latest Office for National Statistics figures reported by Drapers on August 21, 2026, UK retail sales volumes declined by 0.5% in July, following a 0.7% increase in June, with clothing demand notably lagging.",
+          "translations": {
+            "da": {
+              "title": "Detailhandlen i Storbritannien falder i juli, da efterspørgslen efter tøj halter",
+              "summary": "AI-genereret resumé: Ifølge de seneste tal fra Office for National Statistics rapporteret af Drapers den 21. august 2026 faldt detailhandlens volumen i Storbritannien med 0,5 % i juli efter en stigning på 0,7 % i juni, hvor efterspørgslen efter tøj især halter."
+            },
+            "es": {
+              "title": "Las ventas minoristas en el Reino Unido caen en julio mientras la demanda de ropa se rezaga",
+              "summary": "Resumen generado por IA: Según las últimas cifras de la Office for National Statistics reportadas por Drapers el 21 de agosto de 2026, el volumen de ventas minoristas en el Reino Unido disminuyó un 0,5 % en julio, tras un aumento del 0,7 % en junio, con una demanda de ropa notablemente rezagada."
+            }
+          }
+        },
+        {
+          "id": "ffcgza",
+          "title": "Maisonette Is Giving Tweens Their Own Shopping Destination",
+          "url": "https://fashionista.com/2026/08/maisonette-neon-rebels-platform-tweens",
+          "source": "Fashionista",
+          "published_at": "2026-08-19T12:30:00.000Z",
+          "ingested_at": "2026-08-23T06:51:24.054Z",
+          "snippet": "Neon Rebels, a new e-commerce platform for 7- to 14-year-olds, brings together more than 100 brands and aims to bridge the gap between what Gen Alpha wants and what parents will buy.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "brand"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Maisonette has launched Neon Rebels, an e-commerce platform targeting 7- to 14-year-olds that features over 100 brands and seeks to balance the preferences of Gen Alpha with parents' purchasing choices.",
+          "translations": {
+            "da": {
+              "title": "Maisonette Giver Tweens Deres Egen Shoppingdestination",
+              "summary": "Maisonette har lanceret Neon Rebels, en e-handelsplatform rettet mod 7- til 14-årige med over 100 mærker, der søger at balancere Gen Alphas præferencer med forældres købsvalg."
+            },
+            "es": {
+              "title": "Maisonette Está Dando a los Tweens Su Propio Destino de Compras",
+              "summary": "Maisonette ha lanzado Neon Rebels, una plataforma de comercio electrónico dirigida a niños de 7 a 14 años que cuenta con más de 100 marcas y busca equilibrar las preferencias de la Generación Alfa con las decisiones de compra de los padres."
+            }
+          }
+        },
+        {
+          "id": "k1hqhn",
+          "title": "Moving on From Palisades Fire, Mother Opens First Store in Beverly Hills",
+          "url": "https://fashionista.com/2026/08/mother-los-angeles-store",
+          "source": "Fashionista",
+          "published_at": "2026-08-19T12:00:00.000Z",
+          "ingested_at": "2026-08-23T06:51:24.054Z",
+          "snippet": "Co-Founder Lela Becker took us inside the Los Angeles brand's stylish debut flagship.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": -0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0.2,
+            "matchedKeywords": [
+              "brand"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Co-Founder Lela Becker showcased the Los Angeles brand's stylish debut flagship store in Beverly Hills, marking a new chapter following the Palisades fire.",
+          "translations": {
+            "da": {
+              "title": "Efter Palisades-branden åbner mor sin første butik i Beverly Hills",
+              "summary": "AI-genereret resumé: Medstifter Lela Becker præsenterede Los Angeles-brandets stilfulde debutflagshipbutik i Beverly Hills, hvilket markerer et nyt kapitel efter Palisades-branden."
+            },
+            "es": {
+              "title": "Tras el incendio de Palisades, madre abre su primera tienda en Beverly Hills",
+              "summary": "Resumen generado por IA: La cofundadora Lela Becker presentó la elegante tienda insignia de la marca de Los Ángeles en Beverly Hills, marcando un nuevo capítulo tras el incendio de Palisades."
+            }
+          }
+        },
+        {
+          "id": "gd9t9",
+          "title": "Hermès relocates in Rio de Janeiro",
+          "url": "https://www.luxurydaily.com/hermes-relocates-in-rio-de-janeiro/",
+          "source": "Luxury Daily - Main",
+          "published_at": "2026-08-21T08:45:00.000Z",
+          "ingested_at": "2026-08-23T06:51:24.054Z",
+          "snippet": "The French fashion and leather goods house has moved its Rio de Janeiro store to a new space at VillageMall.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": []
+          },
+          "aiSummary": "AI-generated summary: French luxury brand Hermès has relocated its Rio de Janeiro store to a new location within VillageMall, according to Luxury Daily on August 21, 2026.",
+          "translations": {
+            "da": {
+              "title": "Hermès flytter i Rio de Janeiro",
+              "summary": "AI-genereret resumé: Det franske luksusmærke Hermès har flyttet sin butik i Rio de Janeiro til en ny placering i VillageMall, ifølge Luxury Daily den 21. august 2026."
+            },
+            "es": {
+              "title": "Hermès se traslada en Río de Janeiro",
+              "summary": "Resumen generado por IA: La marca francesa de lujo Hermès ha trasladado su tienda en Río de Janeiro a una nueva ubicación dentro de VillageMall, según Luxury Daily el 21 de agosto de 2026."
+            }
+          }
+        }
+      ]
+    },
+    "Jewellery_Industry": {
+      "total": 18,
+      "top": [
+        {
+          "id": "n1jvtu",
+          "title": "Jewelry Returns Are an Operational Reality — and a Signal",
+          "url": "https://instoremag.com/jewelry-returns-are-an-operational-reality-and-a-signal/",
+          "source": "Instore Magazine",
+          "published_at": "2026-08-21T03:27:34.000Z",
+          "ingested_at": "2026-08-23T06:51:24.054Z",
+          "snippet": "A smarter approach to tracking and interpreting returns can turn a cost center into a source of insight",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "jewelry"
+            ]
+          },
+          "aiSummary": "AI-generated summary: The article from Instore Magazine discusses how the jewellery industry can transform the operational challenge of jewelry returns into valuable insights by adopting smarter tracking and interpretation methods.",
+          "translations": {
+            "da": {
+              "title": "Smykkereturneringer er en operationel realitet — og et signal",
+              "summary": "AI-genereret resumé: Artiklen fra Instore Magazine diskuterer, hvordan smykkeindustrien kan omdanne den operationelle udfordring ved smykkereturneringer til værdifuld indsigt ved at anvende smartere sporings- og fortolkningsmetoder."
+            },
+            "es": {
+              "title": "Las devoluciones de joyería son una realidad operativa — y una señal",
+              "summary": "Resumen generado por IA: El artículo de Instore Magazine analiza cómo la industria de la joyería puede transformar el desafío operativo de las devoluciones en valiosos conocimientos adoptando métodos más inteligentes de seguimiento e interpretación."
+            }
+          }
+        },
+        {
+          "id": "d9chn5",
+          "title": "Why a Signature Jewelry Collection Is Your Best Defense Against Price Shopping",
+          "url": "https://instoremag.com/why-a-signature-jewelry-collection-is-your-best-defense-against-price-shopping/",
+          "source": "Instore Magazine",
+          "published_at": "2026-08-21T00:26:23.000Z",
+          "ingested_at": "2026-08-23T06:51:24.054Z",
+          "snippet": "Use a data-driven approach to building an exclusive line — from tiered pricing to a 180-day benchmark for proving a piece deserves reorder.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0.1,
+            "penalty": 0,
+            "matchedKeywords": [
+              "jewelry"
+            ]
+          },
+          "aiSummary": "AI-generated summary: The article from Instore Magazine discusses using a data-driven strategy to create an exclusive signature jewelry collection, emphasizing tiered pricing and a 180-day performance benchmark to justify reordering pieces. This approach aims to protect against price shopping in the jewelry industry.",
+          "translations": {
+            "da": {
+              "title": "Hvorfor en Signatur Smykkekollektion er Dit Bedste Forsvar mod Prissammenligning",
+              "summary": "AI-genereret resumé: Artiklen fra Instore Magazine diskuterer brugen af en datadrevet strategi til at skabe en eksklusiv signatur smykkekollektion med fokus på differentieret prissætning og en 180-dages præstationsbenchmark for at retfærdiggøre genbestilling af smykker. Denne tilgang sigter mod at beskytte mod prissammenligning i smykkeindustrien."
+            },
+            "es": {
+              "title": "Por Qué Una Colección de Joyería de Firma Es Tu Mejor Defensa Contra la Comparación de Precios",
+              "summary": "Resumen generado por IA: El artículo de Instore Magazine analiza el uso de una estrategia basada en datos para crear una colección exclusiva de joyería de firma, enfatizando precios escalonados y un punto de referencia de rendimiento de 180 días para justificar la reposición de piezas. Este enfoque busca proteger contra la comparación de precios en la industria de la joyería."
+            }
+          }
+        },
+        {
+          "id": "tnoav8",
+          "title": "Efforts to stamp out retail crime in Victoria ramped up",
+          "url": "https://www.jewellermagazine.com/Article/15433/Efforts-to-stamp-out-retail-crime-in-Victoria-ramped-up",
+          "source": "Jeweller - Business News",
+          "published_at": "2026-08-17T14:00:00.000Z",
+          "ingested_at": "2026-08-23T06:51:24.054Z",
+          "snippet": "The Victorian Government has announced plans to ‘ramp up’ the state’s response to crimes targeting retail businesses.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": []
+          },
+          "aiSummary": "AI-generated summary: The Victorian Government is intensifying efforts to combat crimes targeting retail businesses, particularly within the jewellery industry, as part of a strengthened state response.",
+          "translations": {
+            "da": {
+              "title": "Indsatser for at bekæmpe detailkriminalitet i Victoria intensiveres",
+              "summary": "Den victorianske regering skærper indsatsen mod kriminalitet rettet mod detailvirksomheder, især inden for smykkeindustrien, som en del af en styrket statslig indsats."
+            },
+            "es": {
+              "title": "Se intensifican los esfuerzos para erradicar el crimen minorista en Victoria",
+              "summary": "El Gobierno de Victoria está intensificando los esfuerzos para combatir los delitos que afectan a los negocios minoristas, especialmente en la industria de la joyería, como parte de una respuesta estatal reforzada."
+            }
+          }
+        },
+        {
+          "id": "39nr6m",
+          "title": "IJF26: Sentiment high during opening day as competition heats up",
+          "url": "https://www.jewellermagazine.com/Article/15440/IJF26-Sentiment-high-during-opening-day-as-competition-heats-up",
+          "source": "Jeweller - Business News",
+          "published_at": "2026-08-21T14:00:00.000Z",
+          "ingested_at": "2026-08-23T06:51:24.054Z",
+          "snippet": "The opening day of the International Jewellery Fair is in the books, with proceedings at Sydney’s Darling Harbour venue getting off to an upbeat start.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "jewellery",
+              "jeweller"
+            ]
+          },
+          "aiSummary": "AI-generated summary: The opening day of the International Jewellery Fair at Sydney’s Darling Harbour saw a positive and energetic start, reflecting high sentiment as the competition begins to intensify.",
+          "translations": {
+            "da": {
+              "title": "IJF26: Stemningen er høj på åbningsdagen, mens konkurrencen intensiveres",
+              "summary": "AI-genereret resumé: Åbningsdagen på International Jewellery Fair i Sydneys Darling Harbour bød på en positiv og energisk start, der afspejler høj stemning, efterhånden som konkurrencen tilspidses."
+            },
+            "es": {
+              "title": "IJF26: Sentimiento alto durante el día de apertura mientras la competencia se intensifica",
+              "summary": "Resumen generado por IA: El primer día de la International Jewellery Fair en Darling Harbour de Sídney tuvo un inicio positivo y enérgico, reflejando un alto sentimiento a medida que la competencia comienza a intensificarse."
+            }
+          }
+        },
+        {
+          "id": "a2ejdm",
+          "title": "Sydney Fair 2026: Industry primed for weekend to remember",
+          "url": "https://www.jewellermagazine.com/Article/15437/Sydney-Fair-2026-Industry-primed-for-weekend-to-remember",
+          "source": "Jeweller - Business News",
+          "published_at": "2026-08-17T14:00:00.000Z",
+          "ingested_at": "2026-08-23T06:51:24.054Z",
+          "snippet": "The doors to the 2026 International Jewellery Fair are just days away from swinging open, and organiser Expertise Events has confirmed a blockbuster schedule of attractions and presentations for the industry’s largest annual gathering.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "jewellery",
+              "jeweller"
+            ]
+          },
+          "aiSummary": "AI-generated summary: The 2026 International Jewellery Fair in Sydney is set to open soon, with organiser Expertise Events announcing an exciting lineup of attractions and presentations for the jewellery industry's largest annual event.",
+          "translations": {
+            "da": {
+              "title": "Sydney Fair 2026: Branchen klar til en weekend, der vil blive husket",
+              "summary": "AI-genereret resumé: Den internationale smykkemesse 2026 i Sydney åbner snart, hvor arrangøren Expertise Events annoncerer et spændende program af attraktioner og præsentationer til smykkeindustriens største årlige begivenhed."
+            },
+            "es": {
+              "title": "Sydney Fair 2026: Industria preparada para un fin de semana inolvidable",
+              "summary": "Resumen generado por IA: La Feria Internacional de Joyería 2026 en Sydney está a punto de abrir, con el organizador Expertise Events anunciando una emocionante programación de atracciones y presentaciones para el mayor evento anual de la industria de la joyería."
+            }
+          }
+        },
+        {
+          "id": "jt1b95",
+          "title": "Estúdio Campana creates \"woven jewellery box\" for Tiffany & Co in São Paulo",
+          "url": "https://www.dezeen.com/2026/08/22/tiffany-co-pop-up-jk-iguatemi-mall-sao-paulo-estudio-campana/",
+          "source": "Dezeen",
+          "published_at": "2026-08-22T17:00:08.000Z",
+          "ingested_at": "2026-08-23T06:51:24.054Z",
+          "snippet": "Brazil's Estúdio Campana has wrapped a pop-up Tiffany & Co store inside a São Paulo shopping mall in a woven wicker skin. The pop-up on the ground floor of the JK Iguatemi Mall is cloaked in an undulating facade in Tiffany & Co's signature blue, with streaks of tan running horizontally across. The collaboration with\nThe post Estúdio Campana creates \"woven jewellery box\" for Tiffany & Co in São Paulo appeared first on Dezeen.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": -0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0.2,
+            "matchedKeywords": [
+              "jewellery",
+              "jeweller"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Brazil's Estúdio Campana designed a pop-up Tiffany & Co store in São Paulo's JK Iguatemi Mall, featuring a woven wicker facade in the brand's signature blue with tan streaks. This unique \"woven jewellery box\" concept highlights a creative collaboration in the jewellery industry.",
+          "translations": {
+            "da": {
+              "title": "Estúdio Campana skaber \"woven jewellery box\" for Tiffany & Co i São Paulo",
+              "summary": "AI-genereret resumé: Brasiliens Estúdio Campana designede en pop-up Tiffany & Co butik i São Paulos JK Iguatemi Mall med en flettet facade i brandets karakteristiske blå med brune striber. Dette unikke \"woven jewellery box\" koncept fremhæver et kreativt samarbejde i smykkeindustrien."
+            },
+            "es": {
+              "title": "Estúdio Campana crea \"woven jewellery box\" para Tiffany & Co en São Paulo",
+              "summary": "Resumen generado por IA: Estúdio Campana de Brasil diseñó una tienda pop-up de Tiffany & Co en el centro comercial JK Iguatemi de São Paulo, con una fachada de mimbre tejido en el azul característico de la marca con vetas marrones. Este concepto único de \"woven jewellery box\" destaca una colaboración creativa en la industria de la joyería."
+            }
+          }
+        },
+        {
+          "id": "8wnibj",
+          "title": "Jewelers Mutual CEO Scott Murphy to Retire; Mike Alexander Named Successor",
+          "url": "https://instoremag.com/jewelers-mutual-ceo-scott-murphy-to-retire-mike-alexander-named-successor/",
+          "source": "Instore Magazine",
+          "published_at": "2026-08-20T00:51:41.000Z",
+          "ingested_at": "2026-08-23T06:51:24.054Z",
+          "snippet": "12 years leading the insurer through major growth, Murphy will hand the reins to current President Mike Alexander on Jan. 1",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": -0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0,
+            "insightSignalBoost": 0,
+            "penalty": 0.2,
+            "matchedKeywords": []
+          },
+          "aiSummary": "AI-generated summary: Scott Murphy, after 12 years of leading Jewelers Mutual through significant growth, will retire as CEO, with current President Mike Alexander named as his successor effective January 1.",
+          "translations": {
+            "da": {
+              "title": "Jewelers Mutual CEO Scott Murphy går på pension; Mike Alexander udnævnt som efterfølger",
+              "summary": "AI-genereret resumé: Scott Murphy, efter 12 år med at lede Jewelers Mutual gennem betydelig vækst, går på pension som CEO, og den nuværende præsident Mike Alexander er udnævnt som hans efterfølger med virkning fra 1. januar."
+            },
+            "es": {
+              "title": "Scott Murphy, CEO de Jewelers Mutual, se retira; Mike Alexander nombrado sucesor",
+              "summary": "Resumen generado por IA: Scott Murphy, tras 12 años liderando Jewelers Mutual durante un crecimiento significativo, se retirará como CEO, y el actual presidente Mike Alexander ha sido nombrado su sucesor a partir del 1 de enero."
+            }
+          }
+        }
+      ]
+    }
+  },
+  "editorialTake": "Nvidia’s latest research makes a sharp point: the AI model itself is no longer the bottleneck. Instead, it’s the harness around the AI agents, the fine-tuning and orchestration, that drives real performance gains. This flips the usual narrative on its head and puts companies investing in AI infrastructure and agent management software, like Micro1 hitting a $500 million run rate, in the spotlight. The race isn’t just about building smarter models, it’s about building smarter systems to deploy them effectively.\n\nMeanwhile, Amazon’s plan to expand its Prime Air drone delivery sixfold this year signals a bet on operational scale as a competitive moat in ecommerce logistics. It’s not just about having drones, but about integrating them into urban supply chains at scale. The question is how quickly regulators and urban infrastructure can keep pace with this push. Can Amazon’s drone expansion actually shift consumer expectations on delivery speed, or will it run into practical limits that stall growth?",
+  "coverImageUrl": "/weekly-images/2026-W34.png",
+  "coverImageAlt": "Weekly cover illustration for 2026-W34"
+}

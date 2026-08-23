@@ -1,0 +1,79 @@
+{
+  "digestWeek": "2026-W34",
+  "ingestionWeek": "2026-W34",
+  "startedAt": "2026-08-23T06:51:24.037Z",
+  "finishedAt": "2026-08-23T07:15:24.911Z",
+  "steps": [
+    {
+      "name": "rss",
+      "ok": true,
+      "startedAt": "2026-08-23T06:51:24.053Z",
+      "finishedAt": "2026-08-23T06:51:49.885Z"
+    },
+    {
+      "name": "pages",
+      "ok": true,
+      "startedAt": "2026-08-23T06:51:49.885Z",
+      "finishedAt": "2026-08-23T06:51:51.952Z"
+    },
+    {
+      "name": "discovery",
+      "ok": true,
+      "startedAt": "2026-08-23T06:51:51.953Z",
+      "finishedAt": "2026-08-23T07:10:17.841Z"
+    },
+    {
+      "name": "classification",
+      "ok": true,
+      "startedAt": "2026-08-23T07:10:17.841Z",
+      "finishedAt": "2026-08-23T07:10:17.974Z"
+    },
+    {
+      "name": "digest",
+      "ok": true,
+      "startedAt": "2026-08-23T07:10:17.974Z",
+      "finishedAt": "2026-08-23T07:12:37.296Z"
+    },
+    {
+      "name": "email",
+      "ok": true,
+      "startedAt": "2026-08-23T07:12:37.297Z",
+      "finishedAt": "2026-08-23T07:12:56.795Z"
+    },
+    {
+      "name": "podcast",
+      "ok": true,
+      "startedAt": "2026-08-23T07:12:56.795Z",
+      "finishedAt": "2026-08-23T07:14:02.300Z"
+    },
+    {
+      "name": "cover",
+      "ok": true,
+      "startedAt": "2026-08-23T07:14:02.300Z",
+      "finishedAt": "2026-08-23T07:15:01.319Z"
+    },
+    {
+      "name": "competitorAnalyze",
+      "ok": true,
+      "startedAt": "2026-08-23T07:15:01.319Z",
+      "finishedAt": "2026-08-23T07:15:24.909Z"
+    }
+  ],
+  "health": {
+    "warnings": [
+      "AI & Strategy: techcrunch.com represents 42.9% (3/7) - exceeds 40% threshold",
+      "Ecommerce & Retail Tech: www.digitalcommerce360.com represents 42.9% (3/7) - exceeds 40% threshold",
+      "Luxury & Consumer: fashionista.com represents 42.9% (3/7) - exceeds 40% threshold",
+      "Jewellery Industry: instoremag.com represents 42.9% (3/7) - exceeds 40% threshold",
+      "Jewellery Industry: www.jewellermagazine.com represents 42.9% (3/7) - exceeds 40% threshold"
+    ],
+    "metrics": {
+      "paywallPercent": 0,
+      "podcastWordCount": 2316
+    }
+  },
+  "versions": {
+    "node": "v20.20.2",
+    "gitCommit": "462d7ff994c4be663c55012e5477fbf316d3c5d7"
+  }
+}

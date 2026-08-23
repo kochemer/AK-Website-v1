@@ -1,0 +1,83 @@
+{
+  "week": "2026-W34",
+  "generatedAt": "2026-08-23T07:12:56.794Z",
+  "intro": "In this week’s digest, key developments highlight rapid advancements in AI integration and retail innovation, from Amazon’s ambitious drone delivery expansion to Walmart’s enhanced payment options and data platform growth. Meanwhile, competitive shifts in AI adoption and regulatory scrutiny on personalized pricing signal evolving challenges and opportunities for businesses in the retail and luxury sectors.",
+  "readOneThing": {
+    "title": "Amazon to expand drone delivery reach sixfold this year",
+    "url": "https://www.grocerydive.com/news/amazon-expand-drone-delivery-reach-sixfold/828389/"
+  },
+  "items": [
+    {
+      "rank": 1,
+      "title": "Amazon to expand drone delivery reach sixfold this year",
+      "url": "https://www.grocerydive.com/news/amazon-expand-drone-delivery-reach-sixfold/828389/",
+      "source": "Grocery Dive",
+      "bullets": [
+        "Amazon announced it will expand its Prime Air drone delivery service to nearly 500 cities and towns by the end of 2026, a sixfold increase from its current coverage.",
+        "Prime Air drones can deliver millions of items weighing 5 pounds or less, including electronics and household goods, typically within an hour of ordering.",
+        "The expansion includes new metro areas such as Atlanta, Chicago, Cleveland, Boise, and Syracuse, building on existing drone deliveries in seven states since 2013."
+      ],
+      "summary": "AI-generated summary: Amazon plans to expand its Prime Air drone delivery service sixfold in 2026, launching in metro Atlanta, Chicago, and Cleveland to offer customers faster shipping options."
+    },
+    {
+      "rank": 2,
+      "title": "OpenAI is gaining on Anthropic with business users, new data indicates",
+      "url": "https://techcrunch.com/2026/08/20/openai-is-gaining-on-anthropic-with-business-users-new-data-indicates/",
+      "source": "TechCrunch - AI",
+      "bullets": [
+        "Ramp's data reveals that OpenAI is gaining market share among U.S. business users, closing the gap with Anthropic in Q3 2024.",
+        "As of July, Anthropic holds nearly 44% market share among Ramp's customers, while OpenAI has nearly 40%, based on over 70,000 American businesses.",
+        "The data reflects spending trends in tech-skewed companies using Ramp's corporate credit and bill pay services, with AI adoption rising from 50% in March to nearly 56% in July."
+      ],
+      "summary": "AI-generated summary: According to new data reported by TechCrunch on August 20, 2026, OpenAI is closing the gap with Anthropic among business users, though frequent shifts between models from both companies highlight uncertainty about the long-term stability of enterprise AI spending."
+    },
+    {
+      "rank": 3,
+      "title": "The FTC is turning its sights on personalized pricing. What does it mean for customers?",
+      "url": "https://www.grocerydive.com/news/ftc-personalized-surveillance-pricing-customers/828490/",
+      "source": "Grocery Dive",
+      "bullets": [
+        "The Federal Trade Commission is seeking public comments on personalized pricing practices that adjust prices based on consumer data and willingness to pay.",
+        "Investigations found that grocery prices on Instacart varied by as much as 23% between customers, and ride-share prices differed by about 42%.",
+        "Over two dozen states have introduced more than 40 bills addressing surveillance pricing, with Maryland and Connecticut enacting laws limiting or banning the practice."
+      ],
+      "summary": "AI-generated summary: The Federal Trade Commission is increasing scrutiny on personalized pricing practices, signaling potential challenges for businesses amid consumer concerns over unfair pricing. This move highlights growing regulatory attention in the luxury and consumer sectors."
+    },
+    {
+      "rank": 4,
+      "title": "Walmart finally starts supporting Apple Pay and Google Pay",
+      "url": "https://www.modernretail.co/technology/walmart-finally-starts-supporting-apple-pay-and-google-pay/?utm_campaign=modernretaildis&utm_medium=rss&utm_source=general-rss",
+      "source": "Modern Retail",
+      "bullets": [
+        "Walmart will start accepting Apple Pay and Google Pay at select stores and Sam's Club locations beginning August 24, 2026.",
+        "The company plans to expand contactless payment options to all U.S. stores and clubs by the end of 2026 and to fuel stations by mid-2027.",
+        "Walmart had previously resisted these payment methods, promoting its own Walmart Pay and OnePay Wallet instead, and had collaborated on the now-defunct CurrentC system in 2016."
+      ],
+      "summary": "AI-generated summary: Walmart will begin accepting Apple Pay and Google Pay in its stores by the end of 2026, resolving years of customer frustration over the lack of support for these popular payment methods."
+    },
+    {
+      "rank": 5,
+      "title": "Nvidia just showed that the harness, not the AI model, is now the real hero",
+      "url": "https://techcrunch.com/2026/08/21/nvidia-just-showed-that-the-harness-not-the-ai-model-is-now-the-real-hero/",
+      "source": "TechCrunch - AI",
+      "bullets": [
+        "Nvidia researchers demonstrated that the software harness, including memory management and a supervising agent, significantly improves AI performance on long-horizon tasks. By using a custom harness, Claude Opus 5 achieved a perfect 100% score on the ARC-AGI-3 interactive reasoning benchmark, compared to 30% without the harness. This research aligns with other findings, such as Databricks' July study showing harness choice can double AI operational costs, emphasizing the importance of open and customizable agent frameworks.",
+        "Nvidia published some interesting new research on Friday suggesting it’s the harness, more than the underlying model, that is far more important when asking an AI to do long-horizon tasks",
+        "A harness is the software wrapper around an AI model — the tools, memory management, and rules that turn a raw model into something that can act on its own"
+      ],
+      "summary": "AI-generated summary: Nvidia's research demonstrates that effective fine-tuning of AI agents, rather than the inherent quality of the AI model itself, is crucial for achieving strong and stable performance."
+    },
+    {
+      "rank": 6,
+      "title": "Walmart extends Scintilla data platform to Sam’s Club",
+      "url": "https://www.modernretail.co/technology/walmart-extends-scintilla-data-platform-to-sams-club/?utm_campaign=modernretaildis&utm_medium=rss&utm_source=general-rss",
+      "source": "Modern Retail",
+      "bullets": [
+        "Walmart announced it will extend its Scintilla data analytics platform to Sam’s Club merchants and brands in the U.S. starting next year.",
+        "Scintilla, formerly Walmart Luminate, expanded to Mexico and Canada in 2024 and recently added AI features including conversational tools and marketing strategy recommendations.",
+        "Walmart plans to expand its first-party customer data platform, Scintilla, to Sam’s Club in the U.S"
+      ],
+      "summary": "AI-generated summary: Walmart is expanding its Scintilla data analytics platform to Sam’s Club, enabling merchants and brands to better understand and predict member behavior. This move aims to enhance data-driven insights within Sam’s Club operations."
+    }
+  ]
+}

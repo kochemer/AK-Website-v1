@@ -1,0 +1,28 @@
+{
+  "weekLabel": "2026-W34",
+  "homepageTopArticles": [
+    {
+      "title": "Amazon to expand drone delivery reach sixfold this year",
+      "source": "Grocery Dive",
+      "snippet": "The e-commerce giant will soon launch Prime Air deliveries in metro Atlanta, Chicago and Cleveland, giving customers another fast shipping option.",
+      "aiSummary": "AI-generated summary: Amazon plans to expand its Prime Air drone delivery service sixfold in 2026, launching in metro Atlanta, Chicago, and Cleveland to offer customers faster shipping options."
+    },
+    {
+      "title": "Walmart finally starts supporting Apple Pay and Google Pay",
+      "source": "Modern Retail",
+      "snippet": "By the end of this year, shoppers will finally be able to use Apple Pay and Google Pay in Walmart stores, ending years of frustration that the retailer didn't support what is now a nearly ubiquitous payment option.",
+      "aiSummary": "AI-generated summary: Walmart will begin accepting Apple Pay and Google Pay in its stores by the end of 2026, resolving years of customer frustration over the lack of support for these popular payment methods."
+    },
+    {
+      "title": "Jewelry Returns Are an Operational Reality — and a Signal",
+      "source": "Instore Magazine",
+      "snippet": "A smarter approach to tracking and interpreting returns can turn a cost center into a source of insight",
+      "aiSummary": "AI-generated summary: The article from Instore Magazine discusses how the jewellery industry can transform the operational challenge of jewelry returns into valuable insights by adopting smarter tracking and interpretation methods."
+    }
+  ],
+  "model": "gpt-image-1",
+  "finalPrompt": "Photograph: A supermarket checkout belt with a toy delivery drone hovering above, lowering a velvet jewelry box beside bright apples, a gold credit card, and a mesh produce bag. A shopping bag with subtle store logos is partly visible at the edge. Bananas and a small sticker on the jewelry box add detail. Everything sits under natural grocery store lighting, creating an absurd but realistic mix of everyday produce, luxury, and tech.\n\nCRITICAL CONSTRAINTS (must be strictly avoided):\n- text, letters, numbers, signage, labels, price tags, screens, UI, dashboards, holograms, floating icons, watermarks, unrelated brand logos, cartoon, illustration, CGI, 3D render, anime, diamond, diamonds, gemstone, gemstones, precious stones, jewelry close-up, jewelry product shot, diamond ring, diamond necklace, diamond earring, jeweled, sparkling gemstone, dramatic spotlight, glowing edges, rim lighting, vignette, cinematic color grade, blurred background, bokeh\n\nThis must look like a real photograph taken by a human — not AI-generated, not CGI, not a 3D render. Natural light. Real objects. Real imperfections. Fill the entire frame edge to edge with the scene — no black bars, no empty space at the edges.\n\nDo not include: text, labels, signage, screens, UI, logos unrelated to the scene, diamonds, gemstones, CGI lighting, dramatic spotlights, or blurred vignette backgrounds.",
+  "imageSize": "1536x1024",
+  "outputPath": "/weekly-images/2026-W34.png",
+  "generatedAt": "2026-08-23T07:15:01.317Z"
+}

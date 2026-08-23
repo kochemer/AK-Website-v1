@@ -4462,5 +4462,149 @@
     ],
     "cached_at": "2026-08-16T07:10:05.224Z",
     "model": "o4-mini"
+  },
+  "2026-W34:Ecommerce_Retail_Tech:7cea9e3cbe18": {
+    "selected": [
+      {
+        "id": "9",
+        "rank": 1,
+        "why": "Amazon's major drone delivery expansion impacts logistics broadly",
+        "confidence": 0.95
+      },
+      {
+        "id": "7",
+        "rank": 2,
+        "why": "Walmart adopting Apple Pay and Google Pay advances payment infrastructure",
+        "confidence": 0.9
+      },
+      {
+        "id": "6",
+        "rank": 3,
+        "why": "Walmart extends data platform to Sam’s Club, enhancing retail analytics",
+        "confidence": 0.9
+      },
+      {
+        "id": "12",
+        "rank": 4,
+        "why": "AI's impact on ecommerce retailers offers data-driven industry insights",
+        "confidence": 0.85
+      },
+      {
+        "id": "2",
+        "rank": 5,
+        "why": "Bero's Cyber 5 prep with channel insights shows marketplace dynamics",
+        "confidence": 0.8
+      },
+      {
+        "id": "16",
+        "rank": 6,
+        "why": "Amazon's drone delivery expansion to 5 more metros extends logistics reach",
+        "confidence": 0.8
+      },
+      {
+        "id": "0",
+        "rank": 7,
+        "why": "Walmart's omnichannel store evolution reflects retail platform strategy shift",
+        "confidence": 0.75
+      }
+    ],
+    "cached_at": "2026-08-23T07:11:15.902Z",
+    "model": "gpt-4.1-mini"
+  },
+  "2026-W34:Luxury_and_Consumer:beb742d3d04d": {
+    "selected": [
+      {
+        "id": "2",
+        "rank": 1,
+        "why": "Zara flagship store showcases future of physical retail integration",
+        "confidence": 0.95
+      },
+      {
+        "id": "8",
+        "rank": 2,
+        "why": "REVERSIBLE platform solves key beauty shopping annoyance, ecommerce impact",
+        "confidence": 0.9
+      },
+      {
+        "id": "14",
+        "rank": 3,
+        "why": "FTC scrutiny on personalized pricing affects retail customer pricing strategies",
+        "confidence": 0.9
+      },
+      {
+        "id": "16",
+        "rank": 4,
+        "why": "UK retail sales data reveals clothing demand trends, useful benchmark",
+        "confidence": 0.85
+      },
+      {
+        "id": "0",
+        "rank": 5,
+        "why": "Maisonette targets tween ecommerce segment, expanding customer base insights",
+        "confidence": 0.8
+      },
+      {
+        "id": "13",
+        "rank": 6,
+        "why": "Mother's flagship store opening offers retail expansion and CX insights",
+        "confidence": 0.8
+      },
+      {
+        "id": "10",
+        "rank": 7,
+        "why": "Hermès store relocation impacts retail footprint and customer experience",
+        "confidence": 0.75
+      }
+    ],
+    "cached_at": "2026-08-23T07:11:45.731Z",
+    "model": "gpt-4.1-mini"
+  },
+  "2026-W34:Jewellery_Industry:28ac534522ef": {
+    "selected": [
+      {
+        "id": "7",
+        "rank": 1,
+        "why": "Insights on managing jewelry returns to improve operations",
+        "confidence": 0.95
+      },
+      {
+        "id": "3",
+        "rank": 2,
+        "why": "Data-driven approach to exclusive collections for price defense",
+        "confidence": 0.9
+      },
+      {
+        "id": "6",
+        "rank": 3,
+        "why": "Government plans to reduce retail crime impacting store operations",
+        "confidence": 0.85
+      },
+      {
+        "id": "2",
+        "rank": 4,
+        "why": "Opening day sentiment and competition insights at major fair",
+        "confidence": 0.8
+      },
+      {
+        "id": "1",
+        "rank": 5,
+        "why": "Industry readiness and trends ahead of International Jewellery Fair",
+        "confidence": 0.8
+      },
+      {
+        "id": "12",
+        "rank": 6,
+        "why": "Innovative pop-up store design integrating retail and brand experience",
+        "confidence": 0.75
+      },
+      {
+        "id": "17",
+        "rank": 7,
+        "why": "Leadership change at insurer with retail jewelry industry impact",
+        "confidence": 0.7
+      }
+    ],
+    "cached_at": "2026-08-23T07:12:13.589Z",
+    "model": "gpt-4.1-mini"
   }
 }

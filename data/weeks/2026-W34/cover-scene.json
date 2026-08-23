@@ -1,0 +1,16 @@
+{
+  "concept": "drone-delivers-apple-pay-jewelry-return",
+  "primaryHumorDriver": "fish-out-of-water",
+  "secondaryEnhancer": "implied motion — object mid-drop",
+  "sceneDescription": "A photorealistic supermarket checkout counter displays an absurd scene: a sleek toy delivery drone hovers just above the belt, delicately lowering a velvet jewelry box next to a pile of shiny apples and a large gold credit card. A shopping bag with subtle Grocery Dive and Modern Retail logos peeks from behind stacked bananas; a small Instore Magazine sticker is stuck on the jewelry box. The mundane produce and luxury items together highlight the growing overlap of tech, retail, and returns. The drone's presence, mid-drop, adds playful tension, as if it's just interrupted a normal checkout moment.",
+  "finalImagePrompt": "A supermarket checkout belt with a toy delivery drone hovering above, lowering a velvet jewelry box beside bright apples, a gold credit card, and a mesh produce bag. A shopping bag with subtle store logos is partly visible at the edge. Bananas and a small sticker on the jewelry box add detail. Everything sits under natural grocery store lighting, creating an absurd but realistic mix of everyday produce, luxury, and tech.",
+  "negativePrompt": [
+    "text, letters, numbers, signage, labels, price tags",
+    "screens, UI, dashboards, holograms, floating icons",
+    "watermarks, unrelated brand logos",
+    "cartoon, illustration, CGI, 3D render, anime",
+    "diamond, diamonds, gemstone, gemstones, precious stones, jewelry close-up, jewelry product shot, diamond ring, diamond necklace, diamond earring, jeweled, sparkling gemstone",
+    "dramatic spotlight, glowing edges, rim lighting, vignette, cinematic color grade, blurred background, bokeh"
+  ],
+  "confidence": 0.93
+}
