@@ -14,11 +14,29 @@ export default function robots(): MetadataRoute.Robots {
     console.warn(`[Robots] Warning: sitemap URL is ${sitemapUrl}, expected https://luxury-intel.com/sitemap.xml in production`);
   }
 
+  // Noindex utility paths that should not be crawled at all. These are already
+  // marked `robots: { index: false }` at the page level and are excluded from the
+  // sitemap, so disallowing them stops crawl-budget waste and keeps them out of
+  // Google's "Crawled – currently not indexed" report. Only locale utility pages
+  // and /search are listed — English /subscribe & /support stay indexable.
+  const disallowedPaths = [
+    '/search',
+    '/es/subscribe',
+    '/da/subscribe',
+    '/es/support',
+    '/da/support',
+    '/es/feedback',
+    '/da/feedback',
+    '/es/competitor-watch',
+    '/da/competitor-watch',
+  ];
+
   return {
     rules: [
       {
         userAgent: '*',
         allow: '/',
+        disallow: disallowedPaths,
       },
       // Explicit Allow for known AI crawler bots — positive GEO signal
       {
