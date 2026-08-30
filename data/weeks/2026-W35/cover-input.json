@@ -1,0 +1,28 @@
+{
+  "weekLabel": "2026-W35",
+  "homepageTopArticles": [
+    {
+      "title": "Williams-Sonoma revenue from AI assistant grows 620% in Q2",
+      "source": "Digital Commerce 360",
+      "snippet": "Williams‑Sonoma Inc. reported that its net revenue grew 6.7% year over year in its fiscal Q2, even as the housing market remained stubbornly stagnant. Along the way, the home furnishings retailer expanded its lineup of artificial intelligence (AI)-powered shopping tools, including a new assistant, Otto, on the Pottery Barn website. For the fiscal quarter ended […]\nThe post Williams-Sonoma revenue from AI assistant grows 620% in Q2 appeared first on Digital Commerce 360.",
+      "aiSummary": "AI-generated summary: Williams-Sonoma Inc. reported a 6.7% year-over-year net revenue increase in fiscal Q2, driven in part by a 620% growth in revenue from its AI-powered shopping assistant, Otto, featured on the Pottery Barn website despite a stagnant housing market."
+    },
+    {
+      "title": "Building a Successful Payments Strategy: How ISOs and ISVs Can Drive Scalable Growth Together",
+      "source": "Payments Journal",
+      "snippet": "The payments industry continues to evolve at a rapid pace, driven by innovations such as agentic commerce, instant payments, and embedded financial services. Yet for Independent Sales Organizations (ISOs), the most significant shift may be how merchants purchase payment solutions. Today, more than 90% of U.S. small businesses rely on Independent Software Vendor (ISV) solutions […]\nThe post Building a Successful Payments Strategy: How ISOs and ISVs Can Drive Scalable Growth Together appeared firs...",
+      "aiSummary": "AI-generated summary: The article discusses how Independent Sales Organizations (ISOs) and Independent Software Vendors (ISVs) can collaborate to drive scalable growth in the rapidly evolving payments industry, where over 90% of U.S. small businesses now rely on ISV solutions for payment services."
+    },
+    {
+      "title": "Gold, Flights, Cryptocurrency: U.S. Vows to Go After More Than Iran’s Oil",
+      "source": "NYTimes Technology",
+      "snippet": "The United States threatened sanctions for any country or entity that engages with Iran’s gold, digital assets, aviation, shipping and tech industries. Here’s why that matters.",
+      "aiSummary": "AI-generated summary: The United States has pledged to impose sanctions on countries or entities involved with Iran's gold, digital assets, aviation, shipping, and technology sectors, expanding its focus beyond just Iranian oil. This move has significant implications for the jewellery industry and related markets."
+    }
+  ],
+  "model": "gpt-image-1",
+  "finalPrompt": "Photograph: A shiny gold bar, shaped like a loaf of bread, sits halfway inside a commercial bread slicer on a beige bakery counter. Slices of gold and regular bread are stacked together, some overlapping. A modern kitchen assistant gadget with a small sticker is nearby. A toy airplane and a shiny Bitcoin token are nestled among bread baskets in the background. A shopping bag with a subtle logo sits off to the side.\n\nCRITICAL CONSTRAINTS (must be strictly avoided):\n- text, letters, numbers, signage, labels, price tags, screens, UI, dashboards, holograms, floating icons, watermarks, unrelated brand logos, cartoon, illustration, CGI, 3D render, anime, diamond, diamonds, gemstone, gemstones, precious stones, jewelry close-up, jewelry product shot, diamond ring, diamond necklace, diamond earring, jeweled, sparkling gemstone, dramatic spotlight, glowing edges, rim lighting, vignette, cinematic color grade, blurred background, bokeh\n\nThis must look like a real photograph taken by a human — not AI-generated, not CGI, not a 3D render. Natural light. Real objects. Real imperfections. Fill the entire frame edge to edge with the scene — no black bars, no empty space at the edges.\n\nDo not include: text, labels, signage, screens, UI, logos unrelated to the scene, diamonds, gemstones, CGI lighting, dramatic spotlights, or blurred vignette backgrounds.",
+  "imageSize": "1536x1024",
+  "outputPath": "/weekly-images/2026-W35.png",
+  "generatedAt": "2026-08-30T12:05:57.842Z"
+}

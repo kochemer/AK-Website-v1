@@ -4606,5 +4606,149 @@
     ],
     "cached_at": "2026-08-23T07:12:13.589Z",
     "model": "gpt-4.1-mini"
+  },
+  "2026-W35:AI_and_Strategy:a0289b370af0": {
+    "selected": [
+      {
+        "id": "14",
+        "rank": 1,
+        "why": "Nvidia's major acquisition of Hugging Face impacts AI ecosystem power",
+        "confidence": 0.95
+      },
+      {
+        "id": "13",
+        "rank": 2,
+        "why": "Pentagon blacklist block affects AI supply chain and governance",
+        "confidence": 0.9
+      },
+      {
+        "id": "17",
+        "rank": 3,
+        "why": "LAION releases massive open video dataset for AI research advancement",
+        "confidence": 0.9
+      },
+      {
+        "id": "10",
+        "rank": 4,
+        "why": "Enterprise AI complexity risks highlight challenges in AI agent deployment",
+        "confidence": 0.85
+      },
+      {
+        "id": "12",
+        "rank": 5,
+        "why": "AI-driven cybersecurity boosts CrowdStrike and Okta earnings significantly",
+        "confidence": 0.85
+      },
+      {
+        "id": "15",
+        "rank": 6,
+        "why": "Google's memory limits for Android apps reflect AI infrastructure impact",
+        "confidence": 0.8
+      },
+      {
+        "id": "16",
+        "rank": 7,
+        "why": "Anthropic and OpenAI presence at TechCrunch Disrupt signals industry focus",
+        "confidence": 0.8
+      }
+    ],
+    "cached_at": "2026-08-30T12:01:28.303Z",
+    "model": "gpt-4.1-mini"
+  },
+  "2026-W35:Ecommerce_Retail_Tech:b87ca6f7b33c": {
+    "selected": [
+      {
+        "id": "2",
+        "rank": 1,
+        "why": "Williams-Sonoma AI assistant drives 620% revenue growth",
+        "confidence": 0.95
+      },
+      {
+        "id": "9",
+        "rank": 2,
+        "why": "Payments strategy insights for scalable growth in ecommerce",
+        "confidence": 0.9
+      },
+      {
+        "id": "8",
+        "rank": 3,
+        "why": "AI traffic referrals impact furniture ecommerce growth plans",
+        "confidence": 0.88
+      },
+      {
+        "id": "0",
+        "rank": 4,
+        "why": "Web personalization linked to ecommerce conversion improvements",
+        "confidence": 0.85
+      },
+      {
+        "id": "6",
+        "rank": 5,
+        "why": "Bath & Body Works ecommerce returns to growth with data",
+        "confidence": 0.83
+      },
+      {
+        "id": "5",
+        "rank": 6,
+        "why": "Contribution margin analysis guides ecommerce growth strategies",
+        "confidence": 0.8
+      },
+      {
+        "id": "4",
+        "rank": 7,
+        "why": "BK Beauty's TikTok Shop strategy shows marketplace dynamics",
+        "confidence": 0.78
+      }
+    ],
+    "cached_at": "2026-08-30T12:02:03.019Z",
+    "model": "gpt-4.1-mini"
+  },
+  "2026-W35:Luxury_and_Consumer:aaff228bf120": {
+    "selected": [
+      {
+        "id": "4",
+        "rank": 1,
+        "why": "Luxury resale growth with strong data and shopper behavior insights",
+        "confidence": 0.95
+      },
+      {
+        "id": "6",
+        "rank": 2,
+        "why": "Supply chain leadership change impacting footwear brand operations",
+        "confidence": 0.9
+      },
+      {
+        "id": "8",
+        "rank": 3,
+        "why": "Emerging designers gaining traction in luxury resale market",
+        "confidence": 0.9
+      },
+      {
+        "id": "13",
+        "rank": 4,
+        "why": "Analysis on fashion retail's ability to handle climate challenges",
+        "confidence": 0.85
+      },
+      {
+        "id": "2",
+        "rank": 5,
+        "why": "Community management strategies for fashion brands with Meta alums",
+        "confidence": 0.85
+      },
+      {
+        "id": "9",
+        "rank": 6,
+        "why": "Innovative retail showroom design highlighting brand precision",
+        "confidence": 0.8
+      },
+      {
+        "id": "16",
+        "rank": 7,
+        "why": "Social media influencers launching VC-backed consumer brands",
+        "confidence": 0.8
+      }
+    ],
+    "cached_at": "2026-08-30T12:02:37.648Z",
+    "model": "gpt-4.1-mini"
   }
 }

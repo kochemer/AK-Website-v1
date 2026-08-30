@@ -11009,5 +11009,313 @@
       "summary": "Resumen generado por IA: Scott Murphy, tras 12 años liderando Jewelers Mutual durante un crecimiento significativo, se retirará como CEO, y el actual presidente Mike Alexander ha sido nombrado su sucesor a partir del 1 de enero."
     },
     "translatedAt": "2026-08-23T07:12:34.930Z"
+  },
+  "71037dd5d78ee9e3": {
+    "da": {
+      "title": "Nvidia nærmer sig opkøbet af Hugging Face",
+      "summary": "AI-genereret resumé: Nvidia har indgået aftale om at opkøbe Hugging Face, det open source AI-hub, for 12,9 milliarder dollars med det formål at styrke sin chipforretning og genindtræde på cloudmarkedet."
+    },
+    "es": {
+      "title": "Nvidia se acerca a la adquisición de Hugging Face",
+      "summary": "Resumen generado por IA: Nvidia ha acordado adquirir Hugging Face, el centro de IA de código abierto, por 12.9 mil millones de dólares, con el objetivo de fortalecer su negocio de chips y reingresar al mercado de la nube."
+    },
+    "translatedAt": "2026-08-30T12:03:18.024Z"
+  },
+  "71e94a9f2c53129d": {
+    "da": {
+      "title": "Dommer blokerer Pentagons sortlistning af Anthropic som forsyningskæderisiko",
+      "summary": "AI-genereret resumé: En dommer har blokeret Pentagons forsøg på at sortliste Anthropic som en forsyningskæderisiko og omstødt Forsvarsministeriets beslutning fra marts om at forbyde det amerikanske militær at bruge Anthropics Claude."
+    },
+    "es": {
+      "title": "Juez bloquea lista negra del Pentágono a Anthropic como riesgo en la cadena de suministro",
+      "summary": "Resumen generado por IA: Un juez ha bloqueado el intento del Pentágono de incluir a Anthropic en una lista negra como riesgo en la cadena de suministro, revirtiendo la decisión del Departamento de Defensa de marzo de prohibir al ejército de EE.UU. usar Claude de Anthropic."
+    },
+    "translatedAt": "2026-08-30T12:03:18.024Z"
+  },
+  "3ae9d28ec3aef538": {
+    "da": {
+      "title": "LAION frigiver enormt åbent videodatasæt med 10 millioner timers optagelser til AI-forskning",
+      "summary": "AI-genereret resumé: LAION har udgivet sit Big Video Dataset (BVD), der indeholder 80 millioner videoer og 10 millioner timers optagelser til AI-forskning, hvor modeller trænet på BVD overgår tidligere benchmarks med op til 2,1 procentpoint. Datasættets udgivelse understøttes af en 2024-dom fra Hamborgs domstol, der tillader indsamling af ophavsretligt beskyttet indhold til ikke-kommerciel forskning."
+    },
+    "es": {
+      "title": "LAION lanza un enorme conjunto de datos de video abierto con 10 millones de horas de grabaciones para investigación en IA",
+      "summary": "Resumen generado por IA: LAION ha lanzado su Big Video Dataset (BVD), que comprende 80 millones de videos y 10 millones de horas de grabaciones para investigación en IA, con modelos entrenados en BVD que superan los puntos de referencia anteriores hasta en 2.1 puntos porcentuales. El lanzamiento del conjunto de datos está respaldado por una sentencia judicial de Hamburgo de 2024 que permite la recopilación de contenido protegido por derechos de autor para investigación no comercial."
+    },
+    "translatedAt": "2026-08-30T12:03:18.024Z"
+  },
+  "6c9e24885d70cac4": {
+    "da": {
+      "title": "Enterprise AIs reelle risiko er ikke autonome agenter. Det er kompleksiteten mellem dem.",
+      "summary": "Artiklen fremhæver, at den primære risiko ved enterprise AI ikke er de autonome agenter i sig selv, men de komplekse interaktioner mellem flere agenter, der opererer i indviklede systemer, som er svære at overvåge og styre. Denne kompleksitet udgør betydelige udfordringer, når virksomheder implementerer mange sammenkoblede agenter på tværs af applikationer, der ikke oprindeligt er designet til maskinbeslutninger."
+    },
+    "es": {
+      "title": "El verdadero riesgo de la IA empresarial no son los agentes autónomos. Es la complejidad entre ellos.",
+      "summary": "El artículo destaca que el riesgo principal en la IA empresarial no son los agentes autónomos en sí, sino las complejas interacciones entre múltiples agentes que operan dentro de sistemas intrincados difíciles de supervisar y gobernar. Esta complejidad plantea desafíos significativos a medida que las empresas despliegan numerosos agentes interconectados en aplicaciones no diseñadas originalmente para la toma de decisiones automatizada."
+    },
+    "translatedAt": "2026-08-30T12:03:18.024Z"
+  },
+  "f156dc17d0dfa48e": {
+    "da": {
+      "title": "CrowdStrike har den bedste dag nogensinde, Oktas aktie stiger næsten 29% efter stigende AI-trussel løfter indtjeningen",
+      "summary": "AI-genereret resumé: Stigende AI-relaterede trusler har øget kundernes udgifter til cybersikkerhedsløsninger, hvilket har ført til rekordindtjening for CrowdStrike og en næsten 29% stigning i Oktas aktie, ifølge CNBC Technology den 27. august 2026."
+    },
+    "es": {
+      "title": "CrowdStrike registra su mejor día, las acciones de Okta suben casi un 29% mientras la amenaza creciente de IA impulsa las ganancias",
+      "summary": "Resumen generado por IA: Las crecientes amenazas relacionadas con IA han impulsado un aumento en el gasto de los clientes en soluciones de ciberseguridad, lo que ha llevado a ganancias récord para CrowdStrike y un aumento de casi el 29% en las acciones de Okta, según CNBC Technology el 27 de agosto de 2026."
+    },
+    "translatedAt": "2026-08-30T12:03:18.024Z"
+  },
+  "fc28e45807b9e2b5": {
+    "da": {
+      "title": "AI’s hukommelsesknaphed rammer Android-apps",
+      "summary": "AI-genereret resumé: Google indfører nye begrænsninger for hukommelsesbrug på Android-apps på grund af hardwaremangel forårsaget af AI-datacentre, hvilket kan betyde, at billigere telefoner får mindre hukommelse. Denne udvikling understreger AI-infrastrukturens indvirkning på mobile enheders ressourcer."
+    },
+    "es": {
+      "title": "La crisis de memoria de la IA llega a las apps de Android",
+      "summary": "Resumen generado por IA: Google está imponiendo nuevos límites de uso de memoria en las apps de Android debido a la escasez de hardware causada por los centros de datos de IA, lo que podría resultar en que los teléfonos más económicos tengan menos memoria. Este desarrollo destaca el impacto de la infraestructura de IA en los recursos de los dispositivos móviles."
+    },
+    "translatedAt": "2026-08-30T12:03:21.617Z"
+  },
+  "cb604c92ef8ad7b2": {
+    "da": {
+      "title": "Anthropic og OpenAI deltager på AI-scenen ved TechCrunch Disrupt 2026",
+      "summary": "AI-genereret resumé: På TechCrunch Disrupt 2026 vender AI-scenen, præsenteret af Google for Startups, tilbage med fokus på det mest fremtrædende emne i AI-fællesskabet med deltagelse fra Anthropic og OpenAI."
+    },
+    "es": {
+      "title": "Anthropic y OpenAI se unen al escenario de IA en TechCrunch Disrupt 2026",
+      "summary": "Resumen generado por IA: En TechCrunch Disrupt 2026, el Escenario de IA, presentado por Google for Startups, regresa para centrarse en el tema más destacado de la comunidad de IA, con la participación de Anthropic y OpenAI."
+    },
+    "translatedAt": "2026-08-30T12:03:21.617Z"
+  },
+  "82ea72603515c634": {
+    "da": {
+      "title": "Williams-Sonoma omsætning fra AI-assistent vokser 620 % i 2. kvartal",
+      "summary": "AI-genereret resumé: Williams-Sonoma Inc. rapporterede en nettoomsætningsstigning på 6,7 % år-til-år i finansielt 2. kvartal, drevet delvist af en 620 % vækst i omsætning fra sin AI-drevne shoppingassistent, Otto, som findes på Pottery Barns hjemmeside trods et stillestående boligmarked."
+    },
+    "es": {
+      "title": "Ingresos de Williams-Sonoma por asistente de IA crecen un 620 % en el segundo trimestre",
+      "summary": "Resumen generado por IA: Williams-Sonoma Inc. reportó un aumento interanual del 6,7 % en ingresos netos en el segundo trimestre fiscal, impulsado en parte por un crecimiento del 620 % en ingresos de su asistente de compras con IA, Otto, presente en el sitio web de Pottery Barn a pesar de un mercado inmobiliario estancado."
+    },
+    "translatedAt": "2026-08-30T12:03:21.617Z"
+  },
+  "e6c5150dba0a9862": {
+    "da": {
+      "title": "Opbygning af en succesfuld betalingsstrategi: Hvordan ISOs og ISVs kan skabe skalerbar vækst sammen",
+      "summary": "AI-genereret resumé: Artiklen diskuterer, hvordan Independent Sales Organizations (ISOs) og Independent Software Vendors (ISVs) kan samarbejde om at skabe skalerbar vækst i den hurtigt udviklende betalingsbranche, hvor over 90 % af små virksomheder i USA nu bruger ISV-løsninger til betalingstjenester."
+    },
+    "es": {
+      "title": "Construyendo una estrategia de pagos exitosa: Cómo ISOs e ISVs pueden impulsar un crecimiento escalable juntos",
+      "summary": "Resumen generado por IA: El artículo analiza cómo las Independent Sales Organizations (ISOs) y los Independent Software Vendors (ISVs) pueden colaborar para impulsar un crecimiento escalable en la industria de pagos en rápida evolución, donde más del 90 % de las pequeñas empresas en EE. UU. ahora dependen de soluciones ISV para servicios de pago."
+    },
+    "translatedAt": "2026-08-30T12:03:21.617Z"
+  },
+  "a9a004d125ce2131": {
+    "da": {
+      "title": "Povison omfavner AI-trafikhenvisninger, planlægger stigning gennem ferien",
+      "summary": "AI-genereret resumé: Møbelhandleren Povison ser AI-drevne trafikhenvisninger som en betydelig vækstmulighed, med besøg på siden, der stiger hurtigere end forventet, hvilket får virksomheden til at integrere AI-søgning og generative teknologier inden feriesæsonen."
+    },
+    "es": {
+      "title": "Povison adopta referencias de tráfico con IA, planea aumento durante las fiestas",
+      "summary": "Resumen generado por IA: El minorista de muebles Povison considera las referencias de tráfico impulsadas por IA como una oportunidad significativa de crecimiento, con visitas al sitio aumentando más rápido de lo esperado, lo que lleva a la empresa a integrar tecnologías de búsqueda y generación con IA antes de la temporada navideña."
+    },
+    "translatedAt": "2026-08-30T12:03:21.617Z"
+  },
+  "07536116a0f4491e": {
+    "da": {
+      "title": "Webpersonaliserering og Ecommerce-konvertering: Hvad der virkelig gør en forskel",
+      "summary": "Denne AI-genererede opsummering: Artiklen forklarer, at effektiv webpersonaliserering i ecommerce kræver målretning mod specifikke funnel-trin og indtægtstab frem for at stole på generiske værktøjer som hjemmesidekaruseller, der har begrænset effekt på konvertering og indtægtsgenvinding."
+    },
+    "es": {
+      "title": "Personalización web y conversión en Ecommerce: Lo que realmente mueve la aguja",
+      "summary": "Este resumen generado por IA: El artículo explica que la personalización web efectiva en ecommerce requiere enfocarse en etapas específicas del embudo y fugas de ingresos en lugar de depender de herramientas genéricas como los carruseles de la página principal, que tienen un impacto limitado en la conversión y recuperación de ingresos."
+    },
+    "translatedAt": "2026-08-30T12:03:24.751Z"
+  },
+  "159fa8ac02973002": {
+    "da": {
+      "title": "Bath & Body Works e-handel vender tilbage til vækst",
+      "summary": "AI-genereret resumé: Bath & Body Works' e-handelssegment er vendt tilbage til vækst, og detailhandleren forventer fortsatte gevinster i anden halvdel af 2026 og ind i 2027."
+    },
+    "es": {
+      "title": "El comercio electrónico de Bath & Body Works vuelve a crecer",
+      "summary": "Resumen generado por IA: El segmento de comercio electrónico de Bath & Body Works ha vuelto a crecer, y el minorista anticipa ganancias continuas durante la segunda mitad de 2026 y hasta 2027."
+    },
+    "translatedAt": "2026-08-30T12:03:24.751Z"
+  },
+  "29306b4bf07c7e90": {
+    "da": {
+      "title": "Bidragsmargin Vejleder Ecommerce Vækst",
+      "summary": "AI-genereret resumé: Artiklen \"Contribution Margin Guides Ecommerce Growth\" fra Practical Ecommerce (2026-08-27) fremhæver, at en forhandlers travleste højsæson ikke nødvendigvis er den mest profitable, og understreger vigtigheden af bidragsmargin i at styre ecommerce-vækst."
+    },
+    "es": {
+      "title": "El Margen de Contribución Guía el Crecimiento del Comercio Electrónico",
+      "summary": "Resumen generado por IA: El artículo \"Contribution Margin Guides Ecommerce Growth\" de Practical Ecommerce (2026-08-27) destaca que la temporada festiva más ocupada de un comerciante no es necesariamente la más rentable, enfatizando la importancia del margen de contribución para guiar el crecimiento del comercio electrónico."
+    },
+    "translatedAt": "2026-08-30T12:03:24.751Z"
+  },
+  "73c6418dde2f7fd0": {
+    "da": {
+      "title": "BK Beauty satser igen på TikTok Shop",
+      "summary": "AI-genereret resumé: BK Beauty har efter en kort pause på TikTok Shop genbekræftet sit engagement på platformen efter den indledende succes. Dette understreger brandets fortsatte fokus på e-handel og detailteknologi."
+    },
+    "es": {
+      "title": "BK Beauty refuerza su apuesta en TikTok Shop",
+      "summary": "Resumen generado por IA: BK Beauty, tras una breve pausa en TikTok Shop, se ha comprometido nuevamente con la plataforma tras su éxito inicial. Este movimiento destaca el enfoque continuo de la marca en el comercio electrónico y la tecnología minorista."
+    },
+    "translatedAt": "2026-08-30T12:03:24.751Z"
+  },
+  "fa691e857bd41c13": {
+    "da": {
+      "title": "Genbrug bliver førstevalg for shoppere, da efterspørgslen på vintage stiger 432%: The RealReal",
+      "summary": "AI-genereret resumé: Ifølge Luxury Dailys rapport den 25. august 2026 viser The RealReals årlige data en stigning på 432% i efterspørgslen på vintage luksus, med årtispecifikke søgninger op 135% år-til-år, især for 2000'er mode og Phoebe Philo-era Celine."
+    },
+    "es": {
+      "title": "La reventa se convierte en la primera opción para compradores mientras la demanda de vintage sube un 432%: The RealReal",
+      "summary": "Resumen generado por IA: Según el informe de Luxury Daily del 25 de agosto de 2026, los datos anuales de The RealReal revelan un aumento del 432% en la demanda de lujo vintage, con búsquedas específicas por década que suben un 135% interanual, especialmente para la moda de los 2000 y la era Phoebe Philo de Celine."
+    },
+    "translatedAt": "2026-08-30T12:03:24.751Z"
+  },
+  "50a30d011fe1bd72": {
+    "da": {
+      "title": "Nike udnævner tidligere Foot Locker supply chain-chef som Converse COO",
+      "summary": "AI-genereret resumé: Nike har udnævnt Kristin Bauer, tidligere Foot Locker supply chain-chef, som ny COO for Converse med tiltrædelse den 14. september hos det udfordrede brand."
+    },
+    "es": {
+      "title": "Nike nombra a la exjefa de cadena de suministro de Foot Locker como COO de Converse",
+      "summary": "Resumen generado por IA: Nike ha nombrado a Kristin Bauer, exjefa de cadena de suministro de Foot Locker, como nueva COO de Converse, con inicio de funciones el 14 de septiembre en la marca en dificultades."
+    },
+    "translatedAt": "2026-08-30T12:03:28.168Z"
+  },
+  "85eebf29aa843705": {
+    "da": {
+      "title": "Nye designere vinder frem på luksusmarkedet for genbrug",
+      "summary": "AI-genereret resumé: Ifølge en ny rapport fra The RealReal er secondhand-købere i stigende grad interesserede i indie luksusmærker som Zankov, Heirlome og Rùadh, hvilket fremhæver den voksende fremgang for nye designere på luksusmarkedet for genbrug."
+    },
+    "es": {
+      "title": "Diseñadores emergentes ganan impulso en el mercado de reventa de lujo",
+      "summary": "Resumen generado por IA: Según un nuevo informe de The RealReal, los compradores de segunda mano están cada vez más interesados en marcas de lujo independientes como Zankov, Heirlome y Rùadh, destacando el creciente impulso de los diseñadores emergentes en el mercado de reventa de lujo."
+    },
+    "translatedAt": "2026-08-30T12:03:28.168Z"
+  },
+  "1604451a773f5fe3": {
+    "da": {
+      "title": "Kan modebranchen klare varmen?",
+      "summary": "AI-genereret resumé: Artiklen fra Drapers den 28. august 2026 undersøger, hvordan modeforhandlere og leverandører tilpasser deres produkter og indkøbsplaner til længere og varmere somre."
+    },
+    "es": {
+      "title": "¿Puede el comercio de moda soportar el calor?",
+      "summary": "Resumen generado por IA: El artículo de Drapers del 28 de agosto de 2026 explora cómo los minoristas y proveedores de moda están ajustando sus productos y calendarios de compra para adaptarse a veranos cada vez más largos y calurosos."
+    },
+    "translatedAt": "2026-08-30T12:03:28.168Z"
+  },
+  "0c40d78845fe21ad": {
+    "da": {
+      "title": "Mød Meta-alumnerne (og søstrene), der omskriver brands' community management playbooks",
+      "summary": "AI-genereret resumé: I Fashionista-artiklen \"Meet the Meta Alums (and Sisters) Rewriting Brands' Community Management Playbooks\" diskuterer Nectar Social medstiftere Misbah og Farah Uraizee strategier for mode- og skønhedsbrands til bedre at udnytte AI i community management."
+    },
+    "es": {
+      "title": "Conoce a las ex Meta (y hermanas) que están reescribiendo los manuales de gestión comunitaria de las marcas",
+      "summary": "Resumen generado por IA: En el artículo de Fashionista \"Meet the Meta Alums (and Sisters) Rewriting Brands' Community Management Playbooks\", las cofundadoras de Nectar Social, Misbah y Farah Uraizee, discuten estrategias para que las marcas de moda y belleza aprovechen mejor la IA en la gestión comunitaria."
+    },
+    "translatedAt": "2026-08-30T12:03:28.168Z"
+  },
+  "2b2c8af6422157dc": {
+    "da": {
+      "title": "Foster + Partners designer detailpodium for at fremhæve \"præcision og modernitet\" hos Norton Motorcycles",
+      "summary": "AI-genereret resumé: Foster + Partners har skabt et showroom-koncept for Norton Motorcycles med slanke metalstativer, der fremviser motorcyklerne som skulpturer, i tråd med brandets rebranding for at understrege ingeniørarv og modernitet."
+    },
+    "es": {
+      "title": "Foster + Partners diseña un podio comercial para resaltar la \"precisión y modernidad\" de Norton Motorcycles",
+      "summary": "Resumen generado por IA: Foster + Partners ha creado un concepto de sala de exposición para Norton Motorcycles con elegantes soportes metálicos que exhiben las motos como esculturas, alineándose con los esfuerzos de rebranding de la marca para enfatizar la herencia de ingeniería y la modernidad."
+    },
+    "translatedAt": "2026-08-30T12:03:28.168Z"
+  },
+  "997a295c97c4e927": {
+    "da": {
+      "title": "Sociale medie-influencere iklæder sig iværksætterrollen; lancerer VC-støttede forbrugerbrands",
+      "summary": "AI-genereret resumé: Sociale medie-influencere lancerer i stigende grad deres egne forbrugerbrands og tiltrækker betydelige venturekapitalinvesteringer, hvilket signalerer en ny trend inden for luksus- og forbrugersektoren."
+    },
+    "es": {
+      "title": "Influencers de redes sociales asumen el papel de emprendedores; lanzan marcas de consumo respaldadas por VC",
+      "summary": "Resumen generado por IA: Los influencers de redes sociales están lanzando cada vez más sus propias marcas de consumo, atrayendo una inversión significativa de capital de riesgo, lo que señala una nueva tendencia en el sector de lujo y consumo."
+    },
+    "translatedAt": "2026-08-30T12:03:31.567Z"
+  },
+  "6d237299c165bbc8": {
+    "da": {
+      "title": "Guld, Flyvninger, Kryptovaluta: USA Lover at Gå Efter Mere End Irans Olie",
+      "summary": "AI-genereret resumé: USA har lovet at indføre sanktioner mod lande eller enheder involveret i Irans guld, digitale aktiver, luftfart, skibsfart og teknologisektorer og udvider dermed fokus ud over kun iransk olie. Dette skridt har betydelige konsekvenser for smykkeindustrien og relaterede markeder."
+    },
+    "es": {
+      "title": "Oro, Vuelos, Criptomonedas: EE.UU. Promete Ir Más Allá del Petróleo de Irán",
+      "summary": "Resumen generado por IA: Estados Unidos se ha comprometido a imponer sanciones a países o entidades involucradas con el oro, activos digitales, aviación, transporte marítimo y sectores tecnológicos de Irán, ampliando su enfoque más allá del petróleo iraní. Esta medida tiene importantes implicaciones para la industria de la joyería y mercados relacionados."
+    },
+    "translatedAt": "2026-08-30T12:03:31.567Z"
+  },
+  "6eec6c5d76f57699": {
+    "da": {
+      "title": "Smykkeforhandler rost for at redde ældre kvinde fra svindler",
+      "summary": "AI-genereret resumé: En smykkeforhandler blev rost for deres årvågenhed i at redde en ældre kvinde fra en guldbedrageri, hvilket fremhæver en positiv hændelse i smykkeindustrien."
+    },
+    "es": {
+      "title": "Joyero elogiado por salvar a una mujer mayor de un estafador",
+      "summary": "Resumen generado por IA: Un joyero fue elogiado por su vigilancia al salvar a una mujer mayor de una estafa de oro, destacando un incidente positivo dentro de la industria de la joyería."
+    },
+    "translatedAt": "2026-08-30T12:03:31.567Z"
+  },
+  "29eca84e02372650": {
+    "da": {
+      "title": "Børn reddet fra smykkeproduktionsvirksomhed",
+      "summary": "AI-genereret resumé: Myndigheder i Indien har reddet 13 børn fra en fabrik, der fremstiller imitationssmykker, hvilket fremhæver bekymringer inden for smykkeindustrien."
+    },
+    "es": {
+      "title": "Niños rescatados de una operación de fabricación de joyería",
+      "summary": "Resumen generado por IA: Las autoridades en India han rescatado a 13 niños de una fábrica dedicada a la fabricación de joyería de imitación, destacando preocupaciones dentro de la industria de la joyería."
+    },
+    "translatedAt": "2026-08-30T12:03:31.567Z"
+  },
+  "07a6730f81d10068": {
+    "da": {
+      "title": "‘Super clone’ ure udgør en ny udfordring for luksusurindustrien",
+      "summary": "AI-genereret resumé: En nylig rapport i Jeweller - Business News (2026-08-24) fremhæver den voksende sofistikering af ”super clone” falske luksusure, hvilket udgør en ny udfordring for smykkeindustrien."
+    },
+    "es": {
+      "title": "Los relojes ‘super clone’ representan un nuevo desafío para la industria de relojes de lujo",
+      "summary": "Resumen generado por IA: Un informe reciente en Jeweller - Business News (2026-08-24) destaca la creciente sofisticación de los relojes de lujo falsificados “super clone”, planteando un nuevo desafío para la industria de la joyería."
+    },
+    "translatedAt": "2026-08-30T12:03:31.567Z"
+  },
+  "e735bcaf5615f011": {
+    "da": {
+      "title": "GIA og Gübelin Gem Lab bekræfter Etiopien som ny kilde til Paraíba turmalin",
+      "summary": "AI-genereret resumé: Uafhængige undersøgelser fra GIA og Gübelin Gem Lab har bekræftet Etiopien som en ny kilde til kobberholdig Paraíba turmalin med en unik kemisk signatur, der adskiller sig fra kendte kilder i Brasilien, Mozambique og Nigeria."
+    },
+    "es": {
+      "title": "GIA y Gübelin Gem Lab confirman a Etiopía como nueva fuente de turmalina Paraíba",
+      "summary": "Resumen generado por IA: Investigaciones independientes de GIA y Gübelin Gem Lab han confirmado a Etiopía como una nueva fuente de turmalina Paraíba con cobre, identificando una firma química única distinta a las fuentes conocidas en Brasil, Mozambique y Nigeria."
+    },
+    "translatedAt": "2026-08-30T12:03:35.445Z"
+  },
+  "8e5a7d8d50379dec": {
+    "da": {
+      "title": "Anmeldelse: Ressence Type 11 Ur Er En Tematisk Genstart For Det Innovative Urmærke",
+      "summary": "AI-genereret resumé: Anmeldelsen af Ressence Type 11 uret roser mærkets omfattende hjemmeside for dens detaljerede information om uret og dets teknologi, og fremhæver en tematisk genstart for det innovative urmærke."
+    },
+    "es": {
+      "title": "Reseña: El Reloj Ressence Type 11 Es Un Reinicio Temático Para La Marca Innovadora De Relojería",
+      "summary": "Resumen generado por IA: La reseña del reloj Ressence Type 11 elogia el sitio web completo de la marca por su información detallada sobre el reloj y su tecnología, destacando un reinicio temático para la marca innovadora de relojería."
+    },
+    "translatedAt": "2026-08-30T12:03:35.445Z"
+  },
+  "ec4c71a319e94da5": {
+    "da": {
+      "title": "Hands-On Med Chanels High-End Herre J12 Golden Black Ceramic 42mm Ur",
+      "summary": "AI-genereret resumé: Artiklen giver en førstehånds anmeldelse af Chanels nye high-end herre J12 Golden Black Ceramic 42mm ur, en del af den nyligt introducerede maskuline J12-kollektion afsløret i 2026. Den afspejler forfatterens oplevelse med at mødes med Chanel og undersøge urene ud over de første indtryk."
+    },
+    "es": {
+      "title": "Manos a la obra con el reloj Chanel J12 Golden Black Ceramic 42mm para hombres de alta gama",
+      "summary": "Resumen generado por IA: El artículo ofrece una reseña de primera mano del nuevo reloj para hombres J12 Golden Black Ceramic 42mm de alta gama de Chanel, parte de la colección masculina J12 presentada en 2026. Refleja la experiencia del autor al reunirse con Chanel y examinar los relojes más allá de las primeras impresiones."
+    },
+    "translatedAt": "2026-08-30T12:03:35.445Z"
   }
 }

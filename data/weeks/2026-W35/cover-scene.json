@@ -1,0 +1,16 @@
+{
+  "concept": "gold-bar-bread-slicer-metaphor",
+  "primaryHumorDriver": "literal metaphor",
+  "secondaryEnhancer": "unexpected texture/material combination",
+  "sceneDescription": "A photorealistic supermarket bakery counter displays an absurd scene: a shiny gold bar, perfectly sized and shaped to match a standard loaf of bread, is halfway placed in a commercial bread slicer. Stacked beside it are slices of gold, with a few ordinary bread slices mixed in, as if someone is carelessly interchanging high and low value. A sleek, modern kitchen assistant gadget sits off to the side with a subtle Digital Commerce 360 logo sticker, while a small shopping bag in the background features a Payments Journal logo. A toy airplane and a shiny Bitcoin token are tucked among the bread baskets, hinting at flights and cryptocurrency. The lighting is natural and bright, with all elements sitting on a speckled beige bakery counter. The scene is absurd yet believable, using object swaps and value confusion to represent AI-driven commerce, payment strategy, and new sanctions on gold and crypto.",
+  "finalImagePrompt": "A shiny gold bar, shaped like a loaf of bread, sits halfway inside a commercial bread slicer on a beige bakery counter. Slices of gold and regular bread are stacked together, some overlapping. A modern kitchen assistant gadget with a small sticker is nearby. A toy airplane and a shiny Bitcoin token are nestled among bread baskets in the background. A shopping bag with a subtle logo sits off to the side.",
+  "negativePrompt": [
+    "text, letters, numbers, signage, labels, price tags",
+    "screens, UI, dashboards, holograms, floating icons",
+    "watermarks, unrelated brand logos",
+    "cartoon, illustration, CGI, 3D render, anime",
+    "diamond, diamonds, gemstone, gemstones, precious stones, jewelry close-up, jewelry product shot, diamond ring, diamond necklace, diamond earring, jeweled, sparkling gemstone",
+    "dramatic spotlight, glowing edges, rim lighting, vignette, cinematic color grade, blurred background, bokeh"
+  ],
+  "confidence": 0.89
+}

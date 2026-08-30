@@ -1,0 +1,76 @@
+{
+  "digestWeek": "2026-W35",
+  "ingestionWeek": "2026-W35",
+  "startedAt": "2026-08-30T11:42:33.082Z",
+  "finishedAt": "2026-08-30T12:06:17.923Z",
+  "steps": [
+    {
+      "name": "rss",
+      "ok": true,
+      "startedAt": "2026-08-30T11:42:33.102Z",
+      "finishedAt": "2026-08-30T11:43:00.825Z"
+    },
+    {
+      "name": "pages",
+      "ok": true,
+      "startedAt": "2026-08-30T11:43:00.825Z",
+      "finishedAt": "2026-08-30T11:43:02.857Z"
+    },
+    {
+      "name": "discovery",
+      "ok": true,
+      "startedAt": "2026-08-30T11:43:02.858Z",
+      "finishedAt": "2026-08-30T12:00:53.131Z"
+    },
+    {
+      "name": "classification",
+      "ok": true,
+      "startedAt": "2026-08-30T12:00:53.132Z",
+      "finishedAt": "2026-08-30T12:00:53.268Z"
+    },
+    {
+      "name": "digest",
+      "ok": true,
+      "startedAt": "2026-08-30T12:00:53.269Z",
+      "finishedAt": "2026-08-30T12:03:38.562Z"
+    },
+    {
+      "name": "email",
+      "ok": true,
+      "startedAt": "2026-08-30T12:03:38.562Z",
+      "finishedAt": "2026-08-30T12:04:05.450Z"
+    },
+    {
+      "name": "podcast",
+      "ok": true,
+      "startedAt": "2026-08-30T12:04:05.450Z",
+      "finishedAt": "2026-08-30T12:04:59.022Z"
+    },
+    {
+      "name": "cover",
+      "ok": true,
+      "startedAt": "2026-08-30T12:04:59.022Z",
+      "finishedAt": "2026-08-30T12:05:57.844Z"
+    },
+    {
+      "name": "competitorAnalyze",
+      "ok": true,
+      "startedAt": "2026-08-30T12:05:57.844Z",
+      "finishedAt": "2026-08-30T12:06:17.921Z"
+    }
+  ],
+  "health": {
+    "warnings": [
+      "AI & Strategy: techcrunch.com represents 42.9% (3/7) - exceeds 40% threshold",
+      "Jewellery Industry: www.jewellermagazine.com represents 42.9% (3/7) - exceeds 40% threshold"
+    ],
+    "metrics": {
+      "paywallPercent": 0,
+      "podcastWordCount": 2233
+    }
+  },
+  "versions": {
+    "node": "v20.20.2",
+    "gitCommit": "8a60fe5c74959333f50b727bebf946dca1a8b3b8"
+  }
+}
