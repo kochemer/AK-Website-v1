@@ -1,17 +1,23 @@
 {
-  "generatedAt": "2026-09-06T10:56:15.052Z",
+  "generatedAt": "2026-09-06T17:34:35.071Z",
   "weekLabel": "2026-W36",
-  "briefing": [],
+  "briefing": [
+    "Luxury brands are increasingly blending heritage craftsmanship with contemporary innovation, as seen in Signet, Tiffany & Co., Cartier, and Bulgari’s efforts to modernize classic designs and expand experiential offerings to engage younger, style-conscious consumers.",
+    "There is a notable shift toward integrating technology and data-driven personalization in customer engagement, highlighted by Monica Vinader’s AI initiatives and Pandora’s designer collaborations aimed at refreshing product appeal and deepening consumer connections.",
+    "Cross-category collaborations and lifestyle positioning are gaining traction, with Mejuri leveraging athlete partnerships to emphasize functional luxury and Bulgari expanding into experiential hospitality, reflecting a broader trend of brands extending beyond traditional jewelry into holistic luxury experiences.",
+    "The high-end watch segment remains a critical area of innovation and prestige, with Cartier, Van Cleef & Arpels, and Bulgari investing heavily in horological advancements and talent development to capture emerging collector demographics and reinforce technical leadership.",
+    "Market dynamics are influenced by significant ownership and operational shifts, exemplified by De Beers’ potential sale and mine closures, underscoring ongoing industry consolidation and the importance of maintaining market stability amid geopolitical and economic uncertainties."
+  ],
   "brands": {
     "signet": {
-      "narrative": "",
+      "narrative": "Signet Jewelers is currently positioning itself as a heritage brand evolving through contemporary design innovation, exemplified by its recent acquisition of New York Fashion Week brand assets and the launch of the Ingrid Ring featuring a modern reinterpretation of the classic signet style with an Australian sapphire centerpiece. This signals a strategic shift to blend traditional craftsmanship with fashion-forward aesthetics, aiming to capture younger, style-conscious consumers while reinforcing its relevance in a competitive luxury market.",
       "financials": {
         "ticker": "SIG",
         "parentName": "Signet Jewelers",
         "price": 85.3,
         "currency": "USD",
         "change1w": 0.22,
-        "fetchedAt": "2026-09-06T10:56:14.631Z",
+        "fetchedAt": "2026-09-06T17:34:34.019Z",
         "priceHistory": [
           {
             "date": "2022-02-22",
@@ -4573,22 +4579,22 @@
       "financials": null
     },
     "mejuri": {
-      "narrative": "",
+      "narrative": "Mejuri is positioning itself at the intersection of fine jewelry and active luxury by collaborating with high-profile athletes, such as Wimbledon players, to validate the durability and versatility of its collections in dynamic, real-world settings. This approach signals a strategic move to appeal to a new luxury consumer who values both craftsmanship and functional elegance, challenging traditional notions of fine jewelry as purely ornamental.",
       "financials": null
     },
     "monica-vinader": {
-      "narrative": "",
+      "narrative": "Monica Vinader is positioning itself at the forefront of integrating AI-driven technologies to enhance customer engagement and loyalty within the luxury jewelry sector. By participating in industry dialogues on agentic commerce, the brand signals a strategic commitment to leveraging data and personalized shopping experiences as a means to differentiate itself in an increasingly digital and competitive market. This move reflects a broader shift toward blending craftsmanship with technological innovation to meet evolving consumer expectations.",
       "financials": null
     },
     "tiffany": {
-      "narrative": "",
+      "narrative": "Tiffany & Co. is actively reinforcing its heritage and craftsmanship while expanding its global presence through culturally resonant collaborations and flagship openings. By restoring historic artifacts like the 1893 Astronomical Clock and drawing on archival designs such as the Jean Schlumberger solitaire, the brand underscores its legacy, even as it experiments with innovative retail experiences exemplified by the Estúdio Campana-designed pop-up in São Paulo. This dual focus on tradition and contemporary cultural engagement positions Tiffany as both a custodian of timeless luxury and a dynamic player in diverse international markets.",
       "financials": {
         "ticker": "MC.PA",
         "parentName": "LVMH",
         "price": 429.1,
         "currency": "EUR",
         "change1w": -3.65,
-        "fetchedAt": "2026-09-06T10:56:14.856Z",
+        "fetchedAt": "2026-09-06T17:34:34.551Z",
         "priceHistory": [
           {
             "date": "2022-02-21",
@@ -9230,14 +9236,14 @@
       }
     },
     "cartier": {
-      "narrative": "",
+      "narrative": "Cartier is positioning itself at the intersection of heritage and innovation by reinforcing its stature in both high jewellery and collectible watch markets, as evidenced by record auction results and a major museum exhibition. Simultaneously, the brand is investing in the future of horology through initiatives like the Cartier Prize for Watchmaking Talents, signaling a strategic commitment to nurturing craftsmanship while capitalizing on rising global demand, particularly among younger and more diverse collectors.",
       "financials": {
         "ticker": "CFR.SW",
         "parentName": "Richemont",
         "price": 185.45,
         "currency": "CHF",
         "change1w": -3.87,
-        "fetchedAt": "2026-09-06T10:56:14.741Z",
+        "fetchedAt": "2026-09-06T17:34:34.281Z",
         "priceHistory": [
           {
             "date": "2022-02-21",
@@ -13791,18 +13797,18 @@
       }
     },
     "de-beers": {
-      "narrative": "",
+      "narrative": "De Beers is navigating a pivotal transition as its parent company Anglo American moves toward a potential $1 billion sale of the diamond giant, with former CEO Gareth Penny emerging as the leading buyer amid geopolitical complications limiting other bidders. Concurrently, De Beers is emphasizing industry cohesion and market stability, highlighting that natural diamond demand remains resilient post-pandemic despite operational shifts such as the planned closure of the Voorspoed mine. This positions the company at a crossroads between legacy asset rationalization and strategic ownership change, underscoring a focus on sustaining market confidence during uncertain times.",
       "financials": null
     },
     "bulgari": {
-      "narrative": "",
+      "narrative": "Bulgari is positioning itself at the intersection of heritage craftsmanship and innovation, leveraging its vertically integrated watchmaking capabilities to push technical boundaries in ultra-thin movements while simultaneously expanding its lifestyle footprint through experiential ventures like the revamped Milan hotel dining concept. This dual focus reflects a strategic effort to deepen brand relevance by marrying product excellence with curated luxury experiences, signaling an adaptive approach amid a competitive and evolving luxury market landscape.",
       "financials": {
         "ticker": "MC.PA",
         "parentName": "LVMH",
         "price": 429.1,
         "currency": "EUR",
         "change1w": -3.65,
-        "fetchedAt": "2026-09-06T10:56:14.856Z",
+        "fetchedAt": "2026-09-06T17:34:34.551Z",
         "priceHistory": [
           {
             "date": "2022-02-21",
@@ -18444,14 +18450,14 @@
       }
     },
     "van-cleef": {
-      "narrative": "",
+      "narrative": "Van Cleef & Arpels is reinforcing its identity as a storyteller that bridges heritage and innovation, exemplified by its recent Fascinating Egypt collection which draws on ancient motifs to deepen its artisanal narrative. Concurrently, the brand is advancing its horological expertise through the expansion of its Poetic Complications line, integrating mechanical sophistication with artistic expression to differentiate itself within Richemont’s portfolio. This dual focus on cultural legacy and technical innovation, alongside strategic geographic expansion such as its Madrid boutique, positions Van Cleef & Arpels to strengthen its foothold in both high jewellery and watchmaking markets amid intensifying luxury competition.",
       "financials": {
         "ticker": "CFR.SW",
         "parentName": "Richemont",
         "price": 185.45,
         "currency": "CHF",
         "change1w": -3.87,
-        "fetchedAt": "2026-09-06T10:56:14.741Z",
+        "fetchedAt": "2026-09-06T17:34:34.281Z",
         "priceHistory": [
           {
             "date": "2022-02-21",
@@ -23005,14 +23011,14 @@
       }
     },
     "pandora": {
-      "narrative": "",
+      "narrative": "Pandora is repositioning itself by deepening its creative innovation through an annual designer collaboration program, signaling a strategic shift toward refreshed product offerings that appeal to evolving consumer tastes. Concurrently, the brand is leveraging high-profile partnerships and selective luxury events to engage younger, more discerning customers, while managing legacy legal challenges and expanding its retail footprint to stabilize growth amid market pressures. This dual focus on creative renewal and targeted market expansion reflects Pandora’s effort to balance heritage with contemporary relevance in a competitive luxury landscape.",
       "financials": {
         "ticker": "PNDORA.CO",
         "parentName": "Pandora A/S",
         "price": 846.6,
         "currency": "DKK",
         "change1w": -0.21,
-        "fetchedAt": "2026-09-06T10:56:14.948Z",
+        "fetchedAt": "2026-09-06T17:34:34.814Z",
         "priceHistory": [
           {
             "date": "2022-02-21",

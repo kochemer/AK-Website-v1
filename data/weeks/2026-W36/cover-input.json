@@ -1,0 +1,28 @@
+{
+  "weekLabel": "2026-W36",
+  "homepageTopArticles": [
+    {
+      "title": "How AI is powering Target’s back-to-school push",
+      "source": "Retail Dive",
+      "snippet": "The mass retailer is utilizing AI for wish lists and recommended actions on its e-commerce site, Target’s senior vice president of technology told Retail Dive.",
+      "aiSummary": "AI-generated summary: According to Target’s senior vice president of technology, the retailer is leveraging AI to enhance its e-commerce site by creating wish lists and providing recommended actions as part of its back-to-school strategy."
+    },
+    {
+      "title": "New Ecommerce Tools: September 2, 2026",
+      "source": "Practical Ecommerce",
+      "snippet": "This week's rollouts include tools for payments, shipping, affiliate marketing, CRMs, supply chain, merchant-of-record services, and more.\nThe post New Ecommerce Tools: September 2, 2026 appeared first on Practical Ecommerce.",
+      "aiSummary": "AI-generated summary: The article from Practical Ecommerce dated September 2, 2026, highlights new ecommerce tools launched this week, covering areas such as payments, shipping, affiliate marketing, CRMs, supply chain, and merchant-of-record services."
+    },
+    {
+      "title": "$1 billion: Another massive milestone in sight for Lovisa",
+      "source": "Jeweller - Business News",
+      "snippet": "Australian fashion jewellery chain Lovisa has continued its relentless international expansion and reported double-digit sales growth for the past financial year.",
+      "aiSummary": "AI-generated summary: Australian fashion jewellery chain Lovisa has achieved double-digit sales growth in the past financial year, driven by its ongoing international expansion, bringing it closer to a $1 billion milestone."
+    }
+  ],
+  "model": "gpt-image-1",
+  "finalPrompt": "Photograph: A grocery store checkout belt with an open metal lunchbox containing a gold watch, a barcode scanner, and colorful sticky notes. Next to the lunchbox, an apple, a pile of payment terminal receipts, and a reusable shopping bag with small, incidental brand tags. The setting is a bright, realistic supermarket with natural product photography lighting.\n\nCRITICAL CONSTRAINTS (must be strictly avoided):\n- text, letters, numbers, signage, labels, price tags, screens, UI, dashboards, holograms, floating icons, watermarks, unrelated brand logos, cartoon, illustration, CGI, 3D render, anime, diamond, diamonds, gemstone, gemstones, precious stones, jewelry close-up, jewelry product shot, diamond ring, diamond necklace, diamond earring, jeweled, sparkling gemstone, dramatic spotlight, glowing edges, rim lighting, vignette, cinematic color grade, blurred background, bokeh\n\nThis must look like a real photograph taken by a human — not AI-generated, not CGI, not a 3D render. Natural light. Real objects. Real imperfections. Fill the entire frame edge to edge with the scene — no black bars, no empty space at the edges.\n\nDo not include: text, labels, signage, screens, UI, logos unrelated to the scene, diamonds, gemstones, CGI lighting, dramatic spotlights, or blurred vignette backgrounds.",
+  "imageSize": "1536x1024",
+  "outputPath": "/weekly-images/2026-W36.png",
+  "generatedAt": "2026-09-06T17:34:16.292Z"
+}

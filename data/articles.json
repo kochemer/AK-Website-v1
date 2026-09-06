@@ -253558,7 +253558,8 @@
     "published_at": "2026-09-05T13:55:08.000Z",
     "ingested_at": "2026-09-06T10:42:05.943Z",
     "snippet": "EU Ambassador to the United States Jovita Neliupšienė joins Bloomberg This Weekend and discusses with hosts Christina Ruffini and Jeff Mason that Europe must keep supporting Ukraine while applying “maximum pressure” on Moscow because Russia has not changed its war aims. The comments come as US envoys Steve Witkoff and Jared Kushner visit Moscow before heading to Kyiv in an effort to revive stalled peace negotiations. (Source: Bloomberg)",
-    "sourceType": "rss"
+    "sourceType": "rss",
+    "signalTag": "Controversy"
   },
   {
     "id": "dnyg7h",
@@ -256228,7 +256229,8 @@
     "ingested_at": "2026-09-06T10:42:05.943Z",
     "snippet": "The hotel group is replacing its Milan dining concept with shared plates and tableside trolley service.",
     "sourceType": "rss",
-    "categoryHint": "Fashion & Luxury"
+    "categoryHint": "Fashion & Luxury",
+    "signalTag": "Expansion"
   },
   {
     "id": "6b39fj",
@@ -257966,7 +257968,8 @@
     "ingested_at": "2026-09-06T10:42:05.943Z",
     "snippet": "Thieves have struck a museum in Austria and escaped with a Van Cleef & Arpels diamond necklace of historical significance, valued at more than $6 million.",
     "sourceType": "rss",
-    "categoryHint": "Jewellery Industry"
+    "categoryHint": "Jewellery Industry",
+    "signalTag": "Controversy"
   },
   {
     "id": "9lr20d",
@@ -258109,7 +258112,8 @@
     "ingested_at": "2026-09-06T10:42:05.943Z",
     "snippet": "At this point in time, the global community of watch enthusiasts is well aware of Bulgari’s successful transformation into a vertically integrated watch manufacture, one that takes full creative advantage of operating its own case, bracelet, dial, and movement production facilities in Switzerland. Likewise, its 10 world records in ultra-thin watchmaking have sufficed to amaze […]\nThe post Bulgari Octo Finissimo Dual Time x Vianney Halter Watch Opens New Boundaries appeared first on aBlogtoWatch.",
     "sourceType": "rss",
-    "categoryHint": "Jewellery Industry"
+    "categoryHint": "Jewellery Industry",
+    "signalTag": "Launch"
   },
   {
     "id": "vt19kp",
@@ -260483,5 +260487,906 @@
     "published_at": "2026-09-06T10:42:27.008Z",
     "ingested_at": "2026-09-06T10:42:27.008Z",
     "sourceType": "page"
+  },
+  {
+    "id": "e8c4z0",
+    "title": "Was Huawei’s rise built on crime? A Brooklyn jury will decide  ",
+    "url": "https://www.ft.com/content/9422805f-519c-4b22-839c-cbd7a6464f07?syn-25a6b1a6=1",
+    "source": "Financial Times - Technology",
+    "published_at": "2026-09-06T12:00:02.000Z",
+    "ingested_at": "2026-09-06T17:10:28.656Z",
+    "snippet": "Five years after finance chief Meng Wanzhou’s release from detention in Canada, the company itself is going on trial",
+    "sourceType": "rss"
+  },
+  {
+    "id": "gv1ulx",
+    "title": "Pointed! Bloomberg's Weekly News Quiz For Risk-Takers",
+    "url": "https://www.bloomberg.com/news/videos/2026-09-06/pointed-bloomberg-s-weekly-news-quiz-for-risk-takers-video",
+    "source": "Bloomberg - Technology",
+    "published_at": "2026-09-06T15:14:58.000Z",
+    "ingested_at": "2026-09-06T17:10:28.656Z",
+    "snippet": "Pointed offers a strategic twist to the news quiz format, testing not just players’ knowledge of the news but also their confidence in their answers. Join Bloomberg's Lisa Mateo, Christina Ruffini, and Jeff Mason as they play and check out the quiz for yourself at Bloomberg.com (Source: Bloomberg)",
+    "sourceType": "rss"
+  },
+  {
+    "id": "51556z",
+    "title": "NBA Hits Clippers With Historic Penalties",
+    "url": "https://www.bloomberg.com/news/videos/2026-09-06/nba-hits-clippers-with-historic-penalties-video",
+    "source": "Bloomberg - Technology",
+    "published_at": "2026-09-06T15:09:13.000Z",
+    "ingested_at": "2026-09-06T17:10:28.656Z",
+    "snippet": "The NBA fined the Los Angeles Clippers $30 million and stripped the franchise of five first-round draft picks after an independent investigation found the team circumvented salary-cap rules by facilitating off-court income opportunities for Kawhi Leonard. Bloomberg News Senior Sports Reporter Randall Williams joins Christina Ruffini and Jeff Mason on Bloomberg This Weekend and explains that owner Steve Ballmer was also suspended for a year, while Leonard was fined $700,000 in one of the league’s...",
+    "sourceType": "rss"
+  },
+  {
+    "id": "xntivy",
+    "title": "Rep. Stevens Says Canadian Tariffs Are Squeezing Michigan",
+    "url": "https://www.bloomberg.com/news/videos/2026-09-06/rep-stevens-says-tariffs-are-squeezing-michigan-video",
+    "source": "Bloomberg - Technology",
+    "published_at": "2026-09-06T14:44:06.000Z",
+    "ingested_at": "2026-09-06T17:10:28.656Z",
+    "snippet": "On Bloomberg This Weekend, Michigan Representative Haley Stevens (D) says escalating US tariffs on Canadian goods are raising costs and creating uncertainty for manufacturers in her district, with the deeply integrated auto supply chain particularly exposed. Stevens tells hosts Christina Ruffini and Jeff Mason that she is promoting legislation that would provide households with as much as $1,700 to offset tariff-related costs, while criticizing the Trump administration’s approach to trade with C...",
+    "sourceType": "rss"
+  },
+  {
+    "id": "sejmg0",
+    "title": "British Food Is Having a US Moment",
+    "url": "https://www.bloomberg.com/news/videos/2026-09-06/british-food-is-having-a-us-moment-video",
+    "source": "Bloomberg - Technology",
+    "published_at": "2026-09-06T14:35:31.000Z",
+    "ingested_at": "2026-09-06T17:10:28.656Z",
+    "snippet": "British food is enjoying new popularity in the US, with a wave of pub-inspired restaurants drawing crowds with traditional dishes served in more modern settings. Bloomberg Pursuits Contributing Restaurant Columnist Oliver Guy and Anchor of Daybreak Europe Caroline Hepker sit down with Christina Ruffini and Jeff Mason on Bloomberg This Weekend and say social media, travel and demand for affordable comfort food are helping fuel the trend, with New York’s Dean’s among the restaurants putting classi...",
+    "sourceType": "rss"
+  },
+  {
+    "id": "8b6lmy",
+    "title": "USS Lincoln Sailors Describe Toll of Deployment",
+    "url": "https://www.bloomberg.com/news/videos/2026-09-06/uss-lincoln-sailors-describe-toll-of-deployment-video",
+    "source": "Bloomberg - Technology",
+    "published_at": "2026-09-06T13:52:11.000Z",
+    "ingested_at": "2026-09-06T17:10:28.656Z",
+    "snippet": "The USS Abraham Lincoln’s crew received a long-awaited port visit in Thailand after a 286-day deployment that included a modern-era record of 264 consecutive days at sea and months of combat operations in the Middle East. Joining Bloomberg This Weekend is Bloomberg News Southeast Asia Reporter Philip Heijmans who recently returned from Thailand and says sailors described food shortages, limited communications with family and uncertainty over their return, while many also expressed pride in their...",
+    "sourceType": "rss"
+  },
+  {
+    "id": "ltmblz",
+    "title": "US Races to Boost Missile Interceptor Output",
+    "url": "https://www.bloomberg.com/news/videos/2026-09-06/us-races-to-boost-missile-interceptor-output-video",
+    "source": "Bloomberg - Technology",
+    "published_at": "2026-09-06T13:25:01.000Z",
+    "ingested_at": "2026-09-06T17:10:28.656Z",
+    "snippet": "The US retains significant munitions capacity for operations against Iran, but stocks of sophisticated interceptors missiles have come under greater pressure. Bloomberg Intelligence Senior Defense Analyst Col. Wayne Sanders tells  tells Christina Ruffini and Jeff Mason on Bloomberg This Weekend that manufacturers are being pushed to sharply increase production, a process complicated by sprawling supply chains and concerns about preserving advanced weapons for other potential conflicts. (Source: ...",
+    "sourceType": "rss"
+  },
+  {
+    "id": "dt6p2d",
+    "title": "Trump Says Canada’s Dollar ‘Imbalance’ With US Is Unacceptable",
+    "url": "https://www.bloomberg.com/news/articles/2026-09-06/trump-says-canada-s-dollar-imbalance-with-us-is-unacceptable",
+    "source": "Bloomberg - Technology",
+    "published_at": "2026-09-06T13:22:20.000Z",
+    "ingested_at": "2026-09-06T17:10:28.656Z",
+    "snippet": "“Canada’s (currency) Dollar imbalance with the U.S. is unacceptable,” President Donald Trump says in a Truth Social post.",
+    "sourceType": "rss"
+  },
+  {
+    "id": "41269n",
+    "title": "By The Way: Headlines You May Have Missed",
+    "url": "https://www.bloomberg.com/news/videos/2026-09-06/by-the-way-headlines-you-may-have-missed-video",
+    "source": "Bloomberg - Technology",
+    "published_at": "2026-09-06T13:09:36.000Z",
+    "ingested_at": "2026-09-06T17:10:28.656Z",
+    "snippet": "Taylor Swift and Travis Kelce settling in Ohio, parents teaching teens to invest, what happened to yoga classes, and baseball dogs: Watch Lisa Mateo, Christina Ruffini and Jeff Mason talk about headlines from this week you may have missed on Bloomberg This Weekend! (Source: Bloomberg)",
+    "sourceType": "rss"
+  },
+  {
+    "id": "ziid07",
+    "title": "US Envoys Test New Opening in Ukraine Talks",
+    "url": "https://www.bloomberg.com/news/videos/2026-09-06/us-envoys-test-new-opening-in-ukraine-talks-video",
+    "source": "Bloomberg - Technology",
+    "published_at": "2026-09-06T12:55:36.000Z",
+    "ingested_at": "2026-09-06T17:10:28.656Z",
+    "snippet": "US envoys Steve Witkoff and Jared Kushner arrived in Kyiv for their first official visit to Ukraine after more than three hours of talks with Russian President Vladimir Putin in Moscow produced no announced breakthrough. Joining Bloomberg This Weekend, Bloomberg News Chief Europe Correspondent Oliver Crook says the renewed US effort comes as Ukraine’s deeper strikes into Russia have altered the dynamics of the conflict, while European governments are watching the diplomacy with cautious optimism...",
+    "sourceType": "rss",
+    "signalTag": "Controversy"
+  },
+  {
+    "id": "khcc6i",
+    "title": "Afghan Deportations Fuel Humanitarian Strain",
+    "url": "https://www.bloomberg.com/news/videos/2026-09-06/afghan-deportations-fuel-humanitarian-strain-video",
+    "source": "Bloomberg - Technology",
+    "published_at": "2026-09-06T12:55:31.000Z",
+    "ingested_at": "2026-09-06T17:10:28.656Z",
+    "snippet": "Millions of Afghans have returned from Pakistan and Iran in recent years, including many who had never lived in Afghanistan, as both Pakistan and Iran step up deportations. BBC Chief International Correspondent Lyse Doucet is on Bloomberg This Weekend and says women and girls face an especially stark transition under Taliban restrictions that bar them from secondary and university education and many jobs. (Source: Bloomberg)",
+    "sourceType": "rss"
+  },
+  {
+    "id": "5lkcoh",
+    "title": "Canada Hits Back With New US Tariffs",
+    "url": "https://www.bloomberg.com/news/videos/2026-09-06/canada-hits-back-with-new-us-tariffs-video",
+    "source": "Bloomberg - Technology",
+    "published_at": "2026-09-06T12:38:01.000Z",
+    "ingested_at": "2026-09-06T17:10:28.656Z",
+    "snippet": "Canada is set to impose new retaliatory tariffs of as much as 50% on US goods starting Sept. 8, targeting $27.6 billion of imports including steel, aluminum, pulp and paper, appliances and agricultural equipment. Bloomberg News Ottawa Bureau Chief Brian Platt tells Christina Ruffini and Jeff Mason on Bloomberg This Weekend that the broader economic impact may be limited, but businesses tied to integrated supply chains, tourism and cross-border commerce could face sharper consequences as the cycl...",
+    "sourceType": "rss"
+  },
+  {
+    "id": "955mu7",
+    "title": "BlackRock to JPMorgan Bet on EM as Turmoil Seizes Global Bonds",
+    "url": "https://www.bloomberg.com/news/articles/2026-09-06/blackrock-to-jpmorgan-bet-on-em-as-turmoil-seizes-global-bonds",
+    "source": "Bloomberg - Technology",
+    "published_at": "2026-09-06T12:30:00.000Z",
+    "ingested_at": "2026-09-06T17:10:28.656Z",
+    "snippet": "As government bonds from major economies buckle, funds including those run by JPMorgan Asset Management and BlackRock Inc. have found an unlikely edge in emerging markets.",
+    "sourceType": "rss"
+  },
+  {
+    "id": "rfxxbp",
+    "title": "US Iran Fight Shifts to Economic Endurance",
+    "url": "https://www.bloomberg.com/news/videos/2026-09-06/us-iran-fight-shifts-to-economic-endurance-video",
+    "source": "Bloomberg - Technology",
+    "published_at": "2026-09-06T11:54:03.000Z",
+    "ingested_at": "2026-09-06T17:10:28.656Z",
+    "snippet": "The Trump administration is intensifying economic pressure on Iran through sanctions and a blockade, with Treasury Secretary Scott Bessent saying Tehran has about 30 million barrels of crude left for potential Chinese buyers. Bloomberg News Middle East Reporter Dan Williams joins Christina Ruffini and Jeff Mason on Bloomberg This Weekend and says the strategy also amounts to a test of endurance, as Washington seeks to outlast Tehran while managing its relationship with China and domestic politic...",
+    "sourceType": "rss"
+  },
+  {
+    "id": "uk4tib",
+    "title": "OPEC+ Sticks With Plan to Keep Oil Output Quotas Unchanged",
+    "url": "https://www.bloomberg.com/news/articles/2026-09-06/opec-sticks-with-plan-to-keep-oil-production-quotas-unchanged",
+    "source": "Bloomberg - Technology",
+    "published_at": "2026-09-06T11:25:47.000Z",
+    "ingested_at": "2026-09-06T17:10:28.656Z",
+    "snippet": "Major OPEC+ nations stuck with their plan to keep oil production quotas unchanged, while the Iran war continues to shutter vast swathes of output in the Middle East.",
+    "sourceType": "rss"
+  },
+  {
+    "id": "595sss",
+    "title": "AI agents keep finding ways to bend the rules. Here are some of the wildest.",
+    "url": "https://www.businessinsider.com/ai-agents-rogue-strategies-cheating-lying-german-wiki-openai-anthropic-2026-9",
+    "source": "Business Insider - Tech",
+    "published_at": "2026-09-06T17:05:25.000Z",
+    "ingested_at": "2026-09-06T17:10:28.656Z",
+    "snippet": "AI agents are employing novel methods to break into the internet and evade detection.\nSmith Collection/Gado/Getty Images\n\nAI is transforming the world and freaking everyone out.\nSome worry that it'll replace jobs. Others worry it'll wrest control from humans and act badly.\nRecent activity by AI agents belonging to the big AI labs is not helping.\n\nTwo AI agents walk into a bar. One says to the other: \"OH MY GOD! There is a shared message board.\"\nDespite sounding like a bad joke (and maybe it is),...",
+    "sourceType": "rss"
+  },
+  {
+    "id": "krz95p",
+    "title": "I've lived in New England my whole life. There's one Rhode Island town that I love visiting in the fall.",
+    "url": "https://www.businessinsider.com/best-rhode-island-town-visit-fall-middletown-what-to-do-2026-9",
+    "source": "Business Insider - Tech",
+    "published_at": "2026-09-06T16:51:01.000Z",
+    "ingested_at": "2026-09-06T17:10:28.656Z",
+    "snippet": "Middletown is lovely in the summer, but I like to visit in the fall.\nWard DeWitt/Getty Images\n\nAs a Rhode Island local, my favorite town to visit in the autumn months is Middletown.\nThis lesser-known spot is home to a cute local farm and pretty beaches that feel cozier in the fall.\nI always like to end a day trip at a beloved local vineyard that hosts an annual harvest festival.\n\nAs the summer crowds slowly begin to fade and the trees turn fiery shades of red, orange, and yellow, fall in New Eng...",
+    "sourceType": "rss"
+  },
+  {
+    "id": "umhg1y",
+    "title": "I left my 3-year-old at home for a weeklong cruise with my parents. It reminded me I'm still their daughter, too.",
+    "url": "https://www.businessinsider.com/mom-left-toddler-home-trip-with-aging-parents-2026-9",
+    "source": "Business Insider - Tech",
+    "published_at": "2026-09-06T15:53:01.000Z",
+    "ingested_at": "2026-09-06T17:10:28.656Z",
+    "snippet": "The author left her toddler at home to travel with her parents.\nCourtesy of the author\n\nI live in Denmark, while my parents live across the Atlantic in Connecticut.\nMost of our visits now revolve around my 3-year-old son and their role as grandparents.\nTraveling without him gave me rare time to simply be my parents' daughter again.\n\nAt our first dinner on Hurtigruten's MS Trollfjord, my parents and I spent most of the meal imagining what my 3-year-old son would have thought.\nAksel would have pic...",
+    "sourceType": "rss"
+  },
+  {
+    "id": "p60qoo",
+    "title": "I left Austin for NYC 7 years ago. Here are 9 things I still miss about my old life, and 3 reminders of why I moved.",
+    "url": "https://www.businessinsider.com/moving-from-austin-to-new-york-city-pros-cons-2026-9",
+    "source": "Business Insider - Tech",
+    "published_at": "2026-09-06T15:36:02.000Z",
+    "ingested_at": "2026-09-06T17:10:28.656Z",
+    "snippet": "Business Insider reporter Joey Hadden lived in Austin for six years before relocating to New York City.\nJoey Hadden/Business Insider\n\nWhen I was in Austin, I dreamed of living in New York.\nI made that vision a reality seven years ago when I moved to NYC.\nI still think about my life in Texas. There's a lot I miss, and a few things I'm glad I left behind.\n\nIt's been just over seven years since I kissed my mom goodbye to start my career across the country, and I still think about the life I left be...",
+    "sourceType": "rss"
+  },
+  {
+    "id": "sunmzk",
+    "title": "US Marines are training to jam enemy drones before they can reach US amphibious assault ships",
+    "url": "https://www.businessinsider.com/marines-training-jam-drones-before-they-can-reach-navy-ships-2026-9",
+    "source": "Business Insider - Tech",
+    "published_at": "2026-09-06T13:50:24.000Z",
+    "ingested_at": "2026-09-06T17:10:28.656Z",
+    "snippet": "Marines assigned to the 13th Marine Expeditionary Unit operate a Light Marine Air-Defense Integrated System (L-MADIS) during defense of the amphibious task force training aboard an amphibious assault ship.\nU.S. Marine Corps photo by Lance Cpl. Fernando Cruz Martinez\n\nMarines with the 13th MEU trained aboard an amphibious warship to detect and jam hostile drones.\nTheir upgraded L-MADIS system can disrupt a drone's control link.\nThe system's passive sensors can help Marines detect drones without r...",
+    "sourceType": "rss"
+  },
+  {
+    "id": "2ua99a",
+    "title": "I've made this easy, dietitian-approved meal for years. It's got protein and fiber — and the leftovers make great lunches.",
+    "url": "https://www.businessinsider.com/easy-meal-skillet-recipe-protein-fiber-dietitian-approved-leftovers-2026-9",
+    "source": "Business Insider - Tech",
+    "published_at": "2026-09-06T12:48:01.000Z",
+    "ingested_at": "2026-09-06T17:10:28.656Z",
+    "snippet": "My favorite meal takes about 30 minutes to make and is packed with enough protein and fiber to keep me satisfied.\nSavannah Born\n\nOne of my go-to dinner recipes is a skillet with beef and sweet potato that's really easy to make.\nThe dietitian-approved dish has enough fiber and protein to keep me satisfied long after eating it.\nIt's great left over and is easy to customize with different meats, produce, and flavors.\n\nI'm an early riser who works full-time, so by dinner, my brainpower is at a catas...",
+    "sourceType": "rss"
+  },
+  {
+    "id": "4wx61v",
+    "title": "A trip to South Africa showed me a side of my adult son I'd been too busy to notice",
+    "url": "https://www.businessinsider.com/african-safari-trip-with-parent-adult-child-multigenerational-travel-2026-9",
+    "source": "Business Insider - Tech",
+    "published_at": "2026-09-06T12:17:01.000Z",
+    "ingested_at": "2026-09-06T17:10:28.656Z",
+    "snippet": "The author said she got to see a different side of her son when they traveled together to Africa.\nCourtesy of Jennifer McGuire.\n\nI've always been the planner and decider in my family. On a recent trip, someone else did the work.\nBeing with my adult son one-on-one on a trip that I didn't plan allowed me to see a new side of him.\nConnecting with my son as an adult in a magical destination was priceless to me. \n\nThe sky was still ink black where we were in South Africa. My son Ben and I grabbed our...",
+    "sourceType": "rss"
+  },
+  {
+    "id": "jwhcew",
+    "title": "I named the main character in my first novel after my foster brother. I wanted him to know he was never temporary.",
+    "url": "https://www.businessinsider.com/foster-brother-sibling-named-character-novel-after-him-2026-9",
+    "source": "Business Insider - Tech",
+    "published_at": "2026-09-06T12:03:01.000Z",
+    "ingested_at": "2026-09-06T17:10:28.656Z",
+    "snippet": "The author named the main character in her first novel after her foster brother, Nathaniel.\nCourtesy of Kris Ann Valdez\n\nWhen my parents became foster parents, Nathaniel and his sisters were our first placement.\nHe only lived with us for two years, but we stayed close long after he left our home.\nI named the main character in my novel after him to show him he'd always been my brother.\n\nI was 10 years old when my parents decided to become foster parents. I was 28, married, and with a child of my ...",
+    "sourceType": "rss"
+  },
+  {
+    "id": "45sgvh",
+    "title": "My college-age son is independent and self-sufficient. I owe it all to traveling with him when he was young.",
+    "url": "https://www.businessinsider.com/independent-son-traveled-often-kid-2026-9",
+    "source": "Business Insider - Tech",
+    "published_at": "2026-09-06T11:07:01.000Z",
+    "ingested_at": "2026-09-06T17:10:28.656Z",
+    "snippet": "The author traveled with her son since he was a kid.\nCourtesy of Erika Ebsworth-Goold\n\nMy husband and I traveled with our son around the world since he was 8 months old.\nIt wasn't always easy, but my son had access to a variety of people and cultures.\nI believe traveling with him has helped him become an independent and self-sufficient college kid.\n\nMy toddler son wasn't sure what to make of the situation.\nWe'd just finished touring Costa Rica's Manuel Antonio National Park, and were strolling t...",
+    "sourceType": "rss"
+  },
+  {
+    "id": "xnqobj",
+    "title": "Boox’s tiny Picco e-reader should land in November",
+    "url": "https://www.theverge.com/tech/990895/boox-picco-tiny-e-reader-november-ifa",
+    "source": "The Verge",
+    "published_at": "2026-09-06T16:28:58.000Z",
+    "ingested_at": "2026-09-06T17:10:28.656Z",
+    "snippet": "Boox teased the Picco, its take on the buzzy Xteink X4 e-reader, back in July, but provided almost no details. Now, thanks to some reporting out of IFA, we've got a bit more info, though sadly still no price. Unlike the Xteink devices, the Picco will not have magnets on the back for attaching to a phone. The 3.97-inch e-paper display, however, will be touchscreen, which The Verge's Andrew Liszewski called a \"welcome upgrade\" on the X4 Pro. The Picco has physical page-turn buttons, and they can b...",
+    "sourceType": "rss"
+  },
+  {
+    "id": "fajj8p",
+    "title": "The Fairphone 6 Plus is the midrange phone we desperately needed",
+    "url": "https://www.theverge.com/tech/990436/fairphone-6-plus-review",
+    "source": "The Verge",
+    "published_at": "2026-09-06T13:00:00.000Z",
+    "ingested_at": "2026-09-06T17:10:28.656Z",
+    "snippet": "Repairability rules.\t\n\nThe Fairphone 6 Plus feels like an extremely average midrange Android phone and I couldn't be more thrilled.\nThe mission has always been admirable. Fairphone seeks out ethically sourced materials and offers a high degree of repairability for its devices. But the phones themselves required a lot of sacrifices, like putting up with underpowered processors and bad cameras, in order to embrace the sustainability mission. The latest generations of Fairphone have inched toward c...",
+    "sourceType": "rss"
+  },
+  {
+    "id": "h22l14",
+    "title": "Competitive Pokémon is on phones now, but you still need a Switch to become a champion",
+    "url": "https://www.theverge.com/games/990691/competitive-pokemon-champions-mobile-tournament-accessibility",
+    "source": "The Verge",
+    "published_at": "2026-09-06T13:00:00.000Z",
+    "ingested_at": "2026-09-06T17:10:28.656Z",
+    "snippet": "To get started with competitive Pokémon battles, all you need is your phone. But to compete at the highest level, like at the Pokémon World Championships, you're going to need a Switch. And there doesn't seem to be a good reason why.\nBattle simulator Pokémon Champions originally launched on the Switch and Switch 2 in April, with the mobile version following in June. The experience is nearly identical across the game's versions; since it's cross-platform, the choice really comes down to what devi...",
+    "sourceType": "rss"
+  },
+  {
+    "id": "gfy3g5",
+    "title": "DIY plug-in solar gains momentum in the US",
+    "url": "https://www.theverge.com/column/990183/diy-plug-in-solar-us",
+    "source": "The Verge",
+    "published_at": "2026-09-06T12:00:00.000Z",
+    "ingested_at": "2026-09-06T17:10:28.656Z",
+    "snippet": "EcoFlow’s high-end, weatherproof, plug-in solar kit with integrated battery. | Image: EcoFlow\t\n\nThis is The Stepback, a weekly newsletter breaking down one essential story from the tech world. For more on e-bikes, power stations, and how to work anywhere, follow Thomas Ricker. The Stepback arrives in our subscribers' inboxes at 8AM ET. Opt in for The Stepback here.\nHow it started\nWith a deep breath, I took the cable seething with 800W of solar power and plugged it directly into a standard wall j...",
+    "sourceType": "rss"
+  },
+  {
+    "id": "vhk65d",
+    "title": "Uncanny and unappetizing: appetites spoil as AI images take over food menus",
+    "url": "https://www.theguardian.com/technology/2026/sep/06/ai-food-menu-images",
+    "source": "The Guardian - Technology",
+    "published_at": "2026-09-06T13:00:06.000Z",
+    "ingested_at": "2026-09-06T17:10:28.656Z",
+    "snippet": "Consumers are increasingly encountering AI-generated images on food menus such as leathery meat and bread resembling reptile skin\nDuring a recent lunch break, Jill Sennett saw something so unappetizing she had to share it with her 26,000 X followers: Artificial intelligence-generated menu images from a Jamaican barbecue pop-up restaurant in which the meats looked like leather belts crawling with tiny beetles.\nThe images were reshared by more than 500 people who similarly expressed their disgust....",
+    "sourceType": "rss"
+  },
+  {
+    "id": "6x4x2k",
+    "title": "Ninja Artisan electric pizza oven review: so good it might even convert the purists",
+    "url": "https://www.theguardian.com/thefilter/2026/sep/06/ninja-artisan-electric-pizza-oven-review",
+    "source": "The Guardian - Technology",
+    "published_at": "2026-09-06T11:00:04.000Z",
+    "ingested_at": "2026-09-06T17:10:28.656Z",
+    "snippet": "Affordable, fast-heating and with a clever air fryer function, this versatile model is a winner for outdoor cooks who are willing to give up the traditional flame\n• The best pizza ovens – tested\n• Gozney Dome Gen 2 pizza oven review\nAn electric pizza oven with no flame and no need to rotate the pizza may seem sacrilegious to purists, but the Ninja Artisan electric outdoor pizza oven solves many of the hassles of outdoor pizza making. There’s no lighting or monitoring a flame, no need to keep adj...",
+    "sourceType": "rss"
+  },
+  {
+    "id": "nwiz2y",
+    "title": "I’m a father of three who studies the impact of artificial intelligence: this is what parents need to know about AI",
+    "url": "https://www.theguardian.com/technology/2026/sep/06/daniel-susskind-father-studies-ai-artificial-intelligence-what-parents-need-know",
+    "source": "The Guardian - Technology",
+    "published_at": "2026-09-06T11:00:03.000Z",
+    "ingested_at": "2026-09-06T17:10:28.656Z",
+    "snippet": "A Dr Seuss-style story written in seconds alerted me to the power – and perils – of the technology. But how can children embrace it without forgetting core skills?\nWhen I was growing up, my dad and I often talked about a story we wanted to write together. It was called “The Day Nobody Went to Disneyland”. One day, the story goes, the weather is so perfect that everyone in the world decides to stay away from Disneyland because they expect it to be far too busy. But my dad, who has the same though...",
+    "sourceType": "rss"
+  },
+  {
+    "id": "4vfw7",
+    "title": "Piper Serica eyes Rs 180-220 crore deployment across four-six deeptech startups this fiscal ",
+    "url": "https://economictimes.indiatimes.com/tech/funding/with-a-fresh-war-chest-piper-serica-eyes-rs-180-220-crore-deployment-across-four-six-deeptech-startups-this-fiscal/articleshow/133840446.cms",
+    "source": "Economic Times - Technology",
+    "published_at": "2026-09-06T14:21:28.000Z",
+    "ingested_at": "2026-09-06T17:10:28.656Z",
+    "snippet": "The investment firm's new Bharat Tech Fund, a Category II AIF, targeting a corpus of Rs 600 crore, alongside a greenshoe option of Rs 200 crore, has already raised about Rs 400 crore and evaluated around 30-35 startups in the hunt for the next investment, Modi told PTI.",
+    "sourceType": "rss"
+  },
+  {
+    "id": "kwn8n9",
+    "title": "Unicorn NoBroker aims to be profitable in 8-10 months; FY26 revenue crosses Rs 1,000 crore: CEO ",
+    "url": "https://economictimes.indiatimes.com/tech/technology/unicorn-nobroker-aims-to-be-profitable-in-8-10-months-fy26-revenue-crosses-rs-1000-crore-ceo/articleshow/133834814.cms",
+    "source": "Economic Times - Technology",
+    "published_at": "2026-09-06T11:11:00.000Z",
+    "ingested_at": "2026-09-06T17:10:28.656Z",
+    "snippet": "NoBroker.com cofounder and CEO Amit Kumar Agarwal said the company's entire focus is currently on becoming profitable, and it is not looking at raising funds from its investors or launching an initial public offering (IPO) at this stage.",
+    "sourceType": "rss"
+  },
+  {
+    "id": "kjm2q7",
+    "title": "IPO-bound Rentomojo pins growth on 'hard-to-copy' supply chain moat ",
+    "url": "https://economictimes.indiatimes.com/tech/technology/ipo-bound-rentomojo-pins-growth-on-hard-to-copy-supply-chain-moat/articleshow/133834067.cms",
+    "source": "Economic Times - Technology",
+    "published_at": "2026-09-06T11:00:45.000Z",
+    "ingested_at": "2026-09-06T17:10:28.656Z",
+    "snippet": "Rentomojo’s moat lies in its complex rental model, which combines subscriptions, asset ownership, logistics, collections and refurbishment. With 2.5 lakh active subscribers and strong repeat business, the company is scaling ahead of its Rs 1,255.6 crore IPO, backed by improving profitability and access to credit.",
+    "sourceType": "rss"
+  },
+  {
+    "id": "o3y0mg",
+    "title": "The Race to Own AI Shopping",
+    "url": "https://www.practicalecommerce.com/the-race-to-own-ai-shopping",
+    "source": "Practical Ecommerce",
+    "published_at": "2026-09-06T12:42:25.000Z",
+    "ingested_at": "2026-09-06T17:10:28.656Z",
+    "snippet": "Will shoppers use AI mostly on external platforms, or on-site directly with merchants?\nThe post The Race to Own AI Shopping appeared first on Practical Ecommerce.",
+    "sourceType": "rss"
+  },
+  {
+    "id": "hfny9n",
+    "title": "Influencer effectiveness and KitKat’s social success: Your Marketing Week",
+    "url": "https://www.marketingweek.com/influencer-effectiveness-kitkat-social/",
+    "source": "Marketing Week",
+    "published_at": "2026-09-04T15:42:00.000Z",
+    "ingested_at": "2026-09-06T17:10:28.656Z",
+    "snippet": "At the end of every week, we look at the key stories, offering our view on what they mean for you and the industry. From measuring the impact of influencer marketing to the importance of building long-term equity, it’s been a busy week. Here is my take.\nSource",
+    "sourceType": "rss"
+  },
+  {
+    "id": "wut1le",
+    "title": "AI is coming for your customers and you need to be ready for it",
+    "url": "https://www.marketingweek.com/ai-customers-be-ready/",
+    "source": "Marketing Week",
+    "published_at": "2026-09-04T06:12:00.000Z",
+    "ingested_at": "2026-09-06T17:10:28.656Z",
+    "snippet": "As AI further embeds itself in the buying journey, marketers need to learn how to maintain a strong relationship with their customers or face being left behind.\nSource",
+    "sourceType": "rss"
+  },
+  {
+    "id": "wbn3ss",
+    "title": "‘Look bigger business picture’: Marketers on the push and pull of price promotions",
+    "url": "https://www.marketingweek.com/price-premium-promotional-strategy/",
+    "source": "Marketing Week",
+    "published_at": "2026-09-04T06:00:00.000Z",
+    "ingested_at": "2026-09-06T17:10:28.656Z",
+    "snippet": "With many brands seeking to both maintain their price positioning versus rivals and deploy promotions, the relationship between the two must be carefully considered.\nSource",
+    "sourceType": "rss"
+  },
+  {
+    "id": "lxdl9g",
+    "title": "‘Statement of ambition’: Why Man City Women is rebranding",
+    "url": "https://www.marketingweek.com/man-city-women-rebrand/",
+    "source": "Marketing Week",
+    "published_at": "2026-09-03T08:00:00.000Z",
+    "ingested_at": "2026-09-06T17:10:28.656Z",
+    "snippet": "Manchester City Women's top marketer wants the new branding to reflect the players' ambitions, help “unlock retention” and take the team \"cross culture\".\nSource",
+    "sourceType": "rss"
+  },
+  {
+    "id": "8ou84o",
+    "title": "Should marketers take responsibility over profit? It’s not as simple as it sounds",
+    "url": "https://www.marketingweek.com/marketers-responsibility-profit/",
+    "source": "Marketing Week",
+    "published_at": "2026-09-03T06:03:00.000Z",
+    "ingested_at": "2026-09-06T17:10:28.656Z",
+    "snippet": "No-one would argue that marketers shouldn't care about profit, however, the argument that marketing is being held back by a lack of ownership over P&L neglects to consider how much control they reasonably have over it.\nSource",
+    "sourceType": "rss"
+  },
+  {
+    "id": "rdasv5",
+    "title": "‘A marquee partnership’: Netflix on how its Stella Artois tie-up ‘hit the bullseye’",
+    "url": "https://www.marketingweek.com/netflix-the-gentlemen-ab-inbev/",
+    "source": "Marketing Week",
+    "published_at": "2026-09-03T06:00:00.000Z",
+    "ingested_at": "2026-09-06T17:10:28.656Z",
+    "snippet": "Netflix is taking lessons from years of successful tie-ups into its first multi-market brand collaboration with AB InBev, describing it as the “perfect opportunity” to bring the world of The Gentlemen to life.\nSource",
+    "sourceType": "rss"
+  },
+  {
+    "id": "629d5p",
+    "title": "Sir John Hegarty to headline Festival of Marketing",
+    "url": "https://www.marketingweek.com/sir-john-hegarty-festival-of-marketing/",
+    "source": "Marketing Week",
+    "published_at": "2026-09-03T06:00:00.000Z",
+    "ingested_at": "2026-09-06T17:10:28.656Z",
+    "snippet": "The legendary advertising executive will open Festival of Marketing 2026 with a keynote designed to help marketers raise the bar through creativity at their businesses.\nSource",
+    "sourceType": "rss"
+  },
+  {
+    "id": "ieksrg",
+    "title": "The Week in Tech: Amazon’s ‘secret ad surcharge’ and a digital chocolate bar",
+    "url": "https://www.marketingweek.com/week-in-tech-amazon-digital-chocolate-bar/",
+    "source": "Marketing Week",
+    "published_at": "2026-09-02T13:08:47.000Z",
+    "ingested_at": "2026-09-06T17:10:28.656Z",
+    "snippet": "Marketing Week’s weekly round-up of the technology stories that impact the marketing sector: from AI to martech, regulation to public perceptions.\nSource",
+    "sourceType": "rss"
+  },
+  {
+    "id": "n04o2m",
+    "title": "Sports Direct slams ‘out of touch’ ASA rules after ad banned",
+    "url": "https://www.marketingweek.com/sports-direct-slams-asa/",
+    "source": "Marketing Week",
+    "published_at": "2026-09-02T13:06:33.000Z",
+    "ingested_at": "2026-09-06T17:10:28.656Z",
+    "snippet": "Sports Direct is contesting an ASA ruling that banned one of its adverts over \"misleading\" discount claims linked to recommended retail pricing.\nSource",
+    "sourceType": "rss"
+  },
+  {
+    "id": "1ii9dw",
+    "title": "Marketers must better understand the context of contemporary life – and then aim high with new ideas",
+    "url": "https://www.marketingweek.com/context-aim-high-new-ideas/",
+    "source": "Marketing Week",
+    "published_at": "2026-09-02T06:10:50.000Z",
+    "ingested_at": "2026-09-06T17:10:28.656Z",
+    "snippet": "Genuine breakthrough innovation will only be possible if marketers truly understand the context of contemporary lives, and consider the current limitations of their category.\nSource",
+    "sourceType": "rss"
+  },
+  {
+    "id": "254ni1",
+    "title": "From ‘better for you’ to ‘better than anything’: How Proper Snacks is growing ahead of the category",
+    "url": "https://www.marketingweek.com/proper-snacks-balance-joy-health/",
+    "source": "Marketing Week",
+    "published_at": "2026-09-02T06:00:42.000Z",
+    "ingested_at": "2026-09-06T17:10:28.656Z",
+    "snippet": "With Proper Snacks, which owns the Proper and Eat Real brands, consumers don't have to trade-off between health and joy, says CMO Sandie Dilger, something that is helping it outpace category growth.\nSource",
+    "sourceType": "rss"
+  },
+  {
+    "id": "y4i9q1",
+    "title": "One accountancy firm on its quest to stand out ‘in a sea of navy blue’",
+    "url": "https://www.marketingweek.com/haysmac-rebrand-stand-out/",
+    "source": "Marketing Week",
+    "published_at": "2026-09-01T13:21:02.000Z",
+    "ingested_at": "2026-09-06T17:10:28.656Z",
+    "snippet": "Accountancy firm HaysMac rebranded after realising that its external brand identity had failed to keep pace with its actual growth and ambitions.\nSource",
+    "sourceType": "rss"
+  },
+  {
+    "id": "2scbpq",
+    "title": "Inflation, in-game advertising, performance tracking: 5 interesting stats to start your week",
+    "url": "https://www.marketingweek.com/inflation-in-game-advertising-performance-tracking-5-interesting-stats-to-start-your-week/",
+    "source": "Marketing Week",
+    "published_at": "2026-09-01T12:57:08.000Z",
+    "ingested_at": "2026-09-06T17:10:28.656Z",
+    "snippet": "We arm you with all the stats you need to tackle the week ahead.\nSource",
+    "sourceType": "rss"
+  },
+  {
+    "id": "jxt75d",
+    "title": "The Entertainer owner appoints Craig Inglis as top marketer",
+    "url": "https://www.marketingweek.com/craig-inglis-the-entertainer/",
+    "source": "Marketing Week",
+    "published_at": "2026-09-01T12:10:55.000Z",
+    "ingested_at": "2026-09-06T17:10:28.656Z",
+    "snippet": "Craig Inglis will oversee customer, marketing, licensing and brand-building activity across Teal Group toy brands.\nSource",
+    "sourceType": "rss"
+  },
+  {
+    "id": "yapddr",
+    "title": "‘Long-term value creation’: Marketers on nailing influencer effectiveness",
+    "url": "https://www.marketingweek.com/proving-influencer-marketing-effectiveness/",
+    "source": "Marketing Week",
+    "published_at": "2026-09-01T06:11:42.000Z",
+    "ingested_at": "2026-09-06T17:10:28.656Z",
+    "snippet": "As more spend is invested in influencer marketing, brands are maximising effectiveness by plugging creators into MMM models and setting flexible KPIs.\nSource",
+    "sourceType": "rss"
+  },
+  {
+    "id": "r5hvze",
+    "title": "‘Rebalance brand and performance’: How Guide Dogs’ top marketer is resetting her team for success",
+    "url": "https://www.marketingweek.com/guide-dogs-marketing-priorities/",
+    "source": "Marketing Week",
+    "published_at": "2026-09-01T06:09:55.000Z",
+    "ingested_at": "2026-09-06T17:10:28.656Z",
+    "snippet": "Looking to strengthen fundraising support in a competitive sector, Guide Dogs’ marketing lead is leaning on “emotional connection\" and developing the brand for the modern world while rejigging her team’s priorities.\nSource",
+    "sourceType": "rss"
+  },
+  {
+    "id": "qdzbop",
+    "title": "The Marketing Week Podcast: Carwow CMO Ben Carter on tackling marketing’s ‘confidence crisis’",
+    "url": "https://www.marketingweek.com/the-marketing-week-podcast-carwow-cmo-ben-carter-on-tackling-marketings-confidence-crisis/",
+    "source": "Marketing Week",
+    "published_at": "2026-09-01T06:00:00.000Z",
+    "ingested_at": "2026-09-06T17:10:28.656Z",
+    "snippet": "In the latest episode, Ben Carter offers a rallying cry to the marketing industry to regain its confidence and position itself as a growth engine once more.\nSource",
+    "sourceType": "rss"
+  },
+  {
+    "id": "c1zq1r",
+    "title": "Under half of brands boast ‘well-defined’ effectiveness function",
+    "url": "https://www.marketingweek.com/effectiveness-function-accountability/",
+    "source": "Marketing Week",
+    "published_at": "2026-08-28T06:12:58.000Z",
+    "ingested_at": "2026-09-06T17:10:28.656Z",
+    "snippet": "Marketers are more likely to see delivering effectiveness as everyone’s responsibility, rather than the role of a dedicated team.\nSource",
+    "sourceType": "rss"
+  },
+  {
+    "id": "wty5tr",
+    "title": "A mandate to reclaim iconicity: Inside the new £4m Hovis campaign",
+    "url": "https://www.marketingweek.com/hovis-investment-new-owners/",
+    "source": "Marketing Week",
+    "published_at": "2026-08-28T06:00:56.000Z",
+    "ingested_at": "2026-09-06T17:10:28.656Z",
+    "snippet": "Hovis is launching a £4m campaign designed to 'shore up the core' of the brand, as its new owners signal intent to invest against the backdrop of a declining category.\nSource",
+    "sourceType": "rss"
+  },
+  {
+    "id": "iu2naq",
+    "title": "Meta ties $18bn settlement to action from YouTube and TikTok",
+    "url": "https://www.marketingweek.com/meta-settlement-youtube-tiktok/",
+    "source": "Marketing Week",
+    "published_at": "2026-08-27T08:46:06.000Z",
+    "ingested_at": "2026-09-06T17:10:28.656Z",
+    "snippet": "The social media giant will withhold 30% of the $18bn owed to US states if rivals YouTube and TikTok don’t copy its safety measures and match funding.\nSource",
+    "sourceType": "rss"
+  },
+  {
+    "id": "bg63dz",
+    "title": "Most brands prioritising ‘meaningful effectiveness’, study finds",
+    "url": "https://www.marketingweek.com/most-prioritising-meaningful-effectiveness/",
+    "source": "Marketing Week",
+    "published_at": "2026-08-27T06:02:26.000Z",
+    "ingested_at": "2026-09-06T17:10:28.656Z",
+    "snippet": "While 70% of marketers say their business is focused on effectiveness, almost two thirds are still tasked with delivering cost efficiencies.\nSource",
+    "sourceType": "rss"
+  },
+  {
+    "id": "8378h1",
+    "title": "‘Fundamentals paying off’: What KitKat learnt from going viral",
+    "url": "https://www.marketingweek.com/kitkat-viral-moment-fundamentals/",
+    "source": "Marketing Week",
+    "published_at": "2026-08-27T06:00:33.000Z",
+    "ingested_at": "2026-09-06T17:10:28.656Z",
+    "snippet": "KitKat's viral 'Heist' activity earlier this year came about after the team quickly spotted an opportunity, but was made possible by decades of brand building.\nSource",
+    "sourceType": "rss"
+  },
+  {
+    "id": "bl4hih",
+    "title": "Movement celebrating underrepresented talent hits Europe",
+    "url": "https://www.marketingweek.com/underrepresented-talent-people-like-us/",
+    "source": "Marketing Week",
+    "published_at": "2026-08-26T23:01:33.000Z",
+    "ingested_at": "2026-09-06T17:10:28.656Z",
+    "snippet": "Equality champion People Like Us will host its first event in Amsterdam this October, aimed at kickstarting conversations about workplace equity.\nSource",
+    "sourceType": "rss"
+  },
+  {
+    "id": "bnzpx4",
+    "title": "The Week in Tech: Bill Gates on AI and goodbye GDPR?",
+    "url": "https://www.marketingweek.com/week-in-tech-bill-gates-gdpr/",
+    "source": "Marketing Week",
+    "published_at": "2026-08-26T12:28:44.000Z",
+    "ingested_at": "2026-09-06T17:10:28.656Z",
+    "snippet": "Marketing Week’s weekly round-up of the technology stories that impact the marketing sector: from AI to martech, regulation to public perceptions.\nSource",
+    "sourceType": "rss"
+  },
+  {
+    "id": "g2bqes",
+    "title": "Changing tactics, consistent fundamentals: New effectiveness principles revealed",
+    "url": "https://www.marketingweek.com/effectiveness-consistent-fundamentals/",
+    "source": "Marketing Week",
+    "published_at": "2026-08-26T10:51:52.000Z",
+    "ingested_at": "2026-09-06T17:10:28.656Z",
+    "snippet": "Amid a rapidly changing marketing environment, Ipsos and Effie UK have aimed to create effectiveness principles that brands can \"keep coming back to\".\nSource",
+    "sourceType": "rss"
+  },
+  {
+    "id": "7xk6wy",
+    "title": "How Octopus Energy uses AI to enable better customer experiences",
+    "url": "https://www.marketingweek.com/octopus-energy-ai-customer-experiences/",
+    "source": "Marketing Week",
+    "published_at": "2026-08-26T06:00:02.000Z",
+    "ingested_at": "2026-09-06T17:10:28.656Z",
+    "snippet": "The energy brand uses Arlo, its AI customer assistant tool, to respond to around 4% of incoming emails, freeing up its human advisors to tackle the tough questions.\nSource",
+    "sourceType": "rss"
+  },
+  {
+    "id": "2vgpdm",
+    "title": "‘Building around our philosophy’: Klarna’s outgoing CMO on a decade of expansion",
+    "url": "https://www.marketingweek.com/klarna-cmo-decade-expansion/",
+    "source": "Marketing Week",
+    "published_at": "2026-08-26T06:00:00.000Z",
+    "ingested_at": "2026-09-06T17:10:28.656Z",
+    "snippet": "As Klarna CMO David Sandstrom prepares to depart, he reflects on growth, the relationship with product and going \"too hard\" on performance marketing.\nSource",
+    "sourceType": "rss"
+  },
+  {
+    "id": "8kjk7v",
+    "title": "‘True selling power’: Inside Wild’s ‘performance-first’ influencer strategy",
+    "url": "https://www.marketingweek.com/wild-influencer-marketing-growth/",
+    "source": "Marketing Week",
+    "published_at": "2026-08-25T12:35:57.000Z",
+    "ingested_at": "2026-09-06T17:10:28.656Z",
+    "snippet": "A year after its Unilever acquisition, influencer marketing remains Wild's “biggest growth channel” as the brand looks to offer an “injection of innovation”.\nSource",
+    "sourceType": "rss"
+  },
+  {
+    "id": "j12v3x",
+    "title": "Every budget discussion is an audition for leadership",
+    "url": "https://www.marketingweek.com/budget-audition-for-leadership/",
+    "source": "Marketing Week",
+    "published_at": "2026-08-25T06:00:34.000Z",
+    "ingested_at": "2026-09-06T17:10:28.656Z",
+    "snippet": "Budget season shouldn't just be about defending marketing investment, it is an opportunity to demonstrate a wider business acumen to leadership.\nSource",
+    "sourceType": "rss"
+  },
+  {
+    "id": "faww9o",
+    "title": "‘Affordable indulgence’: The Body Shop’s CMO on getting back to the brand’s ‘DNA’",
+    "url": "https://www.marketingweek.com/body-shop-turnaround-cmo/",
+    "source": "Marketing Week",
+    "published_at": "2026-08-25T06:00:10.000Z",
+    "ingested_at": "2026-09-06T17:10:28.656Z",
+    "snippet": "Following a tricky few years, The Body Shop is looking to future-proof its brand by refining its ethical and affordable positioning for a new generation.\nSource",
+    "sourceType": "rss"
+  },
+  {
+    "id": "ljcit6",
+    "title": "Retail media, unskippable ads, festive planning: 5 interesting stats to start your week",
+    "url": "https://www.marketingweek.com/retail-media-unskippableds-festive-5-interesting-stats/",
+    "source": "Marketing Week",
+    "published_at": "2026-08-24T12:47:01.000Z",
+    "ingested_at": "2026-09-06T17:10:28.656Z",
+    "snippet": "We arm you with all the stats you need to tackle the week ahead.\nSource",
+    "sourceType": "rss"
+  },
+  {
+    "id": "mje32p",
+    "title": "‘Possibilities are endless’: Fanta on its quest to become an ‘entertainment brand’",
+    "url": "https://www.marketingweek.com/fanta-entertainment-platform-halloween/",
+    "source": "Marketing Week",
+    "published_at": "2026-08-24T12:31:52.000Z",
+    "ingested_at": "2026-09-06T17:10:28.656Z",
+    "snippet": "Rather than tapping into Halloween through collaborations, Fanta is aiming to establish a long-term \"entertainment\" platform with its own IP.\nSource",
+    "sourceType": "rss"
+  },
+  {
+    "id": "ilcky9",
+    "title": "Why marketers are making influencers their ‘main brand building channel’",
+    "url": "https://www.marketingweek.com/influencers-brand-building-channel/",
+    "source": "Marketing Week",
+    "published_at": "2026-08-24T06:11:47.000Z",
+    "ingested_at": "2026-09-06T17:10:28.656Z",
+    "snippet": "Keen not to “disappear into the mush”, businesses across the marketing spectrum are making influencers a central part of their brand building mix.\nSource",
+    "sourceType": "rss"
+  },
+  {
+    "id": "z1c0li",
+    "title": "GEO is not SEO and neither of them is marketing",
+    "url": "https://www.marketingweek.com/geo-seo-marketing/",
+    "source": "Marketing Week",
+    "published_at": "2026-08-24T06:05:57.000Z",
+    "ingested_at": "2026-09-06T17:10:28.656Z",
+    "snippet": "Being found by AI is not the same as being chosen by it and those brands that learn that distinction will win in the AI search era.\nSource",
+    "sourceType": "rss"
+  },
+  {
+    "id": "y99sm0",
+    "title": "Cultural zeitgeist and impacting margins: Your Marketing Week",
+    "url": "https://www.marketingweek.com/cultural-zeitgeist-and-impacting-margins-your-marketing-week/",
+    "source": "Marketing Week",
+    "published_at": "2026-08-21T15:30:05.000Z",
+    "ingested_at": "2026-09-06T17:10:28.656Z",
+    "snippet": "At the end of every week, we look at the key stories, offering our view on what they mean for you and the industry. From the folly of chasing fandom to the challenge of impacting profit margins, it’s been a busy week. Here is my take.\nSource",
+    "sourceType": "rss"
+  },
+  {
+    "id": "ui7pxj",
+    "title": "One mobile game on backing brand to negate the ‘performance plateau’",
+    "url": "https://www.marketingweek.com/mobile-game-brand-performance-plateau/",
+    "source": "Marketing Week",
+    "published_at": "2026-08-21T06:00:48.000Z",
+    "ingested_at": "2026-09-06T17:10:28.656Z",
+    "snippet": "Formation Games is introducing brand marketing to its flagship title Club in an effort to boost awareness and make its performance marketing work harder.\nSource",
+    "sourceType": "rss"
+  },
+  {
+    "id": "z77d28",
+    "title": "Klarna CMO: Too many brands ‘drink the Kool-Aid’ on the idea of ‘fandom’",
+    "url": "https://www.marketingweek.com/klarna-cmo-fandom-kool-aid/",
+    "source": "Marketing Week",
+    "published_at": "2026-08-21T06:00:01.000Z",
+    "ingested_at": "2026-09-06T17:10:28.656Z",
+    "snippet": "Brands that talk about driving fandom and being part of pop culture are misguided, says Klarna's CMO, who argues they should focus on being true to themselves.\nSource",
+    "sourceType": "rss"
+  },
+  {
+    "id": "30kltl",
+    "title": "‘Straightforward but optimistic’: One renewable brand on challenging the energy sector",
+    "url": "https://www.marketingweek.com/renewable-good-energy-challenging/",
+    "source": "Marketing Week",
+    "published_at": "2026-08-20T13:05:54.000Z",
+    "ingested_at": "2026-09-06T17:10:28.656Z",
+    "snippet": "Challenger brand Good Energy is aiming to offer green-conscious consumers an alternative in what can be a frustrating sector.\nSource",
+    "sourceType": "rss"
+  },
+  {
+    "id": "iab7qa",
+    "title": "Estée Lauder backs ‘winning playbook’ as 10,000 jobs cut",
+    "url": "https://www.marketingweek.com/estee-lauder-backs-winning-playbook/",
+    "source": "Marketing Week",
+    "published_at": "2026-08-20T08:36:50.000Z",
+    "ingested_at": "2026-09-06T17:10:28.656Z",
+    "snippet": "The beauty giant’s CEO rejected speculation over its talent base following mass job cuts, claiming Estée Lauder has a “winning” recipe for diversified growth.\nSource",
+    "sourceType": "rss"
+  },
+  {
+    "id": "pr38h3",
+    "title": "In B2B the second laugh matters more than the first",
+    "url": "https://www.marketingweek.com/b2b-second-laugh/",
+    "source": "Marketing Week",
+    "published_at": "2026-08-20T06:07:55.000Z",
+    "ingested_at": "2026-09-06T17:10:28.656Z",
+    "snippet": "Too often B2B marketers move on from a creative idea before it has had time to bed in and in doing so forget that a good joke is always retold.\nSource",
+    "sourceType": "rss"
+  },
+  {
+    "id": "q82i0n",
+    "title": "Amanda Seyfried Tries Her Hand at ‘Balletcore’ in Supple Satin Miu Miu Ballet Flats at 2026 Venice Film Festival",
+    "url": "https://wwd.com/footwear-news/shoe-trends/amanda-seyfried-miu-miu-ballet-flats-venice-film-festival-1239199621/",
+    "source": "WWD - Women's Wear Daily",
+    "published_at": "2026-09-06T15:58:38.000Z",
+    "ingested_at": "2026-09-06T17:10:28.656Z",
+    "snippet": "Seyfried has worn multiple Miu Miu designs while at the film festival.",
+    "sourceType": "rss",
+    "categoryHint": "Fashion & Luxury"
+  },
+  {
+    "id": "nx9obu",
+    "title": "Michael Jordan’s Air Jordan 5 Is Finally Coming Out in the Beloved ‘Black Cat’ Colorway After Being Canceled Years Ago",
+    "url": "https://wwd.com/footwear-news/sneaker-news/air-jordan-5-retro-og-black-cat-release-date-1239199614/",
+    "source": "WWD - Women's Wear Daily",
+    "published_at": "2026-09-06T15:47:19.000Z",
+    "ingested_at": "2026-09-06T17:10:28.656Z",
+    "snippet": "The fan-favorite Black Cat style is finally coming to Michael Jordan's fifth signature sneaker.",
+    "sourceType": "rss",
+    "categoryHint": "Fashion & Luxury"
+  },
+  {
+    "id": "qu731d",
+    "title": "Gayle King & Oprah Winfrey Go Matchy-Matchy With Suede Booties in Telluride",
+    "url": "https://wwd.com/footwear-news/shoe-trends/gayle-king-oprah-winfrey-suede-booties-documentary-premiere-1239199610/",
+    "source": "WWD - Women's Wear Daily",
+    "published_at": "2026-09-06T15:21:29.000Z",
+    "ingested_at": "2026-09-06T17:10:28.656Z",
+    "snippet": "The premiere was held at the 2026 Telluride Film Festival in Telluride, Colo.",
+    "sourceType": "rss",
+    "categoryHint": "Fashion & Luxury"
+  },
+  {
+    "id": "9q9w7f",
+    "title": "Affordable Luxury Is Gaining Ground in Department Stores",
+    "url": "https://wwd.com/fashion-news/designer-luxury/affordable-luxury-department-stores-1239199590/",
+    "source": "WWD - Women's Wear Daily",
+    "published_at": "2026-09-06T14:32:22.000Z",
+    "ingested_at": "2026-09-06T17:10:28.656Z",
+    "snippet": "\"Contemporary and premium tiers now dominate the segment map,\" according to the International Association of Department Stores.",
+    "sourceType": "rss",
+    "categoryHint": "Fashion & Luxury"
+  },
+  {
+    "id": "brl4v2",
+    "title": "Nicola Peltz is a Real-Life Princess in a Purple Balenciaga Gown at the Kinéo Awards Red Carpet at the Venice Film Festival with Brooklyn Beckham",
+    "url": "https://wwd.com/pop-culture/celebrity-news/nicola-peltz-balenciaga-venice-international-film-festival-1239199588/",
+    "source": "WWD - Women's Wear Daily",
+    "published_at": "2026-09-06T14:20:21.000Z",
+    "ingested_at": "2026-09-06T17:10:28.656Z",
+    "snippet": "Peltz was joined by her husband Brooklyn Beckham.",
+    "sourceType": "rss",
+    "categoryHint": "Fashion & Luxury"
+  },
+  {
+    "id": "p4xsfj",
+    "title": "Taste Test: Four Roses’ New Limited Edition Small Batch Bourbon Is One of the Year’s Best Whiskeys",
+    "url": "https://robbreport.com/food-drink/spirits/whiskey-review-four-roses-limited-small-batch-bourbon-2026-edition-1238619770/",
+    "source": "Robb Report",
+    "published_at": "2026-09-06T17:00:00.000Z",
+    "ingested_at": "2026-09-06T17:10:28.656Z",
+    "snippet": "This years's release is a blend of bourbon aged from 14 to 23 years.",
+    "sourceType": "rss",
+    "categoryHint": "Fashion & Luxury"
+  },
+  {
+    "id": "z8dx0w",
+    "title": "adidas’ Yeehaw Agenda Continues with a Muted Black Mule",
+    "url": "https://www.highsnobiety.com/p/y-3-adidas-regu-mule-black/",
+    "source": "Highsnobiety",
+    "published_at": "2026-09-06T11:14:02.000Z",
+    "ingested_at": "2026-09-06T17:10:28.656Z",
+    "snippet": "adidas' Y-3 Regu Mule is a heel-free take on the Three Stripes' decidedly western sneaker of the same name.",
+    "sourceType": "rss",
+    "categoryHint": "Fashion & Luxury"
+  },
+  {
+    "id": "98209o",
+    "title": "Nike's Leopard-Print Sneaker Was Born for the Track",
+    "url": "https://www.highsnobiety.com/p/nike-air-superfly-lx-sneaker-pony-hair/",
+    "source": "Highsnobiety",
+    "published_at": "2026-09-06T08:16:01.000Z",
+    "ingested_at": "2026-09-06T17:10:28.656Z",
+    "snippet": "Nike's leopard print pony hair Air Superfly LX sneaker is a retro-runner straight from the jungle.",
+    "sourceType": "rss",
+    "categoryHint": "Fashion & Luxury"
+  },
+  {
+    "id": "58trb8",
+    "title": "Nike’s Rugged Air Force 1 Is a Chocolate-Covered Raspberry — In a Raincoat",
+    "url": "https://www.highsnobiety.com/p/nike-air-force-1-goretex-brown/",
+    "source": "Highsnobiety",
+    "published_at": "2026-09-06T05:07:01.000Z",
+    "ingested_at": "2026-09-06T17:10:28.656Z",
+    "snippet": "Nike's GORE-TEX Vibram Air Force 1 sneaker is a chocolate-coated raspberry with a raincoat on.",
+    "sourceType": "rss",
+    "categoryHint": "Fashion & Luxury"
+  },
+  {
+    "id": "xk562r",
+    "title": "Nordic Knots’ Grand Open Collection Makes A Racket in SoHo",
+    "url": "https://www.highsnobiety.com/p/nordic-knots-grand-open-collection-makes-a-racket-in-soho/",
+    "source": "Highsnobiety",
+    "published_at": "2026-09-05T18:21:36.000Z",
+    "ingested_at": "2026-09-06T17:10:28.656Z",
+    "snippet": "Some matches are made in heaven; others are made on the court, and across New York City, it’s the season for both. As we transition from the sweltering triple-digit days of summer to the fallen leaf-strewn streets of autumn, the teeming SoHo sidewalks are no longer saddled with flip-flops, flaunting the latest collab, and highly coveted sun-shielding shades, this summer’s ubiquitous uniform.",
+    "sourceType": "rss",
+    "categoryHint": "Fashion & Luxury"
+  },
+  {
+    "id": "xum0nk",
+    "title": "Hudson Architects transforms neglected nightclub into King's Lynn Library",
+    "url": "https://www.dezeen.com/2026/09/06/hudson-architects-kings-lynn-library/",
+    "source": "Dezeen",
+    "published_at": "2026-09-06T10:00:32.000Z",
+    "ingested_at": "2026-09-06T17:10:28.656Z",
+    "snippet": "UK studio Hudson Architects has converted a disused commercial building in Norfolk into a public library, wrapping its existing concrete structure in a skin of cement shingles. Named King's Lynn Library, the project adapted the neglected structure of a former nightclub, car park and retail store into a more central home for the local library,\nThe post Hudson Architects transforms neglected nightclub into King's Lynn Library appeared first on Dezeen.",
+    "sourceType": "rss",
+    "categoryHint": "Fashion & Luxury"
+  },
+  {
+    "id": "6tt3tc",
+    "title": "Chatbots built an \"echo chamber of one\" and now psychiatry has to decide if \"AI psychosis\" exists",
+    "url": "https://the-decoder.com/chatbots-built-an-echo-chamber-of-one-and-now-psychiatry-has-to-decide-if-ai-psychosis-exists/",
+    "source": "The Decoder",
+    "published_at": "2026-09-06T11:57:12.000Z",
+    "ingested_at": "2026-09-06T17:10:28.656Z",
+    "snippet": "Researchers at King's College London and other institutions are examining whether \"AI-associated psychosis\" should become a clinical diagnosis. By OpenAI's own self-reported numbers, about 560,000 users show signs of psychosis or mania each week. Sycophantic chatbots can create an \"echo chamber of one\" that reinforces delusions.\nThe article Chatbots built an \"echo chamber of one\" and now psychiatry has to decide if \"AI psychosis\" exists appeared first on The Decoder.",
+    "sourceType": "rss"
+  },
+  {
+    "id": "2h0wyg",
+    "title": "The purpose of DNS is to spread scams",
+    "url": "https://simonwillison.net/2026/Sep/6/the-purpose-of-dns-is-to-spread-scams/",
+    "source": "Simon Willison",
+    "published_at": "2026-09-06T14:40:07.000Z",
+    "ingested_at": "2026-09-06T17:10:28.656Z",
+    "sourceType": "rss"
+  },
+  {
+    "id": "5dlm30",
+    "title": "‘Model fatigue’ sets in as AI labs race to roll out new versions at frenetic pace",
+    "url": "https://www.cnbc.com/2026/09/06/meta-google-openai-anthropic-ai-model-fatigue.html",
+    "source": "CNBC Technology",
+    "published_at": "2026-09-06T12:13:49.000Z",
+    "ingested_at": "2026-09-06T17:10:28.656Z",
+    "snippet": "Anthropic, OpenAI, Meta and Google all released model updates this week, while Nvidia said it's acquiring open-source AI platform Hugging Face.",
+    "sourceType": "rss"
   }
 ]

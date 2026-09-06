@@ -4750,5 +4750,149 @@
     ],
     "cached_at": "2026-08-30T12:02:37.648Z",
     "model": "gpt-4.1-mini"
+  },
+  "2026-W36:AI_and_Strategy:08a0417a46b4": {
+    "selected": [
+      {
+        "id": "9",
+        "rank": 1,
+        "why": "Nvidia's $13B acquisition of Hugging Face shifts AI platform power",
+        "confidence": 0.95
+      },
+      {
+        "id": "7",
+        "rank": 2,
+        "why": "Major AI labs release updates amid model fatigue concerns",
+        "confidence": 0.9
+      },
+      {
+        "id": "12",
+        "rank": 3,
+        "why": "New insights on memory and storage architecture for AI inference",
+        "confidence": 0.9
+      },
+      {
+        "id": "2",
+        "rank": 4,
+        "why": "Chinese AI firm Moonshot files IPO after strong model release",
+        "confidence": 0.85
+      },
+      {
+        "id": "10",
+        "rank": 5,
+        "why": "Equinix partners with Nvidia in multitrillion-dollar AI data center boom",
+        "confidence": 0.85
+      },
+      {
+        "id": "13",
+        "rank": 6,
+        "why": "M&T Bank scales enterprise AI deployment to 15,000 employees",
+        "confidence": 0.8
+      },
+      {
+        "id": "17",
+        "rank": 7,
+        "why": "US Commerce official signals Anthropic's regulatory alignment",
+        "confidence": 0.75
+      }
+    ],
+    "cached_at": "2026-09-06T17:30:13.082Z",
+    "model": "gpt-4.1-mini"
+  },
+  "2026-W36:Ecommerce_Retail_Tech:bd9796f6c924": {
+    "selected": [
+      {
+        "id": "4",
+        "rank": 1,
+        "why": "Target's AI use for personalized ecommerce recommendations",
+        "confidence": 0.95
+      },
+      {
+        "id": "1",
+        "rank": 2,
+        "why": "New ecommerce tools impacting payments, shipping, and supply chain",
+        "confidence": 0.9
+      },
+      {
+        "id": "15",
+        "rank": 3,
+        "why": "ECB exploring instant payment link with Brazil’s Pix system",
+        "confidence": 0.9
+      },
+      {
+        "id": "3",
+        "rank": 4,
+        "why": "Sephora launching exclusive drops on TikTok Shop marketplace",
+        "confidence": 0.85
+      },
+      {
+        "id": "17",
+        "rank": 5,
+        "why": "Walmart expanding delivery with Dunkin’ integration",
+        "confidence": 0.85
+      },
+      {
+        "id": "0",
+        "rank": 6,
+        "why": "Industry race to own AI shopping platforms and experiences",
+        "confidence": 0.8
+      },
+      {
+        "id": "10",
+        "rank": 7,
+        "why": "IKEA’s launch could transform post-sale retail operations",
+        "confidence": 0.8
+      }
+    ],
+    "cached_at": "2026-09-06T17:30:43.264Z",
+    "model": "gpt-4.1-mini"
+  },
+  "2026-W36:Luxury_and_Consumer:ffd577b04563": {
+    "selected": [
+      {
+        "id": "5",
+        "rank": 1,
+        "why": "Data-driven insights on affordable luxury trends in department stores",
+        "confidence": 0.95
+      },
+      {
+        "id": "3",
+        "rank": 2,
+        "why": "Practical tips for retail readiness in conversational shopping",
+        "confidence": 0.9
+      },
+      {
+        "id": "1",
+        "rank": 3,
+        "why": "Analysis of UK fashion retail priorities with policy implications",
+        "confidence": 0.85
+      },
+      {
+        "id": "14",
+        "rank": 4,
+        "why": "Expert column on testing luxury claims impacting branding and CX",
+        "confidence": 0.85
+      },
+      {
+        "id": "17",
+        "rank": 5,
+        "why": "Gucci's new product launch with merchandising and campaign insights",
+        "confidence": 0.8
+      },
+      {
+        "id": "7",
+        "rank": 6,
+        "why": "Case study on transparent production and brand values in fashion",
+        "confidence": 0.75
+      },
+      {
+        "id": "13",
+        "rank": 7,
+        "why": "Handcrafted fashion brand emphasizing product quality and heritage",
+        "confidence": 0.7
+      }
+    ],
+    "cached_at": "2026-09-06T17:31:12.779Z",
+    "model": "gpt-4.1-mini"
   }
 }

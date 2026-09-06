@@ -1,82 +1,85 @@
 {
   "digestWeek": "2026-W36",
   "ingestionWeek": "2026-W36",
-  "startedAt": "2026-09-06T10:42:05.926Z",
-  "finishedAt": "2026-09-06T10:55:47.590Z",
+  "startedAt": "2026-09-06T17:10:28.617Z",
+  "finishedAt": "2026-09-06T17:34:35.079Z",
   "steps": [
     {
       "name": "rss",
       "ok": true,
-      "startedAt": "2026-09-06T10:42:05.942Z",
-      "finishedAt": "2026-09-06T10:42:25.495Z"
+      "startedAt": "2026-09-06T17:10:28.655Z",
+      "finishedAt": "2026-09-06T17:11:01.675Z"
     },
     {
       "name": "pages",
       "ok": true,
-      "startedAt": "2026-09-06T10:42:25.496Z",
-      "finishedAt": "2026-09-06T10:42:27.114Z"
+      "startedAt": "2026-09-06T17:11:01.675Z",
+      "finishedAt": "2026-09-06T17:11:03.665Z"
     },
     {
       "name": "discovery",
-      "ok": false,
-      "startedAt": "2026-09-06T10:42:27.114Z",
-      "finishedAt": "2026-09-06T10:42:31.149Z",
-      "error": "429 You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."
+      "ok": true,
+      "startedAt": "2026-09-06T17:11:03.667Z",
+      "finishedAt": "2026-09-06T17:29:43.262Z"
     },
     {
       "name": "classification",
       "ok": true,
-      "startedAt": "2026-09-06T10:42:31.150Z",
-      "finishedAt": "2026-09-06T10:42:31.269Z"
+      "startedAt": "2026-09-06T17:29:43.263Z",
+      "finishedAt": "2026-09-06T17:29:43.355Z"
     },
     {
       "name": "digest",
       "ok": true,
-      "startedAt": "2026-09-06T10:42:31.269Z",
-      "finishedAt": "2026-09-06T10:55:05.647Z"
+      "startedAt": "2026-09-06T17:29:43.355Z",
+      "finishedAt": "2026-09-06T17:32:05.349Z"
     },
     {
       "name": "email",
       "ok": true,
-      "startedAt": "2026-09-06T10:55:05.647Z",
-      "finishedAt": "2026-09-06T10:55:26.379Z"
+      "startedAt": "2026-09-06T17:32:05.349Z",
+      "finishedAt": "2026-09-06T17:32:20.605Z"
     },
     {
       "name": "podcast",
-      "ok": false,
-      "startedAt": "2026-09-06T10:55:26.379Z",
-      "finishedAt": "2026-09-06T10:55:27.920Z",
-      "error": "429 You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."
+      "ok": true,
+      "startedAt": "2026-09-06T17:32:20.605Z",
+      "finishedAt": "2026-09-06T17:33:16.293Z"
     },
     {
       "name": "cover",
-      "ok": false,
-      "startedAt": "2026-09-06T10:55:27.920Z",
-      "finishedAt": "2026-09-06T10:55:31.878Z",
-      "error": "Cover image generation failed"
+      "ok": true,
+      "startedAt": "2026-09-06T17:33:16.293Z",
+      "finishedAt": "2026-09-06T17:34:16.294Z"
     },
     {
       "name": "competitorAnalyze",
       "ok": true,
-      "startedAt": "2026-09-06T10:55:31.878Z",
-      "finishedAt": "2026-09-06T10:55:47.589Z"
+      "startedAt": "2026-09-06T17:34:16.294Z",
+      "finishedAt": "2026-09-06T17:34:35.076Z"
     }
   ],
   "health": {
     "warnings": [
-      "AI & Strategy: techcrunch.com represents 42.9% (3/7) - exceeds 40% threshold",
-      "Ecommerce & Retail Tech: www.practicalecommerce.com represents 42.9% (3/7) - exceeds 40% threshold",
-      "Ecommerce & Retail Tech: www.nytimes.com represents 42.9% (3/7) - exceeds 40% threshold",
-      "Luxury & Consumer: www.luxurydaily.com represents 42.9% (3/7) - exceeds 40% threshold",
+      "AI & Strategy: economictimes.indiatimes.com represents 42.9% (3/7) - exceeds 40% threshold",
       "Jewellery Industry: www.jewellermagazine.com represents 42.9% (3/7) - exceeds 40% threshold",
       "Jewellery Industry: instoremag.com represents 42.9% (3/7) - exceeds 40% threshold"
     ],
     "metrics": {
-      "paywallPercent": 0
+      "paywallPercent": 0,
+      "podcastWordCount": 2437
     }
   },
+  "contentQuality": {
+    "ok": true,
+    "errors": [],
+    "summaryCoverage": 1,
+    "selectedCount": 28,
+    "summarizedCount": 28,
+    "hasCover": true
+  },
   "versions": {
-    "node": "v20.20.2",
-    "gitCommit": "e7ea6ca76270ebc42717c438d43015a38d4ad028"
+    "node": "v24.12.0",
+    "gitCommit": "b020112e00d82fd1271bb51b7ff519777f493c3d"
   }
 }

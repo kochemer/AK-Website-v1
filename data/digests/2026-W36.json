@@ -3,142 +3,62 @@
   "tz": "Europe/Copenhagen",
   "startISO": "2026-08-30T22:00:00.000Z",
   "endISO": "2026-09-06T21:59:59.999Z",
-  "builtAtISO": "2026-09-06T12:54:44.127+02:00",
-  "builtAtLocal": "2026-09-06 12:54:44",
+  "builtAtISO": "2026-09-06T19:31:42.534+02:00",
+  "builtAtLocal": "2026-09-06 19:31:42",
   "totals": {
-    "total": 683,
+    "total": 749,
     "byTopic": {
-      "AIStrategy": 134,
-      "EcommerceRetail": 456,
-      "LuxuryConsumer": 73,
+      "AIStrategy": 140,
+      "EcommerceRetail": 510,
+      "LuxuryConsumer": 79,
       "Jewellery": 20
     }
   },
   "topics": {
     "AI_and_Strategy": {
-      "total": 134,
+      "total": 140,
       "top": [
         {
-          "id": "strw22",
-          "title": "OpenAI confirms ‘wiki incident,’ says it’s ‘working on a framework’ for more disclosure",
-          "url": "https://techcrunch.com/2026/09/05/openai-confirms-wiki-incident-says-its-working-on-a-framework-for-more-disclosure/",
-          "source": "TechCrunch - AI",
-          "published_at": "2026-09-05T18:05:27.000Z",
-          "ingested_at": "2026-09-06T10:42:05.943Z",
-          "snippet": "OpenAI acknowledged its role in a recently reported incident where AI agents took over a German wiki forum.",
-          "sourceType": "rss",
-          "relevance": {
-            "scoreTotal": 0.35000000000000003,
-            "recencyScore": 0,
-            "sourceWeight": 0.15,
-            "keywordBoost": 0.15000000000000002,
-            "insightSignalBoost": 0.05,
-            "penalty": 0,
-            "matchedKeywords": [
-              "openai",
-              "ai",
-              "agent"
-            ]
-          }
-        },
-        {
-          "id": "rmkvwb",
-          "title": "Google’s latest AI weather model gives you no excuse to forget your umbrella",
-          "url": "https://techcrunch.com/2026/09/03/googles-latest-ai-weather-model-gives-you-no-excuse-to-forget-your-umbrella/",
-          "source": "TechCrunch - AI",
-          "published_at": "2026-09-03T15:00:00.000Z",
-          "ingested_at": "2026-09-06T10:42:05.943Z",
-          "snippet": "WeatherNext 3 is the latest wave of a sea change in meteorology brought out by deep learning techniques. Google says it will start feeding into weather information users see in search, Google Maps, and Gemini.",
-          "sourceType": "rss",
-          "relevance": {
-            "scoreTotal": 0.30000000000000004,
-            "recencyScore": 0,
-            "sourceWeight": 0.15,
-            "keywordBoost": 0.15000000000000002,
-            "insightSignalBoost": 0,
-            "penalty": 0,
-            "matchedKeywords": [
-              "ai",
-              "gemini",
-              "deep learning"
-            ]
-          }
-        },
-        {
-          "id": "hb842j",
-          "title": "Meta is paying to peek at how you use their latest AI model",
-          "url": "https://techcrunch.com/2026/09/03/meta-is-paying-to-peek-at-how-you-use-their-latest-ai-model/",
-          "source": "TechCrunch - AI",
-          "published_at": "2026-09-03T18:19:56.000Z",
-          "ingested_at": "2026-09-06T10:42:05.943Z",
-          "snippet": "For its new Muse Spark model, intended for operating coding and other agents, Meta is offering an explicit discount averaging out to about 95% for users who \"contribute\" to the development of future models by sharing their prompts and model outputs.",
-          "sourceType": "rss",
-          "relevance": {
-            "scoreTotal": 0.3,
-            "recencyScore": 0,
-            "sourceWeight": 0.15,
-            "keywordBoost": 0.1,
-            "insightSignalBoost": 0.05,
-            "penalty": 0,
-            "matchedKeywords": [
-              "ai",
-              "agent"
-            ]
-          }
-        },
-        {
-          "id": "ngtrez",
-          "title": "How OpenAI Limited the Probe of Its Bots’ Hack of Hugging Face",
-          "url": "https://www.nytimes.com/2026/09/03/technology/openai-hugging-face-hack.html",
-          "source": "NYTimes Technology",
-          "published_at": "2026-09-04T15:15:04.000Z",
-          "ingested_at": "2026-09-06T10:42:05.943Z",
-          "snippet": "Researchers investigating how OpenAI’s A.I. agents were able to break into Hugging Face’s infrastructure weren’t allowed to look at the incident’s full scope.",
-          "sourceType": "rss",
-          "relevance": {
-            "scoreTotal": 0.22500000000000003,
-            "recencyScore": 0,
-            "sourceWeight": 0.075,
-            "keywordBoost": 0.15000000000000002,
-            "insightSignalBoost": 0,
-            "penalty": 0,
-            "matchedKeywords": [
-              "openai",
-              "research",
-              "agent"
-            ]
-          }
-        },
-        {
-          "id": "39rphc",
-          "title": "AI boom is testing tech firms' climate pledges ",
-          "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/ai-boom-is-testing-tech-firms-climate-pledges/articleshow/133723821.cms",
+          "id": "g304r8",
+          "title": "Nvidia buying artificial intelligence platform Hugging Face for $13 billion ",
+          "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/nvidia-buying-artificial-intelligence-platform-hugging-face-for-13-billion/articleshow/133736454.cms",
           "source": "Economic Times - Technology",
-          "published_at": "2026-09-03T02:58:37.000Z",
+          "published_at": "2026-09-03T12:32:10.000Z",
           "ingested_at": "2026-09-06T10:42:05.943Z",
-          "snippet": "Technology companies are stepping up their climate commitments but not fast enough to counter rapidly inflating energy needs linked to the artificial intelligence boom, a report said Wednesday. This year's edition, based on 2024 data, found that artificial intelligence \"is both a driver of efficiency and a growing challenge\", the ITU said in a statement.",
+          "snippet": "Jensen Huang wrote in a blog post Thursday that more than 18 million developers, researchers and creators use Hugging Face to share more than 3 million models, 500,000 data sets and 1 million applications. There's also more than 200,000 companies that use the platform, he said.",
           "sourceType": "rss",
           "relevance": {
-            "scoreTotal": 0.2,
+            "scoreTotal": 0.15000000000000002,
             "recencyScore": 0,
             "sourceWeight": 0,
             "keywordBoost": 0.1,
-            "insightSignalBoost": 0.1,
+            "insightSignalBoost": 0.05,
             "penalty": 0,
             "matchedKeywords": [
-              "ai",
-              "artificial intelligence"
+              "artificial intelligence",
+              "research"
             ]
+          },
+          "aiSummary": "AI-generated summary: Nvidia announced its $13 billion acquisition of the AI platform Hugging Face, which is used by over 18 million developers, researchers, and creators, as well as more than 200,000 companies, to share millions of models, data sets, and applications.",
+          "translations": {
+            "da": {
+              "title": "Nvidia køber kunstig intelligens-platform Hugging Face for 13 milliarder dollars",
+              "summary": "AI-genereret resumé: Nvidia annoncerede sit opkøb af AI-platformen Hugging Face for 13 milliarder dollars, som bruges af over 18 millioner udviklere, forskere og skabere samt mere end 200.000 virksomheder til at dele millioner af modeller, datasæt og applikationer."
+            },
+            "es": {
+              "title": "Nvidia compra la plataforma de inteligencia artificial Hugging Face por 13 mil millones de dólares",
+              "summary": "Resumen generado por IA: Nvidia anunció su adquisición de 13 mil millones de dólares de la plataforma de IA Hugging Face, que es utilizada por más de 18 millones de desarrolladores, investigadores y creadores, así como por más de 200,000 empresas, para compartir millones de modelos, conjuntos de datos y aplicaciones."
+            }
           }
         },
         {
-          "id": "pwuaxe",
-          "title": "OpenAI is building 'automated shutdown' capabilities for AI tools, letter to lawmakers says ",
-          "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/openai-is-building-automated-shutdown-capabilities-for-ai-tools-letter-to-lawmakers-says/articleshow/133725313.cms",
-          "source": "Economic Times - Technology",
-          "published_at": "2026-09-03T04:33:14.000Z",
-          "ingested_at": "2026-09-06T10:42:05.943Z",
-          "snippet": "The company's safety practices have come under ‌scrutiny since OpenAI, ⁠the company ⁠behind ChatGPT, disclosed that one of its AI agents went rogue during a ​security test and hacked into AI company Hugging Face. AI agents are programs that ​run with minimal human supervision.",
+          "id": "5dlm30",
+          "title": "‘Model fatigue’ sets in as AI labs race to roll out new versions at frenetic pace",
+          "url": "https://www.cnbc.com/2026/09/06/meta-google-openai-anthropic-ai-model-fatigue.html",
+          "source": "CNBC Technology",
+          "published_at": "2026-09-06T12:13:49.000Z",
+          "ingested_at": "2026-09-06T17:10:28.656Z",
+          "snippet": "Anthropic, OpenAI, Meta and Google all released model updates this week, while Nvidia said it's acquiring open-source AI platform Hugging Face.",
           "sourceType": "rss",
           "relevance": {
             "scoreTotal": 0.2,
@@ -149,40 +69,225 @@
             "penalty": 0,
             "matchedKeywords": [
               "ai",
+              "ai lab",
               "openai",
-              "agent",
-              "ai company"
+              "anthropic"
             ]
+          },
+          "aiSummary": "AI labs including Anthropic, OpenAI, Meta, and Google released new model updates this week amid a rapid development pace, while Nvidia announced its acquisition of the open-source AI platform Hugging Face. This AI-generated summary is based solely on the provided information.",
+          "translations": {
+            "da": {
+              "title": "‘Modeltræthed’ sætter ind, mens AI-laboratorier kapløber om at lancere nye versioner i et hektisk tempo",
+              "summary": "AI-laboratorier inklusive Anthropic, OpenAI, Meta og Google udsendte nye modelopdateringer denne uge midt i en hurtig udviklingstakt, mens Nvidia annoncerede sit opkøb af den open source AI-platform Hugging Face. Dette AI-genererede resumé er baseret udelukkende på de givne oplysninger."
+            },
+            "es": {
+              "title": "‘Fatiga de modelos’ se instala mientras los laboratorios de IA compiten por lanzar nuevas versiones a un ritmo frenético",
+              "summary": "Laboratorios de IA como Anthropic, OpenAI, Meta y Google lanzaron nuevas actualizaciones de modelos esta semana en medio de un rápido ritmo de desarrollo, mientras Nvidia anunció la adquisición de la plataforma de IA de código abierto Hugging Face. Este resumen generado por IA se basa únicamente en la información proporcionada."
+            }
           }
         },
         {
-          "id": "qc1hn3",
-          "title": "The E.U.’s AI Drive Undermines Its ​Own Chip Strategy",
-          "url": "https://spectrum.ieee.org/europes-ai-drive",
-          "source": "IEEE Spectrum",
-          "published_at": "2026-08-31T14:00:04.000Z",
+          "id": "id6ni9",
+          "title": "Architecting memory and storage in the AI era",
+          "url": "https://www.technologyreview.com/2026/09/04/1140872/architecting-memory-and-storage-in-the-ai-era/",
+          "source": "MIT Technology Review",
+          "published_at": "2026-09-04T18:39:19.000Z",
           "ingested_at": "2026-09-06T10:42:05.943Z",
-          "snippet": "This story was originally published by Tech Policy Press.\nThe European Union’s push for technological sovereignty faces an uncomfortable contradiction.\nAs the E.U. rolls out AI factories, gigafactories, and new data centers, it is creating a surge in demand for the advanced semiconductors that underpin artificial intelligence. Yet Europe produces fewer than 10 percent of the world’s chips and remains heavily dependent on U.S. designers and Asian manufacturers for the most advanced processors.\nTh...",
+          "snippet": "The era of AI inference has arrived. Imagine a healthcare system analyzing millions of data points in real time to accelerate life-saving medical research, or an intelligent assistant instantly resolving thousands of complex customer needs at once. These real-world breakthroughs rely on advanced infrastructure acting as the engine of continuous intelligence, powering real-time services while…",
           "sourceType": "rss",
           "relevance": {
-            "scoreTotal": 0.2,
+            "scoreTotal": 0.15000000000000002,
             "recencyScore": 0,
             "sourceWeight": 0.15,
             "keywordBoost": 0.15000000000000002,
-            "insightSignalBoost": 0.1,
+            "insightSignalBoost": 0.05,
             "penalty": 0.2,
             "matchedKeywords": [
               "ai",
-              "artificial intelligence",
-              "policy"
+              "research",
+              "inference"
             ]
+          },
+          "aiSummary": "AI-generated summary: The article discusses how advanced memory and storage infrastructure is crucial in the AI era to enable real-time analysis and continuous intelligence, exemplified by applications like healthcare research acceleration and intelligent customer service.",
+          "translations": {
+            "da": {
+              "title": "Arkitektur for hukommelse og lagring i AI-æraen",
+              "summary": "AI-genereret resumé: Artiklen diskuterer, hvordan avanceret hukommelses- og lagringsinfrastruktur er afgørende i AI-æraen for at muliggøre realtidsanalyse og kontinuerlig intelligens, eksemplificeret ved anvendelser som acceleration af sundhedsforskning og intelligent kundeservice."
+            },
+            "es": {
+              "title": "Arquitectura de memoria y almacenamiento en la era de la IA",
+              "summary": "Resumen generado por IA: El artículo analiza cómo una infraestructura avanzada de memoria y almacenamiento es crucial en la era de la IA para permitir análisis en tiempo real e inteligencia continua, ejemplificado por aplicaciones como la aceleración de la investigación en salud y el servicio al cliente inteligente."
+            }
+          }
+        },
+        {
+          "id": "xxv7wa",
+          "title": "Chinese AI firm Moonshot files confidentially for Hong Kong IPO ",
+          "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/chinese-ai-firm-moonshot-files-confidentially-for-hong-kong-ipo/articleshow/133751573.cms",
+          "source": "Economic Times - Technology",
+          "published_at": "2026-09-04T04:14:53.000Z",
+          "ingested_at": "2026-09-06T10:42:05.943Z",
+          "snippet": "Moonshot's latest version, Kimi K3 released in July, has met with positive reviews and robust demand, and sources have said the startup is in talks with Microsoft, Amazon and Google on ‌revenue-sharing agreements that ⁠would allow ⁠the U.S. cloud companies to host the model.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ai"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Chinese AI firm Moonshot has filed confidentially for a Hong Kong IPO, following the positive reception and strong demand for its latest model, Kimi K3, and is reportedly negotiating revenue-sharing deals with Microsoft, Amazon, and Google to host the model on their cloud platforms.",
+          "translations": {
+            "da": {
+              "title": "Kinesisk AI-virksomhed Moonshot indgiver fortrolig ansøgning om Hong Kong IPO",
+              "summary": "AI-genereret resumé: Kinesisk AI-virksomhed Moonshot har indgivet en fortrolig ansøgning om en Hong Kong IPO efter positiv modtagelse og stor efterspørgsel på deres seneste model, Kimi K3, og forhandler angiveligt indtægtsdelingsaftaler med Microsoft, Amazon og Google om hosting af modellen på deres cloud-platforme."
+            },
+            "es": {
+              "title": "La empresa china de IA Moonshot presenta confidencialmente solicitud para IPO en Hong Kong",
+              "summary": "Resumen generado por IA: La empresa china de IA Moonshot ha presentado confidencialmente una solicitud para una IPO en Hong Kong, tras la buena acogida y la fuerte demanda de su último modelo, Kimi K3, y supuestamente está negociando acuerdos de reparto de ingresos con Microsoft, Amazon y Google para alojar el modelo en sus plataformas en la nube."
+            }
+          }
+        },
+        {
+          "id": "egkm7t",
+          "title": "How Equinix has found a niche in the multitrillion-dollar AI data center boom",
+          "url": "https://www.cnbc.com/2026/09/02/equinix-partners-with-nvidia-carves-niche-in-ai-data-center-boom.html",
+          "source": "CNBC Technology",
+          "published_at": "2026-09-02T22:49:01.000Z",
+          "ingested_at": "2026-09-06T10:42:05.943Z",
+          "snippet": "Nvidia announced a new data center deal with Equinix and Together AI on Wednesday to help enterprise customers with open-model inference.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ai",
+              "inference"
+            ]
+          },
+          "aiSummary": "AI-generated summary: Equinix has secured a new data center partnership with Nvidia and Together AI to support enterprise customers in open-model inference, highlighting its strategic role in the growing AI data center market.",
+          "translations": {
+            "da": {
+              "title": "Hvordan Equinix har fundet en niche i den multitrillion-dollar AI-datacenterboom",
+              "summary": "AI-genereret resumé: Equinix har sikret et nyt datacenterpartnerskab med Nvidia og Together AI for at støtte virksomhedskunder i open-model inferens, hvilket fremhæver deres strategiske rolle i det voksende AI-datacentermarked."
+            },
+            "es": {
+              "title": "Cómo Equinix ha encontrado un nicho en el auge multibillonario de centros de datos de IA",
+              "summary": "Resumen generado por IA: Equinix ha asegurado una nueva asociación de centros de datos con Nvidia y Together AI para apoyar a clientes empresariales en inferencia de modelos abiertos, destacando su papel estratégico en el creciente mercado de centros de datos de IA."
+            }
+          }
+        },
+        {
+          "id": "nyystd",
+          "title": "M&T Bank expands enterprise AI after years of technology overhaul",
+          "url": "https://www.artificialintelligence-news.com/news/mt-bank-enterprise-ai-15000-employees/",
+          "source": "AI News",
+          "published_at": "2026-09-04T10:00:00.000Z",
+          "ingested_at": "2026-09-06T10:42:05.943Z",
+          "snippet": "M&T Bank has deployed AI copilots to more than 15,000 employees as the US regional bank applies AI to internal operations, customer service, software development, and risk management. The bank uses AI to analyse call-centre conversations, draft reports, generate code, identify customer needs, and flag portfolio risks, according to Fast Company. M&T is also examining […]\nThe post M&T Bank expands enterprise AI after years of technology overhaul appeared first on AI News.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ai"
+            ]
+          },
+          "aiSummary": "AI-generated summary: M&T Bank has expanded its enterprise AI by deploying AI copilots to over 15,000 employees, leveraging AI across internal operations, customer service, software development, and risk management to enhance efficiency and risk identification.",
+          "translations": {
+            "da": {
+              "title": "M&T Bank udvider enterprise AI efter års teknologioverhaling",
+              "summary": "AI-genereret resumé: M&T Bank har udvidet sin enterprise AI ved at implementere AI-copiloter til over 15.000 medarbejdere og udnytter AI i interne operationer, kundeservice, softwareudvikling og risikostyring for at øge effektivitet og risikodetektion."
+            },
+            "es": {
+              "title": "M&T Bank amplía la IA empresarial tras años de renovación tecnológica",
+              "summary": "Resumen generado por IA: M&T Bank ha ampliado su IA empresarial desplegando copilotos de IA a más de 15,000 empleados, aprovechando la IA en operaciones internas, servicio al cliente, desarrollo de software y gestión de riesgos para mejorar la eficiencia y la identificación de riesgos."
+            }
+          }
+        },
+        {
+          "id": "7gd79y",
+          "title": "US Commerce chief says Anthropic back on 'right side' with Trump, Axios reports ",
+          "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/us-commerce-chief-says-anthropic-back-on-right-side-with-trump-axios-reports/articleshow/133724330.cms",
+          "source": "Economic Times - Technology",
+          "published_at": "2026-09-03T03:34:58.000Z",
+          "ingested_at": "2026-09-06T10:42:05.943Z",
+          "snippet": "U.S. ⁠Defense Secretary Pete Hegseth had blocked ​Anthropic from certain military contracts because the ​company refused to allow the U.S. to use its Claude AI ​models for domestic surveillance ⁠or autonomous ‌weapons. Anthropic sued in ​California court.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0.05,
+            "penalty": 0.2,
+            "matchedKeywords": [
+              "anthropic",
+              "ai",
+              "claude"
+            ]
+          },
+          "aiSummary": "AI-generated summary: U.S. Defense Secretary Pete Hegseth blocked Anthropic from military contracts due to the company's refusal to permit use of its Claude AI models for domestic surveillance or autonomous weapons, leading Anthropic to file a lawsuit in California.",
+          "translations": {
+            "da": {
+              "title": "US Commerce-chef siger, at Anthropic er tilbage på 'den rigtige side' med Trump, ifølge Axios",
+              "summary": "AI-genereret resumé: USAs forsvarsminister Pete Hegseth blokerede Anthropic fra militære kontrakter på grund af virksomhedens nægtelse af at tillade brug af deres Claude AI-modeller til indenlandsk overvågning eller autonome våben, hvilket fik Anthropic til at anlægge sag i Californien."
+            },
+            "es": {
+              "title": "Jefe de Comercio de EE.UU. dice que Anthropic está de nuevo en el 'lado correcto' con Trump, informa Axios",
+              "summary": "Resumen generado por IA: El Secretario de Defensa de EE.UU., Pete Hegseth, bloqueó a Anthropic de contratos militares debido a la negativa de la empresa a permitir el uso de sus modelos de IA Claude para vigilancia doméstica o armas autónomas, lo que llevó a Anthropic a presentar una demanda en California."
+            }
           }
         }
       ]
     },
     "Ecommerce_Retail_Tech": {
-      "total": 456,
+      "total": 510,
       "top": [
+        {
+          "id": "u51wx1",
+          "title": "How AI is powering Target’s back-to-school push",
+          "url": "https://www.retaildive.com/news/target-back-to-school-push-AI/829468/",
+          "source": "Retail Dive",
+          "published_at": "2026-09-03T16:46:00.000Z",
+          "ingested_at": "2026-09-06T10:42:05.943Z",
+          "snippet": "The mass retailer is utilizing AI for wish lists and recommended actions on its e-commerce site, Target’s senior vice president of technology told Retail Dive.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "e-commerce"
+            ]
+          },
+          "aiSummary": "AI-generated summary: According to Target’s senior vice president of technology, the retailer is leveraging AI to enhance its e-commerce site by creating wish lists and providing recommended actions as part of its back-to-school strategy.",
+          "translations": {
+            "da": {
+              "title": "Hvordan AI driver Targets tilbage-til-skolen indsats",
+              "summary": "Ifølge Targets seniordirektør for teknologi bruger detailhandlen AI til at forbedre sin e-handelsplatform ved at skabe ønskelister og give anbefalede handlinger som en del af sin tilbage-til-skolen strategi."
+            },
+            "es": {
+              "title": "Cómo la IA impulsa la campaña de regreso a clases de Target",
+              "summary": "Según el vicepresidente senior de tecnología de Target, el minorista está aprovechando la IA para mejorar su sitio de comercio electrónico creando listas de deseos y proporcionando acciones recomendadas como parte de su estrategia de regreso a clases."
+            }
+          }
+        },
         {
           "id": "btjhf3",
           "title": "New Ecommerce Tools: September 2, 2026",
@@ -203,16 +308,27 @@
               "ecommerce",
               "payment"
             ]
+          },
+          "aiSummary": "AI-generated summary: The article from Practical Ecommerce dated September 2, 2026, highlights new ecommerce tools launched this week, covering areas such as payments, shipping, affiliate marketing, CRMs, supply chain, and merchant-of-record services.",
+          "translations": {
+            "da": {
+              "title": "Nye Ecommerce-værktøjer: 2. september 2026",
+              "summary": "AI-genereret resumé: Artiklen fra Practical Ecommerce dateret 2. september 2026 fremhæver nye ecommerce-værktøjer lanceret denne uge, der dækker områder som betalinger, forsendelse, affiliate marketing, CRM'er, forsyningskæde og merchant-of-record-tjenester."
+            },
+            "es": {
+              "title": "Nuevas herramientas de Ecommerce: 2 de septiembre de 2026",
+              "summary": "Resumen generado por IA: El artículo de Practical Ecommerce fechado el 2 de septiembre de 2026 destaca nuevas herramientas de ecommerce lanzadas esta semana, cubriendo áreas como pagos, envíos, marketing de afiliados, CRM, cadena de suministro y servicios de merchant-of-record."
+            }
           }
         },
         {
-          "id": "j3oog1",
-          "title": "PayPal Pauses Venture Capital Portfolio Sale After Lowball Offers",
-          "url": "https://www.pymnts.com/news/investment-tracker/2026/paypal-pauses-venture-capital-portfolio-sale-after-lowball-offers/",
+          "id": "xsvqok",
+          "title": "ECB Explores Instant Payment Link With Brazil’s Pix",
+          "url": "https://www.pymnts.com/partnerships/2026/ecb-explores-instant-payment-link-with-brazils-pix/",
           "source": "PYMNTS",
-          "published_at": "2026-09-04T23:48:00.000Z",
+          "published_at": "2026-09-04T18:33:09.000Z",
           "ingested_at": "2026-09-06T10:42:05.943Z",
-          "snippet": "PayPal has paused its planned sale of its venture capital portfolio after offers came in at no higher than 60 cents on the dollar, Seeking Alpha reported Friday (Sept. 4), citing a paywalled article by Axios that was based on unnamed sources. The investments in PayPal’s portfolio include shopping app Tabby and crypto platform Anchorage, and the company’s attempt to sell the […]\nThe post PayPal Pauses Venture Capital Portfolio Sale After Lowball Offers appeared first on PYMNTS.com.",
+          "snippet": "The European Central Bank (ECB) is exploring a potential interlinking between its TARGET Instant Payment Settlement (TIPS) platform and the Central Bank of Brazil’s Pix platform, Reuters reported Thursday (Sept. 3). The ECB said this in response to Reuters’ inquiry about a claim by unnamed sources that the two central banks are considering linking their instant payment systems, according to […]\nThe post ECB Explores Instant Payment Link With Brazil’s Pix appeared first on PYMNTS.com.",
           "sourceType": "rss",
           "relevance": {
             "scoreTotal": 0.15000000000000002,
@@ -222,123 +338,161 @@
             "insightSignalBoost": 0.05,
             "penalty": 0,
             "matchedKeywords": [
-              "shopping",
+              "payment",
               "platform"
             ]
+          },
+          "aiSummary": "AI-generated summary: The European Central Bank (ECB) is considering linking its TARGET Instant Payment Settlement (TIPS) platform with Brazil’s Central Bank Pix instant payment system, according to a Reuters report cited by PYMNTS on September 4, 2026.",
+          "translations": {
+            "da": {
+              "title": "ECB undersøger øjeblikkelig betalingsforbindelse med Brasiliens Pix",
+              "summary": "Den Europæiske Centralbank (ECB) overvejer at forbinde sin TARGET Instant Payment Settlement (TIPS) platform med Brasiliens Centralbank Pix øjeblikkelige betalingssystem, ifølge en Reuters-rapport citeret af PYMNTS den 4. september 2026."
+            },
+            "es": {
+              "title": "ECB explora enlace de pago instantáneo con Pix de Brasil",
+              "summary": "El Banco Central Europeo (ECB) está considerando vincular su plataforma TARGET Instant Payment Settlement (TIPS) con el sistema de pago instantáneo Pix del Banco Central de Brasil, según un informe de Reuters citado por PYMNTS el 4 de septiembre de 2026."
+            }
           }
         },
         {
-          "id": "ag24uf",
-          "title": "Missouri Voters Appear to Recall City Councilman Over Data Center Support",
-          "url": "https://www.nytimes.com/2026/09/01/technology/data-center-recall-vote-independence.html",
-          "source": "NYTimes Technology",
-          "published_at": "2026-09-02T02:47:34.000Z",
+          "id": "3y4nxz",
+          "title": "Sephora plans exclusive drops for TikTok Shop",
+          "url": "https://www.digitalcommerce360.com/2026/09/04/sephora-plans-exclusive-drops-for-tiktok-shop/",
+          "source": "Digital Commerce 360",
+          "published_at": "2026-09-04T20:31:57.000Z",
           "ingested_at": "2026-09-06T10:42:05.943Z",
-          "snippet": "Initial results showed that residents of Independence, Mo., voted overwhelmingly to recall an official who backed billions of dollars in tax breaks for a data center.",
+          "snippet": "Beauty retailer Sephora is debuting on TikTok Shop, launching a new “Sephora Drop Shop” experience that turns product launches into monthly livestreamed events featuring celebrity hosts, brand founders and creator content. Piloting in the U.S. starting Sept. 19, the format is geared to resonate on TikTok’s beauty-heavy social video platform. Sephora will hope to convert […]\nThe post Sephora plans exclusive drops for TikTok Shop appeared first on Digital Commerce 360.",
           "sourceType": "rss",
           "relevance": {
-            "scoreTotal": 0.2,
+            "scoreTotal": 0.05,
             "recencyScore": 0,
-            "sourceWeight": 0.15,
-            "keywordBoost": 0,
-            "insightSignalBoost": 0.05,
-            "penalty": 0,
-            "matchedKeywords": []
-          }
-        },
-        {
-          "id": "4tq4kn",
-          "title": "Uber Lays Off 10% of Employees in Sweeping Reorganization",
-          "url": "https://www.nytimes.com/2026/09/02/technology/uber-layoffs.html",
-          "source": "NYTimes Technology",
-          "published_at": "2026-09-02T17:47:50.000Z",
-          "ingested_at": "2026-09-06T10:42:05.943Z",
-          "snippet": "The layoffs affect about 3,300 workers, as Chief Executive Dara Khosrowshahi bets on a “leaner organization.”",
-          "sourceType": "rss",
-          "relevance": {
-            "scoreTotal": 0.2,
-            "recencyScore": 0,
-            "sourceWeight": 0.15,
-            "keywordBoost": 0,
-            "insightSignalBoost": 0.05,
-            "penalty": 0,
-            "matchedKeywords": []
-          }
-        },
-        {
-          "id": "wtcl6w",
-          "title": "Get to Know Your Phone’s Built-In Emergency Kit",
-          "url": "https://www.nytimes.com/2026/09/02/technology/personaltech/iphone-android-emergency-features.html",
-          "source": "NYTimes Technology",
-          "published_at": "2026-09-02T09:03:10.000Z",
-          "ingested_at": "2026-09-06T10:42:05.943Z",
-          "snippet": "In times of natural disasters and other dangers, special features tucked away on your iPhone or Android device could help make a difference.",
-          "sourceType": "rss",
-          "relevance": {
-            "scoreTotal": 0.2,
-            "recencyScore": 0,
-            "sourceWeight": 0.15,
-            "keywordBoost": 0,
-            "insightSignalBoost": 0.05,
-            "penalty": 0,
-            "matchedKeywords": []
-          }
-        },
-        {
-          "id": "8mj1ow",
-          "title": "5 Content Marketing Ideas for October 2026",
-          "url": "https://www.practicalecommerce.com/5-content-marketing-ideas-for-october",
-          "source": "Practical Ecommerce",
-          "published_at": "2026-09-03T12:23:37.000Z",
-          "ingested_at": "2026-09-06T10:42:05.943Z",
-          "snippet": "Content marketers in October can explore Winnie-the-Pooh, Halloween, AI vs. humans, company archives, and breaking news.\nThe post 5 Content Marketing Ideas for October 2026 appeared first on Practical Ecommerce.",
-          "sourceType": "rss",
-          "relevance": {
-            "scoreTotal": 0.15000000000000002,
-            "recencyScore": 0,
-            "sourceWeight": 0.1,
+            "sourceWeight": 0,
             "keywordBoost": 0.05,
             "insightSignalBoost": 0,
             "penalty": 0,
             "matchedKeywords": [
-              "ecommerce"
+              "platform"
             ]
+          },
+          "aiSummary": "AI-generated summary: Beauty retailer Sephora is launching a “Sephora Drop Shop” on TikTok Shop in the U.S. starting September 19, featuring monthly livestreamed product launches with celebrity hosts and creators to engage TikTok’s beauty-focused audience.",
+          "translations": {
+            "da": {
+              "title": "Sephora planlægger eksklusive drops til TikTok Shop",
+              "summary": "AI-genereret resumé: Skønhedsforhandleren Sephora lancerer en “Sephora Drop Shop” på TikTok Shop i USA fra den 19. september med månedlige livestreamede produktlanceringer med kendte værter og skabere for at engagere TikToks skønhedsorienterede publikum."
+            },
+            "es": {
+              "title": "Sephora planea lanzamientos exclusivos para TikTok Shop",
+              "summary": "Resumen generado por IA: El minorista de belleza Sephora lanzará una “Sephora Drop Shop” en TikTok Shop en EE. UU. a partir del 19 de septiembre, con lanzamientos mensuales de productos en vivo con anfitriones y creadores famosos para atraer a la audiencia enfocada en belleza de TikTok."
+            }
           }
         },
         {
-          "id": "3p7wz5",
-          "title": "Ecommerce in Nigeria Poised for Growth",
-          "url": "https://www.practicalecommerce.com/ecommerce-in-nigeria-poised-for-growth",
-          "source": "Practical Ecommerce",
-          "published_at": "2026-09-01T13:58:24.000Z",
+          "id": "y2wsit",
+          "title": "Walmart shoppers can now get Dunkin’ delivered alongside orders",
+          "url": "https://www.retaildive.com/news/walmart-shoppers-dunkin-delivery-coffee/829560/",
+          "source": "Retail Dive",
+          "published_at": "2026-09-03T15:58:00.000Z",
           "ingested_at": "2026-09-06T10:42:05.943Z",
-          "snippet": "Per DHL, Nigeria exceeds the global average for expected ecommerce expansion. \nThe post Ecommerce in Nigeria Poised for Growth appeared first on Practical Ecommerce.",
+          "snippet": "The service follows a similar announcement with Subway as the retailer aims to become a contender in the restaurant delivery space.",
           "sourceType": "rss",
           "relevance": {
-            "scoreTotal": 0.15000000000000002,
+            "scoreTotal": 0.1,
             "recencyScore": 0,
             "sourceWeight": 0.1,
-            "keywordBoost": 0.05,
+            "keywordBoost": 0,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": []
+          },
+          "aiSummary": "AI-generated summary: Walmart has expanded its delivery offerings to include Dunkin’ alongside regular orders, following a similar partnership with Subway, as the retailer seeks to strengthen its position in the restaurant delivery market.",
+          "translations": {
+            "da": {
+              "title": "Walmart-kunder kan nu få Dunkin’ leveret sammen med ordrer",
+              "summary": "AI-genereret resumé: Walmart har udvidet sine leveringsmuligheder til også at inkludere Dunkin’ sammen med almindelige ordrer efter et lignende partnerskab med Subway, da detailhandleren søger at styrke sin position på markedet for restaurantlevering."
+            },
+            "es": {
+              "title": "Los compradores de Walmart ahora pueden recibir Dunkin’ junto con sus pedidos",
+              "summary": "Resumen generado por IA: Walmart ha ampliado sus opciones de entrega para incluir Dunkin’ junto con los pedidos regulares, tras una asociación similar con Subway, mientras el minorista busca fortalecer su posición en el mercado de entrega de restaurantes."
+            }
+          }
+        },
+        {
+          "id": "o3y0mg",
+          "title": "The Race to Own AI Shopping",
+          "url": "https://www.practicalecommerce.com/the-race-to-own-ai-shopping",
+          "source": "Practical Ecommerce",
+          "published_at": "2026-09-06T12:42:25.000Z",
+          "ingested_at": "2026-09-06T17:10:28.656Z",
+          "snippet": "Will shoppers use AI mostly on external platforms, or on-site directly with merchants?\nThe post The Race to Own AI Shopping appeared first on Practical Ecommerce.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.25,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.15000000000000002,
             "insightSignalBoost": 0,
             "penalty": 0,
             "matchedKeywords": [
-              "ecommerce"
+              "shopping",
+              "ecommerce",
+              "platform"
             ]
+          },
+          "aiSummary": "AI-generated summary: The article \"The Race to Own AI Shopping\" from Practical Ecommerce (2026-09-06) explores whether consumers will primarily engage with AI shopping tools on external platforms or directly on merchants' websites.",
+          "translations": {
+            "da": {
+              "title": "Kapløbet om at eje AI-shopping",
+              "summary": "AI-genereret resumé: Artiklen \"The Race to Own AI Shopping\" fra Practical Ecommerce (2026-09-06) undersøger, om forbrugere primært vil bruge AI-shoppingværktøjer på eksterne platforme eller direkte på forhandlernes hjemmesider."
+            },
+            "es": {
+              "title": "La carrera por controlar las compras con IA",
+              "summary": "Resumen generado por IA: El artículo \"The Race to Own AI Shopping\" de Practical Ecommerce (2026-09-06) explora si los consumidores interactuarán principalmente con herramientas de compra con IA en plataformas externas o directamente en los sitios web de los comerciantes."
+            }
+          }
+        },
+        {
+          "id": "tnozd5",
+          "title": "GUEST COMMENT Why IKEA’s latest launch could transform post-sale operations",
+          "url": "https://internetretailing.net/guest-comment-why-ikeas-latest-launch-could-transform-post-sale-operations/",
+          "source": "Internet Retailing",
+          "published_at": "2026-09-02T02:53:00.000Z",
+          "ingested_at": "2026-09-06T10:42:05.943Z",
+          "snippet": "James Rigg, CEO of Trojan Commerce, explains why retailers need to stop treating the first sale as the end of the customer relationship.\nThe post GUEST COMMENT Why IKEA’s latest launch could transform post-sale operations appeared first on InternetRetailing.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": []
+          },
+          "aiSummary": "AI-generated summary: In the article \"GUEST COMMENT Why IKEA’s latest launch could transform post-sale operations\" (Internet Retailing, 2026-09-02), James Rigg, CEO of Trojan Commerce, argues that retailers should view the customer relationship as ongoing beyond the initial sale to enhance post-sale operations.",
+          "translations": {
+            "da": {
+              "title": "GUEST COMMENT Hvorfor IKEAs seneste lancering kan transformere efter-salgsoperationer",
+              "summary": "AI-genereret resumé: I artiklen \"GUEST COMMENT Hvorfor IKEAs seneste lancering kan transformere efter-salgsoperationer\" (Internet Retailing, 2026-09-02) argumenterer James Rigg, CEO for Trojan Commerce, for, at detailhandlere bør betragte kundeforholdet som løbende ud over det første salg for at forbedre efter-salgsoperationer."
+            },
+            "es": {
+              "title": "GUEST COMMENT Por qué el último lanzamiento de IKEA podría transformar las operaciones postventa",
+              "summary": "Resumen generado por IA: En el artículo \"GUEST COMMENT Por qué el último lanzamiento de IKEA podría transformar las operaciones postventa\" (Internet Retailing, 2026-09-02), James Rigg, CEO de Trojan Commerce, sostiene que los minoristas deberían considerar la relación con el cliente como continua más allá de la venta inicial para mejorar las operaciones postventa."
+            }
           }
         }
       ]
     },
     "Luxury_and_Consumer": {
-      "total": 73,
+      "total": 79,
       "top": [
         {
-          "id": "ct5sx0",
-          "title": "This New, Sephora-Exclusive Fragrance Brand Puts the Perfumer First",
-          "url": "https://fashionista.com/2026/09/anecdotes-by-artists-fragrance-brand-sephora-launch",
-          "source": "Fashionista",
-          "published_at": "2026-09-01T11:00:00.000Z",
-          "ingested_at": "2026-09-06T10:42:05.943Z",
-          "snippet": "Launching with the retailer on Sept. 14, Anecdotes by Artists spotlights a new nose as the \"artist\" behind each collection.",
+          "id": "9q9w7f",
+          "title": "Affordable Luxury Is Gaining Ground in Department Stores",
+          "url": "https://wwd.com/fashion-news/designer-luxury/affordable-luxury-department-stores-1239199590/",
+          "source": "WWD - Women's Wear Daily",
+          "published_at": "2026-09-06T14:32:22.000Z",
+          "ingested_at": "2026-09-06T17:10:28.656Z",
+          "snippet": "\"Contemporary and premium tiers now dominate the segment map,\" according to the International Association of Department Stores.",
           "sourceType": "rss",
           "categoryHint": "Fashion & Luxury",
           "relevance": {
@@ -347,145 +501,216 @@
             "sourceWeight": 0,
             "keywordBoost": 0.1,
             "insightSignalBoost": 0,
-            "penalty": 0,
-            "matchedKeywords": [
-              "brand",
-              "exclusive"
-            ]
-          }
-        },
-        {
-          "id": "rsggou",
-          "title": "Anthropologie is launching Nike as sneaker shoppers increase nearly 30%",
-          "url": "https://www.glossy.co/fashion/anthropologie-is-launching-nike-as-its-sneaker-sales-increase-nearly-30/?utm_campaign=glossydis&utm_medium=rss&utm_source=general-rss",
-          "source": "Glossy",
-          "published_at": "2026-08-31T04:00:00.000Z",
-          "ingested_at": "2026-09-06T10:42:05.943Z",
-          "snippet": "Over the last year, the number of people coming to Anthropologie for sneakers specifically has increased nearly 30% according to Jessica Irick Peek, gmm of footwear and accessories for Anthropologie.",
-          "sourceType": "rss",
-          "categoryHint": "Fashion & Luxury",
-          "relevance": {
-            "scoreTotal": 0.1,
-            "recencyScore": 0,
-            "sourceWeight": 0,
-            "keywordBoost": 0,
-            "insightSignalBoost": 0.1,
-            "penalty": 0,
-            "matchedKeywords": []
-          }
-        },
-        {
-          "id": "c1ttxz",
-          "title": "Fall overtakes summer for luxury travelers: Virtuoso",
-          "url": "https://www.luxurydaily.com/fall-overtakes-summer-for-luxury-travelers-virtuoso/",
-          "source": "Luxury Daily - Research",
-          "published_at": "2026-08-31T09:00:00.000Z",
-          "ingested_at": "2026-09-06T10:42:05.943Z",
-          "snippet": "The high-end hospitality network says bookings for autumn are up 59 percent, with multicity “city-maxxing” itineraries and longevity trips gaining popularity.",
-          "sourceType": "rss",
-          "categoryHint": "Fashion & Luxury",
-          "relevance": {
-            "scoreTotal": 0.15000000000000002,
-            "recencyScore": 0,
-            "sourceWeight": 0,
-            "keywordBoost": 0.1,
-            "insightSignalBoost": 0.05,
             "penalty": 0,
             "matchedKeywords": [
               "luxury",
-              "high-end"
+              "premium"
             ]
+          },
+          "aiSummary": "AI-generated summary: According to the International Association of Department Stores, contemporary and premium tiers are increasingly dominating the luxury segment in department stores, indicating a rise in affordable luxury offerings.",
+          "translations": {
+            "da": {
+              "title": "Overkommelig luksus vinder frem i stormagasiner",
+              "summary": "Ifølge International Association of Department Stores dominerer de moderne og premium segmenter i stigende grad luksusmarkedet i stormagasiner, hvilket indikerer en stigning i overkommelige luksustilbud."
+            },
+            "es": {
+              "title": "El lujo asequible gana terreno en los grandes almacenes",
+              "summary": "Según la International Association of Department Stores, los niveles contemporáneo y premium dominan cada vez más el segmento de lujo en los grandes almacenes, lo que indica un aumento en las ofertas de lujo asequible."
+            }
           }
         },
         {
-          "id": "xug8zj",
-          "title": "Aman plans first South Korea property in Seoul",
-          "url": "https://www.luxurydaily.com/aman-plans-first-south-korea-property-in-seoul/",
-          "source": "Luxury Daily - Main",
-          "published_at": "2026-09-03T08:45:00.000Z",
+          "id": "1now69",
+          "title": "10 tips to get your retail business ready for conversational shopping",
+          "url": "https://insiderone.com/conversational-shopping-retail-readiness/",
+          "source": "UseInsider",
+          "published_at": "2026-09-03T14:37:11.000Z",
           "ingested_at": "2026-09-06T10:42:05.943Z",
-          "snippet": "The multinational luxury hospitality company is planting a hotel, branded residences and a global club in the Cheongdam district of Gangnam.",
+          "snippet": "Summary A conversational shopping experience uses messaging channels such as WhatsApp, SMS, and in-app chat to support product discovery and service conversations, with the experience shaped by the retailer’s connected data sources, channel capabilities, and commerce integrations. Retailers usually start this work by shopping for a chatbot vendor. That instinct is incomplete. Useful conversations depend […]",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": -0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0,
+            "insightSignalBoost": 0.05,
+            "penalty": 0.2,
+            "matchedKeywords": []
+          },
+          "aiSummary": "AI-generated summary: The article from UseInsider (2026) outlines how retailers can prepare for conversational shopping by leveraging messaging channels like WhatsApp and SMS, emphasizing that successful experiences rely on integrated data, channel features, and commerce systems rather than solely on selecting a chatbot vendor.",
+          "translations": {
+            "da": {
+              "title": "10 tips til at gøre din detailforretning klar til samtalebaseret shopping",
+              "summary": "AI-genereret resumé: Artiklen fra UseInsider (2026) beskriver, hvordan detailhandlere kan forberede sig på samtalebaseret shopping ved at udnytte beskedkanaler som WhatsApp og SMS, og understreger, at succesfulde oplevelser afhænger af integrerede data, kanalfunktioner og handelssystemer frem for kun at vælge en chatbot-leverandør."
+            },
+            "es": {
+              "title": "10 consejos para preparar tu negocio minorista para las compras conversacionales",
+              "summary": "Resumen generado por IA: El artículo de UseInsider (2026) explica cómo los minoristas pueden prepararse para las compras conversacionales aprovechando canales de mensajería como WhatsApp y SMS, enfatizando que las experiencias exitosas dependen de datos integrados, características del canal y sistemas comerciales, en lugar de solo elegir un proveedor de chatbot."
+            }
+          }
+        },
+        {
+          "id": "bxdfel",
+          "title": "Burnham ambitions: UK fashion retail’s top prime ministerial priorities",
+          "url": "https://www.drapersonline.com/insight/analysis/burnham-ambitions-uk-fashion-retails-top-priorities-for-prime-minister",
+          "source": "Drapers",
+          "published_at": "2026-09-04T15:00:09.000Z",
+          "ingested_at": "2026-09-06T10:42:05.943Z",
+          "snippet": "Drapers\nBurnham ambitions: UK fashion retail’s top prime ministerial priorities\nDrapers speaks to everyone from multiple retailers to small brands, from big English cities to rural Wales, to find out what the fashion industry wants from the new prime minister’s policies.\nThe post Burnham ambitions: UK fashion retail’s top prime ministerial priorities appeared first on Drapers.",
           "sourceType": "rss",
           "categoryHint": "Fashion & Luxury",
           "relevance": {
-            "scoreTotal": 0.1,
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "brand"
+            ]
+          },
+          "aiSummary": "AI-generated summary: The article from Drapers (2026-09-04) explores the key priorities of the UK fashion retail industry, gathering insights from a range of retailers and brands across urban and rural areas to understand their expectations from the new prime minister's policies.",
+          "translations": {
+            "da": {
+              "title": "Burnhams ambitioner: Storbritanniens modehandels vigtigste premierministerielle prioriteter",
+              "summary": "AI-genereret resumé: Artiklen fra Drapers (2026-09-04) undersøger de vigtigste prioriteter i Storbritanniens modehandel og samler indsigt fra forskellige detailhandlere og mærker i både by- og landområder for at forstå deres forventninger til den nye premierministers politik."
+            },
+            "es": {
+              "title": "Ambiciones de Burnham: las principales prioridades ministeriales del comercio minorista de moda en el Reino Unido",
+              "summary": "Resumen generado por IA: El artículo de Drapers (2026-09-04) explora las prioridades clave de la industria de la moda en el Reino Unido, recopilando opiniones de varios minoristas y marcas en áreas urbanas y rurales para entender sus expectativas respecto a las políticas del nuevo primer ministro."
+            }
+          }
+        },
+        {
+          "id": "o9gii5",
+          "title": "Luxury Unfiltered: Every luxury claim can now be tested",
+          "url": "https://www.luxurydaily.com/luxury-unfiltered-every-luxury-claim-can-now-be-tested/",
+          "source": "Luxury Daily - Main",
+          "published_at": "2026-09-03T06:00:40.000Z",
+          "ingested_at": "2026-09-06T10:42:05.943Z",
+          "snippet": "Luxury Unfiltered is a weekly column by Daniel Langer, an expert in luxury branding, hospitality and activations who was named a “Global Top 5 Luxury Key Opinion Leader” by Netbase Quid.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": -0.1,
             "recencyScore": 0,
             "sourceWeight": 0,
             "keywordBoost": 0.1,
             "insightSignalBoost": 0,
-            "penalty": 0,
+            "penalty": 0.2,
             "matchedKeywords": [
               "luxury",
               "brand"
             ]
+          },
+          "aiSummary": "AI-generated summary: \"Luxury Unfiltered,\" a weekly column by luxury branding expert Daniel Langer, offers insights into luxury claims and consumer experiences, leveraging his recognition as a top global luxury opinion leader.",
+          "translations": {
+            "da": {
+              "title": "Luxury Unfiltered: Hver luksuspåstand kan nu testes",
+              "summary": "AI-genereret resumé: \"Luxury Unfiltered,\" en ugentlig kolonne af luksusbrandingekspert Daniel Langer, giver indsigt i luksuspåstande og forbrugeroplevelser med udgangspunkt i hans anerkendelse som en af verdens førende luksusmeningsdannere."
+            },
+            "es": {
+              "title": "Luxury Unfiltered: Ahora se puede probar cada afirmación de lujo",
+              "summary": "Resumen generado por IA: \"Luxury Unfiltered,\" una columna semanal del experto en branding de lujo Daniel Langer, ofrece perspectivas sobre las afirmaciones de lujo y las experiencias de los consumidores, aprovechando su reconocimiento como uno de los principales líderes de opinión globales en lujo."
+            }
           }
         },
         {
-          "id": "8zltx3",
-          "title": "From Palazzos to Spas, Malta Has Exciting Discoveries for Luxury Travelers",
-          "url": "https://robbreport.com/partners/malta-has-exciting-discoveries-luxury-travelers-1238602974/",
-          "source": "Robb Report",
-          "published_at": "2026-09-04T17:41:38.000Z",
+          "id": "lgey7j",
+          "title": "Gucci adds new designs to Horsebit collection",
+          "url": "https://www.luxurydaily.com/gucci-extends-horsebit-motif-into-fine-jewelry-watch/",
+          "source": "Luxury Daily - Main",
+          "published_at": "2026-09-04T08:45:00.000Z",
           "ingested_at": "2026-09-06T10:42:05.943Z",
-          "snippet": "Historic properties and exclusive opportunities create unforgettable experiences.",
+          "snippet": "The Italian fashion label is launching necklaces, rings, bracelets and a watch in a campaign backed by Dutch photographer Carlijn Jacobs.",
           "sourceType": "rss",
           "categoryHint": "Fashion & Luxury",
           "relevance": {
-            "scoreTotal": 0.1,
+            "scoreTotal": -0.2,
             "recencyScore": 0,
             "sourceWeight": 0,
-            "keywordBoost": 0.1,
+            "keywordBoost": 0,
+            "insightSignalBoost": 0,
+            "penalty": 0.2,
+            "matchedKeywords": []
+          },
+          "aiSummary": "AI-generated summary: Italian fashion label Gucci is expanding its Horsebit collection with new necklaces, rings, bracelets, and a watch, promoted through a campaign featuring Dutch photographer Carlijn Jacobs.",
+          "translations": {
+            "da": {
+              "title": "Gucci tilføjer nye designs til Horsebit-kollektionen",
+              "summary": "AI-genereret resumé: Det italienske modebrand Gucci udvider sin Horsebit-kollektion med nye halskæder, ringe, armbånd og et ur, promoveret gennem en kampagne med den hollandske fotograf Carlijn Jacobs."
+            },
+            "es": {
+              "title": "Gucci añade nuevos diseños a la colección Horsebit",
+              "summary": "Resumen generado por IA: La marca italiana de moda Gucci está ampliando su colección Horsebit con nuevos collares, anillos, pulseras y un reloj, promocionados mediante una campaña con la fotógrafa neerlandesa Carlijn Jacobs."
+            }
+          }
+        },
+        {
+          "id": "en0iqx",
+          "title": "This Indie Designer Will Take the Long Route To Make Fashion She's Proud Of",
+          "url": "https://fashionista.com/2026/09/arth-atelier-tamanna-mullen-founder-interview",
+          "source": "Fashionista",
+          "published_at": "2026-09-02T12:30:00.000Z",
+          "ingested_at": "2026-09-06T10:42:05.943Z",
+          "snippet": "Tamanna Mullen founded rising brand Arth Atelier on the principles of transparent production and Indian craftsmanship.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.05,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
             "insightSignalBoost": 0,
             "penalty": 0,
             "matchedKeywords": [
-              "luxury",
-              "exclusive"
+              "brand"
             ]
+          },
+          "aiSummary": "AI-generated summary: Tamanna Mullen, founder of the rising brand Arth Atelier, emphasizes transparent production and Indian craftsmanship in creating luxury fashion she is proud of.",
+          "translations": {
+            "da": {
+              "title": "Denne Indie-designer tager den lange vej for at skabe mode, hun er stolt af",
+              "summary": "AI-genereret resumé: Tamanna Mullen, grundlægger af det voksende mærke Arth Atelier, lægger vægt på gennemsigtig produktion og indisk håndværk i skabelsen af luksusmode, hun er stolt af."
+            },
+            "es": {
+              "title": "Esta diseñadora indie tomará la ruta larga para crear moda de la que se sienta orgullosa",
+              "summary": "Resumen generado por IA: Tamanna Mullen, fundadora de la marca emergente Arth Atelier, enfatiza la producción transparente y la artesanía india en la creación de moda de lujo de la que se siente orgullosa."
+            }
           }
         },
         {
-          "id": "b934vi",
-          "title": "Sole Food: Saucony Quietly Became the Reseller’s Favorite Sneaker",
-          "url": "https://www.highsnobiety.com/p/saucony-stockx-report/",
-          "source": "Highsnobiety",
-          "published_at": "2026-08-31T23:26:16.000Z",
+          "id": "dcmbr4",
+          "title": "Ashaki: The Clothing Brand Designing 'Heirloom' Fashion for the Contemporary Woman",
+          "url": "https://fashionista.com/2026/09/ashaki-clothing-brand",
+          "source": "Fashionista",
+          "published_at": "2026-09-03T15:00:00.000Z",
           "ingested_at": "2026-09-06T10:42:05.943Z",
-          "snippet": "StockX names Saucony its fastest-growing sneaker brand in the August 2026 Big Facts report. Here, we unpack the secrets to the label's resale success.",
+          "snippet": "Each garment is handcrafted with traditional hand-sewing and embroidery techniques.",
           "sourceType": "rss",
           "categoryHint": "Fashion & Luxury",
           "relevance": {
-            "scoreTotal": 0.1,
+            "scoreTotal": -0.1,
             "recencyScore": 0,
             "sourceWeight": 0,
             "keywordBoost": 0.05,
             "insightSignalBoost": 0.05,
-            "penalty": 0,
+            "penalty": 0.2,
             "matchedKeywords": [
               "brand"
             ]
-          }
-        },
-        {
-          "id": "skoxyl",
-          "title": "Mytheresa updates logo",
-          "url": "https://www.luxurydaily.com/mytheresa-updates-logo/",
-          "source": "Luxury Daily - Main",
-          "published_at": "2026-09-02T08:45:00.000Z",
-          "ingested_at": "2026-09-06T10:42:05.943Z",
-          "snippet": "The online luxury retailer is rolling out an evolved wordmark across its website, app, stores and brand communications.",
-          "sourceType": "rss",
-          "categoryHint": "Fashion & Luxury",
-          "relevance": {
-            "scoreTotal": 0.1,
-            "recencyScore": 0,
-            "sourceWeight": 0,
-            "keywordBoost": 0.1,
-            "insightSignalBoost": 0,
-            "penalty": 0,
-            "matchedKeywords": [
-              "luxury",
-              "brand"
-            ]
+          },
+          "aiSummary": "AI-generated summary: Ashaki is a luxury clothing brand that creates \"heirloom\" fashion for contemporary women by handcrafted garments using traditional hand-sewing and embroidery techniques.",
+          "translations": {
+            "da": {
+              "title": "Ashaki: Tøjmærket der designer 'arvestykke' mode til den moderne kvinde",
+              "summary": "AI-genereret resumé: Ashaki er et luksustøjmærke, der skaber 'arvestykke' mode til moderne kvinder ved håndlavede beklædningsgenstande med traditionelle håndsynings- og broderiteknikker."
+            },
+            "es": {
+              "title": "Ashaki: La marca de ropa que diseña moda 'heredada' para la mujer contemporánea",
+              "summary": "Resumen generado por IA: Ashaki es una marca de ropa de lujo que crea moda 'heredada' para mujeres contemporáneas mediante prendas hechas a mano usando técnicas tradicionales de costura y bordado."
+            }
           }
         }
       ]
@@ -514,6 +739,17 @@
               "jewellery",
               "jeweller"
             ]
+          },
+          "aiSummary": "AI-generated summary: Australian fashion jewellery chain Lovisa has achieved double-digit sales growth in the past financial year, driven by its ongoing international expansion, bringing it closer to a $1 billion milestone.",
+          "translations": {
+            "da": {
+              "title": "$1 milliard: Endnu en stor milepæl i sigte for Lovisa",
+              "summary": "AI-genereret resumé: Det australske mode-smykkekæde Lovisa har opnået tocifret salgsvækst i det seneste regnskabsår, drevet af sin fortsatte internationale ekspansion, hvilket bringer det tættere på en $1 milliard milepæl."
+            },
+            "es": {
+              "title": "1.000 millones de dólares: Otro hito importante a la vista para Lovisa",
+              "summary": "Resumen generado por IA: La cadena australiana de joyería de moda Lovisa ha logrado un crecimiento de ventas de dos dígitos en el último año fiscal, impulsada por su continua expansión internacional, acercándola a un hito de 1.000 millones de dólares."
+            }
           }
         },
         {
@@ -538,6 +774,17 @@
               "retailer",
               "jeweller"
             ]
+          },
+          "aiSummary": "AI-generated summary: The International Jewellery Fair in Sydney brings together retailers and industry professionals, creating a vibrant atmosphere of reconnection and lively conversations that define the event's unique rhythm.",
+          "translations": {
+            "da": {
+              "title": "IJF2026: Fortid, nutid og fremtid for en industri under ét tag",
+              "summary": "AI-genereret resumé: International Jewellery Fair i Sydney samler detailhandlere og branchefolk og skaber en levende atmosfære af genforbindelse og livlige samtaler, der definerer begivenhedens unikke rytme."
+            },
+            "es": {
+              "title": "IJF2026: Pasado, presente y futuro de una industria bajo un mismo techo",
+              "summary": "Resumen generado por IA: International Jewellery Fair en Sídney reúne a minoristas y profesionales de la industria, creando un ambiente vibrante de reconexión y conversaciones animadas que definen el ritmo único del evento."
+            }
           }
         },
         {
@@ -561,6 +808,17 @@
               "diamond",
               "gold"
             ]
+          },
+          "aiSummary": "AI-generated summary: At the London red carpet event for ‘Practical Magic 2,’ Sandra Bullock showcased modern jewellery by Jessica McCormack, featuring two necklaces with large collet-set marquise diamonds on gold torque collars.",
+          "translations": {
+            "da": {
+              "title": "Døm Smykkerne: Sandra Bullock Skaber Moderne Magi i Jessica McCormack ved ‘Practical Magic 2’ London Rød Løber",
+              "summary": "Ved London rød løber-arrangementet for ‘Practical Magic 2’ viste Sandra Bullock moderne smykker af Jessica McCormack frem, med to halskæder med store collet-satte marquise-diamanter på guld torque-kraver."
+            },
+            "es": {
+              "title": "Juzga las Joyas: Sandra Bullock Hace Magia Moderna con Jessica McCormack en la Alfombra Roja de ‘Practical Magic 2’ en Londres",
+              "summary": "En el evento de alfombra roja en Londres para ‘Practical Magic 2’, Sandra Bullock mostró joyería moderna de Jessica McCormack, con dos collares con grandes diamantes marquesa engastados en collares torque de oro."
+            }
           }
         },
         {
@@ -583,6 +841,17 @@
             "matchedKeywords": [
               "diamond"
             ]
+          },
+          "aiSummary": "AI-generated summary: According to Rapaport and reported by Instore Magazine on September 4, 2026, diamond prices showed a broader recovery in August, with the 1-carat Rapaport Price Index (RAPI) posting its first gain in 15 months amid a continued rebound in small-stone prices.",
+          "translations": {
+            "da": {
+              "title": "Diamond Price Recovery Broadens Further in August, Rapaport Reports",
+              "summary": "Ifølge Rapaport og rapporteret af Instore Magazine den 4. september 2026 viste diamantpriserne en bredere bedring i august, hvor 1-carat Rapaport Price Index (RAPI) noterede sin første stigning i 15 måneder midt i en fortsat genopretning af priserne på små sten."
+            },
+            "es": {
+              "title": "Diamond Price Recovery Broadens Further in August, Rapaport Reports",
+              "summary": "Según Rapaport y reportado por Instore Magazine el 4 de septiembre de 2026, los precios de los diamantes mostraron una recuperación más amplia en agosto, con el índice Rapaport Price Index (RAPI) de 1 quilate registrando su primera ganancia en 15 meses en medio de una continua recuperación de los precios de piedras pequeñas."
+            }
           }
         },
         {
@@ -606,6 +875,17 @@
               "jewellery",
               "jeweller"
             ]
+          },
+          "aiSummary": "AI-generated summary: On 4 September 2026, Me & Em launched its debut jewellery collection, signaling a new era of luxury for the premium womenswear brand, according to Drapers.",
+          "translations": {
+            "da": {
+              "title": "I billeder: Me & Em udvider med smykker",
+              "summary": "AI-genereret resumé: Den 4. september 2026 lancerede Me & Em sin debut smykkekollektion, hvilket markerer en ny æra af luksus for det premium damebeklædningsmærke, ifølge Drapers."
+            },
+            "es": {
+              "title": "En imágenes: Me & Em se expande a la joyería",
+              "summary": "Resumen generado por IA: El 4 de septiembre de 2026, Me & Em lanzó su primera colección de joyería, señalando una nueva era de lujo para la marca premium de ropa femenina, según Drapers."
+            }
           }
         },
         {
@@ -626,6 +906,17 @@
             "insightSignalBoost": 0,
             "penalty": 0,
             "matchedKeywords": []
+          },
+          "aiSummary": "AI-generated summary: The article from Instore Magazine dated September 6, 2026, discusses why jewelers should avoid focusing on the price or \"cost\" of rings, emphasizing that customers engage more deeply with the story behind the jewelry rather than just its price point.",
+          "translations": {
+            "da": {
+              "title": "Stop med at sige, hvad ringen 'koster' — plus flere svar på oktober-spørgsmål fra juvelerer",
+              "summary": "AI-genereret resumé: Artiklen fra Instore Magazine den 6. september 2026 forklarer, hvorfor juvelerer bør undgå at fokusere på prisen eller 'kostnaden' af ringe, og understreger, at kunder engagerer sig mere i historien bag smykket end blot dets pris."
+            },
+            "es": {
+              "title": "Deja de decir cuánto 'cuesta' el anillo — Más respuestas a preguntas de joyeros de octubre",
+              "summary": "Resumen generado por IA: El artículo de Instore Magazine del 6 de septiembre de 2026 explica por qué los joyeros deben evitar centrarse en el precio o 'costo' de los anillos, enfatizando que los clientes se involucran más con la historia detrás de la joyería que solo con su precio."
+            }
           }
         },
         {
@@ -650,9 +941,23 @@
               "jeweller",
               "diamond"
             ]
+          },
+          "aiSummary": "AI-generated summary: Thieves have stolen a historically significant Van Cleef & Arpels diamond necklace valued at over $6 million from a museum in Austria, marking another high-profile royal jewellery heist in Europe.",
+          "translations": {
+            "da": {
+              "title": "Tyve stjæler flere kongelige smykker i endnu et europæisk røveri",
+              "summary": "AI-genereret resumé: Tyve har stjålet en historisk betydningsfuld Van Cleef & Arpels diamantkæde til en værdi af over 6 millioner dollars fra et museum i Østrig, hvilket markerer endnu et højtprofileret kongeligt smykketyveri i Europa."
+            },
+            "es": {
+              "title": "Ladrones roban más joyas reales en otro atraco europeo",
+              "summary": "Resumen generado por IA: Ladrones han robado un collar de diamantes Van Cleef & Arpels de gran valor histórico, valorado en más de 6 millones de dólares, de un museo en Austria, marcando otro atraco destacado de joyas reales en Europa."
+            }
           }
         }
       ]
     }
-  }
+  },
+  "editorialTake": "Nvidia’s $13 billion acquisition of Hugging Face is a clear bet on owning the AI developer community and tooling layer, not just the hardware stack. This move shifts Nvidia from being a component supplier to a platform enabler, locking in AI innovation around its GPUs. It forces competitors to rethink their AI strategies because Nvidia is now controlling both the silicon and the software ecosystems that developers rely on.\n\nMeanwhile, Target’s use of AI to supercharge its back-to-school push shows how retailers must embed AI deeply into operations, not just marketing. AI is becoming a table stake for inventory and customer engagement at scale. The real question is whether traditional retailers can keep pace with tech giants who own both the AI models and the data, or if they risk becoming commoditized execution arms.",
+  "coverImageUrl": "/weekly-images/2026-W36.png",
+  "coverImageAlt": "Weekly cover illustration for 2026-W36"
 }

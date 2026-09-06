@@ -851,5 +851,26 @@
     "version": "v3",
     "cached_at": "2026-08-30T12:05:01.831Z",
     "variant": "safe"
+  },
+  "8695c5e7edb815d7ee00420bb8ac09354c4c43561132db1a2e07004c7db1a674": {
+    "output": {
+      "concept": "back-to-school-gold-watch-lunchbox-mashup",
+      "primaryHumorDriver": "fish-out-of-water",
+      "secondaryEnhancer": "unexpected texture/material combination",
+      "sceneDescription": "A photorealistic supermarket checkout belt features a classic metal lunchbox, but instead of sandwiches or juice, the open lunchbox is packed with a gleaming gold watch, a barcode scanner, and a few colored sticky notes. Nestled beside it are an apple, a stack of payment terminal receipts, and a shopping bag with small, incidental Retail Dive, Practical Ecommerce, and Jeweller logos on reusable bag tags. The absurdity comes from the luxury gold watch mingling with mundane back-to-school items and ecommerce tools, all in a realistic grocery setting.",
+      "finalImagePrompt": "A grocery store checkout belt with an open metal lunchbox containing a gold watch, a barcode scanner, and colorful sticky notes. Next to the lunchbox, an apple, a pile of payment terminal receipts, and a reusable shopping bag with small, incidental brand tags. The setting is a bright, realistic supermarket with natural product photography lighting.",
+      "negativePrompt": [
+        "text, letters, numbers, signage, labels, price tags",
+        "screens, UI, dashboards, holograms, floating icons",
+        "watermarks, unrelated brand logos",
+        "cartoon, illustration, CGI, 3D render, anime",
+        "diamond, diamonds, gemstone, gemstones, precious stones, jewelry close-up, jewelry product shot, diamond ring, diamond necklace, diamond earring, jeweled, sparkling gemstone",
+        "dramatic spotlight, glowing edges, rim lighting, vignette, cinematic color grade, blurred background, bokeh"
+      ],
+      "confidence": 0.77
+    },
+    "version": "v3",
+    "cached_at": "2026-09-06T17:33:19.207Z",
+    "variant": "safe"
   }
 }

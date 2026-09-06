@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-06T10:42:27.113Z",
+  "timestamp": "2026-09-06T17:11:03.664Z",
   "sources": [
     {
       "sourceName": "BoF - News (The News in Brief)",
@@ -22,15 +22,15 @@
       "pagesFetched": 1,
       "fetchStatus": 200,
       "itemsMatched": 18,
-      "articlesExtracted": 12,
+      "articlesExtracted": 0,
       "rejectedNoDate": 0,
       "rejectedInvalidDate": 0,
       "rejectedNoTitle": 0,
       "rejectedNoUrl": 0,
-      "rejectedDuplicate": 6,
+      "rejectedDuplicate": 18,
       "rejectedSelectorMiss": 0,
-      "articlesKept": 12,
-      "yieldPercentage": 66.66666666666666,
+      "articlesKept": 0,
+      "yieldPercentage": 0,
       "failures": []
     },
     {
@@ -38,23 +38,23 @@
       "pagesFetched": 1,
       "fetchStatus": 200,
       "itemsMatched": 175,
-      "articlesExtracted": 25,
+      "articlesExtracted": 0,
       "rejectedNoDate": 0,
       "rejectedInvalidDate": 0,
       "rejectedNoTitle": 0,
       "rejectedNoUrl": 0,
-      "rejectedDuplicate": 150,
+      "rejectedDuplicate": 175,
       "rejectedSelectorMiss": 0,
-      "articlesKept": 25,
-      "yieldPercentage": 14.285714285714285,
+      "articlesKept": 0,
+      "yieldPercentage": 0,
       "failures": []
     }
   ],
   "summary": {
     "totalPagesFetched": 3,
     "totalItemsMatched": 193,
-    "totalArticlesExtracted": 37,
-    "totalArticlesKept": 37,
-    "overallYieldPercentage": 19.170984455958546
+    "totalArticlesExtracted": 0,
+    "totalArticlesKept": 0,
+    "overallYieldPercentage": 0
   }
 }

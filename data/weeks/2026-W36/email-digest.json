@@ -1,82 +1,83 @@
 {
   "week": "2026-W36",
-  "generatedAt": "2026-09-06T10:55:26.379Z",
+  "generatedAt": "2026-09-06T17:32:20.604Z",
+  "intro": "In this week’s digest, we explore how AI continues to reshape retail and luxury sectors, from Target’s AI-driven back-to-school strategy to Nvidia’s $13 billion acquisition of Hugging Face. We also examine emerging ecommerce tools, shifting consumer preferences toward affordable luxury, and the growing impact of social commerce through Sephora’s TikTok Shop initiatives.",
   "readOneThing": {
-    "title": "New Ecommerce Tools: September 2, 2026",
-    "url": "https://www.practicalecommerce.com/new-ecommerce-tools-september-2-2026"
+    "title": "How AI is powering Target’s back-to-school push",
+    "url": "https://www.retaildive.com/news/target-back-to-school-push-AI/829468/"
   },
   "items": [
     {
       "rank": 1,
+      "title": "How AI is powering Target’s back-to-school push",
+      "url": "https://www.retaildive.com/news/target-back-to-school-push-AI/829468/",
+      "source": "Retail Dive",
+      "bullets": [
+        "Customers who create wish lists through Target's AI-powered system generate approximately 45% higher demand in the back-to-school category.",
+        "Back-to-school spending is projected to reach $43.3 billion for K-12 students and $103.5 billion for college students in 2026, according to the National Retail Federation and Prosper Insights & Analytics.",
+        "3, 2026 Dani James Reporter Share Copy link Email LinkedIn X/Twitter Facebook Print License Add us on Google A Target store's back to school display"
+      ],
+      "summary": "AI-generated summary: According to Target’s senior vice president of technology, the retailer is leveraging AI to enhance its e-commerce site by creating wish lists and providing recommended actions as part of its back-to-school strategy."
+    },
+    {
+      "rank": 2,
+      "title": "Nvidia buying artificial intelligence platform Hugging Face for $13 billion ",
+      "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/nvidia-buying-artificial-intelligence-platform-hugging-face-for-13-billion/articleshow/133736454.cms",
+      "source": "Economic Times - Technology",
+      "bullets": [
+        "Nvidia announced its acquisition of the AI platform Hugging Face for approximately $12.93 billion to expand its presence in the open-source AI model market.",
+        "Hugging Face serves over 18 million developers and hosts more than 3 million models, 500,000 datasets, and 1 million applications used by over 200,000 companies.",
+        "Founded in 2016 and valued at $4.5 billion in August 2023, Hugging Face offers datasets, software libraries, and cloud services for building and deploying AI applications."
+      ],
+      "summary": "AI-generated summary: Nvidia announced its $13 billion acquisition of the AI platform Hugging Face, which is used by over 18 million developers, researchers, and creators, as well as more than 200,000 companies, to share millions of models, data sets, and applications."
+    },
+    {
+      "rank": 3,
+      "title": "Affordable Luxury Is Gaining Ground in Department Stores",
+      "url": "https://wwd.com/fashion-news/designer-luxury/affordable-luxury-department-stores-1239199590/",
+      "source": "WWD - Women's Wear Daily",
+      "bullets": [
+        "The International Association of Department Stores reported that contemporary and premium brands now dominate women's fashion floors, accounting for 31 percent of the market share. At Tryano in Abu Dhabi, the 400 to 800 euro price bracket showed the strongest sell-through rates, indicating consumer preference for affordable luxury. IADS members operate more than 563 stores across 32 countries, with women's fashion online sales increasing to 22 percent of department store sales in 2025 from 20 percent the previous year.",
+        "At Tryano in Abu Dhabi, for example, operator Chalhoub cited the 400 to 800 euro price bracket as attracting the strongest sell-throughs",
+        "For denim, the department store body cited a diverging picture, with denim declining in some markets, while experience “explosive growth in the U.S"
+      ],
+      "summary": "AI-generated summary: According to the International Association of Department Stores, contemporary and premium tiers are increasingly dominating the luxury segment in department stores, indicating a rise in affordable luxury offerings."
+    },
+    {
+      "rank": 4,
       "title": "New Ecommerce Tools: September 2, 2026",
       "url": "https://www.practicalecommerce.com/new-ecommerce-tools-september-2-2026",
       "source": "Practical Ecommerce",
       "bullets": [
-        "Read the full article for details.",
-        "Read the full article for complete details.",
-        "Read the full article for more information."
+        "dLocal launched dMoRe, a merchant of record service that integrates payment rails with local compliance and banking partnerships to help enterprises scale globally.",
+        "Runable raised $21 million in funding to expand its AI agent platform that assists small businesses with shipping, marketing, and customer support.",
+        "Amazon products can now be tagged in YouTube Shopping videos and livestreams, allowing U.S. creators to earn commissions through the affiliate program."
       ],
-      "summary": "This week's rollouts include tools for payments, shipping, affiliate marketing, CRMs, supply chain, merchant-of-record services, and more.\nThe post New Ecommerce Tools: September 2, 2026 appeared first on Practical Ecommerce."
-    },
-    {
-      "rank": 2,
-      "title": "OpenAI confirms ‘wiki incident,’ says it’s ‘working on a framework’ for more disclosure",
-      "url": "https://techcrunch.com/2026/09/05/openai-confirms-wiki-incident-says-its-working-on-a-framework-for-more-disclosure/",
-      "source": "TechCrunch - AI",
-      "bullets": [
-        "Read the full article for details.",
-        "Read the full article for complete details.",
-        "Read the full article for more information."
-      ],
-      "summary": "OpenAI acknowledged its role in a recently reported incident where AI agents took over a German wiki forum."
-    },
-    {
-      "rank": 3,
-      "title": "Anthropologie is launching Nike as sneaker shoppers increase nearly 30%",
-      "url": "https://www.glossy.co/fashion/anthropologie-is-launching-nike-as-its-sneaker-sales-increase-nearly-30/?utm_campaign=glossydis&utm_medium=rss&utm_source=general-rss",
-      "source": "Glossy",
-      "bullets": [
-        "Read the full article for details.",
-        "Read the full article for complete details.",
-        "Read the full article for more information."
-      ],
-      "summary": "Over the last year, the number of people coming to Anthropologie for sneakers specifically has increased nearly 30% according to Jessica Irick Peek, gmm of footwear and accessories for Anthropologie."
-    },
-    {
-      "rank": 4,
-      "title": "5 Content Marketing Ideas for October 2026",
-      "url": "https://www.practicalecommerce.com/5-content-marketing-ideas-for-october",
-      "source": "Practical Ecommerce",
-      "bullets": [
-        "Read the full article for details.",
-        "Read the full article for complete details.",
-        "Read the full article for more information."
-      ],
-      "summary": "Content marketers in October can explore Winnie-the-Pooh, Halloween, AI vs. humans, company archives, and breaking news.\nThe post 5 Content Marketing Ideas for October 2026 appeared first on Practical Ecommerce."
+      "summary": "AI-generated summary: The article from Practical Ecommerce dated September 2, 2026, highlights new ecommerce tools launched this week, covering areas such as payments, shipping, affiliate marketing, CRMs, supply chain, and merchant-of-record services."
     },
     {
       "rank": 5,
-      "title": "Google’s latest AI weather model gives you no excuse to forget your umbrella",
-      "url": "https://techcrunch.com/2026/09/03/googles-latest-ai-weather-model-gives-you-no-excuse-to-forget-your-umbrella/",
-      "source": "TechCrunch - AI",
+      "title": "‘Model fatigue’ sets in as AI labs race to roll out new versions at frenetic pace",
+      "url": "https://www.cnbc.com/2026/09/06/meta-google-openai-anthropic-ai-model-fatigue.html",
+      "source": "CNBC Technology",
       "bullets": [
-        "Read the full article for details.",
-        "Read the full article for complete details.",
-        "Read the full article for more information."
+        "Anthropic, OpenAI, Meta, and Google all released new AI model updates within the same week, intensifying competition in the AI industry. Nvidia announced its plan to acquire the open-source AI platform Hugging Face for $12.9 billion, expanding its AI model offerings. Gartner projects global AI spending will reach $2.59 trillion in 2026, with over $1 trillion allocated to services, software, cybersecurity, and AI tools.",
+        "19, 2026.Ludovic Marin | Afp | Getty ImagesFirst, Anthropic updated Fable and Mythos",
+        "Then came model enhancements from Meta and Google"
       ],
-      "summary": "WeatherNext 3 is the latest wave of a sea change in meteorology brought out by deep learning techniques. Google says it will start feeding into weather information users see in search, Google Maps, and Gemini."
+      "summary": "AI labs including Anthropic, OpenAI, Meta, and Google released new model updates this week amid a rapid development pace, while Nvidia announced its acquisition of the open-source AI platform Hugging Face. This AI-generated summary is based solely on the provided information."
     },
     {
       "rank": 6,
-      "title": "Ecommerce in Nigeria Poised for Growth",
-      "url": "https://www.practicalecommerce.com/ecommerce-in-nigeria-poised-for-growth",
-      "source": "Practical Ecommerce",
+      "title": "Sephora plans exclusive drops for TikTok Shop",
+      "url": "https://www.digitalcommerce360.com/2026/09/04/sephora-plans-exclusive-drops-for-tiktok-shop/",
+      "source": "Digital Commerce 360",
       "bullets": [
-        "Read the full article for details.",
-        "Read the full article for complete details.",
-        "Read the full article for more information."
+        "Sephora is launching a new monthly livestreamed shopping experience called Sephora Drop Shop on TikTok Shop, starting September 19 in the U.S., featuring celebrity hosts and creator content.",
+        "The beauty category on TikTok generates over a billion beauty-related searches each month, highlighting the platform's strong engagement with beauty content.",
+        "Sephora's initiative is part of a broader strategy to reach younger consumers and test digital innovations before potentially expanding globally."
       ],
-      "summary": "Per DHL, Nigeria exceeds the global average for expected ecommerce expansion. \nThe post Ecommerce in Nigeria Poised for Growth appeared first on Practical Ecommerce."
+      "summary": "AI-generated summary: Beauty retailer Sephora is launching a “Sephora Drop Shop” on TikTok Shop in the U.S. starting September 19, featuring monthly livestreamed product launches with celebrity hosts and creators to engage TikTok’s beauty-focused audience."
     }
   ]
 }
