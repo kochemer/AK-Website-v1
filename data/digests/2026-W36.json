@@ -1,0 +1,658 @@
+{
+  "weekLabel": "2026-W36",
+  "tz": "Europe/Copenhagen",
+  "startISO": "2026-08-30T22:00:00.000Z",
+  "endISO": "2026-09-06T21:59:59.999Z",
+  "builtAtISO": "2026-09-06T12:54:44.127+02:00",
+  "builtAtLocal": "2026-09-06 12:54:44",
+  "totals": {
+    "total": 683,
+    "byTopic": {
+      "AIStrategy": 134,
+      "EcommerceRetail": 456,
+      "LuxuryConsumer": 73,
+      "Jewellery": 20
+    }
+  },
+  "topics": {
+    "AI_and_Strategy": {
+      "total": 134,
+      "top": [
+        {
+          "id": "strw22",
+          "title": "OpenAI confirms ‘wiki incident,’ says it’s ‘working on a framework’ for more disclosure",
+          "url": "https://techcrunch.com/2026/09/05/openai-confirms-wiki-incident-says-its-working-on-a-framework-for-more-disclosure/",
+          "source": "TechCrunch - AI",
+          "published_at": "2026-09-05T18:05:27.000Z",
+          "ingested_at": "2026-09-06T10:42:05.943Z",
+          "snippet": "OpenAI acknowledged its role in a recently reported incident where AI agents took over a German wiki forum.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.35000000000000003,
+            "recencyScore": 0,
+            "sourceWeight": 0.15,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "openai",
+              "ai",
+              "agent"
+            ]
+          }
+        },
+        {
+          "id": "rmkvwb",
+          "title": "Google’s latest AI weather model gives you no excuse to forget your umbrella",
+          "url": "https://techcrunch.com/2026/09/03/googles-latest-ai-weather-model-gives-you-no-excuse-to-forget-your-umbrella/",
+          "source": "TechCrunch - AI",
+          "published_at": "2026-09-03T15:00:00.000Z",
+          "ingested_at": "2026-09-06T10:42:05.943Z",
+          "snippet": "WeatherNext 3 is the latest wave of a sea change in meteorology brought out by deep learning techniques. Google says it will start feeding into weather information users see in search, Google Maps, and Gemini.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.30000000000000004,
+            "recencyScore": 0,
+            "sourceWeight": 0.15,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ai",
+              "gemini",
+              "deep learning"
+            ]
+          }
+        },
+        {
+          "id": "hb842j",
+          "title": "Meta is paying to peek at how you use their latest AI model",
+          "url": "https://techcrunch.com/2026/09/03/meta-is-paying-to-peek-at-how-you-use-their-latest-ai-model/",
+          "source": "TechCrunch - AI",
+          "published_at": "2026-09-03T18:19:56.000Z",
+          "ingested_at": "2026-09-06T10:42:05.943Z",
+          "snippet": "For its new Muse Spark model, intended for operating coding and other agents, Meta is offering an explicit discount averaging out to about 95% for users who \"contribute\" to the development of future models by sharing their prompts and model outputs.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.3,
+            "recencyScore": 0,
+            "sourceWeight": 0.15,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ai",
+              "agent"
+            ]
+          }
+        },
+        {
+          "id": "ngtrez",
+          "title": "How OpenAI Limited the Probe of Its Bots’ Hack of Hugging Face",
+          "url": "https://www.nytimes.com/2026/09/03/technology/openai-hugging-face-hack.html",
+          "source": "NYTimes Technology",
+          "published_at": "2026-09-04T15:15:04.000Z",
+          "ingested_at": "2026-09-06T10:42:05.943Z",
+          "snippet": "Researchers investigating how OpenAI’s A.I. agents were able to break into Hugging Face’s infrastructure weren’t allowed to look at the incident’s full scope.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.22500000000000003,
+            "recencyScore": 0,
+            "sourceWeight": 0.075,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "openai",
+              "research",
+              "agent"
+            ]
+          }
+        },
+        {
+          "id": "39rphc",
+          "title": "AI boom is testing tech firms' climate pledges ",
+          "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/ai-boom-is-testing-tech-firms-climate-pledges/articleshow/133723821.cms",
+          "source": "Economic Times - Technology",
+          "published_at": "2026-09-03T02:58:37.000Z",
+          "ingested_at": "2026-09-06T10:42:05.943Z",
+          "snippet": "Technology companies are stepping up their climate commitments but not fast enough to counter rapidly inflating energy needs linked to the artificial intelligence boom, a report said Wednesday. This year's edition, based on 2024 data, found that artificial intelligence \"is both a driver of efficiency and a growing challenge\", the ITU said in a statement.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0.1,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ai",
+              "artificial intelligence"
+            ]
+          }
+        },
+        {
+          "id": "pwuaxe",
+          "title": "OpenAI is building 'automated shutdown' capabilities for AI tools, letter to lawmakers says ",
+          "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/openai-is-building-automated-shutdown-capabilities-for-ai-tools-letter-to-lawmakers-says/articleshow/133725313.cms",
+          "source": "Economic Times - Technology",
+          "published_at": "2026-09-03T04:33:14.000Z",
+          "ingested_at": "2026-09-06T10:42:05.943Z",
+          "snippet": "The company's safety practices have come under ‌scrutiny since OpenAI, ⁠the company ⁠behind ChatGPT, disclosed that one of its AI agents went rogue during a ​security test and hacked into AI company Hugging Face. AI agents are programs that ​run with minimal human supervision.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.2,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ai",
+              "openai",
+              "agent",
+              "ai company"
+            ]
+          }
+        },
+        {
+          "id": "qc1hn3",
+          "title": "The E.U.’s AI Drive Undermines Its ​Own Chip Strategy",
+          "url": "https://spectrum.ieee.org/europes-ai-drive",
+          "source": "IEEE Spectrum",
+          "published_at": "2026-08-31T14:00:04.000Z",
+          "ingested_at": "2026-09-06T10:42:05.943Z",
+          "snippet": "This story was originally published by Tech Policy Press.\nThe European Union’s push for technological sovereignty faces an uncomfortable contradiction.\nAs the E.U. rolls out AI factories, gigafactories, and new data centers, it is creating a surge in demand for the advanced semiconductors that underpin artificial intelligence. Yet Europe produces fewer than 10 percent of the world’s chips and remains heavily dependent on U.S. designers and Asian manufacturers for the most advanced processors.\nTh...",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0.15,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0.1,
+            "penalty": 0.2,
+            "matchedKeywords": [
+              "ai",
+              "artificial intelligence",
+              "policy"
+            ]
+          }
+        }
+      ]
+    },
+    "Ecommerce_Retail_Tech": {
+      "total": 456,
+      "top": [
+        {
+          "id": "btjhf3",
+          "title": "New Ecommerce Tools: September 2, 2026",
+          "url": "https://www.practicalecommerce.com/new-ecommerce-tools-september-2-2026",
+          "source": "Practical Ecommerce",
+          "published_at": "2026-09-02T15:02:32.000Z",
+          "ingested_at": "2026-09-06T10:42:05.943Z",
+          "snippet": "This week's rollouts include tools for payments, shipping, affiliate marketing, CRMs, supply chain, merchant-of-record services, and more.\nThe post New Ecommerce Tools: September 2, 2026 appeared first on Practical Ecommerce.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ecommerce",
+              "payment"
+            ]
+          }
+        },
+        {
+          "id": "j3oog1",
+          "title": "PayPal Pauses Venture Capital Portfolio Sale After Lowball Offers",
+          "url": "https://www.pymnts.com/news/investment-tracker/2026/paypal-pauses-venture-capital-portfolio-sale-after-lowball-offers/",
+          "source": "PYMNTS",
+          "published_at": "2026-09-04T23:48:00.000Z",
+          "ingested_at": "2026-09-06T10:42:05.943Z",
+          "snippet": "PayPal has paused its planned sale of its venture capital portfolio after offers came in at no higher than 60 cents on the dollar, Seeking Alpha reported Friday (Sept. 4), citing a paywalled article by Axios that was based on unnamed sources. The investments in PayPal’s portfolio include shopping app Tabby and crypto platform Anchorage, and the company’s attempt to sell the […]\nThe post PayPal Pauses Venture Capital Portfolio Sale After Lowball Offers appeared first on PYMNTS.com.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "shopping",
+              "platform"
+            ]
+          }
+        },
+        {
+          "id": "ag24uf",
+          "title": "Missouri Voters Appear to Recall City Councilman Over Data Center Support",
+          "url": "https://www.nytimes.com/2026/09/01/technology/data-center-recall-vote-independence.html",
+          "source": "NYTimes Technology",
+          "published_at": "2026-09-02T02:47:34.000Z",
+          "ingested_at": "2026-09-06T10:42:05.943Z",
+          "snippet": "Initial results showed that residents of Independence, Mo., voted overwhelmingly to recall an official who backed billions of dollars in tax breaks for a data center.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0.15,
+            "keywordBoost": 0,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": []
+          }
+        },
+        {
+          "id": "4tq4kn",
+          "title": "Uber Lays Off 10% of Employees in Sweeping Reorganization",
+          "url": "https://www.nytimes.com/2026/09/02/technology/uber-layoffs.html",
+          "source": "NYTimes Technology",
+          "published_at": "2026-09-02T17:47:50.000Z",
+          "ingested_at": "2026-09-06T10:42:05.943Z",
+          "snippet": "The layoffs affect about 3,300 workers, as Chief Executive Dara Khosrowshahi bets on a “leaner organization.”",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0.15,
+            "keywordBoost": 0,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": []
+          }
+        },
+        {
+          "id": "wtcl6w",
+          "title": "Get to Know Your Phone’s Built-In Emergency Kit",
+          "url": "https://www.nytimes.com/2026/09/02/technology/personaltech/iphone-android-emergency-features.html",
+          "source": "NYTimes Technology",
+          "published_at": "2026-09-02T09:03:10.000Z",
+          "ingested_at": "2026-09-06T10:42:05.943Z",
+          "snippet": "In times of natural disasters and other dangers, special features tucked away on your iPhone or Android device could help make a difference.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.2,
+            "recencyScore": 0,
+            "sourceWeight": 0.15,
+            "keywordBoost": 0,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": []
+          }
+        },
+        {
+          "id": "8mj1ow",
+          "title": "5 Content Marketing Ideas for October 2026",
+          "url": "https://www.practicalecommerce.com/5-content-marketing-ideas-for-october",
+          "source": "Practical Ecommerce",
+          "published_at": "2026-09-03T12:23:37.000Z",
+          "ingested_at": "2026-09-06T10:42:05.943Z",
+          "snippet": "Content marketers in October can explore Winnie-the-Pooh, Halloween, AI vs. humans, company archives, and breaking news.\nThe post 5 Content Marketing Ideas for October 2026 appeared first on Practical Ecommerce.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ecommerce"
+            ]
+          }
+        },
+        {
+          "id": "3p7wz5",
+          "title": "Ecommerce in Nigeria Poised for Growth",
+          "url": "https://www.practicalecommerce.com/ecommerce-in-nigeria-poised-for-growth",
+          "source": "Practical Ecommerce",
+          "published_at": "2026-09-01T13:58:24.000Z",
+          "ingested_at": "2026-09-06T10:42:05.943Z",
+          "snippet": "Per DHL, Nigeria exceeds the global average for expected ecommerce expansion. \nThe post Ecommerce in Nigeria Poised for Growth appeared first on Practical Ecommerce.",
+          "sourceType": "rss",
+          "relevance": {
+            "scoreTotal": 0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "ecommerce"
+            ]
+          }
+        }
+      ]
+    },
+    "Luxury_and_Consumer": {
+      "total": 73,
+      "top": [
+        {
+          "id": "ct5sx0",
+          "title": "This New, Sephora-Exclusive Fragrance Brand Puts the Perfumer First",
+          "url": "https://fashionista.com/2026/09/anecdotes-by-artists-fragrance-brand-sephora-launch",
+          "source": "Fashionista",
+          "published_at": "2026-09-01T11:00:00.000Z",
+          "ingested_at": "2026-09-06T10:42:05.943Z",
+          "snippet": "Launching with the retailer on Sept. 14, Anecdotes by Artists spotlights a new nose as the \"artist\" behind each collection.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "brand",
+              "exclusive"
+            ]
+          }
+        },
+        {
+          "id": "rsggou",
+          "title": "Anthropologie is launching Nike as sneaker shoppers increase nearly 30%",
+          "url": "https://www.glossy.co/fashion/anthropologie-is-launching-nike-as-its-sneaker-sales-increase-nearly-30/?utm_campaign=glossydis&utm_medium=rss&utm_source=general-rss",
+          "source": "Glossy",
+          "published_at": "2026-08-31T04:00:00.000Z",
+          "ingested_at": "2026-09-06T10:42:05.943Z",
+          "snippet": "Over the last year, the number of people coming to Anthropologie for sneakers specifically has increased nearly 30% according to Jessica Irick Peek, gmm of footwear and accessories for Anthropologie.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0,
+            "insightSignalBoost": 0.1,
+            "penalty": 0,
+            "matchedKeywords": []
+          }
+        },
+        {
+          "id": "c1ttxz",
+          "title": "Fall overtakes summer for luxury travelers: Virtuoso",
+          "url": "https://www.luxurydaily.com/fall-overtakes-summer-for-luxury-travelers-virtuoso/",
+          "source": "Luxury Daily - Research",
+          "published_at": "2026-08-31T09:00:00.000Z",
+          "ingested_at": "2026-09-06T10:42:05.943Z",
+          "snippet": "The high-end hospitality network says bookings for autumn are up 59 percent, with multicity “city-maxxing” itineraries and longevity trips gaining popularity.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.15000000000000002,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "luxury",
+              "high-end"
+            ]
+          }
+        },
+        {
+          "id": "xug8zj",
+          "title": "Aman plans first South Korea property in Seoul",
+          "url": "https://www.luxurydaily.com/aman-plans-first-south-korea-property-in-seoul/",
+          "source": "Luxury Daily - Main",
+          "published_at": "2026-09-03T08:45:00.000Z",
+          "ingested_at": "2026-09-06T10:42:05.943Z",
+          "snippet": "The multinational luxury hospitality company is planting a hotel, branded residences and a global club in the Cheongdam district of Gangnam.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "luxury",
+              "brand"
+            ]
+          }
+        },
+        {
+          "id": "8zltx3",
+          "title": "From Palazzos to Spas, Malta Has Exciting Discoveries for Luxury Travelers",
+          "url": "https://robbreport.com/partners/malta-has-exciting-discoveries-luxury-travelers-1238602974/",
+          "source": "Robb Report",
+          "published_at": "2026-09-04T17:41:38.000Z",
+          "ingested_at": "2026-09-06T10:42:05.943Z",
+          "snippet": "Historic properties and exclusive opportunities create unforgettable experiences.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "luxury",
+              "exclusive"
+            ]
+          }
+        },
+        {
+          "id": "b934vi",
+          "title": "Sole Food: Saucony Quietly Became the Reseller’s Favorite Sneaker",
+          "url": "https://www.highsnobiety.com/p/saucony-stockx-report/",
+          "source": "Highsnobiety",
+          "published_at": "2026-08-31T23:26:16.000Z",
+          "ingested_at": "2026-09-06T10:42:05.943Z",
+          "snippet": "StockX names Saucony its fastest-growing sneaker brand in the August 2026 Big Facts report. Here, we unpack the secrets to the label's resale success.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "brand"
+            ]
+          }
+        },
+        {
+          "id": "skoxyl",
+          "title": "Mytheresa updates logo",
+          "url": "https://www.luxurydaily.com/mytheresa-updates-logo/",
+          "source": "Luxury Daily - Main",
+          "published_at": "2026-09-02T08:45:00.000Z",
+          "ingested_at": "2026-09-06T10:42:05.943Z",
+          "snippet": "The online luxury retailer is rolling out an evolved wordmark across its website, app, stores and brand communications.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "luxury",
+              "brand"
+            ]
+          }
+        }
+      ]
+    },
+    "Jewellery_Industry": {
+      "total": 20,
+      "top": [
+        {
+          "id": "9lr20d",
+          "title": "$1 billion: Another massive milestone in sight for Lovisa",
+          "url": "https://www.jewellermagazine.com/Article/15457/1-billion-Another-massive-milestone-in-sight-for-Lovisa",
+          "source": "Jeweller - Business News",
+          "published_at": "2026-08-31T14:00:00.000Z",
+          "ingested_at": "2026-09-06T10:42:05.943Z",
+          "snippet": "Australian fashion jewellery chain Lovisa has continued its relentless international expansion and reported double-digit sales growth for the past financial year.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.25,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0.05,
+            "penalty": 0,
+            "matchedKeywords": [
+              "jewellery",
+              "jeweller"
+            ]
+          }
+        },
+        {
+          "id": "ivjfin",
+          "title": "IJF2026: Past, present, and future of an industry under one roof",
+          "url": "https://www.jewellermagazine.com/Article/15442/IJF2026-Past-present-and-future-of-an-industry-under-one-roof",
+          "source": "Jeweller - Business News",
+          "published_at": "2026-08-31T14:00:00.000Z",
+          "ingested_at": "2026-09-06T10:42:05.943Z",
+          "snippet": "The International Jewellery Fair in Sydney has its own rhythm. Of course, there’s the rush of retailers arriving at the opening bell, the familiar faces reconnecting after months apart, the hum of conversations that spill from one stand into the next.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.25,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "jewellery",
+              "retailer",
+              "jeweller"
+            ]
+          }
+        },
+        {
+          "id": "7dza1b",
+          "title": "Judge the Jewels: Sandra Bullock Makes Modern Magic in Jessica McCormack at ‘Practical Magic 2’ London Red Carpet ",
+          "url": "https://instoremag.com/judge-the-jewels-sandra-bullock-makes-modern-magic-in-jessica-mccormack-at-practical-magic-2-london-red-carpet/",
+          "source": "Instore Magazine",
+          "published_at": "2026-09-05T06:22:02.000Z",
+          "ingested_at": "2026-09-06T10:42:05.943Z",
+          "snippet": "Her two necklaces feature a large collet-set marquise diamond on a gold torque collar.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "diamond",
+              "gold"
+            ]
+          }
+        },
+        {
+          "id": "2sgy9c",
+          "title": "Diamond Price Recovery Broadens Further in August, Rapaport Reports",
+          "url": "https://instoremag.com/diamond-price-recovery-broadens-further-in-august-rapaport-reports/",
+          "source": "Instore Magazine",
+          "published_at": "2026-09-04T01:31:15.000Z",
+          "ingested_at": "2026-09-06T10:42:05.943Z",
+          "snippet": "1-carat RAPI posts first gain in 15 months as small-stone rebound continues.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": -0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.05,
+            "insightSignalBoost": 0.05,
+            "penalty": 0.2,
+            "matchedKeywords": [
+              "diamond"
+            ]
+          }
+        },
+        {
+          "id": "6b39fj",
+          "title": "In pictures: Me & Em expands into jewellery",
+          "url": "https://www.drapersonline.com/companies/directory/me-and-em/in-pictures-me-em-expands-into-jewellery",
+          "source": "Drapers",
+          "published_at": "2026-09-04T16:07:42.000Z",
+          "ingested_at": "2026-09-06T10:42:05.943Z",
+          "snippet": "Drapers\nIn pictures: Me & Em expands into jewellery\nMe & Em has today (4 September) unveiled its debut jewellery collection, marking a \"new era of luxury\" for the premium womenswear brand.\nThe post In pictures: Me & Em expands into jewellery appeared first on Drapers.",
+          "sourceType": "rss",
+          "categoryHint": "Fashion & Luxury",
+          "relevance": {
+            "scoreTotal": 0.1,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0.1,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "jewellery",
+              "jeweller"
+            ]
+          }
+        },
+        {
+          "id": "y4ywnb",
+          "title": "Stop Saying What the Ring ‘Costs’ — Plus More October Jeweler Questions Answered",
+          "url": "https://instoremag.com/ask-instore-online-extra-october-2026/",
+          "source": "Instore Magazine",
+          "published_at": "2026-09-06T04:00:13.000Z",
+          "ingested_at": "2026-09-06T10:42:05.943Z",
+          "snippet": "Plus, why customers can't shop a story like a price point.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0,
+            "recencyScore": 0,
+            "sourceWeight": 0,
+            "keywordBoost": 0,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": []
+          }
+        },
+        {
+          "id": "drknp5",
+          "title": "Crooks snatch more royal jewellery in another European heist",
+          "url": "https://www.jewellermagazine.com/Article/15458/Crooks-snatch-more-royal-jewellery-in-another-European-heist",
+          "source": "Jeweller - Business News",
+          "published_at": "2026-08-31T14:00:00.000Z",
+          "ingested_at": "2026-09-06T10:42:05.943Z",
+          "snippet": "Thieves have struck a museum in Austria and escaped with a Van Cleef & Arpels diamond necklace of historical significance, valued at more than $6 million.",
+          "sourceType": "rss",
+          "categoryHint": "Jewellery Industry",
+          "relevance": {
+            "scoreTotal": 0.25,
+            "recencyScore": 0,
+            "sourceWeight": 0.1,
+            "keywordBoost": 0.15000000000000002,
+            "insightSignalBoost": 0,
+            "penalty": 0,
+            "matchedKeywords": [
+              "jewellery",
+              "jeweller",
+              "diamond"
+            ]
+          }
+        }
+      ]
+    }
+  }
+}
