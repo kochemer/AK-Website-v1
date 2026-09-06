@@ -60,6 +60,7 @@ jobs:
         run: npm run digest:preflight
 
       - name: Build weekly digest
+        id: build
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
@@ -94,12 +95,14 @@ jobs:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: npm run competitor:analyze
 
-      # The next three steps run unconditionally so that a built digest is
-      # committed even if email send or competitor analysis had a partial
-      # failure. The "Build weekly digest" step is the gate: if it exits 1,
-      # there is no digest to commit and check-changes will find nothing.
+      # Commit only when the "Build weekly digest" step SUCCEEDED. That step is
+      # the gate: it now exits 1 not just on a missing digest but also when the
+      # content-quality gate fails (no AI summaries or no cover image), so a
+      # hollow digest is never committed or deployed. A later partial failure
+      # (email send, competitor analysis) still lets the good digest commit,
+      # because those are separate steps and the build outcome stays 'success'.
       - name: Check for changes
-        if: always()
+        if: steps.build.outcome == 'success'
         id: check-changes
         run: |
           git status --porcelain > /tmp/changes.txt
@@ -158,13 +161,13 @@ jobs:
           echo "Changes detected in allowed directories"
 
       - name: Configure Git
-        if: always() && steps.check-changes.outputs.has_changes == 'true'
+        if: steps.build.outcome == 'success' && steps.check-changes.outputs.has_changes == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
       - name: Commit and push changes
-        if: always() && steps.check-changes.outputs.has_changes == 'true'
+        if: steps.build.outcome == 'success' && steps.check-changes.outputs.has_changes == 'true'
         run: |
           git add data/digests/ data/weeks/*/health.json data/articles.json data/source_yield.json data/page_source_stats.json data/competitor-intel.json data/stock-history.json data/weeks/*/ public/podcast/*.mp3 public/weekly-images/*.png data/cache/
           if git diff --staged --quiet; then

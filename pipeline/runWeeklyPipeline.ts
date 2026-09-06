@@ -11,6 +11,7 @@ import { discoverWeekly } from '../discovery/discoverWeekly';
 import { classifyCurrentWeekArticles } from '../classification/classifyTopics';
 import { buildAndSaveWeeklyDigest } from '../digest/buildWeeklyDigest';
 import { runWeeklyChecks, type CheckResult } from './checks/runChecks';
+import { checkDigestContentQuality, type DigestContentQualityResult } from './checks/digestContentQuality';
 import type { WeeklyDigest } from '../lib/types';
 import { runRssIngestion } from '../ingestion/fetchRss';
 import { runPageIngestion } from '../ingestion/fetchPages';
@@ -57,6 +58,7 @@ export type PipelineResult = {
   finishedAt: string;
   steps: PipelineStep[];
   health: CheckResult;
+  contentQuality?: DigestContentQualityResult;
   versions?: {
     node?: string;
     gitCommit?: string;
@@ -276,6 +278,12 @@ export async function runWeeklyPipeline(options: RunWeeklyPipelineOptions = {}):
           podcastScriptText,
         });
 
+        const contentQuality = checkDigestContentQuality(existingDigest);
+        if (!contentQuality.ok) {
+          console.warn(`[Pipeline] ⚠ Existing digest fails content-quality gate:`);
+          contentQuality.errors.forEach(err => console.warn(`  - ${err}`));
+        }
+
         const result: PipelineResult = {
           digestWeek,
           ingestionWeek,
@@ -283,6 +291,7 @@ export async function runWeeklyPipeline(options: RunWeeklyPipelineOptions = {}):
           finishedAt: new Date().toISOString(),
           steps: [{ name: 'skip', ok: true, startedAt, finishedAt: new Date().toISOString() }],
           health,
+          contentQuality,
           versions: {
             node: process.version,
             gitCommit: getGitCommit(),
@@ -613,6 +622,25 @@ export async function runWeeklyPipeline(options: RunWeeklyPipelineOptions = {}):
     console.log('');
   }
 
+  // Content-quality gate (BLOCKING). Reload the digest from disk so we see the
+  // final artifact — the cover step (regenerateCover) writes coverImageUrl back
+  // to the JSON after the in-memory `digest` was produced.
+  let contentQuality: DigestContentQualityResult | undefined;
+  const finalDigest = await loadDigest(digestWeek);
+  if (finalDigest) {
+    contentQuality = checkDigestContentQuality(finalDigest);
+    if (contentQuality.ok) {
+      console.log(
+        `[Pipeline] ✓ Content-quality gate passed ` +
+          `(summaries ${contentQuality.summarizedCount}/${contentQuality.selectedCount}, cover: ${contentQuality.hasCover ? 'yes' : 'no'})`
+      );
+    } else {
+      console.error(`[Pipeline] ✗ Content-quality gate FAILED:`);
+      contentQuality.errors.forEach(err => console.error(`  - ${err}`));
+    }
+    console.log('');
+  }
+
   const finishedAt = new Date().toISOString();
 
   // Build result
@@ -623,6 +651,7 @@ export async function runWeeklyPipeline(options: RunWeeklyPipelineOptions = {}):
     finishedAt,
     steps,
     health,
+    contentQuality,
     versions: {
       node: process.version,
       gitCommit: getGitCommit(),

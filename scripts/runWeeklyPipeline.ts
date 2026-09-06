@@ -79,6 +79,17 @@ async function main() {
       process.exit(1);
     }
 
+    // Content-quality gate is blocking: a digest with no AI summaries or no
+    // cover image must not be published, even though every *step* "succeeded".
+    // Exiting non-zero here makes the GitHub Actions "Build weekly digest" step
+    // fail, which (via its step outcome) prevents the commit-and-push steps from
+    // shipping the hollow digest. See .github/workflows/weekly-digest.yml.
+    if (result.contentQuality && !result.contentQuality.ok) {
+      console.error(`\n[Pipeline] ✗ Content-quality gate failed — halting (digest will not be committed):`);
+      result.contentQuality.errors.forEach(err => console.error(`  - ${err}`));
+      process.exit(1);
+    }
+
     console.log(`\n[Pipeline] ✓ Pipeline completed${optionalFails.length > 0 ? ' (with non-fatal warnings)' : ' successfully'}`);
     process.exit(0);
   } catch (error) {
